@@ -5,11 +5,15 @@ from fastapi.templating import Jinja2Templates
 from pathlib import Path
 from fastapi import Request
 from starlette.responses import HTMLResponse
-
+from POC.chatbot_controller import router as chatbot_router
 from stripe_ACH_POC_controller import StripeAchDemoController
 from stripe_USDC_POC_controller import StripeUSDCDemoController
 from common.util.logging.logger import Logger
 from common.util.std_in_out.ml_settings_loader import MLSettingsLoader
+
+
+async def chatbot_page(request: Request):
+    return templates.TemplateResponse("chatbot_interface.html", {"request": request})
 
 # Init
 app = FastAPI()
@@ -27,6 +31,9 @@ usdc_controller = StripeUSDCDemoController(config_settings, logger)
 app.include_router(ach_controller.router, prefix="/stripe_ACH_POC")
 app.include_router(usdc_controller.router, prefix="/stripe_USDC_POC")
 
+app.get("/chatbot_interface", response_class=HTMLResponse)(chatbot_page)
+app.include_router(chatbot_router)
+
 # Templates
 templates_path = Path(__file__).parent / "templates"
 templates = Jinja2Templates(directory=templates_path)
@@ -34,6 +41,12 @@ templates = Jinja2Templates(directory=templates_path)
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
+
+
+
+
+async def chatbot_ui(self, request: Request):
+    return self.templates.TemplateResponse("chatbot_interface.html", {"request": request})
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8081, reload=True)
