@@ -49,6 +49,7 @@ def show_commands():
     print("#22B-DownloadFinancialDataBulk [symbols] [from*] [to*] [vendor_params*]")
     print("#23-CreateLightweightIndicator [csv_indicators] [from*] [to*] [benchmark*] [plot_result*]")
     print("#24-CreateSpreadVariable [diff_indicators] [from*] [to*] [output_symbol]")
+    print("#24B-CreateSpreadVariableBulk [diff_indicators*] [output_symbols*] [from*]")
 
     print("======================== UI ========================")
     print("#30-BiasMainLandingPage")
@@ -314,6 +315,21 @@ def process_create_spread_variable(cmd):
     # Run core logic
     process_create_spread_variable_logic(diff_indicators=diff_indicators, d_from=d_from, d_to=d_to,output_symbol=output_symbol)
 
+
+def process_create_spread_variable_bulk(cmd):
+    # Required parameters
+    diff_str = __get_param__(cmd, "diff_indicators")
+    output_str = __get_param__(cmd, "output_symbols")
+    d_from = __get_param__(cmd, "from", True, None)
+
+    diff_indicators = [d.strip() for d in diff_str.split(",") if d.strip() != ""]
+    output_symbols = [o.strip() for o in output_str.split(",") if o.strip() != ""]
+
+    if len(diff_indicators) != len(output_symbols):
+        raise Exception("[BULK][SPREAD] ❌ Mismatch between diff_indicators and output_symbols count")
+
+    # Paso a lógica como en el comando anterior
+    process_create_spread_variable_bulk_logic(diff_indicators, output_symbols, d_from)
 
 
 def process_create_lightweight_indicator(cmd):
@@ -1366,6 +1382,30 @@ def process_create_lightweight_indicator_logic(csv_indicators, d_from, d_to,outp
         print(traceback.format_exc())
         logger.print(f"CRITICAL ERROR running process_create_lightweight_indicator_logic: {str(e)}", MessageType.ERROR)
 
+def process_create_spread_variable_bulk_logic(diff_indicators, output_symbols, d_from, d_to=None):
+    logger = Logger()
+
+    logger.print(f"[BULK][SPREAD] Starting bulk spread creation for {len(diff_indicators)} item(s)", MessageType.INFO)
+
+    for i, (diff_expr, output_symbol) in enumerate(zip(diff_indicators, output_symbols)):
+        logger.print(f"[BULK][SPREAD][{i+1}/{len(diff_indicators)}] Processing: {diff_expr} → {output_symbol}", MessageType.INFO)
+
+        try:
+            process_create_spread_variable_logic(
+                diff_indicators=diff_expr,
+                d_from=d_from,
+                d_to=d_to,
+                output_symbol=output_symbol
+            )
+
+            logger.print(f"[BULK][SPREAD][{i+1}] ✅ Spread created: {output_symbol}", MessageType.INFO)
+
+        except Exception as e:
+            print(traceback.format_exc())
+            logger.print(f"[BULK][SPREAD][{i+1}] ❌ Failed to create spread {output_symbol}: {str(e)}", MessageType.ERROR)
+
+    logger.print(f"[BULK][SPREAD] ✅ Bulk spread creation complete", MessageType.SUCCESS)
+
 
 def process_create_spread_variable_logic(diff_indicators, d_from, d_to,output_symbol):
     loader = MLSettingsLoader()
@@ -1623,6 +1663,8 @@ def process_commands(cmd):
         process_create_lightweight_indicator(cmd)
     elif cmd_param_list[0] == "CreateSpreadVariable":
         process_create_spread_variable(cmd)
+    elif cmd_param_list[0] == "CreateSpreadVariableBulk":
+        process_create_spread_variable_bulk(cmd)
 
     #TestDailyLSTM
 
