@@ -1,6 +1,7 @@
 import traceback
 
 from business_entities.portf_position import PortfolioPosition
+from common.enums.information_vendors import InformationVendors
 from common.enums.market_regimes import MarketRegimes
 from common.util.financial_calculations.date_handler import DateHandler
 from common.util.logging.logger import Logger
@@ -45,8 +46,10 @@ def show_commands():
     print("#20-EvalSlidingRandomForest [symbol] [series_csv] [from] [to] [classif_key] [init_portf_size] [trade_comm] [classif_threshold] [sliding_window_years] [sliding_window_months]")
     print("#21-CustomRegimeSwitchDetector [variables] [from] [to] [regime_switch_filter] [regime_candle] [regime_window]")
     print("#22-DownloadFinancialData [symbol] [from*] [to*] [vendor_params*]")
+    print("#22B-DownloadFinancialDataBulk [symbols] [from*] [to*] [vendor_params*]")
     print("#23-CreateLightweightIndicator [csv_indicators] [from*] [to*] [benchmark*] [plot_result*]")
     print("#24-CreateSpreadVariable [diff_indicators] [from*] [to*] [output_symbol]")
+
     print("======================== UI ========================")
     print("#30-BiasMainLandingPage")
     print("#31-DisplayOrderRoutingScreen")
@@ -206,6 +209,56 @@ def process_display_order_routing_screen(cmd):
     wmc.display_order_routing_screen()
     print(f"Web Manager Logic successfully shown...")
 
+def process_download_financial_data_bulk(cmd):
+    # Required parameters
+    symbols_str = __get_param__(cmd, "symbol")  # NOT 'symbols', para respetar el formato que vos diste
+    d_from = __get_param__(cmd, "from", True, None)
+    d_to = __get_param__(cmd, "to", True, None)
+
+    raw_symbols = [s.strip() for s in symbols_str.split(",") if s.strip() != ""]
+
+    for full_symbol in raw_symbols:
+        parts = full_symbol.split(".")
+
+        if len(parts) == 2:
+            # Format: SYMBOL.VENDOR (FRED)
+            symbol = parts[0]
+            vendor = parts[1].upper()
+            exchange = None
+        elif len(parts) == 3:
+            # Format: SYMBOL.EXCHANGE.VENDOR (TRADINGVIEW)
+            symbol = parts[0]
+            exchange = parts[1]
+            vendor = parts[2].upper()
+        else:
+            raise Exception(f"[BULK] Invalid symbol format: '{full_symbol}'")
+
+        # Build vendor_params dynamically
+        vendor_params = {}
+
+        if vendor == InformationVendors.FRED.value:
+            pass  # no additional params needed
+
+        elif vendor == InformationVendors.TRADINGVIEW.value:
+            for key in ["session", "token", "username", "password", "interval"]:
+                val = __get_param__(cmd, key, True, None)
+                if val is not None:
+                    vendor_params[key] = val
+            if exchange is not None:
+                vendor_params["exchange"] = exchange.replace("_", " ")
+        else:
+            raise Exception(f"[BULK] Unsupported vendor: '{vendor}'")
+
+        cmd_param_dict = {
+            "symbol": symbol,
+            "vendor": vendor,
+            "vendor_params": vendor_params
+        }
+
+        process_download_financial_data_logic_bulk(symbol, d_from, d_to, cmd_param_dict)
+
+
+
 def process_download_financial_data(cmd):
     # Required parameters
     symbol = __get_param__(cmd, "symbol")
@@ -218,13 +271,16 @@ def process_download_financial_data(cmd):
     # Build vendor_params dict from known optional parameters
     vendor_params = {}
 
-    if vendor == "FRED":
+    if vendor == InformationVendors.FRED.value:
         # No additional inline parameters expected for now
         pass
 
-    elif vendor == "TRADINGVIEW":
+    elif vendor == InformationVendors.TRADINGVIEW.value:
         for key in ["session", "token", "username", "password", "interval", "exchange"]:
             val = __get_param__(cmd, key, True, None)
+            if key is "exchange" and val is not None:
+                val=val.replace("_"," ")
+
             if val is not None:
                 vendor_params[key] = val
     else:
@@ -1335,6 +1391,44 @@ def process_create_spread_variable_logic(diff_indicators, d_from, d_to,output_sy
         print(traceback.format_exc())
         logger.print(f"CRITICAL ERROR running process_create_spread_variable_logic: {str(e)}", MessageType.ERROR)
 
+def process_download_financial_data_logic_bulk(symbol, d_from, d_to, algo_params):
+    loader = MLSettingsLoader()
+    logger = Logger()
+
+    try:
+        vendor = algo_params.get("vendor", "").upper()
+        vendor_params = algo_params.get("vendor_params", {})
+
+        logger.print(f"[BULK] Starting download for '{symbol}' (vendor: {vendor})", MessageType.INFO)
+
+        config_settings = loader.load_settings("./configs/commands_mgr.ini")
+
+        if vendor == InformationVendors.FRED.value:
+            vendor_params["api_key"] = config_settings["FRED_API_KEY"]
+        elif vendor == InformationVendors.TRADINGVIEW.value:
+            vendor_params["tradingview_user"] = config_settings["TRADING_VIEW_USER"]
+            vendor_params["tradingview_pwd"] = config_settings["TRADING_VIEW_PWD"]
+        else:
+            raise Exception(f"[BULK] Unsupported vendor: {vendor}")
+
+        algo_params["vendor_params"] = vendor_params
+
+        trd_algos = AlgosOrchestationLogic(
+            config_settings["hist_data_conn_str"],
+            config_settings["ml_reports_conn_str"],
+            None,
+            logger
+        )
+
+
+        trd_algos.process_download_financial_data_bulk(symbol, d_from, d_to, algo_params)
+
+        logger.print(f"[BULK] ✅ Success: {symbol} from {vendor}", MessageType.INFO)
+
+    except Exception as e:
+        print(traceback.format_exc())
+        logger.print(f"[BULK][ERROR] {symbol} → {str(e)}", MessageType.ERROR)
+
 
 
 def process_download_financial_data_logic(symbol, d_from, d_to, algo_params):
@@ -1513,6 +1607,8 @@ def process_commands(cmd):
         process_create_sinthetic_indicator(cmd)
     elif cmd_param_list[0] == "DownloadFinancialData":
         process_download_financial_data(cmd)
+    elif cmd_param_list[0] == "DownloadFinancialDataBulk":
+        process_download_financial_data_bulk(cmd)
     #
     elif cmd_param_list[0] == "DisplayOrderRoutingScreen":
         process_display_order_routing_screen(cmd)

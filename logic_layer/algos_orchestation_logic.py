@@ -9,6 +9,7 @@ from common.dto.indicator_type_dto import IndicatorTypeDTO
 from common.enums.filename_prefix import FilenamePrefix
 from common.enums.folders import Folders
 from common.enums.grouping_criterias import GroupCriteria as gc
+from common.enums.information_vendors import InformationVendors
 from common.enums.intervals import Intervals
 from common.enums.parameters.parameters_keys import ParametersKeys
 from common.enums.sliding_window_strategy import SlidingWindowStrategy as sws, SlidingWindowStrategy
@@ -1609,7 +1610,7 @@ class AlgosOrchestationLogic:
         vendor = algo_params.get("vendor", "").upper()
         vendor_params = algo_params.get("vendor_params", {})
 
-        if vendor == "TRADINGVIEW":
+        if vendor == InformationVendors.TRADINGVIEW.value:
             downloader = TradingViewDownloader(vendor_params)
             df = downloader.download(symbol, from_date=d_from, to_date=d_to)
             interval_enum=downloader.get_interval_enum_translation()
@@ -1619,7 +1620,7 @@ class AlgosOrchestationLogic:
                 value = row["value"] if "value" in row else row["close"]
                 self.economic_series_mgr.persist_economic_series(symbol, date, interval_enum.value, value)
 
-        elif vendor == "FRED":
+        elif vendor == InformationVendors.FRED.value:
             downloader = FredDownloader(vendor_params)
             df = downloader.download(symbol, from_date=d_from, to_date=d_to)
             for index, row in df.iterrows():
@@ -1693,11 +1694,17 @@ class AlgosOrchestationLogic:
         if plot_result:
             GraphBuilder.plot_2_series_overlapped(pivot_df,benchmark_df,benchmark,output_symbol)
 
+    def process_download_financial_data_bulk(self, symbol: str, d_from: str, d_to: str, algo_params: dict):
+        self.logger.print(f"[Orch] Bulk dispatching '{symbol}' to standard download logic", MessageType.INFO)
+        self.process_download_financial_data(symbol, d_from, d_to, algo_params)
 
     def process_create_spread_varaible(self, diff_indicators, d_from, d_to,output_symbol):
         print(f"🧩 Building DataFrame with indicators: {diff_indicators}")
 
         variables_csv= ",".join(diff_indicators.split("-"))
+
+        if d_to is None:
+            d_to = datetime.today().date() + timedelta(days=1)
 
         indicators_series_df = self.data_set_builder.build_interval_series(
             series_csv=variables_csv,
