@@ -200,19 +200,6 @@
 
 
     </div>
-    <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-    {% include 'chatbot_interface.html' %}
-    </div>
-    <script>
-      const chatBtn = document.getElementById("chat-btn");
-      const chatIframe = document.getElementById("chat-iframe");
-
-      chatBtn.addEventListener("click", () => {
-        const isVisible = chatIframe.style.display === "block";
-        chatIframe.style.display = isVisible ? "none" : "block";
-      });
-    </script>
-
 
 </body>
 </html>
