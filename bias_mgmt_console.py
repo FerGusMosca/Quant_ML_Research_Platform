@@ -50,6 +50,7 @@ def show_commands():
     print("#23-CreateLightweightIndicator [csv_indicators] [from*] [to*] [benchmark*] [plot_result*]")
     print("#24-CreateSpreadVariable [diff_indicators] [from*] [to*] [output_symbol]")
     print("#24B-CreateSpreadVariableBulk [diff_indicators*] [output_symbols*] [from*]")
+    print("#25-TrainXGBoost [symbol] [variables_csv] [from] [to] [model_output] [classif_key] [n_estimators] [max_depth] [learning_rate] [subsample] [colsample_bytree] [batch_size*] [grouping_unit*] [grouping_classif_criteria*] [group_as_mov_avg*] [grouping_mov_avg_unit*] [class_weight*] [make_stationary*] [interval*]")
 
     print("======================== UI ========================")
     print("#30-BiasMainLandingPage")
@@ -551,6 +552,48 @@ def process_test_LSTM_cmd(cmd):
     print(f"Test LSTM successfully finished...")
 
 
+def process_train_XGBoost(symbol, series_csv, d_from, d_to, model_output, classif_key,
+                          n_estimators, max_depth, learning_rate, subsample, colsample_bytree,
+                          grouping_unit=None, grouping_classif_criteria=None,
+                          group_as_mov_avg=False, grouping_mov_avg_unit=100,
+                          interval=None, make_stationary=False, class_weight=None):
+    loader = MLSettingsLoader()
+    logger = Logger()
+
+    try:
+        logger.print(f"Initializing dataframe creation for series: {series_csv}", MessageType.INFO)
+
+        config_settings = loader.load_settings("./configs/commands_mgr.ini")
+
+        dataMgm = AlgosOrchestationLogic(
+            config_settings["hist_data_conn_str"],
+            config_settings["ml_reports_conn_str"],
+            config_settings["classification_map_key"] if classif_key is None else classif_key,
+            logger
+        )
+
+        dataMgm.process_train_XGBoost(symbol=symbol, series_csv=series_csv, d_from=d_from, d_to=d_to,
+                                      model_output=model_output.replace('"', ""),
+                                      classif_key=classif_key,
+                                      n_estimators=int(n_estimators),
+                                      max_depth=None if str(max_depth).lower() == "none" else int(max_depth),
+                                      learning_rate=float(learning_rate),
+                                      subsample=float(subsample),
+                                      colsample_bytree=float(colsample_bytree),
+                                      interval=interval.replace('_', " ") if interval is not None else None,
+                                      grouping_unit=int(grouping_unit) if grouping_unit is not None else None,
+                                      grouping_classif_criteria=grouping_classif_criteria,
+                                      group_as_mov_avg=bool(group_as_mov_avg),
+                                      grouping_mov_avg_unit=int(grouping_mov_avg_unit),
+                                      make_stationary=make_stationary,
+                                      class_weight=None if class_weight is None or str(class_weight).lower() == "none" else class_weight)
+
+        logger.print(f"XGBoost model successfully trained for symbol {symbol} and variables {series_csv}", MessageType.INFO)
+
+    except Exception as e:
+        logger.print(f"CRITICAL ERROR running process_train_XGBoost: {str(e)}", MessageType.ERROR)
+
+
 def process_train_RF(symbol, series_csv, d_from, d_to, model_output, classification_key,
                      n_estimators, max_depth, min_samples_split, criterion,
                      grouping_unit=None, grouping_classif_criteria=None,
@@ -589,6 +632,59 @@ def process_train_RF(symbol, series_csv, d_from, d_to, model_output, classificat
 
     except Exception as e:
         logger.print(f"CRITICAL ERROR running process_train_RF: {str(e)}", MessageType.ERROR)
+
+#
+def process_train_XGBoost_cmd(cmd, cmd_param_list):
+    # Required parameters
+    symbol = __get_param__(cmd, "symbol")
+    series_csv = __get_param__(cmd, "series_csv")
+    d_from = __get_param__(cmd, "from")
+    d_to = __get_param__(cmd, "to")
+    model_output = __get_param__(cmd, "model_output")
+    classif_key = __get_param__(cmd, "classif_key")
+
+    # XGBoost-specific hyperparameters
+    n_estimators = int(__get_param__(cmd, "n_estimators", True, def_value=100))
+    max_depth = __get_param__(cmd, "max_depth", True, def_value=3)
+    max_depth = None if str(max_depth).lower() == "none" else int(max_depth)
+
+    learning_rate = float(__get_param__(cmd, "learning_rate", True, def_value=0.1))
+    subsample = float(__get_param__(cmd, "subsample", True, def_value=1.0))
+    colsample_bytree = float(__get_param__(cmd, "colsample_bytree", True, def_value=1.0))
+
+    class_weight = __get_param__(cmd, "class_weight", True, def_value=None)
+    class_weight = None if class_weight is None or str(class_weight).lower() == "none" else class_weight
+
+    # Optional common flags
+    interval = __get_param__(cmd, "interval", True, def_value=DataSetBuilder._1_DAY_INTERVAL)
+    grouping_unit = __get_param__(cmd, "grouping_unit", True)
+    grouping_classif_criteria = __get_param__(cmd, "grouping_classif_criteria", True)
+    group_as_mov_avg = __get_bool_param__(cmd, "group_as_mov_avg", True, def_value=False)
+    grouping_mov_avg_unit = __get_param__(cmd, "grouping_mov_avg_unit", True, def_value=100)
+    make_stationary = __get_bool_param__(cmd, "make_stationary", True, def_value=False)
+
+    # Call processing method with parsed params
+    process_train_XGBoost(symbol=symbol,
+                          series_csv=series_csv,
+                          d_from=d_from,
+                          d_to=d_to,
+                          model_output=model_output,
+                          classif_key=classif_key,
+                          n_estimators=n_estimators,
+                          max_depth=max_depth,
+                          learning_rate=learning_rate,
+                          subsample=subsample,
+                          colsample_bytree=colsample_bytree,
+                          interval=interval,
+                          grouping_unit=grouping_unit,
+                          grouping_classif_criteria=grouping_classif_criteria,
+                          group_as_mov_avg=group_as_mov_avg,
+                          grouping_mov_avg_unit=grouping_mov_avg_unit,
+                          class_weight=class_weight,
+                          make_stationary=make_stationary)
+
+    print("Train XGBoost successfully finished...")
+
 
 def process_train_RF_cmd(cmd, cmd_param_list):
     # Required parameters
@@ -1619,7 +1715,8 @@ def process_commands(cmd):
         process_traing_LSTM_cmd(cmd,cmd_param_list)
     elif cmd_param_list[0] == "TrainRF":
         process_train_RF_cmd(cmd,cmd_param_list)
-
+    elif cmd_param_list[0] == "TrainXGBoost":
+        process_train_XGBoost_cmd(cmd,cmd_param_list)
     elif cmd_param_list[0] == "TrainLSTMWithGrouping":
         process_traing_LSTM_cmd(cmd,cmd_param_list)
     elif cmd_param_list[0] == "DailyCandlesGraph":

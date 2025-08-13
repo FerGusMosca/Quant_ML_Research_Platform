@@ -37,6 +37,7 @@ from logic_layer.ARIMA_models_analyzer import ARIMAModelsAnalyzer
 from logic_layer.convolutional_neural_netowrk import ConvolutionalNeuralNetwork
 from logic_layer.indicator_algos.sintethic_indicator_creator import SintheticIndicatorCreator
 from logic_layer.model_creators.random_forest_model_creator import RandomForestModelCreator
+from logic_layer.model_creators.xg_boost_model_creator import XGBoostModelCreator
 from logic_layer.trading_algos.buy_and_hold_backtester import BuyAndHoldBacktester
 from logic_layer.trading_algos.direct_slope_backtester import DirectSlopeBacktester
 from logic_layer.trading_algos.inv_slope_backtester import InvSlopeBacktester
@@ -1318,6 +1319,94 @@ class AlgosOrchestationLogic:
 
         except Exception as e:
             msg = "CRITICAL ERROR processing model @process_test_daily_LSTM:{}".format(str(e))
+            traceback.print_exc()
+            self.logger.do_log(msg, MessageType.ERROR)
+            raise Exception(msg)
+
+    def process_train_XGBoost(self, symbol, series_csv, d_from, d_to, model_output, classif_key,
+                              n_estimators, max_depth, learning_rate, subsample, colsample_bytree,
+                              interval=DataSetBuilder._1_MIN_INTERVAL,
+                              grouping_unit=None, grouping_classif_criteria=None,
+                              group_as_mov_avg=False, grouping_mov_avg_unit=20,
+                              make_stationary=False, class_weight=None):
+        try:
+            # Retrieve classification ranges based on interval
+            range_clasifs = None
+            if interval == DataSetBuilder._1_MIN_INTERVAL:
+                range_clasifs = self.timestamp_range_classif_mgr.get_timestamp_range_classification_values(
+                    classif_key, d_from, d_to)
+            elif interval == DataSetBuilder._1_DAY_INTERVAL:
+                range_clasifs = self.date_range_classif_mgr.get_date_range_classification_values(
+                    classif_key, d_from, d_to)
+            else:
+                raise Exception(f'Invalid interval at process_train_XGBoost: {interval}')
+
+            # Build main symbol time series
+            symbol_min_series_df = self.data_set_builder.build_interval_series(
+                symbol, d_from, d_to, interval=interval,
+                output_col=["symbol", "date", "open", "high", "low", "close"]
+            )
+
+            # Add classification labels to symbol series
+            symbol_min_series_df = self.data_set_builder.build_minute_series_classification(
+                range_clasifs,
+                symbol_min_series_df,
+                classif_col_name=classif_key,
+                not_found_clasif="FLAT"
+            )
+
+            # Load feature variables
+            variables_min_series_df = self.data_set_builder.build_interval_series(
+                series_csv, d_from, d_to,
+                interval=interval,
+                output_col=["symbol", "date", "open", "high", "low", "close"]
+            )
+
+            # Merge features and labels into final dataset
+            training_series_df = self.data_set_builder.merge_series(
+                symbol_min_series_df, variables_min_series_df, "symbol", "date", symbol
+            )
+
+            # Optional: compute moving averages
+            if group_as_mov_avg:
+                training_series_df = self.data_set_builder.group_as_mov_avgs(
+                    training_series_df, series_csv, grouping_mov_avg_unit
+                )
+
+            # Optional: apply grouping logic (e.g., weekly bars)
+            if grouping_unit is not None:
+                training_series_df = self.__group_dataframe__(
+                    training_series_df, grouping_unit,
+                    series_csv, grouping_classif_criteria, classif_key
+                )
+
+            # Logging for inspection
+            DataframePrinter.print_dataframe_head_values_w_time(
+                variables_min_series_df, "symbol", series_csv, 10, "date", "10:30:00"
+            )
+            DataframePrinter.print_data_farme_head(training_series_df, 10)
+
+            # Train XGBoost
+            xgb_model_trainer = XGBoostModelCreator()
+            label_encoder = xgb_model_trainer.train_xgboost_daily(
+                training_series_df=training_series_df,
+                model_output=model_output,
+                symbol=symbol,
+                classif_key=classif_key,
+                series_csv=series_csv,
+                n_estimators=n_estimators,
+                max_depth=max_depth,
+                learning_rate=learning_rate,
+                subsample=subsample,
+                colsample_bytree=colsample_bytree,
+                make_stationary=make_stationary,
+                class_weight=class_weight
+            )
+
+            return label_encoder
+
+        except Exception as e:
+            msg = f"CRITICAL ERROR processing model @train_xgboost: {str(e)}"
             traceback.print_exc()
             self.logger.do_log(msg, MessageType.ERROR)
             raise Exception(msg)
