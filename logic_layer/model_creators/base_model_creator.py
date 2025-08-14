@@ -1,5 +1,7 @@
 import os
-
+import xgboost as xgb
+import joblib
+from pathlib import Path
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, StandardScaler
@@ -9,7 +11,7 @@ from joblib import load
 from sklearn.ensemble import RandomForestClassifier
 from typing import Tuple, Union
 from common.util.logging.light_logger import LightLogger
-
+import xgboost as xgb; print(xgb.__version__)
 _OUTPUT_DATE_FORMAT = '%m/%d/%Y %H:%M:%S'
 _OUTPUT_PATH = "./output/"
 
@@ -138,6 +140,61 @@ class BaseModelCreator:
         test_series_df (pd.DataFrame): DataFrame containing the test time series data.
         """
         test_series_df.dropna(inplace=True)
+
+    def __save_xgb_model_bundle__(self, model, feature_cols, label_encoder, scaler, model_output,
+                                  calibrated_model=None, calibration_method=None):
+        """
+        Persist the trained model in a version-stable way:
+          - <base>_booster.json : raw XGBoost Booster (portable across envs)
+          - <base>_bundle.pkl   : metadata (params, feature order, encoders/scalers, optional calibrator)
+        """
+        base = Path(model_output).with_suffix('')  # e.g., "model.pkl" -> "model"
+        booster_path = f"{base}_booster.json"
+        bundle_path = f"{base}_bundle.pkl"
+
+        # 1) Save Booster as JSON
+        booster = model.get_booster()
+        booster.save_model(booster_path)
+
+        # 2) Save metadata + optional calibrator
+        bundle = {
+            "xgb_params": model.get_xgb_params(),
+            "feature_cols": list(feature_cols),
+            "label_encoder": label_encoder,
+            "scaler": scaler,
+            # --- NEW (optional) ---
+            "calibrated_model": calibrated_model,  # may be None (keeps backward compatibility)
+            "calibration_method": calibration_method,  # e.g., "sigmoid"
+        }
+        joblib.dump(bundle, bundle_path)
+
+        return booster_path, bundle_path
+
+    def __load_xgb_model_bundle__(self, model_filename):
+        """
+        Load artifacts saved by __save_xgb_model_bundle__:
+          - Booster (.json)
+          - Bundle (.pkl): feature_cols, xgb_params, label_encoder, scaler, optional calibrated_model
+        Returns:
+          booster, label_encoder, scaler, feature_cols, calibrated_model_or_None, xgb_params
+        """
+        base = Path(model_filename).with_suffix('')
+        booster_path = f"{base}_booster.json"
+        bundle_path = f"{base}_bundle.pkl"
+
+        # Load bundle metadata (and optional calibrator)
+        bundle = joblib.load(bundle_path)
+
+        booster = xgb.Booster()
+        booster.load_model(booster_path)
+
+        label_encoder = bundle["label_encoder"]
+        scaler = bundle["scaler"]
+        feature_cols = bundle["feature_cols"]
+        xgb_params = bundle.get("xgb_params", {})
+        calibrated_model = bundle.get("calibrated_model", None)  # may be None if older bundle
+
+        return booster, label_encoder, scaler, feature_cols, calibrated_model, xgb_params
 
     def __load_rf_model_bundle__(self,model_path: str) -> Tuple[
         RandomForestClassifier, Union[object, None], Union[object, None]]:

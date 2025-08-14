@@ -393,6 +393,91 @@ class AlgosOrchestationLogic:
 
         return None
 
+    def process_test_scalping_XGBoost(self, symbol, series_csv, model_to_use, d_from, d_to, n_algo_param_dict):
+        """
+        Evaluate an XGBoost model over a single period, run backtest, and return summary.
+        """
+
+        self.logger.do_log(
+            f"Initializing XGBoost backtest for symbol {symbol} from {d_from} to {d_to}",
+            MessageType.INFO
+        )
+
+        init_portf_size = float(n_algo_param_dict["init_portf_size"])
+        pos_regime_filters_csv = n_algo_param_dict.get("pos_regime_filters_csv", None)
+        neg_regime_filters_csv = n_algo_param_dict.get("neg_regime_filters_csv", None)
+        draw_predictions = n_algo_param_dict.get("draw_predictions", False)
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        summary_dict_arr = []
+
+        symbol_prices_df = self.data_set_builder.build_interval_series(
+            symbol, d_from, d_to,
+            interval=DataSetBuilder._1_DAY_INTERVAL,
+            output_col=["symbol", "date", "open", "high", "low", "close"]
+        )
+
+        series_df = self.data_set_builder.build_daily_series_classification(
+            series_csv, d_from, d_to, add_classif_col=False
+        )
+        series_df = DataframeFiller.fill_missing_values(series_df)
+
+        pos_regime_df = self.data_set_builder.build_interval_series(
+            pos_regime_filters_csv, d_from, d_to,
+            interval=DataSetBuilder._1_DAY_INTERVAL,
+            output_col=["symbol", "date", "open", "high", "low", "close"]
+        ).dropna() if pos_regime_filters_csv else pd.DataFrame()
+
+        neg_regime_df = self.data_set_builder.build_interval_series(
+            neg_regime_filters_csv, d_from, d_to,
+            interval=DataSetBuilder._1_DAY_INTERVAL,
+            output_col=["symbol", "date", "open", "high", "low", "close"]
+        ).dropna() if neg_regime_filters_csv else pd.DataFrame()
+
+        reg_df = pos_regime_df if not pos_regime_df.empty else neg_regime_df if not neg_regime_df.empty else None
+        pos_df = True if not pos_regime_df.empty else False if not neg_regime_df.empty or reg_df is None else None
+
+        ml_analyzer = MLModelAnalyzer(self.logger)
+        label_encoder = ml_analyzer.extract_label_encoder_from_model(model_to_use)
+
+        result_df, test_series_df = ml_analyzer.evaluate_trading_performance_last_model_XGBoost(
+            symbol_df=symbol_prices_df,
+            symbol=symbol,
+            series_df=series_df,
+            model_filename=model_to_use,
+            bias=n_algo_param_dict.get("bias", "LONG"),
+            label_encoder=label_encoder,
+            last_trading_dict=None,
+            n_algo_param_dict=n_algo_param_dict,
+            draw_statistics=draw_predictions
+        )
+
+
+        backtester = NFlipPredictionBacktester()
+        portf_pos_dict = backtester.backtest(
+            symbol=symbol,
+            symbol_prices_df=result_df,
+            predictions_dic={"DAILY_XGB": result_df},
+            last_trading_dict=None,
+            n_algo_param_dict=n_algo_param_dict,
+            init_last_portf_size_dict={"DAILY_XGB": init_portf_size},
+            regime_df=reg_df,
+            pos_regime=pos_df
+        )
+
+        summary = self.__wrap_positions_in_summary__("DAILY_XGB", portf_pos_dict["DAILY_XGB"],
+                                                     n_algo_param_dict, d_from, d_to)
+        summary.period = f"{d_from.strftime('%b')}-{d_to.strftime('%b')}"
+
+        summary_dict_arr.append({"XGBOOST": summary})
+
+        if draw_predictions:
+            symbol_prices_df = symbol_prices_df[symbol_prices_df['date'] >= d_from]
+            GraphBuilder.plot_prices_with_trades(symbol_prices_df, summary_dict_arr, "XGBOOST")
+
+        return {"DAILY_XGB": summary}
+
+
+
     def process_test_scalping_RF(self, symbol, series_csv, model_to_use, d_from, d_to, n_algo_param_dict):
         """
         Evaluate a Random Forest model over a single period, run backtest, and return summary.

@@ -51,6 +51,7 @@ def show_commands():
     print("#24-CreateSpreadVariable [diff_indicators] [from*] [to*] [output_symbol]")
     print("#24B-CreateSpreadVariableBulk [diff_indicators*] [output_symbols*] [from*]")
     print("#25-TrainXGBoost [symbol] [variables_csv] [from] [to] [model_output] [classif_key] [n_estimators] [max_depth] [learning_rate] [subsample] [colsample_bytree] [batch_size*] [grouping_unit*] [grouping_classif_criteria*] [group_as_mov_avg*] [grouping_mov_avg_unit*] [class_weight*] [make_stationary*] [interval*]")
+    print("#26-TestXGBoost [symbol] [variables_csv] [from] [to] [model_to_use] [price_to_use*] [classif_key*] [normalize*] [make_stationary*] [threshold*]")
 
     print("======================== UI ========================")
     print("#30-BiasMainLandingPage")
@@ -458,6 +459,59 @@ def process_backtest_slope_model_on_custom_etf(cmd):
 
     print(f"Test Backtest Slope Model finished...")
 
+def process_test_XGBoost_cmd(cmd):
+    symbol = __get_param__(cmd, "symbol")
+    series_csv = __get_param__(cmd, "series_csv")
+    d_from = __get_param__(cmd, "from")
+    d_to = __get_param__(cmd, "to")
+    model_to_use = __get_param__(cmd, "model_to_use")
+
+    # Optional parameters
+    interval = __get_param__(cmd, "interval", True, def_value=DataSetBuilder._1_DAY_INTERVAL)
+    init_portf_size = float(__get_param__(cmd, "init_portf_size", True, def_value=100000))
+    trade_comm = float(__get_param__(cmd, "trade_comm", True, def_value=0.0))
+    draw_predictions = __get_bool_param__(cmd, "draw_predictions", True, def_value=False)
+    grouping_unit = __get_param__(cmd, "grouping_unit", True)
+    grouping_classif_criteria = __get_param__(cmd, "grouping_classif_criteria", True, def_value=None)
+    group_as_mov_avg = __get_bool_param__(cmd, "group_as_mov_avg", True, def_value=False)
+    grouping_mov_avg_unit = __get_param__(cmd, "grouping_mov_avg_unit", True, def_value=100)
+    classif_threshold = float(__get_param__(cmd, "classif_threshold", True, def_value=0.5))
+    make_stationary = __get_bool_param__(cmd, "make_stationary", True, def_value=False)
+    n_flip = int(__get_param__(cmd, "n_flip", True, def_value=3))
+    bias = __get_param__(cmd, "bias", True, def_value=None)
+    pos_regime_filters_csv = __get_param__(cmd, "pos_regime_filters_csv", True, def_value=None)
+    neg_regime_filters_csv = __get_param__(cmd, "neg_regime_filters_csv", True, def_value=None)
+
+    # Compose param dictionary
+    n_algo_param_dict = {
+        "interval": interval.replace("_", " "),
+        "init_portf_size": init_portf_size,
+        "series_csv": series_csv,
+        "trade_comm": trade_comm,
+        "grouping_unit": int(grouping_unit) if grouping_unit is not None else None,
+        "grouping_classif_criteria": grouping_classif_criteria,
+        "group_as_mov_avg": group_as_mov_avg,
+        "grouping_mov_avg_unit": int(grouping_mov_avg_unit) if grouping_mov_avg_unit is not None else None,
+        "make_stationary": make_stationary,
+        "n_flip": n_flip,
+        "classif_threshold": classif_threshold,
+        "bias": bias,
+        "draw_predictions": draw_predictions,
+        "pos_regime_filters_csv": pos_regime_filters_csv,
+        "neg_regime_filters_csv": neg_regime_filters_csv
+    }
+
+    # Run the test
+    process_test_daily_XGBoost(
+        symbol=symbol,
+        series_csv=series_csv,
+        d_from=d_from,
+        d_to=d_to,
+        model_to_use=model_to_use,
+        n_algo_param_dict=n_algo_param_dict
+    )
+
+    print("Test XGBoost successfully finished...")
 
 def process_test_RF_cmd(cmd):
     symbol = __get_param__(cmd, "symbol")
@@ -1311,6 +1365,43 @@ def process_train_LSTM(symbol, variables_csv, d_from, d_to, model_output, classi
     except Exception as e:
         logger.print("CRITICAL ERROR running process_train_LSTM:{}".format(str(e)), MessageType.ERROR)
 
+def process_test_daily_XGBoost(symbol, series_csv, d_from, d_to, model_to_use, n_algo_param_dict):
+    loader = MLSettingsLoader()
+    logger = Logger()
+
+    try:
+        logger.print(
+            f"Initializing XGBoost model testing for symbol {symbol} and model {model_to_use} on {d_from}",
+            MessageType.INFO
+        )
+
+        config_settings = loader.load_settings("./configs/commands_mgr.ini")
+
+        dataMgm = AlgosOrchestationLogic(
+            config_settings["hist_data_conn_str"],
+            config_settings["ml_reports_conn_str"],
+            None,
+            logger
+        )
+
+        dataMgm.process_test_scalping_XGBoost(
+            symbol=symbol,
+            series_csv=series_csv,
+            model_to_use=model_to_use.replace('"', ""),
+            d_from=d_from,
+            d_to=d_to,
+            n_algo_param_dict=n_algo_param_dict
+        )
+
+        logger.print(
+            f"Displaying predictions for XGBoost model: symbol {symbol} and model {model_to_use} on {d_from}",
+            MessageType.INFO
+        )
+
+    except Exception as e:
+        logger.print(f"CRITICAL ERROR running process_test_daily_XGBoost: {str(e)}", MessageType.ERROR)
+
+
 def process_test_daily_RF(symbol, series_csv, d_from, d_to, model_to_use,  n_algo_param_dict):
     loader = MLSettingsLoader()
     logger = Logger()
@@ -1717,6 +1808,8 @@ def process_commands(cmd):
         process_train_RF_cmd(cmd,cmd_param_list)
     elif cmd_param_list[0] == "TrainXGBoost":
         process_train_XGBoost_cmd(cmd,cmd_param_list)
+    elif cmd_param_list[0] == "TestXGBoost":
+        process_test_XGBoost_cmd(cmd)
     elif cmd_param_list[0] == "TrainLSTMWithGrouping":
         process_traing_LSTM_cmd(cmd,cmd_param_list)
     elif cmd_param_list[0] == "DailyCandlesGraph":

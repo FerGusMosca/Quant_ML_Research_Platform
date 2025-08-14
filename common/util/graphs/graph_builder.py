@@ -1,10 +1,82 @@
+import os
+
+import matplotlib
 import plotly.graph_objs as go
 from common.enums.side import Side
 import matplotlib.pyplot as plt
 import pandas as pd
 import mplcursors
+import numpy as np
 
 class GraphBuilder:
+
+    @staticmethod
+    def _select_safe_backend(interactive: bool):
+        """
+        Use a non-blocking backend (Agg) for headless environments when interactive=False.
+        If interactive=True, do not force Agg so a window can be shown with show().
+        """
+        if interactive:
+            return
+        try:
+            # Headless on Linux/WSL: no DISPLAY -> force Agg
+            if os.environ.get("DISPLAY") is None:
+                matplotlib.use("Agg", force=True)
+        except Exception:
+            matplotlib.use("Agg", force=True)
+
+
+    @staticmethod
+    def booster_importances_aligned(booster, feature_names, importance_types=("gain", "total_gain", "weight")):
+        """
+        Return a list of importances aligned to 'feature_names' using the native XGBoost Booster.
+        Tries multiple importance types in order until it finds a non-all-zero vector.
+        Handles both real feature names and 'f0', 'f1', ... keys.
+
+        Parameters
+        ----------
+        booster : xgboost.Booster
+        feature_names : list[str]
+        importance_types : tuple[str]
+            e.g., ("gain", "total_gain", "weight")
+
+        Returns
+        -------
+        list[float]
+        """
+        def as_aligned(importance_dict):
+            # Map both real names and f{idx} format to the provided feature_names
+            values = []
+            for i, name in enumerate(feature_names):
+                if name in importance_dict:
+                    v = float(importance_dict.get(name, 0.0))
+                else:
+                    v = float(importance_dict.get(f"f{i}", 0.0))
+                values.append(v)
+            return values
+
+        chosen = None
+        chosen_type = None
+        for itype in importance_types:
+            raw = booster.get_score(importance_type=itype) or {}
+            vals = as_aligned(raw)
+            if any(v != 0.0 for v in vals):
+                chosen = vals
+                chosen_type = itype
+                break
+
+        # If still all zeros, keep the last attempt (likely empty) but return zeros
+        if chosen is None:
+            chosen = [0.0] * len(feature_names)
+            chosen_type = importance_types[-1]
+
+        # Optional: normalize for readability if values are huge (do not change ranking)
+        s = sum(chosen)
+        normalized = [v / s if s > 0 else 0.0 for v in chosen]
+
+        print(f"[DEBUG] importance_type used: {chosen_type}; sum={s:.6f}; max={max(chosen) if chosen else 0:.6f}")
+        return normalized  # normalized preserves order and avoids “flat near-zero” visuals
+
 
     @staticmethod
     def build_candles_graph(min_candles_df, mov_avg_unit=20):
@@ -82,9 +154,46 @@ class GraphBuilder:
         plt.savefig("long_prob_distribution.png")
 
     @staticmethod
+    def plot_feature_importances_from_values(importances, feature_names, output_path="feature_importance.png"):
+        """
+        Plot feature importances given as a list/array of numeric values.
+        - Validates shape
+        - Sorts descending
+        - Prints ranking
+        - Saves PNG
+        - Shows the plot and blocks execution until the window is closed
+        """
+
+        importances = np.asarray(importances, dtype=float)
+        if len(feature_names) != importances.shape[0]:
+            raise ValueError(
+                f"[ERROR] Feature mismatch: got {importances.shape[0]} importances "
+                f"but {len(feature_names)} feature names."
+            )
+
+        idx = np.argsort(importances)[::-1]
+        sorted_features = [feature_names[i] for i in idx]
+
+        print("\n[FEATURE IMPORTANCE RANKING]")
+        for i in idx:
+            print(f"{feature_names[i]:<35} → {importances[i]:.6f}")
+
+        plt.figure(figsize=(12, 6))
+        plt.title("Feature Importances")
+        plt.bar(range(len(importances)), importances[idx], align="center")
+        plt.xticks(range(len(importances)), sorted_features, rotation=45, ha="right")
+        plt.tight_layout()
+
+        # Save PNG
+        os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
+        plt.savefig(output_path, bbox_inches="tight")
+
+        # Show plot and wait until closed
+        #plt.show()
+
+    @staticmethod
     def plot_feature_importances(model, feature_names, output_path="feature_importance.png"):
-        import matplotlib.pyplot as plt
-        import numpy as np
+
 
         # Validate consistency between feature names and model internals
         if len(feature_names) != len(model.feature_importances_):

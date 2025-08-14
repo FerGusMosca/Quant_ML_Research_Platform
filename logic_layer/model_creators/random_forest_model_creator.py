@@ -221,5 +221,9 @@ class RandomForestModelCreator(BaseModelCreator):
         states = {}  # no states for RF
         LightLogger.do_log(f"[RF TEST] First 5 predictions:\n{result_df[['date', 'Prediction']].head()}")
 
+
         return result_df, states
+
+
+
 

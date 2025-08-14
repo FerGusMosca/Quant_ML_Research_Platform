@@ -26,6 +26,7 @@ from sklearn.metrics import classification_report
 import pickle
 
 from logic_layer.model_creators.random_forest_model_creator import RandomForestModelCreator
+from logic_layer.model_creators.xg_boost_model_creator import XGBoostModelCreator
 from logic_layer.trading_algos.direct_prediction_backtester import DirectPredictionBacktester
 
 _OUTPUT_PATH="./output/"
@@ -476,6 +477,9 @@ class MLModelAnalyzer():
         except Exception as e:
             raise Exception(f"[RF Test] Failed to extract label_encoder from model: {e}")
 
+
+
+
     def evaluate_trading_performance_last_model_RF(self, symbol_df, symbol, series_df, model_filename, bias,
                                                    label_encoder,last_trading_dict, n_algo_param_dict,
                                                    draw_statistics=False):
@@ -513,6 +517,46 @@ class MLModelAnalyzer():
         result_df[symbol] = result_df["trading_symbol_price"]
 
         return result_df, test_series_df
+
+    def evaluate_trading_performance_last_model_XGBoost(self, symbol_df, symbol, series_df, model_filename, bias,
+                                                        label_encoder, last_trading_dict, n_algo_param_dict,
+                                                        draw_statistics=False):
+        """
+        Generate prediction DataFrame from XGBoost model.
+        Returns:
+            Tuple[pd.DataFrame, pd.DataFrame]: (result_df, test_series_df)
+        """
+        xgb_creator = XGBoostModelCreator()
+
+        classif_threshold = float(n_algo_param_dict.get("classif_threshold", 0.6))
+        make_stationary = n_algo_param_dict.get("make_stationary", True)
+
+        # Merge symbol prices with feature variables
+        test_series_df = pd.merge(symbol_df, series_df, on="date", how="inner")
+        test_series_df["trading_symbol"] = symbol
+        test_series_df = test_series_df.dropna(subset=["date", "trading_symbol"])
+        test_series_df = test_series_df[test_series_df["trading_symbol"] == symbol]
+
+        if len(test_series_df) == 0:
+            raise Exception(f"Empty test set for {symbol} → Check data availability or date range.")
+
+        result_df, _ = xgb_creator.test_XGBoost_scalping(
+            symbol_df=symbol_df,
+            symbol=symbol,
+            features_df=test_series_df,
+            model_filename=model_filename,
+            label_encoder=label_encoder,
+            bias=bias,
+            make_stationary=make_stationary,
+            classif_threshold=classif_threshold,
+            draw_statistics=draw_statistics
+        )
+
+        result_df[symbol] = result_df["close"]
+
+        return result_df, test_series_df
+
+
 
 
 
