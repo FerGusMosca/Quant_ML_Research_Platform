@@ -457,7 +457,6 @@ class AlgosOrchestationLogic:
         pos_df = True if not pos_regime_df.empty else False if not neg_regime_df.empty or reg_df is None else None
 
         ml_analyzer = MLModelAnalyzer(self.logger)
-        label_encoder = ml_analyzer.extract_label_encoder_from_model(model_to_use)
 
         result_df, test_series_df = ml_analyzer.evaluate_trading_performance_last_model_XGBoost(
             symbol_df=symbol_prices_df,
@@ -465,7 +464,6 @@ class AlgosOrchestationLogic:
             series_df=series_df,
             model_filename=model_to_use,
             bias=n_algo_param_dict.get("bias", "LONG"),
-            label_encoder=label_encoder,
             last_trading_dict=None,
             n_algo_param_dict=n_algo_param_dict,
             draw_statistics=draw_predictions

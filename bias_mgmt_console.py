@@ -475,7 +475,7 @@ def process_test_XGBoost_cmd(cmd):
     grouping_classif_criteria = __get_param__(cmd, "grouping_classif_criteria", True, def_value=None)
     group_as_mov_avg = __get_bool_param__(cmd, "group_as_mov_avg", True, def_value=False)
     grouping_mov_avg_unit = __get_param__(cmd, "grouping_mov_avg_unit", True, def_value=100)
-    classif_threshold = float(__get_param__(cmd, "classif_threshold", True, def_value=0.5))
+    lower_percentile_limit = float(__get_param__(cmd, "lower_percentile_limit", True, def_value=0.5))
     make_stationary = __get_bool_param__(cmd, "make_stationary", True, def_value=False)
     n_flip = int(__get_param__(cmd, "n_flip", True, def_value=3))
     bias = __get_param__(cmd, "bias", True, def_value=None)
@@ -494,7 +494,7 @@ def process_test_XGBoost_cmd(cmd):
         "grouping_mov_avg_unit": int(grouping_mov_avg_unit) if grouping_mov_avg_unit is not None else None,
         "make_stationary": make_stationary,
         "n_flip": n_flip,
-        "classif_threshold": classif_threshold,
+        "lower_percentile_limit": lower_percentile_limit,
         "bias": bias,
         "draw_predictions": draw_predictions,
         "pos_regime_filters_csv": pos_regime_filters_csv,

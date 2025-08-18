@@ -519,7 +519,7 @@ class MLModelAnalyzer():
         return result_df, test_series_df
 
     def evaluate_trading_performance_last_model_XGBoost(self, symbol_df, symbol, series_df, model_filename, bias,
-                                                        label_encoder, last_trading_dict, n_algo_param_dict,
+                                                        last_trading_dict, n_algo_param_dict,
                                                         draw_statistics=False):
         """
         Generate prediction DataFrame from XGBoost model.
@@ -528,7 +528,7 @@ class MLModelAnalyzer():
         """
         xgb_creator = XGBoostModelCreator()
 
-        classif_threshold = float(n_algo_param_dict.get("classif_threshold", 0.6))
+        lower_percentile_limit = float(n_algo_param_dict.get("lower_percentile_limit", 0.6))
         make_stationary = n_algo_param_dict.get("make_stationary", True)
 
         # Merge symbol prices with feature variables
@@ -540,17 +540,11 @@ class MLModelAnalyzer():
         if len(test_series_df) == 0:
             raise Exception(f"Empty test set for {symbol} → Check data availability or date range.")
 
-        result_df, _ = xgb_creator.test_XGBoost_scalping(
-            symbol_df=symbol_df,
-            symbol=symbol,
-            features_df=test_series_df,
-            model_filename=model_filename,
-            label_encoder=label_encoder,
-            bias=bias,
-            make_stationary=make_stationary,
-            classif_threshold=classif_threshold,
-            draw_statistics=draw_statistics
-        )
+        result_df, _ = xgb_creator.test_XGBoost_scalping(symbol_df=symbol_df, symbol=symbol, features_df=test_series_df,
+                                                         model_filename=model_filename, bias=bias,
+                                                         draw_statistics=draw_statistics,
+                                                         lower_percentile_limit=lower_percentile_limit,
+                                                         make_stationary=make_stationary)
 
         result_df[symbol] = result_df["close"]
 

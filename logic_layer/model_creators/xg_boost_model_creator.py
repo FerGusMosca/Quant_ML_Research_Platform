@@ -103,7 +103,6 @@ class XGBoostModelCreator(BaseModelCreator):
             prob_long = np.zeros(probs.shape[0])
             LightLogger.do_log("[XGB TEST] WARNING: Missing LONG prob. Defaulting to 0% LONG.")
 
-
     def train_xgboost_daily(
             self,
             training_series_df,
@@ -117,186 +116,81 @@ class XGBoostModelCreator(BaseModelCreator):
             subsample=1.0,
             colsample_bytree=1.0,
             make_stationary=False,
-            class_weight=None,  # kept for API compatibility (not used here)
+            class_weight=None,
     ):
         """
-        Train an XGBoost classifier for daily scalping and persist a version-stable bundle.
-        Post-training probability calibration is applied (Platt/sigmoid).
-        The loader will be updated later to consume the calibrated model.
+        Train a raw XGBoost (multi:softprob) model for daily scalping.  Probabilities are NOT calibrated.
+        The resulting bundle includes: booster, feature list, label_encoder and scaler.
         """
-        try:
-            # 1) Fill gaps and (optionally) make series stationary
-            training_series_df = DataframeFiller.fill_missing_values(training_series_df)
-            if make_stationary:
-                training_series_df = self.__make_stationary__(training_series_df)
+        training_series_df = DataframeFiller.fill_missing_values(training_series_df)
+        if make_stationary:
+            training_series_df = self.__make_stationary__(training_series_df)
 
-            # 2) Any DF-level preformatting you already do
-            self.__preformat_training_set__(training_series_df)
+        self.__preformat_training_set__(training_series_df)
 
-            # 3) Build train/test matrices with the EXACT feature list (order matters)
-            X_train, X_test, y_train, y_test, label_encoder, scaler = self.__get_training_sets__(
-                training_series_df,
-                symbol_col="trading_symbol",
-                date_col="date",
-                classif_key=classif_key,
-                variables_csv=series_csv,
-                test_size=0.2,
-                return_encoder_and_scaler=True,
-            )
+        X_train, X_test, y_train, y_test, label_encoder, scaler = self.__get_training_sets__(
+            training_series_df,
+            symbol_col="trading_symbol",
+            date_col="date",
+            classif_key=classif_key,
+            variables_csv=series_csv,
+            test_size=0.2,
+            return_encoder_and_scaler=True,
+        )
 
-            # Real feature list used by the matrix builder (order preserved)
-            expected_features = series_csv.split(',')
+        expected_features = series_csv.split(',')
 
-            print("Class distribution in y_train:", np.bincount(y_train))
+        model = XGBClassifier(
+            n_estimators=n_estimators,
+            max_depth=max_depth,
+            learning_rate=learning_rate,
+            subsample=subsample,
+            colsample_bytree=colsample_bytree,
+            objective="multi:softprob",
+            num_class=len(np.unique(y_train)),
+            eval_metric="mlogloss",
+            use_label_encoder=False,
+            random_state=42,
+        )
+        model.fit(X_train, y_train)
 
-            # 4) CV folds (only for logging metrics/importance)
-            tscv = TimeSeriesSplit(n_splits=3)
-            val_accuracies, val_f1_scores = [], []
+        # Save booster + metadata
+        booster_n = model.get_booster().num_features()
+        if booster_n != len(expected_features) or booster_n != X_train.shape[1]:
+            raise RuntimeError("Mismatch between features and booster structure")
 
-            for fold, (train_idx, val_idx) in enumerate(tscv.split(X_train)):
-                print(f"\nTraining fold {fold + 1}/{tscv.n_splits}...")
+        self.__save_xgb_model_bundle__(
+            model,
+            expected_features,
+            label_encoder,
+            scaler,
+            model_output
+        )
 
-                X_tr, X_val = X_train[train_idx], X_train[val_idx]
-                y_tr, y_val = y_train[train_idx], y_train[val_idx]
-
-                model = XGBClassifier(
-                    n_estimators=n_estimators,
-                    max_depth=max_depth,
-                    learning_rate=learning_rate,
-                    subsample=subsample,
-                    colsample_bytree=colsample_bytree,
-                    objective="multi:softprob",
-                    num_class=len(np.unique(y_train)),
-                    eval_metric="mlogloss",
-                    use_label_encoder=False,
-                    random_state=42,
-                    verbosity=1,
-                )
-                model.fit(X_tr, y_tr)
-
-                # Log importances against the REAL feature names (not DF column order)
-                importances = model.feature_importances_
-                for name, imp in zip(expected_features, importances):
-                    LightLogger.do_log(f"[XGB TRAIN] Feature importance → {name}: {imp:.5f}")
-
-                y_pred = np.argmax(model.predict_proba(X_val), axis=1)
-                acc = accuracy_score(y_val, y_pred)
-                f1 = f1_score(y_val, y_pred, average='weighted')
-
-                print(f"Fold {fold + 1} - Accuracy: {acc:.4f} - F1 Score: {f1:.4f}")
-                print("Confusion Matrix:\n", confusion_matrix(y_val, y_pred))
-
-                val_accuracies.append(acc)
-                val_f1_scores.append(f1)
-
-            print(f"\nAverage accuracy: {np.mean(val_accuracies):.4f}")
-            print(f"Average F1 Score: {np.mean(val_f1_scores):.4f}")
-
-            # 5) Train the final model on the full training split
-            final_model = XGBClassifier(
-                n_estimators=n_estimators,
-                max_depth=max_depth,
-                learning_rate=learning_rate,
-                subsample=subsample,
-                colsample_bytree=colsample_bytree,
-                objective="multi:softprob",
-                num_class=len(np.unique(y_train)),
-                eval_metric="mlogloss",
-                use_label_encoder=False,
-                random_state=42,
-            )
-            final_model.fit(X_train, y_train)
-
-            print("Unique encoded labels:", np.unique(y_train))
-
-            # 6) Probability calibration (post-training, keeps ranking but fixes scale)
-            # Use Platt (sigmoid). Calibrate on the held-out test split.
-            calib_method = "sigmoid"
-
-            try:
-                # Newer sklearn: CalibratedClassifierCV(estimator=..., cv="prefit")
-                if version.parse(sklearn.__version__) >= version.parse("1.0"):
-                    calibrated_clf = CalibratedClassifierCV(estimator=final_model, method=calib_method, cv="prefit")
-                else:
-                    # Older sklearn used base_estimator
-                    calibrated_clf = CalibratedClassifierCV(base_estimator=final_model, method=calib_method,
-                                                            cv="prefit")
-            except TypeError:
-                # Fallback if version parsing fails but signature is new
-                calibrated_clf = CalibratedClassifierCV(estimator=final_model, method=calib_method, cv="prefit")
-
-            calibrated_clf.fit(X_test, y_test)
-            print(f"[XGB TRAIN] Probabilities calibrated via {calib_method} on hold-out set (n={X_test.shape[0]}).")
-
-            # 7) Sanity checks before saving (prevent future mismatches)
-            booster_n = final_model.get_booster().num_features()
-            if booster_n != len(expected_features) or booster_n != X_train.shape[1]:
-                raise RuntimeError(
-                    f"[SAVE MISMATCH] booster={booster_n}, expected_features={len(expected_features)}, "
-                    f"X_train_cols={X_train.shape[1]}"
-                )
-
-            # 8) Save artifacts using the EXACT feature list used for training (and the calibrator)
-            self.__save_xgb_model_bundle__(
-                final_model,
-                expected_features,  # ✅ exact features (order preserved)
-                label_encoder,
-                scaler,
-                model_output,
-                calibrated_model=calibrated_clf,  # <-- NEW: persist calibrator
-                calibration_method="sigmoid",  # <-- optional meta
-            )
-            print(f"[XGBOOST TRAIN] Saved at base: {Path(model_output).with_suffix('')}")
-            print(f"XGBoost model bundle saved to {model_output}")
-
-            return label_encoder
-
-        except Exception as e:
-            raise Exception(f"Fatal error during XGBoost training: {e}")
+        return label_encoder
 
     def test_XGBoost_scalping(
             self,
             symbol_df,
             symbol,
-            features_df,  # DF with OHLC and raw inputs for feature builder
+            features_df,
             model_filename,
-            label_encoder,
             bias="LONG",
             draw_statistics=False,
             make_stationary=True,
-            classif_threshold=0.6,
+            lower_percentile_limit=0.4,
             debug=False,
     ):
         """
-        Predict scalping signals using a trained XGBoost bundle.
-        Prefers calibrated probabilities when available; otherwise falls back to raw Booster.
-
-        Pipeline:
-          1) Load bundle (booster + feature_cols + encoder + optional calibrated_model).
-          2) Build features EXACTLY as in training (order, names, dtypes).
-          3) Predict probabilities (calibrated if possible).
-          4) Convert probs -> labels robustly (binary vs. multiclass).
-          5) Return result_df + features_ready.
+        Predict scalping signals using a trained (raw) XGBoost booster.
+        The ranking is based on the raw LONG probability.
+        percentile_threshold ∈ (0,1] is interpreted as: "take the top (1 - p)% of prob_long".
+          e.g. 0.4 → top-60%  /  0.8 → top-20%
+        Output: DataFrame with date, close, prob_long and Prediction.
         """
 
-        # --- 1) Load bundle ---
-        _loaded = self.__load_xgb_model_bundle__(model_filename)
-        # Support both new (6-tuple) and old (5-tuple) loaders
-        if len(_loaded) == 6:
-            booster, label_encoder_saved, scaler, feature_cols, calibrated_model, _xgb_params = _loaded
-        else:
-            booster, label_encoder_saved, scaler, feature_cols, _xgb_params = _loaded
-            calibrated_model = None
+        booster, label_encoder, scaler, feature_cols, _xgb_params = self.__load_xgb_model_bundle__(model_filename)
 
-        if debug:
-            print("[DEBUG] booster.num_features() =", booster.num_features())
-            print("[DEBUG] len(feature_cols)      =", len(feature_cols))
-            print("[DEBUG] calibrated_model?      =", calibrated_model is not None)
-
-        # Prefer the label encoder from the bundle
-        label_encoder = label_encoder_saved or label_encoder
-
-        # --- 2) Build features exactly as training expects ---
         features_ready, _ = self.__build_features_for_inference__(
             raw_df=features_df,
             feature_cols=feature_cols,
@@ -305,7 +199,6 @@ class XGBoostModelCreator(BaseModelCreator):
             state=None,
         )
 
-        # Join on 'date' to carry price for output (keeps strict training order for X)
         merged_df = pd.merge(
             features_ready[["date"] + feature_cols],
             symbol_df[["date", "close"]],
@@ -313,85 +206,45 @@ class XGBoostModelCreator(BaseModelCreator):
             how="inner",
         )
 
-        # --- 3) Final matrix for inference (strict column order) ---
         X = merged_df[feature_cols].to_numpy(dtype=np.float32)
 
-        # --- 4) Predict class probabilities ---
-        if calibrated_model is not None:
-            # Use calibrated sklearn wrapper directly on raw features
-            y_probs = calibrated_model.predict_proba(X)  # shape: (n, K)
-            if debug:
-                print("[DEBUG] Using CALIBRATED probabilities.")
-        else:
-            # Fallback to raw Booster probabilities
-            dmat = xgb.DMatrix(X, missing=np.nan, feature_names=feature_cols)
-            y_probs = booster.predict(dmat)  # may be (n,) for binary or (n, K) for multiclass
-            if y_probs.ndim == 1:
-                # Normalize to 2D for binary logistic: column 1 will be the positive class
-                y_probs = np.column_stack([1.0 - y_probs, y_probs])
-            if debug:
-                print("[DEBUG] Using RAW Booster probabilities.")
+        # raw booster probabilities
+        dmat = xgb.DMatrix(X, missing=np.nan, feature_names=feature_cols)
+        y_probs = booster.predict(dmat)
+        if y_probs.ndim == 1:
+            y_probs = np.column_stack([1 - y_probs, y_probs])
 
-        # --- 5) Robust class-index mapping via the encoder ---
-        classes = np.array(getattr(label_encoder, "classes_", []))
-        idx_map = {c: int(np.where(classes == c)[0][0]) for c in classes}  # e.g. {'LONG':1,'SHORT':0,'FLAT':2}
-        long_idx = idx_map.get("LONG")
-        short_idx = idx_map.get("SHORT")
-        flat_idx = idx_map.get("FLAT")
-        n_classes = y_probs.shape[1]
+        classes = np.array(label_encoder.classes_)
+        idx_map = {c: int(np.where(classes == c)[0][0]) for c in classes}
+        long_idx = idx_map["LONG"]
+        short_idx = idx_map["SHORT"]
 
-        # --- 6) Decision rule ---
-        if n_classes >= 3 and flat_idx is not None:
-            # Multiclass: pick argmax; optionally route low-confidence to FLAT
-            conf = y_probs.max(axis=1)
-            y_pred_ids = y_probs.argmax(axis=1)
-            if classif_threshold > 0.0:
-                y_pred_ids = np.where(conf >= classif_threshold, y_pred_ids, flat_idx)
-        else:
-            # Binary: threshold on LONG probability (never assume fixed column order)
-            if long_idx is None or short_idx is None:
-                raise RuntimeError("LabelEncoder must contain LONG and SHORT for binary classification.")
-            prob_long = y_probs[:, long_idx]
-            y_pred_ids = np.where(prob_long >= classif_threshold, long_idx, short_idx)
+        prob_long = y_probs[:, long_idx]
 
-        # Map back to string labels
+        # percentile-based cut
+        cut_value = np.quantile(prob_long, lower_percentile_limit)
+        if debug:
+            print(f"[DEBUG] percentile={lower_percentile_limit:.2f} → cut_value={cut_value:.5f}")
+
+        y_pred_ids = np.where(prob_long >= cut_value, long_idx, short_idx)
         y_class = label_encoder.inverse_transform(y_pred_ids)
 
-        # --- 7) Build result dataframe ---
-        # Align dates to merged_df (the one used for X)
-        dates = pd.to_datetime(merged_df["date"], unit="s")
-        formatted_dates = dates.dt.strftime(_OUTPUT_DATE_FORMAT)  # ensure this constant exists globally
+        dates = pd.to_datetime(merged_df["date"], unit="s").dt.strftime(_OUTPUT_DATE_FORMAT)
 
-        # Probability columns: proba_0..proba_{n_classes-1}
-        proba_cols = {f"proba_{k}": y_probs[:, k] for k in range(n_classes)}
+        result_df = pd.DataFrame({
+            "date": merged_df["date"].values,
+            "formatted_date": dates.values,
+            "close": merged_df["close"].values,
+            "prob_long": prob_long,
+            "Prediction": y_class,
+            "bias": bias,
+        })
 
-        result_df = (
-            pd.DataFrame({
-                "date": merged_df["date"].values,
-                "formatted_date": formatted_dates.values,
-                "Prediction": y_class,
-                "close": merged_df["close"].values,
-                "bias": bias,
-            })
-            .assign(**proba_cols)
-        )
-
-        # --- 8) Optional plots ---
-        if draw_statistics and n_classes > 1 and long_idx is not None:
-            GraphBuilder.plot_long_probability_distributions(y_probs[:, long_idx],
-                                                             threshold=classif_threshold)
-            importances = GraphBuilder.booster_importances_aligned(booster, feature_cols)
-            GraphBuilder.plot_feature_importances_from_values(
-                importances, feature_cols, output_path="out/feature_importance_xgb.png"
-            )
-
-        if debug:
-            print(f"[DEBUG] feature_cols (bundle): {len(feature_cols)}")
-            print(f"[DEBUG] X shape: {X.shape}")
-            uniq, cnt = np.unique(y_class, return_counts=True)
-            print("[DEBUG] preds distrib:", dict(zip(uniq, cnt)))
+        if draw_statistics:
+            GraphBuilder.plot_long_probability_distributions(prob_long, threshold=cut_value)
 
         return result_df, features_ready
+
 
 
 
