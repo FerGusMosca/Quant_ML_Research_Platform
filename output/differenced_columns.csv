@@ -1,8 +1,8 @@
 differenced_columns
-open_QQQ
-high_QQQ
-low_QQQ
-close_QQQ
+open_XLF
+high_XLF
+low_XLF
+close_XLF
 DGS10
 DGS1MO
 DGS2
@@ -12,4 +12,9 @@ DGS6MO
 EFFR
 FEDFUNDS
 M2SL
+OECD_CLI_ARIMA_1_1_1_step_1
+SPR_DGS2_DGS10
+SPR_DGS3MO_DGS10
+SPR_MOVE_VIX
 SPY
+T10YIE

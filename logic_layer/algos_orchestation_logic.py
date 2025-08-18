@@ -280,12 +280,19 @@ class AlgosOrchestationLogic:
         profit_pct = (total_profit / summary.portf_init_MTM) * 100
         drawdown_pct = summary.max_drawdown * 100
 
+        # --- CAGR ---
+        days_diff = (eval_d_to - eval_d_from).days
+        years = days_diff / 365.0
+        cagr = (summary.portf_final_MTM / summary.portf_init_MTM) ** (1 / years) - 1
+        cagr_pct = cagr * 100.0
+
         LightLogger.do_log(
             f"[SUMMARY] Portfolio Positions Breakdown: "
             f"Init={summary.portf_init_MTM:.2f} | "
             f"Final={summary.portf_final_MTM:.2f} | "
             f"Profit={profit_pct:.2f}% | "
-            f"Max. Drawdown={drawdown_pct:.2f}%"
+            f"CAGR={cagr_pct:.2f}% | "
+            f"Max. Drawdown={drawdown_pct:.2f}% | "
         )
 
         for idx, pos in enumerate(portf_positions):
