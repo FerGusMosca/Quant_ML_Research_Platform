@@ -1533,7 +1533,8 @@ def process_backtest_slope_model_logic(symbol,model_candle,d_from,d_to,portf_siz
         trd_algos = AlgosOrchestationLogic(config_settings["hist_data_conn_str"], config_settings["ml_reports_conn_str"],
                                          None, logger)
 
-        trd_algos.process_backtest_slope_model(symbol,model_candle,d_from,d_to,portf_size,trading_algo,algo_params)
+        trd_algos.process_backtest_slope_model(symbol, model_candle, d_from, d_to, portf_size, trading_algo,
+                                               algo_params)
 
         logger.print(f"Slope Model backtest successfully shown for symbol {symbol} from {d_from} to {d_to}",
                      MessageType.INFO)
@@ -1734,7 +1735,8 @@ def process_backtest_slope_model_on_custom_etf_logic(etf_path,model_candle,d_fro
         trd_algos = AlgosOrchestationLogic(config_settings["hist_data_conn_str"], config_settings["ml_reports_conn_str"],
                                          None, logger)
 
-        trd_algos.process_backtest_slope_model_on_custom_etf(etf_path,model_candle,d_from,d_to,portf_size,trading_algo,algo_params)
+        trd_algos.process_backtest_slope_model_on_custom_etf(etf_path, model_candle, d_from, d_to, portf_size,
+                                                             trading_algo, algo_params)
 
         logger.print(f"Slope Model backtest successfully shown for ETF file {etf_path} from {d_from} to {d_to}",
                      MessageType.INFO)

@@ -157,21 +157,34 @@ class AlgosOrchestationLogic:
                 MessageType.INFO)
         self.logger.do_log("--------------------", MessageType.INFO)
 
-
-    def __log_scalping_trading_results__(self,summary_dto):
+    def __log_scalping_trading_results__(self, d_from, d_to, portf_init_size, summary_dto):
 
         max_cum_drawdown_percentage = summary_dto.max_cum_drawdown * 100
+        portf_final_size = summary_dto.daily_net_profit + portf_init_size
+
+        # --- CAGR ---
+        days_diff = (d_to - d_from).days
+        years = days_diff / 365.0
+        cagr = (portf_final_size / portf_init_size) ** (1 / years) - 1
+        cagr_pct = cagr * 100.0
+
         self.logger.do_log(
-            f"Results for algo {summary_dto.algo}: Net_Profit=${summary_dto.daily_net_profit:,.2f} (total positions={summary_dto.total_positions} Max Drawdown ={max_cum_drawdown_percentage:.2f}%)",
-            MessageType.INFO)
+            f"Results for algo {summary_dto.algo}: Net_Profit=${summary_dto.daily_net_profit:,.2f} "
+            f"(total positions={summary_dto.total_positions} Max Drawdown ={max_cum_drawdown_percentage:.2f}% "
+            f"| CAGR={cagr_pct:.2f}%)",
+            MessageType.INFO
+        )
+
         self.logger.do_log("---Summarizing trades---", MessageType.INFO)
-        for index, row in summary_dto.trading_summary_df[summary_dto.trading_summary_df['total_net_profit'].notnull()].iterrows():
+        for index, row in summary_dto.trading_summary_df[
+            summary_dto.trading_summary_df['total_net_profit'].notnull()].iterrows():
             self.logger.do_log(
                 f" Pos: {row['side']} --> open_time={row['open']} close_time={row['close']} "
                 f"open_price=${row['price_open']:,.2f} close_price=${row['price_close']:,.2f} --> "
                 f"net_profit=${row['total_net_profit']:,.2f} ==> Final Portfolio = ${row['end_portfolio']:,.2f}"
                 f" ( Pos. Profit=${row['pct_profit']}  Max. Cum. Drawdown=${row['max_drawdown']})",
-                MessageType.INFO)
+                MessageType.INFO
+            )
 
         self.logger.do_log("--------------------", MessageType.INFO)
 
@@ -1723,7 +1736,7 @@ class AlgosOrchestationLogic:
         return  None
 
 
-    def process_backtest_slope_model(self,symbol,model_candle,d_from,d_to,portf_size,trading_algo,
+    def process_backtest_slope_model(self,symbol,model_candle,d_from,d_to,portf_init_size,trading_algo,
                                      n_algo_params):
         start_of_day = datetime(d_from.year, d_from.month, d_from.day)
         end_of_day = d_to + timedelta(hours=23, minutes=59, seconds=59)
@@ -1747,14 +1760,14 @@ class AlgosOrchestationLogic:
         #4- We drop weekends and holidays
         training_series_df = training_series_df.dropna(subset=[f"close_{symbol}"])
 
-        portf_summary = PortfSummary(symbol, portf_size, p_trade_comm=0,
+        portf_summary = PortfSummary(symbol, portf_init_size, p_trade_comm=0,
                                      p_trading_algo=trading_algo, p_algo_params=n_algo_params)
 
-        summary_dto,portf_positions= self.__backtest_strategy__(training_series_df, model_candle, portf_size, n_algo_params,
-                                                portf_summary=portf_summary)
+        summary_dto,portf_positions= self.__backtest_strategy__(training_series_df, model_candle, portf_init_size, n_algo_params,
+                                                                portf_summary=portf_summary)
 
 
-        self.__log_scalping_trading_results__(summary_dto)
+        self.__log_scalping_trading_results__(d_from, d_to, portf_init_size, summary_dto)
         return summary_dto
 
 
@@ -1953,7 +1966,7 @@ class AlgosOrchestationLogic:
         return  indicators_series_df
 
 
-    def process_backtest_slope_model_on_custom_etf(self,etf_path,model_candle,d_from,d_to,portf_size,trading_algo,
+    def process_backtest_slope_model_on_custom_etf(self,etf_path,model_candle,d_from,d_to,portf_init_size,trading_algo,
                                      n_algo_params):
         start_of_day = datetime(d_from.year, d_from.month, d_from.day)
         end_of_day = d_to + timedelta(hours=23, minutes=59, seconds=59)
@@ -2003,12 +2016,12 @@ class AlgosOrchestationLogic:
 
 
         #6- We run the backtest
-        portf_summary = PortfSummary(symbols_csv, portf_size, p_trade_comm=0,p_trading_algo=trading_algo, p_algo_params=n_algo_params)
-        summ_dto,portf_positions= self.__backtest_strategy__(merged_training_series_df, model_candle, portf_size, n_algo_params,
-                                             portf_summary=portf_summary, etf_comp_dto_arr=etf_comp_dto_arr)
+        portf_summary = PortfSummary(symbols_csv, portf_init_size, p_trade_comm=0, p_trading_algo=trading_algo, p_algo_params=n_algo_params)
+        summ_dto,portf_positions= self.__backtest_strategy__(merged_training_series_df, model_candle, portf_init_size, n_algo_params,
+                                                             portf_summary=portf_summary, etf_comp_dto_arr=etf_comp_dto_arr)
 
 
-        self.__log_scalping_trading_results__(summ_dto)
+        self.__log_scalping_trading_results__(d_from, d_to, portf_init_size, summ_dto)
         return summ_dto,portf_positions
 
 

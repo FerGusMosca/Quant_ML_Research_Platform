@@ -60,8 +60,9 @@ class SimulateIndicatorStrategy(BaseController):
             cmd_param_dict["trade_comm"] = comm
             cmd_param_dict["days_to_add_to_date"]=min_units_to_pred
 
-            summ_dto,portf_positions=aol.process_backtest_slope_model_on_custom_etf(file_path,indicator,dstart_date,dend_date,
-                                                                                    portf_size,trading_algo,cmd_param_dict)
+            summ_dto,portf_positions= aol.process_backtest_slope_model_on_custom_etf(file_path, indicator, dstart_date,
+                                                                                     dend_date, portf_size,
+                                                                                     trading_algo, cmd_param_dict)
 
             detailed_positions_joined=[]
             for portf_pos in portf_positions:
