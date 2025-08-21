@@ -6,6 +6,7 @@ from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from pathlib import Path
 
+from common.enums.intervals import Intervals
 from common.util.std_in_out.csv_reader import CSVReader
 from controllers.base_controller import BaseController
 from framework.common.logger.message_type import MessageType
@@ -56,41 +57,67 @@ class DisplayCustomETFController(BaseController):
             # No moving average requested or invalid input
             self.moving_avg_values = []
 
-    async def upload_custom_etf(self,
-                                file: UploadFile = File(...),
-                                start_date: str = Form(...),
-                                end_date: str = Form(...),
-                                moving_avg: str = Form(None)):
-        """Handles the file upload."""
+    async def upload_custom_etf(
+            self,
+            file: UploadFile = File(...),
+            start_date: str = Form(...),
+            end_date: str = Form(...),
+            moving_avg: str = Form(None),
+            save_as_symbol: str = Form("false"),
+            symbol: str = Form(None),
+            base: float = Form(1.0),
+    ):
+        """Handles the file upload and optional persistence as a symbol."""
         try:
             if not file:
                 raise HTTPException(status_code=400, detail="No file uploaded.")
 
+            self.logger.do_log(f"✅ File received: {file.filename}", MessageType.INFO)
 
-            self.logger.do_log(f"✅ File received: {file.filename}",MessageType.INFO)
+            aol = AlgosOrchestationLogic(
+                self.config_settings["hist_data_conn_str"],
+                self.config_settings["ml_reports_conn_str"],
+                None,
+                self.logger
+            )
 
-            aol = AlgosOrchestationLogic(self.config_settings["hist_data_conn_str"],
-                                         self.config_settings["ml_reports_conn_str"],
-                                         None,self.logger)
-
+            # Read CSV content
             content = await file.read()
             file_content = content.decode("utf-8").splitlines()
             weights_csv = await CSVReader.extract_col_csv_from_content(file_content, 0)
             symbols_csv = await CSVReader.extract_col_csv_from_content(file_content, 1)
+
+            # Parse date range
             dstart_date = datetime.strptime(start_date, "%Y-%m-%d").date()
             dend_date = datetime.strptime(end_date, "%Y-%m-%d").date()
-            self.detailed_MTMS= aol.model_custom_etf(weights_csv,symbols_csv,dstart_date,dend_date)
 
+            # Build detailed MTMs
+            self.detailed_MTMS = aol.model_custom_etf(weights_csv, symbols_csv, dstart_date, dend_date)
+
+            # Calculate moving average (if enabled)
             self.calc_mov_avgs(moving_avg)
 
-            self.logger.do_log( {"message": f"File '{file.filename}' uploaded successfully"},MessageType.INFO)
+            # Optional persistence
+            if str(save_as_symbol).lower() == "true":
+                if not symbol or base is None or float(base) <= 0:
+                    raise HTTPException(status_code=400,
+                                        detail="Symbol and base are required when Save as symbol is checked.")
+                clean_symbol = symbol.strip().upper()
+                aol.persist_custom_etf_series(
+                    symbol=clean_symbol,
+                    base=float(base),
+                    detailed_mtms=self.detailed_MTMS,
+                    interval=Intervals.DAY.value
+                )
+                self.logger.do_log(f"💾 Persisted custom ETF as {clean_symbol} with base={base}", MessageType.INFO)
 
             return {"message": f"File '{file.filename}' uploaded successfully"}
 
         except Exception as e:
             import traceback
             error_message = f"❌ Error processing file: {str(e)}\n{traceback.format_exc()}"
-            self.logger.do_log(error_message,MessageType.ERROR)  # Mostrar error detallado en la terminal
+            self.logger.do_log(error_message, MessageType.ERROR)
             raise HTTPException(status_code=500, detail=error_message)
+
 
 

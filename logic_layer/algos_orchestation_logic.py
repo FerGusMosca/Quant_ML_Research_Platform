@@ -1,9 +1,10 @@
 import os
 import traceback
 from datetime import timedelta, datetime
+from decimal import Decimal
 
 from dateutil.relativedelta import relativedelta
-
+from decimal import Decimal, ROUND_HALF_UP
 from business_entities.porft_summary import PortfSummary
 from common.dto.indicator_type_dto import IndicatorTypeDTO
 from common.enums.filename_prefix import FilenamePrefix
@@ -2057,5 +2058,40 @@ class AlgosOrchestationLogic:
         if len(portf_pos)<=0:
             raise Exception("CRITICAL ERROR building MTMs portfolio! ")
         return portf_pos[0].detailed_MTMS
+
+    def persist_custom_etf_series(self, symbol: str, base: float, detailed_mtms: list, interval: str):
+        """
+        Persist a custom ETF time series into the EconomicSeries database.
+        - Each MTM value is divided by 'base' and rounded to 2 decimals.
+        - Uses EconomicSeriesManager to call stored procedure PersistCandle.
+        """
+        if not detailed_mtms:
+            self.logger.do_log("persist_custom_etf_series: empty detailed_mtms, nothing to persist.",
+                               MessageType.WARNING)
+            return
+
+        if base <= 0:
+            raise ValueError("Base must be > 0")
+
+
+        q = Decimal("0.01")
+        base_dec = Decimal(str(base))
+
+        inserted = 0
+        for dp in detailed_mtms:
+            try:
+                raw = Decimal(str(dp.MTM))
+                scaled = (raw / base_dec).quantize(q, rounding=ROUND_HALF_UP)
+                self.economic_series_mgr.persist_economic_series(
+                    symbol=symbol,
+                    date=dp.date,
+                    interval=interval,
+                    value=float(scaled)
+                )
+                inserted += 1
+            except Exception as ex:
+                self.logger.do_log(f"persist_custom_etf_series: skipped {dp.date} -> {ex}", MessageType.WARNING)
+
+        self.logger.do_log(f"persist_custom_etf_series: persisted {inserted} candles for {symbol}", MessageType.INFO)
 
 

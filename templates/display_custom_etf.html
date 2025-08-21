@@ -5,119 +5,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Custom ETF</title>
-    <style>
+   <style>
+      /* Loader */
+      .loader {
+        border: 3px solid #f3f3f3;
+        border-top: 3px solid #3498db;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        animation: spin 1s linear infinite;
+        display: inline-block;
+        margin-left: 8px;
+      }
+      @keyframes spin { 0%{transform:rotate(0)} 100%{transform:rotate(360deg)} }
 
-        .loader {
-            border: 3px solid #f3f3f3;
-            border-top: 3px solid #3498db;
-            border-radius: 50%;
-            width: 12px;
-            height: 12px;
-            animation: spin 1s linear infinite;
-            display: inline-block;
-            margin-left: 8px;
-        }
+      :root {
+        --bg:#0D1117;
+        --panel:#161B22;
+        --muted:#8b949e;
+        --text:#e6edf3;
+        --accent:#58A6FF;
+        --border:#2d333b;
+        --success:#2ea043;
+      }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
+      * { box-sizing:border-box; }
 
+      body {
+        font-family: Inter, Arial, sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        margin: 28px 0;               /* less vertical margin */
+      }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0D1117;
-            color: #e0e0e0;
-            text-align: center;
-            margin-top: 50px;
-        }
+      h2 {
+        color: var(--accent);
+        margin: 6px 0 14px;           /* tighter heading spacing */
+      }
 
-        h2 {
-            color: #58A6FF;
-        }
+      .upload-container {
+        background: var(--panel);
+        padding: 14px 16px;           /* less padding */
+        border-radius: 14px;
+        box-shadow: 0 6px 24px rgba(0,0,0,.35);
+        width: min(900px, 92%);
+        margin: 0 auto;
+        border: 1px solid var(--border);
+      }
 
-        .upload-container {
-            background: #161B22;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            width: 50%;
-            margin: auto;
-        }
+      /* Two-column grid */
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 14px;              /* tighter gaps */
+        align-items: center;
+      }
 
-        input[type="file"] {
-            margin-top: 10px;
-        }
+      .field { display:flex; align-items:center; gap:10px; }
+      .col-span-2 { grid-column: 1 / -1; }
 
-        button {
-            background: #4CAF50;
-            color: white;
-            font-weight: bold;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
+      label {
+        font-size: .95rem;
+        color: var(--muted);
+        min-width: 132px;
+        text-align: right;
+      }
+      label.switch { min-width:auto; text-align:left; }
 
-        button:hover {
-            background: #45a049;
-        }
+      /* Inputs */
+      input[type="text"],
+      input[type="number"],
+      input[type="date"],
+      input[type="file"] {
+        width: 100%;
+        background:#0f141a;
+        color: var(--text);
+        border:1px solid var(--border);
+        border-radius:10px;
+        padding:7px 9px;             /* smaller padding */
+        outline:none;
+      }
+      input[disabled] { opacity:.6; }
 
-        #upload-status {
-            margin-top: 15px;
-            font-weight: bold;
-        }
+      .helper {
+        font-size:.85rem;
+        color:#ff7b72;
+        margin-left: 142px;
+      }
 
-        /* ✅ Added Chart Section */
-        .chart-container {
-            margin-top: 40px;
-            width: 80%;
-            height: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            border: 1px solid #444;
-            background: #161B22;
-            padding: 15px;
-            border-radius: 10px;
-        }
+      /* Divider section */
+      .section {
+        border-top:1px solid var(--border);
+        padding-top:10px;
+        margin-top:6px;
+      }
+      .section-title {
+        color: var(--muted);
+        font-size:.9rem;
+        letter-spacing:.02em;
+      }
+
+      /* Button */
+      button {
+        background: var(--success);
+        color: #fff;
+        font-weight: 700;
+        border: none;
+        padding: 9px 16px;           /* smaller */
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      button:hover { filter: brightness(1.05); }
+
+      /* Chart panel */
+      .chart-container {
+        margin-top: 16px;            /* closer to form */
+        width: min(1100px, 92%);
+        height: 520px;
+        margin-inline: auto;
+        border: 1px solid var(--border);
+        background: var(--panel);
+        padding: 15px;
+        border-radius: 12px;
+      }
+
+      /* Responsive collapse */
+      @media (max-width: 720px){
+        .form-grid { grid-template-columns: 1fr; }
+        label { min-width: 110px; text-align:left; }
+        .helper { margin-left: 0; }
+      }
     </style>
+
 </head>
 <body>
 
-     <h2>Upload Custom ETF File</h2>
+    <h2>Upload Custom ETF File</h2>
     <div class="upload-container">
-        <form id="uploadForm">
-            <label>Select a CSV file:</label>
-            <input type="file" id="custom_etf_file" name="custom_etf_file" required>
+      <form id="uploadForm" class="form-grid">
 
-            <!-- 📅 Date Selection Fields -->
-            <label for="start_date">Start Date:</label>
-            <input type="date" id="start_date" name="start_date">
+        <!-- File (full row) -->
+        <div class="field col-span-2">
+          <label for="custom_etf_file">Select a CSV file</label>
+          <input type="file" id="custom_etf_file" name="custom_etf_file" required>
+        </div>
 
-            <label for="end_date">End Date:</label>
-            <input type="date" id="end_date" name="end_date">
+        <!-- Dates -->
+        <div class="field">
+          <label for="start_date">Start Date</label>
+          <input type="date" id="start_date" name="start_date">
+        </div>
+        <div class="field">
+          <label for="end_date">End Date</label>
+          <input type="date" id="end_date" name="end_date">
+        </div>
 
-            <br>
+        <!-- Moving average toggle + period -->
+        <div class="field">
+          <label class="switch" for="enable_mavg">
             <input type="checkbox" id="enable_mavg" onchange="toggleMovingAvgInput()">
-            <label for="enable_mavg">Enable Moving Average</label>
+            Enable Moving Average
+          </label>
+        </div>
+        <div class="field">
+          <label for="mavg_period">Mov. Avg. Period</label>
+          <input type="number" id="mavg_period" placeholder="e.g. 200" min="1" disabled>
+        </div>
+        <div class="col-span-2 helper" id="mavg_error" style="display:none;">* Required and must be positive</div>
 
-            <input type="number" id="mavg_period" placeholder="Mov. Avg. Period" min="1" style="margin-left:10px;" disabled>
-            <span id="mavg_error" style="color: red; display: none;">* Required and must be positive</span>
+        <!-- Divider -->
+        <div class="col-span-2 section">
+          <div class="section-title">Save as symbol (optional)</div>
+        </div>
 
+        <!-- Save as symbol switch -->
+        <div class="field">
+          <label class="switch" for="save_as_symbol">
+            <input type="checkbox" id="save_as_symbol" onchange="toggleSaveAsSymbol()">
+            Save as symbol
+          </label>
+        </div>
+        <div></div>
 
-            <button type="button" id="uploadButton" onclick="uploadETF()">Upload</button>
-        </form>
-        <p id="uploadResult"></p> <!-- ✅ Display Upload Results -->
+        <!-- Symbol + Base (auto-hidden) -->
+         <div class="field" id="symbol_row" style="display:none;">
+          <label for="symbol_input">Symbol *</label>
+          <input type="text" id="symbol_input" placeholder="e.g. MY_ETF">
+        </div>
+        <div class="field" id="base_row" style="display:none;">
+          <label for="base_input">Base *</label>
+          <input type="number" id="base_input" step="0.01" min="0.01" value="1">
+        </div>
+        <div class="col-span-2 helper" id="save_symbol_error" style="display:none;">
+          * Symbol required and base must be &gt; 0
+        </div>
+
+        <!-- Submit -->
+        <div class="col-span-2" style="display:flex; gap:12px; justify-content:flex-end; margin-top:6px">
+          <button type="button" id="uploadButton" onclick="uploadETF()">Upload</button>
+        </div>
+      </form>
+
+      <p id="uploadResult" style="margin:10px 0 0; font-weight:600;"></p>
     </div>
 
-    <!-- ✅ Chart Section -->
     <h2>Custom ETF Chart</h2>
-     <!-- ✅ Add this div where you want the chart to appear -->
-    <div id="chartContainer" style="width: 80%; height: 500px; margin: auto;"></div>
+    <div id="chartContainer" class="chart-container"></div>
 
 
     <script>
+
+        function toggleSaveAsSymbol() {
+          const on = document.getElementById("save_as_symbol").checked;
+          const symRow  = document.getElementById("symbol_row");
+          const baseRow = document.getElementById("base_row");
+          const err     = document.getElementById("save_symbol_error");
+          if (symRow && baseRow) {
+            symRow.style.display  = on ? "flex" : "none";
+            baseRow.style.display = on ? "flex" : "none";
+          }
+          if (err) err.style.display = "none";
+        }
+
+        // Ensure initial state is correct on page load
+        document.addEventListener("DOMContentLoaded", () => {
+          toggleSaveAsSymbol();
+        });
 
 
         function toggleMovingAvgInput() {
@@ -173,6 +286,24 @@
             uploadButton.disabled = true;
             uploadButton.innerHTML = 'Uploading... <span class="loader"></span>';
             uploadResult.innerText = ""; // Clear previous message
+
+            // Save as symbol handling
+              const saveAs = document.getElementById("save_as_symbol").checked;
+              formData.append("save_as_symbol", saveAs ? "true" : "false");
+
+              if (saveAs) {
+                const symbol = (document.getElementById("symbol_input").value || "").trim();
+                const base = parseFloat(document.getElementById("base_input").value);
+                if (!symbol || !isFinite(base) || base <= 0) {
+                  document.getElementById("save_symbol_error").style.display = "inline";
+                  return;
+                }
+                formData.append("symbol", symbol);
+                formData.append("base", base.toString());
+              } else {
+                formData.append("symbol", "");
+                formData.append("base", "1");
+              }
 
             fetch("/display_custom_etf/upload_custom_etf", {
                 method: "POST",
