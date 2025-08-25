@@ -1,9 +1,11 @@
+import copy
 from datetime import timedelta
 import os
 from business_entities.detailed_MTM import DetailedMTM
 from common.enums.columns_prefix import ColumnsPrefix
 from common.enums.csv_delimenters import CsvDelimeters
 from common.enums.intervals import Intervals
+from common.util.financial_calculations.date_handler import DateHandler
 from common.util.std_in_out.csv_reader import CSVReader
 from common.util.pandas_dataframes.dataframe_concat import DataframeConcat
 from common.util.financial_calculations.economic_value_handler import EconomicValueHandler
@@ -116,13 +118,39 @@ class DataSetBuilder():
         self.classification_map_values=self.date_range_classification_mgr.get_date_range_classification_values(self.classification_map_key)
         pass
 
-    def fill_dataframe(self,series_df,min_date,max_date,series_data_dict,add_classif_col=True):
+    def _ffill_series_to_max(self,series_data_dict, max_date):
+        """
+        Forward-fill each series in series_data_dict until max_date.
+        It mutates the dict in-place (adds EconomicValue clones).
+        """
+        for key, values in series_data_dict.items():
+            if not values:
+                continue
+
+            # asumimos que values está ordenado por fecha
+            last_ev = values[-1]
+            last_date = last_ev.date
+
+            if last_date >= max_date:
+                continue
+
+            # usamos deepcopy para clonar y cambiar sólo fecha
+            while last_date < max_date:
+                last_date = last_date + timedelta(days=1)
+                ev_copy = copy.copy(last_ev)
+                ev_copy.date = last_date
+                values.append(ev_copy)
+
+            series_data_dict[key] = values
+
+
+    def _fill_dataframe(self,series_df,min_date,max_date,series_data_dict,add_classif_col=True):
         curr_date=min_date
         self.logger.do_log("Building the input dataframe from {} to {}".format(min_date.date(),max_date.date()), MessageType.INFO)
         while curr_date<=max_date:
             curr_date_dict={}
             for key in series_data_dict.keys():
-                series_value=next((x for x in series_data_dict[key] if x.date == curr_date), None)
+                series_value = next((x for x in series_data_dict[key] if DateHandler.std_date(x.date) == DateHandler.std_date(curr_date)), None)
                 if series_value is not None and series_value.close is not None:
                     curr_date_dict[key]=series_value.close
                 else:
@@ -144,7 +172,7 @@ class DataSetBuilder():
         self.logger.do_log("Input dataframe from {} to {} successfully created: {} rows".format(min_date, max_date,len(series_df)), MessageType.INFO)
         return series_df
 
-    def fill_dataframe_from_economic_value_dict(self,series_data_dict,index):
+    def _fill_dataframe_from_economic_value_dict(self,series_data_dict,index):
 
         economic_values=series_data_dict[index]
 
@@ -172,23 +200,6 @@ class DataSetBuilder():
 
         return df
 
-    def preformat_df_rows(self,df, col_prefix=ColumnsPrefix.CLOSE_PREFIX.value,n_algo_params=None):
-        df=self.drop_NaN_for_prefix(df)
-
-        return df
-
-    def drop_NaN_for_prefix(self,df, col_prefix=ColumnsPrefix.CLOSE_PREFIX.value):
-        """
-        Removes rows where all columns starting with a specific prefix (e.g., "close_") are NaN.
-
-        :param df: Input dataframe
-        :param col_prefix: Prefix of columns to check for NaN values
-        :return: Filtered dataframe
-        """
-        # Remove rows where all columns starting with `col_prefix` are NaN
-        df = df.dropna(how='all', subset=[col for col in df.columns if col.startswith(col_prefix)])
-
-        return df
 
     def merge_dataframes(self,df_1, df_2,pivot_col):
         """
@@ -365,7 +376,7 @@ class DataSetBuilder():
 
         min_series_df = self.build_empty_dataframe(series_data_dict)
         for seriesID in series_data_dict.keys():
-            series_df = self.fill_dataframe_from_economic_value_dict(series_data_dict,seriesID)
+            series_df = self._fill_dataframe_from_economic_value_dict(series_data_dict, seriesID)
             min_series_df = pd.concat([min_series_df, series_df], ignore_index=True)
 
             if seriesID in min_series_df.columns:
@@ -385,7 +396,7 @@ class DataSetBuilder():
 
         return min_series_df
 
-    def build_daily_series_classification(self,series_csv,d_from,d_to,add_classif_col=True):
+    def build_daily_series_classification(self,series_csv,d_from,d_to,add_classif_col=True, fill_to_max=False):
         series_list = series_csv.split(",")
 
         series_data_dict = {}
@@ -403,11 +414,14 @@ class DataSetBuilder():
         series_df = self.build_empty_dataframe(series_data_dict)
 
         if add_classif_col:
-
             self.load_classification_map_date_ranges()
 
-        series_df = self.fill_dataframe(series_df, min_date, max_date, series_data_dict,
-                                        add_classif_col=add_classif_col)
+        if fill_to_max:
+            self._ffill_series_to_max(series_data_dict,max_date)
+
+
+        series_df = self._fill_dataframe(series_df, min_date, max_date, series_data_dict,
+                                         add_classif_col=add_classif_col)
 
         return  series_df
 

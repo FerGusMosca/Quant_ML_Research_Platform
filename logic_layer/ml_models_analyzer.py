@@ -14,6 +14,7 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 
 from common.enums.machine_learning_algos import MachineLearningAlgos
+from common.util.financial_calculations.date_handler import DateHandler
 from common.util.pandas_dataframes.dataframe_filler import DataframeFiller
 from common.util.std_in_out.file_writer import FileWriter
 from framework.common.logger.message_type import MessageType
@@ -518,13 +519,13 @@ class MLModelAnalyzer():
 
         return result_df, test_series_df
 
-    def evaluate_trading_performance_last_model_XGBoost(self, symbol_df, symbol, series_df, model_filename, bias,
+    def evaluate_trading_performance_last_model_XGBoost(self, symbol_df, symbol, features_df, model_filename, bias,
                                                         last_trading_dict, n_algo_param_dict,
                                                         draw_statistics=False):
         """
         Generate prediction DataFrame from XGBoost model.
         Returns:
-            Tuple[pd.DataFrame, pd.DataFrame]: (result_df, test_series_df)
+            Tuple[pd.DataFrame, pd.DataFrame]: (result_df, test_features_df)
         """
         xgb_creator = XGBoostModelCreator()
 
@@ -532,15 +533,17 @@ class MLModelAnalyzer():
         make_stationary = n_algo_param_dict.get("make_stationary", True)
 
         # Merge symbol prices with feature variables
-        test_series_df = pd.merge(symbol_df, series_df, on="date", how="inner")
-        test_series_df["trading_symbol"] = symbol
-        test_series_df = test_series_df.dropna(subset=["date", "trading_symbol"])
-        test_series_df = test_series_df[test_series_df["trading_symbol"] == symbol]
+        symbol_df=DateHandler.norm_date(symbol_df,col="date")
+        features_df = DateHandler.norm_date(features_df, col="date")
+        test_features_df = pd.merge(symbol_df, features_df, on="date", how="inner")
+        test_features_df["trading_symbol"] = symbol
+        test_features_df = test_features_df.dropna(subset=["date", "trading_symbol"])
+        test_features_df = test_features_df[test_features_df["trading_symbol"] == symbol]
 
-        if len(test_series_df) == 0:
+        if len(test_features_df) == 0:
             raise Exception(f"Empty test set for {symbol} → Check data availability or date range.")
 
-        result_df, _ = xgb_creator.test_XGBoost_scalping(symbol_df=symbol_df, symbol=symbol, features_df=test_series_df,
+        result_df, _ = xgb_creator.test_XGBoost_scalping(symbol_df=symbol_df, symbol=symbol, features_df=test_features_df,
                                                          model_filename=model_filename, bias=bias,
                                                          draw_statistics=draw_statistics,
                                                          lower_percentile_limit=lower_percentile_limit,
@@ -548,7 +551,7 @@ class MLModelAnalyzer():
 
         result_df[symbol] = result_df["close"]
 
-        return result_df, test_series_df
+        return result_df, test_features_df
 
 
 

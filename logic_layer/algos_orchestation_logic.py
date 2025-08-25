@@ -437,10 +437,10 @@ class AlgosOrchestationLogic:
             output_col=["symbol", "date", "open", "high", "low", "close"]
         )
 
-        series_df = self.data_set_builder.build_daily_series_classification(
-            series_csv, d_from, d_to, add_classif_col=False
+        features_df = self.data_set_builder.build_daily_series_classification(
+            series_csv, d_from, d_to, add_classif_col=False,fill_to_max=True
         )
-        series_df = DataframeFiller.fill_missing_values(series_df)
+        features_df = DataframeFiller.fill_missing_values(features_df)
 
         pos_regime_df = self.data_set_builder.build_interval_series(
             pos_regime_filters_csv, d_from, d_to,
@@ -460,15 +460,9 @@ class AlgosOrchestationLogic:
         ml_analyzer = MLModelAnalyzer(self.logger)
 
         result_df, test_series_df = ml_analyzer.evaluate_trading_performance_last_model_XGBoost(
-            symbol_df=symbol_prices_df,
-            symbol=symbol,
-            series_df=series_df,
-            model_filename=model_to_use,
-            bias=n_algo_param_dict.get("bias", "LONG"),
-            last_trading_dict=None,
-            n_algo_param_dict=n_algo_param_dict,
-            draw_statistics=draw_predictions
-        )
+            symbol_df=symbol_prices_df, symbol=symbol, features_df=features_df, model_filename=model_to_use,
+            bias=n_algo_param_dict.get("bias", "LONG"), last_trading_dict=None, n_algo_param_dict=n_algo_param_dict,
+            draw_statistics=draw_predictions)
 
 
         backtester = NFlipPredictionBacktester()
@@ -1989,7 +1983,7 @@ class AlgosOrchestationLogic:
                                                                           interval=DataSetBuilder._1_DAY_INTERVAL,
                                                                           output_col=["symbol", "date", "open",
                                                                                           "high", "low", "close"])
-        variables_series_df=self.data_set_builder.shift_dates(variables_series_df,n_algo_params)
+        variables_series_df= self.data_set_builder.shift_dates(variables_series_df, n_algo_params)
 
         #4- We merge them
         training_series_df_arr={}

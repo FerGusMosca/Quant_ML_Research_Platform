@@ -1,9 +1,33 @@
 from datetime import datetime
 
-from common.enums.months import Months
+import pandas as pd
 
+from common.enums.months import Months
+from datetime import date, datetime
 
 class DateHandler:
+
+    def std_date(d) -> date:
+        """
+        Standardize any date/time-like object to a datetime.date.
+
+        - If it's a datetime or pandas.Timestamp -> returns d.date().
+        - If it's already a date -> returns it unchanged.
+        - If it has a .date() method -> calls it.
+        - Otherwise returns the object as-is (fallback).
+        """
+        if isinstance(d, datetime):
+            return d.date()
+        if isinstance(d, date):
+            return d
+        if hasattr(d, "date"):  # e.g. pandas.Timestamp
+            return d.date()
+        return d  # fallback
+
+    @staticmethod
+    def norm_date(df, col="date"):
+        df[col] = pd.to_datetime(df[col], errors="coerce").dt.tz_localize(None).dt.normalize()
+        return df
 
     @staticmethod
     def get_two_month_period_from_date(date):
