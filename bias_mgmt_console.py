@@ -63,6 +63,7 @@ def show_commands():
     print("#63-CreateSpreadVariable [diff_indicators] [from*] [to*] [output_symbol]")
     print("#64-CreateSpreadVariableBulk [diff_indicators*] [output_symbols*] [from*]")
     print("#65-DownloadSECSecurities")
+    print("#66-RunReport [report*] [year*]")
     print("==================================================================")
     #TrainNeuralNetworkAlgo
     print("#n-Exit")
@@ -328,6 +329,13 @@ def process_create_spread_variable(cmd):
 def process_download_sec_securities(cmd):
     # No parameters required, always download all securities
     process_download_sec_securities_logic()
+
+def process_run_report(cmd):
+    # Required parameters
+    report_key = __get_param__(cmd, "report")
+    year = __get_param__(cmd, "year", True, None)
+
+    process_run_report_logic(report_key, year)
 
 
 def process_create_spread_variable_bulk(cmd):
@@ -1582,6 +1590,30 @@ def process_create_lightweight_indicator_logic(csv_indicators, d_from, d_to,outp
         print(traceback.format_exc())
         logger.print(f"CRITICAL ERROR running process_create_lightweight_indicator_logic: {str(e)}", MessageType.ERROR)
 
+def process_run_report_logic(report_key, year):
+    logger = Logger()
+
+    try:
+        logger.do_log(f"[REPORT] Starting execution for {report_key}, year={year}", MessageType.INFO)
+
+        loader = MLSettingsLoader()
+        config_settings = loader.load_settings("./configs/commands_mgr.ini")
+
+        trd_algos = AlgosOrchestationLogic(
+            config_settings["hist_data_conn_str"],
+            config_settings["ml_reports_conn_str"],
+            None,
+            logger
+        )
+
+        trd_algos.process_run_report(report_key, year)
+
+        logger.do_log(f"[REPORT] ✅ Report {report_key} completed", MessageType.INFO)
+
+    except Exception as e:
+        print(traceback.format_exc())
+        logger.do_log(f"[REPORT] ❌ Error executing report {report_key} - {str(e)}", MessageType.ERROR)
+
 
 def process_download_sec_securities_logic():
     logger = Logger()
@@ -1900,6 +1932,8 @@ def process_commands(cmd):
         process_create_spread_variable_bulk(cmd)
     elif cmd_param_list[0] == "DownloadSECSecurities":
         process_download_sec_securities(cmd)
+    elif cmd_param_list[0] == "RunReport":
+        process_run_report(cmd)
 
     #
 

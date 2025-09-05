@@ -1,10 +1,14 @@
 import os
+import shutil
 import traceback
 from datetime import timedelta, datetime
 from decimal import Decimal
 
 from dateutil.relativedelta import relativedelta
 from decimal import Decimal, ROUND_HALF_UP
+
+
+
 from business_entities.porft_summary import PortfSummary
 from common.dto.indicator_type_dto import IndicatorTypeDTO
 from common.dto.sec_security_dto import SecSecurityDTO
@@ -14,10 +18,12 @@ from common.enums.grouping_criterias import GroupCriteria as gc
 from common.enums.information_vendors import InformationVendors
 from common.enums.intervals import Intervals
 from common.enums.parameters.parameters_keys import ParametersKeys
+from common.enums.report_type import ReportType
 from common.enums.sliding_window_strategy import SlidingWindowStrategy as sws, SlidingWindowStrategy
 from common.enums.trading_algo_strategy import TradingAlgoStrategy as tas, TradingAlgoStrategy
 from common.util.downloaders.FRED_downloader import FredDownloader
 from common.util.downloaders.SEC_securities_downloader import SECSecuritiesDownloader
+from common.util.downloaders.k10_downloader import K10Downloader
 from common.util.downloaders.tradingview_downloader import TradingViewDownloader
 from common.util.financial_calculations.PCA_calculator import PCACalcualtor
 from common.util.pandas_dataframes.dataframe_filler import DataframeFiller
@@ -33,6 +39,7 @@ from common.util.financial_calculations.random_walk_generator import RandomWalkG
 from common.util.financial_calculations.slope_calculator import SlopeCalculator
 from data_access_layer.date_range_classification_manager import DateRangeClassificationManager
 from data_access_layer.economic_series_manager import EconomicSeriesManager
+from data_access_layer.report_securities_manager import ReportSecuritiesManager
 from data_access_layer.sec_securities_manager import SECSecuritiesManager
 from data_access_layer.timestamp_classification_manager import TimestampClassificationManager
 
@@ -73,6 +80,8 @@ class AlgosOrchestationLogic:
         self.economic_series_mgr = EconomicSeriesManager(hist_data_conn_str)
 
         self.sec_securities_mgr = SECSecuritiesManager(ml_reports_conn_str,logger)
+
+        self.report_securities_mgr = ReportSecuritiesManager(ml_reports_conn_str, logger)
 
 
 
@@ -326,6 +335,34 @@ class AlgosOrchestationLogic:
         summary.update_max_drawdown()
 
         return summary
+
+    def _run_download_k10(self, year):
+        base_path = f"./output/K10/{year}"
+        if os.path.exists(base_path):
+            shutil.rmtree(base_path)
+            self.logger.do_log(f"[REPORT] Removed existing directory {base_path}", MessageType.INFO)
+
+        os.makedirs(base_path, exist_ok=True)
+
+        # ✅ Get securities from reports + reports_securities
+        securities = self.report_securities_mgr.get_report_securities("download_k10")
+
+        self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
+
+        for i, sec in enumerate(securities):
+            symbol = sec.ticker
+            cik=sec.cik
+            try:
+                K10Downloader.download_k10(symbol,cik, year, base_path)
+                self.logger.do_log(
+                    f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded K10 for {symbol}",
+                    MessageType.INFO
+                )
+            except Exception as e:
+                self.logger.do_log(
+                    f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {str(e)}",
+                    MessageType.ERROR
+                )
 
     def __backtest_strategy__(self, series_df,indicator,portf_size,
                                     n_algo_params,portf_summary,
@@ -2067,7 +2104,7 @@ class AlgosOrchestationLogic:
             dtos = []
             for item in json_data:
                 dto = SecSecurityDTO(
-                    cik=item.get("cik"),
+                    cik=item.get("cik_str"),
                     ticker=item.get("ticker"),
                     name=item.get("title"),
                     exchange=item.get("exchange"),
@@ -2121,5 +2158,15 @@ class AlgosOrchestationLogic:
                 self.logger.do_log(f"persist_custom_etf_series: skipped {dp.date} -> {ex}", MessageType.WARNING)
 
         self.logger.do_log(f"persist_custom_etf_series: persisted {inserted} candles for {symbol}", MessageType.INFO)
+
+
+    def process_run_report(self, report_key, year):
+        if report_key.lower() == ReportType.DOWNLOAD_K10.value:
+            self._run_download_k10(year)
+        else:
+            self.logger.do_log(f"[REPORT] Report {report_key} not implemented.", MessageType.WARNING)
+
+
+
 
 
