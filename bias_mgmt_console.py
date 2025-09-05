@@ -22,40 +22,48 @@ last_trading_dict = None
 
 
 def show_commands():
-    print("#0.1-DailyCandlesGraph [Symbol] [date] [interval] [mmov_avg]")
-    print("#0.2-IndicatorCandlesGraph [Symbol] [from] [to] [interval] [mmov_avg]")
-    print("#1-TrainMLAlgos  [SeriesCSV] [from] [to] [classif_key]")
-    print("#2-RunPredictionsLastModel [SeriesCSV] [from] [to] [classif_key]")
-    print("#3-EvalBiasedTradingAlgo [Symbol] [SeriesCSV] [from] [to] [Bias] [classif_key]")
-    print("#4-EvalSlidingBiasedTradingAlgo [Symbol] [SeriesCSV] [from] [to] [init_portf_size] [trade_comm] [sliding_window_years] [sliding_window_months] [classif_key] ")
-    print("#5-EvaluateARIMA [Symbol] [Period] [from] [to]")
-    print("#6-PredictARIMA [Symbol] [p] [d] [q] [from] [to] [Period] [Step]")
-    print("#7-EvalSingleIndicatorAlgo [Symbol] [indicator] [from] [to] [inverted] [classif_key]")
-    print("#8-EvalMLBiasedAlgo [Symbol] [indicator] [SeriesCSV] [from] [to] [inverted] [classif_key]")
-    print("#9-TrainNeuralNetworkAlgo [symbol] [variables_csv] [from] [to] [depth] [learning_rate] [iterations] [model_output] [classif_key]")
-    print("#10-BacktestNeuralNetworkAlgo [symbol] [variables_csv] [from] [to] [model_to_use] [classif_key]")
-    print("#11-TrainLSTM [symbol] [variables_csv] [from] [to] [model_output] [classif_key] [epochs] [timestamps] [# neurons] [learning_rate] [reg_rate] [dropout_rate] [clipping_rate] [threshold_stop] [batch_size*] [inner_activation*] [make_stationary*]")
-    print("#12-TrainLSTMWithGrouping [symbol] [variables_csv] [from] [to] [model_output] [classif_key] [epochs] [timestamps] [# neurons] [learning_rate] [reg_rate] [dropout_rate] [clipping_rate] [threshold_stop] [grouping_unit] [grouping_classif_criteria] [batch_size*] [inner_activation*]")
-    print("#13-TestDailyLSTM [symbol] [variables_csv] [from] [to] [timestemps] [model_to_use] [portf_size] [trade_comm] [trading_algo] [classif_threshold] [algo_params*]")
-    print("#14-TestDailyLSTMWithGrouping [symbol] [variables_csv] [from] [to] [timestemps] [model_to_use] [portf_size] [trade_comm] [trading_algo] [grouping_unit] [algo_params*]")
-    print("#15-BacktestSlopeModel [symbol] [model_candle] [from] [to] [portf_size] [trade_comm] [trading_algo] [algo_params*]")
-    print("#16-BacktestSlopeModelOnCustomETF [ETF_path] [model_candle] [from] [to] [portf_size] [trade_comm] [trading_algo] [algo_params*]")
-    print("#17-CreateSintheticIndicator [comp_path] [model_candle] [from] [to] [slope_units]")
-    print("#18-TrainRF [symbol] [variables_csv] [from] [to] [model_output] [classif_key] [n_estimators] [max_depth] [min_samples_split] [criterion] [batch_size*] [grouping_unit*] [grouping_classif_criteria*] [group_as_mov_avg*] [grouping_mov_avg_unit*] [class_weight*] [make_stationary*] [interval*]")
-    print("#19-TestDailyRF [symbol] [series_csv] [from] [to] [model_to_use] [portf_size] [trade_comm] [trading_algo] [classif_threshold] [algo_params*]")
-    print("#20-EvalSlidingRandomForest [symbol] [series_csv] [from] [to] [classif_key] [init_portf_size] [trade_comm] [classif_threshold] [sliding_window_years] [sliding_window_months]")
-    print("#21-CustomRegimeSwitchDetector [variables] [from] [to] [regime_switch_filter] [regime_candle] [regime_window]")
-    print("#22-DownloadFinancialData [symbol] [from*] [to*] [vendor_params*]")
-    print("#22B-DownloadFinancialDataBulk [symbols] [from*] [to*] [vendor_params*]")
-    print("#23-CreateLightweightIndicator [csv_indicators] [from*] [to*] [benchmark*] [plot_result*]")
-    print("#24-CreateSpreadVariable [diff_indicators] [from*] [to*] [output_symbol]")
-    print("#24B-CreateSpreadVariableBulk [diff_indicators*] [output_symbols*] [from*]")
-    print("#25-TrainXGBoost [symbol] [variables_csv] [from] [to] [model_output] [classif_key] [n_estimators] [max_depth] [learning_rate] [subsample] [colsample_bytree] [batch_size*] [grouping_unit*] [grouping_classif_criteria*] [group_as_mov_avg*] [grouping_mov_avg_unit*] [class_weight*] [make_stationary*] [interval*]")
-    print("#26-TestXGBoost [symbol] [variables_csv] [from] [to] [model_to_use] [price_to_use*] [classif_key*] [normalize*] [make_stationary*] [threshold*]")
+    print("======================== Financial Algos ========================")
+    print("#1-EvalBiasedTradingAlgo [Symbol] [SeriesCSV] [from] [to] [Bias] [classif_key]")
+    print("#2-EvalSlidingBiasedTradingAlgo [Symbol] [SeriesCSV] [from] [to] [init_portf_size] [trade_comm] [sliding_window_years] [sliding_window_months] [classif_key] ")
+    print("#3-EvaluateARIMA [Symbol] [Period] [from] [to]")
+    print("#4-PredictARIMA [Symbol] [p] [d] [q] [from] [to] [Period] [Step]")
+    print("#5-EvalSingleIndicatorAlgo [Symbol] [indicator] [from] [to] [inverted] [classif_key]")
+    print("#6-BacktestSlopeModel [symbol] [model_candle] [from] [to] [portf_size] [trade_comm] [trading_algo] [algo_params*]")
+    print("#7-BacktestSlopeModelOnCustomETF [ETF_path] [model_candle] [from] [to] [portf_size] [trade_comm] [trading_algo] [algo_params*]")
+    print("#8-CreateSintheticIndicator [comp_path] [model_candle] [from] [to] [slope_units]")
+    print("#9-CustomRegimeSwitchDetector [variables] [from] [to] [regime_switch_filter] [regime_candle] [regime_window]")
+    print("==================================================================")
+    print("======================== Machine Learning ========================")
+    print("#20-TrainLSTM [symbol] [variables_csv] [from] [to] [model_output] [classif_key] [epochs] [timestamps] [# neurons] [learning_rate] [reg_rate] [dropout_rate] [clipping_rate] [threshold_stop] [batch_size*] [inner_activation*] [make_stationary*]")
+    print("#21-TrainLSTMWithGrouping [symbol] [variables_csv] [from] [to] [model_output] [classif_key] [epochs] [timestamps] [# neurons] [learning_rate] [reg_rate] [dropout_rate] [clipping_rate] [threshold_stop] [grouping_unit] [grouping_classif_criteria] [batch_size*] [inner_activation*]")
+    print("#22-TestDailyLSTM [symbol] [variables_csv] [from] [to] [timestemps] [model_to_use] [portf_size] [trade_comm] [trading_algo] [classif_threshold] [algo_params*]")
+    print("#23-TestDailyLSTMWithGrouping [symbol] [variables_csv] [from] [to] [timestemps] [model_to_use] [portf_size] [trade_comm] [trading_algo] [grouping_unit] [algo_params*]")
+    print("#24-TrainXGBoost [symbol] [variables_csv] [from] [to] [model_output] [classif_key] [n_estimators] [max_depth] [learning_rate] [subsample] [colsample_bytree] [batch_size*] [grouping_unit*] [grouping_classif_criteria*] [group_as_mov_avg*] [grouping_mov_avg_unit*] [class_weight*] [make_stationary*] [interval*]")
+    print("#25-TestXGBoost [symbol] [variables_csv] [from] [to] [model_to_use] [price_to_use*] [classif_key*] [normalize*] [make_stationary*] [threshold*]")
+    print("#26-EvalMLBiasedAlgo [Symbol] [indicator] [SeriesCSV] [from] [to] [inverted] [classif_key]")
+    print("#27-TrainNeuralNetworkAlgo [symbol] [variables_csv] [from] [to] [depth] [learning_rate] [iterations] [model_output] [classif_key]")
+    print("#28-BacktestNeuralNetworkAlgo [symbol] [variables_csv] [from] [to] [model_to_use] [classif_key]")
+    print("#29-TrainMLAlgos  [SeriesCSV] [from] [to] [classif_key]")
+    print("#30-RunPredictionsLastModel [SeriesCSV] [from] [to] [classif_key]")
+    print("#31-TrainRF [symbol] [variables_csv] [from] [to] [model_output] [classif_key] [n_estimators] [max_depth] [min_samples_split] [criterion] [batch_size*] [grouping_unit*] [grouping_classif_criteria*] [group_as_mov_avg*] [grouping_mov_avg_unit*] [class_weight*] [make_stationary*] [interval*]")
+    print("#32-TestDailyRF [symbol] [series_csv] [from] [to] [model_to_use] [portf_size] [trade_comm] [trading_algo] [classif_threshold] [algo_params*]")
+    print("#33-EvalSlidingRandomForest [symbol] [series_csv] [from] [to] [classif_key] [init_portf_size] [trade_comm] [classif_threshold] [sliding_window_years] [sliding_window_months]")
 
+    print("==================================================================")
     print("======================== UI ========================")
-    print("#30-BiasMainLandingPage")
-    print("#31-DisplayOrderRoutingScreen")
+    print("#40-BiasMainLandingPage")
+    print("#41-DisplayOrderRoutingScreen")
+    print("#42-DailyCandlesGraph [Symbol] [date] [interval] [mmov_avg]")
+    print("#43-IndicatorCandlesGraph [Symbol] [from] [to] [interval] [mmov_avg]")
+    print("==================================================================")
+    print("======================== Financial Reports ========================")
+    print("#60-DownloadFinancialData [symbol] [from*] [to*] [vendor_params*]")
+    print("#61-DownloadFinancialDataBulk [symbols] [from*] [to*] [vendor_params*]")
+    print("#62-CreateLightweightIndicator [csv_indicators] [from*] [to*] [benchmark*] [plot_result*]")
+    print("#63-CreateSpreadVariable [diff_indicators] [from*] [to*] [output_symbol]")
+    print("#64-CreateSpreadVariableBulk [diff_indicators*] [output_symbols*] [from*]")
+    print("#65-DownloadSECSecurities")
+    print("==================================================================")
     #TrainNeuralNetworkAlgo
     print("#n-Exit")
 
@@ -316,6 +324,10 @@ def process_create_spread_variable(cmd):
 
     # Run core logic
     process_create_spread_variable_logic(diff_indicators=diff_indicators, d_from=d_from, d_to=d_to,output_symbol=output_symbol)
+
+def process_download_sec_securities(cmd):
+    # No parameters required, always download all securities
+    process_download_sec_securities_logic()
 
 
 def process_create_spread_variable_bulk(cmd):
@@ -1570,6 +1582,35 @@ def process_create_lightweight_indicator_logic(csv_indicators, d_from, d_to,outp
         print(traceback.format_exc())
         logger.print(f"CRITICAL ERROR running process_create_lightweight_indicator_logic: {str(e)}", MessageType.ERROR)
 
+
+def process_download_sec_securities_logic():
+    logger = Logger()
+
+    try:
+        logger.print("[SEC] Starting SEC securities download", MessageType.INFO)
+
+        # Load configuration
+        loader = MLSettingsLoader()
+        config_settings = loader.load_settings("./configs/commands_mgr.ini")
+
+        # Instantiate orchestration logic
+        trd_algos = AlgosOrchestationLogic(
+            config_settings["hist_data_conn_str"],
+            config_settings["ml_reports_conn_str"],
+            None,
+            logger
+        )
+
+        # Execute the process
+        trd_algos.process_download_sec_securities()
+
+        logger.print("[SEC] ✅ SEC Securities successfully downloaded and persisted", MessageType.INFO)
+
+    except Exception as e:
+        print(traceback.format_exc())
+        logger.print(f"[SEC] ❌ Critical error downloading SEC securities: {str(e)}", MessageType.ERROR)
+
+
 def process_create_spread_variable_bulk_logic(diff_indicators, output_symbols, d_from, d_to=None):
     logger = Logger()
 
@@ -1592,7 +1633,7 @@ def process_create_spread_variable_bulk_logic(diff_indicators, output_symbols, d
             print(traceback.format_exc())
             logger.print(f"[BULK][SPREAD][{i+1}] ❌ Failed to create spread {output_symbol}: {str(e)}", MessageType.ERROR)
 
-    logger.print(f"[BULK][SPREAD] ✅ Bulk spread creation complete", MessageType.SUCCESS)
+    logger.print(f"[BULK][SPREAD] ✅ Bulk spread creation complete", MessageType.INFO)
 
 
 def process_create_spread_variable_logic(diff_indicators, d_from, d_to,output_symbol):
@@ -1857,6 +1898,10 @@ def process_commands(cmd):
         process_create_spread_variable(cmd)
     elif cmd_param_list[0] == "CreateSpreadVariableBulk":
         process_create_spread_variable_bulk(cmd)
+    elif cmd_param_list[0] == "DownloadSECSecurities":
+        process_download_sec_securities(cmd)
+
+    #
 
     #TestDailyLSTM
 

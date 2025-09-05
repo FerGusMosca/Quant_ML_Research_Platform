@@ -7,6 +7,7 @@ from dateutil.relativedelta import relativedelta
 from decimal import Decimal, ROUND_HALF_UP
 from business_entities.porft_summary import PortfSummary
 from common.dto.indicator_type_dto import IndicatorTypeDTO
+from common.dto.sec_security_dto import SecSecurityDTO
 from common.enums.filename_prefix import FilenamePrefix
 from common.enums.folders import Folders
 from common.enums.grouping_criterias import GroupCriteria as gc
@@ -16,6 +17,7 @@ from common.enums.parameters.parameters_keys import ParametersKeys
 from common.enums.sliding_window_strategy import SlidingWindowStrategy as sws, SlidingWindowStrategy
 from common.enums.trading_algo_strategy import TradingAlgoStrategy as tas, TradingAlgoStrategy
 from common.util.downloaders.FRED_downloader import FredDownloader
+from common.util.downloaders.SEC_securities_downloader import SECSecuritiesDownloader
 from common.util.downloaders.tradingview_downloader import TradingViewDownloader
 from common.util.financial_calculations.PCA_calculator import PCACalcualtor
 from common.util.pandas_dataframes.dataframe_filler import DataframeFiller
@@ -31,6 +33,7 @@ from common.util.financial_calculations.random_walk_generator import RandomWalkG
 from common.util.financial_calculations.slope_calculator import SlopeCalculator
 from data_access_layer.date_range_classification_manager import DateRangeClassificationManager
 from data_access_layer.economic_series_manager import EconomicSeriesManager
+from data_access_layer.sec_securities_manager import SECSecuritiesManager
 from data_access_layer.timestamp_classification_manager import TimestampClassificationManager
 
 from framework.common.logger.message_type import MessageType
@@ -68,6 +71,9 @@ class AlgosOrchestationLogic:
         self.timestamp_range_classif_mgr=TimestampClassificationManager(ml_reports_conn_str)
 
         self.economic_series_mgr = EconomicSeriesManager(hist_data_conn_str)
+
+        self.sec_securities_mgr = SECSecuritiesManager(ml_reports_conn_str,logger)
+
 
 
     def __classify_group__(self,classifications, grouping_classif_criteria):
@@ -2052,6 +2058,34 @@ class AlgosOrchestationLogic:
         if len(portf_pos)<=0:
             raise Exception("CRITICAL ERROR building MTMs portfolio! ")
         return portf_pos[0].detailed_MTMS
+
+    def process_download_sec_securities(self):
+        try:
+            # Download all securities from SEC API (or local JSON)
+            json_data = SECSecuritiesDownloader.download_security_list_from_edgar()
+
+            dtos = []
+            for item in json_data:
+                dto = SecSecurityDTO(
+                    cik=item.get("cik"),
+                    ticker=item.get("ticker"),
+                    name=item.get("title"),
+                    exchange=item.get("exchange"),
+                    category=item.get("category"),
+                    sic=item.get("sic"),
+                    entityType=item.get("entityType")
+                )
+                dtos.append(dto)
+
+            self.sec_securities_mgr.persist_bulk(dtos)
+
+            self.logger.do_log(f"process_download_sec_securities: ✅ Persisted {len(dtos)} SEC securities",
+                               MessageType.INFO)
+
+        except Exception as e:
+            print(traceback.format_exc())
+            self.logger.do_log(f"process_download_sec_securities: ❌ Error persisting SEC securities - {str(e)}",
+                               MessageType.ERROR)
 
     def persist_custom_etf_series(self, symbol: str, base: float, detailed_mtms: list, interval: str):
         """
