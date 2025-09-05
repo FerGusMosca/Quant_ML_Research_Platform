@@ -1,0 +1,366 @@
+{
+  "symbol": "NVDA",
+  "year": 2024,
+  "competition_summary": [
+    {
+      "competitor": "the \u201cBig Bang",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "GPU",
+      "mentions": 5,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "SoC",
+      "mentions": 3,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Mellanox",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "DPU",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "CUDA",
+      "mentions": 5,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Omniverse",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "CPU",
+      "mentions": 2,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Grace",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "AI",
+      "mentions": 10,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "The Compute & Networking",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Data Center",
+      "mentions": 4,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Quantum",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "InfiniBand",
+      "mentions": 3,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "NVIDIA AI Enterprise",
+      "mentions": 2,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "GeForce",
+      "mentions": 6,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Quadro/NVIDIA",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Omniverse Enterprise",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "3D",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Professional Visualization",
+      "mentions": 4,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "HPC",
+      "mentions": 2,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "DLSS",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "GeForce GTX",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Digital",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Omniverse\u2019s 3D",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "AV",
+      "mentions": 4,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "the NVIDIA DRIVE Hyperion",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "NVIDIA Omniverse",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Business Strategies NVIDIA\u2019s",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "CSP",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Deep Learning Institute",
+      "mentions": 2,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "ACE",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "EV",
+      "mentions": 3,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "DRIVE",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "7 Table of Contents",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "IP",
+      "mentions": 6,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "LLM",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "the International Organization for Standardization",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Taiwan Semiconductor Manufacturing Company Limited",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "TSMC",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Samsung Electronics Co., Ltd.",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Samsung",
+      "mentions": 3,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Micron Technology, Inc.",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "SK Hynix Inc.",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Hon Hai Precision Industry Co., Ltd.",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Wistron Corporation",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Fibre Channel",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Advanced Micro Devices, Inc.",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "AMD",
+      "mentions": 3,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Huawei Technologies Co. Ltd.",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Huawei",
+      "mentions": 4,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Intel Corporation",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Intel",
+      "mentions": 3,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Alibaba Group",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Alphabet Inc.",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Amazon, Inc.",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Amazon",
+      "mentions": 2,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Baidu, Inc.",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Microsoft Corporation",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Microsoft",
+      "mentions": 2,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Ambarella, Inc.",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Broadcom Inc.",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Broadcom",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Qualcomm Incorporated",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Renesas Electronics Corporation",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Tesla, Inc.",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Arista Networks",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Broadcom, Cisco Systems",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Hewlett Packard Enterprise Company",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Lumentum Holdings",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "Marvell Technology Group",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    },
+    {
+      "competitor": "9 Table of Contents Government",
+      "mentions": 1,
+      "context": "competition, marking the \u201cBig Bang\u201d moment of AI. We introduced our first Tensor Core GPU in 2017, built from the ground-up for the new era of AI, and our first autonomous driving system-on-chips, or SoC, in 2018. Our acquisition of Mellanox in 2020 expanded our innovation canvas to include networking and led to the introduction of a new processor class \u2013 the data processing unit, or DPU. Over the past 5 years, we have built full software stacks that run on top of our GPUs and CUDA to bring AI t"
+    }
+  ]
+}

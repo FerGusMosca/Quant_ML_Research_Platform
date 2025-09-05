@@ -1,0 +1,336 @@
+{
+  "symbol": "MSFT",
+  "year": 2024,
+  "competition_summary": [
+    {
+      "competitor": "Apple",
+      "mentions": 5,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Cisco Systems",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Google",
+      "mentions": 6,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Meta",
+      "mentions": 4,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Oracle, Salesforce",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "SAP, Service Now",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "WorkDay",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "SQL Server",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Client Access Licenses",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Enterprise Support Services",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Microsoft Partner Network",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Server Products",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "GitHub",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Partner Services Enterprise",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Partner Services",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Microsoft",
+      "mentions": 17,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Amazon",
+      "mentions": 3,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "IBM",
+      "mentions": 8,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Oracle",
+      "mentions": 6,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "AI",
+      "mentions": 4,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Palo Alto Networks",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Hewlett-Packard",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Broadcom",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "PHP",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "SAP",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "BMC",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Adobe",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Surface",
+      "mentions": 3,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Xbox",
+      "mentions": 9,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Copilot",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Microsoft News",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Microsoft Edge",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Windows",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "OEM",
+      "mentions": 3,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "\u2022 Constraints",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Microsoft Defender for Endpoint",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Microsoft 365",
+      "mentions": 2,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Windows IoT",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Xbox Game Pass",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Yahoo",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "CrowdStrike",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Tencent",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Nintendo",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Sony",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Product and Service Development",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "ERP",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Microsoft Teams",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Bing, Copilot",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Start/MSN",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "\u2022 Microsoft Security",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Microsoft Research",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Office",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Microsoft 365 Consumer",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Dell, Hewlett-Packard",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Lenovo",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "ESA",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Microsoft Experience Centers",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Resellers Organizations",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "LSP",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Software Assurance",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "SA",
+      "mentions": 5,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Microsoft Online Subscription Agreement Microsoft Online Subscription Agreements",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Microsoft Products and Services Agreement Microsoft Products and Services Agreements",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Select Plus A Select Plus",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "Microsoft Services Provider License Agreement",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    },
+    {
+      "competitor": "The Independent Software",
+      "mentions": 1,
+      "context": "Competition Competitors to Office include software and global application vendors, such as Apple, Cisco Systems, Google, Meta, Proofpoint, Slack, Symantec, Zoom, and numerous web-based and mobile application competitors as well as local application developers. Apple distributes versions of its pre-installed application software, such as email and calendar products, through its PCs, tablets, and phones. Cisco Systems is using its position in enterprise communications equipment to grow its unified"
+    }
+  ]
+}

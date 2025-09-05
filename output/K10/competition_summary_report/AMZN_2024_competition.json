@@ -1,0 +1,41 @@
+{
+  "symbol": "AMZN",
+  "year": 2024,
+  "competition_summary": [
+    {
+      "competitor": "JP 2022-01-01 2022-12-31 0001018724",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember us-gaap:PendingLitigationMember 2021-12-31 0001018724 amzn:March2022ShareRepurchaseProgramMember 2022-03-31 0001018724 amzn:February2016ProgramMember 2016-02-29 0001018724 srt:MinimumMember 2023-01-01 2023-12-31 0001018724 srt:MaximumMember 2023-01-01 2023-12-31 0001018724 us-gaap:CostOfSalesMember 2021-01-01 2021-12-31 0001018724 us-gaap:CostOfSalesMember 2022-01-01 2022-12-31 0001018724 us-gaap:CostOfSalesMember 2023-01-01 2023-12-31 0001018724 amzn:Fulfillment"
+    },
+    {
+      "competitor": "THE SECURITIES EXCHANGE ACT",
+      "mentions": 2,
+      "context": "CompetitionAuthorityMatterMember us-gaap:PendingLitigationMember 2021-12-31 0001018724 amzn:March2022ShareRepurchaseProgramMember 2022-03-31 0001018724 amzn:February2016ProgramMember 2016-02-29 0001018724 srt:MinimumMember 2023-01-01 2023-12-31 0001018724 srt:MaximumMember 2023-01-01 2023-12-31 0001018724 us-gaap:CostOfSalesMember 2021-01-01 2021-12-31 0001018724 us-gaap:CostOfSalesMember 2022-01-01 2022-12-31 0001018724 us-gaap:CostOfSalesMember 2023-01-01 2023-12-31 0001018724 amzn:Fulfillment"
+    },
+    {
+      "competitor": "Commission File No.",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember us-gaap:PendingLitigationMember 2021-12-31 0001018724 amzn:March2022ShareRepurchaseProgramMember 2022-03-31 0001018724 amzn:February2016ProgramMember 2016-02-29 0001018724 srt:MinimumMember 2023-01-01 2023-12-31 0001018724 srt:MaximumMember 2023-01-01 2023-12-31 0001018724 us-gaap:CostOfSalesMember 2021-01-01 2021-12-31 0001018724 us-gaap:CostOfSalesMember 2022-01-01 2022-12-31 0001018724 us-gaap:CostOfSalesMember 2023-01-01 2023-12-31 0001018724 amzn:Fulfillment"
+    },
+    {
+      "competitor": "AMAZON.COM, INC.",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember us-gaap:PendingLitigationMember 2021-12-31 0001018724 amzn:March2022ShareRepurchaseProgramMember 2022-03-31 0001018724 amzn:February2016ProgramMember 2016-02-29 0001018724 srt:MinimumMember 2023-01-01 2023-12-31 0001018724 srt:MaximumMember 2023-01-01 2023-12-31 0001018724 us-gaap:CostOfSalesMember 2021-01-01 2021-12-31 0001018724 us-gaap:CostOfSalesMember 2022-01-01 2022-12-31 0001018724 us-gaap:CostOfSalesMember 2023-01-01 2023-12-31 0001018724 amzn:Fulfillment"
+    },
+    {
+      "competitor": "Each Exchange on Which Registered Common Stock",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember us-gaap:PendingLitigationMember 2021-12-31 0001018724 amzn:March2022ShareRepurchaseProgramMember 2022-03-31 0001018724 amzn:February2016ProgramMember 2016-02-29 0001018724 srt:MinimumMember 2023-01-01 2023-12-31 0001018724 srt:MaximumMember 2023-01-01 2023-12-31 0001018724 us-gaap:CostOfSalesMember 2021-01-01 2021-12-31 0001018724 us-gaap:CostOfSalesMember 2022-01-01 2022-12-31 0001018724 us-gaap:CostOfSalesMember 2023-01-01 2023-12-31 0001018724 amzn:Fulfillment"
+    },
+    {
+      "competitor": "the Securities Exchange Act",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember us-gaap:PendingLitigationMember 2021-12-31 0001018724 amzn:March2022ShareRepurchaseProgramMember 2022-03-31 0001018724 amzn:February2016ProgramMember 2016-02-29 0001018724 srt:MinimumMember 2023-01-01 2023-12-31 0001018724 srt:MaximumMember 2023-01-01 2023-12-31 0001018724 us-gaap:CostOfSalesMember 2021-01-01 2021-12-31 0001018724 us-gaap:CostOfSalesMember 2022-01-01 2022-12-31 0001018724 us-gaap:CostOfSalesMember 2023-01-01 2023-12-31 0001018724 amzn:Fulfillment"
+    },
+    {
+      "competitor": "Interactive Data File",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember us-gaap:PendingLitigationMember 2021-12-31 0001018724 amzn:March2022ShareRepurchaseProgramMember 2022-03-31 0001018724 amzn:February2016ProgramMember 2016-02-29 0001018724 srt:MinimumMember 2023-01-01 2023-12-31 0001018724 srt:MaximumMember 2023-01-01 2023-12-31 0001018724 us-gaap:CostOfSalesMember 2021-01-01 2021-12-31 0001018724 us-gaap:CostOfSalesMember 2022-01-01 2022-12-31 0001018724 us-gaap:CostOfSalesMember 2023-01-01 2023-12-31 0001018724 amzn:Fulfillment"
+    }
+  ]
+}

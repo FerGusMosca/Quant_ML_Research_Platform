@@ -49,6 +49,7 @@ from logic_layer.convolutional_neural_netowrk import ConvolutionalNeuralNetwork
 from logic_layer.indicator_algos.sintethic_indicator_creator import SintheticIndicatorCreator
 from logic_layer.model_creators.random_forest_model_creator import RandomForestModelCreator
 from logic_layer.model_creators.xg_boost_model_creator import XGBoostModelCreator
+from logic_layer.report_generators.competition_summary_report import CompetitionSummaryReport
 from logic_layer.trading_algos.buy_and_hold_backtester import BuyAndHoldBacktester
 from logic_layer.trading_algos.direct_slope_backtester import DirectSlopeBacktester
 from logic_layer.trading_algos.inv_slope_backtester import InvSlopeBacktester
@@ -335,6 +336,15 @@ class AlgosOrchestationLogic:
         summary.update_max_drawdown()
 
         return summary
+
+    def _run_competition_summary_report(self, year):
+
+
+        report = CompetitionSummaryReport(
+            year=year,
+            logger=self.logger
+        )
+        report.run()
 
     def _run_download_k10(self, year):
         base_path = f"./output/K10/{year}"
@@ -2159,12 +2169,15 @@ class AlgosOrchestationLogic:
 
         self.logger.do_log(f"persist_custom_etf_series: persisted {inserted} candles for {symbol}", MessageType.INFO)
 
-
     def process_run_report(self, report_key, year):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year)
+        elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT.value:
+            self._run_competition_summary_report(year)
         else:
             self.logger.do_log(f"[REPORT] Report {report_key} not implemented.", MessageType.WARNING)
+
+
 
 
 
