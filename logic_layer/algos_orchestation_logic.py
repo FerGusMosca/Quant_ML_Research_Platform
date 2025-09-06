@@ -550,7 +550,7 @@ class AlgosOrchestationLogic:
 
         ml_analyzer = MLModelAnalyzer(self.logger)
 
-        result_df, test_series_df = ml_analyzer.evaluate_trading_performance_last_model_XGBoost(
+        preds_df, test_features_df = ml_analyzer.evaluate_trading_performance_last_model_XGBoost(
             symbol_df=symbol_prices_df, symbol=symbol, features_df=features_df, model_filename=model_to_use,
             bias=n_algo_param_dict.get("bias", "LONG"), last_trading_dict=None, n_algo_param_dict=n_algo_param_dict,
             draw_statistics=draw_predictions)
@@ -559,8 +559,8 @@ class AlgosOrchestationLogic:
         backtester = NFlipPredictionBacktester()
         portf_pos_dict = backtester.backtest(
             symbol=symbol,
-            symbol_prices_df=result_df,
-            predictions_dic={"DAILY_XGB": result_df},
+            symbol_prices_df=preds_df,
+            predictions_dic={"DAILY_XGB": preds_df},
             last_trading_dict=None,
             n_algo_param_dict=n_algo_param_dict,
             init_last_portf_size_dict={"DAILY_XGB": init_portf_size},
