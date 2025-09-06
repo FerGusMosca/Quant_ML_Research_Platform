@@ -50,6 +50,7 @@ from logic_layer.indicator_algos.sintethic_indicator_creator import SintheticInd
 from logic_layer.model_creators.random_forest_model_creator import RandomForestModelCreator
 from logic_layer.model_creators.xg_boost_model_creator import XGBoostModelCreator
 from logic_layer.report_generators.competition_summary_report import CompetitionSummaryReport
+from logic_layer.report_generators.sentence_sentiment_summary_report import SentimentSummaryReport
 from logic_layer.trading_algos.buy_and_hold_backtester import BuyAndHoldBacktester
 from logic_layer.trading_algos.direct_slope_backtester import DirectSlopeBacktester
 from logic_layer.trading_algos.inv_slope_backtester import InvSlopeBacktester
@@ -336,6 +337,43 @@ class AlgosOrchestationLogic:
         summary.update_max_drawdown()
 
         return summary
+
+    def _get_universe_filers(self, universe_key: str):
+        if not universe_key:
+            return None
+        dtos = self.report_securities_mgr.get_report_securities(universe_key)
+        return sorted({(d.ticker or "").upper() for d in dtos if d.ticker})
+
+    def _run_sentiment_summary_report(self, year, universe=None):
+        """
+        Build sentiment summaries focused on management guidance/opinion.
+        Extract MD&A / Outlook-like text, score sentiment, and consolidate.
+        """
+        # Universe → list of tickers (or None)
+        whitelist = self._get_universe_filers(universe) if universe else None
+
+        # Instantiate the processor. We pass 'universe_key' so the class
+        # itself decides its output folder (…/sentiment_summary_report[/<universe>])
+        gen = SentimentSummaryReport(
+            year=year,
+            logger=self.logger,
+            filers_whitelist=whitelist,
+            universe_key=universe  # ← opcional; None = ALL
+        )
+        gen.run()
+
+        # Consolidate & rank using the generator's own output_dir
+        out_dir = gen.output_dir
+        consolidated = os.path.join(out_dir, f"sentiment_summary_all_{year}.json")
+        ranking_csv = os.path.join(out_dir, f"sentiment_summary_ranking_{year}.csv")
+
+        SentimentSummaryReport.consolidate(out_dir, consolidated, self.logger)
+        SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
+
+        self.logger.do_log(
+            f"[SENT] ✅ Sentiment summary completed (scope={universe or 'ALL'})",
+            MessageType.INFO
+        )
 
     def _run_competition_summary_report(self, year):
 
@@ -2174,6 +2212,8 @@ class AlgosOrchestationLogic:
             self._run_download_k10(year)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT.value:
             self._run_competition_summary_report(year)
+        elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT.value:
+            self._run_sentiment_summary_report(year, None)
         else:
             self.logger.do_log(f"[REPORT] Report {report_key} not implemented.", MessageType.WARNING)
 

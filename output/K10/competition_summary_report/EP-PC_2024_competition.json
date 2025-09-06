@@ -1,0 +1,26 @@
+{
+  "symbol": "EP-PC",
+  "year": 2024,
+  "competition_summary": [
+    {
+      "competitor": "FERC",
+      "mentions": 1,
+      "context": "competition from other pipelines, terminals or other forms of transportation, or from emerging technologies such as CO 2 capture and sequestration; \u2022 changes in our tariff rates required by the FERC, the CPUC or another regulatory agency; \u2022 the timing and success of our commercial and business development efforts, including our ability to renew long-term customer contracts at economically attractive rates; \u2022 our ability to safely operate and maintain our existing assets and to access or construc"
+    },
+    {
+      "competitor": "CPUC",
+      "mentions": 1,
+      "context": "competition from other pipelines, terminals or other forms of transportation, or from emerging technologies such as CO 2 capture and sequestration; \u2022 changes in our tariff rates required by the FERC, the CPUC or another regulatory agency; \u2022 the timing and success of our commercial and business development efforts, including our ability to renew long-term customer contracts at economically attractive rates; \u2022 our ability to safely operate and maintain our existing assets and to access or construc"
+    },
+    {
+      "competitor": "NGL",
+      "mentions": 2,
+      "context": "competition from other pipelines, terminals or other forms of transportation, or from emerging technologies such as CO 2 capture and sequestration; \u2022 changes in our tariff rates required by the FERC, the CPUC or another regulatory agency; \u2022 the timing and success of our commercial and business development efforts, including our ability to renew long-term customer contracts at economically attractive rates; \u2022 our ability to safely operate and maintain our existing assets and to access or construc"
+    },
+    {
+      "competitor": "LNG",
+      "mentions": 1,
+      "context": "competition from other pipelines, terminals or other forms of transportation, or from emerging technologies such as CO 2 capture and sequestration; \u2022 changes in our tariff rates required by the FERC, the CPUC or another regulatory agency; \u2022 the timing and success of our commercial and business development efforts, including our ability to renew long-term customer contracts at economically attractive rates; \u2022 our ability to safely operate and maintain our existing assets and to access or construc"
+    }
+  ]
+}

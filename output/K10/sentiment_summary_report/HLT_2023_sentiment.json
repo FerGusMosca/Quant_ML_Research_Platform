@@ -1,0 +1,45 @@
+{
+  "symbol": "HLT",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2253,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.191
+  },
+  "top_positive": [
+    {
+      "sent": "Plan International Plans 2022 2021 2022 2021 2022 2021 (in millions) Change in projected benefit obligation Benefit obligation at beginning of year $ 370 $ 399 $ 490 $ 541 $ 81 $ 90 Service cost \u2014 \u2014 2 2 2 1 Interest cost 8 6 8 5 2 2 Actuarial gain (1) ( 71 ) ( 11 ) ( 152 ) ( 32 ) ( 10 ) ( 3 ) Settlements \u2014 \u2014 \u2014 \u2014 \u2014 ( 1 ) Effect of foreign currency exchange rates \u2014 \u2014 ( 49 ) ( 4 ) ( 4 ) ( 4 ) Benefits paid ( 23 ) ( 24 ) ( 13 ) ( 22 ) ( 7 ) ( 4 ) Benefit obligation at end of year $ 284 $ 370 $ 286 $ 490 $ 64 $ 81 Change in plan assets Fair value of plan assets at beginning of year $ 374 $ 343 $ 505 $ 485 $ 71 $ 70 Actual return on plan assets, net of expenses ( 80 ) 44 ( 186 ) 36 ( 3 ) 7 Employer contributions \u2014 11 21 11 2 2 Settlements \u2014 \u2014 \u2014 \u2014 \u2014 ( 1 ) Effect of foreign currency exchange rates \u2014 \u2014 ( 50 ) ( 5 ) ( 3 ) ( 3 ) Benefits paid ( 23 ) ( 24 ) ( 13 ) ( 22 ) ( 7 ) ( 4 ) Fair value of plan assets at end of year 271 374 277 505 60 71 Funded status at end of year (underfunded) ( 13 ) 4 ( 9 ) 15 ( 4 ) ( 10 ) Accumulated benefit obligation $ 284 $ 370 $ 286 $ 490 $ 64 $ 81 ____________ (1) The actuarial gains during the year ended December 31, 2022 were primarily related to increases in the discount rate assumptions.",
+      "score": 0.9884
+    },
+    {
+      "sent": "Plan International Plans 2022 2021 2022 2021 2022 2021 (in millions) Change in projected benefit obligation Benefit obligation at beginning of year $ 370 $ 399 $ 490 $ 541 $ 81 $ 90 Service cost \u2014 \u2014 2 2 2 1 Interest cost 8 6 8 5 2 2 Actuarial gain (1) ( 71 ) ( 11 ) ( 152 ) ( 32 ) ( 10 ) ( 3 ) Settlements \u2014 \u2014 \u2014 \u2014 \u2014 ( 1 ) Effect of foreign currency exchange rates \u2014 \u2014 ( 49 ) ( 4 ) ( 4 ) ( 4 ) Benefits paid ( 23 ) ( 24 ) ( 13 ) ( 22 ) ( 7 ) ( 4 ) Benefit obligation at end of year $ 284 $ 370 $ 286 $ 490 $ 64 $ 81 Change in plan assets Fair value of plan assets at beginning of year $ 374 $ 343 $ 505 $ 485 $ 71 $ 70 Actual return on plan assets, net of expenses ( 80 ) 44 ( 186 ) 36 ( 3 ) 7 Employer contributions \u2014 11 21 11 2 2 Settlements \u2014 \u2014 \u2014 \u2014 \u2014 ( 1 ) Effect of foreign currency exchange rates \u2014 \u2014 ( 50 ) ( 5 ) ( 3 ) ( 3 ) Benefits paid ( 23 ) ( 24 ) ( 13 ) ( 22 ) ( 7 ) ( 4 ) Fair value of plan assets at end of year 271 374 277 505 60 71 Funded status at end of year (underfunded) ( 13 ) 4 ( 9 ) 15 ( 4 ) ( 10 ) Accumulated benefit obligation $ 284 $ 370 $ 286 $ 490 $ 64 $ 81 ____________ (1) The actuarial gains during the year ended December 31, 2022 were primarily related to increases in the discount rate assumptions.",
+      "score": 0.9884
+    },
+    {
+      "sent": "Regis Luxury 8 11 1,412 0.1% Leading Hotels of the World, Legend Preferred Hotels & Resorts, Small Luxury Hotels of The World, The Luxury Collection Luxury 23 45 16,210 1.5% Fairmont, Intercontinental, JW Marriott, Park Hyatt, Sofitel Upper Upscale 10 38 6,616 0.6% 25hours Hotels, Hyatt Centric, Kimpton, Le Meridien, Thompson Hotels Upper Upscale 1 2 1,814 0.2% Grand Hyatt, JW Marriott Upper Upscale 94 604 224,370 19.9% Hyatt Regency, Marriott, Omni, Sheraton, Westin Upper Upscale 34 138 26,667 2.4% Autograph Collection, Design Hotels, Destination Hotels, The Unbound Collection Upscale 51 660 150,157 13.3% Courtyard by Marriott, Crowne Plaza, Delta, Holiday Inn, Radisson, Sheraton, Wyndham Upscale 13 95 11,111 1.0% Joie de Vivre, Tribute Portfolio Upper Upscale 6 263 60,928 5.4% Hyatt Regency, Marriott, Sheraton, Westin Upscale \u2014 \u2014 \u2014 \u2014% AC Hotels, Aloft, Cambria, Hotel Indigo Upper Midscale 3 5 1,094 0.1% CitizenM, Freehand, Generator, Hoxton, Moxy, tommie, Yotel Upscale 57 971 143,342 12.7% Aloft, Courtyard by Marriott, Four Points, Holiday Inn, Hyatt Place Upper Midscale 36 2,863 312,043 27.7% Comfort Suites, Courtyard by Marriott, Fairfield Inn, Holiday Inn Express, Springhill Suites Midscale 4 235 23,022 2.0% Avid, Best Western, Comfort Inn & Suites, La Quinta, Quality Inn, Sleep Inn, Wingate by Wyndham Upscale 4 535 61,289 5.4% Element, Hyatt House, Residence Inn, Staybridge Suites Upper Midscale 3 576 61,352 5.4% Candlewood Suites, Comfort Suites, TownePlace Suites Timeshare (2) 8 80 13,703 1.2% Bluegreen Vacations, Disney Vacation Club, Holiday Inn Club Vacations, Marriott Vacations Worldwide, Travel & Leisure Co.",
+      "score": 0.986
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "As a result, we are subject to the risks of doing business outside the U.S., including: \u2022 rapid changes in governmental, economic or political policy, wars, political or civil unrest, acts of terrorism or the threat of international boycotts or U.S.",
+      "score": -0.9442
+    },
+    {
+      "sent": "As a result, we are subject to the risks of doing business outside the U.S., including: \u2022 rapid changes in governmental, economic or political policy, wars, political or civil unrest, acts of terrorism or the threat of international boycotts or U.S.",
+      "score": -0.9442
+    },
+    {
+      "sent": "Any material interruptions or failures in our systems, including those that may result from our failure to adequately develop, implement and maintain a robust disaster recovery plan and backup systems could severely affect our 27 ability to conduct normal business operations and, as a result, have a material adverse effect on our business operations and financial performance.",
+      "score": -0.9313
+    }
+  ],
+  "forward_snippets": [
+    "In some cases, you can identify these forward-looking statements by the use of words such as \"outlook,\" \"believes,\" \"expects,\" \"potential,\" \"continues,\" \"may,\" \"will,\" \"should,\" \"could,\" \"seeks,\" \"projects,\" \"predicts,\" \"intends,\" \"plans,\" \"estimates,\" \"anticipates\" or the negative version of these words or other comparable words.",
+    "In some cases, you can identify these forward-looking statements by the use of words such as \"outlook,\" \"believes,\" \"expects,\" \"potential,\" \"continues,\" \"may,\" \"will,\" \"should,\" \"could,\" \"seeks,\" \"projects,\" \"predicts,\" \"intends,\" \"plans,\" \"estimates,\" \"anticipates\" or the negative version of these words or other comparable words.",
+    "As of December\u00a031, 2022, we had 152 million m\noutlook,\" \"believes,\" \"expects,\" \"potential,\" \"continues,\" \"may,\" \"will,\" \"should,\" \"could,\" \"seeks,\" \"projects,\" \"predicts,\" \"intends,\" \"plans,\" \"estimates,\" \"anticipates\" or the negative version of these words or other comparable words.",
+    "In addition to our current hotel portfolio, we are focused on the growth of our business by expanding our global hotel network through our development pipeline, which represents hotels that we expect to add to our system in the future.",
+    "The following table summarizes our development activity: As of or for the Year Ended December 31, 2022 Hotels Rooms (1) Hotel system Openings 355 58,200 Net additions (2) 308 48,300 Development pipeline (3) Additions 664 89,900 Count as of period end (4) 2,821 416,400 ____________ (1) Rounded to the nearest hundred."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "symbol": "CUKPF",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1784,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.173
+  },
+  "top_positive": [
+    {
+      "sent": "To help ensure that we are compliant with legal and regulatory requirements and that these areas of our business operate in an efficient and effective manner, we: \u2022 Provide regular health, environmental, safety and security support, training, guidance and information to guests, team members and others working on our behalf \u2022 Develop and implement effective and verifiable management systems to fulfill our health, environmental, safety, security and sustainability commitments \u2022 Perform regular shoreside and shipboard audits and take appropriate action when deficiencies are identified \u2022 Report and investigate health, environmental, safety and security incidents and strive to take appropriate action to prevent recurrence \u2022 Identify those team members responsible for managing health, environment, safety, security and sustainability programs and aim to establish clear lines of accountability \u2022 Identify the aspects of our business with potential to impact the environment and continue to take appropriate action to minimize that impact \u2022 Monitor an anonymous hotline for any reported allegations or concerns and the related responses \u2022 Review and work to improve policies and procedures designed to prevent, detect, respond and correct various regulatory violations and other misconduct 2.",
+      "score": 0.9914
+    },
+    {
+      "sent": "Partner with primary vendors to reduce upstream packaging volumes Ongoing Completed a packaging reduction pilot program with our primary engine supplier and achieved a reduction of approximately 44% 14 2030 Good Health and Well-Being Goals Status (a) Our Progress Committed to continued job creation Ongoing \u2022 Increased the number of employees on board our ships from the reduced levels during the pause in guest cruise operations \u2022 Opened and filled a significant number of shoreside positions Establish measurable Company Culture metrics and set annual improvement targets Ongoing Established Company Culture metrics with semi-annual Culture surveys and are in the process of establishing improvement targets Implement global well-being standards by 2023 Ongoing \u2022 Continued to work with authorities to arrange for COVID-19 vaccinations and boosters for our crew members, many of whom may not have had access to vaccines \u2022 Maintained and evolved onboard public health protocols to reflect the changing nature of the pandemic while protecting our guests and crew members responsibly Reduce the number of guest and crew work-related injuries Ongoing Continued to implement initiatives to prevent guest and crew injuries 2030 Sustainable Tourism Goals Status (a) Our Progress Animal Welfare \u2013 responsible sourcing \u2022 Achieve 100% cage free eggs by the end of 2025.",
+      "score": 0.9781
+    },
+    {
+      "sent": "Plan category Number of securities to be issued upon exercise of warrants and rights (in millions) Weighted-average exercise price of outstanding warrants and rights Number of securities remaining available for future issuance under equity compensation plans (excluding securities reflected in column (1)) (in millions) (1) Equity compensation plans approved by security holders 1.3 (a) \u2014 4.3 Equity compensation plans not approved by security holders \u2014 \u2014 \u2014 1.3 \u2014 4.3 (a) Represents 1.3 million restricted share units outstanding under the Carnival plc 2014 Employee Share Plan.",
+      "score": 0.9761
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Such incidents include, but are not limited to, the improper operation or maintenance of ships, motorcoaches and trains; guest and crew illnesses; mechanical failures, fires and collisions; repair delays, groundings and navigational errors; oil spills and other maritime and environmental issues as well as other incidents at sea, while in port or on land which may generate negative publicity or cause guest and crew discomfort, injury, or death.",
+      "score": -0.9837
+    },
+    {
+      "sent": "Such incidents include, but are not limited to, the improper operation or maintenance of ships, motorcoaches and trains; guest and crew illnesses; mechanical failures, fires and collisions; repair delays, groundings and navigational errors; oil spills and other maritime and environmental issues as well as other incidents at sea, while in port or on land which may generate negative publicity or cause guest and crew discomfort, injury, or death.",
+      "score": -0.9837
+    },
+    {
+      "sent": "War Risk Insurance We use a combination of insurance and self-insurance to cover war risk for legal liability to crew, guests and other third parties as well as loss or damage to our vessels arising from war or war-like actions.",
+      "score": -0.9509
+    }
+  ],
+  "forward_snippets": [
+    "Vision As the global leader in the cruise industry, we will lead the way in innovative and sustainable cruising to deliver memorable vacations and build borderless connections.",
+    "Vision As the global leader in the cruise industry, we will lead the way in innovative and sustainable cruising to deliver memorable vacations and build borderless connections.",
+    "Vision As the global leader in the cruise industry, we will lead the way in innovative and sustainable cruising to deliver memorable vacations and build borderless connections.",
+    "Vision As the global leader in the cruise industry, we will lead the way in innovative and sustainable cruising to deliver memorable vacations and build borderless connections.",
+    "We believe this will allow us to responsibly reduce our debt over time and return to strong profitability and investment-grade credit ratings."
+  ]
+}

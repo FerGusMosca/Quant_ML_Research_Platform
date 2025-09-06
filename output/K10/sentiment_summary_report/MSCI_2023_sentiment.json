@@ -1,0 +1,45 @@
+{
+  "symbol": "MSCI",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2131,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.275
+  },
+  "top_positive": [
+    {
+      "sent": "The following table presents activity concerning the Company\u2019s vested and unvested Share-based Awards applicable to its employees (share data in thousands) for the period indicated: For the Year Ended December 31, 2022 (in thousands, except fair value data) Number of Shares Weighted Average Grant Date Fair Value Vested and unvested Share-based Awards at December 31, 2021 697 $ 217.05 Granted 349 $ 271.43 Conversion to common stock ( 465 ) $ 169.52 Canceled ( 27 ) $ 373.71 Vested and unvested Share-based Awards at December 31, 2022 554 $ 283.66 Vested and unvested Share-based Awards expected to vest 527 $ 279.31 The total fair value of Share-based Awards held by the Company\u2019s employees that converted to MSCI common stock during the years ended December 31, 2022, 2021 and 2020 was $ 250.4 million, $ 152.6 million and $ 133.6 million, respectively.",
+      "score": 0.989
+    },
+    {
+      "sent": "2 Table of Contents \u2022 Increasing use of global, multi-asset-class and other complex investment strategies, including strategies incorporating private asset investments and factor objectives, as investors seek specific and unique outcomes; \u2022 The need for high-quality data, insightful models and timely research during times of extreme volatility and high uncertainty; \u2022 Accelerating integration of ESG and climate considerations into investment processes, reporting and products, as sustainable investing becomes more prominent and investors increasingly focus on companies with strong sustainability practices as an indicator of long-term resilience; \u2022 Continuing growth of indexed investing through indexed investment products such as ETFs, mutual/UCITS funds and annuities, as well as indexed derivatives such as futures, options, structured products and over-the-counter swaps, and other vehicles that seek to track an index, as investors increasingly seek lower-cost investment strategies or seek to incorporate increasingly complex investment strategies across geographies, sectors, factors, trends and other considerations; \u2022 Increasing allocation of capital to real estate and other private assets and desire for greater transparency into the performance of private assets, with an increased focus on climate and income risk; \u2022 Increasing demand for data and tools that clients can integrate to support customized portfolio construction and highly specialized preferences and objectives; and \u2022 Growing use of advanced technologies to enhance investment analytics, evaluate data, streamline operations, create efficiencies and gain competitive advantages.",
+      "score": 0.9841
+    },
+    {
+      "sent": "2 Table of Contents \u2022 Increasing use of global, multi-asset-class and other complex investment strategies, including strategies incorporating private asset investments and factor objectives, as investors seek specific and unique outcomes; \u2022 The need for high-quality data, insightful models and timely research during times of extreme volatility and high uncertainty; \u2022 Accelerating integration of ESG and climate considerations into investment processes, reporting and products, as sustainable investing becomes more prominent and investors increasingly focus on companies with strong sustainability practices as an indicator of long-term resilience; \u2022 Continuing growth of indexed investing through indexed investment products such as ETFs, mutual/UCITS funds and annuities, as well as indexed derivatives such as futures, options, structured products and over-the-counter swaps, and other vehicles that seek to track an index, as investors increasingly seek lower-cost investment strategies or seek to incorporate increasingly complex investment strategies across geographies, sectors, factors, trends and other considerations; \u2022 Increasing allocation of capital to real estate and other private assets and desire for greater transparency into the performance of private assets, with an increased focus on climate and income risk; \u2022 Increasing demand for data and tools that clients can integrate to support customized portfolio construction and highly specialized preferences and objectives; and \u2022 Growing use of advanced technologies to enhance investment analytics, evaluate data, streamline operations, create efficiencies and gain competitive advantages.",
+      "score": 0.9841
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Heavy use of our electronic delivery systems and other factors such as loss of service from third parties, operational failures, human error, terrorist or other attacks, climate or weather related events (e.g., hurricanes, floods or other natural disasters), another outbreak of pandemic or contagious disease, power loss, telecommunications failures, technical breakdowns, Internet failures or malicious attacks exploiting security vulnerabilities could impair our systems\u2019 operations or interrupt their availability for extended periods of time or impact the availability of personnel.",
+      "score": -0.9788
+    },
+    {
+      "sent": "Heavy use of our electronic delivery systems and other factors such as loss of service from third parties, operational failures, human error, terrorist or other attacks, climate or weather related events (e.g., hurricanes, floods or other natural disasters), another outbreak of pandemic or contagious disease, power loss, telecommunications failures, technical breakdowns, Internet failures or malicious attacks exploiting security vulnerabilities could impair our systems\u2019 operations or interrupt their availability for extended periods of time or impact the availability of personnel.",
+      "score": -0.9788
+    },
+    {
+      "sent": "If our internal processes, confidentiality policies, conflict of interest policies or information barrier procedures fail or are insufficient, including as a result of human error or manual processes, system error, other inadvertent release or other failure, or if an employee purposely circumvents or violates our internal controls, policies or procedures, then unauthorized access to, or disclosure or misappropriation of, data, including material non-public or other confidential information (e.g., certain index composition data or ESG rating data), our brand and reputation may suffer and we may become subject to litigation, regulatory actions, sanctions or other penalties, leading to a loss of client confidence, which could have a material adverse effect on our business, financial condition or results of operations.",
+      "score": -0.9584
+    }
+  ],
+  "forward_snippets": [
+    "The forward-looking statements in this report speak only as of the time they are made and do not necessarily reflect our outlook at any other point in time.",
+    "We aim to anticipate the needs of the investment industry with our client-centric focus and our deep understanding of our clients\u2019 workflows, challenges and goals.",
+    "Industry Trends and Competitive Advantages We believe we are uniquely positioned to benefit from emerging trends and to help our clients adapt to a large and rapidly expanding and evolving investment industry.",
+    "The forward-looking statements in this report speak only as of the time they are made and do not necessarily reflect our outlook at any other point in time.",
+    "We aim to anticipate the needs of the investment industry with our client-centric focus and our deep understanding of our clients\u2019 workflows, challenges and goals."
+  ]
+}

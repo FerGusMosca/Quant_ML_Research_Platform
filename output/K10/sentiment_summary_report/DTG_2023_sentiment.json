@@ -1,0 +1,45 @@
+{
+  "symbol": "DTG",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2886,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.112
+  },
+  "top_positive": [
+    {
+      "sent": "55 Table of Contents DTE Energy Company Consolidated Statements of Operations Year Ended December 31, 2022 2021 2020 (In millions, except per share amounts) Operating Revenues Utility operations $ 8,243 $ 7,288 $ 6,845 Non-utility operations 10,985 7,676 4,578 19,228 14,964 11,423 Operating Expenses Fuel, purchased power, and gas \u2014 utility 2,505 1,904 1,719 Fuel, purchased power, gas, and other \u2014 non-utility 10,655 7,304 4,120 Operation and maintenance 2,400 2,420 2,305 Depreciation and amortization 1,468 1,377 1,292 Taxes other than income 457 431 395 Asset (gains) losses and impairments, net ( 5 ) 33 37 17,480 13,469 9,868 Operating Income 1,748 1,495 1,555 Other (Income) and Deductions Interest expense 675 630 601 Interest income ( 46 ) ( 22 ) ( 29 ) Non-operating retirement benefits, net ( 1 ) 17 50 Loss on extinguishment of debt \u2014 393 6 Other income ( 58 ) ( 254 ) ( 259 ) Other expenses 66 75 104 636 839 473 Income Before Income Taxes 1,112 656 1,082 Income Tax Expense (Benefit) (Note 10) 29 ( 130 ) 37 Net Income from Continuing Operations 1,083 786 1,045 Net Income from Discontinued Operations, Net of Taxes (Note 4) \u2014 117 326 Net Income 1,083 903 1,371 Less: Net Income (Loss) Attributable to Noncontrolling Interests Continuing operations \u2014 ( 10 ) ( 9 ) Discontinued operations \u2014 6 12 Net Income Attributable to DTE Energy Company $ 1,083 $ 907 $ 1,368 Basic Earnings per Common Share Continuing operations $ 5.53 $ 4.11 $ 5.46 Discontinued operations \u2014 0.57 1.63 Total $ 5.53 $ 4.68 $ 7.09 Diluted Earnings per Common Share Continuing operations $ 5.52 $ 4.10 $ 5.45 Discontinued operations \u2014 0.57 1.63 Total $ 5.52 $ 4.67 $ 7.08 Weighted Average Common Shares\u00a0Outstanding Basic 195 193 193 Diluted 196 194 193 See Combined Notes to Consolidated Financial Statements 56 Table of Contents DTE Energy Company Consolidated Statements of Comprehensive Income Year Ended December 31, 2022 2021 2020 (In millions) Net Income $ 1,083 $ 903 $ 1,371 Other comprehensive income, net of tax: Benefit obligations, net of taxes\n, 2022 in conformity with accounting principles generally accepted in the United States of America.",
+      "score": 0.9851
+    },
+    {
+      "sent": "Innovative compensation and benefits initiatives at DTE Energy include: \u2022 A 401(k) plan/Employee Stock Ownership Plan that is available to all regular full-time and regular part-time employees, including automatic enrollment of new hires, automatic annual escalation of employee 401(k) contributions up to 10% of pay, and 401(k) matching contributions \u2022 Competitive health and welfare benefits \u2022 Child bonding/parental leave of absence \u2022 Additional vacation days available for employee purchase \u2022 Competitive incentive plans, which are offered to all non-represented employees to create alignment of corporate and individual goals Incentive Plans DTE Energy has two primary types of incentives that reward individuals for performance.",
+      "score": 0.9726
+    },
+    {
+      "sent": "Looking forward, DTE Energy will focus on several areas that are expected to improve future performance: \u2022 electric and gas customer satisfaction; \u2022 electric distribution system reliability; \u2022 new electric generation and storage; \u2022 gas distribution system renewal; \u2022 reducing carbon emissions at the electric and gas utilities; \u2022 rate competitiveness and affordability; \u2022 regulatory stability and investment recovery for the electric and gas utilities; \u2022 strategic investments in growth projects at DTE Vantage; \u2022 employee engagement, health, safety and wellbeing, and diversity, equity, and inclusion; \u2022 cost structure optimization across all business segments; and \u2022 cash, capital, and liquidity to maintain or improve financial strength.",
+      "score": 0.9719
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "DTE Energy could suffer financial loss, reputational damage, litigation, or other negative repercussions if we are unable to meet our voluntary emissions reductions goals.",
+      "score": -0.9081
+    },
+    {
+      "sent": "Our audits of the consolidated financial statements included performing procedures to assess the risks of material misstatement of the consolidated financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    },
+    {
+      "sent": "Our audits included performing procedures to assess the risks of material misstatement of the consolidated financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    }
+  ],
+  "forward_snippets": [
+    "The entity was created to issue securitization bonds for certain qualified costs authorized by the MPSC and to recover debt service costs from DTE Electric customers DTE Sustainable Generation DTE Sustainable Generation Holdings, LLC (an indirect wholly-owned subsidiary of DTE Energy) and subsidiary companies DT Midstream DT Midstream, Inc., formerly DTE Energy's natural gas pipeline, storage, and gathering non-utility business comprising the Gas Storage and Pipelines segment and certain DTE Energy holding company activity in the Corporate and Other segment, which separated from DTE Energy and became an independent public company on July 1, 2021 EGLE Michigan Department of Environment, Great Lakes, and Energy, formerly known as Michigan Department of Environmental Quality EGU Electric Generating Unit ELG Effluent Limitations Guidelines EPA U.S.",
+    "The entity was created to issue securitization bonds for certain qualified costs authorized by the MPSC and to recover debt service costs from DTE Electric customers DTE Sustainable Generation DTE Sustainable Generation Holdings, LLC (an indirect wholly-owned subsidiary of DTE Energy) and subsidiary companies DT Midstream DT Midstream, Inc., formerly DTE Energy's natural gas pipeline, storage, and gathering non-utility business comprising the Gas Storage and Pipelines segment and certain DTE Energy holding company activity in the Corporate and Other segment, which separated from DTE Energy and became an independent public company on July 1, 2021 EGLE Michigan Department of Environment, Great Lakes, and Energy, formerly known as Michigan Department of Environmental Quality EGU Electric Generating Unit ELG Effluent Limitations Guidelines EPA U.S.",
+    "The entity was created to issue securitization bonds for certain qualified costs authorized by the MPSC and to recover debt service costs from DTE Electric customers DTE Sustainable Generation DTE Sustainable Generation Holdings, LLC (an indirect wholly-owned subsidiary of DTE Energy) and subsidiary companies DT Midstream DT Midstream, Inc., formerly DTE Energy's natural gas pipeline, storage, and gathering non-utility business comprising the Gas Storage and Pipelines segment and certain DTE Energy holding company activity in the Corporate and Other segment, which separated from DTE Energy and became an independent public company on July 1, 2021 EGLE Michigan Department of Environment, Great Lakes, and Energy, formerly known as Michigan Department of Environmental Quality EGU Electric Generating Unit ELG Effluent Limitations Guidelines EPA U.S.",
+    "The entity was created to issue securitization bonds for certain qualified costs authorized by the MPSC and to recover debt service costs from DTE Electric customers DTE Sustainable Generation DTE Sustainable Generation Holdings, LLC (an indirect wholly-owned subsidiary of DTE Energy) and subsidiary companies DT Midstream DT Midstream, Inc., formerly DTE Energy's natural gas pipeline, storage, and gathering non-utility business comprising the Gas Storage and Pipelines segment and certain DTE Energy holding company activity in the Corporate and Other segment, which separated from DTE Energy and became an independent public company on July 1, 2021 EGLE Michigan Department of Environment, Great Lakes, and Energy, formerly known as Michigan Department of Environmental Quality EGU Electric Generating Unit ELG Effluent Limitations Guidelines EPA U.S.",
+    "Non-utility Operations \u2022 DTE Vantage is comprised primarily of renewable energy projects that sell electricity and pipeline-quality gas and projects that deliver custom energy solutions to industrial, commercial, and institutional customers."
+  ]
+}

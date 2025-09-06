@@ -1,0 +1,45 @@
+{
+  "symbol": "NFLX",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1969,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.247
+  },
+  "top_positive": [
+    {
+      "sent": "These forward-looking statements include, but are not limited to, statements regarding: our core strategy; our ability to improve our content offerings and service; our future financial performance, including expectations regarding revenues, deferred revenue, operating income and margin, net income, expenses, and profitability; liquidity, including the sufficiency of our capital resources, net cash provided by (used in) operating activities, access to financing sources, and free cash flows; capital allocation strategies, including any stock repurchases or repurchase programs; seasonality; stock price volatility; impact of foreign exchange rate fluctuations, including on net income, revenues and average revenues per paying member; adequacy of existing facilities; the impact of the discontinuance of the LIBO Rate; future regulatory changes and their impact on our business; intellectual property; price changes and testing; impact of recently adopted accounting pronouncements; accounting treatment for changes related to content assets; acquisitions; action by competitors; membership growth, including impact of content and pricing changes on membership growth; partnerships; advertising; multi-household usage; member viewing patterns; dividends; future contractual obligations, including unknown content obligations and timing of payments; our global content and marketing investments, including investments in original programming; content amortization; tax expense; unrecognized tax benefits; deferred tax assets; our ability to effectively manage change and growth; our company culture; our ability to attract and retain qualified employees and key personnel; and the impact of the coronavirus (COVID-19) pandemic and our response to it.",
+      "score": 0.9948
+    },
+    {
+      "sent": "8-K 001-35727 4.1 May 3, 2017 4.8 Indenture, dated as of October 26, 2017, by and between the Company and Wells Fargo Bank National Association, as Trustee 8-K 001-35727 4.1 October 26, 2017 4.9 Indenture, dated as of April 26, 2018, by and between the Company and Wells Fargo Bank National Association, as Trustee 8-K 001-35727 4.1 April 26, 2018 4.10 Indenture, dated as of October 26, 2018, by and between the Company and Wells Fargo Bank National Association, as Trustee (6.375% Senior Notes due 2029) 8-K 001-35727 4.1 October 26, 2018 4.11 Indenture, dated as of October 26, 2018, by and between the Company and Wells Fargo Bank National Association, as Trustee (4.625% Senior Notes due 2029) 8-K 001-35727 4.3 October 26, 2018 4.12 Indenture, dated as of April 29, 2019, by and between the Company and Wells Fargo Bank National Association, as Trustee (5.375% Senior Notes due 2029) 8-K 001-35727 4.1 April 29, 2019 4.13 Indenture, dated as of April 29, 2019, by and between the Company and Wells Fargo Bank National Association, as Trustee (3.875% Senior Notes due 2029) 8-K 001-35727 4.3 April 29, 2019 4.14 Indenture, dated as of October 25, 2019, by and between the Company and Wells Fargo Bank National Association, as Trustee (4.875% Senior Notes due 2030) 8-K 001-35727 4.1 October 25, 2019 4.15 Indenture, dated as of October 25, 2019, by and between the Company and Wells Fargo Bank National Association, as Trustee (3.625% Senior Notes due 2030) 8-K 001-35727 4.3 October 25, 2019 4.16 Indenture, dated as of April 28, 2020, by and between the Company and Wells Fargo Bank National Association, as Trustee (3.625% Senior Notes due 2025) 8-K 001-35727 4.1 April 28, 2020 61 Table of Contents Exhibit Number Exhibit\u00a0Description Incorporated by Reference Filed Herewith Form File No.",
+      "score": 0.9753
+    },
+    {
+      "sent": "Our ad-supported plan offering and our ability to generate advertising revenue are subject to various risks and will depend on a number of factors, including: 7 Table of Contents \u2022 our ability to attract and retain advertisers; \u2022 fluctuations in memberships, including those selecting the ad-supported subscription plan, and member engagement; \u2022 the quantity or quality of ads shown to our members; \u2022 our ability to compete effectively for advertising spend; \u2022 the impact of seasonal, cyclical or other shifts in advertising spend, including the impact of macroeconomic conditions; \u2022 the availability, accuracy, utility, and security of analytics and measurement solutions offered by us or third parties that demonstrate the value of our ads to marketers, or our ability to further improve such tools; \u2022 changes in the way advertising on devices, connected TVs or on personal computers is measured or priced; \u2022 adverse legal developments relating to advertising or measurement tools; \u2022 changes in third-party policies, which may negatively impact the ability to measure, deliver and select ads to be served; \u2022 regulatory, legislative and industry developments relating to the collection and use of information and other privacy considerations, including regulations related to ad targeting and measurement tools; \u2022 any liability or reputational harm from advertisements shown on our service; \u2022 our relationship with third-party service providers for the management, sale and technology to support advertisements on our service; \u2022 the impact of our content and reputation on advertisers\u2019 willingness to spend with us; and \u2022 any member dissatisfaction due to advertisements.",
+      "score": 0.9661
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These systems may be subject to damage or interruption from, among other things, earthquakes, adverse weather conditions, other natural disasters, terrorist attacks, rogue employees, power loss, telecommunications failures, and cybersecurity risks.",
+      "score": -0.9729
+    },
+    {
+      "sent": "Litigation to defend these claims could be costly and the expenses and damages arising from any liability or unforeseen production risks could harm our results of operations.",
+      "score": -0.8885
+    },
+    {
+      "sent": "Litigation to defend these claims could be costly and the expenses and damages arising from any liability or unforeseen production risks could harm our results of operations.",
+      "score": -0.8885
+    }
+  ],
+  "forward_snippets": [
+    "We cannot provide assurance that we will prevail in any intellectual property disputes.",
+    "We cannot provide assurance that we will prevail in any intellectual property disputes.",
+    "We believe a critical component of our success is our company culture.",
+    "We aim to attract and retain great people - representing a diverse array of perspectives and skills - to work together as a dream team.",
+    "With this approach, we believe we are a more flexible, fun, stimulating, creative, collaborative and successful organization."
+  ]
+}

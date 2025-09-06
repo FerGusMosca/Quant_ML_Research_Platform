@@ -1,0 +1,50 @@
+{
+  "symbol": "MCD",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.2654,
+    "outlook_sentiment": 0.1654,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.253
+  },
+  "top_positive": [
+    {
+      "sent": "McDonald's Corporation believes the format used in this Form 10-K improves readability and better presents how it organizes and manages its business.",
+      "score": 0.6908
+    },
+    {
+      "sent": "The following table presents the fair values of derivative instruments included on the Consolidated Balance Sheet as of December\u00a031, 2022 and 2021: Derivative Assets Derivative Liabilities In millions Balance Sheet Classification 2022 2021 Balance Sheet Classification 2022 2021 Derivatives designated as hedging instruments Foreign currency Prepaid expenses and other current assets $ 53.3 $ 42.4 Accrued payroll and other liabilities $ ( 17.9 ) $ ( 3.3 ) Interest rate Prepaid expenses and other current assets \u2014 $ 0.3 Accrued payroll and other liabilities \u2014 \u2014 Foreign currency Miscellaneous other assets 28.7 28.0 Other long-term liabilities ( 30.7 ) ( 0.5 ) Interest rate Miscellaneous other assets \u2014 8.6 Other long-term liabilities ( 91.5 ) ( 4.1 ) Total derivatives designated as hedging instruments $ 82.0 $ 79.3 $ ( 140.1 ) $ ( 7.9 ) Derivatives not designated as hedging instruments Equity Prepaid expenses and other current assets $ 200.5 $ 9.5 Accrued payroll and other liabilities $ ( 1.6 ) $ \u2014 Foreign currency Prepaid expenses and other current assets \u2014 0.5 Accrued payroll and other liabilities \u2014 \u2014 Equity Miscellaneous other assets \u2014 200.3 Total derivatives not designated as hedging instruments $ 200.5 $ 210.3 $ ( 1.6 ) $ \u2014 Total derivatives $ 282.5 $ 289.6 $ ( 141.7 ) $ ( 7.9 ) The following table presents the pre-tax amounts from derivative instruments affecting income and AOCI for the year ended December 31, 2022 and 2021, respectively: McDonald's Corporation 2022 Annual Report 45 Location of gain or loss recognized in income on derivative Gain (loss) recognized in AOCI Gain (loss) reclassified into income from AOCI Gain (loss) recognized in income on derivative In millions 2022 2021 2022 2021 2022 2021 Foreign currency Nonoperating income/expense $ 122.5 $ 74.2 $ 137.8 $ ( 30.9 ) Interest rate Interest expense 83.9 \u2014 ( 2.9 ) ( 6.3 ) Cash flow hedges $ 206.4 $ 74.2 $ 134.9 $ ( 37.2 ) Foreign currency denominated debt Nonoperating income/expense $ 902.8 $ 725.8 47.1 Foreign currency derivatives Nonoperating income/expense ( 12.0 ) 40.2 Foreign currency derivatives (1) Interest expense $ 11.2 $ 14.7 Net investment hedges $ 890.8 $ 766.0 $ 47.1 $ 11.2 $ 14.7 Foreign currency Nonoperating income/expense $ 9.3 $ 9.4 Equity Selling, general & administrative expenses ( 9.3 ) 99.3 Equity Other operating income/ expense, net \u2014 ( 11.3 ) Undesignated derivatives $ \u2014 $ 97.4 (1) The amount of gain (loss) recognized in income related to components excluded from effectiveness testing.",
+      "score": 0.9851
+    },
+    {
+      "sent": "Equity compensation plan information Number\u00a0of\u00a0securities to be issued upon exercise of outstanding options, warrants and rights Weighted-average exercise price of outstanding\u00a0options, warrants and rights Number\u00a0of\u00a0securities remaining\u00a0available\u00a0for future issuance under equity\u00a0compensation\u00a0plans (excluding securities reflected in column (a)) Plan category (a) (b) (c) Equity compensation plans approved by security holders 12,635,775 (1) $ 177.12 21,782,732 Equity compensation plans not approved by security holders \u2014 \u2014 \u2014 Total 12,635,775 $ 177.12 21,782,732 (1) Includes 1,432 stock options granted under the McDonald\u2019s Corporation 2001 Omnibus Stock Ownership Plan and 11,412,128 stock options and 1,222,215 restricted stock units granted under the McDonald's Corporation Amended and Restated 2012 Omnibus Stock Ownership Plan.",
+      "score": 0.975
+    },
+    {
+      "sent": "Equity compensation plan information Number\u00a0of\u00a0securities to be issued upon exercise of outstanding options, warrants and rights Weighted-average exercise price of outstanding\u00a0options, warrants and rights Number\u00a0of\u00a0securities remaining\u00a0available\u00a0for future issuance under equity\u00a0compensation\u00a0plans (excluding securities reflected in column (a)) Plan category (a) (b) (c) Equity compensation plans approved by security holders 12,635,775 (1) $ 177.12 21,782,732 Equity compensation plans not approved by security holders \u2014 \u2014 \u2014 Total 12,635,775 $ 177.12 21,782,732 (1) Includes 1,432 stock options granted under the McDonald\u2019s Corporation 2001 Omnibus Stock Ownership Plan and 11,412,128 stock options and 1,222,215 restricted stock units granted under the McDonald's Corporation Amended and Restated 2012 Omnibus Stock Ownership Plan.",
+      "score": 0.975
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Such interruptions and price increases could be caused by shortages, inflationary pressures, unexpected increases in demand, transportation-related issues, labor-related issues, technology-related issues, weather-related events, natural disasters, acts of war, terrorism or other hostilities, or other factors beyond the control of us or our suppliers or franchisees.",
+      "score": -0.9628
+    },
+    {
+      "sent": "Such interruptions and price increases could be caused by shortages, inflationary pressures, unexpected increases in demand, transportation-related issues, labor-related issues, technology-related issues, weather-related events, natural disasters, acts of war, terrorism or other hostilities, or other factors beyond the control of us or our suppliers or franchisees.",
+      "score": -0.9628
+    },
+    {
+      "sent": "Such interruptions and price increases could be caused by shortages, inflationary pressures, unexpected increases in demand, transportation-related issues, labor-related issues, technology-related issues, weather-related events, natural disasters, acts of war, terrorism or other hostilities, or other factors beyond the control of us or our suppliers or franchisees.",
+      "score": -0.9628
+    }
+  ],
+  "forward_snippets": [
+    "Page Forward-Looking Statements 3 About McDonald's 3 Business Summary 3 Management's Discussion and Analysis of Financial Condition and Results of Operations 8 Management's View of the Business 8 2022 Financial Performance 8 Strategic Direction 9 Outlook 10 Consolidated Operating Results 11 Cash Flows 19 Financial Position and Capital Resources 22 Other Matters 24 Other Key Information 25 Stock Performance Graph 25 Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 26 ",
+    "Outlook 10 Consolidated Operating Results 11 Cash Flows 19 Financial Position and Capital Resources 22 Other Matters 24 Other Key Information 25 Stock Performance Graph 25 Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 26 Risk Factors 27 Legal Proceedings 33 Properties 33 Information About our Executive Officers 34 Availability of Company Information 35 Financial Statements and Supplementary Data 35 Controls and Procedures 62 Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters 62 Exhibits and Financial Statement Schedules 63 Form 10-K Cross-Reference Index 65 Signatures 66 All trademarks used herein are the property of their respective owners and are used with permission.",
+    "This channel remains a competitive advantage, and we expect that it will become even more critical to meeting customers\u2019 demand for flexibility and choice.",
+    "OUTLOOK Based on current conditions, the following is provided to assist in forecasting the Company's future results for 2023.",
+    "OUTLOOK Based on current conditions, the following is provided to assist in forecasting the Company's future results for 2023.",
+    "To continue to be successful in the future, we believe we must preserve, enhance and leverage the value and relevance of our brand, including our corporate purpose, mission and values."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "symbol": "SCHW-PJ",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0772,
+    "outlook_sentiment": 0.2639,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.191
+  },
+  "top_positive": [
+    {
+      "sent": "Important factors that may cause actual results to differ include, but are not limited to: \u2022 General market conditions, including equity valuations and the level of interest rates; \u2022 The level and mix of client trading activity; \u2022 Our ability to attract and retain clients, develop trusted relationships,\u00a0and grow client assets; \u2022 Client use of our advisory and lending solutions and other products and services; - 25 - THE CHARLES SCHWAB CORPORATION Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Tabular Amounts in Millions, Except Ratios, or as Noted) \u2022 The level of client assets, including cash balances; \u2022 Competitive pressure on pricing, including deposit rates; \u2022 Client sensitivity to rates; \u2022 Regulatory guidance and adverse impacts from new legislation or rulemaking; \u2022 Capital\u00a0and liquidity needs and management; \u2022 Our ability to manage expenses; \u2022 Our ability to attract and retain talent; \u2022 Our ability to develop and launch new and enhanced products, services, and capabilities, as well as enhance our infrastructure, in a timely and successful manner; \u2022 Our ability to monetize client assets; \u2022 Our ability to support client activity levels; \u2022 The risk that expected cost synergies and other benefits from the TD Ameritrade acquisition may not be fully realized or may take longer to realize than expected and that integration-related expenses may be higher than expected; \u2022 Increased compensation and other costs due to inflationary pressures; \u2022 The ability to successfully implement integration strategies and plans relating to TD Ameritrade, including client account transitions; \u2022 The timing and scope of integration-related and other technology projects; \u2022 Real estate and workforce decisions; \u2022 Client cash allocations; \u2022 Migrations of bank deposit account balances (BDA balances); \u2022 Balance sheet positioning relative to changes in interest rates; \u2022 Interest earning asset mix and growth; \u2022 Prepayment levels for mortgage-backed securities; \u2022 LIBOR trends; \u2022 Adverse developments in litigation or regulatory matters and any related charges; \u2022 Potential breaches of contractual terms for which we have indemnification and guarantee obligations; and \u2022 Client activity, including daily average trades; margin balances; and balance sheet cash.",
+      "score": 0.9971
+    },
+    {
+      "sent": "34 ) 124 Management\u2019s Report on Internal Control Over Financial Reporting 126 - 63 - THE CHARLES SCHWAB CORPORATION Consolidated Statements of Income (In Millions, Except Per Share Amounts) Year Ended December 31, 2022 2021 2020 Net Revenues Interest revenue $ 12,227 $ 8,506 $ 6,531 Interest expense ( 1,545 ) ( 476 ) ( 418 ) Net interest revenue 10,682 8,030 6,113 Asset management and administration fees (1) 4,216 4,274 3,475 Trading revenue 3,673 4,152 1,416 Bank deposit account fees 1,409 1,315 355 Other 782 749 332 Total net revenues 20,762 18,520 11,691 Expenses Excluding Interest Compensation and benefits 5,936 5,450 3,954 Professional services 1,032 994 843 Occupancy and equipment 1,175 976 703 Advertising and market development 419 485 326 Communications 588 587 353 Depreciation and amortization 652 549 414 Amortization of acquired intangible assets 596 615 190 Regulatory fees and assessments 262 275 163 Other 714 876 445 Total expenses excluding interest 11,374 10,807 7,391 Income before taxes on income 9,388 7,713 4,300 Taxes on income 2,205 1,858 1,001 Net Income 7,183 5,855 3,299 Preferred stock dividends and other 548 495 256 Net Income Available to Common Stockholders $ 6,635 $ 5,360 $ 3,043 Weighted-Average Common Shares Outstanding: Basic 1,885 1,887 1,429 Diluted 1,894 1,897 1,435 Earnings Per Common Shares Outstanding (2) : Basic $ 3.52 $ 2.84 $ 2.13 Diluted $ 3.50 $ 2.83 $ 2.12 (1) Includes fee waivers of $ 57 million, $ 326 million, and $ 127 million for the years ended December\u00a031, 2022, 2021, and 2020, respectively.",
+      "score": 0.9891
+    },
+    {
+      "sent": "The following table describes external debt facilities available at December\u00a031, 2022: Description Borrower Outstanding Available Maturity of Amounts Outstanding Weighted-Average Interest Rate on Amounts Outstanding Federal Home Loan Bank (FHLB) secured credit facilities Banking subsidiaries $ 12,400 $ 68,562 June 2023 - November 2023 4.88% Federal Reserve discount window Banking subsidiaries \u2014 7,783 N/A \u2014 Repurchase agreements Banking subsidiaries 4,402 \u2014 (1) August 2023 - September 2023 4.99% Uncommitted, unsecured lines of credit with various external banks CSC, CS&Co \u2014 1,607 N/A \u2014 Unsecured commercial paper CSC 250 4,750 March 2023 4.67% Secured uncommitted lines of credit with various external banks TDAC \u2014 \u2014 (2) N/A \u2014 (1) Secured borrowing capacity is made available based on the banking subsidiaries\u2019 ability to provide collateral deemed acceptable by each respective counterparty.",
+      "score": 0.9844
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "A summary of bank loan-related nonperforming assets and troubled debt restructurings is as follows: December\u00a031, 2022 2021 Nonaccrual loans (1) $ 23 $ 35 Other real estate owned (2) 2 1 Total nonperforming assets 25 36 Troubled debt restructurings \u2014 \u2014 Total nonperforming assets and troubled debt restructurings $ 25 $ 36 (1) Nonaccrual loans include nonaccrual troubled debt restructurings.",
+      "score": -0.9509
+    },
+    {
+      "sent": "A summary of bank loan-related nonperforming assets and troubled debt restructurings is as follows: December\u00a031, 2022 2021 Nonaccrual loans (1) $ 23 $ 35 Other real estate owned (2) 2 1 Total nonperforming assets 25 36 Troubled debt restructurings \u2014 \u2014 Total nonperforming assets and troubled debt restructurings $ 25 $ 36 (1) Nonaccrual loans include nonaccrual troubled debt restructurings.",
+      "score": -0.9509
+    },
+    {
+      "sent": "A summary of bank loan-related nonperforming assets and troubled debt restructurings is as follows: December\u00a031, 2022 2021 Nonaccrual loans (1) $ 23 $ 35 Other real estate owned (2) 2 1 Total nonperforming assets 25 36 Troubled debt restructurings \u2014 \u2014 Total nonperforming assets and troubled debt restructurings $ 25 $ 36 (1) Nonaccrual loans include nonaccrual troubled debt restructurings.",
+      "score": -0.9509
+    }
+  ],
+  "forward_snippets": [
+    "We believe that following this strategy is the best way to maximize our market valuation and stockholder returns over time.",
+    "We believe that following this strategy is the best way to maximize our market valuation and stockholder returns over time.",
+    "We believe that following this strategy is the best way to maximize our market valuation and stockholder returns over time.",
+    "We believe that following this strategy is the best way to maximize our market valuation and stockholder returns over time.",
+    "We continue to combine the respective strengths of Schwab and TD Ameritrade and invest in enhanced client experience capabilities to further our financial success for the benefit of clients, employees, and stockholders."
+  ]
+}

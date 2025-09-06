@@ -1,0 +1,45 @@
+{
+  "symbol": "NDAQ",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1602,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.227
+  },
+  "top_positive": [
+    {
+      "sent": "Plan Category Number\u00a0of shares to be issued upon exercise of outstanding options, warrants and\u00a0rights(a) Weighted-average exercise price of outstanding options, warrants\u00a0and rights(b) Number\u00a0of shares remaining available for future issuance under equity compensation plans (excluding shares reflected\u00a0in column(a))(c) Equity compensation plans approved by stockholders 1,420,323 $ 41.79 38,534,312 Equity compensation plans not approved by stockholders \u2014 \u2014 \u2014 Total 1,420,323 $ 41.79 38,534,312 In the table above: \u2022 The number\u00a0of\u00a0shares to be issued upon exercise of outstanding\u00a0options, warrants\u00a0and\u00a0rights include only the number of shares to be issued upon exercise of outstanding options, warrants and rights.",
+      "score": 0.9859
+    },
+    {
+      "sent": "Plan Category Number\u00a0of shares to be issued upon exercise of outstanding options, warrants and\u00a0rights(a) Weighted-average exercise price of outstanding options, warrants\u00a0and rights(b) Number\u00a0of shares remaining available for future issuance under equity compensation plans (excluding shares reflected\u00a0in column(a))(c) Equity compensation plans approved by stockholders 1,420,323 $ 41.79 38,534,312 Equity compensation plans not approved by stockholders \u2014 \u2014 \u2014 Total 1,420,323 $ 41.79 38,534,312 In the table above: \u2022 The number\u00a0of\u00a0shares to be issued upon exercise of outstanding\u00a0options, warrants\u00a0and\u00a0rights include only the number of shares to be issued upon exercise of outstanding options, warrants and rights.",
+      "score": 0.9859
+    },
+    {
+      "sent": "During 2022, we maintained, and continued to expand, our portfolio of ESG services and solutions for our clients and stakeholders, including: \u2022 the Nasdaq ESG Advisory Program, which pairs companies with ESG consulting expertise to help them analyze, assess and enact ESG program best practices with the goals of attracting long-term capital and enhancing value; \u2022 the Nasdaq OneReport platform, which helps clients streamline the data gathering process under various frameworks for sustainability reporting and provides data to ratings agencies; 10 \u2022 the Metrio platform, which provides tools to address corporate issuers\u2019 expanding ESG data collection, analytics, and reporting needs; \u2022 the Nasdaq Sustainable Bond Network, which connects issuers and investors in sustainable, green and social bonds, and provides access to detailed information and impact data, allowing investors to make more informed decisions; \u2022 the Nasdaq ESG Data Hub, which connects investors with expert led ESG data sets from leading providers across a wide spectrum of areas, including gender diversity, carbon emissions and climate risk, providing detailed and tangible intelligence on companies\u2019 ESG profiles; \u2022 the Nasdaq ESG Data Portal, which now includes ESG-related data from more than 630 Nordic companies; \u2022 the Nasdaq ESG Footprint, a tool that helps both institutional and retail investors analyze the impact of their portfolios; \u2022 the eVestment ESG Questionnaire, which provides a standard approach to ESG reporting thereby allowing for greater transparency into how ESG strategies work, providing deeper ESG data for allocator consumption, and enabling asset managers to better articulate their approach to ESG; and \u2022 Puro.earth, a leading marketplace for carbon removal, which we believe will address the growing demand for carbon removal by corporations, as well as enable new carbon removal methodologies as technologies evolve.",
+      "score": 0.9831
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "We may incur losses as a result of unforeseen or catastrophic events, such as terrorist attacks, natural disasters, pandemics (such as COVID-19), extreme weather, fire, power loss, telecommunications failures, human error, theft, sabotage and vandalism.",
+      "score": -0.9806
+    },
+    {
+      "sent": "Because our clients depend on our solutions for critical business functions, any service interruptions, failures or other issues may result in lost or delayed market acceptance and lost sales, or negative customer experiences that could damage our reputation, resulting in the loss of customers, loss of revenues and liability for damages, which may adversely affect our business, operating results and financial condition.",
+      "score": -0.9744
+    },
+    {
+      "sent": "Because our clients depend on our solutions for critical business functions, any service interruptions, failures or other issues may result in lost or delayed market acceptance and lost sales, or negative customer experiences that could damage our reputation, resulting in the loss of customers, loss of revenues and liability for damages, which may adversely affect our business, operating results and financial condition.",
+      "score": -0.9744
+    }
+  ],
+  "forward_snippets": [
+    "Our Vision: We will be the trusted fabric of the world\u2019s financial system.",
+    "By aligning our business segments against these secular trends, we aim to deliver more for our clients and increase growth across our key pillars of liquidity, transparency and integrity: \u2022 Liquidity: Within our Market Platforms division, we continue to modernize markets by utilizing technology to maximize the liquidity of the global economy.",
+    "We believe that these technologies will enable more opportunities for market participants and new asset classes to be integrated across markets globally.",
+    "By utilizing the division\u2019s position at the center of markets, we believe that Market Platforms will be at the forefront of the financial system\u2019s evolution and will play a critical role in advancing the modernization of markets across geographies and asset classes.",
+    "Leveraging the insights and capabilities across our listings, advisory, data, index, and analytics teams, we believe that Capital Access Platforms will serve as a bridge between the investor and corporate communities, focused on enhancing the client experience by providing efficient routes to capital, delivering more holistic, actionable insights and intelligence, modernizing workflows, and navigating the climate and ESG landscape."
+  ]
+}

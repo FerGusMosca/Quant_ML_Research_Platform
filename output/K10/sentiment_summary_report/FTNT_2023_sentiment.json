@@ -1,0 +1,45 @@
+{
+  "symbol": "FTNT",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1881,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.247
+  },
+  "top_positive": [
+    {
+      "sent": "Assets Measured at Fair Value on a Recurring Basis The following tables present the fair value of our financial assets measured at fair value on a recurring basis (in millions): December 31, 2022 December 31, 2021 Aggregate Fair Value Quoted Prices\u00a0in Active Markets\u00a0For Identical Assets Significant Other Observable Remaining Inputs Significant Other Unobservable Remaining Inputs Aggregate Fair Value Quoted Prices\u00a0in Active Markets\u00a0For Identical Assets Significant Other Observable Remaining Inputs Significant Other Unobservable Remaining Inputs (Level 1) (Level 2) (Level 3) (Level 1) (Level 2) (Level 3) Assets: Corporate debt securities $ 288.9 $ \u2014 $ 288.9 $ \u2014 $ 542.5 $ \u2014 $ 542.5 $ \u2014 U.S.",
+      "score": 0.9865
+    },
+    {
+      "sent": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS\u2014(Continued) The following table summarizes information about outstanding and exercisable stock options as of December\u00a031, 2022, (in millions, except exercise prices and contractual life): Options Outstanding Options Exercisable Range of Exercise Prices Number Outstanding Weighted- Average Remaining Contractual Life (Years) Weighted- Average Exercise Price Number Exercisable Weighted- Average Exercise Price $ 4.77 -$ 9.81 4.3 1.4 $ 8.08 4.3 $ 8.08 $ 11.66 -$ 22.72 2.5 3.2 16.91 2.3 16.81 $ 22.90 -$ 34.89 4.5 4.6 28.82 2.4 27.61 $ 39.68 -$ 68.70 1.9 6.1 59.79 0.1 56.72 13.2 9.1 Shares Reserved for Future Issuances The following table presents the common stock reserved for future issuance (in millions): December 31, 2022 Reserved for future equity award grants 57.2 Outstanding stock options and RSUs 23.7 Total common stock reserved for future issuances 80.9 Stock-Based Compensation Expense Stock-based compensation expense, including stock-based compensation expense related to awards classified as liabilities, is included in costs and expenses (in millions): Year Ended December 31, 2022 2021 2020 Cost of product revenue $ 1.7 $ 1.7 $ 1.6 Cost of service revenue 18.8 15.7 12.9 Research and development 64.2 56.7 47.6 Sales and marketing 105.0 110.0 108.4 General and administrative 30.1 27.1 23.3 Total stock-based compensation expense $ 219.8 $ 211.2 $ 193.8 The following table summarizes stock-based compensation expense, including stock-based compensation expense related to awards classified as liabilities, by award type (in millions): Year Ended December 31, 2022 2021 2020 RSUs $ 195.0 $ 191.8 $ 179.7 Stock options 24.8 19.4 14.1 Total stock-based compensation expense $ 219.8 $ 211.2 $ 193.8 106 Table of Contents FORTINET, INC.",
+      "score": 0.985
+    },
+    {
+      "sent": "Such management estimates include, but are not limited to, the determination of contingent liabilities, the determination of our ability to exercise control or significant influence over our investee, the evaluation of the equity method investments for OTTI, the standalone selling price for our products and services, the period of benefit for deferred contract costs for commissions, stock-based compensation, inventory valuation, the fair value of tangible and intangible assets acquired and liabilities assumed in business combinations, the measurement of liabilities for uncertain tax positions and deferred tax assets and liabilities, the assessment of recoverability of our goodwill and other long-lived assets, measurement of non-marketable equity securities and the determination of sales returns reserves.",
+      "score": 0.9756
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Some of the impacts and potential impacts of the war in Ukraine and possible expansion thereof include, but are not limited to: \u2022 reduction of sales and revenue based on our reduction of operations and sales in Russia; \u2022 difficulty in business planning and forecasting due to the uncertainty of the impact of the war on aspects of our business, such as on our distributors, resellers and end-customers; \u2022 uncertainty and disruption in the general demand environment, including Russia, Belarus and Ukraine, which could reduce demand by distributors; \u2022 increased costs and the diversion of management\u2019s attention related to oversight of our international operations; \u2022 failure of Russian distributors to pay outstanding accounts receivables owed to us; \u2022 retaliatory actions by Russia or other countries against us and other Western companies that chose to limit or remove business operations in the region; \u2022 increased risk of data breach and other threats from ransomware, destructive malware, distributed denial-of-service attacks, as well as fraud, spam and fake accounts, cyber-attacks or other illegal activity conducted generally by bad actors seeking to take advantage of us, our distributors, resellers or end-customers; \u2022 any devaluation of local currency or other inflationary effects caused by the impact of sanctions and other macroeconomic effects of the war; and \u2022 significant volatility and disruption of global financial markets and negative impact to global and regional e\nand other liabilities, which may have a material adverse effect on our international operations, financial condition and results of operations.",
+      "score": -0.997
+    },
+    {
+      "sent": "If we cannot manufacture and ship our products due to, for example, global chip shortages, excessive demand on contract manufacturers capacity, natural disasters and health emergencies such as earthquakes, fires, power outages, typhoons, floods, cyber events, pandemics and epidemics such as the COVID-19 pandemic or manmade events such as civil unrest, labor disruption, international trade disputes, international conflicts, terrorism, wars or other foreign conflicts, such as the war in Ukraine or tensions between China and Taiwan, and critical infrastructure attacks, our business and financial results could be materially and adversely impacted.",
+      "score": -0.9859
+    },
+    {
+      "sent": "If we cannot manufacture and ship our products due to, for example, global chip shortages, excessive demand on contract manufacturers capacity, natural disasters and health emergencies such as earthquakes, fires, power outages, typhoons, floods, cyber events, pandemics and epidemics such as the COVID-19 pandemic or manmade events such as civil unrest, labor disruption, international trade disputes, international conflicts, terrorism, wars or other foreign conflicts, such as the war in Ukraine or tensions between China and Taiwan, and critical infrastructure attacks, our business and financial results could be materially and adversely impacted.",
+      "score": -0.9859
+    }
+  ],
+  "forward_snippets": [
+    "Our network access control solutions provide visibility, control and automated event responses in order to secure internet of things (\u201cIoT\u201d) and OT devices.",
+    "Our Secure SD-WAN for multi-cloud solution automates deployment of an overlay network across different cloud networks and offers visibility, control and centralized management that integrates functionality across multiple cloud environments.",
+    "Our Secure SD-WAN for multi-cloud solution automates deployment of an overlay network across different cloud networks and offers visibility, control and centralized management that integrates functionality across multiple cloud environments.",
+    "The use of ASICs allows our appliances to consolidate security functionality and converge security with a minimal impact to network throughput performance, which we believe delivers a lower total cost of ownership (\u201cTCO\u201d) to our customers.",
+    "As the security needs and technologies of our end-customers increase, we believe our TCO-driven ASIC approach give our products a competitive advantage against other architectural approaches."
+  ]
+}

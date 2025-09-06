@@ -1,0 +1,45 @@
+{
+  "symbol": "RSMDF",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1787,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.214
+  },
+  "top_positive": [
+    {
+      "sent": "The agreement resolved five lawsuits originally brought by whistleblowers under the qui tam provisions of the False Claims Act and allegations that we: (a) provided DME companies with free telephone call center services and other free patient outreach services that enabled these companies to order resupplies for their patients with sleep apnea, (b) provided sleep labs with free and below-cost positive airway pressure masks and diagnostic machines, as well as free installation of these machines, (c) arranged for, and fully guaranteed the payments due on, interest-free loans that DME supplies acquired from third-party financial institutions for the purchase of our equipment, and (d) provided non-sleep specialist physicians free home sleep testing devices referred to as \u201cApneaLink.\u201d We agreed with the government to civilly resolve these matters for a payment of $39.5 million ($37.5 million to the federal government and $2 million to the various states) and we incurred additional fees and administrative costs that typically accompany such a resolution amounting to $1.1 million.",
+      "score": 0.9821
+    },
+    {
+      "sent": "Additionally, our software solutions are focused on out-of-hospital care, which we believe is fragmented and underserved, and where we see significant opportunity to transform and significantly improve out-of-hospital healthcare through a strategy of enabling better patient care, improving clinical decision support, and driving interoperability across out-of-hospital care sett\ndevelopers of medical equipment and related technologies, and software solution providers.",
+      "score": 0.9819
+    },
+    {
+      "sent": "Additionally, our software solutions are focused on out-of-hospital care, which we believe is fragmented and underserved, and where we see significant opportunity to transform and significantly improve out-of-hospital healthcare through a strategy of enabling better patient care, improving clinical decision support, and driving interoperability across out-of-hospital care settings.",
+      "score": 0.9794
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Despite the implementation of security measures, our internal computer and information technology systems and those of our vendors and customers are vulnerable to attack and damage from computer viruses, malware, denial of service attacks, unauthorized access, or other harm, including from threat actors seeking to cause disruption to our business.",
+      "score": -0.9524
+    },
+    {
+      "sent": "Despite the implementation of security measures, our internal computer and information technology systems and those of our vendors and customers are vulnerable to attack and damage from computer viruses, malware, denial of service attacks, unauthorized access, or other harm, including from threat actors seeking to cause disruption to our business.",
+      "score": -0.9524
+    },
+    {
+      "sent": "Despite the implementation of security measures, our internal computer and information technology systems and those of our vendors and customers are vulnerable to attack and damage from computer viruses, malware, denial of service attacks, unauthorized access, or other harm, including from threat actors seeking to cause disruption to our business.",
+      "score": -0.9524
+    }
+  ],
+  "forward_snippets": [
+    "The words \u201cbelieve,\u201d \u201cexpect,\u201d \u201cintend,\u201d \u201canticipate,\u201d \u201cwill continue,\u201d \u201cwill,\u201d \u201cestimate,\u201d \u201cplan,\u201d \u201cfuture\u201d and other similar expressions, and negative statements of such expressions, generally identify forward-looking statements, including, in particular, statements regarding expectations of future revenue or earnings, expenses, new product development, new product launches, new markets for our products, the integration of acquisitions, our supply chain, domestic and international regulatory developments, litigation, tax outlook, the expected impact of COVID-19, its variants, and similar epidemics or pandemics, and macroeconomic conditions on our business.",
+    "The words \u201cbelieve,\u201d \u201cexpect,\u201d \u201cintend,\u201d \u201canticipate,\u201d \u201cwill continue,\u201d \u201cwill,\u201d \u201cestimate,\u201d \u201cplan,\u201d \u201cfuture\u201d and other similar expressions, and negative statements of such expressions, generally identify forward-looking statements, including, in particular, statements regarding expectations of future revenue or earnings, expenses, new product development, new product launches, new markets for our products, the integration of acquisitions, our supply chain, domestic and international regulatory developments, litigation, tax outlook, the expected impact of COVID-19, its variants, and similar epidemics or pandemics, and macroeconomic conditions on our business.",
+    "The words \u201cbelieve,\u201d \u201cexpect,\u201d \u201cintend,\u201d \u201canticipate,\u201d \u201cwill continue,\u201d \u201cwill,\u201d \u201cestimate,\u201d \u201cplan,\u201d \u201cfuture\u201d and other similar expressions, and negative statements of such expressions, generally identify forward-looking statements, including, in particular, statements regarding expectations of future revenue or earnings, expenses, new product development, new product launches, new markets for our products, the integration of acquisitions, our supply chain, domestic and international regulatory developments, litigation, tax outlook, the expected impact of COVID-19, its variants, and similar epidemics or pandemics, and macroeconomic conditions on our business.",
+    "The words \u201cbelieve,\u201d \u201cexpect,\u201d \u201cintend,\u201d \u201canticipate,\u201d \u201cwill continue,\u201d \u201cwill,\u201d \u201cestimate,\u201d \u201cplan,\u201d \u201cfuture\u201d and other similar expressions, and negative statements of such expressions, generally identify forward-looking statements, including, in particular, statements regarding expectations of future revenue or earnings, expenses, new product development, new product launches, new markets for our products, the integration of acquisitions, our supply chain, domestic and international regulatory developments, litigation, tax outlook, the expected impact of COVID-19, its variants, and similar epidemics or pandemics, and macroeconomic conditions on our business.",
+    "Financial information about our revenues from and assets located\noutlook, the expected impact of COVID-19, its variants, and similar epidemics or pandemics, and macroeconomic conditions on our business."
+  ]
+}

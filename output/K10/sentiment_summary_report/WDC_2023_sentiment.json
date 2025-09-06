@@ -1,0 +1,45 @@
+{
+  "symbol": "WDC",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2153,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.178
+  },
+  "top_positive": [
+    {
+      "sent": "\u2022 Operational Excellence: We are focused on delivering the best value for our customers in Cloud, Client and Consumer end markets through a relentless focus on appropriately scaling our operations across both Flash and HDD technologies to efficiently support business growth; achieving best in class cost, quality and cycle-time; maintaining industry leading manufacturing capabilities; and having a competitive advantage in supply-chain management.",
+      "score": 0.9806
+    },
+    {
+      "sent": "\u2022 Operational Excellence: We are focused on delivering the best value for our customers in Cloud, Client and Consumer end markets through a relentless focus on appropriately scaling our operations across both Flash and HDD technologies to efficiently support business growth; achieving best in class cost, quality and cycle-time; maintaining industry leading manufacturing capabilities; and having a competitive advantage in supply-chain management.",
+      "score": 0.9806
+    },
+    {
+      "sent": "\u2022 Operational Excellence: We are focused on delivering the best value for our customers in Cloud, Client and Consumer end markets through a relentless focus on appropriately scaling our operations across both Flash and HDD technologies to efficiently support business growth; achieving best in class cost, quality and cycle-time; maintaining industry leading manufacturing capabilities; and having a competitive advantage in supply-chain management.",
+      "score": 0.9806
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "To the extent our products include design defects, suffer system failure or are hacked, or if the encryption schemes are compromised or breached, this could harm our business by requiring us to employ additional resources to fix the errors or defects, exposing us to litigation and indemnification claims and hurting our reputation.",
+      "score": -0.9761
+    },
+    {
+      "sent": "To the extent our products include design defects, suffer system failure or are hacked, or if the encryption schemes are compromised or breached, this could harm our business by requiring us to employ additional resources to fix the errors or defects, exposing us to litigation and indemnification claims and hurting our reputation.",
+      "score": -0.9761
+    },
+    {
+      "sent": "Where a loss is not probable but is reasonably possible or where a loss in excess of the amount accrued is reasonably possible, the Company discloses an estimate of the amount of the loss or range of possible losses for the claim if a reasonable estimate can be made, unless the amount of such reasonably possible losses is not material to the Company\u2019s financial position, results of operations or cash flows.",
+      "score": -0.928
+    }
+  ],
+  "forward_snippets": [
+    "Our broad portfolio of technology and products in Flash and HDD address multiple end markets of \u201cCloud\u201d, \u201cClient\u201d and \u201cConsumer.\u201d Cloud is comprised primarily of products for public or private cloud environments and end customers, which we believe we are uniquely positioned to address as the only provider of both Flash and HDD.",
+    "Our broad portfolio of technology and products in Flash and HDD address multiple end markets of \u201cCloud\u201d, \u201cClient\u201d and \u201cConsumer.\u201d Cloud is comprised primarily of products for public or private cloud environments and end customers, which we believe we are uniquely positioned to address as the only provider of both Flash and HDD.",
+    "Our broad portfolio of technology and products in Flash and HDD address multiple end markets of \u201cCloud\u201d, \u201cClient\u201d and \u201cConsumer.\u201d Cloud is comprised primarily of products for public or private cloud environments and end customers, which we believe we are uniquely positioned to address as the only provider of both Flash and HDD.",
+    "Our broad portfolio of technology and products in Flash and HDD address multiple end markets of \u201cCloud\u201d, \u201cClient\u201d and \u201cConsumer.\u201d Cloud is comprised primarily of products for public or private cloud environments and end customers, which we believe we are uniquely positioned to address as the only provider of both Flash and HDD.",
+    "At Western Digital, we continue to transform ourselves to address the growth in data by providing what we believe to be the broadest range of storage technologies in the industry with a comprehensive product portfolio and global reach."
+  ]
+}

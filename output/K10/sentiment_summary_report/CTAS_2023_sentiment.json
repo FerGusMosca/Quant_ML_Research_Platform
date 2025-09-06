@@ -1,0 +1,45 @@
+{
+  "symbol": "CTAS",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2226,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.33
+  },
+  "top_positive": [
+    {
+      "sent": "The following tables set forth the computation of basic and diluted earnings per share using the two-class method for amounts attributable to Cintas' common shares for the fiscal years ended May 31: Basic Earnings per Share (In thousands except per share data) 2023 2022 2021 Net income $ 1,348,010 $ 1,235,757 $ 1,110,968 Less: net income allocated to participating securities 5,463 6,132 7,623 Net income available to common shareholders $ 1,342,547 $ 1,229,625 $ 1,103,345 Basic weighted average common shares outstanding 101,645 103,172 104,874 Basic earnings per share $ 13.21 $ 11.92 $ 10.52 Diluted Earnings per Share (In thousands except per share data) 2023 2022 2021 Net income $ 1,348,010 $ 1,235,757 $ 1,110,968 Less: net income allocated to participating securities 5,463 6,132 7,623 Net income available to common shareholders $ 1,342,547 $ 1,229,625 $ 1,103,345 Basic weighted average common shares outstanding 101,645 103,172 104,874 Effect of dilutive securities \u2013 employee stock options 1,732 2,351 2,833 Diluted weighted average common shares outstanding 103,377 105,523 107,707 Diluted earnings per share $ 12.99 $ 11.65 $ 10.24 For the fiscal years ended May\u00a031, 2023, 2022 and 2021, options granted to purchase 1.0 million, 0.5 million and 0.2 million shares of Cintas common stock, respectively, were excluded from the computation of diluted earnings per share.",
+      "score": 0.9913
+    },
+    {
+      "sent": "The following tables set forth the computation of basic and diluted earnings per share using the two-class method for amounts attributable to Cintas' common shares for the fiscal years ended May 31: Basic Earnings per Share (In thousands except per share data) 2023 2022 2021 Net income $ 1,348,010 $ 1,235,757 $ 1,110,968 Less: net income allocated to participating securities 5,463 6,132 7,623 Net income available to common shareholders $ 1,342,547 $ 1,229,625 $ 1,103,345 Basic weighted average common shares outstanding 101,645 103,172 104,874 Basic earnings per share $ 13.21 $ 11.92 $ 10.52 Diluted Earnings per Share (In thousands except per share data) 2023 2022 2021 Net income $ 1,348,010 $ 1,235,757 $ 1,110,968 Less: net income allocated to participating securities 5,463 6,132 7,623 Net income available to common shareholders $ 1,342,547 $ 1,229,625 $ 1,103,345 Basic weighted average common shares outstanding 101,645 103,172 104,874 Effect of dilutive securities \u2013 employee stock options 1,732 2,351 2,833 Diluted weighted average common shares outstanding 103,377 105,523 107,707 Diluted earnings per share $ 12.99 $ 11.65 $ 10.24 For the fiscal years ended May\u00a031, 2023, 2022 and 2021, options granted to purchase 1.0 million, 0.5 million and 0.2 million shares of Cintas common stock, respectively, were excluded from the computation of diluted earnings per share.",
+      "score": 0.9913
+    },
+    {
+      "sent": "These financial instruments measured at fair value on a recurring basis are summarized below: As of May 31, 2023 (In thousands) Level\u00a01 Level\u00a02 Level\u00a03 Fair Value Cash and cash equivalents $ 124,149 $ \u2014 $ \u2014 $ 124,149 Other assets, net: Interest rate lock agreements \u2014 70,449 \u2014 70,449 Total assets at fair value $ 124,149 $ 70,449 $ \u2014 $ 194,598 As of May 31, 2022 (In thousands) Level\u00a01 Level\u00a02 Level\u00a03 Fair Value Cash and cash equivalents $ 90,471 $ \u2014 $ \u2014 $ 90,471 Other assets, net: Interest rate lock agreements \u2014 56,877 \u2014 56,877 Total assets at fair value $ 90,471 $ 56,877 $ \u2014 $ 147,348 Cintas' cash and cash equivalents are generally classified within Level\u00a01 or Level\u00a02 of the fair value hierarchy.",
+      "score": 0.9884
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Unexpected events, including fires or explosions at facilities, severe weather conditions and natural disasters such as hurricanes and tornadoes (including those caused by climate change), war or terrorist activities, unplanned outages, global health pandemics such as COVID-19, supply disruptions, failure of equipment or systems or changes in laws and/or regulations impacting our businesses, could adversely affect our consolidated results of operations.",
+      "score": -0.9628
+    },
+    {
+      "sent": "Unexpected events, including fires or explosions at facilities, severe weather conditions and natural disasters such as hurricanes and tornadoes (including those caused by climate change), war or terrorist activities, unplanned outages, global health pandemics such as COVID-19, supply disruptions, failure of equipment or systems or changes in laws and/or regulations impacting our businesses, could adversely affect our consolidated results of operations.",
+      "score": -0.9628
+    },
+    {
+      "sent": "Unexpected events, including fires or explosions at facilities, severe weather conditions and natural disasters such as hurricanes and tornadoes (including those caused by climate change), war or terrorist activities, unplanned outages, global health pandemics such as COVID-19, supply disruptions, failure of equipment or systems or changes in laws and/or regulations impacting our businesses, could adversely affect our consolidated results of operations.",
+      "score": -0.9628
+    }
+  ],
+  "forward_snippets": [
+    "Our primary areas of focus in managing our human capital include the following: Corporate Culture We believe that our culture at Cintas is just as essential as our products and services.",
+    "In addition, we provide several channels for all employee-partners to speak up, ask for guidance and report concerns related to ethics or safety violations, and we address those concerns and take appropriate actions to uphold our Cintas values and health and safety culture.",
+    "We also have a diverse Management Trainee program that helps Cintas find and develop the best talent for our leadership pipeline, and we monitor representation across management positions.",
+    "In addition, we provide several channels for all employee-partners to speak up, ask for guidance and report concerns related to ethics or safety violations, and we address those concerns and take appropriate actions to uphold our Cintas values and health and safety culture.",
+    "We also have a diverse Management Trainee program that helps Cintas find and develop the best talent for our leadership pipeline, and we monitor representation across management positions."
+  ]
+}

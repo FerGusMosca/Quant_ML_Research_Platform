@@ -1,0 +1,26 @@
+{
+  "symbol": "UAL",
+  "year": 2023,
+  "competition_summary": [
+    {
+      "competitor": "Company",
+      "mentions": 3,
+      "context": "Competition. The domestic airline industry is highly competitive and dynamic. The Company's competitors consist primarily of other airlines and, to a certain extent, other forms of transportation. Currently, any U.S. carrier deemed fit by the U.S. Department of Transportation (the \"DOT\") is largely free to operate scheduled passenger service between any two points within the United States. Competition can be direct, in the form of another carrier flying the exact non-stop route, or indirect, whe"
+    },
+    {
+      "competitor": "the U.S. Department of Transportation",
+      "mentions": 1,
+      "context": "Competition. The domestic airline industry is highly competitive and dynamic. The Company's competitors consist primarily of other airlines and, to a certain extent, other forms of transportation. Currently, any U.S. carrier deemed fit by the U.S. Department of Transportation (the \"DOT\") is largely free to operate scheduled passenger service between any two points within the United States. Competition can be direct, in the form of another carrier flying the exact non-stop route, or indirect, whe"
+    },
+    {
+      "competitor": "DOT",
+      "mentions": 1,
+      "context": "Competition. The domestic airline industry is highly competitive and dynamic. The Company's competitors consist primarily of other airlines and, to a certain extent, other forms of transportation. Currently, any U.S. carrier deemed fit by the U.S. Department of Transportation (the \"DOT\") is largely free to operate scheduled passenger service between any two points within the United States. Competition can be direct, in the form of another carrier flying the exact non-stop route, or indirect, whe"
+    },
+    {
+      "competitor": "International Competition",
+      "mentions": 1,
+      "context": "Competition. The domestic airline industry is highly competitive and dynamic. The Company's competitors consist primarily of other airlines and, to a certain extent, other forms of transportation. Currently, any U.S. carrier deemed fit by the U.S. Department of Transportation (the \"DOT\") is largely free to operate scheduled passenger service between any two points within the United States. Competition can be direct, in the form of another carrier flying the exact non-stop route, or indirect, whe"
+    }
+  ]
+}

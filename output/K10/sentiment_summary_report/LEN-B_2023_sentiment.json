@@ -1,0 +1,45 @@
+{
+  "symbol": "LEN-B",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1655,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.152
+  },
+  "top_positive": [
+    {
+      "sent": "Our outstanding letters of credit and surety bonds are described below: November 30, (In thousands) 2022 2021 Performance letters of credit $ 1,259,033 924,584 Financial letters of credit 503,659 425,843 Surety bonds 4,136,715 3,553,047 Anticipated future costs primarily for site improvements related to performance surety bonds 2,273,694 1,690,861 Our Homebuilding average debt outstanding and the average rates of interest were as follows: November 30, (Dollars in thousands) 2022 2021 Homebuilding average debt outstanding $ 4,705,892 5,711,100 Average interest rate 4.7% 4.9% Interest incurred $ 230,839 275,091 Under the Credit Facility agreement (the \"Credit Agreement\"), we are required to maintain a minimum consolidated tangible net worth, a maximum leverage ratio and either a liquidity or an interest coverage ratio.",
+      "score": 0.9914
+    },
+    {
+      "sent": "Information Regarding Interest Rate Sensitivity Principal (Notional) Amount by Expected Maturity and Average Interest Rate November\u00a030, 2022 Years Ending November\u00a030, Fair Value at November\u00a030, (Dollars in millions) 2023 2024 2025 2026 2027 Thereafter Total 2022 ASSETS Financial Services: Loans held-for-investment, net: Fixed rate $ 1.0 1.0 1.0 1.1 1.1 32.7 37.9 37.9 Average interest rate 3.6 % 3.6 % 3.6 % 3.6 % 3.6 % 3.6 % 3.6 % \u2014 Variable rate $ 7.3 \u2014 \u2014 \u2014 \u2014 0.5 7.8 7.8 Average interest rate 8.6 % \u2014 \u2014 \u2014 \u2014 2.8 % 8.3 % \u2014 LIABILITIES Homebuilding: Senior notes and other debts payable: Fixed rate $ 223.1 1,537.4 566.1 404.5 1,265.3 42.4 4,038.8 3,993.2 Average interest rate 3.9 % 5.0 % 4.7 % 5.2 % 4.8 % 6.2 % 4.9 % \u2014 Financial Services: Notes and other debts payable: Fixed rate $ \u2014 \u2014 \u2014 \u2014 \u2014 133.3 133.3 134.0 Average interest rate \u2014 \u2014 \u2014 \u2014 \u2014 3.4 % 3.4 % \u2014 Variable rate $ 2,001.8 \u2014 \u2014 \u2014 \u2014 \u2014 2,001.8 2,001.8 Average interest rate 5.8 % \u2014 \u2014 \u2014 \u2014 \u2014 5.8 % \u2014 Multifamily: Notes and other debts payable: Fixed rate $ 13.5 \u2014 \u2014 \u2014 \u2014 \u2014 13.5 13.5 Average interest rate 0.0 % \u2014 \u2014 \u2014 \u2014 \u2014 0.0 % \u2014 Variable rate $ \u2014 3.2 \u2014 \u2014 \u2014 \u2014 3.2 3.2 Average interest rate \u2014 3.6 % \u2014 \u2014 \u2014 \u2014 3.6 % \u2014 42 Table of Contents Item 8.",
+      "score": 0.9828
+    },
+    {
+      "sent": "Information Regarding Interest Rate Sensitivity Principal (Notional) Amount by Expected Maturity and Average Interest Rate November\u00a030, 2022 Years Ending November\u00a030, Fair Value at November\u00a030, (Dollars in millions) 2023 2024 2025 2026 2027 Thereafter Total 2022 ASSETS Financial Services: Loans held-for-investment, net: Fixed rate $ 1.0 1.0 1.0 1.1 1.1 32.7 37.9 37.9 Average interest rate 3.6 % 3.6 % 3.6 % 3.6 % 3.6 % 3.6 % 3.6 % \u2014 Variable rate $ 7.3 \u2014 \u2014 \u2014 \u2014 0.5 7.8 7.8 Average interest rate 8.6 % \u2014 \u2014 \u2014 \u2014 2.8 % 8.3 % \u2014 LIABILITIES Homebuilding: Senior notes and other debts payable: Fixed rate $ 223.1 1,537.4 566.1 404.5 1,265.3 42.4 4,038.8 3,993.2 Average interest rate 3.9 % 5.0 % 4.7 % 5.2 % 4.8 % 6.2 % 4.9 % \u2014 Financial Services: Notes and other debts payable: Fixed rate $ \u2014 \u2014 \u2014 \u2014 \u2014 133.3 133.3 134.0 Average interest rate \u2014 \u2014 \u2014 \u2014 \u2014 3.4 % 3.4 % \u2014 Variable rate $ 2,001.8 \u2014 \u2014 \u2014 \u2014 \u2014 2,001.8 2,001.8 Average interest rate 5.8 % \u2014 \u2014 \u2014 \u2014 \u2014 5.8 % \u2014 Multifamily: Notes and other debts payable: Fixed rate $ 13.5 \u2014 \u2014 \u2014 \u2014 \u2014 13.5 13.5 Average interest rate 0.0 % \u2014 \u2014 \u2014 \u2014 \u2014 0.0 % \u2014 Variable rate $ \u2014 3.2 \u2014 \u2014 \u2014 \u2014 3.2 3.2 Average interest rate \u2014 3.6 % \u2014 \u2014 \u2014 \u2014 3.6 % \u2014 42 Table of Contents Item 8.",
+      "score": 0.9828
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Homebuilding Segments At November\u00a030, 2022, our Homebuilding operating segments and Homebuilding Other consisted of homebuilding divisions located in: East: Alabama, Florida, New Jersey, Pennsylvania and South Carolina Central: Georgia, Illinois, Indiana, Maryland, Minnesota, North Carolina, Tennessee and Virginia Texas: Texas West: Arizona, California, Colorado, Idaho, Nevada, Oregon, Utah and Washington Other: Urban divisions and other homebuilding related investments primarily in California, including FivePoint 25 Table of Contents The following tables set forth selected financial and operational information related to our homebuilding operations for the years indicated: Selected Financial and Operational Data Year Ended November 30, 2022 Gross Margins Operating Earnings (Loss) (Dollars in thousands) Sales of Homes Revenues Costs of Sales of Homes Gross Margin % Net Margins on Sales of Homes (1) Gross Loss on Sales of Land (2) Other Revenues Equity in Earnings (Loss) from Unconsolidated Entities Other Income (Expense), net Operating Earnings (Loss) East $ 9,201,412 6,341,272 31.1 % $ 2,222,835 (10,701) 3,991 1,300 22,831 2,240,256 Central 5,830,587 4,532,474 22.3 % 889,359 (171) 1,496 691 (2,144) 889,231 Texas 4,212,223 2,992,532 29.0 % 941,899 (9,387) 1,250 \u2014 (4,525) 929,237 West 12,513,277 9,114,818 27.2 % 2,775,430 (4,398) 3,916 4,412 (5,763) 2,773,597 Other (3) 21,386 44,371 (107.5) % (40,348) (3,891) 18,756 (23,638) (5,883) (55,004) Totals $ 31,778,885 23,025,467 27.5 % $ 6,789,175 (28,548) 29,409 (17,235) 4,516 6,777,317 Year Ended November 30, 2021 Gross Margins Operating Earnings (Loss) (Dollars in thousands) Sales of Homes Revenues Costs of Sales of Homes Gross Margin % Net Margins on Sales of Homes (1) Gross Margins on Sales of Land Other Revenues Equity in Earnings (Loss) from Unconsolidated Entities Other Income (Expense), net Operating Earnings (Loss) East $ 6,814,578 4,858,456 28.7 % $ 1,432,242 10,835 7,161 308 4,886 1,455,432 Central 4,807,194 3,731,567 22.4 % 713,229 4,271 1,977 1,088 (146) 720,419 Texas 3,204,609 2,238,204 30.2 % 725,065 6,347 1,630 498 (3,075) 730,465 West 10,503,305 7,694,870 26.7 % 2,179,980 1,394 4,778 5,388 906 2,192,446 Other (3) 18,419 39,116 (112.4) % (61,321) 1,435 13,678 (21,487) 695 (67,000) $ 25,348,105 18,562,213 26.8 % $ 4,989,195 24,282 29,224 (14,205) 3,266 5,031,762 (1) Net margins on sales of homes include selling, general and administrative expenses.",
+      "score": -0.9633
+    },
+    {
+      "sent": "The occurrence of natural disasters or severe weather conditions can delay new home deliveries, increase costs by damaging inventories and lead to shortages of labor and materials in areas affected by the disasters, and can negatively impact the demand for new homes in affected areas.",
+      "score": -0.9313
+    },
+    {
+      "sent": "Also, the coverage offered and the availability of general liability insurance for construction defects is currently limited and policies that can be obtained often include exclusions based upon past losses those insurers suffered as a result of use of defective materials in homes we and many other homebuilders built.",
+      "score": -0.9217
+    }
+  ],
+  "forward_snippets": [
+    "Subject to market conditions, we intend to spin off our Multifamily and single family home for rent asset management businesses, together with some investment assets, by transferring them to a newly formed subsidiary, Quarterra Group, Inc.",
+    "Subject to market conditions, we intend to spin off our Multifamily and single family home for rent asset management businesses, together with some investment assets, by transferring them to a newly formed subsidiary, Quarterra Group, Inc.",
+    "Although we, like homebuilders throughout the country, have encountered shortages of materials and skilled labor during 2022, we believe that because of our size and our builder of choice program, where we work with our trade partners to drive efficiencies for them, we have been less affected by these shortages than many of our competitors.",
+    "Although we, like homebuilders throughout the country, have encountered shortages of materials and skilled labor during 2022, we believe that because of our size and our builder of choice program, where we work with our trade partners to drive efficiencies for them, we have been less affected by these shortages than many of our competitors.",
+    "We believe this leads to enhanced customer retention and referrals."
+  ]
+}

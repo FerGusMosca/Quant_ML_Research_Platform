@@ -1,0 +1,45 @@
+{
+  "symbol": "EXPE",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2374,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.178
+  },
+  "top_positive": [
+    {
+      "sent": "Inclusion and Diversity To best serve our employees, customers, partners and community, we aim to build inclusive and diverse workplaces that promote belonging, respect, voice and equal opportunity with initiatives such as: \u2022 Employee-led Inclusion Business Groups focused on promoting awareness related to race, ethnicity, sexual orientation, military status, disability and gender, as well as allyship for underrepresented identities; \u2022 Educational programs designed to identify and mitigate bias and exclusive practices in traditional recruitment, hiring, talent review, promotion and marketing processes; 7 Table of Contents \u2022 Recruiting and assessment processes based on skills and designed to limit the impact of unconscious bias; \u2022 Dedicated diversity sourcing, marketing, and recruiting teams focused on engaging underrepresented talent and increasing representation in top of funnel and interview slates; \u2022 An onboarding program that includes a focus on intercultural awareness, ally skills and our inclusion resources; \u2022 Employment and hiring targets for women to occupy 50% of leadership roles by the end of 2025 and for 25% of U.S.",
+      "score": 0.985
+    },
+    {
+      "sent": "Inclusion and Diversity To best serve our employees, customers, partners and community, we aim to build inclusive and diverse workplaces that promote belonging, respect, voice and equal opportunity with initiatives such as: \u2022 Employee-led Inclusion Business Groups focused on promoting awareness related to race, ethnicity, sexual orientation, military status, disability and gender, as well as allyship for underrepresented identities; \u2022 Educational programs designed to identify and mitigate bias and exclusive practices in traditional recruitment, hiring, talent review, promotion and marketing processes; 7 Table of Contents \u2022 Recruiting and assessment processes based on skills and designed to limit the impact of unconscious bias; \u2022 Dedicated diversity sourcing, marketing, and recruiting teams focused on engaging underrepresented talent and increasing representation in top of funnel and interview slates; \u2022 An onboarding program that includes a focus on intercultural awareness, ally skills and our inclusion resources; \u2022 Employment and hiring targets for women to occupy 50% of leadership roles by the end of 2025 and for 25% of U.S.",
+      "score": 0.985
+    },
+    {
+      "sent": "Inclusion and Diversity To best serve our employees, customers, partners and community, we aim to build inclusive and diverse workplaces that promote belonging, respect, voice and equal opportunity with initiatives such as: \u2022 Employee-led Inclusion Business Groups focused on promoting awareness related to race, ethnicity, sexual orientation, military status, disability and gender, as well as allyship for underrepresented identities; \u2022 Educational programs designed to identify and mitigate bias and exclusive practices in traditional recruitment, hiring, talent review, promotion and marketing processes; 7 Table of Contents \u2022 Recruiting and assessment processes based on skills and designed to limit the impact of unconscious bias; \u2022 Dedicated diversity sourcing, marketing, and recruiting teams focused on engaging underrepresented talent and increasing representation in top of funnel and interview slates; \u2022 An onboarding program that includes a focus on intercultural awareness, ally skills and our inclusion resources; \u2022 Employment and hiring targets for women to occupy 50% of leadership roles by the end of 2025 and for 25% of U.S.",
+      "score": 0.985
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Factors that could negatively affect the travel industry in general and our business in particular, potentially materially, include: macroeconomic concerns, including recessions, political instability and geopolitical conflicts (such as the war in Ukraine), trade disputes, significant fluctuations in currency values, sovereign debt issues, bans on travel to and from certain countries, significant changes in oil 11 Table of Contents prices, continued air carrier and hotel chain consolidation, reduced access to discount fares, travel strikes or labor unrest, labor shortages, whether due to the impact of the COVID-19 pandemic or otherwise, bankruptcies or liquidations, increased incidents of actual or threatened terrorism, natural disasters, travel-related accidents or grounding of aircraft due to safety concerns, and changes to visa and immigration requirements or border control policies.",
+      "score": -0.9313
+    },
+    {
+      "sent": "The complaint alleges the defendants failed to comply with state and local transient occupancy tax statutes, as well as claims for conversion, breach of fiduciary duty, unjust enrichment, fraud and violation of the Nevada Deceptive Trade Practices Act.",
+      "score": -0.9287
+    },
+    {
+      "sent": "The complaint alleges the defendants failed to comply with state and local transient occupancy tax statutes, as well as claims for conversion, breach of fiduciary duty, unjust enrichment, fraud and violation of the Nevada Deceptive Trade Practices Act.",
+      "score": -0.9287
+    }
+  ],
+  "forward_snippets": [
+    "We believe travel is a force for good.",
+    "We believe travel is a force for good.",
+    "Further, we aim to provide our customers with a high-quality product experience, strong membership benefits and broad multi-product supply offering, all of which encourages higher conversion, repeat rates and engagement.",
+    "We believe the strength of our core brand portfolio and consistent enhancements to product and service offerings, combined with our global scale and broad-based supply, drive increasing value to customers and customer demand.",
+    "Further, we aim to provide our customers with a high-quality product experience, strong membership benefits and broad multi-product supply offering, all of which encourages higher conversion, repeat rates and engagement."
+  ]
+}

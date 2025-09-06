@@ -1,0 +1,45 @@
+{
+  "symbol": "CP",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2002,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.136
+  },
+  "top_positive": [
+    {
+      "sent": "The councils work to ensure we consider diversity and inclusion when we make decisions, provide feedback on corporate directions and promote initiatives that relate to each council\u2019s area of focus; \u2022 Providing a company wide diversity and inclusion anonymous survey, the results of which aid in putting in place initiatives and educational opportunities; \u2022 Continuing our existing partnerships with associations and organizations that attract, recruit, and support skilled immigrants, transitioning veterans, persons with disabilities, and women; \u2022 Working with Indigenous groups to develop relationships that are more meaningful, create targeted outreach programs and employment opportunities, and better understand Indigenous history, culture, and opportunities for collaboration; \u2022 Supporting the development and advancement of women at the Company; and \u2022 Increasing employee awareness regarding the Company\u2019s workplace diversity and inclusion practices through communications, education, and training.",
+      "score": 0.98
+    },
+    {
+      "sent": "The councils work to ensure we consider diversity and inclusion when we make decisions, provide feedback on corporate directions and promote initiatives that relate to each council\u2019s area of focus; \u2022 Providing a company wide diversity and inclusion anonymous survey, the results of which aid in putting in place initiatives and educational opportunities; \u2022 Continuing our existing partnerships with associations and organizations that attract, recruit, and support skilled immigrants, transitioning veterans, persons with disabilities, and women; \u2022 Working with Indigenous groups to develop relationships that are more meaningful, create targeted outreach programs and employment opportunities, and better understand Indigenous history, culture, and opportunities for collaboration; \u2022 Supporting the development and advancement of women at the Company; and \u2022 Increasing employee awareness regarding the Company\u2019s workplace diversity and inclusion practices through communications, education, and training.",
+      "score": 0.98
+    },
+    {
+      "sent": "The forward-looking statements contained in this Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations and Annual Report on Form 10-K are based on current expectations, estimates, projections and assumptions, having regard to the Company's experience and its perception of historical trends, and includes, but is not limited to, expectations, estimates, projections and assumptions relating to: North American and global economic growth; commodity demand growth; sustainable industrial and agricultural production; commodity prices and interest rates; foreign exchange rates (as specified herein); effective tax rates (as specified herein); performance of our assets and equipment; sufficiency of our budgeted capital expenditures in carrying out our business plan; geopolitical conditions; applicable laws, regulations and government policies; the availability and cost of labour, services and infrastructure; the satisfaction by third parties of their obligations to the Company; and the anticipated impacts of the COVID-19 pandemic on the Company's business, operating results, cash flows and/or financial condition.",
+      "score": 0.9768
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "By their nature, forward-looking statements involve numerous inherent risks and uncertainties that could cause actual results to differ materially from the forward-looking statements, including but not limited to the following factors: changes in business strategies; general North American and global economic, credit and business conditions; risks associated with agricultural production such as weather conditions and insect populations; the availability and price of energy commodities; the effects of competition and pricing pressures; industry capacity; shifts in market demand; changes in commodity prices; uncertainty surrounding timing and volumes of commodities being shipped via the Company; inflation; geopolitical instability; changes in laws, regulations and government policies, including regulation of rates; changes in taxes and tax rates; potential increases in maintenance and operating costs; changes in fuel prices; uncertainties of investigations, proceedings or other types of claims and litigation; labour disputes; risks and liabilities arising from derailments; transportation of dangerous goods; timing of completion of capital and maintenance projects; currency and interest rate fluctuations; effects of changes in market conditions and discount rates on the financial position of pension plans and investments; trade restrictions or other changes to international trade arrangements; climate change; various events that could disrupt operations, including severe weather, such as droughts, floods, avalanches and earthquakes, and cybersecurity attacks, as well as security threats and governmental response to them, and technological changes; and the pandemic created by the outbreak of COVID-19 and its variants and resulting effects on economic conditions, the demand CP 2022 ANNUAL REPORT 62 environment for logistics requirements and energy prices, restrictions imposed by public health authorities or governments, fiscal and monetary policy responses by governments and financial institutions, and disruptions to global supply chains.",
+      "score": -0.968
+    },
+    {
+      "sent": "A significant fuel supply shortage arising from production decreases, increased demand in existing or emerging foreign markets, disruption of oil imports, disruption of domestic refinery production, damage to refinery or pipeline infrastructure, political unrest, war or other factors could have a material adverse effect on the Company's results of operations, financial position, and liquidity in a particular year or quarter.",
+      "score": -0.9217
+    },
+    {
+      "sent": "A significant fuel supply shortage arising from production decreases, increased demand in existing or emerging foreign markets, disruption of oil imports, disruption of domestic refinery production, damage to refinery or pipeline infrastructure, political unrest, war or other factors could have a material adverse effect on the Company's results of operations, financial position, and liquidity in a particular year or quarter.",
+      "score": -0.9217
+    }
+  ],
+  "forward_snippets": [
+    "Today, we continue to apply our long-term strategy: leverage our lower cost base, network strengths, and improve service to drive sustainable, profitable growth.",
+    "As a Company, we remain focused on our next level of service, productivity, and innovation to continue to generate sustainable value for our customers, employees, and shareholders.",
+    "Today, we continue to apply our long-term strategy: leverage our lower cost base, network strengths, and improve service to drive sustainable, profitable growth.",
+    "As a Company, we remain focused on our next level of service, productivity, and innovation to continue to generate sustainable value for our customers, employees, and shareholders.",
+    "Today, we continue to apply our long-term strategy: leverage our lower cost base, network strengths, and improve service to drive sustainable, profitable growth."
+  ]
+}

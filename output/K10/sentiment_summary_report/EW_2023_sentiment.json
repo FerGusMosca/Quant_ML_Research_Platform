@@ -1,0 +1,45 @@
+{
+  "symbol": "EW",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1901,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.223
+  },
+  "top_positive": [
+    {
+      "sent": "We are also subject to additional laws and regulations that govern our business operations, products, and technologies, including: \u2022 federal, state, and foreign anti-kickback laws and regulations, which generally prohibit payments to anyone, including physicians as an inducement to purchase or recommend a product; \u2022 the Stark law, which prohibits physicians from referring Medicare or Medicaid patients to a provider that bills these programs for the provision of certain designated health services if the physician (or a member of the physician's immediate family) has a financial relationship with that provider; \u2022 federal and state laws and regulations that protect the confidentiality of certain patient health information, including patient records, and restrict the use and disclosure of such information, in particular, the Health Insurance Portability and Accountability Act of 1996; 7 Table of Contents \u2022 the Physician Payments Sunshine Act, which requires public disclosure of the financial relationships of United States physicians and teaching hospitals with applicable manufacturers, including medical device, pharmaceutical, and biologics companies; \u2022 the False Claims Act, which prohibits the submission of false or otherwise improper claims for payment to a federally funded health care program, and health care fraud statutes that prohibit false statements and improper claims to any third-party payor; and \u2022 the United States Foreign Corrupt Practices Act, which can be used to prosecute United States companies for arrangements with foreign government officials or other parties, or for not keeping accurate financial records or maintaining adequate internal controls to prevent and detect arrangements with foreign government officials or other parties.",
+      "score": 0.9705
+    },
+    {
+      "sent": "We are also subject to additional laws and regulations that govern our business operations, products, and technologies, including: \u2022 federal, state, and foreign anti-kickback laws and regulations, which generally prohibit payments to anyone, including physicians as an inducement to purchase or recommend a product; \u2022 the Stark law, which prohibits physicians from referring Medicare or Medicaid patients to a provider that bills these programs for the provision of certain designated health services if the physician (or a member of the physician's immediate family) has a financial relationship with that provider; \u2022 federal and state laws and regulations that protect the confidentiality of certain patient health information, including patient records, and restrict the use and disclosure of such information, in particular, the Health Insurance Portability and Accountability Act of 1996; 7 Table of Contents \u2022 the Physician Payments Sunshine Act, which requires public disclosure of the financial relationships of United States physicians and teaching hospitals with applicable manufacturers, including medical device, pharmaceutical, and biologics companies; \u2022 the False Claims Act, which prohibits the submission of false or otherwise improper claims for payment to a federally funded health care program, and health care fraud statutes that prohibit false statements and improper claims to any third-party payor; and \u2022 the United States Foreign Corrupt Practices Act, which can be used to prosecute United States companies for arrangements with foreign government officials or other parties, or for not keeping accurate financial records or maintaining adequate internal controls to prevent and detect arrangements with foreign government officials or other parties.",
+      "score": 0.9705
+    },
+    {
+      "sent": "We are committed to maintaining an ethical culture where we celebrate diversity, promote good health and safety, empower employees to speak up, and ensure that employees' voices are heard.",
+      "score": 0.9584
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "11 Table of Contents Business and Operating Risks \u2022 Failure to successfully innovate and market products \u2022 Unsuccessful clinical trials or procedures \u2022 Manufacturing, logistics, or quality problems \u2022 Public health crises, including pandemics and epidemics \u2022 Competition \u2022 Dependence on key physicians and research institutions \u2022 Reliance on vendors, suppliers, and other third parties \u2022 Damage, failure, or interruption of our information technology systems, including due to cyber-based attacks and breaches \u2022 Failure to recruit and retain qualified talent or execute management succession plans \u2022 Underperforming operations or unsuccessful business acquisitions or strategic alliances Market and Other External Risks \u2022 Risks associated with international sales and operations \u2022 Inability to obtain government reimbursement or reductions in reimbursement levels \u2022 Industry consolidation Legal, Compliance and Regulatory Risks \u2022 Inability to protect our intellectual property \u2022 Inability to defend against intellectual property claims from third parties \u2022 Compliance with government regulations \u2022 Losses from product liability claims \u2022 Use of products in unapproved circumstances \u2022 Substantial costs from environmental, health and safety regulations \u2022 Climate change \u2022 Regulatory actions relating to animal borne illnesses Business and Operating Risks Failure \npackage to make modifications that are aligned with the competitive landscape, legislative changes, and the unique needs of our population.",
+      "score": -0.9712
+    },
+    {
+      "sent": "Component failures, manufacturing and assembly flaws, design defects, software defects, medical procedure errors, or inadequate disclosure of product-related risks or information could result in an unsafe condition, injury to, or death of, patients.",
+      "score": -0.9652
+    },
+    {
+      "sent": "Our information technology systems are vulnerable to damage or interruption from earthquakes, fires, floods and other natural disasters, terrorist attacks, power losses, computer system or data network failures, security breaches, and data corruption.",
+      "score": -0.9618
+    }
+  ],
+  "forward_snippets": [
+    "We intend the forward-looking statements contained in this report to be covered by the safe harbor provisions of such Acts.",
+    "These statements can sometimes be identified by the use of the forward-looking words such as \"may,\" \"believe,\" \"will,\" \"expect,\" \"project,\" \"estimate,\" \"should,\" \"anticipate,\" \"plan,\" \"goal,\" \"continue,\" \"seek,\" \"pro forma,\" \"forecast,\" \"intend,\" \"guidance,\" \"optimistic,\" \"aspire,\" \"confident,\" other forms of these words or similar words or expressions or the negative thereof.",
+    "If we do update or correct one or more of these statements, investors and others should not conclude that we will make additional updates or corrections.",
+    "In addition, our robust pipeline of future technologies is focused on the less invasive repair or replacement of the mitral and tricuspid valves of the heart, which are more complex and more challenging to treat than the aortic valve that is currently the focus of many of our commercially approved valve technologies.",
+    "These statements can sometimes be identified by the use of the forward-looking words such as \"may,\" \"believe,\" \"will,\" \"expect,\" \"project,\" \"estimate,\" \"should,\" \"anticipate,\" \"plan,\" \"goal,\" \"continue,\" \"seek,\" \"pro forma,\" \"forecast,\" \"intend,\" \"guidance,\" \"optimistic,\" \"aspire,\" \"confident,\" other forms of these words or similar words or expressions or the negative thereof."
+  ]
+}

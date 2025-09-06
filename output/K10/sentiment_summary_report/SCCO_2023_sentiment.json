@@ -1,0 +1,45 @@
+{
+  "symbol": "SCCO",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1666,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.096
+  },
+  "top_positive": [
+    {
+      "sent": "\u200b DIRECTORS\u2019 STOCK AWARD PLAN: \u200b The following table contains certain information related to our shares held as treasury stock for the Directors\u2019 stock award plan as of December\u00a031, 2022: \u200b Equity Compensation Plan Information \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b Number\u00a0of\u00a0securities\u00a0to\u00a0be Weighted-average Number\u00a0of\u00a0securities \u200b \u200b issued\u00a0upon\u00a0exercise\u00a0of \u200b exercise\u00a0price\u00a0of \u200b remaining\u00a0available Plan Category \u200b outstanding\u00a0options \u200b outstanding\u00a0options \u200b for\u00a0future\u00a0issuance Directors\u2019 stock award plan N/A N/A 183,200 \u200b For additional information see Note\u00a014\u2014\u201cStockholders Equity\u2014Directors\u2019 Stock Award Plan.\u201d \u200b SCC COMMON STOCK REPURCHASE PLAN: \u200b In 2008, our BOD authorized a $500\u00a0million share repurchase program that has since been increased by the BOD and is currently authorized to $3\u00a0billion.",
+      "score": 0.9883
+    },
+    {
+      "sent": "\u200b DIRECTORS\u2019 STOCK AWARD PLAN: \u200b The following table contains certain information related to our shares held as treasury stock for the Directors\u2019 stock award plan as of December\u00a031, 2022: \u200b Equity Compensation Plan Information \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b Number\u00a0of\u00a0securities\u00a0to\u00a0be Weighted-average Number\u00a0of\u00a0securities \u200b \u200b issued\u00a0upon\u00a0exercise\u00a0of \u200b exercise\u00a0price\u00a0of \u200b remaining\u00a0available Plan Category \u200b outstanding\u00a0options \u200b outstanding\u00a0options \u200b for\u00a0future\u00a0issuance Directors\u2019 stock award plan N/A N/A 183,200 \u200b For additional information see Note\u00a014\u2014\u201cStockholders Equity\u2014Directors\u2019 Stock Award Plan.\u201d \u200b SCC COMMON STOCK REPURCHASE PLAN: \u200b In 2008, our BOD authorized a $500\u00a0million share repurchase program that has since been increased by the BOD and is currently authorized to $3\u00a0billion.",
+      "score": 0.9883
+    },
+    {
+      "sent": "\u200b DIRECTORS\u2019 STOCK AWARD PLAN: \u200b The following table contains certain information related to our shares held as treasury stock for the Directors\u2019 stock award plan as of December\u00a031, 2022: \u200b Equity Compensation Plan Information \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b Number\u00a0of\u00a0securities\u00a0to\u00a0be Weighted-average Number\u00a0of\u00a0securities \u200b \u200b issued\u00a0upon\u00a0exercise\u00a0of \u200b exercise\u00a0price\u00a0of \u200b remaining\u00a0available Plan Category \u200b outstanding\u00a0options \u200b outstanding\u00a0options \u200b for\u00a0future\u00a0issuance Directors\u2019 stock award plan N/A N/A 183,200 \u200b For additional information see Note\u00a014\u2014\u201cStockholders Equity\u2014Directors\u2019 Stock Award Plan.\u201d \u200b SCC COMMON STOCK REPURCHASE PLAN: \u200b In 2008, our BOD authorized a $500\u00a0million share repurchase program that has since been increased by the BOD and is currently authorized to $3\u00a0billion.",
+      "score": 0.9883
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "\u200b Natural disasters, adverse weather conditions, floods, pandemics (including the recent coronavirus outbreak), acts of terrorism and other catastrophic or geo-political events may cause damage or disruption to our operations, international commerce and the global economy, which could have an adverse effect on our business, operating results, and financial condition.",
+      "score": -0.9618
+    },
+    {
+      "sent": "\u200b Natural disasters, adverse weather conditions, floods, pandemics (including the recent coronavirus outbreak), acts of terrorism and other catastrophic or geo-political events may cause damage or disruption to our operations, international commerce and the global economy, which could have an adverse effect on our business, operating results, and financial condition.",
+      "score": -0.9618
+    },
+    {
+      "sent": "\u200b Development projects have no operating history upon which we can bas\nling Dams.\u201d \u200b During recent years, social and political demands has caused violence which could result in damage to, or destruction of, mining operations resulting in monetary losses and possible legal liability.",
+      "score": -0.9451
+    }
+  ],
+  "forward_snippets": [
+    "BUSINESS \u200b THE COMPANY \u200b We believe Southern Copper Corporation (\u201cSCC\u201d, \u201cSouthern Copper\u201d or the \u201cCompany\u201d) is one of the largest integrated copper producers in the world.",
+    "We believe we have the largest copper reserves in the world.",
+    "BUSINESS \u200b THE COMPANY \u200b We believe Southern Copper Corporation (\u201cSCC\u201d, \u201cSouthern Copper\u201d or the \u201cCompany\u201d) is one of the largest integrated copper producers in the world.",
+    "We believe we have the largest copper reserves in the world.",
+    "BUSINESS \u200b THE COMPANY \u200b We believe Southern Copper Corporation (\u201cSCC\u201d, \u201cSouthern Copper\u201d or the \u201cCompany\u201d) is one of the largest integrated copper producers in the world."
+  ]
+}

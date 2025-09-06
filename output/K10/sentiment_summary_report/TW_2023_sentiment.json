@@ -1,0 +1,45 @@
+{
+  "symbol": "TW",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2858,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.223
+  },
+  "top_positive": [
+    {
+      "sent": "\u2022 \u201cContinuing LLC Owners\u201d refer collectively to\u00a0(i) those Original LLC Owners (as defined below), including Refinitiv (as defined below), certain of the Bank Stockholders and members of management, that continued to own LLC Interests after the completion of the IPO and Reorganization Transactions and that received shares of our Class\u00a0C common stock, shares of our Class\u00a0D common stock or a combination of both, as the case may be, in connec tion with the completion of the Reorganization Transactions, (ii) any subsequent transferee of any Original LLC Owner that has executed a joinder agreement to TWM LLC\u2019s limited liability company agreement (the \u201cTWM LLC Agreement\u201d) and (iii) solely with respect to the Tax Receivable Agreement (as defined below), (x) those Original LLC Owners, including certain of the Bank Stockholders, that disposed of all of their LLC Interests for cash in connection with the IPO and (y) any party that has executed a joinder agreement to the Tax Receivable Agreement in accordance with the Tax Receivable Agreement.",
+      "score": 0.9889
+    },
+    {
+      "sent": "\u2022 \u201cContinuing LLC Owners\u201d refer collectively to\u00a0(i) those Original LLC Owners (as defined below), including Refinitiv (as defined below), certain of the Bank Stockholders and members of management, that continued to own LLC Interests after the completion of the IPO and Reorganization Transactions and that received shares of our Class\u00a0C common stock, shares of our Class\u00a0D common stock or a combination of both, as the case may be, in connec tion with the completion of the Reorganization Transactions, (ii) any subsequent transferee of any Original LLC Owner that has executed a joinder agreement to TWM LLC\u2019s limited liability company agreement (the \u201cTWM LLC Agreement\u201d) and (iii) solely with respect to the Tax Receivable Agreement (as defined below), (x) those Original LLC Owners, including certain of the Bank Stockholders, that disposed of all of their LLC Interests for cash in connection with the IPO and (y) any party that has executed a joinder agreement to the Tax Receivable Agreement in accordance with the Tax Receivable Agreement.",
+      "score": 0.9889
+    },
+    {
+      "sent": "\u2022 \u201cContinuing LLC Owners\u201d refer collectively to\u00a0(i) those Original LLC Owners (as defined below), including Refinitiv (as defined below), certain of the Bank Stockholders and members of management, that continued to own LLC Interests after the completion of the IPO and Reorganization Transactions and that received shares of our Class\u00a0C common stock, shares of our Class\u00a0D common stock or a combination of both, as the case may be, in connec tion with the completion of the Reorganization Transactions, (ii) any subsequent transferee of any Original LLC Owner that has executed a joinder agreement to TWM LLC\u2019s limited liability company agreement (the \u201cTWM LLC Agreement\u201d) and (iii) solely with respect to the Tax Receivable Agreement (as defined below), (x) those Original LLC Owners, including certain of the Bank Stockholders, that disposed of all of their LLC Interests for cash in connection with the IPO and (y) any party that has executed a joinder agreement to the Tax Receivable Agreement in accordance with the Tax Receivable Agreement.",
+      "score": 0.9889
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "We may incur losses as a result of unforeseen, catastrophic or uncontrollable events, including fire, natural disasters, extreme weather events, global health crises (including COVID-19 and its variants), power loss, telecommunications failure, software or hardware malfunctions, theft, cyber-attacks, acts of war, terrorist attacks or other armed hostilities.",
+      "score": -0.985
+    },
+    {
+      "sent": "Entering into strategic alliances, partnerships and joint ventures entails risks, including: (i) difficulties in developing or expanding the business of newly formed alliances, partnerships and joint ventures; (ii) exercising influence over the activities of joint ventures in which we do not have a controlling interest; (iii) potential conflicts with or among our partners; (iv) the possibility that our partners could take action without our approval or prevent us from taking action; and (v) the possibility that our partners suffer reputational harm during the pendency of the partnership, become bankrupt or otherwise lack the financial resources to meet their obligations.",
+      "score": -0.971
+    },
+    {
+      "sent": "Entering into strategic alliances, partnerships and joint ventures entails risks, including: (i) difficulties in developing or expanding the business of newly formed alliances, partnerships and joint ventures; (ii) exercising influence over the activities of joint ventures in which we do not have a controlling interest; (iii) potential conflicts with or among our partners; (iv) the possibility that our partners could take action without our approval or prevent us from taking action; and (v) the possibility that our partners suffer reputational harm during the pendency of the partnership, become bankrupt or otherwise lack the financial resources to meet their obligations.",
+      "score": -0.971
+    }
+  ],
+  "forward_snippets": [
+    "Certain information is based on management estimates, which have been derived from third-party sources, as well as data from our internal research, and are based on certain assumptions that we believe to be reasonable.",
+    "Certain information is based on management estimates, which have been derived from third-party sources, as well as data from our internal research, and are based on certain assumptions that we believe to be reasonable.",
+    "Certain information is based on management estimates, which have been derived from third-party sources, as well as data from our internal research, and are based on certain assumptions that we believe to be reasonable.",
+    "In presenting this information, we have made certain assumptions that we believe to be reasonable based on such data and other similar sources and on our knowledge of, and our experience to date in, the markets in which we operate.",
+    "While we believe the estimated market and industry data included in this Annual Report on Form 10-K are generally reliable, such information, which is derived in part from management\u2019s estimates and beliefs, is inherently uncertain and imprecise."
+  ]
+}

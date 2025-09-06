@@ -1,0 +1,45 @@
+{
+  "symbol": "TTD",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2157,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.251
+  },
+  "top_positive": [
+    {
+      "sent": "Supporting our continued growth may require substantial financial and other resources to, among other things: \u2022 develop our platform and related offerings, including by investing in our engineering team, creating, acquiring or licensing new products or features, and improving the availability and security of our platform and related offerings; \u2022 continue to expand internationally by growing our sales force and client services team in an effort to increase our client base and spend through our platform, and by adding inventory and data from countries our clients are seeking; \u2022 improve our technology infrastructure, including investing in internal technology development and acquiring outside technologies; \u2022 expand our platform\u2019s reach in new and growing channels such as CTV, including expanding the supply of CTV inventory; \u2022 cover general and administrative expenses, including legal, accounting and other expenses necessary to support a larger organization; \u2022 cover sales and marketing expenses, including a significant expansion of our direct sales organization; \u2022 cover expenses relating to data collection and use and consumer privacy compliance, including additional infrastructure, product features, security, automation and personnel; and \u2022 explore strategic acquisitions.",
+      "score": 0.9825
+    },
+    {
+      "sent": "Supporting our continued growth may require substantial financial and other resources to, among other things: \u2022 develop our platform and related offerings, including by investing in our engineering team, creating, acquiring or licensing new products or features, and improving the availability and security of our platform and related offerings; \u2022 continue to expand internationally by growing our sales force and client services team in an effort to increase our client base and spend through our platform, and by adding inventory and data from countries our clients are seeking; \u2022 improve our technology infrastructure, including investing in internal technology development and acquiring outside technologies; \u2022 expand our platform\u2019s reach in new and growing channels such as CTV, including expanding the supply of CTV inventory; \u2022 cover general and administrative expenses, including legal, accounting and other expenses necessary to support a larger organization; \u2022 cover sales and marketing expenses, including a significant expansion of our direct sales organization; \u2022 cover expenses relating to data collection and use and consumer privacy compliance, including additional infrastructure, product features, security, automation and personnel; and \u2022 explore strategic acquisitions.",
+      "score": 0.9825
+    },
+    {
+      "sent": "Supporting our continued growth may require substantial financial and other resources to, among other things: \u2022 develop our platform and related offerings, including by investing in our engineering team, creating, acquiring or licensing new products or features, and improving the availability and security of our platform and related offerings; \u2022 continue to expand internationally by growing our sales force and client services team in an effort to increase our client base and spend through our platform, and by adding inventory and data from countries our clients are seeking; \u2022 improve our technology infrastructure, including investing in internal technology development and acquiring outside technologies; \u2022 expand our platform\u2019s reach in new and growing channels such as CTV, including expanding the supply of CTV inventory; \u2022 cover general and administrative expenses, including legal, accounting and other expenses necessary to support a larger organization; \u2022 cover sales and marketing expenses, including a significant expansion of our direct sales organization; \u2022 cover expenses relating to data collection and use and consumer privacy compliance, including additional infrastructure, product features, security, automation and personnel; and \u2022 explore strategic acquisitions.",
+      "score": 0.9825
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Operational, performance and internal control issues may arise due to a variety of factors, including infrastructure changes, introductions of new functionality, human or software errors and oth\nnt actions against us, claims for damages by consumers and other affected individuals, costs associated with investigation and remediation damage to our reputation and loss of goodwill, any of which could harm our business, financial condition and results of operations.",
+      "score": -0.9313
+    },
+    {
+      "sent": "The market price of our Class A common stock has fluctuated and may fluctuate significantly in response to numerous factors, some of which are beyond our control and may not be related to our operating performance, including: \u2022 announcements of new offerings, products, services or technologies, commercial relationships, acquisitions, or other events by us or our competitors; \u2022 price and volume fluctuations in the overall stock market from time to time; \u2022 significant volatility in the market price and trading volume of technology companies in general and of companies in the digital advertising industry in particular; \u2022 fluctuations in the trading volume of our shares or the size of our public float; \u2022 actual or anticipated changes or fluctuations in our results of operations; \u2022 whether our results of operations meet the expectations of securities analysts or investors; \u2022 actual or anticipated changes in the expectations of investors or securities analysts; \u2022 litigation involving us, our industry, or both; \u2022 regulatory developments in the United States, foreign countries, or both; \u2022 general economic conditions and trends; \u2022 terrorist attacks, political upheaval, natural disasters, war, public health crises, or other major catastrophic events; \u2022 sales of large blocks of our common stock; \u2022 departures of key employees; or \u2022 an adverse impact on us from any of the other risks cited herein.",
+      "score": -0.9313
+    },
+    {
+      "sent": "Our failure to prevent outages or security breaches resulting from API use could result in government enforcement actions against us, claims for damages by consumers and other affected individuals, costs associated with investigation and remediation damage to our reputation and loss of goodwill, any of which could harm our business, financial condition and results of operations.",
+      "score": -0.9231
+    }
+  ],
+  "forward_snippets": [
+    "Investors should read this Annual Report on Form 10-K and the documents that we reference in this report and have filed with the SEC completely and with the understanding that our actual future results may be materially different from what we expect.",
+    "We believe that the risks described in the \u201cRisk Factors\u201d section are material to investors, but other factors not presently known to us or that we currently believe are immaterial may also adversely affect us.",
+    "If this market develops slower or differently than we expect, our business, growth prospects and financial condition could be adversely affected.",
+    "\u2022 We often have long sales cycles, which can result in significant time between initial contact with a prospect and execution of a client agreement, making it difficult to project when, if at all, we will obtain new clients and when we will generate revenue from those clients.",
+    "Investors should read this Annual Report on Form 10-K and the documents that we reference in this report and have filed with the SEC completely and with the understanding that our actual future results may be materially different from what we expect."
+  ]
+}

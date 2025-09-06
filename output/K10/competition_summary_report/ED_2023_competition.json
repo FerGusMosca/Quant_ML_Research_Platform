@@ -1,0 +1,191 @@
+{
+  "symbol": "ED",
+  "year": 2023,
+  "competition_summary": [
+    {
+      "competitor": "Deliveries 20",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Steam Facilities",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Capacity 24 Steam Supply",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "O&R 24 Electric Operations 24",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Deliveries 24 Electric Peak Demand",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "CON EDISON",
+      "mentions": 3,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Con Edison Transmission",
+      "mentions": 3,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Capital Requirements and Resources 31",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Clean Energy Future 35 Climate Change 37 Environmental",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "State",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Local Environmental",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Business Overview Consolidated Edison, Inc.",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Con Edison",
+      "mentions": 6,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Consolidated Edison Company",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "CECONY",
+      "mentions": 5,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Rockland Utilities, Inc.",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "O&R",
+      "mentions": 4,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Con Edison Clean Energy Businesses, Inc.",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Con Edison Transmission, Inc.",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Con Edison CECONY O&R Clean Energy Businesses",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "the Clean Energy Businesses",
+      "mentions": 5,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "The Clean Energy Businesses",
+      "mentions": 5,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "LLC",
+      "mentions": 2,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "RWE Aktiengesellschaft",
+      "mentions": 2,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "NY",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "CECONY Electric CECONY",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Queens",
+      "mentions": 2,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "O&R Electric O&R",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Rockland Electric Company",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "NJ",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Clean Energy Businesses",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "AC",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Utilities",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Con Edison Transmission Con Edison Transmission, Inc.",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "CET",
+      "mentions": 4,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "Honeoye Storage Corporation",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    },
+    {
+      "competitor": "MVP",
+      "mentions": 1,
+      "context": "Competition 18 The Utilities 19 CECONY 19 Electric Operations 19 Electric Facilities 19 Electric Sales and Deliveries 20 Electric Peak Demand 20 Electric Supply 21 Gas Operations 21 Gas Facilities 21 Gas Sales and Deliveries 22 Gas Peak Demand 22 Gas Supply 23 Steam Operations 23 Steam Facilities 23 Steam Sales and Deliveries 23 Steam Peak Demand and Capacity 24 Steam Supply 24 O&R 24 Electric Operations 24 Electric Facilities 24 Electric Sales and Deliveries 24 Electric Peak Demand 25 Electric "
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "symbol": "MTD",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2436,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.151
+  },
+  "top_positive": [
+    {
+      "sent": "We do this in five key areas: (1) keeping our operations sustainable over the long term by ensuring we use resources efficiently, (2) helping our customers to be sustainable in their businesses by offering sustainable products and services, (3) promoting responsible practices within our supply chain, (4) ensuring an engaged workforce through fair, attractive, safe, and development-minded workplaces, and (5) following corporate governance best practices.",
+      "score": 0.9774
+    },
+    {
+      "sent": "We do this in five key areas: (1) keeping our operations sustainable over the long term by ensuring we use resources efficiently, (2) helping our customers to be sustainable in their businesses by offering sustainable products and services, (3) promoting responsible practices within our supply chain, (4) ensuring an engaged workforce through fair, attractive, safe, and development-minded workplaces, and (5) following corporate governance best practices.",
+      "score": 0.9774
+    },
+    {
+      "sent": "We do this in five key areas: (1) keeping our operations sustainable over the long term by ensuring we use resources efficiently, (2) helping our customers to be sustainable in their businesses by offering sustainable products and services, (3) promoting responsible practices within our supply chain, (4) ensuring an engaged workforce through fair, attractive, safe, and development-minded workplaces, and (5) following corporate governance best practices.",
+      "score": 0.9774
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our systems are vulnerable to damage or interruption from natural disasters, power loss, telecommunication failures, malicious employees or employee negligence, computer viruses, and other events.",
+      "score": -0.9186
+    },
+    {
+      "sent": "Our systems are vulnerable to damage or interruption from natural disasters, power loss, telecommunication failures, malicious employees or employee negligence, computer viruses, and other events.",
+      "score": -0.9186
+    },
+    {
+      "sent": "Our systems are vulnerable to damage or interruption from natural disasters, power loss, telecommunication failures, malicious employees or employee negligence, computer viruses, and other events.",
+      "score": -0.9186
+    }
+  ],
+  "forward_snippets": [
+    "We believe that our portfolio of integrated technologies can bring significant efficiencies to the development process, enabling our customers to bring new drugs and chemicals to market faster.",
+    "Beyond revenue opportunities, we believe service is a key part of our solution offering and helps significantly in customer retention.",
+    "Research and Development We continue to invest in product innovation to provide technologically advanced products to our customers for existing and new applications.",
+    "We believe that our manufacturing capacity is sufficient to meet our present and currently anticipated demand.",
+    "We believe our supply arrangements are adequate and that there are no material constraints on the sources and availability of materials."
+  ]
+}

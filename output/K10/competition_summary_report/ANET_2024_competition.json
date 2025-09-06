@@ -1,0 +1,706 @@
+{
+  "symbol": "ANET",
+  "year": 2024,
+  "competition_summary": [
+    {
+      "competitor": "Business Arista Networks",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Arista",
+      "mentions": 32,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "EOS",
+      "mentions": 46,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Data Center",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Core Routing, Edge Routing, Data Center Interconnect",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "DCI",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Wide Area Networking",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "WAN",
+      "mentions": 3,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Network Software",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "the Network Monitoring and Network Detection and Response",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "NDR",
+      "mentions": 9,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Meta Platforms",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Microsoft",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Artificial Intelligence (AI",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "AI",
+      "mentions": 6,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "CPU",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "GPU",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "TPU",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "the Arista Autonomous Virtual Assist",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "the Ultra Ethernet Consortium",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "UEC",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "PoE",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "2 Table of Contents EOS",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "CloudVision",
+      "mentions": 12,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Zero Trust Networking Security",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Limitations of Traditional Enterprise Data Center",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "IoT",
+      "mentions": 5,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Data-Driven Cloud Networking Solutions Our",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "3 Table of Contents",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Network Data Lake",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "AI/Machine Learning",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "ML",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Network Operations",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "NetOps",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Security Operations",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "SecOps",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "API",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Scale",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Layer 2",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Availability Networks",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "EOS Software Development Kit",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "DevOps",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Puppet",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Visibility 4 Table",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "CloudVision Analytics",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "CloudVision Telemetry Apps",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Arista\u2019s Spline TM",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "POE",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "the Arista CloudVision",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "CloudVision\u2019s AI",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "AVA",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "AI/ML-driven",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "CloudVision AVA",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Arista\u2019s Macro Segmentation Service Group",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "MSS-G",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Arista\u2019s Wireless Intrusion Prevention Service",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Single Binary Image Software",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Rapid Development of New Features",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Customer Requirements - We",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Strong Management and Engineering Team",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Significant Data Center Networking Expertise - Our",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Chairperson, Jayshree Ullal",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Founder",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Sun Microsystems",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Our Products and Technology",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Core Data Center/Cloud/AI Switching Products",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Routing Products",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Services",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "TM",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "CloudOps",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Datacenter/Cloud/AI 6 Table of Contents",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "AI/ML",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "IP/Ethernet",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "AI Analyzer",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "DWDM",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Universal Leaf",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Universal Spine",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Data Center Interconnect",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "WAN Routing System Arista",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "WAN Routing System",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "VRF",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Software",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "A-Care Services 7 Table of Contents We",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Arista A-Care Services",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "DMF",
+      "mentions": 5,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "NPM",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "SecMon",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Arista Guardian Network Identity (AGNI",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Identity",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Arista Guardian for",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Network Identity (AGNI",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "AGNI",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "XDR",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "EDR",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "AI-driven Network Detection and Response",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "AVA TM",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "AVA Sensors",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "the Arista",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Arista CloudVision",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Amazon AWS",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Microsoft Azure",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Google",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Kubernetes",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Core Data Center/Cloud Switching Products",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "the Arista Partner Program",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Field-Programmable Gate Array",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Network Access Control (NAC",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Jabil Inc.",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Sanmina Corporation",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Flex Ltd.",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Houthi",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Broadcom",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Intel",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Extreme Networks",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Dell/EMC",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Hewlett Packard Enterprise",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Juniper Networks",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "VMWare",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Hewlett Packard Enterprises",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "IB",
+      "mentions": 3,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "DarkTrace",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "ExtraHop",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Gigamon",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Capital Management",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "CFO",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Women@Arista",
+      "mentions": 2,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Hispanic/Latinx",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Customer Engineering",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Software Research and Development",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Arista Certified Engineering",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "ACE",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "E-Learning",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "the Securities Exchange Act",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "the Securities and Exchange Commission",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "SEC",
+      "mentions": 5,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "RSS",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Supply Chain and Manufacturing \u2022",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Litigation \u2022",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Cybersecurity and Data Privacy \u2022",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    },
+    {
+      "competitor": "Risks Related to Accounting, Compliance",
+      "mentions": 1,
+      "context": "competition in our market and our ability to compete effectively; \u2022 the budgeting cycles and purchasing practices of customers, including large customers who may receive lower pricing terms due to volume discounts or who may elect to re-assign allocations to multiple vendors based upon specific network roles or projects; \u2022 the growth and buying patterns of our large customers and resulting volatility in our customer concentration in which large bulk purchases may or may not occur in certain quar"
+    }
+  ]
+}

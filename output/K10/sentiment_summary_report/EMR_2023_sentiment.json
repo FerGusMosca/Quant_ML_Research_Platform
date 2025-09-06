@@ -1,0 +1,53 @@
+{
+  "symbol": "EMR",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.4428,
+    "outlook_sentiment": 0.2157,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.217
+  },
+  "top_positive": [
+    {
+      "sent": "These solutions respond to commands from a control system to continuously and precisely control and regulate the flow of liquids or gases to achieve safe operation along with reliability and optimized performance.",
+      "score": 0.765
+    },
+    {
+      "sent": "Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations.\u201d INTELLIGENT DEVICES Final Control The Final Control segment is a leading global provider of control valves, isolation valves, shutoff valves, pressure relief valves, pressure safety valves, actuators, and regulators for process and hybrid industries.",
+      "score": 0.5473
+    },
+    {
+      "sent": "Measurement & Analytical The Measurement & Analytical segment is a leading supplier of intelligent instrumentation measuring the physical ",
+      "score": 0.4588
+    },
+    {
+      "sent": "& SUBSIDIARIES Years ended September 30 (Dollars and shares in millions, except per share amounts) 2021 2022 2023 Net sales $ 12,932 13,804 15,165 Cost of sales 7,202 7,498 7,738 Selling, general and administrative expenses 3,494 3,614 4,186 Gain on subordinated interest \u2014 ( 453 ) ( 161 ) Other deductions, net 319 519 683 Interest expense, net of interest income of: 2021, $ 10 ; 2022, $ 34 ; 2023, $ 227 155 194 34 Interest income from related party \u2014 \u2014 ( 41 ) Earnings from continuing operations before income taxes 1,762 2,432 2,726 Income taxes 346 549 599 Earnings from continuing operations 1,416 1,883 2,127 Discontinued operations, net of tax of $ 239 , $ 306 and $ 3,012 , respectively 911 1,347 11,073 Net earnings 2,327 3,230 13,200 Less: Noncontrolling interests in earnings of subsidiaries 24 ( 1 ) ( 19 ) Net earnings common stockholders $ 2,303 3,231 13,219 Earnings common stockholders: Earnings from continuing operations $ 1,414 1,886 2,152 Discontinued operations 889 1,345 11,067 Net earnings common stockholders $ 2,303 3,231 13,219 Basic earnings per share common stockholders: Earnings from continuing operations $ 2.36 3.17 3.74 Discontinued operations 1.49 2.27 19.26 Basic earnings per common share $ 3.85 5.44 23.00 Diluted earnings per share common stockholders: Earnings from continuing operations $ 2.35 3.16 3.72 Discontinued operations 1.47 2.25 19.16 Diluted earnings per common share $ 3.82 5.41 22.88 Weighted average outstanding shares: Basic 598.1 592.9 574.2 Diluted 601.8 596.3 577.3 See accompanying Notes to Consolidated Financial Statements.",
+      "score": 0.9888
+    },
+    {
+      "sent": "& SUBSIDIARIES Years ended September 30 (Dollars and shares in millions, except per share amounts) 2021 2022 2023 Net sales $ 12,932 13,804 15,165 Cost of sales 7,202 7,498 7,738 Selling, general and administrative expenses 3,494 3,614 4,186 Gain on subordinated interest \u2014 ( 453 ) ( 161 ) Other deductions, net 319 519 683 Interest expense, net of interest income of: 2021, $ 10 ; 2022, $ 34 ; 2023, $ 227 155 194 34 Interest income from related party \u2014 \u2014 ( 41 ) Earnings from continuing operations before income taxes 1,762 2,432 2,726 Income taxes 346 549 599 Earnings from continuing operations 1,416 1,883 2,127 Discontinued operations, net of tax of $ 239 , $ 306 and $ 3,012 , respectively 911 1,347 11,073 Net earnings 2,327 3,230 13,200 Less: Noncontrolling interests in earnings of subsidiaries 24 ( 1 ) ( 19 ) Net earnings common stockholders $ 2,303 3,231 13,219 Earnings common stockholders: Earnings from continuing operations $ 1,414 1,886 2,152 Discontinued operations 889 1,345 11,067 Net earnings common stockholders $ 2,303 3,231 13,219 Basic earnings per share common stockholders: Earnings from continuing operations $ 2.36 3.17 3.74 Discontinued operations 1.49 2.27 19.26 Basic earnings per common share $ 3.85 5.44 23.00 Diluted earnings per share common stockholders: Earnings from continuing operations $ 2.35 3.16 3.72 Discontinued operations 1.47 2.25 19.16 Diluted earnings per common share $ 3.82 5.41 22.88 Weighted average outstanding shares: Basic 598.1 592.9 574.2 Diluted 601.8 596.3 577.3 See accompanying Notes to Consolidated Financial Statements.",
+      "score": 0.9888
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "production facilities and operations could be disrupted by weather and natural disaster (including the potential effects of climate change), labor strife, war (including the Russia-Ukraine and other global conflicts), political unrest, terrorist activity or public health concerns such as an epidemic or pandemic, particularly in emerging countries that are not well-equip ped to handle such occurrences.",
+      "score": -0.9042
+    },
+    {
+      "sent": "A failure or perceived failure to meet our aspirational purpose, causes, values, and related commitments, goals or targets within the timelines we announce, or at all, or a failure or perceived failure to meet evolving stakeholders expectations and standards, could damage our reputation, adversely affect employee retention or engagement or support from our various stakeholders and could subject us to government enforcement actions or penalties and private litigation.",
+      "score": -0.8779
+    },
+    {
+      "sent": "Our audits of the consolidated financial statements included performing procedures to assess the risks of material misstatement of the consolidated financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    }
+  ],
+  "forward_snippets": [
+    "BACKLOG The Company\u2019s estimated consolidated order backlog was $7.8 billion and $7.0 billion at September\u00a030, 2023 and 2022, respectively, of which approximately $1.2 billion and $1.1 billion related to AspenTech.",
+    "We believe the Company\u2019s success depends on our ability to attract, develop and retain key personnel.",
+    "We continue to make progress on our goals and were named a \u201cBest Employer for Diversity\u201d by Forbes.",
+    "We believe the Company\u2019s success depends on our ability to attract, develop and retain key personnel.",
+    "We continue to make progress on our goals and were named a \u201cBest Employer for Diversity\u201d by Forbes."
+  ]
+}

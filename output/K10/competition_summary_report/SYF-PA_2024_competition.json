@@ -1,0 +1,21 @@
+{
+  "symbol": "SYF-PA",
+  "year": 2024,
+  "competition_summary": [
+    {
+      "competitor": "ANALYSIS OF FINANCIAL CONDITION",
+      "mentions": 1,
+      "context": "Competition 25 MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS 26 Results of Operations 26 Loan Receivables 45 Funding, Liquidity and Capital Resources 46 Liquidity 51 Quantitative and Qualitative Disclosures About Market Risk 52 Capital 54 Off-Balance Sheet Arrangements and Unfunded Lending Commitments 56 Critical Accounting Estimates 57 RISKS 59 Risk Factors Summary 59 Risk Factors Relating To Our Business 61 Risk Management 81 Cybersecurity 87 "
+    },
+    {
+      "competitor": "Capital Resources",
+      "mentions": 1,
+      "context": "Competition 25 MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS 26 Results of Operations 26 Loan Receivables 45 Funding, Liquidity and Capital Resources 46 Liquidity 51 Quantitative and Qualitative Disclosures About Market Risk 52 Capital 54 Off-Balance Sheet Arrangements and Unfunded Lending Commitments 56 Critical Accounting Estimates 57 RISKS 59 Risk Factors Summary 59 Risk Factors Relating To Our Business 61 Risk Management 81 Cybersecurity 87 "
+    },
+    {
+      "competitor": "RISKS 59 Risk Factors",
+      "mentions": 1,
+      "context": "Competition 25 MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS 26 Results of Operations 26 Loan Receivables 45 Funding, Liquidity and Capital Resources 46 Liquidity 51 Quantitative and Qualitative Disclosures About Market Risk 52 Capital 54 Off-Balance Sheet Arrangements and Unfunded Lending Commitments 56 Critical Accounting Estimates 57 RISKS 59 Risk Factors Summary 59 Risk Factors Relating To Our Business 61 Risk Management 81 Cybersecurity 87 "
+    }
+  ]
+}

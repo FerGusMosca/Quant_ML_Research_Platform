@@ -1,0 +1,45 @@
+{
+  "symbol": "V",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1446,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.247
+  },
+  "top_positive": [
+    {
+      "sent": "5 Table of Contents Our net revenues in fiscal year 2023 consisted of the following: SERVICE REVENUES Earned for services provided in support of client usage of Visa payment services OTHER REVENUES Consist mainly of value added services related to advisory, marketing and certain card benefits; license fees for use of the Visa brand or technology; and fees for account holder services, certification and licensing DATA PROCESSING REVENUES Earned for authorization, clearing, settlement; value added services related to issuing, acceptance, and risk and identity solutions; network access; and other maintenance and support services that facilitate transaction and information processing among our clients globally CLIENT INCENTIVES Paid to financial institution clients, merchants and other business partners to grow payments volume; increase Visa product acceptance; win merchant routing transactions over to our network; and drive innovation INTERNATIONAL TRANSACTION REVENUES Earned for cross-border transaction processing and currency conversion activities (1) Figure may not recalculate exactly due to rounding.",
+      "score": 0.9822
+    },
+    {
+      "sent": "GAAP, to our respective non-GAAP financial measures: For the Year Ended September 30, 2023 Operating Expenses Non-operating Income (Expense) Income Tax Provision (1) Effective Income Tax Rate (2) Net Income Diluted Earnings Per Share (2) (in millions, except percentages and per share data) As reported $ 11,653 $ 37 $ 3,764 17.9 % $ 17,273 $ 8.28 (Gains) losses on equity investments, net \u2014 104 23 81 0.04 Amortization of acquired intangible assets (176) \u2014 38 138 0.07 Acquisition-related costs (90) \u2014 7 83 0.04 Litigation provision (906) \u2014 201 705 0.34 Non-GAAP $ 10,481 $ 141 $ 4,033 18.1 % $ 18,280 $ 8.77 37 Table of Contents For the Year Ended September 30, 2022 Operating Expenses Non-operating Income (Expense) Income Tax Provision (1) Effective Income Tax Rate (2) Net Income Diluted Earnings Per Share (2) (in millions, except percentages and per share data) As reported $ 10,497 $ (677) $ 3,179 17.5 % $ 14,957 $ 7.00 (Gains) losses on equity investments, net \u2014 264 67 197 0.09 Amortization of acquired intangible assets (120) \u2014 26 94 0.04 Acquisition-related costs (69) \u2014 9 60 0.03 Litigation provision (861) \u2014 191 670 0.31 Russia-Ukraine charges (60) \u2014 4 56 0.03 Non-GAAP $ 9,387 $ (413) $ 3,476 17.8 % $ 16,034 $ 7.50 For the Year Ended September 30, 2021 Operating Expenses Non-operating Income (Expense) Income Tax Provision (1) Effective Income Tax Rate (2) Net Income Diluted Earnings Per Share (2) (in millions, except percentages and per share data) As reported $ 8,301 $ 259 $ 3,752 23.4 % $ 12,311 $ 5.63 (Gains) losses on equity investments, net \u2014 (712) (159) (553) (0.25) Amortization of acquired intangible assets (51) \u2014 12 39 0.02 Acquisition-related costs (21) \u2014 4 17 0.01 Remeasurement of deferred tax balances \u2014 \u2014 (1,007) 1,007 0.46 Indirect taxes (152) \u2014 40 112 0.05 Non-GAAP $ 8,077 $ (453) $ 2,642 17.0 % $ 12,933 $ 5.91 (1) Determined by applying applicable tax rates.",
+      "score": 0.9571
+    },
+    {
+      "sent": "Inc., and the other parties thereto \u2020 S-4/A 333-143966 10.13 7/24/2007 10.7 Interchange Judgment Sharing Agreement Schedule 8-K 001-33977 10.2 2/8/2011 10.8 Amendment of Interchange Judgment Sharing Agreement 10-K 001-33977 10.10 11/20/2015 10.9 Form of Loss Sharing Agreement by and among Visa U.S.A.",
+      "score": 0.9545
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our cybersecurity and processing systems, as well as those of financial institutions, merchants and third-party service providers, have experienced and may continue to experience errors, interruptions, delays or damage from a number of causes, including power outages, hardware, software and network failures, computer viruses, ransomware, malware or other destructive software, internal design, manual or user errors, cyber-attacks, terrorism, workplace violence or wrongdoing, catastrophic events, natural disasters, severe weather conditions and other effects from climate change.",
+      "score": -0.9847
+    },
+    {
+      "sent": "Our cybersecurity and processing systems, as well as those of financial institutions, merchants and third-party service providers, have experienced and may continue to experience errors, interruptions, delays or damage from a number of causes, including power outages, hardware, software and network failures, computer viruses, ransomware, malware or other destructive software, internal design, manual or user errors, cyber-attacks, terrorism, workplace violence or wrongdoing, catastrophic events, natural disasters, severe weather conditions and other effects from climate change.",
+      "score": -0.9847
+    },
+    {
+      "sent": "We may not achieve the anticipated benefits of our current and future acquisitions, joint ventures or strategic investments and they may involve significant risks and uncertainties, including: \u2022 disruption to our ongoing business, including diversion of resources and management\u2019s attention from our existing business; 29 Table of Contents \u2022 greater than expected investment of resources or operating expenses; \u2022 failure to adequately develop or integrate our acquired entities or joint ventures; \u2022 the data security, cybersecurity and operational resilience posture of our acquired entities, joint ventures or companies we invest in or partner with, may not be adequate and may be more susceptible to cyber incidents; \u2022 difficulty, expense or failure of implementing controls, procedures and policies at our acquired entities or joint ventures; \u2022 challenges of integrating new employees, business cultures, business systems and technologies; \u2022 failure to retain employees, clients or partners of our acquired entities or joint ventures; \u2022 in the case of foreign acquisitions, risks related to the integration of operations across different cultures and languages; \u2022 disruptions, costs, liabilities, judgments, settlements or business pressures resulting from litigation matters, investigations or legal proceedings involving our acquisitions, joint ventures or strategic investments; \u2022 the inability to pursue aspects of our acquisitions or joint ventures due to outcomes in litigation matters, investigations or legal proceedings; \u2022 failure to obtain the necessary government or other approvals at all, on a timely basis or without the imposition of burdensome conditions or restrictions; \u2022 the economic, political, regulatory and compliance risks associated with our acquisitions, joint ventures or strategic investments, including when entering into a new business or operating in new regions or countries.",
+      "score": -0.9804
+    }
+  ],
+  "forward_snippets": [
+    "We aim to provide a single connection point so that Visa clients can enable money movement for businesses, governments and consumers, regardless of which network is used to start or complete the transaction.",
+    "We aim to provide a single connection point so that Visa clients can enable money movement for businesses, governments and consumers, regardless of which network is used to start or complete the transaction.",
+    "We aim to provide a single connection point so that Visa clients can enable money movement for businesses, governments and consumers, regardless of which network is used to start or complete the transaction.",
+    "We aim to provide a single connection point so that Visa clients can enable money movement for businesses, governments and consumers, regardless of which network is used to start or complete the transaction.",
+    "Consumer Payments We remain focused on moving trillions of dollars of consumer spending in cash and checks to cards and digital accounts on Visa\u2019s network of networks."
+  ]
+}

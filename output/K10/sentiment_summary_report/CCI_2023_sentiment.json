@@ -1,0 +1,45 @@
+{
+  "symbol": "CCI",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1828,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.237
+  },
+  "top_positive": [
+    {
+      "sent": "We believe Adjusted EBITDA is useful to investors or other interested parties in evaluating our financial performance because: \u2022 it is the primary measure used by our management (1) to evaluate the economic productivity of our operations and (2) for purposes of making decisions about allocating resources to, and assessing the performance of, our operations; \u2022 although specific definitions may vary, it is widely used by investors or other interested parties in evaluation of the communications infrastructure sector and other REITs to measure financial performance without regard to items such as depreciation, amortization and accretion, which can vary depending upon accounting methods and the book value of assets; \u2022 we believe it helps investors and other interested parties meaningfully evaluate and compare the results of our operations (1)\u00a0from period to period and (2)\u00a0to our competitors by removing the impact of our capital structure (primarily interest charges from our outstanding debt) and asset base (primarily depreciation, amortization and accretion) from our financial results; and \u2022 it is similar to the measure of current financial performance generally used in our debt covenant calculations.",
+      "score": 0.9833
+    },
+    {
+      "sent": "We believe Adjusted EBITDA is useful to investors or other interested parties in evaluating our financial performance because: \u2022 it is the primary measure used by our management (1) to evaluate the economic productivity of our operations and (2) for purposes of making decisions about allocating resources to, and assessing the performance of, our operations; \u2022 although specific definitions may vary, it is widely used by investors or other interested parties in evaluation of the communications infrastructure sector and other REITs to measure financial performance without regard to items such as depreciation, amortization and accretion, which can vary depending upon accounting methods and the book value of assets; \u2022 we believe it helps investors and other interested parties meaningfully evaluate and compare the results of our operations (1)\u00a0from period to period and (2)\u00a0to our competitors by removing the impact of our capital structure (primarily interest charges from our outstanding debt) and asset base (primarily depreciation, amortization and accretion) from our financial results; and \u2022 it is similar to the measure of current financial performance generally used in our debt covenant calculations.",
+      "score": 0.9833
+    },
+    {
+      "sent": "We believe Adjusted EBITDA is useful to investors or other interested parties in evaluating our financial performance because: \u2022 it is the primary measure used by our management (1) to evaluate the economic productivity of our operations and (2) for purposes of making decisions about allocating resources to, and assessing the performance of, our operations; \u2022 although specific definitions may vary, it is widely used by investors or other interested parties in evaluation of the communications infrastructure sector and other REITs to measure financial performance without regard to items such as depreciation, amortization and accretion, which can vary depending upon accounting methods and the book value of assets; \u2022 we believe it helps investors and other interested parties meaningfully evaluate and compare the results of our operations (1)\u00a0from period to period and (2)\u00a0to our competitors by removing the impact of our capital structure (primarily interest charges from our outstanding debt) and asset base (primarily depreciation, amortization and accretion) from our financial results; and \u2022 it is similar to the measure of current financial performance generally used in our debt covenant calculations.",
+      "score": 0.9833
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "14 Such safety risks may cause personal injury or loss of life, severe damage to or destruction of property, suspension of operations or services, or significant damage to the environment, creating financial, regulatory or reputati\nelating to wireless carriers building their own small cell networks, or tenants utilizing their own or alternative fiber assets; \u2022 the risk of failing to optimize the use of our finite supply of fiber strands; \u2022 damage to our assets and the need to maintain, repair, upgrade and periodically replace our assets; \u2022 the risk of failing to properly maintain or operate highly specialized hardware and software; \u2022 network data security risks; \u2022 the risk of new technologies that could enable tenants to realize the same benefits with less utilization of our fiber; \u2022 potential damage to our overall reputation as a communications infrastructure provider; and \u2022 the use of CLEC status.",
+      "score": -0.969
+    },
+    {
+      "sent": "Any such unforeseen events could, among other things, damage or delay deployment of our communications infrastructure, interrupt or delay service to our tenants or could result in legal claims or penalties, disruption in operations, damage to our reputation, negative market perception, or costly response measures, which could adversely affect our business.",
+      "score": -0.9601
+    },
+    {
+      "sent": "Any such unforeseen events could, among other things, damage or delay deployment of our communications infrastructure, interrupt or delay service to our tenants or could result in legal claims or penalties, disruption in operations, damage to our reputation, negative market perception, or costly response measures, which could adversely affect our business.",
+      "score": -0.9601
+    }
+  ],
+  "forward_snippets": [
+    "Examples of forward-looking statements include our outlook and plans, projections and estimates regarding (1) the value of our business model and demand for our communications infrastructure, (2) the growth of the U.S.",
+    "We seek to increase our site rental revenues by adding more tenants on our shared communications infrastructure, which we expect to result in significant incremental cash flows due to our low incremental operating costs.",
+    "Examples of forward-looking statements include our outlook and plans, projections and estimates regarding (1) the value of our business model and demand for our communications infrastructure, (2) the growth of the U.S.",
+    "We seek to increase our site rental revenues by adding more tenants on our shared communications infrastructure, which we expect to result in significant incremental cash flows due to our low incremental operating costs.",
+    "As part of our effort to provide comprehensive communications infrastructure solutions, as an ancillary business, we also offer certain services primarily relating to our Towers segment, predominately consisting of (1) site development services relating to existing or new tenant equipment installations, including: site acquisition, architectural and engineering, or zoning and permitting (collectively, \"site \noutlook and plans, projections and estimates regarding (1) the value of our business model and demand for our communications infrastructure, (2) the growth of the U.S."
+  ]
+}

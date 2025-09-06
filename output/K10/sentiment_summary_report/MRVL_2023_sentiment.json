@@ -1,0 +1,45 @@
+{
+  "symbol": "MRVL",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2075,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.281
+  },
+  "top_positive": [
+    {
+      "sent": "101 Securities Authorized for Issuance under Equity Compensation Plans Equity Compensation Plan Information The following table provides certain information with respect to all of our equity compensation plans in effect January\u00a028, 2023: Plan Category (a) Number\u00a0of Securities to\u00a0Be\u00a0Issued Upon\u00a0Exercise of\u00a0Outstanding Options,\u00a0Warrants and Rights (1) (b) Weighted- Average Exercise Price of\u00a0Outstanding Options, Warrants, and Rights (2) (c) Number of Securities\u00a0Remaining Available for Future Issuance\u00a0under\u00a0Equity Compensation Plans (Excluding Securities Reflected\u00a0in\u00a0Column\u00a0(a) Equity compensation plans approved by security holders\u00a0(3) 16,776,002 $ 19.28 107,174,498 Equity compensation plans not approved by security holders (4) 3,761,649 $ 12.40 \u2014 (1) Includes only options and restricted stock units (outstanding under our equity compensation plans, as no stock warrants or other rights were outstanding as of January 28, 2023).",
+      "score": 0.9837
+    },
+    {
+      "sent": "101 Securities Authorized for Issuance under Equity Compensation Plans Equity Compensation Plan Information The following table provides certain information with respect to all of our equity compensation plans in effect January\u00a028, 2023: Plan Category (a) Number\u00a0of Securities to\u00a0Be\u00a0Issued Upon\u00a0Exercise of\u00a0Outstanding Options,\u00a0Warrants and Rights (1) (b) Weighted- Average Exercise Price of\u00a0Outstanding Options, Warrants, and Rights (2) (c) Number of Securities\u00a0Remaining Available for Future Issuance\u00a0under\u00a0Equity Compensation Plans (Excluding Securities Reflected\u00a0in\u00a0Column\u00a0(a) Equity compensation plans approved by security holders\u00a0(3) 16,776,002 $ 19.28 107,174,498 Equity compensation plans not approved by security holders (4) 3,761,649 $ 12.40 \u2014 (1) Includes only options and restricted stock units (outstanding under our equity compensation plans, as no stock warrants or other rights were outstanding as of January 28, 2023).",
+      "score": 0.9837
+    },
+    {
+      "sent": "101 Securities Authorized for Issuance under Equity Compensation Plans Equity Compensation Plan Information The following table provides certain information with respect to all of our equity compensation plans in effect January\u00a028, 2023: Plan Category (a) Number\u00a0of Securities to\u00a0Be\u00a0Issued Upon\u00a0Exercise of\u00a0Outstanding Options,\u00a0Warrants and Rights (1) (b) Weighted- Average Exercise Price of\u00a0Outstanding Options, Warrants, and Rights (2) (c) Number of Securities\u00a0Remaining Available for Future Issuance\u00a0under\u00a0Equity Compensation Plans (Excluding Securities Reflected\u00a0in\u00a0Column\u00a0(a) Equity compensation plans approved by security holders\u00a0(3) 16,776,002 $ 19.28 107,174,498 Equity compensation plans not approved by security holders (4) 3,761,649 $ 12.40 \u2014 (1) Includes only options and restricted stock units (outstanding under our equity compensation plans, as no stock warrants or other rights were outstanding as of January 28, 2023).",
+      "score": 0.9837
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These information technology systems are subject to damage or interruption from a number of potential sources, including, but not limited to, natural disasters, destructive or inadequate code, malware, power failures, cyber-attacks, internal malfeasance or other events.",
+      "score": -0.973
+    },
+    {
+      "sent": "These information technology systems are subject to damage or interruption from a number of potential sources, including, but not limited to, natural disasters, destructive or inadequate code, malware, power failures, cyber-attacks, internal malfeasance or other events.",
+      "score": -0.973
+    },
+    {
+      "sent": "These information technology systems are subject to damage or interruption from a number of potential sources, including, but not limited to, natural disasters, destructive or inadequate code, malware, power failures, cyber-attacks, internal malfeasance or other events.",
+      "score": -0.973
+    }
+  ],
+  "forward_snippets": [
+    "In this way, we believe we can more effectively offer a broader set of content into our key customers\u2019 end products, without having multiple product groups separately engage the same customer.",
+    "We expect that a significant percentage of our sales will continue to come from direct sales to key customers.",
+    "Research and Development We believe that our future success depends on our ability to introduce improvements to our existing products and to develop new products that deliver cost-effective solutions for both existing and new markets.",
+    "In this way, we believe we can more effectively offer a broader set of content into our key customers\u2019 end products, without having multiple product groups separately engage the same customer.",
+    "We expect that a significant percentage of our sales will continue to come from direct sales to key customers."
+  ]
+}

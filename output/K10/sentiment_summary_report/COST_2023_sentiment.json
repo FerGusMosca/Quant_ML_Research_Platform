@@ -1,0 +1,45 @@
+{
+  "symbol": "COST",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.0857,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.188
+  },
+  "top_positive": [
+    {
+      "sent": "35 Table of Contents COSTCO WHOLESALE CORPORATION CONSOLIDATED BALANCE SHEETS (amounts in millions, except par value and share data) September 3, 2023 August 28, 2022 ASSETS CURRENT ASSETS Cash and cash equivalents $ 13,700 $ 10,203 Short-term investments 1,534 846 Receivables, net 2,285 2,241 Merchandise inventories 16,651 17,907 Other current assets 1,709 1,499 Total current assets 35,879 32,696 OTHER ASSETS Property and equipment, net 26,684 24,646 Operating lease right-of-use assets 2,713 2,774 Other long-term assets 3,718 4,050 TOTAL ASSETS $ 68,994 $ 64,166 LIABILITIES AND EQUITY CURRENT LIABILITIES Accounts payable $ 17,483 $ 17,848 Accrued salaries and benefits 4,278 4,381 Accrued member rewards 2,150 1,911 Deferred membership fees 2,337 2,174 Current portion of long-term debt 1,081 73 Other current liabilities 6,254 5,611 Total current liabilities 33,583 31,998 OTHER LIABILITIES Long-term debt, excluding current portion 5,377 6,484 Long-term operating lease liabilities 2,426 2,482 Other long-term liabilities 2,550 2,555 TOTAL LIABILITIES 43,936 43,519 COMMITMENTS AND CONTINGENCIES EQUITY Preferred stock $ 0.005 par value; 100,000,000 shares authorized; no shares issued and outstanding \u2014 \u2014 Common stock $ 0.005 par value; 900,000,000 shares authorized; 442,793,000 and 442,664,000 shares issued and outstanding 2 2 Additional paid-in capital 7,340 6,884 Accumulated other comprehensive loss ( 1,805 ) ( 1,829 ) Retained earnings 19,521 15,585 Total Costco stockholders\u2019 equity 25,058 20,642 Noncontrolling interests \u2014 5 TOTAL EQUITY 25,058 20,647 TOTAL LIABILITIES AND EQUITY $ 68,994 $ 64,166 The accompanying notes are an integral part of these consolidated financial statements.",
+      "score": 0.9698
+    },
+    {
+      "sent": "35 Table of Contents COSTCO WHOLESALE CORPORATION CONSOLIDATED BALANCE SHEETS (amounts in millions, except par value and share data) September 3, 2023 August 28, 2022 ASSETS CURRENT ASSETS Cash and cash equivalents $ 13,700 $ 10,203 Short-term investments 1,534 846 Receivables, net 2,285 2,241 Merchandise inventories 16,651 17,907 Other current assets 1,709 1,499 Total current assets 35,879 32,696 OTHER ASSETS Property and equipment, net 26,684 24,646 Operating lease right-of-use assets 2,713 2,774 Other long-term assets 3,718 4,050 TOTAL ASSETS $ 68,994 $ 64,166 LIABILITIES AND EQUITY CURRENT LIABILITIES Accounts payable $ 17,483 $ 17,848 Accrued salaries and benefits 4,278 4,381 Accrued member rewards 2,150 1,911 Deferred membership fees 2,337 2,174 Current portion of long-term debt 1,081 73 Other current liabilities 6,254 5,611 Total current liabilities 33,583 31,998 OTHER LIABILITIES Long-term debt, excluding current portion 5,377 6,484 Long-term operating lease liabilities 2,426 2,482 Other long-term liabilities 2,550 2,555 TOTAL LIABILITIES 43,936 43,519 COMMITMENTS AND CONTINGENCIES EQUITY Preferred stock $ 0.005 par value; 100,000,000 shares authorized; no shares issued and outstanding \u2014 \u2014 Common stock $ 0.005 par value; 900,000,000 shares authorized; 442,793,000 and 442,664,000 shares issued and outstanding 2 2 Additional paid-in capital 7,340 6,884 Accumulated other comprehensive loss ( 1,805 ) ( 1,829 ) Retained earnings 19,521 15,585 Total Costco stockholders\u2019 equity 25,058 20,642 Noncontrolling interests \u2014 5 TOTAL EQUITY 25,058 20,647 TOTAL LIABILITIES AND EQUITY $ 68,994 $ 64,166 The accompanying notes are an integral part of these consolidated financial statements.",
+      "score": 0.9698
+    },
+    {
+      "sent": "This was partially offset by charges of $391, predominantly related to the discontinuation of our charter shipping activities; \u2022 SG&A expenses as a percentage of net sales increased 20 basis points, due to increased costs in warehouse operations and other businesses, primarily wage increases effective in March and July 2022, and March 2023, as well as lower sales growth; \u2022 The effective tax rate in 2023 was 25.9%, compared to 24.6% in 2022; \u2022 Net income increased 8% to $6,292, or $14.16 per diluted share compared to $5,844, or $13.14 per diluted share in 2022; \u2022 In January 2023, the Board of Directors authorized a new share repurchase program in the amount of $4,000; and \u2022 In April 2023, the Board of Directors approved a 13% increase in the quarterly cash dividend.",
+      "score": 0.9666
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Although we maintain specific coverages for catastrophic property losses, we still bear a significant portion of the risk of losses incurred as a result of any physical damage to, or the destruction of, any warehouses, depots, manufacturing or home office facilities, loss or spoilage of inventory, and business interruption.",
+      "score": -0.9618
+    },
+    {
+      "sent": "Although we maintain specific coverages for catastrophic property losses, we still bear a significant portion of the risk of losses incurred as a result of any physical damage to, or the destruction of, any warehouses, depots, manufacturing or home office facilities, loss or spoilage of inventory, and business interruption.",
+      "score": -0.9618
+    },
+    {
+      "sent": "operations, particularly in California, and our Canadian operations could arise from, among other things: slow growth or declines in comparable warehouse sales (comparable sales); negative trends in operating expenses, including increased labor, healthcare and energy costs; failing to meet targets for warehouse openings; cannibalizing existing locations with new warehouses; shifts in sales mix toward lower gross margin products; changes or uncertainties in economic conditions in our markets, including higher levels of unemployment and depressed home values; and failing to consistently provide high quality and innovative new products.",
+      "score": -0.9153
+    }
+  ],
+  "forward_snippets": [
+    "By strictly controlling the entrances and exits and using a membership format, we believe our inventory losses (shrinkage) are well below those of typical retail operations.",
+    "Our strategy is to provide our members with a broad range of high-quality merchandise at prices we believe are consistently lower than elsewhere.",
+    "By strictly controlling the entrances and exits and using a membership format, we believe our inventory losses (shrinkage) are well below those of typical retail operations.",
+    "Our strategy is to provide our members with a broad range of high-quality merchandise at prices we believe are consistently lower than elsewhere.",
+    "By strictly controlling the entrances and exits and using a membership format, we believe our inventory losses (shrinkage) are well below those of typical retail operations."
+  ]
+}

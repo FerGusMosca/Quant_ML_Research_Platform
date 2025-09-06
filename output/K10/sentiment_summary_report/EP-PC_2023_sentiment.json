@@ -1,0 +1,53 @@
+{
+  "symbol": "EP-PC",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.7292,
+    "outlook_sentiment": 0.1433,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.21
+  },
+  "top_positive": [
+    {
+      "sent": "AND SUBSIDIARIES (continued) TABLE OF CONTENTS Page Number Short-term Liquidity 58 Long-term Financing 59 Counterparty Creditworthiness 59 Capital Expenditures 59 Off Balance Sheet Arrangements 60 Contractual Obligations and Commercial Commitments 61 Cash Flows 62 Dividends and Stock Buy-back Program 63 Summarized Combined Financial Information for Guarantee of Securities of Subsidiaries 64 Recent Accounting Pronouncements 65 Item 7A.",
+      "score": 0.7845
+    },
+    {
+      "sent": "Management\u2019s Discussion and Analysis of Financial Condition and\u00a0Results of Operations 36 General 37 Critical Accounting Estimates 37 Results of Operations 39 Overview 39 Consolidated Earnings Results (GAAP) 42 Non-GAAP Financial Measures 44 Segment Earnings Results 47 DD&A, General and Administrative and Corporate Charges, Interest, net and Noncontrolling Interests 56 Income Taxes 57 Liquidity and Capital Resources 57 General 57 KINDER MORGAN, INC.",
+      "score": 0.6739
+    },
+    {
+      "sent": "112 Impact of Derivative Contracts on Our Consolidated Financial Statements The following table summarizes the fair values of our derivative contracts included in our accompanying consolidated balance sheets: Fair Value of Derivative Contracts Derivatives Asset Derivatives Liability December 31, December 31, 2022 2021 2022 2021 Location Fair\u00a0value Fair\u00a0value (In millions) Derivatives designated as hedging instruments Energy commodity derivative contracts Fair value of derivative contracts/(Fair value of derivative contracts) $ 150 $ 61 $ ( 156 ) $ ( 141 ) Deferred charges and other assets/(Other long-term liabilities and deferred credits) 6 3 ( 91 ) ( 94 ) Subtotal 156 64 ( 247 ) ( 235 ) Interest rate contracts Fair value of derivative contracts/(Fair value of derivative contracts) \u2014 101 ( 144 ) ( 3 ) Deferred charges and other assets/(Other long-term liabilities and deferred credits) 39 284 ( 261 ) ( 15 ) Subtotal 39 385 ( 405 ) ( 18 ) Foreign currency contracts Fair value of derivative contracts/(Fair value of derivative contracts) \u2014 35 ( 3 ) ( 3 ) Deferred charges and other assets/(Other long-term liabilities and deferred credits) \u2014 6 ( 32 ) \u2014 Subtotal \u2014 41 ( 35 ) ( 3 ) Total 195 490 ( 687 ) ( 256 ) Derivatives\u00a0not\u00a0designated\u00a0as hedging\u00a0instruments Energy commodity derivative contracts Fair value of derivative contracts/(Fair value of derivative contracts) 80 11 ( 162 ) ( 31 ) Deferred charges and other assets/(Other long-term liabilities and deferred credits) 23 1 ( 19 ) ( 6 ) Subtotal 103 12 ( 181 ) ( 37 ) Interest rate contracts Fair value of derivative contracts/(Fair value of derivative contracts) 1 12 \u2014 \u2014 Total 104 24 ( 181 ) ( 37 ) Total derivatives $ 299 $ 514 $ ( 868 ) $ ( 293 ) The following two tables summarize the fair value measurements of our derivative contracts based on the three levels established by the ASC.",
+      "score": 0.9934
+    },
+    {
+      "sent": "The following table details the weighted-average actuarial assumptions used in determining our benefit obligation as of December 31, 2022 and 2021 and net benefit costs of our pension and OPEB plans for 2022, 2021 and 2020: Pension Benefits OPEB 2022 2021 2022 2021 Assumptions related to benefit obligations: Discount rate 5.41 % 2.74 % 5.38 % 2.56 % Rate of compensation increase 3.50 % 3.50 % n/a n/a Interest crediting rate 3.50 % 3.01 % n/a n/a Pension Benefits OPEB 2022 2021 2020 2022 2021 2020 Assumptions related to benefit costs: Discount rate 2.74 % 2.27 % 3.17 % 2.56 % 2.08 % 3.03 % Expected return on plan assets 6.50 % 6.25 % 6.75 % 5.75 % 5.75 % 6.50 % Rate of compensation increase 3.50 % 3.50 % 3.50 % n/a n/a n/a Interest crediting rate 3.01 % 2.57 % 3.71 % n/a n/a n/a We utilize a full yield curve approach in estimating the service and interest cost components of net periodic benefit cost (credit) for our retirement benefit plans by applying the specific spot rates along the yield curve used in the determination of the benefit obligation to their underlying projected cash flows.",
+      "score": 0.9914
+    },
+    {
+      "sent": "For each of the years ended December 31, the components of net benefit cost and other amounts recognized in pre-tax other comprehensive income related to our pension and OPEB plans are as follows: Pension Benefits OPEB 2022 2021 2020 2022 2021 2020 (In millions) Components of net benefit cost (credit): Service cost $ 55 $ 53 $ 59 $ 1 $ 1 $ 1 Interest cost 57 45 71 5 4 8 Expected return on assets ( 142 ) ( 133 ) ( 137 ) ( 17 ) ( 16 ) ( 16 ) Amortization of prior service cost (credit) 1 \u2014 1 ( 3 ) ( 5 ) ( 5 ) Amortization of net actuarial loss (gain) 29 52 40 ( 18 ) ( 17 ) ( 13 ) Net benefit cost (credit) \u2014 17 34 ( 32 ) ( 33 ) ( 25 ) Other changes in plan assets and benefit obligations recognized in other comprehensive (income) loss: Net (gain) loss arising during period ( 11 ) ( 127 ) 157 24 ( 40 ) ( 43 ) Amortization or settlement recognition of net actuarial (loss) gain ( 29 ) ( 52 ) ( 40 ) 17 17 13 Amortization of prior service (cost) credit ( 1 ) \u2014 ( 1 ) 2 3 3 Total recognized in total other comprehensive (income) loss(a) ( 41 ) ( 179 ) 116 43 ( 20 ) ( 27 ) Total recognized in net benefit cost (credit) and other comprehensive (income) loss $ ( 41 ) $ ( 162 ) $ 150 $ 11 $ ( 53 ) $ ( 52 ) (a) Excludes $ 4 million, $ 3 million and $ 2 million for the years ended December 31, 2022, 2021 and 2020 respectively, associated with other plans.",
+      "score": 0.9843
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Rocky Mountains; \u2022 changes in laws or regulations, third-party relations and approvals, and decisions of courts, regulators and governmental bodies that may increase our compliance costs, restrict our ability to provide or reduce demand for our services, or otherwise adversely affect our business; \u2022 interruptions of operations at our facilities due to natural disasters, damage by third parties, power shortages, strikes, riots, terrorism (including cyber-attacks), war or other causes; \u2022 compromise of our IT systems, operational systems or sensitive data as a result of errors, malfunctions, hacking events or coordinated cyber-attacks; \u2022 \nQuantitative and Qualitative Disclosures About Market Risk 65 Energy Commodity Market Risk 65 Interest Rate Risk 66 Foreign Currency Risk 67 Item 8.",
+      "score": -0.9756
+    },
+    {
+      "sent": "Rocky Mountains; \u2022 changes in laws or regulations, third-party relations and approvals, and decisions of courts, regulators and governmental bodies that may increase our compliance costs, restrict our ability to provide or reduce demand for our services, or otherwise adversely affect our business; \u2022 interruptions of operations at our facilities due to natural disasters, damage by third parties, power shortages, strikes, riots, terrorism (including cyber-attacks), war or other causes; \u2022 compromise of our IT systems, operational systems or sensitive data as a result of errors, malfunctions, hacking events or coordinated cyber-attacks; \u2022 the uncer\nevent Inspections 130 PART III Item 10.",
+      "score": -0.9716
+    },
+    {
+      "sent": "There are a variety of hazards and operating risks inherent to the transportation and storage of the products we handle, such as leaks; releases; the breakdown, underperformance or failure of equipment, facilities, information systems or processes; damage to our pipelines caused by third-party construction; the compromise of information and control systems; spills at terminals and hubs; spills associated with loading and unloading harmful substances at rail facilities; adverse sea conditions (including storms and rising sea levels) and releases or spills from our shipping vessels or vessels loaded at our marine terminals; operator error; labor disputes/work stoppages; disputes with interconnected facilities and carriers; operational disruptions or apportionment on third-party systems or refineries on which our assets depend; and catastrophic events or natural disasters such as fires, floods, explosions, earthquakes, acts of terrorists and saboteurs, cyber security breaches, and other similar events, many of which are beyond our control.",
+      "score": -0.9705
+    }
+  ],
+  "forward_snippets": [
+    "and its majority-owned and/or controlled subsidiaries CPGPL = Cheyenne Plains Gas Pipeline Company, L.L.C.",
+    "EagleHawk = EagleHawk Field Services LLC KMTP = Kinder Morgan Texas Pipeline LLC Elba Express = Elba Express Company, L.L.C.",
+    "MEP = Midcontinent Express Pipeline LLC EIG = EIG Global Energy Partners NGPL = Natural Gas Pipeline Company of America LLC and certain affiliates ELC = Elba Liquefaction Company, L.L.C.",
+    "PHP = Permian Highway Pipeline LLC FEP = Fayetteville Express Pipeline LLC Ruby = Ruby Pipeline Holding Company, L.L.C.",
+    "and its majority-owned and/or controlled subsidiaries TGP = Tennessee Gas Pipeline Company, L.L.C."
+  ]
+}

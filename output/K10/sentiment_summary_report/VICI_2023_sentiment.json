@@ -1,0 +1,45 @@
+{
+  "symbol": "VICI",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.3293,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.277
+  },
+  "top_positive": [
+    {
+      "sent": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued) Loan Originations The following table summarizes our 2022 development loan origination activity to date: ($ in thousands) Loan Name Maximum Loan Amount Loan Type Development Project Fontainebleau Las Vegas $ 350,000 Mezzanine Completion of 67 -story hotel, gaming, meeting, and entertainment destination located on the north end of the Las Vegas Strip Canyon Ranch Austin 200,000 Senior Secured Canyon Ranch Austin wellness resort located in Austin, TX Great Wolf Northeast 287,920 Senior Secured 549 -room indoor water park resort project in Mashantucket, CT Great Wolf Gulf Coast Texas 127,000 Mezzanine 532 -room indoor water park resort located in Webster, TX Great Wolf South Florida 59,000 Mezzanine 532 -room indoor water park resort located in Collier County, FL Cabot Citrus Farms 120,000 Senior Secured Cabot Citrus Farms golf course and resort located in Brookdale, FL BigShots 80,000 Senior Secured BigShots Golf Facilities throughout the United States Total $ 1,223,920 Fontainebleau Las Vegas Loan On December 23, 2022, we entered into definitive agreements pursuant to which we have agreed to provide up to $ 350.0 million in mezzanine loan financing (the \u201cFontainebleau Las Vegas Loan\u201d) to a partnership between Fontainebleau Development, LLC, a builder, owner, and operator of luxury hospitality, commercial and retail properties, and Koch Real Estate Investments, the real estate investment arm of Koch Industries, to complete the construction of Fontainebleau Las Vegas, a 67 -story hotel, gaming, meeting, and entertainment destination coming to the north end of the Las Vegas Strip.",
+      "score": 0.9918
+    },
+    {
+      "sent": "or global economy; \u2022 the impact of the rise in interest rates on us, including our ability to successfully pursue investments in, and acquisitions of, additional properties and to obtain debt financing for such investments at attractive interest rates, or at all; \u2022 risks associated with our pending and recently closed transactions, including our ability or failure to realize the anticipated benefits thereof; \u2022 our dependence on our tenants at our properties, including their financial condition, results of operations, cash flows and performance, and their affiliates that serve as guarantors of the lease payments, and the negative consequences any material adverse effect on their respective businesses could have on us; \u2022 the possibility that our pending transactions may not be consummated on the terms or timeframes contemplated, or at all; \u2022 the ability of the parties to our pending transactions and any future transactions to satisfy the conditions set forth in the definitive transaction documents, including the ability to receive, or delays in obtaining, the governmental and regulatory approvals and consents required to consummate the pending transactions, or other delays or impediments to completing the transactions; \u2022 our ability to obtain the financing necessary to complete any acquisitions on the terms we expect in a timely manner, or at all; \u2022 the anticipated benefits of certain arrangements with certain tenants in connection with our Partner Property Growth Fund; \u2022 our ability to exercise our purchase rights under our put-call agreements, call agreements, right of first refusal agreements and right of first offer agreements; \u2022 our borrowers\u2019 ability to repay their outstanding loan obligations to us; \u2022 our dependence on the gaming industry; \u2022 our ability to pursue our business and growth strategies may be limited by the requirement that we distribute 90% of our REIT taxable income in order to qualify for taxation as a REIT and that we distribute 100% of our REIT taxable income in order to avoid current entity-level U.S.",
+      "score": 0.9917
+    },
+    {
+      "sent": "or global economy; \u2022 the impact of the rise in interest rates on us, including our ability to successfully pursue investments in, and acquisitions of, additional properties and to obtain debt financing for such investments at attractive interest rates, or at all; \u2022 risks associated with our pending and recently closed transactions, including our ability or failure to realize the anticipated benefits thereof; \u2022 our dependence on our tenants at our properties, including their financial condition, results of operations, cash flows and performance, and their affiliates that serve as guarantors of the lease payments, and the negative consequences any material adverse effect on their respective businesses could have on us; \u2022 the possibility that our pending transactions may not be consummated on the terms or timeframes contemplated, or at all; \u2022 the ability of the parties to our pending transactions and any future transactions to satisfy the conditions set forth in the definitive transaction documents, including the ability to receive, or delays in obtaining, the governmental and regulatory approvals and consents required to consummate the pending transactions, or other delays or impediments to completing the transactions; \u2022 our ability to obtain the financing necessary to complete any acquisitions on the terms we expect in a timely manner, or at all; \u2022 the anticipated benefits of certain arrangements with certain tenants in connection with our Partner Property Growth Fund; \u2022 our ability to exercise our purchase rights under our put-call agreements, call agreements, right of first refusal agreements and right of first offer agreements; \u2022 our borrowers\u2019 ability to repay their outstanding loan obligations to us; \u2022 our dependence on the gaming industry; \u2022 our ability to pursue our business and growth strategies may be limited by the requirement that we distribute 90% of our REIT taxable income in order to qualify for taxation as a REIT and that we distribute 100% of our REIT taxable income in order to avoid current entity-level U.S.",
+      "score": 0.9917
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our properties and the properties securing our loans are subject to climate change, natural disasters, other adverse or extreme weather conditions, casualty and condemnation risks, and terrorist attacks or other acts of vi\nr increase our cost of raising capital.",
+      "score": -0.9509
+    },
+    {
+      "sent": "Moreover, due to the importance of our ten properties on the Las Vegas Strip, we may be disproportionately affected by general risks such as acts of terrorism, natural disasters, including major fires, floods and earthquakes, severe or inclement weather, and climate change impacts, including heat stress, water stress, and drought, should such developments occur in or nearby, or otherwise impact, Las Vegas.",
+      "score": -0.9337
+    },
+    {
+      "sent": "Moreover, due to the importance of our ten properties on the Las Vegas Strip, we may be disproportionately affected by general risks such as acts of terrorism, natural disasters, including major fires, floods and earthquakes, severe or inclement weather, and climate change impacts, including heat stress, water stress, and drought, should such developments occur in or nearby, or otherwise impact, Las Vegas.",
+      "score": -0.9337
+    }
+  ],
+  "forward_snippets": [
+    "We believe combining the annual reports on Form 10-K of VICI and VICI LP into this single report: \u2022 enhances investors\u2019 understanding of VICI and VICI LP by enabling investors to view the business as a whole in the same manner as management views and operates the business; \u2022 eliminates duplicative disclosure and provides a more streamlined and readable presentation; and \u2022 creates time and cost efficiencies through the preparation of one combined report instead of two separate reports.",
+    "We believe it is important to understand the few differences between VICI and VICI LP in the context of how VICI and VICI LP operate as a consolidated company.",
+    "We believe it is important to understand the few differences between VICI and VICI LP in the context of how VICI and VICI LP operate as a consolidated company.",
+    "We believe we have a mutually beneficial relationship with each of our tenants, all of which are leading owners and operators of gaming, entertainment and leisure properties.",
+    "We believe our geographic diversification limits the effect of changes in any one market on our overall performance."
+  ]
+}

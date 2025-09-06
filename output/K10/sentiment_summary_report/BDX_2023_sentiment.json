@@ -1,0 +1,45 @@
+{
+  "symbol": "BDX",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2078,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.248
+  },
+  "top_positive": [
+    {
+      "sent": "The impact that changes in interest rates would have on interest rate derivatives outstanding at September\u00a030, 2023 and 2022, as well as the effect that changes in interest rates would have on our earnings or cash flows over a one-year period, based upon our overall interest rate exposure, were estimated as follows: Increase (decrease) to fair value of interest rate derivatives outstanding Increase (decrease) to earnings or cash flows (Millions\u00a0of\u00a0dollars) 2023 2022 2023 2022 10% increase in interest rates $ (3) $ (4) $ 2 $ (1) 10% decrease in interest rates $ 2 $ 4 $ (2) $ 1 Liquidity and Capital Resources Our strong financial position and cash flow performance have provided us with the capacity to accelerate our innovation pipeline through investments in research and development, as well as through strategic acquisitions.",
+      "score": 0.9931
+    },
+    {
+      "sent": "\u2022 We are required to have a leverage coverage ratio of no more than: \u25e6 4.25-to-1 as of the last day of each fiscal quarter follo\nrates would have on interest rate derivatives outstanding at September\u00a030, 2023 and 2022, as well as the effect that changes in interest rates would have on our earnings or cash flows over a one-year period, based upon our overall interest rate exposure, were estimated as follows: Increase (decrease) to fair value of interest rate derivatives outstanding Increase (decrease) to earnings or cash flows (Millions\u00a0of\u00a0dollars) 2023 2022 2023 2022 10% increase in interest rates $ (3) $ (4) $ 2 $ (1) 10% decrease in interest rates $ 2 $ 4 $ (2) $ 1 Liquidity and Capital Resources Our strong financial position and cash flow performance have provided us with the capacity to accelerate our innovation pipeline through investments in research and development, as well as through strategic acquisitions.",
+      "score": 0.9915
+    },
+    {
+      "sent": "BD's management team aligns our operating model and investments with these key strategic pillars through continuous focus on the following underlying objectives: Grow \u2022 Developing and maintaining a strong portfolio of leading products and solutions that address significant unmet clinical needs, improve outcomes, and reduce costs; \u2022 Focusing on our core products, services and solutions that deliver greater benefits to patients, healthcare workers and researchers; \u2022 Investing in research and development that leads to and expands category leadership, as well as results in a robust product pipeline; \u2022 Accelerating innovation in smart devices, robotics, analytics, and artificial intelligence in order to enable new care settings, streamline care workflows and remove administrative burdens for healthcare providers; \u2022 Leveraging our global scale in order to provide equitable access to affordable medical technologies around the world, including in under-resourced markets; \u2022 Supplementing our internal growth through strategic acquisitions in faster growing market segments; and \u2022 Focusing on cash management and an efficient capital structure in order to drive balance sheet productivity and strong shareholder returns.",
+      "score": 0.9899
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Likewise, we or our third-party providers could suffer disruption of our operations and other significant negative consequences, including increased costs for security measures or remediation, lost revenue, manufacturing challenges or disruption, diversion of management attention, reputational damage, litigation and damage to our relationships with vendors, business partners and customers.",
+      "score": -0.9442
+    },
+    {
+      "sent": "Natural disasters, such as hurricanes, tornadoes, windstorms, earthquakes, wildfires and floods and other extreme weather events (including those caused by climate change), war, global health crises, terrorism, social or political unrest, labor disruptions and international conflicts and other events beyond our control, and actions taken by the U.S.",
+      "score": -0.9393
+    },
+    {
+      "sent": "Our failure to comply with the applicable good manufacturing practices, adverse event reporting and other post market requirements of these agencies could delay or prevent the production, marketing or sale of our products and result in delays or suspensions of regulatory clearances, warning letters or consent decrees, closure of manufacturing sites, import bans, seizures or recalls of products, civil or criminal sanctions and damage to our reputation.",
+      "score": -0.9042
+    }
+  ],
+  "forward_snippets": [
+    "3 Table of Contents Order backlog is not usually material to BD\u2019s business inasmuch as orders for BD products generally are received and filled on a current basis.",
+    "We believe this commitment, 8 Table of Contents coupled with our purpose and culture, allows us to better understand patient and customer needs and develop innovative technologies to meet those needs.",
+    "We remain committed to sustaining meaningful, long-term strategic partnerships and programs to help address equitable access to care and advance the health of our communities around the world.",
+    "While we celebrate the recognition we have received, we remain committed and accountable to the work required within our company and beyond our corporate walls to build and maintain equity, acceptance, and accessibility for everyone.",
+    "Associate Engagement As we strive to be an employer of choice, we believe it is critical that our associates are informed, engaged, and can provide feedback."
+  ]
+}

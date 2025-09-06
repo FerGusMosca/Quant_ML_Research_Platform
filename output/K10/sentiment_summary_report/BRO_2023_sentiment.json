@@ -1,0 +1,45 @@
+{
+  "symbol": "BRO",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2463,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.156
+  },
+  "top_positive": [
+    {
+      "sent": "The Second Amended and Restated Credit Agreement amended and restated the credit agreement dated April 17, 2014, among certain of such parties, as amended by that certain amended and restated credit agreement dated June 28, 2017 (the \u201cOriginal Credit Agreement\u201d).",
+      "score": 0.9747
+    },
+    {
+      "sent": "The Second Amended and Restated Credit Agreement amended and restated the credit agreement dated April 17, 2014, among certain of such parties, as amended by that certain amended and restated credit agreement dated June 28, 2017 (the \u201cOriginal Credit Agreement\u201d).",
+      "score": 0.9747
+    },
+    {
+      "sent": "The Second Amended and Restated Credit Agreement amended and restated the credit agreement dated April 17, 2014, among certain of such parties, as amended by that certain amended and restated credit agreement dated June 28, 2017 (the \u201cOriginal Credit Agreement\u201d).",
+      "score": 0.9747
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Under our policy, any teammate who believes they have been a victim of violence, threats of violence, intimidating conduct or has heard jokes or offensive comments about a violent occurrence must report such actions immediately to their team leader or another member of our Company's leadership team.",
+      "score": -0.9678
+    },
+    {
+      "sent": "Under our policy, any teammate who believes they have been a victim of violence, threats of violence, intimidating conduct or has heard jokes or offensive comments about a violent occurrence must report such actions immediately to their team leader or another member of our Company's leadership team.",
+      "score": -0.9678
+    },
+    {
+      "sent": "Under our policy, any teammate who believes they have been a victim of violence, threats of violence, intimidating conduct or has heard jokes or offensive comments about a violent occurrence must report such actions immediately to their team leader or another member of our Company's leadership team.",
+      "score": -0.9678
+    }
+  ],
+  "forward_snippets": [
+    "Although we believe the expectations expressed in the forward-looking statements included in this Annual Report on Form 10-K and the reports, statements, information and announcements incorporated by reference into this report are based upon reasonable assumptions within the bounds of our knowledge of our business, a number of factors could cause actual results to differ materially from those expressed in any forward-looking statements, whether oral or written, made by us or on our behalf.",
+    "Although we believe the expectations expressed in the forward-looking statements included in this Annual Report on Form 10-K and the reports, statements, information and announcements incorporated by reference into this report are based upon reasonable assumptions within the bounds of our knowledge of our business, a number of factors could cause actual results to differ materially from those expressed in any forward-looking statements, whether oral or written, made by us or on our behalf.",
+    "Although we believe the expectations expressed in the forward-looking statements included in this Annual Report on Form 10-K and the reports, statements, information and announcements incorporated by reference into this report are based upon reasonable assumptions within the bounds of our knowledge of our business, a number of factors could cause actual results to differ materially from those expressed in any forward-looking statements, whether oral or written, made by us or on our behalf.",
+    "Although we believe the expectations expressed in the forward-looking statements included in this Annual Report on Form 10-K and the reports, statements, information and announcements incorporated by reference into this report are based upon reasonable assumptions within the bounds of our knowledge of our business, a number of factors could cause actual results to differ materially from those expressed in any forward-looking statements, whether oral or written, made by us or on our behalf.",
+    "We cannot assure you that the results or developments anticipated by us will be realized or, even if substantially realized, that those results or developments will result in the expected consequences for us or affect us, our business or our operations in the way we expect."
+  ]
+}

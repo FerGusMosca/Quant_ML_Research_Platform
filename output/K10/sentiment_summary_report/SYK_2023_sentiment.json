@@ -1,0 +1,45 @@
+{
+  "symbol": "SYK",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2611,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.162
+  },
+  "top_positive": [
+    {
+      "sent": "Our DE&I strategy is centered around these three commitments: \u2022 Strengthen the diversity of our workforce \u2022 Advance a culture of inclusion, engagement and belonging \u2022 Maximize the power of inclusion to drive innovation and growth We are advancing our commitments through the following actions, among others: \u2022 Holding leadership accountable through transparent data, performance objectives and inclusion in our business review process \u2022 Engaging and inspiring all talent and empowering every employee to take action \u2022 Developing our people and processes by removing barriers and optimizing the power of diverse backgrounds, talents and perspectives \u2022 Attracting a diverse talent pool through focused outreach and ensuring an objective hiring process \u2022 Advancing our employee resource groups (ERGs) to expand reach through executive leadership, global presence, funding and aligned strategies \u2022 Positively impacting our customers and communities through building and strengthening external partnerships As of December 31, 2022 approximately 37.5% of our global employees were women and 27.5% of our employees in the United States identified as racially or ethnically diverse.",
+      "score": 0.9928
+    },
+    {
+      "sent": "Our DE&I strategy is centered around these three commitments: \u2022 Strengthen the diversity of our workforce \u2022 Advance a culture of inclusion, engagement and belonging \u2022 Maximize the power of inclusion to drive innovation and growth We are advancing our commitments through the following actions, among others: \u2022 Holding leadership accountable through transparent data, performance objectives and inclusion in our business review process \u2022 Engaging and inspiring all talent and empowering every employee to take action \u2022 Developing our people and processes by removing barriers and optimizing the power of diverse backgrounds, talents and perspectives \u2022 Attracting a diverse talent pool through focused outreach and ensuring an objective hiring process \u2022 Advancing our employee resource groups (ERGs) to expand reach through executive leadership, global presence, funding and aligned strategies \u2022 Positively impacting our customers and communities through building and strengthening external partnerships As of December 31, 2022 approximately 37.5% of our global employees were women and 27.5% of our employees in the United States identified as racially or ethnically diverse.",
+      "score": 0.9928
+    },
+    {
+      "sent": "Our DE&I strategy is centered around these three commitments: \u2022 Strengthen the diversity of our workforce \u2022 Advance a culture of inclusion, engagement and belonging \u2022 Maximize the power of inclusion to drive innovation and growth We are advancing our commitments through the following actions, among others: \u2022 Holding leadership accountable through transparent data, performance objectives and inclusion in our business review process \u2022 Engaging and inspiring all talent and empowering every employee to take action \u2022 Developing our people and processes by removing barriers and optimizing the power of diverse backgrounds, talents and perspectives \u2022 Attracting a diverse talent pool through focused outreach and ensuring an objective hiring process \u2022 Advancing our employee resource groups (ERGs) to expand reach through executive leadership, global presence, funding and aligned strategies \u2022 Positively impacting our customers and communities through building and strengthening external partnerships As of December 31, 2022 approximately 37.5% of our global employees were women and 27.5% of our employees in the United States identified as racially or ethnically diverse.",
+      "score": 0.9928
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Violations or alleged violations of these laws could result in litigation and we may be subject to criminal or civil penalties and sanctions, including substantial fines, imprisonment of current or former employees and exclusion from participation in governmental healthcare programs.",
+      "score": -0.9081
+    },
+    {
+      "sent": "Violations or alleged violations of these laws could result in litigation and we may be subject to criminal or civil penalties and sanctions, including substantial fines, imprisonment of current or former employees and exclusion from participation in governmental healthcare programs.",
+      "score": -0.9081
+    },
+    {
+      "sent": "If we fail to comply with applicable regulatory requirements, we may be subject to a range of sanctions, including substantial fines, warning letters that require corrective action, product seizures, recalls, the suspension of product manufacturing, revocation of approvals, exclusion from future participation in government healthcare programs, substantial fines and criminal prosecution.",
+      "score": -0.9022
+    }
+  ],
+  "forward_snippets": [
+    "Mako is the only robotic-arm assisted technology enabled by 3D CT-based pre-operative planning and, with AccuStop\u2122 haptic technology, Mako provides surgeons the ability to know more about their patients' anatomy so they can cut less in bone preparation and implant placement with intra-operative haptic guidance.",
+    "We believe our commitment to innovation, quality and service and our reputation differentiates us in the highly competitive product categories in which we operate and enables us to compete effectively.",
+    "We believe that our competitive position in the future will depend to a large degree on our ability to develop new products and make improvements to existing products.",
+    "Environment We are subject to various rules and regulation in the United States and internationally related to the protection of human health and the environm\nguidance.",
+    "We believe our commitment to innovation, quality and service and our reputation differentiates us in the highly competitive product categories in which we operate and enables us to compete effectively."
+  ]
+}

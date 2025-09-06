@@ -1,0 +1,45 @@
+{
+  "symbol": "ABT",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.196,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.181
+  },
+  "top_positive": [
+    {
+      "sent": "Plan Category (a) Number of securities to be issued upon exercise of outstanding options, warrants and rights (b) Weighted average exercise price of outstanding options, warrants and rights (c) Number of securities remaining available for future issuance under equity compensation plans (excluding securities reflected in column (a)) Equity compensation plans approved by security holders (1) 27,979,003 $ 71.10 96,933,656 Equity compensation plans not approved by security holders 0 \u2014 0 Total (1)(2) 27,979,003 $ 71.10 96,933,656 ________________________________________________________ (1) (i) Abbott Laboratories 2009 Incentive Stock Program .",
+      "score": 0.9779
+    },
+    {
+      "sent": "Plan Category (a) Number of securities to be issued upon exercise of outstanding options, warrants and rights (b) Weighted average exercise price of outstanding options, warrants and rights (c) Number of securities remaining available for future issuance under equity compensation plans (excluding securities reflected in column (a)) Equity compensation plans approved by security holders (1) 27,979,003 $ 71.10 96,933,656 Equity compensation plans not approved by security holders 0 \u2014 0 Total (1)(2) 27,979,003 $ 71.10 96,933,656 ________________________________________________________ (1) (i) Abbott Laboratories 2009 Incentive Stock Program .",
+      "score": 0.9779
+    },
+    {
+      "sent": "Share Units Weighted Average Grant-Date Fair Value Outstanding at December 31, 2021 10,558,525 $ 102.40 Granted 6,001,920 117.34 Vested ( 5,456,368 ) 94.20 Forfeited ( 703,749 ) 113.18 Outstanding at December 31, 2022 10,400,328 $ 114.59 The fair market value of restricted stock awards and units vested in 2022, 2021 and 2020 was $ 639 million, $ 809 million and $ 631 million, respectively.",
+      "score": 0.9738
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The principal products included in the broad therapeutic area portfolios of the Established Pharmaceutical Products segment are: \u2022 gastroenterology products, including Creon\u2122, for the treatment of pancreatic exocrine insufficiency associated with several underlying conditions, including cystic fibrosis and chronic pancreatitis; Duspatal\u2122 and Dicetel\u2122, for the treatment of irritable bowel syndrome or biliary spasm; Heptral\u2122, Transmetil\u2122, and Samyr\u2122, for the treatment of intrahepatic cholestasis (associated with liver disease) or depressive symptoms; and Duphalac\u2122, for regulation of the physiological rhythm of the colon; \u2022 women\u2019s health products, including Duphaston\u2122, for the treatment of many different gynecological disorders; and Femoston\u2122, a hormone replacement therapy for postmenopausal women; \u2022 cardiovascular and metabolic products, including Lipanthyl\u2122 and TriCor\u2122, for the treatment of dyslipidemia; Teveten\u2122 and Teveten\u2122 Plus, for the treatment of essential hypertension, and Physiotens\u2122, for the treatment of hypertension; and Synthroid\u2122, for the treatment of hypothyroidism; \u2022 pain and central nervous system products, including Serc\u2122, for the treatment of M\u00e9ni\u00e8re\u2019s disease and vestibular vertigo; Brufen\u2122, for the treatment of pain, fever, and inflammation; and Sevedol\u2122, for the treatment of severe migraines; and \u2022 respiratory drugs and vaccines, including the anti-infective clarithromycin (sold under the trademarks Biaxin\u2122, Klacid\u2122, and Klaricid\u2122); and Influvac\u2122, an influenza vaccine.",
+      "score": -0.9432
+    },
+    {
+      "sent": "The principal products included in the broad therapeutic area portfolios of the Established Pharmaceutical Products segment are: \u2022 gastroenterology products, including Creon\u2122, for the treatment of pancreatic exocrine insufficiency associated with several underlying conditions, including cystic fibrosis and chronic pancreatitis; Duspatal\u2122 and Dicetel\u2122, for the treatment of irritable bowel syndrome or biliary spasm; Heptral\u2122, Transmetil\u2122, and Samyr\u2122, for the treatment of intrahepatic cholestasis (associated with liver disease) or depressive symptoms; and Duphalac\u2122, for regulation of the physiological rhythm of the colon; \u2022 women\u2019s health products, including Duphaston\u2122, for the treatment of many different gynecological disorders; and Femoston\u2122, a hormone replacement therapy for postmenopausal women; \u2022 cardiovascular and metabolic products, including Lipanthyl\u2122 and TriCor\u2122, for the treatment of dyslipidemia; Teveten\u2122 and Teveten\u2122 Plus, for the treatment of essential hypertension, and Physiotens\u2122, for the treatment of hypertension; and Synthroid\u2122, for the treatment of hypothyroidism; \u2022 pain and central nervous system products, including Serc\u2122, for the treatment of M\u00e9ni\u00e8re\u2019s disease and vestibular vertigo; Brufen\u2122, for the treatment of pain, fever, and inflammation; and Sevedol\u2122, for the treatment of severe migraines; and \u2022 respiratory drugs and vaccines, including the anti-infective clarithromycin (sold under the trademarks Biaxin\u2122, Klacid\u2122, and Klaricid\u2122); and Influvac\u2122, an influenza vaccine.",
+      "score": -0.9432
+    },
+    {
+      "sent": "The principal products included in the broad therapeutic area portfolios of the Established Pharmaceutical Products segment are: \u2022 gastroenterology products, including Creon\u2122, for the treatment of pancreatic exocrine insufficiency associated with several underlying conditions, including cystic fibrosis and chronic pancreatitis; Duspatal\u2122 and Dicetel\u2122, for the treatment of irritable bowel syndrome or biliary spasm; Heptral\u2122, Transmetil\u2122, and Samyr\u2122, for the treatment of intrahepatic cholestasis (associated with liver disease) or depressive symptoms; and Duphalac\u2122, for regulation of the physiological rhythm of the colon; \u2022 women\u2019s health products, including Duphaston\u2122, for the treatment of many different gynecological disorders; and Femoston\u2122, a hormone replacement therapy for postmenopausal women; \u2022 cardiovascular and metabolic products, including Lipanthyl\u2122 and TriCor\u2122, for the treatment of dyslipidemia; Teveten\u2122 and Teveten\u2122 Plus, for the treatment of essential hypertension, and Physiotens\u2122, for the treatment of hypertension; and Synthroid\u2122, for the treatment of hypothyroidism; \u2022 pain and central nervous system products, including Serc\u2122, for the treatment of M\u00e9ni\u00e8re\u2019s disease and vestibular vertigo; Brufen\u2122, for the treatment of pain, fever, and inflammation; and Sevedol\u2122, for the treatment of severe migraines; and \u2022 respiratory drugs and vaccines, including the anti-infective clarithromycin (sold under the trademarks Biaxin\u2122, Klacid\u2122, and Klaricid\u2122); and Influvac\u2122, an influenza vaccine.",
+      "score": -0.9432
+    }
+  ],
+  "forward_snippets": [
+    "The program\u2019s objective is to increase the number of students pursuing STEM-related careers and contribute to a more diverse talent pipeline for Abbott.",
+    "Compensation and Benefits Abbott is committed to building, retaining, and motivating a diverse talent pipeline that can meet the current and future needs of its businesses.",
+    "Compensation and Benefits Abbott is committed to building, retaining, and motivating a diverse talent pipeline that can meet the current and future needs of its businesses.",
+    "Department of Health and Human Services has issued rules governing the use, disclosure, and security of protected health information, and the FDA has issued further guidance concerning cybersecurity for medical devices.",
+    "Abbott is subject to certain regional and local data protection laws th\nguidance concerning cybersecurity for medical devices."
+  ]
+}

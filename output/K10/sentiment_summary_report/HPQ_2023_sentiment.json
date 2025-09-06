@@ -1,0 +1,45 @@
+{
+  "symbol": "HPQ",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1681,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.231
+  },
+  "top_positive": [
+    {
+      "sent": "A summary of restricted stock units activity is as follows: As\u00a0of\u00a0October\u00a031 2023 2022 2021 Shares Weighted- Average Grant\u00a0Date Fair\u00a0Value Per\u00a0Share Shares Weighted- Average Grant\u00a0Date Fair\u00a0Value Per\u00a0Share Shares Weighted- Average Grant\u00a0Date Fair\u00a0Value Per\u00a0Share In\nance for credit losses related to accounts receivable and changes were as follows: For\u00a0the\u00a0fiscal\u00a0years\u00a0ended\u00a0October\u00a031 2023 2022 2021 In millions Balance at beginning of period $ 107 $ 111 $ 122 Current-period allowance for credit losses ( 2 ) 7 5 Deductions, net of recoveries ( 12 ) ( 11 ) ( 16 ) Balance at end of period $ 93 $ 107 $ 111 HP utilizes certain third-party arrangements in the normal course of business as part of HPs cash and liquidity management and also to provide liquidity to certain partners to facilitate their working capital requirements.",
+      "score": 0.9821
+    },
+    {
+      "sent": "We believe our ability to innovate will help us gain momentum in growth areas like hybrid systems and gaming, and we see significant opportunities to drive greater recurring revenues across Personal Systems and Printing.",
+      "score": 0.9666
+    },
+    {
+      "sent": "We believe our ability to innovate will help us gain momentum in growth areas like hybrid systems and gaming, and we see significant opportunities to drive greater recurring revenues across Personal Systems and Printing.",
+      "score": 0.9666
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "23 Table of Contents Additionally, the costs to combat cyber or other security threats can be significant, and our efforts to address these problems may not be successful and could result in interruptions, delays, cessation of service and loss of existing or potential customers that may impede our sales, manufacturing, distribution or other critical functions.",
+      "score": -0.9197
+    },
+    {
+      "sent": "We could incur substantial costs, including cleanup costs, fines and civil or criminal sanctions, and third-party damage or personal injury claims, if we were to violate or become liable under environmental laws.",
+      "score": -0.8957
+    },
+    {
+      "sent": "We could incur substantial costs, including cleanup costs, fines and civil or criminal sanctions, and third-party damage or personal injury claims, if we were to violate or become liable under environmental laws.",
+      "score": -0.8957
+    }
+  ],
+  "forward_snippets": [
+    "We believe that customer buying patterns and different geographic market conditions require us to tailor our sales, marketing and distribution efforts to the geographic market and sub-geographic specificities for each of our businesses.",
+    "We believe that disruptions with these suppliers would have industry-wide ramifications, and therefore would not disproportionately disadvantage us relative to our competitors.",
+    "We believe this geographic diversity allows us to meet both consumer and enterprise customers\u2019 demand on a worldwide basis and draws on business and technical expertise from a worldwide workforce.",
+    "We believe that our broad geographic presence gives us a solid base on which to build future growth.",
+    "We believe that disruptions with these suppliers would have industry-wide ramifications, and therefore would not disproportionately disadvantage us relative to our competitors."
+  ]
+}

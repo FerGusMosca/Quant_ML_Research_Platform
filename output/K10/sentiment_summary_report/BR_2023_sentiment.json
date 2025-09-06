@@ -1,0 +1,45 @@
+{
+  "symbol": "BR",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2991,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.23
+  },
+  "top_positive": [
+    {
+      "sent": "The following tables set forth the Company\u2019s financial assets and liabilities at June\u00a030, 2023 and 2022, respectively, that are recorded at fair value, segregated by level within the fair value hierarchy: Level 1 Level\u00a02 Level\u00a03 Total (in millions) Assets: Other current assets: Securities $ 0.7 $ \u2014 $ \u2014 $ 0.7 Other non-current assets: Securities (a) 141.3 \u2014 \u2014 141.3 Derivative asset \u2014 66.7 \u2014 66.7 Total assets as of June\u00a030, 2023 $ 142.0 $ 66.7 $ \u2014 $ 208.7 Liabilities: Contingent consideration obligations $ \u2014 $ \u2014 $ 12.0 $ 12.0 Total liabilities as of June\u00a030, 2023 $ \u2014 $ \u2014 $ 12.0 $ 12.0 Level 1 Level\u00a02 Level\u00a03 Total (in millions) Assets: Other current assets: Securities $ 0.6 $ \u2014 $ \u2014 $ 0.6 Other non-current assets: Securities (a) 118.0 \u2014 \u2014 118.0 Derivative asset \u2014 101.4 \u2014 101.4 Total assets as of June\u00a030, 2022 $ 118.7 $ 101.4 $ \u2014 $ 220.1 Liabilities: Contingent consideration obligations $ \u2014 $ \u2014 $ 12.9 $ 12.9 Total liabilities as of June\u00a030, 2022 $ \u2014 $ \u2014 $ 12.9 $ 12.9 _________ (a) Includes investments related to the Company\u2019s Defined Benefit Pension Plans and Executive Retirement and Savings Plan (the \u201cERSP\u201d).",
+      "score": 0.9796
+    },
+    {
+      "sent": "34 ANALYSIS OF CONSOLIDATED STATEMENTS OF EARNINGS Fiscal Year 2023 Compared to Fiscal Year 2022 The table below presents Consolidated Statements of Earnings data for the fiscal years ended June\u00a030, 2023 and 2022, and the dollar and percentage changes between periods: Years Ended June\u00a030, 2023 2022 Change ($) (%) (in\u00a0millions,\u00a0except\u00a0for\u00a0per\u00a0share\u00a0amounts) Revenues $ 6,060.9 $ 5,709.1 $ 351.8 6 Cost of revenues 4,275.5 4,116.9 158.6 4 Selling, general and administrative expenses 849.0 832.3 16.7 2 Total operating expenses 5,124.5 4,949.2 175.3 4 Operating income 936.4 759.9 176.5 23 Margin 15.4 % 13.3 % 2.1 pts Interest expense, net (135.5) (84.7) (50.9) 60 Other non-operating income (expenses), net (6.0) (3.0) (3.0) 100 Earnings before income taxes 794.9 672.2 122.7 18 Provision for income taxes 164.3 133.1 31.2 23 Effective tax rate 20.7 % 19.8 % 0.9 pts Net earnings $ 630.6 $ 539.1 $ 91.4 17 Basic earnings per share $ 5.36 $ 4.62 $ 0.74 16 Diluted earnings per share $ 5.30 $ 4.55 $ 0.75 16 Weighted average shares outstanding: Basic 117.7 116.7 Diluted 119.0 118.5 Revenues The table below presents Consolidated Statements of Earnings data for the fiscal years ended June\u00a030, 2023 and 2022, and the dollar and percentage changes between periods: Years Ended June\u00a030, 2023 2022 Change $ % ($ in\u00a0millions) Recurring revenues $ 3,986.7 $ 3,722.7 $ 264.0 7 Event-driven revenues 211.0 269.4 (58.3) (22) Distribution revenues 1,863.1 1,717.0 146.2 9 Total $ 6,060.9 $ 5,709.1 $ 351.8 6 Points of Growth Net New Business Internal Growth Acquisitions Foreign Exchange Total Recurring revenue Growth Drivers 4pts 4pts 0pts -1pt 7 % Revenues increased $3\n to management and investors about the amount of cash generated that could be used for dividends, share repurchases, strategic acquisitions, other investments, as well as debt servicing.",
+      "score": 0.979
+    },
+    {
+      "sent": "41 Years ended June\u00a030, 2023 2022 (in millions) Net cash flows provided by operating activities (GAAP) $ 823.3 $ 443.5 Capital expenditures and Software purchases and capitalized internal use software (75.2) (73.1) Free cash flow (Non-GAAP) $ 748.2 $ 370.4 Year Ended June 30, 2023 Investor Communication Solutions Regulatory Data-Driven Fund Solutions Issuer Customer Communications Total Recurring revenue growth (GAAP) 6 % 11 % 12 % 9 % 8 % Impact of foreign currency exchange \u2014 % 1 % \u2014 % \u2014 % \u2014 % Recurring revenue growth constant currency (Non-GAAP) 7 % 12 % 13 % 10 % 9 % Year Ended June 30, 2023 Global Technology and Operations Capital Markets Wealth and Investment Management Total Recurring revenue growth (GAAP) 7 % 2 % 5 % Impact of foreign currency exchange 4 % 2 % 3 % Recurring revenue growth constant currency (Non-GAAP) 11 % 4 % 8 % Year Ended June 30, 2023 Consolidated Total Recurring revenue growth (GAAP) 7 % Impact of foreign currency exchange 1 % Recurring revenue growth constant currency (Non-GAAP) 9 % 42 FINANCIAL CONDITION, LIQUIDITY AND CAPITAL RESOURCES Cash and cash equivalents consisted of the following: June 30, 2023 2022 (in millions) Cash and cash equivalents: Domestic cash $ 46.1 $ 43.4 Cash held by foreign subsidiaries 141.7 114.3 Cash held by regulated entities 64.5 67.0 Total cash and cash equivalents $ 252.3 $ 224.7 At June\u00a030, 2023 and 2022, Cash and cash equivalents were $252.3 million and $224.7 million, respectively.",
+      "score": 0.9747
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our systems, those of our data center and cloud services providers, or any other systems with which our systems interact could slow down significantly or fail for a variety of reasons, including: \u2022 malware or undetected errors in internal software programs or computer systems; \u2022 direct or indirect hacking or denial of service cybersecurity attacks; \u2022 inability to rapidly monitor all system activity; \u2022 inability to effectively resolve any errors in internal software programs or computer systems once they are detected; \u2022 failure to maintain adequate operational systems and infrastructure; \u2022 heavy stress placed on systems during peak times or due to high volumes or volatility; or \u2022 power or telecommunications failure, fire, flood, pandemic or any other natural disaster or catastrophe.",
+      "score": -0.9799
+    },
+    {
+      "sent": "If our disaster recovery or business continuity plans are unsuccessful in a disaster recovery scenario, we could potentially lose client data or experience material adverse interruptions to our operations or delivery of services to our clients, and we could be liable to parties who are financially harmed by those failures.",
+      "score": -0.9682
+    },
+    {
+      "sent": "Our operations are dependent on our ability to protect our infrastructure against damage from catastrophe, natural disaster, or severe weather, as well as events resulting from unauthorized security breach, power loss, telecommunications failure, terrorist attack, pandemic, or other events that could have a significant disruptive effect on our operations.",
+      "score": -0.9601
+    }
+  ],
+  "forward_snippets": [
+    "Statements that are not historical in nature and which may be identified by the use of words such as \u201cexpects,\u201d \u201cassumes,\u201d \u201cprojects,\u201d \u201canticipates,\u201d \u201cestimates,\u201d \u201cwe believe,\u201d \u201ccould be,\u201d \u201con track,\u201d and other words of similar meaning, are forward-looking statements.",
+    "Statements that are not historical in nature and which may be identified by the use of words such as \u201cexpects,\u201d \u201cassumes,\u201d \u201cprojects,\u201d \u201canticipates,\u201d \u201cestimates,\u201d \u201cwe believe,\u201d \u201ccould be,\u201d \u201con track,\u201d and other words of similar meaning, are forward-looking statements.",
+    "We expect the efficiencies that result from such undertaking by Broadridge will lead to growth in the market for our solutions.",
+    "Through our integrated solutions and scalable infrastructure, we believe we are best positioned to serve them.",
+    "We continue to grow our governance solutions by transforming content and delivery and improving e-product capabilities to drive higher investor engagement."
+  ]
+}

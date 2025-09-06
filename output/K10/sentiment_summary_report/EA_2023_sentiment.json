@@ -1,0 +1,45 @@
+{
+  "symbol": "EA",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2283,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.187
+  },
+  "top_positive": [
+    {
+      "sent": "A reconciliation of the beginning and ending balance of unrecognized tax benefits is summarized as follows (in millions): Balance as of March\u00a031, 2020 $ 983 Increases in unrecognized tax benefits related to prior year tax positions 12 Decreases in unrecognized tax benefits related to prior year tax positions ( 444 ) Increases in unrecognized tax benefits related to current year tax positions 55 Decreases in unrecognized tax benefits related to settlements with taxing authorities ( 2 ) Reductions in unrecognized tax benefits due to lapse of applicable statute of limitations ( 27 ) Changes in unrecognized tax benefits due to foreign currency translation 7 Balance as of March\u00a031, 2021 584 Increases in unrecognized tax benefits related to prior year tax positions 5 Decreases in unrecognized tax benefits related to prior year tax positions ( 21 ) Increases in unrecognized tax benefits related to current year tax positions 139 Decreases in unrecognized tax benefits related to settlements with taxing authorities ( 50 ) Reductions in unrecognized tax benefits due to lapse of applicable statute of limitations ( 18 ) Changes in unrecognized tax benefits due to foreign currency translation ( 3 ) Balance as of March\u00a031, 2022 636 Increases in unrecognized tax benefits related to current year tax positions 245 Decreases in unrecognized tax benefits related to settlements with taxing authorities ( 2 ) Reductions in unrecognized tax benefits due to lapse of applicable statute of limitations ( 6 ) Changes in unrecognized tax benefits due to foreign currency translation ( 6 ) Balance as of March\u00a031, 2023 $ 867 As of March 31, 2023, approximately $ 395 m\ns would affect our effective tax rate, a portion of which would be impacted by a valuation allowance.",
+      "score": 0.9914
+    },
+    {
+      "sent": "Our product and service offerings include, but are not limited to, the following: \u2022 full games with both online and offline functionality (\u201cGames with Services\u201d), which generally includes (1) the initial game delivered digitally or via physical disc at the time of sale and typically provide access to offline core game content (\u201csoftware license\u201d); (2) updates on a when-and-if-available basis, such as software patches or updates, and/or additional free content to be delivered in the future (\u201cfuture update rights\u201d); and (3) a hosted connection for online playability (\u201conline hosting\u201d); \u2022 full games with online-only functionality which require an Internet connection to access all gameplay and functionality (\u201cOnline-Hosted Service Games\u201d); \u2022 extra content related to\ntors in determining whether we should recognize an allowance for expected credit losses or an impairment charge, including the credit quality of the issuer, changes to the rating of the security by rating agencies, the extent to which fair value is less than amortized cost, reason for the decline in value and potential recovery period, the financial condition and near-term prospects of the investees, our intent to sell and ability to hold the investment for a period of time sufficient to allow for any anticipated recovery in market value, and any contractual terms impacting the prepayment or settlement process, among other factors.",
+      "score": 0.9841
+    },
+    {
+      "sent": "Key indicators that we evaluate in determining gross versus net treatment include but are not limited to the following: \u2022 the underlying contract terms and conditions between the various parties to the transaction; \u2022 which party is primarily responsible for fulfilling the promise to provide the specified good or service to the end customer; \u2022 which party has discretion in establishing the price for the specified good or service; and \u2022 which party has inventory risk before the specified good or service has been transferred to the end customer.",
+      "score": 0.9833
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "If our partners establish terms that restrict our offerings, significantly i\nience an event that caused a significant system outage, disruption or degradation or if a transition among data centers or service providers or an upgrade or maintenance session encountered unexpected interruptions, unforeseen complexity or unplanned disruptions, our products and services may not be available to consumers or may not be delivered reliably and stably.",
+      "score": -0.8957
+    },
+    {
+      "sent": "The failure to maintain data practices that are compliant with applicable laws and regulations, or evolving interpretations of applicable laws and regulations, could result in inquiries from enforcement agencies or direct consumer complaints, resulting in civil or criminal penalties, and could adversely impact our reputation and brand.",
+      "score": -0.8807
+    },
+    {
+      "sent": "Natural disasters, cyber-incidents, weather events, wildfires, power disruptions, telecommunications failures, pandemics, health crises and other public health events, failed upgrades of existing systems or migrations to new syste\nts in the past and expect future events to occur.",
+      "score": -0.8689
+    }
+  ],
+  "forward_snippets": [
+    "We believe that our portfolio, talent, live services offerings, use of multiple business models and distribution channels, and network of hundreds of millions of unique active accounts provide us with strategic advantages.",
+    "Our vision for the future of interactive football with EA SPORTS FC is to create the largest football club in the world, and we believe this is the right opportunity for us so that we can continue delivering innovation and growing to connect more fans on a global scale.",
+    "Live services net revenue, particularly extra content net revenue, has been material to our business, and we expect it to continue to be so.",
+    "We believe that we can add value to our network by making it easier for players to connect by offering choices of business model, distribution channel and device.",
+    "We believe that our portfolio, talent, live services offerings, use of multiple business models and distribution channels, and network of hundreds of millions of unique active accounts provide us with strategic advantages."
+  ]
+}

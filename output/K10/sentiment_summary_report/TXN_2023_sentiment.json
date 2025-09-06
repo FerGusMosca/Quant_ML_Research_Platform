@@ -1,0 +1,56 @@
+{
+  "symbol": "TXN",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.2623,
+    "outlook_sentiment": 0.2238,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.104
+  },
+  "top_positive": [
+    {
+      "sent": "Technology is the foundation of our company, but ultimately, our objective and the best metric for owners to measure our progress is through the growth of free cash flow per share over the long term.",
+      "score": 0.9688
+    },
+    {
+      "sent": "We bring this philosophy of efficiency and continuous improvement to all areas of the company, and this focus on efficiency contributes to revenue growth, improved gross margins, disciplined R&D and SG&A expense, free cash flow margins and ultimately to free cash flow per share growth.",
+      "score": 0.9638
+    },
+    {
+      "sent": "As engineers, we are fortunate to work on exciting technology which helps our customers innovate to create a better world.",
+      "score": 0.9423
+    },
+    {
+      "sent": "We urge you to carefully consider the following important factors that could cause actual results to differ materially from the expectations of TI or our management: \u2022 Economic, social and political conditions, and natural events in the countries in which we, our customers or our suppliers operate, including global trade policies; \u2022 Market demand for semiconductors, particularly in the industrial and automotive markets, and customer demand that differs from forecasts; \u2022 Our ability to compete in products and prices in an intensely competitive industry; \u2022 Evolving cybersecurity and other threats relating to our information technology systems or those of our customers, suppliers and other third parties; \u2022 Our ability to successfully implement and realize opportunities from strategic, business and organizational changes, or our ability to realize our expectations regarding the amount and timing of associated restructuring charges and cost savings; \u2022 Our ability to develop, manufacture and market innovative products in a rapidly changing technological environment, our timely implementation of new manufacturing technologies and installation of manufacturing equipment, and our ability to realize expected returns on significant investments in manufacturing capacity; \u2022 The duration and scope of the COVID-19 pandemic, government and other third-party responses to it and the consequences for the global economy, including to our business and the businesses of our suppliers, customers and distributors; \u2022 Availability and cost of key materials, utilities, manufacturing equipment, third-party manufacturing services and manufacturing technology; \u2022 Our ability to recruit and retain skilled personnel and effectively manage key employee succession; \u2022 Product liability, warranty or other claims relating to our products, software, manufacturing, delivery, services, design or communications, or recalls by our customers for a product containing one of our parts; \u2022 Compliance with or changes in the complex laws, rules and regulations to which we are or may become subject, or actions of enforcement authorities, that restrict our ability to operate our business or subject us to fines, penalties or other legal liability; \u2022 Changes in tax law and accounting standards that impact the tax rate applicable to us, the jurisdictions in which profits are determined to be earned and taxed, adverse resolution of tax audits, increases in tariff rates, and the ability to realize deferred tax assets; \u2022 Financial difficulties of our distributors or semiconductor distributors\u2019 promotion of competing product lines to our detriment; or disputes with current or former distributors; \u2022 Losses or curtailments of purchases from key customers or the timing and amount of customer inventory adjustments; \u2022 Our ability to maintain or improve profit margins, including our ability to utilize our manufacturing facilities at sufficient levels to cover our fixed operating costs, in an intensely competitive and cyclical industry and changing regulatory environment; \u2022 Our ability to maintain and enforce a strong intellectual property portfolio and maintain freedom of operation in all jurisdictions where we conduct business; or our exposure to infringement claims; \u2022 Instability in the global credit and financial markets; and 63 \u2022 Impairments of our non-financial assets.",
+      "score": 0.9935
+    },
+    {
+      "sent": "We urge you to carefully consider the following important factors that could cause actual results to differ materially from the expectations of TI or our management: \u2022 Economic, social and political conditions, and natural events in the countries in which we, our customers or our suppliers operate, including global trade policies; \u2022 Market demand for semiconductors, particularly in the industrial and automotive markets, and customer demand that differs from forecasts; \u2022 Our ability to compete in products and prices in an intensely competitive industry; \u2022 Evolving cybersecurity and other threats relating to our information technology systems or those of our customers, suppliers and other third parties; \u2022 Our ability to successfully implement and realize opportunities from strategic, business and organizational changes, or our ability to realize our expectations regarding the amount and timing of associated restructuring charges and cost savings; \u2022 Our ability to develop, manufacture and market innovative products in a rapidly changing technological environment, our timely implementation of new manufacturing technologies and installation of manufacturing equipment, and our ability to realize expected returns on significant investments in manufacturing capacity; \u2022 The duration and scope of the COVID-19 pandemic, government and other third-party responses to it and the consequences for the global economy, including to our business and the businesses of our suppliers, customers and distributors; \u2022 Availability and cost of key materials, utilities, manufacturing equipment, third-party manufacturing services and manufacturing technology; \u2022 Our ability to recruit and retain skilled personnel and effectively manage key employee succession; \u2022 Product liability, warranty or other claims relating to our products, software, manufacturing, delivery, services, design or communications, or recalls by our customers for a product containing one of our parts; \u2022 Compliance with or changes in the complex laws, rules and regulations to which we are or may become subject, or actions of enforcement authorities, that restrict our ability to operate our business or subject us to fines, penalties or other legal liability; \u2022 Changes in tax law and accounting standards that impact the tax rate applicable to us, the jurisdictions in which profits are determined to be earned and taxed, adverse resolution of tax audits, increases in tariff rates, and the ability to realize deferred tax assets; \u2022 Financial difficulties of our distributors or semiconductor distributors\u2019 promotion of competing product lines to our detriment; or disputes with current or former distributors; \u2022 Losses or curtailments of purchases from key customers or the timing and amount of customer inventory adjustments; \u2022 Our ability to maintain or improve profit margins, including our ability to utilize our manufacturing facilities at sufficient levels to cover our fixed operating costs, in an intensely competitive and cyclical industry and changing regulatory environment; \u2022 Our ability to maintain and enforce a strong intellectual property portfolio and maintain freedom of operation in all jurisdictions where we conduct business; or our exposure to infringement claims; \u2022 Instability in the global credit and financial markets; and 63 \u2022 Impairments of our non-financial assets.",
+      "score": 0.9935
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "dollar transactions can have an adverse effect on our results of operatio\nuding inflation), security risks, acts of war, terrorism or other hostile acts, health conditions and epidemics, labor conditions, climate change risks and possible disruptions in transportation, communications and information technology networks of the various countries in which we operate.",
+      "score": -0.9501
+    },
+    {
+      "sent": "We are exposed to political, social and economic conditions (including inflation), security risks, acts of war, terrorism or other hostile acts, health conditions and epidemics, labor conditions, climate change risks and possible disruptions in transportation, communications and information technology networks of the various countries in which we operate.",
+      "score": -0.9393
+    },
+    {
+      "sent": "We are exposed to political, social and economic conditions (including inflation), security risks, acts of war, terrorism or other hostile acts, health conditions and epidemics, labor conditions, climate change risks and possible disruptions in transportation, communications and information technology networks of the various countries in which we operate.",
+      "score": -0.9393
+    }
+  ],
+  "forward_snippets": [
+    "First, we will act like owners who will own the company for decades.",
+    "Second, we will adapt and succeed in a world that is ever changing.",
+    "And third, we will be a company that we are personally proud to be a part of and that we would want as our neighbor.",
+    "Going forward, we expect increased capital expenditures to be the largest driver of free cash flow growth over the next 10 to 15 years.",
+    "2 We believe that our business model with the combined effect of our four competitive advantages sets TI apart from our peers and will for a long time to come.",
+    "First, we will act like owners who will own the company for decades.",
+    "Second, we will adapt and succeed in a world that is ever changing.",
+    "And third, we will be a company that we are personally proud to be a part of and that we would want as our neighbor."
+  ]
+}

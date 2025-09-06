@@ -1,0 +1,45 @@
+{
+  "symbol": "NSC",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1441,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.134
+  },
+  "top_positive": [
+    {
+      "sent": "K65 The Committee granted stock options, RSUs and PSUs pursuant to the LTIP for the last three years as follows: 2022 2021 2020 Granted Weighted- Average Grant-Date Fair Value Granted Weighted- Average Grant-Date Fair Value Granted Weighted- Average Grant-Date Fair Value Stock options 140,080 $ 61.32 42,770 $ 62.49 43,770 $ 52.05 RSUs 180,306 265.21 183,093 240.09 178,190 210.11 PSUs 58,945 272.22 50,100 240.72 78,830 212.66 Recipients of certain RSUs and PSUs pursuant to the LTIP who retire prior to October 1st will forfeit awards received in the current year.",
+      "score": 0.969
+    },
+    {
+      "sent": "Fair Value Measurements FASB Accounting Standards Codification (ASC) 820-10, \u201cFair Value Measurements,\u201d established a framework for measuring fair value and a fair value hierarchy that prioritizes the inputs to valuation techniques used to measure fair value into three broad levels, as follows: Level 1 Inputs to the valuation methodology are unadjusted quoted prices for identical assets or liabilities in active markets that we have the ability to access.",
+      "score": 0.9686
+    },
+    {
+      "sent": "K64 Benefit payments, which reflect expected future service, as appropriate, are expected to be paid as follows: Pension Benefits Other Postretirement Benefits ($ in millions) 2023 $ 148 $ 33 2024 148 32 2025 147 31 2026 147 30 2027 147 29 Years 2028 \u2013 2032 736 135 Other Postretirement Coverage Under collective bargaining agreements, Norfolk Southern and certain subsidiaries participate in a multi-employer benefit plan, which provides certain postretirement health care and life insurance benefits to eligible craft employees.",
+      "score": 0.9652
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "A catastrophic rail accident, whether on our lines or another carrier\u2019s, involving any or all of release of hazardous materials, freight loss, property damage, personal injury, and environmental liability could compromise critical parts of our rail network.",
+      "score": -0.9493
+    },
+    {
+      "sent": "A severe fuel supply shortage arising from production curtailments, increased demand in existing or emerging foreign markets, disruption of oil imports, disruption of domestic refinery production, damage to refinery or pipeline infrastructure, political unrest, war or other factors could impact us as well as our customers and other transportation companies.",
+      "score": -0.9186
+    },
+    {
+      "sent": "The nature of our business exposes us to the potential for various claims and litigation related to labor and employment, personal injury, commercial disputes, freight loss and other property damage, and other matters.",
+      "score": -0.891
+    }
+  ],
+  "forward_snippets": [
+    "While our current workforce reflects a broad range of backgrounds and experiences, we continue to focus on building an even more diverse workforce, using technology-driven outreach and multiple recruiting relationships to maintain a robust pipeline of diverse talent.",
+    "Accordingly, we will continue to oppose efforts to reimpose increased economic regulation.",
+    "SECURITY OF OPERATIONS \u2013 We continue to enhance the security of our rail system.",
+    "While our current workforce reflects a broad range of backgrounds and experiences, we continue to focus on building an even more diverse workforce, using technology-driven outreach and multiple recruiting relationships to maintain a robust pipeline of diverse talent.",
+    "Accordingly, we will continue to oppose efforts to reimpose increased economic regulation."
+  ]
+}

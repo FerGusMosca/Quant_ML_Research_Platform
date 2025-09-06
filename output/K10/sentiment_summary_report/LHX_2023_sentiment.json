@@ -1,0 +1,45 @@
+{
+  "symbol": "LHX",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1669,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.229
+  },
+  "top_positive": [
+    {
+      "sent": "The following table provides the fair value of our deferred compensation plan investments and liabilities by category and by fair value hierarchy level: December 30, 2022 December 31, 2021 (In millions) Total Level\u00a01 Total Level\u00a01 Assets Deferred compensation plan assets: (1) Equity and fixed income securities $ 64 $ 64 $ 77 $ 77 Investments measured at NAV: Corporate-owned life insurance 33 35 Total fair value of deferred compensation plan assets $ 97 $ 112 Liabilities Deferred compensation plan liabilities: (2) Equity securities and mutual funds $ 8 $ 8 $ 6 $ 6 Investments measured at NAV: Common/collective trusts and guaranteed investment contracts 192 177 Total fair value of deferre\nel 2 Level 3 Asset Category Equities: Domestic equities $ 1,684 $ 1,684 $ \u2014 $ \u2014 International equities 1,367 1,278 89 \u2014 Real Estate Investment Trusts 259 259 \u2014 \u2014 Fixed income: Corporate bonds 1,411 \u2014 1,335 76 Government securities 448 \u2014 448 \u2014 Securitized assets 99 \u2014 99 \u2014 Fixed income funds 102 5 97 \u2014 Cash and cash equivalents 337 9 328 \u2014 Total 5,707 $ 3,235 $ 2,396 $ 76 Investments Measured at NAV: Equity funds 2,667 Fixed income funds 444 Hedge funds 386 Private equity funds 559 Real estate funds 180 Other 3 Total Investments Measured at NAV 4,239 Payables, net ( 22 ) Total fair value of plan assets $ 9,924 Contributions Funding requirements under IRS rules are a major consideration in making contributions to our postretirement benefit plans.",
+      "score": 0.9901
+    },
+    {
+      "sent": "_____________________________________________________________________ 97 A summary of the assumptions used in determining the fair value of the stock option grants under our L3Harris SIPs is as follows: Fiscal Year Ended December 30, 2022 December 31, 2021 January 1, 2021 Expected dividends 2.00 % 1.99 % 1.55 % Expected volatility 29.09 % 31.71 % 22.74 % Risk-free interest rate range 1.63 % - 4.27 % 0.75 % 0.89 % Expected term (years) 5.02 5.05 5.04 A summary of stock option activity under our L3Harris SIPs as of December\u00a030, 2022 and changes during fiscal 2022 is as follows: Shares Weighted Average Exercise Price Per\u00a0Share Weighted Average Remaining Contractual Term               (In years) Aggregate Intrinsic Value                          (In millions) Stock options outstanding at December 31, 2021 3,529,088 $ 150.68 Granted 390,347 $ 231.89 Exercised ( 469,241 ) $ 120.58 Forfeited or expired ( 144,065 ) $ 196.26 Stock options outstanding at December 30, 2022 3,306,129 $ 162.56 5.97 $ 160 Stock options exercisable at December 30, 2022 2,620,411 $ 150.11 5.30 $ 153 The weighted-average grant-date fair value per share was $ 53.66 , $ 42.16 and $ 34.49 for options granted in fiscal 2022, 2021 and 2020, respectively.",
+      "score": 0.9858
+    },
+    {
+      "sent": "Our efforts to gain awards of contracts and ensure a competitive position in the market depends in part on our ability to ensure that our intellectual property is protected, that our intellectual property rights are not diluted or subject to misuse, and that we are able to license certain third-party intellectual property on reasonable terms.",
+      "score": 0.9808
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "In the event of such a natural disaster or other disruption, we could experience disruptions or interruptions to our operations or the operations of our suppliers, subcontractors, distributors, resellers or customers, including inability of employees to work; destruction of facilities; and/or loss of life, all of which could materially increase our costs and expenses, delay or decrease orders and revenue from our customers and have a material adverse effect on the continuity of our business and our business, financial condition, results of operations, cash flows and equity.",
+      "score": -0.9607
+    },
+    {
+      "sent": "Gross Margin Fiscal 2022 Compared With Fiscal 2021: Gross margin and gross margin as a percentage of revenue (\u201cgross margin percentage\u201d) for fiscal 2022 decreased compared to fiscal 2021, largely due to higher input costs (labor, material and overhead) and supply chain disruptions that adversely impacted program performance, Estimate At Completion (\u201cEAC\u201d) adjustments and a mix of program revenue and product sales with relatively lower gross margin percentage.",
+      "score": -0.9501
+    },
+    {
+      "sent": "Gross Margin Fiscal 2022 Compared With Fiscal 2021: Gross margin and gross margin as a percentage of revenue (\u201cgross margin percentage\u201d) for fiscal 2022 decreased compared to fiscal 2021, largely due to higher input costs (labor, material and overhead) and supply chain disruptions that adversely impacted program performance, Estimate At Completion (\u201cEAC\u201d) adjustments and a mix of program revenue and product sales with relatively lower gross margin percentage.",
+      "score": -0.9501
+    }
+  ],
+  "forward_snippets": [
+    "All statements other than statements of historical fact are statements that could be deemed forward-looking statements, including, but not limited to, statements concerning: our plans, strategies and objectives for future operations; new products, systems, technologies, services or developments; future economic conditions, performance or outlook; future political conditions; the outcome of contingencies or litigation; environmental remediation cost estimates; the potential level of share repurchases, dividends or pension contributions; potential acquisitions or divestitures; the integration of our acquisitions; the value of contract awards and programs; expected revenue; expected cash flows or capital expenditures; our beliefs or expectations; activities, events or developments that we intend, expect, project, believe or anticipate will or may occur in the future; and assumptions underlying any of the foregoing.",
+    "Upon closure of the acquisition, we anticipate creating a new business segment.",
+    "All statements other than statements of historical fact are statements that could be deemed forward-looking statements, including, but not limited to, statements concerning: our plans, strategies and objectives for future operations; new products, systems, technologies, services or developments; future economic conditions, performance or outlook; future political conditions; the outcome of contingencies or litigation; environmental remediation cost estimates; the potential level of share repurchases, dividends or pension contributions; potential acquisitions or divestitures; the integration of our acquisitions; the value of contract awards and programs; expected revenue; expected cash flows or capital expenditures; our beliefs or expectations; activities, events or developments that we intend, expect, project, believe or anticipate will or may occur in the future; and assumptions underlying any of the foregoing.",
+    "Upon closure of the acquisition, we anticipate creating a new business segment.",
+    "All statements other than statements of historical fact are statements that could be deemed forward-looking statements, including, but not limited to, statements concerning: our plans, strategies and objectives for future operations; new products, systems, technologies, services or developments; future economic conditions, performance or outlook; future political conditions; the outcome of contingencies or litigation; environmental remediation cost estimates; the potential level of share repurchases, dividends or pension contributions; potential acquisitions or divestitures; the integration of our acquisitions; the value of contract awards and programs; expected revenue; expected cash flows or capital expenditures; our beliefs or expectations; activities, events or developments that we intend, expect, project, believe or anticipate will or may occur in the future; and assumptions underlying any of the foregoing."
+  ]
+}

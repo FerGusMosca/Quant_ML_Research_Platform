@@ -1,0 +1,45 @@
+{
+  "symbol": "HUM",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2547,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.199
+  },
+  "top_positive": [
+    {
+      "sent": "The impact of these adjustments to our consolidated income before income taxes and equity in net (losses) earnings and diluted earnings per common share was as follows for the 2022 and 2021 periods: 44 2022 2021 (in millions) Consolidated income before income taxes and equity in net (losses) earnings: Gain on Kindred at Home equity method investment $ \u2014 $ (1,129) Gain on sale of KAH Hospice (237) \u2014 Charges associated with productivity initiatives related to the previously disclosed $1 billion value creation plan 473 \u2014 Put/call valuation adjustments associated with our non consolidating minority interest investments 68 597 Transaction and integration costs 105 128 Change in the fair value of publicly-traded equity securities 123 341 $ 532 $ (63) 2022 2021 Diluted earnings per common share: Gain on Kindred at Home equity method investment $ \u2014 $ (8.73) Gain on sale of KAH Hospice (1.86) \u2014 Charges associated with productivity initiatives related to the previously disclosed $1 billion value creation plan 3.72 \u2014 Put/call valuation adjustments associated with our non consolidating minority interest investments 0.53 4.62 Transaction and integration costs 0.83 0.99 Change in the fair value of publicly-traded equity securities 0.97 2.63 Tax impact of all transactions (1.52) (1.93) $ 2.67 $ (2.42) 45 Health Care Reform We are and will continue to be regularly subject to new laws and regulations, changes to existing laws and regulations, and judicial determinations that impact the interpretation and applicability of those laws and regulations.",
+      "score": 0.9915
+    },
+    {
+      "sent": "The impact of these adjustments to our consolidated income before income taxes and equity in net (losses) earnings and diluted earnings per common share was as follows for the 2022 and 2021 periods: 44 2022 2021 (in millions) Consolidated income before income taxes and equity in net (losses) earnings: Gain on Kindred at Home equity method investment $ \u2014 $ (1,129) Gain on sale of KAH Hospice (237) \u2014 Charges associated with productivity initiatives related to the previously disclosed $1 billion value creation plan 473 \u2014 Put/call valuation adjustments associated with our non consolidating minority interest investments 68 597 Transaction and integration costs 105 128 Change in the fair value of publicly-traded equity securities 123 341 $ 532 $ (63) 2022 2021 Diluted earnings per common share: Gain on Kindred at Home equity method investment $ \u2014 $ (8.73) Gain on sale of KAH Hospice (1.86) \u2014 Charges associated with productivity initiatives related to the previously disclosed $1 billion value creation plan 3.72 \u2014 Put/call valuation adjustments associated with our non consolidating minority interest investments 0.53 4.62 Transaction and integration costs 0.83 0.99 Change in the fair value of publicly-traded equity securities 0.97 2.63 Tax impact of all transactions (1.52) (1.93) $ 2.67 $ (2.42) 45 Health Care Reform We are and will continue to be regularly subject to new laws and regulations, changes to existing laws and regulations, and judicial determinations that impact the interpretation and applicability of those laws and regulations.",
+      "score": 0.9915
+    },
+    {
+      "sent": "While our programs vary by location, associate type and business, they generally include: Financial Health Life Competitive Base Pay Medical, Dental and Vision Benefits Paid Time Off, Paid Holidays, Paid Volunteer Time Off and Jury Duty Pay Associate Incentive Plan (Annual Bonus) Supplemental Health Benefits Adoption Assistance Supplemental Pay (Including Overtime) Long-term Care Insurance Paid Parental Leave Program (6 weeks) Recognition Pay and Service Awards Wellness and Rewards Program Paid Caregiver Time Off Program (2 weeks) 401(k) Retirement Savings Plan with Company Match Program Health Plan Incentives Employee Assistance Program Life Insurance On-site Health and Fitness Centers Associate Discount Programs and Services Short- and Long-Term Disability Insurance On-site Health Screenings and Vaccinations Helping Hands Program Tuition Assistance Program Transit Services 17 Talent Development and Growth Opportunities We champion the individual goals and development of our associates, and provide a number of programs and resources to support their efforts.",
+      "score": 0.9905
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Anti-Kickback, Physician Self-Referral, and Other Fraud and Abuse Laws We are subject to various federal and state healthcare fraud and abuse laws including the federal False Claims Act (the \u201cFalse Claims Act\u201d), the federal anti-kickback statute (the \u201cAnti-Kickback Statute\u201d), the federal \u201cStark Law,\u201d and related state laws.",
+      "score": -0.9517
+    },
+    {
+      "sent": "We are also subject to risks inherent in the packaging and distribution of pharmaceuticals and other health care products, including the application of state laws and regulations related to the operation of internet and mail-order pharmacies, violations of which could expose us to civil and criminal penalties, and manufacturing, distribution or other supply chain disruptions (including disruptions that occur as a result of catastrophes, including acts of 32 terrorism, public health emergencies, epidemics or pandemics (such as the spread of COVID-19), or natural disasters (such as hurricanes and earthquakes) which could occur more frequently or with more intense effects as a result of the impacts of global climate change), each of which could impact the availability or cost of supplying of such products.",
+      "score": -0.9452
+    },
+    {
+      "sent": "If the information we rely upon to run our businesses was found to be inaccurate or unreliable or if we fail to improve service levels or maintain effectively our information systems and data integrity, we could have operational disruptions, problems in determining medical cost estimates and establishing appropriate pricing, customer and health care provider disputes, regulatory or other legal problems, difficulty preventing and detecting fraud, have increases in operating expenses, loss of existing customers, difficulty in attracting new customers, or other adverse consequences, each of which may result in a material adverse effect on our results of operations, financial position, and cash flows.",
+      "score": -0.9042
+    }
+  ],
+  "forward_snippets": [
+    "We intend such forward-looking statements to be covered by the safe harbor provisions for forward-looking statements contained in the Private Securities Litigation Reform Act of 1995, and we are including this statement for purposes of complying with these safe harbor provisions.",
+    "In addition to the new segment classifications being utilized to assess performance and allocate resources, we believe this simpler structure will create greater collaboration across the Insurance and CenterWell businesses and will accelerate work that is underway to centralize and integrate operations within the organization.",
+    "We intend such forward-looking statements to be covered by the safe harbor provisions for forward-looking statements contained in the Private Securities Litigation Reform Act of 1995, and we are including this statement for purposes of complying with these safe harbor provisions.",
+    "In addition to the new segment classifications being utilized to assess performance and allocate resources, we believe this simpler structure will create greater collaboration across the Insurance and CenterWell businesses and will accelerate work that is underway to centralize and integrate operations within the organization.",
+    "In addition to the new segment classifications being utilized to assess performance and allocate resources, we believe this simpler structure will create greater collaboration across the Insurance and CenterWell businesses and will accelerate work that is underway to centralize and integrate operations within the organization."
+  ]
+}

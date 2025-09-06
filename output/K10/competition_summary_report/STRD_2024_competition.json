@@ -1,0 +1,26 @@
+{
+  "symbol": "STRD",
+  "year": 2024,
+  "competition_summary": [
+    {
+      "competitor": "IBM",
+      "mentions": 1,
+      "context": "Competition The analytics market is highly competitive and subject to rapidly changing technology and market conditions. For enterprise analytics, we compete with global ISVs, such as IBM, Microsoft, Oracle, Salesforce, and SAP. Our ability to compete successfully depends on a number of factors within and outside of our control.  Some of these factors include software quality, performance and reliability; the quality of our service and support teams; marketing and prospecting effectiveness; the "
+    },
+    {
+      "competitor": "Microsoft",
+      "mentions": 1,
+      "context": "Competition The analytics market is highly competitive and subject to rapidly changing technology and market conditions. For enterprise analytics, we compete with global ISVs, such as IBM, Microsoft, Oracle, Salesforce, and SAP. Our ability to compete successfully depends on a number of factors within and outside of our control.  Some of these factors include software quality, performance and reliability; the quality of our service and support teams; marketing and prospecting effectiveness; the "
+    },
+    {
+      "competitor": "Oracle",
+      "mentions": 1,
+      "context": "Competition The analytics market is highly competitive and subject to rapidly changing technology and market conditions. For enterprise analytics, we compete with global ISVs, such as IBM, Microsoft, Oracle, Salesforce, and SAP. Our ability to compete successfully depends on a number of factors within and outside of our control.  Some of these factors include software quality, performance and reliability; the quality of our service and support teams; marketing and prospecting effectiveness; the "
+    },
+    {
+      "competitor": "SAP",
+      "mentions": 1,
+      "context": "Competition The analytics market is highly competitive and subject to rapidly changing technology and market conditions. For enterprise analytics, we compete with global ISVs, such as IBM, Microsoft, Oracle, Salesforce, and SAP. Our ability to compete successfully depends on a number of factors within and outside of our control.  Some of these factors include software quality, performance and reliability; the quality of our service and support teams; marketing and prospecting effectiveness; the "
+    }
+  ]
+}

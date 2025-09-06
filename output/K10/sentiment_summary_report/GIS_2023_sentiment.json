@@ -1,0 +1,45 @@
+{
+  "symbol": "GIS",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2753,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.194
+  },
+  "top_positive": [
+    {
+      "sent": "Equity Compensation Plan Information The following table provides certain information as of May 28, 2023, with respect to our equity compensation plans: Plan Category Number of Securities to be Issued upon Exercise of Outstanding Options, Warrants and Rights (1) Weighted-Average Exercise Price of Outstanding Options, Warrants and Rights (2) (a) Number of Securities Remaining Available for Future Issuance Under Equity Compensation Plans (Excluding Securities Reflected in Column (1)) (3) Equity compensation plans approved by security holders 18,806,084 (b) $ 57.43 35,104,287 (d) Equity compensation plans not approved by security holders 97,154 (c) - - Total 18,903,238 $ 57.43 35,104,287 (a) Only includes the weighted-average exercise price of outstanding options, whose weighted-average term is 5.59 years.",
+      "score": 0.9859
+    },
+    {
+      "sent": "We evaluate the useful lives of our other intangible assets, mainly brands, to determine if they are finite\nSelected Cash Flows from Joint Ventures Selected cash flows from our joint ventures are set forth in the following table: Fiscal Year Inflow (Outflow), in Millions 2023 2022 Investments in affiliates, net $ (32.2) $ 15.4 Dividends received 69.9 107.5 The following table details the fee-paid committed and uncommitted credit lines we had available as of May 28, 2023: In Billions Facility Amount Borrowed Amount Committed credit facility expiring April 2026 $ 2.7 $ - Uncommitted credit facilities 0.6 - Total committed and uncommitted credit facilities $ 3.3 $ - To ensure availability of funds, we maintain bank credit lines and have commercial paper programs available to us in the United States and Europe.",
+      "score": 0.9758
+    },
+    {
+      "sent": "Discount Rates We estimate the service and interest cost components of the net periodic benefit expense for our United States and most of our international defined benefit pension, other postretirement benefit, and postemployment benefit plans utilizing a full yield curve approach by applying the specific spot rates along the yield curve used to determine the benefit obligation to the re\nrial net gains of $189 million on our postretirement and postemployment benefit plans, mainly as the result of liability increases from lower historical interest rates.",
+      "score": 0.9756
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Damage or disruption to raw material supplies or our manufacturing or distribution capabilities due to weather, climate change, natural disaster, fire, terrorism, cyber-attack, pandemics, war, governmental restrictions or mandates, labor shortages, strikes, import/export restrictions, or other factors could impair our ability to manufacture or sell our products.",
+      "score": -0.9638
+    },
+    {
+      "sent": "Information about our tax loss carryforwards follows : In Millions May 28, 2023 Foreign loss carryforwards $ 202.0 Federal operating loss carryforwards 10.2 State operating loss carryforwards 9.0 Total tax loss carryforwards $ 221.2 80 Our foreign loss carryforwards expire as follows: In Millions May 28, 2023 Expire in fiscal 2024 and 2025 $ 0.5 Expire in fiscal 2026 and beyond 15.0 Do not expire (a) 186.5 Total foreign loss carryforwards $ 202.0 (a) Approximately $ 172 million of our foreign loss carryforwards are held in Brazil for which we have not recorded a valuation allowance.",
+      "score": -0.9371
+    },
+    {
+      "sent": "Information about our tax loss carryforwards follows : In Millions May 28, 2023 Foreign loss carryforwards $ 202.0 Federal operating loss carryforwards 10.2 State operating loss carryforwards 9.0 Total tax loss carryforwards $ 221.2 80 Our foreign loss carryforwards expire as follows: In Millions May 28, 2023 Expire in fiscal 2024 and 2025 $ 0.5 Expire in fiscal 2026 and beyond 15.0 Do not expire (a) 186.5 Total foreign loss carryforwards $ 202.0 (a) Approximately $ 172 million of our foreign loss carryforwards are held in Brazil for which we have not recorded a valuation allowance.",
+      "score": -0.9371
+    }
+  ],
+  "forward_snippets": [
+    "We believe that we will be able to obtain an adequate supply of needed inputs.",
+    "We believe that we will be able to obtain an adequate supply of needed inputs.",
+    "We believe that we will be able to obtain an adequate supply of needed inputs.",
+    "We believe that we will be able to obtain an adequate supply of needed inputs.",
+    "We believe that we will be able to obtain an adequate supply of needed inputs."
+  ]
+}

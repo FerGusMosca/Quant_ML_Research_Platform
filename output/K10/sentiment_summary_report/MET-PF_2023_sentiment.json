@@ -1,0 +1,45 @@
+{
+  "symbol": "MET-PF",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2107,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.202
+  },
+  "top_positive": [
+    {
+      "sent": "91 Table of Contents Fair Value of Fixed Maturity Securities AFS and Equity Securities Fixed maturity securities AFS and equity securities measured at estimated fair value on a recurring basis and their corresponding fair value pricing sources were as follows: December 31, 2022 Level Fixed Maturity Securities AFS Equity Securities (Dollars in millions) Level 1 Quoted prices in active markets for identical assets $ 15,959 5.8 % $ 1,293 76.8 % Level 2 Independent pricing sources 232,048 83.8 129 7.6 Internal matrix pricing or discounted cash flow techniques \u2014 \u2014 3 0.2 Significant other observable inputs $ 232,048 83.8 % $ 132 7.8 % Level 3 Independent pricing sources 21,762 7.9 45 2.7 Internal matrix pricing or discounted cash flow techniques 6,639 2.4 214 12.7 Independent broker quotations 372 0.1 \u2014 \u2014 Significant unobservable inputs $ 28,773 10.4 % $ 259 15.4 % Total at estimated fair value $ 276,780 100.0 % $ 1,684 100.0 % See Note\u00a010 of the Notes to the Consolidated Financial Statements for the fixed maturity securities AFS and equity securities fair value hierarchy; a rollforward of the fair value measurements for securities measured at estimated fair value on a recurring basis using significant unobservable (Level 3) inputs; transfers into and/or out of Level 3; and further information about the valuation approaches and inputs by level by major classes of invested assets that affect the amounts reported above.",
+      "score": 0.9941
+    },
+    {
+      "sent": "139 Table of Contents The table below provides additional detail regarding the potential loss in estimated fair value of our interest sensitive financial instruments due to a 100 basis point increase in interest rates at: December 31, 2022 Notional Amount Estimated Fair Value\u00a0(1) Assuming\u00a0a 100 bps Increase in Interest Rates (In millions) Assets Fixed maturity securities AFS $ 276,780 $ (20,707) Equity securities $ 1,684 (80) FVO Securities $ 1,435 (26) Mortgage loans $ 78,694 (2,708) Policy loans $ 9,682 (268) Short-term investments $ 4,935 (11) Other invested assets $ 2,078 (156) Cash and cash equivalents $ 20,195 (6) Accrued investment income $ 3,446 \u2014 Premiums, reinsurance and other receivables $ 2,963 (37) Other assets $ 265 (14) Embedded derivatives within asset host contracts (2) $ 29 (8) Total assets $ (24,021) Liabilities (3) Policyholder account balances $ 115,408 $ 3,339 Payables for collateral under securities loaned and other transactions $ 20,937 \u2014 Short-term debt $ 175 \u2014 Long-term debt $ 14,241 1,031 Collateral financing arrangement $ 591 \u2014 Junior subordinated debt securities $ 3,502 294 Other liabilities $ 3,170 151 Embedded derivatives within liability host contracts (2) $ 578 317 Total liabilities $ 5,132 Derivative Instruments Interest rate swaps $ 39,911 $ 938 $ (2,182) Interest rate floors $ 25,270 $ 125 (66) Interest rate caps $ 48,290 $ 950 302 Interest rate futures $ 1,453 $ 1 31 Interest rate options $ 44,391 $ 385 (218) Interest rate forwards $ 7,828 $ (1,385) (950) Synthetic GICs $ 46,316 $ \u2014 \u2014 Foreign currency swaps $ 56,025 $ 3,008 (307) Foreign currency forwards $ 18,211 $ (234) 12 Currency futures $ 333 $ 8 \u2014 Currency options $ 3,000 $ 236 (8) Credit default swaps $ 14,437 $ 44 2 Equity futures $ 2,988 $ 4 (4) Equity index options $ 16,701 $ 442 (45) Equity variance swaps $ 163 $ 3 \u2014 Equity total return swaps $ 2,799 $ (89) (5) Total derivative instruments $ (3,438) Net Change $ (22,327) __________________ (1) Separate account assets and liabilities and Unit-linked investments and associated policyholder account balances, which are interest rate sensitive, are not included herein as any interest rate risk is borne by the contractholder, notwithstanding any general account guarantees which are included within embedded derivatives (see footnote (2) below) or included within future policy benefits and other policy-related balances (see footnote (3) below).",
+      "score": 0.9933
+    },
+    {
+      "sent": "102 Table of Contents Other Invested Assets The following table presents the carrying value of our other invested assets by type at: December\u00a031, 2022 2021 Asset Type Carrying Value % of Total Carrying Value % of Total (Dollars in millions) Freestanding derivatives with positive estimated fair values $ 11,411 56.9 % $ 10,466 56.1 % Tax credit and renewable energy partnerships 1,318 6.6 1,564 8.4 Annuities funding structured settlement claims 1,238 6.2 1,251 6.7 Direct financing leases 1,195 6.0 1,143 6.1 Operating joint ventures 1,099 5.5 901 4.8 Leveraged leases 731 3.6 787 4.2 FHLBNY common stock 729 3.6 769 4.1 Funds withheld 359 1.8 525 2.8 Other 1,958 9.8 1,249 6.8 Total $ 20,038 100 % $ 18,655 100 % Percentage of cash and invested assets 4.4 % 3.6 % See Notes 1, 8 and 9 of the Notes to the Consolidated Financial Statements for information regarding freestanding derivatives with positive estimated fair values, tax credit and renewable energy partnerships, annuities funding structured settlement claims, direct financing and leveraged leases, operating joint ventures, FHLBNY common stock, and funds withheld, as well as gains (losses) on disposals of leveraged leases and renewable energy partnerships.",
+      "score": 0.9919
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "We, our vendors, our reinsurers, and our customers may suffer disasters such as a natural catastrophe, epidemic, pandemic, industrial accident, blackout, computer virus, terrorist attack, ransomware or cyber-attack, or war, and ours or their disaster recovery systems may be insufficient to safeguard our ability to conduct normal business operations, obtain reinsurance and maintain our critical business or information technology systems in such circumstances, particularly if such disasters affect computer-based data processing, transmission, storage and retrieval systems and/or destroy or otherwise adversely impact the confidentiality, integrity or availability of valuable data or the financial wherewithal of reinsurers or vendors.",
+      "score": -0.9842
+    },
+    {
+      "sent": "In the U.S., one of the most serious threats facing the economy is the disagreement over the federal debt limit which, if not addressed in the coming months, could lead to a default on the federal debt, adverse market impact and a recession this year.",
+      "score": -0.9379
+    },
+    {
+      "sent": "ASU 2022-02, Financial Instruments\u2014Credit Losses (Topic 326): Troubled Debt Restructurings and Vintage Disclosures The amendments in the new ASU eliminate the accounting guidance for troubled debt restructurings (\u201cTDRs\u201d) by creditors that have adopted the current expected credit loss guidance while enhancing disclosure requirements for certain loan refinancings and restructurings by creditors when a borrower is experiencing financial difficulty.",
+      "score": -0.9136
+    }
+  ],
+  "forward_snippets": [
+    "We will continue to execute on our Next Horizon strategy, creating value focusing on the following three pillars: \u25cf Focus \u2013 Generate strong free cash flow by deploying capital and resources to the highest value opportunities.",
+    "We will continue to execute on our Next Horizon strategy, creating value focusing on the following three pillars: \u25cf Focus \u2013 Generate strong free cash flow by deploying capital and resources to the highest value opportunities.",
+    "We will continue to execute on our Next Horizon strategy, creating value focusing on the following three pillars: \u25cf Focus \u2013 Generate strong free cash flow by deploying capital and resources to the highest value opportunities.",
+    "Our liabilities for future policy benefits and claims are established based on estimates by actuaries of how much we will need to pay for future benefits and claims.",
+    "These reserves are reported as liabilities, and we expect them to be sufficient to meet policy and contract obligations, when taken together with expected future premiums and interest at assumed rates."
+  ]
+}

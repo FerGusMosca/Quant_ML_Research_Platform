@@ -1,0 +1,45 @@
+{
+  "symbol": "MDT",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1589,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.223
+  },
+  "top_positive": [
+    {
+      "sent": "Forward-looking statements in this Annual Report include, but are not limited to, statements regarding : our ability to drive long-term shareholder value ; development and future launches of products and continued or future acceptance of products, therapies and services in our segments; expected timing for completion of research studies relating to our products; market positioning and performance of our products, including stabilization of certain product markets; divestitures and the potential benefits thereof; the costs and benefits of integrating previous acquisitions; anticipated timing for United States (U.S.) Food and Drug Administration (U.S.",
+      "score": 0.9756
+    },
+    {
+      "sent": "regulatory approval of new products; increased presence in new markets, including markets outside the U.S.; changes in the market and our market share; acquisitions and investment initiatives, including the timing of regulatory approvals as well as integration of acquired companies into our operations; the resolution of tax matters; the effectiveness of our development activities in reducing patient care costs and hospital stay lengths; our approach towards cost containment; our expectations regarding healthcare costs, including potential changes to reimbursement policies and pricing pressures; our expectations regarding changes to patient standards of care; our ability to identify and maintain successful business partnerships; the elimination of certain positions or costs related to restructuring initiatives; outcomes in our litigation matters and governmental proceedings and investigations; general economic conditions; the adequacy of available working capital and our working capital needs; our payment of dividends and redemption of shares; the continued strength of our balance sheet and liquidity; our accounts receivable exposure; and the potential impact of our compliance with governmental regulations and accounting guidance.",
+      "score": 0.9738
+    },
+    {
+      "sent": "FDA, European regulatory authorities such as the Medicines and Healthcare products Regulatory Agency in the United Kingdom, the Health Products Regulatory Authority in the Republic of Ireland and the Federal Institute for Drugs and Medical Devices in Germany, the China National Medical Product \nntinue to focus on optimizing innovation, improving our R&D productivity, driving growth in emerging markets, generating clinical evidence, and assessing our R&D programs based on their ability to address unmet clinical needs, produce better patient outcomes, and create new standards of care.",
+      "score": 0.9705
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Consequences include, but are not limited, to patients or employees being exposed to financial or medical identity theft or suffering a loss of product functionality, losing existing customers or have difficulty attracting new customers, experiencing difficulty preventing, detecting, and controlling fraud, being exposed to the loss or misuse of confidential information, having disputes with customers, physicians, and other healthcare professionals, suffering regulatory sanctions or penalties under federal laws, state laws, or the laws of other jurisdictions, experiencing increases in operating expenses or an impairment in our ability to conduct our operations, incurring expenses or losing revenues as a result of a data privacy breach, product failure, information technology outages or disruptions, or suffering other adverse consequences including lawsuits or other legal action and damage to our reputation.",
+      "score": -0.9937
+    },
+    {
+      "sent": "Consequences include, but are not limited, to patients or employees being exposed to financial or medical identity theft or suffering a loss of product functionality, losing existing customers or have difficulty attracting new customers, experiencing difficulty preventing, detecting, and controlling fraud, being exposed to the loss or misuse of confidential information, having disputes with customers, physicians, and other healthcare professionals, suffering regulatory sanctions or penalties under federal laws, state laws, or the laws of other jurisdictions, experiencing increases in operating expenses or an impairment in our ability to conduct our operations, incurring expenses or losing revenues as a result of a data privacy breach, product failure, information technology outages or disruptions, or suffering other adverse consequences including lawsuits or other legal action and damage to our reputation.",
+      "score": -0.9937
+    },
+    {
+      "sent": "Other disruptions in the manufacturing process or product sales and fulfillment systems for any reason, including infrastructure, information and equipment malfunction, failure to follow specific protocols and procedures, supplier or Company facility shut-downs, defective raw materials, labor shortages, natural disasters such as hurricanes, tornadoes, earthquakes, or wildfires, property damage or facility closures from riots or public protests, and other environmental factors and the impact of epidemics, pandemics, or other public health crises, and actions by businesses, communities and governments in response, could lead to launch delays, product shortages, unanticipated costs, lost revenues and damage to our reputation.",
+      "score": -0.9744
+    }
+  ],
+  "forward_snippets": [
+    "regulatory approval of new products; increased presence in new markets, including markets outside the U.S.; changes in the market and our market share; acquisitions and investment initiatives, including the timing of regulatory approvals as well as integration of acquired companies into our operations; the resolution of tax matters; the effectiveness of our development activities in reducing patient care costs and hospital stay lengths; our approach towards cost containment; our expectations regarding healthcare costs, including potential changes to reimbursement policies and pricing pressures; our expectations regarding changes to patient standards of care; our ability to identify and maintain successful business partnerships; the elimination of certain positions or costs related to restructuring initiatives; outcomes in our litigation matters and governmental proceedings and investigations; general economic conditions; the adequacy of available working capital and our working capital needs; our payment of dividends and redemption of shares; the continued strength of our balance sheet and liquidity; our accounts receivable exposure; and the potential impact of our compliance with governmental regulations and accounting guidance.",
+    "We have based these forward-looking statements largely on our current expectations and projections about future events and financial trends that we believe may affect our business, results of operations, financial condition, and/or cash flows.",
+    "We intend to take advantage of the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995 regarding our forward-looking statements and are including this sentence for the express purpose of enabling us to use the protections of the safe harbor with respect to all forward-looking statements.",
+    "Medtronic was founded in 1949 and today serves heal\n our approach towards cost containment; our expectations regarding healthcare costs, including potential changes to reimbursement policies and pricing pressures; our expectations regarding changes to patient standards of care; our ability to identify and maintain successful business partnerships; the elimination of certain positions or costs related to restructuring initiatives; outcomes in our litigation matters and governmental proceedings and investigations; general economic conditions; the adequacy of available working capital and our working capital needs; our payment of dividends and redemption of shares; the continued strength of our balance sheet and liquidity; our accounts receivable exposure; and the potential impact of our compliance with governmental regulations and accounting guidance.",
+    "We have based these forward-looking statements largely on our current expectations and projections about future events and financial trends that we believe may affect our business, results of operations, financial condition, and/or cash flows."
+  ]
+}

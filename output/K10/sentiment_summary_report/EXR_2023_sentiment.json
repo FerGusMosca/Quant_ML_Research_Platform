@@ -1,0 +1,45 @@
+{
+  "symbol": "EXR",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1898,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.222
+  },
+  "top_positive": [
+    {
+      "sent": "10-Q May 5, 2017 10.1 10.12* 2015 Incentive Award Plan DEFA14A April 14, 2015 Definitive Proxy Statement 10.13* Form of 2015 Incentive Award Plan Performance Stock Award Agreement 10-K February 26, 2020 10.13 10.15* 2004 Long-Term Compensation Incentive Plan as amended and restated effective March 25, 2008 DEFA14A April 14, 2008 Definitive P",
+      "score": 0.9729
+    },
+    {
+      "sent": "Consolidated Statements of Operations (dollars in thousands, except share data) For the Year Ended December 31, 2022 2021 2020 Revenues: Property rental $ 1,654,735 $ 1,340,990 $ 1,157,522 Tenant reinsurance 185,531 170,108 146,561 Management fees and other income 83,904 66,264 52,129 Total revenues 1,924,170 1,577,362 1,356,212 Expenses: Property operations 435,342 368,608 360,615 Tenant reinsurance 33,560 29,488 26,494 Transaction related costs 1,548 \u2014 \u2014 General and administrative 129,251 102,194 96,594 Depreciation and amortization 288,316 241,879 224,444 Total expenses 888,017 742,169 708,147 Gain on real estate transactions 14,249 140,760 18,075 Income from operations 1,050,402 975,953 666,140 Interest expense ( 219,171 ) ( 166,183 ) ( 168,626 ) Non-cash interest expense related to amortization of discount on equity component of exchangeable senior notes \u2014 \u2014 ( 3,675 ) Interest income 69,422 49,703 15,192 Income before equity in earnings and dividend income from unconsolidated real estate entities and income tax expense 900,653 859,473 509,031 Equity in earnings and dividend income from unconsolidated real estate entities 41,428 32,358 22,361 Equity in earnings of unconsolidated real estate ventures - gain on sale of real estate assets \u2014 6,251 \u2014 Income tax expense ( 20,925 ) ( 20,324 ) ( 13,810 ) Net income 921,156 877,758 517,582 Net income allocated to Preferred Operating Partnership noncontrolling interests ( 17,623 ) ( 14,697 ) ( 12,882 )\nof netting the discounted future fixed cash payments and the discounted expected variable cash receipts.",
+      "score": 0.9694
+    },
+    {
+      "sent": "stockholders' equity: Preferred stock, $ 0.01 par value, 50,000,000 shares authorized, no shares issued or outstanding \u2014 \u2014 Common stock, $ 0.01 par value, 500,000,000 shares authorized, 133,921,020 and 133,922,305 shares issued and outstanding at December\u00a031, 2022 and 2021, respectively 1,339 1,339 Additional paid-in capital 3,345,332 3,285,948 Accumulated other comprehensive income (loss) 48,798 ( 42,546 ) Accumulated deficit ( 135,872 ) ( 128,245 ) Total Extra Space Storage Inc.",
+      "score": 0.959
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "ransomware), malicious code, natural disasters, terrorism, war, telecommunication and electrical failures, hacking, cyberattacks, phishing attacks and other social engineering schemes, employee theft or misuse, human error (e.g., social engineering, phishing), fraud, denial or degradation of service attacks, sophisticated nation-state and nation-state-supported actors or unauthorized access or use by persons inside our organization, or persons with access to systems inside our organization.",
+      "score": -0.9769
+    },
+    {
+      "sent": "ransomware), malicious code, natural disasters, terrorism, war, telecommunication and electrical failures, hacking, cyberattacks, phishing attacks and other social engineering schemes, employee theft or misuse, human error (e.g., social engineering, phishing), fraud, denial or degradation of service attacks, sophisticated nation-state and nation-state-supported actors or unauthorized access or use by persons inside our organization, or persons with access to systems inside our organization.",
+      "score": -0.9769
+    },
+    {
+      "sent": "federal income tax purposes; \u2022 impacts from any outbreak of highly infectious or contagious diseases such as COVID-19, including reduced demand for self-storage space and ancillary products, and potential decreases in occupancy and rental rates and staffing levels, which could adversely affect our results; and \u2022 economic uncertainty due to the impact of natural disasters, war or terrorism, which could adversely affect our business plan.",
+      "score": -0.9569
+    }
+  ],
+  "forward_snippets": [
+    "Our expectations, beliefs and projections are expressed in good faith and we believe there is a reasonable basis for them, but there can be no assurance that management\u2019s expectations, beliefs and projections will result or be achieved.",
+    "To the extent we continue to qualify as a REIT we will not be subject to U.S.",
+    "Our expectations, beliefs and projections are expressed in good faith and we believe there is a reasonable basis for them, but there can be no assurance that management\u2019s expectations, beliefs and projections will result or be achieved.",
+    "To the extent we continue to qualify as a REIT we will not be subject to U.S.",
+    "We believe this expanded footprint enables us to reduce our operating costs through economies of scale."
+  ]
+}

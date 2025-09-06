@@ -1,0 +1,45 @@
+{
+  "symbol": "WRB-PH",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.045,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.274
+  },
+  "top_positive": [
+    {
+      "sent": "(20) Fair Value of Financial Instruments The following table presents the carrying amounts and estimated fair values of the Company\u2019s financial instruments as of December\u00a031, 2022 and 2021: 2022 2021 (In thousands) Carrying Value Fair Value Carrying Value Fair Value Assets: Fixed maturity securities $ 17,587,349 $ 17,591,626 $ 16,602,673 $ 16,614,118 Equity securities 1,185,894 1,185,894 941,243 941,243 Arbitrage trading account 944,230 944,230 1,179,606 1,179,606 Loans receivable 193,002 187,981 115,172 116,534 Cash and cash equivalents 1,449,346 1,449,346 1,568,843 1,568,843 Trading accounts receivable from brokers and clearing organizations 233,863 233,863 \u2014 \u2014 Due from broker 3,609 3,609 20,448 20,448 Liabilities: Due to broker \u2014 \u2014 53,636 53,636 Trading account securities sold but not yet purchased \u2014 \u2014 1,169 1,169 Senior notes and other debt 1,828,823 1,439,188 2,259,416 2,526,630 Subordinated debentures 1,008,371 805,600 1,007,652 1,095,600 The estimated fair values of the Company\u2019s fixed maturity securities, equity securities available for sale and arbitrage trading account securities are based on various valuation techniques that rely on fair value measurements as described in Note 13 above.",
+      "score": 0.9825
+    },
+    {
+      "sent": "Our culture encompasses the beliefs that (i) specialized knowledge and having a customer-centric focus are competitive advantages and (ii) an environment that promotes integrity, embraces the commitment to \u201calways do right,\u201d fosters entrepreneurship and innovation, and values making thoughtful decisions for the long-term benefit of our enterprise.",
+      "score": 0.9623
+    },
+    {
+      "sent": "SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT AND RELATED STOCKHOLDER MATTERS (a) Security ownership of certain beneficial owners Reference is made to the registrant's definitive proxy statement, which will be filed with the Securities and Exchange Commission within 120 days after December\u00a031, 2022, and which is incorporated herein by reference.",
+      "score": 0.9586
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The Company\u2019s reinsurance purchases include the following: property reinsurance treaties that reduce exposure to large individual property losses and catastrophe events; casualty reinsurance treaties that reduce its exposure to large individual casualty losses, workers\u2019 compensation catastrophe losses and casualty losses involving multiple claimants or insureds; and facultative reinsurance that reduces exposure on individual policies or risks for losses that exceed treaty reinsurance capacity.",
+      "score": -0.9868
+    },
+    {
+      "sent": "The Company\u2019s reinsurance purchases include the following: property reinsurance treaties that reduce exposure to large individual property losses and catastrophe events; casualty reinsurance treaties that reduce its exposure to large individual casualty losses, workers\u2019 compensation catastrophe losses and casualty losses involving multiple claimants or insureds; and facultative reinsurance that reduces exposure on individual policies or risks for losses that exceed treaty reinsurance capacity.",
+      "score": -0.9868
+    },
+    {
+      "sent": "In the event of a disaster such as a natural catastrophe, terrorist attack or industrial accident, or the infection of our systems by a malicious computer virus, our systems could be inaccessible for an extended period of time.",
+      "score": -0.9578
+    }
+  ],
+  "forward_snippets": [
+    "Any forward-looking statements contained in this report including statements related to our outlook for the industry and for our performance for the year 2023 and beyond, are based upon our historical performance and on current plans, estimates and expectations.",
+    "Any forward-looking statements contained in this report including statements related to our outlook for the industry and for our performance for the year 2023 and beyond, are based upon our historical performance and on current plans, estimates and expectations.",
+    "Any forward-looking statements contained in this report including statements related to our outlook for the industry and for our performance for the year 2023 and beyond, are based upon our historical performance and on current plans, estimates and expectations.",
+    "Any forward-looking statements contained in this report including statements related to our outlook for the industry and for our performance for the year 2023 and beyond, are based upon our historical performance and on current plans, estimates and expectations.",
+    "Our twenty-three insurance company subsidiaries rated by Standard & Poor's (\u201cS&P\u201d) have financial strength ratings of A + (the seventh highest rating out of twenty-seve\noutlook for the industry and for our performance for the year 2023 and beyond, are based upon our historical performance and on current plans, estimates and expectations."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "symbol": "KR",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.3019,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.144
+  },
+  "top_positive": [
+    {
+      "sent": "\u200b The following table provides information regarding shares outstanding and available for issuance under our existing equity compensation plans: \u200b Equity Compensation Plan Information \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b (a) (b) (c) \u200b \u200b \u200b \u200b \u200b \u200b \u200b Number\u00a0of\u00a0securities \u200b \u200b \u200b \u200b \u200b \u200b \u200b remaining\u00a0available for\u00a0future \u200b \u200b Number\u00a0of\u00a0securities\u00a0to \u200b Weighted-average \u200b issuance\u00a0under\u00a0equity \u200b \u200b be\u00a0issued\u00a0upon\u00a0exercise \u200b exercise\u00a0price\u00a0of \u200b compensation\u00a0plans \u200b \u200b of\u00a0outstanding\u00a0options, \u200b outstanding\u00a0options, \u200b (excluding\u00a0securities Plan\u00a0Category \u200b warrants\u00a0and\u00a0rights (1) \u200b warrants\u00a0and\u00a0rights (1) \u200b reflected\u00a0in\u00a0column\u00a0(a)) \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b Equity compensation plans approved by security holders 20,021,688 \u200b $ 30.81 53,470,441 \u200b Equity compensation plans not approved by security holders \u2014 \u200b $ \u2014 \u2014 \u200b Total 20,021,688 \u200b $ 30.81 53,470,441 \u200b (1) The total number of securities reported includes the maximum number of common shares, 3,383,338, that may be issued under performance units granted under our long-term incentive plans.",
+      "score": 0.9893
+    },
+    {
+      "sent": "\u200b The following table provides information regarding shares outstanding and available for issuance under our existing equity compensation plans: \u200b Equity Compensation Plan Information \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b (a) (b) (c) \u200b \u200b \u200b \u200b \u200b \u200b \u200b Number\u00a0of\u00a0securities \u200b \u200b \u200b \u200b \u200b \u200b \u200b remaining\u00a0available for\u00a0future \u200b \u200b Number\u00a0of\u00a0securities\u00a0to \u200b Weighted-average \u200b issuance\u00a0under\u00a0equity \u200b \u200b be\u00a0issued\u00a0upon\u00a0exercise \u200b exercise\u00a0price\u00a0of \u200b compensation\u00a0plans \u200b \u200b of\u00a0outstanding\u00a0options, \u200b outstanding\u00a0options, \u200b (excluding\u00a0securities Plan\u00a0Category \u200b warrants\u00a0and\u00a0rights (1) \u200b warrants\u00a0and\u00a0rights (1) \u200b reflected\u00a0in\u00a0column\u00a0(a)) \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b Equity compensation plans approved by security holders 20,021,688 \u200b $ 30.81 53,470,441 \u200b Equity compensation plans not approved by security holders \u2014 \u200b $ \u2014 \u2014 \u200b Total 20,021,688 \u200b $ 30.81 53,470,441 \u200b (1) The total number of securities reported includes the maximum number of common shares, 3,383,338, that may be issued under performance units granted under our long-term incentive plans.",
+      "score": 0.9893
+    },
+    {
+      "sent": "\u200b The following table provides information regarding shares outstanding and available for issuance under our existing equity compensation plans: \u200b Equity Compensation Plan Information \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b (a) (b) (c) \u200b \u200b \u200b \u200b \u200b \u200b \u200b Number\u00a0of\u00a0securities \u200b \u200b \u200b \u200b \u200b \u200b \u200b remaining\u00a0available for\u00a0future \u200b \u200b Number\u00a0of\u00a0securities\u00a0to \u200b Weighted-average \u200b issuance\u00a0under\u00a0equity \u200b \u200b be\u00a0issued\u00a0upon\u00a0exercise \u200b exercise\u00a0price\u00a0of \u200b compensation\u00a0plans \u200b \u200b of\u00a0outstanding\u00a0options, \u200b outstanding\u00a0options, \u200b (excluding\u00a0securities Plan\u00a0Category \u200b warrants\u00a0and\u00a0rights (1) \u200b warrants\u00a0and\u00a0rights (1) \u200b reflected\u00a0in\u00a0column\u00a0(a)) \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b Equity compensation plans approved by security holders 20,021,688 \u200b $ 30.81 53,470,441 \u200b Equity compensation plans not approved by security holders \u2014 \u200b $ \u2014 \u2014 \u200b Total 20,021,688 \u200b $ 30.81 53,470,441 \u200b (1) The total number of securities reported includes the maximum number of common shares, 3,383,338, that may be issued under performance units granted under our long-term incentive plans.",
+      "score": 0.9893
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Adverse weather, natural disasters, geopolitical and catastrophic events, such as war, civil unrest, acts of terrorism or other acts of violence, including active shooter situations (which have occurred in the past at our locations), or pandemics, such as the spread of COVID-19, or other future pandemics and other matters that could reduce consumer spending, could materially affect our financial condition, results of operations or cash flows.",
+      "score": -0.9559
+    },
+    {
+      "sent": "\u200b 14 Our cybersecurity program, continued investment in our information technology systems, and our processes to evaluate and select vendors with reasonable information security controls may not effectively insulate us from potential attacks, data breaches or disruptions to our business operations, which could result in a loss of customers or business information, negative publicity, damage to our reputation, and exposure to claims from customers, financial institutions, regulatory authorities, payment card associations, associates and other persons.",
+      "score": -0.9261
+    },
+    {
+      "sent": "In addition, many of our operations and facilities are in locations that may be affected by the physical risks of climate change, and we face the risk of losses incurred as a result of physical damage to stores, distribution or fulfillment centers, loss or spoilage of inventory and business interruption caused by such events.",
+      "score": -0.926
+    }
+  ],
+  "forward_snippets": [
+    "We believe this format is successful because the stores are large enough to offer the specialty departments that customers desire for one-stop shopping, including natural food and organic sections, pharmacies, general merchandise, pet centers and high-quality perishables such as fresh seafood and organic produce.",
+    "We believe this format is successful because the stores are large enough to offer the specialty departments that customers desire for one-stop shopping, including natural food and organic sections, pharmacies, general merchandise, pet centers and high-quality perishables such as fresh seafood and organic produce.",
+    "This is why we aim to create working environments where associates feel encouraged and supported to be their best selves every day.",
+    "In 2023, we expect to spend approximately $175 million on training our associates through onboarding, leadership development programs, and programs designed to upskill associates across the Company.",
+    "We continue to invest in new platforms and applications to make learning more accessible to our associates."
+  ]
+}

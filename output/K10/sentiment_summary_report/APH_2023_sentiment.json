@@ -1,0 +1,45 @@
+{
+  "symbol": "APH",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2384,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.151
+  },
+  "top_positive": [
+    {
+      "sent": "\u200b Stock option activity for 2020, 2021 and 2022 was as follows: \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b Weighted \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b Average \u200b Aggregate \u200b \u200b \u200b \u200b Weighted \u200b Remaining \u200b Intrinsic \u200b \u200b \u200b \u200b Average \u200b Contractual \u200b Value \u200b \u200b Options Exercise\u00a0Price Term\u00a0(in\u00a0years) (in\u00a0millions) Options outstanding at January\u00a01, 2020 71,350,412 \u200b $ 33.85 6.75 \u200b \u200b \u200b \u200b Options granted 12,220,400 \u200b 45.12 \u200b \u200b \u200b \u200b \u200b \u200b Options exercised ( 14,969,624 ) \u200b 25.80 \u200b \u200b \u200b \u200b \u200b \u200b Options forfeited ( 615,540 ) \u200b 41.55 \u200b \u200b \u200b \u200b \u200b \u200b Options outstanding at December\u00a031,\u00a02020 67,985,648 \u200b 37.58 6.79 \u200b \u200b \u200b \u200b Options granted 7,543,589 \u200b 66.65 \u200b \u200b \u200b \u200b \u200b \u200b Options exercised ( 9,692,199 ) \u200b 29.87 \u200b \u200b \u200b \u200b \u200b \u200b Options forfeited ( 536,290 ) \u200b 48.00 \u200b \u200b \u200b \u200b \u200b \u200b Options outstanding at December\u00a031,\u00a02021 65,300,748 \u200b \u200b 42.00 \u200b 6.47 \u200b \u200b \u200b \u200b Options granted 7,090,798 \u200b 68.95 \u200b \u200b \u200b \u200b \u200b \u200b Options exercised ( 5,627,389 ) \u200b 32.89 \u200b \u200b \u200b \u200b \u200b \u200b Options forfeited ( 629,120 ) \u200b 51.82 \u200b \u200b \u200b \u200b \u200b \u200b Options outstanding at December\u00a031,\u00a02022 66,135,037 \u200b $ 45.57 \u200b 6.03 \u200b $ 2,027.2 \u200b Vested and non-vested options expected to vest at December\u00a031,\u00a02022 63,745,253 \u200b $ 45.25 \u200b 5.97 \u200b $ 1,974.2 \u200b Exercisable options at December\u00a031,\u00a02022 39,414,025 \u200b $ 38.56 \u200b 4.85 \u200b $ 1,481.1 \u200b \u200b A summary of the status of the Company\u2019s non-vested options as of December 31, 2022 and changes during the year then ended is as follows: \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b Weighted\u00a0Average \u200b \u200b \u200b \u200b Fair\u00a0Value \u200b \u200b \u200b Options \u200b at\u00a0Grant\u00a0Date Non-vested options at January\u00a01, 2022 31,380,283 \u200b $ 8.34 \u200b Options granted 7,090,798 \u200b 16.79 \u200b Options vested ( 11,128,949 ) \u200b 7.18 \u200b Options forfeited ( 621,120 ) \u200b 9.64 \u200b Non-vested options at December\u00a031,\u00a02022 26,721,012 \u200b $ 11.04 \u200b \u200b The weighted average fair value at the grant date of options granted during 2021 and 2020 was $ 13.27 and $ 8.17 , respectively.",
+      "score": 0.9914
+    },
+    {
+      "sent": "The carrying amount of the redeemable noncontrolling interest, initially valued at fair value as part of acquisition accounting, is adjusted each reporting period to equal the greater of the (i) redemption value or (ii) carrying value of the noncontrolling interest, adjusted each reporting period for income or loss attributable to the noncontrolling interest and any distributions made to date.",
+      "score": 0.9618
+    },
+    {
+      "sent": "The carrying amount of the redeemable noncontrolling interest, initially valued at fair value as part of acquisition accounting, is adjusted each reporting period to equal the greater of the (i) redemption value or (ii) carrying value of the noncontrolling interest, adjusted each reporting period for income or loss attributable to the noncontrolling interest and any distributions made to date.",
+      "score": 0.9618
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Federal Reserve or other international central banking systems, foreign currency fluctuations, significant income tax changes and inflationary pressures; \u25cf intergovernmental conflicts or actions, including, but not limited to, armed conflict, trade wars, cyberattacks and acts of terrorism or war, including the continuing military conflict between Russia and Ukraine and escalating tensions in bordering countries within the Eur\n by the results of these tax examinations.",
+      "score": -0.982
+    },
+    {
+      "sent": "These matters may subject the Company to lawsuits, voluntary or forced product recalls, government investigations and criminal liability, including claims for compensatory, punitive or consequential damages, and could result in disruptions to our business and significant legal expense s.",
+      "score": -0.9325
+    },
+    {
+      "sent": "These matters may subject the Company to lawsuits, voluntary or forced product recalls, government investigations and criminal liability, including claims for compensatory, punitive or consequential damages, and could result in disruptions to our business and significant legal expense s.",
+      "score": -0.9325
+    }
+  ],
+  "forward_snippets": [
+    "These forward-looking statements, which address the Company\u2019s expected business and financial performance and financial condition, among other matters, may contain words and terms such as: \u201canticipate,\u201d \u201cbelieve,\u201d \u201ccontinue,\u201d \u201ccould,\u201d \u201cestimate,\u201d \u201cexpect,\u201d \u201cforecast,\u201d \u201cguidance,\u201d \u201cintend,\u201d \u201clook ahead,\u201d \u201cmay,\u201d \u201congoing,\u201d \u201coptimistic,\u201d \u201cplan,\u201d \u201cpotential,\u201d \u201cpredict,\u201d \u201cproject,\u201d \u201cseek,\u201d \u201cshould,\u201d \u201ctarget,\u201d \u201cwill\u201d or \u201cwould\u201d and other words and terms of similar meaning.",
+    "These forward-looking statements, which address the Company\u2019s expected business and financial performance and financial condition, among other matters, may contain words and terms such as: \u201canticipate,\u201d \u201cbelieve,\u201d \u201ccontinue,\u201d \u201ccould,\u201d \u201cestimate,\u201d \u201cexpect,\u201d \u201cforecast,\u201d \u201cguidance,\u201d \u201cintend,\u201d \u201clook ahead,\u201d \u201cmay,\u201d \u201congoing,\u201d \u201coptimistic,\u201d \u201cplan,\u201d \u201cpotential,\u201d \u201cpredict,\u201d \u201cproject,\u201d \u201cseek,\u201d \u201cshould,\u201d \u201ctarget,\u201d \u201cwill\u201d or \u201cwould\u201d and other words and terms of similar meaning.",
+    "These forward-looking statements, which address the Company\u2019s expected business and financial performance and financial condition, among other matters, may contain words and terms such as: \u201canticipate,\u201d \u201cbelieve,\u201d \u201ccontinue,\u201d \u201ccould,\u201d \u201cestimate,\u201d \u201cexpect,\u201d \u201cforecast,\u201d \u201cguidance,\u201d \u201cintend,\u201d \u201clook ahead,\u201d \u201cmay,\u201d \u201congoing,\u201d \u201coptimistic,\u201d \u201cplan,\u201d \u201cpotential,\u201d \u201cpredict,\u201d \u201cproject,\u201d \u201cseek,\u201d \u201cshould,\u201d \u201ctarget,\u201d \u201cwill\u201d or \u201cwould\u201d and other words and terms of similar meaning.",
+    "These forward-looking statements, which address the Company\u2019s expected business and financial performance and financial condition, among other matters, may contain words and terms such as: \u201canticipate,\u201d \u201cbelieve,\u201d \u201ccontinue,\u201d \u201ccould,\u201d \u201cestimate,\u201d \u201cexpect,\u201d \u201cforecast,\u201d \u201cguidance,\u201d \u201cintend,\u201d \u201clook ahead,\u201d \u201cmay,\u201d \u201congoing,\u201d \u201coptimistic,\u201d \u201cplan,\u201d \u201cpotential,\u201d \u201cpredict,\u201d \u201cproject,\u201d \u201cseek,\u201d \u201cshould,\u201d \u201ctarget,\u201d \u201cwill\u201d or \u201cwould\u201d and other words and terms of similar meaning.",
+    "\u200b For further details related to the Company\u2019s reportable business segments, information regarding the Company\u2019s operations and results by reportable segment, as well as the Company\u2019s net sales and long-lived ass\nguidance,\u201d \u201cintend,\u201d \u201clook ahead,\u201d \u201cmay,\u201d \u201congoing,\u201d \u201coptimistic,\u201d \u201cplan,\u201d \u201cpotential,\u201d \u201cpredict,\u201d \u201cproject,\u201d \u201cseek,\u201d \u201cshould,\u201d \u201ctarget,\u201d \u201cwill\u201d or \u201cwould\u201d and other words and terms of similar meaning."
+  ]
+}

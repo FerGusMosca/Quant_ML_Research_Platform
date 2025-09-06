@@ -1,0 +1,45 @@
+{
+  "symbol": "PYPL",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1876,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.223
+  },
+  "top_positive": [
+    {
+      "sent": "Our strategy to drive growth in our business includes the following: \u2022 Growing our core business : through expanding our global capabilities, customer base and scale, increasing our customers\u2019 engagement and use of our products and services by better addressing their everyday needs to access, manage, and move money, creating seamless checkout experiences, and expanding the adoption of our solutions by merchants and consumers; \u2022 Expanding our value proposition for merchants and consumers : by being technology and platform agnostic, partnering with our merchants to grow and expand their business online and in-store, and providing consumers with simple, secure, and flexible ways to manage and move money across different markets, merchants, and platforms, and simplifying their shopping experiences; \u2022 Forming and expanding strategic partnerships : by building new strategic partnerships and deepening existing ones to provide better experiences for our customers, offer greater choice and flexibility, acquire new customers, and reinforce our role in the payments ecosystem; and \u2022 Seeking new areas of growth : organically and through acquisitions and strategic investments in our existing and new international markets and focusing on innovation in both the digital and physical world.",
+      "score": 0.9836
+    },
+    {
+      "sent": "Although we have generally taken measures to protect our intellectual property, there can be no assurance that we will be successful in protecting or enforcing our rights in every jurisdiction, that our contractual arrangements will prevent or deter third parties from infringing or misappropriating our intellectual property, or that third parties will not independently develop equivalent or superior intellectual property rights.",
+      "score": 0.9764
+    },
+    {
+      "sent": "Although we have generally taken measures to protect our intellectual property, there can be no assurance that we will be successful in protecting or enforcing our rights in every jurisdiction, that our contractual arrangements will prevent or deter third parties from infringing or misappropriating our intellectual property, or that third parties will not independently develop equivalent or superior intellectual property rights.",
+      "score": 0.9764
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our systems and operations and those of our service providers and partners have experienced from time to time, and may experience in the future, business interruptions or degradation of service because of distributed denial-of-service and other 17 Table of Contents cyberattacks, insider threats, hardware and software defects or malfunctions, human error, earthquakes, hurricanes, floods, fires, and other natural disasters, public health crises (including pandemics), power losses, disruptions in telecommunications services, fraud, military or political conflicts, terrorist attacks, computer viruses or other malware, or other events.",
+      "score": -0.9867
+    },
+    {
+      "sent": "We expect that users will continue to attempt to use our payments platform for illegal activities or improper uses, including money laundering, terrorist financing, sanctions evasion, illegal online gambling, fraudulent sales of goods or services, illegal telemarketing activities, illegal sales of prescription medications or controlled substances, piracy of software, movies, music, and other copyrighted, trademarked or digital goods, bank fraud, child pornography, human trafficking, prohibited sales of alcoholic beverages or tobacco products, securities fraud, pyramid or Ponzi schemes, or the facilitation of other illegal or improper activity.",
+      "score": -0.9865
+    },
+    {
+      "sent": "We expect that users will continue to attempt to use our payments platform for illegal activities or improper uses, including money laundering, terrorist financing, sanctions evasion, illegal online gambling, fraudulent sales of goods or services, illegal telemarketing activities, illegal sales of prescription medications or controlled substances, piracy of software, movies, music, and other copyrighted, trademarked or digital goods, bank fraud, child pornography, human trafficking, prohibited sales of alcoholic beverages or tobacco products, securities fraud, pyramid or Ponzi schemes, or the facilitation of other illegal or improper activity.",
+      "score": -0.9865
+    }
+  ],
+  "forward_snippets": [
+    "We believe that our core values help stimulate the creativity and engagement of our global workforce to deliver products and services designed to meet the diverse needs of our customers.",
+    "We believe that our core values help stimulate the creativity and engagement of our global workforce to deliver products and services designed to meet the diverse needs of our customers.",
+    "We believe that our core values help stimulate the creativity and engagement of our global workforce to deliver products and services designed to meet the diverse needs of our customers.",
+    "We believe that our core values help stimulate the creativity and engagement of our global workforce to deliver products and services designed to meet the diverse needs of our customers.",
+    "A critical element of our overall growth strategy involves increasing the engagement of our active accounts, which we expect will contribute to growth in payment transactions, total payment volume, and net revenues."
+  ]
+}

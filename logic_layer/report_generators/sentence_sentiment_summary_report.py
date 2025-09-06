@@ -1,0 +1,267 @@
+# logic_layer/report_generators/sentence_sentiment_summary_report.py
+import os
+import re
+import json
+from typing import Dict, List
+
+from bs4 import BeautifulSoup
+from nltk.sentiment import SentimentIntensityAnalyzer
+import nltk
+
+from framework.common.logger.message_type import MessageType
+
+
+class SentimentSummaryReport:
+    """
+    Extract and score management sentiment/guidance from 10-K / 20-F.
+    Lexicon-based sentiment (VADER) + forward/hedging cues.
+    Encapsulates all input/output path handling.
+    """
+
+    # Base folders (do not include year here)
+    input_base: str = "./output/K10/"
+    output_base: str = "./output/K10/sentiment_summary_report"
+
+    # Regex cues
+    FORWARD_CUES = re.compile(
+        r"\b(we (expect|anticipate|believe|plan|intend|forecast|aim|target|will|continue to|remain)"
+        r"|outlook|guidance|pipeline|visibility|headwind(s)?|tailwind(s)?"
+        r"|margin expansion|unit economics|cash flow improvement|order backlog)\b",
+        re.I,
+    )
+    HEDGING_CUES = re.compile(
+        r"\b(may|might|could|potentially|subject to|uncertain|uncertainty|volatile|volatility)\b", re.I
+    )
+
+    # Section anchors
+    SECTION_TITLES = [
+        "item 7. management’s discussion and analysis",
+        "item 7 management’s discussion and analysis",
+        "management’s discussion and analysis",
+        "md&a",
+        "item 7a",
+        "quantitative and qualitative disclosures",
+        "item 5. operating and financial review and prospects",
+        "operating and financial review and prospects",
+        "outlook",
+        "guidance",
+        "trend",
+        "trends",
+    ]
+    STOP_TITLES = [
+        "item 8",
+        "financial statements",
+        "item 1a",
+        "risk factors",
+        "item 1b",
+        "unresolved staff comments",
+        "item 2",
+        "properties",
+        "quantitative and qualitative disclosures",
+        "controls and procedures",
+    ]
+
+    def __init__(self, year: int, logger, filers_whitelist: List[str] = None, universe_key: str = None):
+        """
+        :param year: Filing year to process
+        :param logger: Logger instance
+        :param filers_whitelist: Optional list of tickers to restrict
+        :param universe_key: Optional universe name for sub-folder
+        """
+        self.input_dir = os.path.join(SentimentSummaryReport.input_base, str(year))
+        self.output_dir = (
+            os.path.join(SentimentSummaryReport.output_base, universe_key)
+            if universe_key
+            else SentimentSummaryReport.output_base
+        )
+        os.makedirs(self.output_dir, exist_ok=True)
+
+        self.year = year
+        self.logger = logger
+        self.whitelist = set(t.upper() for t in filers_whitelist) if filers_whitelist else None
+
+        # Load VADER
+        try:
+            self.sia = SentimentIntensityAnalyzer()
+        except Exception:
+            nltk.download("vader_lexicon")
+            self.sia = SentimentIntensityAnalyzer()
+
+    # -------- Public API --------
+    def run(self) -> None:
+        """Process HTML filings and save one *_sentiment.json per symbol."""
+        files = [f for f in os.listdir(self.input_dir) if f.lower().endswith(".html")]
+        if self.whitelist:
+            files = [f for f in files if f.split("_")[0].upper() in self.whitelist]
+
+        self.logger.do_log(f"[SENT] Processing {len(files)} file(s) for year {self.year}", MessageType.INFO)
+
+        for i, file in enumerate(sorted(files), start=1):
+            try:
+                symbol = file.split("_")[0].upper()
+                with open(os.path.join(self.input_dir, file), "r", encoding="utf-8") as fh:
+                    html = fh.read()
+
+                text = self._html_to_text(html)
+                sections = self._extract_relevant_sections(text)
+                result = self._score_sections(sections)
+
+                out = {
+                    "symbol": symbol,
+                    "year": self.year,
+                    "metrics": result["metrics"],
+                    "top_positive": result["top_positive"],
+                    "top_negative": result["top_negative"],
+                    "forward_snippets": result["forward_snippets"],
+                }
+                out_path = os.path.join(self.output_dir, f"{symbol}_{self.year}_sentiment.json")
+                with open(out_path, "w", encoding="utf-8") as f:
+                    json.dump(out, f, indent=2)
+
+                self.logger.do_log(f"[SENT][{i}] ✅ {symbol} saved", MessageType.INFO)
+
+            except Exception as e:
+                self.logger.do_log(f"[SENT][{i}] ❌ {file} failed - {str(e)}", MessageType.ERROR)
+
+    @staticmethod
+    def consolidate(input_dir: str, out_path: str, logger) -> None:
+        """Merge all *_sentiment.json under input_dir into one JSON file."""
+        data = []
+        for f in os.listdir(input_dir):
+            if f.endswith("_sentiment.json"):
+                with open(os.path.join(input_dir, f), "r", encoding="utf-8") as fh:
+                    data.append(json.load(fh))
+        with open(out_path, "w", encoding="utf-8") as out:
+            json.dump(data, out, indent=2)
+        logger.do_log(f"[SENT] Consolidated -> {out_path} ({len(data)} entries)", MessageType.INFO)
+
+    @staticmethod
+    def rank(consolidated_json: str, out_csv: str, logger) -> None:
+        """Produce ranking CSV by optimism composite score."""
+        import pandas as pd
+
+        with open(consolidated_json, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        rows = []
+        for e in data:
+            m = e.get("metrics", {})
+            rows.append(
+                {
+                    "symbol": e.get("symbol"),
+                    "year": e.get("year"),
+                    "sentiment_mdna": m.get("mdna_sentiment", 0.0),
+                    "sentiment_outlook": m.get("outlook_sentiment", 0.0),
+                    "forward_ratio": m.get("forward_ratio", 0.0),
+                    "hedge_ratio": m.get("hedge_ratio", 0.0),
+                    "optimism_score": round(
+                        0.5 * m.get("mdna_sentiment", 0)
+                        + 0.5 * m.get("outlook_sentiment", 0)
+                        + 0.2 * m.get("forward_ratio", 0)
+                        - 0.2 * m.get("hedge_ratio", 0),
+                        6,
+                    ),
+                }
+            )
+
+        df = pd.DataFrame(rows).sort_values(
+            ["optimism_score", "sentiment_outlook", "sentiment_mdna"], ascending=False
+        )
+        df.to_csv(out_csv, index=False)
+        logger.do_log(f"[SENT] Ranking -> {out_csv} ({len(df)} filers)", MessageType.INFO)
+
+    # -------- Internals --------
+    def _html_to_text(self, html: str) -> str:
+        """Convert HTML to plain text."""
+        soup = BeautifulSoup(html, "html.parser")
+        return soup.get_text(" ", strip=True)
+
+    def _extract_relevant_sections(self, text: str) -> Dict[str, str]:
+        """Locate MD&A and Outlook sections using anchors and cues."""
+        low = text.lower()
+        n = len(text)
+
+        starts: List[int] = []
+        for t in self.SECTION_TITLES:
+            p = low.find(t)
+            if p != -1:
+                starts.append(p)
+        for m in self.FORWARD_CUES.finditer(low):
+            starts.append(max(0, m.start() - 800))
+
+        if not starts:
+            return {"mdna": "", "outlook": ""}
+
+        starts = sorted(set(starts))
+        s0 = starts[0]
+        stops = [low.find(t, s0 + 20) for t in self.STOP_TITLES if low.find(t, s0 + 20) != -1]
+        e0 = min(stops) if stops else min(n, s0 + 20000)
+        mdna = text[s0:e0]
+
+        outlook_chunks = []
+        for p in starts[1:]:
+            e = min(n, p + 8000)
+            outlook_chunks.append(text[p:e])
+        outlook_txt = "\n".join(outlook_chunks) if outlook_chunks else mdna[:8000]
+
+        return {"mdna": mdna, "outlook": outlook_txt}
+
+    def _split_sentences(self, txt: str) -> List[str]:
+        """Split text into sentences by '.', '!' or '?'."""
+        return re.split(r"(?<=[.!?])\s+", txt)
+
+    def _score_sections(self, sections: Dict[str, str]) -> Dict[str, object]:
+        """Score MD&A and Outlook blocks and aggregate metrics/snippets."""
+        mdna_sents = self._split_sentences(sections.get("mdna", ""))
+        outl_sents = self._split_sentences(sections.get("outlook", ""))
+
+        def score_block(sents: List[str]) -> Dict[str, object]:
+            pos, neg = [], []
+            forward_hits = hedge_hits = cues_total = 0
+            scored = []
+            for s in sents:
+                if not s or len(s) < 30:
+                    continue
+                v = self.sia.polarity_scores(s)["compound"]
+                scored.append((s, v))
+                if self.FORWARD_CUES.search(s):
+                    cues_total += 1
+                    forward_hits += 1
+                if self.HEDGING_CUES.search(s):
+                    hedge_hits += 1
+                if v >= 0.4:
+                    pos.append((s, v))
+                if v <= -0.4:
+                    neg.append((s, v))
+
+            avg = round(sum(v for _, v in scored) / len(scored), 4) if scored else 0.0
+            forward_ratio = round(forward_hits / max(1, cues_total), 3) if cues_total else 0.0
+            hedge_ratio = round(hedge_hits / max(1, len(scored)), 3) if scored else 0.0
+
+            pos = sorted(pos, key=lambda x: -x[1])[:5]
+            neg = sorted(neg, key=lambda x: x[1])[:5]
+            return {
+                "avg": avg,
+                "forward_ratio": forward_ratio,
+                "hedge_ratio": hedge_ratio,
+                "top_pos": [{"sent": s, "score": round(v, 4)} for s, v in pos],
+                "top_neg": [{"sent": s, "score": round(v, 4)} for s, v in neg],
+                "forward_snips": [s for s, _ in scored if self.FORWARD_CUES.search(s)][:10],
+            }
+
+        mdna = score_block(mdna_sents)
+        outl = score_block(outl_sents)
+
+        metrics = {
+            "mdna_sentiment": mdna["avg"],
+            "outlook_sentiment": outl["avg"],
+            "forward_ratio": max(mdna["forward_ratio"], outl["forward_ratio"]),
+            "hedge_ratio": max(mdna["hedge_ratio"], outl["hedge_ratio"]),
+        }
+
+        return {
+            "metrics": metrics,
+            "top_positive": (mdna["top_pos"][:3] + outl["top_pos"][:3])[:5],
+            "top_negative": (mdna["top_neg"][:3] + outl["top_neg"][:3])[:5],
+            "forward_snippets": (mdna["forward_snips"][:5] + outl["forward_snips"][:5])[:8],
+        }

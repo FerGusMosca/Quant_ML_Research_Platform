@@ -1,0 +1,45 @@
+{
+  "symbol": "MCK",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1964,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.161
+  },
+  "top_positive": [
+    {
+      "sent": "27 Table of Contents McKESSON CORPORATION The following table provides information on our share repurchases for the last three fiscal years: Share Repurchases (1) (In millions, except price per share) Total Number of Shares Purchased (2) Average Price Paid Per Share Approximate Dollar Value of Shares that May Yet Be Purchased Under the Programs Balance, March 31, 2020 $ 1,535 Share repurchase authorization increase in fiscal 2021 2,000 Shares repurchased - Open market (3) 4.7 $ 160.33 (750) Balance, March 31, 2021 2,785 Shares repurchased - May 2021 ASR 5.2 $ 193.22 (1,000) Shares repurchased - Open market 4.6 $ 217.73 (1,007) Share repurchase authorization increase in fiscal 2022 4,000 Shares repurchased - February 2022 ASR (4) 4.8 $ 265.56 (1,500) Balance, March 31, 2022 3,278 Shares repurchased - February 2022 ASR (4) 0.3 $ 295.16 \u2014 Shares repurchased - May 2022 ASR 3.1 $ 321.05 (1,000) Share repurchase authorization increase in fiscal 2023 4,000 Shares repurchased - December 2022 ASR 2.6 $ 369.20 (972) Shares repurchased - Open market (5) 4.7 $ 363.24 (1,693) Balance, March 31, 2023 $ 3,613 (1) This table does not include the value of equity awards surrendered to satisfy tax withholding obligations or forfeitures of equity awards.",
+      "score": 0.9916
+    },
+    {
+      "sent": "27 Table of Contents McKESSON CORPORATION The following table provides information on our share repurchases for the last three fiscal years: Share Repurchases (1) (In millions, except price per share) Total Number of Shares Purchased (2) Average Price Paid Per Share Approximate Dollar Value of Shares that May Yet Be Purchased Under the Programs Balance, March 31, 2020 $ 1,535 Share repurchase authorization increase in fiscal 2021 2,000 Shares repurchased - Open market (3) 4.7 $ 160.33 (750) Balance, March 31, 2021 2,785 Shares repurchased - May 2021 ASR 5.2 $ 193.22 (1,000) Shares repurchased - Open market 4.6 $ 217.73 (1,007) Share repurchase authorization increase in fiscal 2022 4,000 Shares repurchased - February 2022 ASR (4) 4.8 $ 265.56 (1,500) Balance, March 31, 2022 3,278 Shares repurchased - February 2022 ASR (4) 0.3 $ 295.16 \u2014 Shares repurchased - May 2022 ASR 3.1 $ 321.05 (1,000) Share repurchase authorization increase in fiscal 2023 4,000 Shares repurchased - December 2022 ASR 2.6 $ 369.20 (972) Shares repurchased - Open market (5) 4.7 $ 363.24 (1,693) Balance, March 31, 2023 $ 3,613 (1) This table does not include the value of equity awards surrendered to satisfy tax withholding obligations or forfeitures of equity awards.",
+      "score": 0.9916
+    },
+    {
+      "sent": "27 Table of Contents McKESSON CORPORATION The following table provides information on our share repurchases for the last three fiscal years: Share Repurchases (1) (In millions, except price per share) Total Number of Shares Purchased (2) Average Price Paid Per Share Approximate Dollar Value of Shares that May Yet Be Purchased Under the Programs Balance, March 31, 2020 $ 1,535 Share repurchase authorization increase in fiscal 2021 2,000 Shares repurchased - Open market (3) 4.7 $ 160.33 (750) Balance, March 31, 2021 2,785 Shares repurchased - May 2021 ASR 5.2 $ 193.22 (1,000) Shares repurchased - Open market 4.6 $ 217.73 (1,007) Share repurchase authorization increase in fiscal 2022 4,000 Shares repurchased - February 2022 ASR (4) 4.8 $ 265.56 (1,500) Balance, March 31, 2022 3,278 Shares repurchased - February 2022 ASR (4) 0.3 $ 295.16 \u2014 Shares repurchased - May 2022 ASR 3.1 $ 321.05 (1,000) Share repurchase authorization increase in fiscal 2023 4,000 Shares repurchased - December 2022 ASR 2.6 $ 369.20 (972) Shares repurchased - Open market (5) 4.7 $ 363.24 (1,693) Balance, March 31, 2023 $ 3,613 (1) This table does not include the value of equity awards surrendered to satisfy tax withholding obligations or forfeitures of equity awards.",
+      "score": 0.9916
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our supply arrangements might be interrupted or adversely affected by a variety of causes over which we have no control, such as export controls or trade sanctions, labor disputes, unavailability of key manufacturing sites, inability to procure raw materials or finished goods, quality control concerns, ethical sourcing issues, supplier\u2019s financial distress, natural disasters, including as a result of climate change, civil unrest or acts of war, the impact of epidemics or pandemics, and other general supply constraints.",
+      "score": -0.9403
+    },
+    {
+      "sent": "If those information systems or networks suffer errors, interruptions, or become unavailable, or if the timely delivery of medical care or other customer business requirements are impaired by data access, network, or systems problems, we might experience injury to patients or consumers, litigation or regulatory action, disruption of our business operations, loss of customers or revenue, and increased expense.",
+      "score": -0.9246
+    },
+    {
+      "sent": "Regulatory proceedings involve allegations such as false claims, healthcare fraud and abuse, and antitrust violations.",
+      "score": -0.9081
+    }
+  ],
+  "forward_snippets": [
+    "We continue to implement information systems to help achieve greater consistency and accuracy both internally and for our customers.",
+    "We continue to implement information systems to help achieve greater consistency and accuracy both internally and for our customers.",
+    "The solution provides customers the opportunity to improve cash flow and increase efficiency with inventory visibility to help maximize operational performance.",
+    "The solution provides customers the opportunity to improve cash flow and increase efficiency with inventory visibility to help maximize operational performance.",
+    "In executing our strategy to exit Europe, we continue to evaluate suitable exit alternatives for our remaining retail and distribution businesses in Norway."
+  ]
+}

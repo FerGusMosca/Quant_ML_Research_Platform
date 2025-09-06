@@ -1,0 +1,45 @@
+{
+  "symbol": "EQIX",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1463,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.32
+  },
+  "top_positive": [
+    {
+      "sent": "Energy Management: Energy Consumption Year Energy Consumption Data as a % of Floor Area Total Energy Consumed by Portfolio Area with Data Coverage (MWh) (1) Like-for-Like Change in Energy Consumption of Portfolio Area with Data Coverage (MWh) (2) Grid Electricity Consumption as a % of Energy Consumption Energy Consumption from Renewable Sources (MWh) (3) Renewable Energy as a % of Energy Consumption (4) Like-for-Like Change in Energy Consumption from Renewable Sources of Portfolio Area with Data Coverage (MWh) (2) (3) Renewable Energy as a % of Electricity Consumption 2020 (5)(6) 95.8% 6,432,000 6.2% 93.2% 5,695,000 89% 5.3% 91% 2021 (7)(8) 98.0% 7,130,000 23.3% 94.6% 6,689,000 94% 26.1% 95% (1) The scope of energy includes: energy used onsite (natural gas and diesel), energy procured (purchased\ndriven globally through offerings such as health programs, ergonomic support, technology reimbursements, and wellness days.",
+      "score": 0.9799
+    },
+    {
+      "sent": "Energy Management: Energy Consumption Year Energy Consumption Data as a % of Floor Area Total Energy Consumed by Portfolio Area with Data Coverage (MWh) (1) Like-for-Like Change in Energy Consumption of Portfolio Area with Data Coverage (MWh) (2) Grid Electricity Consumption as a % of Energy Consumption Energy Consumption from Renewable Sources (MWh) (3) Renewable Energy as a % of Energy Consumption (4) Like-for-Like Change in Energy Consumption from Renewable Sources of Portfolio Area with Data Coverage (MWh) (2) (3) Renewable Energy as a % of Electricity Consumption 2020 (5)(6) 95.8% 6,432,000 6.2% 93.2% 5,695,000 89% 5.3% 91% 2021 (7)(8) 98.0% 7,130,000 23.3% 94.6% 6,689,000 94% 26.1% 95% (1) The scope of energy includes: energy used onsite (natural gas and diesel), energy procured (purchased electricity, electric power from fuel cells under power purchase agreements, and chilled water).",
+      "score": 0.9735
+    },
+    {
+      "sent": "Energy Management: Energy Consumption Year Energy Consumption Data as a % of Floor Area Total Energy Consumed by Portfolio Area with Data Coverage (MWh) (1) Like-for-Like Change in Energy Consumption of Portfolio Area with Data Coverage (MWh) (2) Grid Electricity Consumption as a % of Energy Consumption Energy Consumption from Renewable Sources (MWh) (3) Renewable Energy as a % of Energy Consumption (4) Like-for-Like Change in Energy Consumption from Renewable Sources of Portfolio Area with Data Coverage (MWh) (2) (3) Renewable Energy as a % of Electricity Consumption 2020 (5)(6) 95.8% 6,432,000 6.2% 93.2% 5,695,000 89% 5.3% 91% 2021 (7)(8) 98.0% 7,130,000 23.3% 94.6% 6,689,000 94% 26.1% 95% (1) The scope of energy includes: energy used onsite (natural gas and diesel), energy procured (purchased electricity, electric power from fuel cells under power purchase agreements, and chilled water).",
+      "score": 0.9735
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These could result from numerous factors, including but not limited to: \u2022 human error; \u2022 equipment failure; \u2022 physical, electronic and cyber security breaches; \u2022 fire, earthquake, hurricane, flood, tornado and other natural disasters; \u2022 extreme temperatures; \u2022 water damage; \u2022 fiber cuts; \u2022 power loss; \u2022 terrorist acts; \u2022 sabotage and vandalism; \u2022 global pandemics such as the COVID-19 pandemic; \u2022 inability of our operations employees to access our IBX data centers for any reason; and \u2022 failure of business partners who provide our resale products.",
+      "score": -0.9911
+    },
+    {
+      "sent": "These could result from numerous factors, including but not limited to: \u2022 human error; \u2022 equipment failure; \u2022 physical, electronic and cyber security breaches; \u2022 fire, earthquake, hurricane, flood, tornado and other natural disasters; \u2022 extreme temperatures; \u2022 water damage; \u2022 fiber cuts; \u2022 power loss; \u2022 terrorist acts; \u2022 sabotage and vandalism; \u2022 global pandemics such as the COVID-19 pandemic; \u2022 inability of our operations employees to access our IBX data centers for any reason; and \u2022 failure of business partners who provide our resale products.",
+      "score": -0.9911
+    },
+    {
+      "sent": "These could result from numerous factors, including but not limited to: \u2022 human error; \u2022 equipment failure; \u2022 physical, electronic and cyber security breaches; \u2022 fire, earthquake, hurricane, flood, tornado and other natural disasters; \u2022 extreme temperatures; \u2022 water damage; \u2022 fiber cuts; \u2022 power loss; \u2022 terrorist acts; \u2022 sabotage and vandalism; \u2022 global pandemics such as the COVID-19 pandemic; \u2022 inability of our operations employees to access our IBX data centers for any reason; and \u2022 failure of business partners who provide our resale products.",
+      "score": -0.9911
+    }
+  ],
+  "forward_snippets": [
+    "\u2022 We continue to invest in our expansion efforts but may not have sufficient customer demand in the future to realize expected returns on these investments.",
+    "Nearly two and a half decades later, we have expanded upon that vision to build Platform Equinix, which we believe is unmatched in scale and reach.",
+    "Nearly two and a half decades later, we have expanded upon that vision to build Platform Equinix, which we believe is unmatched in scale and reach.",
+    "\u2022 IBX SmartView \u00ae is a fully integrated monitoring software which provides customers visibility into the operating data relevant to their specific Equinix footprint as if they were in-house.",
+    "Competition While a large number of enterprises and service providers, such as hyperscale cloud service providers, own their own data centers, we believe the industry is shifting away from single-tenant solutions to outsourcing some or all of their IT housing and interconnection requirements to third party facilities, such as those operated by us."
+  ]
+}

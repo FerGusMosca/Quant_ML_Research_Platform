@@ -1,0 +1,45 @@
+{
+  "symbol": "TMO",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2093,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.109
+  },
+  "top_positive": [
+    {
+      "sent": "For example, Thermo Fisher was named as a Top Female Friendly Company, Best Employer for Women, and Best Employer for Veterans by Forbes in 2022, Best Place to Work for Disability Inclusion, as well as a Best Place to Work for LGBTQ Equality for the seventh consecutive year.",
+      "score": 0.9747
+    },
+    {
+      "sent": "For example, Thermo Fisher was named as a Top Female Friendly Company, Best Employer for Women, and Best Employer for Veterans by Forbes in 2022, Best Place to Work for Disability Inclusion, as well as a Best Place to Work for LGBTQ Equality for the seventh consecutive year.",
+      "score": 0.9747
+    },
+    {
+      "sent": "For example, Thermo Fisher was named as a Top Female Friendly Company, Best Employer for Women, and Best Employer for Veterans by Forbes in 2022, Best Place to Work for Disability Inclusion, as well as a Best Place to Work for LGBTQ Equality for the seventh consecutive year.",
+      "score": 0.9747
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "In addition, if any of our facilities, including our manufacturing or warehouse facilities, or the facilities of our suppliers, third-party service providers, or customers, is affected by natural disasters, such as earthquakes, tsunamis, power shortages or outages, fires, floods or monsoons, public health crises, such as pandemics and epidemics, political crises, such as terrorism, war, political instability or other conflict, or other events outside of our control, such as trade protectionism, strikes or other labor unrest, our results of operations could be adversely affected.",
+      "score": -0.9584
+    },
+    {
+      "sent": "goods; \u2022 the impact of public health epidemics/pandemics on the global economy, such as the COVID-19 pandemic; \u2022 uncertainties regarding the collectability of accounts receivable; \u2022 the imposition of governmental controls; \u2022 diverse data privacy and protection requirements; \u2022 supply interruptions, which could disrupt our ability to produce our products; \u2022 increases in materials, energy, labor or other manufacturing-related costs or higher supply chain logistics costs; \u2022 negative consequences from changes in tax laws; \u2022 difficulty in staffing and managing widespread operations; \u2022 differing labor regulations; \u2022 differing protection of intellectual property; \u2022 unexpected changes in regulatory requirements; and \u2022 geopolitical uncertainty or turmoil, including terrorism and war.",
+      "score": -0.9509
+    },
+    {
+      "sent": "goods; \u2022 the impact of public health epidemics/pandemics on the global economy, such as the COVID-19 pandemic; \u2022 uncertainties regarding the collectability of accounts receivable; \u2022 the imposition of governmental controls; \u2022 diverse data privacy and protection requirements; \u2022 supply interruptions, which could disrupt our ability to produce our products; \u2022 increases in materials, energy, labor or other manufacturing-related costs or higher supply chain logistics costs; \u2022 negative consequences from changes in tax laws; \u2022 difficulty in staffing and managing widespread operations; \u2022 differing labor regulations; \u2022 differing protection of intellectual property; \u2022 unexpected changes in regulatory requirements; and \u2022 geopolitical uncertainty or turmoil, including terrorism and war.",
+      "score": -0.9509
+    }
+  ],
+  "forward_snippets": [
+    "We anticipate that we will continue to make significant expenditures for research and development as we seek to provide a continuing flow of innovative products to maintain and improve our competitive position.",
+    "Such references are not intended to indicate, in any way, that we will not assert, to the fullest extent permitted by law, our rights to our trademarks.",
+    "Based on current information, we believe that these compliance costs are not material.",
+    "We anticipate that we will continue to make significant expenditures for research and development as we seek to provide a continuing flow of innovative products to maintain and improve our competitive position.",
+    "Such references are not intended to indicate, in any way, that we will not assert, to the fullest extent permitted by law, our rights to our trademarks."
+  ]
+}

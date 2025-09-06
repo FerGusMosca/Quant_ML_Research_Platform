@@ -1,0 +1,45 @@
+{
+  "symbol": "TRV",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1439,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.223
+  },
+  "top_positive": [
+    {
+      "sent": "In the United States, these include, among others: Health and Wellness \u2022 Medical, dental, vision and prescription drug coverage; \u2022 Health savings and flexible spending accounts; \u2022 The my Wellness platform, a virtual application containing tools and resources to help employees achieve their physical, mental and financial wellness goals; \u2022 Round-the-clock access to Life Balance, the Company\u2019s employee assistance program, which provides employees access to professional counseling services, life coaching and support resources; \u2022 Included Health, a free service for employees and dependents enrolled in the Company\u2019s medical plan that matches members to top-ranked doctors, provides expert second opinions and assists in navigating the health care system; and \u2022 Caregiving Support from Wellthy, a benefit that helps employees navigate the challenges of caring for children, aging family members or loved ones who are chronically ill.",
+      "score": 0.9892
+    },
+    {
+      "sent": "In the United States, these include, among others: Health and Wellness \u2022 Medical, dental, vision and prescription drug coverage; \u2022 Health savings and flexible spending accounts; \u2022 The my Wellness platform, a virtual application containing tools and resources to help employees achieve their physical, mental and financial wellness goals; \u2022 Round-the-clock access to Life Balance, the Company\u2019s employee assistance program, which provides employees access to professional counseling services, life coaching and support resources; \u2022 Included Health, a free service for employees and dependents enrolled in the Company\u2019s medical plan that matches members to top-ranked doctors, provides expert second opinions and assists in navigating the health care system; and \u2022 Caregiving Support from Wellthy, a benefit that helps employees navigate the challenges of caring for children, aging family members or loved ones who are chronically ill.",
+      "score": 0.9892
+    },
+    {
+      "sent": "The following are not counted towards the combined 22.4 million shares available and will be available for future grants under the 2014 Incentive Plan: (i)\u00a0shares of common stock subject to awards that expire unexercised, that are forfeited, terminated or canceled, that are settled in cash or other forms of property, or otherwise do not result in the issuance of shares of common stock, in whole or in part; (ii)\u00a0shares that are used to pay the exercise price of stock options and shares used to pay withholding taxes on awards generally; and (iii)\u00a0shares purchased by the Company on the open market using cash option exercise proceeds; provided, however, that the increase in the number of shares of common stock available for grant pursuant to such market purchases shall not be greater than the number that could be repurchased at fair market value on the date of exercise of the stock option giving rise to such option proceeds.",
+      "score": 0.9824
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "INSURANCE CLAIM RESERVES Claims and claim adjustment expense reserves were as follows: (at December 31, in millions) 2022 2021 Property-casualty $ 58,643 $ 56,897 Accident and health 6 10 Total $ 58,649 $ 56,907 The following table presents a reconciliation of beginning and ending property casualty reserve balances for claims and claim adjustment expenses: (at and for the year ended December 31, in millions) 2022 2021 2020 Claims and claim adjustment expense reserves at beginning of year $ 56,897 $ 54,510 $ 51,836 Less reinsurance recoverables on unpaid losses 8,209 8,153 8,035 Cumulative effect of adoption of updated accounting guidance for credit losses at January 1, 2020 \u2014 \u2014 53 Net reserves at beginning of year 48,688 46,357 43,854 Estimated claims and claim adjustment expenses for claims arising in the current year 23,308 20,698 19,285 Estimated decrease in claims and claim adjustment expenses for claims arising in prior years ( 537 ) ( 484 ) ( 267 ) Total increases 22,771 20,214 19,018 Claims and claim adjustment expense payments for claims arising in: Current year 9,406 8,401 7,497 Prior years 10,945 9,470 9,092 Total payments 20,351 17,871 16,589 Unrealized foreign exchange loss (gain) ( 255 ) ( 12 ) 74 Net reserves at end of year 50,853 48,688 46,357 Plus reinsurance recoverables on unpaid losses 7,790 8,209 8,153 Claims and claim adjustment expense reserves at end of year $ 58,643 $ 56,897 $ 54,510 Gross claims and claim adjustment expense reserves at December\u00a031, 2022 increased by $ 1.75 billion over December\u00a031, 2021, primarily reflecting the impacts of (i) higher volumes of insured exposures, (ii) loss cost trends for the current accident year and (iii) catastrophe losses in 2022, partially offset by (iv) claim payments made during 2022 and (v) net favorable prior year reserve development.",
+      "score": -0.9741
+    },
+    {
+      "sent": "See \u201cItem 1A\u2014Risk Factors\u2014High levels of catastrophe losses, including as a result of factors such as increased concentrations of insured exposures in catastrophe-prone areas and changing climate conditions, could materially and adversely affect our results of operations, our financial position and/or liquidity, and could adversely impact our ratings, our ability to raise capital and the availability and cost of reinsurance\u201d and \u201c-Outlook-Underwriting Gain/Loss.\u201d  Moreover, the Company's catastrophe models may be less reliable due to the increased unpredictability in frequency and severity of severe weather events, emerging trends in climate conditions and regulatory responses to catastrophe events not being appropriately reflected in the models, in addition to the other factors mentioned above.",
+      "score": -0.9485
+    },
+    {
+      "sent": "See \u201cItem 1A\u2014Risk Factors\u2014High levels of catastrophe losses, including as a result of factors such as increased concentrations of insured exposures in catastrophe-prone areas and changing climate conditions, could materially and adversely affect our results of operations, our financial position and/or liquidity, and could adversely impact our ratings, our ability to raise capital and the availability and cost of reinsurance\u201d and \u201c-Outlook-Underwriting Gain/Loss.\u201d  Moreover, the Company's catastrophe models may be less reliable due to the increased unpredictability in frequency and severity of severe weather events, emerging trends in climate conditions and regulatory responses to catastrophe events not being appropriately reflected in the models, in addition to the other factors mentioned above.",
+      "score": -0.9485
+    }
+  ],
+  "forward_snippets": [
+    "The reinsurance agreement meets the requirements to be accounted for as reinsurance in accordance with the guidance for reinsurance contracts.",
+    "At the time the agreement was entered into with Long Point Re IV, the Company evaluated the applicability of the accounting guidance that addresses variable interest entities or VIEs.",
+    "Under this guidance, an entity that is formed for business purposes is considered a VIE if: (a) the equity investors lack the direct or indirect ability through voting rights or similar rights to make decisions about an entity's activities that have a significant effect on the entity\u2019s operations or (b) the equity investors do not provide sufficient financial resources for the entity to support its activities.",
+    "Personal Insurance Earthquake \nguidance for reinsurance contracts.",
+    "At the time the agreement was entered into with Long Point Re IV, the Company evaluated the applicability of the accounting guidance that addresses variable interest entities or VIEs."
+  ]
+}

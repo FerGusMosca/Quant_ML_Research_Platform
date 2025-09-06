@@ -1,0 +1,64 @@
+{
+  "symbol": "YUM",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.1473,
+    "outlook_sentiment": 0.217,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.4
+  },
+  "top_positive": [
+    {
+      "sent": "The number of shares outstanding of the registrant\u2019s Common Stock as of February 17, 2023, was 280,107,863 shares.",
+      "score": 0.8271
+    },
+    {
+      "sent": "We intend all forward-looking statements to be covered by the safe harbor provisions of the Private Securities Litigation Reform Act of 1995, and we are including this statement for purposes of complying with those safe harbor provisions.",
+      "score": 0.7351
+    },
+    {
+      "sent": "Forward-Looking Statements In this Form 10-K, as well as in other written reports and oral statements, we present \u201cforward-looking statements\u201d within the meaning of Section 27A of the Securities Act of 1933, as amended, and Section 21E of the Securities Exchange Act of 1934, as amended.",
+      "score": 0.6705
+    },
+    {
+      "sent": "Reconciliation of GAAP Operating Profit to Core Operating Profit Year 2022 2021 2020 Consolidated GAAP Operating Profit $ 2,187 $ 2,139 $ 1,503 Special Items Income (Expense) - Operating Profit 38 (9) (267) Foreign Currency Impact on Divisional Operating Profit (a) (118) 54 N/A Core Operating Profit $ 2,267 $ 2,094 $ 1,770 KFC Division GAAP Operating Profit $ 1,198 $ 1,230 $ 922 Foreign Currency Impact on Divisional Operating Profit (a) (98) 45 N/A Core Operating Profit $ 1,296 $ 1,185 $ 922 Taco Bell Division GAAP Operating Profit $ 850 $ 758 $ 696 Foreign Currency Impact on Divisional Operating Profit (a) (2) 1 N/A Core Operating Profit $ 852 $ 757 $ 696 Pizza Hut Division GAAP Operating Profit $ 387 $ 387 $ 335 Foreign Currency Impact on Divisional Operating Profit (a) (18) 8 N/A Core Operating Profit $ 405 $ 379 $ 335 Habit Burger Grill Division GAAP Operating Profit (Loss) $ (24) $ 2 $ (22) Foreign Currency Impact on Divisional Operating Profit (a) \u2014 \u2014 N/A Core Operating Profit (Loss) $ (24) $ 2 $ (22) Reconciliation of Diluted EPS to Diluted EPS excluding Special\nr of ownership of the Pizza Hut Russia business to a local operator who has initiated the process of re-branding locations to a non-YUM concept.",
+      "score": 0.9947
+    },
+    {
+      "sent": "Our Growth agenda is based on four key drivers: \u2022 Unrivaled Culture and Talent: Leverage our culture and people capability to fuel brand performance and franchise success \u2022 Unmatched Operating Capability: Recruit and equip the best restaurant operators in the world to deliver great customer experiences \u2022 Relevant, Easy and Distinctive Brands: Innovate and elevate iconic restaurant brands people trust and champion \u2022 Bold Restaurant Development: Drive market and franchise expansion with strong economics and value Information about Operating Segments As of December\u00a031, 2022, YUM consists of four operating segments: \u2022 The KFC Division which includes our worldwide operations of the KFC concept \u2022 The Taco Bell Division which includes our worldwide operations of the Taco Bell concept \u2022 The Pizza Hut Division which includes our worldwide operations of the Pizza Hut concept \u2022 The Habit Burger Grill Division which includes our worldwide operations of the Habit Burger Grill concept Franchise Agreements The franchise programs of the Company are designed to promote consistency and quality, and the Company is selective in granting franchises.",
+      "score": 0.9921
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Forward-looking statements are neither predictions nor guarantees of future events, circumstances or performance and are inherently subject to known and unknown risks, uncertainties and assumptions that could cause our actual results to differ materially from those indicated by those forward-looking statements.",
+      "score": -0.5423
+    },
+    {
+      "sent": "Factors that could cause actual results and events to differ materially from our expectations, estimates, assumptions, projections and/or forward-looking statements include (i) the risks and uncertainties described in the ",
+      "score": -0.5423
+    },
+    {
+      "sent": "These digital ordering and payment platforms also could be damaged or interrupted by power loss, technological failures, user errors, cyber-attacks, other forms of sabotage, inclement weather or natural disasters and have experienced interruptions and could experience further interruptions, which could limit or delay customers\u2019 ability to order through such platforms or make customers less inclined to return to such platforms.",
+      "score": -0.967
+    },
+    {
+      "sent": "Note 11 \u2013 Short-term Borrowings and Long-term Debt 2022 2021 Short-term Borrowings Current maturities of long-term debt $ 405 $ 75 Less current portion of debt issuance costs and discounts ( 7 ) ( 7 ) Short-term borrowings $ 398 $ 68 Long-term Debt Securitization Notes $ 3,772 $ 3,811 Subsidiary Senior Unsecured Notes 750 750 Revolving Facility 279 \u2014 Term Loan A Facility 736 750 Term Loan B Facility 1,474 1,489 YUM Senior Unsecured Notes 4,875 4,475 Finance lease obligations (See Note 12) 57 64 $ 11,943 $ 11,339 Less long-term portion of debt issuance costs and discounts ( 85 ) ( 86 ) Less current maturities of long-term debt ( 405 ) ( 75 ) Long-term debt $ 11,453 $ 11,178 Securitization Notes T aco Bell Funding, LLC (the \u201cIssuer\u201d), a special purpose limited liability company and a direct, wholly-owned\ne for the 100 % dividends received deduction or considered a distribution of previously taxed income and, therefore, exempt from U.S.",
+      "score": -0.9661
+    },
+    {
+      "sent": "Our business and/or growth prospects could be adversely impacted by various future occurrences (which may be beyond our control), including future health epidemics or pandemics, natural disasters, geopolitical events, acts of war, terrorism, political, financial or social instability, boycotts, social or civil unrest, workplace violence, or other events that lead to avoidance of public places or restrictions on public gatherings such as in our and our Concepts\u2019 restaurants.",
+      "score": -0.9501
+    }
+  ],
+  "forward_snippets": [
+    "We intend all forward-looking statements to be covered by the safe harbor provisions of the Private Securities Litigation Reform Act of 1995, and we are including this statement for purposes of complying with those safe harbor provisions.",
+    "Forward-looking statements can be identified by the fact that they do not relate strictly to historical or current facts and by the use of forward-looking words such as \u201cexpect,\u201d \u201cexpectation,\u201d \u201cbelieve,\u201d \u201canticipate,\u201d \u201cmay,\u201d \u201ccould,\u201d \u201cintend,\u201d \u201cbelief,\u201d \u201cplan,\u201d \u201cestimate,\u201d \u201ctarget,\u201d \u201cpredict,\u201d \u201clikely,\u201d \u201cseek,\u201d \u201cproject,\u201d \u201cmodel,\u201d \u201congoing,\u201d \u201cwill,\u201d \u201cshould,\u201d \u201cforecast,\u201d \u201coutlook\u201d or similar terminology.",
+    "Forward-looking statements are based on our current expectations, estimates, assumptions and/or projections, our perception of historical trends and current conditions, as well as other factors that we believe are appropriate and reasonable under the circumstances.",
+    "We intend all forward-looking statements to be covered by the safe harbor provisions of the Private Securities Litigation Reform Act of 1995, and we are including this statement for purposes of complying with those safe harbor provisions.",
+    "Forward-looking statements can be identified by the fact that they do not relate strictly to historical or current facts and by the use of forward-looking words such as \u201cexpect,\u201d \u201cexpectation,\u201d \u201cbelieve,\u201d \u201canticipate,\u201d \u201cmay,\u201d \u201ccould,\u201d \u201cintend,\u201d \u201cbelief,\u201d \u201cplan,\u201d \u201cestimate,\u201d \u201ctarget,\u201d \u201cpredict,\u201d \u201clikely,\u201d \u201cseek,\u201d \u201cproject,\u201d \u201cmodel,\u201d \u201congoing,\u201d \u201cwill,\u201d \u201cshould,\u201d \u201cforecast,\u201d \u201coutlook\u201d or similar terminology.",
+    "Forward-looking statements are based on our current expectations, estimates, assumptions and/or projections, our perception of historical trends and current conditions, as well as other factors that we believe are appropriate and reasonable under the circumstances.",
+    "Business Strategy Through our Recipe for Good Growth we intend to unlock the growth potential of our Concepts and YUM, drive increased collaboration across our Concepts and geographies and consistently deliver better customer experiences, improved unit economics and higher rates of growth.",
+    "Forward-looking statements can be identified by the fact that they do not relate strictly to historical or current facts and by the use of forward-looking words such as \u201cexpect,\u201d \u201cexpectation,\u201d \u201cbelieve,\u201d \u201canticipate,\u201d \u201cmay,\u201d \u201ccould,\u201d \u201cintend,\u201d \u201cbelief,\u201d \u201cplan,\u201d \u201cestimate,\u201d \u201ctarget,\u201d \u201cpredict,\u201d \u201clikely,\u201d \u201cseek,\u201d \u201cproject,\u201d \u201cmodel,\u201d \u201congoing,\u201d \u201cwill,\u201d \u201cshould,\u201d \u201cforecast,\u201d \u201coutlook\u201d or similar terminology."
+  ]
+}

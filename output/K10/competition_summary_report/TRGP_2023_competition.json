@@ -1,0 +1,966 @@
+{
+  "symbol": "TRGP",
+  "year": 2023,
+  "competition_summary": [
+    {
+      "competitor": "the United States Securities and Exchange Commission",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "SEC",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "FERC Federal Energy Regulatory Commission",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "London Inter-Bank",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NYMEX",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "New York Mercantile Exchange",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "New York Stock Exchange",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Overview Targa Resources Corp.",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NYSE",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NGL",
+      "mentions": 59,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Transportation",
+      "mentions": 15,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Downstream Business",
+      "mentions": 3,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Central",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Eagle Ford Shale",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "SCOOP",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "STACK",
+      "mentions": 3,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Louisiana Gulf Coast",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "The Logistics and",
+      "mentions": 3,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Downstream",
+      "mentions": 3,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Mont Belvieu",
+      "mentions": 15,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Permian Midland Processing Expansions \u2022",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "MMcf",
+      "mentions": 18,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Permian Delaware Processing Expansions \u2022",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Midway",
+      "mentions": 6,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "The Red Hills VI",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Permian Delaware",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "MBbl",
+      "mentions": 16,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Gulf Coast Fractionators",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "GCF",
+      "mentions": 5,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NGL Pipeline Expansion \u2022",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Grand Prix",
+      "mentions": 4,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "The Daytona NGL Pipeline",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Capital Investments",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Acquisitions and Divestitures",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Stonepeak Infrastructure Partners",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "DevCo",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the DevCo JV Repurchase",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Grand Prix Transaction",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Gulf Coast Express Pipeline",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "GCX",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the GCX Sale",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Consolidated Balance Sheets",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Southcross Energy Operating LLC",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Targa GCX Pipeline LLC",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Consolidated Statements of Operations",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Lucid Energy Delaware",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "LLC",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Eddy",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "The Delaware Basin Acquisition",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Blackstone Energy Partners",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Grand Prix Joint Venture",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Daytona NGL Pipeline",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "4 - Acquisitions and Divestitures and Note 7 - Investments",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Consolidated Financial Statements",
+      "mentions": 3,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Series A Preferred Stock",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Series A Preferred",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Credit Agreement with",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Bank of America",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Swing Line Lender",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Partnership",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Standard & Poor\u2019s Financial Services",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "S&P",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Fitch Ratings Inc.",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Moody\u2019s Investors Service, Inc.",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Moody's",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Previous TRGP Revolver and the Partnership Revolver",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Delaware Basin Acquisition",
+      "mentions": 3,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Term Loan Agreement",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Mizuho Bank, Ltd.",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Administrative",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the \u201cTerm Loan Facility",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "The Term Loan Facility",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the \u201cCommercial Paper Program",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Commercial Paper Program",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "The Commercial Paper Program",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Strategies",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "gather and/or purchase",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Galena Park Marine Terminal",
+      "mentions": 3,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Targa",
+      "mentions": 9,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Coastal",
+      "mentions": 6,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Pioneer Natural Resources",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Red Hills VI",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Southcross Energy Partners LLC",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "T2 LaSalle Gathering Company LLC",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "T2 Eagle Ford Gathering Company LLC",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the South Texas Acquisition",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the T2 Joint Ventures",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Evolve Transition Infrastructure LP",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Evolve Transition Infrastructure",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "The Carnero Joint Venture",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Mesquite Energy Inc.\u2019s",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Catarina Ranch",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Comanche Ranch",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Raptor",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Woodford Shale",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Centrahoma Joint Venture",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Velma",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Velma V-60",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Centrahoma",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "MPLX",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Woodford",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Lowry",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Johnsons Corner Terminal",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "MMcf/d",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Targa Badlands",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Hess Midstream Partners LP",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Blackstone Credit",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Blackstone Tactical Opportunities",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "MQD",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Blackstone",
+      "mentions": 3,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Facility Process Type",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NGL Production",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Permian Midland Consolidator",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 150.0 Midkiff",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX",
+      "mentions": 13,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 220.0 Benedum",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Cryo Operated",
+      "mentions": 6,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 220.0 Buffalo",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 220.0 Joyce",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 220.0 Johnson",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 220.0 Hopson",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 275.0",
+      "mentions": 4,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Mertzon Cryo",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 52.0",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Sterling Cryo Operated",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 200.0",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 275.0 Area",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 165.0",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 250.0",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Falcon Cryo Operated",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NM 110.0 Monument",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NM 85.0 Peregrine Cryo Operated",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 275.0 Roadrunner Cryo",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NM 230.0",
+      "mentions": 3,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NM 60.0",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NM 200.0",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NM 230.0 Area Total",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 260.0 Area Total",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX 265.0 Area Total",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "LA 180.0",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "LA 750.0 Lowry Cryo Operated",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Cryo/RA",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "ND 90.0",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "ND 200.0",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "RA",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "WestTX",
+      "mentions": 3,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Silver Oak II",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "MBbl/d.",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Downstream Business",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Transportation Pipelines",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Southern Oklahoma",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Cayenne Pipeline",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "VESCO",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Mont 15 Belvieu",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Mid-Continent",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Williams Companies, Inc.",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Houston Ship Channel",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Facility Location % Owned Capacity",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Cedar Bayou Fractionators",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NGL Storage and Terminaling",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Mont Belvieu",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Galena Park",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Galena Park Marine Terminal",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "VLGC",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Facility % Owned Location Description Throughput",
+      "mentions": 2,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "MMgal",
+      "mentions": 3,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX NGL",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "0.7 Mont Belvieu Terminal & Storage",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "TX Transport",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Hackberry Terminal & Storage",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "LA Storage",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "the Mont Belvieu Terminal",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Chevron Phillips Chemical Company LP",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Citgo Petroleum Corporation",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NGL Distribution and Marketing",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Wholesale Domestic Marketing",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Logistics",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Refinery Services",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Greenville Terminal",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "MS Marine",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Port Everglades Terminal",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "FL Marine",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "KY Propane",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Chattanooga Terminal",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "MS Propane",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Sparta Terminal",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "NJ Propane",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Tyler Terminal",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Winona Terminal",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "AZ Propane",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Operational Risks and Insurance",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    },
+    {
+      "competitor": "Employee Health and Safety Safety",
+      "mentions": 1,
+      "context": "competition and the drive to reduce fossil fuel use and substitute alternative forms of energy for oil and gas; \u2022 our ability to timely obtain and maintain necessary licenses, permits and other approvals; \u2022 our ability to grow through internal growth capital projects or acquisitions and the successful integration and future performance of such assets; \u2022 general economic, market and business conditions; and \u2022 the risks described elsewhere in \u201cItem 1A. Risk Factors\u201d in this Annual Report and our r"
+    }
+  ]
+}

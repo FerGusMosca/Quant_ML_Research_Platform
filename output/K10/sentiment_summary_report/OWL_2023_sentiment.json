@@ -1,0 +1,45 @@
+{
+  "symbol": "OWL",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.3379,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.207
+  },
+  "top_positive": [
+    {
+      "sent": "Securities Authorized for Issuance Under Equity Compensation Plans The following table summarizes information, as of December\u00a031, 2022, relating to the 2021 Omnibus Equity Incentive Plan (\u201c2021 Equity Incentive Plan\u201d) pursuant to which equity securities of the Company are authorized for issuance: Number of Securities to be Exercised of Outstanding Options, Warrants and Rights Weighted-Average Exercise Price of Outstanding Options, Warrants and Rights Number of Securities Remaining Available for Future Issuance Under Compensation Plans (Excluding Securities Reflected in Column (a)) Plan Category (a) (b) (c) Equity compensation plans approved by security holders (1) 57,409,887 \u2014 36,130,910 Equity compensation plans not approved by security holders \u2014 \u2014 \u2014 Total 57,409,887 \u2014 36,130,910 (1) Column (a) reflects 26,650,986 Class A Shares issuable in respect of RSUs outstanding as of December\u00a031, 2022, and 30,758,901 Class A Shares issuable in respect of Incentive Units outstanding as of December\u00a031, 2022.",
+      "score": 0.9943
+    },
+    {
+      "sent": "(Prior to May 19, 2021, Owl Rock) Consolidated and Combined Statements of Financial Condition (Dollars in Thousands, Except Per Share Data) December 31, 2022 December 31, 2021 Assets Cash and cash equivalents $ 68,079 $ 42,567 Due from related parties 357,921 224,576 Investments (includes $ 16,922 and $ 1,311 at fair value and $ 315,304 and $ 8,522 of investments in the Company\u2019s products, respectively) 317,231 12,143 Operating lease assets 224,411 86,033 Strategic Revenue-Share Purchase consideration, net 457,939 495,322 Deferred tax assets 757,234 635,624 Intangible assets, net 2,405,422 2,611,411 Goodwill 4,205,159 4,132,245 Other assets, net 99,679 26,477 Total Assets $ 8,893,075 $ 8,266,398 Liabilities Debt obligations, net $ 1,624,771 $ 1,174,167 Accrued compensation 309,644 155,606 Operating lease liabilities 239,844 88,480 TRA liability (includes $ 120,587 and $ 111,325 at fair value, respectively) 820,960 670,676 Warrant liability, at fair value 8,550 68,798 Earnout liability, at fair value 172,070 143,800 Deferred tax liabilities 41,791 48,962 Accounts payable, accrued expenses and other liabilities 126,559 68,339 Total Liabilities 3,344,189 2,418,828 Commitments and Contingencies (Note 11) Stockholders\u2019 Equity Class A Shares, par value $ 0.0001 per share, 2,500,000,000 authorized, 445,131,351 and 404,919,411 issued and outstanding, respectively 45 40 Class C Shares, par value $ 0.0001 per share, 1,500,000,000 authorized, 629,402,505 and 674,766,200 issued and outstanding, respectively 63 67 Class D Shares, par value $ 0.0001 per share, 350,000,000 authorized, 319,132,127 and 319,132,127 issued and outstanding, respectively 32 32 Additional paid-in capital 2,293,903 2,160,934 Accumulated deficit ( 689,345 ) ( 497,506 ) Total Stockholders\u2019 Equity Attributable to Blue Owl Capital Inc.",
+      "score": 0.9933
+    },
+    {
+      "sent": "Our products generally value their investments at fair value, as determined in good faith by each product\u2019s respective board of directors or valuation committee, as applicable, based on, among other things, the input of third party valuation firms and taking into account the nature and realizable value of any collateral, an investee\u2019s ability to make payments and its earnings, the m\nbe impacted by a slowdown or a decline in fundraising and deployment, as well as declines in the value of investments held in certain of our products.",
+      "score": 0.9799
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Lenders in commercial real estate financing customarily will require such guarantees, which typically provides that the lender can recover losses from the guarantors for certain bad acts, such as fraud or intentional misrepresentation, intentional waste, willful misconduct, criminal acts, misappropriation of funds, voluntary incurrence of prohibited debt and environmental losses sustained by lender.",
+      "score": -0.9694
+    },
+    {
+      "sent": "Lenders in commercial real estate financing customarily will require such guarantees, which typically provides that the lender can recover losses from the guarantors for certain bad acts, such as fraud or intentional misrepresentation, intentional waste, willful misconduct, criminal acts, misappropriation of funds, voluntary incurrence of prohibited debt and environmental losses sustained by lender.",
+      "score": -0.9694
+    },
+    {
+      "sent": "Lenders in commercial real estate financing customarily will require such guarantees, which typically provides that the lender can recover losses from the guarantors for certain bad acts, such as fraud or intentional misrepresentation, intentional waste, willful misconduct, criminal acts, misappropriation of funds, voluntary incurrence of prohibited debt and environmental losses sustained by lender.",
+      "score": -0.9694
+    }
+  ],
+  "forward_snippets": [
+    "You can identify these forward-looking statements by the use of forward-looking words such as \u201coutlook,\u201d \u201cbelieves,\u201d \u201cexpects,\u201d \u201cpotential,\u201d \u201ccontinues,\u201d \u201cmay,\u201d \u201cwill,\u201d \u201cshould,\u201d \u201cseeks,\u201d \u201capproximately,\u201d \u201cpredicts,\u201d \u201cprojects,\u201d \u201cintends,\u201d \u201cplans,\u201d \u201cestimates,\u201d \u201canticipates\u201d or the negative version of those words, other comparable words or other statements that do not relate to historical or factual matters.",
+    "We provide these solutions through our Permanent Capital vehicles and long-dated private funds, that we believe provide our business with a high degree of earnings stability and predictability.",
+    "Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations presents additional i\noutlook,\u201d \u201cbelieves,\u201d \u201cexpects,\u201d \u201cpotential,\u201d \u201ccontinues,\u201d \u201cmay,\u201d \u201cwill,\u201d \u201cshould,\u201d \u201cseeks,\u201d \u201capproximately,\u201d \u201cpredicts,\u201d \u201cprojects,\u201d \u201cintends,\u201d \u201cplans,\u201d \u201cestimates,\u201d \u201canticipates\u201d or the negative version of those words, other comparable words or other statements that do not relate to historical or factual matters.",
+    "We provide these solutions through our Permanent Capital vehicles and long-dated private funds, that we believe provide our business with a high degree of earnings stability and predictability.",
+    "We believe our products, while distinct, are complementary to each other and together enable us to provide a differentiated platform of varied capital solutions."
+  ]
+}

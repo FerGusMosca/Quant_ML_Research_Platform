@@ -1,0 +1,45 @@
+{
+  "symbol": "ZTS",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.192,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.197
+  },
+  "top_positive": [
+    {
+      "sent": "Information related to the funded status of selected plans follows: As of December 31, (MILLIONS OF DOLLARS) 2022 2021 Pension plans with an accumulated benefit obligation in excess of plan assets: Fair value of plan assets $ 7 $ 24 Accumulated benefit obligation 40 72 Pension plans with a projected benefit obligation in excess of plan assets: Fair value of plan assets 58 84 Projected benefit obligation 103 152 Net Periodic Benefit Costs\u2013\u2013Dedicated Plans The following table provides the net periodic benefit cost associated with dedicated pension plans (including those transferred to us): Year Ended December 31, (MILLIONS OF DOLLARS) 2022 2021 2020 Service cost $ 6 $ 8 $ 8 Interest cost 2 2 2 Expected return on plan assets ( 3 ) ( 3 ) ( 3 ) Amortization of net losses 1 1 2 Net periodic benefit cost $ 6 $ 8 $ 9 81 | Table of Contents Actuarial Assumptions\u2013\u2013Dedicated Plans The following table provides the weighted average actuarial assumptions for the dedicated pension plans (including those transferred to us): As of December 31, (PERCENTAGES) 2022 2021 2020 Weighted average assumptions used to determine benefit obligations: Discount rate 3.7 % 1.4 % 1.2 % Rate of compensation increase 3.5 % 3.4 % 3.1 % Cash balance credit interest rate 1.7 % 1.5 % 1.5 % Weighted average assumptions used to determine net benefit cost for the year ended December 31: Discount rate 1.4 % 1.2 % 1.3 % Expected return on plan assets 3.3 % 3.8 % 3.8 % Rate of compensation increase 3.4 % 3.1 % 3.1 % Cash balance credit interest rate 1.5 % 1.5 % 1.5 % The assumptions above are used to develop the benefit obligations at the end of the year and to develop the net periodic benefit cost for the following year.",
+      "score": 0.9965
+    },
+    {
+      "sent": "Information related to the funded status of selected plans follows: As of December 31, (MILLIONS OF DOLLARS) 2022 2021 Pension plans with an accumulated benefit obligation in excess of plan assets: Fair value of plan assets $ 7 $ 24 Accumulated benefit obligation 40 72 Pension plans with a projected benefit obligation in excess of plan assets: Fair value of plan assets 58 84 Projected benefit obligation 103 152 Net Periodic Benefit Costs\u2013\u2013Dedicated Plans The following table provides the net periodic benefit cost associated with dedicated pension plans (including those transferred to us): Year Ended December 31, (MILLIONS OF DOLLARS) 2022 2021 2020 Service cost $ 6 $ 8 $ 8 Interest cost 2 2 2 Expected return on plan assets ( 3 ) ( 3 ) ( 3 ) Amortization of net losses 1 1 2 Net periodic benefit cost $ 6 $ 8 $ 9 81 | Table of Contents Actuarial Assumptions\u2013\u2013Dedicated Plans The following table provides the weighted average actuarial assumptions for the dedicated pension plans (including those transferred to us): As of December 31, (PERCENTAGES) 2022 2021 2020 Weighted average assumptions used to determine benefit obligations: Discount rate 3.7 % 1.4 % 1.2 % Rate of compensation increase 3.5 % 3.4 % 3.1 % Cash balance credit interest rate 1.7 % 1.5 % 1.5 % Weighted average assumptions used to determine net benefit cost for the year ended December 31: Discount rate 1.4 % 1.2 % 1.3 % Expected return on plan assets 3.3 % 3.8 % 3.8 % Rate of compensation increase 3.4 % 3.1 % 3.1 % Cash balance credit interest rate 1.5 % 1.5 % 1.5 % The assumptions above are used to develop the benefit obligations at the end of the year and to develop the net periodic benefit cost for the following year.",
+      "score": 0.9965
+    },
+    {
+      "sent": "Obligations and Funded Status\u2013\u2013Dedicated Plans The following table provides an analysis of the changes in the benefit obligations, plan assets and funded status of our dedicated pension plans (including those transferred to us): As of and for the Year Ended December 31, (MILLIONS OF DOLLARS) 2022 2021 Change in benefit obligation: Projected benefit obligation, beginning $ 159 $ 164 Service cost 6 8 Interest cost 2 2 Changes in actuarial assumptions and other ( 27 ) ( 1 ) Settlements and curtailments ( 3 ) ( 2 ) Benefits paid ( 1 ) ( 2 ) Adjustments for foreign currency translation ( 13 ) ( 9 ) Other\u2013\u2013net ( 1 ) ( 1 ) Benefit obligation, ending 122 159 Change in plan assets: Fair value of plan assets, beginning 92 85 Actual return on plan assets ( 4 ) 11 Company contributions 4 5 Settlements and curtailments ( 3 ) ( 1 ) Benefits paid ( 1 ) ( 2 ) Adjustments for foreign currency translation ( 9 ) ( 5 ) Other\u2013\u2013net ( 1 ) ( 1 ) Fair value of plan assets, ending 78 92 Funded status\u2014Projected benefit obligation in excess of plan assets at end of year (a) $ ( 44 ) $ ( 67 ) (a) Included in Other noncurrent liabilities .",
+      "score": 0.9891
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our failure, or the failure of third parties we rely on, including CMOs, to comply with these regulatory requirements, allegations of such non-compliance or the discovery of previously unknown problems with a product or manufacturer could result in, among other things, inspection observation notices, warning letters or similar regulatory correspondence, fines, a partial or total shutdown of production in one or more of our facilities while an alleged violation is remediated, withdrawals or suspensions of current products from the market, and civil or criminal prosecution, as well as decreased sales as a result of negative publicity and product liability claims.",
+      "score": -0.969
+    },
+    {
+      "sent": "government; \u2022 natural disasters and adverse weather conditions; \u2022 power outages; \u2022 criminal and terrorist activities; \u2022 changes in manufacturing production sites and limits to manufacturing capacity due to regulatory requirements, changes in types of products produced, shipping distributions or physical limitations; and \u2022 the outbreak of any highly contagious diseases at or near our production sites.",
+      "score": -0.9371
+    },
+    {
+      "sent": "For example, in the U.S., attempts have been made to allow damages for emotional distress and pain and suffering in connection with the loss of, or injury to, a companion animal.",
+      "score": -0.936
+    }
+  ],
+  "forward_snippets": [
+    "The following are examples of our first-in-class and/or best-in-class products that we have launched in recent years and products that we believe may represent platforms for future product lifecycle innovation (listed alphabetically): \u2022 Apoquel \u00ae , the first Janus kinase inhibitor for use in veterinary medicine, was approved in 2013 for the control of pruritus associated with allergic dermatitis and the control of atopic dermatitis in dogs at least 12 months of age.",
+    "The following are examples of our first-in-class and/or best-in-class products that we have launched in recent years and products that we believe may represent platforms for future product lifecycle innovation (listed alphabetically): \u2022 Apoquel \u00ae , the first Janus kinase inhibitor for use in veterinary medicine, was approved in 2013 for the control of pruritus associated with allergic dermatitis and the control of atopic dermatitis in dogs at least 12 months of age.",
+    "We intend to continue our efficiency improvement programs in our manufacturing and supply chain organization, including Six Sigma and Lean capabilities, which are processes intended to improve manufacturing efficiency.",
+    "Nonetheless, we continue to face increased competition from generic products and lower cost alternatives.",
+    "As a result, we believe that significant brand loyalty to products often continues after the loss of patent-based and regulatory exclusivity."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "symbol": "EMR",
+  "year": 2024,
+  "competition_summary": [
+    {
+      "competitor": "Company",
+      "mentions": 3,
+      "context": "COMPETITION The Company's businesses operate in highly competitive markets. The Company competes based on product performance, quality, branding, service and/or price across the industries and markets served. A significant element of the Company's competitive strategy is to deliver solutions to our customers by manufacturing high-quality products at the best relevant global cost. Although no single company competes directly with Emerson in all of the Company's product lines, various companies co"
+    },
+    {
+      "competitor": "Emerson",
+      "mentions": 3,
+      "context": "COMPETITION The Company's businesses operate in highly competitive markets. The Company competes based on product performance, quality, branding, service and/or price across the industries and markets served. A significant element of the Company's competitive strategy is to deliver solutions to our customers by manufacturing high-quality products at the best relevant global cost. Although no single company competes directly with Emerson in all of the Company's product lines, various companies co"
+    }
+  ]
+}

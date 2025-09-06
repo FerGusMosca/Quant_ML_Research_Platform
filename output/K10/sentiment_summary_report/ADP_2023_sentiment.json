@@ -1,0 +1,45 @@
+{
+  "symbol": "ADP",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.3502,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.096
+  },
+  "top_positive": [
+    {
+      "sent": "Our Talent Strategy Our talent strategy is simple \u2013 we aim to attract, develop and retain ambitious, passionate and overall top talent by offering a place where our people can grow their careers, challenge themselves, share generously, take risks, and create positive change.",
+      "score": 0.9779
+    },
+    {
+      "sent": "Our Talent Strategy Our talent strategy is simple \u2013 we aim to attract, develop and retain ambitious, passionate and overall top talent by offering a place where our people can grow their careers, challenge themselves, share generously, take risks, and create positive change.",
+      "score": 0.9779
+    },
+    {
+      "sent": "Our Talent Strategy Our talent strategy is simple \u2013 we aim to attract, develop and retain ambitious, passionate and overall top talent by offering a place where our people can grow their careers, challenge themselves, share generously, take risks, and create positive change.",
+      "score": 0.9779
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Any failure, disablement or disruption, even for a limited period of time, could disrupt our businesses and we could suffer financial loss, liability to clients, loss of clients, regulatory intervention or damage to our reputation, any of which could have a material adverse effect on our results of operation or financial condition.",
+      "score": -0.9652
+    },
+    {
+      "sent": "Any failure, disablement or disruption, even for a limited period of time, could disrupt our businesses and we could suffer financial loss, liability to clients, loss of clients, regulatory intervention or damage to our reputation, any of which could have a material adverse effect on our results of operation or financial condition.",
+      "score": -0.9652
+    },
+    {
+      "sent": "Any such failure or disablement, even for a brief period of time, whether due to malevolent acts, errors, defects or any other factor(s), could result in financial loss, a disruption of our businesses, liability to clients, loss of clients, regulatory intervention or damage to our reputation, any of which could have a materially adverse effect on our results of operation or financial condition.",
+      "score": -0.9638
+    }
+  ],
+  "forward_snippets": [
+    "We aim to solve the needs of our clients and their workers today by making HCM transactions effortless and compliant, while anticipating their needs of tomorrow by incorporating valuable data insights and guidance into our solutions to help them better understand their workforce and how they compare to industry peers, and position them to make better decisions.",
+    "We intend to continue to build on our deep expertise and make it readily available to our clients through a variety of channels, ranging from traditional call and chat options to self-guided and AI-powered options.",
+    "We will continue to leverage our decades of experience, our significant data insights, and investments in AI and other enabling 4 technologies to help our clients and their workers navigate the ever-changing world of work.",
+    "We will continue to build on these  strengths to further improve our client experience, and to add to our global footprint to further meet our clients where they choose to do business and address their needs for a distributed and flexible workforce.",
+    "We intend to build more relationships with partners, such as through the ADP Marketplace, in order to provide clients with seamless integrations and customizations that simplify their HR processes and help them meet their needs."
+  ]
+}

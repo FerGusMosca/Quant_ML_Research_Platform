@@ -1,0 +1,45 @@
+{
+  "symbol": "TSCO",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2463,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.185
+  },
+  "top_positive": [
+    {
+      "sent": "Our long-term growth strategy is to: (1) expand and deepen our customer base by providing personal, localized, and memorable customer engagements by leveraging content, social media, and digital shopping experiences, attracting new customers and driving loyalty, (2) evolve customer experiences by digitizing our business processes and furthering our omni-channel capabilities, (3) offer relevant assortments and services across all channels through exclusive and national brands and continue to grow our total addressable market by introducing new products and services through our test and learn strategy, (4) drive operational excellence and productivity through continuous improvement, increasing space utilization, and implementing advanced supply 7 Index chain capabilities to support growth, scale and agility, and (5) expand through selective acquisitions, as such opportunities arise, to add complementary businesses and to enhance penetration into new and existing markets to supplement organic growth.",
+      "score": 0.9855
+    },
+    {
+      "sent": "Our long-term growth strategy is to: (1) expand and deepen our customer base by providing personal, localized, and memorable customer engagements by leveraging content, social media, and digital shopping experiences, attracting new customers and driving loyalty, (2) evolve customer experiences by digitizing our business processes and furthering our omni-channel capabilities, (3) offer relevant assortments and services across all channels through exclusive and national brands and continue to grow our total addressable market by introducing new products and services through our test and learn strategy, (4) drive operational excellence and productivity through continuous improvement, increasing space utilization, and implementing advanced supply 7 Index chain capabilities to support growth, scale and agility, and (5) expand through selective acquisitions, as such opportunities arise, to add complementary businesses and to enhance penetration into new and existing markets to supplement organic growth.",
+      "score": 0.9855
+    },
+    {
+      "sent": "Our long-term growth strategy is to: (1) expand and deepen our customer base by providing personal, localized, and memorable customer engagements by leveraging content, social media, and digital shopping experiences, attracting new customers and driving loyalty, (2) evolve customer experiences by digitizing our business processes and furthering our omni-channel capabilities, (3) offer relevant assortments and services across all channels through exclusive and national brands and continue to grow our total addressable market by introducing new products and services through our test and learn strategy, (4) drive operational excellence and productivity through continuous improvement, increasing space utilization, and implementing advanced supply 7 Index chain capabilities to support growth, scale and agility, and (5) expand through selective acquisitions, as such opportunities arise, to add complementary businesses and to enhance penetration into new and existing markets to supplement organic growth.",
+      "score": 0.9855
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These systems are vulnerable to damages from any number of sources, including, but not limited to, human error, cybersecurity attacks, computer viruses, unauthorized access, fire, flood, power outages, telecommunication failures, facility or equipment damage, natural disasters, terrorism, and war.",
+      "score": -0.9886
+    },
+    {
+      "sent": "These systems are vulnerable to damages from any number of sources, including, but not limited to, human error, cybersecurity attacks, computer viruses, unauthorized access, fire, flood, power outages, telecommunication failures, facility or equipment damage, natural disasters, terrorism, and war.",
+      "score": -0.9886
+    },
+    {
+      "sent": "Any problems caused by these third-parties, or issues associated with their products or workforce, including customer or governmental complaints, breakdowns or other disruptions in communication services provided by a vendor, failure of a vendor to handle current or higher volumes, and cyber attacks or security breaches at a vendor could subject the Company to litigation and adversely affect the Company\u2019s ability to deliver products and services to its customers and have a material adverse effect on our results of operations and financial condition.",
+      "score": -0.9246
+    }
+  ],
+  "forward_snippets": [
+    "All statements, other than statements of historical facts, which address activities, events, or developments that we expect or anticipate will or may occur in the future, including such things as sales and earnings growth, new store growth, estimated results of operations in future periods (including, but not limited to, net sales, comparable store sales, operating margins or operating margin rates, net income, and earnings per diluted share), the declaration and payment of dividends, the timing and amount of share repurchases, future capital expenditures (including their amount and nature) and acquisitions, business strategy, expansion and growth of our business operations, and other such matters are forward-looking statements.",
+    "Business Strategy for Tractor Supply Company We believe our sales and earnings growth is the result of executing our multi-year strategy, which includes the following key components: Market Niche We have identified a specialized market niche: supplying the lifestyle needs of recreational farmers, ranchers, and all those who enjoy living the rural lifestyle.",
+    "By focusing our product assortment on these core customers, we believe we are differentiated from general merchandise, home center, and other specialty retailers.",
+    "In our stores, we believe the ability of our motivated, well-trained team members to provide friendly, responsive and seasoned advice helps our customers find the right products to satisfy their everyday needs, as well as the specialty items needed to complete their rural lifestyle projects.",
+    "All statements, other than statements of historical facts, which address activities, events, or developments that we expect or anticipate will or may occur in the future, including such things as sales and earnings growth, new store growth, estimated results of operations in future periods (including, but not limited to, net sales, comparable store sales, operating margins or operating margin rates, net income, and earnings per diluted share), the declaration and payment of dividends, the timing and amount of share repurchases, future capital expenditures (including their amount and nature) and acquisitions, business strategy, expansion and growth of our business operations, and other such matters are forward-looking statements."
+  ]
+}

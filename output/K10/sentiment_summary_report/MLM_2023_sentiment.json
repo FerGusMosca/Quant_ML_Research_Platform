@@ -1,0 +1,45 @@
+{
+  "symbol": "MLM",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1189,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.403
+  },
+  "top_positive": [
+    {
+      "sent": "Form 10-K \u2666 Page 48 Part II \u2666 Item 7 \u2013 Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations The Company\u2019s consolidated operating results and operating results as a percentage of total revenues are as follows: years ended December 31 (in millions, except for % of total revenues) 2022 % of Total revenues 2021 % of Total revenues Product and services revenues $ 5,730.5 $ 5,084.7 Freight revenues 430.2 329.3 Total Revenues 6,160.7 100.0 5,414.0 100.0 Cost of revenues - products and services 4,304.6 3,735.7 Cost of revenues - freight 432.8 329.9 Total cost of revenues 4,737.4 76.9 4,065.6 75.1 Gross Profit 1,423.3 23.1 1,348.4 24.9 Selling, general and administrative expenses 396.7 6.4 351.0 6.5 Acquisition and integration expenses 9.1 57.9 Other operating income, net (189.2 ) (34.3 ) Earnings from Operations 1,206.7 19.6 973.8 18.0 Interest expense 169.0 142.7 Other nonoperating income, net (53.4 ) (24.4 ) Earnings from continuing operations before income tax expense 1,091.1 855.5 Income tax expense 234.8 153.2 Earnings from continuing operations 856.3 13.9 702.3 13.0 Earnings from discontinued operations, net of income tax expense 10.5 0.5 Consolidated net earnings 866.8 702.8 Less:  Net earnings attributable to noncontrolling interests \u2014 0.3 Net Earnings Attributable to Martin Marietta $ 866.8 14.1 $ 702.5 13.0 Consolidated Adjusted EBITDA Earnings from continuing operations before interest; income taxes; depreciation, depletion and amortization; earnings/loss from nonconsolidated equity affiliates; acquisition and integration expenses; the impact of selling acquired inventory after its markup to fair value as part of acquisition accounting; and the nonrecurring gain on the divestiture of certain ready mixed concrete operations (Adjusted EBITDA) is an indicator used by the Company and investors to evaluate the Company\u2019s operating performance from period to period.",
+      "score": 0.959
+    },
+    {
+      "sent": "If the carrying value of an indefinite-lived intangible asset is greater than its fair value, the intangible asset is considered impaired and is reduced to fair value via a non-cash charge to earnings.",
+      "score": 0.946
+    },
+    {
+      "sent": "If the carrying value of an indefinite-lived intangible asset is greater than its fair value, the intangible asset is considered impaired and is reduced to fair value via a non-cash charge to earnings.",
+      "score": 0.946
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our businesses could be adversely affected by new waves of COVID-19 or its variants, or any other outbreak of disease, epidemic or pandemic, or similar public health threat, or fear of such an event and its related economic and societal response Our businesses could be negatively impacted by the widespread outbreak of an illness or other communicable disease, or any other public health crisis that results in economic and trade disruptions.",
+      "score": -0.9531
+    },
+    {
+      "sent": "Our businesses could be adversely affected by new waves of COVID-19 or its variants, or any other outbreak of disease, epidemic or pandemic, or similar public health threat, or fear of such an event and its related economic and societal response Our businesses could be negatively impacted by the widespread outbreak of an illness or other communicable disease, or any other public health crisis that results in economic and trade disruptions.",
+      "score": -0.9531
+    },
+    {
+      "sent": "Our businesses could be adversely affected by new waves of COVID-19 or its variants, or any other outbreak of disease, epidemic or pandemic, or similar public health threat, or fear of such an event and its related economic and societal response Our businesses could be negatively impacted by the widespread outbreak of an illness or other communicable disease, or any other public health crisis that results in economic and trade disruptions.",
+      "score": -0.9531
+    }
+  ],
+  "forward_snippets": [
+    "In 2020, the Company launched an Inclusion and Engagement Task Force, comprised of employees with diverse race, gender, background and experience, which is focused on hiring, developing and retaining diverse employees to strengthen its talent pipeline and increase employee engagement and retention.",
+    "The words \u201cmay,\u201d \u201cwill,\u201d \u201ccould,\u201d \u201cshould,\u201d \u201canticipate,\u201d \u201cbelieve,\u201d \u201cestimate,\u201d \u201cexpect,\u201d \u201cforecast,\u201d \u201cintend,\u201d \u201coutlook,\u201d \u201cplan,\u201d \u201cproject,\u201d \u201cscheduled,\u201d and similar expressions in connection with future events or future operating or financial performance are intended to identify forward-looking statements.",
+    "The words \u201cmay,\u201d \u201cwill,\u201d \u201ccould,\u201d \u201cshould,\u201d \u201canticipate,\u201d \u201cbelieve,\u201d \u201cestimate,\u201d \u201cexpect,\u201d \u201cforecast,\u201d \u201cintend,\u201d \u201coutlook,\u201d \u201cplan,\u201d \u201cproject,\u201d \u201cscheduled,\u201d and similar expressions in connection with future events or future operating or financial performance are intended to identify forward-looking statements.",
+    "Our operations in the southeastern and Gulf Coast regions of the United States and The Bahamas are at risk for hurricane activity, most notably\noutlook,\u201d \u201cplan,\u201d \u201cproject,\u201d \u201cscheduled,\u201d and similar expressions in connection with future events or future operating or financial performance are intended to identify forward-looking statements.",
+    "While our distribution network allows us to transport our products longer distances than would normally be considered economical, we can give no assurances that we will be successful at this strategy."
+  ]
+}

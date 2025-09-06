@@ -1,0 +1,45 @@
+{
+  "symbol": "HEI-A",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2321,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.088
+  },
+  "top_positive": [
+    {
+      "sent": "(2) Shares are available for future grant in column (c) solely under the HEICO Corporation 2018 Incentive Compensation Plan, under a formula that counts one share against the available share reserve for each one share subject to a stock option or stock appreciation right, and counts 2.5 shares against the available share reserve for each one share subject to a restricted stock award, a restricted stock unit award, a free-standing dividend equivalent award, or any other stock-based award or a performance award denominated in shares.",
+      "score": 0.9874
+    },
+    {
+      "sent": "(2) Shares are available for future grant in column (c) solely under the HEICO Corporation 2018 Incentive Compensation Plan, under a formula that counts one share against the available share reserve for each one share subject to a stock option or stock appreciation right, and counts 2.5 shares against the available share reserve for each one share subject to a restricted stock award, a restricted stock unit award, a free-standing dividend equivalent award, or any other stock-based award or a performance award denominated in shares.",
+      "score": 0.9874
+    },
+    {
+      "sent": "Equity Compensation Plan Information The following table summarizes information about our equity compensation plans as of October 31, 2023 (in thousands, except per share data): Plan Category Number of Securities to be Issued Upon Exercise of Outstanding Options, Warrants and Rights (a) Weighted-Average Exercise Price of Outstanding Options, Warrants and Rights (b) Number of Securities Remaining Available for Future Issuance Under Equity Compensation Plans (Excluding Securities Reflected in Column (a)) (c) (2) Equity compensation plans approved by security holders (1) 4,054 $83.74 2,362 Equity compensation plans not approved by security holders \u2014 \u2014 \u2014 Total 4,054 $83.74 2,362 __________________ (1) Represents aggregated information pertaining to our three equity compensation plans:  the HEICO Corporation 2018 Incentive Compensation Plan, the 2012 Incentive Compensation Plan and the Non-Qualified Stock Option Plan.",
+      "score": 0.9831
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These systems may be susceptible to damage, disruptions or shutdowns due to attacks by computer hackers, computer viruses, employee error or malfeasance, power outages, hardware failures, telecommunication or utility failures, catastrophes or other unforeseen events.",
+      "score": -0.9451
+    },
+    {
+      "sent": "As a result, we are subject to risks of doing business internationally, including the following: \u2022 Fluctuations in currency exchange rates; \u2022 Geopolitical unrest, war, terrorism and other acts of violence; \u2022 Volatility in foreign political, regulatory, and economic environments; \u2022 Ability to obtain required export licenses or approvals; \u2022 Uncertainty of the ability of foreign customers to finance purchases; \u2022 Uncertainties and restrictions concerning the availability of funding credit or guarantees; \u2022 Imposition of taxes, export controls, tariffs, embargoes and other trade restrictions; and \u2022 Compliance with a variety of international laws, as well as U.S.",
+      "score": -0.9042
+    },
+    {
+      "sent": "Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    }
+  ],
+  "forward_snippets": [
+    "Even though we have historically pursued an active acquisition policy, our disciplined acquisition strategy involves limiting acquisition candidates to businesses that we believe will continue to grow, offer strong cash flow and earnings potential, and are available at fair prices.",
+    "We believe that we are the largest independent supplier of non-OEM jet engine and aircraft component replacement parts, and in recent years and inclusive of acquisitions, we are now adding new products to our line at a rate of approximately 350 to 550 Parts Manufacturer Approvals (\u201cPMA\u201d or \u201cPMAs\u201d) per year.",
+    "We believe that an applicant\u2019s ability to successfully complete the PMA process is limited by several factors, including (i) the agency\u2019s confidence level in the applicant; (ii) the complexity of the part; (iii) the volume of PMAs being filed; and (iv) the resources available to the FAA.",
+    "Finally, we believe that the PMA process creates a significant barrier to entry in this market niche through both its technical demands and its limits on the rate at which competitors can bring products to market.",
+    "We believe that we are the largest independent supplier of non-OEM jet engine and aircraft component replacement parts, and in recent years and inclusive of acquisitions, we are now adding new products to our line at a rate of approximately 350 to 550 Parts Manufacturer Approvals (\u201cPMA\u201d or \u201cPMAs\u201d) per year."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "symbol": "EPDU",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1267,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.128
+  },
+  "top_positive": [
+    {
+      "sent": "F-51 Table of Contents The following table presents phantom unit award activity for the years indicated: Number of Units Weighted- Average Grant Date Fair Value per Unit (1) Phantom unit awards at December 31, 2019 12,974,684 $ 27.21 Granted (2) 7,405,245 $ 25.71 Vested ( 4,532,269 ) $ 26.35 Forfeited ( 178,218 ) $ 26.73 Phantom unit awards at December 31, 2020 15,669,442 $ 26.76 Granted (3) 7,720,645 $ 21.30 Vested ( 5,648,281 ) $ 26.98 Forfeited ( 570,887 ) $ 24.44 Phantom unit awards at December 31, 2021 17,170,919 $ 24.31 Granted (4) 7,968,880 $ 24.11 Vested ( 6,616,741 ) $ 25.08 Forfeited ( 540,113 ) $ 23.92 Phantom unit awards at December 31, 2022 17,982,945 $ 23.94 (1) Determined by dividing the aggregate grant date fair value of awards (before an allowance for forfeitures) by the number of awards issued.",
+      "score": 0.9916
+    },
+    {
+      "sent": "F-51 Table of Contents The following table presents phantom unit award activity for the years indicated: Number of Units Weighted- Average Grant Date Fair Value per Unit (1) Phantom unit awards at December 31, 2019 12,974,684 $ 27.21 Granted (2) 7,405,245 $ 25.71 Vested ( 4,532,269 ) $ 26.35 Forfeited ( 178,218 ) $ 26.73 Phantom unit awards at December 31, 2020 15,669,442 $ 26.76 Granted (3) 7,720,645 $ 21.30 Vested ( 5,648,281 ) $ 26.98 Forfeited ( 570,887 ) $ 24.44 Phantom unit awards at December 31, 2021 17,170,919 $ 24.31 Granted (4) 7,968,880 $ 24.11 Vested ( 6,616,741 ) $ 25.08 Forfeited ( 540,113 ) $ 23.92 Phantom unit awards at December 31, 2022 17,982,945 $ 23.94 (1) Determined by dividing the aggregate grant date fair value of awards (before an allowance for forfeitures) by the number of awards issued.",
+      "score": 0.9916
+    },
+    {
+      "sent": "Partnership Agreement Standards for Audit and Conflicts Committee Review Under our partnership agreement, whenever a potential conflict of interest exists or arises between Enterprise GP or any of its affiliates, on the one hand, and us, any of our subsidiaries or any partner, on the other hand, any resolution or course of action by Enterprise GP or its affiliates in respect of such conflict of interest is permitted and deemed approved by our limited partners, and will not constitute a breach of our partnership agreement or any agreement contemplated by such agreement, or of any duty stated or implied by law or equity, if the resolution or course of action is or, by operation of the partnership agreement is deemed to be, fair and reasonable to us; provided that, any conflict of interest and any resolution of such conflict of interest will be conclusively deemed fair and reasonable to us if such conflict of interest or resolution is (i)\u00a0approved by a majority of the members of the Audit and Conflicts Committee (i.e., a \u201cSpecial Approval\u201d is granted) or (ii)\u00a0on terms objectively demonstrable to be no less favorable to us than those generally being provided to or available from third parties.",
+      "score": 0.9903
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "71 Table of Contents Crude Oil Pipelines & Services The following table presents segment gross operating margin and selected volumetric data for the Crude Oil Pipelines & Services segment for the years indicated (dollars in millions, volumes as noted): For the Year Ended December 31, 2022 2021 Segment gross operating margin: Midland-to-ECHO System and related business activities $ 413 $ 407 Other crude oil pipelines, terminals and related marketing results 1,242 1,273 Total $ 1,655 $ 1,680 Selected volumetric data: Crude oil pipeline transportation volumes (MBPD) 2,222 2,088 Crude oil marine terminal volumes (MBPD) 788 645 Gross operating margin from our Crude Oil Pipelines & Services segment for the year ended December 31, 2022 decreased $25 million when compared to the year ended December 31, 2021.",
+      "score": -0.9855
+    },
+    {
+      "sent": "71 Table of Contents Crude Oil Pipelines & Services The following table presents segment gross operating margin and selected volumetric data for the Crude Oil Pipelines & Services segment for the years indicated (dollars in millions, volumes as noted): For the Year Ended December 31, 2022 2021 Segment gross operating margin: Midland-to-ECHO System and related business activities $ 413 $ 407 Other crude oil pipelines, terminals and related marketing results 1,242 1,273 Total $ 1,655 $ 1,680 Selected volumetric data: Crude oil pipeline transportation volumes (MBPD) 2,222 2,088 Crude oil marine terminal volumes (MBPD) 788 645 Gross operating margin from our Crude Oil Pipelines & Services segment for the year ended December 31, 2022 decreased $25 million when compared to the year ended December 31, 2021.",
+      "score": -0.9855
+    },
+    {
+      "sent": "71 Table of Contents Crude Oil Pipelines & Services The following table presents segment gross operating margin and selected volumetric data for the Crude Oil Pipelines & Services segment for the years indicated (dollars in millions, volumes as noted): For the Year Ended December 31, 2022 2021 Segment gross operating margin: Midland-to-ECHO System and related business activities $ 413 $ 407 Other crude oil pipelines, terminals and related marketing results 1,242 1,273 Total $ 1,655 $ 1,680 Selected volumetric data: Crude oil pipeline transportation volumes (MBPD) 2,222 2,088 Crude oil marine terminal volumes (MBPD) 788 645 Gross operating margin from our Crude Oil Pipelines & Services segment for the year ended December 31, 2022 decreased $25 million when compared to the year ended December 31, 2021.",
+      "score": -0.9855
+    }
+  ],
+  "forward_snippets": [
+    "See \u201c Current Outlook \u201d included under Part II, Item 7 of this annual report for management\u2019s views on key midstream energy supply and demand fundamentals in 2023.",
+    "Once the natural gas is processed and the NGLs and impurities are removed, the residue natural gas meets downstream natural gas pipeline and commercial quality specifications.",
+    "See \u201c Current Outlook \u201d included under Part II, Item 7 of this annual report for management\u2019s views on key midstream energy supply and demand fundamentals in 2023.",
+    "Once the natural gas is processed and the NGLs and impurities are removed, the residue natural gas meets downstream natural gas pipeline and commercial quality specifications.",
+    "The following table presents selected information regarding our natural gas processing facilities at February 1, 2023: Total Gas Net Gas Processing Production Processing Capacity Region Ownership Capacity of Plant Facility Name Location(s) Served Interest (MMcf/d) (1) (MMcf/d) South Texas (2) Texas Eagle Ford, Strawn 100.0% 2,200 2,200 Meeker Colorado Piceance 100.0% 1,800 1,800 Delaware Basin (3) Texas, New Mexico Delaware 100.0% 1,595 1,595 Midland Basin (4) Texas Midland\nOutlook \u201d included under Part II, Item 7 of this annual report for management\u2019s views on key midstream energy supply and demand fundamentals in 2023."
+  ]
+}

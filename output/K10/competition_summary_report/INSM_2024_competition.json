@@ -1,0 +1,36 @@
+{
+  "symbol": "INSM",
+  "year": 2024,
+  "competition_summary": [
+    {
+      "competitor": "PAH",
+      "mentions": 1,
+      "context": "Competition The biotechnology and pharmaceutical industries are highly competitive. We face potential competitors from many different areas including commercial pharmaceutical, biotechnology and device companies, academic institutions and scientists, other smaller or earlier stage companies and non-profit organizations developing anti-infective drugs and drugs for respiratory, inflammatory, immunology, oncology, and rare diseases. Many of these companies have greater human and financial resource"
+    },
+    {
+      "competitor": "NTM",
+      "mentions": 2,
+      "context": "Competition The biotechnology and pharmaceutical industries are highly competitive. We face potential competitors from many different areas including commercial pharmaceutical, biotechnology and device companies, academic institutions and scientists, other smaller or earlier stage companies and non-profit organizations developing anti-infective drugs and drugs for respiratory, inflammatory, immunology, oncology, and rare diseases. Many of these companies have greater human and financial resource"
+    },
+    {
+      "competitor": "ERS",
+      "mentions": 1,
+      "context": "Competition The biotechnology and pharmaceutical industries are highly competitive. We face potential competitors from many different areas including commercial pharmaceutical, biotechnology and device companies, academic institutions and scientists, other smaller or earlier stage companies and non-profit organizations developing anti-infective drugs and drugs for respiratory, inflammatory, immunology, oncology, and rare diseases. Many of these companies have greater human and financial resource"
+    },
+    {
+      "competitor": "ESCMID",
+      "mentions": 1,
+      "context": "Competition The biotechnology and pharmaceutical industries are highly competitive. We face potential competitors from many different areas including commercial pharmaceutical, biotechnology and device companies, academic institutions and scientists, other smaller or earlier stage companies and non-profit organizations developing anti-infective drugs and drugs for respiratory, inflammatory, immunology, oncology, and rare diseases. Many of these companies have greater human and financial resource"
+    },
+    {
+      "competitor": "IDSA",
+      "mentions": 1,
+      "context": "Competition The biotechnology and pharmaceutical industries are highly competitive. We face potential competitors from many different areas including commercial pharmaceutical, biotechnology and device companies, academic institutions and scientists, other smaller or earlier stage companies and non-profit organizations developing anti-infective drugs and drugs for respiratory, inflammatory, immunology, oncology, and rare diseases. Many of these companies have greater human and financial resource"
+    },
+    {
+      "competitor": "MAC",
+      "mentions": 1,
+      "context": "Competition The biotechnology and pharmaceutical industries are highly competitive. We face potential competitors from many different areas including commercial pharmaceutical, biotechnology and device companies, academic institutions and scientists, other smaller or earlier stage companies and non-profit organizations developing anti-infective drugs and drugs for respiratory, inflammatory, immunology, oncology, and rare diseases. Many of these companies have greater human and financial resource"
+    }
+  ]
+}

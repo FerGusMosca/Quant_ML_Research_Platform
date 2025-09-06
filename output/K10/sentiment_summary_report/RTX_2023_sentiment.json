@@ -1,0 +1,45 @@
+{
+  "symbol": "RTX",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1498,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.224
+  },
+  "top_positive": [
+    {
+      "sent": "Raytheon Company (previously New York Stock Exchange (NYSE): RTN) shares ceased trading prior to the market open on April 3, 2020, and each share of Raytheon common stock was converted in the merger into the right to receive 2.3348 shares of UTC common stock, previously traded on the NYSE under the ticker symbol \u201cUTX.\u201d Upon closing of the Raytheon merger, UTC\u2019s name was changed to \u201cRaytheon Technologies Corporation,\u201d and its shares of common stock began trading as of April 3, 2020 on the NYSE under the ticker symbol \u201cRTX.\u201d Total consideration is calculated as follows: (dollars in millions) Amount Fair value of RTC common stock issued for Raytheon Company outstanding common stock and vested equity awards $ 33,067 Fair value attributable to pre-merger service for replacement equity awards 99 Total merger consideration $ 33,166 78 Table of Contents The fair value of RTC common stock issued for Raytheon Company outstanding common stock and vested equity awards is calculated as follows: (dollars and shares in millions, except per share amounts and exchange ratio) Amount Number of Raytheon Company common shares outstanding as of April 3, 2020 277.3 Number of Raytheon Company stock awards vested as a result of the Raytheon merger (1) 0.4 Total outstanding shares of Raytheon Company common stock and equity awards entitled to merger consideration 277.7 Exchange ratio (2) 2.3348 Shares of RTC common stock issued for Raytheon Company outstanding common stock and vested equity awards 648.4 Price per share of RTC common stock (3) $ 51.00 Fair value of RTC common stock issued for Raytheon Company outstanding common stock and vested equity awards $ 33,067 (1)\u00a0\u00a0\u00a0\u00a0Represents Raytheon Company stock awards that vested as a result of the Raytheon merger, which is considered a \u201cchange in control\u201d for purposes of the Raytheon 2010 Stock Plan.",
+      "score": 0.9981
+    },
+    {
+      "sent": "(dollars in millions) 2020 Amortization of acquired Raytheon Company intangible assets, net (1) $ ( 270 ) Amortization of fixed asset fair value adjustment (2) ( 9 ) Utilization of contractual customer obligation (3) 8 Deferred revenue fair value adjustment (4) ( 4 ) Adjustment to non-service pension (income) expense (5) 239 RTC/Raytheon fees for advisory, legal, accounting services (6) 134 Adjustment to interest expense related to the Raytheon merger, net (7) 9 Elimination of deferred commission amortization (8) 5 $ 112 (1)\u00a0\u00a0\u00a0\u00a0Reflects the additional amortization of the acquired Raytheon Company\u2019s intangible assets recognized at fair value in purchase accounting and eliminates the historical Raytheon Company intangible asset amortization expense.",
+      "score": 0.9776
+    },
+    {
+      "sent": "107 Table of Contents NOTE\u00a019: ACCUMULATED OTHER COMPREHENSIVE LOSS A summary of the changes in each component of Accumulated other comprehensive (loss) income, net of tax is provided below: (dollars in millions) Foreign Currency Translation Defined\u00a0Benefit Pension and Postretirement Plans Unrealized Hedging (Losses) Gains Accumulated Other Comprehensive (Loss) Income Balance at December\u00a031, 2019 $ ( 3,211 ) $ ( 6,772 ) $ ( 166 ) $ ( 10,149 ) Other comprehensive income (loss) before reclassifications, net 609 1,842 181 2,632 Amounts reclassified, pre-tax \u2014 373 82 455 Tax benefit (expense) 25 ( 510 ) ( 62 ) ( 547 ) Separation of Carrier and Otis, net of tax 3,287 584 4 3,875 Balance at December\u00a031, 2020 $ 710 $ ( 4,483 ) $ 39 $ ( 3,734 ) Other comprehensive income before reclassifications, net ( 647 ) 3,210 ( 226 ) 2,337 Amounts reclassified, pre-tax \u2014 258 ( 28 ) 230 Tax benefit (expense) ( 14 ) ( 813 ) 79 ( 748 ) Balance at December 31, 2021 $ 49 $ ( 1,828 ) $ ( 136 ) $ ( 1,915 ) Other comprehensive income (loss) before reclassifications, net ( 1,050 ) 1,225 ( 246 ) ( 71 ) Amounts reclassified, pre-tax 2 129 103 234 Tax benefit (expense) ( 6 ) ( 308 ) 48 ( 266 ) Balance at December 31, 2022 $ ( 1,005 ) $ ( 782 ) $ ( 231 ) $ ( 2,018 ) Amounts reclassified that relate to our defined benefit pension and postretirement plans include the amortization of prior service costs and actuarial net gains or losses recognized during each period presented.",
+      "score": 0.9732
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The impact of a catastrophic product or system failure or similar event affecting our or our customers\u2019 or suppliers\u2019 products or services could be significant, and could result in injuries 18 Table of Contents or death, property damage, loss of strategic capabilities, loss of intellectual property, loss of reputation, and other significant negative effects.",
+      "score": -0.9538
+    },
+    {
+      "sent": "The impact of a catastrophic product or system failure or similar event affecting our or our customers\u2019 or suppliers\u2019 products or services could be significant, and could result in injuries 18 Table of Contents or death, property damage, loss of strategic capabilities, loss of intellectual property, loss of reputation, and other significant negative effects.",
+      "score": -0.9538
+    },
+    {
+      "sent": "Furthermore, the existing supply chain and labor market issues could be compounded by other events, such as an economic downturn; supplier capacity constraints for other reasons; supplier quality issues (for example, defects or fraudulent parts); supplier closing, bankruptcy or financial difficulties; price increases for various reasons; worsening shortages of raw materials or commodities; and energy supply constraints, including as a result of war or other geopolitical actions, natural disaster (including the effects of climate change), health pandemic or other business continuity events, or transport and distribution issues, an\nom areas which are at risk of sanctions or other trade restrictive actions, such as China.",
+      "score": -0.9531
+    }
+  ],
+  "forward_snippets": [
+    "RMD\u2019s Land Warfare and Air Defense business provides capabilities ranging from precision weapons including Excalibur, Javelin, Stinger and TOW to integrated air and missile defense, including the proven Patriot air and missile defense system, the Guidance Enhanced Missile (GEM-T), the National Advanced Surface-to-Air Missile System (NASAMS) and the GhostEye family of radars, including the Lower Tier Air and Missile Defense Sensor (LTAMDS).",
+    "Of the total RPO as of December\u00a031, 2022, we expect approximately 25% will be recognized as sales over the next 12 months.",
+    "However, we expect the current labor market conditions and highly competitive employee hiring and retention environment to continue.",
+    "As of December\u00a031, 2022, our global employee population consisted of a tota\nGuidance Enhanced Missile (GEM-T), the National Advanced Surface-to-Air Missile System (NASAMS) and the GhostEye family of radars, including the Lower Tier Air and Missile Defense Sensor (LTAMDS).",
+    "Of the total RPO as of December\u00a031, 2022, we expect approximately 25% will be recognized as sales over the next 12 months."
+  ]
+}

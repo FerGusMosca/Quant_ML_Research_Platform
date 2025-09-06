@@ -1,0 +1,45 @@
+{
+  "symbol": "GM",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1826,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.133
+  },
+  "top_positive": [
+    {
+      "sent": "These actions may include opportunistic payments to reduce our long-term obligations, as well as the possibility of acquisitions, dispositions and investments with joint venture partners, as well as strategic alliances that we believe would generate significant advantages and substantia\ndjusted decreased primarily due to: (1) decreased leased vehicle income net of leased vehicle expenses of $0.7 billion primarily due to decreased depreciation on leased vehicles resulting from increased residual value estimates and a decrease in the size of the portfolio, decreased lease vehicle income primarily due to a decrease in the average balance of the leased vehicles portfolio, and decreased lease termination gains; (2) increased provision for loan losses of $0.4 billion primarily due to increased loan origination volume in 2022, and the reduction in reserve levels recorded in 2021 as a result of actual credit performance that was better than forecast and favorable expectations for future charge-offs and recoveries, as well as an economic forecast weighted more heavily to a weaker outlook as of December 31, 2022; and (3) increased interest expense of $0.3 billion primarily due to an increased effective rate of interest on our debt; partially offset by (4) increased finance charge income of $0.4 billion primarily due to growth in the retail finance receivables portfolio, partially offset by a decrease in the effective yield due to increased lending to borrowers with prime credit; and an increase in the effective yield on commercial finance receivables as a result of higher benchmark rates, as well as an increase in the size of the portfolio.",
+      "score": 0.9934
+    },
+    {
+      "sent": "Financial Statements and Supplementary Data CONSOLIDATED INCOME STATEMENTS (In millions, except per share amounts) Years Ended December 31, 2022 2021 2020 Net sales and revenue Automotive $ 143,975 $ 113,590 $ 108,673 GM Financial 12,760 13,414 13,812 Total net sales and revenue (Note 3) 156,735 127,004 122,485 Costs and expenses Automotive and other cost of sales 126,892 100,544 97,539 GM Financial interest, operating and other expenses 8,862 8,582 11,274 Automotive and other selling, general and administrative expense 10,667 8,554 7,038 Total costs and expenses 146,421 117,680 115,851 Operating income (loss) 10,315 9,324 6,634 Automotive interest expense 987 950 1,098 Interest income and other non-operating income, net (Note 19) 1,432 3,041 1,885 Equity income (loss) (Note 8) 837 1,301 674 Income (loss) before income taxes 11,597 12,716 8,095 Income tax expense (benefit) (Note 17) 1,888 2,771 1,774 Net income (loss) 9,708 9,945 6,321 Net loss (income) attributable to noncontrolling interests 226 74 106 Net income (loss) attributable to stockholders $ 9,934 $ 10,019 $ 6,427 Net income (loss) attributable to common stockholders $ 8,915 $ 9,837 $ 6,247 Earnings per share (Note 21) Basic earnings per common share $ 6.17 $ 6.78 $ 4.36 Weighted-average common shares outstanding \u2013 basic 1,445 1,451 1,433 Diluted earnings per common share $ 6.13 $ 6.70 $ 4.33 Weighted-average common shares outstanding \u2013 diluted 1,454 1,468 1,442 CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (In millions) Years Ended December 31, 2022 2021 2020 Net income (loss) $ 9,708 $ 9,945 $ 6,321 Other comprehensive income (loss), net of tax (Note 20) Foreign currency translation adjustments and other ( 340 ) 80 ( 523 ) Defined benefit plans 1,677 4,126 ( 1,795 ) Other comprehensive income (loss), net of tax 1,337 4,206 ( 2,318 ) Comprehensive income (loss) 11,045 14,151 4,003 Comprehensive loss (income) attributable to noncontrolling interests 257 87 92 Comprehensive income attributable to stockholders (loss) $ 11,303 $ 14,238 $ 4,095 Reference should be made to the notes to consolidated financial statements.",
+      "score": 0.9913
+    },
+    {
+      "sent": "Financial Statements and Supplementary Data CONSOLIDATED INCOME STATEMENTS (In millions, except per share amounts) Years Ended December 31, 2022 2021 2020 Net sales and revenue Automotive $ 143,975 $ 113,590 $ 108,673 GM Financial 12,760 13,414 13,812 Total net sales and revenue (Note 3) 156,735 127,004 122,485 Costs and expenses Automotive and other cost of sales 126,892 100,544 97,539 GM Financial interest, operating and other expenses 8,862 8,582 11,274 Automotive and other selling, general and administrative expense 10,667 8,554 7,038 Total costs and expenses 146,421 117,680 115,851 Operating income (loss) 10,315 9,324 6,634 Automotive interest expense 987 950 1,098 Interest income and other non-operating income, net (Note 19) 1,432 3,041 1,885 Equity income (loss) (Note 8) 837 1,301 674 Income (loss) before income taxes 11,597 12,716 8,095 Income tax expense (benefit) (Note 17) 1,888 2,771 1,774 Net income (loss) 9,708 9,945 6,321 Net loss (income) attributable to noncontrolling interests 226 74 106 Net income (loss) attributable to stockholders $ 9,934 $ 10,019 $ 6,427 Net income (loss) attributable to common stockholders $ 8,915 $ 9,837 $ 6,247 Earnings per share (Note 21) Basic earnings per common share $ 6.17 $ 6.78 $ 4.36 Weighted-average common shares outstanding \u2013 basic 1,445 1,451 1,433 Diluted earnings per common share $ 6.13 $ 6.70 $ 4.33 Weighted-average common shares outstanding \u2013 diluted 1,454 1,468 1,442 CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (In millions) Years Ended December 31, 2022 2021 2020 Net income (loss) $ 9,708 $ 9,945 $ 6,321 Other comprehensive income (loss), net of tax (Note 20) Foreign currency translation adjustments and other ( 340 ) 80 ( 523 ) Defined benefit plans 1,677 4,126 ( 1,795 ) Other comprehensive income (loss), net of tax 1,337 4,206 ( 2,318 ) Comprehensive income (loss) 11,045 14,151 4,003 Comprehensive loss (income) attributable to noncontrolling interests 257 87 92 Comprehensive income attributable to stockholders (loss) $ 11,303 $ 14,238 $ 4,095 Reference should be made to the notes to consolidated financial statements.",
+      "score": 0.9913
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "A negative outcome in one or more of these legal proceedings could result in the imposition of damages, including punitive damages, fines, reputational harm, civil lawsuits and criminal penalties, interruptions of business, modification of business practices, equitable remedies and other sanctions against us or our personnel as well as legal and other costs, all of which may be significant.",
+      "score": -0.9557
+    },
+    {
+      "sent": "A negative outcome in one or more of these legal proceedings could result in the imposition of damages, including punitive damages, fines, reputational harm, civil lawsuits and criminal penalties, interruptions of business, modification of business practices, equitable remedies and other sanctions against us or our personnel as well as legal and other costs, all of which may be significant.",
+      "score": -0.9557
+    },
+    {
+      "sent": "A negative outcome in one or more of these legal proceedings could result in the imposition of damages, including punitive damages, fines, reputational harm, civil lawsuits and criminal penalties, interruptions of business, modification of business practices, equitable remedies and other sanctions against us or our personnel as well as legal and other costs, all of which may be significant.",
+      "score": -0.9557
+    }
+  ],
+  "forward_snippets": [
+    "Additionally, we are incubating several new businesses with a start-up mindset that we believe will enable us to attract new customers and generate revenues in new areas.",
+    "Electric Vehicles We plan to rapidly scale our capacity to build one million EVs in North America and more than two million EVs globally by the end of 2025.",
+    "We plan to leverage the versatility and flexibility of Ultium to expand our EV portfolio over a wide variety of segments and price points including the Chevrolet Equinox EV, the Chevrolet Blazer EV, the Chevrolet Silverado EV and the GMC Sierra EV, which are expected to be launched over 2023 and 2024.",
+    "In January 2022, we announced that we will convert our assembly plant in Orion Township, Michigan for fully dedicated EV production, including the Chevrolet Silverado EV and the GMC Sierra EV.",
+    "Additionally, we are incubating several new businesses with a start-up mindset that we believe will enable us to attract new customers and generate revenues in new areas."
+  ]
+}

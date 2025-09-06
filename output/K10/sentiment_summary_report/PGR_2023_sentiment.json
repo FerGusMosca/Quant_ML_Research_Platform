@@ -1,0 +1,64 @@
+{
+  "symbol": "PGR",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.1655,
+    "outlook_sentiment": 0.1881,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.252
+  },
+  "top_positive": [
+    {
+      "sent": "Snapshot ProView allows customers to earn upfront discounts and provides value-added services, like fleet management and personalized tips to encourage safe driving.",
+      "score": 0.8271
+    },
+    {
+      "sent": "Smart Haul offers owner operators and small fleets the ability to receive discounts on their insurance by sharing their electronic logging device generated data with us.",
+      "score": 0.7783
+    },
+    {
+      "sent": "During 2022, in addition to increasing rates to address profitability, our TNC business experienced a strong increase in rideshare miles traveled compared to 2021.",
+      "score": 0.7717
+    },
+    {
+      "sent": "SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT AND RELATED STOCKHOLDER MATTERS Information regarding ownership of Common Shares by certain beneficial owners and management is incorporated by reference from the section of the Proxy Statement entitled \u201cSecurity Ownership of Certain Beneficial Owners and Management.\u201d The following information is set forth with respect to our equity compensation plans at December\u00a031, 2022.",
+      "score": 0.9772
+    },
+    {
+      "sent": "SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT AND RELATED STOCKHOLDER MATTERS Information regarding ownership of Common Shares by certain beneficial owners and management is incorporated by reference from the section of the Proxy Statement entitled \u201cSecurity Ownership of Certain Beneficial Owners and Management.\u201d The following information is set forth with respect to our equity compensation plans at December\u00a031, 2022.",
+      "score": 0.9772
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The Commercial Lines business operates in the following commercial auto business market targets: \u2022 Business auto \u2013 autos, vans, pick-up trucks used by small businesses (e.g., retailing, manufacturing, farming) and for-hire livery (e.g., non-fleet (i.e., five or fewer vehicles) taxis, black-car services, and airport taxis), \u2022 For-hire transportation \u2013 tractors, trailers, and straight trucks primarily used by regional general freight and expeditor-type businesses and long-haul operators, \u2022 Contractor \u2013 vans, pick-up trucks, and dump trucks used by light contractors (e.g., painters, plumbers, landscapers), and heavy construction, \u2022 For-hire specialty \u2013 dump trucks, log trucks, and garbage trucks used by dirt, sand and gravel, logging, garbage/debris removal, and coal-type businesses, and \u2022 Tow \u2013 tow trucks and wreckers used in towing services and gas/service station businesses.",
+      "score": -0.7351
+    },
+    {
+      "sent": "Commercial Lines The Commercial Lines segment writes auto-related liability and physical damage insurance, business-related general liability and property insurance predominately for small businesses, and workers\u2019 compensation insurance primarily for the transportation industry.",
+      "score": -0.7003
+    },
+    {
+      "sent": "As a property insurer, we have exposure to losses from catastrophes, including hurricanes, and other severe weather events.",
+      "score": -0.6486
+    },
+    {
+      "sent": "Depending on the duration and severity of the epidemic, pandemic or other widespread health risk and the nature and extent of governmental responses to it, our businesses, our operations, and our financial results could be negatively impacted in a number of ways, including the following: \u2022 Demand for our insurance products and our premium revenue could be reduced, perhaps significantly, if customers drive less or are unable to afford insurance, insurance shopping patterns are disrupted, vehicle and home purchases are curtailed, small businesses suspend or discontinue operations, the usage of transportation network company businesses declines, insurance agencies are unable or unwilling to write business, or our competitors offer products or benefits more appealing to customers or agents or more responsive to their needs, among other factors \u2022 Our ability to price our products accurately for new and renewal policies could be negatively impacted, as could our ability to respond effectively to the initiatives of our competitors \u2022 Claims trends could become more volatile, inflation rates could diverge significantly from our expectations, vehicle and home repair industries could be significantly disrupted, and the availability of medical resources could be limited, potentially resulting in higher claims severity and increased costs to resolve claims \u2022 Our ability to resolve claims accurately and efficiently and establish accurate loss reserves could be impaired if we are unable to staff our Claims group appropriately \u2022 Legislative or regulatory actions, or court decisions, could impact our business in unexpected ways, including, without limitation, by: requiring us to change the way we price, segment, underwrite, or select risks to insure; altering our - 25 - rights and obligations under our issued policies; or imposing payment obligations on us and other insurers in our industry for losses and costs that otherwise would be uninsured \u2022 The cumulative costs required by such governmental actions, or of actions taken voluntarily by us to accommodate the needs of customers, including providing credits or other payments to policyholders and billing leniency efforts, such as providing relief from policy cancellations or non-renewals, and related debt write offs, could be substantial \u2022 Unexpected changes in consumer behavior or market conditions, as well as deteriorating economic conditions, may reduce the effectiveness of our advertising \u2022 Illnesses suffered by key employees could prevent or delay the performance of critical business and financial reporting functions; widespread illnesses suffered by our employees may render us unable to perform normal business functions and operate our business on a day-to-day basis \u2022 The continued functioning of our data centers and important information technology and communication systems, as well as the continued performance of and our accessibility to the systems of our various vendors, could be imperiled by widespread illnesses, illnesses suffered by key technology personnel, or work limitations or other governmental mandates \u2022 Our business continuity plans may prove inadequate to address the business challenges that we confront as these issues develop \u2022 Workplace policies adopted in response to an epidemic, pandemic or other widespread health risk may be viewed adversely by our employees or the public, resulting in damage to our reputation and brand \u2022 Our vendors and counterparties to various contracts, including key vendors for our insurance, claims and technology operations, reinsurance arrangements and financial counterparties, may not be able to perform or pay the obligations required of them on a timely basis, or at all, due to key employee illnesses, widespread illnesses, adverse financial impact or other challenges that they face arising directly or indirectly from an epidemic, pandemic or other widespread health risk The potential effects of an epidemic, pandemic or other widespread health risk also could exacerbate the impacts of many of the other risk factors, including: litigation claims being brought against the company; the valuation, volatility, and liquidity of our debt and equity investment portfolios; the condition of domestic and global economies and financial markets; our ability to access capital markets at favorable rates, if needed; and our ability to access our cash accounts at banks and other financial institutions to operate our business.",
+      "score": -0.9751
+    },
+    {
+      "sent": "Our risk categories include: \u2022 Insurance Risks - risks associated with assuming, or indemnifying for, the losses or liabilities incurred by policyholders \u2022 Operating Risks - risks stemming from external or internal events or circumstances that directly or indirectly may affect our insurance operations \u2022 Market Risks - risks that may cause changes in the value of assets held in our investment portfolios \u2022 Liquidity Risk - risk that our financial condition will be adversely affected by the inability to meet our short-term cash, collateral, or other financial obligations, and \u2022 Credit and Other Financial Risks - risks that the other party to a transaction will fail to perform according to the terms of a contract, or that we will be unable to satisfy our obligations when due or obtain capital when necessary.",
+      "score": -0.9571
+    }
+  ],
+  "forward_snippets": [
+    "Progressive's four strategic pillars of people and culture, broad needs of our customers, leading brand, and competitive prices serve as the foundation of how we will achieve our vision.",
+    "We believe that our market share grew in 2022, however, industry data regarding our ranking for 2022 is not yet available.",
+    "Although industry figures are not available, based on our analysis of this market, we believe that we are the market share leader for both the motorcycle and boat products and that we are one of the largest providers of RV insurance.",
+    "We continue to provide customers in both the Agency and Direct channels the opportunity to improve their auto insurance rates based on their personal driving behavior through Snapshot \u00ae , our usage-based insurance (UBI) program.",
+    "Our Commercial Lines business ranked number one in the commercial auto insurance market for 2021 based on premiums written, and we believe that we continued to hold that position for 2022.",
+    "We believe that our market share grew in 2022, however, industry data regarding our ranking for 2022 is not yet available.",
+    "Although industry figures are not available, based on our analysis of this market, we believe that we are the market share leader for both the motorcycle and boat products and that we are one of the largest providers of RV insurance.",
+    "We continue to provide customers in both the Agency and Direct channels the opportunity to improve their auto insurance rates based on their personal driving behavior through Snapshot \u00ae , our usage-based insurance (UBI) program."
+  ]
+}

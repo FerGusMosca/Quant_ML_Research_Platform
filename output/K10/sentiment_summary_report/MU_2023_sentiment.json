@@ -1,0 +1,45 @@
+{
+  "symbol": "MU",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1882,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.236
+  },
+  "top_positive": [
+    {
+      "sent": "Restricted Stock Awards activity for 2023 is summarized as follows: Number of Shares Weighted-Average Grant Date Fair Value Per Share Outstanding as of September 1, 2022 23 $ 60.93 Granted 17 55.99 Restrictions lapsed ( 9 ) 58.23 Canceled ( 2 ) 58.00 Outstanding as of August 31, 2023 29 59.11 79 | 2023 10-K Table of Contents For the year ended 2023 2022 2021 Restricted stock award shares granted 17 13 11 Weighted-average grant-date fair value per share $ 55.99 $ 70.81 $ 53.58 Aggregate vesting-date fair value of shares vested $ 514 $ 498 $ 385 Employee Stock Purchase Plan (\u201cESPP\u201d) Our ESPP is offered to substantially all employees and permitted eligible employees to purchase shares of our common stock through payroll deductions of up to 10 % of their eligible compensation, subject to certain limitations prior to August 2021.",
+      "score": 0.9906
+    },
+    {
+      "sent": "(Parent Company) 2028 Notes 5.375% Senior Notes due April 2028 MTU Micron Technology Utah, LLC 2029 A Notes 5.327% Senior Notes due February 2029 Multi-Tranche Term Loan Agreement Borrowing agreement executed November 3, 2022 that governs the 2025 Term Loan A, 2026 Term Loan A, and 2027 Term Loan A 2029 B Notes 6.750% Senior Notes due November 2029 NRV Net realizable value 2030 Notes 4.663% Senior Notes due February 2030 OEM Original equipment manufacturer 2032 Green Bonds 2.703% Senior Notes due April 2032 PCIe High-speed motherboard connection for peripheral devices such as storage drives 2032D Notes 3.125% Convertible Senior Notes due May 2032, settled August 2021 Qimonda Qimonda AG 2033 A Notes 5.875% Senior Notes due February 2033 QLC Quad-level cell (four bits per cell) 2033 B Notes 5.875% Senior Notes due September 2033 Revolving Credit Facility $2.5 billion Revolving Credit Facility due May 2026 2041 Notes 3.366% Senior Notes due November 2041 SATA Hardware interface for connecting to storage devices such as hard disk drives and SSDs 2051 Notes 3.477% Senior Notes due November 2051 SLC Single-level cell (one bit per cell) AI Artificial intelligence SOFR Secured Overnight Financing Rate CAC China\u2019s Cyberspace Administration SSD Solid state drive DDR Double data rate DRAM TI Texas Instruments Incorporated EBITDA Earnings before interest, taxes, depreciation, and amortization TLC Triple-level cell (three bits per cell) eMCP Embedded multichip packaged solutions with embedded multimedia card storage and LPDDR UFS Universal flash storage EUV Extreme ultraviolet lithography uMCP UFS-based MCP Extinguished 2024 Term Loan A Senior Term Loan A due October 2024, repaid May 2021 Micron, Crucial, any associated logos, and all other Micron trademarks are the property of Micron.",
+      "score": 0.9766
+    },
+    {
+      "sent": "(Parent Company) 2028 Notes 5.375% Senior Notes due April 2028 MTU Micron Technology Utah, LLC 2029 A Notes 5.327% Senior Notes due February 2029 Multi-Tranche Term Loan Agreement Borrowing agreement executed November 3, 2022 that governs the 2025 Term Loan A, 2026 Term Loan A, and 2027 Term Loan A 2029 B Notes 6.750% Senior Notes due November 2029 NRV Net realizable value 2030 Notes 4.663% Senior Notes due February 2030 OEM Original equipment manufacturer 2032 Green Bonds 2.703% Senior Notes due April 2032 PCIe High-speed motherboard connection for peripheral devices such as storage drives 2032D Notes 3.125% Convertible Senior Notes due May 2032, settled August 2021 Qimonda Qimonda AG 2033 A Notes 5.875% Senior Notes due February 2033 QLC Quad-level cell (four bits per cell) 2033 B Notes 5.875% Senior Notes due September 2033 Revolving Credit Facility $2.5 billion Revolving Credit Facility due May 2026 2041 Notes 3.366% Senior Notes due November 2041 SATA Hardware interface for connecting to storage devices such as hard disk drives and SSDs 2051 Notes 3.477% Senior Notes due November 2051 SLC Single-level cell (one bit per cell) AI Artificial intelligence SOFR Secured Overnight Financing Rate CAC China\u2019s Cyberspace Administration SSD Solid state drive DDR Double data rate DRAM TI Texas Instruments Incorporated EBITDA Earnings before interest, taxes, depreciation, and amortization TLC Triple-level cell (three bits per cell) eMCP Embedded multichip packaged solutions with embedded multimedia card storage and LPDDR UFS Universal flash storage EUV Extreme ultraviolet lithography uMCP UFS-based MCP Extinguished 2024 Term Loan A Senior Term Loan A due October 2024, repaid May 2021 Micron, Crucial, any associated logos, and all other Micron trademarks are the property of Micron.",
+      "score": 0.9766
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The complaint seeks an order requiring MXA and MSS to destroy inventory of the accused products and equipment for manufacturing the accused products in China; to stop manufacturing, using, selling, and offering for sale the accused products in China; and to pay damages of 98 million Chinese yuan plus court fees incurred.",
+      "score": -0.9413
+    },
+    {
+      "sent": "The complaint seeks an order requiring MXA and MSS to destroy inventory of the accused products and equipment for manufacturing the accused products in China; to stop manufacturing, using, selling, and offering for sale the accused products in China; and to pay damages of 90 million Chinese yuan plus court fees incurred.",
+      "score": -0.9413
+    },
+    {
+      "sent": "We could be adversely affected in several ways, including the following: \u2022 we may be required or agree to compensate customers for costs incurred or damages caused by defective or incompatible products and to replace products; \u2022 we could incur a decrease in revenue or adjustment to pricing commensurate with the reimbursement of such costs or alleged damages; and \u2022 we may encounter adverse publicity, which could cause a decrease in sales of our products or harm our reputation or relationships with existing or potential customers.",
+      "score": -0.9274
+    }
+  ],
+  "forward_snippets": [
+    "We continue to introduce new generations of products that offer improved performance characteristics,\nQuantitative and Qualitative Disclosures About Market Risk 54 Item 8.",
+    "We continue to introduce new generations of products that offer improved performance characteristics, includin\ntrend information and other forward-looking statements that involve a number of risks and uncertainties.",
+    "We continue to introduce new generations of products that offer improved performance characteristics, including higher data transfer rates, advanced packaging solutions, lower power consumption, improved read/write reliability, and increased memory density.",
+    "We continue to introduce new generations of products that offer improved performance characteristics, including higher data transfer rates, advanced packaging solutions, lower power consumption, improved read/write reliability, and increased memory density.",
+    "We expect that our new server DDR5 memory will be a key enabler of CPU core count growth and the bandwidth that DDR5 delivers will be central to unlocking overall server system performance gains for data-intensive workloads like AI and high-performance computing."
+  ]
+}

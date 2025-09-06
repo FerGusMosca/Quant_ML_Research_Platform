@@ -1,0 +1,45 @@
+{
+  "symbol": "SOFI",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1951,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.281
+  },
+  "top_positive": [
+    {
+      "sent": "T ABLE OF CONTENTS Goals Programs Fairness and Clarity in Processes: Actively attempt to mitigate unconscious and conscious bias in the hiring process and in annual performance calibrations by working to ensure the processes are objective and inclusive \u2022 Competency-based interviewing: Anchor our interview process to identify success competencies associated with each role versus informal interviews \u2022 Employee trainings: Effective Leadership in a Remote World (for people managers), Unconscious Bias (required for all hiring teams), Managing within the Law (required for people managers) and Bystander Intervention and Escalation (required for all employees) \u2022 Partnerships with national military organizations and universities to increase the diversity of our applicant pool Accelerated Increase in Representation: We work to foster attraction, engagement and retention of underrepresented employees by increasing external brand awareness and supporting SoFi employee career development \u2022 Increase accessibility and visibility of jobs by partnering with organizations like Diversity Jobs; partner with organizations like Latinas in Tech to attract and engage top talent \u2022 Build relationships with diverse university students and military professionals through partnerships and direct recruitment \u2022 Cultivate career development for employees through SoFi GROW mentorship and Explorer programs, as well as Meet our SoFi-ety initiative, where we can \u201cmeet\u201d our employees who are part of these programs, and see how they are learning, growing and helping to transform the Fintech industry We believe that a combination of these approaches will help increase the representation, engagement and retention of women, Black, Latinx, and all employees who identify as being from a URG across all levels, roles and business groups.",
+      "score": 0.9939
+    },
+    {
+      "sent": "T ABLE OF CONTENTS Goals Programs Fairness and Clarity in Processes: Actively attempt to mitigate unconscious and conscious bias in the hiring process and in annual performance calibrations by working to ensure the processes are objective and inclusive \u2022 Competency-based interviewing: Anchor our interview process to identify success competencies associated with each role versus informal interviews \u2022 Employee trainings: Effective Leadership in a Remote World (for people managers), Unconscious Bias (required for all hiring teams), Managing within the Law (required for people managers) and Bystander Intervention and Escalation (required for all employees) \u2022 Partnerships with national military organizations and universities to increase the diversity of our applicant pool Accelerated Increase in Representation: We work to foster attraction, engagement and retention of underrepresented employees by increasing external brand awareness and supporting SoFi employee career development \u2022 Increase accessibility and visibility of jobs by partnering with organizations like Diversity Jobs; partner with organizations like Latinas in Tech to attract and engage top talent \u2022 Build relationships with diverse university students and military professionals through partnerships and direct recruitment \u2022 Cultivate career development for employees through SoFi GROW mentorship and Explorer programs, as well as Meet our SoFi-ety initiative, where we can \u201cmeet\u201d our employees who are part of these programs, and see how they are learning, growing and helping to transform the Fintech industry We believe that a combination of these approaches will help increase the representation, engagement and retention of women, Black, Latinx, and all employees who identify as being from a URG across all levels, roles and business groups.",
+      "score": 0.9939
+    },
+    {
+      "sent": "To enable continuous learning, we have deployed an online training platform, which offers thousands of courses and training sessions, ranging from skill d\nesses are objective and inclusive \u2022 Competency-based interviewing: Anchor our interview process to identify success competencies associated with each role versus informal interviews \u2022 Employee trainings: Effective Leadership in a Remote World (for people managers), Unconscious Bias (required for all hiring teams), Managing within the Law (required for people managers) and Bystander Intervention and Escalation (required for all employees) \u2022 Partnerships with national military organizations and universities to increase the diversity of our applicant pool Accelerated Increase in Representation: We work to foster attraction, engagement and retention of underrepresented employees by increasing external brand awareness and supporting SoFi employee career development \u2022 Increase accessibility and visibility of jobs by partnering with organizations like Diversity Jobs; partner with organizations like Latinas in Tech to attract and engage top talent \u2022 Build relationships with diverse university students and military professionals through partnerships and direct recruitment \u2022 Cultivate career development for employees through SoFi GROW mentorship and Explorer programs, as well as Meet our SoFi-ety initiative, where we can \u201cmeet\u201d our employees who are part of these programs, and see how they are learning, growing and helping to transform the Fintech industry We believe that a combination of these approaches will help increase the representation, engagement and retention of women, Black, Latinx, and all employees who identify as being from a URG across all levels, roles and business groups.",
+      "score": 0.9921
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "In addition, negative publicity can adversely affect our reputation and damage our brand, and may arise from many sources, including actual or alleged misconduct, errors or improper business practices by employees, employee claims of discrimination or harassment, product failures, existing or future litigation or regulatory actions, inadequate protection of consumer information, data breaches, matters related to or affecting our financial reporting or compliance with SEC and Nasdaq listing requirements and media coverage, whether accurate or not.",
+      "score": -0.9638
+    },
+    {
+      "sent": "Our computer systems and third-party providers may encounter service interruptions at any time due to system or software failure, natural disasters, severe weather conditions, health pandemics, terrorist attacks, cyberattacks or other events.",
+      "score": -0.9538
+    },
+    {
+      "sent": "Our computer systems and third-party providers may encounter service interruptions at any time due to system or software failure, natural disasters, severe weather conditions, health pandemics, terrorist attacks, cyberattacks or other events.",
+      "score": -0.9538
+    }
+  ],
+  "forward_snippets": [
+    "To complement these products and services, we believe in establishing partnerships with other enterprises to leverage our existing capabilities to reach a broader market and in building vertically-integrated technology platforms designed to manage and deliver our suite of products and technology solutions to our members and clients in a low-cost and differentiated manner.",
+    "To complement these products and services, we believe in establishing partnerships with other enterprises to leverage our existing capabilities to reach a broader market and in building vertically-integrated technology platforms designed to manage and deliver our suite of products and technology solutions to our members and clients in a low-cost and differentiated manner.",
+    "We believe operating a national bank allows us to provide members and prospective members broader and more competitive options across their financial services needs and lowers our cost of asset-backed financing relative to alternative sources of funding (by utilizing deposits held at SoFi Bank to fund our loans).",
+    "We believe that the combination of the Technisys core banking platform with our existing technology platform offerings provides an end-to-end vertically integrated technology stack, which we expect will meet the expanding needs of our existing clients and attract new clients.",
+    "We believe that these expansions will deepen our participation in the entire technology ecosystem powering digital financial services, allowing us to not only reduce costs to operate our member-centric business, but also deliver increasing value to our enterprise customers."
+  ]
+}

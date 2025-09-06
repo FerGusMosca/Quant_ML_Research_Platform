@@ -1,0 +1,45 @@
+{
+  "symbol": "GD",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2468,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.036
+  },
+  "top_positive": [
+    {
+      "sent": "The following is a reconciliation of the benefit obligations and plan/trust assets, and the resulting funded status, of our defined benefit plans: Pension Benefits Other Post-retirement Benefits Year Ended December 31 2022 2021 2022 2021 Change in Benefit Obligation Benefit obligation at beginning of year $ ( 17,779 ) $ ( 19,692 ) $ ( 840 ) $ ( 1,062 ) Service cost ( 102 ) ( 119 ) ( 6 ) ( 10 ) Interest cost ( 400 ) ( 360 ) ( 19 ) ( 19 ) Amendments 6 3 ( 1 ) 4 Actuarial gain 3,884 955 185 187 Settlement/curtailment/other 36 553 9 \u2014 Benefits paid 850 881 55 60 Benefit obligation at end of year $ ( 13,505 ) $ ( 17,779 ) $ ( 617 ) $ ( 840 ) Change in Plan/Trust Assets Fair value of assets at beginning of year $ 15,167 $ 14,751 $ 777 $ 705 Actual return on plan assets ( 2,916 ) 1,692 ( 115 ) 114 Employer contributions 50 135 \u2014 \u2014 Settlement/curtailment/other ( 37 ) ( 551 ) \u2014 \u2014 Benefits paid ( 829 ) ( 860 ) ( 36 ) ( 42 ) Fair value of assets at end of year $ 11,435 $ 15,167 $ 626 $ 777 Funded status at end of year $ ( 2,070 ) $ ( 2,612 ) $ 9 $ ( 63 ) The overall decrease in our pension benefit obligation for the year ended December\u00a031, 2022, was due primarily to actuarial gains created by the change in the weighted-average discount rate, which increased from 2.84 % at December\u00a031, 2021, to 5.08 % at December\u00a031, 2022.",
+      "score": 0.9928
+    },
+    {
+      "sent": "88 Amounts recognized on the Consolidated Balance Sheet consisted of the following: Pension Benefits Other Post-retirement Benefits December 31 2022 2021 2022 2021 Noncurrent assets $ 169 $ 134 $ 261 $ 292 Current liabilities ( 23 ) ( 176 ) ( 15 ) ( 112 ) Noncurrent liabilities ( 2,216 ) ( 2,570 ) ( 237 ) ( 243 ) Net (liability) asset recognized $ ( 2,070 ) $ ( 2,612 ) $ 9 $ ( 63 ) Amounts deferred in AOCL for our defined benefit plans consisted of the following: Pension Benefits Other Post-retirement Benefits December 31 2022 2021 2022 2021 Net actuarial loss (gain) $ 3,404 $ 3,639 $ ( 299 ) $ ( 277 ) Prior service (credit) cost ( 61 ) ( 76 ) 9 8 Total amount recognized in AOCL, pretax $ 3,343 $ 3,563 $ ( 290 ) $ ( 269 ) The following is a reconciliation of the change in AOCL for our defined benefit plans: Pension Benefits Other Post-retirement Benefits Year Ended December 31 2022 2021 2022 2021 Net actuarial gain $ ( 61 ) $ ( 1,684 ) $ ( 39 ) $ ( 265 ) Prior service (credit) cost ( 5 ) ( 3 ) 2 ( 4 ) Amortization of: Net actuarial (loss) gain from prior years ( 171 ) ( 352 ) 16 \u2014 Prior service credit (cost) 20 20 ( 1 ) \u2014 Settlement/curtailment/other ( 3 ) ( 77 ) 1 \u2014 Change in AOCL, pretax $ ( 220 ) $ ( 2,096 ) $ ( 21 ) $ ( 269 ) A pension plan\u2019s funded status is the difference between the plan\u2019s assets and its projected benefit obligation (PBO).",
+      "score": 0.9856
+    },
+    {
+      "sent": "CONSOLIDATED OVERVIEW 2022 IN REVIEW \u2022 Strong operating performance: \u25e6 Record-high revenue of $39.4\u00a0billion, an increase of 2.4% from 2021 \u25e6 Operating earnings of $4.2 billion with sequential growth throughout the year \u25e6 Record-high diluted earnings per share of $12.19, up 5.5% from 2021 \u25e6 Record-high cash provided by operating activities of $4.6 billion, or 135% of net earnings \u2022 Record-high backlog of $91.1 billion increased $3.5 billion, or 4%, from 2021, driven by significant order activity during the year supporting our long-term growth expectations: \u25e6 Outstanding Gulfstream aircraft order activity, including orders across all aircraft models \u25e6 Several significant contract awards received in our defense segments, including $5.4 billion of combined awards from the U.S.",
+      "score": 0.9819
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Revenue by major products and services was as follows: Year Ended December 31 2022 2021 2020 Nuclear-powered submarines $ 7,310 $ 7,117 $ 6,938 Surface ships 2,561 2,328 2,055 Repair and other services 1,169 1,081 986 Total Marine Systems $ 11,040 $ 10,526 $ 9,979 9 COMBAT SYSTEMS Our Combat Systems segment is a premier manufacturer and integrator of land combat solutions worldwide, including wheeled and tracked combat vehicles, weapons systems and munitions.",
+      "score": -0.8893
+    },
+    {
+      "sent": "Additionally, we have the Tracked Robot 10-ton (TRX) prototype, a medium-sized, semi-autonomous combat vehicle that enables critical battlefield roles, such as direct and indirect fire, autonomous resupply, reconnaissance and other battlefield missions.",
+      "score": -0.8834
+    },
+    {
+      "sent": "Our audits included performing procedures to assess the risks of material misstatement of the consolidated financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    }
+  ],
+  "forward_snippets": [
+    "As we emerge from this period of significant investment, we expect to realize an attractive return from these investments in each of our segments and continue to evaluate our capital deployment opportunities to deliver long-term growth and enduring value to our shareholders.",
+    "3 We believe the key to long-term value creation in the business jet industry is steady investment in new aircraft models and technologies and in customer service capabilities.",
+    "We expect the G700 to enter service following certification from the FAA in the summer of 2023.",
+    "As we emerge from this period of significant investment, we expect to realize an attractive return from these investments in each of our segments and continue to evaluate our capital deployment opportunities to deliver long-term growth and enduring value to our shareholders.",
+    "3 We believe the key to long-term value creation in the business jet industry is steady investment in new aircraft models and technologies and in customer service capabilities."
+  ]
+}

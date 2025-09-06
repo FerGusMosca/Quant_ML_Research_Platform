@@ -1,0 +1,45 @@
+{
+  "symbol": "CSCO",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2182,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.192
+  },
+  "top_positive": [
+    {
+      "sent": "The hypothetical fair values as of July\u00a029, 2023 and July\u00a030, 2022 are as follows (in millions): VALUATION OF SECURITIES GIVEN AN INTEREST RATE DECREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS FAIR\u00a0VALUE AS OF JULY\u00a029, 2023 VALUATION OF SECURITIES GIVEN AN INTEREST RATE INCREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS (150\u00a0BPS) (100\u00a0BPS) (50\u00a0BPS) 50\u00a0BPS 100\u00a0BPS 150\u00a0BPS Available-for-sale debt investments $15,901 $15,798 $15,695 $15,592 $15,489 $15,386 $15,284 VALUATION OF SECURITIES GIVEN AN INTEREST RATE DECREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS FAIR\u00a0VALUE AS OF JULY\u00a030, 2022 VALUATION OF SECURITIES GIVEN AN INTEREST RATE INCREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS (150\u00a0BPS) (100\u00a0BPS) (50\u00a0BPS) 50\u00a0BPS 100\u00a0BPS 150\u00a0BPS Available-for-sale debt investments $12,263 $12,158 $12,052 $11,947 $11,841 $11,735 $11,630 Financing Receivables As of July\u00a029, 2023, our financing receivables had a carrying value of $6.8 billion, compared with $7.9 billion as of July\u00a030, 2022.",
+      "score": 0.993
+    },
+    {
+      "sent": "The hypothetical fair values as of July\u00a029, 2023 and July\u00a030, 2022 are as follows (in millions): VALUATION OF SECURITIES GIVEN AN INTEREST RATE DECREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS FAIR\u00a0VALUE AS OF JULY\u00a029, 2023 VALUATION OF SECURITIES GIVEN AN INTEREST RATE INCREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS (150\u00a0BPS) (100\u00a0BPS) (50\u00a0BPS) 50\u00a0BPS 100\u00a0BPS 150\u00a0BPS Available-for-sale debt investments $15,901 $15,798 $15,695 $15,592 $15,489 $15,386 $15,284 VALUATION OF SECURITIES GIVEN AN INTEREST RATE DECREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS FAIR\u00a0VALUE AS OF JULY\u00a030, 2022 VALUATION OF SECURITIES GIVEN AN INTEREST RATE INCREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS (150\u00a0BPS) (100\u00a0BPS) (50\u00a0BPS) 50\u00a0BPS 100\u00a0BPS 150\u00a0BPS Available-for-sale debt investments $12,263 $12,158 $12,052 $11,947 $11,841 $11,735 $11,630 Financing Receivables As of July\u00a029, 2023, our financing receivables had a carrying value of $6.8 billion, compared with $7.9 billion as of July\u00a030, 2022.",
+      "score": 0.993
+    },
+    {
+      "sent": "The hypothetical fair values as of July\u00a029, 2023 and July\u00a030, 2022 are as follows (in millions): VALUATION OF SECURITIES GIVEN AN INTEREST RATE DECREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS FAIR\u00a0VALUE AS OF JULY\u00a029, 2023 VALUATION OF SECURITIES GIVEN AN INTEREST RATE INCREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS (150\u00a0BPS) (100\u00a0BPS) (50\u00a0BPS) 50\u00a0BPS 100\u00a0BPS 150\u00a0BPS Available-for-sale debt investments $15,901 $15,798 $15,695 $15,592 $15,489 $15,386 $15,284 VALUATION OF SECURITIES GIVEN AN INTEREST RATE DECREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS FAIR\u00a0VALUE AS OF JULY\u00a030, 2022 VALUATION OF SECURITIES GIVEN AN INTEREST RATE INCREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS (150\u00a0BPS) (100\u00a0BPS) (50\u00a0BPS) 50\u00a0BPS 100\u00a0BPS 150\u00a0BPS Available-for-sale debt investments $12,263 $12,158 $12,052 $11,947 $11,841 $11,735 $11,630 Financing Receivables As of July\u00a029, 2023, our financing receivables had a carrying value of $6.8 billion, compared with $7.9 billion as of July\u00a030, 2022.",
+      "score": 0.993
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Risk Factors,\u201d including the risk factors entitled \u201cOur operating results may be adversely affected by unfavorable economic and market conditions and the uncertain geopolitical environment;\u201d \u201cEntrance into new or developing markets exposes us to additional competition and will likely increase demands on our service and support operations;\u201d \u201cDue to the global nature of our operations, political or economic changes or other factors in a specific country or region could harm our operating results and financial condition;\u201d \u201cWe are exposed to fluctuations in currency exchange rates that could negatively impact our financial results and cash flows;\u201d and \u201cCyber attacks, data breaches or other incidents may disrupt our operations, harm our operating results and financial condition, and damage our reputation or otherwise materially harm our business; and cyber attacks, data breaches or other incidents on our customers\u2019 or third-party providers\u2019 networks, or in cloud-based services provided to, by, or enabled by us, could result in claims of liability against us, give rise to legal and/or regulatory action, damage our reputation or otherwise materially harm our business,\u201d among others.",
+      "score": -0.9818
+    },
+    {
+      "sent": "Risks Related to Cybersecurity, Privacy, and Regulatory Requirements Cyber attacks, data breaches or other incidents may disrupt our operations, harm our operating results and financial condition, and damage our reputation or otherwise materially harm our business; and cyber attacks, data breaches or other incidents on our customers\u2019 or third-party providers\u2019 networks, or in cloud-based services provided to, by, or enabled by us, could result in claims of liability against us, give rise to legal and/or regulatory action, damage our reputation or otherwise materially harm our business.",
+      "score": -0.9753
+    },
+    {
+      "sent": "Risks Related to Cybersecurity, Privacy, and Regulatory Requirements Cyber attacks, data breaches or other incidents may disrupt our operations, harm our operating results and financial condition, and damage our reputation or otherwise materially harm our business; and cyber attacks, data breaches or other incidents on our customers\u2019 or third-party providers\u2019 networks, or in cloud-based services provided to, by, or enabled by us, could result in claims of liability against us, give rise to legal and/or regulatory action, damage our reputation or otherwise materially harm our business.",
+      "score": -0.9753
+    }
+  ],
+  "forward_snippets": [
+    "In this dynamic environment, we believe their priorities are to transform infrastructure, secure the enterprise, power hybrid work, reimagine applications, and drive toward sustainability.",
+    "In this dynamic environment, we believe their priorities are to transform infrastructure, secure the enterprise, power hybrid work, reimagine applications, and drive toward sustainability.",
+    "We continue to invest in our data center portfolio to help meet the growing demand for cloud-delivered technologies.",
+    "We continue to make significant investments in the development of software, silicon and optics \u2014 which we believe are the building blocks for the Internet for the Future.",
+    "We believe every organization requires new or enhanced security architectures to defend against increasing cyber attacks."
+  ]
+}

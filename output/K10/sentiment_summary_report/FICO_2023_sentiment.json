@@ -1,0 +1,45 @@
+{
+  "symbol": "FICO",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1524,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.268
+  },
+  "top_positive": [
+    {
+      "sent": "The following tables represent financial assets that we measured at fair value on a recurring basis at September 30, 2023 and 2022: 60 Table of Contents FAIR ISAAC CORPORATION NOTES TO CONSOLIDATED FINANCIAL STATEMENTS Years Ended September 30, 2023, 2022 and 2021 September 30, 2023 Active\u00a0Markets\u00a0for Identical\u00a0Instruments (Level 1) Fair Value as of September 30, 2023 (In thousands) Assets: Cash equivalents (1) $ 23,621 $ 23,621 Marketable securities (2) 33,014 33,014 Total $ 56,635 $ 56,635 September 30, 2022 Active\u00a0Markets\u00a0for Identical\u00a0Instruments (Level 1) Fair Value as of September 30, 2022 (In thousands) Assets: Cash equivalents (1) $ 19,314 $ 19,314 Marketable securities (2) 24,515 24,515 Total $ 43,829 $ 43,829 (1) Included in cash and cash equivalents on our consolidated balance sheets at September 30, 2023 and 2022.",
+      "score": 0.9777
+    },
+    {
+      "sent": "The following tables represent financial assets that we measured at fair value on a recurring basis at September 30, 2023 and 2022: 60 Table of Contents FAIR ISAAC CORPORATION NOTES TO CONSOLIDATED FINANCIAL STATEMENTS Years Ended September 30, 2023, 2022 and 2021 September 30, 2023 Active\u00a0Markets\u00a0for Identical\u00a0Instruments (Level 1) Fair Value as of September 30, 2023 (In thousands) Assets: Cash equivalents (1) $ 23,621 $ 23,621 Marketable securities (2) 33,014 33,014 Total $ 56,635 $ 56,635 September 30, 2022 Active\u00a0Markets\u00a0for Identical\u00a0Instruments (Level 1) Fair Value as of September 30, 2022 (In thousands) Assets: Cash equivalents (1) $ 19,314 $ 19,314 Marketable securities (2) 24,515 24,515 Total $ 43,829 $ 43,829 (1) Included in cash and cash equivalents on our consolidated balance sheets at September 30, 2023 and 2022.",
+      "score": 0.9777
+    },
+    {
+      "sent": "74 Table of Contents FAIR ISAAC CORPORATION NOTES TO CONSOLIDATED FINANCIAL STATEMENTS Years Ended September 30, 2023, 2022 and 2021 The following table summarizes the PSUs activity during fiscal 2023: Shares Weighted- average Grant-date Fair Value (In\u00a0thousands) Outstanding at September 30, 2022 144 $ 432.73 Granted 57 615.45 Released ( 66 ) 428.90 Forfeited ( 20 ) 465.25 Outstanding at September 30, 2023 115 $ 519.54 The weighted-average fair value of the PSUs granted was $ 615.45 , $ 407.49 and $ 506.91 during fiscal 2023, 2022 and 2021, respectively.",
+      "score": 0.9777
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These interruptions can include software or hardware malfunctions, communication failures, outages or other failures of third-party environments or service providers, fires, floods, earthquakes, pandemics, war, terrorist acts or civil unrest, power losses, equipment failures, supply chain disruptions, computer viruses, denial-of-service or other cybersecurity attacks, employee or insider malfeasance, human error and other events beyond our control.",
+      "score": -0.9834
+    },
+    {
+      "sent": "These interruptions can include software or hardware malfunctions, communication failures, outages or other failures of third-party environments or service providers, fires, floods, earthquakes, pandemics, war, terrorist acts or civil unrest, power losses, equipment failures, supply chain disruptions, computer viruses, denial-of-service or other cybersecurity attacks, employee or insider malfeasance, human error and other events beyond our control.",
+      "score": -0.9834
+    },
+    {
+      "sent": "An operational failure or outage in any of these systems, or damage to or destruction of these systems, which causes disruptions in our services, could result in loss of customers, damage to customer relationships, reduced revenues and profits, refunds of customer charges and damage to our brand and reputation and may require us to incur substantial additional expense to repair or replace damaged equipment and recover data loss caused by the interruption.",
+      "score": -0.9761
+    }
+  ],
+  "forward_snippets": [
+    "Words such as \u201cbelieves,\u201d \u201canticipates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201ctargeted,\u201d \u201cshould,\u201d \u201cpotential,\u201d \u201cgoals,\u201d \u201cstrategy,\u201d \u201coutlook,\u201d \u201cplan,\u201d \u201cestimated,\u201d \u201cwill,\u201d variations of these terms and similar expressions are intended to identify forward-looking statements, but are not the exclusive means of identifying such statements.",
+    "Words such as \u201cbelieves,\u201d \u201canticipates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201ctargeted,\u201d \u201cshould,\u201d \u201cpotential,\u201d \u201cgoals,\u201d \u201cstrategy,\u201d \u201coutlook,\u201d \u201cplan,\u201d \u201cestimated,\u201d \u201cwill,\u201d variations of these terms and similar expressions are intended to identify forward-looking statements, but are not the exclusive means of identifying such statements.",
+    "Words such as \u201cbelieves,\u201d \u201canticipates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201ctargeted,\u201d \u201cshould,\u201d \u201cpotential,\u201d \u201cgoals,\u201d \u201cstrategy,\u201d \u201coutlook,\u201d \u201cplan,\u201d \u201cestimated,\u201d \u201cwill,\u201d variations of these terms and similar expressions are intended to identify forward-looking statements, but are not the exclusive means of identifying such statements.",
+    "Words such as \u201cbelieves,\u201d \u201canticipates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201ctargeted,\u201d \u201cshould,\u201d \u201cpotential,\u201d \u201cgoals,\u201d \u201cstrategy,\u201d \u201coutlook,\u201d \u201cplan,\u201d \u201cestimated,\u201d \u201cwill,\u201d variations of these terms and similar expressions are intended to identify forward-looking statements, but are not the exclusive means of identifying such statements.",
+    "The FICO Resilience Index is designed to enable lenders to continue to lend and better manage risk by\noutlook,\u201d \u201cplan,\u201d \u201cestimated,\u201d \u201cwill,\u201d variations of these terms and similar expressions are intended to identify forward-looking statements, but are not the exclusive means of identifying such statements."
+  ]
+}

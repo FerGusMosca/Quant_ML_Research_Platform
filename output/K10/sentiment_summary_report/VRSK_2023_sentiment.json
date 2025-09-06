@@ -1,0 +1,45 @@
+{
+  "symbol": "VRSK",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2483,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.099
+  },
+  "top_positive": [
+    {
+      "sent": "A one percent change in discount rate and future rate of return on plan assets would have the following effects: Pension Postretirement 1% Decrease 1% Increase 1% Decrease 1% Increase Benefit (Credit) Cost Projected Benefit Obligation Benefit (Credit) Cost Projected Benefit Obligation Benefit (Credit) Cost Projected Benefit Obligation Benefit (Credit) Cost Projected Benefit Obligation Discount Rate $ (0.8 ) $ 28.2 $ 0.6 $ (24.4 ) $ - $ 0.3 $ - $ (0.3 ) Expected Rate of Return on Assets $ 4.4 $ - $ (4.4 ) $ - $ 0.1 $ - $ (0.1 ) $ - Income Taxes In projecting future taxable income, we develop assumptions including the amount of future state, federal and foreign pretax operating income, the reversal of temporary differences, and the implementation of feasible and prudent tax planning strategies.",
+      "score": 0.9818
+    },
+    {
+      "sent": "A one percent change in discount rate and future rate of return on plan assets would have the following effects: Pension Postretirement 1% Decrease 1% Increase 1% Decrease 1% Increase Benefit (Credit) Cost Projected Benefit Obligation Benefit (Credit) Cost Projected Benefit Obligation Benefit (Credit) Cost Projected Benefit Obligation Benefit (Credit) Cost Projected Benefit Obligation Discount Rate $ (0.8 ) $ 28.2 $ 0.6 $ (24.4 ) $ - $ 0.3 $ - $ (0.3 ) Expected Rate of Return on Assets $ 4.4 $ - $ (4.4 ) $ - $ 0.1 $ - $ (0.1 ) $ - Income Taxes In projecting future taxable income, we develop assumptions including the amount of future state, federal and foreign pretax operating income, the reversal of temporary differences, and the implementation of feasible and prudent tax planning strategies.",
+      "score": 0.9818
+    },
+    {
+      "sent": "The following table summarizes the fair value measurements by level of our\u00a0Pension Plan and Postretirement Plan assets: Quoted Prices Significant in Active Other Markets for Observable Identical Assets Inputs Total (Level 1) (Level 2) December 31, 2022 Equity Managed equity accounts (1) $ 128.8 $ 128.8 $ \u2014 Equity \u2014 pooled separate account (2) 39.7 \u2014 39.7 Debt Fixed income manager \u2014 separately managed account (5) 133.6 \u2014 133.6 Fixed income manager \u2014 pooled separate account (2) 81.5 \u2014 81.5 Fixed income manager \u2014 government securities (3) 7.7 7.7 \u2014 Others Cash \u2014 pooled separate account (2) 2.7 \u2014 2.7 Global real estate account (4) 20.2 \u2014 20.2 Total $ 414.2 $ 136.5 $ 277.7 December 31, 2021 Equity Managed equity accounts (1) $ 195.0 $ 195.0 $ \u2014 Equity \u2014 pooled separate account (2) 54.9 \u2014 54.9 Debt Fixed income manager \u2014 separately managed account (5) 163.7 \u2014 163.7 Fixed income manager \u2014 pooled separate account (2) 97.9 \u2014 97.9 Fixed income manager \u2014 government securities (3) 9.5 9.5 \u2014 Others Cash \u2014 pooled separate account (2) ( 0.1 ) \u2014 ( 0.1 ) Global real estate account (4) 34.8 \u2014 34.8 Total $ 555.7 $ 204.5 $ 351.2 _______________ ( 1 ) Valued at the closing price of shares for domestic stocks within the managed equity accounts, and valued at the net asset value (\u201cNAV\u201d) of shares for mutual funds at either the closing price reported in the active market or based on yields currently available on comparable securities of issuers with similar credit ratings for corporate bonds held by the Pension Plan in these managed accounts.",
+      "score": 0.981
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The complaint claims damages pursuant to the PWA for actual damages, but not less than liquidated damages computed at the rate of $ 100 a day for each day of violation, or $ 1,000 , whichever is higher, punitive damages, and reasonable attorney's fees and other litigation costs.",
+      "score": -0.9724
+    },
+    {
+      "sent": "Debt: The following table presents short-term and long-term debt by issuance as of December 31: Issuance Maturity Date Date 2022 2021 Short-term debt and current portion of long-term debt: Syndicated revolving credit facility Various Various $ 990.0 $ 610.0 Bilateral revolving credit facility Various Various 275.0 - Bilateral term loan facility Various Various 125.0 - Senior notes: 4.125 % senior notes, less unamortized discount and debt issuance costs of $( 0.4 ) 9/12/2012 9/12/2022 - 349.6 Finance lease liabilities (1) Various Various 2.9 11.7 Short-term debt and current portion of long-term debt 1,392.9 971.3 Long-term debt: Senior notes: 3.625 % senior notes, less unamortized discount and debt issuance costs of $( 10.0 ) and $( 10.3 ), respectively 5/13/2020 5/15/2050 490.0 489.7 4.125 % senior notes, inclusive of unamortized premium, and net of unamortized discount and debt issuance costs of $ 9.4 and $ 10.9 , respectively 3/6/2019 3/15/2029 609.4 610.9 4.000 % senior notes, less unamortized discount and debt issuance costs of $( 2.8 ) and $( 4.1 ), respectively 5/15/2015 6/15/2025 897.2 895.9 5.500 % senior notes, less unamortized discount and debt issuance costs of $( 4.0 ) and $( 4.1 ), respectively 5/15/2015 6/15/2045 346.0 345.9 Finance lease liabilities (1) Various Various 1.3 1.6 Syndicated revolving credit facility debt issuance costs Various Various ( 0.7 ) ( 1.2 ) Long-term debt 2,343.2 2,342.8 Total debt $ 3,736.1 $ 3,314.1 _______________ ( 1 ) Refer to Note 8 .",
+      "score": -0.9623
+    },
+    {
+      "sent": "Moreover, international operations could be interrupted and negatively affected by economic changes, geopolitical regional conflicts, terrorist activity, political unrest, civil strife, acts of war, and other economic or political uncertainties.",
+      "score": -0.9468
+    }
+  ],
+  "forward_snippets": [
+    "There are important factors that could cause our actual results, level of activity, performance, or achievements to differ materially from the results, level of activity, performance, or achievements expressed or implied by the forward-looking statements, including those factors discussed under the caption entitled \u201cRisk Factors.\u201d You should specifically consider the numerous risks outlined under \u201cRisk Factors.\u201d Although we believe the expectations reflected in the forward-looking statements are reasonable, we cannot guarantee future results, level of activity, performance, or achievements.",
+    "We believe our solutions for analyzing risk have a positive impact on our customers\u2019 revenues and help them better manage their costs.",
+    "We believe that our commitment to our customers and the embedded nature of o ur solutions serve to strengthen and extend our relationships.",
+    "We believe that Verisk is uniquely positioned because of the set of Distinctives or competitive advantages we cultivate and continue to expand, as indicated below.",
+    "There are important factors that could cause our actual results, level of activity, performance, or achievements to differ materially from the results, level of activity, performance, or achievements expressed or implied by the forward-looking statements, including those factors discussed under the caption entitled \u201cRisk Factors.\u201d You should specifically consider the numerous risks outlined under \u201cRisk Factors.\u201d Although we believe the expectations reflected in the forward-looking statements are reasonable, we cannot guarantee future results, level of activity, performance, or achievements."
+  ]
+}

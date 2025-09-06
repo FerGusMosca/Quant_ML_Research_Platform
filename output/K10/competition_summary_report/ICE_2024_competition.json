@@ -1,0 +1,591 @@
+{
+  "symbol": "ICE",
+  "year": 2024,
+  "competition_summary": [
+    {
+      "competitor": "Black Knight, Inc.",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Black Knight",
+      "mentions": 3,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "the Federal Trade Commission",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "ICE Mortgage Technology",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "COVID-19",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "the U.S. Securities and Exchange Commission",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "SEC",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "BUSINESS Introduction Intercontinental Exchange, Inc.",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "CDS",
+      "mentions": 8,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Mortgage Technology",
+      "mentions": 3,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Data Services",
+      "mentions": 3,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "European Union",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "the New York Stock Exchange",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "NYSE",
+      "mentions": 10,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Energy Futures",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Brent",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Liquefied Natural Gas",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "LNG",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Agricultural & Metals Futures",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Financial Futures",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "FTSE\u00ae",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Environmental, Social and Governance",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "ESG",
+      "mentions": 2,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Sterling Overnight Index Average",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Secured Overnight Financing Rates",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "SOFR",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "the National Market System Plans",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "NMS",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "AUM",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "CCP",
+      "mentions": 2,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "NGX Canada Inc.",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Export Development Canada",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Crown",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Clearing House Products Cleared Location Exchange",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Contribution ICE Clear Europe Energy",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "U.K. ICE Futures Europe",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "ICE Endex",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Clear U.S. Agricultural",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "FX",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "U.S. ICE Futures",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "U.S. Creditex",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Fixed Income and",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "The Netherlands ICE Endex",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Clear Singapore Energy",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Singapore ICE Futures Singapore",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "the Fixed Income and Data Services",
+      "mentions": 2,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "ICE Clear Europe",
+      "mentions": 2,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "ICE Clear Credit",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Clear Credit",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Data Services Segment Our Fixed Income and",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Data and Network Services",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "The Fixed Income and Data Services",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Fixed Income Data and Analytics",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "RFQ",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Single Names CDS",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "ICE Data Indices",
+      "mentions": 2,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "LLC",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "API",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Data and Network Service",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "ICE",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Origination Technology",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Software",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "the ICE Mortgage Technology",
+      "mentions": 2,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Mortgage Electronic Registration Systems",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Servicing Software",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Data and Analytics:",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "ICE Mortgage Technology\u2019s Data & Document Automation",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "DDA",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Mortgage Analyzer",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "AIQ",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Data",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Trading Platforms and Technology",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "NYSE Pillar",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Security Information Processor",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Options Price Reporting Authority",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "NYSE Amex Options",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Arca Options",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "treasury",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Data Services Technology",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "CSS",
+      "mentions": 4,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Information Security",
+      "mentions": 2,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "The Risk Committee",
+      "mentions": 3,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 5,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "CISO",
+      "mentions": 2,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "the Enterprise Risk Management",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "ERM",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "the full Board of Directors",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "the Risk Committee",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "the White House Military Office",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "The Cyber Threat Intelligence",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "the Enterprise 10 Technology Risk Assessment",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Risk Committee",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "the Financial Services Information Sharing and",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Analysis",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "ARC",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "FSCCC",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "EMEA",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "APAC",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Third-Party Risk Oversight",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Independent Security Attestation",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "ICE\u2019s Internal Audit",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Service Organization Controls",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "SOC",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Cybersecurity Incident Response Plan",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "FTSE",
+      "mentions": 2,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "London\u00a0Stock Exchange plc",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "the London Stock Exchange Group Holdings Limited",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "MSCI",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "MSCI Inc.",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Capital Resources Employees",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Sustainability Report",
+      "mentions": 2,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Equal Employment Opportunity",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "EEO-1",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "Giving Financial",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Human",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Environmental",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    },
+    {
+      "competitor": "\u2022 Data Services",
+      "mentions": 1,
+      "context": "competition and consolidation; \u2022 our ability to minimize the risks associated with operating clearing houses in multiple jurisdictions; \u2022 our exchanges\u2019 and clearing houses' compliance with their respective regulatory and oversight responsibilities; \u2022 the resilience of our electronic platforms and soundness of our business continuity and disaster recovery plans; \u2022 our ability to realize the expected benefits of our acquisitions and our investments, including our acquisition of Black Knight, Inc."
+    }
+  ]
+}

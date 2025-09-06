@@ -1,0 +1,45 @@
+{
+  "symbol": "SPGI",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2386,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.206
+  },
+  "top_positive": [
+    {
+      "sent": "Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters Set forth below is information with respect to securities authorized for issuance under equity compensation plans: The following table details information about our equity compensation plans as of December\u00a031, 2022: Equity Compensation Plans\u2019 Information (a) (b) (c) Plan category Number\u00a0of\u00a0securities\u00a0to\u00a0be issued upon exercise of outstanding options, warrants and rights Weighted-average exercise price of outstanding\u00a0options, warrants and rights Number\u00a0of\u00a0securities remaining\u00a0available\u00a0for future issuance under equity compensation plans (excluding securities reflected in column (a)) Equity compensation plans approved by security holders 1,892,751 1 $ 68.02 2 19,273,789 3,4 Equity compensation plans not approved by security holders \u2014 $ \u2014 \u2014 Total 1,892,751 $ 68.02 19,273,789 1 Includes shares to be issued upon exercise of outstanding options, restricted stock units, performance stock units and director deferred phantom stock units under our equity compensation plans.",
+      "score": 0.9899
+    },
+    {
+      "sent": "In 2022, we focused on delivering on the following strategic People priorities across the enterprise: \u2022 Roll out and embed our new purpose and values across the combined company \u2022 Encourage career mobility and career development through career coaching and Thrive, our performance management experience \u2022 Improve diverse representation through hiring, advancement and retention, while continuing to raise awareness through DEI education \u2022 Attract and retain our people through recognition programs, learning opportunities, and fair compensation 10 Table of Contents To achieve our strategic people objectives, we support our employees through human capital management strategies that include diversity, equity and inclusion initiatives; learning and development programs; competitive compensation and benefits programs; hybrid work, benefits and well-being programs; and talent attraction, retention and engagement.",
+      "score": 0.9865
+    },
+    {
+      "sent": "The estimated fair value of the consideration transferred for IHS Markit was approximately $ 43.5 billion as of the merger date, which consisted of the following: (in millions, except for share and per share data) February 28, 2022 Number of shares IHS Markit issued and outstanding* 400,988,207 Exchange ratio 0.2838 Number of S&P Global common stock transferred to IHS Markit stockholders 113,800,453 Closing price per share of S&P Global common stock** $ 380.89 Fair value of S&P Global common stock transferred IHS Markit stockholders $ 43,345 Fair value of S&P Global replacement equity awards attributable to pre-combination service $ 191 Total equity consideration $ 43,536 *Excludes 25,219,470 IHS Markit shares held by the Markit Group Holdings Limited Employee Benefit Trust ( \u201c EBT \u201d ).",
+      "score": 0.9819
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "\u2022 Should we or our third-party service providers experience a local or regional disaster or other business continuity problem, such as an earthquake, hurricane, flood, civil unrest, protests, military conflict, such as the ongoing military conflict between Russia and Ukraine, terrorist attack, outbreak of pandemic or contagious diseases, such as COVID-19, security breach, cyber attack, data breach, power loss, telecommunications failure or other natural or man-made disaster, our ability to continue to operate will depend, in part, on the availability of our or our third-party service provider\u2019s personnel, our or our third-party service provider\u2019s office facilities and the proper functioning of our or our third-party service provider\u2019s computer, telecommunication and other related systems and operations.",
+      "score": -0.9819
+    },
+    {
+      "sent": "\u2022 This may include a disruption involving physical or technological infrastructure used by us or third parties with or through whom we conduct business, whether due to human error, natural disasters, power loss, telecommunication failures, break-ins, sabotage, intentional acts of vandalism, acts of terrorism, political unrest, war or otherwise.",
+      "score": -0.9674
+    },
+    {
+      "sent": "However, a disaster on a significant scale or affecting certain of our key operating areas within or across regions, or our inability to successfully recover should we experience a disaster or other business continuity problem, could materially interrupt our business operations and result in material financial loss, loss of human capital, regulatory actions, reputational harm, damaged client relationships or legal liability.",
+      "score": -0.9648
+    }
+  ],
+  "forward_snippets": [
+    "In connection with these responsibilities, the Chief Purpose Officer also partners with our Corporate Responsibility & Diversity, Equity & Inclusion team on the development and execution of the Company\u2019s diversity, equity and inclusion roadmap and works closely with the CEO on executive succession planning and development of the talent succession pipeline for the Company\u2019s Executive Committee.",
+    "\u2022 To improve our pipeline of diverse talent, we have expanded our partnerships in diverse talent recruitment with select Historically Black Colleges and Universities, upgraded interview training to incorporate awareness of unconscious bias, and expanded career mentoring and leadership development opportunities for diverse colleagues.",
+    "\u2022 Leadership Development - We invest in developing leaders at all levels of our organization through targeted programs designed to foster leadership excellence in people managers, develop emerging leaders and strengthen our executive talent bench, providing a robust internal succession pipeline for our Executive Committee.",
+    "Competitive Compensation Programs We believe compensation and recognition programs are critical to the overall people experience.",
+    "Based on these insights, each year we continue to introduce new and enhanced \u201cpeople first\u201d capabilities in support of our philosophy."
+  ]
+}

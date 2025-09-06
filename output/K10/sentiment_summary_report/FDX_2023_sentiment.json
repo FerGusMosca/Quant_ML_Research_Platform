@@ -1,0 +1,53 @@
+{
+  "symbol": "FDX",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.3833,
+    "outlook_sentiment": 0.1759,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.163
+  },
+  "top_positive": [
+    {
+      "sent": "As of July 13, 2023 , 251,187,242 shares of the Registrant\u2019s common stock were outstanding.",
+      "score": 0.7351
+    },
+    {
+      "sent": "FORWARD-LOOKI NG STATEMENTS Certain statements in this Annual Report on Form 10-K (this \u201cAnnual Report\u201d), including (but not limited to) those contained in \u201cItem 1.",
+      "score": 0.4149
+    },
+    {
+      "sent": "These risks and uncertainties include, but are not limited to: our ability to successfully implement our business strategy, effectively respond to changes in market dynamics and achieve the anticipated benefits and associated cost savings of such strategies and actions; the availability and cost of, and our ability to acquire, alternative fuel vehicles, alternative fuels, fuel-efficient aircraft, global electrical charging infrastructure, off-site renewable energy, and other materials and components, many of which are not presently in existence or available at scale; unforeseen production, design, operational, and technological difficulties; the outcome of research efforts and future technology developments, including the ability to scale projects and technologies on a commercially competitive basis such as carbon sequestration and/or other related processes; compliance with, and changes or additions to, global and regional regulations, taxes, charges, mandates, or requirements relating to GHG emissions, carbon costs, or climate-related goals; labor-related regulations and requirements that restrict or prohibit our ability to impose requirements on third parties who provide contracted transportation for our transportation networks; the availability of incentives to enhance the production and affordability of alternative fuel vehicles, alternative fuels, global electrical charging infrastructure, and other materials and components; adapting products to customer preferences and customer acceptance of sustainable supply chain solutions and potentially increased prices for our services; and the actions of competitors and competitive pressures.",
+      "score": 0.985
+    },
+    {
+      "sent": "employees at FedEx Express under the RLA and manage challenges to the employment status of drivers employed by service providers engaged by FedEx Ground, in addition to other labor-related risks; - 26 - \u2022     integrating, consolidating, and implementing new administrative and back-office support functions, information-technology infrastructure, and computer systems of the respective companies; \u2022     integrating and restructuring the corporate entities; \u2022     integrating and unifying the offerings and services available to historical FedEx Express and FedEx Ground customers; \u2022     harmonizing the companies\u2019 operating practices, employee development and compensation programs, internal controls, and other policies, procedures, and processes; \u2022     maintaining existing agreements with customers and service providers and avoiding delays in entering into new agreements with prospective customers and service providers; \u2022     legal challenges by FedEx Ground service providers or government agencies seeking to slow or stop plans related to Network 2.0 or our one FedEx consolidation; \u2022     addressing possible differences in business backgrounds, corporate cultures, and management philosophies; \u2022     addressing employee issues so as to promote retention and maintain efficient and effective labor and employee relations; \u2022     maintaining access to ports of call and railroads for intermodal support; \u2022     managing the movement of certain positions to different locations; \u2022     obtaining any required regulatory licenses, operating authority, or contractual consents; and \u2022     managing unforeseen increased expenses or delays associated with the consolidation and integration process.",
+      "score": 0.9755
+    },
+    {
+      "sent": "Our ability to attract and retain customers, efficiently operate our businesses, execute our DRIVE transformation and one FedEx consolidation plan, and compete effectively depends in part upon the sophistication, security, and reliability of our technology network, including our ability to provide features of service that are important to our customers, to protect our confidential business information and the information provided by our customers, and to maintain customer confidence in our ability to protect our systems and to provide services consistent with their expectations.",
+      "score": 0.9741
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "While we operate several integrated networks with assets distributed throughout the world, there are concentrations of key assets within our networks that are exposed to adverse weather conditions or localized risks from natural or manmade disasters such as earthquakes, volcanoes, wildfires, hurricanes, tornadoes, floods, severe winter weather, conflicts or unrest, terrorist attacks, or other disturbances, actual or threatened.",
+      "score": -0.9674
+    },
+    {
+      "sent": "While we operate several integrated networks with assets distributed throughout the world, there are concentrations of key assets within our networks that are exposed to adverse weather conditions or localized risks from natural or manmade disasters such as earthquakes, volcanoes, wildfires, hurricanes, tornadoes, floods, severe winter weather, conflicts or unrest, terrorist attacks, or other disturbances, actual or threatened.",
+      "score": -0.9674
+    },
+    {
+      "sent": "We are subject to risks imposed by data breaches and operational disruptions, including through cyberattack or cyber-intrusion, ransomware attack, or malware attack by computer hackers, foreign governments and state-sponsored actors, cyber terrorists and activists, cyber criminals, malicious employees or other insiders of FedEx or third-party service providers, and other groups and individuals.",
+      "score": -0.9571
+    }
+  ],
+  "forward_snippets": [
+    "Market for Registrant\u2019s Common Equity, Related Stockholder Matters, and Issuer Purchases of Equity Securities\u201d; the \u201cBusiness Optimization and Realignment Costs,\u201d \u201cIncome Taxes,\u201d \u201cOutlook,\u201d  \u201cReportable Segments,\u201d \u201cLiquidity Outlook,\u201d and \u201cCritical Accounting Estimates\u201d sections of \u201cItem 7.",
+    "For more information about FedEx Dataworks, FedEx Office, and FedEx Logistics, please see \u201cFedEx Dataworks Operating Segment,\u201d \u201cFedEx Office Operating Segment,\u201d and \u201cFedEx Logistics Operating Segment.\u201d For more information about our reportable segments, please see \u201cBusiness Segments.\u201d\nOutlook,\u201d  \u201cReportable Segments,\u201d \u201cLiquidity Outlook,\u201d and \u201cCritical Accounting Estimates\u201d sections of \u201cItem 7.",
+    "We believe it would be extremely difficult, costly, and time-consuming to replicate our global network, which reflects decades of investment, innovation, and expertise, includes the world\u2019s largest all-cargo air fleet, and connects more than 99% of the world\u2019s gross domestic product.",
+    "We continue to position our company and team members to facilitate and capitalize on this access and to achieve stronger long-term growth, productivity, and profitability.",
+    "We remain committed to helping lift local economies by investing in people and communities where we live and work."
+  ]
+}

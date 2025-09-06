@@ -1,0 +1,45 @@
+{
+  "symbol": "AAPL",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.0586,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.127
+  },
+  "top_positive": [
+    {
+      "sent": "The plans provide for the sale of all shares vested during the duration of the plans pursuant to certain equity awards granted to Ms.",
+      "score": 0.836
+    },
+    {
+      "sent": "Those standards require that we plan and perform the audit to obtain reasonable assurance about whether effective internal control over financial reporting was maintained in all material respects.",
+      "score": 0.7783
+    },
+    {
+      "sent": "Those standards require that we plan and perform the audit to obtain reasonable assurance about whether effective internal control over financial reporting was maintained in all material respects.",
+      "score": 0.7783
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "In addition, such operations and facilities are subject to the risk of interruption by fire, power shortages, nuclear power plant accidents and other industrial accidents, terrorist attacks and other hostile acts, ransomware and other cybersecurity attacks, labor disputes, public health issues, including pandemics such as the COVID-19 pandemic, and other events beyond the Company\u2019s control.",
+      "score": -0.9761
+    },
+    {
+      "sent": "Political events, trade and other international disputes, war, terrorism, natural disasters, public health issues, industrial accidents and other business interruptions can harm or disrupt international commerce and the global economy, and could have a material adverse effect on the Company and its customers, suppliers, contract manufacturers, logistics providers, distributors, cellular network carriers and other channel partners.",
+      "score": -0.9709
+    },
+    {
+      "sent": "The Company\u2019s business can be impacted by political events, trade and other international disputes, war, terrorism, natural disasters, public health issues, industrial accidents and other business interruptions.",
+      "score": -0.9493
+    }
+  ],
+  "forward_snippets": [
+    "Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud.",
+    "We believe that our audits provide a reasonable basis for our opinion.",
+    "Those standards require that we plan and perform the audit to obtain reasonable assurance about whether effective internal control over financial reporting was maintained in all material respects.",
+    "We believe that our audit provides a reasonable basis for our opinion.",
+    "Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud."
+  ]
+}

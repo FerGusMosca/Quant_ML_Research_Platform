@@ -1,0 +1,45 @@
+{
+  "symbol": "BKNG",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2333,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.286
+  },
+  "top_positive": [
+    {
+      "sent": "These representations and warranties have been made solely for the benefit of the other parties to the applicable agreement and: \u2022 should not be treated as categorical statements of fact, but rather as a way of allocating the risk to one of the parties if those statements prove to be inaccurate; \u2022 may have been qualified by disclosures that were made to the other party in connection with the negotiation of the applicable agreement, which disclosures are not necessarily reflected in the agreement; \u2022 may apply standards of materiality in a way that is different from what may be viewed as material to you or other investors; and \u2022 were made only as of the date of the applicable agreement or such other date or dates as may be specified in the agreement and are subject to more recent developments.",
+      "score": 0.981
+    },
+    {
+      "sent": "These representations and warranties have been made solely for the benefit of the other parties to the applicable agreement and: \u2022 should not be treated as categorical statements of fact, but rather as a way of allocating the risk to one of the parties if those statements prove to be inaccurate; \u2022 may have been qualified by disclosures that were made to the other party in connection with the negotiation of the applicable agreement, which disclosures are not necessarily reflected in the agreement; \u2022 may apply standards of materiality in a way that is different from what may be viewed as material to you or other investors; and \u2022 were made only as of the date of the applicable agreement or such other date or dates as may be specified in the agreement and are subject to more recent developments.",
+      "score": 0.981
+    },
+    {
+      "sent": "We regard our intellectual property as important to our success, and we rely on intellectual property such as trademarks, copyrights, patents, and trade secrets to support our business as well as domain names or other intangible rights or property secured through purchase, licensing or other agreements with our employees, travel service providers, partners, and other parties.",
+      "score": 0.9698
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Gross bookings resulting from reservations of room nights, rental car days, and airline tickets made through our agency and merchant categories for the years ended December\u00a031, 2022 and 2021 were as follows (numbers may not total due to rounding): Year Ended December 31, Increase (Decrease) (in millions) 2022 2021 Agency gross bookings $ 67,379 $ 50,741 32.8 % Merchant gross bookings 53,873 25,845 108.4 % Total gross bookings $ 121,253 $ 76,586 58.3 % Agency gross bookings are derived from travel-related transactions where we do not facilitate payments from travelers for the services provided, while merchant gross bookings are derived from services where we facilitate payments.",
+      "score": -0.946
+    },
+    {
+      "sent": "Other events beyond our control such as terrorist attacks, extreme weather or natural disasters, wars and regional hostilities, travel-related accidents, or increased focus on the environmental impact of travel may disrupt travel, limit the ability or willingness of travelers to visit certain locations, or otherwise result in declines in demand for our travel offerings and adversely affect our business and results of operations.",
+      "score": -0.9246
+    },
+    {
+      "sent": "Other events beyond our control such as terrorist attacks, extreme weather or natural disasters, wars and regional hostilities, travel-related accidents, or increased focus on the environmental impact of travel may disrupt travel, limit the ability or willingness of travelers to visit certain locations, or otherwise result in declines in demand for our travel offerings and adversely affect our business and results of operations.",
+      "score": -0.9246
+    }
+  ],
+  "forward_snippets": [
+    "We are proud that, despite challenges to our global community such as the invasion of Ukraine by Russia, the impact of persistent inflation on consumers, and widespread travel disruptions at airports in North America and Europe, as well as the ongoing effects of the COVID-19 pandemic, we continued our efforts to make our brands the most trusted and convenient platforms for consumers and partners, including: \u2022 surpassing pre-pandemic room nights for the first time in the second quarter; \u2022 continuing to increase room nights and brand awareness in key markets such as the U.S.; \u2022 launching Rooms for Refugees at Booking.com to assist those displaced by the war in Ukraine to book free and discounted rooms; \u2022 improving our loyalty programs, particularly the Genius program at Booking.com, and increasing our focus on value for our consumers; \u2022 improving and expanding visibility of our flight offering at Booking.com; \u2022 increasing adoption of our payments platform and payments capabilities across the Company; and \u2022 expanding our Travel Sustainable program to more of our supply partners and across our relevant brands.",
+    "We continue to optimize the collaboration and cooperation among our brands to provide consumers with the most comprehensive and useful services for their needs.",
+    "Our Strategy We aim to demonstrate global leadership in online travel bookings and related services by: \u2022 making it easy for people to find, book, pay for, and experience travel throughout the world; \u2022 providing consumers with the most comprehensive choices and prices at any time, in any place, on any device; \u2022 offering platforms, tools, and insights to our business partners to help them be successful; and \u2022 operating our business sustainably and supporting sustainable travel choices by our consumers and partners.",
+    "We believe that global travel bookings will generally continue to grow while shifting from traditional offline methods to online channels like ours, which is a trend we have observed throughout our company's history.",
+    "We expect to benefit from this growth in travel and the continued shift to online channels as we work to expand our service offerings and increase our presence in key geographies."
+  ]
+}

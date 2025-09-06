@@ -1,0 +1,45 @@
+{
+  "symbol": "IR",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2238,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.215
+  },
+  "top_positive": [
+    {
+      "sent": "The credit agreement governing the Senior Secured Credit Facilities contains a number of restrictive covenants that impose significant operating and financial restrictions on us and may limit our ability to engage in acts that may be in our best interest, including restrictions on our ability to: incur additional indebtedness and guarantee indebtedness; pay dividends, make other distributions in respect of, or repurchase or redeem capital stock; prepay, redeem or repurchase certain debt; make loans, investments and other restricted payments; sell or otherwise dispose of assets; incur liens; enter into transactions with affiliates; enter into agreements restricting our subsidiaries\u2019 ability to pay dividends; consolidate, merge or sell all or substantially all of our assets; make needed capital expenditures; make strategic acquisitions, investments or enter into joint ventures; plan for or react to market conditions or otherwise execute our business strategies; and engage in business activities, including future opportunities, that may be in our interest.",
+      "score": 0.9869
+    },
+    {
+      "sent": "The increase was primarily due to an increase in the weighted-average interest rate, partially offset by the prepayment of the Dollar Term Loan Series A on September 30, 2021, the prepayment of the Euro Term Loan on June 30, 2022, and the interest rate derivative contracts discussed in Note 19 \u201c Hedging Activities, Derivative Instruments and Credit Risk \u201d to our consolidated financial statements included elsewhere in this Form 1\nare met under the credit agreement governing the Senior Secured Credit Facilities.",
+      "score": 0.9648
+    },
+    {
+      "sent": "Plan Category Number of Securities to be issued upon Exercise of Outstanding Options, Warrants And Rights (1) Weighted Average Exercise Price of Outstanding Options, Warrants and Rights (2) Number of Securities Remaining Available for Future Issuance under Equity Compensation Plans (excluding Securities reflected in the first column) (3) Equity compensation plans approved by securityholders 9,395,852 $ 25.41 8,482,699 (1) Total includes 2,410,383 stock options under the Company\u2019s 2013 Stock Incentive Plan and 3,902,961 stock options and 3,082,508 restricted stock units under the Company\u2019s 2017 Omnibus Incentive Plan.",
+      "score": 0.9607
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "If any of these systems fail, whether caused by fire, other 12 Table of Contents natural disaster, power or telecommunications failure, acts of cyber terrorism or war or otherwise, or they do not function correctly, we could suffer financial loss, business disruption, liability to our customers, regulatory intervention or damage to our reputation.",
+      "score": -0.9856
+    },
+    {
+      "sent": "If any of these systems fail, whether caused by fire, other 12 Table of Contents natural disaster, power or telecommunications failure, acts of cyber terrorism or war or otherwise, or they do not function correctly, we could suffer financial loss, business disruption, liability to our customers, regulatory intervention or damage to our reputation.",
+      "score": -0.9856
+    },
+    {
+      "sent": "and certain European countries (including the impacts of the U.K.\u2019s national referendum resulting in the U.K.\u2019s withdrawal from the European Union); royalty and tax increases; nationalization of private enterprises, especially in China where we have material operations, supply chain dependencies and hold material cash balances; civil unrest and protests, strikes, acts of terrorism, war or other armed conflict; shipping products during times of crisis or war; and other factors inherent in foreign operations.",
+      "score": -0.9682
+    }
+  ],
+  "forward_snippets": [
+    "All statements, other than statements of historical facts included in this Form 10-K, including statements concerning our plans, objectives, goals, beliefs, business strategies, future events, business conditions, results of operations, financial position, business outlook, business trends and other information, may be forward-looking statements.",
+    "Our expectations, beliefs, estimates and projections are expressed in good faith and we believe there is a reasonable basis for them.",
+    "Our products are sold under more than 40 market-leading brands, including Ingersoll Rand and Gardner Denver, which we believe are globally recognized in their respective end-markets and known for product quality, reliability, efficiency and superior customer service.",
+    "All statements, other than statements of historical facts included in this Form 10-K, including statements concerning our plans, objectives, goals, beliefs, business strategies, future events, business conditions, results of operations, financial position, business outlook, business trends and other information, may be forward-looking statements.",
+    "Our expectations, beliefs, estimates and projections are expressed in good faith and we believe there is a reasonable basis for them."
+  ]
+}

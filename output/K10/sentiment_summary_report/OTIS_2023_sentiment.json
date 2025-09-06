@@ -1,0 +1,45 @@
+{
+  "symbol": "OTIS",
+  "year": 2023,
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1749,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.272
+  },
+  "top_positive": [
+    {
+      "sent": "Note 5: Related Parties The Separation, as further described in Note 1, \"Business Overview\", was completed pursuant to a Separation and Distribution Agreement (\"Separation Agreement\") and other agreements with our former parent, UTC, and Carrier, related to the Separation, including but not limited to a transition services agreement (the \"Transition Services Agreement\" or \"TSA\"), a tax matters agreement (the \"Tax Matters Agreement\" or \"TMA\"), an employee matters agreement (the \"Employee Matters Agreement\" or \"EMA\") and an intellectual property agreement (the \"Intellectual Property Agreement\").",
+      "score": 0.9936
+    },
+    {
+      "sent": "Note 3: Earnings per Share (dollars in millions, except per share amounts; shares in millions) 2022 2021 2020 * Net income attributable to Otis Worldwide Corporation $ 1,253 $ 1,246 $ 906 Impact of redeemable noncontrolling interest \u2014 \u2014 \u2014 Net income attributable to common shareholders $ 1,253 $ 1,246 $ 906 Basic weighted average number of shares outstanding 420.0 427.7 433.2 Stock awards and equity units (share equivalent) 1 3.0 3.7 1.4 Diluted weighted average number of shares outstanding 423.0 431.4 434.6 Earnings Per Share of Common Stock: Basic $ 2.98 $ 2.91 $ 2.09 Diluted $ 2.96 $ 2.89 $ 2.08 * The calculation of the basic and diluted earnings per share for all periods presented prior to the Separation on April 3, 2020 utilizes 433,079,455 shares of the Common Stock, which were the number of shares distributed to UTC shareholders of record as of March 19, 2020.",
+      "score": 0.9844
+    },
+    {
+      "sent": "Note 3: Earnings per Share (dollars in millions, except per share amounts; shares in millions) 2022 2021 2020 * Net income attributable to Otis Worldwide Corporation $ 1,253 $ 1,246 $ 906 Impact of redeemable noncontrolling interest \u2014 \u2014 \u2014 Net income attributable to common shareholders $ 1,253 $ 1,246 $ 906 Basic weighted average number of shares outstanding 420.0 427.7 433.2 Stock awards and equity units (share equivalent) 1 3.0 3.7 1.4 Diluted weighted average number of shares outstanding 423.0 431.4 434.6 Earnings Per Share of Common Stock: Basic $ 2.98 $ 2.91 $ 2.09 Diluted $ 2.96 $ 2.89 $ 2.08 * The calculation of the basic and diluted earnings per share for all periods presented prior to the Separation on April 3, 2020 utilizes 433,079,455 shares of the Common Stock, which were the number of shares distributed to UTC shareholders of record as of March 19, 2020.",
+      "score": 0.9844
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Product and general liability claims (including claims related to the safety, reliability or maintenance of our products) and accident risks during the production, installation, maintenance and use of our products can result in significant costs, including settlements, punitive damages and other risks such as damage to our reputation, negative publicity and management distraction, which could reduce demand for our products and services.",
+      "score": -0.9623
+    },
+    {
+      "sent": "Product and general liability claims (including claims related to the safety, reliability or maintenance of our products) and accident risks during the production, installation, maintenance and use of our products can result in significant costs, including settlements, punitive damages and other risks such as damage to our reputation, negative publicity and management distraction, which could reduce demand for our products and services.",
+      "score": -0.9623
+    },
+    {
+      "sent": "Product and general liability claims (including claims related to the safety, reliability or maintenance of our products) and accident risks during the production, installation, maintenance and use of our products can result in significant costs, including settlements, punitive damages and other risks such as damage to our reputation, negative publicity and management distraction, which could reduce demand for our products and services.",
+      "score": -0.9623
+    }
+  ],
+  "forward_snippets": [
+    "In 2023, we expect to continue to innovate and expand our digital ecosystem and suite of digital solutions for both our existing service portfolio customers and for new equipment shipments from our factories.",
+    "We believe that our patents and trade secrets create a competitive advantage and that we have taken reasonable measures to build a portfolio of valid and enforceable intellectual property rights.",
+    "We believe our global presence, local relationships and proven track record in executing complex elevator and escalator solutions contribute to our iconic brand, reputation and competitive position in the industry.",
+    "We believe our business strategies allow us to sustain New Equipment growth, accelerate Service portfolio growth, advance the digitalization of Otis, focus and empower the organization, support our ability to s\npment of engineering solutions that can serve a s global model products and adapt quickly and efficiently to local customer needs and local demographic and construction trends.",
+    "We believe that our patents and trade secrets create a competitive advantage and that we have taken reasonable measures to build a portfolio of valid and enforceable intellectual property rights."
+  ]
+}
