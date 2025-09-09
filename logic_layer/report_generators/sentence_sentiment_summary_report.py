@@ -1,4 +1,3 @@
-# logic_layer/report_generators/sentence_sentiment_summary_report.py
 import os
 import re
 import json
@@ -15,7 +14,13 @@ class SentimentSummaryReport:
     """
     Extract and score management sentiment/guidance from 10-K / 20-F.
     Lexicon-based sentiment (VADER) + forward/hedging cues.
-    Encapsulates all input/output path handling.
+
+    Key changes vs the original version:
+    - Output is now namespaced by year: ./output/K10/sentiment_summary_report/<YEAR>[/<universe_key>]
+    - New consolidate_year(year, ...) that only merges files from that year directory
+      and double-checks the 'year' field inside each JSON.
+    - A legacy consolidate(...) method remains for backwards-compatibility, but it
+      is recommended to switch calls to consolidate_year(...).
     """
 
     # Base folders (do not include year here)
@@ -64,23 +69,23 @@ class SentimentSummaryReport:
     def __init__(self, year: int, logger, filers_whitelist: List[str] = None, universe_key: str = None):
         """
         :param year: Filing year to process
-        :param logger: Logger instance
+        :param logger: Logger instance (must support .do_log(msg, MessageType))
         :param filers_whitelist: Optional list of tickers to restrict
-        :param universe_key: Optional universe name for sub-folder
+        :param universe_key: Optional universe name for sub-folder under the year
         """
+        # Input HTML lives in ./output/K10/<YEAR>
         self.input_dir = os.path.join(SentimentSummaryReport.input_base, str(year))
-        self.output_dir = (
-            os.path.join(SentimentSummaryReport.output_base, universe_key)
-            if universe_key
-            else SentimentSummaryReport.output_base
-        )
+
+        # >>> Output is now namespaced by year (and optional universe key) <<<
+        year_dir = os.path.join(SentimentSummaryReport.output_base, str(year))
+        self.output_dir = os.path.join(year_dir, universe_key) if universe_key else year_dir
         os.makedirs(self.output_dir, exist_ok=True)
 
         self.year = year
         self.logger = logger
         self.whitelist = set(t.upper() for t in filers_whitelist) if filers_whitelist else None
 
-        # Load VADER
+        # Load VADER (download lexicon on first run if needed)
         try:
             self.sia = SentimentIntensityAnalyzer()
         except Exception:
@@ -89,7 +94,7 @@ class SentimentSummaryReport:
 
     # -------- Public API --------
     def run(self) -> None:
-        """Process HTML filings and save one *_sentiment.json per symbol."""
+        """Process HTML filings and save one *_sentiment.json per symbol under the YEAR folder."""
         files = [f for f in os.listdir(self.input_dir) if f.lower().endswith(".html")]
         if self.whitelist:
             files = [f for f in files if f.split("_")[0].upper() in self.whitelist]
@@ -124,20 +129,85 @@ class SentimentSummaryReport:
                 self.logger.do_log(f"[SENT][{i}] ❌ {file} failed - {str(e)}", MessageType.ERROR)
 
     @staticmethod
-    def consolidate(input_dir: str, out_path: str, logger) -> None:
-        """Merge all *_sentiment.json under input_dir into one JSON file."""
+    def consolidate_year(year: int, logger, universe_key: str = None) -> str:
+        """
+        Merge all *_{year}_sentiment.json for a single year into one JSON file.
+
+        It reads from: ./output/K10/sentiment_summary_report/<year>[/<universe_key>]
+        and writes:     ./output/K10/sentiment_summary_report/<year>[/<universe_key>]/sentiment_summary_all_<year>.json
+
+        Double-checks the embedded 'year' field inside each file to avoid any mix-ups.
+        """
+        base = os.path.join(SentimentSummaryReport.output_base, str(year))
+        if universe_key:
+            base = os.path.join(base, universe_key)
+
         data = []
-        for f in os.listdir(input_dir):
-            if f.endswith("_sentiment.json"):
-                with open(os.path.join(input_dir, f), "r", encoding="utf-8") as fh:
-                    data.append(json.load(fh))
+        if not os.path.isdir(base):
+            logger.do_log(f"[SENT] ⚠ Year folder not found: {base}", MessageType.WARNING)
+        else:
+            for fn in os.listdir(base):
+                if fn.endswith(f"_{year}_sentiment.json"):
+                    path = os.path.join(base, fn)
+                    try:
+                        with open(path, "r", encoding="utf-8") as fh:
+                            j = json.load(fh)
+                        if j.get("year") == year:
+                            data.append(j)
+                        else:
+                            logger.do_log(f"[SENT] ⚠ Skipped (wrong embedded year): {fn}", MessageType.WARNING)
+                    except Exception as e:
+                        logger.do_log(f"[SENT] ❌ Failed to read {fn} - {e}", MessageType.ERROR)
+
+        out_path = os.path.join(base, f"sentiment_summary_all_{year}.json")
         with open(out_path, "w", encoding="utf-8") as out:
             json.dump(data, out, indent=2)
-        logger.do_log(f"[SENT] Consolidated -> {out_path} ({len(data)} entries)", MessageType.INFO)
+        logger.do_log(f"[SENT] Consolidated -> {out_path} ({len(data)} filers)", MessageType.INFO)
+        return out_path
+
+    @staticmethod
+    def consolidate(input_dir: str, out_path: str, logger, year: int = None) -> None:
+        """
+        Legacy consolidator kept for backwards compatibility.
+        NOTE: Prefer consolidate_year(year, logger, universe_key) to avoid mixing years.
+
+        If 'year' is provided, it will only include files ending with _{year}_sentiment.json
+        and also check the embedded 'year' field inside each JSON.
+        If 'year' is None, it will fall back to merging every *_sentiment.json in input_dir.
+        """
+        data = []
+        try:
+            for f in os.listdir(input_dir):
+                if not f.endswith("_sentiment.json"):
+                    continue
+
+                if year is not None and not f.endswith(f"_{year}_sentiment.json"):
+                    continue  # skip other years when explicit filter is requested
+
+                with open(os.path.join(input_dir, f), "r", encoding="utf-8") as fh:
+                    j = json.load(fh)
+
+                if year is not None:
+                    if j.get("year") != year:
+                        logger.do_log(f"[SENT] ⚠ Skipped (wrong embedded year): {f}", MessageType.WARNING)
+                        continue
+
+                data.append(j)
+
+            with open(out_path, "w", encoding="utf-8") as out:
+                json.dump(data, out, indent=2)
+
+            logger.do_log(f"[SENT] (legacy) Consolidated -> {out_path} ({len(data)} filers)", MessageType.INFO)
+            if year is None:
+                logger.do_log("[SENT] ⚠ Using legacy consolidate without year may mix multiple years. "
+                              "Prefer consolidate_year(...).", MessageType.WARNING)
+
+        except Exception as e:
+            logger.do_log(f"[SENT] ❌ consolidate failed - {e}", MessageType.ERROR)
 
     @staticmethod
     def rank(consolidated_json: str, out_csv: str, logger) -> None:
-        """Produce ranking CSV by optimism composite score."""
+        """Produce ranking CSV by optimism composite score from a consolidated JSON."""
         import pandas as pd
 
         with open(consolidated_json, "r", encoding="utf-8") as f:
