@@ -19,6 +19,7 @@ from common.enums.information_vendors import InformationVendors
 from common.enums.intervals import Intervals
 from common.enums.parameters.parameters_keys import ParametersKeys
 from common.enums.report_type import ReportType
+from common.enums.sec_reports import SECReports
 from common.enums.sliding_window_strategy import SlidingWindowStrategy as sws, SlidingWindowStrategy
 from common.enums.trading_algo_strategy import TradingAlgoStrategy as tas, TradingAlgoStrategy
 from common.util.downloaders.FRED_downloader import FredDownloader
@@ -376,12 +377,11 @@ class AlgosOrchestationLogic:
             MessageType.INFO
         )
 
-    def _run_competition_summary_report(self, year):
-
-
+    def _run_competition_summary_report(self, year, report_type="K10"):
         report = CompetitionSummaryReport(
             year=year,
-            logger=self.logger
+            logger=self.logger,
+            report_type=report_type
         )
         report.run()
 
@@ -2244,12 +2244,20 @@ class AlgosOrchestationLogic:
 
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
             self._run_download_q10(year)
-        elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT.value:
-            self._run_competition_summary_report(year)
+
+        elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_Q10.value:
+            report_type = SECReports.Q10.value
+            self._run_competition_summary_report(year, report_type)
+        elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_K10.value:
+            report_type = SECReports.K10.value
+            self._run_competition_summary_report(year, report_type)
+
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT.value:
             self._run_sentiment_summary_report(year, None)
+
         else:
             self.logger.do_log(f"[REPORT] Report {report_key} not implemented.", MessageType.WARNING)
+
 
 
 

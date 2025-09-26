@@ -7,13 +7,21 @@ from framework.common.logger.message_type import MessageType
 
 
 class CompetitionSummaryReport:
-    input_dir = f"./output/K10/"
-    output_dir = f"./output/K10/competition_summary_report"
-    def __init__(self, year, logger):
-        self.input_dir = f"{CompetitionSummaryReport.input_dir}{year}"
-        self.output_dir = CompetitionSummaryReport.output_dir
+
+    def __init__(self, year, logger, report_type="K10"):
+        """
+        :param year: filing year
+        :param logger: logger instance
+        :param report_type: "K10" or "Q10"
+        """
         self.year = year
         self.logger = logger
+        self.report_type = report_type.upper()
+
+        self.input_dir = f"./output/{self.report_type}/{year}"
+        self.output_dir = f"./output/{self.report_type}/competition_summary_report"
+        os.makedirs(self.output_dir, exist_ok=True)
+
         self.nlp = spacy.load("en_core_web_sm")
 
     def run(self):
