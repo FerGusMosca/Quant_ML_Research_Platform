@@ -24,6 +24,7 @@ from common.enums.trading_algo_strategy import TradingAlgoStrategy as tas, Tradi
 from common.util.downloaders.FRED_downloader import FredDownloader
 from common.util.downloaders.SEC_securities_downloader import SECSecuritiesDownloader
 from common.util.downloaders.k10_downloader import K10Downloader
+from common.util.downloaders.q10_downloader import Q10Downloader
 from common.util.downloaders.tradingview_downloader import TradingViewDownloader
 from common.util.financial_calculations.PCA_calculator import PCACalcualtor
 from common.util.pandas_dataframes.dataframe_filler import DataframeFiller
@@ -411,6 +412,36 @@ class AlgosOrchestationLogic:
                     f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {str(e)}",
                     MessageType.ERROR
                 )
+
+
+    def _run_download_q10(self, year):
+        base_path = f"./output/Q10/{year}"
+        if os.path.exists(base_path):
+            shutil.rmtree(base_path)
+            self.logger.do_log(f"[REPORT] Removed existing directory {base_path}", MessageType.INFO)
+
+        os.makedirs(base_path, exist_ok=True)
+
+        # ✅ Get securities from reports + reports_securities
+        securities = self.report_securities_mgr.get_report_securities("download_q10")
+
+        self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
+
+        for i, sec in enumerate(securities):
+            symbol = sec.ticker
+            cik = sec.cik
+            try:
+                q10_files = Q10Downloader.download_q10s(symbol, cik, year, base_path)
+                self.logger.do_log(
+                    f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded {len(q10_files)} Q10(s) for {symbol}",
+                    MessageType.INFO
+                )
+            except Exception as e:
+                self.logger.do_log(
+                    f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {str(e)}",
+                    MessageType.ERROR
+                )
+
 
     def __backtest_strategy__(self, series_df,indicator,portf_size,
                                     n_algo_params,portf_summary,
@@ -2210,6 +2241,9 @@ class AlgosOrchestationLogic:
     def process_run_report(self, report_key, year):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year)
+
+        elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
+            self._run_download_q10(year)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT.value:
             self._run_competition_summary_report(year)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT.value:

@@ -165,3 +165,7 @@ cython_debug/
 # Ignore raw K-10 filings and sentiment/competition outputs
 /output/K10/*
 !output/K10/.gitkeep
+
+
+/output/Q10/*
+!output/Q10/.gitkeep
