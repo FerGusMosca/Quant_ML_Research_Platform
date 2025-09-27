@@ -52,6 +52,7 @@ from logic_layer.indicator_algos.sintethic_indicator_creator import SintheticInd
 from logic_layer.model_creators.random_forest_model_creator import RandomForestModelCreator
 from logic_layer.model_creators.xg_boost_model_creator import XGBoostModelCreator
 from logic_layer.report_generators.competition_summary_report import CompetitionSummaryReport
+from logic_layer.report_generators.financial_ratios_summary_report import FinancialRatiosSummaryReport
 from logic_layer.report_generators.sentence_sentiment_summary_report import SentimentSummaryReport
 from logic_layer.trading_algos.buy_and_hold_backtester import BuyAndHoldBacktester
 from logic_layer.trading_algos.direct_slope_backtester import DirectSlopeBacktester
@@ -375,6 +376,42 @@ class AlgosOrchestationLogic:
 
         self.logger.do_log(
             f"[SENT] ✅ Sentiment summary completed ({report_type}, scope={universe or 'ALL'})",
+            MessageType.INFO
+        )
+
+    def _run_financial_ratios_report(self, year, report_type="K10", universe=None):
+        """
+        Build financial ratios summaries from SEC filings (K10 or Q10).
+        Extract balance sheet / income statement fields, compute ratios,
+        and consolidate into one JSON + optional CSV.
+
+        :param year: Filing year
+        :param report_type: "K10" or "Q10"
+        :param universe: optional universe key for subfolder
+        """
+        # Universe → list of tickers (or None)
+        whitelist = self._get_universe_filers(universe) if universe else None
+
+        # Instantiate processor
+        gen = FinancialRatiosSummaryReport(
+            year=year,
+            report_type=report_type,
+            logger=self.logger,
+            filers_whitelist=whitelist,
+            universe_key=universe
+        )
+        gen.run()
+
+        # Consolidate (year + report_type aware)
+        consolidated = FinancialRatiosSummaryReport.consolidate_year(year, report_type, self.logger,
+                                                                     universe_key=universe)
+
+        # Ranking opcional: GPA, ROA, Debt/Equity, etc. (si lo implementás igual que sentiment.rank)
+        ranking_csv = os.path.join(os.path.dirname(consolidated), f"financial_ratios_ranking_{year}.csv")
+        FinancialRatiosSummaryReport.rank(consolidated, ranking_csv, self.logger)
+
+        self.logger.do_log(
+            f"[RATIOS] ✅ Financial ratios summary completed ({report_type}, scope={universe or 'ALL'})",
             MessageType.INFO
         )
 
@@ -2255,7 +2292,10 @@ class AlgosOrchestationLogic:
             self._run_sentiment_summary_report(year, SECReports.K10.value)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_Q10.value:
             self._run_sentiment_summary_report(year, SECReports.Q10.value)
-
+        elif report_key.lower() == ReportType.FINANCIAL_RATIOS_REPORT_K10.value:
+            self._run_financial_ratios_report(year, SECReports.K10.value)
+        elif report_key.lower() == ReportType.FINANCIAL_RATIOS_REPORT_Q10.value:
+            self._run_financial_ratios_report(year, SECReports.Q10.value)
         else:
             self.logger.do_log(f"[REPORT] Report {report_key} not implemented.", MessageType.WARNING)
 

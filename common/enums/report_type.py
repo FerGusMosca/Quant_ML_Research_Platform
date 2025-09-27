@@ -7,3 +7,5 @@ class ReportType(Enum):
     COMPETITION_SUMMARY_REPORT_K10 = "competition_summary_report_k10"
     SENTIMENT_SUMMARY_REPORT_K10 = "sentiment_summary_report_k10"
     SENTIMENT_SUMMARY_REPORT_Q10 = "sentiment_summary_report_q10"
+    FINANCIAL_RATIOS_REPORT_K10 = "financial_ratios_report_k10"
+    FINANCIAL_RATIOS_REPORT_Q10 = "financial_ratios_report_q10"
