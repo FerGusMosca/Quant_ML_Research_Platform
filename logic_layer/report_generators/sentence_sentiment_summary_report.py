@@ -12,20 +12,9 @@ from framework.common.logger.message_type import MessageType
 
 class SentimentSummaryReport:
     """
-    Extract and score management sentiment/guidance from 10-K / 20-F.
+    Extract and score management sentiment/guidance from SEC filings (K10, Q10, 20-F).
     Lexicon-based sentiment (VADER) + forward/hedging cues.
-
-    Key changes vs the original version:
-    - Output is now namespaced by year: ./output/K10/sentiment_summary_report/<YEAR>[/<universe_key>]
-    - New consolidate_year(year, ...) that only merges files from that year directory
-      and double-checks the 'year' field inside each JSON.
-    - A legacy consolidate(...) method remains for backwards-compatibility, but it
-      is recommended to switch calls to consolidate_year(...).
     """
-
-    # Base folders (do not include year here)
-    input_base: str = "./output/K10/"
-    output_base: str = "./output/K10/sentiment_summary_report"
 
     # Regex cues
     FORWARD_CUES = re.compile(
@@ -66,18 +55,21 @@ class SentimentSummaryReport:
         "controls and procedures",
     ]
 
-    def __init__(self, year: int, logger, filers_whitelist: List[str] = None, universe_key: str = None):
+    def __init__(self, year: int, logger, report_type: str = "K10", filers_whitelist: List[str] = None, universe_key: str = None):
         """
         :param year: Filing year to process
         :param logger: Logger instance (must support .do_log(msg, MessageType))
+        :param report_type: "K10" or "Q10"
         :param filers_whitelist: Optional list of tickers to restrict
         :param universe_key: Optional universe name for sub-folder under the year
         """
-        # Input HTML lives in ./output/K10/<YEAR>
-        self.input_dir = os.path.join(SentimentSummaryReport.input_base, str(year))
+        self.report_type = report_type.upper()
 
-        # >>> Output is now namespaced by year (and optional universe key) <<<
-        year_dir = os.path.join(SentimentSummaryReport.output_base, str(year))
+        # Input HTML lives in ./output/{K10|Q10}/<YEAR>
+        self.input_dir = os.path.join(f"./output/{self.report_type}", str(year))
+
+        # Output is namespaced by report type + year (and optional universe key)
+        year_dir = os.path.join(f"./output/{self.report_type}/sentiment_summary_report", str(year))
         self.output_dir = os.path.join(year_dir, universe_key) if universe_key else year_dir
         os.makedirs(self.output_dir, exist_ok=True)
 
@@ -85,7 +77,7 @@ class SentimentSummaryReport:
         self.logger = logger
         self.whitelist = set(t.upper() for t in filers_whitelist) if filers_whitelist else None
 
-        # Load VADER (download lexicon on first run if needed)
+        # Load VADER
         try:
             self.sia = SentimentIntensityAnalyzer()
         except Exception:
@@ -94,12 +86,12 @@ class SentimentSummaryReport:
 
     # -------- Public API --------
     def run(self) -> None:
-        """Process HTML filings and save one *_sentiment.json per symbol under the YEAR folder."""
+        """Process filings and save one *_sentiment.json per symbol under the YEAR folder."""
         files = [f for f in os.listdir(self.input_dir) if f.lower().endswith(".html")]
         if self.whitelist:
             files = [f for f in files if f.split("_")[0].upper() in self.whitelist]
 
-        self.logger.do_log(f"[SENT] Processing {len(files)} file(s) for year {self.year}", MessageType.INFO)
+        self.logger.do_log(f"[SENT] Processing {len(files)} {self.report_type} file(s) for year {self.year}", MessageType.INFO)
 
         for i, file in enumerate(sorted(files), start=1):
             try:
@@ -114,6 +106,7 @@ class SentimentSummaryReport:
                 out = {
                     "symbol": symbol,
                     "year": self.year,
+                    "report_type": self.report_type,  # <<< agregado
                     "metrics": result["metrics"],
                     "top_positive": result["top_positive"],
                     "top_negative": result["top_negative"],
@@ -123,22 +116,15 @@ class SentimentSummaryReport:
                 with open(out_path, "w", encoding="utf-8") as f:
                     json.dump(out, f, indent=2)
 
-                self.logger.do_log(f"[SENT][{i}] ✅ {symbol} saved", MessageType.INFO)
+                self.logger.do_log(f"[SENT][{i}] ✅ {symbol} ({self.report_type}) saved", MessageType.INFO)
 
             except Exception as e:
                 self.logger.do_log(f"[SENT][{i}] ❌ {file} failed - {str(e)}", MessageType.ERROR)
 
     @staticmethod
-    def consolidate_year(year: int, logger, universe_key: str = None) -> str:
-        """
-        Merge all *_{year}_sentiment.json for a single year into one JSON file.
-
-        It reads from: ./output/K10/sentiment_summary_report/<year>[/<universe_key>]
-        and writes:     ./output/K10/sentiment_summary_report/<year>[/<universe_key>]/sentiment_summary_all_<year>.json
-
-        Double-checks the embedded 'year' field inside each file to avoid any mix-ups.
-        """
-        base = os.path.join(SentimentSummaryReport.output_base, str(year))
+    def consolidate_year(year: int, report_type: str, logger, universe_key: str = None) -> str:
+        """Merge all *_{year}_sentiment.json for a single year + report type into one JSON file."""
+        base = os.path.join(f"./output/{report_type.upper()}/sentiment_summary_report", str(year))
         if universe_key:
             base = os.path.join(base, universe_key)
 
@@ -166,46 +152,6 @@ class SentimentSummaryReport:
         return out_path
 
     @staticmethod
-    def consolidate(input_dir: str, out_path: str, logger, year: int = None) -> None:
-        """
-        Legacy consolidator kept for backwards compatibility.
-        NOTE: Prefer consolidate_year(year, logger, universe_key) to avoid mixing years.
-
-        If 'year' is provided, it will only include files ending with _{year}_sentiment.json
-        and also check the embedded 'year' field inside each JSON.
-        If 'year' is None, it will fall back to merging every *_sentiment.json in input_dir.
-        """
-        data = []
-        try:
-            for f in os.listdir(input_dir):
-                if not f.endswith("_sentiment.json"):
-                    continue
-
-                if year is not None and not f.endswith(f"_{year}_sentiment.json"):
-                    continue  # skip other years when explicit filter is requested
-
-                with open(os.path.join(input_dir, f), "r", encoding="utf-8") as fh:
-                    j = json.load(fh)
-
-                if year is not None:
-                    if j.get("year") != year:
-                        logger.do_log(f"[SENT] ⚠ Skipped (wrong embedded year): {f}", MessageType.WARNING)
-                        continue
-
-                data.append(j)
-
-            with open(out_path, "w", encoding="utf-8") as out:
-                json.dump(data, out, indent=2)
-
-            logger.do_log(f"[SENT] (legacy) Consolidated -> {out_path} ({len(data)} filers)", MessageType.INFO)
-            if year is None:
-                logger.do_log("[SENT] ⚠ Using legacy consolidate without year may mix multiple years. "
-                              "Prefer consolidate_year(...).", MessageType.WARNING)
-
-        except Exception as e:
-            logger.do_log(f"[SENT] ❌ consolidate failed - {e}", MessageType.ERROR)
-
-    @staticmethod
     def rank(consolidated_json: str, out_csv: str, logger) -> None:
         """Produce ranking CSV by optimism composite score from a consolidated JSON."""
         import pandas as pd
@@ -220,6 +166,7 @@ class SentimentSummaryReport:
                 {
                     "symbol": e.get("symbol"),
                     "year": e.get("year"),
+                    "report_type": e.get("report_type"),
                     "sentiment_mdna": m.get("mdna_sentiment", 0.0),
                     "sentiment_outlook": m.get("outlook_sentiment", 0.0),
                     "forward_ratio": m.get("forward_ratio", 0.0),
@@ -240,14 +187,13 @@ class SentimentSummaryReport:
         df.to_csv(out_csv, index=False)
         logger.do_log(f"[SENT] Ranking -> {out_csv} ({len(df)} filers)", MessageType.INFO)
 
+
     # -------- Internals --------
     def _html_to_text(self, html: str) -> str:
-        """Convert HTML to plain text."""
         soup = BeautifulSoup(html, "html.parser")
         return soup.get_text(" ", strip=True)
 
     def _extract_relevant_sections(self, text: str) -> Dict[str, str]:
-        """Locate MD&A and Outlook sections using anchors and cues."""
         low = text.lower()
         n = len(text)
 
@@ -277,11 +223,9 @@ class SentimentSummaryReport:
         return {"mdna": mdna, "outlook": outlook_txt}
 
     def _split_sentences(self, txt: str) -> List[str]:
-        """Split text into sentences by '.', '!' or '?'."""
         return re.split(r"(?<=[.!?])\s+", txt)
 
     def _score_sections(self, sections: Dict[str, str]) -> Dict[str, object]:
-        """Score MD&A and Outlook blocks and aggregate metrics/snippets."""
         mdna_sents = self._split_sentences(sections.get("mdna", ""))
         outl_sents = self._split_sentences(sections.get("outlook", ""))
 

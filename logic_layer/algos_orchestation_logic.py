@@ -346,34 +346,35 @@ class AlgosOrchestationLogic:
         dtos = self.report_securities_mgr.get_report_securities(universe_key)
         return sorted({(d.ticker or "").upper() for d in dtos if d.ticker})
 
-    def _run_sentiment_summary_report(self, year, universe=None):
+    def _run_sentiment_summary_report(self, year, report_type="K10", universe=None):
         """
         Build sentiment summaries focused on management guidance/opinion.
         Extract MD&A / Outlook-like text, score sentiment, and consolidate.
+        :param year: Filing year
+        :param report_type: "K10" or "Q10"
+        :param universe: optional universe key for subfolder
         """
         # Universe → list of tickers (or None)
         whitelist = self._get_universe_filers(universe) if universe else None
 
-        # Instantiate the processor. We pass 'universe_key' so the class
-        # itself decides its output folder (…/sentiment_summary_report[/<universe>])
+        # Instantiate processor with report_type
         gen = SentimentSummaryReport(
             year=year,
+            report_type=report_type,
             logger=self.logger,
             filers_whitelist=whitelist,
             universe_key=universe  # ← opcional; None = ALL
         )
         gen.run()
 
-        # Consolidate & rank using the generator's own output_dir
-        out_dir = gen.output_dir
-        consolidated = os.path.join(out_dir, f"sentiment_summary_all_{year}.json")
-        ranking_csv = os.path.join(out_dir, f"sentiment_summary_ranking_{year}.csv")
+        # Consolidate & rank (year + report_type aware)
+        consolidated = SentimentSummaryReport.consolidate_year(year, report_type, self.logger, universe_key=universe)
+        ranking_csv = os.path.join(os.path.dirname(consolidated), f"sentiment_summary_ranking_{year}.csv")
 
-        SentimentSummaryReport.consolidate(out_dir, consolidated, self.logger)
         SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
 
         self.logger.do_log(
-            f"[SENT] ✅ Sentiment summary completed (scope={universe or 'ALL'})",
+            f"[SENT] ✅ Sentiment summary completed ({report_type}, scope={universe or 'ALL'})",
             MessageType.INFO
         )
 
@@ -2246,14 +2247,14 @@ class AlgosOrchestationLogic:
             self._run_download_q10(year)
 
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_Q10.value:
-            report_type = SECReports.Q10.value
-            self._run_competition_summary_report(year, report_type)
+            self._run_competition_summary_report(year, SECReports.Q10.value)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_K10.value:
-            report_type = SECReports.K10.value
-            self._run_competition_summary_report(year, report_type)
+            self._run_competition_summary_report(year, ReportType.SENTIMENT_SUMMARY_REPORT_K10.value)
 
-        elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT.value:
-            self._run_sentiment_summary_report(year, None)
+        elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_K10.value:
+            self._run_sentiment_summary_report(year, SECReports.K10.value)
+        elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_Q10.value:
+            self._run_sentiment_summary_report(year, SECReports.Q10.value)
 
         else:
             self.logger.do_log(f"[REPORT] Report {report_key} not implemented.", MessageType.WARNING)
