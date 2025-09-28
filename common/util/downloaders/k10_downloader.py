@@ -1,5 +1,7 @@
 import os
 import requests
+from bs4 import BeautifulSoup
+
 
 class K10Downloader:
     """
@@ -9,20 +11,21 @@ class K10Downloader:
     @staticmethod
     def download_k10(symbol, cik, year, output_dir):
         """
-        Download the latest 10-K filing for a given company (CIK) and year
+        Download the latest 10-K filing (HTML + XBRL) for a given company (CIK) and year
         from SEC EDGAR and save it into output_dir.
         """
         if not cik:
             raise ValueError(f"[K10Downloader] Missing CIK for {symbol}")
 
-        # Build SEC submissions endpoint (JSON of all filings for this CIK)
-        cik_padded = str(cik).zfill(10)  # SEC requires 10-digit CIK with leading zeros
+        os.makedirs(output_dir, exist_ok=True)
+
+        # Build SEC submissions endpoint
+        cik_padded = str(cik).zfill(10)
         url = f"https://data.sec.gov/submissions/CIK{cik_padded}.json"
         headers = {"User-Agent": "YourAppName/1.0 (contact@example.com)"}
 
         response = requests.get(url, headers=headers)
         response.raise_for_status()
-
         data = response.json()
 
         # Find the correct 10-K for the given year
@@ -33,6 +36,7 @@ class K10Downloader:
         primary_docs = filings.get("primaryDocument", [])
 
         target_url = None
+        acc_nodash = None
         for acc, fdate, form, doc in zip(accession_numbers, filing_dates, forms, primary_docs):
             if form == "10-K" and fdate.startswith(str(year)):
                 acc_nodash = acc.replace("-", "")
@@ -42,12 +46,33 @@ class K10Downloader:
         if not target_url:
             raise FileNotFoundError(f"[K10Downloader] No 10-K found for {symbol} ({cik}) in {year}")
 
-        # Download the filing
+        # --- Download HTML filing ---
         filing_resp = requests.get(target_url, headers=headers)
         filing_resp.raise_for_status()
-
-        file_path = os.path.join(output_dir, f"{symbol}_{year}_10-K.html")
-        with open(file_path, "wb") as f:
+        file_path_html = os.path.join(output_dir, f"{symbol}_{year}_10-K.html")
+        with open(file_path_html, "wb") as f:
             f.write(filing_resp.content)
 
-        return file_path
+        # --- Download XBRL files ---
+        xbrl_files = []
+        index_url = f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{acc_nodash}/"
+        index_resp = requests.get(index_url, headers=headers)
+        index_resp.raise_for_status()
+
+        soup = BeautifulSoup(index_resp.text, "html.parser")
+        for link in soup.find_all("a"):
+            href = link.get("href", "")
+            # Usually exhibits are like: .../ex101.xml, .../xxx_cal.xml, etc.
+            if any(href.lower().endswith(ext) for ext in [".xml", ".xsd"]):
+                file_url = f"https://www.sec.gov{href}" if href.startswith("/") else f"{index_url}{href}"
+                fname = os.path.join(output_dir, os.path.basename(href))
+                r = requests.get(file_url, headers=headers)
+                if r.status_code == 200:
+                    with open(fname, "wb") as f:
+                        f.write(r.content)
+                    xbrl_files.append(fname)
+
+        return {
+            "html": file_path_html,
+            "xbrl": xbrl_files
+        }
