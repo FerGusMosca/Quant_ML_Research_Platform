@@ -389,15 +389,11 @@ class AlgosOrchestationLogic:
         :param report_type: "K10" or "Q10"
         :param universe: optional universe key for subfolder
         """
-        # Universe → list of tickers (or None)
-        whitelist = self._get_universe_filers(universe) if universe else None
-
         # Instantiate processor
         gen = FinancialRatiosSummaryReport(
             year=year,
             report_type=report_type,
             logger=self.logger,
-            filers_whitelist=whitelist,
             universe_key=universe
         )
         gen.run()

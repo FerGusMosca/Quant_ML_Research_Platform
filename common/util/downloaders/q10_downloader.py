@@ -1,4 +1,7 @@
 import os
+import random
+import time
+
 import requests
 
 class Q10Downloader:
@@ -17,8 +20,12 @@ class Q10Downloader:
 
         # Build SEC submissions endpoint (JSON of all filings for this CIK)
         cik_padded = str(cik).zfill(10)  # SEC requires 10-digit CIK with leading zeros
-        url = f"https://data.sec.gov/submissions/CIK{cik_padded}.json"
-        headers = {"User-Agent": "YourAppName/1.0 (contact@example.com)"}
+        url = f"https://www.sec.gov/submissions/CIK{cik_padded}.json"
+        headers = {
+            "User-Agent": "Q10Downloader/1.0 (fer.mosca@example.com)",
+            "Accept-Encoding": "gzip, deflate",
+            "Host": "www.sec.gov"
+        }
 
         response = requests.get(url, headers=headers)
         response.raise_for_status()
@@ -49,6 +56,7 @@ class Q10Downloader:
                 # Download the filing
                 filing_resp = requests.get(target_url, headers=headers)
                 filing_resp.raise_for_status()
+                time.sleep(0.5 + random.random())  # pausa 0.5–1.5s
                 with open(file_path, "wb") as f:
                     f.write(filing_resp.content)
 
