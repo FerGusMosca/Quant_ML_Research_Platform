@@ -1,7 +1,6 @@
 import os
 import random
 import time
-
 import requests
 
 class Q10Downloader:
@@ -18,45 +17,41 @@ class Q10Downloader:
         if not cik:
             raise ValueError(f"[Q10Downloader] Missing CIK for {symbol}")
 
-        # Build SEC submissions endpoint (JSON of all filings for this CIK)
-        cik_padded = str(cik).zfill(10)  # SEC requires 10-digit CIK with leading zeros
-        url = f"https://www.sec.gov/submissions/CIK{cik_padded}.json"
+        cik_padded = str(cik).zfill(10)
+        url = f"https://data.sec.gov/submissions/CIK{cik_padded}.json"
         headers = {
             "User-Agent": "Q10Downloader/1.0 (fer.mosca@example.com)",
             "Accept-Encoding": "gzip, deflate",
-            "Host": "www.sec.gov"
         }
 
         response = requests.get(url, headers=headers)
         response.raise_for_status()
         data = response.json()
+        time.sleep(0.5 + random.random())
 
-        # Extract filings metadata
         filings = data.get("filings", {}).get("recent", {})
         accession_numbers = filings.get("accessionNumber", [])
         filing_dates = filings.get("filingDate", [])
         forms = filings.get("form", [])
         primary_docs = filings.get("primaryDocument", [])
 
-        # Prepare output dir
         os.makedirs(output_dir, exist_ok=True)
 
         downloaded_files = []
-        q_counter = 1  # To keep track of Q1, Q2, Q3
+        q_counter = 1
 
         for acc, fdate, form, doc in zip(accession_numbers, filing_dates, forms, primary_docs):
             if form == "10-Q" and fdate.startswith(str(year)):
                 acc_nodash = acc.replace("-", "")
                 target_url = f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{acc_nodash}/{doc}"
 
-                # Build filename with quarter indicator
                 file_name = f"{symbol}_{year}_Q{q_counter}_10-Q.html"
                 file_path = os.path.join(output_dir, file_name)
 
-                # Download the filing
                 filing_resp = requests.get(target_url, headers=headers)
                 filing_resp.raise_for_status()
-                time.sleep(0.5 + random.random())  # pausa 0.5–1.5s
+                time.sleep(0.5 + random.random())
+
                 with open(file_path, "wb") as f:
                     f.write(filing_resp.content)
 
