@@ -1,0 +1,606 @@
+{
+  "symbol": "NVDA",
+  "date": "2025-10-02",
+  "headlines": [
+    {
+      "date": "2025-10-02",
+      "time": "Today 05:52PM",
+      "title": "Why the Stock Market Keeps Going Up-Even During a Government Shutdown\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/stock-market-government-shutdown-08be1aa5?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:23PM",
+      "title": "Crypto AI Sector Valuation Hits $32B as NVIDIA Stock Price Taps All Time Highs\n\n\n(Coinspeaker)",
+      "link": "https://finance.yahoo.com/m/03689593-47dc-3b0e-9bbf-4b954fe4351b/crypto-ai-sector-valuation.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:16PM",
+      "title": "These Stocks Moved the Most Today: Tesla, Rivian, Occidental, Fair Isaac, Fermi, Kodiak AI, Bullish, Rigetti, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/0547b3ef-a137-3d58-8a40-d168c2795ede/these-stocks-moved-the-most.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:05PM",
+      "title": "NVIDIA Breaks Out to New Highs: What Comes Next?\n\n\n(MarketBeat)",
+      "link": "/news/182690/nvidia-breaks-out-to-new-highs-what-comes-next"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:02PM",
+      "title": "Stocks Drift to New Highs as Shutdown Rolls on\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/1e437a40-dd71-3e1e-a71d-903658e9bd8c/stocks-drift-to-new-highs-as.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:02PM",
+      "title": "Dow, S&P 500, Nasdaq notch records on AI buzz even as government shutdown drags on\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/dow-sp-500-nasdaq-notch-records-on-ai-buzz-even-as-government-shutdown-drags-on-200207403.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:56PM",
+      "title": "DraftKings' competition in prediction markets, AI stock rally\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/draftkings-competition-prediction-markets-ai-195617361.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:55PM",
+      "title": "OpenAI now worth $500 billion, possibly making it the world's most valuable startup\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/openai-now-worth-500-billion-195534705.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:06PM",
+      "title": "CNBC Property Play: Schneider Electric's chairman says people are underestimating energy revolution\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=140AwwWP5wk"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:43PM",
+      "title": "These Stocks Are Moving the Most Today: Tesla, Rivian, Occidental, Fair Isaac, Fermi, Kodiak AI, Bullish, Rigetti, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/0547b3ef-a137-3d58-8a40-d168c2795ede/these-stocks-are-moving-the.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:39PM",
+      "title": "It May Not Feel Like It, but Markets Are Normal. That's Good News.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/market-stocks-normality-returns-0c336617?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:33PM",
+      "title": "Why Is Broadcom Stock Surging Thursday?\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/why-broadcom-stock-surging-thursday-183327721.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:33PM",
+      "title": "Legendary fund manager drops bombshell call on Nvidia stock\n\n\n(TheStreet)",
+      "link": "https://finance.yahoo.com/m/5631adfc-51f0-3e6e-808b-26f88a5f11c5/legendary-fund-manager-drops.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:31PM",
+      "title": "Elon Musk Becomes First Person Worth $500 Billion, Tesla CEO's Wealth Is Now Larger Than Palantir, Alibaba\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/elon-musk-becomes-first-person-183110846.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:26PM",
+      "title": "Boom or bubble: How long can the AI investment craze last?\n\n\n(AFP)",
+      "link": "https://finance.yahoo.com/news/boom-bubble-long-ai-investment-182650170.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:01PM",
+      "title": "Bitcoin, Ethereum, Dogecoin, XRP Shrug Off Shutdown Concerns: Analytics Firm Projects BTC's Q4 Surge to $160,000$200,000\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/bitcoin-ethereum-dogecoin-xrp-shrug-180107145.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:00PM",
+      "title": "Stocks to Gain From Quantum Computing in 2025: MSFT, IBM, QBTS, IONQ\n\n\n(Zacks)",
+      "link": "/news/182643/stocks-to-gain-from-quantum-computing-in-2025-msft-ibm-qbts-ionq"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:45PM",
+      "title": "AI, chip stocks to own beyond just Nvidia in Q4\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/ai-chip-stocks-own-beyond-164500129.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:12PM",
+      "title": "Mortgage rates higher, chips rally on OpenAI news, Rivian plunges\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/mortgage-rates-higher-chips-rally-161204889.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:20AM",
+      "title": "Nvidia Higher As Funds Load Up Again  But Is The Stock A Buy Now?\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/acee298a-b99d-3b64-9ef0-d3473a45654f/nvidia-higher-as-funds-load.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:05AM",
+      "title": "Bernstein somewhat skeptical on rumors Intel will add AMD as a foundry customer\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/bernstein-somewhat-skeptical-rumors-intel-150523352.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:02AM",
+      "title": "Jobless Claims Continue to Come in Low\n\n\n(Zacks)",
+      "link": "/news/182537/jobless-claims-continue-to-come-in-low"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:52AM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq mixed as AI optimism blots out US shutdown risks\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-mixed-as-ai-optimism-blots-out-us-shutdown-risks-145218407.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:52AM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq gains fizzle with AI buzz, Trump's shutdown threats in focus\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-gains-fizzle-with-ai-buzz-trumps-shutdown-threats-in-focus-145218301.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:52AM",
+      "title": "OpenAI Fetches a $500 Billion Price Tag. Can We Call it a Bubble Now?\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/openai-value-tech-stock-bubble-4f94d921?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:45AM",
+      "title": "OpenAI Is Valued at $500 Billion. 8 Stocks That Gain From Its Growth.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/openai-valuation-stocks-microsoft-oracle-coreweave-9dcdc559?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:40AM",
+      "title": "OpenAI Valuation Reaches $500 Billion, Topping Musks SpaceX\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/openai-completes-share-sale-record-043148719.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:27AM",
+      "title": "No Jobless Claims, Factory Orders - Tech Trade Still Hot\n\n\n(Zacks)",
+      "link": "/news/182493/no-jobless-claims-factory-orders-tech-trade-still-hot"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:22AM",
+      "title": "Microsoft Bets $33 Billion on Neoclouds like Nebius to Ease AI Crunch\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/microsoft-bets-33-billion-neoclouds-100000431.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:19AM",
+      "title": "AI Stocks Face 'Show Me' Test. Why Oracle, Salesforce Analyst Days Will Be Big Events.\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/684c930d-1475-3adc-b013-ae604c056ebc/ai-stocks-face-%27show-me%27.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:06AM",
+      "title": "Kulina: The path forward for Tesla is autonomy and robotics\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=3LYEp5eAyAQ"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:35AM",
+      "title": "The New Brain of Business: UiPath Is Creating an AI Revolution\n\n\n(MarketBeat)",
+      "link": "/news/182252/the-new-brain-of-business-uipath-is-creating-an-ai-revolution"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:31AM",
+      "title": "AI stock rally: OpenAI valuation lifts Nvidia, AMD, Intel & more\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/ai-stock-rally-openai-valuation-133157224.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:31AM",
+      "title": "Stock market today: S&P 500, Nasdaq rise as AI optimism blots out US shutdown risks\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-nasdaq-rise-as-ai-optimism-blots-out-us-shutdown-risks-133118033.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:31AM",
+      "title": "Stock market today: S&P 500, Nasdaq jump as AI optimism blots out US shutdown risks\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-nasdaq-jump-as-ai-optimism-blots-out-us-shutdown-risks-133118631.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:13AM",
+      "title": "DigitalOcean Unveils AI Hub To Supercharge Developer Innovation\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/digitalocean-unveils-ai-hub-supercharge-131359267.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:07AM",
+      "title": "Intel Stock Jumps 7% on Report of Early Talks With AMD for Foundry Deal\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/intel-stock-jumps-7-report-130744912.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:05AM",
+      "title": "Chip stocks rise as OpenAIs Stargate project fuels AI memory demand hype\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/chip-stocks-rise-openai-stargate-130531665.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:42AM",
+      "title": "Stock Market Today: Dow Falls As Jobless Data Gets The Ax; Tesla Rallies Ahead Of Delivery News (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/f464db28-e154-36c8-b0be-7dbf0f6469d0/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:16AM",
+      "title": "Should You Buy Nvidia ETFs as the Stock Slips From Record Valuation?\n\n\n(Zacks)",
+      "link": "/news/182239/should-you-buy-nvidia-etfs-as-the-stock-slips-from-record-valuation"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:10AM",
+      "title": "Intel Shareholders Got Amazing News From a Massive Competitor\n\n\n(Motley Fool)",
+      "link": "/news/182179/intel-shareholders-got-amazing-news-from-a-massive-competitor"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:03AM",
+      "title": "Nvidia-Aligned AI Infrastructure Stock Breaks Out. Top Funds Love It.\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/research/ibd-stock-analysis/vertiv-stock-nvidia-ai-infrastructure-partner-breaks-out?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:00AM",
+      "title": "Telegram Wallet to Offer Tokenized US Stocks via Kraken and Backed Partnership\n\n\n(Cryptonews)",
+      "link": "https://finance.yahoo.com/m/283d2cd5-7bb0-3ae6-bd3f-0d93c45c9bfb/telegram-wallet-to-offer.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:00AM",
+      "title": "Analysts Say 8 Stocks Already Grow Faster Than Nvidia And Palantir\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/1f4f9718-cc26-3b05-a80e-1cb87c111ed5/analysts-say-8-stocks-already.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:25AM",
+      "title": "Podcast: Will AI Spending Pay Off Or Are We in a Bubble?\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/dfb89907-0ab2-3ed9-9b3d-de1155506449/podcast%3A-will-ai-spending-pay.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:24AM",
+      "title": "Nvidia, AMD Stocks Rise. How OpenAI Is Driving the AI Chip Rally.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-amd-openai-4801d64a?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:00AM",
+      "title": "Top Trends to Watch in Telecom Stocks - AI and Cybersecurity Key to Innovation\n\n\n(Newsfile)",
+      "link": "https://www.newsfilecorp.com/release/268764/Top-Trends-to-Watch-in-Telecom-Stocks-AI-and-Cybersecurity-Key-to-Innovation"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:00AM",
+      "title": "Caterpillar Emerges as Unlikely AI Winner on Turbine Demand\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/caterpillar-emerges-unlikely-ai-winner-110000713.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "06:52AM",
+      "title": "OpenAIs Stargate locks in Korean chipmakers, boosting shares\n\n\n(Euronews)",
+      "link": "https://finance.yahoo.com/m/5bc3920e-f2ed-3f63-8c51-caa4bdd5ecf5/openai%E2%80%99s-stargate-locks-in.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "06:10AM",
+      "title": "Alibaba Stock Is on a Tear. Why China AI Excitement Is Building.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/31c01fec-e2ac-3cf5-90fd-2ec707475a2a/alibaba-stock-is-on-a-tear..html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:53AM",
+      "title": "These Stocks Are Moving the Most Today: Tesla, Fair Isaac, Experian, Fermi, Nvidia, and More\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/these-stocks-are-moving-the-most-today-tesla-fair-isaac-experian-fermi-nvidia-and-more-0618c51b?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:40AM",
+      "title": "FICO shares rise, credit bureaus dive, and other early market movers\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-sp500-nasdaq-eye-new-records-as-government-shutdown-continues/card/fico-shares-rise-credit-bureaus-dive-and-other-early-market-movers-1FR3hGxsHFiWAQLSyZeM?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:27AM",
+      "title": "3 Blue Chip Stocks That Have Soared 380% (and Higher) Over the Past 5 Years\n\n\n(Motley Fool)",
+      "link": "/news/182006/3-blue-chip-stocks-that-have-soared-380-and-higher-over-the-past-5-years"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:10AM",
+      "title": "After Dumping Nvidia and Palantir, Billionaire Stanley Druckenmiller Recently Dropped Another AI Giant -- and Bought Shares of This Key AI Player\n\n\n(Motley Fool)",
+      "link": "/news/181934/after-dumping-nvidia-and-palantir-billionaire-stanley-druckenmiller-recently-dropped-another-ai-giant-and-bought-shares-of-this-key-ai-player"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:59AM",
+      "title": "Stock Market Today: S&P 500 and Nasdaq eye new record highs, Dow dips, as U.S. government shutdown continues.\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-sp500-nasdaq-eye-new-records-as-government-shutdown-continues?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:06AM",
+      "title": "History Suggests 1 Trillion-Dollar Artificial Intelligence (AI) Stock Makes for a No-Brainer Buy, While Another Is Treading in Dangerous Territory\n\n\n(Motley Fool)",
+      "link": "/news/181863/history-suggests-1-trillion-dollar-artificial-intelligence-ai-stock-makes-for-a-no-brainer-buy-while-another-is-treading-in-dangerous-territory"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "23:14",
+      "title": "Alibaba Price Target Lifted by JPMorgan to Street High on Cloud\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/alibaba-price-target-lifted-jpmorgan-031420141.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:02PM",
+      "title": "Analyst Report: Taiwan Semiconductor Manufacturing Company Limited\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/6d2d80a9-ce68-3bc0-8cd9-7c5628465486/analyst-report%3A-taiwan.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:30PM",
+      "title": "Marjorie Taylor Greene Loads Up On Six-Figure Treasury Bill Diversifies Portfolio With Bitcoin ETF, Tech Stocks\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/marjorie-taylor-greene-loads-six-233046635.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "06:45PM",
+      "title": "Government Shutdown, Government Shmutdown\n\n\n(Zacks)",
+      "link": "/news/181684/government-shutdown-government-shmutdown"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:20PM",
+      "title": "Market concentration is creating fragility investors can't ignore, says SEI's Jim Smigiel\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=8Hts-3JgE3I"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:28PM",
+      "title": "Analyst Highlights Red Flags in Nvidia (NVDA)-OpenAI $100 Billion Deal - 'Feature of Past Bubbles'\n\n\n(Insider Monkey)",
+      "link": "/news/181460/analyst-highlights-red-flags-in-nvidia-nvda-openai-100-billion-deal-feature-of-past-bubbles"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:20PM",
+      "title": "These Stocks Moved the Most Today: Nike, Netflix, Fermi, Moderna, AES, Lithium Americas, Sunrun, Corteva, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/69041927-616c-3622-84d4-5e2ddf553d35/these-stocks-moved-the-most.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:57PM",
+      "title": "OpenAI Is Breaking New Ground With Sora. Why the AI Video App Is Bad News for Meta.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/openai-sora-ai-video-app-instagram-meta-d759aaba?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:49PM",
+      "title": "Analyst Says He's Not 'Worried At All' About Nvidia (NVDA)'s Customer Concentration Problem\n\n\n(Insider Monkey)",
+      "link": "/news/181357/analyst-says-hes-not-worried-at-all-about-nvidia-nvdas-customer-concentration-problem"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:32PM",
+      "title": "Nvidia On Winning Streak Amid Government Shutdown  But Is The Stock A Buy Now?\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/acee298a-b99d-3b64-9ef0-d3473a45654f/nvidia-on-winning-streak-amid.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:20PM",
+      "title": "Stock Market Today: Stocks Sidestep Shutdown Worries; Buffett Eyes Massive Deal (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/353692cf-5902-35b0-8d5c-833f422c2c0b/stock-market-today%3A-stocks.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:13PM",
+      "title": "CoreWeave lands mega deal from AI giant\n\n\n(TheStreet)",
+      "link": "https://finance.yahoo.com/m/b5269f62-f83b-3ab6-8817-d51a9537b765/coreweave-lands-mega-deal.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:48PM",
+      "title": "Intel Stock Rallies On Report Chip Giant Looking To Add AMD As Foundry Customer\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/8db19195-db15-3a46-a228-897272169fff/intel-stock-rallies-on-report.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:37PM",
+      "title": "Intel spikes on reports of potential AMD manufacturing deal\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/intel-spikes-reports-potential-amd-183737608.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:08PM",
+      "title": "These Stocks Are Moving the Most Today: Nike, Netflix, Fermi, Moderna, AES, Lithium Americas, Sunrun, Corteva, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/69041927-616c-3622-84d4-5e2ddf553d35/these-stocks-are-moving-the.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:04PM",
+      "title": "AI Stocks: Bubble or Boom Ahead?\n\n\n(Zacks)",
+      "link": "/news/181350/ai-stocks-bubble-or-boom-ahead"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:49PM",
+      "title": "Nvidia Stock Falls From Record High as Meta Accelerates Custom AI Chip\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/nvidia-stock-falls-record-high-174903176.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:48PM",
+      "title": "Stock Market Today: Dow Wavers But These Gold Stocks Shine Amid Shutdown (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/353692cf-5902-35b0-8d5c-833f422c2c0b/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:07PM",
+      "title": "Stock Market Today: Dow Slips As Trump 'Generating Plant' Stock Pops On Debut (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/353692cf-5902-35b0-8d5c-833f422c2c0b/stock-market-today%3A-dow-slips.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:47PM",
+      "title": "Nvidia Crosses Record $4.53 Trillion in Market Cap\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/nvidia-crosses-record-4-53-164711941.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:43PM",
+      "title": "Meta Reportedly Eyes Rivos AI Chip Startup Deal\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/meta-reportedly-eyes-rivos-ai-164309580.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:41PM",
+      "title": "Huawei To Ramp Up AI Chip Production In 2026\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/huawei-ramp-ai-chip-production-164141523.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:35PM",
+      "title": "These S&P 500 Stocks Stood Out in Q3 2025: Western Digital, Warner Bros Discovery, Seagate, Corning, Teradyne\n\n\n(TheStreet)",
+      "link": "https://finance.yahoo.com/m/a8787f6d-095f-370e-a563-d6d2ef9ef71f/these-s%26p-500-stocks-stood.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:26PM",
+      "title": "Stock Market Today: Dow Moves Higher Amid Shutdown; Nvidia Rises In Buy Zone (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/353692cf-5902-35b0-8d5c-833f422c2c0b/stock-market-today%3A-dow-moves.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:20AM",
+      "title": "Microsoft Uses Microfluidics Tech to Outpace AI Chip Rivals\n\n\n(Zacks)",
+      "link": "/news/181113/microsoft-uses-microfluidics-tech-to-outpace-ai-chip-rivals"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:38AM",
+      "title": "Nvidia Becomes First Company to Reach $4.53 Trillion Market Cap\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/nvidia-becomes-first-company-reach-143848770.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:35AM",
+      "title": "On Semiconductor Expands Portfolio With Strategic Acquisitions\n\n\n(Zacks)",
+      "link": "/news/181093/on-semiconductor-expands-portfolio-with-strategic-acquisitions"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:10AM",
+      "title": "CoreWeave Is Winning Over Wall Street Amid Flurry of New Deals\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/coreweave-winning-over-wall-street-112503420.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:08AM",
+      "title": "ASML Has Fans Ahead of Earnings. 2 Reasons to Believe in the Stock.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/dab6af39-69b5-3b2d-bb5e-bf52988e4b77/asml-has-fans-ahead-of.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:02AM",
+      "title": "Nvidia Stock Drops. Meta Is Pushing Ahead with Its Own AI Chips.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/535ceef9-4e2a-307f-8e3e-4ced7e0fbb14/nvidia-stock-drops.-meta-is.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:47AM",
+      "title": "This Nvidia move has sparked criticism, but it could help the stock, one analyst says\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/this-nvidia-move-has-sparked-criticism-but-it-could-help-the-stock-one-analyst-says-406c5234?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:30AM",
+      "title": "Can Cadence's Strong Free Cash Flow Keep Fueling Shareholder Returns?\n\n\n(Zacks)",
+      "link": "/news/180972/can-cadences-strong-free-cash-flow-keep-fueling-shareholder-returns"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:30AM",
+      "title": "Cadence and TSMC Extend Partnership to Drive Next-Generation Innovation\n\n\n(Zacks)",
+      "link": "/news/180970/cadence-and-tsmc-extend-partnership-to-drive-next-generation-innovation"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:10AM",
+      "title": "Government Shutdown Weighs on Stock Futures After Strong Month\n\n\n(Schaeffer's Research)",
+      "link": "/news/180829/government-shutdown-weighs-on-stock-futures-after-strong-month"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:41AM",
+      "title": "Stock Market Today: Dow Falls On Shutdown, Surprise Jobs Data; Astera, Nvidia, Tesla Drop (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/353692cf-5902-35b0-8d5c-833f422c2c0b/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:30AM",
+      "title": "3 Best Tech Stocks to Buy in October\n\n\n(Motley Fool)",
+      "link": "/news/180784/3-best-tech-stocks-to-buy-in-october"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:25AM",
+      "title": "Nvidia Becomes World's Largest Company, Hits $4.5 Trillion Market Cap\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/nvidia-becomes-worlds-largest-company-122555338.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:22AM",
+      "title": "Stock Market Today: Dow Falls On Shutdown; Astera, Nvidia, Tesla Drop (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-government-shutdown-astera-nvidia-tesla?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:00AM",
+      "title": "5 Artificial Intelligence (AI) Stocks With Explosive Upside Ahead\n\n\n(Motley Fool)",
+      "link": "/news/180716/5-artificial-intelligence-ai-stocks-with-explosive-upside-ahead"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:57AM",
+      "title": "US takes a stake in company operating one of world's largest lithium mines in Nevada\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/us-takes-minority-stake-company-115743152.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:31AM",
+      "title": "Tesla Roadster Booking Canceled by Popular YouTuber MKBHD: 'Tesla Has Been Sitting With My 50 Grand For Eight Years'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/tesla-roadster-booking-canceled-popular-113114250.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:30AM",
+      "title": "Meet the Monster Chip Stock Crushing Nvidia on the Market (Hint: It's Not Broadcom)\n\n\n(Motley Fool)",
+      "link": "/news/180645/meet-the-monster-chip-stock-crushing-nvidia-on-the-market-hint-its-not-broadcom"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:26AM",
+      "title": "Nvidia Stock Drops from Record High. The AI Chip Maker Faces a New Challenge.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-ai-chips-10584ac9?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:22AM",
+      "title": "Samsung, SK Hynix set to supply chips to OpenAI's Stargate project\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/samsung-sk-hynix-set-supply-112215713.html"
+    }
+  ]
+}

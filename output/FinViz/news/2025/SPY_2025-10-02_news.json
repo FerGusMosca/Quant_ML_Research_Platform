@@ -1,0 +1,606 @@
+{
+  "symbol": "SPY",
+  "date": "2025-10-02",
+  "headlines": [
+    {
+      "date": "2025-10-02",
+      "time": "Today 03:44PM",
+      "title": "The stock market isn't letting a government shutdown spoil its party - so far\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/the-stock-market-isnt-letting-a-government-shutdown-spoil-its-party-so-far-04cdd0f1?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:05AM",
+      "title": "Buy, Hold and Build Wealth: ETFs for Long-Term Investors\n\n\n(Zacks)",
+      "link": "/news/182468/buy-hold-and-build-wealth-etfs-for-long-term-investors"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:46AM",
+      "title": "Stock Market Today: Dow Falls As Jobless Data Gets The Ax; Tesla Jumps On Strong Deliveries (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/f464db28-e154-36c8-b0be-7dbf0f6469d0/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:05AM",
+      "title": "Codego Launches Whitelabel Devices Bringing Tokens Into Daily Life\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/5522b14e-6295-338e-98d6-470007f9bfde/codego-launches-whitelabel.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:00AM",
+      "title": "B2BROKER Taps Finery Markets to Power Institutional Crypto OTC on B2TRADER\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/783aed44-9644-3107-8e8b-598f6c179328/b2broker-taps-finery-markets.html"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "14:36",
+      "title": "Dubai at the Centre of Global Finance: Forex Expo 2025 Redefines the Trading Landscape\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/dd3aa3ac-2928-33e9-839a-19931da0e226/dubai-at-the-centre-of-global.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:14AM",
+      "title": "ADP Sees Negative -32K Jobs in September\n\n\n(Zacks)",
+      "link": "/news/181075/adp-sees-negative-32k-jobs-in-september"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:00AM",
+      "title": "Growth & Large-Cap ETFs Worth Considering to Power Your Portfolio\n\n\n(Zacks)",
+      "link": "/news/181046/growth-large-cap-etfs-worth-considering-to-power-your-portfolio"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:48AM",
+      "title": "Stock Market Today: Dow Wavers On Shutdown, Jobs Report; Astera, Netflix, Nvidia, Tesla Drop (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/353692cf-5902-35b0-8d5c-833f422c2c0b/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:41AM",
+      "title": "Stock Market Today: Dow Falls On Shutdown, Surprise Jobs Data; Astera, Nvidia, Tesla Drop (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/353692cf-5902-35b0-8d5c-833f422c2c0b/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "18:24",
+      "title": "More Record Closing Highs as Fed Government May Be Closing\n\n\n(Zacks)",
+      "link": "/news/180362/more-record-closing-highs-as-fed-government-may-be-closing"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:56AM",
+      "title": "Stock Market Today: Dow Falls Amid Economic Data; CoreWeave Jumps; Nvidia Extends Gains (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/0a588a89-73d9-3372-a133-861431a2e93b/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "06:30AM",
+      "title": "Is Investing $50,000 in the Stock Market Today Enough to Grow Your Portfolio to More Than $1 Million by Retirement?\n\n\n(Motley Fool)",
+      "link": "/news/179232/is-investing-50000-in-the-stock-market-today-enough-to-grow-your-portfolio-to-more-than-1-million-by-retirement"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:37AM",
+      "title": "Edgen Launches MultiAgent Intelligence Upgrade to Unify Crypto and Equity Analysis\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/2949592b-a2ed-3a6d-97e7-3b5e0465be25/edgen-launches-multi%E2%80%91agent.html"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "15:30",
+      "title": "Mutuum Finance Surpasses $16.5M in Presale Amidst September Market Volatility\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/649599d9-5d9c-3c93-9cee-27aafc06c63d/mutuum-finance-surpasses.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:26PM",
+      "title": "Ethereum-Based DeFi Crypto Mutuum Finance (MUTM) Reaches 50% Completion in Phase 6\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/3d4feb44-914f-3297-ab30-c43b4f42f105/ethereum-based-defi-crypto.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:53AM",
+      "title": "Stock Market Today: Dow Wobbles Ahead Of Jobs Report; Nvidia, Palantir, Tesla Rally (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/011e567e-12e3-37f1-87d4-e98fe8e22dd0/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:21AM",
+      "title": "Stock Market Today: Dow Up Ahead Of Jobs Report; Nvidia, Tesla Rally (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/011e567e-12e3-37f1-87d4-e98fe8e22dd0/stock-market-today%3A-dow-up.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:00AM",
+      "title": "Small-Cap Wins in Q3: Top-Performing ETFs in Focus\n\n\n(Zacks)",
+      "link": "/news/178146/small-cap-wins-in-q3-top-performing-etfs-in-focus"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "06:11",
+      "title": "If I Could Buy Only 1 High-Yield Dividend ETF for Passive Income in September, This Would Be It\n\n\n(Motley Fool)",
+      "link": "/news/177677/if-i-could-buy-only-1-high-yield-dividend-etf-for-passive-income-in-september-this-would-be-it"
+    },
+    {
+      "date": "2025-09-27",
+      "time": "08:00",
+      "title": "Even smaller tech stocks are getting expensive. But these sectors could be your next big win.\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/even-smaller-tech-stocks-are-getting-expensive-but-these-sectors-could-be-your-next-big-win-544e5289?mod=mw_FV"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "14:34",
+      "title": "LYS Labs Moves Beyond Data and Aims to Become the Operating System for Automated Global Finance\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/d3e8885d-1141-3127-9e0a-83bec0f29c2c/lys-labs-moves-beyond-data.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:03PM",
+      "title": "Dexari Unveils $1M Cash Prize Trading Competition\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/be1afa6b-fa65-3576-9fd9-aab7624bd93f/dexari-unveils-%241m-cash-prize.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:37PM",
+      "title": "Why Roth IRAs and Roth conversions may not make sense for you\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/why-roth-iras-and-roth-conversions-may-not-make-sense-for-you-e0a7da0d?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:30AM",
+      "title": "Market Minute 9-26-25- New Tariffs Coming for Trucks, Drugs, and...Cabinets\n\n\n(MoneyShow)",
+      "link": "https://finance.yahoo.com/news/market-minute-9-26-25-143000597.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:18AM",
+      "title": "PCE Delivers Goldilocks Numbers for the Stock Market\n\n\n(Zacks)",
+      "link": "/news/177057/pce-delivers-goldilocks-numbers-for-the-stock-market"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:48AM",
+      "title": "Stock Market Today: Dow Rallies On Fed Inflation Data; Apple, Costco Fall (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/cbdc7a8a-132d-3ef8-8df9-711d5909e751/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:09AM",
+      "title": "Stock Market Today: Dow Rises On Fed Inflation Data; Apple Slides (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/cbdc7a8a-132d-3ef8-8df9-711d5909e751/stock-market-today%3A-dow-rises.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:12AM",
+      "title": "Here's How Much a $20,000 Investment in the S&P 500 Could Be Worth in 20 Years\n\n\n(Motley Fool)",
+      "link": "/news/176535/heres-how-much-a-20000-investment-in-the-sp-500-could-be-worth-in-20-years"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "18:20",
+      "title": "Market Indexes Stay Lower 2nd Straight Day, PCE On Deck\n\n\n(Zacks)",
+      "link": "/news/176362/market-indexes-stay-lower-2nd-straight-day-pce-on-deck"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:15PM",
+      "title": "KuCoin Appeals FINTRAC Decision, Reaffirms Commitment to Compliance\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/67e891fc-38a9-36af-b126-1e4025089147/kucoin-appeals-fintrac.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:49PM",
+      "title": "The market's new big worry has nothing to do with stocks - and that's the problem\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/the-markets-new-big-worry-has-nothing-to-do-with-stocks-and-thats-the-problem-e130ed9d?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:35PM",
+      "title": "Forex Expo Dubai 2025 Conference to Feature 150+ Global FX and Fintech Leaders\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/481bb418-f107-3a73-98bd-d86008d194db/forex-expo-dubai-2025.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:23PM",
+      "title": "Phase 6 Reaches 50% Mark as Mutuum Finance (MUTM) Approaches Next Price Step\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/8ec94eb1-04a0-3795-b1c5-bb5c904e2f7a/phase-6-reaches-50%25-mark-as.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:01AM",
+      "title": "Stock Market Today: Dow, Nasdaq Pare Early Losses; Oklo Stock Thrashed (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/28ada64c-17ab-3971-87b8-40882c2ab3ec/stock-market-today%3A-dow%2C.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:32AM",
+      "title": "Econ Data Surprisingly Good: Jobless Claims, Q2 GDP, Durable Goods & More\n\n\n(Zacks)",
+      "link": "/news/175910/econ-data-surprisingly-good-jobless-claims-q2-gdp-durable-goods-more"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:55AM",
+      "title": "Stock Market Today: Dow Falls After Surprise GDP, Jobless Claims; Nvidia, Oracle Sell Off (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/28ada64c-17ab-3971-87b8-40882c2ab3ec/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "06:52AM",
+      "title": "4 Top-Performing ETF Areas of First Nine Months of 2025\n\n\n(Zacks)",
+      "link": "/news/175529/4-top-performing-etf-areas-of-first-nine-months-of-2025"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "15:15",
+      "title": "Mutuum Finance (MUTM) Approaches Next Phase With 14.3% Price Increase After Raising $16 Million\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/c11a5980-6e05-3e59-911c-35ffb7740534/mutuum-finance-%28mutm%29.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:00PM",
+      "title": "Charting Whats Next as SPY Tests Our Top Technical Analysts V-Shaped Recovery Target\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/209a49e8-449d-35c8-b429-9ecdfd7aa02b/charting-what%E2%80%99s-next-as-spy.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:55AM",
+      "title": "Stock Market Today: Dow Up Ahead Of Home Data; AI Stock Falls On Earnings (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/03c1ca15-cba0-3dbe-a24e-bdcc175908dd/stock-market-today%3A-dow-up.html"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "15:12",
+      "title": "Is the diversified portfolio dead? The AI boom has turned an age-old investing rule on its head.\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/is-the-diversified-portfolio-dead-the-ai-boom-has-turned-an-age-old-investing-rule-on-its-head-3e1405f7?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:08PM",
+      "title": "Is Now the Time to Buy Small-Cap Stocks?\n\n\n(Zacks)",
+      "link": "/news/173729/is-now-the-time-to-buy-small-cap-stocks"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:45AM",
+      "title": "Stock Market Today: Dow Up Ahead Of Powell Speech; Nvidia At Buy Point (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/528531fa-7032-33b5-beb0-b49ba182d1f3/stock-market-today%3A-dow-up.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "06:00AM",
+      "title": "Fed Signals More Easing: Can S&P 500 ETFs Rally Further?\n\n\n(Zacks)",
+      "link": "/news/172994/fed-signals-more-easing-can-sp-500-etfs-rally-further"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "13:12",
+      "title": "Login Process Update: What You Need to Know\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/c1b4e0c3-5341-32cb-83d6-71a1f2cf0481/login-process-update%3A-what.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:44AM",
+      "title": "Stock Market Today: Dow Falls Ahead Of Inflation Data; Apple, Tesla Up On Target Hikes (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/296bfec4-debf-3635-a8f4-e936a36cf1b0/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:00AM",
+      "title": "Your Bourse and B2BROKER Partner to Deliver Complete Brokerage Solutions\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/9e746724-b33a-3b5f-9045-80e333ccef89/your-bourse-and-b2broker.html"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "09:45",
+      "title": "Is Having a Position in the Entire Stock Market a Better Option Than Investing in the S&P 500?\n\n\n(Motley Fool)",
+      "link": "/news/171659/is-having-a-position-in-the-entire-stock-market-a-better-option-than-investing-in-the-sp-500"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "10:18",
+      "title": "10 bargain stocks of companies that can increase profits faster than the S&P 500\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/10-bargain-stocks-of-companies-that-can-increase-profits-faster-than-the-s-p-500-eb4ea3b3?mod=mw_FV"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "12:32",
+      "title": "Stocks Rally Produces an Undefeated Buy Signal\n\n\n(FX Empire)",
+      "link": "https://finance.yahoo.com/news/stocks-rally-produces-undefeated-buy-163253696.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:33AM",
+      "title": "Hola Prime Expands Its Platform Ecosystem with Next-Gen Tradelocker\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/eb86e7d1-326f-317a-9915-a9f8659f155b/hola-prime-expands-its.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:36AM",
+      "title": "A Late Summer Reflection on Growth, Inflation & Jobs\n\n\n(Zacks)",
+      "link": "/news/170883/a-late-summer-reflection-on-growth-inflation-jobs"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:53AM",
+      "title": "Stock Market Today: Dow Ticks Up During Trump-Xi Call; Tesla Upgraded (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/27588c5e-cf2f-37b6-b1cf-49f2b3ab0844/stock-market-today%3A-dow-ticks.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:51AM",
+      "title": "Stock Market Today: Dow Edges Higher During Trump-Xi Call; Tesla Upgraded (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/27588c5e-cf2f-37b6-b1cf-49f2b3ab0844/stock-market-today%3A-dow-edges.html"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "14:16",
+      "title": "The Fed Cut Rates: What Now for the S&P 500 and Equity Markets?\n\n\n(MarketBeat)",
+      "link": "/news/169943/the-fed-cut-rates-what-now-for-the-sp-500-and-equity-markets"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:48AM",
+      "title": "Stock Market Today: Dow Falls In Mixed Action After Rate Cut, Jobless Data; Nvidia Jumps On Intel Stake (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/2efa848d-1e4b-329f-9aff-c5ca5d43b3a0/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:38AM",
+      "title": "Stock Market Today: Dow Rallies After Rate Change, Surprise Jobless Claims; Nvidia Surges On Intel Stake (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/2efa848d-1e4b-329f-9aff-c5ca5d43b3a0/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:13AM",
+      "title": "Want $1 Million in Retirement? 3 Simple Index Funds to Buy and Hold for Decades.\n\n\n(Motley Fool)",
+      "link": "/news/169137/want-1-million-in-retirement-3-simple-index-funds-to-buy-and-hold-for-decades"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "21:39",
+      "title": "Direxion Appoints Jessica Fernandez as Global Chief Marketing Officer\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/a8e12750-909c-3910-b6cf-e4ae072601bc/direxion-appoints-jessica.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "06:30PM",
+      "title": "Fed Sees \"Two-Sided Risk\" in Lowering Interest Rates\n\n\n(Zacks)",
+      "link": "/news/169060/fed-sees-two-sided-risk-in-lowering-interest-rates"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:33PM",
+      "title": "The Side of Rate Cuts Nobody Is Telling You About\n\n\n(MarketBeat)",
+      "link": "/news/168933/the-side-of-rate-cuts-nobody-is-telling-you-about"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:29PM",
+      "title": "Investors Retreat From International, Turn to U.S. Equities Ahead of Rate Cut\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/1e328d5e-cbcd-3e1a-adcc-7897ccba0e61/investors-retreat-from.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:26PM",
+      "title": "Forex Expo Dubai 2025 Returns October 67 With Exclusive Prize Draw Including Jetour X70 FL\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/dedfaa16-08b9-3f74-ae58-d8fc6e0fa9b1/forex-expo-dubai-2025-returns.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:32PM",
+      "title": "Blueberry Launches a Bold New Brand Platform\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/41a5b5a9-6053-3c46-8c21-17f905e0c918/blueberry-launches-a-bold-new.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:30AM",
+      "title": "Housing Numbers Down Ahead of Fed Rate Cut Today\n\n\n(Zacks)",
+      "link": "/news/168616/housing-numbers-down-ahead-of-fed-rate-cut-today"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:45AM",
+      "title": "Stock Market Today: Dow Climbs Ahead Of Fed Vote; Nvidia Slides On China Ban (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/07104f85-6de4-3d31-b532-05b15f18ced6/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:45AM",
+      "title": "1 No-Brainer S&P 500 Index Fund to Buy Right Now for Less Than $1,000\n\n\n(Motley Fool)",
+      "link": "/news/168160/1-no-brainer-sp-500-index-fund-to-buy-right-now-for-less-than-1000"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:29AM",
+      "title": "XFunded Expands in Dubai, Strengthening Collaborations With Trading Influencers Across Europe\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/de9df0f0-e1a0-381e-a9f6-5eac124393b7/xfunded-expands-in-dubai%2C.html"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "16:28",
+      "title": "Investors Bet Big on U.S. Equities, Bonds\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/d704db8e-4e41-3d45-905e-07d86a54cb55/investors-bet-big-on-u.s..html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:16PM",
+      "title": "New Cryptocurrency Mutuum Finance (MUTM) Raises $15.8M as Phase 6 Reaches 40%\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/7a44fdb4-20e0-3c38-962d-c9be53e3ed39/new-cryptocurrency-mutuum.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:04PM",
+      "title": "Kintsu Launches sHYPE on Hyperliquid\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/6baaa6b7-f085-3e41-bf24-4229b45e54c3/kintsu-launches-shype-on.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:01PM",
+      "title": "Leverage Shares Launches First 3x Single-Stock ETPs on HOOD, HIMS, UNH and Others\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/d15b2ceb-d375-3b07-90e1-5730c59d3e2b/leverage-shares-launches.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:57AM",
+      "title": "Stock Market Today: Dow Sinks, Nasdaq Wavers; Rocket Stock Crashes As Meta Does This (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/0a73413b-b9d7-35ef-ba69-839e6e6980f1/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:36AM",
+      "title": "Alchemy Markets Launches TradingView Integration for Direct Chart-Based Trading\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/533708b9-bbc9-3eb3-9d79-a541a5b0c501/alchemy-markets-launches.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:28AM",
+      "title": "Retail Sales, Imports & Exports Warmer Ahead of Fed Meeting\n\n\n(Zacks)",
+      "link": "/news/167441/retail-sales-imports-exports-warmer-ahead-of-fed-meeting"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:56AM",
+      "title": "Stock Market Today: Dow Falls Amid Surprise Retail Sales; Dave & Busters Plunges (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/0a73413b-b9d7-35ef-ba69-839e6e6980f1/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "17:15",
+      "title": "ETF Education: What Are Authorized Participants?\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/889deff3-dd05-30f0-afe8-0b5764f50a01/etf-education%3A-what-are.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:18PM",
+      "title": "11 fast-growing small-cap stocks that could get a boost from the Fed's next move\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/11-fast-growing-small-cap-stocks-that-could-get-a-boost-from-the-feds-next-move-424328aa?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:00PM",
+      "title": "Wiener Bank SE Partners with REAL Finance to Revolutionize Asset Management with Blockchain Technology\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/52cef85c-4a7d-335e-842c-62d972d2a96e/wiener-bank-se-partners-with.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:39AM",
+      "title": "Stock Market Today: Dow, Nasdaq Gain Amid Trump-China Talks; Tesla Surges On Musk Buy (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/8620f99a-4db8-3e0a-9381-158abddcda17/stock-market-today%3A-dow%2C.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:16AM",
+      "title": "Moving Pieces Ahead of Fed Rate Decision\n\n\n(Zacks)",
+      "link": "/news/166324/moving-pieces-ahead-of-fed-rate-decision"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:43AM",
+      "title": "Stock Market Today: Dow Wavers With Fed Ahead; Tesla Surges On Musk Stock Buys (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/8620f99a-4db8-3e0a-9381-158abddcda17/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:06AM",
+      "title": "Stock Market Today: Dow Rises With Fed Ahead; Tesla Surges On Musk Stock Buys (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/8620f99a-4db8-3e0a-9381-158abddcda17/stock-market-today%3A-dow-rises.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:31AM",
+      "title": "B2PRIME Secures DFSA Licence To Operate from The DIFC, Setting A New Institutional Benchmark for MENA  Gulf Region\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/7d7f70c8-575f-3b0a-aabe-a7d2f030ec4d/b2prime-secures-dfsa-licence.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "06:00AM",
+      "title": "Analysts Boost S&P 500 Target: ETFs in Focus\n\n\n(Zacks)",
+      "link": "/news/165802/analysts-boost-sp-500-target-etfs-in-focus"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "12:57",
+      "title": "BlockchainFX Raises $7.24M in Presale as First Multi-Asset Super App Connecting Crypto, Stocks, and Forex Goes Live in Beta\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/3cb25092-6423-3f10-92e4-0e730711ee07/blockchainfx-raises-%247.24m-in.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:40AM",
+      "title": "Stock Market Today: Dow Falls After Inflation Survey; Gemini IPO Set To Launch (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/4225398f-f0c1-3255-bb33-a4f7085e6490/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:14AM",
+      "title": "Stock Market On Top of the World Ahead of Fed Meeting\n\n\n(Zacks)",
+      "link": "/news/165030/stock-market-on-top-of-the-world-ahead-of-fed-meeting"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:53AM",
+      "title": "Stock Market Today: Dow Eases Ahead Of Inflation Survey; Gemini IPO Set To Launch (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/4225398f-f0c1-3255-bb33-a4f7085e6490/stock-market-today%3A-dow-eases.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:01AM",
+      "title": "DOLLUM Expands Wallet Opportunities, Introducing New Security Features Following The DOL Token Sale\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/af75ca7b-d13c-37ac-99f6-677c708990a2/dollum-expands-wallet.html"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "17:30",
+      "title": "ETF Education: Understanding ETF Liquidity\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/867eb541-ec46-397a-9e77-8c2fed0d7b36/etf-education%3A-understanding.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:24PM",
+      "title": "S 500 ETFs Lead Inflows as IVV Sees Sharp Outflows\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/1132c16b-aaf8-34c1-8e58-c1831994f45e/s-500-etfs-lead-inflows-as.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:38PM",
+      "title": "21Shares Launches DYDX ETP, Unlocking Institutional Access to On-Chain Derivatives\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/19e51fda-5069-378d-a999-514164048c8f/21shares-launches-dydx-etp%2C.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:00PM",
+      "title": "Ueno Bank Brings Its 2.2M Customers Quantum-Resistant Banking with SignQuantum and QANplatform\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/97ca975e-76b2-3a61-acf6-49edab975964/ueno-bank-brings-its-2.2m.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:24AM",
+      "title": "FBS Analysis Shows Ethereum Positioning as Wall Streets Base Layer\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/6448694c-9144-3904-b3dc-7a5d12c32548/fbs-analysis-shows-ethereum.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:01AM",
+      "title": "KuCoin Partners with Golf Icon Adam Scott as Global Brand Ambassador\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/291760b4-0db5-3edd-b138-c597d1df1206/kucoin-partners-with-golf.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:47AM",
+      "title": "Stock Market Today: Dow Rises On Surprise Inflation, Jobless Claims Data; Nvidia, Tesla Higher (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/b1d6d5f1-a571-3096-853c-9d00d383d199/stock-market-today%3A-dow-rises.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:51AM",
+      "title": "Stock Market Today: Dow Fades On Surprise Inflation, Jobless Claims Data; Nvidia, Palantir, Tesla Rally (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/b1d6d5f1-a571-3096-853c-9d00d383d199/stock-market-today%3A-dow-fades.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:15AM",
+      "title": "PrimeXBT Wins Global Forex Award for Best Multi-Asset Trading Platform\n\n\n(etf.com)",
+      "link": "https://finance.yahoo.com/m/e8d186d6-2bb2-365c-a2e0-87d5d414f27c/primexbt-wins-global-forex.html"
+    }
+  ]
+}

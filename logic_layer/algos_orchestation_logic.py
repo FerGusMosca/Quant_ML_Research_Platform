@@ -24,6 +24,7 @@ from common.enums.sliding_window_strategy import SlidingWindowStrategy as sws, S
 from common.enums.trading_algo_strategy import TradingAlgoStrategy as tas, TradingAlgoStrategy
 from common.util.downloaders.FRED_downloader import FredDownloader
 from common.util.downloaders.SEC_securities_downloader import SECSecuritiesDownloader
+from common.util.downloaders.finviz_news_downloader import FinVizNewsDownloader
 from common.util.downloaders.k10_downloader import K10Downloader
 from common.util.downloaders.q10_downloader import Q10Downloader
 from common.util.downloaders.tradingview_downloader import TradingViewDownloader
@@ -479,7 +480,7 @@ class AlgosOrchestationLogic:
 
     def _run_yearly_income_statement(self):
         # ✅ Get securities list from your manager
-        securities = self.report_securities_mgr.get_report_securities("download_income_statement")
+        securities = self.report_securities_mgr.get_report_securities(ReportType.DOWNLOAD_YEARLY_INCOME_STATEMENT.value)
         self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
 
         for i, sec in enumerate(securities):
@@ -489,6 +490,26 @@ class AlgosOrchestationLogic:
 
                 self.logger.do_log(
                     f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded {len(files)} yearly Income Statements for {symbol}",
+                    MessageType.INFO
+                )
+            except Exception as e:
+                self.logger.do_log(
+                    f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {str(e)}",
+                    MessageType.ERROR
+                )
+
+    def _run_fin_viz_news_downloader(self):
+        # ✅ Get securities list from your manager
+        securities = self.report_securities_mgr.get_report_securities(ReportType.FINVIZ_NEWS_DOWNLOAD.value)
+        self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
+
+        for i, sec in enumerate(securities):
+            symbol = sec.ticker
+            try:
+                out_file = FinVizNewsDownloader.download(symbol)
+
+                self.logger.do_log(
+                    f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded news for {symbol} -> {out_file}",
                     MessageType.INFO
                 )
             except Exception as e:
@@ -2300,6 +2321,9 @@ class AlgosOrchestationLogic:
             self._run_download_q10(year)
         elif report_key.lower() == ReportType.DOWNLOAD_YEARLY_INCOME_STATEMENT.value:
             self._run_yearly_income_statement()
+        elif report_key.lower() == ReportType.FINVIZ_NEWS_DOWNLOAD.value:
+            self._run_fin_viz_news_downloader()
+        #
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_Q10.value:
             self._run_competition_summary_report(year, SECReports.Q10.value)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_K10.value:

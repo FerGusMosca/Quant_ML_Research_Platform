@@ -1,0 +1,606 @@
+{
+  "symbol": "AVGO",
+  "date": "2025-10-02",
+  "headlines": [
+    {
+      "date": "2025-10-02",
+      "time": "Today 03:48PM",
+      "title": "Stocks to Watch Thursday: Fair Isaac, Tesla, Stellantis, Netflix\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/02c7e1ae-39dc-3e13-8a56-2b18e427ddbc/stocks-to-watch-thursday%3A.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:33PM",
+      "title": "Why Is Broadcom Stock Surging Thursday?\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/why-broadcom-stock-surging-thursday-183327721.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:03PM",
+      "title": "Move Over, Mag 7. Buy This 1 Missing AI Winner Instead.\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/3d9e861f-51ab-3ee1-aaa2-5509fddd122d/move-over%2C-mag-7.-buy-this-1.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:45PM",
+      "title": "AI, chip stocks to own beyond just Nvidia in Q4\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/ai-chip-stocks-own-beyond-164500129.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:12PM",
+      "title": "Mortgage rates higher, chips rally on OpenAI news, Rivian plunges\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/mortgage-rates-higher-chips-rally-161204889.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:48AM",
+      "title": "Microsoft and 7 Other Stocks That Could Benefit From OpenAIs $500B Valuation\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/fa7691cd-f179-3e6d-a0f3-d73d8be6f53c/microsoft-and-7-other-stocks.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:45AM",
+      "title": "OpenAI Is Valued at $500 Billion. 8 Stocks That Gain From Its Growth.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/openai-valuation-stocks-microsoft-oracle-coreweave-9dcdc559?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:23AM",
+      "title": "Nvidia, AMD Stocks Rise. Whats Driving the AI Chip Rally.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/e2f78341-f3a8-3ddd-b5ab-bdac6fdf1e4f/nvidia%2C-amd-stocks-rise..html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:58AM",
+      "title": "Stocks Edge Higher as Shutdown Enters Second Day\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/31c83384-e6c0-3a8c-a5ca-3ec96f0771ac/stocks-edge-higher-as.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:31AM",
+      "title": "AI stock rally: OpenAI valuation lifts Nvidia, AMD, Intel & more\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/ai-stock-rally-openai-valuation-133157224.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:05AM",
+      "title": "Chip stocks rise as OpenAIs Stargate project fuels AI memory demand hype\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/chip-stocks-rise-openai-stargate-130531665.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:24AM",
+      "title": "Nvidia, AMD Stocks Rise. How OpenAI Is Driving the AI Chip Rally.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-amd-openai-4801d64a?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:12AM",
+      "title": "Stock Futures Inch Up as Shutdown Enters Second Day\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/31c83384-e6c0-3a8c-a5ca-3ec96f0771ac/stock-futures-inch-up-as.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:20AM",
+      "title": "3 Red-Hot Growth Stocks to Buy in 2025\n\n\n(Motley Fool)",
+      "link": "/news/182004/3-red-hot-growth-stocks-to-buy-in-2025"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "18:54",
+      "title": "Why Nvidia, Broadcom and other high-flying stocks are especially risky now\n\n\n(MarketWatch)",
+      "link": "https://finance.yahoo.com/m/1872da76-4f57-3e70-aac3-5c517ba6c009/why-nvidia%2C-broadcom-and.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:33PM",
+      "title": "Broadcom (AVGO) Bull Shares His 'Only Hesitation' About the Stock\n\n\n(Insider Monkey)",
+      "link": "/news/181479/broadcom-avgo-bull-shares-his-only-hesitation-about-the-stock"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:49PM",
+      "title": "Nvidia Stock Falls From Record High as Meta Accelerates Custom AI Chip\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/nvidia-stock-falls-record-high-174903176.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:20AM",
+      "title": "Microsoft Uses Microfluidics Tech to Outpace AI Chip Rivals\n\n\n(Zacks)",
+      "link": "/news/181113/microsoft-uses-microfluidics-tech-to-outpace-ai-chip-rivals"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:02AM",
+      "title": "Nvidia Stock Drops. Meta Is Pushing Ahead with Its Own AI Chips.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/535ceef9-4e2a-307f-8e3e-4ced7e0fbb14/nvidia-stock-drops.-meta-is.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:00AM",
+      "title": "Broadcom Showcases Industry-Leading Quality and Reliability of Co-Packaged Optics\n\n\n(GlobeNewswire)",
+      "link": "/news/180800/broadcom-showcases-industry-leading-quality-and-reliability-of-co-packaged-optics"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:50AM",
+      "title": "Why Investors Need to Take Advantage of These 2 Computer and Technology Stocks Now\n\n\n(Zacks)",
+      "link": "/news/180871/why-investors-need-to-take-advantage-of-these-2-computer-and-technology-stocks-now"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:30AM",
+      "title": "Meet the Monster Chip Stock Crushing Nvidia on the Market (Hint: It's Not Broadcom)\n\n\n(Motley Fool)",
+      "link": "/news/180645/meet-the-monster-chip-stock-crushing-nvidia-on-the-market-hint-its-not-broadcom"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:26AM",
+      "title": "Nvidia Stock Drops from Record High. The AI Chip Maker Faces a New Challenge.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-ai-chips-10584ac9?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:35AM",
+      "title": "Better AI Dividend Stock: Apple vs. Broadcom\n\n\n(Motley Fool)",
+      "link": "/news/180528/better-ai-dividend-stock-apple-vs-broadcom"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:00AM",
+      "title": "3 Underrated AI ETFs With Multi-Million Dollar Potential\n\n\n(Motley Fool)",
+      "link": "/news/180465/3-underrated-ai-etfs-with-multi-million-dollar-potential"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "16:47",
+      "title": "Broadcom Inc. (AVGO) CEO Tan Hock E. Sells 100,000 Shares for About $34 Million\n\n\n(Insider Monkey)",
+      "link": "/news/180196/broadcom-inc-avgo-ceo-tan-hock-e-sells-100000-shares-for-about-34-million"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:49PM",
+      "title": "AIs Winners Arent All in Tech. 22 Cheaper Stocks to Consider.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/25c0064a-a8b2-32dc-bd1f-e17e4950bca3/ai%E2%80%99s-winners-aren%E2%80%99t-all-in.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:45PM",
+      "title": "Broadcom Inc. (AVGO) Posts $15.95B Q3 Revenue, AI Segment Surges 63%\n\n\n(Insider Monkey)",
+      "link": "/news/179977/broadcom-inc-avgo-posts-1595b-q3-revenue-ai-segment-surges-63"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:09AM",
+      "title": "AI-Fixated Traders Pile Into Teradyne, Other Obscure Chip Stocks\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/ai-fixated-traders-pile-teradyne-105339454.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:02AM",
+      "title": "Nvidia Stock Rally Pauses. How the Chip Maker Intends to Keep Its Lead Over AMD.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-ai-chips-amd-ea18d8d5?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:45AM",
+      "title": "The 3 AI ETF Plays That Could Outperform the Market in 5 Years\n\n\n(Motley Fool)",
+      "link": "/news/179219/the-3-ai-etf-plays-that-could-outperform-the-market-in-5-years"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:43AM",
+      "title": "These 2 AI stocks stand out as supply chain winners, says KeyBanc\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/2-ai-stocks-stand-supply-094329511.html"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "19:18",
+      "title": "Broadcom Strengthens Growth Amid AI Demand and Executive Share Sale\n\n\n(Insider Monkey)",
+      "link": "/news/178976/broadcom-strengthens-growth-amid-ai-demand-and-executive-share-sale"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:08PM",
+      "title": "Dow Jones Futures: Nvidia Stock, Palantir Eye Buy Points, But AI Names Broadcom, Oracle Fall\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-nvidia-stock-nvda-palantir-broadcom-oracle?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:10PM",
+      "title": "Why AI has a familiar tune to the Dot-Com Bubble\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/why-ai-familiar-tune-dot-201010895.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:36PM",
+      "title": "Broadcom and Nvidia Executives Cash Out Shares After Big Rally\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/broadcom-nvidia-executives-cash-shares-163612199.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:23AM",
+      "title": "Chip Stocks Keep Charging Higher. What the Charts Say About Nvidia, Broadcom, Applied Materials\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/chip-stocks-charge-higher-charts-nvidia-broadcom-applied-materials-52320ae7?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:30AM",
+      "title": "Nvidia Stock Rises. Watch OpenAI to See Where It Goes Next.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-openai-b24b56b6?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:00AM",
+      "title": "Got $5,000? 5 Tech Stocks to Buy and Hold for the Long Term\n\n\n(Motley Fool)",
+      "link": "/news/178079/got-5000-5-tech-stocks-to-buy-and-hold-for-the-long-term"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:00AM",
+      "title": "3 Top Artificial Intelligence (AI) Stocks to Buy Right Now\n\n\n(Motley Fool)",
+      "link": "/news/177951/3-top-artificial-intelligence-ai-stocks-to-buy-right-now"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:51AM",
+      "title": "Nvidia Received a Rare Price Target Cut From a Wall Street Analyst -- but the Reasoning Behind the Cut Misses the Biggest Threat Facing This Artificial Intelligence (AI) Darling\n\n\n(Motley Fool)",
+      "link": "/news/177921/nvidia-received-a-rare-price-target-cut-from-a-wall-street-analyst-but-the-reasoning-behind-the-cut-misses-the-biggest-threat-facing-this-artificial-intelligence-ai-darling"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:15AM",
+      "title": "Buy and Hold: 3 Artificial Intelligence (AI) Stocks to Own Through 2035\n\n\n(Motley Fool)",
+      "link": "/news/177915/buy-and-hold-3-artificial-intelligence-ai-stocks-to-own-through-2035"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:00AM",
+      "title": "VMware customers face crossroads as Broadcom ends vSphere 7 support\n\n\n(CIO Dive)",
+      "link": "https://finance.yahoo.com/m/44db0508-0327-3f18-ab1f-25c5e876ac4f/vmware-customers-face.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:56AM",
+      "title": "Fitch Ratings Upgrades Broadcom Inc. (AVGO) to BBB+ on AI Semiconductors Opportunities\n\n\n(Insider Monkey)",
+      "link": "/news/177856/fitch-ratings-upgrades-broadcom-inc-avgo-to-bbb-on-ai-semiconductors-opportunities"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "18:00",
+      "title": "The 5 Best S&P 500 Stocks of the Last 10 Years\n\n\n(Motley Fool)",
+      "link": "/news/177770/the-5-best-sp-500-stocks-of-the-last-10-years"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:04AM",
+      "title": "What Is One of the Best Chip Stocks to Own for the Next 5 Years?\n\n\n(Motley Fool)",
+      "link": "/news/177651/what-is-one-of-the-best-chip-stocks-to-own-for-the-next-5-years"
+    },
+    {
+      "date": "2025-09-27",
+      "time": "07:00",
+      "title": "MarketBeat Week in Review - 09/22 - 09/26\n\n\n(MarketBeat)",
+      "link": "/news/177513/marketbeat-week-in-review-0922-0926"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "06:00AM",
+      "title": "Prediction: This Artificial Intelligence (AI) Stock Will Be The Next Household Name\n\n\n(Motley Fool)",
+      "link": "/news/177509/prediction-this-artificial-intelligence-ai-stock-will-be-the-next-household-name"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:20AM",
+      "title": "Prediction: These Supercharged Growth Stocks Will Soar by 2028\n\n\n(Motley Fool)",
+      "link": "/news/177503/prediction-these-supercharged-growth-stocks-will-soar-by-2028"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "02:00AM",
+      "title": "A REIT, Insurer, and Bank Are Set to Go Public. The IPO Market Is More Than Tech.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/stock-ipo-market-tech-fermi-energy-banks-12feabfc?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:58AM",
+      "title": "Bernstein Remains Bullish on Broadcom (AVGO)\n\n\n(Insider Monkey)",
+      "link": "/news/177469/bernstein-remains-bullish-on-broadcom-avgo"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "11:00",
+      "title": "J.P. Morgan Reiterates Buy Rating on Broadcom, Keeps PT at $400\n\n\n(Insider Monkey)",
+      "link": "/news/176994/jp-morgan-reiterates-buy-rating-on-broadcom-keeps-pt-at-400"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:12AM",
+      "title": "ServiceNow Stock and 4 More AI Losers to Consider Buying Now\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/abe37a14-5c6e-3ad7-a380-445ba4586ae1/servicenow-stock-and-4-more.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:05AM",
+      "title": "Intel Stock Is Soaring. This Chip Giant Could Be the Latest to Invest.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/intel-stock-price-tsmc-chips-ai-2f369356?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:57AM",
+      "title": "Meet the Company Challenging Broadcom's AI Chip Dominance (Hint: It's Not Nvidia)\n\n\n(Motley Fool)",
+      "link": "/news/176879/meet-the-company-challenging-broadcoms-ai-chip-dominance-hint-its-not-nvidia"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:43AM",
+      "title": "ADI's Communications Segment Improves: Is the Momentum Sustainable?\n\n\n(Zacks)",
+      "link": "/news/176967/adis-communications-segment-improves-is-the-momentum-sustainable"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:03AM",
+      "title": "Nvidia Stock Has Avoided the Worst of the AI Selloff. It Will Try to Rise Again Today.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-today-ai-e74afde5?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:04AM",
+      "title": "Nvidia Stock Falls. What's Dragging on the AI Chip Maker.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-ai-chips-e74afde5?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:00AM",
+      "title": "5 Brilliant Growth Stocks to Buy Now and Hold for the Long Term\n\n\n(Motley Fool)",
+      "link": "/news/176488/5-brilliant-growth-stocks-to-buy-now-and-hold-for-the-long-term"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:15AM",
+      "title": "Could This AI Chipmaker Surpass Nvidia by 2030?\n\n\n(Motley Fool)",
+      "link": "/news/176438/could-this-ai-chipmaker-surpass-nvidia-by-2030"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:40AM",
+      "title": "2 Profitable Stocks Worth Your Attention and 1 We Ignore\n\n\n(StockStory)",
+      "link": "/news/176447/2-profitable-stocks-worth-your-attention-and-1-we-ignore"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:07AM",
+      "title": "Mizuho Raises Broadcom (AVGO) Price Target, Keeps Outperform Rating\n\n\n(Insider Monkey)",
+      "link": "/news/176411/mizuho-raises-broadcom-avgo-price-target-keeps-outperform-rating"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "17:43",
+      "title": "Broadcom, Alphabet are long-term AI winners, says Nuveen's Saira Malik\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=QEGzD2slnxE"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:31PM",
+      "title": "Nvidia Stock Wavers As AI Chip Stocks Struggle\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/a344bf9c-b395-3de2-97e5-cd1906ca0275/nvidia-stock-wavers-as-ai.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:38PM",
+      "title": "AVGO: Broadcom $110 Billion Backlog Can't Hide Margin Pressures\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/avgo-broadcom-110-billion-backlog-193822413.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "12:27PM",
+      "title": "Nvidia Stock Is Rising. It Can Gain 37% From Here, Says This Analyst.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/7bd2b94b-b4ba-3a14-acc3-01943d32d5f9/nvidia-stock-is-rising.-it.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:18AM",
+      "title": "Broadcom and AMD Are Set to Share This Much of the $475 Billion AI Chip Market by 2030\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-broadcom-amd-stock-ai-chips-market-share-8da59418?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:38AM",
+      "title": "Nvidia Stock Weakens As AI Chip Stocks Struggle\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/a344bf9c-b395-3de2-97e5-cd1906ca0275/nvidia-stock-weakens-as-ai.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:35AM",
+      "title": "The Zacks Analyst Blog Highlights Broadcom Oracle, Cisco Systems and United-Guardian\n\n\n(Zacks)",
+      "link": "/news/175908/the-zacks-analyst-blog-highlights-broadcom-oracle-cisco-systems-and-united-guardian"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:10AM",
+      "title": "Big Tech leads selloff as rotation away from AI theme continues\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-sp500-nasdaq-struggle-to-rally-after-pullback-fedspeak-data-due/card/big-tech-leads-selloff-as-rotation-away-from-ai-theme-continues-Ju4JKYFx8W9ikIgUJlxL?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:48AM",
+      "title": "Nvidia Stock Is Falling. This Analyst Says It Can Gain 37% from Here.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/7bd2b94b-b4ba-3a14-acc3-01943d32d5f9/nvidia-stock-is-falling.-this.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:18AM",
+      "title": "With the S&P 500 at Historically High Levels, This ETF Could Be the Best Way to Invest in the Index\n\n\n(Motley Fool)",
+      "link": "/news/175615/with-the-sp-500-at-historically-high-levels-this-etf-could-be-the-best-way-to-invest-in-the-index"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:02AM",
+      "title": "Nvidia Stock Is Falling. This Analyst Says It Can Gain 37% Gain from Here.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-analyst-target-raise-fd45e58b?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "07:30AM",
+      "title": "AI trade has 'more room to run': Investment plays beyond Nvidia\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/ai-trade-more-room-run-113011581.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "06:05AM",
+      "title": "The Best Stocks to Invest $10,000 in Now\n\n\n(Motley Fool)",
+      "link": "/news/175443/the-best-stocks-to-invest-10000-in-now"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:49AM",
+      "title": "Nvidia Stock Falls. Why This Analyst Backs a Near 40% Gain from Here.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-ai-investment-fd45e58b?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:28AM",
+      "title": "5 Super Semiconductor Stocks to Buy and Hold for the Next 5 Years\n\n\n(Motley Fool)",
+      "link": "/news/175331/5-super-semiconductor-stocks-to-buy-and-hold-for-the-next-5-years"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:55AM",
+      "title": "Prediction: This Semiconductor Stock Could Surge 70% by 2026 (Hint: It's Not Nvidia)\n\n\n(Motley Fool)",
+      "link": "/news/175319/prediction-this-semiconductor-stock-could-surge-70-by-2026-hint-its-not-nvidia"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "17:26",
+      "title": "Top Research Reports for Broadcom, Oracle & Cisco Systems\n\n\n(Zacks)",
+      "link": "/news/175096/top-research-reports-for-broadcom-oracle-cisco-systems"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:00PM",
+      "title": "Top Funds Propel This AI Infrastructure Stock. Here's What's Fueling Demand.\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/17368a84-0daa-3ed8-a638-703480f3f8d1/top-funds-propel-this-ai.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:25PM",
+      "title": "ALAB Rides on Strong Demand for PCIe Solution: A Sign of More Upside?\n\n\n(Zacks)",
+      "link": "/news/174957/alab-rides-on-strong-demand-for-pcie-solution-a-sign-of-more-upside"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:38AM",
+      "title": "Nvidia Made a Massive Artificial Intelligence (AI) Investment That Changes Everything\n\n\n(Motley Fool)",
+      "link": "/news/174817/nvidia-made-a-massive-artificial-intelligence-ai-investment-that-changes-everything"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:20AM",
+      "title": "Marvell Stock Has Been Hot. Now the AI Chip Maker Is Buying Back Shares.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/90a4d557-15a3-3aac-bac4-eb2cd5af079c/marvell-stock-has-been-hot..html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:59AM",
+      "title": "AVGO's Infrastructure Software Sales Rise: A Sign of More Upside?\n\n\n(Zacks)",
+      "link": "/news/174822/avgos-infrastructure-software-sales-rise-a-sign-of-more-upside"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:45AM",
+      "title": "Micron Forecast Fails to Satisfy Investors After AI-Fueled Rally\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/micron-gives-solid-forecast-ai-222211088.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:44AM",
+      "title": "MRVL's Carrier Infrastructure Segment Recovering: What Lies Ahead?\n\n\n(Zacks)",
+      "link": "/news/174805/mrvls-carrier-infrastructure-segment-recovering-what-lies-ahead"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:36AM",
+      "title": "GLW's Diverse Portfolio Fuels Customer Growth: Will it Drive Revenues?\n\n\n(Zacks)",
+      "link": "/news/174785/glws-diverse-portfolio-fuels-customer-growth-will-it-drive-revenues"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:18AM",
+      "title": "Marvell Has Been Hot. Now It's Buying Back Stock.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/marvell-technology-stock-buyback-ai-chips-0597d6fe?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:05AM",
+      "title": "Is an AI bubble forming? We could be pouring gas 'on the fire.'\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/ai-bubble-forming-could-pouring-140531864.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:05AM",
+      "title": "Broadcom Price Targets Just Reached Above $400 for the First Time\n\n\n(MarketBeat)",
+      "link": "/news/174516/broadcom-price-targets-just-reached-above-400-for-the-first-time"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "08:02AM",
+      "title": "Top Funds Launch This Next-Gen Mobility Stock Into Orbit. Here's What's Fueling Demand.\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/research/breakout-stocks-technical-analysis/jabil-stock-targets-breakout-earnings-due-for-broadcom-amazon-ge-partner?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:30AM",
+      "title": "Got $3,000? 3 Top Growth Stocks to Buy That Could Double Your Money\n\n\n(Motley Fool)",
+      "link": "/news/174267/got-3000-3-top-growth-stocks-to-buy-that-could-double-your-money"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:39AM",
+      "title": "Why ASML, Applied Materials, and Lam Research Are Soaring on Nvidia's Deal With Intel\n\n\n(Motley Fool)",
+      "link": "/news/174248/why-asml-applied-materials-and-lam-research-are-soaring-on-nvidias-deal-with-intel"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:20AM",
+      "title": "3 No-Brainer Growth Stocks to Buy With $1,000 Right Now\n\n\n(Motley Fool)",
+      "link": "/news/174219/3-no-brainer-growth-stocks-to-buy-with-1000-right-now"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:06AM",
+      "title": "Wall Street Bullish on Broadcom Inc (AVGO), After Q3 2025\n\n\n(Insider Monkey)",
+      "link": "/news/174150/wall-street-bullish-on-broadcom-inc-avgo-after-q3-2025"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "03:46AM",
+      "title": "Zacks Investment Ideas feature highlights: Nvidia, Broadcom, CoreWeave, Dell Technologies and Oracle\n\n\n(Zacks)",
+      "link": "/news/174225/zacks-investment-ideas-feature-highlights-nvidia-broadcom-coreweave-dell-technologies-and-oracle"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:57AM",
+      "title": "Broadcom, Lloyds Banking Group Expand Partnership to Accelerate Digital Transformation with VMware, Mainframe Solutions\n\n\n(Insider Monkey)",
+      "link": "/news/174062/broadcom-lloyds-banking-group-expand-partnership-to-accelerate-digital-transformation-with-vmware-mainframe-solutions"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "01:42AM",
+      "title": "TD Cowen Stays Bullish on Broadcom (AVGO), Backed by Strong Order Momentum\n\n\n(Insider Monkey)",
+      "link": "/news/174048/td-cowen-stays-bullish-on-broadcom-avgo-backed-by-strong-order-momentum"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "16:54",
+      "title": "Tech, Media & Telecom Roundup: Market Talk\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/d941f232-5703-3d23-895b-e38c38ccb6ff/tech%2C-media-%26-telecom.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "04:18PM",
+      "title": "These Stocks Moved the Most Today: Kenvue, Nvidia, Firefly Aerospace, Boeing, Halliburton, Micron, Vistra, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/84ce095e-c037-3c63-aae2-1e0b7cde1ad9/these-stocks-moved-the-most.html"
+    }
+  ]
+}
