@@ -27,6 +27,7 @@ from common.util.downloaders.SEC_securities_downloader import SECSecuritiesDownl
 from common.util.downloaders.k10_downloader import K10Downloader
 from common.util.downloaders.q10_downloader import Q10Downloader
 from common.util.downloaders.tradingview_downloader import TradingViewDownloader
+from common.util.downloaders.yahoo_yearly_income_statement import  YahooYearlyIncomeStatement
 from common.util.financial_calculations.PCA_calculator import PCACalcualtor
 from common.util.pandas_dataframes.dataframe_filler import DataframeFiller
 from common.util.pandas_dataframes.dataframe_printer import DataframePrinter
@@ -476,6 +477,25 @@ class AlgosOrchestationLogic:
                     MessageType.ERROR
                 )
 
+    def _run_yearly_income_statement(self):
+        # ✅ Get securities list from your manager
+        securities = self.report_securities_mgr.get_report_securities("download_income_statement")
+        self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
+
+        for i, sec in enumerate(securities):
+            symbol = sec.ticker
+            try:
+                files = YahooYearlyIncomeStatement.download(symbol)
+
+                self.logger.do_log(
+                    f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded {len(files)} yearly Income Statements for {symbol}",
+                    MessageType.INFO
+                )
+            except Exception as e:
+                self.logger.do_log(
+                    f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {str(e)}",
+                    MessageType.ERROR
+                )
 
     def __backtest_strategy__(self, series_df,indicator,portf_size,
                                     n_algo_params,portf_summary,
@@ -2272,13 +2292,14 @@ class AlgosOrchestationLogic:
 
         self.logger.do_log(f"persist_custom_etf_series: persisted {inserted} candles for {symbol}", MessageType.INFO)
 
-    def process_run_report(self, report_key, year):
+    def process_run_report(self, report_key, year=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year)
 
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
             self._run_download_q10(year)
-
+        elif report_key.lower() == ReportType.DOWNLOAD_YEARLY_INCOME_STATEMENT.value:
+            self._run_yearly_income_statement()
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_Q10.value:
             self._run_competition_summary_report(year, SECReports.Q10.value)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_K10.value:

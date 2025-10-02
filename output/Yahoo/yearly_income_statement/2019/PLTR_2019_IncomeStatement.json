@@ -1,0 +1,14 @@
+{
+  "symbol": "PLTR",
+  "year": 2019,
+  "report_type": "YearlyIncomeStatement",
+  "items": {
+    "Total Unusual Items": 811000.0,
+    "Total Unusual Items Excluding Goodwill": 811000.0,
+    "Interest Expense": 14139000.0,
+    "Average Dilution Earnings": -5483000.0,
+    "Otherunder Preferred Stock Dividend": 0.0,
+    "Gain On Sale Of Security": 811000.0,
+    "Interest Expense Non Operating": 14139000.0
+  }
+}

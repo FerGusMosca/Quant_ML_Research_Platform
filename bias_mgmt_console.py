@@ -1590,7 +1590,7 @@ def process_create_lightweight_indicator_logic(csv_indicators, d_from, d_to,outp
         print(traceback.format_exc())
         logger.print(f"CRITICAL ERROR running process_create_lightweight_indicator_logic: {str(e)}", MessageType.ERROR)
 
-def process_run_report_logic(report_key, year):
+def process_run_report_logic(report_key, year=None):
     logger = Logger()
 
     try:

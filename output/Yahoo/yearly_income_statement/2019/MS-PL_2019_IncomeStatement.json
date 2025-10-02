@@ -1,0 +1,13 @@
+{
+  "symbol": "MS-PL",
+  "year": 2019,
+  "report_type": "YearlyIncomeStatement",
+  "items": {
+    "Total Unusual Items": -231000000.0,
+    "Total Unusual Items Excluding Goodwill": -231000000.0,
+    "Net Income Discontinuous Operations": 0.0,
+    "Special Income Charges": -231000000.0,
+    "Restructuring And Mergern Acquisition": 231000000.0,
+    "Other Gand A": 2465000000.0
+  }
+}

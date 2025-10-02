@@ -1,0 +1,10 @@
+{
+  "symbol": "SHOP",
+  "year": 2019,
+  "report_type": "YearlyIncomeStatement",
+  "items": {
+    "Interest Expense": 8575000.0,
+    "Total Other Finance Cost": 510000.0,
+    "Interest Expense Non Operating": 8575000.0
+  }
+}
