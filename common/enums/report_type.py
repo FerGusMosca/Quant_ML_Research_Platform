@@ -7,6 +7,7 @@ class ReportType(Enum):
     DOWNLOAD_QUARTERLY_INCOME_STATEMENT = "download_quarterly_income_statement"
     DOWNLOAD_LAST_INCOME_STATEMENT = "download_last_income_statement"
     FINVIZ_NEWS_DOWNLOAD = "finviz_news_download"
+    PROCESS_FINVIZ_NEWS = "process_finviz_news"
     COMPETITION_SUMMARY_REPORT_Q10 = "competition_summary_report_q10"
     COMPETITION_SUMMARY_REPORT_K10 = "competition_summary_report_k10"
     SENTIMENT_SUMMARY_REPORT_K10 = "sentiment_summary_report_k10"

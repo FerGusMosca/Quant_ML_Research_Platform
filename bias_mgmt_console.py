@@ -334,10 +334,11 @@ def process_run_report(cmd):
     # Required parameters
     report_key = __get_param__(cmd, "report")
     year = __get_param__(cmd, "year", True, None)
+    d_from = __get_param__(cmd, "from", True, None)
     portfolio = __get_param__(cmd, "portfolio")
     symbol = __get_param__(cmd, "symbol")
 
-    process_run_report_logic(report_key, year,portfolio,symbol)
+    process_run_report_logic(report_key, year,portfolio,symbol,d_from)
 
 
 def process_create_spread_variable_bulk(cmd):
@@ -1592,7 +1593,7 @@ def process_create_lightweight_indicator_logic(csv_indicators, d_from, d_to,outp
         print(traceback.format_exc())
         logger.print(f"CRITICAL ERROR running process_create_lightweight_indicator_logic: {str(e)}", MessageType.ERROR)
 
-def process_run_report_logic(report_key, year=None,portfolio=None,symbol=None):
+def process_run_report_logic(report_key, year=None,portfolio=None,symbol=None,d_from=None):
     logger = Logger()
 
     try:
@@ -1608,7 +1609,7 @@ def process_run_report_logic(report_key, year=None,portfolio=None,symbol=None):
             logger
         )
 
-        trd_algos.process_run_report(report_key, year,portfolio,symbol)
+        trd_algos.process_run_report(report_key, year,portfolio,symbol,d_from)
 
         logger.do_log(f"[REPORT] ✅ Report {report_key} completed", MessageType.INFO)
 

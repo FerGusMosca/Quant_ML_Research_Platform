@@ -1,0 +1,55 @@
+{
+  "symbol": "SUPV",
+  "from_date": "2025-09-20",
+  "to_date": "2025-10-05",
+  "total_articles": 5,
+  "summaries": [
+    {
+      "symbol": "SUPV",
+      "date": "2025-10-05",
+      "avg_sentiment": 0.39,
+      "sentiment_stdev": 0.68,
+      "distribution": {
+        "1": 26,
+        "0": 65,
+        "2": 6,
+        "3": 1,
+        "-1": 2
+      },
+      "high_sentiment_news": [
+        {
+          "title": "Are Investors Undervaluing Grupo Financiero Galicia (GGAL) Right Now?\n\n\n(Zacks)",
+          "score": 3,
+          "link": "https://finviz.com/news/77590/are-investors-undervaluing-grupo-financiero-galicia-ggal-right-now"
+        },
+        {
+          "title": "Should Value Investors Buy Grupo Supervielle (SUPV) Stock?\n\n\n(Zacks)",
+          "score": 2,
+          "link": "https://finviz.com/news/114080/should-value-investors-buy-grupo-supervielle-supv-stock"
+        },
+        {
+          "title": "SUPV or UOVEY: Which Is the Better Value Stock Right Now?\n\n\n(Zacks)",
+          "score": 2,
+          "link": "https://finviz.com/news/108074/supv-or-uovey-which-is-the-better-value-stock-right-now"
+        }
+      ],
+      "low_sentiment_news": [
+        {
+          "title": "Argentina elected chainsaw-toting king of the jungle Janvier Milei president  these are the companies to watch ahead of the coming economic shock'\n\n\n(Moneywise)  +6.63%",
+          "score": -1,
+          "link": "https://finance.yahoo.com/news/king-jungle-argentina-just-elected-130000528.html"
+        },
+        {
+          "title": "Grupo Supervielle: Q4 Earnings Snapshot\n\n\n(AP Finance)",
+          "score": -1,
+          "link": "https://finance.yahoo.com/news/grupo-supervielle-q4-earnings-snapshot-090454096.html"
+        },
+        {
+          "title": "Grupo Supervielle Reports 2Q25 Results\n\n\n(Business Wire) \n\n -9.62%",
+          "score": 0,
+          "link": "https://www.businesswire.com/news/home/20250813568926/en/"
+        }
+      ]
+    }
+  ]
+}

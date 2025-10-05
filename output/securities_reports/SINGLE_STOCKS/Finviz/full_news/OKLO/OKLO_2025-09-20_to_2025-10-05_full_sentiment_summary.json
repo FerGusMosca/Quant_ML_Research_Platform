@@ -1,0 +1,60 @@
+{
+  "symbol": "OKLO",
+  "from_date": "2025-09-20",
+  "to_date": "2025-10-05",
+  "total_articles": 10,
+  "summaries": [
+    {
+      "symbol": "OKLO",
+      "date": "2025-10-05",
+      "avg_sentiment": 0.56,
+      "sentiment_stdev": 1.72,
+      "distribution": {
+        "-1": 14,
+        "2": 11,
+        "1": 27,
+        "5": 4,
+        "0": 30,
+        "4": 4,
+        "-2": 4,
+        "-3": 3,
+        "-4": 1,
+        "3": 2
+      },
+      "high_sentiment_news": [
+        {
+          "title": "3 Best Performing Stocks in 2025 (OKLO, IREN, NBIS)\n\n\n(Zacks)",
+          "score": 5,
+          "link": "https://finviz.com/news/183470/3-best-performing-stocks-in-2025-oklo-iren-nbis"
+        },
+        {
+          "title": "October's Top 5 Stocks Poised for Big Breakouts\n\n\n(MarketBeat)",
+          "score": 5,
+          "link": "https://finviz.com/news/180632/octobers-top-5-stocks-poised-for-big-breakouts"
+        },
+        {
+          "title": "Buy Top AI Data Center Stock EME and Hold\n\n\n(Zacks)",
+          "score": 5,
+          "link": "https://finviz.com/news/176748/buy-top-ai-data-center-stock-eme-and-hold"
+        }
+      ],
+      "low_sentiment_news": [
+        {
+          "title": "Why Oklo Stock Is in Free Fall Today\n\n\n(Motley Fool)",
+          "score": -4,
+          "link": "https://finviz.com/news/175896/why-oklo-stock-is-in-free-fall-today"
+        },
+        {
+          "title": "NRC accelerates Oklo reactor review as Wall Street turns cautious\n\n\n(Investing.com)",
+          "score": -3,
+          "link": "https://finance.yahoo.com/news/nrc-accelerates-oklo-reactor-review-144609198.html"
+        },
+        {
+          "title": "Why Is Oklo Stock Dipping Right Now?\n\n\n(Motley Fool)",
+          "score": -3,
+          "link": "https://finviz.com/news/177991/why-is-oklo-stock-dipping-right-now"
+        }
+      ]
+    }
+  ]
+}

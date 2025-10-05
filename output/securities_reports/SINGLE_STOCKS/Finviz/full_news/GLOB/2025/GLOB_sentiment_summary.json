@@ -1,0 +1,48 @@
+{
+  "symbol": "GLOB",
+  "date": "2025-10-05",
+  "avg_sentiment": 0.6,
+  "sentiment_stdev": 1.04,
+  "distribution": {
+    "0": 49,
+    "2": 14,
+    "-1": 7,
+    "1": 23,
+    "3": 6,
+    "-2": 1
+  },
+  "high_sentiment_news": [
+    {
+      "title": "Globant Q2 Earnings & Revenues Beat Estimates, Stock Down\n\n\n(Zacks)",
+      "score": 3,
+      "link": "https://finviz.com/news/143415/globant-q2-earnings-revenues-beat-estimates-stock-down"
+    },
+    {
+      "title": "Globant Gears Up for Q2 Earnings: What's in the Offing?\n\n\n(Zacks)",
+      "score": 3,
+      "link": "https://finviz.com/news/136938/globant-gears-up-for-q2-earnings-whats-in-the-offing"
+    },
+    {
+      "title": "The Zacks Analyst Blog Highlights Globant, NICE, Affirm Holdings and Bill\n\n\n(Zacks)",
+      "score": 3,
+      "link": "https://finviz.com/news/135368/the-zacks-analyst-blog-highlights-globant-nice-affirm-holdings-and-bill"
+    }
+  ],
+  "low_sentiment_news": [
+    {
+      "title": "Marchex (MCHX) Reports Q1 Loss, Misses Revenue Estimates\n\n\n(Zacks)",
+      "score": -2,
+      "link": "https://finviz.com/news/56687/marchex-mchx-reports-q1-loss-misses-revenue-estimates"
+    },
+    {
+      "title": "Globant unveils new $125 million share repurchase program\n\n\n(PR Newswire)",
+      "score": -1,
+      "link": "https://finviz.com/news/181459/globant-unveils-new-125-million-share-repurchase-program"
+    },
+    {
+      "title": "Globant SA (GLOB) Fell as Clients Postponed IT and Digital Transformation Projects\n\n\n(Insider Monkey)",
+      "score": -1,
+      "link": "https://finviz.com/news/173276/globant-sa-glob-fell-as-clients-postponed-it-and-digital-transformation-projects"
+    }
+  ]
+}

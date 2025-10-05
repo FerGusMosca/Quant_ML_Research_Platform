@@ -1,0 +1,50 @@
+{
+  "symbol": "NNE",
+  "date": "2025-10-05",
+  "avg_sentiment": -0.02,
+  "sentiment_stdev": 1.21,
+  "distribution": {
+    "2": 7,
+    "0": 42,
+    "-1": 24,
+    "1": 17,
+    "-4": 1,
+    "-3": 2,
+    "-2": 4,
+    "3": 3
+  },
+  "high_sentiment_news": [
+    {
+      "title": "Nano Nuclear Energy Surged On Soaring AI Power Demand. But Can The Nuclear Power Play Plug Into Profitability?\n\n\n(Investor's Business Daily)",
+      "score": 3,
+      "link": "https://www.investors.com/news/technology/nne-stock-surged-on-ai-power-demand-is-profitability-next?mod=IBD_FV"
+    },
+    {
+      "title": "Nuclear rally, Deckers Outdoor, Intuit gains: Trending Tickers\n\n\n(Yahoo Finance Video)",
+      "score": 3,
+      "link": "https://finance.yahoo.com/video/nuclear-rally-deckers-outdoor-intuit-195330148.html"
+    },
+    {
+      "title": "What Makes Nano Nuclear Energy Inc. (NNE) a Strong Momentum Stock: Buy Now?\n\n\n(Zacks)",
+      "score": 3,
+      "link": "https://finviz.com/news/63118/what-makes-nano-nuclear-energy-inc-nne-a-strong-momentum-stock-buy-now"
+    }
+  ],
+  "low_sentiment_news": [
+    {
+      "title": "Why Shares of Nano Nuclear Energy Are Plummeting This Week\n\n\n(Motley Fool)",
+      "score": -4,
+      "link": "https://finviz.com/news/146901/why-shares-of-nano-nuclear-energy-are-plummeting-this-week"
+    },
+    {
+      "title": "Why Nano Nuclear Energy Stock Is Plunging Today\n\n\n(Motley Fool)",
+      "score": -3,
+      "link": "https://finviz.com/news/143409/why-nano-nuclear-energy-stock-is-plunging-today"
+    },
+    {
+      "title": "Why Nano Nuclear Energy Stock Crashed Today\n\n\n(Motley Fool)  -9.49%",
+      "score": -3,
+      "link": "https://finviz.com/news/117596/why-nano-nuclear-energy-stock-crashed-today"
+    }
+  ]
+}

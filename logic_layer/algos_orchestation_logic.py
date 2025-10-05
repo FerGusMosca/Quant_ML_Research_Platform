@@ -1,3 +1,4 @@
+import json
 import os
 import shutil
 import traceback
@@ -26,6 +27,7 @@ from common.enums.trading_algo_strategy import TradingAlgoStrategy as tas, Tradi
 from common.util.downloaders.FRED_downloader import FredDownloader
 from common.util.downloaders.SEC_securities_downloader import SECSecuritiesDownloader
 from common.util.downloaders.finviz_full_news_downloader import FinVizFullNewsDownloader
+from common.util.downloaders.finviz_offline_sentiment_analyzer import FinvizOfflineSentimentAnalyzer
 
 from common.util.downloaders.ib_income_statement import IBIncomeStatement
 from common.util.downloaders.k10_downloader import K10Downloader
@@ -547,6 +549,36 @@ class AlgosOrchestationLogic:
                     MessageType.ERROR
                 )
 
+    #_run_process_finviz_news
+
+    def _run_process_finviz_news(self, portfolio, symbol=None, d_from=None):
+        """
+        Entry point for Finviz sentiment analysis.
+        Delegates processing to FinvizOfflineSentimentAnalyzer.
+        """
+
+        if d_from is None:
+            raise ValueError("[FinvizNewsProcessor][ERROR] d_from cannot be None")
+
+        if isinstance(d_from, str):
+            try:
+                d_from = datetime.strptime(d_from, "%Y-%m-%d")
+            except ValueError:
+                raise ValueError(f"[FinvizNewsProcessor][ERROR] Invalid date format: {d_from} (expected YYYY-MM-DD)")
+
+
+        try:
+            out_file = FinvizOfflineSentimentAnalyzer.process_portfolio(portfolio, symbol, d_from)
+            self.logger.do_log(
+                f"[REPORT] ✅ Sentiment summary created -> {out_file}",
+                MessageType.INFO
+            )
+        except Exception as e:
+            self.logger.do_log(
+                f"[REPORT] ❌ Failed to process Finviz sentiment for {symbol}: {str(e)}",
+                MessageType.ERROR
+            )
+
     def _run_fin_viz_news_downloader(self,portfolio,symbol=None):
 
         if portfolio!="SINGLE_STOCKS":
@@ -558,7 +590,7 @@ class AlgosOrchestationLogic:
             for i, sec in enumerate(securities):
                 symbol = sec.ticker
                 try:
-                    out_file = FinVizNewsDownloader.download(symbol,portfolio)
+                    out_file = FinVizFullNewsDownloader.download(symbol,portfolio)
 
                     self.logger.do_log(
                         f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded news for {symbol} -> {out_file}",
@@ -2373,7 +2405,7 @@ class AlgosOrchestationLogic:
 
         self.logger.do_log(f"persist_custom_etf_series: persisted {inserted} candles for {symbol}", MessageType.INFO)
 
-    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None):
+    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None,d_from=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year,portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
@@ -2388,6 +2420,8 @@ class AlgosOrchestationLogic:
             self._run_competition_summary_report(year, SECReports.K10.value,portfolio=portfolio)
         elif report_key.lower() == ReportType.FINVIZ_NEWS_DOWNLOAD.value:
             self._run_fin_viz_news_downloader(portfolio,symbol)
+        elif report_key.lower() == ReportType.PROCESS_FINVIZ_NEWS.value:
+            self._run_process_finviz_news(portfolio,symbol,d_from)
         elif report_key.lower() == ReportType.DOWNLOAD_LAST_INCOME_STATEMENT.value:
             self._run_download_last_income_statement(portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_YEARLY_INCOME_STATEMENT.value:

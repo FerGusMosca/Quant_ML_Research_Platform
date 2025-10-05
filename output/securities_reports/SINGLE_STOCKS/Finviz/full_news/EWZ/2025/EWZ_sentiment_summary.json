@@ -1,0 +1,48 @@
+{
+  "symbol": "EWZ",
+  "date": "2025-10-05",
+  "avg_sentiment": 0.31,
+  "sentiment_stdev": 0.83,
+  "distribution": {
+    "0": 68,
+    "-1": 6,
+    "1": 20,
+    "3": 1,
+    "4": 2,
+    "2": 3
+  },
+  "high_sentiment_news": [
+    {
+      "title": "5 Country ETFs Up At Least 20% in Q1 2025\n\n\n(Zacks)  -6.95%",
+      "score": 4,
+      "link": "https://finviz.com/news/18109/5-country-etfs-up-at-least-20-in-q1-2025"
+    },
+    {
+      "title": "4 Brazilian Stocks to Buy as the Emerging Market Pauses\n\n\n(InvestorPlace)",
+      "score": 4,
+      "link": "https://finance.yahoo.com/news/4-brazilian-stocks-buy-emerging-202216212.html"
+    },
+    {
+      "title": "Tech Rally Boosted Wall Street Last Week: Winning ETFs in Focus\n\n\n(Zacks)",
+      "score": 3,
+      "link": "https://finviz.com/news/35741/tech-rally-boosted-wall-street-last-week-winning-etfs-in-focus"
+    }
+  ],
+  "low_sentiment_news": [
+    {
+      "title": "How Trumps Tariff Threats on Brazil Are Affecting Markets\n\n\n(The Wall Street Journal)",
+      "score": -1,
+      "link": "https://finance.yahoo.com/m/267bf5ec-fed0-3df8-b3bb-ee7c2aab4669/how-trump%E2%80%99s-tariff-threats-on.html"
+    },
+    {
+      "title": "Buy Palladium, Sell Gold\n\n\n(Seeking Alpha)",
+      "score": -1,
+      "link": "https://seekingalpha.com/article/4772985-buy-palladium-sell-gold?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    },
+    {
+      "title": "Vale's Risk-Reward Has Shifted After A Strong Run (Rating Downgrade)\n\n\n(SeekingAlpha)",
+      "score": -1,
+      "link": "https://seekingalpha.com/article/4769424-vale-risk-reward-has-shifted-after-a-strong-run-rating-downgrade?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    }
+  ]
+}
