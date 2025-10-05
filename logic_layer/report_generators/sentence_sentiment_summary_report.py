@@ -1,12 +1,15 @@
 import os
 import re
 import json
+from pathlib import Path
 from typing import Dict, List
 
 from bs4 import BeautifulSoup
 from nltk.sentiment import SentimentIntensityAnalyzer
 import nltk
 
+from common.enums.folders import Folders
+from common.enums.report_folder import ReportFolder
 from framework.common.logger.message_type import MessageType
 
 
@@ -55,7 +58,7 @@ class SentimentSummaryReport:
         "controls and procedures",
     ]
 
-    def __init__(self, year: int, logger, report_type: str = "K10", filers_whitelist: List[str] = None, universe_key: str = None):
+    def __init__(self, year: int, logger, report_type: str = ReportFolder.K10.value,portfolio: str=None, filers_whitelist: List[str] = None, universe_key: str = None):
         """
         :param year: Filing year to process
         :param logger: Logger instance (must support .do_log(msg, MessageType))
@@ -66,10 +69,10 @@ class SentimentSummaryReport:
         self.report_type = report_type.upper()
 
         # Input HTML lives in ./output/{K10|Q10}/<YEAR>
-        self.input_dir = os.path.join(f"./output/{self.report_type}", str(year))
+        self.input_dir=f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{report_type}/{year}"
 
         # Output is namespaced by report type + year (and optional universe key)
-        year_dir = os.path.join(f"./output/{self.report_type}/sentiment_summary_report", str(year))
+        year_dir = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{report_type}_sentiment_summary_report/{year}"
         self.output_dir = os.path.join(year_dir, universe_key) if universe_key else year_dir
         os.makedirs(self.output_dir, exist_ok=True)
 
@@ -102,17 +105,19 @@ class SentimentSummaryReport:
                 text = self._html_to_text(html)
                 sections = self._extract_relevant_sections(text)
                 result = self._score_sections(sections)
+                period=self._extract_period_from_filename(file)
 
                 out = {
                     "symbol": symbol,
                     "year": self.year,
-                    "report_type": self.report_type,  # <<< agregado
+                    "Period": period,
+                    "report_type": self.report_type,
                     "metrics": result["metrics"],
                     "top_positive": result["top_positive"],
                     "top_negative": result["top_negative"],
                     "forward_snippets": result["forward_snippets"],
                 }
-                out_path = os.path.join(self.output_dir, f"{symbol}_{self.year}_sentiment.json")
+                out_path = os.path.join(self.output_dir, f"{symbol}_{self.year}_{period}_sentiment.json")
                 with open(out_path, "w", encoding="utf-8") as f:
                     json.dump(out, f, indent=2)
 
@@ -189,6 +194,33 @@ class SentimentSummaryReport:
 
 
     # -------- Internals --------
+
+
+
+    def _extract_period_from_filename(self,filename: str) -> str:
+        """
+        Extract fiscal period (Q1/Q2/Q3/Q4 or YEAR) from SEC filing filename.
+        Example:
+          'AAPL_2024_Q1_10-Q.html' -> 'Q1'
+          'AAPL_2022_10-K.html'   -> '2022'
+        """
+        # Get only the file name (strip directories)
+        name = Path(filename).stem  # e.g. AAPL_2024_Q1_10-Q
+
+        # Look for quarter pattern
+        match_quarter = re.search(r'_Q([1-4])_', name, re.IGNORECASE)
+        if match_quarter:
+            return f"Q{match_quarter.group(1)}"
+
+        # Look for year pattern (4 digits)
+        match_year = re.search(r'_(\d{4})_', name)
+        if match_year:
+            return "Y"+match_year.group(1)
+
+        # Fallback if no pattern found
+        return "UNKNOWN"
+
+
     def _html_to_text(self, html: str) -> str:
         soup = BeautifulSoup(html, "html.parser")
         return soup.get_text(" ", strip=True)

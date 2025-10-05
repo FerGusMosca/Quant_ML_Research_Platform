@@ -18,6 +18,7 @@ from common.enums.grouping_criterias import GroupCriteria as gc
 from common.enums.information_vendors import InformationVendors
 from common.enums.intervals import Intervals
 from common.enums.parameters.parameters_keys import ParametersKeys
+from common.enums.report_folder import ReportFolder
 from common.enums.report_type import ReportType
 from common.enums.sec_reports import SECReports
 from common.enums.sliding_window_strategy import SlidingWindowStrategy as sws, SlidingWindowStrategy
@@ -28,7 +29,7 @@ from common.util.downloaders.finviz_news_downloader import FinVizNewsDownloader
 from common.util.downloaders.k10_downloader import K10Downloader
 from common.util.downloaders.q10_downloader import Q10Downloader
 from common.util.downloaders.tradingview_downloader import TradingViewDownloader
-from common.util.downloaders.yahoo_yearly_income_statement import  YahooYearlyIncomeStatement
+from common.util.downloaders.yahoo_income_statement import  YahooIncomeStatement
 from common.util.financial_calculations.PCA_calculator import PCACalcualtor
 from common.util.pandas_dataframes.dataframe_filler import DataframeFiller
 from common.util.pandas_dataframes.dataframe_printer import DataframePrinter
@@ -43,6 +44,7 @@ from common.util.financial_calculations.random_walk_generator import RandomWalkG
 from common.util.financial_calculations.slope_calculator import SlopeCalculator
 from data_access_layer.date_range_classification_manager import DateRangeClassificationManager
 from data_access_layer.economic_series_manager import EconomicSeriesManager
+from data_access_layer.portfolio_securities_manager import PortfolioSecuritiesManager
 from data_access_layer.report_securities_manager import ReportSecuritiesManager
 from data_access_layer.sec_securities_manager import SECSecuritiesManager
 from data_access_layer.timestamp_classification_manager import TimestampClassificationManager
@@ -89,6 +91,8 @@ class AlgosOrchestationLogic:
         self.sec_securities_mgr = SECSecuritiesManager(ml_reports_conn_str,logger)
 
         self.report_securities_mgr = ReportSecuritiesManager(ml_reports_conn_str, logger)
+
+        self.portfolio_securities_mgr = PortfolioSecuritiesManager(ml_reports_conn_str,logger)
 
 
 
@@ -349,7 +353,7 @@ class AlgosOrchestationLogic:
         dtos = self.report_securities_mgr.get_report_securities(universe_key)
         return sorted({(d.ticker or "").upper() for d in dtos if d.ticker})
 
-    def _run_sentiment_summary_report(self, year, report_type="K10", universe=None):
+    def _run_sentiment_summary_report(self, year, report_type=ReportFolder.K10.value,portfolio=None, universe=None):
         """
         Build sentiment summaries focused on management guidance/opinion.
         Extract MD&A / Outlook-like text, score sentiment, and consolidate.
@@ -365,22 +369,23 @@ class AlgosOrchestationLogic:
             year=year,
             report_type=report_type,
             logger=self.logger,
+            portfolio=portfolio,
             filers_whitelist=whitelist,
-            universe_key=universe  # ← opcional; None = ALL
+            universe_key=universe
         )
         gen.run()
 
         # Consolidate & rank (year + report_type aware)
-        consolidated = SentimentSummaryReport.consolidate_year(year, report_type, self.logger, universe_key=universe)
-        ranking_csv = os.path.join(os.path.dirname(consolidated), f"sentiment_summary_ranking_{year}.csv")
-
-        SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
+        #consolidated = SentimentSummaryReport.consolidate_year(year, report_type, self.logger, universe_key=universe)
+        #ranking_csv = os.path.join(os.path.dirname(consolidated), f"sentiment_summary_ranking_{year}.csv")
+        #SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
 
         self.logger.do_log(
             f"[SENT] ✅ Sentiment summary completed ({report_type}, scope={universe or 'ALL'})",
             MessageType.INFO
         )
 
+    '''
     def _run_financial_ratios_report(self, year, report_type="K10", universe=None):
         """
         Build financial ratios summaries from SEC filings (K10 or Q10).
@@ -412,25 +417,27 @@ class AlgosOrchestationLogic:
             f"[RATIOS] ✅ Financial ratios summary completed ({report_type}, scope={universe or 'ALL'})",
             MessageType.INFO
         )
+    '''
 
-    def _run_competition_summary_report(self, year, report_type="K10"):
+    def _run_competition_summary_report(self, year, report_type="K10",portfolio=None):
         report = CompetitionSummaryReport(
             year=year,
             logger=self.logger,
-            report_type=report_type
+            report_type=report_type,
+            portfolio=portfolio
         )
         report.run()
 
-    def _run_download_k10(self, year):
-        base_path = f"./output/K10/{year}"
+    def _run_download_k10(self, year,portfolio):
+        base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.K10.value}/{year}"
         if os.path.exists(base_path):
             shutil.rmtree(base_path)
             self.logger.do_log(f"[REPORT] Removed existing directory {base_path}", MessageType.INFO)
 
         os.makedirs(base_path, exist_ok=True)
 
-        # ✅ Get securities from reports + reports_securities
-        securities = self.report_securities_mgr.get_report_securities("download_k10")
+        # ✅ Get securities from portfolio
+        securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
 
         self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
 
@@ -450,16 +457,16 @@ class AlgosOrchestationLogic:
                 )
 
 
-    def _run_download_q10(self, year):
-        base_path = f"./output/Q10/{year}"
+    def _run_download_q10(self, year,portfolio):
+        base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.Q10.value}/{year}"
         if os.path.exists(base_path):
             shutil.rmtree(base_path)
             self.logger.do_log(f"[REPORT] Removed existing directory {base_path}", MessageType.INFO)
 
         os.makedirs(base_path, exist_ok=True)
 
-        # ✅ Get securities from reports + reports_securities
-        securities = self.report_securities_mgr.get_report_securities("download_q10")
+        # ✅ Get securities from portfolio
+        securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
 
         self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
 
@@ -478,15 +485,15 @@ class AlgosOrchestationLogic:
                     MessageType.ERROR
                 )
 
-    def _run_yearly_income_statement(self):
-        # ✅ Get securities list from your manager
-        securities = self.report_securities_mgr.get_report_securities(ReportType.DOWNLOAD_YEARLY_INCOME_STATEMENT.value)
+    def _run_yearly_income_statement(self,portfolio):
+        # ✅ Get securities from portfolio
+        securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
         self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
 
         for i, sec in enumerate(securities):
             symbol = sec.ticker
             try:
-                files = YahooYearlyIncomeStatement.download(symbol)
+                files = YahooIncomeStatement.download(symbol,portfolio=portfolio,mode="yearly")
 
                 self.logger.do_log(
                     f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded {len(files)} yearly Income Statements for {symbol}",
@@ -498,15 +505,36 @@ class AlgosOrchestationLogic:
                     MessageType.ERROR
                 )
 
-    def _run_fin_viz_news_downloader(self):
+    def _run_quarterly_income_statement(self):
         # ✅ Get securities list from your manager
-        securities = self.report_securities_mgr.get_report_securities(ReportType.FINVIZ_NEWS_DOWNLOAD.value)
+        securities = self.report_securities_mgr.get_report_securities(ReportType.DOWNLOAD_QUARTERLY_INCOME_STATEMENT.value)
         self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
 
         for i, sec in enumerate(securities):
             symbol = sec.ticker
             try:
-                out_file = FinVizNewsDownloader.download(symbol)
+                files = YahooIncomeStatement.download(symbol,mode="quarterly")
+
+                self.logger.do_log(
+                    f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded {len(files)} quarterly Income Statements for {symbol}",
+                    MessageType.INFO
+                )
+            except Exception as e:
+                self.logger.do_log(
+                    f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {str(e)}",
+                    MessageType.ERROR
+                )
+
+    def _run_fin_viz_news_downloader(self,portfolio):
+        # ✅ Get securities from portfolio
+        securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
+
+        self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
+
+        for i, sec in enumerate(securities):
+            symbol = sec.ticker
+            try:
+                out_file = FinVizNewsDownloader.download(symbol,portfolio)
 
                 self.logger.do_log(
                     f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded news for {symbol} -> {out_file}",
@@ -2313,32 +2341,34 @@ class AlgosOrchestationLogic:
 
         self.logger.do_log(f"persist_custom_etf_series: persisted {inserted} candles for {symbol}", MessageType.INFO)
 
-    def process_run_report(self, report_key, year=None):
+    def process_run_report(self, report_key, year=None,portfolio=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
-            self._run_download_k10(year)
-
+            self._run_download_k10(year,portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
-            self._run_download_q10(year)
-        elif report_key.lower() == ReportType.DOWNLOAD_YEARLY_INCOME_STATEMENT.value:
-            self._run_yearly_income_statement()
-        elif report_key.lower() == ReportType.FINVIZ_NEWS_DOWNLOAD.value:
-            self._run_fin_viz_news_downloader()
-        #
-        elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_Q10.value:
-            self._run_competition_summary_report(year, SECReports.Q10.value)
-        elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_K10.value:
-            self._run_competition_summary_report(year, ReportType.SENTIMENT_SUMMARY_REPORT_K10.value)
-
+            self._run_download_q10(year,portfolio)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_K10.value:
-            self._run_sentiment_summary_report(year, SECReports.K10.value)
+            self._run_sentiment_summary_report(year, SECReports.K10.value,portfolio=portfolio)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_Q10.value:
-            self._run_sentiment_summary_report(year, SECReports.Q10.value)
+            self._run_sentiment_summary_report(year, SECReports.Q10.value,portfolio=portfolio)
+        elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_Q10.value:
+            self._run_competition_summary_report(year, SECReports.Q10.value,portfolio=portfolio)
+        elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_K10.value:
+            self._run_competition_summary_report(year, SECReports.K10.value,portfolio=portfolio)
+        elif report_key.lower() == ReportType.FINVIZ_NEWS_DOWNLOAD.value:
+            self._run_fin_viz_news_downloader(portfolio)
+        elif report_key.lower() == ReportType.DOWNLOAD_YEARLY_INCOME_STATEMENT.value:
+            self._run_yearly_income_statement(portfolio)
+        elif report_key.lower() == ReportType.DOWNLOAD_QUARTERLY_INCOME_STATEMENT.value:
+            self._run_quarterly_income_statement()
+        else:
+            self.logger.do_log(f"[REPORT] Report {report_key} not implemented.", MessageType.WARNING)
+        '''
         elif report_key.lower() == ReportType.FINANCIAL_RATIOS_REPORT_K10.value:
             self._run_financial_ratios_report(year, SECReports.K10.value)
         elif report_key.lower() == ReportType.FINANCIAL_RATIOS_REPORT_Q10.value:
             self._run_financial_ratios_report(year, SECReports.Q10.value)
-        else:
-            self.logger.do_log(f"[REPORT] Report {report_key} not implemented.", MessageType.WARNING)
+        '''
+
 
 
 

@@ -6,7 +6,8 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-_BASE_OUTPUT = "./output/FinViz/news"
+from common.enums.folders import Folders
+
 
 class FinVizNewsDownloader:
     """
@@ -15,7 +16,9 @@ class FinVizNewsDownloader:
     """
 
     @staticmethod
-    def download(symbol, base_output=_BASE_OUTPUT, pause=1.0):
+    def download(symbol,portfolio, pause=1.0):
+
+        base_output = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/Finviz/news/"
         today = datetime.today().strftime("%Y-%m-%d")
         year = datetime.today().year
 

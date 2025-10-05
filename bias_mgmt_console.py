@@ -334,8 +334,10 @@ def process_run_report(cmd):
     # Required parameters
     report_key = __get_param__(cmd, "report")
     year = __get_param__(cmd, "year", True, None)
+    portfolio = __get_param__(cmd, "portfolio")
 
-    process_run_report_logic(report_key, year)
+
+    process_run_report_logic(report_key, year,portfolio)
 
 
 def process_create_spread_variable_bulk(cmd):
@@ -1590,11 +1592,11 @@ def process_create_lightweight_indicator_logic(csv_indicators, d_from, d_to,outp
         print(traceback.format_exc())
         logger.print(f"CRITICAL ERROR running process_create_lightweight_indicator_logic: {str(e)}", MessageType.ERROR)
 
-def process_run_report_logic(report_key, year=None):
+def process_run_report_logic(report_key, year=None,portfolio=None):
     logger = Logger()
 
     try:
-        logger.do_log(f"[REPORT] Starting execution for {report_key}, year={year}", MessageType.INFO)
+        logger.do_log(f"[REPORT] Starting execution for {report_key}, year={year}, portfolio={portfolio}", MessageType.INFO)
 
         loader = MLSettingsLoader()
         config_settings = loader.load_settings("./configs/commands_mgr.ini")
@@ -1606,7 +1608,7 @@ def process_run_report_logic(report_key, year=None):
             logger
         )
 
-        trd_algos.process_run_report(report_key, year)
+        trd_algos.process_run_report(report_key, year,portfolio)
 
         logger.do_log(f"[REPORT] ✅ Report {report_key} completed", MessageType.INFO)
 
