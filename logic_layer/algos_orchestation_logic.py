@@ -25,7 +25,8 @@ from common.enums.sliding_window_strategy import SlidingWindowStrategy as sws, S
 from common.enums.trading_algo_strategy import TradingAlgoStrategy as tas, TradingAlgoStrategy
 from common.util.downloaders.FRED_downloader import FredDownloader
 from common.util.downloaders.SEC_securities_downloader import SECSecuritiesDownloader
-from common.util.downloaders.finviz_news_downloader import FinVizNewsDownloader
+from common.util.downloaders.finviz_full_news_downloader import FinVizFullNewsDownloader
+
 from common.util.downloaders.ib_income_statement import IBIncomeStatement
 from common.util.downloaders.k10_downloader import K10Downloader
 from common.util.downloaders.q10_downloader import Q10Downloader
@@ -546,26 +547,36 @@ class AlgosOrchestationLogic:
                     MessageType.ERROR
                 )
 
-    def _run_fin_viz_news_downloader(self,portfolio):
-        # ✅ Get securities from portfolio
-        securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
+    def _run_fin_viz_news_downloader(self,portfolio,symbol=None):
 
-        self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
+        if portfolio!="SINGLE_STOCKS":
+            # ✅ Get securities from portfolio
+            securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
 
-        for i, sec in enumerate(securities):
-            symbol = sec.ticker
+            self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
+
+            for i, sec in enumerate(securities):
+                symbol = sec.ticker
+                try:
+                    out_file = FinVizNewsDownloader.download(symbol,portfolio)
+
+                    self.logger.do_log(
+                        f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded news for {symbol} -> {out_file}",
+                        MessageType.INFO
+                    )
+                except Exception as e:
+                    self.logger.do_log(
+                        f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {str(e)}",
+                        MessageType.ERROR
+                    )
+        else:
             try:
-                out_file = FinVizNewsDownloader.download(symbol,portfolio)
+                FinVizFullNewsDownloader.download(symbol, portfolio)
+                pass
 
-                self.logger.do_log(
-                    f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded news for {symbol} -> {out_file}",
-                    MessageType.INFO
-                )
+
             except Exception as e:
-                self.logger.do_log(
-                    f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {str(e)}",
-                    MessageType.ERROR
-                )
+                self.logger.do_log(f"[REPORT] ❌ Failed for {symbol}: {str(e)}",MessageType.ERROR)
 
     def __backtest_strategy__(self, series_df,indicator,portf_size,
                                     n_algo_params,portf_summary,
@@ -2362,7 +2373,7 @@ class AlgosOrchestationLogic:
 
         self.logger.do_log(f"persist_custom_etf_series: persisted {inserted} candles for {symbol}", MessageType.INFO)
 
-    def process_run_report(self, report_key, year=None,portfolio=None):
+    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year,portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
@@ -2376,7 +2387,7 @@ class AlgosOrchestationLogic:
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_K10.value:
             self._run_competition_summary_report(year, SECReports.K10.value,portfolio=portfolio)
         elif report_key.lower() == ReportType.FINVIZ_NEWS_DOWNLOAD.value:
-            self._run_fin_viz_news_downloader(portfolio)
+            self._run_fin_viz_news_downloader(portfolio,symbol)
         elif report_key.lower() == ReportType.DOWNLOAD_LAST_INCOME_STATEMENT.value:
             self._run_download_last_income_statement(portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_YEARLY_INCOME_STATEMENT.value:
