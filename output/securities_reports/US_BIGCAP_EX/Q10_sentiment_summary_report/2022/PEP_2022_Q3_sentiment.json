@@ -1,0 +1,47 @@
+{
+  "symbol": "PEP",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1076,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.172
+  },
+  "top_positive": [
+    {
+      "sent": "and Subsidiaries (in millions except per share amounts, unaudited) 12 Weeks Ended 3/19/2022 3/20/2021 Net Revenue $ 16,200 $ 14,820 Cost of sales 7,433 6,671 Gross profit 8,767 8,149 Selling, general and administrative expenses 6,822 5,837 Gain associated with the Juice Transaction (a) ( 3,322 ) \u2014 Operating Profit 5,267 2,312 Other pension and retiree medical benefits income 134 120 Net interest expense and other ( 240 ) ( 258 ) Income before income taxes 5,161 2,174 Provision for income taxes 888 451 Net income 4,273 1,723 Less: Net income attributable to noncontrolling interests 12 9 Net Income Attributable to PepsiCo $ 4,261 $ 1,714 Net Income Attributable to PepsiCo per Common Share Basic $ 3.08 $ 1.24 Diluted $ 3.06 $ 1.24 Weighted-average common shares outstanding Basic 1,383 1,380 Diluted 1,391 1,387 (a) In the 12 weeks ended March\u00a019, 2022, we sold our Tropicana, Naked and other select juice brands to PAI Partners for approximately $ 3.5 billion in cash and a 39 % noncontrolling interest in a newly formed joint venture (Tropicana JV) operating across North America and Europe (Juice Transaction).",
+      "score": 0.9758
+    },
+    {
+      "sent": "18 Table of Contents Fair Value Measurements The fair values of our financial assets and liabilities as of March\u00a019, 2022 and December\u00a025, 2021 are categorized as follows: 3/19/2022 12/25/2021 Fair Value Hierarchy Levels (a) Assets (a) Liabilities (a) Assets (a) Liabilities (a) Index funds (b) 1 $ 297 $ \u2014 $ 337 $ \u2014 Prepaid forward contracts (c) 2 $ 20 $ \u2014 $ 21 $ \u2014 Deferred compensation (d) 2 $ \u2014 $ 480 $ \u2014 $ 505 Derivatives designated as cash flow hedging instruments: Foreign exchange (e) 2 $ 43 $ 16 $ 29 $ 14 Interest rate (e) 2 28 275 14 264 Commodity (f) 2 119 1 70 5 $ 190 $ 292 $ 113 $ 283 Derivatives not designated as hedging instruments: Foreign exchange (e) 2 $ 39 $ 22 $ 19 $ 7 Commodity (f) 2 56 12 35 22 $ 95 $ 34 $ 54 $ 29 Total derivatives at fair value (g) $ 285 $ 326 $ 167 $ 312 Total $ 602 $ 806 $ 525 $ 817 (a) Fair value hierarchy levels are categorized consistently by Level 1 (quoted prices in active markets for identical assets) and Level 2 (significant other observable inputs) in both years.",
+      "score": 0.9756
+    },
+    {
+      "sent": "18 Table of Contents Fair Value Measurements The fair values of our financial assets and liabilities as of March\u00a019, 2022 and December\u00a025, 2021 are categorized as follows: 3/19/2022 12/25/2021 Fair Value Hierarchy Levels (a) Assets (a) Liabilities (a) Assets (a) Liabilities (a) Index funds (b) 1 $ 297 $ \u2014 $ 337 $ \u2014 Prepaid forward contracts (c) 2 $ 20 $ \u2014 $ 21 $ \u2014 Deferred compensation (d) 2 $ \u2014 $ 480 $ \u2014 $ 505 Derivatives designated as cash flow hedging instruments: Foreign exchange (e) 2 $ 43 $ 16 $ 29 $ 14 Interest rate (e) 2 28 275 14 264 Commodity (f) 2 119 1 70 5 $ 190 $ 292 $ 113 $ 283 Derivatives not designated as hedging instruments: Foreign exchange (e) 2 $ 39 $ 22 $ 19 $ 7 Commodity (f) 2 56 12 35 22 $ 95 $ 34 $ 54 $ 29 Total derivatives at fair value (g) $ 285 $ 326 $ 167 $ 312 Total $ 602 $ 806 $ 525 $ 817 (a) Fair value hierarchy levels are categorized consistently by Level 1 (quoted prices in active markets for identical assets) and Level 2 (significant other observable inputs) in both years.",
+      "score": 0.9756
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Risks associated with the deadly conflict in Ukraine The deadly conflict in Ukraine has resulted in worldwide geopolitical and macroeconomic uncertainty and led us to suspend the majority of our operations in Ukraine.",
+      "score": -0.8555
+    },
+    {
+      "sent": "Risks associated with the deadly conflict in Ukraine The deadly conflict in Ukraine has resulted in worldwide geopolitical and macroeconomic uncertainty and led us to suspend the majority of our operations in Ukraine.",
+      "score": -0.8555
+    },
+    {
+      "sent": "Risks associated with the deadly conflict in Ukraine The deadly conflict in Ukraine has resulted in worldwide geopolitical and macroeconomic uncertainty and led us to suspend the majority of our operations in Ukraine.",
+      "score": -0.8555
+    }
+  ],
+  "forward_snippets": [
+    "As a result, we expect to incur pre-tax charges of approximately $ 3.15 billion, including cash expenditures of approximately $ 2.4 billion.",
+    "In light of the current political and economic environment, we will continue to review and analyze our brand portfolio worldwide.",
+    "In light of the current political and economic environment, we will continue to review and analyze our brand portfolio worldwide.",
+    "We expect to make an additional discretionary contribution of $ 75 million to our U.S.",
+    "We continue to evaluate our hedging strategies related to our Russian business based on the impact of the Russia-Ukraine conflict on financi\nets ( 215 ) ( 224 ) ( 42 ) ( 41 ) ( 3 ) ( 4 ) Amortization of prior service credits ( 6 ) ( 7 ) \u2014 \u2014 ( 2 ) ( 2 ) Amortization of net losses/(gains) 33 51 5 13 ( 3 ) ( 3 ) Settlement/curtailment gains \u2014 \u2014 \u2014 \u2014 ( 16 ) \u2014 Special termination benefits 6 6 \u2014 \u2014 \u2014 \u2014 Total other pension and retiree medical benefits income ( 94 ) ( 99 ) ( 20 ) ( 15 ) ( 20 ) ( 6 ) Total $ 20 $ 21 $ ( 3 ) $ 4 $ ( 12 ) $ 2 We regularly evaluate opportunities to reduce risk and volatility associated with our pension and retiree medical plans."
+  ]
+}

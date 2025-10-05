@@ -1,0 +1,47 @@
+{
+  "symbol": "GE",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.3182,
+    "outlook_sentiment": 0.2469,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.154
+  },
+  "top_positive": [
+    {
+      "sent": "REVENUES AND OPERATING PROFIT (COST) Three months ended March 31 2024 2023 GE Digital revenues $ 209 $ 237 Insurance revenues (Note 13) 879 791 Eliminations and other (237) (181) Total Corporate revenues $ 850 $ 848 Gains (losses) on retained and sold ownership interests (Note 19) $ 628 $ 5,908 Gains (losses) on other equity securities 7 (2) Gains (losses) on purchases and sales of business interests 4 (55) Restructuring and other charges (Note 20) (218) (151) Separation costs (Note 20) (355) (205) Insurance profit (loss) (Note 13) 200 70 Adjusted total Corporate operating profit (costs) (Non-GAAP) 10 (109) Total Corporate operating profit (cost) (GAAP) $ 276 $ 5,456 Less: gains (losses), impairments, Insurance, and restructuring & other 266 5,565 Adjusted total Corporate operating profit (costs) (Non-GAAP) $ 10 $ (109) Functions & operations $ (74) $ (145) Environmental, health and safety (EHS) and other items 81 30 Eliminations 4 6 Adjusted total Corporate operating profit (costs) (Non-GAAP) $ 10 $ (109) Adjusted total corporate operating profit (costs)* excludes gains (losses) on purchases and sales of business interests, significant, higher-cost restructuring programs, separation costs, gains (losses) on equity securities, and our run-off Insurance operations profit.",
+      "score": 0.992
+    },
+    {
+      "sent": "REVENUES AND OPERATING PROFIT (COST) Three months ended March 31 2024 2023 GE Digital revenues $ 209 $ 237 Insurance revenues (Note 13) 879 791 Eliminations and other (237) (181) Total Corporate revenues $ 850 $ 848 Gains (losses) on retained and sold ownership interests (Note 19) $ 628 $ 5,908 Gains (losses) on other equity securities 7 (2) Gains (losses) on purchases and sales of business interests 4 (55) Restructuring and other charges (Note 20) (218) (151) Separation costs (Note 20) (355) (205) Insurance profit (loss) (Note 13) 200 70 Adjusted total Corporate operating profit (costs) (Non-GAAP) 10 (109) Total Corporate operating profit (cost) (GAAP) $ 276 $ 5,456 Less: gains (losses), impairments, Insurance, and restructuring & other 266 5,565 Adjusted total Corporate operating profit (costs) (Non-GAAP) $ 10 $ (109) Functions & operations $ (74) $ (145) Environmental, health and safety (EHS) and other items 81 30 Eliminations 4 6 Adjusted total Corporate operating profit (costs) (Non-GAAP) $ 10 $ (109) Adjusted total corporate operating profit (costs)* excludes gains (losses) on purchases and sales of business interests, significant, higher-cost restructuring programs, separation costs, gains (losses) on equity securities, and our run-off Insurance operations profit.",
+      "score": 0.992
+    },
+    {
+      "sent": "REVENUES AND OPERATING PROFIT (COST) Three months ended March 31 2024 2023 GE Digital revenues $ 209 $ 237 Insurance revenues (Note 13) 879 791 Eliminations and other (237) (181) Total Corporate revenues $ 850 $ 848 Gains (losses) on retained and sold ownership interests (Note 19) $ 628 $ 5,908 Gains (losses) on other equity securities 7 (2) Gains (losses) on purchases and sales of business interests 4 (55) Restructuring and other charges (Note 20) (218) (151) Separation costs (Note 20) (355) (205) Insurance profit (loss) (Note 13) 200 70 Adjusted total Corporate operating profit (costs) (Non-GAAP) 10 (109) Total Corporate operating profit (cost) (GAAP) $ 276 $ 5,456 Less: gains (losses), impairments, Insurance, and restructuring & other 266 5,565 Adjusted total Corporate operating profit (costs) (Non-GAAP) $ 10 $ (109) Functions & operations $ (74) $ (145) Environmental, health and safety (EHS) and other items 81 30 Eliminations 4 6 Adjusted total Corporate operating profit (costs) (Non-GAAP) $ 10 $ (109) Adjusted total corporate operating profit (costs)* excludes gains (losses) on purchases and sales of business interests, significant, higher-cost restructuring programs, separation costs, gains (losses) on equity securities, and our run-off Insurance operations profit.",
+      "score": 0.992
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "For us, particular areas where risks or uncertainties could cause our actual results to be materially different than those expressed in our forward-looking statements include: \u2022 changes in macroeconomic and market conditions and market volatility, including risk of recession, inflation, supply chain constraints or disruptions, interest rates, the value of securities and other financial assets, oil, natural gas and other commodity prices and exchange rates, and the impact of such changes and volatility on our business operations and financial results; \u2022 global economic trends, competition and geopolitical risks, including impacts from the ongoing conflict between Russia and Ukraine and related sanctions and risks related to conflict in the Middle East, demand or supply shocks from events such as a major terrorist attack, war, natural disasters or actual or threatened public health pandemics or other emergencies, or an escalation of sanctions, tariffs or other trade tensions between the U.S.",
+      "score": -0.9825
+    },
+    {
+      "sent": "For us, particular areas where risks or uncertainties could cause our actual results to be materially different than those expressed in our forward-looking statements include: \u2022 changes in macroeconomic and market conditions and market volatility, including risk of recession, inflation, supply chain constraints or disruptions, interest rates, the value of securities and other financial assets, oil, natural gas and other commodity prices and exchange rates, and the impact of such changes and volatility on our business operations and financial results; \u2022 global economic trends, competition and geopolitical risks, including impacts from the ongoing conflict between Russia and Ukraine and related sanctions and risks related to conflict in the Middle East, demand or supply shocks from events such as a major terrorist attack, war, natural disasters or actual or threatened public health pandemics or other emergencies, or an escalation of sanctions, tariffs or other trade tensions between the U.S.",
+      "score": -0.9825
+    },
+    {
+      "sent": "Continu\ntrends, competition and geopolitical risks, including impacts from the ongoing conflict between Russia and Ukraine and related sanctions and risks related to conflict in the Middle East, demand or supply shocks from events such as a major terrorist attack, war, natural disasters or actual or threatened public health pandemics or other emergencies, or an escalation of sanctions, tariffs or other trade tensions between the U.S.",
+      "score": -0.9825
+    }
+  ],
+  "forward_snippets": [
+    "We continue to experience inflation pressure in our supply chain, as well as delays in sourcing key materials needed for our products.",
+    "While we expect the impact of inflation to continue to be challenging, we have taken and continue to take actions to limit this pressure, including lean initiatives to drive cost productivity, partnering with our suppliers and adjusting the pricing of our products and services.",
+    "We are in frequent dialogue with our airline, airframe, and maintenance, repair and overhaul customers about the outlook for commercial air travel, new aircraft production, fleet retirements, and after-market services, including shop visit and spare parts demand.",
+    "As it relates to the defense environment, we continue to forecast strong demand creating future growth opportunities.",
+    "We continue to partner with our customers on future production rates."
+  ]
+}

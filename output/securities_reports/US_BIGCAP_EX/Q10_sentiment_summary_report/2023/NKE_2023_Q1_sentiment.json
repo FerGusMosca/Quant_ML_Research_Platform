@@ -1,0 +1,47 @@
+{
+  "symbol": "NKE",
+  "year": 2023,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1925,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.131
+  },
+  "top_positive": [
+    {
+      "sent": "8 Table of Contents The following tables present information about the Company's derivative assets and liabilities measured at fair value on a recurring basis and indicate the level in the fair value hierarchy in which the Company classifies the fair value measurement: AUGUST 31, 2023 DERIVATIVE ASSETS DERIVATIVE LIABILITIES (Dollars in millions) ASSETS AT FAIR VALUE OTHER CURRENT ASSETS OTHER LONG-TERM ASSETS LIABILITIES AT FAIR VALUE ACCRUED LIABILITIES OTHER LONG-TERM LIABILITIES Level 2: Foreign exchange forwards and options (1) $ 491 $ 420 $ 71 $ 235 $ 177 $ 58 (1) If the foreign exchange derivative instruments had been netted on the Unaudited Condensed Consolidated Balance Sheets, the asset and liability positions each would have been reduced by $ 233 million as of August\u00a031, 2023.",
+      "score": 0.9739
+    },
+    {
+      "sent": "8 Table of Contents The following tables present information about the Company's derivative assets and liabilities measured at fair value on a recurring basis and indicate the level in the fair value hierarchy in which the Company classifies the fair value measurement: AUGUST 31, 2023 DERIVATIVE ASSETS DERIVATIVE LIABILITIES (Dollars in millions) ASSETS AT FAIR VALUE OTHER CURRENT ASSETS OTHER LONG-TERM ASSETS LIABILITIES AT FAIR VALUE ACCRUED LIABILITIES OTHER LONG-TERM LIABILITIES Level 2: Foreign exchange forwards and options (1) $ 491 $ 420 $ 71 $ 235 $ 177 $ 58 (1) If the foreign exchange derivative instruments had been netted on the Unaudited Condensed Consolidated Balance Sheets, the asset and liability positions each would have been reduced by $ 233 million as of August\u00a031, 2023.",
+      "score": 0.9739
+    },
+    {
+      "sent": "8 Table of Contents The following tables present information about the Company's derivative assets and liabilities measured at fair value on a recurring basis and indicate the level in the fair value hierarchy in which the Company classifies the fair value measurement: AUGUST 31, 2023 DERIVATIVE ASSETS DERIVATIVE LIABILITIES (Dollars in millions) ASSETS AT FAIR VALUE OTHER CURRENT ASSETS OTHER LONG-TERM ASSETS LIABILITIES AT FAIR VALUE ACCRUED LIABILITIES OTHER LONG-TERM LIABILITIES Level 2: Foreign exchange forwards and options (1) $ 491 $ 420 $ 71 $ 235 $ 177 $ 58 (1) If the foreign exchange derivative instruments had been netted on the Unaudited Condensed Consolidated Balance Sheets, the asset and liability positions each would have been reduced by $ 233 million as of August\u00a031, 2023.",
+      "score": 0.9739
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "GROSS MARGIN THREE MONTHS ENDED AUGUST 31, (Dollars in millions) 2023 2022 % CHANGE Gross profit $ 5,720 $ 5,615 2 % Gross margin 44.2 % 44.3 % (10) bps For the first quarter of fiscal 2024, our consolidated gross margin was 10 basis points lower than the prior year primarily due to: \u2022 Higher NIKE Brand product costs, on a wholesale equivalent basis (decreasing gross margin approximately 180 basis points); \u2022 Unfavorable changes in net foreign currency exchange rates, including hedges (decreasing gross margin approximately 90 basis points); and \u2022 Lower off-price margin, on a wholesale equivalent basis (decreasing gross margin approximately 30 basis points).",
+      "score": -0.9717
+    },
+    {
+      "sent": "GROSS MARGIN THREE MONTHS ENDED AUGUST 31, (Dollars in millions) 2023 2022 % CHANGE Gross profit $ 5,720 $ 5,615 2 % Gross margin 44.2 % 44.3 % (10) bps For the first quarter of fiscal 2024, our consolidated gross margin was 10 basis points lower than the prior year primarily due to: \u2022 Higher NIKE Brand product costs, on a wholesale equivalent basis (decreasing gross margin approximately 180 basis points); \u2022 Unfavorable changes in net foreign currency exchange rates, including hedges (decreasing gross margin approximately 90 basis points); and \u2022 Lower off-price margin, on a wholesale equivalent basis (decreasing gross margin approximately 30 basis points).",
+      "score": -0.9717
+    },
+    {
+      "sent": "GROSS MARGIN THREE MONTHS ENDED AUGUST 31, (Dollars in millions) 2023 2022 % CHANGE Gross profit $ 5,720 $ 5,615 2 % Gross margin 44.2 % 44.3 % (10) bps For the first quarter of fiscal 2024, our consolidated gross margin was 10 basis points lower than the prior year primarily due to: \u2022 Higher NIKE Brand product costs, on a wholesale equivalent basis (decreasing gross margin approximately 180 basis points); \u2022 Unfavorable changes in net foreign currency exchange rates, including hedges (decreasing gross margin approximately 90 basis po\nse in the Consolidated Statements of Income.",
+      "score": -0.9692
+    }
+  ],
+  "forward_snippets": [
+    "The new guidance requires qualitative and quantitative disclosure sufficient to enable users of the financial statements to understand the nature, activity during the period, changes from period to period and potential magnitude of such programs.",
+    "The Company adopted the required guidance in the first quarter of fiscal 2024.",
+    "As a result of this new guidance, the Company recognized a one-time ta\nLY ADOPTED ACCOUNTING STANDARDS In September 2022, the Financial Accounting Standards Board (the \"FASB\") issued Accounting Standards Update 2022-04, Liabilities \u2014 Supplier Finance Programs (Subtopic 405-50): Disclosure of Supplier Finance Program Obligations.",
+    "The new guidance requires qualitative and quantitative disclosure sufficient to enable users of the financial statements to understand the nature, activity during the period, changes from period to period and potential magnitude of such programs.",
+    "The Company adopted the required guidance in the first quarter of fiscal 2024."
+  ]
+}

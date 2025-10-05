@@ -1,0 +1,907 @@
+{
+  "symbol": "INTC",
+  "year": 2023,
+  "period": "Q2",
+  "competition_summary": [
+    {
+      "competitor": "\u2022 IP",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "COVID-19",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "SEC",
+      "mentions": 5,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Availability of Company Information",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Intel",
+      "mentions": 47,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Intel Core",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Intel Corporation",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Review Total",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "CCG",
+      "mentions": 16,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "DCAI",
+      "mentions": 13,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "NEX",
+      "mentions": 9,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "CPU",
+      "mentions": 4,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "EPS",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "IP",
+      "mentions": 5,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "MLCommons",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "IDM 2.0",
+      "mentions": 3,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "8,646 14,831 Research",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Diluted",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Unaudited) Common Stock and",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Restricted",
+      "mentions": 4,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "880",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Consolidated Condensed Financial Statements Note",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Consolidated Condensed Financial Statements",
+      "mentions": 5,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Consolidated Financial Statements",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "AXG",
+      "mentions": 3,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "CODM",
+      "mentions": 5,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Data Center and AI",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Mobileye",
+      "mentions": 12,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "SoC",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "IFS",
+      "mentions": 5,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Financial Statements 9 Table of Contents Net",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Client Computing Desktop",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Data Center",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Intel Foundry Services",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Client Computing",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Consolidated Condensed Statements of Income",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Corporate",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Non-Controlling Interests Semiconductor Co-Investment Program",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Brookfield Asset Management",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Arizona Fab LLC",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "VIE",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Arizona Fab",
+      "mentions": 5,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "IPO",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Financial Statements Notes",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Financial Statements 10 Table of Contents",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "IMS Nanofabrication",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Bain Capital Special Situations",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "IMS Nanofabrication GmbH",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "IMS",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "treasury",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Consolidated Condensed Statements of Cash Flows",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Financial Statements 11 Table of Contents Interest",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "NAND",
+      "mentions": 5,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Restructuring Program",
+      "mentions": 8,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Consolidated Condensed Balance Sheets",
+      "mentions": 3,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "EC",
+      "mentions": 14,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Financial Statements 12 Table of Contents Note",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Financial Statements 13 Table of Contents Equity Investments",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "McAfee Corp.",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Tower Semiconductor Ltd.",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Tower",
+      "mentions": 4,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "SK hynix Inc.",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the NAND OpCo Business",
+      "mentions": 4,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 3,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Financial Statements 15 Table of Contents Note",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Reporting Date Using Fair\u00a0Value\u00a0Measured",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Reporting Date Using",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Financial",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "instruments\u00b9",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Reverse",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "US Treasury",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Non-Recurring Basis Our",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Basis Financial",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Derivative Financial Instruments Volume of Derivative Activity Total",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Financial Statements 17 Table of Contents Amounts Offset",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Balance Sheet Net Amounts Presented",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Balance Sheet Financial Instruments Cash",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Non-Cash Collateral",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Consolidated",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "VLSI",
+      "mentions": 16,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Contents European Commission Competition Matter",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the European Court of Justice",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the General Court",
+      "mentions": 4,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Court of First Instance",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Court of Justice",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the General Court\u2019s",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "The General Court\u2019s",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Litigation Related to",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Google",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "District Court",
+      "mentions": 4,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Ninth Circuit Court of Appeals",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Superior Court of Justice of Ontario",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Superior Court of Justice of Quebec",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "node",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Financial Statements 20 Table of Contents Litigation Related to Patent",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "VLSI Technology",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "LLC",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "NXP Semiconductors",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "NXP",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Inter Partes Review",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Patent Trial and Appeal Board",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Federal Circuit Court of Appeals",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Fortress Investment Group\u2019s",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Shenzhen Intermediate People\u2019s Court",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Intel Trading",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Shanghai) Co., Ltd.",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Intel Products",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Chengdu) Co.,",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the China National Intellectual Property Administration",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "CNIPA",
+      "mentions": 3,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Shanghai Intellectual Property Court",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Chengdu) Co., Ltd.",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Financial Statements 21 Table of",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "AI Artificial intelligence ASP Average",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "CCG Client Computing Group",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "DCAI Data Center and",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Artificial Intelligence",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "EC European Commission EPS Earnings",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "IDM Integrated",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "IDM",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "IFS Intel Foundry Services",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "IP Intellectual",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "IPO Initial",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "MD&A Management's Discussion and Analysis MG&A Marketing",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "MNC Multinational",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "NEX Networking",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Edge",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Nanometer R&D Research",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "RSU Restricted",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "SEC US Securities and Exchange Commission",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "VLSI VLSI Technology LLC Financial Statements Notes",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Contents Management's Discussion and Analysis",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "MD&A",
+      "mentions": 15,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Contents Data Center",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "FPGA",
+      "mentions": 5,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "MD&A 25 Table of Contents Operating Income",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Contents Network & Edge NEX",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "AI",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "ADAS",
+      "mentions": 3,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Mobileye Revenue",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "EyeQ\u00ae",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Mobileye SuperVision TM",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "MD&A 28 Table",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Contents Intel Foundry Services",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Embedded Multi-die",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Interconnect Bridge",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Expenses Total R&D",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "MG&A",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Administrative",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Equity Investments and Interest",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Montage Technology Co., Ltd",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "McAfee",
+      "mentions": 3,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Contents Liquidity",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Capital Resources",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Definition Usefulness",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Share",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "MD&A 37 Table",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Internal Control Over Financial Reporting",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Issuer Purchases of",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Key Information 40 Table of Contents Disclosure Pursuant to Section",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Securities Exchange Act",
+      "mentions": 3,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "State",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Federal Security Service",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "FSB",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the US Department",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "the Treasury\u2019s Office of Foreign Assets Control (OFAC",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Treasury",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "AO",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Positive Technologies",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "OFAC",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Key Information 41 Table of Contents Exhibits Incorporated",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Intel Corporation 2006 Equity Incentive Plan",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "X 31.1 Certification",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Consolidated Condensed Financial Statements and Supplemental Details X 104 Cover Page Interactive Data File",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Key Information 42 Table of",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Management's Discussion and Analysis of Financial Condition",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Mine Safety Disclosures Not applicable Item 5",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "INTEL CORPORATION",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Principal Financial",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    },
+    {
+      "competitor": "Principal Accounting",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u2022 the significant upfront investments in R&D and our business, products, technologies, and manufacturing capabilities; \u2022 vulnerability to new product development and manufacturing-related risks, including product defects or errata, particularly as we develop next generation products and implement next generation process technologies; \u2022 risks associated with a highly complex global supply chain, including from disruptions, delays, trade "
+    }
+  ]
+}

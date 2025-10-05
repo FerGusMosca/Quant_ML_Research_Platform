@@ -1,0 +1,47 @@
+{
+  "symbol": "NKE",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1861,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.138
+  },
+  "top_positive": [
+    {
+      "sent": "The following table presents a summary of share repurchases made during the quarter ended February\u00a028, 2022: PERIOD TOTAL NUMBER OF SHARES PURCHASED AVERAGE PRICE PAID PER SHARE APPROXIMATE DOLLAR VALUE OF SHARES THAT MAY YET BE PURCHASED UNDER THE PLANS OR PROGRAMS (IN MILLIONS) December 1 \u2014 December 31, 2021 2,016,185 $ 167.00 $ 8,284 January 1 \u2014 January 31, 2022 2,619,600 $ 149.40 $ 7,893 February 1 \u2014 February 28, 2022 3,455,583 $ 143.00 $ 7,399 8,091,368 $ 151.05 49 Table of Contents ITEM 6.",
+      "score": 0.9345
+    },
+    {
+      "sent": "The following table presents a summary of share repurchases made during the quarter ended February\u00a028, 2022: PERIOD TOTAL NUMBER OF SHARES PURCHASED AVERAGE PRICE PAID PER SHARE APPROXIMATE DOLLAR VALUE OF SHARES THAT MAY YET BE PURCHASED UNDER THE PLANS OR PROGRAMS (IN MILLIONS) December 1 \u2014 December 31, 2021 2,016,185 $ 167.00 $ 8,284 January 1 \u2014 January 31, 2022 2,619,600 $ 149.40 $ 7,893 February 1 \u2014 February 28, 2022 3,455,583 $ 143.00 $ 7,399 8,091,368 $ 151.05 49 Table of Contents ITEM 6.",
+      "score": 0.9345
+    },
+    {
+      "sent": "GREATER CHINA THREE MONTHS ENDED FEBRUARY 28, NINE MONTHS ENDED FEBRUARY 28, (Dollars\u00a0in\u00a0millions) 2022 2021 % CHANGE % CHANGE EXCLUDING CURRENCY CHANGES 2022 2021 % CHANGE % CHANGE EXCLUDING CURRENCY CHANGES Revenues by: Footwear $ 1,554 $ 1,614 -4 % -6 % $ 4,238 $ 4,432 -4 % -9 % Apparel 548 616 -11 % -13 % 1,588 1,775 -11 % -15 % Equipment 58 49 18 % 15 % 160 150 7 % 1 % TOTAL REVENUES $ 2,160 $ 2,279 -5 % -8 % $ 5,986 $ 6,357 -6 % -11 % Revenues by: Sales to Wholesale Customers $ 1,241 $ 1,269 -2 % -5 % $ 3,251 $ 3,392 -4 % -9 % Sales through NIKE Direct 919 1,010 -9 % -11 % 2,735 2,965 -8 % -13 % TOTAL REVENUES $ 2,160 $ 2,279 -5 % -8 % $ 5,986 $ 6,357 -6 % -11 % EARNINGS BEFORE INTEREST AND TAXES $ 784 $ 973 -19 % $ 2,054 $ 2,552 -20 % THIRD QUARTER OF FISCAL 2022 COMPARED TO THIRD QUARTER OF FISCAL 2021 On a currency-neutral basis, Greater China revenues for the third quarter of fiscal 2022 decreased 8%, reflecting impacts from supply chain constraints, government restrictions due to COVID-19 as well as ongoing marketplace dynamics.",
+      "score": 0.913
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "GROSS MARGIN THREE MONTHS ENDED FEBRUARY 28, NINE MONTHS ENDED FEBRUARY 28, (Dollars in millions) 2022 2021 % CHANGE 2022 2021 % CHANGE Gross profit $ 5,067 $ 4,719 7 % $ 15,976 $ 14,307 12 % Gross margin 46.6 % 45.6 % 100 bps 46.3 % 44.4 % 190 bps For the third quarter of fiscal 2022, our consolidated gross margin was 100 basis points higher than the prior year period and primarily reflected the following factors: \u2022 Higher margin in our NIKE Direct business, primarily driven by lower promotional activity in the current period reflecting limited available for sale inventory due to supply chain constraints compared to higher promotional activity in the prior year as we managed the impacts from COVID-19, (increasing gross margin approximately 140 basis points); \u2022 Favorable changes in net foreign currency exchange rates, including hedges, (increasing gross margin approximately 80 basis points); \u2022 Higher mix of full-price sales, on a wholesale equivalent basis, (increasing gross margin approximately 70 basis points); \u2022 Lower NIKE Brand full-price product margins, on a wholesale equivalent basis, (decreasing gross margin approximately 170 basis points) reflecting: \u2022 Higher product costs (decreasing gross margin approximately 120 basis points) largely due to increased freight and logistics costs as well as product mix; \u2022 Lower full-price ASP, net of discounts, (decreasing gross margin approximately 50 basis points) driven by product mix, partially offset by strategic pricing increases; and \u2022 Higher other costs, in part due to higher warehousing and freight costs, among other factors (decreasing gross margin approximately 30 basis points).",
+      "score": -0.985
+    },
+    {
+      "sent": "For the first nine months of fiscal 2022, our consolidated gross margin was 190 basis points higher than the prior year period and primarily reflected the following factors: \u2022 Higher margin in our NIKE Direct business, primarily driven by lower promotional activity in the current period reflecting limited available for sale inventory due to supply chain constraints compared to higher promotional activity in the prior year as we managed the impacts from COVID-19 (increasing gross margin approximately 160 basis points); \u2022 Higher mix of full-price sales, on a wholesale equivalent basis, (increasing gross margin approximately 70 basis points); \u2022 Favorable changes in net foreign currency exchange rates, including hedges, (increasing gross margin approximately 50 basis points); and \u2022 Higher NIKE Brand product costs, on a wholesale equivalent basis, primarily due to increased freight and logistics costs (decreasing gross margin approximately 90 basis points).",
+      "score": -0.9246
+    },
+    {
+      "sent": "Gross margin decreased approximately 190 basis points reflecting lower full-price ASP, net of discounts, lower NIKE Direct margins and higher other costs, primarily due to higher warehousing and freight.",
+      "score": -0.7579
+    }
+  ],
+  "forward_snippets": [
+    "Additionally, we have aligned our product creation and category organizations around a new consumer construct focused on Men\u2019s, Women's, Kids' and the Jordan Brand and continue to invest in data and analytics, demand sensing, insight gathering, inventory management and other areas to create an end-to-end technology foundation, which we expect will further accelerate our digital transformation.",
+    "In Greater China however, due to a COVID-19 resurgence, we continue to experience a higher level of temporary store closures, with some operating on reduced hours, as well as lower physical traffic versus pre-pandemic periods.",
+    "We also experienced elevated transportation, logistics and fulfillment costs as a result of this dynamic environment, which partially offset gross margin expansion in the third quarter and first nine months of fiscal 2022.",
+    "We expect elevated transit times will continue to impact product availability, leading to inventory supply significantly lagging consumer demand for at least the remainder of the fiscal year.",
+    "In addition, we expect transportation, logistics and fulfillment costs will continue to remain elevated as we navigate these supply chain constraints."
+  ]
+}

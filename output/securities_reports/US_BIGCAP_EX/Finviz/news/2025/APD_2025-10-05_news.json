@@ -1,0 +1,606 @@
+{
+  "symbol": "APD",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-03",
+      "time": "12:00",
+      "title": "Uzbekistan Signs $4 Billion in Energy Deals With U.S. Giants\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/news/uzbekistan-signs-4-billion-energy-160000638.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:51",
+      "title": "Air Products to Highlight High-Quality Gases and Technologies for the Battery Industry at the Battery Show North America\n\n\n(PR Newswire)",
+      "link": "/news/182444/air-products-to-highlight-high-quality-gases-and-technologies-for-the-battery-industry-at-the-battery-show-north-america"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "10:00",
+      "title": "Air Products Gains on Project Investments and Productivity Actions\n\n\n(Zacks)",
+      "link": "/news/181045/air-products-gains-on-project-investments-and-productivity-actions"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "PPG to Showcase Coatings and Total EV System Solutions in Detroit\n\n\n(Zacks)",
+      "link": "/news/181028/ppg-to-showcase-coatings-and-total-ev-system-solutions-in-detroit"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:44AM",
+      "title": "Here are the October additions to Goldmans U.S. Conviction List - Directors Cut\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/october-additions-goldman-u-conviction-124407370.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:33AM",
+      "title": "The Zacks Analyst Blog Highlights NextEra, U.S. Bancorp, Air Products and Chemicals and Village Super Market\n\n\n(Zacks)",
+      "link": "/news/180512/the-zacks-analyst-blog-highlights-nextera-us-bancorp-air-products-and-chemicals-and-village-super-market"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "16:38",
+      "title": "Top Stock Reports for NextEra Energy, U.S. Bancorp and Air Products & Chemicals\n\n\n(Zacks)",
+      "link": "/news/180267/top-stock-reports-for-nextera-energy-us-bancorp-and-air-products-chemicals"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Air Products to Showcase Industrial Gas Solutions at the 86th Conference on Glass Problems in Toledo, Ohio\n\n\n(PR Newswire)",
+      "link": "/news/179529/air-products-to-showcase-industrial-gas-solutions-at-the-86th-conference-on-glass-problems-in-toledo-ohio"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:20AM",
+      "title": "DOW Launches Polymer Processing Aid Solution for Safer Packaging\n\n\n(Zacks)",
+      "link": "/news/179605/dow-launches-polymer-processing-aid-solution-for-safer-packaging"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "PPG Benefits From Cost Actions and Acquisitions, Weak Demand Ails\n\n\n(Zacks)",
+      "link": "/news/179573/ppg-benefits-from-cost-actions-and-acquisitions-weak-demand-ails"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "11:40",
+      "title": "JMPLY or APD: Which Is the Better Value Stock Right Now?\n\n\n(Zacks)",
+      "link": "/news/174889/jmply-or-apd-which-is-the-better-value-stock-right-now"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "19:30",
+      "title": "Analyst Report: Air Products and Chemicals, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/3a95768d-32ef-3df7-b298-28646423d0a4/analyst-report%3A-air-products.html"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "09:39",
+      "title": "Molson Coors downgraded, GM upgraded: Wall Street's top analyst calls\n\n\n(The Fly)",
+      "link": "https://finance.yahoo.com/news/molson-coors-downgraded-gm-upgraded-133954987.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Air Products to Highlight its Freshline Food Freezing Solutions at the International Baking Industry Exposition\n\n\n(PR Newswire)",
+      "link": "/news/164799/air-products-to-highlight-its-freshline-food-freezing-solutions-at-the-international-baking-industry-exposition"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "14:47",
+      "title": "Is Air Products and Chemicals Stock Underperforming the Nasdaq?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/1b9d00ad-b61f-3345-bf5a-88a9bd3baefe/is-air-products-and-chemicals.html"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "11:18",
+      "title": "Air Products Publishes 2025 Sustainability Report\n\n\n(PR Newswire)",
+      "link": "/news/158945/air-products-publishes-2025-sustainability-report"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "09:05",
+      "title": "APD's Cleveland Air Separation Facility Is Operational, Supply Begins\n\n\n(Zacks)",
+      "link": "/news/156832/apds-cleveland-air-separation-facility-is-operational-supply-begins"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "15:16",
+      "title": "Air Products' New Cleveland Air Separation Facility and Liquefier Onstream and Supplying Onsite and Regional Customers\n\n\n(PR Newswire)",
+      "link": "/news/155954/air-products-new-cleveland-air-separation-facility-and-liquefier-onstream-and-supplying-onsite-and-regional-customers"
+    },
+    {
+      "date": "2025-08-23",
+      "time": "05:20",
+      "title": "Is Wall Street Bullish or Bearish on Air Products and Chemicals Stock?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/a56fbebe-b1b7-3d58-bbf9-28c5bb0cb3b4/is-wall-street-bullish-or.html"
+    },
+    {
+      "date": "2025-08-22",
+      "time": "19:35",
+      "title": "Analyst Report: Air Products and Chemicals, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/54b93775-ed21-33a1-a344-d3e6fe11d2f2/analyst-report%3A-air-products.html"
+    },
+    {
+      "date": "2025-08-21",
+      "time": "09:46",
+      "title": "Air Products Successfully Completes First Liquid Hydrogen Fill of the World's Largest Hydrogen Sphere at NASA's Kennedy Space Center\n\n\n(PR Newswire)",
+      "link": "/news/146263/air-products-successfully-completes-first-liquid-hydrogen-fill-of-the-worlds-largest-hydrogen-sphere-at-nasas-kennedy-space-center"
+    },
+    {
+      "date": "2025-08-20",
+      "time": "08:30",
+      "title": "Howard Ungerleider to Join Air Products' Board of Directors\n\n\n(PR Newswire)",
+      "link": "/news/145117/howard-ungerleider-to-join-air-products-board-of-directors"
+    },
+    {
+      "date": "2025-08-19",
+      "time": "11:40",
+      "title": "JMPLY vs. APD: Which Stock Should Value Investors Buy Now?\n\n\n(Zacks)",
+      "link": "/news/144421/jmply-vs-apd-which-stock-should-value-investors-buy-now"
+    },
+    {
+      "date": "2025-08-15",
+      "time": "10:00",
+      "title": "PPG Gains on Cost Actions and Acquisitions Amid Demand Softness\n\n\n(Zacks)",
+      "link": "/news/141996/ppg-gains-on-cost-actions-and-acquisitions-amid-demand-softness"
+    },
+    {
+      "date": "2025-08-13",
+      "time": "02:27",
+      "title": "High Purity Gas Market is Projected with A Value of USD 55.79 Billion by 2032, Driven by Rising Demand in Semiconductor Manufacturing | Report by SNS Insider\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/high-purity-gas-market-projected-062700475.html"
+    },
+    {
+      "date": "2025-08-12",
+      "time": "23:28",
+      "title": "Citi Raises Air Products' Price Target\n\n\n(Insider Monkey)",
+      "link": "/news/137643/citi-raises-air-products-price-target"
+    },
+    {
+      "date": "2025-08-07",
+      "time": "15:56",
+      "title": "Earnings Season Has Been Great. But the Numbers Don't Tell the Whole Story.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/earnings-market-tariffs-consumer-economy-aafb86d4?mod=bar_FV"
+    },
+    {
+      "date": "2025-08-05",
+      "time": "16:30",
+      "title": "Air Products Appoints Megan Britt Vice President, Investor Relations\n\n\n(PR Newswire)",
+      "link": "/news/128858/air-products-appoints-megan-britt-vice-president-investor-relations"
+    },
+    {
+      "date": "2025-07-31",
+      "time": "19:46",
+      "title": "Materials Dividends in Specialty Chemicals (APD): The Case for Air Products and Chemicals\n\n\n(Insider Monkey)",
+      "link": "/news/124012/materials-dividends-in-specialty-chemicals-apd-the-case-for-air-products-and-chemicals"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:06PM",
+      "title": "Analyst Report: Air Products and Chemicals, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/7c25f894-43b1-3049-8f68-2bf2ec8cb65f/analyst-report%3A-air-products.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:32PM",
+      "title": "Air Products Trims Earnings Outlook On Portfolio Optimization And Project Exits\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/air-products-trims-earnings-outlook-163220847.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:59AM",
+      "title": "Air Products' Earnings and Revenues Surpass Estimates in Q3\n\n\n(Zacks)",
+      "link": "/news/122971/air-products-earnings-and-revenues-surpass-estimates-in-q3"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Air Products and Chemicals (APD) Reports Q3 Earnings: What Key Metrics Have to Say\n\n\n(Zacks)",
+      "link": "/news/122754/air-products-and-chemicals-apd-reports-q3-earnings-what-key-metrics-have-to-say"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:15AM",
+      "title": "Air Products and Chemicals (APD) Q3 Earnings and Revenues Top Estimates\n\n\n(Zacks)",
+      "link": "/news/122418/air-products-and-chemicals-apd-q3-earnings-and-revenues-top-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:11AM",
+      "title": "Air Products and Chemicals: Fiscal Q3 Earnings Snapshot\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/air-products-chemicals-fiscal-q3-101152082.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "Air Products Reports Fiscal 2025 Third Quarter Results\n\n\n(PR Newswire)",
+      "link": "https://finance.yahoo.com/news/air-products-reports-fiscal-2025-100000203.html"
+    },
+    {
+      "date": "2025-07-24",
+      "time": "20:00",
+      "title": "Green Hydrogen Boom Fizzles as Projects Collapse Worldwide\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/news/green-hydrogen-boom-fizzles-projects-000000087.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Earnings Preview: Air Products and Chemicals (APD) Q3 Earnings Expected to Decline\n\n\n(Zacks)",
+      "link": "/news/114178/earnings-preview-air-products-and-chemicals-apd-q3-earnings-expected-to-decline"
+    },
+    {
+      "date": "2025-07-22",
+      "time": "20:15",
+      "title": "Analyst Report: Air Products and Chemicals, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/c842d115-8977-375c-a63c-c9dc4020740f/analyst-report%3A-air-products.html"
+    },
+    {
+      "date": "2025-07-21",
+      "time": "16:15",
+      "title": "Air Products Appoints Matthew Lepore Executive Vice President, General Counsel and Secretary and Chief Compliance Officer\n\n\n(PR Newswire)",
+      "link": "/news/109801/air-products-appoints-matthew-lepore-executive-vice-president-general-counsel-and-secretary-and-chief-compliance-officer"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:51AM",
+      "title": "Air Products and Chemicals Q3 2025 Earnings: What to Expect\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/b1733361-af7e-3274-8b1c-01a585531932/air-products-and-chemicals%E2%80%99.html"
+    },
+    {
+      "date": "2025-07-18",
+      "time": "08:13",
+      "title": "Air Products Declares Quarterly Dividend\n\n\n(PR Newswire)",
+      "link": "/news/107636/air-products-declares-quarterly-dividend"
+    },
+    {
+      "date": "2025-07-15",
+      "time": "10:04",
+      "title": "Steady Income from the Industrial Sector: Why Air Products Stands Out\n\n\n(Insider Monkey)",
+      "link": "/news/104032/steady-income-from-the-industrial-sector-why-air-products-stands-out"
+    },
+    {
+      "date": "2025-07-14",
+      "time": "09:30",
+      "title": "Middle East & Africa Liquid Nitrogen Market Forecast to 2031, with Profiles of Linde, L' Air Liquide, Air Products and Chemicals, SOL, Ube, Air Water, Gulf Cryo, ADNOC Gas, and Matheson Tri-Gas\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/middle-east-africa-liquid-nitrogen-133000500.html"
+    },
+    {
+      "date": "2025-07-10",
+      "time": "04:10",
+      "title": "Green Hydrogen Global Market Insights and Growth Forecast 2025-2030 | Asia-Pacific Leads with Massive Green Hydrogen Scale-Up Ambitions\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/green-hydrogen-global-market-insights-081000613.html"
+    },
+    {
+      "date": "2025-07-09",
+      "time": "06:20",
+      "title": "Should You Invest in the iShares U.S. Basic Materials ETF (IYM)?\n\n\n(Zacks)",
+      "link": "/news/98869/should-you-invest-in-the-ishares-us-basic-materials-etf-iym"
+    },
+    {
+      "date": "2025-07-08",
+      "time": "06:09",
+      "title": "Analysis: Activist investors set to push for changes as dealmaking picks up\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/analysis-activist-investors-set-push-100955564.html"
+    },
+    {
+      "date": "2025-06-30",
+      "time": "13:00",
+      "title": "Air Products to Broadcast Fiscal 2025 Third Quarter Earnings Teleconference on July 31, 2025\n\n\n(PR Newswire)",
+      "link": "/news/92444/air-products-to-broadcast-fiscal-2025-third-quarter-earnings-teleconference-on-july-31-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Plug Power Stock Is Surging. Why Hydrogen Just Got a Boost From the Senate Bill.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/962f9a48-e737-39cf-9b15-b6b34a96cf22/plug-power-stock-is-surging..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:57AM",
+      "title": "Plug Power Stock Is Rising. Why Hydrogen Just Got a Boost From the Senate Bill.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/plug-power-stock-hydrogen-senate-bill-78dc2566?mod=bar_FV"
+    },
+    {
+      "date": "2025-06-26",
+      "time": "08:46",
+      "title": "Is the Options Market Predicting a Spike in Air Products Stock?\n\n\n(Zacks)",
+      "link": "/news/89581/is-the-options-market-predicting-a-spike-in-air-products-stock"
+    },
+    {
+      "date": "2025-06-20",
+      "time": "07:00",
+      "title": "Bioceres Crop Solutions Announces Changes to Board of Directors\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250620806033/en/"
+    },
+    {
+      "date": "2025-06-18",
+      "time": "14:31",
+      "title": "Air Products and Chemicals, Inc. (APD) Initiated with an Outperform Rating at RBC Capital\n\n\n(Insider Monkey)",
+      "link": "/news/83638/air-products-and-chemicals-inc-apd-initiated-with-an-outperform-rating-at-rbc-capital"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:15PM",
+      "title": "Analyst Report: Air Products and Chemicals, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/b96b31bf-4f71-38b7-afa4-c0df9d25bbc7/analyst-report%3A-air-products.html"
+    },
+    {
+      "date": "2025-06-17",
+      "time": "04:54",
+      "title": "Hydrogen giant abandons \u00a32bn British factory plans Labour refused to back\n\n\n(The Telegraph)",
+      "link": "https://finance.yahoo.com/m/376a80ec-3c40-388a-8f4f-291eec295947/hydrogen-giant-abandons-%C2%A32bn.html"
+    },
+    {
+      "date": "2025-06-13",
+      "time": "09:46",
+      "title": "RBC starts Air Products, Linde at Outperform on earnings recovery\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/rbc-starts-air-products-linde-134626597.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Air Products to Showcase Industrial Gas Solutions at the PowderMet2025 International Conference on Powder Metallurgy and Particulate Materials\n\n\n(PR Newswire)",
+      "link": "/news/80125/air-products-to-showcase-industrial-gas-solutions-at-the-powdermet2025-international-conference-on-powder-metallurgy-and-particulate-materials"
+    },
+    {
+      "date": "2025-06-12",
+      "time": "20:00",
+      "title": "Saudi Arabias Giant Hydrogen Project Reaches 80% Completion\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/news/saudi-arabia-giant-hydrogen-project-000000630.html"
+    },
+    {
+      "date": "2025-06-10",
+      "time": "02:27",
+      "title": "Macquarie's $3.6 billion S. Korean gas firm draws interest from KKR, Brookfield and industry peers, sources say\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/macquaries-3-6-billion-korean-062725365.html"
+    },
+    {
+      "date": "2025-06-07",
+      "time": "12:00",
+      "title": "How Hydrogen, the Fuel of the Future, Got Bogged Down in the Bayou\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/energy-oil/how-hydrogen-the-fuel-of-the-future-got-bogged-down-in-the-bayou-36131eb6?mod=wsj_FV"
+    },
+    {
+      "date": "2025-06-06",
+      "time": "22:00",
+      "title": "Here's How You Can Earn $100 In Passive Income By Investing In Air Products And Chemicals Stock\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/heres-earn-100-passive-income-020025113.html"
+    },
+    {
+      "date": "2025-06-05",
+      "time": "11:30",
+      "title": "Chemours (CC) Down 7.6% Since Last Earnings Report: Can It Rebound?\n\n\n(Zacks)",
+      "link": "/news/74587/chemours-cc-down-76-since-last-earnings-report-can-it-rebound"
+    },
+    {
+      "date": "2025-06-04",
+      "time": "11:30",
+      "title": "Why Is Cabot (CBT) Up 3.9% Since Last Earnings Report?\n\n\n(Zacks)",
+      "link": "/news/73502/why-is-cabot-cbt-up-39-since-last-earnings-report"
+    },
+    {
+      "date": "2025-06-01",
+      "time": "17:00",
+      "title": "Trumps Beautiful Bill Casts a Cloud Over Hydrogens Future\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/m/172cff40-a925-3da8-a775-65186689be5e/trump%E2%80%99s-%E2%80%98beautiful%E2%80%99-bill.html"
+    },
+    {
+      "date": "2025-05-28",
+      "time": "10:00",
+      "title": "Air Products' CEO Eduardo Menezes to Speak at Deutsche Bank's 16th Annual Global Industrials & Materials Conference\n\n\n(PR Newswire)",
+      "link": "/news/67882/air-products-ceo-eduardo-menezes-to-speak-at-deutsche-banks-16th-annual-global-industrials-materials-conference"
+    },
+    {
+      "date": "2025-05-22",
+      "time": "23:08",
+      "title": "Air Products and Chemicals, Inc. (APD) Declares Quarterly Dividend\n\n\n(Insider Monkey)",
+      "link": "/news/64718/air-products-and-chemicals-inc-apd-declares-quarterly-dividend"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:20AM",
+      "title": "Air Products Declares Quarterly Dividend\n\n\n(PR Newswire)",
+      "link": "/news/63881/air-products-declares-quarterly-dividend"
+    },
+    {
+      "date": "2025-05-13",
+      "time": "20:00",
+      "title": "Chemical Breakthrough Could Solve Our Plastic Waste Problem\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/m/2fcb0173-43f6-3389-9b7c-80ac0dd15d0c/chemical-breakthrough-could.html"
+    },
+    {
+      "date": "2025-05-08",
+      "time": "06:20",
+      "title": "Should You Invest in the iShares U.S. Basic Materials ETF (IYM)?\n\n\n(Zacks)",
+      "link": "/news/51415/should-you-invest-in-the-ishares-us-basic-materials-etf-iym"
+    },
+    {
+      "date": "2025-05-07",
+      "time": "11:35",
+      "title": "2024 Total Dividend Income And Portfolio Update\n\n\n(Seeking Alpha)",
+      "link": "https://seekingalpha.com/article/4782983-2024-total-dividend-income-and-portfolio-update?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:40AM",
+      "title": "Fidelity Select Materials Portfolio Q1 2025 Commentary\n\n\n(Seeking Alpha)",
+      "link": "https://seekingalpha.com/article/4782799-fidelity-select-materials-portfolio-q1-2025-commentary?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    },
+    {
+      "date": "2025-05-03",
+      "time": "01:26",
+      "title": "Dividend Champion, Contender, And Challenger Highlights: Week Of May 4\n\n\n(Seeking Alpha)",
+      "link": "https://seekingalpha.com/article/4781430-dividend-champion-contender-challenger-highlights-week-of-may-4?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    },
+    {
+      "date": "2025-05-02",
+      "time": "03:02",
+      "title": "Air Products & Chemicals Inc (APD) Q2 2025 Earnings Call Highlights: Navigating Challenges ...\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/air-products-chemicals-inc-apd-070224036.html"
+    },
+    {
+      "date": "2025-05-01",
+      "time": "13:02",
+      "title": "Analyst Report: Air Products and Chemicals, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/6eed1ed1-3fb6-3dab-9521-b327b00a4d27/analyst-report%3A-air-products.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:55PM",
+      "title": "Air Products and Chemicals, Inc. (APD) Q2 2025 Earnings Call Transcript\n\n\n(Seeking Alpha)",
+      "link": "https://seekingalpha.com/article/4780586-air-products-and-chemicals-inc-apd-q2-2025-earnings-call-transcript?utm_source=finviz.com&utm_medium=referral&feed_item_type=transcript"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:13PM",
+      "title": "Air Products and Chemicals: Attractive After Resetting Expectations (Upgrade)\n\n\n(Seeking Alpha)",
+      "link": "https://seekingalpha.com/article/4780473-air-products-and-chemicals-attractive-after-resetting-expectations-upgrade?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:37AM",
+      "title": "Air Products' Earnings and Revenues Lag Estimates in Q2\n\n\n(Zacks)",
+      "link": "/news/43855/air-products-earnings-and-revenues-lag-estimates-in-q2"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Air Products and Chemicals (APD) Q2 Earnings: Taking a Look at Key Metrics Versus Estimates\n\n\n(Zacks)",
+      "link": "/news/43813/air-products-and-chemicals-apd-q2-earnings-taking-a-look-at-key-metrics-versus-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:10AM",
+      "title": "Air Products and Chemicals (APD) Misses Q2 Earnings and Revenue Estimates\n\n\n(Zacks)",
+      "link": "/news/43165/air-products-and-chemicals-apd-misses-q2-earnings-and-revenue-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:06AM",
+      "title": "Air Products lowers full-year profit forecast, shares fall\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/air-products-lowers-full-profit-110636794.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:07AM",
+      "title": "Air Products and Chemicals: Fiscal Q2 Earnings Snapshot\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/air-products-chemicals-fiscal-q2-100724581.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "Air Products Reports Fiscal 2025 Second Quarter Results\n\n\n(PR Newswire)",
+      "link": "https://www.prnewswire.com/news-releases/air-products-reports-fiscal-2025-second-quarter-results-302443904.html"
+    },
+    {
+      "date": "2025-04-30",
+      "time": "11:45",
+      "title": "The Davenport Insider Buying Fund Q1 2025 Commentary\n\n\n(Seeking Alpha)",
+      "link": "https://seekingalpha.com/article/4779836-the-davenport-insider-buying-fund-q1-2025-commentary?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:48AM",
+      "title": "Air Products to Report Q2 Earnings: What's in the Cards?\n\n\n(Zacks)",
+      "link": "/news/40085/air-products-to-report-q2-earnings-whats-in-the-cards"
+    },
+    {
+      "date": "2025-04-29",
+      "time": "20:07",
+      "title": "Best Dividend Aristocrats For May 2025\n\n\n(Seeking Alpha)",
+      "link": "https://seekingalpha.com/article/4779456-best-dividend-aristocrats-for-may-2025?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:15AM",
+      "title": "Stepan Co. (SCL) Tops Q1 Earnings and Revenue Estimates\n\n\n(Zacks)",
+      "link": "/news/37404/stepan-co-scl-tops-q1-earnings-and-revenue-estimates"
+    },
+    {
+      "date": "2025-04-28",
+      "time": "13:24",
+      "title": "Linde Gears Up to Report Q1 Earnings: What's in the Offing?\n\n\n(Zacks)",
+      "link": "/news/36763/linde-gears-up-to-report-q1-earnings-whats-in-the-offing"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:16AM",
+      "title": "Stay Ahead of the Game With Air Products and Chemicals (APD) Q2 Earnings: Wall Street's Insights on Key Metrics\n\n\n(Zacks)",
+      "link": "/news/36368/stay-ahead-of-the-game-with-air-products-and-chemicals-apd-q2-earnings-wall-streets-insights-on-key-metrics"
+    },
+    {
+      "date": "2025-04-27",
+      "time": "14:00",
+      "title": "3 stocks this portfolio manager is watching\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/3-stocks-portfolio-manager-watching-180011413.html"
+    },
+    {
+      "date": "2025-04-25",
+      "time": "10:00",
+      "title": "DuPont de Nemours (DD) Earnings Expected to Grow: Should You Buy?\n\n\n(Zacks)",
+      "link": "/news/36117/dupont-de-nemours-dd-earnings-expected-to-grow-should-you-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:57AM",
+      "title": "Air Products and Chemicals, Inc. (APD): Among the Best Materials Stocks to Buy According to Hedge Funds\n\n\n(Insider Monkey)",
+      "link": "/news/34062/air-products-and-chemicals-inc-apd-among-the-best-materials-stocks-to-buy-according-to-hedge-funds"
+    },
+    {
+      "date": "2025-04-24",
+      "time": "10:01",
+      "title": "Air Products and Chemicals (APD) Expected to Beat Earnings Estimates: What to Know Ahead of Q2 Release\n\n\n(Zacks)",
+      "link": "/news/33391/air-products-and-chemicals-apd-expected-to-beat-earnings-estimates-what-to-know-ahead-of-q2-release"
+    },
+    {
+      "date": "2025-04-21",
+      "time": "14:58",
+      "title": "Air Products and Chemicals, Inc. (APD): Among Recent Activist Investor Campaigns\n\n\n(Insider Monkey)",
+      "link": "/news/27871/air-products-and-chemicals-inc-apd-among-recent-activist-investor-campaigns"
+    },
+    {
+      "date": "2025-04-18",
+      "time": "09:15",
+      "title": "XLB: Materials Dashboard For April\n\n\n(Seeking Alpha)",
+      "link": "https://seekingalpha.com/article/4776013-xlb-materials-dashboard-april-2025?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    },
+    {
+      "date": "2025-04-16",
+      "time": "08:50",
+      "title": "Why Investors Need to Take Advantage of These 2 Basic Materials Stocks Now\n\n\n(Zacks)",
+      "link": "/news/24809/why-investors-need-to-take-advantage-of-these-2-basic-materials-stocks-now"
+    },
+    {
+      "date": "2025-04-15",
+      "time": "07:42",
+      "title": "Here's Aristotle Capital's Value Equity Strategy's Investment Thesis for Air Products and Chemicals (APD)\n\n\n(Insider Monkey)",
+      "link": "/news/23896/heres-aristotle-capitals-value-equity-strategys-investment-thesis-for-air-products-and-chemicals-apd"
+    },
+    {
+      "date": "2025-04-12",
+      "time": "02:58",
+      "title": "Linde Vs. Air Products And Chemicals: It Goes Well Beyond Dividends\n\n\n(Seeking Alpha)",
+      "link": "https://seekingalpha.com/article/4774666-linde-vs-air-products-it-goes-well-beyond-dividends?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    },
+    {
+      "date": "2025-04-11",
+      "time": "07:31",
+      "title": "Buy 2 April Aristocrats Out Of 38 'Safer'\n\n\n(Seeking Alpha)",
+      "link": "https://seekingalpha.com/article/4774456-buy-2-april-aristocrats-out-of-38-safer?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:20AM",
+      "title": "Air Products And Chemicals: Compelling Opportunity At An Attractive Discount\n\n\n(Seeking Alpha)",
+      "link": "https://seekingalpha.com/article/4774416-air-products-and-chemicals-compelling-opportunity-at-an-attractive-discount?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:05AM",
+      "title": "Aristotle Capital Value Equity Composite Q1 2025 Commentary\n\n\n(Seeking Alpha)",
+      "link": "https://seekingalpha.com/article/4774414-aristotle-capital-value-equity-composite-q1-2025-commentary?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    }
+  ]
+}

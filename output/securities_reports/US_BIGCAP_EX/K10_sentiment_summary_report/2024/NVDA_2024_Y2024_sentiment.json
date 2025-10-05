@@ -1,0 +1,47 @@
+{
+  "symbol": "NVDA",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2021,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.198
+  },
+  "top_positive": [
+    {
+      "sent": "The following is a summary of equity awards granted under our equity incentive plans: Year Ended Jan 28, 2024 Jan 29, 2023 Jan 30, 2022 (In millions, except per share data) RSUs, PSUs and Market-based PSUs Awards granted 14 25 18 Estimated total grant-date fair value $ 5,316 $ 4,505 $ 3,492 Weighted average grant-date fair value per share $ 374.08 $ 183.72 $ 190.69 ESPP Shares purchased 3 3 5 Weighted average price per share $ 158.07 $ 122.54 $ 56.36 Weighted average grant-date fair value per share $ 69.90 $ 51.87 $ 23.24 As of January\u00a028, 2024, there was $ 8.6 billion of aggregate unearned stock-based compensation expense.",
+      "score": 0.9843
+    },
+    {
+      "sent": "50 Table of Contents NVIDIA Corporation and Subsidiaries Consolidated Statements of Comprehensive Income (In millions) Year Ended Jan 28, 2024 Jan 29, 2023 Jan 30, 2022 Net income $ 29,760 $ 4,368 $ 9,752 Other comprehensive income (loss), net of tax Available-for-sale securities: Net change in unrealized gain (loss) 80 ( 31 ) ( 16 ) Reclassification adjustments for net realized gain included in net income \u2014 1 \u2014 Net change in unrealized gain (loss) 80 ( 30 ) ( 16 ) Cash flow hedges: Net change in unrealized gain (loss) 38 47 ( 43 ) Reclassification adjustments for net realized gain (loss) included in net income ( 48 ) ( 49 ) 29 Net change in unrealized loss ( 10 ) ( 2 ) ( 14 ) Other comprehensive income (loss), net of tax 70 ( 32 ) ( 30 ) Total comprehensive income $ 29,830 $ 4,336 $ 9,722 See accompanying notes to the consolidated financial statements.",
+      "score": 0.9716
+    },
+    {
+      "sent": "To this end, we have been: \u2022 Partnering with institutions and professional organizations serving historically underrepresented communities; \u2022 Embedding dedicated recruiting teams to business areas to shepherd underrepresented candidates through the interview process and find internal opportunities; \u2022 Supporting the development of women employees through programs aimed at building a pipeline of future leaders; \u2022 Providing peer support and executive sponsors for our internal community resource groups; \u2022 Providing training and education to managers and peers on fostering supportive environments and recruiting for diversity; \u2022 Track equity and parity in retention, promotions, pay, and employee engagement scores; and \u2022 Measuring year over year progress and providing leadership visibility on diversity efforts.",
+      "score": 0.9501
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These include domestic and international economic and political conditions in countries in which we and our suppliers and manufacturers do business, government lockdowns to control case spread of global or local health issues, differing legal standards with respect to protection of IP and employment practices, different domestic and international business and cultural practices, disruptions to capital markets, counter-inflation policies, currency fluctuations, natural disasters, acts of war or other military actions, terrorism, public health issues and other catastrophic events.",
+      "score": -0.9118
+    },
+    {
+      "sent": "These include domestic and international economic and political conditions in countries in which we and our suppliers and manufacturers do business, government lockdowns to control case spread of global or local health issues, differing legal standards with respect to protection of IP and employment practices, different domestic and international business and cultural practices, disruptions to capital markets, counter-inflation policies, currency fluctuations, natural disasters, acts of war or other military actions, terrorism, public health issues and other catastrophic events.",
+      "score": -0.9118
+    },
+    {
+      "sent": "Cyber-attacks, including ransomware attacks by organized criminal threat actors, nation-states, and nation-state-supported actors, may become more prevalent and severe.",
+      "score": -0.9112
+    }
+  ],
+  "forward_snippets": [
+    "You should read this Annual Report on Form\u00a010-K completely and with the understanding that our actual future results may be materially different from what we expect.",
+    "In addition, statements that \u201cwe believe\u201d and similar statements reflect our beliefs and opinions on the relevant subject.",
+    "These statements are based upon information available to us as of the filing date of this Annual Report on Form 10-K, and while we believe such information forms a reasonable basis for such statements, such information may be limited or incomplete, and our statements should not be read to indicate that we have conducted an exhaustive inquiry into, or review of, all potentially available relevant information.",
+    "You should read this Annual Report on Form\u00a010-K completely and with the understanding that our actual future results may be materially different from what we expect.",
+    "In addition, statements that \u201cwe believe\u201d and similar statements reflect our beliefs and opinions on the relevant subject."
+  ]
+}

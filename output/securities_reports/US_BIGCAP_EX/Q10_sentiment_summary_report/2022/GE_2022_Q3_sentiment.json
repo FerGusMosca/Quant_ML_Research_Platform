@@ -1,0 +1,47 @@
+{
+  "symbol": "GE",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.3182,
+    "outlook_sentiment": 0.2319,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.109
+  },
+  "top_positive": [
+    {
+      "sent": "2022 1Q FORM 10-Q 17 ADJUSTED EARNINGS (LOSS) PER SHARE (EPS) (NON-GAAP) Three months ended March 31 (In dollars) 2022 2021 V% Earnings (loss) per share from continuing operations (GAAP)(a) $ (0.74) $ 0.02 U Insurance earnings (pre-tax) 0.21 0.13 Tax effect on Insurance earnings (0.04) (0.03) Less: Insurance earnings (net of tax) 0.16 0.10 Earnings (loss) per share excluding Insurance (Non-GAAP) $ (0.90) $ (0.08) U Non-operating benefit (cost) income (pre-tax) (GAAP) 0.12 (0.39) Tax effect on non-operating benefit (cost) income (0.03) 0.08 Less: non-operating benefit (cost) income (net of tax) 0.10 (0.31) Gains (losses) on purchases and sales of business interests (pre-tax)(a) \u2014 \u2014 Tax effect on gains (losses) on purchases and sales of business interests \u2014 \u2014 Less: gains (losses) on purchases and sales of business interests (net of tax) \u2014 \u2014 Gains (losses) on equity securities (pre-tax)(a) (0.20) 0.32 Tax effect on gains (losses) on equity securities(b)(c) (0.02) (0.11) Less: gains (losses) on equity securities (net of tax) (0.22) 0.21 Restructuring & other (pre-tax)(a) (0.03) (0.10) Tax effect on restructuring & other 0.01 0.02 Less: restructuring & other (net of tax) (0.02) (0.08) Separation costs (pre-tax)(a) (0.11) \u2014 Tax effect on separation costs (0.02) \u2014 Less: separation costs (net of tax) (0.13) \u2014 Steam asset sale impairment (pre-tax)(a) (0.75) \u2014 Tax effect on Steam asset sale impairment 0.08 \u2014 Less: Steam asset sale impairment (net of tax) (0.67) \u2014 Russia and Ukraine charges (pre-tax)(a) (0.21) \u2014 Tax effect on Russia and Ukraine charges 0.01 \u2014 Less: Russia and Ukraine charges (net of tax) (0.20) \u2014 Less: Accretion of redeemable noncontrolling interest (pre-tax and net of tax) \u2014 \u2014 Less: Tax loss related to GECAS transaction \u2014 (0.04) Adjusted earnings (loss) per share (Non-GAAP) $ 0.24 $ 0.13 85 % (a) See the Corporate section for further information.",
+      "score": 0.9902
+    },
+    {
+      "sent": "2022 1Q FORM 10-Q 17 ADJUSTED EARNINGS (LOSS) PER SHARE (EPS) (NON-GAAP) Three months ended March 31 (In dollars) 2022 2021 V% Earnings (loss) per share from continuing operations (GAAP)(a) $ (0.74) $ 0.02 U Insurance earnings (pre-tax) 0.21 0.13 Tax effect on Insurance earnings (0.04) (0.03) Less: Insurance earnings (net of tax) 0.16 0.10 Earnings (loss) per share excluding Insurance (Non-GAAP) $ (0.90) $ (0.08) U Non-operating benefit (cost) income (pre-tax) (GAAP) 0.12 (0.39) Tax effect on non-operating benefit (cost) income (0.03) 0.08 Less: non-operating benefit (cost) income (net of tax) 0.10 (0.31) Gains (losses) on purchases and sales of business interests (pre-tax)(a) \u2014 \u2014 Tax effect on gains (losses) on purchases and sales of business interests \u2014 \u2014 Less: gains (losses) on purchases and sales of business interests (net of tax) \u2014 \u2014 Gains (losses) on equity securities (pre-tax)(a) (0.20) 0.32 Tax effect on gains (losses) on equity securities(b)(c) (0.02) (0.11) Less: gains (losses) on equity securities (net of tax) (0.22) 0.21 Restructuring & other (pre-tax)(a) (0.03) (0.10) Tax effect on restructuring & other 0.01 0.02 Less: restructuring & other (net of tax) (0.02) (0.08) Separation costs (pre-tax)(a) (0.11) \u2014 Tax effect on separation costs (0.02) \u2014 Less: separation costs (net of tax) (0.13) \u2014 Steam asset sale impairment (pre-tax)(a) (0.75) \u2014 Tax effect on Steam asset sale impairment 0.08 \u2014 Less: Steam asset sale impairment (net of tax) (0.67) \u2014 Russia and Ukraine charges (pre-tax)(a) (0.21) \u2014 Tax effect on Russia and Ukraine charges 0.01 \u2014 Less: Russia and Ukraine charges (net of tax) (0.20) \u2014 Less: Accretion of redeemable noncontrolling interest (pre-tax and net of tax) \u2014 \u2014 Less: Tax loss related to GECAS transaction \u2014 (0.04) Adjusted earnings (loss) per share (Non-GAAP) $ 0.24 $ 0.13 85 % (a) See the Corporate section for further information.",
+      "score": 0.9902
+    },
+    {
+      "sent": "2022 1Q FORM 10-Q 17 ADJUSTED EARNINGS (LOSS) PER SHARE (EPS) (NON-GAAP) Three months ended March 31 (In dollars) 2022 2021 V% Earnings (loss) per share from continuing operations (GAAP)(a) $ (0.74) $ 0.02 U Insurance earnings (pre-tax) 0.21 0.13 Tax effect on Insurance earnings (0.04) (0.03) Less: Insurance earnings (net of tax) 0.16 0.10 Earnings (loss) per share excluding Insurance (Non-GAAP) $ (0.90) $ (0.08) U Non-operating benefit (cost) income (pre-tax) (GAAP) 0.12 (0.39) Tax effect on non-operating benefit (cost) income (0.03) 0.08 Less: non-operating benefit (cost) income (net of tax) 0.10 (0.31) Gains (losses) on purchases and sales of business interests (pre-tax)(a) \u2014 \u2014 Tax effect on gains (losses) on purchases and sales of business interests \u2014 \u2014 Less: gains (losses) on purchases and sales of business interests (net of tax) \u2014 \u2014 Gains (losses) on equity securities (pre-tax)(a) (0.20) 0.32 Tax effect on gains (losses) on equity securities(b)(c) (0.02) (0.11) Less: gains (losses) on equity securities (net of tax) (0.22) 0.21 Restructuring & other (pre-tax)(a) (0.03) (0.10) Tax effect on restructuring & other 0.01 0.02 Less: restructuring & other (net of tax) (0.02) (0.08) Separation costs (pre-tax)(a) (0.11) \u2014 Tax effect on separation costs (0.02) \u2014 Less: separation costs (net of tax) (0.13) \u2014 Steam asset sale impairment (pre-tax)(a) (0.75) \u2014 Tax effect on Steam asset sale impairment 0.08 \u2014 Less: Steam asset sale impairment (net of tax) (0.67) \u2014 Russia and Ukraine charges (pre-tax)(a) (0.21) \u2014 Tax effect on Russia and Ukraine charges 0.01 \u2014 Less: Russia and Ukraine charges (net of tax) (0.20) \u2014 Less: Accretion of redeemable noncontrolling interest (pre-tax and net of tax) \u2014 \u2014 Less: Tax loss related to GECAS transaction \u2014 (0.04) Adjusted earnings (loss) per share (Non-GAAP) $ 0.24 $ 0.13 85 % (a) See the Corporate section for further information.",
+      "score": 0.9902
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our operations and the execution of ou r business plans and strategies are subject to the effects of global economic trends, geopolitical risks and demand or supply shocks from events that could include war, a major terrorist attack, natural disasters or actual or threatened public health emergencies (such as COVID-19, including virus variants and resurgences and responses to those developments such as continued or new government-imposed lockdowns and travel restrictions).",
+      "score": -0.9682
+    },
+    {
+      "sent": "Our operations and the execution of ou r business plans and strategies are subject to the effects of global economic trends, geopolitical risks and demand or supply shocks from events that could include war, a major terrorist attack, natural disasters or actual or threatened public health emergencies (such as COVID-19, including virus variants and resurgences and responses to those developments such as continued or new government-imposed lockdowns and travel restrictions).",
+      "score": -0.9682
+    },
+    {
+      "sent": "Our operations and the execution of ou r business plans and strategies are subject to the effects of global economic trends, geopolitical risks and demand or supply shocks from events that could include war, a major terrorist attack, natural disasters or actual or threatened public health emergencies (such as COVID-19, including virus variants and resurgences and responses to those developments such as continued or new government-imposed lockdowns and travel restrictions).",
+      "score": -0.9682
+    }
+  ],
+  "forward_snippets": [
+    "*Non-GAAP Financial Measure 2022 1Q FORM 10-Q 4 We continue to experience inflation pressure in our supply chain, as well as delays in sourcing key materials needed for our products.",
+    "We are in frequent dialogue with our airline, airframe, and maintenance, repair and overhaul customers about the outlook for commercial air travel, new aircraft production, fleet retirements, and after-market services, including shop visit and spare parts demand.",
+    "Current trends are in line with our recovery forecast, and we continue to expect domestic travel routes primarily served by single-aisle aircraft to recover before long-haul, international travel routes, which are primarily served by twin-aisle aircraft.",
+    "In addition, we continue to partner with our airline and leasing customers and collaborate with our airframe partners on production rates for 2022 and beyond.",
+    "We continue to see growth in hospital spending to increase capacity and improve quality of care."
+  ]
+}

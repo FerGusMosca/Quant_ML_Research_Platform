@@ -1,0 +1,9 @@
+{
+  "symbol": "DE",
+  "period": "2019",
+  "report_type": "YearlyIncomeStatement",
+  "items": {
+    "Impairment Of Capital Assets": 52000000.0,
+    "Insurance And Claims": 231000000.0
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "XOM",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2516,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.064
+  },
+  "top_positive": [
+    {
+      "sent": "Financial Instruments and Derivatives The estimated fair value of financial instruments and derivatives at June\u00a030, 2023 and December\u00a031, 2022, and the related hierarchy level for the fair value measurement was as follows: June 30, 2023 Fair Value (millions of dollars) Level 1 Level 2 Level 3 Total Gross Assets & Liabilities Effect of Counterparty Netting Effect of Collateral Netting Difference in Carrying Value and Fair Value Net Carrying Value Assets Derivative assets (1) 4,768 1,980 \u2014 6,748 ( 5,477 ) ( 807 ) \u2014 464 Advances to/receivables from equity companies (2)(6) \u2014 2,472 4,645 7,117 \u2014 \u2014 592 7,709 Other long-term financial assets (3) 1,255 \u2014 864 2,119 \u2014 \u2014 283 2,402 Liabilities Derivative liabilities (4) 4,031 2,136 \u2014 6,167 ( 5,477 ) ( 72 ) \u2014 618 Long-term debt (5) 30,891 1,099 9 31,999 \u2014 \u2014 3,790 35,789 Long-term obligations to equity companies (6) \u2014 \u2014 2,161 2,161 \u2014 \u2014 ( 125 ) 2,036 Other long-term financial liabilities (7) \u2014 \u2014 631 631 \u2014 \u2014 44 675 December 31, 2022 Fair Value (millions of dollars) Level 1 Level 2 Level 3 Total Gross Assets & Liabilities Effect of Counterparty Netting Effect of Collateral Netting Difference in Carrying Value and Fair Value Net Carrying Value Assets Derivative assets (1) 4,309 3,455 \u2014 7,764 ( 5,778 ) ( 969 ) \u2014 1,017 Advances to/receivables from equity companies (2)(6) \u2014 2,406 4,958 7,364 \u2014 \u2014 685 8,049 Other long-term financial\nd factual theories set forth in these proceedings are meritless and represent an inappropriate attempt to use the court system to usurp the proper role of policymakers in addressing the societal challenges of climate change.",
+      "score": 0.9758
+    },
+    {
+      "sent": "Financial Instruments and Derivatives The estimated fair value of financial instruments and derivatives at June\u00a030, 2023 and December\u00a031, 2022, and the related hierarchy level for the fair value measurement was as follows: June 30, 2023 Fair Value (millions of dollars) Level 1 Level 2 Level 3 Total Gross Assets & Liabilities Effect of Counterparty Netting Effect of Collateral Netting Difference in Carrying Value and Fair Value Net Carrying Value Assets Derivative assets (1) 4,768 1,980 \u2014 6,748 ( 5,477 ) ( 807 ) \u2014 464 Advances to/receivables from equity companies (2)(6) \u2014 2,472 4,645 7,117 \u2014 \u2014 592 7,709 Other long-term financial assets (3) 1,255 \u2014 864 2,119 \u2014 \u2014 283 2,402 Liabilities Derivative liabilities (4) 4,031 2,136 \u2014 6,167 ( 5,477 ) ( 72 ) \u2014 618 Long-term debt (5) 30,891 1,099 9 31,999 \u2014 \u2014 3,790 35,789 Long-term obligations to equity companies (6) \u2014 \u2014 2,161 2,161 \u2014 \u2014 ( 125 ) 2,036 Other long-term financial liabilities (7) \u2014 \u2014 631 631 \u2014 \u2014 44 675 December 31, 2022 Fair Value (millions of dollars) Level 1 Level 2 Level 3 Total Gross Assets & Liabilities Effect of Counterparty Netting Effect of Collateral Netting Difference in Carrying Value and Fair Value Net Carrying Value Assets Derivative assets (1) 4,309 3,455 \nus alleged injuries purportedly connected to climate change.",
+      "score": 0.975
+    },
+    {
+      "sent": "Financial Instruments and Derivatives The estimated fair value of financial instruments and derivatives at June\u00a030, 2023 and December\u00a031, 2022, and the related hierarchy level for the fair value measurement was as follows: June 30, 2023 Fair Value (millions of dollars) Level 1 Level 2 Level 3 Total Gross Assets & Liabilities Effect of Counterparty Netting Effect of Collateral Netting Difference in Carrying Value and Fair Value Net Carrying Value Assets Derivative assets (1) 4,768 1,980 \u2014 6,748 ( 5,477 ) ( 807 ) \u2014 464 Advances to/receivables from equity companies (2)(6) \u2014 2,472 4,645 7,117 \u2014 \u2014 592 7,709 Other long-term financial assets (3) 1,255 \u2014 864 2,119 \u2014 \u2014 283 2,402 Liabilities Derivative liabilities (4) 4,031 2,136 \u2014 6,167 ( 5,477 ) ( 72 ) \u2014 618 Long-term d\ner of legal proceedings against several oil and gas companies, including ExxonMobil, requesting unprecedented legal and equitable relief for various alleged injuries purportedly connected to climate change.",
+      "score": 0.9682
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK Information about market risks for the six months ended June\u00a030, 2023, does not differ materially from that discussed under Item 7A of the registrant's Annual Report on Form 10-K for 2022.",
+      "score": -0.6037
+    },
+    {
+      "sent": "While the outcome of any litigation can be unpredictable, we believe the likelihood is remote that the ultimate outcomes of these lawsuits will have a material adverse effect on the Corporation\u2019s operations, financial condition, or financial statements taken as a whole.",
+      "score": -0.5994
+    },
+    {
+      "sent": "While the outcome of any litigation can be unpredictable, we believe the likelihood is remote that the ultimate outcomes of these lawsuits will have a material adverse effect on the Corporation\u2019s operations, financial condition, or financial statements taken as a whole.",
+      "score": -0.5994
+    }
+  ],
+  "forward_snippets": [
+    "We believe the legal and factual theories set forth in these proceedings are meritless and represent an inappropriate attempt to use the court system to usurp the proper role of policymakers in addressing the societal challenges of climate change.",
+    "We believe the factual and legal theories set forth in these proceedings are meritless.",
+    "While the outcome of any litigation can be unpredictable, we believe the likelihood is remote that the ultimate outcomes of these lawsuits will have a material adverse effect on the Corporation\u2019s operations, financial condition, or financial statements taken as a whole.",
+    "We will continue to defend vigorously against these claims.",
+    "We believe the legal and factual theories set forth in these proceedings are meritless and represent an inappropriate attempt to use the court system to usurp the proper role of policymakers in addressing the societal challenges of climate change."
+  ]
+}

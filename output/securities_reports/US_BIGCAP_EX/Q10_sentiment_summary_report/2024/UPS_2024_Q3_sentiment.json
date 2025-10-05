@@ -1,0 +1,51 @@
+{
+  "symbol": "UPS",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.3753,
+    "outlook_sentiment": 0.2601,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.051
+  },
+  "top_positive": [
+    {
+      "sent": "Domestic Package Operations 42 International Package Operations 45 Supply Chain Solutions Operations 48 Consolidated Operating Expenses 50 Other Income (Expense) 53 Income Tax Expense 54 Liquidity and Capital Resources 55 Cash Flows From Operating Activities 55 Cash Flows From Investing Activities 56 Cash Flows From Financing Activities 57 Sources of Credit 58 Contractual Commitments 58 Legal Proceedings and Contingencies 58 Collective Bargaining Agreements 59 Recent Accounting Pronouncements 59 Item 3.",
+      "score": 0.7506
+    },
+    {
+      "sent": "AND SUBSIDIARIES STATEMENTS OF CONSOLIDATED INCOME (In millions, except per share amounts) (unaudited) Three Months Ended March 31, 2024 2023 Revenue $ 21,706 $ 22,925 Operating Expenses: Compensation and benefits 11,639 11,464 Repairs and maintenance 718 725 Depreciation and amortization 898 834 Purchased transportation 3,246 3,541 Fuel 1,060 1,271 Other occupancy 564 551 Other expenses 1,968 1,998 Total Operating Expenses 20,093 20,384 Operating Profit 1,613 2,541 Other Income (Expense): Investment income and other 118 169 Interest expense ( 195 ) ( 188 ) Total Other Income (Expense) ( 77 ) ( 19 ) Income Before Income Taxes 1,536 2,522 Income Tax Expense 423 627 Net Income $ 1,113 $ 1,895 Basic Earnings Per Share $ 1.30 $ 2.20 Diluted Earnings Per Share $ 1.30 $ 2.19 STATEMENTS OF CONSOLIDATED COMPREHENSIVE INCOME (LOSS) (In millions) (unaudited) Three Months Ended March 31, 2024 2023 Net Income $ 1,113 $ 1,895 Change in foreign currency translation adjustment, net of tax ( 125 ) 118 Change in unrealized gain (loss) on marketable securities, net of tax ( 1 ) 7 Change in unrealized gain (loss) on cash flow hedges, net of tax 73 ( 77 ) Change in unrecognized pension and postretirement benefit costs, net of tax 30 20 Comprehensive Income $ 1,090 $ 1,963 See notes to unaudited, consolidated financial statements.",
+      "score": 0.9825
+    },
+    {
+      "sent": "The following is a rollforward of our common stock, additional paid-in capital, retained earnings and non-controlling interests accounts for the three months ended March\u00a031, 2024 and 2023 (in millions, except per share amounts): Three Months Ended March 31: 2024 2023 Shares Dollars Shares Dollars Class\u00a0A Common Stock: Balance at beginning of period 127 $ 2 134 $ 2 Stock award plans 2 \u2014 3 \u2014 Common stock issuances \u2014 \u2014 1 \u2014 Conversions of class\u00a0A to class B common stock ( 3 ) \u2014 ( 3 ) \u2014 Class\u00a0A shares issued at end of period 126 $ 2 135 $ 2 Class B Common Stock: Balance at beginning of period 726 $ 7 725 $ 7 Common stock purchases \u2014 \u2014 ( 4 ) \u2014 Conversions of class\u00a0A to class B common stock 3 \u2014 3 \u2014 Class B shares issued at end of period 729 $ 7 724 $ 7 Additional Paid-In Capital: Balance at beginning of period $ \u2014 $ \u2014 Stock award plans ( 118 ) 345 Common stock purchases \u2014 ( 492 ) Common stock issuances 118 147 Balance at end of period $ \u2014 $ \u2014 Retained Earnings: Balance at beginning of period $ 21,055 $ 21,326 Net income attributable to controlling interests 1,113 1,895 Dividends ($ 1.63 and $ 1.62 per share) (1) ( 1,414 ) ( 1,453 ) Common stock purchases \u2014 ( 258 ) Other (2) ( 73 ) \u2014 Balance at end of period $ 20,681 $ 21,510 Non-Controlling Interests: Balance at beginning of period $ 8 $ 17 Change in non-controlling interest 16 ( 2 ) Balance at end of period $ 24 $ 15 (1) The dividend per share amou\n of Contents UNITED PARCEL SERVICE, INC.",
+      "score": 0.9816
+    },
+    {
+      "sent": "These risks and uncertainties include, but are not limited to: changes in general economic conditions in the United States (\"U.S.\") or internationally; significant competition on a local, regional, national and international basis; changes in our relationships with our significant customers; our ability to attract and retain qualified employees; strikes, work stoppages or slowdowns by our employees; increased or more complex physical or operational security requirements; a significant cybersecurity incident, or increased data protection regulations; our ability to maintain our brand image and corporate reputation; impacts from global climate change; interruptions in or impacts on our business from natural or man-made events or disasters including terrorist attacks, epidemics or pandemics; exposure to changing economic, political, regulatory and social developments in international and emerging markets; our ability to realize the anticipated benefits from acquisitions, dispositions, joint ventures or strategic alliances; the effects of changing prices of energy, including gasoline, diesel, jet fuel and other fuels, and interruptions in supplies of these commodities; changes in exchange rates or interest rates; our ability to accurately forecast our future capital investment needs; increases in our expenses or funding obligations relating to employee health, retiree health and/or pension benefits; our ability to manage insurance and claims expenses; changes in business strategy, government regulations or economic or market conditions that may result in impairments of our assets; potential additional U.S.",
+      "score": 0.9737
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "or international tax liabilities; increasingly stringent regulations related to climate change; potential claims or litigation related to labor and employment, personal injury, property damage, business practices, environmental liability and other matters; and other risks discussed in our filings with the Securities and Exchange Commission from time to time, including our Annual Report on Form 10-K for the year ended December\u00a031, 2023, and subsequently filed reports.",
+      "score": -0.8481
+    },
+    {
+      "sent": "Accordingly, we are not able to estimate a possible loss or range of losses that may result from these disputes or to determine whether such losses, if any, would have a material impact on our financial condition, results of operations or liquidity.",
+      "score": -0.8316
+    },
+    {
+      "sent": "Accordingly, we are not able to estimate a possible loss or range of loss that may result from this matter or to determine whether such loss, if any, would have a material adverse effect on our financial condition, results of operations or liquidity.",
+      "score": -0.8061
+    }
+  ],
+  "forward_snippets": [
+    "From time to time, we expect to participate in analyst and investor conferences.",
+    "From time to time, we expect to participate in analyst and investor conferences.",
+    "We will be required to define significant segment expense categories and we anticipate providing additional qualitative information in accordance with this ASU.",
+    "We will be required to define significant segment expense categories and we anticipate providing additional qualitative information in accordance with this ASU.",
+    "In making this determination, we considered the financial condition and prospects of each issuer, the magnitude of the losses compared with the cost, the probability that we will be unable to collect all amounts due according to the contractual terms of the security, the credit rating of the security and our ability and intent to hold these investments until the anticipated recovery in market value occurs."
+  ]
+}

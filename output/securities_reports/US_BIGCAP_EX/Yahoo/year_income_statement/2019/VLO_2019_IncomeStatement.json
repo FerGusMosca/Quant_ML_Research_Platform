@@ -1,0 +1,13 @@
+{
+  "symbol": "VLO",
+  "period": "2019",
+  "report_type": "YearlyIncomeStatement",
+  "items": {
+    "Interest Income": 52000000.0,
+    "Average Dilution Earnings": 0.0,
+    "Gain On Sale Of Business": -62000000.0,
+    "Other Special Charges": -207000000.0,
+    "Interest Income Non Operating": 52000000.0,
+    "Salaries And Wages": 58000000.0
+  }
+}

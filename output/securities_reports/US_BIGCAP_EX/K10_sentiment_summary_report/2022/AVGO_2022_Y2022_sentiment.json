@@ -1,0 +1,47 @@
+{
+  "symbol": "AVGO",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1942,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.255
+  },
+  "top_positive": [
+    {
+      "sent": "69 Table of Contents Benefit Obligations and Plan Assets October 30, 2022 October 31, 2021 (In millions) Change in plan assets: Fair value\u00a0of plan assets \u2014 beginning of period $ 1,521 $ 1,593 Actual return on plan assets ( 279 ) 20 Employer contributions 10 9 Plan participants\u2019 contributions 1 \u2014 Payments from plan assets ( 95 ) ( 102 ) Foreign currency impact 2 1 Fair value of plan assets\u00a0\u2014 end of period 1,160 1,521 Change in benefit obligations: Benefit obligations\u00a0\u2014 beginning of period 1,526 1,588 Service cost 8 11 Interest cost 39 39 Actuarial gain (a) ( 336 ) ( 11 ) Plan participants' contributions 1 \u2014 Benefit payments ( 95 ) ( 102 ) Curtailments \u2014 ( 1 ) Foreign currency impact \u2014 2 Benefit obligations\u00a0\u2014 end of period 1,143 1,526 Overfunded (underfunded) status of benefit obligations (b) $ 17 $ ( 5 ) Actuarial losses and prior service costs recognized in accumulated other comprehensive loss, net of taxes $ ( 82 ) $ ( 100 ) _______________________________ (a) The actuarial gain in fiscal year 2022 was primarily due to an increase in discount rates experienced by the majority of our plans.",
+      "score": 0.9904
+    },
+    {
+      "sent": "69 Table of Contents Benefit Obligations and Plan Assets October 30, 2022 October 31, 2021 (In millions) Change in plan assets: Fair value\u00a0of plan assets \u2014 beginning of period $ 1,521 $ 1,593 Actual return on plan assets ( 279 ) 20 Employer contributions 10 9 Plan participants\u2019 contributions 1 \u2014 Payments from plan assets ( 95 ) ( 102 ) Foreign currency impact 2 1 Fair value of plan assets\u00a0\u2014 end of period 1,160 1,521 Change in benefit obligations: Benefit obligations\u00a0\u2014 beginning of period 1,526 1,588 Service cost 8 11 Interest cost 39 39 Actuarial gain (a) ( 336 ) ( 11 ) Plan participants' contributions 1 \u2014 Benefit payments ( 95 ) ( 102 ) Curtailments \u2014 ( 1 ) Foreign currency impact \u2014 2 Benefit obligations\u00a0\u2014 end of period 1,143 1,526 Overfunded (underfunded) status of benefit obligations (b) $ 17 $ ( 5 ) Actuarial losses and prior service costs recognized in accumulated other comprehensive loss, net of taxes $ ( 82 ) $ ( 100 ) _______________________________ (a) The actuarial gain in fiscal year 2022 was primarily due to an increase in discount rates experienced by the majority of our plans.",
+      "score": 0.9904
+    },
+    {
+      "sent": "69 Table of Contents Benefit Obligations and Plan Assets October 30, 2022 October 31, 2021 (In millions) Change in plan assets: Fair value\u00a0of plan assets \u2014 beginning of period $ 1,521 $ 1,593 Actual return on plan assets ( 279 ) 20 Employer contributions 10 9 Plan participants\u2019 contributions 1 \u2014 Payments from plan assets ( 95 ) ( 102 ) Foreign currency impact 2 1 Fair value of plan assets\u00a0\u2014 end of period 1,160 1,521 Change in benefit obligations: Benefit obligations\u00a0\u2014 beginning of period 1,526 1,588 Service cost 8 11 Interest cost 39 39 Actuarial gain (a) ( 336 ) ( 11 ) Plan participants' contributions 1 \u2014 Benefit payments ( 95 ) ( 102 ) Curtailments \u2014 ( 1 ) Foreign currency impact \u2014 2 Benefit obligations\u00a0\u2014 end of period 1,143 1,526 Overfunded (underfunded) status of benefit obligations (b) $ 17 $ ( 5 ) Actuarial losses and prior service costs recognized in accumulated other comprehensive loss, net of taxes $ ( 82 ) $ ( 100 ) _______________________________ (a) The actuarial gain in fiscal year 2022 was primarily due to an increase in discount rates experienced by the majority of our plans.",
+      "score": 0.9904
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Further, any substantial disruption in the contract manufacturing services that we utilize, including TSMC\u2019s supply of wafers to us, as a result of a natural disaster, climate change, water shortages, political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, medical epidemics, such as the COVID-19 pandemic, economic instability, equipment failure or other cause, could materially harm our business, customer relationships and results of operations.",
+      "score": -0.9552
+    },
+    {
+      "sent": "Further, any substantial disruption in the contract manufacturing services that we utilize, including TSMC\u2019s supply of wafers to us, as a result of a natural disaster, climate change, water shortages, political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, medical epidemics, such as the COVID-19 pandemic, economic instability, equipment failure or other cause, could materially harm our business, customer relationships and results of operations.",
+      "score": -0.9552
+    },
+    {
+      "sent": "Further, any substantial disruption in the contract manufacturing services that we utilize, including TSMC\u2019s supply of wafers to us, as a result of a natural disaster, climate change, water shortages, political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, medical epidemics, such as the COVID-19 pandemic, economic instability, equipment failure or other cause, could materially harm our business, customer relationships and results of operations.",
+      "score": -0.9552
+    }
+  ],
+  "forward_snippets": [
+    "While we believe that our assumptions are reasonable, we caution that it is very difficult to predict the impact of known factors, and it is impossible for us to anticipate all factors that could affect our actual results.",
+    "We differentiate ourselves through our high performance design and integration capabilities and focus on developing products for target markets where we believe we can earn attractive margins.",
+    "While we believe that our assumptions are reasonable, we caution that it is very difficult to predict the impact of known factors, and it is impossible for us to anticipate all factors that could affect our actual results.",
+    "We differentiate ourselves through our high performance design and integration capabilities and focus on developing products for target markets where we believe we can earn attractive margins.",
+    "While we believe that our assumptions are reasonable, we caution that it is very difficult to predict the impact of known factors, and it is impossible for us to anticipate all factors that could affect our actual results."
+  ]
+}

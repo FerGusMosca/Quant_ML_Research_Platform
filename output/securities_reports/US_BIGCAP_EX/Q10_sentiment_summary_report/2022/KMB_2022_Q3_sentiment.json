@@ -1,0 +1,47 @@
+{
+  "symbol": "KMB",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2426,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.094
+  },
+  "top_positive": [
+    {
+      "sent": "6 The total purchase price consideration was allocated to the net assets acquired based upon their respective estimated fair values as follows: Current Assets $ 40 Property, Plant and Equipment, Net 2 Goodwill 297 Other Intangible Assets, Net 123 Other Assets 4 Current Liabilities ( 29 ) Deferred Income Taxes ( 18 ) Other Liabilities ( 4 ) Fair value of net assets acquired 415 Less fair value of non-controlling interest ( 234 ) Total purchase price consideration $ 181 Other Intangible Assets, Net includes brands and customer relationships which have estimated useful lives of 4 to 15 years, primarily 15 years.",
+      "score": 0.9741
+    },
+    {
+      "sent": "- Not Meaningful 14 GAAP to Non-GAAP Reconciliations of Selected Financial Results Three Months Ended March 31, 2022 As Reported Acquisition of Controlling Interest in Thinx As Adjusted Non-GAAP Marketing, research and general expenses $ 886 $ 21 $ 865 Other (income) and expense, net (59) (85) 26 Operating Profit 693 64 629 Provision for income taxes (114) 4 (118) Effective tax rate 18.2 % \u2014 21.0 % Net Income Attributable to Kimberly-Clark Corporation 523 68 455 Diluted Earnings per Share (a) 1.55 0.20 1.35 Three Months Ended March 31, 2021 As Reported 2018 Global Restructuring Program As Adjusted Non-GAAP Cost of products sold $ 3,154 $ 25 $ 3,129 Gross Profit 1,589 (25) 1,614 Marketing, research and general expenses 815 9 806 Operating Profit 770 (34) 804 Provision for income taxes (147) 7 (154) Effective tax rate 20.9 % \u2014 20.9 % Net incom\nfit and total assets.",
+      "score": 0.9534
+    },
+    {
+      "sent": "- Not Meaningful 14 GAAP to Non-GAAP Reconciliations of Selected Financial Results Three Months Ended March 31, 2022 As Reported Acquisition of Controlling Interest in Thinx As Adjusted Non-GAAP Marketing, research and general expenses $ 886 $ 21 $ 865 Other (income) and expense, net (59) (85) 26 Operating Profit 693 64 629 Provision for income taxes (114) 4 (118) Effective tax rate 18.2 % \u2014 21.0 % Net Income Attributable to Kimberly-Clark Corporation 523 68 455 Diluted Earnings per Share (a) 1.55 0.20 1.35 Three Months Ended March 31, 2021 As Reported 2018 Global Restructuring Program As Adjusted Non-GAAP Cost of products sold $ 3,154 $ 25 $ 3,129 Gross Profit 1,589 (25) 1,614 Marketing, research and general expenses 815 9 806 Operating Profit 770 (34) 804 Provision for income taxes (147) 7 (154) Effective tax rate 20.9 % \u2014 20.9 % Net income attributable to noncontrolling interests (10) 1 (11) Net Income Attributable to Kimberly-Clark Corporation 584 (26) 610 Diluted Earnings per Share (a) 1.72 (0.08) 1.80 (a)   \"As Adjusted Non-GAAP\" may not equal \"As Reported\" plus \"Adjustments\" as a result of rounding.",
+      "score": 0.9534
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "(d) Long-term debt includes the current portion of these debt instruments.",
+      "score": -0.6124
+    },
+    {
+      "sent": "In addition, many factors outside our cont rol, including the war in Ukraine (including the related responses of consumers, customers, and suppliers and sanctions issued by the U.S., the European Union, Russia or other countries), pandemics (including the ongoing COVID-19 outbreak and the related responses of governments, consumers, customers, suppliers and employees), epidemics, fluctuations in foreign currency exchange rates, the prices and availability of our raw materials, supply chain disruptions, changes in customer preferences, severe weather conditions, government trade or similar regulatory actions, potential competitive pressures on selling prices for our products, energy costs, general economic and political conditions globally and in the markets in which we do business, as well as our ability to maintain key customer relationships, could affect the realization of these estimates.",
+      "score": -0.6124
+    },
+    {
+      "sent": "In addition, many factors outside our cont rol, including the war in Ukraine (including the related responses of consumers, customers, and suppliers and sanctions issued by the U.S., the European Union, Russia or other countries), pandemics (including the ongoing COVID-19 outbreak and the related responses of governments, consumers, customers, suppliers and employees), epidemics, fluctuations in foreign currency exchange rates, the prices and availability of our raw materials, supply chain disruptions, changes in customer preferences, severe weather conditions, government trade or similar regulatory actions, potential competitive pressures on selling prices for our products, energy costs, general economic and political conditions globally and in the markets in which we do business, as well as our ability to maintain key customer relationships, could affect the realization of these estimates.",
+      "score": -0.6124
+    }
+  ],
+  "forward_snippets": [
+    "guidance requires the use of highly inflationary accounting for countries whose cumulative three-year inflation exceeds 100 percent.",
+    "We continue to evaluate potential contingencies that may have existed as of the acquisition date and expect to finalize the purchase price allocation no later than the first quarter of 2023.",
+    "We continue to evaluate potential contingencies that may have existed as of the acquisition date and expect to finalize the purchase price allocation no later than the first quarter of 2023.",
+    "We believe these measures provide our investors with additional information about our underlying results and trends, as well as insight into some of the financial measures used to evaluate management.",
+    "We believe these measures provide our investors with additional information about our underlying results and trends, as well as insight into some of the financial measures used to evaluate management."
+  ]
+}

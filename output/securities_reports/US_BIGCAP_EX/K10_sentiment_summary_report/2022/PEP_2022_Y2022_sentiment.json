@@ -1,0 +1,47 @@
+{
+  "symbol": "PEP",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1902,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.125
+  },
+  "top_positive": [
+    {
+      "sent": "laws and regulations that we are subject to include, but are not limited to: the Federal Food, Drug and Cosmetic Act and various state laws governing food safety; the Food Safety Modernization Act; the Occupational Safety and Health Act and various state laws and regulations governing workplace health and safety; various federal, state and local environmental protection laws, as discussed below; the Federal Motor Carrier Safety Act; the Federal Trade Commission Act; the Lanham Act; various federal and state laws and regulations governing competition and trade practices; various federal and state laws and regulations governing our employment practices, including those related to equal employment opportunity, such as the Equal Employment Opportunity Act and the National Labor Relations Act and those related to overtime compensation, such as the Fair Labor Standards Act; various state and federal laws pertaining to sale and distribution of alcohol beverages; data privacy and personal data protection laws and regulations, including the California Consumer Privacy Act of 2018 (as modified by the California Privacy Rights Act); customs and foreign trade laws and regulations, including laws regarding the import or export of our products or ingredients used in our products and tariffs; laws regulating the sale of certain of our products in schools; laws regulating our supply chain, including the 2010 California Transparency in Supply Chains Act and laws relating to the payment of taxes.",
+      "score": 0.9867
+    },
+    {
+      "sent": "96 Table of Contents Fair Value Measurements The fair values of our financial assets and liabilities as of December\u00a025, 2021 and December\u00a026, 2020 are categorized as follows: 2021 2020 Fair Value Hierarchy Levels (a) Assets (a) Liabilities (a) Assets (a) Liabilities (a) Index funds (b) 1 $ 337 $ \u2014 $ 231 $ \u2014 Prepaid forward contracts (c) 2 $ 21 $ \u2014 $ 18 $ \u2014 Deferred compensation (d) 2 $ \u2014 $ 505 $ \u2014 $ 477 Contingent consideration (e) 3 $ \u2014 $ \u2014 $ \u2014 $ 861 Derivatives designated as fair value hedging instruments: Interest rate (f) 2 $ \u2014 $ \u2014 $ 2 $ \u2014 Derivatives designated as cash flow hedging instruments: Foreign exchange (g) 2 $ 29 $ 14 $ 9 $ 71 Interest rate (g) 2 14 264 13 307 Commodity (h) 2 70 5 32 \u2014 $ 113 $ 283 $ 54 $ 378 Derivatives not designated as hedging instruments: Foreign exchange (g) 2 $ 19 $ 7 $ 4 $ 8 Commodity (h) 2 35 22 19 7 $ 54 $ 29 $ 23 $ 15 Total derivatives at fair value (i) $ 167 $ 312 $ 79 $ 393 Total $ 525 $ 817 $ 328 $ 1,731 (a) Fair value hierarchy levels are defined in Note 7.",
+      "score": 0.9821
+    },
+    {
+      "sent": "Other Share-Based Compensation Data The following is a summary of other share-based compensation data: 2021 2020 2019 Stock Options Total number of options granted (a) 2,157 1,847 1,286 Weighted-average grant-date fair value of options granted $ 9.88 $ 8.31 $ 10.89 Total intrinsic value of options exercised (a) $ 153,306 $ 155,096 $ 275,745 Total grant-date fair value of options vested (a) $ 10,605 $ 8,652 $ 9,838 RSUs/PSUs Total number of RSUs/PSUs granted (a) 2,636 2,496 2,754 Weighted-average grant-date fair value of RSUs/PSUs granted $ 131.81 $ 131.21 $ 116.87 Total intrinsic value of RSUs/PSUs converted (a) $ 273,878 $ 303,165 $ 333,951 Total grant-date fair value of RSUs/PSUs vested (a) $ 198,469 $ 235,523 $ 275,234 (a) In thousands.",
+      "score": 0.9806
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "If we do not allocate and effectively manage the resources necessary to continue building and maintaining our information technology infrastructure, or if we fail to timely identify or appropriately respond to cyberattacks or other cyber incidents, our business has been and can continue to be adversely affected, which has resulted in and can continue to result in some or all of the following: transaction errors, processing inefficiencies, inability to access our data or systems, lost revenues or other costs resulting from disruptions or shutdowns of offices, plants, warehouses, distribution centers or other facilities, intellectual property or other data loss, litigation, claims, legal or regulatory proceedings, inquiries or investigations, fines or penalties, remediation costs, damage to our reputation or a negative impact on employee morale and the loss of current or potential customers.",
+      "score": -0.9739
+    },
+    {
+      "sent": "The raw materials and other supplies, including agricultural commodities, fuel and packaging materials, such as recycled PET, transportation, labor and other supply chain inputs that we use for the manufacturing, production and distribution of our products are subject to price volatility and fluctuations in availability caused by many factors, including changes in supply and demand, supplier capacity constraints, inflation, weather conditions (including potential effects of climate change), fire, natural disasters, disease or pests (including the impact of greening disease on the citrus industry), agricultural uncertainty, health epidemics or pandemics or other contagious outbreaks (including COVID-19), labor shortages (including the lack of availability of truck drivers or as a result of COVID-19), strikes or work stoppages, governmental incentives and controls (including import/export restrictions, such as new or increased tariffs, sanctions, quotas or trade barriers), port congestions or delays, transport capacity constraints, cybersecurity incidents or other disruptions, loss or impairment of key manufacturing sites, political uncertainties, acts of terrorism, governmental instability or currency exchange rates.",
+      "score": -0.9661
+    },
+    {
+      "sent": "In addition, our business operations, including our supply chain, are subject to disruption by natural disasters or other events beyond our control that could negatively impact product availability and decrease demand for our products if our crisis management plans do not effectively resolve these issues.",
+      "score": -0.9151
+    }
+  ],
+  "forward_snippets": [
+    "Statements that constitute forward-looking statements within the meaning of the Reform Act are generally identified through the inclusion of words such as \u201caim,\u201d \u201canticipate,\u201d \u201cbelieve,\u201d \u201cdrive,\u201d \u201cestimate,\u201d \u201cexpect,\u201d \u201cexpressed confidence,\u201d \u201cforecast,\u201d \u201cfuture,\u201d \u201cgoal,\u201d \u201cguidance,\u201d \u201cintend,\u201d \u201cmay,\u201d \u201cobjective,\u201d \u201coutlook,\u201d \u201cplan,\u201d \u201cposition,\u201d \u201cpotential,\u201d \u201cproject,\u201d \u201cseek,\u201d \u201cshould,\u201d \u201cstrategy,\u201d \u201ctarget,\u201d \u201cwill\u201d or similar statements or variations of such words and other similar expressions.",
+    "All statements addressing our future operating performance, and statements addressing events and developments that we expect or anticipate will occur in the future, are forward-looking statements within the meaning of the Reform Act.",
+    "The discussion of risks in this report is by no means all-inclusive but is designed to highlight what we believe are important factors to consider when evaluating our future performance.",
+    "Statements that constitute forward-looking statements within the meaning of the Reform Act are generally identified through the inclusion of words such as \u201caim,\u201d \u201canticipate,\u201d \u201cbelieve,\u201d \u201cdrive,\u201d \u201cestimate,\u201d \u201cexpect,\u201d \u201cexpressed confidence,\u201d \u201cforecast,\u201d \u201cfuture,\u201d \u201cgoal,\u201d \u201cguidance,\u201d \u201cintend,\u201d \u201cmay,\u201d \u201cobjective,\u201d \u201coutlook,\u201d \u201cplan,\u201d \u201cposition,\u201d \u201cpotential,\u201d \u201cproject,\u201d \u201cseek,\u201d \u201cshould,\u201d \u201cstrategy,\u201d \u201ctarget,\u201d \u201cwill\u201d or similar statements or variations of such words and other similar expressions.",
+    "All statements addressing our future operating performance, and statements addressing events and developments that we expect or anticipate will occur in the future, are forward-looking statements within the meaning of the Reform Act."
+  ]
+}

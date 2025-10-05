@@ -1,0 +1,47 @@
+{
+  "symbol": "DLTR",
+  "year": 2023,
+  "Period": "Y2023",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.184,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.225
+  },
+  "top_positive": [
+    {
+      "sent": "Equity compensation plan category (a) Number of securities to be issued upon exercise of outstanding options, warrants and rights (b) Weighted-average exercise price of outstanding options, warrants and rights (c) Number of securities remaining available for future issuance under equity compensation plans (excluding securities reflected in column (a)) Plans approved by security holders 1 1,240,339 $ 108.38 8,696,011 Plans not approved by security holders 2 2,252,587 $ 157.17 \u2014 ______________ (a) Amounts represent outstanding options, restricted stock units and deferred (\u201cphantom\u201d) shares as of January\u00a028, 2023.",
+      "score": 0.9803
+    },
+    {
+      "sent": "Equity compensation plan category (a) Number of securities to be issued upon exercise of outstanding options, warrants and rights (b) Weighted-average exercise price of outstanding options, warrants and rights (c) Number of securities remaining available for future issuance under equity compensation plans (excluding securities reflected in column (a)) Plans approved by security holders 1 1,240,339 $ 108.38 8,696,011 Plans not approved by security holders 2 2,252,587 $ 157.17 \u2014 ______________ (a) Amounts represent outstanding options, restricted stock units and deferred (\u201cphantom\u201d) shares as of January\u00a028, 2023.",
+      "score": 0.9803
+    },
+    {
+      "sent": "As of March 17, 2021, the 2011 Omnibus Incentive Plan was no longer available for new grants of awards, but all outstanding awards that were granted under the plan prior to March 17, 2021 continue to be governed by the terms and conditions of the plan and applicable award agreements.",
+      "score": 0.9719
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Failures may also be caused by various other factors, including power outages, catastrophic events, physical theft, computer and network failures, inadequate or ineffective redundancy, obsolescence or failure of vendor support, problems with transitioning to upgraded or replacement systems or platforms and related business process changes, flaws in third-party software or services, errors or improper use by our employees or third-party service providers.",
+      "score": -0.9524
+    },
+    {
+      "sent": "Failures may also be caused by various other factors, including power outages, catastrophic events, physical theft, computer and network failures, inadequate or ineffective redundancy, obsolescence or failure of vendor support, problems with transitioning to upgraded or replacement systems or platforms and related business process changes, flaws in third-party software or services, errors or improper use by our employees or third-party service providers.",
+      "score": -0.9524
+    },
+    {
+      "sent": "Failures may also be caused by various other factors, including power outages, catastrophic events, physical theft, computer and network failures, inadequate or ineffective redundancy, obsolescence or failure of vendor support, problems with transitioning to upgraded or replacement systems or platforms and related business process changes, flaws in third-party software or services, errors or improper use by our employees or third-party service providers.",
+      "score": -0.9524
+    }
+  ],
+  "forward_snippets": [
+    "At January\u00a028, 2023, we operated 16,340 discount variety retail stores across 48 states and five Canadian provinces and over the long-term, we believe that the market can support more than 10,000 Dollar Tree stores and 15,000 Family Dollar stores across the United States, and approximately 1,000 Dollar Tree stores in Canada.",
+    "We believe the convenience and value we offer are key factors in serving and growing our base of loyal customers.",
+    "We plan to open new stores in underserved markets and to strategically increase our presence in our existing markets.",
+    "Corporate Culture We believe that honesty and integrity, and treating people fairly and with respect are core values within our corporate culture.",
+    "We believe that running a business, and certainly a public company, carries with it a responsibility to be above reproach when making operational and financial decisions."
+  ]
+}

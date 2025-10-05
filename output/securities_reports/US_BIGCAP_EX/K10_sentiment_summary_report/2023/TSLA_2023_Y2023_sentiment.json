@@ -1,0 +1,47 @@
+{
+  "symbol": "TSLA",
+  "year": 2023,
+  "Period": "Y2023",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2468,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.252
+  },
+  "top_positive": [
+    {
+      "sent": "The estimates used for, but not limited to, determining significant economic incentive for resale value guarantee arrangements, sales return reserves, the collectability of accounts and financing receivables, inventory valuation, warranties, fair value of long-lived assets, goodwill, fair value of financial instruments, fair value and residual value of operating lease vehicles and solar energy systems subject to leases could be impacted.",
+      "score": 0.9882
+    },
+    {
+      "sent": "The estimates used for, but not limited to, determining significant economic incentive for resale value guarantee arrangements, sales return reserves, the collectability of accounts and financing receivables, inventory valuation, warranties, fair value of long-lived assets, goodwill, fair value of financial instruments, fair value and residual value of operating lease vehicles and solar energy systems subject to leases could be impacted.",
+      "score": 0.9882
+    },
+    {
+      "sent": "The estimates used for, but not limited to, determining significant economic incentive for resale value guarantee arrangements, sales return reserves, the collectability of accounts and financing receivables, inventory valuation, warranties, fair value of long-lived assets, goodwill, fair value of financial instruments, fair value and residual value of operating lease vehicles and solar energy systems subject to leases could be impacted.",
+      "score": 0.9882
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "If major disasters such as earthquakes, floods or other climate-related events occur, or our information system or communication breaks down or operates improperly, our headquarters and production facilities may be seriously damaged, or we may have to stop or delay production and shipment of our pr\nult in a default on our existing or future indebtedness and harm our financial condition and operating results.",
+      "score": -0.9349
+    },
+    {
+      "sent": "Note 10 \u2013 Other Long-Term Liabilities Our other long-term liabilities consisted of the following (in millions): December 31, December 31, 2022 2021 Operating lease liabilities $ 2,164 $ 1,671 Accrued warranty reserve 2,480 1,398 Sales return reserve 51 133 Deferred tax liability 82 24 Other non-current liabilities 553 320 Total other long-term liabilities $ 5,330 $ 3,546 71 Note 11 \u2013 Debt The following is a summary of our debt and finance leases as of December 31, 2022 (in millions): Unpaid Unused Net Carrying Value Principal Committed Contractual Contractual Current Long-Term Balance Amount (1) Interest Rates Maturity Date Recourse debt: 2024 Notes $ \u2014 $ 37 $ 37 $ \u2014 2.00 % May 2024 Credit Agreement \u2014 \u2014 \u2014 2,266 Not applicable July 2023 Solar Bonds \u2014 7 7 \u2014 4.70 - 5.75 % March 2025 - January 2031 Total recourse debt \u2014 44 44 2,266 Non-recourse debt: Automotive Asset-backed Notes 984 613 1,603 \u2014 0.36 - 4.64 % December 2023 - September 2025 Solar Asset-backed Notes 4 13 17 \u2014 4.80 % December 2026 Cash Equity Debt 28 359 397 \u2014 5.25 - 5.81 % July 2033 - January 2035 Automotive Lease-backed Credit Facilities \u2014 \u2014 \u2014 151 Not applicable September 2024 Total non-recourse debt 1,016 985 2,017 151 Total debt 1,016 1,029 $ 2,061 $ 2,417 Finance leases 486 568 Total debt and finance leases $ 1,502 $ 1,597 The following is a summary of our debt and finance leases as of December 31, 2021 (in millions): Unpaid Unused Net Carrying Value Principal Committed Contractual Contractual Current Long-Term Balance Amount (1) Interest Rates Maturity Date Recourse debt: 2022 Notes $ 29 $ \u2014 $ 29 $ \u2014 2.375 % March 2022 2024 Notes 1 89 91 \u2014 2.00 % May 2024 Credit Agreement \u2014 1,250 1,250 920 3.25 % July 2023 Solar Bonds 0 7 7 \u2014 4.00 - 5.75 % January 2022 - January 2031 Total recourse debt 30 1,346 1,377 920 Non-recourse debt: Automotive Asset-backed Notes 1,007 1,706 2,723 \u2014 0.12 - 5.48 % September 2022 - September 2025 Solar Asset and Loan-backed Notes 27 800 844 \u2014 2.87 - 7.74 % September 2024 - September 2049 Cash Equity Debt 24 388 422 \u2014 5.25 - 5.81 % July 2033 - January 2035 Automotive Lease-backed Credit Facilities \u2014 \u2014 \u2014 167 Not applicable September 2023 Other Loans \u2014 14 14 21 5.10 % February 2033 Total non-recourse debt 1,058 2,908 4,003 188 Total debt 1,088 4,254 $ 5,380 $ 1,108 Finance leases 501 991 Total debt and finance leases $ 1,589 $ 5,245 (1) There are no restrictions on draw-down or use for general corpor\noducts.",
+      "score": -0.9349
+    },
+    {
+      "sent": "While, we maintain information technology measures designed to protect us against intellectual property theft, data breaches, sabotage and other external or internal cyber-attacks or misappropriation, our systems and those of our service providers are potentially vulnerable to malware, ransomware, viruses, denial-of-service attacks, phishing attacks, social engineering, computer hacking, unauthorized access, exploitation of bugs, defects and vulnerabilities, breakdowns, damage, interruptions, system malfunctions, power outages, terrorism, acts of vandalism, security breaches, security incidents, inadvertent or intentional actions by employees or other third parties, and other cyber-attacks.",
+      "score": -0.91
+    }
+  ],
+  "forward_snippets": [
+    "We believe that this mission, along with our engineering expertise, vertically integrated business model and focus on user experience differentiate us from other companies.",
+    "We plan to continue leveraging developments in our proprietary Full Self-Driving (\u201cFSD\u201d), battery cell and other technologies.",
+    "We continue to improve our installation capability and efficiency, including through collaboration with real estate developers and builders on new homes.",
+    "We believe that this mission, along with our engineering expertise, vertically integrated business model and focus on user experience differentiate us from other companies.",
+    "We plan to continue leveraging developments in our proprietary Full Self-Driving (\u201cFSD\u201d), battery cell and other technologies."
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "symbol": "MSFT",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-05",
+      "time": "Today 10:31AM",
+      "title": "Perplexity CEO Aravind Srinivas Backs $9M AI Startup That Cuts Finance Grunt Work By 40% And Slashes Month-End Close In Half\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/perplexity-ceo-aravind-srinivas-backs-143108581.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:33AM",
+      "title": "AI Stocks Face 'Show Me' Test. OpenAI Holds Big Event As Valuation Soars\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/684c930d-1475-3adc-b013-ae604c056ebc/ai-stocks-face-%27show-me%27.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:15AM",
+      "title": "Nvidia vs. Microsoft: Which Stock Is the Better Buy After Their OpenAI Investments?\n\n\n(Motley Fool)",
+      "link": "/news/183998/nvidia-vs-microsoft-which-stock-is-the-better-buy-after-their-openai-investments"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:45AM",
+      "title": "The Best Trillion-Dollar AI Stock to Buy Now, According to Wall Street (Hint: Not Nvidia)\n\n\n(Motley Fool)",
+      "link": "/news/183949/the-best-trillion-dollar-ai-stock-to-buy-now-according-to-wall-street-hint-not-nvidia"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:42AM",
+      "title": "Microsoft Corporation (MSFT) Unveils GPT-5 Agent Mode, Redefining Productivity with AI\n\n\n(Insider Monkey)",
+      "link": "/news/183942/microsoft-corporation-msft-unveils-gpt-5-agent-mode-redefining-productivity-with-ai"
+    },
+    {
+      "date": "2025-10-04",
+      "time": "17:15",
+      "title": "Microsoft (MSFT): New Offering Allows Conversations with Copilot in Office Apps: Reports CNBC\n\n\n(Insider Monkey)",
+      "link": "/news/183916/microsoft-msft-new-offering-allows-conversations-with-copilot-in-office-apps-reports-cnbc"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:45AM",
+      "title": "Prediction: 1 Artificial Intelligence (AI) Stock Will Be Worth More Than Alphabet and Amazon Combined by 2030 (Hint: Not Nvidia)\n\n\n(Motley Fool)",
+      "link": "/news/183844/prediction-1-artificial-intelligence-ai-stock-will-be-worth-more-than-alphabet-and-amazon-combined-by-2030-hint-not-nvidia"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Why Fears of a Trillion-Dollar AI Bubble Are Growing\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/why-fears-trillion-dollar-ai-130008034.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "MarketBeat Week in Review - 09/29 - 10/03\n\n\n(MarketBeat)",
+      "link": "/news/183811/marketbeat-week-in-review-0929-1003"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:54AM",
+      "title": "OpenAI's Altman seeks funds for infrastructure expansion on Asia, Middle East tour, WSJ reports\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/openais-altman-seeks-funds-infrastructure-105458474.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:01AM",
+      "title": "Magnificent Seven surpass EU GDP: Is this a tech bubble warning?\n\n\n(Euronews)",
+      "link": "https://finance.yahoo.com/m/c3d5cefe-ac49-3ebc-974c-253b82759fc4/magnificent-seven-surpass-eu.html"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "23:09",
+      "title": "Stock Of The Day, Key Supplier For Meta And Microsoft, Climbs To Record High\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/715ebda5-6ba9-3fdb-98c4-c19ca924a41f/stock-of-the-day%2C-key.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:38PM",
+      "title": "Microsoft's Least Exciting Business Line Is Its Most Important, and Investors Shouldn't Overlook It\n\n\n(Motley Fool)",
+      "link": "/news/183795/microsofts-least-exciting-business-line-is-its-most-important-and-investors-shouldnt-overlook-it"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:04PM",
+      "title": "Palantir Rebuts Report on Security Flaws After Stock Falls\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/palantir-rebuts-claims-security-flaws-175038234.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:33PM",
+      "title": "Anduril and Palantir battlefield communication system 'very high risk,' US Army memo says\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/anduril-palantir-battlefield-communication-system-223314840.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:00PM",
+      "title": "3 reasons to buy Microsoft & avoid Adobe\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/3-reasons-buy-microsoft-avoid-210000229.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:53PM",
+      "title": "Trumps $100,000 H-1B Fee Draws Rare Rebuke From Business Groups\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/trump-100-000-h-1b-205302951.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:30PM",
+      "title": "'Elon Is Smart And Ahead Of The Curve,' Says Mark Cuban, But Still Doesn't Think Humanoid Robots Are The Future\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/elon-smart-ahead-curve-says-203018518.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00PM",
+      "title": "Tech Industry Groups Push Back on Trumps $100,000 H-1B Visa Fee\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/d68916a8-1df3-3187-ad6b-31a79eb8c333/tech-industry-groups-push.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:55PM",
+      "title": "Microsoft Announces the Availability of Ryght AI's Cutting-Edge Clinical Research Platform on Azure Marketplace\n\n\n(Insider Monkey)",
+      "link": "/news/183648/microsoft-announces-the-availability-of-ryght-ais-cutting-edge-clinical-research-platform-on-azure-marketplace"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:34PM",
+      "title": "Goldman says AWS strength underappreciated, raises Amazon price target\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/goldman-says-aws-strength-underappreciated-193426761.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:12PM",
+      "title": "??AI Chatbots Move Toward a Future With Advertising and Online Shopping\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/chatgpt-meta-ai-social-media-advertising-d472888f?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:04PM",
+      "title": "BlackRock Group Hunts a $20 Billion Deal to Get In on the AI Boom\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/d860d075-657b-3207-b3c2-ade5b8d146cb/blackrock-group-hunts-a-%2420.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:42PM",
+      "title": "Magnificent Seven Member Nvidia Stock Breaks Out, Is Actionable Now\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/1db669cf-8344-3a6d-9995-bcf594ec4027/magnificent-seven-member.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:57PM",
+      "title": "The Magnificent Seven Stocks Are Roaring Again. Can They Keep Climbing?\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/f9409d4a-06fa-33bc-8fc9-bbea8c6eba37/the-magnificent-seven-stocks.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:29PM",
+      "title": "Microsoft's stock now looks like 'free money,' an analyst says. Here's why.\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/microsofts-stock-now-looks-like-free-money-an-analyst-says-heres-why-dca01cda?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:20PM",
+      "title": "Analysts Keep Raising Price Targets for Microsoft Stock - MSFT is Still Cheap\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/a6b45829-6088-3f02-b7ad-2f55ebd35809/analysts-keep-raising-price.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:07PM",
+      "title": "Activision officials must face claims over Microsoft takeover, judge rules\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/activision-officials-must-face-claims-160749834.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:03PM",
+      "title": "Microsoft turns to neocloud to solve major problem\n\n\n(TheStreet)",
+      "link": "https://finance.yahoo.com/m/0132ffc7-cea1-384a-af21-383f688ee775/microsoft-turns-to-neocloud.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:50AM",
+      "title": "A $19 Billion Reason to Buy Nebius Stock Today\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/bc441bd2-618d-3e8d-b0eb-e02a2246785c/a-%2419-billion-reason-to-buy.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:16AM",
+      "title": "Palantir Stock Falls On Report Army Communications Network Flawed\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/e9bb56be-f87e-3156-91cf-5024809761cc/palantir-stock-falls-on.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:53AM",
+      "title": "Palantir stock falls after report reveals Army network flaws\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/palantir-stock-falls-report-reveals-145324726.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:01AM",
+      "title": "EXCLUSIVE: FuriosaAI CEO Tells Benzinga 'Nvidia's Greatest Strength Is Also Its Achilles' Heel' After $800M Meta Offer, Targets Series D In 2026\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/exclusive-furiosaai-ceo-tells-benzinga-140117447.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:33AM",
+      "title": "Apple Adds a Bear as Jefferies Downgrades, Sees 20% Downside\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/apple-adds-bear-jefferies-downgrades-133322684.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:57AM",
+      "title": "MSFT: Microsoft Inks Multi-Billion Nebius Deal to Secure 100,000 Nvidia AI Chips\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/msft-microsoft-inks-multi-billion-125705192.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "'This Feels Different To Me,' Says Award-Winning Fund Manager\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/09452920-e220-39c5-8d97-ca946b31c966/%27this-feels-different-to-me%2C%27.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Top Money Manager Finds 3 Ways To Make Money From Today's 'Noise'\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/c6357f52-7ca3-3315-8740-71a616124818/top-money-manager-finds-3.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:10AM",
+      "title": "The Zacks Analyst Blog Highlights NVIDIA, Microsoft, IBM, D-Wave and IonQ\n\n\n(Zacks)",
+      "link": "/news/183068/the-zacks-analyst-blog-highlights-nvidia-microsoft-ibm-d-wave-and-ionq"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:19AM",
+      "title": "Microsoft Strikes $17B Deal With Nebius to Power AI Ambitions\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/microsoft-strikes-17b-deal-nebius-051909894.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:59AM",
+      "title": "Microsoft invests in Nebius to expand AI computing capacity\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20251003PD232/microsoft-cloud-computing-infrastructure-capacity.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "22:36",
+      "title": "FOMO Builds as Alibaba Extends $250 Billion AI-Fueled Comeback\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/fomo-builds-alibaba-extends-250-023620517.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:31PM",
+      "title": "When Bill Gates Questioned Lyft CEO Risher's Move To Jeff Bezos' 'Tiny, Little Internet Bookstore''Stupidest Decision' Ever\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/bill-gates-questioned-lyft-ceo-023105112.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:57PM",
+      "title": "Microsoft Expands Renewable Deals With Japans Shizen Energy\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/microsoft-expands-renewable-deals-japan-015758937.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:01PM",
+      "title": "Intel CEO Lip-Bu Tan Backs $24M Corintis Board As Startup Solves AI's Biggest Bottleneck Problem\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/intel-ceo-lip-bu-tan-010124025.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:07PM",
+      "title": "I'm focused on bringing product ethos all the way through to the customer: Microsoft Commercial CEO\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=y83tT62Vw7E"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:41PM",
+      "title": "Elon Musk Still Tops World's Richest. This Billionaire Is Hot on His Heels.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/elon-musk-larry-ellison-net-worth-billionaires-8e2cb5d7?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:20PM",
+      "title": "Analyst Explains Why He Likes Microsoft (MSFT) - Highlights AI an 'Unbelievable' Growth Catalyst\n\n\n(Insider Monkey)",
+      "link": "/news/182727/analyst-explains-why-he-likes-microsoft-msft-highlights-ai-an-unbelievable-growth-catalyst"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:55PM",
+      "title": "OpenAI now worth $500 billion, possibly making it the world's most valuable startup\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/openai-now-worth-500-billion-195534705.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:04PM",
+      "title": "Microsoft Leans on Neoclouds to Ease AI Crunch\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/video/microsoft-leans-neoclouds-ease-ai-190417238.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:39PM",
+      "title": "It May Not Feel Like It, but Markets Are Normal. That's Good News.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/market-stocks-normality-returns-0c336617?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:33PM",
+      "title": "Why Is Broadcom Stock Surging Thursday?\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/why-broadcom-stock-surging-thursday-183327721.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:41PM",
+      "title": "Microsoft Reshuffles Leadership To Free Nadella For AI Push\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/microsoft-reshuffles-leadership-free-nadella-174150465.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:01PM",
+      "title": "Microsoft Stock Hits Stride in 2025-How Much More Can It Run?\n\n\n(MarketBeat)",
+      "link": "/news/182594/microsoft-stock-hits-stride-in-2025-how-much-more-can-it-run"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:00PM",
+      "title": "Stocks to Gain From Quantum Computing in 2025: MSFT, IBM, QBTS, IONQ\n\n\n(Zacks)",
+      "link": "/news/182643/stocks-to-gain-from-quantum-computing-in-2025-msft-ibm-qbts-ionq"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:51PM",
+      "title": "Lawmakers in Sweden Urge Government to Create National Bitcoin Reserve\n\n\n(Coinspeaker)",
+      "link": "https://finance.yahoo.com/m/3dd3188a-4965-356b-9d85-2f1632c37a13/lawmakers-in-sweden-urge.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:33PM",
+      "title": "Microsoft's harsh decision frustrates gamers\n\n\n(TheStreet)",
+      "link": "https://finance.yahoo.com/m/fe775bee-c1c9-32c7-b635-d047793f8a00/microsoft%27s-harsh-decision.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:48AM",
+      "title": "Microsoft and 7 Other Stocks That Could Benefit From OpenAIs $500B Valuation\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/fa7691cd-f179-3e6d-a0f3-d73d8be6f53c/microsoft-and-7-other-stocks.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:47AM",
+      "title": "Can Canada become the next Silicon Valley amid U.S. trade tensions and immigration crackdowns?\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/canada-become-next-silicon-valley-144737227.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:45AM",
+      "title": "OpenAI Is Valued at $500 Billion. 8 Stocks That Gain From Its Growth.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/openai-valuation-stocks-microsoft-oracle-coreweave-9dcdc559?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:37AM",
+      "title": "Microsoft Launches 365 Premium For Everyday Users\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/microsoft-launches-365-premium-everyday-143717498.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:28AM",
+      "title": "Stock Market Today: Stocks Set for More Gains Despite Economic Data Delays\n\n\n(TheStreet)",
+      "link": "https://finance.yahoo.com/m/d063a805-9cb8-39ab-83c6-cdfdbed7a2d9/stock-market-today%3A-stocks.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:22AM",
+      "title": "Microsoft Bets $33 Billion on Neoclouds like Nebius to Ease AI Crunch\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/microsoft-bets-33-billion-neoclouds-100000431.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:39AM",
+      "title": "Amazons Stock Appeal Hit by Intensifying Cloud Competition\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/amazon-stock-appeal-hit-intensifying-085520644.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:33AM",
+      "title": "Why Palantir Stock's Technical Outlook Improved. Is The Data Analytics Software Maker A Buy?\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/42d070f5-e714-334f-957e-efc670c58435/why-palantir-stock%27s.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Is INOD's AI-First Strategy a Game Changer for Long-Term Investors?\n\n\n(Zacks)",
+      "link": "/news/182369/is-inods-ai-first-strategy-a-game-changer-for-long-term-investors"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:25AM",
+      "title": "Podcast: Will AI Spending Pay Off or Are We in a Bubble?\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/dfb89907-0ab2-3ed9-9b3d-de1155506449/podcast%3A-will-ai-spending-pay.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:15AM",
+      "title": "The Stock Market Is Historically Pricey: Here's 1 Reason Microsoft Is Still a No-Brainer Buy\n\n\n(Motley Fool)",
+      "link": "/news/182102/the-stock-market-is-historically-pricey-heres-1-reason-microsoft-is-still-a-no-brainer-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Caterpillar Emerges as Unlikely AI Winner on Turbine Demand\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/caterpillar-emerges-unlikely-ai-winner-110000713.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:20AM",
+      "title": "3 Red-Hot Growth Stocks to Buy in 2025\n\n\n(Motley Fool)",
+      "link": "/news/182004/3-red-hot-growth-stocks-to-buy-in-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:10AM",
+      "title": "Zacks Investment Ideas feature highlights: Constellation Energy, Meta, Arista Networks and Microsoft\n\n\n(Zacks)",
+      "link": "/news/182026/zacks-investment-ideas-feature-highlights-constellation-energy-meta-arista-networks-and-microsoft"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:55AM",
+      "title": "Zacks Investment Ideas feature highlights: Apple, Alphabet and Microsoft\n\n\n(Zacks)",
+      "link": "/news/182009/zacks-investment-ideas-feature-highlights-apple-alphabet-and-microsoft"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:10AM",
+      "title": "After Dumping Nvidia and Palantir, Billionaire Stanley Druckenmiller Recently Dropped Another AI Giant -- and Bought Shares of This Key AI Player\n\n\n(Motley Fool)",
+      "link": "/news/181934/after-dumping-nvidia-and-palantir-billionaire-stanley-druckenmiller-recently-dropped-another-ai-giant-and-bought-shares-of-this-key-ai-player"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "17:06",
+      "title": "Microsoft Partners with Nvidia as Cloud and AI Drive Strong Performance\n\n\n(Insider Monkey)",
+      "link": "/news/181516/microsoft-partners-with-nvidia-as-cloud-and-ai-drive-strong-performance"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:39PM",
+      "title": "Lyft CEO on the time Bill Gates told him he was making the stupidest decision Ive ever heard anyone made\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/lyft-ceo-time-bill-gates-203908141.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:35PM",
+      "title": "2 Great AI Stocks to Buy in October and Hold for 10 Years\n\n\n(Zacks)",
+      "link": "/news/181543/2-great-ai-stocks-to-buy-in-october-and-hold-for-10-years"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:34PM",
+      "title": "Microsoft to Lean More on Its Own AI Chips as Demand Outpaces Supply\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/microsoft-lean-more-own-ai-203459048.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:28PM",
+      "title": "Rick Perrys REIT Fermi Surges 55% After $683 Million IPO\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/rick-perry-energy-reit-fermi-185402176.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:21PM",
+      "title": "Was This Analyst Right About Microsoft (MSFT)?\n\n\n(Insider Monkey)",
+      "link": "/news/181450/was-this-analyst-right-about-microsoft-msft"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:04PM",
+      "title": "AI Stocks: Bubble or Boom Ahead?\n\n\n(Zacks)",
+      "link": "/news/181350/ai-stocks-bubble-or-boom-ahead"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:01PM",
+      "title": "Microsoft CEO Relinquishes Some Duties, Names New Commercial Chief\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/tech/microsoft-ceo-satya-nadella-ai-0b02c6fe?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:59PM",
+      "title": "Is Apple Stock About to Breakout?\n\n\n(Zacks)",
+      "link": "/news/181348/is-apple-stock-about-to-breakout"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:36PM",
+      "title": "MSFT: Microsoft Stock Slips As Xbox Game Pass Ultimate Price Jumps 50%\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/msft-microsoft-stock-slips-xbox-173642077.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:04PM",
+      "title": "Microsoft CEO Relinquishes Some Duties, Names Althoff Head of Commercial Business\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/tech/microsoft-ceo-relinquishes-some-duties-names-althoff-head-of-commercial-business-0b02c6fe?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:03PM",
+      "title": "Microsoft CEO Satya Nadella relinquishes some duties\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=jZKLpJEjkm0"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:44PM",
+      "title": "Microsoft names CEO to run commercial business, Nadella to focus on tech\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/microsoft-names-ceo-run-commercial-164417825.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:20AM",
+      "title": "Microsoft Uses Microfluidics Tech to Outpace AI Chip Rivals\n\n\n(Zacks)",
+      "link": "/news/181113/microsoft-uses-microfluidics-tech-to-outpace-ai-chip-rivals"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:43AM",
+      "title": "Marvell Stock Is Downgraded. Future Sales to Amazon and Microsoft Are Uncertain.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/marvell-stock-downgraded-amazon-microsoft-37ce1f32?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:12AM",
+      "title": "AudioCodes Unveils AI Agents for Improved Customer Engagement\n\n\n(Zacks)",
+      "link": "/news/181078/audiocodes-unveils-ai-agents-for-improved-customer-engagement"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:10AM",
+      "title": "CoreWeave Is Winning Over Wall Street Amid Flurry of New Deals\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/coreweave-winning-over-wall-street-112503420.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Cadence and TSMC Extend Partnership to Drive Next-Generation Innovation\n\n\n(Zacks)",
+      "link": "/news/180970/cadence-and-tsmc-extend-partnership-to-drive-next-generation-innovation"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:08AM",
+      "title": "Stock Market Today: Dow Tumbles On Shutdown, Surprise Jobs Data; Astera Labs, Nvidia, Tesla Drop (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/353692cf-5902-35b0-8d5c-833f422c2c0b/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:57AM",
+      "title": "AES Stock Surges on Takeover Report. Why BlackRock May Be Interested in the Struggling Utility.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/aes-stock-price-blackrock-takeover-deal-c45633ed?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:43AM",
+      "title": "Is the AI bubble about to burst? Think again, say these analysts\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/ai-bubble-burst-think-again-124324574.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "3 Best Tech Stocks to Buy in October\n\n\n(Motley Fool)",
+      "link": "/news/180784/3-best-tech-stocks-to-buy-in-october"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:21AM",
+      "title": "The Zacks Analyst Blog Highlights Comcast, Amazon, Microsoft and Cisco\n\n\n(Zacks)",
+      "link": "/news/180501/the-zacks-analyst-blog-highlights-comcast-amazon-microsoft-and-cisco"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:55AM",
+      "title": "Is Nebius Group Stock a Buy?\n\n\n(Motley Fool)",
+      "link": "/news/180463/is-nebius-group-stock-a-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:40AM",
+      "title": "3 Market-Beating Stocks to Target This Week\n\n\n(StockStory)",
+      "link": "/news/180494/3-market-beating-stocks-to-target-this-week"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "19:00",
+      "title": "Recession fears are a 'new concern' for retail investors, says Investopedia's Caleb Silver\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=W90JVsikekg"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:11PM",
+      "title": "Caledonia Plan Commission approves rezone of property for Microsoft data center\n\n\n(Milwaukee Journal Sentinel)",
+      "link": "https://finance.yahoo.com/m/f8aec313-2560-315a-a1d3-5dbbb9ea791b/caledonia-plan-commission.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:29PM",
+      "title": "Microsoft (MSFT) Announces it Will Integrate AI Models from Anthropic Into its Copilot Assistant\n\n\n(Insider Monkey)",
+      "link": "/news/180081/microsoft-msft-announces-it-will-integrate-ai-models-from-anthropic-into-its-copilot-assistant"
+    }
+  ]
+}

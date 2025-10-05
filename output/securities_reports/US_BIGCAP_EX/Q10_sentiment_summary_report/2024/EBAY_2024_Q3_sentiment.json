@@ -1,0 +1,47 @@
+{
+  "symbol": "EBAY",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2256,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.172
+  },
+  "top_positive": [
+    {
+      "sent": "NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS\u2014(Continued) Note 14 \u2014 Accumulated Other Comprehensive Income The following tables summarize the changes in AOCI for the periods indicated (in millions): Unrealized Gains (Losses) on Derivative Instruments Unrealized Gains (Losses) on Investments Foreign Currency Translation Estimated Tax (Expense) Benefit Total Balance as of December 31, 2023 $ ( 13 ) $ ( 45 ) $ 206 $ 37 $ 185 Other comprehensive income (loss) before reclassifications 14 8 ( 37 ) ( 5 ) ( 20 ) Less: Amount of gain (loss) reclassified from AOCI ( 8 ) \u2014 \u2014 2 ( 6 ) Net current period other comprehensive income (loss) 22 8 ( 37 ) ( 7 ) ( 14 ) Balance as of March 31, 2024 $ 9 $ ( 37 ) $ 169 $ 30 $ 171 Unrealized Gains (Losses) on Derivative Instruments Unrealized Gains (Losses) on Investments Foreign Currency Translation Estimated Tax (Expense) Benefit Total Balance as of December 31, 2022 $ 114 $ ( 98 ) $ 222 $ 21 $ 259 Other comprehensive income (loss) before reclassifications ( 21 ) 19 1 ( 2 ) ( 3 ) Less: Amount of gain (loss) reclassified from AOCI 32 \u2014 \u2014 ( 7 ) 25 Net current period other comprehensive income (loss) ( 53 ) 19 1 5 ( 28 ) Balance as of March 31, 2023 $ 61 $ ( 79 ) $ 223 $ 26 $ 231 The following table summarizes the reclassifications out of AOCI for the periods indicated (in millions): Details about AOCI Components Affected Line Item in the Statement of Income Amount of Gain (Loss) Reclassified From AOCI Three Months Ended March 31, 2024 2023 Gains (losses) on cash flow hedges: Foreign exchange contracts Net revenues $ ( 10 ) $ 29 Foreign exchange contracts Cost of net revenues \u2014 ( 1 ) Interest rate contracts Interest income and other, net 2 4 Total, from continuing operations before income taxes ( 8 ) 32 Provision for income taxes 2 ( 7 ) Total, from continuing operations net of income taxes ( 6 ) 25 Total reclassifications for the period Total, net of income taxes $ ( 6 ) $ 25 38 Table of Contents eBay Inc.",
+      "score": 0.9891
+    },
+    {
+      "sent": "The following table presents gain (loss) on equity investments and warrant, net for the periods indicated (in millions, except percentages): Three Months Ended March 31, 2024 2023 % Change Unrealized change in fair value of equity investment in Adevinta $ (234) $ 174 234 % Unrealized change in fair value of equity investment in Gmarket (6) (11) (45) % Unrealized change in fair value of equity investment in KakaoBank \u2014 (3) ** Change in fair value of warrant 149 38 292 % Gain (loss) on other investments (6) \u2014 ** Total gain (loss) on equity investments and warrant, net $ (97) $ 198 (149) % Percentage of net revenues (4) % 8 % ** Not meaningful The change in gain (loss) on equity investments and warrant, net during the three months ended March\u00a031, 2024 compared to the same period in 2023 was primarily driven by the change in the fair value of our equity investments in Adevinta and the warrant.",
+      "score": 0.985
+    },
+    {
+      "sent": "The following table presents gain (loss) on equity investments and warrant, net for the periods indicated (in millions, except percentages): Three Months Ended March 31, 2024 2023 % Change Unrealized change in fair value of equity investment in Adevinta $ (234) $ 174 234 % Unrealized change in fair value of equity investment in Gmarket (6) (11) (45) % Unrealized change in fair value of equity investment in KakaoBank \u2014 (3) ** Change in fair value of warrant 149 38 292 % Gain (loss) on other investments (6) \u2014 ** Total gain (loss) on equity investments and warrant, net $ (97) $ 198 (149) % Percentage of net revenues (4) % 8 % ** Not meaningful The change in gain (loss) on equity investments and warrant, net during the three months ended March\u00a031, 2024 compared to the same period in 2023 was primarily driven by the ch\nxpenses, restructuring, insurance premiums and professional fees.",
+      "score": 0.9807
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Provision for Transaction Losses Provision for transaction losses primarily consists of transaction loss expense associated with our buyer protection programs, losses from our managed payments services, fraud and bad debt expense.",
+      "score": -0.9595
+    },
+    {
+      "sent": "Provision for Transaction Losses Provision for transaction losses primarily consists of transaction loss expense associated with our buyer protection programs, losses from our managed payments services, fraud and bad debt expense.",
+      "score": -0.9595
+    },
+    {
+      "sent": "For those proceedings in which an unfavorable outcome is reasonably possible but not probable, we have disclosed an estimate of the reasonably possible loss or range of losses or we have concluded that an estimate of the reasonably possible loss or range of losses arising directly from the proceeding (i.e., monetary damages or amounts paid in judgment or settlement) is not material.",
+      "score": -0.9505
+    }
+  ],
+  "forward_snippets": [
+    "We base our estimates on historical experience and on various other assumptions that we believe to be reasonable under the circumstances.",
+    "The new guidance is intended to improve reportable segment disclosure requirements, primarily through enhanced disclosures about significant segment expenses enabling investors to better understand an entity\u2019s overall performance and assess potential future cash flows.",
+    "The new guidance is intended to improve reportable segment disclosure requirements, primarily through enhanced disclosures about significant segment expenses enabling investors to better understand an entity\u2019s overall performance and assess potential future cash flows.",
+    "The new guidance addresses the accounting and disclosure requirements for certain crypto assets and requires entities to subsequently measure certain crypto assets at fair value, with changes in fair value recorded in net income in each reporting period.",
+    "The new guidance is intended to further standardize income tax disclosures primarily related to the presentation of the effective tax rate reconciliation and income taxes paid information in our financial statements and disclosures."
+  ]
+}

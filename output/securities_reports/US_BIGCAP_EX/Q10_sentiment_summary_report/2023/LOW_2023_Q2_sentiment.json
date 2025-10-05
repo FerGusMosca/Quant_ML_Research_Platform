@@ -1,0 +1,47 @@
+{
+  "symbol": "LOW",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1545,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.136
+  },
+  "top_positive": [
+    {
+      "sent": "- Unregistered Sales of Equity Securities and Use of Proceeds Issuer Purchases of Equity Securities The following table sets forth information with respect to purchases of the Company\u2019s common stock on a trade date basis made during the three months ended August\u00a04, 2023: Total Number of Shares Purchased 1 Average Price Paid per Share Total Number of Shares Purchased as Part of Publicly Announced Plans or Programs 2 Approximate Dollar Value of Shares that May Yet Be Purchased Under the Plans or Programs 2, 3 May 6, 2023 - June 2, 2023 4 6,474,323 $ 212.42 6,470,714 $ 17,208,764,263 June 3, 2023 - July 7, 2023 2,971,519 217.04 2,961,820 16,566,000,487 July 8, 2023 - August 4, 2023 4 661,646 217.86 661,498 16,566,000,487 As of August 4, 2023 10,107,488 $ 214.14 10,094,032 $ 16,566,000,487 1 The total number of shares repurchased includes shares withheld from employees to satisfy either the exercise price of stock options or the statutory withholding tax liability upon the vesting of share-based awards.",
+      "score": 0.9756
+    },
+    {
+      "sent": "- Unregistered Sales of Equity Securities and Use of Proceeds Issuer Purchases of Equity Securities The following table sets forth information with respect to purchases of the Company\u2019s common stock on a trade date basis made during the three months ended August\u00a04, 2023: Total Number of Shares Purchased 1 Average Price Paid per Share Total Number of Shares Purchased as Part of Publicly Announced Plans or Programs 2 Approximate Dollar Value of Shares that May Yet Be Purchased Under the Plans or Programs 2, 3 May 6, 2023 - June 2, 2023 4 6,474,323 $ 212.42 6,470,714 $ 17,208,764,263 June 3, 2023 - July 7, 2023 2,971,519 217.04 2,961,820 16,566,000,487 July 8, 2023 - August 4, 2023 4 661,646 217.86 661,498 16,566,000,487 As of August 4, 2023 10,107,488 $ 214.14 10,094,032 $ 16,566,000,487 1 The total number of shares repurchased includes shares withheld from employees to satisfy either the exercise price of stock options or the statutory withholding tax liability upon the vesting of share-based awards.",
+      "score": 0.9756
+    },
+    {
+      "sent": "Consolidated Statements of Earnings (Unaudited) In Millions, Except Per Share and Percentage Data Three Months Ended Six Months Ended August 4, 2023 July 29, 2022 August 4, 2023 July 29, 2022 Current Earnings Amount % Sales Amount % Sales Amount % Sales Amount % Sales Net sales $ 24,956 100.00 % $ 27,476 100.00 % $ 47,304 100.00 % $ 51,135 100.00 % Cost of sales 16,557 66.34 18,343 66.76 31,378 66.33 33,952 66.40 Gross margin 8,399 33.66 9,133 33.24 15,926 33.67 17,183 33.60 Expenses: Selling, general and administrative 4,086 16.38 4,455 16.22 7,912 16.73 8,758 17.12 Depreciation and amortization 427 1.71 449 1.63 841 1.78 894 1.75 Operating income 3,886 15.57 4,229 15.39 7,173 15.16 7,531 14.73 Interest \u2013 net 341 1.36 264 0.96 689 1.45 507 0.99 Pre-tax earnings 3,545 14.21 3,965 14.43 6,484 13.71 7,024 13.74 Income tax provision 872 3.50 973 3.54 1,551 3.28 1,699 3.33 Net earnings $ 2,673 10.71 % $ 2,992 10.89 % $ 4,933 10.43 % $ 5,325 10.41 % Weighted average common shares outstanding \u2013 basic 584 638 590 649 Basic earnings per common share $ 4.56 $ 4.68 $ 8.34 $ 8.18 Weighted average common shares outstanding \u2013 diluted 585 639 591 651 Diluted earnings per common share $ 4.56 $ 4.67 $ 8.32 $ 8.16 See accompanying notes to the consolidated financial statements (unaudited).",
+      "score": 0.9552
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Debt Ratings S&P Moody\u2019s Commercial Paper A-2 P-2 Senior Debt BBB+ Baa1 Senior Debt Outlook Stable Stable There are no provisions in any agreements that would require early cash settlement of existing debt or leases as a result of a downgrade in our debt rating or a decrease in our stock price.",
+      "score": -0.802
+    },
+    {
+      "sent": "Debt Ratings S&P Moody\u2019s Commercial Paper A-2 P-2 Senior Debt BBB+ Baa1 Senior Debt Outlook Stable Stable There are no provisions in any agreements that would require early cash settlement of existing debt or leases as a result of a downgrade in our debt rating or a decrease in our stock price.",
+      "score": -0.802
+    },
+    {
+      "sent": "Debt Ratings S&P Moody\u2019s Commercial Paper A-2 P-2 Senior Debt BBB+ Baa1 Senior Debt Outlook Stable Stable There are no provisions in any agreements that would require early cash settlement of existing debt or leases as a result of a downgrade in our debt rating or a decrease in our stock price.",
+      "score": -0.802
+    }
+  ],
+  "forward_snippets": [
+    "Statements including words such as \u201cbelieve\u201d, \u201cexpect\u201d, \u201canticipate\u201d, \u201cplan\u201d, \u201cdesire\u201d, \u201cproject\u201d, \u201cestimate\u201d, \u201cintend\u201d, \u201cwill\u201d, \u201cshould\u201d, \u201ccould\u201d, \u201cwould\u201d, \u201cmay\u201d, \u201cstrategy\u201d, \u201cpotential\u201d, \u201copportunity\u201d, \u201coutlook\u201d, \u201cscenario\u201d, \u201cguidance\u201d, and similar expressions are forward-looking statements.",
+    "Forward-looking statements involve, among other things, expectations, projections, and assumptions about future financial and operating results, objectives (including objectives related to environmental, social, and governance matters), business outlook, priorities, sales growth, shareholder value, capital expenditures, cash flows, the housing market, the home improvement industry, demand for products and services, share repurchases, Lowe\u2019s strategic initiatives, including those relating to acquisitions and dispositions and the impact of such transactions on our strategic and operational plans and financial results.",
+    "Statements including words such as \u201cbelieve\u201d, \u201cexpect\u201d, \u201canticipate\u201d, \u201cplan\u201d, \u201cdesire\u201d, \u201cproject\u201d, \u201cestimate\u201d, \u201cintend\u201d, \u201cwill\u201d, \u201cshould\u201d, \u201ccould\u201d, \u201cwould\u201d, \u201cmay\u201d, \u201cstrategy\u201d, \u201cpotential\u201d, \u201copportunity\u201d, \u201coutlook\u201d, \u201cscenario\u201d, \u201cguidance\u201d, and similar expressions are forward-looking statements.",
+    "Forward-looking statements involve, among other things, expectations, projections, and assumptions about future financial and operating results, objectives (including objectives related to environmental, social, and governance matters), business outlook, priorities, sales growth, shareholder value, capital expenditures, cash flows, the housing market, the home improvement industry, demand for products and services, share repurchases, Lowe\u2019s strategic initiatives, including those relating to acquisitions and dispositions and the impact of such transactions on our strategic and operational plans and financial results.",
+    "Statements including words such as \u201cbelieve\u201d, \u201cexpect\u201d, \u201canticipate\u201d, \u201cplan\u201d, \u201cdesire\u201d, \u201cproject\u201d, \u201cestimate\u201d, \u201cintend\u201d, \u201cwill\u201d, \u201cshould\u201d, \u201ccould\u201d, \u201cwould\u201d, \u201cmay\u201d, \u201cstrategy\u201d, \u201cpotential\u201d, \u201copportunity\u201d, \u201coutlook\u201d, \u201cscenario\u201d, \u201cguidance\u201d, and similar expressions are forward-looking statements."
+  ]
+}

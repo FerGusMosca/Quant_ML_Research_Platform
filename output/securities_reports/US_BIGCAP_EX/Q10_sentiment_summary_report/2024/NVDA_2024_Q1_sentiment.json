@@ -1,0 +1,47 @@
+{
+  "symbol": "NVDA",
+  "year": 2024,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2017,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.271
+  },
+  "top_positive": [
+    {
+      "sent": "Condensed Consolidated Statements of Income include stock-based compensation expense, net of amounts capitalized into inventory and subsequently recognized to cost of revenue, as follows: 10 NVIDIA Corporation and Subsidiaries Notes to Condensed Consolidated Financial Statements (Continued) (Unaudited) Three Months Ended Nine Months Ended Oct 27, 2024 Oct 29, 2023 Oct 27, 2024 Oct 29, 2023 (In millions) Cost of revenue $ 50 $ 38 $ 125 $ 96 Research and development 910 701 2,469 1,826 Sales, general and administrative 292 240 822 633 Total $ 1,252 $ 979 $ 3,416 $ 2,555 Equity Award Activity The following is a summary of our equity award transactions under our equity incentive plans: RSUs, PSUs, and Market-based PSUs Outstanding Number of Shares Weighted Average Grant-Date Fair Value Per Share (In millions, except per share data) Balance as of Jan\u00a028, 2024 367 $ 24.59 Granted 84 $ 84.70 Vested ( 135 ) $ 23.03 Canceled and forfeited ( 8 ) $ 31.23 Balance as of Oct\u00a027, 2024 308 $ 41.45 As of October\u00a027, 2024, aggregate unearned stock-based compensation expense was $ 12.4 billion, which is expected to be recognized over a weighted average period of 2.3 years for RSUs, PSUs, and market-based PSUs, and one year for ESPP.",
+      "score": 0.9769
+    },
+    {
+      "sent": "Condensed Consolidated Statements of Income include stock-based compensation expense, net of amounts capitalized into inventory and subsequently recognized to cost of revenue, as follows: 10 NVIDIA Corporation and Subsidiaries Notes to Condensed Consolidated Financial Statements (Continued) (Unaudited) Three Months Ended Nine Months Ended Oct 27, 2024 Oct 29, 2023 Oct 27, 2024 Oct 29, 2023 (In millions) Cost of revenue $ 50 $ 38 $ 125 $ 96 Research and development 910 701 2,469 1,826 Sales, general and administrative 292 240 822 633 Total $ 1,252 $ 979 $ 3,416 $ 2,555 Equity Award Activity The following is a summary of our equity award transactions under our equity incentive plans: RSUs, PSUs, and Market-based PSUs Outstanding Number of Shares Weighted Average Grant-Date Fair Value Per Share (In millions, except per share data) Balance as of Jan\u00a028, 2024 367 $ 24.59 Granted 84 $ 84.70 Vested ( 135 ) $ 23.03 Canceled and forfeited ( 8 ) $ 31.23 Balance as of Oct\u00a027, 2024 308 $ 41.45 As of October\u00a027, 2024, aggregate unearned stock-based compensation expense was $ 12.4 billion, which is expected to be recognized over a weighted average period of 2.3 years for RSUs, PSUs, and market-based PSUs, and one year for ESPP.",
+      "score": 0.9769
+    },
+    {
+      "sent": "Condensed Consolidated Statements of Income include stock-based compensation expense, net of amounts capitalized into inventory and subsequently recognized to cost of revenue, as follows: 10 NVIDIA Corporation and Subsidiaries Notes to Condensed Consolidated Financial Statements (Continued) (Unaudited) Three Months Ended Nine Months Ended Oct 27, 2024 Oct 29, 2023 Oct 27, 2024 Oct 29, 2023 (In millions) Cost of revenue $ 50 $ 38 $ 125 $ 96 Research and development 910 701 2,469 1,826 Sales, general and administrative 292 240 822 633 Total $ 1,252 $ 979 $ 3,416 $ 2,555 Equity Award Activity The following is a summary of our equity award transactions under our equity incentive plans: RSUs, PSUs, and Market-based PSUs Outstanding Number of Shares Weighted Average Grant-Date Fair Value Per Share (In millions, except per share data) Balance as of Jan\u00a028, 2024 367 $ 24.59 Granted 84 $ 84.70 Vested ( 135 ) $ 23.03 Canceled and forfeited ( 8 ) $ 31.23 Balance as of Oct\u00a027, 2024 308 $ 41.45 As of October\u00a027, 2024, aggregate unearned stock-based compensation expense was $ 12.4 billion, which is expected to be recognized over a weighted average period of 2.3 years for RSUs, PSUs, and market-based PSUs, and one year for ESPP.",
+      "score": 0.9769
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The lawsuits assert claims, purportedly on behalf of us, against certain officers and directors of the Company for breach of fiduciary duty, unjust enrichment, insider trading, misappropriation of information, corporate waste and violations of Sections 14(a), 10(b), and 20(a) of the Exchange Act based on the dissemination of allegedly false, and misleading statements related to channel inventory and the impact of cryptocurrency mining on GPU demand.",
+      "score": -0.9042
+    },
+    {
+      "sent": "The lawsuit asserts claims, purportedly on behalf of us, against certain officers and directors of the Company for breach of fiduciary duty, unjust enrichment, waste of corporate assets, and violations of Sections 14(a), 10(b), and 20(a) of the Exchange Act based on the dissemination of allegedly false and misleading statements related to channel inventory and the impact of cryptocurrency mining on GPU demand.",
+      "score": -0.8957
+    },
+    {
+      "sent": "If we cannot procure sufficient supply to meet demand or otherwise fail to fulfill our customers\u2019 orders on a timely basis, or at all, our customer relationships could be damaged, we could lose revenue and market share and our reputation could be harmed.",
+      "score": -0.8225
+    }
+  ],
+  "forward_snippets": [
+    "These estimates are based on historical facts and other assumptions that we believe are reasonable.",
+    "We expect to adopt this standard in our fiscal year 2025 annual report.",
+    "We expect to adopt this standard in our fiscal year 2026 annual report.",
+    "We expect to adopt this standard in our fiscal year 2028 annual report.",
+    "Future minimum lease obligations under our non-cancelable lease agreements as of October\u00a027, 2024 were as follows: Operating Lease Obligations (In\u00a0millions) Fiscal Year: 2025 (excluding the first nine months of fiscal year 2025) $ 78 2026 336 2027 340 2028 320 2029 288 2030 and thereafter 667 Total 2,029 Less imputed interest 266 Present value of net future minimum lease payments 1,763 Less short-term operating lease liabilities 273 Long-term operating lease liabilities $ 1,490 Between the fourth quarter of fiscal year 2025 and fiscal year 2027, we expect to commence leases with future obligations of $ 4.2 billion primarily of data center and office operating leases, with lease terms of 1.5 to 15.5 years."
+  ]
+}

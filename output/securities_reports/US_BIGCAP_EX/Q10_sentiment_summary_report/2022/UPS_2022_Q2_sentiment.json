@@ -1,0 +1,51 @@
+{
+  "symbol": "UPS",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.3753,
+    "outlook_sentiment": 0.2821,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.052
+  },
+  "top_positive": [
+    {
+      "sent": "Domestic Package Operations 47 International Package Operations 50 Supply Chain Solutions Operations 53 Consolidated Operating Expenses 55 Other Income and (Expense) 58 Income Tax Expense 59 Liquidity and Capital Resources 60 Cash Flows From Operating Activities 60 Cash Flows From Investing Activities 62 Cash Flows From Financing Activities 63 Sources of Credit 64 Contractual Commitments 64 Legal Proceedings and Contingencies 64 Collective Bargaining Agreements 64 Recent Accounting Pronouncements 64 Rate Adjustments 65 Item 3.",
+      "score": 0.7506
+    },
+    {
+      "sent": "AND SUBSIDIARIES NOTES TO UNAUDITED CONSOLIDATED FINANCIAL STATEMENTS Detail of the gains (losses) reclassified from AOCI to the statements of consolidated income for the three and six months ended June\u00a030, 2022 and 2021 is as follows (in millions): Amount Reclassified from AOCI Affected Line Item in the Income Statement Three Months Ended June 30: 2022 2021 Unrealized Gain (Loss) on Marketable Securities: Realized gain (loss) on sale of securities $ \u2014 $ 1 Investment income and other Income tax (expense) benefit \u2014 \u2014 Income tax expense Impact on net income \u2014 1 Net income Unrealized Gain (Loss) on Cash Flow Hedges: Interest rate contracts ( 2 ) ( 3 ) Interest expense Foreign currency exchange contracts 67 7 Revenue Income tax (expense) benefit ( 16 ) ( 1 ) Income tax expense Impact on net income 49 3 Net income Unrecognized Pension and Postretirement Benefit Costs: Prior service costs ( 24 ) ( 36 ) Investment income and other Prior service credit for divested business \u2014 69 Other expenses Plan amendments for divested business \u2014 ( 66 ) Other expenses Income tax (expense) benefit 6 8 Income tax expense Impact on net income ( 18 ) ( 25 ) Net income Total amount reclassified for the period $ 31 $ ( 21 ) Net income Amount Reclassified from AOCI Affected Line Item in the Income Statement Six Months Ended June 30: 2022 2021 Unrealized gain (loss) on marketable securities: Realized gain (loss) on sale of securities $ \u2014 $ 4 Investment income and other Income tax (expense) benefit \u2014 \u2014 Income tax expense Impact on net income \u2014 4 Net income Unrealized gain (loss) on cash flow hedges: Interest rate contracts ( 5 ) ( 5 ) Interest expense Foreign currency exchange contracts 108 22 Revenue Income tax (expense) benefit ( 25 ) ( 4 ) Income tax expense Impact on net income 78 13 Net income Unrecognized pension and postretirement benefit costs: Prior service costs ( 47 ) ( 71 ) Investment income and other Prior service credit for divested business \u2014 69 Other expenses Plan amendments for divested business \u2014 ( 66 ) Other expenses Remeasurement of benefit obligation \u2014 3,290 Investment income and other Curtailment of benefit obligation 33 \u2014 Investment income and other Income tax (expense) benefit 3 ( 772 ) Income tax expense Impact on net income ( 11 ) 2,450 Net income Total amount reclassified for the period $ 67 $ 2,467 Net income 30 Table of Contents UNITED PARCEL SERVICE, INC.",
+      "score": 0.9974
+    },
+    {
+      "sent": "The activity in accumulated other comprehensive income for the three and six months ended June\u00a030, 2022 and 2021 was as follows (in millions): Three Months Ended June 30: 2022 2021 Foreign Currency Translation Gain (Loss), Net of Tax: Balance at beginning of period $ ( 1,202 ) $ ( 1,063 ) Translation adjustment (net of tax effect of $ 7 and $( 1 )) ( 245 ) 48 Balance at end of period ( 1,447 ) ( 1,015 ) Unrealized Gain (Loss) on Marketable Securities, Net of Tax: Balance at beginning of period ( 7 ) 2 Current period changes in fair value (net of tax effect of $ 0 and $ 0 ) ( 1 ) \u2014 Reclassification to earnings (net of tax effect of $ 0 and $ 0 ) \u2014 ( 1 ) Balance at end of period ( 8 ) 1 Unrealized Gain (Loss) on Cash Flow Hedges, Net of Tax: Balance at beginning of period 26 ( 109 ) Current period changes in fair value (net of tax effect of $ 89 and $( 14 )) 283 ( 43 ) Reclassification to earnings (net of tax effect of $( 16 ) and $( 1 )) ( 49 ) ( 3 ) Balance at end of period 260 ( 155 ) Unrecognized Pension and Postretirement Benefit Costs, Net of Tax: Balance at beginning of period ( 2,074 ) ( 3,489 ) Net actuarial gain (loss) resulting from remeasurements of plan assets and liabilities (net of tax effect of $ 0 and $ 495 ) \u2014 1,569 Reclassification to earnings (net of tax effect of $ 6 and $ 8 ) 18 25 Balance at end of period ( 2,056 ) ( 1,895 ) Accumulated other comprehensive income (loss) at end of period $ ( 3,251 ) $ ( 3,064 ) 28 Table of Contents UNITED PARCEL SERVICE, INC.",
+      "score": 0.9857
+    },
+    {
+      "sent": "AND SUBSIDIARIES NOTES TO UNAUDITED CONSOLIDATED FINANCIAL STATEMENTS Six Months Ended June 30: 2022 2021 Foreign currency translation gain (loss), net of tax: Balance at beginning of period $ ( 1,162 ) $ ( 981 ) Translation adjustment (net of tax effect of $ 7 and $ 29 ) ( 285 ) ( 34 ) Balance at end of period ( 1,447 ) ( 1,015 ) Unrealized gain (loss) on marketable securities, net of tax: Balance at beginning of period ( 1 ) 6 Current period changes in fair value (net of tax effect of $( 2 ) and $ 0 ) ( 7 ) ( 1 ) Reclassification to earnings (net of tax effect of $ 0 and $ 0 ) \u2014 ( 4 ) Balance at end of period ( 8 ) 1 Unrealized gain (loss) on cash flow hedges, net of tax: Balance at beginning of period ( 17 ) ( 223 ) Current period changes in fair value (net of tax effect of $ 112 and $ 25 ) 355 81 Reclassification to earnings (net of tax effect of $( 25 ) and $( 4 )) ( 78 ) ( 13 ) Balance at end of period 260 ( 155 ) Unrecognized pension and postretirement benefit costs, net of tax: Balance at beginning of period ( 2,098 ) ( 5,915 ) Net actuarial gain (loss) resulting from remeasurements of plan assets and liabilities (net of tax effect of $ 11 and $ 2,039 ) 31 6,470 Reclassification to earnings (net of tax effect of $ 3 and $( 772 )) 11 ( 2,450 ) Balance at end of period ( 2,056 ) ( 1,895 ) Accumulated other comprehensive income (loss) at end of period $ ( 3,251 ) $ ( 3,064 ) 29 Table of Contents UNITED PARCEL SERVICE, INC.",
+      "score": 0.9843
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Dividends accrued on Restricted Units are reinvested in additional Restricted Units at each dividend payable date and are subject to the same vesting and forfeiture conditions as the underlying Restricted Units.",
+      "score": -0.7783
+    },
+    {
+      "sent": "Dividends accrued on Restricted Units are reinvested in additional Restricted Units at each dividend payable date and are subject to the same vesting and forfeiture conditions as the underlying Restricted Units.",
+      "score": -0.7783
+    },
+    {
+      "sent": "Dividends accrued on Restricted Units are reinvested in additional Restricted Units at each dividend payable date and are subject to the same vesting and forfeiture conditions as the underlying Restricted Units.",
+      "score": -0.7783
+    }
+  ],
+  "forward_snippets": [
+    "Our remaining performance obligations are primarily comprised of transportation services started but not completed as of the reporting date and we expect to complete these remaining performance obligations within a short period of time.",
+    "We classify deferred revenue as current based on the timing of when we expect to recognize revenue, which typically occurs within a short window after period-end.",
+    "We classify deferred revenue as current based on the timing of when we expect to recognize revenue, which typically occurs within a short window after period-end.",
+    "In making this determination, we considered the financial condition and prospects of each issuer, the magnitude of the losses compared with the cost, the probability that we will be unable to collect all amounts due according to the contractual terms of the security, the credit rating of the security and our ability and intent to hold these investments until the anticipated recovery in market value occurs.",
+    "In making this determination, we considered the financial condition and prospects of each issuer, the magnitude of the losses compared with the cost, the probability that we will be unable to collect all amounts due according to the contractual terms of the security, the credit rating of the security and our ability and intent to hold these investments until the anticipated recovery in market value occurs."
+  ]
+}

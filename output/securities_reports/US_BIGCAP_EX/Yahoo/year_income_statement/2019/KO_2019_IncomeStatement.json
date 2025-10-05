@@ -1,0 +1,11 @@
+{
+  "symbol": "KO",
+  "period": "2019",
+  "report_type": "YearlyIncomeStatement",
+  "items": {
+    "Gain On Sale Of Business": 2000000.0,
+    "Write Off": 252000000.0,
+    "Impairment Of Capital Assets": 215000000.0,
+    "Other Gand A": 4190000000.0
+  }
+}

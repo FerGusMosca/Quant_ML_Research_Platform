@@ -1,0 +1,47 @@
+{
+  "symbol": "BKNG",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2135,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.291
+  },
+  "top_positive": [
+    {
+      "sent": "These representations and warranties have been made solely for the benefit of the other parties to the applicable agreement and: \u2022 should not be treated as categorical statements of fact, but rather as a way of allocating the risk to one of the parties if those statements prove to be inaccurate; \u2022 may have been qualified by disclosures that were made to the other party in connection with the negotiation of the applicable agreement, which disclosures are not necessarily reflected in the agreement; \u2022 may apply standards of materiality in a way that is different from what may be viewed as material to you or other investors; and \u2022 were made only as of the date of the applicable agreement or such other date or dates as may be specified in the agreement and are subject to more recent developments.",
+      "score": 0.981
+    },
+    {
+      "sent": "These representations and warranties have been made solely for the benefit of the other parties to the applicable agreement and: \u2022 should not be treated as categorical statements of fact, but rather as a way of allocating the risk to one of the parties if those statements prove to be inaccurate; \u2022 may have been qualified by disclosures that were made to the other party in connection with the negotiation of the applicable agreement, which disclosures are not necessarily reflected in the agreement; \u2022 may apply standards of materiality in a way that is different from what may be viewed as material to you or other investors; and \u2022 were made only as of the date of the applicable agreement or such other date or dates as may be specified in the agreement and are subject to more recent developments.",
+      "score": 0.981
+    },
+    {
+      "sent": "We regard our intellectual property as important to our success, and we rely on intellectual property such as trademarks, copyrights, patents, and trade secrets to support our business as well as domain names or other intangible rights or property secured through purchase, licensing or other agreements with our employees, travel service providers, partners, and other parties.",
+      "score": 0.9698
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "With any technical innovation such as the Connected Trip effort, there could be bugs, vulnerabilities, and other system failures, which could result in lost business, harm to our brand or reputation, consumer complaints, and other adverse consequences, any of which could adversely affect our business and results of operations.",
+      "score": -0.9153
+    },
+    {
+      "sent": "With any technical innovation such as the Connected Trip effort, there could be bugs, vulnerabilities, and other system failures, which could result in lost business, harm to our brand or reputation, consumer complaints, and other adverse consequences, any of which could adversely affect our business and results of operations.",
+      "score": -0.9153
+    },
+    {
+      "sent": "With any technical innovation such as the Connected Trip effort, there could be bugs, vulnerabilities, and other system failures, which could result in lost business, harm to our brand or reputation, consumer complaints, and other adverse consequences, any of which could adversely affect our business and results of operations.",
+      "score": -0.9153
+    }
+  ],
+  "forward_snippets": [
+    "We aim to provide consumers with a best-in-class experience offering the travel choices they want, with tailored language, payment, and other options, seamlessly connecting them with our travel service provider partners.",
+    "Our Strategy We aim to demonstrate global leadership in online travel bookings and related services by: \u2022 making it easy for people to find, book, pay for, and experience travel; \u2022 providing consumers with the most comprehensive choices and value on any device; \u2022 offering platforms, tools, and insights to our business partners to help them be successful; and \u2022 operating our business sustainably and supporting sustainable travel choices by our consumers and partners.",
+    "We believe that global travel bookings will generally continue to grow while shifting from traditional offline methods to online channels like ours.",
+    "We expect to benefit from this growth in travel and the continued shift to online channels as we work to expand our service offerings and increase our presence in key geographies.",
+    "We continue to innovate to meet the needs of our consumers and partners through intuitive, easy-to-use websites and mobile apps."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "UNP",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.178,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.172
+  },
+  "top_positive": [
+    {
+      "sent": "The table below represents shares repurchased under repurchase programs in the six months ended June 30, 2023 and 2022 : Number of Shares Purchased Average Price Paid [a] 2023 2022 2023 2022 First quarter [b] 2,908,703 11,014,201 $ 203.19 $ 249.95 Second quarter [c] 606,581 3,100,683 199.81 232.87 Total 3,515,284 14,114,884 $ 202.61 $ 246.20 Remaining number of shares that may be repurchased under current authority 80,392,027 [a] In the period of the final settlement, the average price paid under the accelerated share repurchase programs is calculated based\u00a0on the total program value less the value assigned to the initial delivery of shares.",
+      "score": 0.9287
+    },
+    {
+      "sent": "The table below represents shares repurchased under repurchase programs in the six months ended June 30, 2023 and 2022 : Number of Shares Purchased Average Price Paid [a] 2023 2022 2023 2022 First quarter [b] 2,908,703 11,014,201 $ 203.19 $ 249.95 Second quarter [c] 606,581 3,100,683 199.81 232.87 Total 3,515,284 14,114,884 $ 202.61 $ 246.20 Remaining number of shares that may be repurchased under current authority 80,392,027 [a] In the period of the final settlement, the average price paid under the accelerated share repurchase programs is calculated based\u00a0on the total program value less the value assigned to the initial delivery of shares.",
+      "score": 0.9287
+    },
+    {
+      "sent": "The table below represents shares repurchased under repurchase programs in the six months ended June 30, 2023 and 2022 : Number of Shares Purchased Average Price Paid [a] 2023 2022 2023 2022 First quarter [b] 2,908,703 11,014,201 $ 203.19 $ 249.95 Second quarter [c] 606,581 3,100,683 199.81 232.87 Total 3,515,284 14,114,884 $ 202.61 $ 246.20 Remaining number of shares that may be repurchased under current authority 80,392,027 [a] In the period of the final settlement, the average price paid under the accelerated share repurchase programs is calculated based\u00a0on the total program value less the value assigned to the initial delivery of shares.",
+      "score": 0.9287
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Other \u2013 Other expenses include state and local taxes; freight, equipment, and property damage; utilities; insurance; personal injury; environmental remediation; employee travel; telephone and cellular; computer software; bad debt; and other general expenses.",
+      "score": -0.9001
+    },
+    {
+      "sent": "The tables above provide\u00a0a reconciliation\u00a0from net income to adjusted EBITDA, debt to adjusted debt, and debt to net income to adjusted debt to adjusted EBITDA.",
+      "score": -0.8402
+    },
+    {
+      "sent": "The tables above provide\u00a0a reconciliation\u00a0from net income to adjusted EBITDA, debt to adjusted debt, and debt to net income to adjusted debt to adjusted EBITDA.",
+      "score": -0.8402
+    }
+  ],
+  "forward_snippets": [
+    "While we believe that we have strong defenses to the claims made in the complaint and will vigorously defend\u00a0ourselves, there is no assurance regarding the ultimate outcome.",
+    "We do not have any reason to believe that we will be required to make any material payments under these indemnity provisions.",
+    "We expect to fund any share repurchases under this program through cash generated from operations, the sale or lease of various operating and non-operating properties, debt issuances, and cash on hand.",
+    "We do not have any reason to believe that we will be required to make any material payments under these indemnity provisions.",
+    "We expect to fund any share repurchases under this program through cash generated from operations, the sale or lease of various operating and non-operating properties, debt issuances, and cash on hand."
+  ]
+}

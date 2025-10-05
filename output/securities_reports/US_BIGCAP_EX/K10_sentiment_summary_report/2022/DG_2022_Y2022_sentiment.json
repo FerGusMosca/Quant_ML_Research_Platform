@@ -1,0 +1,51 @@
+{
+  "symbol": "DG",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.4278,
+    "outlook_sentiment": 0.239,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.169
+  },
+  "top_positive": [
+    {
+      "sent": "Earnings per share \u200b Earnings per share is computed as follows (in thousands except per share data): \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 2021 \u200b \u200b \u200b \u200b Weighted \u200b \u200b \u200b \u200b Net \u200b Average \u200b Per\u00a0Share \u200b \u200b \u200b Income \u200b Shares \u200b Amount \u200b Basic earnings per share \u200b $ 2,399,232 234,261 \u200b $ 10.24 \u200b Effect of dilutive share-based awards \u200b \u200b \u200b 1,551 \u200b \u200b \u200b \u200b Diluted earnings per share \u200b $ 2,399,232 235,812 \u200b $ 10.17 \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 2020 \u200b \u200b \u200b \u200b Weighted \u200b \u200b \u200b \u200b Net \u200b Average \u200b Per\u00a0Share \u200b \u200b \u200b Income \u200b Shares \u200b Amount \u200b Basic earnings per share \u200b $ 2,655,050 248,171 \u200b $ 10.70 \u200b Effect of dilutive share-based awards \u200b \u200b \u200b 1,905 \u200b \u200b \u200b \u200b Diluted earnings per share \u200b $ 2,655,050 250,076 \u200b $ 10.62 \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 2019 \u200b \u200b \u200b \u200b Weighted \u200b \u200b \u200b \u200b Net \u200b Average \u200b Per\u00a0Share \u200b \u200b \u200b Income \u200b Shares \u200b Amount \u200b Basic earnings per share \u200b $ 1,712,555 256,553 \u200b $ 6.68 \u200b Effect of dilutive share-based awards \u200b \u200b \u200b 1,500 \u200b \u200b \u200b \u200b Diluted earnings per share \u200b $ 1,712,555 258,053 \u200b $ 6.64 \u200b \u200b Basic earnings per share is computed by dividing net income by the weighted average number of shares of common stock outstanding during the year.",
+      "score": 0.9916
+    },
+    {
+      "sent": "Earnings per share \u200b Earnings per share is computed as follows (in thousands except per share data): \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 2021 \u200b \u200b \u200b \u200b Weighted \u200b \u200b \u200b \u200b Net \u200b Average \u200b Per\u00a0Share \u200b \u200b \u200b Income \u200b Shares \u200b Amount \u200b Basic earnings per share \u200b $ 2,399,232 234,261 \u200b $ 10.24 \u200b Effect of dilutive share-based awards \u200b \u200b \u200b 1,551 \u200b \u200b \u200b \u200b Diluted earnings per share \u200b $ 2,399,232 235,812 \u200b $ 10.17 \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 2020 \u200b \u200b \u200b \u200b Weighted \u200b \u200b \u200b \u200b Net \u200b Average \u200b Per\u00a0Share \u200b \u200b \u200b Income \u200b Shares \u200b Amount \u200b Basic earnings per share \u200b $ 2,655,050 248,171 \u200b $ 10.70 \u200b Effect of dilutive share-based awards \u200b \u200b \u200b 1,905 \u200b \u200b \u200b \u200b Diluted earnings per share \u200b $ 2,655,050 250,076 \u200b $ 10.62 \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 2019 \u200b \u200b \u200b \u200b Weighted \u200b \u200b \u200b \u200b Net \u200b Average \u200b Per\u00a0Share \u200b \u200b \u200b Income \u200b Shares \u200b Amount \u200b Basic earnings per share \u200b $ 1,712,555 256,553 \u200b $ 6.68 \u200b Effect of dilutive share-based awards \u200b \u200b \u200b 1,500 \u200b \u200b \u200b \u200b Diluted earnings per share \u200b $ 1,712,555 258,053 \u200b $ 6.64 \u200b \u200b Basic earnings per share is computed by dividing net income by the weighted average number of shares of common stock outstanding during the year.",
+      "score": 0.9916
+    },
+    {
+      "sent": "Earnings per share \u200b Earnings per share is computed as follows (in thousands except per share data): \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 2021 \u200b \u200b \u200b \u200b Weighted \u200b \u200b \u200b \u200b Net \u200b Average \u200b Per\u00a0Share \u200b \u200b \u200b Income \u200b Shares \u200b Amount \u200b Basic earnings per share \u200b $ 2,399,232 234,261 \u200b $ 10.24 \u200b Effect of dilutive share-based awards \u200b \u200b \u200b 1,551 \u200b \u200b \u200b \u200b Diluted earnings per share \u200b $ 2,399,232 235,812 \u200b $ 10.17 \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 2020 \u200b \u200b \u200b \u200b Weighted \u200b \u200b \u200b \u200b Net \u200b Average \u200b Per\u00a0Share \u200b \u200b \u200b Income \u200b Shares \u200b Amount \u200b Basic earnings per share \u200b $ 2,655,050 248,171 \u200b $ 10.70 \u200b Effect of dilutive share-based awards \u200b \u200b \u200b 1,905 \u200b \u200b \u200b \u200b Diluted earnings per share \u200b $ 2,655,050 250,076 \u200b $ 10.62 \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b 2019 \u200b \u200b \u200b \u200b Weighted \u200b \u200b \u200b \u200b Net \u200b Average \u200b Per\u00a0Share \u200b \u200b \u200b Income \u200b Shares \u200b Amount \u200b Basic earnings per share \u200b $ 1,712,555 256,553 \u200b $ 6.68 \u200b Effect of dilutive share-based awards \u200b \u200b \u200b 1,500 \u200b \u200b \u200b \u200b Diluted earnings per share \u200b $ 1,712,555 258,053 \u200b $ 6.64 \u200b \u200b Basic earnings per share is computed by dividing net income by the weighted average number of shares of common stock outstanding during the year.",
+      "score": 0.9916
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK 40 \u200b ",
+      "score": -0.4278
+    },
+    {
+      "sent": "The occurrence of one or more natural disasters, such as hurricanes, fires, floods, tornadoes and earthquakes, unusual weather conditions, pandemic outbreaks or other health crises (including but not limited to the COVID-19 pandemic), political or civil unrest, acts of war, violence or terrorism (including within our stores, distribution centers or other Company property), or disruptive global political events (for example, the current conflict between Russia and Ukraine) or similar disruptions could adversely affect our reputation, business and financial performance.",
+      "score": -0.9836
+    },
+    {
+      "sent": "Additionally, such systems are subject to damage or interruption from power surges and outages, facility damage, physical theft, computer and telecommunications failures, inadequate or ineffective redundancy, malicious code (including malware, ransomware, or similar), successful attacks (e.g., account compromise; phishing; denial of service; and application, network or system vulnerability exploitation), software upgrade failures or code defects, natural disasters and human error.",
+      "score": -0.9738
+    },
+    {
+      "sent": "Additionally, such systems are subject to damage or interruption from power surges and outages, facility damage, physical theft, computer and telecommunications failures, inadequate or ineffective redundancy, malicious code (including malware, ransomware, or similar), successful attacks (e.g., account compromise; phishing; denial of service; and application, network or system vulnerability exploitation), software upgrade failures or code defects, natural disasters and human error.",
+      "score": -0.9738
+    }
+  ],
+  "forward_snippets": [
+    "\u200b Solely for convenience, our trademarks and tradenames may appear in this report without the \u00ae or TM symbol which is not intended to indicate that we will not assert, to the fullest extent under applicable law, our rights or the right to these trademarks and tradenames.",
+    "Many of these statements are derived from our operating budgets and forecasts, which are based on many detailed assumptions that we believe are reasonable.",
+    "We cannot assure you that we will realize the results or developments we expect or anticipate or, even if substantially realized, that they will result in the consequences or affect us or our operations in the way we expect.",
+    "\u200b Solely for convenience, our trademarks and tradenames may appear in this report without the \u00ae or TM symbol which is not intended to indicate that we will not assert, to the fullest extent under applicable law, our rights or the right to these trademarks and tradenames.",
+    "Many of these statements are derived from our operating budgets and forecasts, which are based on many detailed assumptions that we believe are reasonable."
+  ]
+}

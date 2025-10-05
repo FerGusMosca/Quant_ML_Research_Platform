@@ -1,0 +1,606 @@
+{
+  "symbol": "PEP",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-05",
+      "time": "Today 07:37AM",
+      "title": "Stocks trade at record highs as government shutdown leaves economic data in limbo: What to watch\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/stocks-trade-at-record-highs-as-government-shutdown-leaves-economic-data-in-limbo-what-to-watch-113726926.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:37AM",
+      "title": "Stocks trade at record highs as government shutdown leaves economic data in limbo: What to watch this week\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/stocks-trade-at-record-highs-as-government-shutdown-leaves-economic-data-in-limbo-what-to-watch-this-week-113726349.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30AM",
+      "title": "Startups Are Eating Big Food's Lunch\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/finance/stocks/startups-are-eating-big-foods-lunch-1906cf8e?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:00AM",
+      "title": "What to Expect in Markets This Week: Shutdown-Related Data Delays, Fed Speakers, Amazon Prime Days\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/67d8d912-d1ce-338d-8deb-e2b4506a8761/what-to-expect-in-markets.html"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "19:00",
+      "title": "Delta earnings, consumer data, Fed: What to Watch\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/delta-earnings-consumer-data-fed-230000821.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:40PM",
+      "title": "A Closer Look at the Evolving Earnings Picture\n\n\n(Zacks)",
+      "link": "/news/183789/a-closer-look-at-the-evolving-earnings-picture"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:02AM",
+      "title": "Constellation Brands Gears Up for Q2 Earnings: What's in the Offing?\n\n\n(Zacks)",
+      "link": "/news/183475/constellation-brands-gears-up-for-q2-earnings-whats-in-the-offing"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:47",
+      "title": "Pepsi's chips empire is losing its shine\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/pepsis-chips-empire-is-losing-its-shine-144704245.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:17AM",
+      "title": "Can MNST Lead the Next Wave of Global Energy Drink Growth?\n\n\n(Zacks)",
+      "link": "/news/182482/can-mnst-lead-the-next-wave-of-global-energy-drink-growth"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:11AM",
+      "title": "PepsiCo faces serious challenges in the snack aisle: 3 takeaways\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/pepsico-faces-serious-challenges-snack-141114320.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "PepsiCo (PEP) Expected to Beat Earnings Estimates: Should You Buy?\n\n\n(Zacks)",
+      "link": "/news/182457/pepsico-pep-expected-to-beat-earnings-estimates-should-you-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:55AM",
+      "title": "UBS Maintains a Buy on PepsiCo (PEP)\n\n\n(Insider Monkey)",
+      "link": "/news/181845/ubs-maintains-a-buy-on-pepsico-pep"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:00AM",
+      "title": "AP Top Financial News at 6:21 a.m. EDT\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/ap-top-financial-news-12-040000732.html"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "18:28",
+      "title": "Gatorade and Cheetos are among the Pepsi products getting a natural dye makeover\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/pepsicos-challenge-making-chips-sodas-222839992.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:50PM",
+      "title": "PepsiCo (PEP) Beats Stock Market Upswing: What Investors Need to Know\n\n\n(Zacks)",
+      "link": "/news/181600/pepsico-pep-beats-stock-market-upswing-what-investors-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:45PM",
+      "title": "The Week Ahead: Government Shutdown Could Impact Releases\n\n\n(Schaeffer's Research)",
+      "link": "/news/181284/the-week-ahead-government-shutdown-could-impact-releases"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:35PM",
+      "title": "Dividend Growth and Stability: PepsiCo's (PEP) Strength in the Consumer Staples Sector\n\n\n(Insider Monkey)",
+      "link": "/news/181265/dividend-growth-and-stability-pepsicos-pep-strength-in-the-consumer-staples-sector"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:14AM",
+      "title": "Can KDP's Energy Push & Coffee Revival Drive Sustainable Growth?\n\n\n(Zacks)",
+      "link": "/news/181112/can-kdps-energy-push-coffee-revival-drive-sustainable-growth"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "16:44",
+      "title": "Celsius Stock In Buy Zone After Upgrade; PepsiCo Deal Reenergizes Growth\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/839a84d5-6a62-390e-8000-1c17ce462a1d/celsius-stock-in-buy-zone.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:09AM",
+      "title": "Celsius Stock Breaks Out With Upgrade, PepsiCo Deal reenergizes Growth\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/news/celsius-celh-stock-buy-zone-rebound-moving-average-morgan-stanley-upgrade?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:08AM",
+      "title": "Celsius upgraded to Overweight at Morgan Stanley on growth momentum\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/celsius-upgraded-overweight-morgan-stanley-130853144.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:13AM",
+      "title": "PepsiCo splashes into dirty soda with new Mountain Dew flavor\n\n\n(Food Dive)",
+      "link": "https://finance.yahoo.com/m/0288d3b9-6d2a-32f2-a909-8f47d54387c0/pepsico-splashes-into-dirty.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00AM",
+      "title": "PepsiCo, Inc. (NASDAQ:PEP) Joins Step Up for Agriculture to Accelerate Regenerative Farming\n\n\n(Insider Monkey)",
+      "link": "/news/179044/pepsico-inc-nasdaq-pep-joins-step-up-for-agriculture-to-accelerate-regenerative-farming"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "09:20",
+      "title": "Can Coca-Cola Sustain Growth Amid Rising Beverage Competition?\n\n\n(Zacks)",
+      "link": "/news/178436/can-coca-cola-sustain-growth-amid-rising-beverage-competition"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:41AM",
+      "title": "Can Celsius Maintain Gross Margins Above 50% Amid Tariffs?\n\n\n(Zacks)",
+      "link": "/news/178238/can-celsius-maintain-gross-margins-above-50-amid-tariffs"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:11AM",
+      "title": "Want to be CEO? These 5 employers give you the best shot\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/want-ceo-5-employers-best-111128661.html"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "06:50",
+      "title": "My 2 Favorite Stocks to Buy Right Now\n\n\n(Motley Fool)",
+      "link": "/news/177683/my-2-favorite-stocks-to-buy-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:45AM",
+      "title": "5 Top Stocks to Buy in October\n\n\n(Motley Fool)",
+      "link": "/news/177674/5-top-stocks-to-buy-in-october"
+    },
+    {
+      "date": "2025-09-27",
+      "time": "04:15",
+      "title": "3 Dirt Cheap Stocks to Buy With $1,000 Right Now\n\n\n(Motley Fool)",
+      "link": "/news/177487/3-dirt-cheap-stocks-to-buy-with-1000-right-now"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "23:09",
+      "title": "What to Expect From PepsiCo's Next Quarterly Earnings Report\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/af765bb8-f975-30ff-b89c-2fec2a0cafd2/what-to-expect-from-pepsico%27s.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:02PM",
+      "title": "Analyst Report: Celsius Holdings, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/be4a16a4-14ff-35c6-ad61-1e29b34a1f65/analyst-report%3A-celsius.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:50AM",
+      "title": "Why Investors Need to Take Advantage of These 2 Consumer Staples Stocks Now\n\n\n(Zacks)",
+      "link": "/news/176818/why-investors-need-to-take-advantage-of-these-2-consumer-staples-stocks-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "Coca-Cola Stock Sell-Off: Should You Buy the Dip?\n\n\n(Motley Fool)",
+      "link": "/news/176683/coca-cola-stock-sell-off-should-you-buy-the-dip"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "17:50",
+      "title": "PepsiCo (PEP) Sees a More Significant Dip Than Broader Market: Some Facts to Know\n\n\n(Zacks)",
+      "link": "/news/176311/pepsico-pep-sees-a-more-significant-dip-than-broader-market-some-facts-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:01PM",
+      "title": "Hershey vs. Mondelez: Which Stock Wins Chocolate Season?\n\n\n(MarketBeat)",
+      "link": "/news/176156/hershey-vs-mondelez-which-stock-wins-chocolate-season"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:17AM",
+      "title": "New Speakers Announced: 5th Palm Beach CorpGov Forum | Preview Panelists & Topics\n\n\n(Exec Edge)",
+      "link": "https://finance.yahoo.com/news/speakers-announced-5th-palm-beach-151704690.html"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "08:36",
+      "title": "PepsiCo pressured by Elliott to weigh bottling spin-off\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/pepsico-pressured-elliott-weigh-bottling-123654020.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:28AM",
+      "title": "Jim Cramer on Pepsi: \"You Own That Stock, Do Not Trade It\"\n\n\n(Insider Monkey)",
+      "link": "/news/174191/jim-cramer-on-pepsi-you-own-that-stock-do-not-trade-it"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15AM",
+      "title": "3 Dividend Stocks Perfect for Millennial Investors\n\n\n(Motley Fool)",
+      "link": "/news/174217/3-dividend-stocks-perfect-for-millennial-investors"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "15:00",
+      "title": "Poppi sodas $8.9 million settlement: Customers can claim payoutsbut the deadline is this week. Heres how to file\n\n\n(FastCompany)",
+      "link": "https://finance.yahoo.com/m/8f85f591-658c-32f6-9e9c-7bba7acd5db1/poppi-soda%E2%80%99s-%248.9-million.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:12AM",
+      "title": "Some PepsiCo investors cautious of Elliott's plan to spin out bottling\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/pepsico-investors-cautious-elliotts-plan-101239412.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:12AM",
+      "title": "Some PepsiCo investors are still cautious about Elliott's plan to spin out bottling\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/pepsico-investors-cautious-elliotts-plan-101239631.html"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "21:36",
+      "title": "Heineken Buys Central American Assets in $3.2 Billion Deal\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/d11aaae4-9212-3724-bb1a-c6dabd5314c6/heineken-buys-central.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:05PM",
+      "title": "3 Top Dividend Stocks I Wouldn't Hesitate to Buy With $1,000 Right Now\n\n\n(Motley Fool)",
+      "link": "/news/172871/3-top-dividend-stocks-i-wouldnt-hesitate-to-buy-with-1000-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:58PM",
+      "title": "Heineken to buy FIFCO businesses for $3.2 billion in Central America push\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/heineken-buy-fifcos-beverage-retail-205853182.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:28PM",
+      "title": "Is PepsiCo's Gatorade Strategy Enough to Fend Off Its Rivals?\n\n\n(Zacks)",
+      "link": "/news/172536/is-pepsicos-gatorade-strategy-enough-to-fend-off-its-rivals"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:24PM",
+      "title": "Coca-Cola Builds on Away-From-Home Recovery: How Durable Is It?\n\n\n(Zacks)",
+      "link": "/news/172522/coca-cola-builds-on-away-from-home-recovery-how-durable-is-it"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:52AM",
+      "title": "Should You Buy the 3 Highest-Paying Dividend Stocks in the Nasdaq?\n\n\n(Motley Fool)",
+      "link": "/news/172434/should-you-buy-the-3-highest-paying-dividend-stocks-in-the-nasdaq"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "13:57",
+      "title": "1 Reason to Buy PepsiCo (PEP) Stock That's Been a Good Reason for More Than 50 Years\n\n\n(Motley Fool)",
+      "link": "/news/171692/1-reason-to-buy-pepsico-pep-stock-thats-been-a-good-reason-for-more-than-50-years"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:17AM",
+      "title": "My 3 Favorite Dividend Stocks to Buy Right Now\n\n\n(Motley Fool)",
+      "link": "/news/171586/my-3-favorite-dividend-stocks-to-buy-right-now"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "09:00",
+      "title": "Analysts Turn Bullish on Hershey-Is Pepsi the Next Value Play?\n\n\n(MarketBeat)",
+      "link": "/news/171406/analysts-turn-bullish-on-hershey-is-pepsi-the-next-value-play"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "18:52",
+      "title": "Building a Dividend Stock Portfolio: PepsiCo's (PEP) Stability and Growth Potential\n\n\n(Insider Monkey)",
+      "link": "/news/171267/building-a-dividend-stock-portfolio-pepsicos-pep-stability-and-growth-potential"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:56PM",
+      "title": "The 4 industries worst hit by tariffs so far\n\n\n(Quartz)",
+      "link": "https://finance.yahoo.com/m/34d64125-5ba0-3521-97a7-ea8920826deb/the-4-industries-worst-hit-by.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:16AM",
+      "title": "Will Emerging Markets Drive the Next Leg of Growth for Diageo?\n\n\n(Zacks)",
+      "link": "/news/170919/will-emerging-markets-drive-the-next-leg-of-growth-for-diageo"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:45AM",
+      "title": "2 Dividend Powerhouses to Buy Right Now\n\n\n(Motley Fool)",
+      "link": "/news/170630/2-dividend-powerhouses-to-buy-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:23AM",
+      "title": "How To Earn $500 A Month From PepsiCo Stock\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/earn-500-month-pepsico-stock-122354340.html"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "09:00",
+      "title": "PepsiCo, Unilever, and other Major Retail, Food, and Beverage Companies Launch \"STEP up for Agriculture\" Initiative\n\n\n(PR Newswire)",
+      "link": "/news/169435/pepsico-unilever-and-other-major-retail-food-and-beverage-companies-launch-step-up-for-agriculture-initiative"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "00:42",
+      "title": "3 Cash-Producing Stocks We Steer Clear Of\n\n\n(StockStory)",
+      "link": "/news/168014/3-cash-producing-stocks-we-steer-clear-of"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "15:15",
+      "title": "Celsius Takes Control Of Energy Drink Aisle With PepsiCo Partnership\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/celsius-takes-control-energy-drink-191520795.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:38PM",
+      "title": "Elevated Costs Challenge Coca-Cola: How Will the Brand Adapt?\n\n\n(Zacks)",
+      "link": "/news/167683/elevated-costs-challenge-coca-cola-how-will-the-brand-adapt"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:22AM",
+      "title": "PepsiCo vs. Monster Beverage: Which Is a Better Buy for Investors Now?\n\n\n(Zacks)",
+      "link": "/news/167550/pepsico-vs-monster-beverage-which-is-a-better-buy-for-investors-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:04AM",
+      "title": "CELH Surpasses 100% Gains in 2025: Is the Stock Still a Buy?\n\n\n(Zacks)",
+      "link": "/news/167521/celh-surpasses-100-gains-in-2025-is-the-stock-still-a-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:05AM",
+      "title": "Analysis-From Alphabet to Visa, US giants drive euro-denominated bond surge\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/analysis-alphabet-visa-us-giants-100555674.html"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "14:04",
+      "title": "McDonald's plans $200 million investment to promote regenerative practices on US cattle ranches\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/mcdonalds-plans-200-million-investment-180426129.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:38PM",
+      "title": "Can PepsiCo's Diverse Portfolio Outperform in a Soft Market?\n\n\n(Zacks)",
+      "link": "/news/166471/can-pepsicos-diverse-portfolio-outperform-in-a-soft-market"
+    },
+    {
+      "date": "2025-09-14",
+      "time": "08:01",
+      "title": "Why PepsiCo, Black Hills, And Tyson Foods Are Winners For Passive Income\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/why-pepsico-black-hills-tyson-120106144.html"
+    },
+    {
+      "date": "2025-09-13",
+      "time": "09:53",
+      "title": "Jim Cramer on Pepsi: \"You Let That Dividend Compound Over Time\"\n\n\n(Insider Monkey)",
+      "link": "/news/165487/jim-cramer-on-pepsi-you-let-that-dividend-compound-over-time"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "15:24",
+      "title": "Jim Cramer Says Maybe A Merger Would Solve PepsiCo, Inc. (PEP)'s Problems\n\n\n(Insider Monkey)",
+      "link": "/news/165240/jim-cramer-says-maybe-a-merger-would-solve-pepsico-inc-peps-problems"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30AM",
+      "title": "If Pepsi Wants to Win, It Has to Play Coke's Game\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/retail/if-pepsi-wants-to-win-it-has-to-play-cokes-game-c70762e4?mod=wsj_FV"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "17:45",
+      "title": "PepsiCo (PEP) Exceeds Market Returns: Some Facts to Consider\n\n\n(Zacks)",
+      "link": "/news/164322/pepsico-pep-exceeds-market-returns-some-facts-to-consider"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:25PM",
+      "title": "RH (RH) Q2 Earnings and Revenues Lag Estimates\n\n\n(Zacks)",
+      "link": "/news/164317/rh-rh-q2-earnings-and-revenues-lag-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15PM",
+      "title": "The Est\u00e9e Lauder Cos. Taps PepsiCos Ren\u00e9 Lammers as Chief Research & Innovation Officer\n\n\n(WWD)",
+      "link": "https://finance.yahoo.com/m/f4f1712d-0a2b-33d4-959b-c8b61d4c247b/the-est%C3%A9e-lauder-cos.-taps.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:58PM",
+      "title": "Analyst Report: Ambev S.A.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/295c902c-35d4-3d31-b1dc-4e1488a6c10d/analyst-report%3A-ambev-s.a..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:34AM",
+      "title": "Why Rate Cuts May Not Put the Fizz Back in Pepsi's Stock\n\n\n(MarketBeat)",
+      "link": "/news/163749/why-rate-cuts-may-not-put-the-fizz-back-in-pepsis-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:54AM",
+      "title": "Can Keurig's U.S. Refreshment Beverages Sustain Growth Momentum?\n\n\n(Zacks)",
+      "link": "/news/163670/can-keurigs-us-refreshment-beverages-sustain-growth-momentum"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:07AM",
+      "title": "Is PepsiCo a Buy After an Activist Investor Took a $4 Billion Stake in the Dividend King Stock?\n\n\n(Motley Fool)",
+      "link": "/news/163362/is-pepsico-a-buy-after-an-activist-investor-took-a-4-billion-stake-in-the-dividend-king-stock"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "12:00",
+      "title": "All You Need to Know About PepsiCo (PEP) Rating Upgrade to Buy\n\n\n(Zacks)",
+      "link": "/news/162835/all-you-need-to-know-about-pepsico-pep-rating-upgrade-to-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:48AM",
+      "title": "PepsiCo Partnership Puts Celsius Holdings on Faster Growth Track\n\n\n(Zacks)",
+      "link": "/news/162692/pepsico-partnership-puts-celsius-holdings-on-faster-growth-track"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:27AM",
+      "title": "Celsius makes marketing hires to build mega brands\n\n\n(Just Drinks)",
+      "link": "https://finance.yahoo.com/m/ce970bce-413d-34be-bd36-ea8dabd7805f/celsius-makes-marketing-hires.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:05AM",
+      "title": "3 Dividend-Paying Growth Stocks to Double Up on and Buy in September\n\n\n(Motley Fool)",
+      "link": "/news/162125/3-dividend-paying-growth-stocks-to-double-up-on-and-buy-in-september"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "19:30",
+      "title": "This High-Yield Dividend Stock Is Getting a Makeover. Should You Buy Shares Here?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/4cdf2168-222b-3689-b055-0c889a5c0117/this-high-yield-dividend.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:36PM",
+      "title": "Coca-Cola Stock Slides Below 200-Day SMA: Buy, Sell or Stay Invested?\n\n\n(Zacks)",
+      "link": "/news/161599/coca-cola-stock-slides-below-200-day-sma-buy-sell-or-stay-invested"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:02PM",
+      "title": "Elliotts Friendly Proposals for Pepsi Turnaround May Not Yield Much, This Analyst Says\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/98a682fa-a32b-3226-a90e-b5cc661cc3c1/elliott%E2%80%99s-%E2%80%98friendly%E2%80%99.html"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "19:33",
+      "title": "PepsiCo (PEP) Stock Sinks As Market Gains: Here's Why\n\n\n(Zacks)",
+      "link": "/news/160660/pepsico-pep-stock-sinks-as-market-gains-heres-why"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:37PM",
+      "title": "Analyst Report: Celsius Holdings, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/2118b234-9c23-319f-86c6-022b758af6eb/analyst-report%3A-celsius.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:44PM",
+      "title": "Cramer's Stop Trading: PepsiCo\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=TZYhKtn4EHI"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:40PM",
+      "title": "Will Coca-Cola's Healthier Options Continue to Win Over Consumers?\n\n\n(Zacks)",
+      "link": "/news/160239/will-coca-colas-healthier-options-continue-to-win-over-consumers"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:27PM",
+      "title": "PepsiCo Showcases Emerging Market Growth: Sustainable or Cyclical?\n\n\n(Zacks)",
+      "link": "/news/160236/pepsico-showcases-emerging-market-growth-sustainable-or-cyclical"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "Trian Partners Co-CIO Josh Frank to Keynote 5th Palm Beach CorpGov Forum\n\n\n(CorpGov.com)",
+      "link": "https://finance.yahoo.com/news/trian-partners-co-cio-josh-154009423.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:21AM",
+      "title": "Astera Labs and JD.com have been highlighted as Zacks Bull and Bear of the Day\n\n\n(Zacks)",
+      "link": "/news/160065/astera-labs-and-jdcom-have-been-highlighted-as-zacks-bull-and-bear-of-the-day"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:54AM",
+      "title": "NVDA: Nvidia Insiders Cashes Out Millions Amid AI Stock Surge\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/nvda-nvidia-insiders-cashes-millions-125406440.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Celsius bolsters C-suite with brand and creative officer roles\n\n\n(Food Dive)",
+      "link": "https://finance.yahoo.com/m/812c2987-4781-3159-b61b-b3be30ef240b/celsius-bolsters-c-suite-with.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Celsius bolsters C-suite after PepsiCo deal with new brand and creative officer roles\n\n\n(Food Dive)",
+      "link": "https://finance.yahoo.com/m/812c2987-4781-3159-b61b-b3be30ef240b/celsius-bolsters-c-suite.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:33AM",
+      "title": "Portillos hires Marcos Pizza exec as CMO\n\n\n(Restaurant Dive)",
+      "link": "https://finance.yahoo.com/m/5f59dd3d-265e-3241-89ad-ac739a421290/portillo%E2%80%99s-hires-marco%E2%80%99s.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30AM",
+      "title": "PepsiCo CEO's Tall Order: Win Over Investor Calling for Strategy Reset\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/retail/pepsico-ceos-tall-order-win-over-investor-calling-for-strategy-reset-95378d30?mod=wsj_FV"
+    },
+    {
+      "date": "2025-09-07",
+      "time": "06:45",
+      "title": "3 Beaten-Down High-Yield Dividend Stocks to Double Up on and Buy in September\n\n\n(Motley Fool)",
+      "link": "/news/159459/3-beaten-down-high-yield-dividend-stocks-to-double-up-on-and-buy-in-september"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "11:35",
+      "title": "Where Coca-Cola Is Winning: A Deep Dive Into Segment Performance\n\n\n(Zacks)",
+      "link": "/news/159008/where-coca-cola-is-winning-a-deep-dive-into-segment-performance"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:03AM",
+      "title": "Zacks Investment Ideas feature highlights: Celsius, Monster and PepsiCo\n\n\n(Zacks)",
+      "link": "/news/158916/zacks-investment-ideas-feature-highlights-celsius-monster-and-pepsico"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:53AM",
+      "title": "This Underrated Consumer Goods Stock Could See Big Returns\n\n\n(Motley Fool)",
+      "link": "/news/158863/this-underrated-consumer-goods-stock-could-see-big-returns"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:49AM",
+      "title": "Why Hedge Fund Elliott Bet $4B on Pepsi and Sees Over 50% Upside\n\n\n(MarketBeat)",
+      "link": "/news/158828/why-hedge-fund-elliott-bet-4b-on-pepsi-and-sees-over-50-upside"
+    }
+  ]
+}

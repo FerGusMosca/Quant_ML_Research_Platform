@@ -1,0 +1,47 @@
+{
+  "symbol": "KDP",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1837,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.06
+  },
+  "top_positive": [
+    {
+      "sent": "RECONCILIATION OF CERTAIN REPORTED ITEMS TO CERTAIN NON-GAAP ADJUSTED ITEMS (Unaudited, in millions, except per share and percentages) Interest expense Loss on early extinguishment of debt Impairment of investments and note receivable Other expense (income), net Income before provision for income taxes (Benefit) provision for income taxes Effective tax rate Net income attributable to KDP Diluted earnings per share For the Second Quarter of 2022 Reported $ 175 $ 169 $ 6 $ 9 $ 213 $ (5) (2.3) % $ 218 $ 0.15 Items Affecting Comparability: Mark to market (63) \u2014 \u2014 1 200 49 151 0.11 Amortization of intangibles \u2014 \u2014 \u2014 \u2014 33 8 25 0.02 Amortization of deferred financing costs (1) \u2014 \u2014 \u2014 1 \u2014 1 \u2014 Amortization of fair value debt adjustment (4) \u2014 \u2014 \u2014 4 1 3 \u2014 Stock compensation \u2014 \u2014 \u2014 \u2014 5 (2) 7 \u2014 Restructuring and integration costs \u2014 \u2014 \u2014 \u2014 22 5 17 0.01 Productivity \u2014 \u2014 \u2014 \u2014 52 10 42 0.03 Impairment of investment \u2014 \u2014 (6) \u2014 6 \u2014 6 \u2014 Loss on early extinguishment of debt \u2014 (169) \u2014 \u2014 169 43 126 0.09 Non-routine legal matters \u2014 \u2014 \u2014 \u2014 3 1 2 \u2014 COVID-19 \u2014 \u2014 \u2014 \u2014 4 1 3 \u2014 Transaction costs \u2014 \u2014 \u2014 \u2014 1 \u2014 1 \u2014 Foundational projects \u2014 \u2014 \u2014 \u2014 2 \u2014 2 \u2014 Change in deferred tax liabilities related to goodwill and other intangible assets \u2014 \u2014 \u2014 \u2014 \u2014 50 (50) (0.03) Adjusted $ 107 $ \u2014 $ \u2014 $ 10 $ 715 $ 161 22.5 % $ 554 $ 0.39 Impact of foreign currency 0.1 % Constant currency adjusted 22.6 % For the Second Quarter of 2021 Reported $ 125 $ \u2014 $ \u2014 $ (4) $ 613 $ 165 26.9 % $ 448 $ 0.31 Items Affecting Comparability: Mark to market (1) \u2014 \u2014 \u2014 (37) (9) (28) (0.02) Amortization of intangibles \u2014 \u2014 \u2014 \u2014 34 9 25 0.02 Amortization of deferred financing costs (1) \u2014 \u2014 \u2014 1 \u2014 1 \u2014 Amortization of fair value of debt adjustment (4) \u2014 \u2014 \u2014 4 \u2014 4 \u2014 Stock compensation \u2014 \u2014 \u2014 \u2014 5 2 3 \u2014 Restructuring and integration costs \u2014 \u2014 \u2014 \u2014 49 11 38 0.03 Productivity \u2014 \u2014 \u2014 \u2014 38 10 28 0.02 Non-routine legal matters \u2014 \u2014 \u2014 \u2014 6 1 5 \u2014 COVID-19 \u2014 \u2014 \u2014 \u2014 11 3 8 0.01 Change in deferred tax liabilities related to goodwill and other intangible assets \u2014 \u2014 \u2014 \u2014 \u2014 (6) 6 \u2014 Adjusted $ 119 $ \u2014 $ \u2014 $ (4) $ 724 $ 186 25.7 % $ 538 $ 0.38 Change - adjusted (10.1) % 3.0 % 2.6 % Impact of foreign currency \u2014 % 0.3 % \u2014 % Change - constant currency adjusted (10.1) % 3.3 % 2.6 % Diluted earnings per common share may not foot due to rounding.",
+      "score": 0.9569
+    },
+    {
+      "sent": "We believe our integrated business model strengthens our route-to-market and provides opportunities for net sales and profit growth through the alignment of the economic interests of our brand ownership and our manufacturing and distribution businesses through both our\u00a0DSD\u00a0and our\u00a0WD\u00a0systems.",
+      "score": 0.948
+    },
+    {
+      "sent": "We believe our integrated business model strengthens our route-to-market and provides opportunities for net sales and profit growth through the alignment of the economic interests of our brand ownership and our manufacturing and distribution businesses through both our\u00a0DSD\u00a0and our\u00a0WD\u00a0systems.",
+      "score": 0.948
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The case was scheduled to proceed to a third phase for trial on damages, remedies and attorneys' fees, but such trial did not occur in light of California\u2019s Office of Environmental Health Hazard Assessment proposal of a new Proposition 65 regulation clarifying that cancer warnings are not required for chemicals, such as acrylamide, that are present in coffee as a result of roasting coffee beans.",
+      "score": -0.8968
+    },
+    {
+      "sent": "However, the Company believes that the likelihood that it will incur a material loss in connection with the CERT litigation is remote and accordingly, no loss contingency has been recorded.",
+      "score": -0.765
+    },
+    {
+      "sent": "BC461182), alleging that Keurig, and certain other defendants who manufacture, package, distribute or sell coffee, failed to warn persons in California that Keurig's coffee products expose persons to the chemical acrylamide in violation of Proposition 65.",
+      "score": -0.7506
+    }
+  ],
+  "forward_snippets": [
+    "KDP has also identified certain other legal matters where we believe an unfavorable outcome is reasonably possible and/or for which no estimate of possible losses can be made.",
+    "Forward-looking statements include all statements that are not historical facts and can be identified by the use of forward-looking terminology such as \u201coutlook,\u201d \u201cguidance,\u201d \u201canticipate,\u201d \u201cexpect,\u201d \u201cbelieve,\u201d \u201ccould,\u201d \u201cestimate,\u201d \u201cfeel,\u201d \u201cforecast,\u201d \u201cintend,\u201d \u201cmay,\u201d \u201cplan,\u201d \u201cpotential,\u201d \u201cproject,\u201d \u201cshould,\u201d \u201ctarget,\u201d \u201cwill,\u201d \u201cwould,\u201d and similar words, phrases or expressions and variations or negatives of these words in this Quarterly Report on Form 10-Q.",
+    "We believe our integrated business model strengthens our route-to-market and provides opportunities for net sales and profit growth through the alignment of the economic interests of our brand ownership and our manufacturing and distribution businesses through both our\u00a0DSD\u00a0and our\u00a0WD\u00a0systems.",
+    "30 Table of Contents Uncertainties and Trends Affecting Our Business We believe the North American beverage market is influenced by certain key trends and uncertainties.",
+    "Forward-looking statements include all statements that are not historical facts and can be identified by the use of forward-looking terminology such as \u201coutlook,\u201d \u201cguidance,\u201d \u201canticipate,\u201d \u201cexpect,\u201d \u201cbelieve,\u201d \u201ccould,\u201d \u201cestimate,\u201d \u201cfeel,\u201d \u201cforecast,\u201d \u201cintend,\u201d \u201cmay,\u201d \u201cplan,\u201d \u201cpotential,\u201d \u201cproject,\u201d \u201cshould,\u201d \u201ctarget,\u201d \u201cwill,\u201d \u201cwould,\u201d and similar words, phrases or expressions and variations or negatives of these words in this Quarterly Report on Form 10-Q."
+  ]
+}

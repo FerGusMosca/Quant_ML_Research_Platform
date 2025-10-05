@@ -1,0 +1,47 @@
+{
+  "symbol": "CMG",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2512,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.093
+  },
+  "top_positive": [
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME AND COMPREHENSIVE INCOME (in thousands, except per share data) (unaudited) Three months ended March 31, 2023 2022 Food and beverage revenue $ 2,351,009 $ 1,998,956 Delivery service revenue 17,571 21,583 Total revenue 2,368,580 2,020,539 Restaurant operating costs (exclusive of depreciation and amortization shown separately below): Food, beverage and packaging 692,559 626,926 Labor 583,794 531,940 Occupancy 121,931 112,032 Other operating costs 363,206 330,695 General and administrative expenses 148,340 147,402 Depreciation and amortization 76,585 71,665 Pre-opening costs 6,198 5,348 Impairment, closure costs, and asset disposals 8,361 4,310 Total operating expenses 2,000,974 1,830,318 Income from operations 367,606 190,221 Interest and other income (expense), net 8,949 ( 213 ) Income before income taxes 376,555 190,008 Provision for income taxes ( 84,911 ) ( 31,714 ) Net income $ 291,644 $ 158,294 Earnings per share: Basic $ 10.56 $ 5.64 Diluted $ 10.50 $ 5.59 Weighted-average common shares outstanding: Basic 27,624 28,043 Diluted 27,788 28,301 Other comprehensive income, net of income taxes: Foreign currency translation adjustments $ 457 $ 195 Comprehensive income $ 292,101 $ 158,489 See accompanying notes to condensed consolidated financial statements.",
+      "score": 0.9684
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED BALANCE SHEETS (in thousands, except per share data) March 31, December 31, 2023 2022 (unaudited) Assets Current assets: Cash and cash equivalents $ 409,727 $ 384,000 Accounts receivable, net 65,869 106,880 Inventory 34,599 35,668 Prepaid expenses and other current assets 98,389 86,412 Income tax receivable - 47,741 Investments 652,858 515,136 Total current assets 1,261,442 1,175,837 Leasehold improvements, property and equipment, net 1,981,329 1,951,147 Long-term investments 368,023 388,055 Restricted cash 25,133 24,966 Operating lease assets 3,334,277 3,302,402 Other assets 61,229 63,158 Goodwill 21,939 21,939 Total assets $ 7,053,372 $ 6,927,504 Liabilities and shareholders' equity Current liabilities: Accounts payable $ 182,606 $ 184,566 Accrued payroll and benefits 116,465 170,456 Accrued liabilities 160,436 147,539 Unearned revenue 157,898 183,071 Current operating lease liabilities 239,029 236,248 Income tax payable 37,658 - Total current liabilities 894,092 921,880 Commitments and contingencies (Note 11) Long-term operating lease liabilities 3,532,566 3,495,162 Deferred income tax liabilities 98,137 98,623 Other liabilities 46,892 43,816 Total liabilities 4,571,687 4,559,481 Shareholders' equity: Preferred stock, $ 0.01 par value, 600,000 shares authorized, no shares issued as of March 31, 2023 and December 31, 2022, respectively - - Common stock, $ 0.01 par value, 230,000 shares authorized, 37,419 and 37,320 shares issued as of March 31, 2023 and December 31, 2022, respectively 374 373 Additional paid-in capital 1,849,683 1,829,304 Treasury stock, at cost, 9,818 and 9,693 common shares as of March 31, 2023 and December 31, 2022, respectively ( 4,480,833 ) ( 4,282,014 ) Accumulated other comprehensive loss ( 7,431 ) ( 7,888 ) Retained earnings 5,119,892 4,828,248 Total shareholders' equity 2,481,685 2,368,023 Total liabilities and shareholders' equity $ 7,053,372 $ 6,927,504 See accompanying notes to condensed consolidated financial statements.",
+      "score": 0.9538
+    },
+    {
+      "sent": "The gift card liability included in unearned revenue on the condensed consolidated balance sheets was as follows: March 31, December 31, 2023 2022 Gift card liability $ 118,684 $ 145,014 5 Table of Contents Revenue recognized from the redemption of gift cards that was included in unearned revenue at the beginning of the year was as follows: Three months ended March 31, 2023 2022 Revenue recognized from gift card liability balance at the beginning of the year $ 38,878 $ 37,435 Chipotle Rewards We have a loyalty program called Chipotle Rewards.",
+      "score": 0.9509
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These statements are subject to risks and uncertainties that could cause actual results to differ materially from those described in the statements, including but not limited to: uncertainty regarding the resurgence of COVID-19 infections and its ultimate impact on our business; increasing wage inflation and the competitive labor market, which impacts our ability to attract and retain qualified employees and has resulted in occasional staffing shortages; the impact of any union organizing efforts and our responses to such efforts; increasing supply costs (including beef, avocados and packaging); risks of food safety incidents and food-borne illnesses; risks associated with our reliance on certain information technology systems and potential material failures or interruptions; privacy and cyber security risks, including risk of breaches, unauthorized access, theft, modification or destruction of guest or employee personal or confidential information stored on our network or the network of third party providers; the impact of competition, including from sources outside the restaurant industry; the financial impact of increasing our average hourly wages; the impact of federal, state or local government regulations relating to our employees, employment practices, restaurant design and construction, and the sale of food or alcoholic beverages; our ability to achieve our planned growth, such as the availability of suitable new restaurant sites and the availability of construction materials and contractors; increases in ingredient and other operating costs due to inflation, global conflicts, climate change, our Food with Integrity philosophy, tariffs or trade restrictions and supply shortages; the uncertainty of our ability to achieve expected levels of comparable restaurant sales due to factors such as changes in consumers' perceptions of our brand, including as a result of actual or rumored food safety concerns or other negative publicity, decreased consumer spending (including as a result of higher inflation, mass layoffs, fear of possible recession and higher energy prices), or the inability to increase menu prices or realize the benefits of menu price increases; risks associated with our digital business, including risks arising from our reliance on third party delivery services; risks relating to litigation, including possible governmental actions and potential class action litigation related to food safety incidents, cybersecurity incidents, employment or privacy laws, advertising claims or other matters; and other risk factors described from time to time in our SEC reports, including our Annual Report on Form 10-K for the year ended December 31, 2022, and in other reports filed with the SEC, all of which are available on the investor relations page of our website at ir.Chipotle.com.",
+      "score": -0.8122
+    },
+    {
+      "sent": "Critical Accounting Estimates Critical accounting estimates are those that we believe are both significant and that require us to make difficult, subjective or complex judgments, often because we need to estimate the effect of inherently uncertain matters.",
+      "score": -0.7506
+    },
+    {
+      "sent": "We also could experience shortages of key ingredients for many unforeseen reasons, such as crop damage due to inclement weather, if our suppliers need to close or restrict operations, or due to industry-wide shipping and freight delays.",
+      "score": -0.7506
+    }
+  ],
+  "forward_snippets": [
+    "2020-04, \u201cReference Rate Reform (Topic 848): Facilitation of the Effects of Reference Rate Reform on Financial Reporting.\u201d The pronouncement provides temporary optional expedients and exceptions to the current guidance on contract modifications and hedge accounting to ease the financial reporting burden related to the expected market transition from the London Interbank Offered Rate (\"LIBOR\") and other interbank offered rates to alternative reference rates.",
+    "The guidance was effective upon issuance and generally can be applied to applicable contract modifications through December 31, 2024.",
+    "Our estimate of points and rewards we expect to be redeemed is based on historical and other company specific data.",
+    "2020-04, \u201cReference Rate Reform (Topic 848): Facilitation of the Effects of Reference Rate Reform on Financial Reporting.\u201d The pronouncement provides temporary optional expedients and exceptions to the current guidance on contract modifications and hedge accounting to ease the financial reporting burden related to the expected market transition from the London Interbank Offered Rate (\"LIBOR\") and other interbank offered rates to alternative reference rates.",
+    "The guidance was effective upon issuance and generally can be applied to applicable contract modifications through December 31, 2024."
+  ]
+}

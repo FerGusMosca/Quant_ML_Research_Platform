@@ -1,0 +1,47 @@
+{
+  "symbol": "KDP",
+  "year": 2023,
+  "Period": "Y2023",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1925,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.199
+  },
+  "top_positive": [
+    {
+      "sent": "Omnibus Incentive Plan of 2019 2019 KDP Term Loan KDP\u2019s $2 billion term loan, executed in February 2019 and terminated in March 2021 2020 364-Day Credit Agreement The Company's $1,500 million credit agreement, which was entered into on April 12, 2020 and replaced the 2019 364-Day Credit Agreement 2021 364-Day Credit Agreement The Company's $1,500 million credit agreement, which was entered into on March 26, 2021 and contains a term-out option 2022 Revolving Credit Agreement KDP\u2019s $4 billion revolving credit agreement, which was executed in February 2022 and replaced the 2021 364-Day Credit Agreement and the KDP Revolver 2022 Strategic Refinancing A series of transactions in April 2022, whereby KDP issued the 2029 Notes, the 2032 Notes, and the 2052 Notes, and voluntarily prepaid and retired the remaining 2023 Merger Notes and tendered portions of the 2025 Merger Notes, the 2028 Merger Notes, the 2038 Merger Notes and the 2048 Merger Notes A Shoc Adrenaline Shoc, an equity method investment of KDP and a brand of energy drinks ABC The American Bottling Company, a wholly-owned subsidiary of KDP ABI Anheuser-Busch InBev SA/NV AOCI Accumulated other comprehensive income or loss ASU Accounting Standards Update Athletic Brewing Athletic Brewing Holding Company, LLC, an equity method investment of KDP Bedford Bedford Systems, LLC, an equity method investment of KDP and the maker of Drinkworks Board The Board of Directors of KDP BodyArmor BA Sports Nutrition, LLC bps basis points CARES Act U.S.",
+      "score": 0.9942
+    },
+    {
+      "sent": "For the indefinite-lived intangible assets quantitatively assessed, holding all other assumptions in the analysis constant, including the discrete period revenue and profit performance assumptions as well as the discount rates, the effect of a 0.50% decrease in the long-term revenue growth rate used to determine the fair value of those brands as of October 1, 2022, would impact the amount of headroom over the carrying value of those brands as follows (in millions): Selected Long-Term Growth Rate Long-Term Growth Rate Decrease of 0.50% Headroom Percentage Carrying Value Fair Value Carrying Value Fair Value Brands 0% (1) $ 2,136 $ 2,136 $ 2,396 $ 2,271 Less than 25% 2,186 2,547 1,926 2,153 26 - 50% \u2014 \u2014 2,351 3,515 In excess of 50% 14,848 28,942 12,497 23,257 (1) Carrying value reflects the results of the annual impairment analysis recognized during the year ende\ntitled non-GAAP financial measures presented by other companies, and other companies may not define these non-GAAP financial measures in the same way.",
+      "score": 0.9851
+    },
+    {
+      "sent": "For the indefinite-lived intangible assets quantitatively assessed, holding all other assumptions in the analysis constant, including the revenue and profit performance assumption, the effect of a 0.50% increase in the discount rate used to determine the fair value of those brands as of October 1, 2022, would impact the amount of headroom over the carrying value of those brands as follows (in millions): Selected Discount Rate Discount Rate Increase of 0.50% Headroom Percentage Carrying Value Fair Value Carrying Value Fair Value Brands 0% (1) $ 2,136 $ 2,136 $ 2,710 $ 2,537 Less than 25% 2,186 2,547 1,612 1,799 26 - 50% \u2014 \u2014 2,351 3,446 In excess of 50% 14,848 28,942 12,497 22,797 (1) Carrying value reflects the results of the annual impairment analysis recognized during the year ended December 31, 2022.",
+      "score": 0.9796
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The disruption could occur for many reasons, including fire, natural disasters, weather, water scarcity, manufacturing problems, disease, widespread illness (such as the COVID-19 pandemic), strikes, labor shortages, transportation or supply interruption, contractual dispute, government regulation, cybersecurity attacks or terrorism.",
+      "score": -0.9781
+    },
+    {
+      "sent": "The failure of our suppliers to meet our needs could occur for many reasons, including fires, natural disasters, weather, manufacturing problems, disease, widespread illness (such as the COVID-19 pandemic), crop failure, strikes, transportation disruption, government regulation, political instability, cybersecurity attacks and terrorism.",
+      "score": -0.9766
+    },
+    {
+      "sent": "The failure of our suppliers to meet our needs could occur for many reasons, including fires, natural disasters, weather, manufacturing problems, disease, widespread illness (such as the COVID-19 pandemic), crop failure, strikes, transportation disruption, government regulation, political instability, cybersecurity attacks and terrorism.",
+      "score": -0.9766
+    }
+  ],
+  "forward_snippets": [
+    "We believe that our team and the culture we have created, through the integration of two companies into one, are truly our competitive advantage.",
+    "2 Table of Contents PRODUCT AND PACKAGE INNOVATION We are focused on a robust innovation pipeline within our portfolio of products to build household penetration of our business.",
+    "We also launched Keurig iQ, a proprietary database providing insights on K-Cup pod consumption and shopping behaviors that we believe will enhance our consumer experience.",
+    "2 Table of Contents PRODUCT AND PACKAGE INNOVATION We are focused on a robust innovation pipeline within our portfolio of products to build household penetration of our business.",
+    "We also launched Keurig iQ, a proprietary database providing insights on K-Cup pod consumption and shopping behaviors that we believe will enhance our consumer experience."
+  ]
+}

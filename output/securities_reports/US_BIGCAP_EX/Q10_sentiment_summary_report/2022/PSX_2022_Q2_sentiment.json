@@ -1,0 +1,47 @@
+{
+  "symbol": "PSX",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1559,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.112
+  },
+  "top_positive": [
+    {
+      "sent": "20 Table of Contents Note 12\u2014 Fair Value Measurements Recurring Fair Value Measurements We carry certain assets and liabilities at fair value, which we measure at the reporting date using the price that would be received to sell an asset or paid to transfer a liability (i.e., an exit price), and disclose the quality of these fair values based on the valuation inputs used in these measurements under the following hierarchy: \u2022 Level 1: Fair value measured with unadjusted quoted prices from an active market for identical assets or liabilities.",
+      "score": 0.9753
+    },
+    {
+      "sent": "1 Table of Contents Consolidated Statement of Comprehensive Income (Loss) Phillips\u00a066 Millions of Dollars Three Months Ended June 30 Six Months Ended June 30 2022 2021 2022 2021 Net Income (Loss) $ 3,182 374 3,839 ( 265 ) Other comprehensive income (loss) Defined benefit plans Net actuarial gain (loss) arising during the period ( 13 ) 210 ( 13 ) 210 Amortization of net actuarial loss, prior service credit and settlements 40 47 51 69 Plans sponsored by equity affiliates 1 23 6 29 Income taxes on defined benefit plans ( 5 ) ( 68 ) ( 8 ) ( 74 ) Defined benefit plans, net of income taxes 23 212 36 234 Foreign currency translation adjustments ( 245 ) 19 ( 327 ) 4 Income taxes on foreign currency translation adjustments 3 \u2014 3 \u2014 Foreign currency translation adjustments, net of income taxes ( 242 ) 19 ( 324 ) 4 Cash flow hedges \u2014 1 \u2014 3 Income taxes on hedging activities \u2014 ( 1 ) \u2014 ( 1 ) Hedging activities, net of income taxes \u2014 \u2014 \u2014 2 Other Comprehensive Income (Loss), Net of Income Taxes ( 219 ) 231 ( 288 ) 240 Comprehensive Income (Loss) 2,963 605 3,551 ( 25 ) Less: comprehensive income attributable to noncontrolling interests 15 78 90 93 Comprehensive Income (Loss) Attributable to Phillips 66 $ 2,948 527 3,461 ( 118 ) See Notes to Consolidated Financial Statements.",
+      "score": 0.9729
+    },
+    {
+      "sent": "Components of Net Periodic Benefit Cost Three Months Ended June 30 Service cost $ 35 7 37 8 1 2 Interest cost 21 5 20 4 2 1 Expected return on plan assets ( 39 ) ( 15 ) ( 41 ) ( 14 ) \u2014 \u2014 Amortization of prior service credit \u2014 \u2014 \u2014 \u2014 ( 1 ) \u2014 Amortization of net actuarial loss (gain) 6 3 14 6 \u2014 ( 1 ) Settlements 24 \u2014 29 \u2014 \u2014 \u2014 Net periodic benefit cost* $ 47 \u2014 59 4 2 2 Six Months Ended June 30 Service cost $ 70 15 74 17 2 3 Interest cost 42 11 40 9 3 2 Expected return on plan assets ( 78 ) ( 31 ) ( 82 ) ( 29 ) \u2014 \u2014 Amortization of prior service credit \u2014 \u2014 \u2014 \u2014 ( 1 ) ( 1 ) Recognized net actuarial loss (gain) 12 6 29 12 ( 1 ) ( 1 ) Settlements 25 \u2014 29 \u2014 \u2014 \u2014 Net periodic benefit cost* $ 71 1 90 9 3 3 * Included in the \u201cOperating expenses\u201d and \u201cSelling, general and administrative expenses\u201d line items on our consolidated statement of operations.",
+      "score": 0.9628
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "37 Table of Contents Thousands of Barrels Daily Three Months Ended June 30 Six Months Ended June 30 Operating Statistics 2022 2021 2022 2021 Refining operations* Atlantic Basin/Europe Crude oil capacity 537 537 537 537 Crude oil processed 526 513 515 476 Capacity utilization (percent) 98 % 96 96 89 Refinery production 550 552 544 517 Gulf Coast** Crude oil capacity 529 784 529 784 Crude oil processed 500 687 498 620 Capacity utilization (percent) 94 % 88 94 79 Refinery production 586 763 588 683 Central Corridor Crude oil capacity 531 531 531 531 Crude oil processed 435 462 444 423 Capacity utilization (percent) 82 % 87 84 80 Refinery production 446 475 460 436 West Coast Crude oil capacity 364 364 364 364 Crude oil processed 306 286 300 278 Capacity utilization (percent) 84 % 79 82 76 Refinery production 330 307 326 298 Worldwide Crude oil capacity 1,961 2,216 1,961 2,216 Crude oil processed 1,767 1,948 1,757 1,797 Capacity utilization (percent) 90 % 88 90 81 Refinery production 1,912 2,097 1,918 1,934 * Includes our share of equity affiliates.",
+      "score": -0.9889
+    },
+    {
+      "sent": "37 Table of Contents Thousands of Barrels Daily Three Months Ended June 30 Six Months Ended June 30 Operating Statistics 2022 2021 2022 2021 Refining operations* Atlantic Basin/Europe Crude oil capacity 537 537 537 537 Crude oil processed 526 513 515 476 Capacity utilization (percent) 98 % 96 96 89 Refinery production 550 552 544 517 Gulf Coast** Crude oil capacity 529 784 529 784 Crude oil processed 500 687 498 620 Capacity utilization (percent) 94 % 88 94 79 Refinery production 586 763 588 683 Central Corridor Crude oil capacity 531 531 531 531 Crude oil processed 435 462 444 423 Capacity utilization (percent) 82 % 87 84 80 Refinery production 446 475 460 436 West Coast Crude oil capacity 364 364 364 364 Crude oil processed 306 286 300 278 Capacity utilization (percent) 84 % 79 82 76 Refinery production 330 307 326 298 Worldwide Crude oil capacity 1,961 2,216 1,961 2,216 Crude oil processed 1,767 1,948 1,757 1,797 Capacity utilization (percent) 90 % 88 90 81 Refinery production 1,912 2,097 1,918 1,934 * Includes our share of equity affiliates.",
+      "score": -0.9889
+    },
+    {
+      "sent": "37 Table of Contents Thousands of Barrels Daily Three Months Ended June 30 Six Months Ended June 30 Operating Statistics 2022 2021 2022 2021 Refining operations* Atlantic Basin/Europe Crude oil capacity 537 537 537 537 Crude oil processed 526 513 515 476 Capacity utilization (percent) 98 % 96 96 89 Refinery production 550 552 544 517 Gulf Coast** Crude oil capacity 529 784 529 784 Crude oil processed 500 687 498 620 Capacity utilization (percent) 94 % 88 94 79 Refinery production 586 763 588 683 Central Corridor Crude oil capacity 531 531 531 531 Crude oil processed 435 462 444 423 Capacity utilization (percent) 82 % 87 84 80 Refinery production 446 475 460 436 West Coast Crude oil capacity 364 364 364 364 Crude oil processed 306 286 300 278 Capacity utilization (percent) 84 % 79 82 76 Refinery production 330 307 326 298 Worldwide Crude oil capacity 1,961 2,216 1,961 2,216 Crude oil processed 1,767 1,948 1,757 1,797 Capacity utilization (percent) 90 % 88 90 81 Refinery production 1,912 2,097 1,918 1,934 * Includes our share of equity affiliates.",
+      "score": -0.9889
+    }
+  ],
+  "forward_snippets": [
+    "Although the easement is vacated, the USACE has indicated that it will not take action to stop pipeline operations while it proceeds with the EIS.",
+    "In May 2021, the Standing Rock Sioux Tribe\u2019s request for an injunction to force a shutdown of the pipeline while the EIS is being prepared was denied.",
+    "If the pipeline is required to cease operations, and should Dakota Access and ETCO not have sufficient funds to pay ongoing expenses, we could be required to support our 25 % share of the ongoing expenses, including scheduled interest payments on the notes of approximately $ 20 million annually, in addition to the potential obligations under the CECU at June\u00a030, 2022.",
+    "Liberty Pipeline LLC (Liberty) In the first quarter of 2021, Phillips 66 Partners decided to exit the Liberty Pipeline project, which resulted in a $ 198 million before-tax impairment in our Midstream segment.",
+    "In April 2021, Phillips 66 Partners transferred its ownership interest in Liberty to its co-venturer for cash and certain pipeline assets with a value that approximated its book value of $ 46 million at March 31, 2021."
+  ]
+}

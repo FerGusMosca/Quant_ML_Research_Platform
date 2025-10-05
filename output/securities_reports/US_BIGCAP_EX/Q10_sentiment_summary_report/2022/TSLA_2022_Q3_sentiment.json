@@ -1,0 +1,47 @@
+{
+  "symbol": "TSLA",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1975,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.372
+  },
+  "top_positive": [
+    {
+      "sent": "The estimates used for, but not limited to, determining significant economic incentive for resale value guarantee arrangements, sales return reserves, the collectability of accounts receivable, inventory valuation, warranties, fair value of long-lived assets, goodwill, fair value of financial instruments, fair value and residual value of operating lease vehicles and solar energy systems subject to leases could be impacted.",
+      "score": 0.9882
+    },
+    {
+      "sent": "The estimates used for, but not limited to, determining significant economic incentive for resale value guarantee arrangements, sales return reserves, the collectability of accounts receivable, inventory valuation, warranties, fair value of long-lived assets, goodwill, fair value of financial instruments, fair value and residual value of operating lease vehicles and solar energy systems subject to leases could be impacted.",
+      "score": 0.9882
+    },
+    {
+      "sent": "The estimates used for, but not limited to, determining significant economic incentive for resale value guarantee arrangements, sales return reserves, the collectability of accounts receivable, inventory valuation, warranties, fair value of long-lived assets, goodwill, fair value of financial instruments, fair value and residual value of operating lease vehicles and solar energy systems subject to leases could be impacted.",
+      "score": 0.9882
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "While, we maintain information technology measures designed to protect us against intellectual property theft, data breaches, sabotage and other external or internal cyber-attacks or misappropriation, our systems and those of our service providers are potentially vulnerable to malware, ransomware, viruses, denial-of-service attacks, phishing attacks, social engineering, computer hacking, unauthorized access, exploitation of bugs, defects and vulnerabilities, breakdowns, damage, interruptions, system malfunctions, power outages, terrorism, acts of vandalism, security breaches, security incidents, inadvertent or intentional actions by employees or other third parties, and other cyber-attacks.",
+      "score": -0.91
+    },
+    {
+      "sent": "While, we maintain information technology measures designed to protect us against intellectual property theft, data breaches, sabotage and other external or internal cyber-attacks or misappropriation, our systems and those of our service providers are potentially vulnerable to malware, ransomware, viruses, denial-of-service attacks, phishing attacks, social engineering, computer hacking, unauthorized access, exploitation of bugs, defects and vulnerabilities, breakdowns, damage, interruptions, system malfunctions, power outages, terrorism, acts of vandalism, security breaches, security incidents, inadvertent or intentional actions by employees or other third parties, and other cyber-attacks.",
+      "score": -0.91
+    },
+    {
+      "sent": "If major disasters such as earthquakes, floods or other climate-related events occur, or our information system or communication breaks down or operates improperly, our headquarters and production facilities may be seriously damaged, or we may have to stop or delay production and sh\n.",
+      "score": -0.8934
+    }
+  ],
+  "forward_snippets": [
+    "Of the total deferred revenue on automotive sales with and without resale value guarantees as of March 31, 2022, we expect to recognize $ 948 million of revenue in the next 12 months.",
+    "Of this amount, we expect to recognize $ 9 million in the next 12 months and the remaining over a period up to 26 years.",
+    "Of this amount, we expect to recognize $ 9 million in the next 12 months and the remaining over a period up to 26 years.",
+    "We provide an allowance against accounts receivable for the amount we expect to be uncollectible.",
+    "We provide an allowance against accounts receivable for the amount we expect to be uncollectible."
+  ]
+}

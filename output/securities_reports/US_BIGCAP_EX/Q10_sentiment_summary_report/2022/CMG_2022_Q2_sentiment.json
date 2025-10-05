@@ -1,0 +1,47 @@
+{
+  "symbol": "CMG",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2756,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.097
+  },
+  "top_positive": [
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME AND COMPREHENSIVE INCOME (in thousands, except per share data) (unaudited) Three months ended Six months ended June 30, June 30, 2022 2021 2022 2021 Food and beverage revenue $ 2,192,802 $ 1,869,365 $ 4,191,758 $ 3,585,355 Delivery service revenue 20,537 23,173 42,120 48,758 Total revenue 2,213,339 1,892,538 4,233,878 3,634,113 Restaurant operating costs (exclusive of depreciation and amortization shown separately below): Food, beverage and packaging 673,928 574,478 1,300,854 1,097,149 Labor 549,926 464,506 1,081,866 898,175 Occupancy 113,919 103,430 225,951 205,199 Other operating costs 317,481 287,242 648,176 581,952 General and administrative expenses 140,820 146,044 288,222 301,147 Depreciation and amortization 69,733 62,082 141,398 125,204 Pre-opening costs 5,253 4,965 10,601 8,386 Impairment, closure costs, and asset disposals 4,681 4,266 8,991 9,934 Total operating expenses 1,875,741 1,647,013 3,706,059 3,227,146 Income from operations 337,598 245,525 527,819 406,967 Interest and other income (expense), net 10,572 851 10,359 ( 1,317 ) Income before income taxes 348,170 246,376 538,178 405,650 Provision for income taxes ( 88,228 ) ( 58,402 ) ( 119,942 ) ( 90,575 ) Net income $ 259,942 $ 187,974 $ 418,236 $ 315,075 Earnings per share: Basic $ 9.32 $ 6.68 $ 14.95 $ 11.20 Diluted $ 9.25 $ 6.60 $ 14.83 $ 11.04 Weighted-average common shares outstanding: Basic 27,905 28,134 27,974 28,130 Diluted 28,092 28,501 28,196 28,542 Other comprehensive income (loss), net of income taxes: Foreign currency translation adjustments $ ( 1,480 ) $ 305 $ ( 1,285 ) $ 42 Comprehensive income $ 258,462 $ 188,279 $ 416,951 $ 315,117 See accompanying notes to condensed consolidated financial statements.",
+      "score": 0.9684
+    },
+    {
+      "sent": "We believe these metrics are useful to investors because management uses these metrics to assess the growth of our business and the effectiveness of our marketing and operational strategies: \uf0b7 Comparable restaurant sales \uf0b7 Restaurant operating costs as a percentage of total revenue \uf0b7 New restaurant openings Second Quarter 2022 Financial Highlights, year-over-year: \uf0b7 Total revenue increased 17.0% to $2.2 billion \uf0b7 Comparable restaurant sales increased 10.1% \uf0b7 Diluted earnings per share was $9.25, a 40.2% increase from $6.60, which includes an $0.05 after-tax impact from expenses related to the 2018 performance share COVID-19 related modification, corporate restructuring costs, restaurant asset impairment and closure costs, certain legal proceedings, offset by an unrealized gain on an investments.",
+      "score": 0.9678
+    },
+    {
+      "sent": "We believe these metrics are useful to investors because management uses these metrics to assess the growth of our business and the effectiveness of our marketing and operational strategies: \uf0b7 Comparable restaurant sales \uf0b7 Restaurant operating costs as a percentage of total revenue \uf0b7 New restaurant openings Second Quarter 2022 Financial Highlights, year-over-year: \uf0b7 Total revenue increased 17.0% to $2.2 billion \uf0b7 Comparable restaurant sales increased 10.1% \uf0b7 Diluted earnings per share was $9.25, a 40.2% increase from $6.60, which includes an $0.05 after-tax impact from expenses related to the 2018 performance share COVID-19 related modification, corporate restructuring costs, restaurant asset impairment and closure costs, certain legal proceedings, offset by an unrealized gain on an investments.",
+      "score": 0.9678
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "On April 28, 2021, DCWP amended the complaint to cover purported violations of FWW and ESTA at substantially all Chipotle restaurants in New York City, through the date the amended complaint was filed.",
+      "score": -0.7783
+    },
+    {
+      "sent": "Critical Accounting Estimates Critical accounting estimates are those that we believe are both significant and that require us to make difficult, subjective or complex judgments, often because we need to estimate the effect of inherently uncertain matters.",
+      "score": -0.7506
+    },
+    {
+      "sent": "Critical Accounting Estimates Critical accounting estimates are those that we believe are both significant and that require us to make difficult, subjective or complex judgments, often because we need to estimate the effect of inherently uncertain matters.",
+      "score": -0.7506
+    }
+  ],
+  "forward_snippets": [
+    "2020-04, \u201cReference Rate Reform (Topic 848): Facilitation of the Effects of Reference Rate Reform on Financial Reporting.\u201d The pronouncement provides temporary optional expedients and exceptions to the current guidance on contract modifications and hedge accounting to ease the financial reporting burden related to the expected market transition from the London Interbank Offered Rate (\"LIBOR\") and other interbank offered rates to alternative reference rates.",
+    "The guidance was effective upon issuance and generally can be applied to applicable contract modifications through December 31, 2022.",
+    "Our estimate of points and rewards we expect to be redeemed is based on historical and other company specific data.",
+    "2020-04, \u201cReference Rate Reform (Topic 848): Facilitation of the Effects of Reference Rate Reform on Financial Reporting.\u201d The pronouncement provides temporary optional expedients and exceptions to the current guidance on contract modifications and hedge accounting to ease the financial reporting burden related to the expected market transition from the London Interbank Offered Rate (\"LIBOR\") and other interbank offered rates to alternative reference rates.",
+    "The guidance was effective upon issuance and generally can be applied to applicable contract modifications through December 31, 2022."
+  ]
+}

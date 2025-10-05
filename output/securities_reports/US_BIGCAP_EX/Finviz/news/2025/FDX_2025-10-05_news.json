@@ -1,0 +1,606 @@
+{
+  "symbol": "FDX",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-05",
+      "time": "Today 10:00AM",
+      "title": "Ford CEO's Son opts For Mechanic Career Over College, Asks 'I Don't Know Why I Need To Go To College'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/m/eace8595-6158-3238-962a-ea51e77c6dab/ford-ceo%27s-son-opts-for.html"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "13:50",
+      "title": "Trucking industry facing horrible rates, tariffs, Werner CEO says\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/trucking-industry-facing-horrible-rates-175016580.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:50PM",
+      "title": "FedEx relocates freighter aircraft to support intra-Asia trade growth\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/fedex-relocates-freighter-aircraft-support-165037997.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:10AM",
+      "title": "2 Rock-Solid Dividend Stocks with Room to Grow\n\n\n(Motley Fool)",
+      "link": "/news/182996/2-rock-solid-dividend-stocks-with-room-to-grow"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "17:28",
+      "title": "I dont know why I need to go to college: Ford CEO says his Gen Z son worked as a mechanic and wondered if the 4-year degree was still worth it\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/don-t-know-why-college-212822599.html"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "09:00",
+      "title": "Google unveils AI-powered Nest indoor and outdoor cameras, and a new doorbell\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/m/fef3707b-60a8-3f13-b6e5-e5343bbb89ed/google-unveils-ai-powered.html"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "16:26",
+      "title": "Ford CEO Jim Farley says skilled labor shortage holds back 'made in America' ambitions\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/ford-ceo-jim-farley-says-skilled-labor-shortage-holds-back-made-in-america-ambitions-202609423.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:31PM",
+      "title": "FedEx pilots issue no confidence vote in company's CEO as contract negotiations drag on\n\n\n(The Commercial Appeal)",
+      "link": "https://finance.yahoo.com/m/73bf8237-990f-348d-a136-c8ebfc7fda07/fedex-pilots-issue-no.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:56AM",
+      "title": "FedEx debuts air freight service connecting Dublin and Indianapolis\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/fedex-debuts-air-freight-connecting-145601545.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:01AM",
+      "title": "FedEx Announces Extension of Expiration Date of Exchange Offers\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250929261608/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:01AM",
+      "title": "Trump visa curbs push U.S. firms to consider shifting more work to India\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/trump-visa-curbs-push-u-060115699.html"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "19:53",
+      "title": "US holiday package deliveries to rise 5% from 2024, ShipMatrix forecasts\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/us-holiday-package-deliveries-rise-235326391.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:24AM",
+      "title": "FedEx shareholders elect Richard Smith, son of founder Fred Smith, to board of directors\n\n\n(The Commercial Appeal)",
+      "link": "https://finance.yahoo.com/m/566e5e48-059c-3ed9-a367-9314cc59ee13/fedex-shareholders-elect.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:06AM",
+      "title": "FedEx, UPS peak season surcharges could drive shippers to competitors\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/fedex-ups-peak-season-surcharges-140647815.html"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "14:58",
+      "title": "FedEx: Strong Resilience and Undervalued Opportunity\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/fedex-strong-resilience-undervalued-opportunity-185849780.html"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "15:31",
+      "title": "His Peers Have Debt and Job Anxiety. He Has a Nearly Six-Figure Business And Zero Loans.\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/peers-debt-job-anxiety-nearly-193112480.html"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "09:48",
+      "title": "Big Tech Is Fun Again & The Fed Speaks\n\n\n(Motley Fool)",
+      "link": "/news/175751/big-tech-is-fun-again-the-fed-speaks"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:31AM",
+      "title": "FedEx's Q3 Earnings Call: Our Top 5 Analyst Questions\n\n\n(StockStory)",
+      "link": "/news/175274/fedexs-q3-earnings-call-our-top-5-analyst-questions"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:37AM",
+      "title": "3 Profitable Stocks We Find Risky\n\n\n(StockStory)",
+      "link": "/news/175290/3-profitable-stocks-we-find-risky"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "21:04",
+      "title": "FedEx Corporation (FDX) Releases Q2 2025 Results, Beats Wall Street Expectations\n\n\n(Insider Monkey)",
+      "link": "/news/175220/fedex-corporation-fdx-releases-q2-2025-results-beats-wall-street-expectations"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:54AM",
+      "title": "TD Cowen Lifts PT on FedEx (FDX) Stock\n\n\n(Insider Monkey)",
+      "link": "/news/174601/td-cowen-lifts-pt-on-fedex-fdx-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:13AM",
+      "title": "Jim Cramer Says FedEx Corporation (FDX) Shares Should Perform Better\n\n\n(Insider Monkey)",
+      "link": "/news/174539/jim-cramer-says-fedex-corporation-fdx-shares-should-perform-better"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:50AM",
+      "title": "How to Boost Your Portfolio with Top Transportation Stocks Set to Beat Earnings\n\n\n(Zacks)",
+      "link": "/news/174572/how-to-boost-your-portfolio-with-top-transportation-stocks-set-to-beat-earnings"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:28AM",
+      "title": "Jim Cramer on FedEx: \"I Am Cautiously Optimistic That This One is Not Done and is Going Higher\"\n\n\n(Insider Monkey)",
+      "link": "/news/174194/jim-cramer-on-fedex-i-am-cautiously-optimistic-that-this-one-is-not-done-and-is-going-higher"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "11:37",
+      "title": "UPS Margins Under Pressure: Is a Turnaround on the Cards?\n\n\n(Zacks)",
+      "link": "/news/173572/ups-margins-under-pressure-is-a-turnaround-on-the-cards"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:14AM",
+      "title": "FedEx to launch healthcare-focused DUB-IND air cargo route\n\n\n(Supply Chain Dive)",
+      "link": "https://finance.yahoo.com/m/e7f31ced-f8bf-3945-8c97-dea9857a4aea/fedex-to-launch.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:07AM",
+      "title": "FedEx Freight grows sales team numbers ahead of spinoff\n\n\n(Trucking Dive)",
+      "link": "https://finance.yahoo.com/m/a66287e3-1222-31b0-a154-7dd6a389ca69/fedex-freight-grows-sales.html"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "11:55",
+      "title": "UPS Terminates Estafeta Deal: How Should You Approach the Stock Now?\n\n\n(Zacks)",
+      "link": "/news/172466/ups-terminates-estafeta-deal-how-should-you-approach-the-stock-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:44AM",
+      "title": "Markets Await for Key Inflation Report\n\n\n(Zacks)",
+      "link": "/news/172424/markets-await-for-key-inflation-report"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:16AM",
+      "title": "Fed Speeches Today, PCE Report End-of-Week\n\n\n(Zacks)",
+      "link": "/news/172409/fed-speeches-today-pce-report-end-of-week"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:44AM",
+      "title": "Analyst Report: FedEx Corporation\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/28b32312-f4bf-3843-a0f4-f709dafbf3f6/analyst-report%3A-fedex.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:14AM",
+      "title": "Company News for Sep 22, 2025\n\n\n(Zacks)",
+      "link": "/news/171950/company-news-for-sep-22-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:09AM",
+      "title": "Stock Market Today: Dow Futures Fall; Gold Prices Jump\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-22-2025?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:42AM",
+      "title": "Markets Weekly Roundup: Intels Win, Dardens Struggles, FedEx on Tariffs\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/0a82f347-c585-3b77-88a9-5dfc5632e3da/%F0%9F%8E%A7-markets-weekly-roundup%3A.html"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "13:15",
+      "title": "Is UPS a Millionaire-Maker Stock?\n\n\n(Motley Fool)",
+      "link": "/news/171457/is-ups-a-millionaire-maker-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Stock Market Rally Risks Losing Steam as Economic Bounce Fades\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/stock-market-rally-risks-losing-130000607.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:43AM",
+      "title": "Jim Cramer on FedEx: \"I'm Concerned\"\n\n\n(Insider Monkey)",
+      "link": "/news/171339/jim-cramer-on-fedex-im-concerned"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "20:25",
+      "title": "I've been hesitant to recommend FedEx, economy isn't great for shipping sector: Jim Cramer\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=dL2sXGNreok"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:25PM",
+      "title": "I'm cautiously optimistic about FedEx's future, says Jim Cramer\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=cDRjfybodpE"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:07PM",
+      "title": "Stocks to Watch Recap: Lennar, FedEx, Apple\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/29c44e28-1a0a-3a55-b35c-48bfbd47a442/stocks-to-watch-recap%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:31PM",
+      "title": "UPS Stock Gets Downgraded Despite Solid FedEx Earnings. What's Bugging the Analyst.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/ups-stock-downgrade-fedex-earnings-12a679c6?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:26PM",
+      "title": "FedEx Earnings Beat Estimates. Why the Results Were a Relief for the Stock.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/fedex-earnings-stock-price-55127d7b?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:24PM",
+      "title": "How major US stock indexes fared Friday, 9/19/2025\n\n\n(Associated Press)",
+      "link": "https://finance.yahoo.com/news/major-us-stock-indexes-fared-202429496.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:13PM",
+      "title": "FedEx Revenue, Net Income Increase in Q1 2026\n\n\n(Transport Topics)",
+      "link": "https://www.ttnews.com/articles/fedex-q1-2026"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:55PM",
+      "title": "FedEx redeploys air fleet after US ends parcel tariff exemption\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/fedex-redeploys-air-fleet-us-185517429.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:06PM",
+      "title": "FedEx Expects $1B Tariff Hit as China-to-US Demand Slumps, Domestic Growth Cushions Blow\n\n\n(Sourcing Journal)",
+      "link": "https://finance.yahoo.com/m/37f2b140-f2bb-3d05-a14d-65f2fe25a0a1/fedex-expects-%241b-tariff-hit.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:46PM",
+      "title": "FedEx Bets On Cost Cuts To Boost Margins, Says Analyst\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/fedex-bets-cost-cuts-boost-174625141.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:16PM",
+      "title": "FedEx shares rise after better than expected earnings\n\n\n(Reuters Videos)",
+      "link": "https://finance.yahoo.com/video/fedex-shares-rise-better-expected-171629248.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:12PM",
+      "title": "Beware This 'Bull Trap' as Stocks Keep Hitting New Highs\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/stock-market-dow-fedex-ups-transportation-stocks-41d7a400?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:09PM",
+      "title": "Opendoor CFO departs, FedEx warns on tariffs despite Q1 beat\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/opendoor-cfo-departs-fedex-warns-170920266.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:05PM",
+      "title": "FedEx Surpasses Q1 Earnings & Revenue Estimates, Improves Y/Y\n\n\n(Zacks)",
+      "link": "/news/171083/fedex-surpasses-q1-earnings-revenue-estimates-improves-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:02PM",
+      "title": "Top Stock Movers Now: Apple, FedEx, Lennar, and More\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/6122ff1e-3e86-3a53-b904-6d285cceee58/top-stock-movers-now%3A-apple%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:11PM",
+      "title": "FDX Q3 Deep Dive: U.S. Parcel Growth and Trade Headwinds Shape Outlook\n\n\n(StockStory)",
+      "link": "/news/170940/fdx-q3-deep-dive-us-parcel-growth-and-trade-headwinds-shape-outlook"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:47AM",
+      "title": "FedEx Stock Higher as Earnings Beat Triggers Bull Notes\n\n\n(Schaeffer's Research)",
+      "link": "/news/170843/fedex-stock-higher-as-earnings-beat-triggers-bull-notes"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:44AM",
+      "title": "FedEx Delivers Good News: The Bottom Is in for This Stock\n\n\n(MarketBeat)",
+      "link": "/news/170828/fedex-delivers-good-news-the-bottom-is-in-for-this-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:42AM",
+      "title": "Intel, FedEx and UPS, Tesla: Top Analyst Calls\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/intel-fedex-ups-tesla-top-144236672.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:27AM",
+      "title": "Cramer's Stop Trading: Fedex\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=L39Ql1_0dcc"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:36AM",
+      "title": "FedEx Earnings: Stock Rises Despite Tariff Warning\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-19-2025/card/fedex-earnings-stock-rallies-despite-tariff-warning-pF7ji2834Jd8f2FAqIS8?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:35AM",
+      "title": "Stocks to Watch Friday: Lennar, FedEx, Apple\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-19-2025/card/stocks-to-watch-friday-fedex-lennar-intel-6ykS0BoK0HWBnaznAkCI?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:32AM",
+      "title": "FedEx earnings, Klaviyo upgrade, Netskope IPO: Trending Tickers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/fedex-earnings-klaviyo-upgrade-netskope-133214543.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:26AM",
+      "title": "FedEx forecasts $1B hit from tariffs, end of de minimis exemption\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/fedex-forecasts-1b-hit-tariffs-132642586.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:14AM",
+      "title": "Market record highs, Trump-Xi call, FedEx earnings: 3 Things\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/market-record-highs-trump-xi-131439967.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:06AM",
+      "title": "Intel, Fedex, Cardlytics, Brera, : Trending Stocks\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/intel-fedex-cardlytics-brera-trending-130607603.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "FedEx jumps after profit beat, cost cuts offset trade headwinds\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/fedex-jumps-profit-beat-cost-123031605.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:25AM",
+      "title": "5 Things to Know Before the Stock Market Opens\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/e484c98b-682c-3693-904d-75a6346eded7/5-things-to-know-before-the.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:45AM",
+      "title": "FedEx Earnings: Stock Rallies Despite Tariff Warning\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/308cee8a-1323-3625-91a1-0b62892548aa/fedex-earnings%3A-stock-rallies.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:42AM",
+      "title": "Intel-Nvidia Deal Extends Stock Markets' Good News Rally. Why There's More to Come.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/intel-nvidia-deal-stock-market-things-to-know-today-1c3c210a?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:13AM",
+      "title": "US stock futures steady, indexes set for weekly gains; FedEx up\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/us-stock-futures-steady-indexes-101301319.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:29AM",
+      "title": "FedEx shares rally as Wall Street cheers profit beat amid trade uncertainties\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/fedex-shares-rally-wall-street-092911610.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:21AM",
+      "title": "These Stocks Are Moving the Most Today: Intel, Nvidia, FedEx, Lennar, Tesla, Netskope, and More\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/stock-movers-c95d6bb0?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:07AM",
+      "title": "FedEx shares jump after results and other early market movers\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-and-nasdaq-set-to-retreat-from-record-highs/card/fedex-shares-jump-after-results-and-other-early-market-movers-rwi2R7jwX1WcEJrRRSE3?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:02AM",
+      "title": "FedEx Corp (FDX) Q1 2026 Earnings Call Highlights: Strong Revenue Growth Amid Global Trade ...\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/fedex-corp-fdx-q1-2026-070225012.html"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "23:40",
+      "title": "Analyst Report: FedEx Corporation\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/534da109-eb20-3694-a20b-b1b02ba470eb/analyst-report%3A-fedex.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:25PM",
+      "title": "Jim Cramer Highlights FedEx Pressure from Loss of Chinese Tariff Exemption\n\n\n(Insider Monkey)",
+      "link": "/news/170211/jim-cramer-highlights-fedex-pressure-from-loss-of-chinese-tariff-exemption"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:07PM",
+      "title": "FedEx to Lean on Domestic Shipping as Tariffs Slow China Volume\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/9eb51ff8-f394-3b08-a135-415216afe3db/fedex-to-lean-on-domestic.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:06PM",
+      "title": "FedEx Freight spinoff on track for June 2026\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/fedex-freight-spinoff-track-june-000619669.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:28PM",
+      "title": "FedEx earnings: Quarterly profits up, but tariffs dampen forecast for fiscal year\n\n\n(The Commercial Appeal)",
+      "link": "https://finance.yahoo.com/m/dbf9ea3e-d823-3edc-aa9c-6148b291b32c/fedex-earnings%3A-quarterly.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:16PM",
+      "title": "FedEx Predicts $1 Billion Tariffs Hit to Fiscal 2026 Earnings\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/c7dcf4f0-291a-3f5e-94cd-659355ab84e2/fedex-predicts-%241-billion.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:06PM",
+      "title": "Markets Hit New Record Highs: NVDA, INTC, FDX & More\n\n\n(Zacks)",
+      "link": "/news/170154/markets-hit-new-record-highs-nvda-intc-fdx-more"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00PM",
+      "title": "Compared to Estimates, FedEx (FDX) Q1 Earnings: A Look at Key Metrics\n\n\n(Zacks)",
+      "link": "/news/170149/compared-to-estimates-fedex-fdx-q1-earnings-a-look-at-key-metrics"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:40PM",
+      "title": "FedEx Stock Pops as Shipping Giant Reinstates Its Full-Year Outlook\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/c6e66233-5d65-3f02-82ae-63f358316a97/fedex-stock-pops-as-shipping.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:20PM",
+      "title": "FedEx's structural cost initiatives are delivering, says Barclays' Brandon Oglenski\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=uhdFpGp-6j4"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:15PM",
+      "title": "FedEx (FDX) Q1 Earnings and Revenues Beat Estimates\n\n\n(Zacks)",
+      "link": "/news/170092/fedex-fdx-q1-earnings-and-revenues-beat-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:13PM",
+      "title": "FedEx (NYSE:FDX) Surprises With Q3 Sales, Stock Soars\n\n\n(StockStory)",
+      "link": "/news/170066/fedex-nyse-fdx-surprises-with-q3-sales-stock-soars"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:07PM",
+      "title": "FedEx Earnings Were a Relief. The Stock Is Up.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/daa3052b-c930-38c0-b7fa-b633a761b821/fedex-earnings-were-a-relief..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:01PM",
+      "title": "Stocks to Watch Recap: Intel, FedEx, Meta, Darden Restaurants\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/4c9f4b64-852d-3429-bde1-27b8dd38cc6b/stocks-to-watch-recap%3A-intel%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:55PM",
+      "title": "FedEx jumps after Q1 beat, forecast in line with estimates\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/fedex-jumps-q1-beat-forecast-205558569.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:54PM",
+      "title": "FedEx just gave investors a reason to be more optimistic\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/fedex-just-gave-investors-a-reason-to-be-more-optimistic-812ae005?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:21PM",
+      "title": "FedEx stock pops on Q1 earnings beat, reinstated outlook\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/fedex-stock-pops-q1-earnings-202115319.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:20PM",
+      "title": "FedEx Profit, Sales Rise on Improvement in U.S. Shipping\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/earnings/fedex-profit-sales-rise-on-improvement-in-u-s-shipping-6334a85a?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:13PM",
+      "title": "FedEx: Fiscal Q1 Earnings Snapshot\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/fedex-fiscal-q1-earnings-snapshot-201332458.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:08PM",
+      "title": "FedEx results top targets as cost-cutting offsets impact of weaker international business\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/fedex-forecasts-2026-earnings-below-200801705.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:02PM",
+      "title": "FedEx Reports First Quarter Earnings Growth Year-Over-Year\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250918650006/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00PM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq hit records as rate-cut relief, Nvidia's Intel bet lift markets\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-hit-records-as-rate-cut-relief-nvidias-intel-bet-lift-markets-200041899.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00PM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq hit records amid rate cut relief, Nvidia's Intel bet lift markets\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-hit-records-amid-rate-cut-relief-nvidias-intel-bet-lift-markets-200041703.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:43PM",
+      "title": "FedEx Earnings Have Been Disappointing. Where Charts Say Transportation Stocks Go Next\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/fedex-earnings-transportation-stocks-go-next-da479358?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:04PM",
+      "title": "Stock market today: Nasdaq, Dow, S&P 500 rise after Fed signals more cuts, Nvidia bets on Intel\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-nasdaq-dow-sp-500-rise-after-fed-signals-more-cuts-nvidia-bets-on-intel-231448487.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:04PM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq on track for record after Fed signals more cuts, Nvidia bets on Intel\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-on-track-for-record-after-fed-signals-more-cuts-nvidia-bets-on-intel-170454973.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:04PM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq on pace for records after Fed signals more cuts, Nvidia bets on Intel\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-on-pace-for-records-after-fed-signals-more-cuts-nvidia-bets-on-intel-170454791.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:03AM",
+      "title": "Jobless Claims Decreased More Than Expected\n\n\n(Zacks)",
+      "link": "/news/169822/jobless-claims-decreased-more-than-expected"
+    }
+  ]
+}

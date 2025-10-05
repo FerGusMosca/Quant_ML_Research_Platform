@@ -1,0 +1,55 @@
+{
+  "symbol": "FDX",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.3833,
+    "outlook_sentiment": 0.1989,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.159
+  },
+  "top_positive": [
+    {
+      "sent": "As of July 14, 2022, 259,845,660 shares of the Registrant\u2019s common stock were outstanding.",
+      "score": 0.7351
+    },
+    {
+      "sent": "FORWARD-LOOKI NG STATEMENTS Certain statements in this Annual Report on Form 10-K (this \u201cAnnual Report\u201d), including (but not limited to) those contained in \u201cItem 1.",
+      "score": 0.4149
+    },
+    {
+      "sent": "- 92 - FEDEX CORPORATION NOTES TO CONSOLIDATED \nem the $ 500 million aggregate principal amount outstanding of our 3.40 % notes due 2022 , the \u20ac 640 million aggregate principal amount outstanding of our 0.70 % notes due 2022 , the $ 500 million aggregate principal amount outstanding of our 2.625 % notes due 2023 , the \u20ac 750 million aggregate principal amount outstanding of our 1.00 % notes due 2023 , the $ 250 million aggregate principal amount outstanding of our 2.70 % notes due 2023 , the $ 750 million aggregate principal amount outstanding of our 4.00 % notes due 2024 , the $ 700 million aggregate principal amount outstanding of our 3.20 % notes due 2025 , the $ 1.0 billion aggregate principal amount outstanding of our 3.80 % notes due 2025 , and the $ 450 million aggregate principal amount outstanding of our 3.30 % notes due 2027 .",
+      "score": 0.9899
+    },
+    {
+      "sent": "These risks and uncertainties include, but are not limited to: our ability to successfully implement our business strategy, effectively respond to changes in market dynamics and achieve the anticipated benefits and associated cost savings of such strategies and actions; the availability and cost, and our ability to acquire, alternative fuel vehicles, alternative fuels, fuel-efficient aircraft, global electrical charging infrastructure, off-site renewable energy, and other materials and components; unforeseen production, design, operational, and technological difficulties; the outcome of research efforts and future technology developments, including the ability to scale projects and technologies on a commercially competitive basis such as carbon sequestration and/or other related processes; compliance with, and changes or additions to, global and regional regulations, taxes, charges, mandates, or requirements relating to GHG emissions, carbon costs, or climate-related goals; labor-related regulations and requirements that restrict or prohibit our ability to impose requirements on third parties who provide contracted transportation for our transportation networks; adapting products to customer preferences and customer acceptance of sustainable supply chain solutions; and the actions of competitors and competitive pressures.",
+      "score": 0.9788
+    },
+    {
+      "sent": "Our ability to attract and retain customers, to efficiently operate our businesses, and to compete effectively depends in part upon the sophistication, security, and reliability of our technology network, including our ability to provide features of service that are important to our customers, to protect our confidential business information and the information provided by our customers, and to maintain customer confidence in our ability to protect our systems and to provide services consistent with their expectations.",
+      "score": 0.9741
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "While we operate several integrated networks with assets distributed throughout the world, there are concentrations of key assets within our networks that are exposed to adverse weather conditions or localized risks from natural or manmade disasters such as earthquakes, volcanoes, wildfires, hurricanes, tornadoes, floods, severe winter weather, conflicts or unrest, terrorist attacks, or other disturbances, actual or threatened.",
+      "score": -0.9674
+    },
+    {
+      "sent": "While we operate several integrated networks with assets distributed throughout the world, there are concentrations of key assets within our networks that are exposed to adverse weather conditions or localized risks from natural or manmade disasters such as earthquakes, volcanoes, wildfires, hurricanes, tornadoes, floods, severe winter weather, conflicts or unrest, terrorist attacks, or other disturbances, actual or threatened.",
+      "score": -0.9674
+    },
+    {
+      "sent": "Expected amortization expense for the next five years is as follows (in millions): 2023 $ 52 2024 51 2025 50 2026 50 2027 48 - 90 - FEDEX CORPORATION NOTES TO CONSOLIDATED FINANCIAL STATEMENTS NOTE 6: SELECTED CURRENT LIABILITIES The components of selected current liability captions at May 31 were as follows (in millions): 2022 2021 Accrued salaries and employee benefits Salaries $ 751 $ 626 Employee benefits, including variable compensation 834 1,350 Compensated absences 946 927 $ 2,531 $ 2,903 Accrued expenses Self-insurance accruals $ 1,646 $ 1,193 Taxes other than income taxes 532 637 Other 3,010 2,732 $ 5,188 $ 4,562 NOTE 7: LONG-TERM DEBT AND OTHER FINANCING ARRANGEMENTS The components of long-term debt (net of discounts and debt issuance costs), along with maturity dates for the years subsequent to May 31, 2022, are as follows (in millions): May 31, 2022 2021 Interest Rate % Maturity Senior secured debt: 1.875 2034 $ 881 $ 932 Senior unsecured debt: 3.25 2026 747 746 3.40 2028 497 496 4.20 2029 397 397 3.10 - 4.25 2030 1,735 1,733 2.40 2031 990 989 4.90 2034 496 496 3.90 2035 495 494 3.25 2041 740 739 3.875 - 4.10 2043 985 985 5.10 2044 742 742 4.10 2045 641 641 4.55 - 4.75 2046 2,462 2,461 4.40 2047 736 736 4.05 2048 987 986 4.95 2049 836 836 5.25 2050 1,226 1,226 4.50 2065 246 246 7.60 2098 237 237 Euro senior unsecured debt: 0.45 2026 533 607 1.625 2027 1,332 1,516 0.45 2029 637 725 1.30 2032 530 604 0.95 2033 688 784 Total senior unsecured debt 18,91\nting Standards and Accounting Standards Not Yet Adopted In March 2020, the Financial Accounting Standards Board (\u201cFASB\u201d) issued ASU 2020-04, Reference Rate Reform (Topic 848), which provides optional expedients and exceptions for applying GAAP to existing contracts, hedging relationships, and other transactions affected by reference rate reform.",
+      "score": -0.9474
+    }
+  ],
+  "forward_snippets": [
+    "Market for Registrant\u2019s Common Equity, Related Stockholder Matters, and Issuer Purchases of Equity Securities\u201d; the \u201cBusiness Realignment Costs,\u201d \u201cIncome Taxes,\u201d \u201cOutlook\u201d (including segment outlooks), \u201cLiquidity Outlook,\u201d and \u201cCritical Accounting Estimates\u201d sections of \u201cItem 7.",
+    "(\u201cShopRunner\u201d), is focused on creating solutions to transform the digital and physical experiences of our customers and team me\nOutlook\u201d (including segment outlooks), \u201cLiquidity Outlook,\u201d and \u201cCritical Accounting Estimates\u201d sections of \u201cItem 7.",
+    "While we believe that operating separate networks enhances service quality and reliability from each business unit, we are building a holistic, collaborative approach to compete in a dynamic and ever-changing market.",
+    "We will continue to look comprehensively at all assets in our network, including stations, hubs, and equipment, to put the right package in the right network at the best service for our customers.",
+    "We are also leveraging the power of technology to make supply chains smarter for everyone through sensor-based technologies, providing enhanced visibility and predictive capabilities, and enhancing sortation technology."
+  ]
+}

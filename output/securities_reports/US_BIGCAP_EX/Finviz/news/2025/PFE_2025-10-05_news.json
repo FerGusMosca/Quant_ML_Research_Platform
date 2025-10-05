@@ -1,0 +1,606 @@
+{
+  "symbol": "PFE",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-05",
+      "time": "Today 09:15AM",
+      "title": "Can Pfizer's Stock Break This Disappointing Streak?\n\n\n(Motley Fool)",
+      "link": "/news/184015/can-pfizers-stock-break-this-disappointing-streak"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:47AM",
+      "title": "Want $7,800 in Annual Passive Income? Invest $100,000 in These 3 Ultra-High-Yield Dividend Stocks.\n\n\n(Motley Fool)",
+      "link": "/news/183967/want-7800-in-annual-passive-income-invest-100000-in-these-3-ultra-high-yield-dividend-stocks"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:42AM",
+      "title": "Bank of America Securities Maintains Buy on Pfizer Inc (PFE)\n\n\n(Insider Monkey)",
+      "link": "/news/183932/bank-of-america-securities-maintains-buy-on-pfizer-inc-pfe"
+    },
+    {
+      "date": "2025-10-04",
+      "time": "09:00",
+      "title": "Legal threats are pushing Trump's tariff strategy in new directions. Don't expect more certainty.\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/legal-threats-are-pushing-trumps-tariff-strategy-in-new-directions-dont-expect-more-certainty-130045707.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:02AM",
+      "title": "Tech stocks roll on and Pfizer soars after Trump deal\n\n\n(Detroit Free Press)",
+      "link": "https://finance.yahoo.com/m/ddc31e05-ef9a-3d6f-8f4b-9317c24d70d4/tech-stocks-roll-on-and.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:27AM",
+      "title": "Investing.coms stocks of the week\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/investing-com-stocks-week-092731293.html"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "18:40",
+      "title": "When It Comes to Healthcare, Think Big\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/1f439b31-f3fa-383f-98af-248f38d3efb9/when-it-comes-to-healthcare%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:17PM",
+      "title": "The Score: Pfizer, Tesla, Electronic Arts and More Stocks That Defined the Week\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/finance/stocks/pfizer-tesla-electronic-arts-nike-meta-occidental-c27758e4?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:45PM",
+      "title": "Pfizer (PFE) Outpaces Stock Market Gains: What You Should Know\n\n\n(Zacks)",
+      "link": "/news/183728/pfizer-pfe-outpaces-stock-market-gains-what-you-should-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:55PM",
+      "title": "5 Large Cap Drug Stocks: Values or Traps?\n\n\n(Zacks)",
+      "link": "/news/183710/5-large-cap-drug-stocks-values-or-traps"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:51PM",
+      "title": "Pharma Stocks Eye Best Week in 16 Years as Trump Overhang Eases\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/pharma-stocks-eye-best-week-132807753.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:33PM",
+      "title": "Trump administration announces MFN drug pricing deal with Pfizer\n\n\n(Pharmaceutical Technology)",
+      "link": "https://finance.yahoo.com/m/292422eb-ec01-39b2-8763-f02faa0c5358/trump-administration.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:02PM",
+      "title": "Intel, Nvidia and the 'Visible Hand' of Trump Capitalism\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/intel-nvidia-and-the-visible-hand-of-trump-capitalism-aed16c23?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:55AM",
+      "title": "Detroit Carmakers Feud Over Trumps Threatened Truck Tariffs\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/detroit-carmakers-feud-over-trump-142905081.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:48AM",
+      "title": "Palantir, AI bubble comments, pharma stocks: Trending Tickers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/palantir-ai-bubble-comments-pharma-154854119.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:16AM",
+      "title": "Wells Fargo sees room to run for Johnson & Johnson, highlights pharma upside\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/wells-fargo-sees-room-run-141624135.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:06AM",
+      "title": "MRK Stock Up Nearly 14% So Far This Week: What's Driving It?\n\n\n(Zacks)",
+      "link": "/news/183447/mrk-stock-up-nearly-14-so-far-this-week-whats-driving-it"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:59AM",
+      "title": "Is PFE Stock a Buy After 14% Rise Post Drug Pricing Deal With Trump?\n\n\n(Zacks)",
+      "link": "/news/183437/is-pfe-stock-a-buy-after-14-rise-post-drug-pricing-deal-with-trump"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:48AM",
+      "title": "Pfizers Drug-Price Deal With Trump Ended Months of Deadlock\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/pfizer-drug-price-deal-trump-021147570.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:27AM",
+      "title": "Cantor Fitzgerald Maintains a Hold on Pfizer (PFE)\n\n\n(Insider Monkey)",
+      "link": "/news/183080/cantor-fitzgerald-maintains-a-hold-on-pfizer-pfe"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:20AM",
+      "title": "These 3 Stocks Pay More Than 6%. Are Their Dividend Yields Too Good to Be True?\n\n\n(Motley Fool)",
+      "link": "/news/182919/these-3-stocks-pay-more-than-6-are-their-dividend-yields-too-good-to-be-true"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:48AM",
+      "title": "2 Reliable Dividend Stocks With Yields Above 6% That You Can Buy With $100 in October\n\n\n(Motley Fool)",
+      "link": "/news/182893/2-reliable-dividend-stocks-with-yields-above-6-that-you-can-buy-with-100-in-october"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:15AM",
+      "title": "Pfizer Just Made a Landmark Drug Pricing Agreement with President Donald Trump. Is the Stock a Buy?\n\n\n(Motley Fool)",
+      "link": "/news/182887/pfizer-just-made-a-landmark-drug-pricing-agreement-with-president-donald-trump-is-the-stock-a-buy"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "21:16",
+      "title": "Inside Pfizer's Drug-Pricing Deal With the Trump Administration\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/health/pharma/trump-pfizer-drug-price-tariff-deal-455be9b7?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:52PM",
+      "title": "Buy Novo Nordisk Stock as Health Names Return to Favor, Analyst Says\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/buy-novo-nordisk-stock-959fd316?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:22PM",
+      "title": "AstraZeneca Stock Is Up 10% on Tariff News. But Is the Pharmaceutical Giant a Buy?\n\n\n(Motley Fool)",
+      "link": "/news/182567/astrazeneca-stock-is-up-10-on-tariff-news-but-is-the-pharmaceutical-giant-a-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:32AM",
+      "title": "Could MRNA's Upcoming Product Launches Reduce COVID Sales Dependency?\n\n\n(Zacks)",
+      "link": "/news/182500/could-mrnas-upcoming-product-launches-reduce-covid-sales-dependency"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:02AM",
+      "title": "3 Things You Need to Know if You Buy Pfizer Today\n\n\n(Motley Fool)",
+      "link": "/news/182083/3-things-you-need-to-know-if-you-buy-pfizer-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Why Pfizer's Trump Deal Is Good News for All of Big Pharma\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/health/pharma/pfizer-trumprx-deal-pharma-stocks-7e2724f4?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:11AM",
+      "title": "3 Mega Dividend Stocks With Yields as High as 13.4%\n\n\n(Motley Fool)",
+      "link": "/news/182002/3-mega-dividend-stocks-with-yields-as-high-as-134"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:23AM",
+      "title": "Heard on the Street Wednesday Recap: Hiring Freeze\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/2d2d64ee-72b6-31f1-aae1-872b37256361/heard-on-the-street-wednesday.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:55AM",
+      "title": "BMO Capital Maintains Outperform on Pfizer (PFE) Amid New Obesity Partnership\n\n\n(Insider Monkey)",
+      "link": "/news/181853/bmo-capital-maintains-outperform-on-pfizer-pfe-amid-new-obesity-partnership"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:30AM",
+      "title": "GSK boss says US is biggest priority as Trump pressures drugmakers\n\n\n(The Telegraph)",
+      "link": "https://finance.yahoo.com/m/d1a35054-4b86-3e4a-8d3c-96ce797c4a4c/gsk-boss-says-us-is-%E2%80%98biggest.html"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "19:46",
+      "title": "Analyst Report: Pfizer Inc.\n\n\n(Morningstar Research)  +6.79%",
+      "link": "https://finance.yahoo.com/m/a12a10d5-73f2-36ce-be7d-de1cbc7f885e/analyst-report%3A-pfizer-inc..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:04PM",
+      "title": "Chart Master: A breakout could signal more upside for beaten-down pharma stocks\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=vU4IoqAQ91Q"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:45PM",
+      "title": "Government Shutdown, Government Shmutdown\n\n\n(Zacks)",
+      "link": "/news/181684/government-shutdown-government-shmutdown"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:55PM",
+      "title": "Top 3 Dividend Achievers for October: High Yields, Growth Ahead\n\n\n(MarketBeat)",
+      "link": "/news/181552/top-3-dividend-achievers-for-october-high-yields-growth-ahead"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:36PM",
+      "title": "Pfizer (PFE) Soars on Tariff Exemption, Landmark US Govt Deal\n\n\n(Insider Monkey)",
+      "link": "/news/181547/pfizer-pfe-soars-on-tariff-exemption-landmark-us-govt-deal"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:08PM",
+      "title": "Why Pfizer Stock Trounced the Market Today\n\n\n(Motley Fool)",
+      "link": "/news/181526/why-pfizer-stock-trounced-the-market-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:55PM",
+      "title": "Drug Stock Rally Helps Push Dow and S&P 500 to Records\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/finance/stocks/global-stocks-markets-dow-news-10-01-2025-bf78f02f?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:40PM",
+      "title": "Stocks to Watch Wednesday: Meta, Netflix, Nike, Lithium Americas\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/dbd7d2ef-4676-358b-ad93-8a5454de0703/stocks-to-watch-wednesday%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:13PM",
+      "title": "Trump-Pfizer deal could fuel pharma stock rally, advisor says\n\n\n(Reuters Videos)",
+      "link": "https://finance.yahoo.com/video/trump-pfizer-deal-could-fuel-201311553.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:01PM",
+      "title": "Why Is Pfizer (PFE) Stock Soaring Today\n\n\n(StockStory)",
+      "link": "/news/181394/why-is-pfizer-pfe-stock-soaring-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:22PM",
+      "title": "Why Drug Stocks Are Celebrating Trump's 100% Pharmaceutical Tariff\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/news/technology/pharmaceutical-tariffs-drug-stocks?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:19PM",
+      "title": "Trump Triggered a Rally in Drug Stocks. Why It Might Not Last.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/trump-drug-stocks-pfizer-6a8aa31f?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:48PM",
+      "title": "Pharma stocks are powering the Nasdaq Composite and S&P 500 higher in afternoon trading\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-sp500-nasdaq-lower-us-government-shutdown-dollar-falls-gold-up-adp-data/card/pharma-stocks-are-powering-the-nasdaq-composite-and-s-p-500-higher-in-afternoon-trading-gC4u1tQSEjut3RqUk2K2?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:53PM",
+      "title": "Another Surging Pharma Stock to Watch Right Now\n\n\n(Schaeffer's Research)",
+      "link": "/news/181290/another-surging-pharma-stock-to-watch-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:27PM",
+      "title": "Why Shares in Novo Nordisk Bumped Higher Today\n\n\n(Motley Fool)",
+      "link": "/news/181286/why-shares-in-novo-nordisk-bumped-higher-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:09PM",
+      "title": "Pfizer (PFE): A Healthcare Giant Offering Steady Dividend Income\n\n\n(Insider Monkey)",
+      "link": "/news/181230/pfizer-pfe-a-healthcare-giant-offering-steady-dividend-income"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:52PM",
+      "title": "Pfizer Stock Climbs To Multi-Month High On Trump Drug Pricing Breakthrough\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/pfizer-stock-climbs-multi-month-165253147.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:35PM",
+      "title": "Top Stock Movers Now: Nike, Eli Lilly, Corteva, AES, and More\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/3906d8ce-6f83-359c-8be3-659031fef56b/top-stock-movers-now%3A-nike%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:34PM",
+      "title": "Health Care Roundup: Market Talk\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/fcf42691-ed23-37e9-a58e-ebd66cc3309e/health-care-roundup%3A-market.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:17PM",
+      "title": "Reddit sinks on ChatGPT data, Pfizer deal boosts pharma stocks\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/reddit-sinks-chatgpt-data-pfizer-161730578.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:00PM",
+      "title": "Trump Keeps Blurring the Line Between Capitalism and Socialism\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/f93062f7-b5a7-3fb4-bb7b-d16518bd1245/trump-keeps-blurring-the-line.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:44AM",
+      "title": "Pfizer Stock, Other Drugmakers Rally Again\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-government-shutdown-10-01-2025/card/pfizer-stock-other-drugmakers-rally-again-SUOy4ALzRfr0Ux7D91TB?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:42AM",
+      "title": "Pfizer Just Announced a Massive Deal with TrumpRx. Here's What Investors Need to Know\n\n\n(Motley Fool)",
+      "link": "/news/181107/pfizer-just-announced-a-massive-deal-with-trumprx-heres-what-investors-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "What is TrumpRx? Pfizer, Trump deal includes new direct to consumer website announcement\n\n\n(USA TODAY)",
+      "link": "https://finance.yahoo.com/m/1f96d66e-35f1-3883-8e1c-e4fcb801666b/what-is-trumprx%3F-pfizer%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:10AM",
+      "title": "Headlines Boost Pharma Stocks. Charts of Pfizer, Johnson & Johnson, Jazz Pharmaceuticals Speak to Rally Into Year End\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/844d5ac3-a563-3328-8d64-02cb7a599f01/headlines-boost-pharma.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:05AM",
+      "title": "Can Alnylam's Broader Portfolio Ease Its Dependence on Amvuttra?\n\n\n(Zacks)",
+      "link": "/news/181108/can-alnylams-broader-portfolio-ease-its-dependence-on-amvuttra"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:03AM",
+      "title": "Q: Will TrumpRx and 'Most Favored Nation' Deals Save Americans Money?\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-government-shutdown-10-01-2025/card/q-will-trumprx-and-most-favored-nation-deals-save-americans-money--TCEKObeOVws1iSWGPcSG?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:01AM",
+      "title": "What TrumpRx Means For Controversial Plan To Lower U.S. Drug Prices\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/58d85c0f-e7ec-3b13-bd7c-7a16073d7c76/what-trumprx-means-for.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:32AM",
+      "title": "Is the U.S. drug pricing deal good for Pfizer?\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/u-drug-pricing-deal-good-133210421.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:22AM",
+      "title": "Stock Market News for Oct 1, 2025\n\n\n(Zacks)",
+      "link": "/news/180949/stock-market-news-for-oct-1-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:06AM",
+      "title": "European healthcare stocks surge after US deal with Pfizer\n\n\n(Reuters Videos)",
+      "link": "https://finance.yahoo.com/video/european-healthcare-stocks-surge-us-120639099.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:03AM",
+      "title": "Big Pharma's big boost: Market Movers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/big-pharmas-big-boost-market-120302259.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:02AM",
+      "title": "Pres. Trump's deal with Pfizer is pretty devastating to PBMs and insurance companies: John Lamattina\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=uWqXACRNSDE"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:48AM",
+      "title": "GSK Is 'Betting Big' on the US, CEO Walmsley Says\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/video/gsk-betting-big-us-ceo-114819472.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:36AM",
+      "title": "Pfizer shakes hands with White House on drug discounts under MFN programme\n\n\n(Pharmaceutical Technology)",
+      "link": "https://finance.yahoo.com/m/4067848f-6c57-3ba9-bd05-3e8f25429e79/pfizer-shakes-hands-with.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:30AM",
+      "title": "European stocks rise, Wall St futures drop as US shutdown begins\n\n\n(AFP)",
+      "link": "https://finance.yahoo.com/news/asian-stocks-mixed-wall-st-022425481.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:46AM",
+      "title": "Shutdown, Tariffs, Pharma Pricing Make for a Busy Start to the Quarter. What Matters.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/shutdown-tariffs-stocks-drug-pricing-things-to-know-today-056629ba?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30AM",
+      "title": "How Trumps Drug-Buying Site TrumpRx Will Work\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/27ed3b11-a49f-32ba-a942-5dce65fc8e99/how-trump%E2%80%99s-drug-buying-site.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:10AM",
+      "title": "Got $200? 2 Healthcare Stocks to Buy and Hold Forever\n\n\n(Motley Fool)",
+      "link": "/news/180511/got-200-2-healthcare-stocks-to-buy-and-hold-forever"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:07AM",
+      "title": "Pharma Stocks in Europe Jump After White House Unveils Drug-Buying Site\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/97dca1c5-95e4-31aa-9768-24ff619a8b92/pharma-stocks-in-europe-jump.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:08AM",
+      "title": "Pfizers Drug Price Cuts Yield Three-Year Trump Tariff Reprieve\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/pfizer-cut-medicaid-drug-prices-140306231.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:56AM",
+      "title": "Pfizer's U.S. Pricing Move Brings Clarity for Pharma Sector\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/articles/nikkei-falls-0-3-dragged-by-financial-stocks-67f703e6?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:51AM",
+      "title": "3 Ultra-High-Yield Dividend Stocks -- Sporting an Average Yield of 9.5% -- Which Are No-Brainer Buys in October\n\n\n(Motley Fool)",
+      "link": "/news/180462/3-ultra-high-yield-dividend-stocks-sporting-an-average-yield-of-95-which-are-no-brainer-buys-in-october"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:42AM",
+      "title": "Stock Market Today: Dow Futures Fall After Government Shutdown Begins\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-government-shutdown-10-01-2025?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:08AM",
+      "title": "Heard on the Street Tuesday Recap: Just What the Doctor Ordered\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/3ab6e4fc-f45c-3fa7-85fe-7ec73bf317c5/heard-on-the-street-tuesday.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:04AM",
+      "title": "3 Reasons PFE is Risky and 1 Stock to Buy Instead\n\n\n(StockStory)",
+      "link": "/news/180713/3-reasons-pfe-is-risky-and-1-stock-to-buy-instead"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:01AM",
+      "title": "A government shutdown begins after talks break down\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/a-government-shutdown-begins-after-talks-break-down-040124607.html"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "22:41",
+      "title": "Top Stocks today: Nvidia, Robinhood and Pfizer lead the market\n\n\n(TheStreet)  +6.83%",
+      "link": "https://finance.yahoo.com/m/1074197b-1aa7-3875-a8ca-420db6b85e32/top-stocks-today%3A-nvidia%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:13PM",
+      "title": "Analyst Report: Pfizer Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/52e2852d-7b0c-3479-b53d-9511e33b3c54/analyst-report%3A-pfizer-inc..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:23PM",
+      "title": "White House Unveils TrumpRx Drug-Buying Site and a Pfizer Pricing Deal\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/135b90e9-e55b-31f5-82cb-9df4c4a2a6fa/white-house-unveils-%E2%80%98trumprx%E2%80%99.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:45PM",
+      "title": "Heard on the Street Recap: Just What the Doctor Ordered\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/32b0d393-64d1-311b-b876-3e6212fc2752/heard-on-the-street-recap%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:14PM",
+      "title": "Pfizer Stock Surges After Company Makes a Deal With President Trump\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/5d8a361e-7039-366b-a5d8-1723528a8ca2/pfizer-stock-surges-after.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:47PM",
+      "title": "Pfizer Stock Soars on Trumps New Drug Pricing Plan. Heres Why.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/6adbb16c-c0b2-3173-bebd-3200eca0816f/pfizer-stock-soars-on-trump%E2%80%99s.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:41PM",
+      "title": "Stocks Settle Higher as Drug Makers and Chip Stocks Rally\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/8a1a6d2e-2de3-3670-b96f-e6c8d0e9c717/stocks-settle-higher-as-drug.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:38PM",
+      "title": "Stocks Post Late Rally After Trump Strikes Deal With Pfizer\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/finance/stocks/stocks-post-late-rally-after-trump-strikes-deal-with-pfizer-540c12b1?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:27PM",
+      "title": "These Stocks Moved the Most Today: Wolfspeed, CoreWeave, Pfizer, Intel, Spotify, Firefly, Lamb Weston, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/f5e6fa8c-a3b6-30e2-8eed-d6dafc3df1ee/these-stocks-moved-the-most.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:26PM",
+      "title": "S&P 500 Gains and Losses Today: Pfizer and Merck Jump; Payments Stocks Decline\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/ef2a5e56-8d45-34ab-9456-ef379369a025/s%26p-500-gains-and-losses.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:21PM",
+      "title": "Get Ready for TrumpRx: Trump Announces Deal With Pfizer to Cut U.S. Drug Prices\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/0aae93b4-8114-34c4-a1d7-625d1e426ce6/get-ready-for-trumprx%3A-trump.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:50PM",
+      "title": "Trump, Pfizer ink deal to lower drug prices: Biggest takeaways\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/trump-pfizer-ink-deal-lower-195000951.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:33PM",
+      "title": "Trump announces Pfizer deal he says will lower certain drug prices\n\n\n(AFP)",
+      "link": "https://finance.yahoo.com/news/trump-announces-pfizer-deal-says-193320551.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:19PM",
+      "title": "3 Pharma Stocks Getting an Intraday Trump Bump\n\n\n(Schaeffer's Research)",
+      "link": "/news/180069/3-pharma-stocks-getting-an-intraday-trump-bump"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:52PM",
+      "title": "These Stocks Are Moving the Most Today: Wolfspeed, CoreWeave, Pfizer, Intel, Spotify, Firefly, Lamb Weston, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/f5e6fa8c-a3b6-30e2-8eed-d6dafc3df1ee/these-stocks-are-moving-the.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:51PM",
+      "title": "Why Pfizer (PFE) Stock Is Trading Up Today\n\n\n(StockStory)",
+      "link": "/news/180041/why-pfizer-pfe-stock-is-trading-up-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:49PM",
+      "title": "Bank of America Securities Maintains a Neutral Stance on Pfizer Inc. (PFE)\n\n\n(Insider Monkey)",
+      "link": "/news/179993/bank-of-america-securities-maintains-a-neutral-stance-on-pfizer-inc-pfe"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:47PM",
+      "title": "Stock Market Today: Dow Lags As Shutdown Looms; Pfizer Soars On Tariff Relief (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/0a588a89-73d9-3372-a133-861431a2e93b/stock-market-today%3A-dow-lags.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:27PM",
+      "title": "Pfizer found a way to boost its ailing stock - agree with Trump on drug pricing\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/pfizer-found-a-way-to-boost-its-ailing-stock-agree-with-trump-on-drug-pricing-219908fa?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:16PM",
+      "title": "Pfizer Becomes First Drugmaker To Join Trump's Price Cut Push\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/pfizer-becomes-first-drugmaker-join-181603087.html"
+    }
+  ]
+}

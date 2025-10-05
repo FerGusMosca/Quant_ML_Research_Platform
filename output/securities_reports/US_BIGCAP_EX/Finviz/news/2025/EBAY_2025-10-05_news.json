@@ -1,0 +1,606 @@
+{
+  "symbol": "EBAY",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-03",
+      "time": "11:32",
+      "title": "Analyst Report: PayPal Holdings, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/8a48306b-a7ac-3b35-80d5-2153a37f9099/analyst-report%3A-paypal.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:03AM",
+      "title": "AI Shopping Is About To Upend E-Commerce. What It Means for Amazon, Walmart, Meta, Google.\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/news/technology/ecommerce-stocks-ai-shopping-amazon-walmart-ebay?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "09:40",
+      "title": "Is eBay Set to Reignite Growth by Expanding Into Social Commerce?\n\n\n(Zacks)",
+      "link": "/news/181012/is-ebay-set-to-reignite-growth-by-expanding-into-social-commerce"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "15:15",
+      "title": "Why whiskey collectors are flocking to Unicorns $125 million marketplace\n\n\n(FastCompany)",
+      "link": "https://finance.yahoo.com/m/da980ab3-d30d-37dc-9a32-a3d159bcad9f/why-whiskey-collectors-are.html"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "04:31",
+      "title": "Checkout.com announces employee share buyback at $12bn valuation\n\n\n(Electronic Payments)",
+      "link": "https://finance.yahoo.com/m/ddeaea90-ac1b-347e-8e06-294d1d2fa64c/checkout.com-announces.html"
+    },
+    {
+      "date": "2025-09-27",
+      "time": "10:00",
+      "title": "A Timeline of Key Moments in American Capitalism\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/5815d25f-7adc-3a6a-ac47-454f6ab55723/a-timeline-of-key-moments-in.html"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "14:31",
+      "title": "Advisor To Trump Family's World Liberty Financial Opened A Bold 10x Long Bet On Avalanche  Here's How Much They Have Gained\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/advisor-trump-familys-world-liberty-183114186.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:01PM",
+      "title": "Datavault AI Shares Are Trending After New Initiative To Boost XRP Adoption: What You Should Know\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/datavault-ai-shares-trending-initiative-180118202.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:00PM",
+      "title": "These YC founders pivoted 5 times before building a social app that nabbed 300K users and over $1M ARR in 6 months\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/yc-founders-pivoted-5-times-170051223.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:46AM",
+      "title": "Huawei Bets On Brute Force To Outpace Nvidia\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/huawei-bets-brute-force-outpace-104628296.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:46AM",
+      "title": "Kevin O'Leary Says Trump's $100,000 H1B Visa Will Push Innovation Abroad, Points Out Apple, Google Started In A Garage Once\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/kevin-oleary-says-trumps-100-094602207.html"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "21:31",
+      "title": "Dave Ramsey Advises Daughter Torn Over Giving Retired Father Money After He Sold Her Million-Dollar Childhood Home: 'You Don't Have An Obligation'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/dave-ramsey-advises-daughter-torn-013103545.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:31PM",
+      "title": "Ray Dalio Warns Of 'Very, Very Dark Times,' Says Learning To 'Diversify My Bets' Was The Key To Success: 'A Smart Rabbit Has Three Holes'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/ray-dalio-warns-very-very-233104037.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:31PM",
+      "title": "Trump's America Is Pulling In TrillionsBut There's A China-Sized Problem\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/trumps-america-pulling-trillions-theres-203106081.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:01PM",
+      "title": "Anthony Scaramucci Calls Avalanche The 'Swiss Army Knife' Of Layer-1 Blockchains, Made A 'Big Bet' On Ethereum Killer Because Of This Reason\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/anthony-scaramucci-calls-avalanche-swiss-180107857.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:31AM",
+      "title": "Dan Ives Compares Sam Altman's World Network To Tesla, Nvidia, Palantir In Their Infancy: 'An AI Meets Crypto Intersection'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/dan-ives-compares-sam-altmans-113104969.html"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "23:31",
+      "title": "Warren Buffett's Berkshire Hathaway Exits BYD Position After 17 Years, Ending Charlie Munger-Backed Bet\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/warren-buffetts-berkshire-hathaway-exits-033105537.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:31PM",
+      "title": "Will Elon Musk Join Trump Administration This Year? Here's What Betting Markets Are Predicting\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/elon-musk-join-trump-administration-013128835.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:31PM",
+      "title": "Trump's $350 Billion Investment Demand Could Trigger 1997-Style Financial Crisis, Says South Korea's President\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/trumps-350-billion-investment-demand-213120175.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:31PM",
+      "title": "Michael Saylor Says This Is The Reason Why Bitcoin Is Stuck Sideways And Not Breaking Out\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/michael-saylor-says-reason-why-203111234.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:31PM",
+      "title": "Eric Trump Said A Fed Rate Cut Would Result In Crypto Skyrocketing, But The Majority Of Polymarket Bettors Have A Sobering View On Bitcoin\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/eric-trump-said-fed-rate-183105633.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:45AM",
+      "title": "eBay to acquire social marketplace platform Tise\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/ebay-acquire-social-marketplace-platform-144507184.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:31AM",
+      "title": "Charlie Munger's Top 3 Success Tips: 'Never Sell Anything You Wouldn't Buy, Work For Those You Respect, And Work With People You Enjoy'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/charlie-mungers-top-3-success-113103989.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:46AM",
+      "title": "Steve Jobs Once Paused For 18 Seconds To Answer A Student's Simple Question: Here Is What The Apple Co-Founder Said\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/steve-jobs-once-paused-18-104603826.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:46AM",
+      "title": "Mexican Billionaire, Who Set Up One of the Nation's Top Banks, Called Dollar-Like Fiat Money The 'Biggest Fraud' And Sees Bitcoin As The Only Escape\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/mexican-billionaire-set-one-nations-094603796.html"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "23:33",
+      "title": "Q2 Earnings Highlights: eBay (NASDAQ:EBAY) Vs The Rest Of The Online Marketplace Stocks\n\n\n(StockStory)",
+      "link": "/news/171799/q2-earnings-highlights-ebay-nasdaq-ebay-vs-the-rest-of-the-online-marketplace-stocks"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "05:46",
+      "title": "Michael Saylor Hints At Selling Bitcoin To Fund MSTR Dividends In 'Worst-Case Scenario,' Short-Seller Jim Chanos Calls It 'Financial Gibberish'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/michael-saylor-hints-selling-bitcoin-094623971.html"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "23:31",
+      "title": "Tesla 'The Biggest Meme Stock' Ever? Expert Says 'Too Much Emphasis On The Magic Wand Of Musk'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/tesla-biggest-meme-stock-ever-033114090.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:31PM",
+      "title": "Tesla Stock To Hit $3,000 In 2035? Analyst Says 'Road Ahead Is Chock-Full Of Catalysts'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/tesla-stock-hit-3-000-013130991.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:31PM",
+      "title": "Trump's $17 Trillion New Investments Claim 'Clearly' Not True, Says Peter Schiff: GDP Growth Would 'Explode by Roughly 50%' If Factual\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/trumps-17-trillion-investments-claim-003159910.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:33PM",
+      "title": "Bill Gates Shares His Two-Step Secret To Problem-Solving, A Technique He's Used Since Teenage: 'It's Surprisingly Hard'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/bill-gates-shares-two-step-233346843.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:31PM",
+      "title": "Michael Saylor: Ignore 'The Critics And The Whiners'  Bitcoin Is 'Digital Capital' Fueling A Rebuild Of Finance\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/michael-saylor-ignore-critics-whiners-203152436.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:31PM",
+      "title": "NBA Star Kevin Durant Forgot His Coinbase PasswordAnd Bitcoin Soared 11,000%\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/nba-star-kevin-durant-forgot-183106160.html"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "23:30",
+      "title": "Huang Breaks Silence On Beijing Move Targeting Nvidia AI Chips\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/huang-breaks-silence-beijing-move-033029659.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30PM",
+      "title": "Franklin Templeton, Ripple Join Forces To Launch Tokenized Money Market Funds For Accredited Investors Of This Asian Banking Giant\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/franklin-templeton-ripple-join-forces-013049571.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:01PM",
+      "title": "'Against The Principles Of The Fourth Amendment' 80,000 AI Cameras Track Americans Daily As CEO Claims He Can Eliminate All Crime In 10 Years\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/against-principles-fourth-amendment-80-010116144.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:01PM",
+      "title": "Mark Cuban Says 'Everything Is a Meme' in Today's Market  and Warns Retail Traders Can 'Move Stocks More Than Analysts' Opendoor Is A Good Example\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/mark-cuban-says-everything-meme-000100254.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:31PM",
+      "title": "Mr Wonderful Kevin O'Leary Says Bitcoin, Ethereum Enough To 'Capture The Promise' Of Crypto, Advises Against 'Irrelevant' Tokens\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/mr-wonderful-kevin-oleary-says-233103784.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:31PM",
+      "title": "Is Apple Quietly Preparing Its Biggest iPhone Shift Yet?\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/apple-quietly-preparing-biggest-iphone-213109016.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:30PM",
+      "title": "Jack Ma Back At Alibaba? What's Going On\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/jack-ma-back-alibaba-whats-183050603.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:00PM",
+      "title": "Bitcoin Taps $117,000, Ethereum, XRP, Dogecoin Shine On Federal Reserve Rate Cut\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/bitcoin-taps-117-000-ethereum-180046849.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:34PM",
+      "title": "Amazon Just Made It Easier To Sell On Walmart, SHEIN, And Shopify\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/amazon-just-made-easier-sell-163454382.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:30PM",
+      "title": "Amazon opens fulfillment services to Shein, Shopify and Walmart sellers\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/amazon-opens-fulfillment-services-shein-163040585.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:30PM",
+      "title": "Amazon-Funded Startup Wants To Use AI To Recreate Orson Welles' Lost Film Footage Despite Family Opposition\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/amazon-funded-startup-wants-ai-163013535.html"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "17:30",
+      "title": "Short Seller Jim Chanos Says 'China Should NOT Be The Standard' For Financial Reporting As Trump Pushes For Getting Rid Of Quarterly System\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/short-seller-jim-chanos-says-213023160.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:33PM",
+      "title": "That Website You Used to Illegally Download Music From Just Bought Fyre Festival for $245,000\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/b4de3d70-0343-3a69-b276-c3d9cbe9b15c/that-website-you-used-to.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:31PM",
+      "title": "Moderna Reports 8-Fold Jump In Antibodies With Updated Spikevax\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/moderna-reports-8-fold-jump-203104512.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:31PM",
+      "title": "Harvard Dropouts Behind Mercor Target $10 Billion Valuation As Startup Supplying OpenAI, Tesla And Nvidia Hits $450 Million Run Rate\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/harvard-dropouts-behind-mercor-target-193109681.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:31PM",
+      "title": "Anthony Scaramucci Explains Why Warren Buffett's Apple Bet Shows Diversification Can Be Overrated: 'Don't Trade Michael Jordan For...'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/anthony-scaramucci-explains-why-warren-183108622.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:48PM",
+      "title": "MELI vs. EBAY: Which Online Marketplace Stock Is the Better Pick?\n\n\n(Zacks)",
+      "link": "/news/168861/meli-vs-ebay-which-online-marketplace-stock-is-the-better-pick"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:27PM",
+      "title": "StubHub closes lower in IPO debut\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/stubhub-opens-trading-8-higher-172748501.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:00PM",
+      "title": "Ticket Platform StubHub Erases Gains to Fall Below IPO Price\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/ticket-platform-stubhub-erases-gains-170032625.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:24PM",
+      "title": "Ticketing platform StubHub erases gains to close below issue price in choppy NYSE debut\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/ticketing-platform-stubhub-valued-9-162426726.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:46AM",
+      "title": "Teen Founders, Tap The Brakes: Paul Graham Says Curiosity Beats Companies In High School  Despite YC Wins With Airbnb, Reddit, And Sam Altman At 19\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/teen-founders-tap-brakes-paul-154608228.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:31AM",
+      "title": "Bernie Sanders Says Pope Leo Is Exactly Right About Elon Musk's Pay Package: 'No Society Can Survive When One Man Becomes A Trillionaire'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/bernie-sanders-says-pope-leo-113110387.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:35AM",
+      "title": "Ticket marketplace StubHub to see if its stock is the right price for Wall Street\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/ticket-marketplace-stubhub-see-stock-103503007.html"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "23:31",
+      "title": "Tim Cook Says Apple Will Invest $600 Billion In US Manufacturing, Creating A 'Domino Effect' As iPhone 17 Pre-Orders Show Strong Momentum\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/tim-cook-says-apple-invest-033105334.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:01PM",
+      "title": "If You Invested $10K In Iron Mountain Stock 10 Years Ago, How Much Would You Have Now?\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/invested-10k-iron-mountain-stock-020105909.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:01PM",
+      "title": "Berlin Gaming Startup Born Raises $15M From Tencent, Accel To Combat Loneliness With AI 'Friends' That 15M Users Love\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/berlin-gaming-startup-born-raises-010107544.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:31PM",
+      "title": "Elon Musk Back Atop Billionaires List, Tesla CEO Almost Recovers Lost Wealth Since Joining Hands With Trump\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/elon-musk-back-atop-billionaires-183104576.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:01PM",
+      "title": "Half Of Millennials Have More Debt Than SavingsThis Financial Expert Says There's Still Hope\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/half-millennials-more-debt-savings-160111844.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:46AM",
+      "title": "Should You Buy STUB Stock After the StubHub IPO?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/893ec867-e48e-344e-b5c9-d0bbfc7c8f44/should-you-buy-stub-stock.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:16AM",
+      "title": "US Bancorp Just Fired Up Its Bitcoin Custody Service Again  And It Could Signal A Massive Shift For Traditional Banking\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/us-bancorp-just-fired-bitcoin-141601007.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:46AM",
+      "title": "ElevenLabs CEO Mati Staniszewski Reveals Why He Interviews Every Hire Even As Startup Passes $200 Million Revenue And $6.6 Billion Valuation\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/elevenlabs-ceo-mati-staniszewski-reveals-134611632.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:52AM",
+      "title": "eBay Stock: Is EBAY Outperforming the Consumer Discretionary Sector?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/eb5451ee-e78a-374a-bd5c-460280dec7ec/ebay-stock%3A-is-ebay.html"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "23:31",
+      "title": "Donald Trump Lauds Economic Success, Yet Public Sentiment Tells A Different Story\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/donald-trump-lauds-economic-success-033122170.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00PM",
+      "title": "How Much Would It Take To Earn $100 A Month From Federal Realty Stock\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/much-earn-100-month-federal-020024076.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:31PM",
+      "title": "Democrats Push Trump To Include A Cap On China's Overproduction In Bilateral Trade Deal: Report\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/democrats-push-trump-cap-chinas-233103576.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00PM",
+      "title": "Kevin O'Leary Says His $12.9M Trading Card Belongs With Fine Art. To Him, It's 'No Different' From Warhol And Pollock\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/kevin-oleary-says-12-9m-230018045.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:21PM",
+      "title": "After a Strong Wall Street Debut, Klarna's Real Work Begins\n\n\n(MarketBeat)",
+      "link": "/news/166600/after-a-strong-wall-street-debut-klarnas-real-work-begins"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:30PM",
+      "title": "Shiba Inu's Layer-2 Network Breached, Over $1 Million Each in Ethereum, SHIB Stolen: How It Was Done\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/shiba-inus-layer-2-network-183005737.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:30PM",
+      "title": "What's the Average 401(k) Balance of the 'Upper Class'? Here's What Top Earners Have Stashed Away\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/whats-average-401-k-balance-163047956.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:15AM",
+      "title": "What Ray Dalio Learned After A Huge Investment Went So Sour That He Had To Borrow $4,000 From His Father To Stay Afloat\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/ray-dalio-learned-huge-investment-141512061.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Arkansas Farmers Beg Trump to Rescue Their Farms And Unite In Prayer  'We're Hurting, Dear Lord'  As 'Astronomical' Costs Crush The Industry\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/arkansas-farmers-beg-trump-rescue-140050107.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:25AM",
+      "title": "Think $2.5 Million Makes You Rich? At 40 You're Top 5% But At 60 You're Not Even Close  Here's What You Need To Be Wealthy In Retirement\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/think-2-5-million-makes-082508204.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:36AM",
+      "title": "3 Internet Stocks with Questionable Fundamentals\n\n\n(StockStory)",
+      "link": "/news/165720/3-internet-stocks-with-questionable-fundamentals"
+    },
+    {
+      "date": "2025-09-14",
+      "time": "16:02",
+      "title": "Alibaba's $100M Investment Fuels X Square Robot's Push For Embodied AI, Global Sales, And Next-Gen Humanoids\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/alibabas-100m-investment-fuels-x-200226863.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:00PM",
+      "title": "Caller Asks Dave Ramsey When He Can Cut Back From 76-Hour Workweeks. All He Wants Is More Time With His Family\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/caller-asks-dave-ramsey-cut-180038385.html"
+    },
+    {
+      "date": "2025-09-13",
+      "time": "22:01",
+      "title": "Here's How You Can Earn $100 In Passive Income By Investing In Altria Group Stock\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/heres-earn-100-passive-income-020105772.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:30PM",
+      "title": "Dave Ramsey Reveals The Business That's Most Likely To Make You Go Broke\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/dave-ramsey-reveals-business-thats-163017543.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:00AM",
+      "title": "'I Can't Imagine Not Having A Cleaner' The Middle Class Debates If A House Cleaner Is A Luxury Or A Necessity\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/cant-imagine-not-having-cleaner-150039382.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Quantum Computing Risk Could Force Bitcoin's Satoshi To Make A Comeback, Ethereum Treasury Co-CEO Says\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/quantum-computing-risk-could-force-140054511.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Jim Cramer Says \"I Fear the Old eBay Coming Back\"\n\n\n(Insider Monkey)",
+      "link": "/news/165472/jim-cramer-says-i-fear-the-old-ebay-coming-back"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "22:31",
+      "title": "Slain Trump Ally Charlie Kirk Was A Vocal Crypto Enthusiast And Investor, Labeled Bitcoin As Having More 'Integrity' Than Dollar\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/slain-trump-ally-charlie-kirk-023129740.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:01PM",
+      "title": "Here's How You Can Earn $100 In Passive Income By Investing In Gilead Sciences Stock\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/heres-earn-100-passive-income-020145692.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:31PM",
+      "title": "Billionaire Ray Dalio Warns Debt-Laden US Economy Faces 'Heart Attack,' Advises Investors To Hold 1015% Gold\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/billionaire-ray-dalio-warns-debt-233112283.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:31PM",
+      "title": "Lutnick Hints At Fannie Mae, Freddie Mac IPO In 2025 To Show The 'Mark To Market' Worth To American Taxpayers'Largest IPO In History'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/lutnick-hints-fannie-mae-freddie-213103438.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:31PM",
+      "title": "Looking To Earn Six Figures Without A Degree? Try One Of These Professions\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/looking-earn-six-figures-without-193106075.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:02PM",
+      "title": "Ticket reseller StubHub's IPO 20 times oversubscribed, source says\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/ticket-reseller-stubhubs-ipo-20-190217547.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:22PM",
+      "title": "Sorry, StubHub. Not Every IPO Can Be Hot.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/9c66b697-807f-313f-86ef-e3bbe493cbfe/sorry%2C-stubhub.-not-every-ipo.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:22PM",
+      "title": "Not Every IPO Can Be Hot. Sorry, StubHub.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/stubhub-ipo-stock-price-buy-sell-72e0c888?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:15AM",
+      "title": "Before Earning Millions With Real Estate, Grant Cardone Was Selling Shrimp And Clothing\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/earning-millions-real-estate-grant-151518690.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:16AM",
+      "title": "The Loyalty Penalty: Why Remaining Faithful To Your Favorite Companies Could Be Costing You\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/loyalty-penalty-why-remaining-faithful-141607488.html"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "23:31",
+      "title": "OpenAI CEO Sam Altman Says He Hasn't Had 'A Good Night Of Sleep Since ChatGPT Launched,' Urges AI Privilege To Stop Potential Government Snooping\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/openai-ceo-sam-altman-says-033107353.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00PM",
+      "title": "How Much Would It Take To Earn $100 A Month From Unilever Stock\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/much-earn-100-month-unilever-020059554.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30PM",
+      "title": "Warren Buffett's Timeless 7-Word Success Rule: Why Surrounding Yourself With Better People Is The Key To Winning In 2025\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/warren-buffetts-timeless-7-word-013035516.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:01PM",
+      "title": "'Not Having Health Insurance Is An Emergency': Suze Orman Urges Americans To Budget Now As ACA Subsidies Expire And Premiums Skyrocket\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/not-having-health-insurance-emergency-000114844.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:30PM",
+      "title": "Vivek Ramaswamy-Backed Strive, Asset Entities Get Shareholder Approval To Merge, Launch $1.5 Billion Public Bitcoin Treasury Company\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/vivek-ramaswamy-backed-strive-asset-183033066.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:01PM",
+      "title": "Their Son Wants A Bailout After Racking Up $200,000 In Taxes, Interest, And Penalties. Dave Ramsey Says, 'I Probably Wouldn't' Step In Today\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/son-wants-bailout-racking-200-170108970.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:31AM",
+      "title": "Starbucks Teams With AI Startup NomadGo To Automate Counting In 11,000 Stores  CTO Says Goodbye To Manual Tallies Forever\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/starbucks-teams-ai-startup-nomadgo-123108207.html"
+    }
+  ]
+}

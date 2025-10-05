@@ -1,0 +1,606 @@
+{
+  "symbol": "TSLA",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-05",
+      "time": "Today 12:29PM",
+      "title": "Should You Buy Rivian Stock While It's Below $21?\n\n\n(Motley Fool)",
+      "link": "/news/184032/should-you-buy-rivian-stock-while-its-below-21"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:03PM",
+      "title": "TechCrunch Mobility: Toyota makes a $1.5B bet on the startup ecosystem\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/techcrunch-mobility-toyota-makes-1-160300263.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Wall Street, crypto industry say tokenization will reshape global markets: 'Its going to eat the entire financial system'\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/wall-street-crypto-industry-say-tokenization-will-reshape-global-markets-its-going-to-eat-the-entire-financial-system-133005463.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:51AM",
+      "title": "Tesla FSD v14 Release Coming Monday, Elon Musk Says\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/531bc3e4-acbc-30f7-bdea-9727a7ca3940/tesla-fsd-v14-release-coming.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:37AM",
+      "title": "Stocks trade at record highs as government shutdown leaves economic data in limbo: What to watch\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/stocks-trade-at-record-highs-as-government-shutdown-leaves-economic-data-in-limbo-what-to-watch-113726926.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:20AM",
+      "title": "Prediction: Tesla Stock May Be \"Dreadful\" in 2026\n\n\n(Motley Fool)",
+      "link": "/news/183992/prediction-tesla-stock-may-be-dreadful-in-2026"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:04AM",
+      "title": "More CEOs want Elon Muskstyle moonshot pay packagesbut comp experts are raising alarms\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/more-ceos-want-elon-musk-100400001.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "Used EVs are an 'amazing bargain' for car buyers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/used-evs-amazing-bargain-car-100050015.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:50AM",
+      "title": "Where Will Tesla Be in 10 Years?\n\n\n(Motley Fool)",
+      "link": "/news/183966/where-will-tesla-be-in-10-years"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:38AM",
+      "title": "A Bit of Great News for Ford and GM Investors\n\n\n(Motley Fool)",
+      "link": "/news/183963/a-bit-of-great-news-for-ford-and-gm-investors"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:42AM",
+      "title": "Tesla Inc. (TSLA) Receives EV Sales Boost in Europe in September\n\n\n(Insider Monkey)",
+      "link": "/news/183937/tesla-inc-tsla-receives-ev-sales-boost-in-europe-in-september"
+    },
+    {
+      "date": "2025-10-04",
+      "time": "18:05",
+      "title": "Tesla May Be Behind in Driverless Vehicles, but Here's a Silver Lining\n\n\n(Motley Fool)",
+      "link": "/news/183918/tesla-may-be-behind-in-driverless-vehicles-but-heres-a-silver-lining"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:09PM",
+      "title": "California regulators threaten to revoke Tesla's insurance license for mishandling claims\n\n\n(Engadget)",
+      "link": "https://finance.yahoo.com/m/b5c68624-c22f-3e28-8122-d98d81c4c77f/california-regulators.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:45PM",
+      "title": "Parents Sue Tesla After Cybertruck Crash Kills Daughter, Allege Faulty Door Design Trapped Her During Fire\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/parents-sue-tesla-cybertruck-crash-174555421.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:05PM",
+      "title": "2 Problems Rivian, Lucid, and Tesla Will Face After the EV Tax Credit Expiration\n\n\n(Motley Fool)",
+      "link": "/news/183850/2-problems-rivian-lucid-and-tesla-will-face-after-the-ev-tax-credit-expiration"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:05AM",
+      "title": "Tesla Deliveries Soar in Q3. But What Will Q4 Look Like?\n\n\n(Motley Fool)",
+      "link": "/news/183825/tesla-deliveries-soar-in-q3-but-what-will-q4-look-like"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:29AM",
+      "title": "Teslas insurance arm accused of egregious delays and systemic failures by CA regulator\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/tesla-insurance-arm-accused-egregious-132923396.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:22AM",
+      "title": "Tesla FSD v14 Release Coming Monday, Elon Musk Says\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/news/tesla-fsd-v14-release-coming-monday-elon-musk-says?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "2 Reasons to Buy Rivian Stock Before Nov. 6\n\n\n(Motley Fool)",
+      "link": "/news/183816/2-reasons-to-buy-rivian-stock-before-nov-6"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "MarketBeat Week in Review - 09/29 - 10/03\n\n\n(MarketBeat)",
+      "link": "/news/183811/marketbeat-week-in-review-0929-1003"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:27AM",
+      "title": "Investing.coms stocks of the week\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/investing-com-stocks-week-092731293.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:02AM",
+      "title": "Former Tesla exec claims EV industry will grow, not shrink, after death of $7,500 tax credit: The markets established\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/former-tesla-exec-claims-ev-080200421.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:23AM",
+      "title": "My Top Value Stock to Buy for 2026 (and It's Not Even Close)\n\n\n(Motley Fool)",
+      "link": "/news/183798/my-top-value-stock-to-buy-for-2026-and-its-not-even-close"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:01AM",
+      "title": "Magnificent Seven surpass EU GDP: Is this a tech bubble warning?\n\n\n(Euronews)",
+      "link": "https://finance.yahoo.com/m/c3d5cefe-ac49-3ebc-974c-253b82759fc4/magnificent-seven-surpass-eu.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:39AM",
+      "title": "What You Need To Know Ahead of Tesla's Earnings Release\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/26cbe8ff-adf3-33c3-8a02-a9967e255f1e/what-you-need-to-know-ahead.html"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "22:30",
+      "title": "Elon Musk's Wealth Now Dwarfs The GDP Of 83% Of Countries\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/elon-musks-wealth-now-dwarfs-023049834.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:17PM",
+      "title": "The Score: Pfizer, Tesla, Electronic Arts and More Stocks That Defined the Week\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/finance/stocks/pfizer-tesla-electronic-arts-nike-meta-occidental-c27758e4?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:30PM",
+      "title": "'Elon Is Smart And Ahead Of The Curve,' Says Mark Cuban, But Still Doesn't Think Humanoid Robots Are The Future\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/elon-smart-ahead-curve-says-203018518.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:24PM",
+      "title": "These Stocks Moved the Most Today: Tesla, Applied Materials, Apple, Plug Power, Wynn Resorts, Rumble, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/d75482b2-59b4-3ede-9953-c2fc5049c97c/these-stocks-moved-the-most.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:07PM",
+      "title": "Netflix stock logs biggest weekly drop since April as Elon Musk calls for users to cancel subscriptions\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/netflix-stock-logs-biggest-weekly-drop-since-april-as-elon-musk-calls-for-users-to-cancel-subscriptions-200715651.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00PM",
+      "title": "Stock market today: Dow, S&P 500's latest records cap Wall Street's latest winning week\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500s-latest-records-cap-wall-streets-latest-winning-week-200046739.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00PM",
+      "title": "Stock market today: Dow, S&P 500 close at record highs to cap Wall Street's latest winning week\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-close-at-record-highs-to-cap-wall-streets-latest-winning-week-200046718.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:58PM",
+      "title": "Ford, GM, and Other Auto Stocks Jump on Potential Tariff Relief\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/ford-gm-toyota-honda-auto-tariffs-f66a438f?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:50PM",
+      "title": "Netflix, Occidental Petroleum, Bumble: Trending Tickers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/netflix-occidental-petroleum-bumble-trending-195024273.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:25PM",
+      "title": "Big Tech ETF slumps, with just two of its holdings in positive territory\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-and-s-p-500-line-up-for-more-records-as-shutdown-cancels-jobs-data/card/big-tech-etf-slumps-with-just-two-of-its-holdings-in-positive-territory-h4AjwAlkXZxJ1GAuF9x3?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:18PM",
+      "title": "Tesla Just Had Its Best Quarter--And Still Lost the EV Crown\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/tesla-just-had-best-quarter-191802317.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:17PM",
+      "title": "TSLA: Tesla Stock Rises As Cybertruck Debuts In Qatar After Saudi Expansion\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/tsla-tesla-stock-rises-cybertruck-191744706.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:16PM",
+      "title": "Why Tesla (TSLA) Shares Are Falling Today\n\n\n(StockStory)",
+      "link": "/news/183639/why-tesla-tsla-shares-are-falling-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:47PM",
+      "title": "Russia's Oil Export Game Hits a Wall -- Is a Global Price Shock Next?\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/russias-oil-export-game-hits-184741324.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:31PM",
+      "title": "Tesla Diner Served 50,000 Burgers Last Quarter, While The Company Saved 842 Million Liters Of Gas\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/tesla-diner-served-50-000-183103184.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:29PM",
+      "title": "Tesla, GM lead record U.S. EV market share as federal purchase incentives end\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/shorts/q8hQayALzOk"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:25PM",
+      "title": "Netflix stock on track to end week down 5% as Elon Musk calls for users to cancel subscriptions\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/netflix-stock-on-track-to-end-week-down-5-as-elon-musk-calls-for-users-to-cancel-subscriptions-182522911.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:10PM",
+      "title": "Stock market today: Dow briefly touches 47,000 as Wall Street looks to cap latest stellar week\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-briefly-touches-47000-as-wall-street-looks-to-cap-latest-stellar-week-181051376.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:57PM",
+      "title": "The Magnificent Seven Stocks Are Roaring Again. Can They Keep Climbing?\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/f9409d4a-06fa-33bc-8fc9-bbea8c6eba37/the-magnificent-seven-stocks.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:49PM",
+      "title": "Tech-heavy Nasdaq turns lower as Palantir, Big Tech stocks drop\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-and-s-p-500-line-up-for-more-records-as-shutdown-cancels-jobs-data/card/tech-heavy-nasdaq-turns-lower-as-palantir-big-tech-stocks-drop-KpDjOoJifKKtNdXj24DD?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:13PM",
+      "title": "Dow Rises 500 to New High. The Nasdaq Turns Negative.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/d20cd040-22ff-37bd-8d29-8d1d56d8d8c0/dow-rises-500-to-new-high..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:05PM",
+      "title": "Pretty Much Everything Is Rallying. Just Not the Mag 7.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/84de44cb-3589-3f3c-8edd-706208fc8c0d/pretty-much-everything-is.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:58PM",
+      "title": "Tesla Stock Falls Despite Record Q3 Deliveries Smash Wall Street Forecasts\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/tesla-stock-falls-despite-record-165839021.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:24PM",
+      "title": "Stock market today: Dow touches 47,000, leads S&P 500 toward records in latest stellar week\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-touches-47000-leads-sp-500-toward-records-in-latest-stellar-week-162436738.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:24PM",
+      "title": "Stock market today: Dow touches 47,000 as Wall Street looks to cap latest stellar week\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-touches-47000-as-wall-street-looks-to-cap-latest-stellar-week-162436429.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:11PM",
+      "title": "These Stocks Are Moving the Most Today: Tesla, Applied Materials, Apple, Plug Power, Wynn Resorts, Rumble, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/d75482b2-59b4-3ede-9953-c2fc5049c97c/these-stocks-are-moving-the.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:50AM",
+      "title": "Stock Market Rallies To Highs As AI Leads; Tesla Reverses Lower: Weekly Review\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/1df4cf8c-e7be-3a8c-8059-96912738ee64/stock-market-rallies-to-highs.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "Watch These Tesla Price Levels as Stock Shifts Gear After Soaring in 3rd Quarter\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/7531438c-81d4-3b97-a33c-3b4c4a494cd6/watch-these-tesla-price.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "BLBD vs. TSLA: Which Stock Is the Better Value Option?\n\n\n(Zacks)",
+      "link": "/news/183492/blbd-vs-tsla-which-stock-is-the-better-value-option"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:25AM",
+      "title": "Tesla news: Q3 deliveries, Cybertruck lawsuit, Elon Musk's pay\n\n\n(Quartz)",
+      "link": "https://finance.yahoo.com/m/9b5cf3e9-865a-3ce8-8889-0fec9cbf52cd/tesla-news%3A-q3-deliveries%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Analyst Says He Doesn't See 'Any Upside' For Tesla Stock - Here's Why\n\n\n(Insider Monkey)",
+      "link": "/news/183293/analyst-says-he-doesnt-see-any-upside-for-tesla-stock-heres-why"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:50AM",
+      "title": "Stock Market Today: Dow Rises As Jobs Report Nixed; Nvidia, Tesla Gain Ground (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/3060a649-6736-337e-94a3-7d286583dd27/stock-market-today%3A-dow-rises.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:50AM",
+      "title": "Tesla Q3 Deliveries Reach Record Levels: Is TSLA Stock a Buy?\n\n\n(Zacks)",
+      "link": "/news/183425/tesla-q3-deliveries-reach-record-levels-is-tsla-stock-a-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:37AM",
+      "title": "Tesla Stock Rises. Up Next: A Vote on Musks Pay.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/4d67131c-7577-392a-9ceb-d05ec94547e1/tesla-stock-rises.-up-next%3A-a.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:33AM",
+      "title": "Apple Adds a Bear as Jefferies Downgrades, Sees 20% Downside\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/apple-adds-bear-jefferies-downgrades-133322684.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:05AM",
+      "title": "BYD, Nio, XPeng Stock Falls After Tesla Crushes Wall Street Delivery Estimates\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/byd-nio-xpeng-stock-falls-130555385.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:02AM",
+      "title": "Tesla Investors Push Back on Elon Musk's $1 Trillion Pay Deal\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/tesla-investors-push-back-elon-130239712.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Analyst Explains Tesla's (TSLA) 'Big Question' and New Struggles\n\n\n(Insider Monkey)",
+      "link": "/news/183251/analyst-explains-teslas-tsla-big-question-and-new-struggles"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:59AM",
+      "title": "Enterprise Development Holdings Sells Tesla and Palantir Stakes Worth $12.7 Million\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/enterprise-development-holdings-sells-tesla-125917834.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:55AM",
+      "title": "Tesla Just Crushed Delivery Records--But the Real Shock Is What Comes Next\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/tesla-just-crushed-delivery-records-125540516.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Tesla Stock Bounces Back After Deliveries Cause Drop. Up Next: A Vote on Musk's Pay.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/tesla-stock-price-deliveries-musk-pay-9d256496?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:20AM",
+      "title": "Tesla UK sales flat in September despite broader EV market growth\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/tesla-uk-sales-flat-september-122006391.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:20AM",
+      "title": "Beyond Tesla: Why GM and Ford Heavy ETFs Could Be Safer Bets Now?\n\n\n(Zacks)",
+      "link": "/news/183241/beyond-tesla-why-gm-and-ford-heavy-etfs-could-be-safer-bets-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:03AM",
+      "title": "New Nvidia deal, Asahi sparks beer shortage fears & Tesla rebounds\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/nvidia-deal-asahi-sparks-beer-120350326.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:34AM",
+      "title": "The Week in Numbers: hot valuations, a YouTube payout\n\n\n(Reuters Videos)",
+      "link": "https://finance.yahoo.com/video/week-numbers-hot-valuations-youtube-113426133.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:44AM",
+      "title": "Musk ?Goes Head-to-Head With Altman. But This AI Stock Is the Winner.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/musk-altman-tesla-openai-stock-things-to-know-today-bcf950b0?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "Tesla's tax credits are ending, but the AI benefit is only beginning\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/teslas-tax-credits-are-ending-but-the-ai-benefit-is-only-beginning-100056802.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:38AM",
+      "title": "These Stocks Are Moving the Most Today: Tesla, Applied Materials, Boeing, Rumble, and More\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/stock-movers-a531f4ec?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:37AM",
+      "title": "Tesla Stock Tanked After Decent Deliveries. Why Musk's Pay Package Will Pass.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/tesla-stock-deliveries-musk-pay-9d256496?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00AM",
+      "title": "Tesla vehicle sales made a comeback last quarter. Will a lost EV tax credit end the rebound?\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/tesla-vehicle-sales-made-comeback-080000198.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:32AM",
+      "title": "Podcast: Trump Raises Pressure on Democrats as Shutdown Continues\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/3f684bc4-ee01-35ed-ad58-acac96b7df4f/podcast%3A-trump-raises.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:31AM",
+      "title": "Heard on the Street Thursday Recap: Taking Credit\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/9e8fafa3-5fde-3ab8-90e8-8f8ccdc98e78/heard-on-the-street-thursday.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:22AM",
+      "title": "Tesla sales jump after months of boycotts: Can the momentum continue?\n\n\n(Euronews)",
+      "link": "https://finance.yahoo.com/m/244a6fba-8592-39e9-83a0-16794fa417e4/tesla-sales-jump-after-months.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "19:10",
+      "title": "From cleaning floors to building cars: China's Dreame charts EV ambition\n\n\n(DigiTimes)  -5.11%",
+      "link": "https://www.digitimes.com/news/a20250930PD230/china-vehicle-manufacturing-home-appliance.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:08PM",
+      "title": "Tesla Shareholders Urged to Reject $1 Trillion Pay for Elon Musk\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/f3d1a3ef-7b35-3579-a616-14bcdb32af4f/tesla-shareholders-urged-to.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:59PM",
+      "title": "Tesla stock whipsaws after 3rd-quarter deliveries beat Wall Street's estimates\n\n\n(Business Insider)",
+      "link": "https://finance.yahoo.com/m/1045bc30-7bb7-3766-8aec-b7dd7b3c667c/tesla-stock-whipsaws-after.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:45PM",
+      "title": "Tesla (TSLA) Stock Slides as Market Rises: Facts to Know Before You Trade\n\n\n(Zacks)",
+      "link": "/news/182781/tesla-tsla-stock-slides-as-market-rises-facts-to-know-before-you-trade"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:41PM",
+      "title": "Elon Musk Still Tops World's Richest. This Billionaire Is Hot on His Heels.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/elon-musk-larry-ellison-net-worth-billionaires-8e2cb5d7?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:40PM",
+      "title": "Stocks to Watch Recap: Fair Isaac, Tesla, Stellantis, Netflix\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/02c7e1ae-39dc-3e13-8a56-2b18e427ddbc/stocks-to-watch-recap%3A-fair.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:31PM",
+      "title": "Musk Vs. Buffett: Tesla CEO Goes 'Cancel Netflix,' While Oracle Of Omaha Streams Live Boxing\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/musk-vs-buffett-tesla-ceo-213125530.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30PM",
+      "title": "Podcast: U.S. Stocks Hit Record Highs on Shutdowns Second Day\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/daa631e9-0af9-33f5-b870-8614255a20eb/podcast%3A-u.s.-stocks-hit.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:27PM",
+      "title": "Pensions, Teacher Union Urge Tesla Shareholders to Reject $1 Trillion Pay for Elon Musk\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/tesla-shareholders-musk-pay-e864ea59?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:07PM",
+      "title": "U.S. EV market can grow without subsidies, says former Tesla President Jon McNeill\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=x6w8FxHXdr8"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:03PM",
+      "title": "Tesla Sets New Sales Record as EV Subsidy Ends\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/1fd4ed9d-c215-3226-864b-f34f4e574013/tesla-sets-new-sales-record.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:55PM",
+      "title": "Stock Market Today: Nasdaq Hits High Even As Tesla Sinks; China Stock Futu Trampled\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/f464db28-e154-36c8-b0be-7dbf0f6469d0/stock-market-today%3A-nasdaq.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:41PM",
+      "title": "Here's Why Tesla Shares Accelerated Higher in September\n\n\n(Motley Fool)",
+      "link": "/news/182755/heres-why-tesla-shares-accelerated-higher-in-september"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:40PM",
+      "title": "Tesla posts strong sales as EV tax credit lapses, Musk becomes first $500 billion man\n\n\n(USA TODAY)",
+      "link": "https://finance.yahoo.com/m/6b26e5c2-18c4-3eec-9ee9-f3d53c8ff236/tesla-posts-strong-sales-as.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:37PM",
+      "title": "Heard on the Street Recap: Taking Credit\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/04d6689f-e9b1-395b-be66-72dfa1e18c3a/heard-on-the-street-recap%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:31PM",
+      "title": "Las Vegas Police Department Gets Customized Cybertrucks: 'It Will Stop Bullets'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/las-vegas-police-department-gets-203104802.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:25PM",
+      "title": "Tesla's energy storage and generation doesn't get enough attention: Requisite's Bryn Talkington\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=cZmngJzXQcE"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:24PM",
+      "title": "Musk Still Tops Worlds Billionaires. Oracles Ellison Is Hot on His Heels.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/6928684a-6920-3882-afdb-66f02915628e/musk-still-tops-world%E2%80%99s.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:16PM",
+      "title": "These Stocks Moved the Most Today: Tesla, Rivian, Occidental, Fair Isaac, Fermi, Kodiak AI, Bullish, Rigetti, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/0547b3ef-a137-3d58-8a40-d168c2795ede/these-stocks-moved-the-most.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:10PM",
+      "title": "Tesla Stock Drops Despite Record Quarterly Deliveries. What Drove the Big Beat.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/a7f29df9-70ca-3e41-b41f-e574be6eca71/tesla-stock-drops-despite.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:04PM",
+      "title": "Tesla Delivers Record 497,099 EVs In Q3 On Expiring Tax Credits. TSLA Stock Reverses Lower.\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/44bc136a-35c6-33e6-87cd-8632dd910b3a/tesla-delivers-record-497%2C099.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:02PM",
+      "title": "Dow, S&P 500, Nasdaq notch records on AI buzz even as government shutdown drags on\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/dow-sp-500-nasdaq-notch-records-on-ai-buzz-even-as-government-shutdown-drags-on-200207403.html"
+    }
+  ]
+}

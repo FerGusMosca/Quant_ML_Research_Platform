@@ -1,0 +1,47 @@
+{
+  "symbol": "NKE",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2173,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.104
+  },
+  "top_positive": [
+    {
+      "sent": "The following table presents a summary of share repurchases made during the quarter ended November\u00a030, 2021: PERIOD TOTAL NUMBER OF SHARES PURCHASED AVERAGE PRICE PAID PER SHARE APPROXIMATE DOLLAR VALUE OF SHARES THAT MAY YET BE PURCHASED UNDER THE PLANS OR PROGRAMS (IN MILLIONS) September 1 \u2014 September 30, 2021 2,145,173 $ 156.78 $ 9,252 October 1 \u2014 October 31, 2021 2,054,002 $ 156.20 $ 8,932 November 1 \u2014 November 30, 2021 1,814,713 $ 171.26 $ 8,621 6,013,888 $ 160.95 47 Table of Contents ITEM 6.",
+      "score": 0.9345
+    },
+    {
+      "sent": "The following table presents a summary of share repurchases made during the quarter ended November\u00a030, 2021: PERIOD TOTAL NUMBER OF SHARES PURCHASED AVERAGE PRICE PAID PER SHARE APPROXIMATE DOLLAR VALUE OF SHARES THAT MAY YET BE PURCHASED UNDER THE PLANS OR PROGRAMS (IN MILLIONS) September 1 \u2014 September 30, 2021 2,145,173 $ 156.78 $ 9,252 October 1 \u2014 October 31, 2021 2,054,002 $ 156.20 $ 8,932 November 1 \u2014 November 30, 2021 1,814,713 $ 171.26 $ 8,621 6,013,888 $ 160.95 47 Table of Contents ITEM 6.",
+      "score": 0.9345
+    },
+    {
+      "sent": "NIKE Direct revenues increased 30%, driven by strong digital sales growth of 40%, comparable store sales growth of 16%, in part due to improved physical retail traffic, and the addition of new stores.",
+      "score": 0.9136
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "GROSS MARGIN THREE MONTHS ENDED NOVEMBER 30, SIX MONTHS ENDED NOVEMBER 30, (Dollars in millions) 2021 2020 % CHANGE 2021 2020 % CHANGE Gross profit $ 5,213 $ 4,847 8 % $ 10,909 $ 9,588 14 % Gross margin 45.9 % 43.1 % 280 bps 46.2 % 43.9 % 230 bps For the second quarter of fiscal 2022, our consolidated gross margin was 280 basis points higher than the prior year period and primarily reflected the following factors: \u2022 Higher margin in our NIKE Direct business, primarily driven by low promotional activity in the current period reflecting limited available for sale inventory due to supply chain constraints compared to higher promotional activity in the prior year as we managed the impacts from COVID-19 (increasing gross margin approximately 170 basis points); \u2022 Higher mix of full-price sales, on a wholesale equivalent basis, (increasing gross margin approximately 110 basis points); \u2022 Lower other costs, in part due to higher restructuring-related costs related to our organizational realignment in the prior year, among other factors, (increasing gross margin approximately 50 basis points); \u2022 Favorable changes in net foreign currency exchange rates, including hedges, (increasing gross margin approximately 40 basis points); and \u2022 Lower NIKE Brand full-price product margins, on a wholesale equivalent basis.",
+      "score": -0.9775
+    },
+    {
+      "sent": "For the first six months of fiscal 2022, our consolidated gross margin was 230 basis points higher than the prior year period and primarily reflected the following factors: \u2022 Higher margin in our NIKE Direct business, primarily driven by low promotional activity in the current period reflecting limited available for sale inventory due to supply chain constraints compared to higher promotional activity in the prior year as we managed the impacts from COVID-19 (increasing gross margin approximately 170 basis points); \u2022 Higher mix of full-price sales, on a wholesale equivalent basis, (increasing gross margin approximately 90 basis points); \u2022 Lower other costs, in part due to higher restructuring-related costs related to our organizational realignment in the prior year, (increasing gross margin approximately 40 basis points); and \u2022 Higher NIKE Brand product costs, on a wholesale equivalent basis, primarily due to increased freight and logistics costs (decreasing gross margin approximately 80 basis points).",
+      "score": -0.9559
+    },
+    {
+      "sent": "Gross margin decreased approximately 310 basis points reflecting lower full-price ASP, net of discounts, lower NIKE Direct margins, higher other costs and a lower mix of full-price sales, partially offset by lower product costs.",
+      "score": -0.872
+    }
+  ],
+  "forward_snippets": [
+    "We expect it will take several months from re-opening for the factories to return to pre-closure production volumes, and there could be further impacts, including additional closures or employee absences, as a result of the emergence and spread of COVID-19 variants, as well as other factors outside of our control that could continue to cause further disruption to our planned inventory production.",
+    "We also experienced higher transportation, logistics and fulfillment costs as a result of this dynamic environment, which partially offset gross margin expansion in the second quarter and first six months of fiscal 2022.",
+    "We expect the combination of factory closures and elevated transit times will continue to impact product availability, leading to inventory supply significantly lagging consumer demand for the remainder of the fiscal year.",
+    "In addition, we expect transportation, logistics and fulfillment costs will continue to increase as we navigate these supply chain constraints.",
+    "Our NIKE Direct business has continued its momentum in the second quarter, fueling our growth as we continue to navigate through the pandemic by leveraging our digital platforms with our store footprint to connect directly with our consumers."
+  ]
+}

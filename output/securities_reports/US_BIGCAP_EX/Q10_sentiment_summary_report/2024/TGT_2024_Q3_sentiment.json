@@ -1,0 +1,47 @@
+{
+  "symbol": "TGT",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2228,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.312
+  },
+  "top_positive": [
+    {
+      "sent": "TARGET CORPORATION Q1 2024 Form 10-Q 4 FINANCIAL STATEMENTS Table of Contents Index to Notes Consolidated Statements of Shareholders\u2019 Investment Common Stock Additional Accumulated Other Stock Par Paid-in Retained Comprehensive (millions)\u00a0(unaudited) Shares Value Capital Earnings (Loss) / Income Total January 28, 2023 460.3 $ 38 $ 6,608 $ 5,005 $ ( 419 ) $ 11,232 Net earnings \u2014 \u2014 \u2014 950 \u2014 950 Other comprehensive loss \u2014 \u2014 \u2014 \u2014 ( 3 ) ( 3 ) Dividends declared \u2014 \u2014 \u2014 ( 507 ) \u2014 ( 507 ) Stock options and awards 1.3 \u2014 ( 67 ) \u2014 \u2014 ( 67 ) April 29, 2023 461.6 $ 38 $ 6,541 $ 5,448 $ ( 422 ) $ 11,605 Net earnings \u2014 \u2014 \u2014 835 \u2014 835 Other comprehensive loss \u2014 \u2014 \u2014 \u2014 ( 3 ) ( 3 ) Dividends declared \u2014 \u2014 \u2014 ( 516 ) \u2014 ( 516 ) Stock options and awards \u2014 \u2014 69 \u2014 \u2014 69 July 29, 2023 461.6 $ 38 $ 6,610 $ 5,767 $ ( 425 ) $ 11,990 Net earnings \u2014 \u2014 \u2014 971 \u2014 971 Other comprehensive loss \u2014 \u2014 \u2014 \u2014 ( 5 ) ( 5 ) Dividends declared \u2014 \u2014 \u2014 ( 513 ) \u2014 ( 513 ) Stock options and awards 0.1 \u2014 71 \u2014 \u2014 71 October 28, 2023 461.7 $ 38 $ 6,681 $ 6,225 $ ( 430 ) $ 12,514 Net earnings \u2014 \u2014 \u2014 1,382 \u2014 1,382 Other comprehensive loss \u2014 \u2014 \u2014 \u2014 ( 30 ) ( 30 ) Dividends declared \u2014 \u2014 \u2014 ( 514 ) \u2014 ( 514 ) Stock options and awards \u2014 \u2014 80 \u2014 \u2014 80 February 3, 2024 461.7 $ 38 $ 6,761 $ 7,093 $ ( 460 ) $ 13,432 TARGET CORPORATION Q1 2024 Form 10-Q 5 FINANCIAL STATEMENTS Table of Contents Index to Notes Consolidated Statements of Shareholders\u2019 Investment Common Stock Additional Accumulated Other Stock Par Paid-in Retained Comprehensive (millions)\u00a0(unaudited) Shares Value Capital Earnings (Loss) / Income Total February 3, 2024 461.7 $ 38 $ 6,761 $ 7,093 $ ( 460 ) $ 13,432 Net earnings \u2014 \u2014 \u2014 942 \u2014 942 Other comprehensive loss \u2014 \u2014 \u2014 \u2014 ( 5 ) ( 5 ) Dividends declared \u2014 \u2014 \u2014 ( 516 ) \u2014 ( 516 ) Stock options and awards 0.9 1 ( 14 ) \u2014 \u2014 ( 13 ) May 4, 2024 462.6 $ 39 $ 6,747 $ 7,519 $ ( 465 ) $ 13,840 We declared $ 1.10 and $ 1.08 dividends per share for the three months ended May\u00a04, 2024, and April\u00a029, 2023, respectively, and $ 4.38 per share for the fiscal year ended February\u00a03, 2024.",
+      "score": 0.9812
+    },
+    {
+      "sent": "TARGET CORPORATION Q1 2024 Form 10-Q 19 MANAGEMENT'S DISCUSSION AND ANALYSIS Table of Contents ANALYSIS OF FINANCIAL CONDITION Index to Notes Analysis of Financial Condition Liquidity and Capital Resources Capital Allocation We follow a disciplined and balanced approach to capital allocation based on the following priorities, ranked in order of importance: first, we fully invest in opportunities to profitably grow our business, create sustainable long-term value, and maintain our current operations and assets; second, we maintain a competitive quarterly dividend and seek to grow it annually; and finally, we return any excess cash to shareholders by repurchasing shares within the limits of our credit rating goals.",
+      "score": 0.949
+    },
+    {
+      "sent": "TARGET CORPORATION Q1 2024 Form 10-Q 19 MANAGEMENT'S DISCUSSION AND ANALYSIS Table of Contents ANALYSIS OF FINANCIAL CONDITION Index to Notes Analysis of Financial Condition Liquidity and Capital Resources Capital Allocation We follow a disciplined and balanced approach to capital allocation based on the following priorities, ranked in order of importance: first, we fully invest in opportunities to profitably grow our business, create sustainable long-term value, and maintain our current operations and assets; second, we maintain a competitive quarterly dividend and seek to grow it annually; and finally, we return any excess cash to shareholders by repurchasing shares within the limits of our credit rating goals.",
+      "score": 0.949
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Quantitative and Qualitative Disclosures About Market Risk There have been no material changes in our primary risk exposures or management of market risks from those disclosed in Part II, Item 7A, Quantitative and Qualitative Disclosures About Market Risk of our Form\u00a010-K for the fiscal year ended February\u00a03, 2024.",
+      "score": -0.8225
+    },
+    {
+      "sent": "Quantitative and Qualitative Disclosures About Market Risk There have been no material changes in our primary risk exposures or management of market risks from those disclosed in Part II, Item 7A, Quantitative and Qualitative Disclosures About Market Risk of our Form\u00a010-K for the fiscal year ended February\u00a03, 2024.",
+      "score": -0.8225
+    },
+    {
+      "sent": "TARGET CORPORATION Q1 2024 Form 10-Q 13 MANAGEMENT'S DISCUSSION AND ANALYSIS Table of Contents ANALYSIS OF RESULTS OF OPERATIONS Index to Notes Analysis of Results of Operations Summary of Operating Income Three\u00a0Months\u00a0Ended (dollars in millions) May 4, 2024 April 29, 2023 Change Sales $ 24,143 $ 24,948 (3.2) % Other revenue 388 374 3.9 Total revenue 24,531 25,322 (3.1) Cost of sales 17,449 18,386 (5.1) SG&A expenses 5,168 5,025 2.8 Depreciation and amortization (exclusive of depreciation included in cost of sales) 618 583 6.2 Operating income $ 1,296 $ 1,328 (2.4) % Rate\u00a0Analysis Three Months Ended May 4, 2024 April 29, 2023 Gross margin rate 27.7 % 26.3 % SG&A expense rate 21.1 19.8 Depreciation and amortization expense rate (exclusive of depreciation included in cost of sales) 2.5 2.3 Operating income margin rate 5.3 5.2 Note: Gross margin rate is calculated as gross margin (sales less cost of sales) divided by sales.",
+      "score": -0.7964
+    }
+  ],
+  "forward_snippets": [
+    "We report after-tax return on invested capital (ROIC) because we believe ROIC provides a meaningful measure of our capital allocation effectiveness over time.",
+    "We expect that comparable sales growth will drive the majority of our total sales growth.",
+    "We believe that our ability to successfully differentiate our guests\u2019 shopping experience through a careful combination of merchandise assortment, price, convenience, guest experience, and other factors will, over the long-term, drive both increasing shopping frequency (number of transactions, or \"traffic\") and the amount spent each visit (average transaction amount).",
+    "We expect that comparable sales growth will drive the majority of our total sales growth.",
+    "We believe that our ability to successfully differentiate our guests\u2019 shopping experience through a careful combination of merchandise assortment, price, convenience, guest experience, and other factors will, over the long-term, drive both increasing shopping frequency (number of transactions, or \"traffic\") and the amount spent each visit (average transaction amount)."
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "symbol": "KMB",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-02",
+      "time": "01:53",
+      "title": "Kimberly-Clark (KMB) Target Lowered by Evercore ISI, Entry Point Highlighted\n\n\n(Insider Monkey)",
+      "link": "/news/181775/kimberly-clark-kmb-target-lowered-by-evercore-isi-entry-point-highlighted"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "13:21",
+      "title": "Kimberly-Clark Corporation (KMB): A Reliable Pick for Recession-Proof Dividend Investors\n\n\n(Insider Monkey)",
+      "link": "/news/178675/kimberly-clark-corporation-kmb-a-reliable-pick-for-recession-proof-dividend-investors"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "09:30",
+      "title": "Bargains or Busts? These 3 Dividend Stocks Pay More Than 4% and Are Trading Near Their 52-Week Lows\n\n\n(Motley Fool)",
+      "link": "/news/176825/bargains-or-busts-these-3-dividend-stocks-pay-more-than-4-and-are-trading-near-their-52-week-lows"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:50AM",
+      "title": "Why Investors Need to Take Advantage of These 2 Consumer Staples Stocks Now\n\n\n(Zacks)",
+      "link": "/news/176818/why-investors-need-to-take-advantage-of-these-2-consumer-staples-stocks-now"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "10:00",
+      "title": "What's Cooking for Conagra Stock Ahead of Q1 Earnings Release?\n\n\n(Zacks)",
+      "link": "/news/175876/whats-cooking-for-conagra-stock-ahead-of-q1-earnings-release"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:21AM",
+      "title": "United Natural to Come Up With Q4 Earnings: What You Should Know\n\n\n(Zacks)",
+      "link": "/news/175672/united-natural-to-come-up-with-q4-earnings-what-you-should-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:01AM",
+      "title": "How To Put $100 In Your Retirement Fund Each Month With Kimberly-Clark Stock\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/put-100-retirement-fund-month-120107247.html"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "11:03",
+      "title": "What's Cooking for Lamb Weston Stock Ahead of Q1 Earnings Release?\n\n\n(Zacks)",
+      "link": "/news/174827/whats-cooking-for-lamb-weston-stock-ahead-of-q1-earnings-release"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "23:31",
+      "title": "Q2 Earnings Highs And Lows: Kimberly-Clark (NASDAQ:KMB) Vs The Rest Of The Household Products Stocks\n\n\n(StockStory)",
+      "link": "/news/173051/q2-earnings-highs-and-lows-kimberly-clark-nasdaq-kmb-vs-the-rest-of-the-household-products-stocks"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "21:24",
+      "title": "How Kimberly-Clark (KMB) Maintains Reliability in the Safest High Dividend Stocks Category\n\n\n(Insider Monkey)",
+      "link": "/news/171726/how-kimberly-clark-kmb-maintains-reliability-in-the-safest-high-dividend-stocks-category"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "11:12",
+      "title": "Kimberly-Clark Leverages Innovation and Premiumization to Aid Growth\n\n\n(Zacks)",
+      "link": "/news/167542/kimberly-clark-leverages-innovation-and-premiumization-to-aid-growth"
+    },
+    {
+      "date": "2025-09-13",
+      "time": "09:53",
+      "title": "Jim Cramer on Kimberly-Clark: \"A Company in the Midst of a Terrific Turnaround\"\n\n\n(Insider Monkey)",
+      "link": "/news/165484/jim-cramer-on-kimberly-clark-a-company-in-the-midst-of-a-terrific-turnaround"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "15:10",
+      "title": "Why Kimberly-Clark (KMB) Shares Are Sliding Today\n\n\n(StockStory)",
+      "link": "/news/162965/why-kimberly-clark-kmb-shares-are-sliding-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:34AM",
+      "title": "Is Kimberly-Clark Stock Underperforming the S&P 500?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/dadec45e-eaac-3148-8a63-789c4e1e8466/is-kimberly-clark-stock.html"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "08:50",
+      "title": "These 2 Consumer Staples Stocks Could Beat Earnings: Why They Should Be on Your Radar\n\n\n(Zacks)",
+      "link": "/news/161238/these-2-consumer-staples-stocks-could-beat-earnings-why-they-should-be-on-your-radar"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:10AM",
+      "title": "10 Dividend Stocks to Hold for the Next 10 Years\n\n\n(Motley Fool)",
+      "link": "/news/160816/10-dividend-stocks-to-hold-for-the-next-10-years"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "08:28",
+      "title": "3 Low-Volatility Stocks We Approach with Caution\n\n\n(StockStory)",
+      "link": "/news/159937/3-low-volatility-stocks-we-approach-with-caution"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "16:29",
+      "title": "Top Stock Reports for Apple, Novartis & Charles Schwab\n\n\n(Zacks)",
+      "link": "/news/158447/top-stock-reports-for-apple-novartis-charles-schwab"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "16:10",
+      "title": "Kimberly-Clark to Webcast its Presentation at Piper Sandler's Growth Frontiers Conference\n\n\n(PR Newswire)",
+      "link": "/news/156039/kimberly-clark-to-webcast-its-presentation-at-piper-sandlers-growth-frontiers-conference"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:03AM",
+      "title": "Depend Teams Up with Ken Griffey Jr. & Sr. to Inspire Early Detection and Open Conversation Around Prostate Cancer\n\n\n(PR Newswire)",
+      "link": "/news/155572/depend-teams-up-with-ken-griffey-jr-sr-to-inspire-early-detection-and-open-conversation-around-prostate-cancer"
+    },
+    {
+      "date": "2025-08-29",
+      "time": "08:01",
+      "title": "Looking For Yields: Kimberly-Clark, Southern, And Delek Logistics Are Consistent Moneymakers\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/looking-yields-kimberly-clark-southern-120105302.html"
+    },
+    {
+      "date": "2025-08-28",
+      "time": "08:00",
+      "title": "Kimberly-Clark Appoints Stacey Valy Panayiotou as Chief Human Resources Officer\n\n\n(PR Newswire)",
+      "link": "/news/151949/kimberly-clark-appoints-stacey-valy-panayiotou-as-chief-human-resources-officer"
+    },
+    {
+      "date": "2025-08-27",
+      "time": "00:33",
+      "title": "1 S&P 500 Stock for Long-Term Investors and 2 We Question\n\n\n(StockStory)",
+      "link": "/news/150609/1-sp-500-stock-for-long-term-investors-and-2-we-question"
+    },
+    {
+      "date": "2025-08-25",
+      "time": "15:56",
+      "title": "Kimberly-Clark to shift four production lines from Fox Crossing to Malaysia, Vietnam\n\n\n(The Post-Crescent)",
+      "link": "https://finance.yahoo.com/m/ee62d5b1-b6c7-3599-afe3-e5a62ca1d2dc/kimberly-clark-to-shift-four.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:04AM",
+      "title": "P&G selling\u00a0China-made luxury 'bumbum' brand diapers as market share falters\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/p-g-selling-china-made-100421486.html"
+    },
+    {
+      "date": "2025-08-22",
+      "time": "13:57",
+      "title": "Kimberly-Clark evaluating Kotex supply chain at Cold Spring plant, says no job cuts expected\n\n\n(The Post-Crescent)",
+      "link": "https://finance.yahoo.com/m/f89a6664-74f6-3b51-89d9-ce155bc901ef/kimberly-clark-evaluating.html"
+    },
+    {
+      "date": "2025-08-20",
+      "time": "16:24",
+      "title": "Why Trump tariff inflation is arriving slowly\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/why-trump-tariff-inflation-is-arriving-slowly-202437568.html"
+    },
+    {
+      "date": "2025-08-18",
+      "time": "06:06",
+      "title": "Goldman Sachs finds unusually large upward revisions to earnings estimates\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-and-nasdaq-set-to-trade-around-record-highs-as-ukraine-talks-await/card/goldman-sachs-finds-unusually-large-upward-revisions-to-earnings-estimates-a1RgQc0a2e8ik9CWsmrV?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:43AM",
+      "title": "Stock Market Today: Dow, S&P 500 and Nasdaq set to edge lower ahead of Trump-Zelensky meeting\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-and-nasdaq-set-to-trade-around-record-highs-as-ukraine-talks-await?mod=mw_FV"
+    },
+    {
+      "date": "2025-08-14",
+      "time": "06:16",
+      "title": "Kimberly-Clark Stock: Analyst Estimates & Ratings\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/282f7847-aa7f-3c75-a828-273725c5fa83/kimberly-clark-stock%3A-analyst.html"
+    },
+    {
+      "date": "2025-08-13",
+      "time": "16:10",
+      "title": "Kimberly-Clark to Webcast its Presentation at Barclays 18th Annual Global Consumer Staples Conference\n\n\n(PR Newswire)",
+      "link": "/news/139848/kimberly-clark-to-webcast-its-presentation-at-barclays-18th-annual-global-consumer-staples-conference"
+    },
+    {
+      "date": "2025-08-07",
+      "time": "11:00",
+      "title": "Kimberly-Clark Appoints John Carmichael as President, North America\n\n\n(PR Newswire)",
+      "link": "/news/132156/kimberly-clark-appoints-john-carmichael-as-president-north-america"
+    },
+    {
+      "date": "2025-08-05",
+      "time": "15:34",
+      "title": "Tariffs are denting profits, and maybe soon your portfolio\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/tariffs-are-denting-profits-and-maybe-soon-your-portfolio-193421778.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:34PM",
+      "title": "Commentary: Tariffs are denting profits, and maybe soon your portfolio\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/commentary-tariffs-are-denting-profits-and-maybe-soon-your-portfolio-193421241.html"
+    },
+    {
+      "date": "2025-08-04",
+      "time": "09:33",
+      "title": "Company News for Aug 4, 2025\n\n\n(Zacks)",
+      "link": "/news/126464/company-news-for-aug-4-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:29AM",
+      "title": "HAZMAT Suits Market Forecast Report 2025-2030, with Profiles of 3M, DuPont de Nemours, Honeywell, Ansell, Dragerwerk, Kimberly-Clark, Lakeland Industries, Alpha Pro Tech, Halyard Health, and Kappler\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/hazmat-suits-market-forecast-report-082900961.html"
+    },
+    {
+      "date": "2025-08-02",
+      "time": "03:04",
+      "title": "Kimberly-Clark Corp (KMB) Q2 2025 Earnings Call Highlights: Record Sales Growth and Strategic ...\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/kimberly-clark-corp-kmb-q2-070453427.html"
+    },
+    {
+      "date": "2025-08-01",
+      "time": "18:00",
+      "title": "Analyst Report: Kimberly-Clark Corporation\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/f7041230-d947-3c0a-aa5d-8eb886dca504/analyst-report%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:08PM",
+      "title": "Stocks Sink as Bonds Jump on Deepening Jobs Cracks: Markets Wrap\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/asian-stocks-decline-tariffs-dollar-015758217.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:10PM",
+      "title": "Kimberly-Clark Declares Quarterly Dividend\n\n\n(PR Newswire)",
+      "link": "/news/125212/kimberly-clark-declares-quarterly-dividend"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:02PM",
+      "title": "Kleenex Maker Stuns Wall Street with Unseen Volume Surge--Is a Consumer Staples Comeback Brewing?\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/kleenex-maker-stuns-wall-street-200212952.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:26PM",
+      "title": "Kimberly-Clark's Q2 Earnings Top Estimates, 2025 Outlook Raised\n\n\n(Zacks)",
+      "link": "/news/125157/kimberly-clarks-q2-earnings-top-estimates-2025-outlook-raised"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:25PM",
+      "title": "Why Kimberly-Clark (KMB) Stock Is Trading Up Today\n\n\n(StockStory)",
+      "link": "/news/124956/why-kimberly-clark-kmb-stock-is-trading-up-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:04PM",
+      "title": "Kimberly-Clark, Roku, Joby Aviation: Trending Tickers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/kimberly-clark-roku-joby-aviation-160423356.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:50AM",
+      "title": "Stock Market Today: Dow Swoons 500 Points On More Trump Tariffs, Weak Jobs Report; Bond Yields Plunge (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/30cb3d38-e2a4-3a91-beb1-db4d1cc801b9/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:13AM",
+      "title": "Colgate Tops Q2 Earnings & Sales Estimates, Tweaks Organic Sales View\n\n\n(Zacks)",
+      "link": "/news/124907/colgate-tops-q2-earnings-sales-estimates-tweaks-organic-sales-view"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:05AM",
+      "title": "Cramer's Stop Trading: Kimberly-Clark\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=4h1uMExXw_s"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Kimberly-Clark (KMB) Reports Q2 Earnings: What Key Metrics Have to Say\n\n\n(Zacks)",
+      "link": "/news/124686/kimberly-clark-kmb-reports-q2-earnings-what-key-metrics-have-to-say"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:22AM",
+      "title": "Colgate-Palmolive beats quarterly estimates on steady demand for essentials\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/colgate-palmolive-beats-quarterly-estimates-122200771.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:54AM",
+      "title": "Kimberly-Clark beats Q2 expectations, shares rise on strong volume growth\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/kimberly-clark-beats-q2-expectations-115446081.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:44AM",
+      "title": "Kimberly Clark Sales Dip but Adjusted Profit Above Views\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/earnings/kimberly-clark-sales-dip-but-adjusted-profit-above-views-f41fc192?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:52AM",
+      "title": "Kimberly-Clark (NASDAQ:KMB) Reports Sales Below Analyst Estimates In Q2 Earnings\n\n\n(StockStory)",
+      "link": "/news/124357/kimberly-clark-nasdaq-kmb-reports-sales-below-analyst-estimates-in-q2-earnings"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:43AM",
+      "title": "Kimberly-Clark: Q2 Earnings Snapshot\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/kimberly-clark-q2-earnings-snapshot-104352092.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:30AM",
+      "title": "Kimberly-Clark Announces Second Quarter 2025 Results, Raises 2025 Outlook\n\n\n(PR Newswire)",
+      "link": "/news/124221/kimberly-clark-announces-second-quarter-2025-results-raises-2025-outlook"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:19AM",
+      "title": "Chevron and Exxon Mobil head earnings for Friday\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-and-nasdaq-point-lower-as-fresh-tariffs-hit-jobs-data-looms/card/chevron-and-exxon-mobil-head-earnings-for-friday-E5wJTWMEwOjMupoqQ5nB?mod=mw_FV"
+    },
+    {
+      "date": "2025-07-31",
+      "time": "23:49",
+      "title": "Piper Sandler Assumes Coverage of Kimberly-Clark (KMB) Stock, Gives Overweight\n\n\n(Insider Monkey)",
+      "link": "/news/124146/piper-sandler-assumes-coverage-of-kimberly-clark-kmb-stock-gives-overweight"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:29PM",
+      "title": "10 Dividend Stocks Poised to Outperform\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/dividend-stocks-exxon-mobil-clorox-5d9ddaa6?mod=bar_FV"
+    },
+    {
+      "date": "2025-07-30",
+      "time": "23:03",
+      "title": "Kimberly-Clark (KMB) Q2 Earnings Report Preview: What To Look For\n\n\n(StockStory)",
+      "link": "/news/122054/kimberly-clark-kmb-q2-earnings-report-preview-what-to-look-for"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:39PM",
+      "title": "Global Value: 3 Stocks Under $10 Riding a Weak Dollar\n\n\n(MarketBeat)",
+      "link": "/news/121406/global-value-3-stocks-under-10-riding-a-weak-dollar"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:31AM",
+      "title": "AB InBev Q2 Earnings Around the Corner: Will It Surpass Estimates?\n\n\n(Zacks)",
+      "link": "/news/121215/ab-inbev-q2-earnings-around-the-corner-will-it-surpass-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:28AM",
+      "title": "Colgate Q2 Earnings: Do Productivity Initiatives Suggest a Beat?\n\n\n(Zacks)",
+      "link": "/news/121211/colgate-q2-earnings-do-productivity-initiatives-suggest-a-beat"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:45AM",
+      "title": "Hershey (HSY) Q2 Earnings and Revenues Top Estimates\n\n\n(Zacks)",
+      "link": "/news/120606/hershey-hsy-q2-earnings-and-revenues-top-estimates"
+    },
+    {
+      "date": "2025-07-29",
+      "time": "14:07",
+      "title": "Trump gets tariffs; Americans get price hikes\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/trump-gets-tariffs-americans-price-180747935.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Earnings Preview: WK Kellogg (KLG) Q2 Earnings Expected to Decline\n\n\n(Zacks)",
+      "link": "/news/119223/earnings-preview-wk-kellogg-klg-q2-earnings-expected-to-decline"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:08AM",
+      "title": "Defensive by Design: How Kimberly-Clark is Weathering the Tariff Storm\n\n\n(Insider Monkey)",
+      "link": "/news/118319/defensive-by-design-how-kimberly-clark-is-weathering-the-tariff-storm"
+    },
+    {
+      "date": "2025-07-26",
+      "time": "22:01",
+      "title": "Why Kimberly-Clark, CareTrust, And Comcast Are Winners For Passive Income\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/why-kimberly-clark-caretrust-comcast-020115224.html"
+    },
+    {
+      "date": "2025-07-25",
+      "time": "23:36",
+      "title": "What Makes Kimberly-Clark (KMB) a Safe Haven in a Turbulent Dividend Market?\n\n\n(Insider Monkey)",
+      "link": "/news/116273/what-makes-kimberly-clark-kmb-a-safe-haven-in-a-turbulent-dividend-market"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Kimberly-Clark (KMB) Expected to Beat Earnings Estimates: Should You Buy?\n\n\n(Zacks)",
+      "link": "/news/115767/kimberly-clark-kmb-expected-to-beat-earnings-estimates-should-you-buy"
+    },
+    {
+      "date": "2025-07-24",
+      "time": "08:50",
+      "title": "How to Boost Your Portfolio with Top Consumer Staples Stocks Set to Beat Earnings\n\n\n(Zacks)",
+      "link": "/news/113900/how-to-boost-your-portfolio-with-top-consumer-staples-stocks-set-to-beat-earnings"
+    },
+    {
+      "date": "2025-07-22",
+      "time": "00:36",
+      "title": "3 Profitable Stocks We Keep Off Our Radar\n\n\n(StockStory)",
+      "link": "/news/110628/3-profitable-stocks-we-keep-off-our-radar"
+    },
+    {
+      "date": "2025-07-21",
+      "time": "23:30",
+      "title": "Why Kimberly-Clark's (KMB) Dividend Stability Appeals to Halal Investors\n\n\n(Insider Monkey)",
+      "link": "/news/110061/why-kimberly-clarks-kmb-dividend-stability-appeals-to-halal-investors"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:31AM",
+      "title": "3 Consumer Stocks That Fall Short\n\n\n(StockStory)",
+      "link": "/news/108818/3-consumer-stocks-that-fall-short"
+    },
+    {
+      "date": "2025-07-18",
+      "time": "06:28",
+      "title": "Kimberly-Clark Corporation (KMB) Has \"An Amazon Problem,\" Says Jim Cramer\n\n\n(Insider Monkey)",
+      "link": "/news/107526/kimberly-clark-corporation-kmb-has-an-amazon-problem-says-jim-cramer"
+    },
+    {
+      "date": "2025-07-14",
+      "time": "16:05",
+      "title": "Rocky Mountain Chocolate Factory Recruits Luis Burgos as Vice President of Operations\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/rocky-mountain-chocolate-factory-recruits-200500858.html"
+    },
+    {
+      "date": "2025-07-13",
+      "time": "14:38",
+      "title": "Can Kimberly-Clark Corporation (KMB) Sustain its Dividend Amid Market Uncertainty?\n\n\n(Insider Monkey)",
+      "link": "/news/102224/can-kimberly-clark-corporation-kmb-sustain-its-dividend-amid-market-uncertainty"
+    },
+    {
+      "date": "2025-07-08",
+      "time": "16:10",
+      "title": "Kimberly-Clark to Announce Second Quarter 2025 Results on August 1, 2025\n\n\n(PR Newswire)",
+      "link": "/news/98413/kimberly-clark-to-announce-second-quarter-2025-results-on-august-1-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "GO vs. KMB: Which Stock Should Value Investors Buy Now?\n\n\n(Zacks)",
+      "link": "/news/98230/go-vs-kmb-which-stock-should-value-investors-buy-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:19AM",
+      "title": "Professional Hygiene Market Insights Report 2025-2030 | Growing Attention Towards Green Solutions, Shift Towards Advanced Solutions, Concerns About Hygiene and Sanitation\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/professional-hygiene-market-insights-report-101900524.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:41AM",
+      "title": "Kimberly-Clark Sells Majority Stake in Global Tissue Biz to Suzano in $1.7B Streamlining Play\n\n\n(Insider Monkey)",
+      "link": "/news/97545/kimberly-clark-sells-majority-stake-in-global-tissue-biz-to-suzano-in-17b-streamlining-play"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:20AM",
+      "title": "3 High-Yielding Stocks That Investors Can Buy and Forget About\n\n\n(Motley Fool)",
+      "link": "/news/97541/3-high-yielding-stocks-that-investors-can-buy-and-forget-about"
+    },
+    {
+      "date": "2025-07-02",
+      "time": "18:41",
+      "title": "Why Are These 3 High-Yield Dividend King Stocks Near 52-Week Lows While the S&P 500 Just Hit an All-Time High?\n\n\n(Motley Fool)",
+      "link": "/news/94792/why-are-these-3-high-yield-dividend-king-stocks-near-52-week-lows-while-the-sp-500-just-hit-an-all-time-high"
+    },
+    {
+      "date": "2025-07-01",
+      "time": "07:32",
+      "title": "SmarterChains Chairman Gustavo Ghory Joins FourKites' Strategic Advisory Council\n\n\n(Business Wire)",
+      "link": "https://finance.yahoo.com/news/smarterchains-chairman-gustavo-ghory-joins-113200820.html"
+    },
+    {
+      "date": "2025-06-26",
+      "time": "00:34",
+      "title": "2 Cash-Producing Stocks on Our Watchlist and 1 to Steer Clear Of\n\n\n(StockStory)",
+      "link": "/news/89223/2-cash-producing-stocks-on-our-watchlist-and-1-to-steer-clear-of"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:03AM",
+      "title": "Kimberly-Clark (KMB): Buy, Sell, or Hold Post Q1 Earnings?\n\n\n(StockStory)",
+      "link": "/news/89185/kimberly-clark-kmb-buy-sell-or-hold-post-q1-earnings"
+    },
+    {
+      "date": "2025-06-23",
+      "time": "07:00",
+      "title": "Triple Your Kimberly-Clark Dividend with this Options Strategy\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/6afae850-1abc-35ce-834e-b59aa4b98276/triple-your-kimberly-clark.html"
+    },
+    {
+      "date": "2025-06-18",
+      "time": "11:40",
+      "title": "KMDA vs. ACAD: Which Stock Is the Better Value Option?\n\n\n(Zacks)",
+      "link": "/news/83555/kmda-vs-acad-which-stock-is-the-better-value-option"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "FMS or RXST: Which Is the Better Value Stock Right Now?\n\n\n(Zacks)",
+      "link": "/news/83554/fms-or-rxst-which-is-the-better-value-stock-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "GBOOY vs. BAM: Which Stock Should Value Investors Buy Now?\n\n\n(Zacks)",
+      "link": "/news/83557/gbooy-vs-bam-which-stock-should-value-investors-buy-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "FLEX vs. GRMN: Which Stock Is the Better Value Option?\n\n\n(Zacks)",
+      "link": "/news/83556/flex-vs-grmn-which-stock-is-the-better-value-option"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "GLDD vs. DY: Which Stock Is the Better Value Option?\n\n\n(Zacks)",
+      "link": "/news/83559/gldd-vs-dy-which-stock-is-the-better-value-option"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "DNBBY or CMWAY: Which Is the Better Value Stock Right Now?\n\n\n(Zacks)",
+      "link": "/news/83558/dnbby-or-cmway-which-is-the-better-value-stock-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "CCU or SAM: Which Is the Better Value Stock Right Now?\n\n\n(Zacks)",
+      "link": "/news/83560/ccu-or-sam-which-is-the-better-value-stock-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "TTEC or MLNK: Which Is the Better Value Stock Right Now?\n\n\n(Zacks)",
+      "link": "/news/83563/ttec-or-mlnk-which-is-the-better-value-stock-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "STRT or RACE: Which Is the Better Value Stock Right Now?\n\n\n(Zacks)",
+      "link": "/news/83562/strt-or-race-which-is-the-better-value-stock-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "STNE vs. FFIV: Which Stock Is the Better Value Option?\n\n\n(Zacks)",
+      "link": "/news/83561/stne-vs-ffiv-which-stock-is-the-better-value-option"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "GO or KMB: Which Is the Better Value Stock Right Now?\n\n\n(Zacks)",
+      "link": "/news/83565/go-or-kmb-which-is-the-better-value-stock-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:08AM",
+      "title": "U by Kotex Teams Up with #1 Pickleball Player Anna Leigh Waters to Help Smash Period Stigma in Sports\n\n\n(PR Newswire)",
+      "link": "/news/83249/u-by-kotex-teams-up-with-1-pickleball-player-anna-leigh-waters-to-help-smash-period-stigma-in-sports"
+    },
+    {
+      "date": "2025-06-17",
+      "time": "08:24",
+      "title": "The 5 Most Interesting Analyst Questions From Kimberly-Clark's Q1 Earnings Call\n\n\n(StockStory)",
+      "link": "/news/82533/the-5-most-interesting-analyst-questions-from-kimberly-clarks-q1-earnings-call"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:40AM",
+      "title": "3 Large-Cap Stocks Walking a Fine Line\n\n\n(StockStory)",
+      "link": "/news/81940/3-large-cap-stocks-walking-a-fine-line"
+    },
+    {
+      "date": "2025-06-15",
+      "time": "08:01",
+      "title": "How Cadence Bank, Kimberly-Clark, And Robert Half Can Put Cash In Your Pocket\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/cadence-bank-kimberly-clark-robert-120152924.html"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "HON",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1921,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.06
+  },
+  "top_positive": [
+    {
+      "sent": "EARNINGS PER SHARE Three Months Ended June 30, Six Months Ended June 30, Basic 2022 2021 2022 2021 Net income attributable to Honeywell $ 1,261 $ 1,430 $ 2,395 $ 2,857 Weighted average shares outstanding 679.0 693.8 681.8 695.0 Earnings per share of common stock - basic $ 1.86 $ 2.06 $ 3.51 $ 4.11 Three Months Ended June 30, Six Months Ended June 30, Assuming Dilution 2022 2021 2022 2021 Net income attributable to Honeywell $ 1,261 $ 1,430 $ 2,395 $ 2,857 Average Shares Weighted average shares outstanding 679.0 693.8 681.8 695.0 Dilutive securities issuable - stock plans 6.0 8.7 6.3 8.5 Total weighted average diluted shares outstanding 685.0 702.5 688.1 703.5 Earnings per share of common stock - assuming dilution $ 1.84 $ 2.04 $ 3.48 $ 4.06 The diluted earnings per share calculations exclude the effect of stock options when the options\u2019 exercise price exceed the average market price of the common shares during the period.",
+      "score": 0.9832
+    },
+    {
+      "sent": "CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME (Unaudited) Three Months Ended June 30, Six Months Ended June 30, 2022 2021 2022 2021 (Dollars in millions) Net income $ 1,263 $ 1,447 $ 2,397 $ 2,895 Other comprehensive income (loss), net of tax Foreign exchange translation adjustment ( 102 ) 129 24 343 Prior service (credit) cost recognized ( 17 ) ( 21 ) ( 34 ) ( 43 ) Pension and other postretirement benefit adjustments ( 17 ) ( 21 ) ( 34 ) ( 43 ) Changes in fair value of available for sale investments ( 3 ) \u2014 ( 9 ) ( 3 ) Cash flow hedges recognized in other comprehensive income (loss) 31 7 39 15 Less: Reclassification adjustment for gains (losses) included in net income 12 6 15 9 Changes in fair value of cash flow hedges 19 1 24 6 Other comprehensive income (loss), net of tax ( 103 ) 109 5 303 Comprehensive income 1,160 1,556 2,402 3,198 Less: Comprehensive income attributable to the noncontrolling interest ( 5 ) 17 ( 5 ) 39 Comprehensive income attributable to Honeywell $ 1,165 $ 1,539 $ 2,407 $ 3,159 The Notes to Consolidated Financial Statements are an integral part of this statement.",
+      "score": 0.9789
+    },
+    {
+      "sent": "CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME (Unaudited) Three Months Ended June 30, Six Months Ended June 30, 2022 2021 2022 2021 (Dollars in millions) Net income $ 1,263 $ 1,447 $ 2,397 $ 2,895 Other comprehensive income (loss), net of tax Foreign exchange translation adjustment ( 102 ) 129 24 343 Prior service (credit) cost recognized ( 17 ) ( 21 ) ( 34 ) ( 43 ) Pension and other postretirement benefit adjustments ( 17 ) ( 21 ) ( 34 ) ( 43 ) Changes in fair value of available for sale investments ( 3 ) \u2014 ( 9 ) ( 3 ) Cash flow hedges recognized in other comprehensive income (loss) 31 7 39 15 Less: Reclassification adjustment for gains (losses) included in net income 12 6 15 9 Changes in fair value of cash flow hedges 19 1 24 6 Other comprehensive income (loss), net of tax ( 103 ) 109 5 303 Comprehensive income 1,160 1,556 2,402 3,198 Less: Comprehensive income attributable to the noncontrolling interest ( 5 ) 17 ( 5 ) 39 Comprehensive income attributable to Honeywell $ 1,165 $ 1,539 $ 2,407 $ 3,159 The Notes to Consolidated Financial Statements are an integral part of this statement.",
+      "score": 0.9789
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "TABLE OF CONTENTS Gross Margin Q2 2022 compared with Q2 2021 Gross margin as a percentage of net sales increased due to the following: \u2022 Favorable pricing, \u2022 Partially offset by lower gross margins due to higher direct and indirect mat\nupply chain disruptions, and labor shortages.",
+      "score": -0.8519
+    },
+    {
+      "sent": "RISK FACTORS Other than as noted below, there have been no material changes to our Risk Factors presented in our 2021 Annual Report on Form 10-K under the section titled Risk Factors.",
+      "score": -0.8038
+    },
+    {
+      "sent": "RISK FACTORS Other than as noted below, there have been no material changes to our Risk Factors presented in our 2021 Annual Report on Form 10-K under the section titled Risk Factors.",
+      "score": -0.8038
+    }
+  ],
+  "forward_snippets": [
+    "In January 2021, the FASB issued ASU 2021-01, Reference Rate Reform (Topic 848): Scope , to expand the scope of this guidance to include derivatives.",
+    "The guidance was effective upon issuance and may be applied prospectively to contract modifications made and hedging relationships entered into on or before December 31, 2022.",
+    "The Company will apply the guidance to impacted transactions during the transition period.",
+    "The Company adopted this guidance on January 1, 2022.",
+    "In January 2021, the FASB issued ASU 2021-01, Reference Rate Reform (Topic 848): Scope , to expand the scope of this guidance to include derivatives."
+  ]
+}

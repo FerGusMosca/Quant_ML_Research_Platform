@@ -1,0 +1,47 @@
+{
+  "symbol": "SLB",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.4047,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.06
+  },
+  "top_positive": [
+    {
+      "sent": "See Notes to Consolidated Financial Statements 6 SCHLUMBERGER LIMITED AND SUBSIDIARIES CONSOLIDATED STATEMENT OF STOCKHOLDERS\u2019 EQUITY (Unaudited) (Stated in millions, except per share amounts) Accumulated Other Common Stock Retained Comprehensive Noncontrolling January 1, 2022 \u2013 March 31, 2022 Issued In Treasury Earnings Loss Interests Total Balance, January 1, 2022 $ 12,608 $ ( 2,233 ) $ 8,199 $ ( 3,570 ) $ 282 $ 15,286 Net income 510 10 520 Currency translation adjustments ( 106 ) ( 106 ) Changes in fair value of cash flow hedges 26 26 Pension and other postretirement benefit plans 11 11 Shares sold to optionees, less shares exchanged ( 6 ) 12 6 Vesting of restricted stock, net of taxes withheld ( 631 ) 550 ( 81 ) Shares issued under employee stock purchase plan ( 104 ) 168 64 Stock-based compensation expense 89 89 Dividends declared ($ 0.125 per share) ( 177 ) ( 177 ) Other 1 1 Balance, March 31, 2022 $ 11,957 $ ( 1,503 ) $ 8,532 $ ( 3,639 ) $ 292 $ 15,639 (Stated in millions, except per share amounts) Accumulated Other Common Stock Retained Comprehensive Noncontrolling January 1, 2021 \u2013 March 31, 2021 Issued In Treasury Earnings Loss Interests Total Balance, January 1, 2021 $ 12,970 $ ( 3,033 ) $ 7,018 $ ( 4,884 ) $ 418 $ 12,489 Net income 299 13 312 Currency translation adjustments 14 ( 2 ) 12 Changes in fair value of cash flow hedges 148 148 Pension and other postretirement benefit plans 58 58 Vesting of restricted stock, net of taxes withheld ( 189 ) 171 ( 18 ) Shares issued under employee stock purchase plan ( 202 ) 264 62 Stock-based compensation expense 84 84 Dividends declared ($ 0.125 per share) ( 175 ) ( 175 ) Balance, March 31, 2021 $ 12,663 $ ( 2,598 ) $ 7,142 $ ( 4,664 ) $ 429 $ 12,972 SHARES OF COMMON STOCK (Unaudited) (Stated in millions) Shares Issued In Treasury Outstanding Balance, January 1, 2022 1,434 ( 31 ) 1,403 Vesting of restricted stock - 8 8 Shares issued under employee stock purchase plan - 2 2 Balance, March 31, 2022 1,434 ( 21 ) 1,413 See Notes to Consolidated Financial Statements 7 SCHLUMBERGER LIMITED AND SUBSIDIARIES NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Unaudited) 1.",
+      "score": 0.981
+    },
+    {
+      "sent": "SCHLUMBERGER LIMITED AND SUBSIDIARIES CONSOLIDATED STATEMENT OF INCOME (Unaudited) (Stated in millions, except per share amounts) Three Months Ended March 31, 2022 2021 Revenue Services $ 4,222 $ 3,482 Product sales 1,740 1,741 Total Revenue 5,962 5,223 Interest & other income 50 19 Expenses Cost of services 3,387 3,031 Cost of sales 1,626 1,473 Research & engineering 141 135 General & administrative 97 81 Interest 123 136 Income before taxes 638 386 Tax expense 118 74 Net income 520 312 Net income attributable to noncontrolling interests 10 13 Net income attributable to Schlumberger $ 510 $ 299 Basic income per share of Schlumberger $ 0.36 $ 0.21 Diluted income per share of Schlumberger $ 0.36 $ 0.21 Average shares outstanding: Basic 1,412 1,398 Assuming dilution 1,434 1,419 See Notes to Consolidated Financial Statements 3 SCHLUMBERGER LIMITED AND SUBSIDIARIES CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME (Unaudited) (Stated in millions) Three Months Ended March 31, 2022 2021 Net income $ 520 $ 312 Currency translation adjustments Unrealized net change arising during the period ( 106 ) 14 Cash flow hedges Net gain on cash flow hedges 9 150 Reclassification to net income of net realized loss (income) 17 ( 2 ) Pension and other postretirement benefit plans Amortization to net income of net actuarial loss 16 63 Amortization to net income of net prior service credit ( 5 ) ( 5 ) Comprehensive income 451 532 Comprehensive income attributable to noncontrolling interests 10 13 Comprehensive income attributable to Schlumberger $ 441 $ 519 See Notes to Consolidated Financial Statements 4 SCHLUMBERGER LIMITED AND SUBSIDIARIES CONSOLIDATED BALANCE SHEET (Stated in millions) Mar.",
+      "score": 0.9782
+    },
+    {
+      "sent": "Interest and Other Income Interest\u00a0& other income consisted of the following: (Stated in millions) First Quarter 2022 2021 Earnings of equity method investments $ 10 $ 14 Interest income 14 5 Gain on sale of Liberty shares 26 - $ 50 $ 19 Other Research\u00a0& engineering and General\u00a0& administrative expenses, as a percentage of Revenue , for the first quarter ended March 31, 2022 and 2021 were as follows: First Quarter 2022 2021 Research & engineering 2.4 % 2.6 % General & administrative 1.6 % 1.5 % The effective tax rate for the first quarter of 2022 was 18%, as compared to 19% for the same period of 2021.",
+      "score": 0.9643
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These statements are subject to risks and uncertainties, including, but not limited to, changing global economic and geopolitical conditions; changes in exploration and production spending by Schlumberger\u2019s customers and changes in the level of oil and natural gas exploration and development; the results of operations and financial condition of Schlumberger\u2019s customers and suppliers; Schlumberger\u2019s inability to achieve its financial and performance targets and other forecasts and expectations; Schlumberger\u2019s inability to achieve net-zero carbon emissions goals or interim emissions reduction goals; general economic, geopolitical and business conditions in key regions of the world; the ongoing conflict in Ukraine; foreign currency risk; 19 pricing pressure; inflation; weather and seasonal factors; unfavorable effects of health pandemics; availability and cost of raw materials; operational modifications, delays or cancellations; challenges in Schlumberger\u2019s supply chain; production declines; the extent of future charges; Schlumberger\u2019s inability to recognize efficiencies and other intended benefits from its business strategies and initiatives, such as digital or Schlumberger New Energy, as well as its cost reduction strategies; changes in government regulations and regulatory requirements, including those related to offshore oil and gas exploration, radioactive sources, explosives, chemicals and climate-related initiatives; the inability of technology to meet new challenges in exploration; the competitiveness of alternative energy sources or product substitutes; and other risks and uncertainties detailed in this Form 10-Q and our most recent Form 10-K and Forms 8-K filed with or furnished to the SEC.",
+      "score": -0.6061
+    },
+    {
+      "sent": "If one or more of these or other risks or uncertainties materialize (or the consequences of any such development changes), or should our underlying assumptions prove incorrect, actual results or outcomes may vary materially from those reflected in our forward-looking statements.",
+      "score": -0.5423
+    },
+    {
+      "sent": "As of the date of this filing, there have been no material changes from the risk factors disclosed in Part 1, Item 1A, of Schlumberger\u2019s Annual Report on Form 10-K for the fiscal year ended December 31, 2021.",
+      "score": -0.5106
+    }
+  ],
+  "forward_snippets": [
+    "Moving forward, the outlook for the rest of 2022\u2014particularly in the second half\u2014remains positive with both short- and long-cycle investments accelerating.",
+    "Schlumberger\u2019s positive outlook extends further into 2023 and beyond as it anticipates successive years of market growth .",
+    "This decline was partially offset by strong contribution from our APS projects in Ecuador with the resumption of production following the pipeline disruptions in the previous quarter.",
+    "Double-digit growth in North America and Europe & Africa w\noutlook for the rest of 2022\u2014particularly in the second half\u2014remains positive with both short- and long-cycle investments accelerating.",
+    "Schlumberger\u2019s positive outlook extends further into 2023 and beyond as it anticipates successive years of market growth ."
+  ]
+}

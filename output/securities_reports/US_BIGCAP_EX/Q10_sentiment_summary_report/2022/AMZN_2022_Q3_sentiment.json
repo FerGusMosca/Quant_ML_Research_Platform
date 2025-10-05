@@ -1,0 +1,47 @@
+{
+  "symbol": "AMZN",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1556,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.22
+  },
+  "top_positive": [
+    {
+      "sent": "Free Cash Flow Free cash flow is cash flow from operations reduced by \u201cPurchases of property and equipment, net of proceeds from sales and incentives.\u201d The following is a reconciliation of free cash flow to the most comparable GAAP cash flow measure, \u201cNet cash provided by (used in) operating activities,\u201d for the trailing twelve months ended March\u00a031, 2021 and 2022 (in millions): Twelve Months Ended March 31, 2021 2022 Net cash provided by (used in) operating activities $ 67,213 $ 39,324 Purchases of property and equipment, net of proceeds from sales and incentives (40,803) (57,951) Free cash flow $ 26,410 $ (18,627) Net cash provided by (used in) investing activities $ (59,383) $ (48,582) Net cash provided by (used in) financing activities $ (1,989) $ 11,757 27 Table of Contents Free Cash Flow Less Principal Repayments of Finance Leases and Financing Obligations Free cash flow less principal repayments of finance leases and financing obligations is free cash flow reduced by \u201cPrincipal repayments of finance leases\u201d and \u201cPrincipal repayments of financing obligations.\u201d Principal repayments of finance leases and financing obligations approximates the actual payments of cash for our finance leases and financing obligations.",
+      "score": 0.9761
+    },
+    {
+      "sent": "Free Cash Flow Free cash flow is cash flow from operations reduced by \u201cPurchases of property and equipment, net of proceeds from sales and incentives.\u201d The following is a reconciliation of free cash flow to the most comparable GAAP cash flow measure, \u201cNet cash provided by (used in) operating activities,\u201d for the trailing twelve months ended March\u00a031, 2021 and 2022 (in millions): Twelve Months Ended March 31, 2021 2022 Net cash provided by (used in) operating activities $ 67,213 $ 39,324 Purchases of property and equipment, net of proceeds from sales and incentives (40,803) (57,951) Free cash flow $ 26,410 $ (18,627) Net cash provided by (used in) investing activities $ (59,383) $ (48,582) Net cash provided by (used in) financing activities $ (1,989) $ 11,757 27 Table of Contents Free Cash Flow Less Principal Repayments of Finance Leases and Financing Obligations Free cash flow less principal repayments of finance leases and financing obligations is free cash flow reduced by \u201cPrincipal repayments of finance leases\u201d and \u201cPrincipal repayments of financing obligations.\u201d Principal repayments of finance leases and financing obligations approximates the actual payments of cash for our finance leases and financing obligations.",
+      "score": 0.9761
+    },
+    {
+      "sent": "Free Cash Flow Free cash flow is cash flow from operations reduced by \u201cPurchases of property and equipment, net of proceeds from sales and incentives.\u201d The following is a reconciliation of free cash flow to the most comparable GAAP cash flow measure, \u201cNet cash provided by (used in) operating activities,\u201d for the trailing twelve months ended March\u00a031, 2021 and 2022 (in millions): Twelve Months Ended March 31, 2021 2022 Net cash provided by (used in) operating activities $ 67,213 $ 39,324 Purchases of property and equipment, net of proceeds from sales and incentives (40,803) (57,951) Free cash flow $ 26,410 $ (18,627) Net cash provided by (used in) investing activities $ (59,383) $ (48,582) Net cash provided by (used in) financing activities $ (1,989) $ 11,757 27 Table of Contents Free Cash Flow Less Principal Repayments of Finance Leases and Financing Obligations Free cash flow less principal repayments of finance leases and financing obligations is free cash flow reduced by \u201cPrincipal repayments of finance leases\u201d and \u201cPrincipal repayments of financing obligations.\u201d Principal repayments of finance leases and financing obligations approximates the actual payments of cash for our finance leases and financing obligations.",
+      "score": 0.9761
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Operating Risks Our Expansion Places a Significant Strain on our Management, Operational, Financial, and Other R\ntrends, restrict online advertising or affect our ability to customize advertising or otherwise tailor our product and service offerings; \u2022 the extent to which use of our services is affected by spyware, viruses, phishing and other spam emails, denial of service attacks, data theft, computer intrusions, outages, and similar events; and \u2022 disruptions from natural or human-caused disasters (including public health crises) or extreme weather (including as a result of climate change), geopolitical events and security issues (including terrorist attacks and armed hostilities), labor or trade disputes, and similar events.",
+      "score": -0.9559
+    },
+    {
+      "sent": "Our computer and communications systems and operations in the past have been, or in the future could be, damaged or interrupted due to events such as natural or human-caused disasters (including public health crises) or extreme weather (including as a result of climate change), geopolitical events and security issues (including terrorist attacks and armed hostilities), computer viruses, physical or electronic break-ins, operational failures, and similar events or disruptions.",
+      "score": -0.9501
+    },
+    {
+      "sent": "Our computer and communications systems and operations in the past have been, or in the future could be, damaged or interrupted due to events such as natural or human-caused disasters (including public health crises) or extreme weather (including as a result of climate change), geopolitical events and security issues (including terrorist attacks and armed hostilities), computer viruses, physical or electronic break-ins, operational failures, and similar events or disruptions.",
+      "score": -0.9501
+    }
+  ],
+  "forward_snippets": [
+    "12 Table of Contents In addition, we expect to pay the previously disclosed \u20ac 1.13 billion fine imposed by the Italian Competition Authority in December 2021, which we will seek to recover pending conclusion of all appeals.",
+    "12 Table of Contents In addition, we expect to pay the previously disclosed \u20ac 1.13 billion fine imposed by the Italian Competition Authority in December 2021, which we will seek to recover pending conclusion of all appeals.",
+    "It is reasonably possible that within the next twelve months we will receive additional assessments by various tax authorities or possibly reach resolution of income tax controversies in one or more jurisdictions.",
+    "We will continue to defend ourselves vigorously in this matter.",
+    "All statements other than statements of historical fact, including statements regarding guidance, industry prospects, or future results of operations or financial position, made in this Quarterly Report on Form 10-Q are f\ntate aid."
+  ]
+}

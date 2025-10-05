@@ -1,0 +1,47 @@
+{
+  "symbol": "SLB",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2994,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.132
+  },
+  "top_positive": [
+    {
+      "sent": "Interest and Other Income Interest & other income consisted of the following: (Stated in millions) Second Quarter First Quarter Six Months 2023 2023 2023 2022 Earnings of equity method investments $ 63 $ 39 $ 102 $ 43 Interest income 19 17 36 33 Gain on sale of Liberty shares - 36 36 242 Gain on sale of real estate - - - 43 $ 82 $ 92 $ 174 $ 361 Earnings of equity method investments for the second quarter of 2023 increased $24 million as compared to the first quarter of 2023 driven primarily by increased profitability in certain of SLB's seismic-related investments.",
+      "score": 0.9794
+    },
+    {
+      "sent": "31, (Unaudited) 2022 ASSETS Current Assets Cash $ 1,930 $ 1,655 Short-term investments 1,264 1,239 Receivables less allowance for doubtful accounts (2023 - $ 339 ; 2022 - $ 340 ) 7,675 7,032 Inventories 4,360 3,999 Other current assets 925 1,078 16,154 15,003 Investments in Affiliated Companies 1,601 1,581 Fixed Assets less accumulated depreciation 6,804 6,607 Goodwill 13,117 12,982 Intangible Assets 2,968 2,992 Other Assets 4,182 3,970 $ 44,826 $ 43,135 LIABILITIES AND EQUITY Current Liabilities Accounts payable and accrued liabilities $ 8,938 $ 9,121 Estimated liability for taxes on income 859 1,002 Short-term borrowings and current portion of long-term debt 1,993 1,632 Dividends payable 373 263 12,163 12,018 Long-term Debt 11,342 10,594 Postretirement Benefits 167 165 Deferred Taxes 183 61 Other Liabilities 2,037 2,308 25,892 25,146 Equity Common stock 11,270 11,837 Treasury stock ( 750 ) ( 1,016 ) Retained earnings 11,974 10,719 Accumulated other comprehensive loss ( 3,886 ) ( 3,855 ) SLB stockholders\u2019 equity 18,608 17,685 Noncontrolling interests 326 304 18,934 17,989 $ 44,826 $ 43,135 See Notes to Consolidated Financial Statements 5 SCHLUMBERGER LIMITED AND SUBSIDIARIES CONSOLIDATED STATEMENT OF CASH FLOWS (Unaudited) (Stated in millions) Six Months Ended June 30, 2023 2022 Cash flows from operating activities: Net income $ 1,990 $ 1,490 Adjustments to reconcile net income to net cash provided by operating activities: Gain on sale of Liberty shares ( 36 ) ( 242 ) Gain on sale of real estate - ( 43 ) Depreciation and amortization (1) 1,124 1,065 Deferred taxes 118 11 Stock-based compensation expense 160 160 Earnings of equity method investments, less dividends received ( 79 ) ( 22 ) Change in assets and liabilities: (2) Increase in receivables ( 614 ) ( 887 ) Increase in inventories ( 368 ) ( 652 ) Decrease (increase) in other current assets 157 ( 240 ) Increase in other assets ( 18 ) ( 26 ) Decrease in accounts payable and accrued liabilities ( 270 ) ( 57 ) Decrease in estimated liability for taxes on income ( 191 ) ( 48 ) (Decrease) increase in other liabilities ( 63 ) 4 Other 28 26 NET CASH PROVIDED BY OPERATING ACTIVITIES 1,938 539 Cash flows from investing activities: Capital expenditures ( 881 ) ( 664 ) APS investments ( 253 ) ( 311 ) Exploration data costs capitalized ( 83 ) ( 64 ) Business acquisitions and investments, net of cash acquired ( 262 ) ( 8 ) Proceeds from sale of Liberty shares 137 513 Proceeds from sale of real estate - 120 (Purchase) sale of short-term investments, net ( 24 ) 457 Other ( 164 ) ( 76 ) NET CASH USED IN INVESTING ACTIVITIES ( 1,530 ) ( 33 ) Cash flows from financing activities: Dividends paid ( 605 ) ( 352 ) Proceeds from employee stock purchase plan 86 64 Proceeds from exercise of stock options 38 29 Stock repurchase program ( 443 ) - Proceeds from issuance of long-term debt 992 - Net decrease in short-term borrowings ( 48 ) ( 11 ) Taxes paid on net settled stock-based compensation awards ( 144 ) ( 85 ) Other 3 ( 3 ) NET CASH USED IN FINANCING ACTIVITIES ( 121 ) ( 358 ) Net increase in cash before translation effect 287 148 Translation effect on cash ( 12 ) ( 12 ) Cash, beginning of period 1,655 1,757 Cash, end of period $ 1,930 $ 1,893 (1) Includes depreciation of fixed assets and amortization of intangible assets, exploration data costs, and APS investments.",
+      "score": 0.9784
+    },
+    {
+      "sent": "Interest and Other Income Interest & other income consisted of the following: (Stated in millions) Second Quarter First Quarter Six Months 2023 2023 2023 2022 Earnings of equity method investments $ 63 $ 39 $ 102 $ 43 Interest income 19 17 36 33 Gain on sale of Liberty shares - 36 36 242 Gain on sale of real estate - - - 43 $ 82 $ 92 $ 174 $ 361 Earnings of equity method investments for the second quart\nenue increased 28% due to robust drilling activity and higher sales of production systems, while revenue in the Middle East & Asia increased 20% due to higher drilling and intervention activity.",
+      "score": 0.9776
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Continuation or escalation of the conflict may also aggravate the risk factors that SLB identified in its Annual Report on Form 10-K for the year ended December 31, 2022, including cybersecurity, regulatory, and reputational risks.",
+      "score": -0.8402
+    },
+    {
+      "sent": "31, Components of Liquidity: 2023 2022 2022 Cash $ 1,930 $ 1,893 $ 1,655 Short-term investments 1,264 923 1,239 Short-term borrowings and current portion of long-term debt (1,993 ) (901 ) (1,632 ) Long-term debt (11,342 ) (12,946 ) (10,594 ) Net debt (1) $ (10,141 ) $ (11,031 ) $ (9,332 ) Six Months Ended Jun.",
+      "score": -0.7579
+    },
+    {
+      "sent": "The APS revenue decline resulted primarily from a temporary production interruption in the projects in Ecuador during the first quarter of 2023 due to a pipeline disruption and lower commodity prices that impacted the project in Canada.",
+      "score": -0.7351
+    }
+  ],
+  "forward_snippets": [
+    "As the upcycle continues to unfold, international- and offshore-led growth is fueling strong margin expansion.",
+    "The APS revenue decline resulted primarily from a temporary production interruption in the projects in Ecuador during the first quarter of 2023 due to a pipeline disruption and lower commodity prices that impacted the project in Canada.",
+    "The APS revenue decline resulted primarily from a temporary production interruption in the projects in Ecuador during the first quarter of 2023 due to a pipeline disruption and lower commodity prices that impacted the project in Canada.",
+    "Such statements often contain words such as \u201cexpect,\u201d \u201cmay,\u201d \u201ccan,\u201d \u201cbelieve,\u201d \u201cpredict,\u201d \u201cplan,\u201d \u201cpotential,\u201d \u201cprojected,\u201d \u201cprojections,\u201d \u201cprecursor,\u201d  \u201cforecast,\u201d \u201coutlook,\u201d \u201cexpectations,\u201d \u201cestimate,\u201d \u201cintend,\u201d \u201canticipate,\u201d \u201cambition,\u201d \u201cgoal,\u201d \u201ctarget,\u201d \u201cscheduled,\u201d \u201cthink,\u201d \u201cshould,\u201d \u201ccould,\u201d \u201cwould,\u201d \u201cwill,\u201d \u201csee,\u201d \u201clikely,\u201d and other similar words.",
+    "Forward-looking statements address matters that are, to varying degrees, uncertain, such as statements about SLB\u2019s financial and performance targets and other forecasts or expectations regarding, or dependent on, its business outlook; growth for SLB as a whole and for each of its Divisions (and for specified business lines, geographic areas or technologies within each Division); oil and natural gas demand and production growth; oil and natural gas prices; forecasts or expectations regarding energy transition and global climate change; improvements in operating procedures and technology; capital expenditures by SLB and the oil and gas industry; the business strategies of SLB, including digital and \u201cfit for basin,\u201d as well as the strategies of SLB\u2019s customers;  SLB\u2019s APS projects, joint ventures, and other alliances; SLB\u2019s response to the COVID-19 pandemic and its preparedness for other widespread health emergencies; the impact of the ongoing conflict in Ukraine on global energy supply; access to raw materials; future global economic and geopolitical conditions; future liquidity, including free cash flow; and future results of operations, such as margin levels."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "AMGN",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1639,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.158
+  },
+  "top_positive": [
+    {
+      "sent": "23 Impact of hedging transactions The following tables summarize the amounts recorded in income and expense line items and the effects thereon from fair value and cash flow hedging, including discontinued hedging relationships (in millions): Three months ended March 31, 2023 Product sales Other income (expense), net Interest expense, net Total amounts recorded in income and (expense) line items presented in the Condensed Consolidated Statements of Income $ 5,846 $ 2,064 $ ( 543 ) The effects of cash flow and fair value hedging: Gains (losses) on cash flow hedging relationships reclassified out of AOCI: Foreign currency forward contracts $ 52 $ \u2014 $ \u2014 Cross-currency swap contracts $ \u2014 $ ( 22 ) $ \u2014 (Losses) gains on fair value hedging relationships\u2014interest rate swap agreements: Hedged items (1) $ \u2014 $ \u2014 $ ( 88 ) Derivatives designated as hedging instruments $ \u2014 $ \u2014 $ 114 Three months ended March 31, 2022 Product sales Other income (expense), net Interest expense, net Total amounts recorded in income and (expense) line items presented in the Condensed Consolidated Statements of Income $ 5,731 $ ( 530 ) $ ( 295 ) The effects of cash flow and fair value hedging: Gains (losses) on cash flow hedging relationships reclassified out of AOCI: Foreign currency forward contracts $ 27 $ \u2014 $ \u2014 Cross-currency swap contracts $ \u2014 $ ( 78 ) $ \u2014 Gains (losses) on fair value hedging relationships\u2014interest rate swap agreements: Hedged items (1) $ \u2014 $ \u2014 $ 337 Derivatives designated as hedging instruments $ \u2014 $ \u2014 $ ( 315 ) __________ (1) Gains on hedged items do not exactly offset losses on the related designated hedging instruments due to amortization of the cumulative amounts of fair value hedging adjustments included in the carrying amount of the hedged debt for discontinued hedging relationships and the recognition of gains on terminated hedges when the corresponding hedged item was paid down in the period.",
+      "score": 0.9924
+    },
+    {
+      "sent": "In addition, our revolving credit agreement includes a financial covenant that requires us to maintain a specified minimum interest coverage ratio of (i) the sum of consolidated net income, interest expense, provision for income taxes, depreciation expense, amortization expense, unusual or nonrecurring charges and other noncash items (consolidated earnings before interest, taxes, depreciation and amortization) to (ii) consolidated interest expense, each as defined and described in the credit agreement.",
+      "score": 0.9686
+    },
+    {
+      "sent": "In addition, our revolving credit agreement includes a financial covenant that requires us to maintain a specified minimum interest coverage ratio of (i) the sum of consolidated net income, interest expense, provision for income taxes, depreciation expense, amortization expense, unusual or nonrecurring charges and other noncash items (consolidated earnings before interest, taxes, depreciation and amortization) to (ii) consolidated interest expense, each as defined and described in the credit agreement.",
+      "score": 0.9686
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Pressures to decrease drug expenditures may further intensify as the COVID-19 pandemic has strained government budgets and as economic conditions continue to worsen in certain regions, including in Europe where high inflation and the energy crisis relating to the Russia\u2013Ukraine conflict are challenging the economies in that region.",
+      "score": -0.872
+    },
+    {
+      "sent": "The availability of governmental monetary and fiscal tools to address the financial crisis may also be limited as a result of political divisions in Congress, including any impasse on raising the debt ceiling which could result in a government shutdown.",
+      "score": -0.8176
+    },
+    {
+      "sent": "Plaintiffs further allege that they and other purported class members suffered losses and damages resulting from declines in the market value of Amgen\u2019s common stock after the potential tax liability claimed by the IRS was disclosed.",
+      "score": -0.802
+    }
+  ],
+  "forward_snippets": [
+    "We estimate that we will incur $ 300 million to $ 400 million of pretax charges in 2023 in connection with our restructuring plan, including (i) separation and other headcount-related costs with respect to staff reductions and (ii) asset-related charges that consist primarily of asset impairments, accelerated depreciation and other related costs resulting from the rationalization of our geographic footprint.",
+    "Horizon has 12 marketed medicines and a pipeline with more than 20 development programs.",
+    "Horizon has 12 marketed medicines and a pipeline with more than 20 development programs.",
+    "We continue to believe our accrual for income tax liabilities is appropriate based on past experience, interpretations of tax law, application of the tax law to our facts and judgments about potential actions by tax authorities; however, due to the complexity of the provision for income taxes and uncertain resolution of these matters, the ultimate outcome of any tax matters may result in payments substantially greater than amounts accrued and could have a material adverse impact on our condensed consolidated financial statements.",
+    "We believe the fair value option best reflects the economics of the underlying transaction."
+  ]
+}

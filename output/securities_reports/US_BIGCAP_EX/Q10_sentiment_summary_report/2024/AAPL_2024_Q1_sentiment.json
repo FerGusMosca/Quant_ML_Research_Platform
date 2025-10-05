@@ -1,0 +1,41 @@
+{
+  "symbol": "AAPL",
+  "year": 2024,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.0654,
+    "forward_ratio": 0.0,
+    "hedge_ratio": 0.176
+  },
+  "top_positive": [
+    {
+      "sent": "Unregistered Sales of Equity Securities and Use of Proceeds Purchases of Equity Securities by the Issuer and Affiliated Purchasers Share repurchase activity during the three months ended June\u00a029, 2024 was as follows (in millions, except number of shares, which are reflected in thousands, and per-share amounts): Periods Total Number of Shares Purchased Average Price Paid Per Share Total Number of Shares Purchased as Part of Publicly Announced Plans or Programs Approximate Dollar Value of Shares That May Yet Be Purchased Under the Plans or Programs (1) March 31, 2024 to May 4, 2024: Open market and privately negotiated purchases 45,690 $ 169.74 45,690 May 5, 2024 to June 1, 2024: Open market and privately negotiated purchases 51,729 $ 188.38 51,729 June 2, 2024 to June 29, 2024: Open market and privately negotiated purchases 41,354 $ 205.54 41,354 Total 138,773 $ 114,074 (1) On May 4, 2023, the Board of Directors authorized the purchase of up to $90 billion of the Company\u2019s common stock under a share repurchase program.",
+      "score": 0.959
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF SHAREHOLDERS\u2019 EQUITY (Unaudited) (In millions, except per-share amounts) Three Months Ended Nine Months Ended June 29, 2024 July 1, 2023 June 29, 2024 July 1, 2023 Total shareholders\u2019 equity, beginning balances $ 74,194 $ 62,158 $ 62,146 $ 50,672 Common stock and additional paid-in capital: Beginning balances 78,815 69,568 73,812 64,849 Common stock issued \u2014 \u2014 752 690 Common stock withheld related to net share settlement of equity awards ( 1,920 ) ( 1,595 ) ( 3,802 ) ( 3,310 ) Share-based compensation 2,955 2,694 9,088 8,438 Ending balances 79,850 70,667 79,850 70,667 Retained earnings/(Accumulated deficit): Beginning balances 4,339 4,336 ( 214 ) ( 3,068 ) Net income 21,448 19,881 79,000 74,039 Dividends and dividend equivalents declared ( 3,864 ) ( 3,811 ) ( 11,384 ) ( 11,207 ) Common stock withheld related to net share settlement of equity awards ( 428 ) ( 858 ) ( 1,517 ) ( 1,988 ) Common stock repurchased ( 26,221 ) ( 18,140 ) ( 70,611 ) ( 56,368 ) Ending balances ( 4,726 ) 1,408 ( 4,726 ) 1,408 Accumulated other comprehensive income/(loss): Beginning balances ( 8,960 ) ( 11,746 ) ( 11,452 ) ( 11,109 ) Other comprehensive income/(loss) 544 ( 55 ) 3,036 ( 692 ) Ending balances ( 8,416 ) ( 11,801 ) ( 8,416 ) ( 11,801 ) Total shareholders\u2019 equity, ending balances $ 66,708 $ 60,274 $ 66,708 $ 60,274 Dividends and dividend equivalents declared per share or RSU $ 0.25 $ 0.24 $ 0.73 $ 0.70 See accompanying Notes to Condensed Consolidated Financial Statements.",
+      "score": 0.9287
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (Unaudited) (In millions) Three Months Ended Nine Months Ended June 29, 2024 July 1, 2023 June 29, 2024 July 1, 2023 Net income $ 21,448 $ 19,881 $ 79,000 $ 74,039 Other comprehensive income/(loss): Change in foreign currency translation, net of tax ( 73 ) ( 385 ) ( 87 ) ( 494 ) Change in unrealized gains/losses on derivative instruments, net of tax: Change in fair value of derivative instruments 406 509 331 ( 492 ) Adjustment for net (gains)/losses realized and included in net income ( 87 ) 103 ( 678 ) ( 1,854 ) Total change in unrealized gains/losses on derivative instruments 319 612 ( 347 ) ( 2,346 ) Change in unrealized gains/losses on marketable debt securities, net of tax: Change in fair value of marketable debt securities 268 ( 340 ) 3,306 1,963 Adjustment for net (gains)/losses realized and included in net income 30 58 164 185 Total change in unrealized gains/losses on marketable debt securities 298 ( 282 ) 3,470 2,148 Total other comprehensive income/(loss) 544 ( 55 ) 3,036 ( 692 ) Total comprehensive income $ 21,992 $ 19,826 $ 82,036 $ 73,347 See accompanying Notes to Condensed Consolidated Financial Statements.",
+      "score": 0.9222
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "District Court for the Northern District of California (the \u201cCalifornia District Court\u201d) against the Company alleging violations of federal and state antitrust laws and California\u2019s unfair competition law based upon the Company\u2019s operation of its App Store.",
+      "score": -0.7579
+    },
+    {
+      "sent": "Risk Factors The Company\u2019s business, reputation, results of operations, financial condition and stock price can be affected by a number of factors, whether currently known or unknown, including those described in Part I, Item 1A of the 2023 Form 10-K and Part II, Item 1A of the Form 10-Q for the quarter ended March 30, 2024 (the \u201csecond quarter 2024 Form 10-Q\u201d), in each case under the heading \u201cRisk Factors.\u201d When any one or more of these risks materialize from time to time, the Company\u2019s business, reputation, results of operations, financial condition and stock price can be materially and adversely affected.",
+      "score": -0.7322
+    },
+    {
+      "sent": "Except for the risk factor disclosed in Part II, Item 1A of the second quarter 2024 Form 10-Q , which is hereby incorporated by reference into this Part II, Item 1A of this Form 10-Q, there have been no material changes to the Company\u2019s risk factors since the 2023 Form 10-K.",
+      "score": -0.6597
+    }
+  ],
+  "forward_snippets": []
+}

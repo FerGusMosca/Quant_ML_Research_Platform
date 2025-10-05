@@ -1,0 +1,47 @@
+{
+  "symbol": "AMGN",
+  "year": 2024,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1085,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.157
+  },
+  "top_positive": [
+    {
+      "sent": "25 Impact of hedging transactions The following tables summarize the amounts recorded in income and expense line items and the effects thereon from fair value and cash flow hedging, including discontinued hedging relationships (in millions): Three months ended June 30, 2024 Six months ended June 30, 2024 Product sales Other (expense) income, net Interest expense, net Product sales Other (expense) income, net Interest expense, net Total amounts recorded in income and (expense) line items presented in the Condensed Consolidated Statements of Income $ 8,041 $ ( 307 ) $ ( 808 ) $ 15,159 $ ( 542 ) $ ( 1,632 ) The effects of cash flow and fair value hedging: Gains (losses) on cash flow hedging relationships reclassified out of AOCI: Foreign currency forward contracts $ 55 $ \u2014 $ \u2014 $ 106 $ \u2014 $ \u2014 Cross-currency swap contracts $ \u2014 $ ( 3 ) $ \u2014 $ \u2014 $ ( 34 ) $ \u2014 (Losses) gains on fair value hedging relationships\u2014interest rate swap agreements: Hedged items (1) $ \u2014 $ \u2014 $ ( 18 ) $ \u2014 $ \u2014 $ 31 Derivatives designated as hedging instruments $ \u2014 $ \u2014 $ 36 $ \u2014 $ \u2014 $ 8 Three months ended June 30, 2023 Six months ended June 30, 2023 Product sales Other (expense) income, net Interest expense, net Product sales Other (expense) income, net Interest expense, net Total amounts recorded in income and (expense) line items presented in the Condensed Consolidated Statements of Income $ 6,683 $ ( 318 ) $ ( 752 ) $ 12,529 $ 1,746 $ ( 1,295 ) The effects of cash flow and fair value hedging: Gains on cash flow hedging relationships reclassified out of AOCI: Foreign currency forward contracts $ 36 $ \u2014 $ \u2014 $ 88 $ \u2014 $ \u2014 Cross-currency swap contracts $ \u2014 $ 51 $ \u2014 $ \u2014 $ 29 $ \u2014 Gains (losses) on fair value hedging relationships\u2014interest rate swap agreements: Hedged items (1) $ \u2014 $ \u2014 $ 93 $ \u2014 $ \u2014 $ 5 Derivatives designated as hedging instruments $ \u2014 $ \u2014 $ ( 72 ) $ \u2014 $ \u2014 $ 42 __________ (1) Gains on hedged i\nts of our derivative contracts in the Condensed Consolidated Statements of Cash Flows are included in Net cash provided by operating activities, except for the settlement of notional amounts of cross-currency swaps, which are included in Net cash (used in) provided by financing activities.",
+      "score": 0.9921
+    },
+    {
+      "sent": "In addition, our revolving credit agreement and term loan credit agreement include a financial covenant that requires us to maintain a specified minimum interest coverage ratio of (i) the sum of consolidated net income, interest expense, provision for income taxes, depreciation expense, amortization expense, unusual or nonrecurring charges and other noncash items (consolidated earnings before interest, taxes, depreciation and amortization) to (ii) Consolidated Interest Expense, each as defined and described in the respective agreements.",
+      "score": 0.9776
+    },
+    {
+      "sent": "In addition, our revolving credit agreement and term loan credit agreement include a financial covenant that requires us to maintain a specified minimum interest coverage ratio of (i) the sum of consolidated net income, interest expense, provision for income taxes, depreciation expense, amortization expense, unusual or nonrecurring charges and other noncash items (consolidated earnings before interest, taxes, depreciation and amortization) to (ii) Consolidated Interest Expense, each as defined and described in the respective agreements.",
+      "score": 0.9776
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Even though we continue to invest in the monitoring, protection and resilience of our critical and/or sensitive data and systems, there can be no assurances that our efforts will detect, prevent or fully recover systems or data from all breakdowns, service interruptions, attacks and/or breaches of our systems that could adversely affect our business and operations and/or result in the loss or exposure of critical, proprietary, private, confidential or otherwise sensitive data, which could result in material financial, legal business or reputational harm to us or negatively affect our stock price.",
+      "score": -0.9325
+    },
+    {
+      "sent": "Even though we continue to invest in the monitoring, protection and resilience of our critical and/or sensitive data and systems, there can be no assurances that our efforts will detect, prevent or fully recover systems or data from all breakdowns, service interruptions, attacks and/or breaches of our systems that could adversely affect our business and operations and/or result in the loss or exposure of critical, proprietary, private, confidential or otherwise sensitive data, which could result in material financial, legal business or reputational harm to us or negatively affect our stock price.",
+      "score": -0.9325
+    },
+    {
+      "sent": "Such attacks could include the use of harmful and virulent malware, including ransomware or other denials of service, which can be deployed through various means, including th\nomplexity and interconnected nature of software, hardware and our systems make them vulnerable to breakdown or other service interruptions, and to software errors or defects, misconfiguration and other security vulnerabilities.",
+      "score": -0.926
+    }
+  ],
+  "forward_snippets": [
+    "We continue to believe our accrual for income tax liabilities is appropriate based on past experience, interpretations of tax law, application of the tax law to our facts and judgments about potential actions by tax authorities; however, due to the complexity of the provision for income taxes and uncertain resolution of these matters, the ultimate outcome of any tax matters may result in payments substantially greater than amounts accrued and could have a material adverse impact on our condensed consolidated financial statements.",
+    "We believe the fair value option best reflects the economics of the underlying transaction.",
+    "We describe our legal proceedings and other matters that are significant or that we believe could become significant in this footnote; in Note 20, Contingencies and commitments, to the consolidated financial statements in our Annual Report on Form 10-K for the year ended December 31, 2023; and in Note 13, Contingencies and commitments, to the condensed consolidated financial statements in our Quarterly Report on Form 10-Q for the period ended March 31, 2024.",
+    "Such words as \u201cexpect,\u201d \u201canticipate,\u201d \u201coutlook,\u201d \u201ccould,\u201d \u201ctarget,\u201d \u201cproject,\u201d \u201cintend,\u201d \u201cplan,\u201d \u201cbelieve,\u201d \u201cseek,\u201d \u201cestimate,\u201d \u201cshould,\u201d \u201cmay,\u201d \u201cassume\u201d and \u201ccontinue\u201d as well as variations of such words and similar expressions are intended to identify such forward-looking statements.",
+    "Our robust pipeline includes potential first-in-class medicines at all stages of development."
+  ]
+}

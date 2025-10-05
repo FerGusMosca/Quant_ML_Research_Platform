@@ -1,0 +1,47 @@
+{
+  "symbol": "KMB",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2855,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.071
+  },
+  "top_positive": [
+    {
+      "sent": "The total purchase price consideration was allocated to the n et assets acquired based upon their respective final estimated fair values as follows: Current Assets $ 28 Property, Plant and Equipment, Net 2 Goodwill 298 Other Intangible Assets, Net 123 Other Assets 4 Current Liabilities ( 18 ) Deferred Income Taxes ( 18 ) Other Liabilities ( 4 ) Fair value of net assets acquired 415 Less fair value of non-controlling interest ( 234 ) Total purchase price consideration $ 181 Other Intangible Assets, Net includes brands and customer relationships which have estimated useful lives of 4 to 15 years, primarily 15 years.",
+      "score": 0.9741
+    },
+    {
+      "sent": "The total purchase price consideration was allocated to the n et assets acquired based upon their respective final estimated fair values as follows: Current Assets $ 28 Property, Plant and Equipment, Net 2 Goodwill 298 Other Intangible Assets, Net 123 Other Assets 4 Current Liabilities ( 18 ) Deferred Income Taxes ( 18 ) Other Liabilities ( 4 ) Fair value of net assets acquired 415 Less fair value of non-controlling interest ( 234 ) Total purchase price consideration $ 181 Other Intangible Assets, Net includes brands and customer relationships which have estimated useful lives of 4 to 15 years, primarily 15 years.",
+      "score": 0.9741
+    },
+    {
+      "sent": "The total purchase price consideration was allocated to the n et assets acquired based upon their respective final estimated fair values as follows: Current Assets $ 28 Property, Plant and Equipment, Net 2 Goodwill 298 Other Intangible Assets, Net 123 Other Assets 4 Current Liabilities ( 18 ) Deferred Income Taxes ( 18 ) Other Liabilities ( 4 ) Fair value of net assets acquired 415 Less fair value of non-controlling interest ( 234 ) Total purchase price consideration $ 181 Other Intangible Assets, Net includes brands and customer relationships which have estimated useful lives of 4 to 15 years, primarily 15 years.",
+      "score": 0.9741
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "(d) Long-term debt includes the current portion of these debt instruments.",
+      "score": -0.6124
+    },
+    {
+      "sent": "(d) Long-term debt includes the current portion of these debt instruments.",
+      "score": -0.6124
+    },
+    {
+      "sent": "There are limitations to these non-GAAP financial measures because they are not prepared in accordance with GAAP and may not be comparable to similarly titled measures of other companies due to potential differences in methods of calculation and items being excluded.",
+      "score": -0.4707
+    }
+  ],
+  "forward_snippets": [
+    "guidance requires the use of highly inflationary accounting for countries whose cumulative three-year inflation exceeds 100 percent.",
+    "The new guidance requires that a buyer in a supplier finance program disclose sufficient information about the program to allow a user of the financial statements to understand the program\u2019s nature, activity during the period, changes from period to period, and potential magnitude.",
+    "As the guidance requires only additional disclosures, there were no effects of this standard on our financial position, results of operations and cash flows.",
+    "We expect the redemption to close in the second quarter of 2023.",
+    "The new guidance requires that a buyer in a supplier finance program disclose sufficient information about the program to allow a user of the financial statements to understand the program\u2019s nature, activity during the period, changes from period to period, and potential magnitude."
+  ]
+}

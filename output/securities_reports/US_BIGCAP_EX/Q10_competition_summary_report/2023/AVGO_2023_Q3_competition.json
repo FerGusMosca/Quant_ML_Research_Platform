@@ -1,0 +1,42 @@
+{
+  "symbol": "AVGO",
+  "year": 2023,
+  "period": "Q3",
+  "competition_summary": [
+    {
+      "competitor": "IP",
+      "mentions": 1,
+      "context": "Competition in our industries could prevent us from growing our revenue. \u2022 A prolonged disruption of our manufacturing facilities, research and development facilities, warehouses or other significant operations, or those of our suppliers, could have a material adverse effect on us. \u2022 We may be unable to maintain appropriate manufacturing capacity or product yields at our own manufacturing facilities. \u2022 An impairment of the confidentiality, integrity, or availability of our information technology"
+    },
+    {
+      "competitor": "The Creating Helpful Incentives",
+      "mentions": 1,
+      "context": "Competition in our industries could prevent us from growing our revenue. \u2022 A prolonged disruption of our manufacturing facilities, research and development facilities, warehouses or other significant operations, or those of our suppliers, could have a material adverse effect on us. \u2022 We may be unable to maintain appropriate manufacturing capacity or product yields at our own manufacturing facilities. \u2022 An impairment of the confidentiality, integrity, or availability of our information technology"
+    },
+    {
+      "competitor": "Apple",
+      "mentions": 1,
+      "context": "Competition in our industries could prevent us from growing our revenue. \u2022 A prolonged disruption of our manufacturing facilities, research and development facilities, warehouses or other significant operations, or those of our suppliers, could have a material adverse effect on us. \u2022 We may be unable to maintain appropriate manufacturing capacity or product yields at our own manufacturing facilities. \u2022 An impairment of the confidentiality, integrity, or availability of our information technology"
+    },
+    {
+      "competitor": "CM",
+      "mentions": 2,
+      "context": "Competition in our industries could prevent us from growing our revenue. \u2022 A prolonged disruption of our manufacturing facilities, research and development facilities, warehouses or other significant operations, or those of our suppliers, could have a material adverse effect on us. \u2022 We may be unable to maintain appropriate manufacturing capacity or product yields at our own manufacturing facilities. \u2022 An impairment of the confidentiality, integrity, or availability of our information technology"
+    },
+    {
+      "competitor": "Taiwan Semiconductor Manufacturing Company Limited",
+      "mentions": 1,
+      "context": "Competition in our industries could prevent us from growing our revenue. \u2022 A prolonged disruption of our manufacturing facilities, research and development facilities, warehouses or other significant operations, or those of our suppliers, could have a material adverse effect on us. \u2022 We may be unable to maintain appropriate manufacturing capacity or product yields at our own manufacturing facilities. \u2022 An impairment of the confidentiality, integrity, or availability of our information technology"
+    },
+    {
+      "competitor": "TSMC",
+      "mentions": 5,
+      "context": "Competition in our industries could prevent us from growing our revenue. \u2022 A prolonged disruption of our manufacturing facilities, research and development facilities, warehouses or other significant operations, or those of our suppliers, could have a material adverse effect on us. \u2022 We may be unable to maintain appropriate manufacturing capacity or product yields at our own manufacturing facilities. \u2022 An impairment of the confidentiality, integrity, or availability of our information technology"
+    },
+    {
+      "competitor": "COVID-19",
+      "mentions": 2,
+      "context": "Competition in our industries could prevent us from growing our revenue. \u2022 A prolonged disruption of our manufacturing facilities, research and development facilities, warehouses or other significant operations, or those of our suppliers, could have a material adverse effect on us. \u2022 We may be unable to maintain appropriate manufacturing capacity or product yields at our own manufacturing facilities. \u2022 An impairment of the confidentiality, integrity, or availability of our information technology"
+    }
+  ]
+}

@@ -1,0 +1,842 @@
+{
+  "symbol": "INTC",
+  "year": 2022,
+  "period": "Q3",
+  "competition_summary": [
+    {
+      "competitor": "the European Commission",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "EC",
+      "mentions": 22,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Advanced Micro Devices, Inc.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "AMD",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Statement",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the European Economic Area Agreement",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Court of First Instance",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the General Court",
+      "mentions": 9,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the European Court of Justice",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Intervener Association for Competitive Technologies",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Intel",
+      "mentions": 107,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "The Court of Justice",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Court of Justice",
+      "mentions": 3,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "The General Court",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Court of Justice\u2019s",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the General Court's",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Litigation Related to",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Google",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "GPZ",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Superior Court of Justice of Ontario",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Superior Court of Justice of Quebec",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the District Court",
+      "mentions": 4,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 4,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Superior Court of the State of California",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "The California Superior Court",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Board",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the California Court of Appeal",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the California Superior Court",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Superior Court",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Institute of Microelectronics",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Chinese Academy of Sciences",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Institute of Microelectronics of",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Chinese Academy of Sciences",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Intel China, Ltd.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Dell China, Ltd.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Beijing Jingdong Century Information Technology, Ltd.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the China National Intellectual Property Administration",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "CNIPA",
+      "mentions": 18,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Beijing Intellectual Property",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "IP",
+      "mentions": 3,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "The Beijing IP Court",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Supreme People's Court",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Beijing IP Court's",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "SPC",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "IMECAS",
+      "mentions": 4,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Beijing IP Court",
+      "mentions": 6,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the United States Patent & Trademark Office",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Inter Partes Review",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "USPTO",
+      "mentions": 3,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "IPR",
+      "mentions": 6,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Patent Trial and Appeal Board",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Lenovo (Beijing) Co., Ltd.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Lenovo",
+      "mentions": 4,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Beijing Jiayun Huitong Technology Development Co. Ltd.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Intel Corp.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Intel China Co., Ltd.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "China Beijing Branch",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Beijing Digital China Co., Ltd.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Digital China",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Beijing Jingdong Century Information Technology Col.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "VLSI Technology",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "LLC",
+      "mentions": 5,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "VLSI",
+      "mentions": 40,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "District Court",
+      "mentions": 4,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "NXP Semiconductors",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "NXP",
+      "mentions": 4,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Freescale Semiconductor, Inc.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "NXP B.V.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "FPGA",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "The Federal Circuit",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Financial Statements 20 Table of Contents The",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Court",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Precedential Opinion Panel",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "The Federal Court",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Supreme Court",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Shenzhen Intermediate People\u2019s Court",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Intel Trading",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Shanghai) Co., Ltd.",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Intel Products",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Chengdu) Co.,",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Intel Core",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Shanghai Intellectual Property Court",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Apple Inc.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Fortress Investment Group",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Fortress Credit Co.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Uniloc 2017",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Uniloc USA, Inc.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "DSS Technology Management, Inc.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "IXI IP",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "California Business and Professions Code section",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Apple",
+      "mentions": 3,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Networks",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Second Amended Complaint",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Finjan Holdings",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Finjan",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Delaware Chancery Court",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Chancery Court",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Delaware Court",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "The Delaware Court",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the Texas Court",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Financial Statements Notes",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Financial Statements 21 Table of Contents In",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "OpenSky Industries",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "OpenSky",
+      "mentions": 3,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "PQA",
+      "mentions": 4,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Litigation Related",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "node",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "AI Artificial intelligence ASP Average",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "AXG",
+      "mentions": 3,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "CCG Client Computing Group",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "CODM",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "the World Health Organization CPU Processor",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "DCAI Data Center",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "EC European Commission",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "GPU Graphics",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "HPC",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "AI IFS Intel Foundry Services",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "IP Intellectual",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "London Inter-Bank Offered Rate",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "MD&A Management's Discussion & Analysis MG&A Marketing",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "NEX Networking",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Edge",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Nanometer ODM Original",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "OEM Original",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "R&D Research",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "RSU Restricted",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "SEC U.S. Securities and Exchange Commission",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "SoC",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "CCG",
+      "mentions": 6,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "DCAI",
+      "mentions": 5,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "NEX",
+      "mentions": 3,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "TAM Total",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Tax Reform U.S. Tax Cuts and Jobs Act",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "U.S. Generally Accepted Accounting",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Financial Statements 23 Table of Contents Management's Discussion and Analysis We",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "\u25aa Desktop",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "COVID-19",
+      "mentions": 3,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "SuperFin",
+      "mentions": 4,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "MD&A",
+      "mentions": 14,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "AI",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Contents Network & Edge NEX",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Lower",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Mobileye",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "ADAS",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Robotaxi",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Mobileye Revenue",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "MD&A 28 Table",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Contents Intel Foundry Services IFS",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "IFS",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "MG&A",
+      "mentions": 3,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Research and Development Q1 2022",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Administrative Q1 2022",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Equity Investments and Interest",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Montage Technology",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Co. Ltd",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Beijing Unisoc Technology Ltd.",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "McAfee",
+      "mentions": 4,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "NAND",
+      "mentions": 4,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Contents Liquidity",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Capital Resources",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "IDM 2.0",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "SEC",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Financing Activities Financing",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Definition Usefulness",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Share",
+      "mentions": 2,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "MD&A 37 Table of Contents Following",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    },
+    {
+      "competitor": "Consolidated Condensed Financial Statements and Supplemental Details",
+      "mentions": 1,
+      "context": "Competition Matter In 2001, the European Commission (EC) commenced an investigation regarding claims by Advanced Micro Devices, Inc. (AMD) that we used unfair business practices to persuade customers to buy our microprocessors. We received numerous requests for information and documents from the EC and we responded to each of those requests. The EC issued a Statement of Objections in July 2007 and held a hearing on that Statement in March 2008. The EC issued a Supplemental Statement of Objection"
+    }
+  ]
+}

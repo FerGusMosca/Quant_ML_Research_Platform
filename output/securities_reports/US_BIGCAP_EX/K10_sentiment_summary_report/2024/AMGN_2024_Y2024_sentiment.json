@@ -1,0 +1,47 @@
+{
+  "symbol": "AMGN",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1798,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.192
+  },
+  "top_positive": [
+    {
+      "sent": "F-48 Impact of hedging transactions The following tables summarize the amounts recorded in income and expense line items and the effects thereon from fair value and cash flow hedging, including discontinued hedging relationships (in millions): Year ended December 31, 2023 Product sales Other income (expense), net Interest expense, net Total amounts recorded in income and (expense) line items presented in the Consolidated Statements of Income $ 26,910 $ 2,833 $ ( 2,875 ) The effects of cash flow and fair value hedging: Gains on cash flow hedging relationships reclassified out of AOCI: Foreign currency forward contracts $ 180 $ \u2014 $ \u2014 Cross-currency swap contracts $ \u2014 $ 42 $ \u2014 (Losses) gains on fair value hedging relationships\u2014interest rate swap agreements: Hedged items (1) $ \u2014 $ \u2014 $ ( 118 ) Derivatives designated as hedging instruments $ \u2014 $ \u2014 $ 205 Year ended December 31, 2022 Product sales Other income (expense), net Interest expense, net Total amounts recorded in income and (expense) line items presented in the Consolidated Statements of Income $ 24,801 $ ( 814 ) $ ( 1,406 ) The effects of cash flow and fair value hedging: Gains (losses) on cash flow hedging relationships reclassified out of AOCI: Foreign currency forward contracts $ 231 $ \u2014 $ \u2014 Cross-currency swap contracts $ \u2014 $ ( 233 ) $ \u2014 Gains (losses) on fair value hedging relationships\u2014interest rate swap agreements: Hedged items (1) $ \u2014 $ \u2014 $ 716 Derivatives designated as hedging instruments $ \u2014 $ \u2014 $ ( 636 ) Year ended December 31, 2021 Product sales Other income (expense), net Interest expense, net Total amounts recorded in income and (expense) line items presented in the Consolidated Statements of Income $ 24,297 $ 259 $ ( 1,197 ) The effects of cash flow and fair value hedging: Losses on cash flow hedging relationships reclassified out of AOCI: Foreign currency forward contracts $ ( 8 ) $ \u2014 $ \u2014 Cross-currency swap contracts $ \u2014 $ ( 245 ) $ \u2014 Gains (losses) on fair value hedging relationships\u2014interest rate swap agreements: Hedged items (1) $ \u2014 $ \u2014 $ 281 Derivatives designated as hedging instruments $ \u2014 $ \u2014 $ ( 192 ) __________ (1) Gains on hedged items do not completely offset losses on\nonly if an event of default or termination, as defined, were to occur.",
+      "score": 0.9944
+    },
+    {
+      "sent": "The way we approach our business is guided by the Amgen Values: Amgen Values Be Science-Based Compete Intensely and Win Create Value for Patients, Staff and Stockholders Be Ethical Trust and Respect Each Other Ensure Quality Work in Teams Collaborate, Communicate and Be Accountable Our staff are also guided by, and receive annual training on, the Company\u2019s Code of Conduct, which is designed to help every person who does business on our behalf worldwide (including all staff, management, consultants, contract workers and temporary workers) to understand what is expected of them.",
+      "score": 0.9803
+    },
+    {
+      "sent": "Security Ownership of Directors and Executive Officers and Certain Beneficial Owners Information about security ownership of certain beneficial owners and management is incorporated by reference from the sections entitled SECURITY OWNERSHIP OF DIRECTORS AND EXECUTIVE OFFICERS and SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS in our Proxy Statement.",
+      "score": 0.9791
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Violations of fraud and abuse laws may be punishable by criminal and/or civil sanctions, including fines and civil monetary penalties, as well as by the possibility of exclusion from federal healthcare programs (including Medicare and Medicaid).",
+      "score": -0.9571
+    },
+    {
+      "sent": "Even though we continue to invest in the monitoring, protection and resilience of our critical and/or sensitive data and systems, there can be no assurances that our efforts will detect, prevent or fully recover systems or data from all breakdowns, service interruptions, attacks and/or breaches of our systems that could adversely affect our business and operations and/or result in the loss or exposure of critical, proprietary, private, confidential or otherwise sensitive data, which could result in material financial, legal business or reputational harm to us or negatively affect our stock price.",
+      "score": -0.9325
+    },
+    {
+      "sent": "Even though we continue to invest in the monitoring, protection and resilience of our critical and/or sensitive data and systems, there can be no assurances that our efforts will detect, prevent or fully recover systems or data from all breakdowns, service interruptions, attacks and/or breaches of our systems that could adversely affect our business and operations and/or result in the loss or exposure of critical, proprietary, private, confidential or otherwise sensitive data, which could result in material financial, legal business or reputational harm to us or negatively affect our stock price.",
+      "score": -0.9325
+    }
+  ],
+  "forward_snippets": [
+    "Our robust pipeline includes \n&A management\u2019s discussion and analysis Moody\u2019s Moody\u2019s Investors Service, Inc.",
+    "Our robust pipeline includes potential first-in-class medicines at all stages of development.",
+    "Products/Pipeline Tarlatamab In October 2023, we announced results from the global Phase 2 DeLLphi-301 study, evaluating tarlatamab, an investigational delta-like ligand 3 (DLL3) targeting BiTE \u00ae (bispecific T-cell engager) molecule, in patients with advanced stage small cell lung cancer (SCLC) who had failed two or more prior lines of treatment.",
+    "Our robust pipeline includes potential first-in-class medicines at all stages of development.",
+    "Products/Pipeline Tarlatamab In October 2023, we announced results from the global Phase 2 DeLLphi-301 study, evaluating tarlatamab, an investigational delta-like ligand 3 (DLL3) targeting BiTE \u00ae (bispecific T-cell engager) molecule, in patients with advanced stage small cell lung cancer (SCLC) who had failed two or more prior lines of treatment."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "LIN",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2393,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.057
+  },
+  "top_positive": [
+    {
+      "sent": "3 Table of Contents LINDE PLC AND SUBSIDIARIES CONSOLIDATED STATEMENTS OF INCOME (Millions of dollars, except per share data) (UNAUDITED) Quarter\u00a0Ended\u00a0March 31, 2023 2022 Sales $ 8,193 $ 8,211 Cost of sales, exclusive of depreciation and amortization 4,431 4,798 Selling, general and administrative 822 802 Depreciation and amortization 948 1,112 Research and development 36 35 Other charges 18 ( 4 ) Other income (expense) - net ( 5 ) 12 Operating Profit 1,933 1,480 Interest expense - net 37 9 Net pension and OPEB cost (benefit), excluding service cost ( 45 ) ( 64 ) Income Before Income Taxes and Equity Investments 1,941 1,535 Income taxes 430 369 Income Before Equity Investments 1,511 1,166 Income from equity investments 41 44 Net Income (Including Noncontrolling Interests) 1,552 1,210 Less: noncontrolling interests ( 36 ) ( 36 ) Net Income \u2013 Linde plc $ 1,516 $ 1,174 Per Share Data \u2013 Linde plc Shareholders Basic earnings per share $ 3.08 $ 2.31 Diluted earnings per share $ 3.06 $ 2.30 Weighted Average Shares Outstanding (000\u2019s): Basic shares outstanding 491,817 507,152 Diluted shares outstanding 495,676 511,410 The accompanying notes are an integral part of these financial statements.",
+      "score": 0.9857
+    },
+    {
+      "sent": "The adjusted amounts are intended to supplement investors' understanding of the company's financial information and are not a substitute for GAAP measures: Quarter\u00a0Ended\u00a0March 31, (Millions of dollars, except per share data) 2023 2022 Variance Sales $ 8,193 $ 8,211 \u2014 % Cost of sales, exclusive of depreciation and amortization $ 4,431 $ 4,798 (8) % As a percent of sales 54.1 % 58.4 % Selling, general and administrative $ 822 $ 802 2 % As a percent of sales 10.0 % 9.8 % Depreciation and amortization $ 948 $ 1,112 (15) % Other charges (b) $ 18 $ (4) (550) % Other income (expense) - net $ (5) $ 12 142 % Operating profit $ 1,933 $ 1,480 31 % Operating margin 23.6 % 18.0 % Interest expense - net $ 37 $ 9 311 % Net pension and OPEB cost (benefit), excluding service cost $ (45) $ (64) (30) % Effective tax rate 22.2 % 24.0 % Income from equity investments $ 41 $ 44 (7) % Noncontrolling interests $ (36) $ (36) \u2014 % Net Income \u2013 Linde plc $ 1,516 $ 1,174 29 % Diluted earnings per share $ 3.06 $ 2.30 33 % Diluted shares outstanding 495,676 511,410 (3) % Number of employees 65,831 72,507 (9) % Adjusted Amounts (a) Operating profit $ 2,206 $ 1,905 16 % Operating margin 26.9 % 23.2 % Effective tax rate 24.1 % 24.3 % Net Income \u2013 Linde plc $ 1,693 $ 1,500 13 % Diluted earnings per share $ 3.42 $ 2.93 17 % Other Financial Data (a) EBITDA $ 2,922 $ 2,636 11 % As percent of sales 35.7 % 32.1 % Adjusted EBITDA $ 2,963 $ 2,663 11 % As percent of sales 36.2 % 32.4 % (a)   Adjusted Amounts and Other Financial Data are non-GAAP performance measures.",
+      "score": 0.9812
+    },
+    {
+      "sent": "The adjusted amounts are intended to supplement investors' understanding of the company's financial information and are not a substitute for GAAP measures: Quarter\u00a0Ended\u00a0March 31, (Millions of dollars, except per share data) 2023 2022 Variance Sales $ 8,193 $ 8,211 \u2014 % Cost of sales, exclusive of depreciation and amortization $ 4,431 $ 4,798 (8) % As a percent of sales 54.1 % 58.4 % Selling, general and administrative $ 822 $ 802 2 % As a percent of sales 10.0 % 9.8 % Depreciation and amortization $ 948 $ 1,112 (15) % Other charges (b) $ 18 $ (4) (550) % Other income (expense) - net $ (5) $ 12 142 % Operating profit $ 1,933 $ 1,480 31 % Operating margin 23.6 % 18.0 % Interest expense - net $ 37 $ 9 311 % Net pension and OPEB cost (benefit), excluding service cost $ (45) $ (64) (30) % Effective tax rate 22.2 % 24.0 % Income from equity investments $ 41 $ 44 (7) % Noncontrolling interests $ (36) $ (36) \u2014 % Net Income \u2013 Linde plc $ 1,516 $ 1,174 29 % Diluted earnings per share $ 3.06 $ 2.30 33 % Diluted shares outstanding 495,676 511,410 (3) % Number of employees 65,831 72,507 (9) % Adjusted Amounts (a) Operating profit $ 2,206 $ 1,905 16 % Operating margin 26.9 % 23.2 % Effective tax rate 24.1 % 24.3 % Net Income \u2013 Linde plc $ 1,693 $ 1,500 13 % Diluted earnings per share $ 3.42 $ 2.93 17 % Other Financial Data (a) EBITDA $ 2,922 $ 2,636 11 % As percent of sales 35.7 % 32.1 % Adjusted EBITDA $ 2,963 $ 2,663 11 % As percent of sales 36.2 % 32.4 % (a)   Adjusted Amounts and Other Financial Data are non-GAAP performance measures.",
+      "score": 0.9812
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These risks and uncertainties include, without limitation: the performance of stock markets generally; developments in worldwide and national economies and other international events and circumstances, including trade conflicts and tariffs; changes in foreign currencies and in interest rates; the cost and availability of electric power, natural gas and other raw materials; the ability to achieve price increases to offset cost increases; catastrophic events including natural disasters, epidemics, pandemics such as COVID-19, and acts of war and terrorism; the ability to attract, hire, and retain qualified personnel; the impact of changes in financial accounting standards; the impact of changes in pension plan liabilities; the impact of tax, environmental, healthcare and other legislation and government regulation in jurisdictions in which the company operates; the cost and outcomes of investigations, litigation and regulatory proceedings; the impact of potential unusual or non-recurring items; continued timely development and market acceptance of new products and applications; the impact of competitive products and pricing; future financial and operating performance of major customers and industries served; the impact of information technology system failures, network disruptions and breaches in data security; and the effectiveness and speed of integrating new acquisitions into the business.",
+      "score": -0.8523
+    },
+    {
+      "sent": "They are based on management\u2019s reasonable expectations and assumptions as of the date the statements are made but involve risks and uncertainties.",
+      "score": -0.6956
+    },
+    {
+      "sent": "These risks and uncertainties may cause future results or circumstances to differ materially from adjusted projections, estimates or other forward-looking statements.",
+      "score": -0.5423
+    }
+  ],
+  "forward_snippets": [
+    "Linde constructs plants on or adjacent to these customers\u2019 sites and supplies the product directly to customers by pipeline.",
+    "Where there are large concentrations of customers, a single pipeline may be connected to several plants and customers.",
+    "Linde constructs plants on or adjacent to these customers\u2019 sites and supplies the product directly to customers by pipeline.",
+    "Where there are large concentrations of customers, a single pipeline may be connected to several plants and customers.",
+    "Outlook Linde provides quarterly updates on operating results, material trends that may affect financial performance, and financial guidance via quarterly earnings releases and investor teleconferences."
+  ]
+}

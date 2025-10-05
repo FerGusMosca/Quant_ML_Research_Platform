@@ -1,0 +1,10 @@
+{
+  "symbol": "MDLZ",
+  "period": "2019",
+  "report_type": "YearlyIncomeStatement",
+  "items": {
+    "Gain On Sale Of Business": 0.0,
+    "Other Special Charges": 185000000.0,
+    "Gain On Sale Of Security": -103000000.0
+  }
+}

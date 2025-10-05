@@ -1,0 +1,47 @@
+{
+  "symbol": "RTX",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.156,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.213
+  },
+  "top_positive": [
+    {
+      "sent": "government audits and disputes; \u2022 factors that could impact RTX\u2019s ability to engage in desirable capital-raising or strategic transactions, including its credit rating, capital structure, levels of indebtedness and related obligations, capital expenditures, and research and development spending, and capital deployment strategy including with respect to share repurchases, and the availability of credit, borrowing costs, credit market conditions, and other factors; \u2022 uncertainties associated with the timing and scope of future repurchases by RTX of its common stock, including the ability to complete the accelerated share repurchase (ASR), the purchase price of the shares acquired pursuant to the ASR agreement, and the timing and duration of the ASR program, or declarations of cash dividends, which may be discontinued, accelerated, suspended, or delayed at any time due to various factors, including market conditions and the level of other investing activities and uses of cash; \u2022 risks relating to realizing expected benefits from, incurring costs for, and successfully managing the Company\u2019s segment realignment effective July 1, 2023, and other RTX strategic initiatives such as cost reduction, restructuring, digital transformation, and other operational initiatives; \u2022 risks of additional tax exposures due to new tax legislation or other developments in the U.S.",
+      "score": 0.9726
+    },
+    {
+      "sent": "government audits and disputes; \u2022 factors that could impact RTX\u2019s ability to engage in desirable capital-raising or strategic transactions, including its credit rating, capital structure, levels of indebtedness and related obligations, capital expenditures, and research and development spending, and capital deployment strategy including with respect to share repurchases, and the availability of credit, borrowing costs, credit market conditions, and other factors; \u2022 uncertainties associated with the timing and scope of future repurchases by RTX of its common stock, including the ability to complete the accelerated share repurchase (ASR), the purchase price of the shares acquired pursuant to the ASR agreement, and the timing and duration of the ASR program, or declarations of cash dividends, which may be discontinued, accelerated, suspended, or delayed at any time due to various factors, including market conditions and the level of other investing activities and uses of cash; \u2022 risks relating to realizing expected benefits from, incurring costs for, and successfully managing the Company\u2019s segment realignment effective July 1, 2023, and other RTX strategic initiatives such as cost reduction, restructuring, digital transformation, and other operational initiatives; \u2022 risks of additional tax exposures due to new tax legislation or other developments in the U.S.",
+      "score": 0.9726
+    },
+    {
+      "sent": "government audits and disputes; \u2022 factors that could impact RTX\u2019s ability to engage in desirable capital-raising or strategic transactions, including its credit rating, capital structure, levels of indebtedness and related obligations, capital expenditures, and research and development spending, and capital deployment strategy including with respect to share repurchases, and the availability of credit, borrowing costs, credit market conditions, and other factors; \u2022 uncertainties associated with the timing and scope of future repurchases by RTX of its common stock, including the ability to complete the accelerated share repurchase (ASR), the purchase price of the shares acquired pursuant to the ASR agreement, and the timing and duration of the ASR program, or declarations of cash dividends, which may be discontinued, accelerated, suspended, or delayed at any time due to various factors, including market conditions and the level of other investing activities and uses of cash; \u2022 risks relating to realizing expected benefits from, incurring costs for, and successfully managing the Company\u2019s segment realignment effective July 1, 2023, and other RTX strategic initiatives such as cost reduction, restructuring, digital transformation, and other operational initiatives; \u2022 risks of additional tax exposures due to new tax legislation or other developments in the U.S.",
+      "score": 0.9726
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The impact of a catastrophic product or system failure or similar event affecting our or our customers\u2019 or suppliers\u2019 products or services could 19 Table of Contents be significant, and could result in injuries or death, property damage, loss of strategic capabilities, loss of intellectual property, loss of reputation, and other significant negative effects.",
+      "score": -0.9538
+    },
+    {
+      "sent": "The impact of a catastrophic product or system failure or similar event affecting our or our customers\u2019 or suppliers\u2019 products or services could 19 Table of Contents be significant, and could result in injuries or death, property damage, loss of strategic capabilities, loss of intellectual property, loss of reputation, and other significant negative effects.",
+      "score": -0.9538
+    },
+    {
+      "sent": "A product or system failure, or perceived failure, could lead to negative publicity, a diversion of management attention, and damage to our reputation that could reduce demand for our products and services.",
+      "score": -0.9325
+    }
+  ],
+  "forward_snippets": [
+    "Major new awards in 2023 include a NATO contract to provide Guidance Enhanced Missiles (GEM-T) for the NATO Support and Procurement Agency (NSPA), AMRAAM for the U.S.",
+    "Of the total RPO as of December\u00a031, 2023, we expect approximately 25% will be recognized as sales over the next 12 months.",
+    "We believe a work environment where all individuals are respected, valued, and supported enables them to focus on developing the most innovative solutions to our industry\u2019s greatest challenges.",
+    "App\nGuidance Enhanced Missiles (GEM-T) for the NATO Support and Procurement Agency (NSPA), AMRAAM for the U.S.",
+    "Of the total RPO as of December\u00a031, 2023, we expect approximately 25% will be recognized as sales over the next 12 months."
+  ]
+}

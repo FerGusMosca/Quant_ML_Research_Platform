@@ -1,0 +1,43 @@
+{
+  "symbol": "XOM",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2329,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.062
+  },
+  "top_positive": [
+    {
+      "sent": "Inflation Reduction Act or policies limiting the attractiveness of future investment such as the additional European tax on the energy sector; variable impacts of trading activities on our margins and results each quarter; actions of competitors and commercial counterparties; the outcome of commercial negotiations, including final agreed terms and conditions; the ability to access debt markets; the ultimate impacts of COVID-19 or other public health crises, including the effects of government responses on people and economies; reservoir performance, including variability and timing factors applicable to unconventional resources; the level and outcome of exploration projects and decisions to invest in future reserves; timely completion of development and other construction projects; final management approval of future projects and any changes in the scope, terms, or costs of such projects as approved; changes in law, taxes, or regulation including environmental regulations, trade sanctions, and timely granting of governmental permits and certifications; government policies and support and market demand for low carbon technologies; war, civil unrest, attacks against the company or industry, and other political or security disturbances; expropriations, seizure, or capacity, insurance or shipping limitations by foreign governments or laws; opportunities for potential investments or divestments and satisfaction of applicable conditions to closing, including regulatory approvals; the capture of efficiencies within and between business lines and the ability to maintain near-term cost reductions as ongoing efficiencies; unforeseen technical or operating difficulties and unplanned maintenance; the development and competitiveness of alternative energy and emission reduction technologies; the results of research programs and the ability to bring new technologies to commercial scale on a cost-competitive basis; and other factors discussed under Item 1A.",
+      "score": 0.9657
+    },
+    {
+      "sent": "UNREGISTERED SALES OF EQUITY SECURITIES AND USE OF PROCEEDS Issuer Purchases of Equity Securities for Quarter Ended March\u00a031, 2023 Total Number of Shares Purchased (1) Average Price Paid per Share (2) Total Number of Shares Purchased as Part of Publicly Announced Plans or Programs (3) Approximate Dollar Value of Shares that May Yet Be Purchased Under the Program (Billions of dollars) January 2023 12,526,472 $111.81 12,517,807 $33.6 February 2023 11,737,763 $113.24 11,737,763 $32.3 March 2023 15,039,938 $107.07 15,039,938 $30.7 Total 39,304,173 $110.42 39,295,508 (1) Includes shares withheld from participants in the company's incentive program for personal income taxes.",
+      "score": 0.9561
+    },
+    {
+      "sent": "Actual future results, including financial and operating performance; total capital expenditures and mix, including allocations of capital to low carbon solutions; structural earnings improvement and structural cost reductions and efficiency gains, including the ability to offset inflationary pressure; plans to reduce future emissions and emissions intensity; ambitions to reach Scope 1 and Scope 2 net zero from operated assets by 2050, plans to reach net zero Scope 1 and 2 emissions in Upstream Permian Basin unconventional operated assets by 2030, eliminating routine flaring in-line with World Bank Zero Routine Flaring, reaching near-zero methane emissions from its operations, meeting ExxonMobil\u2019s emission reduction goals and plans, divestment and start-up plans, and associated project plans as well as technology efforts,  timing and outcome of projects related to the capture, transportation and storage of CO2, and produced biofuels; changes in law, taxes, or regulation including environmental regulations, trade sanctions, and timely granting of governmental permits and certifications; timing and outcome of hydrogen projects; cash flow, dividends and shareholder returns, including the timing and amounts of share repurchases; future debt levels and credit ratings; business and project plans, timing, costs, capacities and returns; and resource recoveries and production rates could differ materially due to a number of factors.",
+      "score": 0.9432
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK Information about market risks for the three months ended March\u00a031, 2023, does not differ materially from that discussed under Item 7A of the registrant's Annual Report on Form 10-K for 2022.",
+      "score": -0.6037
+    },
+    {
+      "sent": "4,983 5,367 Total 6,615 7,743 Upstream First Quarter Earnings Factor Analysis (millions of dollars) Price \u2013 Price impacts, driven by a 23% decrease in average crude realizations, decreased earnings by $1,750 million.",
+      "score": -0.5719
+    },
+    {
+      "sent": "1Q 2023 production also benefited from lower downtime and higher entitlements due to lower prices.",
+      "score": -0.5267
+    }
+  ],
+  "forward_snippets": [
+    "GAAP) 16,341 14,788 Proceeds associated with sales of subsidiaries, property, plant & equipment, and sales and returns of investments 854 293 Cash flow from operations and asset sales (Non-GAAP) 17,195 15,081 Because of the ongoing nature of our asset management and divestment program, we believe it is useful for investors to consider proceeds associated with asset sales together with cash provided by operating activities when evaluating cash available for investment in the business and financing activities, including shareholder distributions."
+  ]
+}

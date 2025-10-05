@@ -1,0 +1,47 @@
+{
+  "symbol": "EOG",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.207,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.076
+  },
+  "top_positive": [
+    {
+      "sent": "UNREGISTERED SALES OF EQUITY SECURITIES AND USE OF PROCEEDS The following table sets forth, for the periods indicated, EOG's share repurchase activity: Period Total Number of Shares Purchased (1) Average Price Paid Per Share Total Value of Shares Purchased as Part of Publicly Announced Plans or Programs Approximate Dollar Value of Shares that May Yet Be Purchased Under the Plans or Programs (2) January 1, 2022 - January 31, 2022 62,027 $ 102.94 \u2014 $ 5,000,000,000 February 1, 2022 - February 28, 2022 112,866 112.27 \u2014 $ 5,000,000,000 March 1, 2022 - March 31, 2022 195,555 119.05 \u2014 $ 5,000,000,000 Total 370,448 114.29 \u2014 (1) The 370,448 total shares for the quarter ended March 31, 2022, consist solely of shares that were withheld by or returned to EOG (i) in satisfaction of tax withholding obligations that arose upon the exercise of employee stock options or stock-settled stock appreciation rights or the vesting of restricted stock, restricted stock unit, or performance unit grants or (ii) in payment of the exercise price of employee stock options.",
+      "score": 0.9695
+    },
+    {
+      "sent": "UNREGISTERED SALES OF EQUITY SECURITIES AND USE OF PROCEEDS The following table sets forth, for the periods indicated, EOG's share repurchase activity: Period Total Number of Shares Purchased (1) Average Price Paid Per Share Total Value of Shares Purchased as Part of Publicly Announced Plans or Programs Approximate Dollar Value of Shares that May Yet Be Purchased Under the Plans or Programs (2) January 1, 2022 - January 31, 2022 62,027 $ 102.94 \u2014 $ 5,000,000,000 February 1, 2022 - February 28, 2022 112,866 112.27 \u2014 $ 5,000,000,000 March 1, 2022 - March 31, 2022 195,555 119.05 \u2014 $ 5,000,000,000 Total 370,448 114.29 \u2014 (1) The 370,448 total shares for the quarter ended March 31, 2022, consist solely of shares that were withheld by or returned to EOG (i) in satisfaction of tax withholding obligations that arose upon the exercise of employee stock options or stock-settled stock appreciation rights or the vesting of restricted stock, restricted stock unit, or performance unit grants or (ii) in payment of the exercise price of employee stock options.",
+      "score": 0.9695
+    },
+    {
+      "sent": "-23- Wellhead volume and price statistics for the three-month periods ended March 31, 2022 and 2021 were as follows: Three Months Ended March 31, 2022 2021 Crude Oil and Condensate Volumes (MBbld) (1) United States 449.4 428.7 Trinidad 0.7 2.2 Other International (2) \u2014 0.1 Total 450.1 431.0 Average Crude Oil and Condensate Prices ($/Bbl) (3) United States $ 96.02 $ 58.07 Trinidad 83.82 49.77 Other International (2) \u2014 38.61 Composite 96.00 58.02 Natural Gas Liquids Volumes (MBbld) (1) United States 190.3 124.3 Total 190.3 124.3 Average Natural Gas Liquids Prices ($/Bbl) (3) United States $ 39.77 $ 28.03 Composite 39.77 28.03 Natural Gas Volumes (MMcfd) (1) United States 1,249 1,100 Trinidad 209 217 Other International (2) \u2014 25 Total 1,458 1,342 Average Natural Gas Prices ($/Mcf) (3) United States $ 5.81 $ 5.52 Trinidad 3.36 3.38 Other International (2) \u2014 5.66 Composite 5.46 5.17 Crude Oil Equivalent Volumes (MBoed) (4) United States 847.8 736.4 Trinidad 35.5 38.5 Other International (2) \u2014 4.0 Total 883.3 778.9 Total MMBoe (4) 79.5 70.1 (1) Thousand barrels per day or million cubic feet per day, as applicable.",
+      "score": 0.9393
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "EOG's exposure to commodity price risk, interest rate risk and foreign currency exchange rate risk is discussed in (i) the \"Financial Commodity Derivative Transactions,\" \"Financing,\" \"Foreign Currency Exchange Rate Risk\" and \"Outlook\" sections of \"Management's Discussion and Analysis of Financial Condition and Results of Operations - Capital Resources and Liquidity\" included in EOG's Annual Report on Form 10-K for the year ended December 31, 2021, filed on February 24, 2022 (EOG's 2021 Annual Report); and (ii) Note 12, \"Risk Management Activities,\" to EOG's Consolidated Financial Statements included in EOG's 2021 Annual Report.",
+      "score": -0.6705
+    },
+    {
+      "sent": "EOG recognized net losses on the mark-to-market of financial commodity derivative contracts of $2,820 million for the first quarter of 2022 compared to net losses of $367 million for the same period of 2021.",
+      "score": -0.6597
+    },
+    {
+      "sent": "During the first quarter of 2022, EOG recognized net losses on the mark-to-market of financial commodity derivative contracts of $2,820 million compared to net losses of $367 million for the same period of 2021.",
+      "score": -0.6597
+    }
+  ],
+  "forward_snippets": [
+    "Also on May 5, 2022, EOG announced the addition of quantitative guidance to its cash return framework - specifically, a commitment to return a minimum of 60% of annual free cash flow to stockholders, through a combination of quarterly dividends, special dividends and share repurchases.",
+    "guidance to its cash return framework - specifically, a commitment to return a minimum of 60% of annual free cash flow to stockholders, through a combination of quarterly dividends, special dividends and share repurchases.",
+    "Transportation costs include transportation fees, storage and terminal fees, the cost of compression (the cost of compressing natural gas to meet pipeline pressure requirements), the cost of dehydration (the cost associated with removing water from natural gas to meet pipeline requirements), gathering fees and fuel costs.",
+    "Transportation costs include transportation fees, storage and terminal fees, the cost of compression (the cost of compressing natural gas to meet pipeline pressure requirements), the cost of dehydration (the cost associated with removing water from natural gas to meet pipeline requirements), gathering fees and fuel costs.",
+    "EOG's exposure to commodity price risk, interest rate risk and foreign currency exchange rate risk is discussed in (i) the \"Financial Commodity Derivative Transactions,\" \"Financing,\" \"Foreign Currency Exchange Rate Risk\" and \"Outlook\" sections of \"Management's Discussion and Analysis of Financial Condition and Results of Operations - Capital Resources and Liquidity\" included in EOG's Annual Report on Form 10-K for the year ended December 31, 2021, filed on February 24, 2022 (EOG's 2021 Annual Report); and (ii) Note 12, \"Risk Management Activities,\" to EOG's Consolidated Financial Statements included in EOG's 2021 Annual Report."
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "symbol": "FIS",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-01",
+      "time": "20:39",
+      "title": "Fidelity National Information Services Inc. (FIS) Acquires Amount, a Chicago-Based Digital Banking Origination and Decisioning Platform\n\n\n(Insider Monkey)",
+      "link": "/news/181722/fidelity-national-information-services-inc-fis-acquires-amount-a-chicago-based-digital-banking-origination-and-decisioning-platform"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:20PM",
+      "title": "Fidelity National (FIS) Weakens After Raymond James Slashes Price Target\n\n\n(Insider Monkey)",
+      "link": "/news/181333/fidelity-national-fis-weakens-after-raymond-james-slashes-price-target"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "09:42",
+      "title": "CoreWeave initiated, Instacart downgraded: Wall Street's top analyst calls\n\n\n(The Fly)",
+      "link": "https://finance.yahoo.com/news/coreweave-initiated-instacart-downgraded-wall-134224243.html"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "01:39",
+      "title": "Fidelity National Information (FIS) Presents Key Strategies at Goldman Sachs Conference\n\n\n(Insider Monkey)",
+      "link": "/news/177886/fidelity-national-information-fis-presents-key-strategies-at-goldman-sachs-conference"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:39AM",
+      "title": "Fidelity National Information (FIS) is Upgrading its Private Capital Suite to Cloud Native SaaS Platform\n\n\n(Insider Monkey)",
+      "link": "/news/177899/fidelity-national-information-fis-is-upgrading-its-private-capital-suite-to-cloud-native-saas-platform"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "13:45",
+      "title": "FIS Strengthens Digital Capabilities With Amount Acquisition\n\n\n(Zacks)",
+      "link": "/news/176134/fis-strengthens-digital-capabilities-with-amount-acquisition"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "11:24",
+      "title": "FIS Revamps Private Capital Suite to Transform Private Equity Operations\n\n\n(Zacks)",
+      "link": "/news/174869/fis-revamps-private-capital-suite-to-transform-private-equity-operations"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "FIS Acquires Amount to Deliver Unified Digital Account Origination, Empowering Financial Institutions to Accelerate Growth and Simplify Banking\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250924482005/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:01AM",
+      "title": "FIS Acquires Goldman Sachs-Backed Startup Amount\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/fis-stock-amount-goldman-sachs-de8f543d?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:51AM",
+      "title": "FIS acquires fintech Amount\n\n\n(Payments Dive)",
+      "link": "https://finance.yahoo.com/m/684c24ce-c15a-30a4-8097-a17d1bd1038d/fis-acquires-fintech-amount.html"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "08:33",
+      "title": "FIS Launches Enhanced Private Capital Suite to Power the Future of Private Equity\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250923635099/en"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "04:19",
+      "title": "Fidelity National Information Services (FIS) Announces its New Bank Modernization Framework\n\n\n(Insider Monkey)",
+      "link": "/news/171568/fidelity-national-information-services-fis-announces-its-new-bank-modernization-framework"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "08:00",
+      "title": "FIS Redefines Banking Modernization With Client at the Core\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250917732746/en"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "07:16",
+      "title": "UK competition watchdog opens formal probe into Global PaymentsWorldpay merger\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/uk-competition-watchdog-opens-formal-111620740.html"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "08:00",
+      "title": "FIS Recognized as Leader in Datos Insights Matrix for Integrated Receivables\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250915440177/en"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "14:15",
+      "title": "Fidelity National Information Services Launches AI-Powered Neural Treasury Suite\n\n\n(Insider Monkey)",
+      "link": "/news/164148/fidelity-national-information-services-launches-ai-powered-neural-treasury-suite"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "13:12",
+      "title": "Is Fidelity National Information Services Stock Underperforming the Nasdaq?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/4c56b1f2-a828-30af-a47b-d41481a02780/is-fidelity-national.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:57AM",
+      "title": "Fidelity National Information Services, Inc. (FIS) Wins Two Top Honors at the 2025 Global Finance Treasury and Cash Management Systems and Services Awards\n\n\n(Insider Monkey)",
+      "link": "/news/162144/fidelity-national-information-services-inc-fis-wins-two-top-honors-at-the-2025-global-finance-treasury-and-cash-management-systems-and-services-awards"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "08:00",
+      "title": "FIS Recognized Among Fast Companys Best Workplaces for Innovators\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250909943593/en/"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "08:00",
+      "title": "FIS Builds on Awards Momentum for Treasury Solutions by Launching AI-Powered Neural Treasury Suite\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250904123185/en"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "16:05",
+      "title": "FIS to Present at Upcoming Conference\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250903097609/en"
+    },
+    {
+      "date": "2025-08-28",
+      "time": "13:17",
+      "title": "Analyst Report: Fidelity National Information Services, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/a3b0334d-be7b-349b-983d-eff52a6590dc/analyst-report%3A-fidelity.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "FIS Celebrated With Two Major Honors at 2025 Global Finance Treasury & Cash Management Awards\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250828333187/en"
+    },
+    {
+      "date": "2025-08-26",
+      "time": "08:39",
+      "title": "Fidelity National Information (FIS) Launches Optimized Reconciliation Service\n\n\n(Insider Monkey)",
+      "link": "/news/149751/fidelity-national-information-fis-launches-optimized-reconciliation-service"
+    },
+    {
+      "date": "2025-08-21",
+      "time": "13:28",
+      "title": "Fidelity National Information Services, Inc. (FIS) Launches Investor Services Suite to Modernize Investor Servicing for Fund Managers\n\n\n(Insider Monkey)",
+      "link": "/news/146704/fidelity-national-information-services-inc-fis-launches-investor-services-suite-to-modernize-investor-servicing-for-fund-managers"
+    },
+    {
+      "date": "2025-08-19",
+      "time": "08:00",
+      "title": "FIS Launches Optimized Reconciliation Service to Help Capital Markets Adapt to Evolving Complexity\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250819845394/en/"
+    },
+    {
+      "date": "2025-08-15",
+      "time": "09:30",
+      "title": "GPN Partners With Tampa Bay Lightning for Arena Transactions\n\n\n(Zacks)",
+      "link": "/news/141916/gpn-partners-with-tampa-bay-lightning-for-arena-transactions"
+    },
+    {
+      "date": "2025-08-14",
+      "time": "10:00",
+      "title": "FIS Launches Investor Services Suite to Transform Investor Servicing Lifecycle\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250814908250/en"
+    },
+    {
+      "date": "2025-08-13",
+      "time": "08:50",
+      "title": "Is the Options Market Predicting a Spike in Fidelity National Stock?\n\n\n(Zacks)",
+      "link": "/news/139193/is-the-options-market-predicting-a-spike-in-fidelity-national-stock"
+    },
+    {
+      "date": "2025-08-12",
+      "time": "23:38",
+      "title": "Mizuho Decreases PT on Fidelity National Information Services, Inc. (FIS) to $83; Maintains 'Outperform' Rating\n\n\n(Insider Monkey)",
+      "link": "/news/137655/mizuho-decreases-pt-on-fidelity-national-information-services-inc-fis-to-83-maintains-outperform-rating"
+    },
+    {
+      "date": "2025-08-11",
+      "time": "08:35",
+      "title": "Fidelity National Information Services Stock Outlook: Is Wall Street Bullish or Bearish?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/9a000099-a8b3-3870-b560-d594a8242305/fidelity-national-information.html"
+    },
+    {
+      "date": "2025-08-07",
+      "time": "12:39",
+      "title": "Truist Analyst Raises Fidelity National Information Services (FIS) PT to $85\n\n\n(Insider Monkey)",
+      "link": "/news/132256/truist-analyst-raises-fidelity-national-information-services-fis-pt-to-85"
+    },
+    {
+      "date": "2025-08-06",
+      "time": "09:35",
+      "title": "Down 9.6% in 4 Weeks, Here's Why Fidelity National (FIS) Looks Ripe for a Turnaround\n\n\n(Zacks)",
+      "link": "/news/130055/down-96-in-4-weeks-heres-why-fidelity-national-fis-looks-ripe-for-a-turnaround"
+    },
+    {
+      "date": "2025-08-05",
+      "time": "19:25",
+      "title": "Analyst Report: Fidelity National Information Services, Inc.\n\n\n(Morningstar Research)  -8.54%",
+      "link": "https://finance.yahoo.com/m/974b4613-1248-39ff-ac2b-4b7913f97b43/analyst-report%3A-fidelity.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:56PM",
+      "title": "FIS Q2 Earnings Meet Estimates on Strong Banking Solutions Unit\n\n\n(Zacks)",
+      "link": "/news/128722/fis-q2-earnings-meet-estimates-on-strong-banking-solutions-unit"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Compared to Estimates, Fidelity National (FIS) Q2 Earnings: A Look at Key Metrics\n\n\n(Zacks)",
+      "link": "/news/128219/compared-to-estimates-fidelity-national-fis-q2-earnings-a-look-at-key-metrics"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:15AM",
+      "title": "Fidelity National Information Services (FIS) Matches Q2 Earnings Estimates\n\n\n(Zacks)",
+      "link": "/news/128018/fidelity-national-information-services-fis-matches-q2-earnings-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:14AM",
+      "title": "Payments processor FIS forecasts third-quarter profit below estimates\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/payments-processor-fis-forecasts-third-121427808.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:09AM",
+      "title": "Fidelity National: Q2 Earnings Snapshot\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/fidelity-national-q2-earnings-snapshot-110914048.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "FIS Reports Strong Second Quarter 2025 Results and Raises Full-Year Outlook\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250805907361/en"
+    },
+    {
+      "date": "2025-08-04",
+      "time": "14:14",
+      "title": "How FIS is responding to the stablecoin wave\n\n\n(American Banker)",
+      "link": "https://finance.yahoo.com/m/dc326241-4e97-3b5f-afd4-54b8051e1827/how-fis-is-responding-to-the.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:43PM",
+      "title": "Can Fidelity National Beat Q2 Earnings on Capital Market Strength?\n\n\n(Zacks)",
+      "link": "/news/126810/can-fidelity-national-beat-q2-earnings-on-capital-market-strength"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:50AM",
+      "title": "These 2 Business Services Stocks Could Beat Earnings: Why They Should Be on Your Radar\n\n\n(Zacks)",
+      "link": "/news/126260/these-2-business-services-stocks-could-beat-earnings-why-they-should-be-on-your-radar"
+    },
+    {
+      "date": "2025-08-01",
+      "time": "08:09",
+      "title": "Broadridge Set to Report Q4 Earnings: What's in the Cards?\n\n\n(Zacks)",
+      "link": "/news/124499/broadridge-set-to-report-q4-earnings-whats-in-the-cards"
+    },
+    {
+      "date": "2025-07-31",
+      "time": "16:05",
+      "title": "FIS Announces Quarterly Dividend\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250731146818/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:15AM",
+      "title": "What Analyst Projections for Key Metrics Reveal About Fidelity National (FIS) Q2 Earnings\n\n\n(Zacks)",
+      "link": "/news/122719/what-analyst-projections-for-key-metrics-reveal-about-fidelity-national-fis-q2-earnings"
+    },
+    {
+      "date": "2025-07-30",
+      "time": "10:00",
+      "title": "RB Global (RBA) Earnings Expected to Grow: Should You Buy?\n\n\n(Zacks)",
+      "link": "/news/121175/rb-global-rba-earnings-expected-to-grow-should-you-buy"
+    },
+    {
+      "date": "2025-07-29",
+      "time": "12:57",
+      "title": "PYPL Q2 Earnings Top Estimates, Shares Decline Despite Guidance Raise\n\n\n(Zacks)",
+      "link": "/news/119444/pypl-q2-earnings-top-estimates-shares-decline-despite-guidance-raise"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:43PM",
+      "title": "Aurora Gears Up to Report Q2 Earnings: Here's What to Expect\n\n\n(Zacks)",
+      "link": "/news/119428/aurora-gears-up-to-report-q2-earnings-heres-what-to-expect"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:22AM",
+      "title": "Aptiv Gears Up to Report Q2 Earnings: Here's What to Expect\n\n\n(Zacks)",
+      "link": "/news/119246/aptiv-gears-up-to-report-q2-earnings-heres-what-to-expect"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Fidelity National Information Services (FIS) Expected to Beat Earnings Estimates: Should You Buy?\n\n\n(Zacks)",
+      "link": "/news/119227/fidelity-national-information-services-fis-expected-to-beat-earnings-estimates-should-you-buy"
+    },
+    {
+      "date": "2025-07-28",
+      "time": "17:17",
+      "title": "FIS, Circle Partner to Offer Stablecoin Transactions to Financial Institutions\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/finance/currencies/fis-circle-partner-to-offer-stablecoin-transactions-to-financial-institutions-d18a1d2a?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00PM",
+      "title": "FIS Partners with Circle to Unlock Stablecoin Money Movement Functionality for Financial Institution Customers\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250728320277/en/"
+    },
+    {
+      "date": "2025-07-26",
+      "time": "12:13",
+      "title": "Why you might one day use stablecoins in place of credit cards or bank accounts\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/why-you-might-one-day-use-stablecoins-in-place-of-credit-cards-or-bank-accounts-161301509.html"
+    },
+    {
+      "date": "2025-07-25",
+      "time": "11:02",
+      "title": "TT Gears Up to Report Q2 Earnings: Here's What You Should Know\n\n\n(Zacks)",
+      "link": "/news/115830/tt-gears-up-to-report-q2-earnings-heres-what-you-should-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:50AM",
+      "title": "These 2 Business Services Stocks Could Beat Earnings: Why They Should Be on Your Radar\n\n\n(Zacks)",
+      "link": "/news/115499/these-2-business-services-stocks-could-beat-earnings-why-they-should-be-on-your-radar"
+    },
+    {
+      "date": "2025-07-24",
+      "time": "07:15",
+      "title": "FirstCash Holdings (FCFS) Q2 Earnings and Revenues Beat Estimates\n\n\n(Zacks)",
+      "link": "/news/113646/firstcash-holdings-fcfs-q2-earnings-and-revenues-beat-estimates"
+    },
+    {
+      "date": "2025-07-23",
+      "time": "11:13",
+      "title": "ManpowerGroup Stock Improves 5% Since Q2 Earnings Beat\n\n\n(Zacks)",
+      "link": "/news/112587/manpowergroup-stock-improves-5-since-q2-earnings-beat"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:06AM",
+      "title": "Veralto Gears Up to Report Q2 Earnings: Here's What You Should Know\n\n\n(Zacks)",
+      "link": "/news/112582/veralto-gears-up-to-report-q2-earnings-heres-what-you-should-know"
+    },
+    {
+      "date": "2025-07-17",
+      "time": "08:50",
+      "title": "Why Investors Need to Take Advantage of These 2 Business Services Stocks Now\n\n\n(Zacks)",
+      "link": "/news/106530/why-investors-need-to-take-advantage-of-these-2-business-services-stocks-now"
+    },
+    {
+      "date": "2025-07-16",
+      "time": "16:05",
+      "title": "FIS to Report Second Quarter Earnings on August 5, 2025\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250716615476/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:10PM",
+      "title": "Why Fidelity National (FIS) Could Beat Earnings Estimates Again\n\n\n(Zacks)",
+      "link": "/news/105687/why-fidelity-national-fis-could-beat-earnings-estimates-again"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "FIS Recognized by CNBC as One of the World's Top Fintech Companies\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250716030673/en"
+    },
+    {
+      "date": "2025-07-15",
+      "time": "17:58",
+      "title": "Elliott Has Amassed Stake in Global Payments\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/elliott-amassed-stake-global-payments-215813663.html"
+    },
+    {
+      "date": "2025-07-10",
+      "time": "08:08",
+      "title": "Fidelity National Information (FIS) Partners with MUFG Securities\n\n\n(Insider Monkey)",
+      "link": "/news/100010/fidelity-national-information-fis-partners-with-mufg-securities"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "FIS Positioned as a Category Leader Across All Five Credit Lending Operations Quadrants in Chartis Research Report\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250710767509/en/"
+    },
+    {
+      "date": "2025-06-30",
+      "time": "10:40",
+      "title": "Wall Street Analysts Dish Out Circle Stock Ratings, Ponder Rise Of Stablecoins\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/bb69538c-b973-37fe-9212-294c238d5e45/wall-street-analysts-dish-out.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:02AM",
+      "title": "Visa, FIS boost value-added card services\n\n\n(Payments Dive)",
+      "link": "https://finance.yahoo.com/m/3bb59861-e137-35e8-806d-5ca6f09f6728/visa%2C-fis-boost-value-added.html"
+    },
+    {
+      "date": "2025-06-26",
+      "time": "08:00",
+      "title": "FIS and Visa Deepen Their Relationship to Provide Regional and Community Banks With Easier Access to Powerful Payments Capabilities\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250626186497/en/"
+    },
+    {
+      "date": "2025-06-24",
+      "time": "18:58",
+      "title": "Analyst Report: Fidelity National Information Services, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/21ee08c3-97f7-3f99-b7d2-51afd20edf48/analyst-report%3A-fidelity.html"
+    },
+    {
+      "date": "2025-06-17",
+      "time": "08:00",
+      "title": "FIS Recognized as Top Provider for Chargeback Management Capabilities by Juniper Research\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250617352095/en/"
+    },
+    {
+      "date": "2025-06-14",
+      "time": "14:05",
+      "title": "Javelin Ranks Fidelity National Information Services (FIS) as an Overall Leader for Digital Issuance\n\n\n(Insider Monkey)",
+      "link": "/news/80707/javelin-ranks-fidelity-national-information-services-fis-as-an-overall-leader-for-digital-issuance"
+    },
+    {
+      "date": "2025-06-12",
+      "time": "08:00",
+      "title": "FIS Recognized as an Overall Leader for Digital Issuance by Javelin Strategy & Research\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250612149170/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:20AM",
+      "title": "Is Invesco S&P 500 Equal Weight Financials ETF (RSPF) a Strong ETF Right Now?\n\n\n(Zacks)",
+      "link": "/news/79125/is-invesco-sp-500-equal-weight-financials-etf-rspf-a-strong-etf-right-now"
+    },
+    {
+      "date": "2025-06-09",
+      "time": "16:05",
+      "title": "FIS to Present at Upcoming Conference\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250609795622/en"
+    },
+    {
+      "date": "2025-06-06",
+      "time": "08:46",
+      "title": "Apple, X, and Airbnb among growing number of Big Tech firms exploring crypto adoption\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/apple-x-airbnb-among-growing-124627298.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:29AM",
+      "title": "Worldpay collaborates with Early Warning for Paze checkout\n\n\n(Electronic Payments)",
+      "link": "https://finance.yahoo.com/m/aa4c9d0e-ab67-3d5d-8503-b6f28872de83/worldpay-collaborates-with.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:31AM",
+      "title": "Zacks Industry Outlook Highlights Visa, Mastercard, Fiserv, Fidelity National Information Services and Global Payments\n\n\n(Zacks)",
+      "link": "/news/75075/zacks-industry-outlook-highlights-visa-mastercard-fiserv-fidelity-national-information-services-and-global-payments"
+    },
+    {
+      "date": "2025-06-05",
+      "time": "11:30",
+      "title": "Fidelity National (FIS) Up 6.4% Since Last Earnings Report: Can It Continue?\n\n\n(Zacks)",
+      "link": "/news/74570/fidelity-national-fis-up-64-since-last-earnings-report-can-it-continue"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:13AM",
+      "title": "5 Financial Transaction Stocks to Watch Amid a Booming Digital Era\n\n\n(Zacks)",
+      "link": "/news/74476/5-financial-transaction-stocks-to-watch-amid-a-booming-digital-era"
+    },
+    {
+      "date": "2025-06-04",
+      "time": "12:38",
+      "title": "Fidelity National Powers ATLAS With Advanced Loan Servicing Solution\n\n\n(Zacks)",
+      "link": "/news/73579/fidelity-national-powers-atlas-with-advanced-loan-servicing-solution"
+    },
+    {
+      "date": "2025-06-03",
+      "time": "08:00",
+      "title": "FIS Announces ATLAS SP Partners as New Client for Commercial Loan Servicing Solution\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250603516690/en/"
+    },
+    {
+      "date": "2025-05-30",
+      "time": "12:43",
+      "title": "GPN to Sell Payroll Business for $1.1Bn, Boosts Focus on Core Operations\n\n\n(Zacks)",
+      "link": "/news/70675/gpn-to-sell-payroll-business-for-11bn-boosts-focus-on-core-operations"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:17AM",
+      "title": "Exodus taps Worldpay to enable crypto purchase using cards\n\n\n(Electronic Payments)",
+      "link": "https://finance.yahoo.com/m/33b483f5-e188-3970-bff5-a12bf5230434/exodus-taps-worldpay-to.html"
+    },
+    {
+      "date": "2025-05-28",
+      "time": "08:00",
+      "title": "FIS to Enhance Back-Office Operations for MUFG Securities Canada\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250528460023/en/"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:57AM",
+      "title": "Worldpay and BVNK collaborate on stablecoin payouts\n\n\n(Electronic Payments)",
+      "link": "https://finance.yahoo.com/m/bced9a46-078a-3b45-a8b0-d3ab4322ae84/worldpay-and-bvnk-collaborate.html"
+    },
+    {
+      "date": "2025-05-27",
+      "time": "08:00",
+      "title": "FIS Triumphs with Two WatersTechnology Asia Award Wins\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250527728533/en/"
+    },
+    {
+      "date": "2025-05-23",
+      "time": "07:47",
+      "title": "Worldpay launches domestic acquiring capabilities in Colombia\n\n\n(Electronic Payments)",
+      "link": "https://finance.yahoo.com/m/9f0fb0e0-b321-36bf-b993-35db28eb8d1c/worldpay-launches-domestic.html"
+    },
+    {
+      "date": "2025-05-22",
+      "time": "06:20",
+      "title": "Should You Invest in the Invesco S&P 500 Equal Weight Financials ETF (RSPF)?\n\n\n(Zacks)",
+      "link": "/news/63754/should-you-invest-in-the-invesco-sp-500-equal-weight-financials-etf-rspf"
+    },
+    {
+      "date": "2025-05-21",
+      "time": "16:35",
+      "title": "Fidelity (FIS) Partners with Letskipp to Market Non-Sufficient Funds Authorization Solution\n\n\n(Insider Monkey)",
+      "link": "/news/63359/fidelity-fis-partners-with-letskipp-to-market-non-sufficient-funds-authorization-solution"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "FIS Partners With Issuer-Merchant Collaboration Platform Kipp To Prevent Card Declines and Unlock Revenue for Debit Issuers\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250521737042/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:21AM",
+      "title": "Worldpay, Yabie team up on new business management tool\n\n\n(Electronic Payments)",
+      "link": "https://finance.yahoo.com/m/65a201d6-d71e-30b7-af24-5169be5cb659/worldpay%2C-yabie-team-up-on.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:19AM",
+      "title": "FIS quizzed on profit margins\n\n\n(Payments Dive)",
+      "link": "https://finance.yahoo.com/m/698c1b62-b5a8-32f3-ae5a-0671ccfd186c/fis-quizzed-on-profit-margins.html"
+    },
+    {
+      "date": "2025-05-16",
+      "time": "14:00",
+      "title": "Global Payments pushes 'command center' to battle rivals\n\n\n(American Banker)",
+      "link": "https://finance.yahoo.com/m/7d026719-90d9-3173-bf68-a9ddf2e6adec/global-payments-pushes.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Global Payments Hopes Its New Platform Makes the Market a Believer\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/c1fc292e-c0f3-3709-92bc-8e880e216238/global-payments-hopes-its-new.html"
+    },
+    {
+      "date": "2025-05-15",
+      "time": "12:21",
+      "title": "Harmony Gap Research from FIS and Oxford Economics Reveals 78% of Global Businesses Leaning into AI to Combat Fraud\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250515135384/en/Global"
+    },
+    {
+      "date": "2025-05-14",
+      "time": "18:00",
+      "title": "Seth Klarman's Strategic Moves: Fidelity National Information Services Inc. Takes Center Stage\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/seth-klarmans-strategic-moves-fidelity-220049512.html"
+    },
+    {
+      "date": "2025-05-09",
+      "time": "06:00",
+      "title": "Global Payments eyes cost cuts\n\n\n(Payments Dive)",
+      "link": "https://finance.yahoo.com/m/c058c885-084d-3736-958d-e41eda28917a/global-payments-eyes-cost-cuts.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:26AM",
+      "title": "Fidelity National Information Services, Inc. (FIS): Among Billionaire Mason Hawkins' Mid-Cap Stocks with Huge Upside Potential\n\n\n(Insider Monkey)",
+      "link": "/news/52905/fidelity-national-information-services-inc-fis-among-billionaire-mason-hawkins-mid-cap-stocks-with-huge-upside-potential"
+    },
+    {
+      "date": "2025-05-08",
+      "time": "12:00",
+      "title": "Fidelity National (FIS) Upgraded to Buy: What Does It Mean for the Stock?\n\n\n(Zacks)",
+      "link": "/news/52163/fidelity-national-fis-upgraded-to-buy-what-does-it-mean-for-the-stock"
+    }
+  ]
+}

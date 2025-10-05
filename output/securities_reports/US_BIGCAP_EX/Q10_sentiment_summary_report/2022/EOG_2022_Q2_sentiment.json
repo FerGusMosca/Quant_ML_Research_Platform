@@ -1,0 +1,47 @@
+{
+  "symbol": "EOG",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2097,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.07
+  },
+  "top_positive": [
+    {
+      "sent": "UNREGISTERED SALES OF EQUITY SECURITIES AND USE OF PROCEEDS The following table sets forth, for the periods indicated, EOG's share repurchase activity: Period Total Number of Shares Purchased (1) Average Price Paid Per Share Total Value of Shares Purchased as Part of Publicly Announced Plans or Programs Approximate Dollar Value of Shares that May Yet Be Purchased Under the Plans or Programs (2) April 1, 2022 - April 30, 2022 23,045 $ 123.44 \u2014 $ 5,000,000,000 May 1, 2022 - May 31, 2022 53,666 131.72 \u2014 $ 5,000,000,000 June 1, 2022 - June 30, 2022 35,276 139.52 \u2014 $ 5,000,000,000 Total 111,987 132.47 \u2014 (1) The 111,987 total shares for the quarter ended June 30, 2022, consist solely of shares that were withheld by or returned to EOG (i) in satisfaction of tax withholding obligations that arose upon the exercise of employee stock options or stock-settled stock appreciation rights or the vesting of restricted stock, restricted stock unit, or performance unit grants or (ii) in payment of the exercise price of employee stock options.",
+      "score": 0.9695
+    },
+    {
+      "sent": "UNREGISTERED SALES OF EQUITY SECURITIES AND USE OF PROCEEDS The following table sets forth, for the periods indicated, EOG's share repurchase activity: Period Total Number of Shares Purchased (1) Average Price Paid Per Share Total Value of Shares Purchased as Part of Publicly Announced Plans or Programs Approximate Dollar Value of Shares that May Yet Be Purchased Under the Plans or Programs (2) April 1, 2022 - April 30, 2022 23,045 $ 123.44 \u2014 $ 5,000,000,000 May 1, 2022 - May 31, 2022 53,666 131.72 \u2014 $ 5,000,000,000 June 1, 2022 - June 30, 2022 35,276 139.52 \u2014 $ 5,000,000,000 Total 111,987 132.47 \u2014 (1) The 111,987 total shares for the quarter ended June 30, 2022, consist solely of shares that were withheld by or returned to EOG (i) in satisfaction of tax withholding obligations that arose upon the exercise of employee stock options or stock-settled stock appreciation rights or the vesting of restricted stock, restricted stock unit, or performance unit grants or (ii) in payment of the exercise price of employee stock options.",
+      "score": 0.9695
+    },
+    {
+      "sent": "Natural gas deliveries for the second quarter of 2022 increased 83 MMcfd, or 6%, compared to the same period of 2021 due primarily to higher deliveries in the Dorado gas play and increased production of associated natural gas from the Permian Basin, partially offset by lower natural gas volumes due to the sale of certain legacy natural gas assets in the Rocky Mountain area in the first quarter of 2022, lower natural gas deliveries in Trinidad and lower natural gas volumes associated with the disposition of the China assets in the second quarter of 2021.",
+      "score": 0.9477
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "EOG's exposure to commodity price risk, interest rate risk and foreign currency exchange rate risk is discussed in (i) the \"Commodity Derivative Transactions,\" \"Financing,\" \"Foreign Currency Exchange Rate Risk\" and \"Outlook\" sections of \"Management's Discussion and Analysis of Financial Condition and Results of Operations - Capital Resources and Liquidity\" included in EOG's Annual Report on Form 10-K for the year ended December 31, 2021, filed on February 24, 2022 (EOG's 2021 Annual Report); and (ii) Note 12, \"Risk Management Activities,\" to EOG's Consolidated Financial Statements included in EOG's 2021 Annual Report.",
+      "score": -0.6705
+    },
+    {
+      "sent": "EOG recognized net losses on the mark-to-market of financial commodity derivative contracts of $1,377 million for the second quarter of 2022 compared to net losses of $427 million for the same period of 2021.",
+      "score": -0.6597
+    },
+    {
+      "sent": "During the second quarter of 2022, EOG recognized net losses on the mark-to-market of financial commodity derivative contracts of $1,377 million compared to net losses of $427 million for the same period of 2021.",
+      "score": -0.6597
+    }
+  ],
+  "forward_snippets": [
+    "Also on May 5, 2022, EOG announced the addition of quantitative guidance to its cash return framework - specifically, a commitment to return a minimum of 60% of annual net cash provided by operating activities before certain balance sheet-related changes, less total capital expenditures, to stockholders, through a combination of quarterly dividends, special dividends and share repurchases.",
+    "Purchases and sales of third-party crude oil and natural gas may be utilized in order to balance firm capacity at third-party facil\nguidance to its cash return framework - specifically, a commitment to return a minimum of 60% of annual net cash provided by operating activities before certain balance sheet-related changes, less total capital expenditures, to stockholders, through a combination of quarterly dividends, special dividends and share repurchases.",
+    "Transportation costs include transportation fees, storage and terminal fees, the cost of compression (the cost of compressing natural gas to meet pipeline pressure requirements), the cost of dehydration (the cost associated with removing water from natural gas to meet pipeline requirements), gathering fees and fuel costs.",
+    "Transportation costs include transportation fees, storage and terminal fees, the cost of compression (the cost of compressing natural gas to meet pipeline pressure requirements), the cost of dehydration (the cost associated with removing water from natural gas to meet pipeline requirements), gathering fees and fuel costs.",
+    "EOG's exposure to commodity price risk, interest rate risk and foreign currency exchange rate risk is discussed in (i) the \"Commodity Derivative Transactions,\" \"Financing,\" \"Foreign Currency Exchange Rate Risk\" and \"Outlook\" sections of \"Management's Discussion and Analysis of Financial Condition and Results of Operations - Capital Resources and Liquidity\" included in EOG's Annual Report on Form 10-K for the year ended December 31, 2021, filed on February 24, 2022 (EOG's 2021 Annual Report); and (ii) Note 12, \"Risk Management Activities,\" to EOG's Consolidated Financial Statements included in EOG's 2021 Annual Report."
+  ]
+}

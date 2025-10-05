@@ -1,0 +1,47 @@
+{
+  "symbol": "COP",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1947,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.117
+  },
+  "top_positive": [
+    {
+      "sent": "3 ConocoPhillips \u00a0\u00a0\u00a0\u00a0\u00a02022 Q2 10-Q Financial Statements Table of Contents Consolidated Balance Sheet ConocoPhillips Millions of Dollars June 30 2022 December 31 2021 Assets Cash and cash equivalents $ 6,909 5,028 Short-term investments 1,272 446 Accounts and notes receivable (net of allowance of $ 2 and $ 2 , respectively) 8,081 6,543 Accounts and notes receivable\u2014related parties 72 127 Investment in Cenovus Energy \u2014 1,117 Inventories 1,234 1,208 Prepaid expenses and other current assets 1,292 1,581 Total Current Assets 18,860 16,050 Investments and long-term receivables 8,203 7,113 Net properties, plants and equipment (net of accumulated DD&A of $ 65,212 and $ 64,735 , respectively) 64,008 64,911 Other assets 2,622 2,587 Total Assets $ 93,693 90,661 Liabilities Accounts payable $ 5,845 5,002 Accounts payable\u2014related parties 28 23 Short-term debt 676 1,200 Accrued income and other taxes 2,759 2,862 Employee benefit obligations 529 755 Other accruals 2,379 2,179 Total Current Liabilities 12,216 12,021 Long-term debt 16,295 18,734 Asset retirement obligations and accrued environmental costs 5,737 5,754 Deferred income taxes 6,694 6,179 Employee benefit obligations 1,080 1,153 Other liabilities and deferred credits 1,469 1,414 Total Liabilities 43,491 45,255 Equity Common stock ( 2,500,000,000 shares authorized at $ 0.01 par value) Issued (2022\u2014 2,100,027,414 shares; 2021\u2014 2,091,562,747 shares) Par value 21 21 Capital in excess of par 61,045 60,581 Treasury stock (at cost: 2022\u2014 826,994,049 shares; 2021\u2014 789,319,875 shares) ( 54,644 ) ( 50,920 ) Accumulated other comprehensive loss ( 5,313 ) ( 4,950 ) Retained earnings 49,093 40,674 Total Equity 50,202 45,406 Total Liabilities and Equity $ 93,693 90,661 See Notes to Consolidated Financial Statements.",
+      "score": 0.9618
+    },
+    {
+      "sent": "ConocoPhillips \u00a0\u00a0\u00a0\u00a0\u00a02022 Q2 10-Q 2 Financial Statements Table of Contents Consolidated Statement of Comprehensive Income ConocoPhillips Millions of Dollars Three Months Ended June\u00a030 Six Months Ended June\u00a030 2022 2021 2022 2021 Net Income $ 5,145 2,091 10,904 3,073 Other comprehensive income Defined benefit plans Reclassification adjustment for amortization of prior service credit included in net income ( 10 ) ( 10 ) ( 20 ) ( 19 ) Net change ( 10 ) ( 10 ) ( 20 ) ( 19 ) Net actuarial gain (loss) arising during the period ( 82 ) 30 ( 82 ) 105 Reclassification adjustment for amortization of net actuarial losses included in net income 25 63 41 88 Net change ( 57 ) 93 ( 41 ) 193 Income taxes on defined benefit plans 14 ( 19 ) 12 ( 40 ) Defined benefit plans, net of tax ( 53 ) 64 ( 49 ) 134 Unrealized holding loss on securities ( 5 ) \u2014 ( 9 ) ( 1 ) Income taxes on unrealized holding loss on securities 1 \u2014 2 \u2014 Unrealized holding loss on securities, net of tax ( 4 ) \u2014 ( 7 ) ( 1 ) Foreign currency translation adjustments ( 448 ) 96 ( 307 ) 165 Foreign currency translation adjustments, net of tax ( 448 ) 96 ( 307 ) 165 Other Comprehensive Income (Loss), Net of Tax ( 505 ) 160 ( 363 ) 298 Comprehensive Income $ 4,640 2,251 10,541 3,371 See Notes to Consolidated Financial Statements.",
+      "score": 0.9595
+    },
+    {
+      "sent": "Millions of Dollars Three Months Ended June\u00a030 Six Months Ended June\u00a030 2022 2021 2022 2021 Total Net gain on equity securities $ \u2014 418 251 726 Less: Net gain on equity securities sold during the period \u2014 31 251 60 Unrealized gain on equity securities still held at the reporting date $ \u2014 387 $ \u2014 666 9 ConocoPhillips \u00a0\u00a0\u00a0\u00a0\u00a02022 Q2 10-Q Notes to Consolidated Financial Statements Table of Contents Note 6\u2014Debt Millions of Dollars June 30 2022 December 31 2021 2.4 % Notes due 2022 $ 329 329 7.65 % Debentures due 2023 78 78 3.35 % Notes due 2024 426 426 2.125 % Notes due 2024 900 \u2014 8.2 % Notes due 2025 134 134 3.35 % Debentures due 2025 199 199 2.4 % Notes due 2025 900 \u2014 6.875 % Debentures due 2026 67 67 4.95 % No\nnd recognized a $ 80 million before-tax and $ 63 million after-tax gain.",
+      "score": 0.9517
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "53 ConocoPhillips \u00a0\u00a0\u00a0\u00a0\u00a02022 Q2 10-Q Table of Contents \u2022 Potential disruption or interruption of our operations due to accidents, extraordinary weather events, supply chain disruptions, civil unrest, political events, war, terrorism, cyber attacks, and information technology failures, constraints or disruptions.",
+      "score": -0.9764
+    },
+    {
+      "sent": "53 ConocoPhillips \u00a0\u00a0\u00a0\u00a0\u00a02022 Q2 10-Q Table of Contents \u2022 Potential disruption or interruption of our operations due to accidents, extraordinary weather events, supply chain disruptions, civil unrest, political events, war, terrorism, cyber attacks, and information technology failures, constraints or disruptions.",
+      "score": -0.9764
+    },
+    {
+      "sent": "53 ConocoPhillips \u00a0\u00a0\u00a0\u00a0\u00a02022 Q2 10-Q Table of Contents \u2022 Potential disruption or interruption of our operations due to accidents, extraordinary weather events, supply chain disruptions, civil unrest, political events, war, terrorism, cyber attacks, and information technology failures, constraints or disruptions.",
+      "score": -0.9764
+    }
+  ],
+  "forward_snippets": [
+    "We believe the estimates and assumptions are reasonable, and the relative effects of the transaction are properly reflected.",
+    "Together, the subsidiaries sold indirectly held our 54 percent interest in the Indonesia Corridor Block Production Sharing Contract (PSC) and 35 percent shareholding in the Transasia Pipeline Company.",
+    "Together, the subsidiaries sold indirectly held our 54 percent interest in the Indonesia Corridor Block Production Sharing Contract (PSC) and 35 percent shareholding in the Transasia Pipeline Company.",
+    "The current credit ratings on our long-term debt are: \u2022 Fitch: \u201cA\u201d with a \u201cstable\u201d outlook \u2022 S&P: \u201cA-\u201d with a \u201cstable\u201d outlook \u2022 Moody\u2019s: \u201cA3\u201d with a \u201cpositive\u201d outlook We do not have any ratings triggers on any of our corporate debt that would cause an automatic default, and thereby impact our access to liquidity upon downgrade of our credit ratings.",
+    "The current credit ratings on our long-term debt are: \u2022 Fitch: \u201cA\u201d with a \u201cstable\u201d outlook \u2022 S&P: \u201cA-\u201d with a \u201cstable\u201d outlook \u2022 Moody\u2019s: \u201cA3\u201d with a \u201cpositive\u201d outlook We do not have any ratings triggers on any of our corporate debt that would cause an automatic default, and thereby impact our access to liquidity upon downgrade of our credit ratings."
+  ]
+}

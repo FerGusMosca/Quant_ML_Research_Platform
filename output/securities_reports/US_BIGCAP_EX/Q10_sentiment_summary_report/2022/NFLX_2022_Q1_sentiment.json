@@ -1,0 +1,47 @@
+{
+  "symbol": "NFLX",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1798,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.127
+  },
+  "top_positive": [
+    {
+      "sent": "Consolidated Statements of Operations (unaudited) (in thousands, except per share data) Three Months Ended Nine Months Ended September 30, 2022 September 30, 2021 September 30, 2022 September 30, 2021 Revenues $ 7,925,589 $ 7,483,467 $ 23,763,497 $ 21,988,526 Cost of revenues 4,788,665 4,206,589 13,764,125 12,093,108 Marketing 567,954 635,948 1,698,892 1,752,433 Technology and development 662,739 563,887 2,037,115 1,626,415 General and administrative 373,213 321,790 1,180,438 953,831 Operating income 1,533,018 1,755,253 5,082,927 5,562,739 Other income (expense): Interest expense ( 172,575 ) ( 190,429 ) ( 535,609 ) ( 576,191 ) Interest and other income 261,404 96,135 677,275 302,702 Income before income taxes 1,621,847 1,660,959 5,224,593 5,289,250 Provision for income taxes ( 223,605 ) ( 211,888 ) ( 787,953 ) ( 780,451 ) Net income $ 1,398,242 $ 1,449,071 $ 4,436,640 $ 4,508,799 Earnings per share: Basic $ 3.14 $ 3.27 $ 9.98 $ 10.18 Diluted $ 3.10 $ 3.19 $ 9.83 $ 9.90 Weighted-average shares of common stock outstanding: Basic 444,878 442,778 444,529 443,052 Diluted 450,344 454,925 451,168 455,230 See accompanying notes to the consolidated financial statements.",
+      "score": 0.9393
+    },
+    {
+      "sent": "We have built our own global content delivery network (\u201cOpen Connect\u201d) to help us efficiently stream a high volume \nndemic and may take further actions that alter our business operations as may be required by federal, state, local or foreign authorities, or that we determine are in the best interests of our employees, customers, partners and stockholders.",
+      "score": 0.891
+    },
+    {
+      "sent": "In addition, we had increased payments associated with higher operating expenses, primarily related to increased personnel costs to support our continued improvements in our streaming service and our international expansion Net cash used in investing activities increased $104 million for the nine months ended September\u00a030, 2022, primarily due to the increase in acquisitions, partially offset by a decrease in purchases of property and equipment.",
+      "score": 0.891
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Risk Factors There have been no material changes from the risk factors previously disclosed under the heading \"Risk Factors\" in the Company's Annual Report on Form 10-K for the year ended December\u00a031, 2021.",
+      "score": -0.7579
+    },
+    {
+      "sent": "Risk Factors There have been no material changes from the risk factors previously disclosed under the heading \"Risk Factors\" in the Company's Annual Report on Form 10-K for the year ended December\u00a031, 2021.",
+      "score": -0.7579
+    },
+    {
+      "sent": "Our management, including our co-Chief Executive Officers and Chief Financial Officer, does not expect that our disclosure controls and procedures or our internal controls will prevent all error and all fraud.",
+      "score": -0.7506
+    }
+  ],
+  "forward_snippets": [
+    "Additionally, we continue to offer our DVD-by-mail service in the United States (\u201cU.S.\u201d).",
+    "We will continue to actively monitor the issues raised by the COVID-19 pandemic and may take further actions that alter our business operations as may be required by federal, state, local or foreign authorities, or that we determine are in the best interests of our employees, customers, partners and stockholders.",
+    "We expect that from time to time the prices of our membership plans in each country may change and we may test other plan and price variations.",
+    "We will continue to actively monitor the issues raised by the COVID-19 pandemic and may take further actions that alter our business operations as may be required by federal, state, local or foreign authorities, or that we determine are in the best interests of our employees, customers, partners and stockholders.",
+    "We expect that from time to time the prices of our membership plans in each country may change and we may test other plan and price variations."
+  ]
+}

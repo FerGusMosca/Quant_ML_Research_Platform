@@ -1,0 +1,47 @@
+{
+  "symbol": "TSLA",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.308,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.103
+  },
+  "top_positive": [
+    {
+      "sent": "Consolidated Statements of Redeemable Noncontrolling Interests and Equity (in millions, except per share data) (unaudited) Accumulated Redeemable Additional Other Total Noncontrolling Noncontrolling Common Stock Paid-In Comprehensive Retained Stockholders\u2019 Interests in Total Three Months Ended March 31, 2023 Interests Shares Amount Capital (Loss) Earnings Equity Subsidiaries Equity Balance as of December 31, 2022 $ 409 3,164 $ 3 $ 32,177 $ ( 361 ) $ 12,885 $ 44,704 $ 785 $ 45,489 Exercises of conversion feature of convertible senior notes \u2014 0 0 0 \u2014 \u2014 0 \u2014 0 Issuance of common stock for equity incentive awards \u2014 5 0 231 \u2014 \u2014 231 \u2014 231 Stock-based compensation \u2014 \u2014 \u2014 465 \u2014 \u2014 465 \u2014 465 Distributions to noncontrolling interests ( 5 ) \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 ( 22 ) ( 22 ) Buy-outs of noncontrolling interests \u2014 \u2014 \u2014 5 \u2014 \u2014 5 ( 12 ) ( 7 ) Net income 3 \u2014 \u2014 \u2014 \u2014 2,513 2,513 23 2,536 Other comprehensive income \u2014 \u2014 \u2014 \u2014 136 \u2014 136 \u2014 136 Balance as of March 31, 2023 $ 407 3,169 $ 3 $ 32,878 $ ( 225 ) $ 15,398 $ 48,054 $ 774 $ 48,828 Accumulated Redeemable Additional Other Total Noncontrolling Noncontrolling Common Stock Paid-In Comprehensive Retained Stockholders\u2019 Interests in Total Three Months Ended March 31, 2022 Interests Shares (1) Amount (1) Capital Income (Loss) Earnings (1) Equity Subsidiaries Equity Balance as of December 31, 2021 $ 568 3,100 $ 3 $ 29,803 $ 54 $ 329 $ 30,189 $ 826 $ 31,015 Exercises of conversion feature of convertible senior notes \u2014 0 0 0 \u2014 \u2014 0 \u2014 0 Issuance of common stock for equity incentive awards \u2014 8 0 202 \u2014 \u2014 202 \u2014 202 Stock-based compensation \u2014 \u2014 \u2014 485 \u2014 \u2014 485 \u2014 485 Distributions to noncontrolling interests ( 12 ) \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 ( 22 ) ( 22 ) Buy-out of noncontrolling interests ( 1 ) \u2014 \u2014 ( 5 ) \u2014 \u2014 ( 5 ) \u2014 ( 5 ) Net (loss) income ( 96 ) \u2014 \u2014 \u2014 \u2014 3,318 3,318 58 3,376 Other comprehensive loss \u2014 \u2014 \u2014 \u2014 ( 104 ) \u2014 ( 104 ) \u2014 ( 104 ) Balance as of March 31, 2022 $ 459 3,108 $ 3 $ 30,485 $ ( 50 ) $ 3,647 $ 34,085 $ 862 $ 34,947 (1) Prior period results have been adjusted to reflect the three -for-one stock split effected in the form of a stock dividend in August 2022 .",
+      "score": 0.9855
+    },
+    {
+      "sent": "Consolidated Balance Sheets (in millions, except per share data) (unaudited) March 31, December 31, 2023 2022 Assets Current assets Cash and cash equivalents $ 16,048 $ 16,253 Short-term investments 6,354 5,932 Accounts receivable, net 2,993 2,952 Inventory 14,375 12,839 Prepaid expenses and other current assets 3,227 2,941 Total current assets 42,997 40,917 Operating lease vehicles, net 5,473 5,035 Solar energy systems, net 5,427 5,489 Property, plant and equipment, net 24,969 23,548 Operating lease right-of-use assets 2,800 2,563 Digital assets, net 184 184 Intangible assets, net 204 215 Goodwill 195 194 Other non-current assets 4,584 4,193 Total assets $ 86,833 $ 82,338 Liabilities Current liabilities Accounts payable $ 15,904 $ 15,255 Accrued liabilities and other 7,321 7,142 Deferred revenue 1,750 1,747 Customer deposits 1,057 1,063 Current portion of debt and finance leases 1,404 1,502 Total current liabilities 27,436 26,709 Debt and finance leases, net of current portion 1,272 1,597 Deferred revenue, net of current portion 2,911 2,804 Other long-term liabilities 5,979 5,330 Total liabilities 37,598 36,440 Commitments and contingencies (Note 9) Redeemable noncontrolling interests in subsidiaries 407 409 Equity Stockholders\u2019 equity Preferred stock; $ 0.001 par value; 100 shares authorized; no shares issued and outstanding \u2014 \u2014 Common stock; $ 0.001 par value; 6,000 shares authorized; 3,169 and 3,164 shares issued and outstanding as of March 31, 2023 and December 31, 2022, respectively 3 3 Additional paid-in capital 32,878 32,177 Accumulated other comprehensive (loss) ( 225 ) ( 361 ) Retained earnings 15,398 12,885 Total stockholders\u2019 equity 48,054 44,704 Noncontrolling interests in subsidiaries 774 785 Total liabilities and equity $ 86,833 $ 82,338 The accompanying notes are an integral part of these consolidated financial statements.",
+      "score": 0.9761
+    },
+    {
+      "sent": "The following table presents the estimated fair values and the carrying values (in millions): March 31, 2023 December 31, 2022 Carrying Value Fair Value Carrying Value Fair Value 2024 Notes $ 37 $ 375 $ 37 $ 223 Digital assets, net $ 184 $ 325 $ 184 $ 191 14 Note 3 \u2013 Inventory Our inventory consisted of the following (in millions): March 31, December 31, 2023 2022 Raw materials $ 6,405 $ 6,137 Work in process 2,458 2,385 Finished goods (1) 4,591 3,475 Service parts 921 842 Total $ 14,375 $ 12,839 (1) Finished goods inventory includes vehicles in transit to fulfill customer orders, new vehicles available for sale, used vehicles and energy products available for sale.",
+      "score": 0.9738
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Cost of Revenues and Gross Margin Three Months Ended March 31, Change (Dollars in millions) 2023 2022 $ % Cost of revenues Automotive sales $ 15,422 $ 10,914 $ 4,508 41 % Automotive leasing 333 408 (75 ) (18 )% Total automotive cost of revenues 15,755 11,322 4,433 39 % Services and other 1,702 1,286 416 32 % Total automotive & services and other segment cost of revenues 17,457 12,608 4,849 38 % Energy generation and storage segment 1,361 688 673 98 % Total cost of revenues $ 18,818 $ 13,296 $ 5,522 42 % Gross profit total automotive $ 4,208 $ 5,539 Gross margin total automotive 21.1 % 32.9 % Gross profit total automotive & services and other segment $ 4,343 $ 5,532 Gross margin total automotive & services and other segment 19.9 % 30.5 % Gross profit energy generation and storage segment $ 168 $ (72 ) Gross margin energy generation and storage segment 11.0 % (11.7 )% Total gross profit $ 4,511 $ 5,460 Total gross margin 19.3 % 29.1 % 26 Automotive & Services and Other Segment Cost of automotive sales revenue increased $4.51 billion, or 41%, in the three months ended March 31, 2023 as compared to the thre\nxpenditure Trends Our capital expenditures are typically difficult to project beyond the short-term given the number and breadth of our core projects at any given time, and may further be impacted by uncertainties in future global market conditions.",
+      "score": -0.926
+    },
+    {
+      "sent": "On September 20, 2019, the Court granted the motion to dismiss as to the corporate waste claim but denied the motion as to the breach of fiduciary duty and unjust enrichment claims.",
+      "score": -0.8658
+    },
+    {
+      "sent": "RISK FACTORS Our operations and financial results are subject to various risks and uncertainties, including the factors discussed in Part I, Item 1A, Risk Factors in our Annual Report on Form 10-K for the year ended December 31, 2022, which could adversely affect our business, financial conditions and future results.",
+      "score": -0.8494
+    }
+  ],
+  "forward_snippets": [
+    "Of the total deferred revenue balance as of March 31, 2023, we expect to recognize $ 679 million of revenue in the next 12 months.",
+    "Of this amount, we expect to recognize $ 12 million in the next 12 months and the remaining over a period up to 25 years.",
+    "Of this amount, we expect to recognize $ 12 million in the next 12 months and the remaining over a period up to 25 years.",
+    "This ASU requires an acquirer in a business combination to recognize and measure contract assets and contract liabilities (deferred revenue) from acquired contracts using the revenue recognition guidance in Topic 606.",
+    "This ASU eliminates the accounting guidance for troubled debt restructurings by creditors that have adopted ASU 2016-13, Measurement of Credit Losses on Financial Instruments, which we adopted on January 1, 2020."
+  ]
+}

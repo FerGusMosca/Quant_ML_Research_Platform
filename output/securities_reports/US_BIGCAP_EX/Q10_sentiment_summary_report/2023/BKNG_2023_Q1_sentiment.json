@@ -1,0 +1,47 @@
+{
+  "symbol": "BKNG",
+  "year": 2023,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1082,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.112
+  },
+  "top_positive": [
+    {
+      "sent": "10 The following table summarizes the activity in restricted stock units and performance share units for employees and non-employee directors during the nine months ended September\u00a030, 2023: Restricted Stock Units Performance Share Units Shares Weighted-average\u00a0Grant-date\u00a0Fair\u00a0Value Shares Weighted-average\u00a0Grant-date\u00a0Fair\u00a0Value Unvested at December 31, 2022 (1) 280,460 $ 2,070 143,702 $ 2,294 Granted (2) 165,427 $ 2,629 51,941 $ 2,679 Vested ( 133,767 ) $ 2,021 ( 30,118 ) $ 2,327 Performance shares adjustment (3) 33,096 $ 2,411 Forfeited ( 13,903 ) $ 2,315 ( 7,141 ) $ 2,262 Unvested at September 30, 2023 298,217 $ 2,391 191,480 $ 2,415 (1) Excludes 14,087 performance share units awarded during the years ended December\u00a031, 2022 and 2021 for which the grant date under Accounting Standards Codification (\"ASC\") 718, Compensation - Stock Compensation , was not established as of December\u00a031, 2022.",
+      "score": 0.9648
+    },
+    {
+      "sent": "Incentive Programs At September\u00a030, 2023 and December\u00a031, 2022, liabilities of $ 183 million and $ 143 million, respectively, were included in \"Accrued expenses and other current liabilities\" in the Consolidated Balance Sheets for incentives granted to consumers, including referral bonuses, rebates, credits, discounts, and loyalty programs.",
+      "score": 0.9607
+    },
+    {
+      "sent": "ISSUER\u00a0PURCHASES\u00a0OF\u00a0EQUITY\u00a0SECURITIES Period Total\u00a0Number of\u00a0Shares\u00a0(or Units)\u00a0Purchased Average Price\u00a0Paid\u00a0per Share\u00a0(or\u00a0Unit) (1) Total\u00a0Number\u00a0of Shares\u00a0(or\u00a0Units) Purchased\u00a0as\u00a0Part\u00a0of Publicly\u00a0Announced Plans\u00a0or\u00a0Programs Maximum Number\u00a0(or Approximate\u00a0Dollar\u00a0Value) of\u00a0Shares\u00a0(or\u00a0Units) that\u00a0May Yet\u00a0Be\u00a0Purchased Under\u00a0the Plans\u00a0or\u00a0Programs July 1, 2023 \u2013 377,812 (2) $ 2,848 377,812 $ 17.7 (2) July 31, 2023 21 (3) $ 3,153 N/A N/A August 1, 2023 \u2013 264,935 (2) $ 3,076 264,935 $ 16.9 (2) August 31, 2023 2,583 (3) $ 3,204 N/A N/A September 1, 2023 \u2013 224,460 (2) $ 3,118 224,460 $ 16.2 (2) September 30, 2023 80 (3) $ 3,144 N/A N/A Total 869,891 867,207 $ 16.2 (1)\u00a0\u00a0\u00a0\u00a0These amounts exclude the 1% excise tax mandated by the Inflation Reduction Act on share repurchases.",
+      "score": 0.8986
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These forward-looking statements are not guarantees of future performance and are subject to risks, uncertainties, and assumptions that are difficult to predict including the Risk Factors identified in Part I, Item 1A of our Annual Report on Form 10-K for the year ended December\u00a031, 2022; therefore, our actual results could differ materially from those described in the forward-looking statements.",
+      "score": -0.7964
+    },
+    {
+      "sent": "These forward-looking statements are not guarantees of future performance and are subject to risks, uncertainties, and assumptions that are difficult to predict including the Risk Factors identified in Part I, Item 1A of our Annual Report on Form 10-K for the year ended December\u00a031, 2022; therefore, our actual results could differ materially from those described in the forward-looking statements.",
+      "score": -0.7964
+    },
+    {
+      "sent": "These initiatives have resulted and, in the future, may result in lower ADRs and lower revenue as a percentage of gross bookings.",
+      "score": -0.7579
+    }
+  ],
+  "forward_snippets": [
+    "We continue to see favorable repeat direct booking behavior from consumers in our mobile apps, which allow us more opportunities to engage directly with consumers.",
+    "We believe that expanding these types of service offerings will benefit consumers and travel service providers, as well as our gross bookings, room night, and earnings growth rates.",
+    "We believe that expanding these types of service offerings will benefit consumers and travel service providers, as well as our gross bookings, room night, and earnings growth rates.",
+    "Although we believe that providing an extensive collection of properties, excellent customer service, and an intuitive, easy-to-use consumer experience are important factors influencing a consumer's decision to make a reservation, for many consumers, the price of the travel service is the primary factor determining whether a consumer will book.",
+    "Although we believe that providing an extensive collection of properties, excellent customer service, and an intuitive, easy-to-use consumer experience are important factors influencing a consumer's decision to make a reservation, for many consumers, the price of the travel service is the primary factor determining whether a consumer will book."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "CMG",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2372,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.1
+  },
+  "top_positive": [
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME AND COMPREHENSIVE INCOME (in thousands, except per share data) (unaudited) Three months ended March 31, 2024 2023 Food and beverage revenue $ 2,684,447 $ 2,351,009 Delivery service revenue 17,401 17,571 Total revenue 2,701,848 2,368,580 Restaurant operating costs (exclusive of depreciation and amortization shown separately below): Food, beverage and packaging 779,076 692,559 Labor 659,450 583,794 Occupancy 135,699 121,931 Other operating costs 385,773 363,206 General and administrative expenses 204,625 148,340 Depreciation and amortization 83,243 76,585 Pre-opening costs 7,211 6,198 Impairment, closure costs, and asset disposals 5,479 8,361 Total operating expenses 2,260,556 2,000,974 Income from operations 441,292 367,606 Interest and other income, net 19,364 8,949 Income before income taxes 460,656 376,555 Provision for income taxes 101,369 84,911 Net income $ 359,287 $ 291,644 Earnings per share: Basic $ 13.09 $ 10.56 Diluted $ 13.01 $ 10.50 Weighted-average common shares outstanding: Basic 27,444 27,624 Diluted 27,624 27,788 Other comprehensive income/(loss), net of income taxes: Foreign currency translation adjustments $ ( 1,293 ) $ 457 Comprehensive income $ 357,994 $ 292,101 See accompanying notes to condensed consolidated financial statements.",
+      "score": 0.9684
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED BALANCE SHEETS (in thousands, except per share data) March 31, 2024 December 31, 2023 (unaudited) Assets Current assets: Cash and cash equivalents $ 727,394 $ 560,609 Accounts receivable, net 89,836 115,535 Inventory 37,947 39,309 Prepaid expenses and other current assets 98,118 117,462 Income tax receivable - 52,960 Investments 692,474 734,838 Total current assets 1,645,769 1,620,713 Leasehold improvements, property and equipment, net 2,202,739 2,170,038 Long-term investments 776,815 564,488 Restricted cash 26,138 25,554 Operating lease assets 3,670,983 3,578,548 Other assets 66,866 63,082 Goodwill 21,939 21,939 Total assets $ 8,411,249 $ 8,044,362 Liabilities and shareholders' equity Current liabilities: Accounts payable $ 196,866 $ 197,646 Accrued payroll and benefits 142,425 227,537 Accrued liabilities 171,612 147,688 Unearned revenue 187,317 209,680 Current operating lease liabilities 254,144 248,074 Income tax payable 44,989 - Total current liabilities 997,353 1,030,625 Commitments and contingencies (Note 11) Long-term operating lease liabilities 3,903,353 3,803,551 Deferred income tax liabilities 84,229 89,109 Other liabilities 64,985 58,870 Total liabilities 5,049,920 4,982,155 Shareholders' equity: Preferred stock, $ 0.01 par value, 600,000 shares authorized, no shares issued as of March\u00a031, 2024 and December\u00a031, 2023, respectively - - Common stock, $ 0.01 par value, 230,000 shares authorized, 37,563 and 37,483 shares issued as of March\u00a031, 2024 and December\u00a031, 2023, respectively 376 375 Additional paid-in capital 1,994,950 1,956,160 Treasury stock, at cost, 10,096 and 10,057 common shares as of March\u00a031, 2024 and December\u00a031, 2023, respectively ( 5,042,319 ) ( 4,944,656 ) Accumulated other comprehensive loss ( 7,950 ) ( 6,657 ) Retained earnings 6,416,272 6,056,985 Total shareholders' equity 3,361,329 3,062,207 Total liabilities and shareholders' equity $ 8,411,249 $ 8,044,362 See accompanying notes to condensed consolidated financial statements.",
+      "score": 0.9538
+    },
+    {
+      "sent": "The gift card liability included in unearned revenue on the condensed consolidated balance sheets was as follows: March 31, 2024 December 31, 2023 Gift card liability $ 139,993 $ 164,930 5 Table of Contents Revenue recognized from the redemption of gift cards that was included in unearned revenue at the beginning of the year was as follows: Three months ended March 31, 2024 2023 Revenue recognized from gift card liability balance at the beginning of the year $ 44,812 $ 38,878 Chipotle Rewards We have a loyalty program called Chipotle Rewards.",
+      "score": 0.9509
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These statements are subject to risks and uncertainties that could cause actual results to differ materially from those described in the statements, including but not limited to: increasing wage inflation, including as a result of regulations such as California AB 1228, and the competitive labor market, which impacts our ability to attract and retain qualified employees and has resulted in occasional staffing shortages; the impact of any union organizing efforts and our responses to such efforts; increasing supply costs; risks of food safety incidents and food-borne illnesses; risks associated with our reliance on certain information technology systems and potential material failures or interruptions; privacy and cyber security risks, including risk of breaches, unauthorized access, theft, modification or destruction of guest or employee personal or confidential information stored on our network or the network of third party providers; the impact of competition, including from sources outside the restaurant industry; the financial impact of increasing our average hourly wages; the impact of federal, state or local government regulations relating to our employees, employment practices, restaurant design and construction, and the sale of food or alcoholic beverages; our ability to achieve our planned growth, such as the costs and availability of suitable new restaurant sites, construction materials and contractors; the expected costs and risks related to our international expansion through franchise restaurants in the Middle East; increases in ingredient and other operating costs due to inflation, global conflicts, climate change, our Food with Integrity philosophy, tariffs or trade restrictions; intermittent supply shortages relating to our Food with Integrity philosophy, rapid expansion and supply industry challenges; the uncertainty of our ability to achieve expected levels of comparable restaurant sales due to factors such as changes in consumers' perceptions of our brand, including as a result of actual or rumored food safety concerns or other negative publicity, decreased consumer spending (including as a result of higher inflation, mass layoffs, fear of possible recession and higher energy prices), or the inability to increase menu prices or realize the benefits of menu price increases; risks associated with our digital business, including risks arising from our reliance on third party delivery services; risks relating to litigation, including possible governmental actions and potential class action litigation related to food safety incidents, cybersecurity incidents, employment or privacy laws, advertising claims or other matters; and other risk factors described from time to time in our SEC reports, including our Annual Report on Form 10-K for the year ended December\u00a031, 2023, and in other reports filed with the SEC, all of which are available on the investor relations page of our website at ir.Chipotle.com.",
+      "score": -0.9246
+    },
+    {
+      "sent": "Critical Accounting Estimates Critical accounting estimates are those that we believe are both significant and that require us to make difficult, subjective or complex judgments, often because we need to estimate the effect of inherently uncertain matters.",
+      "score": -0.7506
+    },
+    {
+      "sent": "We also could experience shortages of key ingredients for many unforeseen reasons, such as crop damage due to inclement weather, if our suppliers need to close or restrict operations, or due to industry-wide shipping and freight delays.",
+      "score": -0.7506
+    }
+  ],
+  "forward_snippets": [
+    "The guidance is effective for fiscal years beginning after December 15, 2024, with early adoption permitted, and should be applied either prospectively or retrospectively.",
+    "Our estimate of points and rewards we expect to be redeemed is based on historical and other company specific data.",
+    "We determined the fair value for the notes receivable using an internally-developed valuation model and unobservable inpu\nguidance is effective for fiscal years beginning after December 15, 2024, with early adoption permitted, and should be applied either prospectively or retrospectively.",
+    "Our estimate of points and rewards we expect to be redeemed is based on historical and other company specific data.",
+    "Our estimate of points and rewards we expect to be redeemed is based on historical and other company specific data."
+  ]
+}

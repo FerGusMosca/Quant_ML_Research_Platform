@@ -1,0 +1,47 @@
+{
+  "symbol": "LMT",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1724,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.202
+  },
+  "top_positive": [
+    {
+      "sent": "Plan category Number of securities to be issued upon exercise of outstanding options, warrants and rights (a) Weighted-average exercise price of outstanding options, warrants and rights (b) Number of securities remaining available for future issuance under equity compensation plans (excluding securities reflected in column (a)) (c) Equity compensation plans approved by security holders (1) 2,431,610 $ 82.50 7,452,708 Equity compensation plans not approved by security holders (2) 626,769 \u2014 2,478,905 Total 3,058,379 $ 82.50 9,931,613 (1) Column (a) includes, as of December 31, 2021: 1,609,681 shares that have been granted as restricted stock units (RSUs), 640,770 shares that could be earned pursuant to grants of performance stock units (PSUs) (assuming the maximum number of PSUs are earned and payable at the end of the three-year performance period) and 87,683 shares granted as options under the Lockheed Martin Corporation 2020 Incentive Performance Award Plan (2020 IPA Plan) or predecessor plans and 6,329 shares granted as options and 87,147 stock units payable in stock or cash under the Lockheed Martin Corporation Amended and Restated Directors Equity Plan (Directors Plan) or predecessor plans for non-employee directors.",
+      "score": 0.9906
+    },
+    {
+      "sent": "Plan category Number of securities to be issued upon exercise of outstanding options, warrants and rights (a) Weighted-average exercise price of outstanding options, warrants and rights (b) Number of securities remaining available for future issuance under equity compensation plans (excluding securities reflected in column (a)) (c) Equity compensation plans approved by security holders (1) 2,431,610 $ 82.50 7,452,708 Equity compensation plans not approved by security holders (2) 626,769 \u2014 2,478,905 Total 3,058,379 $ 82.50 9,931,613 (1) Column (a) includes, as of December 31, 2021: 1,609,681 shares that have been granted as restricted stock units (RSUs), 640,770 shares that could be earned pursuant to grants of performance stock units (PSUs) (assuming the maximum number of PSUs are earned and payable at the end of the three-year performance period) and 87,683 shares granted as options under the Lockheed Martin Corporation 2020 Incentive Performance Award Plan (2020 IPA Plan) or predecessor plans and 6,329 shares granted as options and 87,147 stock units payable in stock or cash under the Lockheed Martin Corporation Amended and Restated Directors Equity Plan (Directors Plan) or predecessor plans for non-employee directors.",
+      "score": 0.9906
+    },
+    {
+      "sent": "Note\u00a03\u00a0\u2013 Earnings Per Share The weighted average number of shares outstanding used to compute earnings per common share were as follows (in\u00a0millions): 2021 2020 2019 Weighted average common shares outstanding for basic computations 276.4 280.0 282.0 Weighted average dilutive effect of equity awards 1.0 1.2 1.8 Weighted average common shares outstanding for diluted computations 277.4 281.2 283.8 We compute basic and diluted earnings per common share by dividing net earnings by the respective weighted average number of common shares outstanding for the periods presented.",
+      "score": 0.988
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Products and services we provide to customers also carry cybersecurity risks, including risks that they could be breached or fail to detect, prevent or combat attacks, which could result in losses to our customers and claims against us, and could harm our relationships with our customers.",
+      "score": -0.9524
+    },
+    {
+      "sent": "We may be unable to close or achieve the expected benefits of this transaction as a result of, among other things, the failure to obtain, delays in obtaining, or adverse conditions contained in any required regulatory or other approvals for consummation of the acquisition, including any FTC lawsuit to block the transaction; Aerojet Rocketdyne\u2019s or our business being disrupted due to transaction-related uncertainty resulting from the FTC review process or any FTC lawsuit, both before or after closing; the failure or inability due to litigation, including any FTC lawsuit, or consent orders to successfully and timely acquire and integrate Aerojet Rocketdyne and realize the expected synergies, cost savings and other benefits of the acquisition; the potential for Aerojet Rocketdyne or us to terminate the merger agreement pursuant to its terms, including if the transaction has not closed on or before March 21, 2022; competitive responses to the proposed acquisition; unexpected liabilities, costs, charges or expenses resulting from the acquisition, including the costs associated with the FTC review process, any consent order or any FTC lawsuit; and potential adverse reactions or changes to business relationships as a result of any FTC lawsuit, consent order or the completion of the acquisition.",
+      "score": -0.9153
+    },
+    {
+      "sent": "20 Table of Contents In addition to cyber threats, we face threats to the security of our facilities and employees and threats from terrorist acts, which could materially disrupt our business if carried out.",
+      "score": -0.8934
+    }
+  ],
+  "forward_snippets": [
+    "We invest substantially in our people to ensure we have the technical skills necessary to succeed, and we expect to continue to invest internally on innovative technologies that address rapidly evolving mission requirements for our customers.",
+    "We will continue to invest in acquisitions, as appropriate, while deepening our connection to commercial industry through cooperative partnerships, joint ventures, and equity investments.",
+    "We believe it is highly likely that the FTC will vote to sue to block the transaction and expect they will make a decision before January 27, 2022.",
+    "We invest substantially in our people to ensure we have the technical skills necessary to succeed, and we expect to continue to invest internally on innovative technologies that address rapidly evolving mission requirements for our customers.",
+    "We will continue to invest in acquisitions, as appropriate, while deepening our connection to commercial industry through cooperative partnerships, joint ventures, and equity investments."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "DLTR",
+  "year": 2023,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2642,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.055
+  },
+  "top_positive": [
+    {
+      "sent": "12 Table of Contents Note 6 - Net Income Per Share The following table sets forth the calculations of basic and diluted net income per share: 13 Weeks Ended 39 Weeks Ended (in millions, except per share data) October 28, 2023 October 29, 2022 October 28, 2023 October 29, 2022 Basic net income per share: Net income $ 212.0 $ 266.9 $ 711.4 $ 1,163.2 Weighted average number of shares outstanding 218.9 222.2 220.0 223.9 Basic net income per share $ 0.97 $ 1.20 $ 3.23 $ 5.20 Diluted net income per share: Net income $ 212.0 $ 266.9 $ 711.4 $ 1,163.2 Weighted average number of shares outstanding 218.9 222.2 220.0 223.9 Dilutive impact of share-based awards (as determined by applying the treasury stock method) 0.3 0.8 0.5 0.9 Weighted average number of shares and dilutive potential shares outstanding 219.2 223.0 220.5 224.8 Diluted net income per share $ 0.97 $ 1.20 $ 3.23 $ 5.17 Share-based awards of 3.0 million shares and 3.2 million shares were excluded from the calculation of diluted net income per share for the 13 and 39 weeks ended October\u00a028, 2023, respectively, because their inclusion would be anti-dilutive.",
+      "score": 0.9931
+    },
+    {
+      "sent": "The aggregate fair values and carrying values of our long-term borrowings were as follows: October 28, 2023 January 28, 2023 October 29, 2022 (in millions) Fair Value Carrying Value Fair Value Carrying Value Fair Value Carrying Value Level 1 Senior Notes $ 2,952.6 $ 3,429.2 $ 3,162.8 $ 3,426.7 $ 3,004.6 $ 3,425.8 The fair values of our Senior Notes were determined using Level 1 inputs as quoted prices in active markets for identical assets or liabilities are available.",
+      "score": 0.9861
+    },
+    {
+      "sent": "Revolving Credit Facility The following table summarizes information pertaining to our revolving credit facilities: (in millions) October 28, 2023 January 28, 2023 October 29, 2022 Revolving Credit Facility Capacity $ 1,500.0 $ 1,500.0 $ 1,500.0 Loans Outstanding \u2014 \u2014 350.0 Standby Letters of Credit Outstanding 4.1 4.4 44.3 Available Capacity 1,495.9 1,495.6 1,105.7 The weighted-average interest rate for the $ 350.0 million of loans outstanding at October 29, 2022 was 4.69 %.",
+      "score": 0.9761
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "On April 28, 2022, the State of Arkansas filed a complaint in state court alleging violations of the Arkansas Deceptive Trade Practices Act, gross negligence and negligence, strict liability in tort, unjust enrichment and civil conspiracy related to the sale of products that may have been contaminated by virtue of rodent infestation and other unsanitary conditions at DC 202.",
+      "score": -0.9246
+    },
+    {
+      "sent": "The lawsuits are proceeding in federal court in Tennessee using the federal court\u2019s multi-district litigation process, seek class action status, and allege violations of the Mississippi, Arkansas, Louisiana, Tennessee, Alabama and Missouri consumer protection laws, breach of warranty, negligence, misrepresentation, deception and unjust enrichment related to the sale of products that may be contaminated by virtue of rodent infestation and other unsanitary conditions at DC 202.",
+      "score": -0.9042
+    },
+    {
+      "sent": "The plaintiffs seek compensatory, punitive and exemplary damages, damages for loss of consortium, and attorneys\u2019 fees and costs.",
+      "score": -0.886
+    }
+  ],
+  "forward_snippets": [
+    "We will vigorously defend ourselves in these matters.",
+    "We expect to use the net proceeds of note issuances for general corporate purposes.",
+    "We believe that net sales per selling square foot more accurately depicts the productivity and operating performance of our stores as it isolates that portion of our footprint that is dedicated to selling merchandise.",
+    "Net sales per selling square foot for the 52 weeks ended October\u00a028, 2023 and October\u00a029, 2022 is as follows: 52 Weeks Ended October 28, 2023 October 29, 2022 Dollar Tree Family Dollar Total Dollar Tree Family Dollar Total Net sales per selling square foot $227 $218 $222 $216 $211 $213 19 Table of Contents Strategic Initiatives We continue to execute on a number of strategic initiatives across the Dollar Tree and Family Dollar banners to drive productive sales growth, improve operating efficiency, invest in technology, and expand our culture of service to our associates.",
+    "We continue to expand our brand assortment at the $1.25 price point to provide greater value for our customers and increase customer traffic and store productivity."
+  ]
+}

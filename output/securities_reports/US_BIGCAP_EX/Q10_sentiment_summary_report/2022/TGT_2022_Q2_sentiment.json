@@ -1,0 +1,47 @@
+{
+  "symbol": "TGT",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.236,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.098
+  },
+  "top_positive": [
+    {
+      "sent": "TARGET CORPORATION Q2 2022 Form 10-Q 4 FINANCIAL STATEMENTS Table of Contents Index to Notes Consolidated Statements of Shareholders\u2019 Investment Common Stock Additional Accumulated Other Stock Par Paid-in Retained Comprehensive (millions)\u00a0(unaudited) Shares Value Capital Earnings (Loss) / Income Total January 30, 2021 500.9 $ 42 $ 6,329 $ 8,825 $ ( 756 ) $ 14,440 Net earnings \u2014 \u2014 \u2014 2,097 \u2014 2,097 Other comprehensive income \u2014 \u2014 \u2014 \u2014 31 31 Dividends declared \u2014 \u2014 \u2014 ( 343 ) \u2014 ( 343 ) Repurchase of stock ( 6.1 ) ( 1 ) \u2014 ( 1,207 ) \u2014 ( 1,208 ) Stock options and awards 1.3 \u2014 ( 58 ) \u2014 \u2014 ( 58 ) May 1, 2021 496.1 $ 41 $ 6,271 $ 9,372 $ ( 725 ) $ 14,959 Net earnings \u2014 \u2014 \u2014 1,817 \u2014 1,817 Other comprehensive income \u2014 \u2014 \u2014 \u2014 12 12 Dividends declared \u2014 \u2014 \u2014 ( 445 ) \u2014 ( 445 ) Repurchase of stock ( 6.6 ) \u2014 \u2014 ( 1,544 ) \u2014 ( 1,544 ) Stock options and awards 0.2 \u2014 61 \u2014 \u2014 61 July 31, 2021 489.7 $ 41 $ 6,332 $ 9,200 $ ( 713 ) $ 14,860 Net earnings \u2014 \u2014 \u2014 1,488 \u2014 1,488 Other comprehensive income \u2014 \u2014 \u2014 \u2014 26 26 Dividends declared \u2014 \u2014 \u2014 ( 439 ) \u2014 ( 439 ) Repurchase of stock ( 8.8 ) ( 1 ) \u2014 ( 2,180 ) \u2014 ( 2,181 ) Stock options and awards \u2014 \u2014 49 \u2014 \u2014 49 October 30, 2021 480.9 $ 40 $ 6,381 $ 8,069 $ ( 687 ) $ 13,803 Net earnings \u2014 \u2014 \u2014 1,544 \u2014 1,544 Other comprehensive income \u2014 \u2014 \u2014 \u2014 134 134 Dividends declared \u2014 \u2014 \u2014 ( 428 ) \u2014 ( 428 ) Repurchase of stock ( 9.8 ) ( 1 ) \u2014 ( 2,265 ) \u2014 ( 2,266 ) Stock options and awards 0.2 \u2014 40 \u2014 \u2014 40 January 29, 2022 471.3 $ 39 $ 6,421 $ 6,920 $ ( 553 ) $ 12,827 TARGET CORPORATION Q2 2022 Form 10-Q 5 FINANCIAL STATEMENTS Table of Contents Index to Notes Consolidated Statements of Shareholders\u2019 Investment Common Stock Additional Accumulated Other Stock Par Paid-in Retained Comprehensive (millions)\u00a0(unaudited) Shares Value Capital Earnings (Loss) / Income Total January 29, 2022 471.3 $ 39 $ 6,421 $ 6,920 $ ( 553 ) $ 12,827 Net earnings \u2014 \u2014 \u2014 1,009 \u2014 1,009 Other comprehensive income \u2014 \u2014 \u2014 \u2014 201 201 Dividends declared \u2014 \u2014 \u2014 ( 426 ) \u2014 ( 426 ) Repurchase of stock ( 0.1 ) \u2014 \u2014 ( 10 ) \u2014 ( 10 ) Accelerated sha\nating cash flow decrease are described on page 20 .",
+      "score": 0.9825
+    },
+    {
+      "sent": "Reconciliation of Non-GAAP Adjusted EPS Three Months Ended July 30, 2022 July 31, 2021 (millions, except per share data) Pretax Net of Tax Per Share Pretax Net of Tax Per Share GAAP diluted earnings per share $ 0.39 $ 3.65 Adjustments Other (a) $ \u2014 $ \u2014 $ \u2014 $ (5) $ (4) $ (0.01) Adjusted diluted earnings per share $ 0.39 $ 3.64 Reconciliation of Non-GAAP Adjusted EPS Six Months Ended July 30, 2022 July 31, 2021 (millions, except per share data) Pretax Net of Tax Per Share Pretax Net of Tax Per Share GAAP diluted earnings per share $ 2.55 $ 7.82 Adjustments Gain on Dermstore sale $ \u2014 $ \u2014 $ \u2014 $ (335) $ (269) $ (0.54) Other (a) 20 15 0.03 36 27 0.05 Adjusted diluted earnings per share $ 2.59 $ 7.34 Note: Amounts may not foot due to rounding.",
+      "score": 0.9657
+    },
+    {
+      "sent": "Share Repurchase Activity Total\u00a0Number of\u00a0Shares Purchased Average Price Paid\u00a0per Share Total\u00a0Number\u00a0of Shares\u00a0Purchased as\u00a0Part\u00a0of\u00a0Publicly Announced\u00a0Programs Dollar\u00a0Value\u00a0of Shares\u00a0that\u00a0May Yet\u00a0Be\u00a0Purchased Under Publicly Announced\u00a0Programs Period May 1, 2022 through May 28, 2022 Open market and privately negotiated purchases \u2014 $ \u2014 \u2014 $ 12,316,056,660 May 29, 2022 through July 2, 2022 Open market and privately negotiated purchases \u2014 \u2014 \u2014 12,316,056,660 March 2022 ASR (a) 3,569,904 211.58 3,569,904 9,680,505,231 July 3, 2022 through July 30, 2022 Open market and privately negotiated purchases \u2014 \u2014 \u2014 9,680,505,231 Total 3,569,904 $ 211.58 3,569,904 $ 9,680,505,231 (a) Represents the incremental shares received upon final settlement of the accelerated share repurchase (ASR) agreement initiated in first quarter 2022.",
+      "score": 0.9559
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Quantitative and Qualitative Disclosures About Market Risk There have been no material changes in our primary risk exposures or management of market risks from those disclosed in Part II, Item 7A, Quantitative and Qualitative Disclosures About Market Risk of our Form\u00a010-K for the fiscal year ended January\u00a029, 2022.",
+      "score": -0.8225
+    },
+    {
+      "sent": "Quantitative and Qualitative Disclosures About Market Risk There have been no material changes in our primary risk exposures or management of market risks from those disclosed in Part II, Item 7A, Quantitative and Qualitative Disclosures About Market Risk of our Form\u00a010-K for the fiscal year ended January\u00a029, 2022.",
+      "score": -0.8225
+    },
+    {
+      "sent": "TARGET CORPORATION Q2 2022 Form 10-Q 13 MANAGEMENT'S DISCUSSION AND ANALYSIS Table of Contents ANALYSIS OF RESULTS OF OPERATIONS Analysis of Results of Operations Summary of Operating Income Three\u00a0Months\u00a0Ended Six Months Ended (dollars in millions) July 30, 2022 July 31, 2021 Change July 30, 2022 July 31, 2021 Change Sales $ 25,653 $ 24,826 3.3 % $ 50,483 $ 48,705 3.7 % Other revenue 384 334 14.8 724 652 10.9 Total revenue 26,037 25,160 3.5 51,207 49,357 3.7 Cost of sales 20,142 17,280 16.6 38,603 33,996 13.6 Selling, general and administrative expenses 5,002 4,849 3.1 9,764 9,358 4.3 Depreciation and amortization (exclusive of depreciation included in cost of sales) 572 564 1.5 1,173 1,162 0.9 Operating income $ 321 $ 2,467 (87.0) % $ 1,667 $ 4,841 (65.6) % Rate\u00a0Analysis Three Months Ended Six Months Ended July 30, 2022 July 31, 2021 July 30, 2022 July 31, 2021 Gross margin rate 21.5 % 30.4 % 23.5 % 30.2 % SG&A expense rate 19.2 19.3 19.1 19.0 Depreciation and amortization expense rate (exclusive of depreciation included in cost of sales) 2.2 2.2 2.3 2.4 Operating income margin rate 1.2 9.8 3.3 9.8 Note: Gross margin rate is calculated as gross margin (sales less cost of sales) divided by sales.",
+      "score": -0.7964
+    }
+  ],
+  "forward_snippets": [
+    "We report after-tax return on invested capital (ROIC) because we believe ROIC provides a meaningful measure of our capital allocation effectiveness over time.",
+    "We believe that the actions we have taken, including the reduction of orders for Fall merchandise in our discretionary categories, reduce our risks and provide additional flexibility to focus on serving guests in a rapidly changing environment.",
+    "We expect that comparable sales growth will drive the majority of our total sales growth.",
+    "We believe that our ability to successfully differentiate our guests\u2019 shopping experience through a careful combination of merchandise assortment, price, convenience, guest experience, and other factors will, over the long-term, drive both increasing shopping frequency (traffic) and the amount spent each visit (average transaction amount).",
+    "We believe that the actions we have taken, including the reduction of orders for Fall merchandise in our discretionary categories, reduce our risks and provide additional flexibility to focus on serving guests in a rapidly changing environment."
+  ]
+}

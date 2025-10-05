@@ -1,0 +1,47 @@
+{
+  "symbol": "FIS",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.1366,
+    "outlook_sentiment": 0.2301,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.115
+  },
+  "top_positive": [
+    {
+      "sent": "AND SUBSIDIARIES NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS (Unaudited) For the three months ended September\u00a030, 2022 (in millions): Capital Banking Merchant Market Corporate Solutions Solutions Solutions and Other Total Revenue $ 1,680 $ 1,180 $ 671 $ 73 $ 3,604 Operating expenses ( 1,107 ) ( 708 ) ( 423 ) ( 904 ) ( 3,142 ) Depreciation and amortization (including purchase accounting amortization) 148 88 82 614 932 Acquisition, integration and other costs \u2014 \u2014 \u2014 164 164 Asset impairments \u2014 \u2014 \u2014 17 17 Adjusted EBITDA $ 721 $ 560 $ 330 $ ( 36 ) $ 1,575 Adjusted EBITDA $ 1,575 Depreciation and amortization ( 324 ) Purchase accounting amortization ( 608 ) Acquisition, integration and other costs ( 164 ) Asset impairments ( 17 ) Interest expense, net ( 76 ) Other income (expense), net ( 41 ) (Provision) benefit for income taxes ( 91 ) Net earnings attributable to noncontrolling interest ( 5 ) Net earnings attributable to FIS common stockholders $ 249 Capital expenditures $ 109 $ 122 $ 63 $ 37 $ 331 For the three months ended September\u00a030, 2021 (in millions): Capital Banking Merchant Market Corporate Solutions Solutions Solutions and Other Total Revenue $ 1,610 $ 1,161 $ 654 $ 82 $ 3,507 Operating expenses ( 1,012 ) ( 647 ) ( 419 ) ( 1,291 ) ( 3,369 ) Depreciation and amortization (including purchase accounting amortization) 144 86 81 747 1,058 Acquisition, integration and other costs \u2014 \u2014 \u2014 187 187 Asset impairments \u2014 $ \u2014 $ \u2014 202 202 Adjusted EBITDA $ 742 $ 600 $ 316 $ ( 73 ) $ 1,585 Adjusted EBITDA $ 1,585 Depreciation and amortization ( 344 ) Purchase accounting amortization ( 714 ) Acquisition, integration and other costs ( 187 ) Asset impairments ( 202 ) Interest expense, net ( 46 ) Other income (expense), net 110 (Provision) benefit for income taxes ( 41 ) Net earnings attributable to noncontrolling interest ( 3 ) Net earnings attributable to FIS common stockholders $ 158 Capital expenditures $ 94 $ 74 $ 47 $ 50 $ 265 21 Table of Contents FIDELITY NATIONAL INFORMATION SERVICES, INC.",
+      "score": 0.9678
+    },
+    {
+      "sent": "A 100 basis-point increase in the 3-month USD LIBOR rate, Daily Compounded SONIA rate (previously 6-month GBP LIBOR rate), and 3-month Euribor rate, as applicable, for the interest rate swaps outstanding as of September\u00a030, 2022 and 2021, would increase our annual interest expense by approximately $34 million and $37 million, respectively.",
+      "score": 0.9432
+    },
+    {
+      "sent": "A 100 basis-point increase in the 3-month USD LIBOR rate, Daily Compounded SONIA rate (previously 6-month GBP LIBOR rate), and 3-month Euribor rate, as applicable, for the interest rate swaps outstanding as of September\u00a030, 2022 and 2021, would increase our annual interest expense by approximately $34 million and $37 million, respectively.",
+      "score": 0.9432
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The risks and uncertainties to which forward-looking statements are subject include the following, without limitation: \u2022 changes in general economic, business and political conditions, including those resulting from COVID-19 or other pandemics, a recession, intensified international hostilities, acts of terrorism, increased rates of inflation or interest, changes in either or both the U.S.",
+      "score": -0.8407
+    },
+    {
+      "sent": "The risks and uncertainties to which forward-looking statements are subject include the following, without limitation: \u2022 changes in general economic, business and political conditions, including those resulting from COVID-19 or other pandemics, a recession, intensified international hostilities, acts of terrorism, increased rates of inflation or interest, changes in either or both the U.S.",
+      "score": -0.8407
+    },
+    {
+      "sent": "The risks and uncertainties to which forward-looking statements are subject include the following, without limitation: \u2022 changes in general economic, business and political conditions, including those resulting from COVID-19 or other pandemics, a recession, intensified international hostilities, acts of terrorism, increased rates of inflation or interest, changes in either or both the U.S.",
+      "score": -0.8407
+    }
+  ],
+  "forward_snippets": [
+    "Corporate and Other The Corporate and Other segment consists of corporate overhead expense, certain leveraged functions and miscellaneous expenses that are not included in the operating segments, as well as certain non-strategic businesses that we plan to wind down or sell.",
+    "Statements that are not historical facts, including statements about anticipated financial outcomes, including any earnings guidance or projections of the Company, projected revenue or expense synergies, business and market conditions, outlook, foreign currency exchange rates, deleveraging plans, expected dividends and share repurchases, the Company's sales pipeline and anticipated profitability and growth, as well as other statements about our expectations, beliefs, intentions, or strategies regarding the future, or other characterizations of future events or circumstances, are forward-looking statements.",
+    "Statements that are not historical facts, including statements about anticipated financial outcomes, including any earnings guidance or projections of the Company, projected revenue or expense synergies, business and market conditions, outlook, foreign currency exchange rates, deleveraging plans, expected dividends and share repurchases, the Company's sales pipeline and anticipated profitability and growth, as well as other statements about our expectations, beliefs, intentions, or strategies regarding the future, or other characterizations of future events or circumstances, are forward-looking statements.",
+    "Statements that are not historical facts, including statements about anticipated financial outcomes, including any earnings guidance or projections of the Company, projected revenue or expense synergies, business and market conditions, outlook, foreign currency exchange rates, deleveraging plans, expected dividends and share repurchases, the Company's sales pipeline and anticipated profitability and growth, as well as other statements about our expectations, beliefs, intentions, or strategies regarding the future, or other characterizations of future events or circumstances, are forward-looking statements.",
+    "guidance or projections of the Company, projected revenue or expense synergies, business and market conditions, outlook, foreign currency exchange rates, deleveraging plans, expected dividends and share repurchases, the Company's sales pipeline and anticipated profitability and growth, as well as other statements about our expectations, beliefs, intentions, or strategies regarding the future, or other characterizations of future events or circumstances, are forward-looking statements."
+  ]
+}

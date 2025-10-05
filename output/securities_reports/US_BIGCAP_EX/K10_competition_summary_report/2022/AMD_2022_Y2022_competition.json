@@ -1,0 +1,182 @@
+{
+  "symbol": "AMD",
+  "year": 2022,
+  "period": "Y2022",
+  "competition_summary": [
+    {
+      "competitor": "the Computing and Graphics Segment",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "Intel Corporation",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "Intel",
+      "mentions": 6,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "NVIDIA Corporation",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "IGP",
+      "mentions": 2,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "GPU",
+      "mentions": 2,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "HPC",
+      "mentions": 2,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "CUDA",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "CPU",
+      "mentions": 3,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "GPU IP",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "IP",
+      "mentions": 2,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "EPYC",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "3D",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "SoC",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "AMD",
+      "mentions": 5,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "HBM",
+      "mentions": 3,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "Manufacturing Arrangements and",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "Assembly",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "Taiwan Semiconductor Manufacturing Company Limited",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "TSMC",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "WSA",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "GLOBALFOUNDRIES Inc.",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "Third-Party",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "Computing and Graphics",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "ATMP",
+      "mentions": 4,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "Tongfu Microelectronics Co., Ltd.",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "Intellectual Property",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "the AMD Board of Directors",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "the Human Rights Campaign Foundation",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "Bloomberg\u2019s Gender Equality",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "the \u201cWoman Innovation Award",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "the Global Semiconductor Alliance",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "Barron\u2019s World\u2019s Best",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "Forbes\u2019 World\u2019s Most Powerful Women",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    },
+    {
+      "competitor": "the President\u2019s Council of Advisors on Science and Technology",
+      "mentions": 1,
+      "context": "Competition in the Computing and Graphics Segment The markets in which we participate are highly competitive. Our primary competitor in the supply of microprocessors is Intel Corporation (Intel). A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the PC market, which could lead to further growth and development of the ARM ecosystem. In 2020, NVIDIA Corporation (NVIDIA), our principal competitor in the discrete graphics ma"
+    }
+  ]
+}

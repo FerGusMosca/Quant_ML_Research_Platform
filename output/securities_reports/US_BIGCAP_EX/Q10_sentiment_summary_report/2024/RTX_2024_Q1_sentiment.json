@@ -1,0 +1,47 @@
+{
+  "symbol": "RTX",
+  "year": 2024,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1366,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.154
+  },
+  "top_positive": [
+    {
+      "sent": "The following is the expected amortization of intangible assets for the remainder of 2024 through 2029: (dollars in millions) Remaining 2024 2025 2026 2027 2028 2029 Amortization expense $ 550 $ 2,107 $ 2,024 $ 1,908 $ 1,824 $ 1,642 10 Table of Contents Note\u00a04: Earnings Per Share Quarter Ended September\u00a030, Nine Months Ended September\u00a030, (dollars and shares in millions, except per share amounts) 2024 2023 2024 2023 Net income (loss) attributable to common shareowners $ 1,472 $ ( 984 ) $ 3,292 $ 1,769 Basic weighted average number of shares outstanding 1,333.2 1,448.1 1,331.4 1,455.7 Stock awards and equity units (share equivalent) 13.0 \u2014 10.4 10.2 Diluted weighted average number of shares outstanding 1,346.2 1,448.1 1,341.8 1,465.9 Earnings (Loss) Per Share attributable to common shareowners: Basic $ 1.10 $ ( 0.68 ) $ 2.47 $ 1.22 Diluted 1.09 ( 0.68 ) 2.45 1.21 The computation of diluted earnings per share (EPS) excludes the effect of the potential exercise of stock awards, including stock appreciation rights and stock options, when the average market price of the common stock is lower than the exercise price of the related stock awards during the period because the effect would be anti-dilutive.",
+      "score": 0.9872
+    },
+    {
+      "sent": "Our share repurchases, which include shares reacquired outside of our share repurchase program, were as follows: Nine Months Ended September\u00a030, 2024 2023 (dollars in millions; shares in thousands) $ Shares $ Shares Shares of common stock repurchased (1) $ 136 1,365 $ 2,587 29,397 ASR Tranche 1 settlement - shares received (2) \u2014 391 \u2014 \u2014 ASR Tranche 2 settlement - financing cash paid (2) (3) 258 \u2014 \u2014 \u2014 Total shares of common stock repurchased $ 394 1,756 $ 2,587 29,397 (1)\u00a0\u00a0\u00a0\u00a0Amounts relate to share\nal institutions at a rate that leverages our credit rating, which might be beneficial to them.",
+      "score": 0.9702
+    },
+    {
+      "sent": "Cost estimates may also include the estimated cost of satisfying our industrial cooperation a\nion income ( 373 ) ( 442 ) ( 1 ) ( 1 ) Total net periodic (income) expense $ ( 326 ) $ ( 386 ) $ \u2014 $ \u2014 15 Table of Contents Pension Benefits Nine Months Ended September\u00a030, PRB Nine Months Ended September\u00a030, (dollars in millions) 2024 2023 2024 2023 Operating expense Service cost $ 141 $ 167 $ 3 $ 3 Non-operating expense Interest cost 1,789 1,880 33 36 Expected return on plan assets ( 2,810 ) ( 2,815 ) ( 15 ) ( 15 ) Amortization of prior service credit ( 127 ) ( 118 ) ( 1 ) \u2014 Recognized actuarial net (gain) loss 15 ( 284 ) ( 18 ) ( 24 ) Net settlement, curtailment and special termination benefit (gain) loss \u2014 6 \u2014 \u2014 Non-service pension income ( 1,133 ) ( 1,331 ) ( 1 ) ( 3 ) Total net periodic (income) expense $ ( 992 ) $ ( 1,164 ) $ 2 $ \u2014 We have set aside assets in separate trusts, which we expect to be used to pay for certain nonqualified defined benefit and defined contribution plan obligations in excess of qualified plan limits.",
+      "score": 0.9686
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Pursuant to DPA-1, the DOJ will defer, for a period of three years, criminal prosecution of Raytheon Company related to Raytheon Company\u2019s conspiracy to violate the anti-bribery provisions of the FCPA and conspiracy to violate the AECA by failing to make related disclosures of certain payments that qualified as fees, commissions and/or political contributions under Part 130 of the ITAR.",
+      "score": -0.9726
+    },
+    {
+      "sent": "Pursuant to DPA-1, the DOJ will defer, for a period of three years, criminal prosecution of Raytheon Company related to Raytheon Company\u2019s conspiracy to violate the anti-bribery provisions of the FCPA and conspiracy to violate the AECA by failing to make related disclosures of certain payments that qualified as fees, commissions and/or political contributions under Part 130 of the ITAR.",
+      "score": -0.9726
+    },
+    {
+      "sent": "Pursuant to DPA-1, the DOJ will defer, for a period of three years, criminal prosecution of Raytheon Company related to Raytheon Company\u2019s conspiracy to violate the anti-bribery provisions of the FCPA and conspiracy to violate the AECA by failing to make related disclosures of certain payments that qualified as fees, commissions and/or political contributions under Part 130 of the ITAR.",
+      "score": -0.9726
+    }
+  ],
+  "forward_snippets": [
+    "We continue to monitor developments, including additional sanctions and other measures, that could adversely affect the Company and/or our supply chain, business partners, or customers.",
+    "Cost estimates may also include the estimated cost of satisfying our industrial cooperation a\nion income ( 373 ) ( 442 ) ( 1 ) ( 1 ) Total net periodic (income) expense $ ( 326 ) $ ( 386 ) $ \u2014 $ \u2014 15 Table of Contents Pension Benefits Nine Months Ended September\u00a030, PRB Nine Months Ended September\u00a030, (dollars in millions) 2024 2023 2024 2023 Operating expense Service cost $ 141 $ 167 $ 3 $ 3 Non-operating expense Interest cost 1,789 1,880 33 36 Expected return on plan assets ( 2,810 ) ( 2,815 ) ( 15 ) ( 15 ) Amortization of prior service credit ( 127 ) ( 118 ) ( 1 ) \u2014 Recognized actuarial net (gain) loss 15 ( 284 ) ( 18 ) ( 24 ) Net settlement, curtailment and special termination benefit (gain) loss \u2014 6 \u2014 \u2014 Non-service pension income ( 1,133 ) ( 1,331 ) ( 1 ) ( 3 ) Total net periodic (income) expense $ ( 992 ) $ ( 1,164 ) $ 2 $ \u2014 We have set aside assets in separate trusts, which we expect to be used to pay for certain nonqualified defined benefit and defined contribution plan obligations in excess of qualified plan limits.",
+    "government contracting and overall enforcement environment, we will continue to be the subject of one or more U.S.",
+    "We have made voluntary refunds in those cases we believe appropriate, have settled some allegations and, in some cases, continue to negotiate and/or litigate.",
+    "Guidance to affected operators was released via service bulletins (SB) and SI in November 2023, and this guidance has been reflected in airworthiness directives issued by the Federal Aviation Administration (FAA)."
+  ]
+}

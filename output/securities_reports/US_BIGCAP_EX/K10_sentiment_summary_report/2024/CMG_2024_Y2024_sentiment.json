@@ -1,0 +1,47 @@
+{
+  "symbol": "CMG",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.1366,
+    "outlook_sentiment": 0.2038,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.255
+  },
+  "top_positive": [
+    {
+      "sent": "Non-Vested Stock Awards (RSUs) A summary of RSU award activity was as follows (in thousands, except per share data): Shares Weighted-Average Grant Date Fair Value per Share Outstanding, January 1, 2023 55 $ 1,396.78 Granted 37 1,666.18 Vested ( 23 ) 1,211.81 Forfeited or cancelled ( 9 ) 1,581.08 Outstanding, December 31, 2023 60 1,604.25 Vested and expected to vest, December 31, 2023 52 1,600.97 53 Table of Contents The weighted-average grant date fair value per RSU granted during the years ended December\u00a031, 2022 and 2021, was $ 1,559.73 and $ 1,492.15 , respectively.",
+      "score": 0.9892
+    },
+    {
+      "sent": "Non-Vested Performance Stock Awards (PSUs) A summary of PSU award activity was as follows (in thousands, except per share data): Shares Weighted-Average Grant Date Fair Value per Share Outstanding, January 1, 2023 69 $ 1,194.80 Granted 24 1,606.91 Vested ( 33 ) 857.00 Expired ( 4 ) 1,562.35 Outstanding, December 31, 2023 56 1,562.14 Vested and expected to vest, December 31, 2023* 114 1,557.11 *The vested and expected to vest total above represents outstanding base PSUs, adjusted for expected payout amounts in line with current and future estimated performance levels.",
+      "score": 0.9873
+    },
+    {
+      "sent": "Total Rewards The financial, physical, and mental wellness of our employees remains our top priority and we believe we have compelling compensation packages and incentive programs, and a robust suite of benefit offerings that enable us to engage current team members and attract new team members: \uf0b7 We have made substantial investments in our compensation packages, including competitive wages and industry leading incentive programs, such as our annual and quarterly bonus programs, which allow us to attract and retain the top talent in the industry.",
+      "score": 0.9872
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The actual or perceived threat of a pandemic or communicable disease, terrorist attack, mass shooting, heightened security requirements, including cybersecurity, or a failure to protect information systems for critical infrastructure, such as the electrical grid and telecommunications systems, could harm our operations, the\nnhouse Gases: Climate-Related Financial Risk Bill, the SEC\u2019s proposed climate-related reporting requirements, and similar proposals by other local and international regulatory agencies.",
+      "score": -0.9545
+    },
+    {
+      "sent": "Failures may be caused by various factors, including power outages, catastrophic events, physical theft, computer and network failures, inadequate or ineffective redundancy, problems with transitioning to upgraded or replacement systems or platforms, flaws in third-party software or services, errors or improper use by our employees or the third-party service providers.",
+      "score": -0.9477
+    },
+    {
+      "sent": "Failures may be caused by various factors, including power outages, catastrophic events, physical theft, computer and network failures, inadequate or ineffective redundancy, problems with transitioning to upgraded or replacement systems or platforms, flaws in third-party software or services, errors or improper use by our employees or the third-party service providers.",
+      "score": -0.9477
+    }
+  ],
+  "forward_snippets": [
+    "We believe in investing and supporting our people because they are our most important asset and give us a competitive advantage in our business.",
+    "We continue to bargain with the one restaurant that voted in 2022 to form a union, and we believe that our relationship with our employees is good.",
+    "Talent Acquisition We continue to invest heavily in recruiting top talent and ensuring appropriate staffing levels are maintained, especially during our two peak hiring seasons (spring and fall).",
+    "We also launched an internal job board across multiple communication channels to our employees to provide increased visibility and access to internal opportunities.",
+    "We believe in investing and supporting our people because they are our most important asset and give us a competitive advantage in our business."
+  ]
+}

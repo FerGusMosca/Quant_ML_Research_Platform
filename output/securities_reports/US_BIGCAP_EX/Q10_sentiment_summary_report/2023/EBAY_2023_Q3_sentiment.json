@@ -1,0 +1,47 @@
+{
+  "symbol": "EBAY",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2093,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.174
+  },
+  "top_positive": [
+    {
+      "sent": "The following table presents gain (loss) on equity investments and warrant, net for the periods indicated (in millions, except percentages): Three Months Ended March 31, 2023 2022 % Change Unrealized change in fair value of equity investment in Adevinta $ 174 $ (1,643) 111 % Unrealized change in fair value of equity investment in Adyen \u2014 (80) ** Unrealized change in fair value of equity investment in Gmarket (11) (182) (94) % Unrealized change in fair value of equity investment in KakaoBank (3) (91) (97) % Change in fair value of warrant 38 (115) (133) % Realized change in fair value of shares sold in Adyen \u2014 (166) ** Realized change in fair value of shares sold in KakaoBank \u2014 (8) ** Gain (loss) on other investments \u2014 (6) ** Total gain (loss) on equity investments and warrant, net $ 198 $ (2,291) ** Percentage of net revenues 8 % (92) % ** Not meaningful The change in gain (loss) on equity investments and warrant, net during the three months ended March\u00a031, 2023 compared to the same period in 2022 was primarily driven by the change in the fair value of our equity investments in Adevinta, Gmarket, KakaoBank and warrant.",
+      "score": 0.993
+    },
+    {
+      "sent": "The following table presents gain (loss) on equity investments and warrant, net for the periods indicated (in millions, except percentages): Three Months Ended March 31, 2023 2022 % Change Unrealized change in fair value of equity investment in Adevinta $ 174 $ (1,643) 111 % Unrealized change in fair value of equity investment in Adyen \u2014 (80) ** Unrealized change in fair value of equity investment in Gmarket (11) (182) (94) % Unrealized change in fair value of equity investment in KakaoBank (3) (91) (97) % Change in fair value of warrant 38 (115) (133) % Realized change in fair value of shares sold in Adyen \u2014 (166) ** Realized change in fair value of shares sold in KakaoBank \u2014 (8) ** Gain (loss) on other investments \u2014 (6) ** Total gain (loss) on equity investments and warrant, net $ 198 $ (2,291) ** Percentage of net revenues 8 % (92) % ** Not meaningful The change in gain (loss) on equity investments and warrant, net during the three months ended March\u00a031, 2023 compared to the same period in 2022 was primarily driven by the change in the fair value of our equity investments in Adevinta, Gmarket, KakaoBank and warrant.",
+      "score": 0.993
+    },
+    {
+      "sent": "NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS\u2014(Continued) Note 15 \u2014 Accumulated Other Comprehensive Income The following tables summarize the changes in AOCI for the periods indicated (in millions): Unrealized Gains (Losses) on Derivative Instruments Unrealized Gains (Losses) on Investments Foreign Currency Translation Estimated Tax (Expense) Benefit Total Balance as of December 31, 2022 $ 114 $ ( 98 ) $ 222 $ 21 $ 259 Other comprehensive income (loss) before reclassifications ( 21 ) 19 1 ( 2 ) ( 3 ) Less: Amount of gain (loss) reclassified from AOCI 32 \u2014 \u2014 ( 7 ) 25 Net current period other comprehensive income (loss) ( 53 ) 19 1 5 ( 28 ) Balance as of March 31, 2023 $ 61 $ ( 79 ) $ 223 $ 26 $ 231 Unrealized Gains (Losses) on Derivative Instruments Unrealized Gains (Losses) on Investments Foreign Currency Translation Estimated Tax (Expense) Benefit Total Balance as of December 31, 2021 $ 65 $ ( 7 ) $ 328 $ 12 $ 398 Other comprehensive income (loss) before reclassifications 27 ( 51 ) ( 34 ) 8 ( 50 ) Less: Amount of gain (loss) reclassified from AOCI 7 \u2014 \u2014 ( 1 ) 6 Net current period other comprehensive income (loss) 20 ( 51 ) ( 34 ) 9 ( 56 ) Balance as of March 31, 2022 $ 85 $ ( 58 ) $ 294 $ 21 $ 342 The following table summarizes the reclassifications out of AOCI for the periods indicated (in millions): Details about AOCI Components Affected Line Item in the Statement of Income Amount of Gain (Loss) Reclassified From AOCI Three Months Ended March 31, 2023 2022 Gains (losses) on cash flow hedges: Foreign exchange contracts Net revenues $ 29 $ 6 Foreign exchange contracts Cost of net revenues ( 1 ) \u2014 Interest rate contracts Interest and other, net 4 1 Total, from continuing operations before income taxes 32 7 Provision for income taxes ( 7 ) ( 1 ) Total, from continuing operations net of income taxes 25 6 Total reclassifications for the period Total, net of income taxes $ 25 $ 6 40 Table of Contents eBay Inc.",
+      "score": 0.9891
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Provision for Transaction Losses Provision for transaction losses primarily consists of transaction loss expense associated with our buyer protection programs, losses from our managed payments services, fraud and bad debt expense associated with our accounts receivable balance.",
+      "score": -0.9595
+    },
+    {
+      "sent": "Provision for Transaction Losses Provision for transaction losses primarily consists of transaction loss expense associated with our buyer protection programs, losses from our managed payments services, fraud and bad debt expense associated with our accounts receivable balance.",
+      "score": -0.9595
+    },
+    {
+      "sent": "Provision for Transaction Losses Provision for transaction losses primarily consists of transaction loss expense associated with our buyer protection programs, losses from our managed payments services, fraud and bad debt expense associated with our accounts receivable balance.",
+      "score": -0.9595
+    }
+  ],
+  "forward_snippets": [
+    "We base our estimates on historical experience and on various other assumptions that we believe to be reasonable under the circumstances.",
+    "Recent Accounting Pronouncements Not Yet Adopted In June 2022, the Financial Accounting Standards Board (\u201cFASB\u201d) issued new guidance to clarify the fair value measurement guidance for equity securities subject to contractual restrictions that prohibit the sale of an equity security.",
+    "Further, the guidance introduces new disclosure requirements for equity securities subject to contractual sale restrictions that are measured at fair value.",
+    "Recent Accounting Pronouncements Not Yet Adopted In June 2022, the Financial Accounting Standards Board (\u201cFASB\u201d) issued new guidance to clarify the fair value measurement guidance for equity securities subject to contractual restrictions that prohibit the sale of an equity security.",
+    "Further, the guidance introduces new disclosure requirements for equity securities subject to contractual sale restrictions that are measured at fair value."
+  ]
+}

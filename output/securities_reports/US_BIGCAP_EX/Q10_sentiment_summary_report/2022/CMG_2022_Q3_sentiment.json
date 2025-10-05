@@ -1,0 +1,47 @@
+{
+  "symbol": "CMG",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2956,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.077
+  },
+  "top_positive": [
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME AND COMPREHENSIVE INCOME (in thousands, except per share data) (unaudited) Three months ended March 31, 2022 2021 Food and beverage revenue $ 1,998,956 $ 1,715,990 Delivery service revenue 21,583 25,585 Total revenue 2,020,539 1,741,575 Restaurant operating costs (exclusive of depreciation and amortization shown separately below): Food, beverage and packaging 626,926 522,671 Labor 531,940 433,669 Occupancy 112,032 101,769 Other operating costs 330,695 294,710 General and administrative expenses 147,402 155,103 Depreciation and amortization 71,665 63,122 Pre-opening costs 5,348 3,421 Impairment, closure costs, and asset disposals 4,310 5,668 Total operating expenses 1,830,318 1,580,133 Income from operations 190,221 161,442 Interest and other income (expense), net ( 213 ) ( 2,168 ) Income before income taxes 190,008 159,274 Provision for income taxes ( 31,714 ) ( 32,173 ) Net income $ 158,294 $ 127,101 Earnings per share: Basic $ 5.64 $ 4.52 Diluted $ 5.59 $ 4.45 Weighted-average common shares outstanding: Basic 28,043 28,125 Diluted 28,301 28,582 Other comprehensive income (loss), net of income taxes: Foreign currency translation adjustments $ 195 $ ( 263 ) Comprehensive income $ 158,489 $ 126,838 See accompanying notes to condensed consolidated financial statements.",
+      "score": 0.9684
+    },
+    {
+      "sent": "We believe these metrics are useful to investors because management uses these metrics to assess the growth of our business and the effectiveness of our marketing and operational strategies: \uf0b7 Comparable restaurant sales \uf0b7 Restaurant operating costs as a percentage of total revenue \uf0b7 New restaurant openings First Quarter 2022 Financial Highlights, year-over-year: \uf0b7 Total revenue increased 16.0% to $2.0 billion \uf0b7 Comparable restaurant sales increased 9.0% \uf0b7 Diluted earnings per share was $5.59, a 25.6% increase from $4.45, which includes an $0.11 after-tax impact from expenses related to the 2018 performance share (\u201cPSU\u201d) COVID-19 related modification, corporate restructuring costs, restaurant asset impairment and closure costs, and certain legal proceedings.",
+      "score": 0.9552
+    },
+    {
+      "sent": "We believe these metrics are useful to investors because management uses these metrics to assess the growth of our business and the effectiveness of our marketing and operational strategies: \uf0b7 Comparable restaurant sales \uf0b7 Restaurant operating costs as a percentage of total revenue \uf0b7 New restaurant openings First Quarter 2022 Financial Highlights, year-over-year: \uf0b7 Total revenue increased 16.0% to $2.0 billion \uf0b7 Comparable restaurant sales increased 9.0% \uf0b7 Diluted earnings per share was $5.59, a 25.6% increase from $4.45, which includes an $0.11 after-tax impact from expenses related to the 2018 performance share (\u201cPSU\u201d) COVID-19 related modification, corporate restructuring costs, restaurant asset impairment and closure costs, and certain legal proceedings.",
+      "score": 0.9552
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "On April 28, 2021, DCWP amended the complaint to cover purported violations of FWW and ESTA at substantially all Chipotle restaurants in New York City, through the date the amended complaint was filed.",
+      "score": -0.7783
+    },
+    {
+      "sent": "Critical Accounting Estimates Critical accounting estimates are those that we believe are both significant and that require us to make difficult, subjective or complex judgments, often because we need to estimate the effect of inherently uncertain matters.",
+      "score": -0.7506
+    },
+    {
+      "sent": "Critical Accounting Estimates Critical accounting estimates are those that we believe are both significant and that require us to make difficult, subjective or complex judgments, often because we need to estimate the effect of inherently uncertain matters.",
+      "score": -0.7506
+    }
+  ],
+  "forward_snippets": [
+    "2020-04, \u201cReference Rate Reform (Topic 848): Facilitation of the Effects of Reference Rate Reform on Financial Reporting.\u201d The pronouncement provides temporary optional expedients and exceptions to the current guidance on contract modifications and hedge accounting to ease the financial reporting burden related to the expected market transition from the London Interbank Offered Rate (\"LIBOR\") and other interbank offered rates to alternative reference rates.",
+    "The guidance was effective upon issuance and generally can be applied to applicable contract modifications through December 31, 2022.",
+    "The guidance is effective for annual periods beginning after December 15, 2021.",
+    "Our estimate of points and rewards we expect to be redeemed is based on historical and other company specific data.",
+    "2020-04, \u201cReference Rate Reform (Topic 848): Facilitation of the Effects of Reference Rate Reform on Financial Reporting.\u201d The pronouncement provides temporary optional expedients and exceptions to the current guidance on contract modifications and hedge accounting to ease the financial reporting burden related to the expected market transition from the London Interbank Offered Rate (\"LIBOR\") and other interbank offered rates to alternative reference rates."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "GPN",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.223,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.145
+  },
+  "top_positive": [
+    {
+      "sent": "27 Table of Contents The following table sets forth the computation of diluted weighted-average number of shares outstanding for the three and six months ended June\u00a030, 2023 and 2022: Three Months Ended Six Months Ended June 30, 2023 June 30, 2022 June 30, 2023 June 30, 2022 (in thousands) Basic weighted-average number of shares outstanding 260,827 278,181 261,965 280,130 Plus: Dilutive effect of stock options and other share-based awards 501 \u2014 429 \u2014 Diluted weighted-average number of shares outstanding 261,328 278,181 262,394 280,130 NOTE 13 - SUPPLEMENTAL BALANCE SHEET INFORMATION Cash, cash equivalents and restricted cash Cash and cash equivalents include cash on hand and all liquid investments with a maturity of three months or less when purchased.",
+      "score": 0.9723
+    },
+    {
+      "sent": "27 Table of Contents The following table sets forth the computation of diluted weighted-average number of shares outstanding for the three and six months ended June\u00a030, 2023 and 2022: Three Months Ended Six Months Ended June 30, 2023 June 30, 2022 June 30, 2023 June 30, 2022 (in thousands) Basic weighted-average number of shares outstanding 260,827 278,181 261,965 280,130 Plus: Dilutive effect of stock options and other share-based awards 501 \u2014 429 \u2014 Diluted weighted-average number of shares outstanding 261,328 278,181 262,394 280,130 NOTE 13 - SUPPLEMENTAL BALANCE SHEET INFORMATION Cash, cash equivalents and restricted cash Cash and cash equivalents include cash on hand and all liquid investments with a maturity of three months or less when purchased.",
+      "score": 0.9723
+    },
+    {
+      "sent": "Stock Options The following table summarizes stock option activity for the six months ended June\u00a030, 2023: Options Weighted-Average Exercise Price Weighted-Average Remaining Contractual Term Aggregate Intrinsic Value (in thousands) (years) (in millions) Outstanding at December 31, 2022 1,139 $ 111.75 5.4 $ 17.3 Replacement awards 142 98.44 Granted 233 110.83 Forfeited ( 36 ) 109.92 Exercised ( 17 ) 52.80 Outstanding at June 30, 2023 1,461 $ 109.07 3.7 $ 19.0 Options vested and exercisable at June 30, 2023 1,155 $ 110.39 2.4 $ 16.5 We recognized compensation expense for stock options of\u00a0$ 1.1 million\u00a0and $ 1.8 million during the three months ended\u00a0June\u00a030, 2023\u00a0and\u00a02022, respectively, and $ 13.9 million and $ 3.6 million during the six months ended June\u00a030, 2023 and\u00a02022, respectively.",
+      "score": 0.9628
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The following table includes estimated revenue expected to be recognized in the future related to performance obligations that are unsatisfied or partially unsatisfied at June\u00a030, 2023.",
+      "score": -0.6597
+    },
+    {
+      "sent": "During the three months ended June 30, 2022, we recognized a loss of $ 127.2 million associated with the sale, comprised of the difference between the consideration received and the net carrying amount of the business and the reclassification of $ 63 million of associated accumulated foreign currency translation losses from the separate component of equity.",
+      "score": -0.6124
+    },
+    {
+      "sent": "42 Table of Contents ITEM 3\u2014QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK For a discussion of our exposure to market risk,\u00a0refer\u00a0to Part II, Item 7A, \"Quantitative and Qualitative Disclosures About Market Risk,\" contained in our Annual Report on Form 10-K for the year ended December\u00a031, 2022.",
+      "score": -0.6037
+    }
+  ],
+  "forward_snippets": [
+    "We expect that a portion of the goodwill from this acquisition will be deductible for income tax purposes.",
+    "As of June\u00a030, 2023, there was $ 222.7 million of unrecognized compensation expense related to unvested restricted stock and performance awards that we expect to recognize over a weighted-average period of 2.0 years.",
+    "As of June\u00a030, 2023, we had $ 3.6 million of unrecognized compensation expense related to unvested stock options that we expect to recognize over a weighted-average period of 2.0 y ears.",
+    "As of June\u00a030, 2023, we had $ 3.6 million of unrecognized compensation expense related to unvested stock options that we expect to recognize over a weighted-average period of 2.0 y ears.",
+    "We believe that our current and projected sources of liquidity will be sufficient to meet our projected liquidity requirements associated with our operations for the near and long term."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "symbol": "ABNB",
+  "period": "2019",
+  "report_type": "YearlyIncomeStatement",
+  "items": {
+    "Interest Expense": 171688000.0,
+    "Interest Expense Non Operating": 171688000.0
+  }
+}

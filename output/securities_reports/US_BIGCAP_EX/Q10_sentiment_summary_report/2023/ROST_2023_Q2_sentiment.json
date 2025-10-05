@@ -1,0 +1,47 @@
+{
+  "symbol": "ROST",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2657,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.151
+  },
+  "top_positive": [
+    {
+      "sent": "The table below shows the components of interest expense and income for the three and six month periods ended July\u00a029, 2023 and July\u00a030, 2022: Three Months Ended Six Months Ended ($000) July 29, 2023 July 30, 2022 July 29, 2023 July 30, 2022 Interest expense on long-term debt $ 21,133 $ 21,125 $ 42,299 $ 42,279 Other interest expense 372 406 745 794 Capitalized interest ( 2,818 ) ( 1,175 ) ( 4,926 ) ( 3,826 ) Interest income ( 55,901 ) ( 9,689 ) ( 106,729 ) ( 10,884 ) Interest (income) expense, net $ ( 37,214 ) $ 10,667 $ ( 68,611 ) $ 28,363 Note F: Taxes on Earnings The Company\u2019s effective tax rates for the three month periods ended July\u00a029, 2023 and July\u00a030, 2022, were approximately 25 % and 24 %, respectively.",
+      "score": 0.9638
+    },
+    {
+      "sent": "The table below shows the components of interest expense and income for the three and six month periods ended July\u00a029, 2023 and July\u00a030, 2022: Three Months Ended Six Months Ended ($000) July 29, 2023 July 30, 2022 July 29, 2023 July 30, 2022 Interest expense on long-term debt $ 21,133 $ 21,125 $ 42,299 $ 42,279 Other interest expense 372 406 745 794 Capitalized interest ( 2,818 ) ( 1,175 ) ( 4,926 ) ( 3,826 ) Interest income ( 55,901 ) ( 9,689 ) ( 106,729 ) ( 10,884 ) Interest (income) expense, net $ ( 37,214 ) $ 10,667 $ ( 68,611 ) $ 28,363 Note F: Taxes on Earnings The Company\u2019s effective tax rates for the three month periods ended July\u00a029, 2023 and July\u00a030, 2022, were approximately 25 % and 24 %, respectively.",
+      "score": 0.9638
+    },
+    {
+      "sent": "We also operate 339 dd\u2019s DISCOUNTS stores in 22 states that feature a more moderately-priced assortment of first-quality, in-season, name brand apparel, acces\n July\u00a030, 2022: Three Months Ended Six Months Ended ($000) July 29, 2023 July 30, 2022 July 29, 2023 July 30, 2022 Interest expense on long-term debt $ 21,133 $ 21,125 $ 42,299 $ 42,279 Other interest expense 372 406 745 794 Capitalized interest ( 2,818 ) ( 1,175 ) ( 4,926 ) ( 3,826 ) Interest income ( 55,901 ) ( 9,689 ) ( 106,729 ) ( 10,884 ) Interest (income) expense, net $ ( 37,214 ) $ 10,667 $ ( 68,611 ) $ 28,363 Note F: Taxes on Earnings The Company\u2019s effective tax rates for the three month periods ended July\u00a029, 2023 and July\u00a030, 2022, were approximately 25 % and 24 %, respectively.",
+      "score": 0.9517
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "\u2022 An additional public health or public safety crisis, demonstrations, natural or man-made disaster in California or in another region where we have a concentration of stores, offices, or a distribution center that could harm our business.",
+      "score": -0.8126
+    },
+    {
+      "sent": "\u2022 An additional public health or public safety crisis, demonstrations, natural or man-made disaster in California or in another region where we have a concentration of stores, offices, or a distribution center that could harm our business.",
+      "score": -0.8126
+    },
+    {
+      "sent": "\u2022 An additional public health or public safety crisis, demonstrations, natural or man-made disaster in California or in another region where we have a concentration of stores, offices, or a distribution center that could harm our business.",
+      "score": -0.8126
+    }
+  ],
+  "forward_snippets": [
+    "The fair value is estimated by obtaining comparable market quotes which are considered to be Level 1 inputs under the fair value measurements and disclosures guidance.",
+    "The Company\u2019s effective tax rate is impacted by changes in tax law and accounting guidance, location of new stores, level of earnings, tax effects associated with stock-based compensation, and uncertain tax positions.",
+    "The following discussion should be read in conjunction with the condensed consolidated financial statements and notes thereto included elsewhere in this Quarterly Report on Form 10-Q and in conjunction with the consolidated financial statements and notes thereto in ou\nguidance.",
+    "The Company\u2019s effective tax rate is impacted by changes in tax law and accounting guidance, location of new stores, level of earnings, tax effects associated with stock-based compensation, and uncertain tax positions.",
+    "The Company\u2019s effective tax rate is impacted by changes in tax law and accounting guidance, location of new stores, level of earnings, tax effects associated with stock-based compensation, and uncertain tax positions."
+  ]
+}

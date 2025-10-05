@@ -1,0 +1,47 @@
+{
+  "symbol": "PM",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1767,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.181
+  },
+  "top_positive": [
+    {
+      "sent": "To be successful, we must: \u2022 promote brand equity successfully; \u2022 anticipate and respond to new adult consumer trends; \u2022 ensure that our products meet our quality standards; \u2022 develop new products and markets and broaden brand portfolios; \u2022 improve productivity; \u2022 educate and encourage adult smokers to convert to our RRPs; \u2022 ensure effective adult consumer engagement, including communication about product characteristics and usage of RRPs; \u2022 provide excellent customer care; \u2022 ensure adequate production capacity to meet demand for our products; and \u2022 be able to protect or enhance margins through price increases.",
+      "score": 0.9896
+    },
+    {
+      "sent": "At March\u00a031, 2023, our credit ratings and outlook by major credit rating agencies were as follows: Short-term Long-term Outlook Moody\u2019s P-1 A2 Stable Standard\u00a0& Poor\u2019s A-2 A- Stable Fitch F1 A Stable 85 Table of Contents Revolving Credit Facilities At March\u00a031, 2023, our committed revolving credit facilities were as follows: Type (in billions) Committed Revolving Credit Facilities 364-day revolving credit, expiring January 30, 2024 $ 1.8 Multi-year revolving credit, expiring February 10, 2026 (1) 2.0 Multi-year revolving credit, expiring September 29, 2026 (2) (3) 2.5 Total facilities $ 6.3 (1) On January 28, 2022, we entered into an agreement, effective February 10, 2022, to amend and extend the term of our $2.0 billion multi-year revolving credit facility, for an additional year covering the period February 11, 2026 to February 10, 2027, in the amount of $1.9\u00a0billion.",
+      "score": 0.9884
+    },
+    {
+      "sent": "At March\u00a031, 2023, our credit ratings and outlook by major credit rating agencies were as follows: Short-term Long-term Outlook Moody\u2019s P-1 A2 Stable Standard\u00a0& Poor\u2019s A-2 A- Stable Fitch F1 A Stable 85 Table of Contents Revolving Credit Facilities At March\u00a031, 2023, our committed revolving credit facilities were as follows: Type (in billions) Committed Revolving Credit Facilities 364-day revolving credit, expiring January 30, 2024 $ 1.8 Multi-year revolving credit, expiring February 10, 2026 (1) 2.0 Multi-year revolving credit, expiring September 29, 2026 (2) (3) 2.5 Total facilities $ 6.3 (1) On January 28, 2022, we entered into an agreement, effective February 10, 2022, to amend and extend the term of our $2.0 billion multi-year revolving credit facility, for an additional year covering the period February 11, 2026 to February 10, 2027, in the amount of $1.9\u00a0billion.",
+      "score": 0.9884
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "In others, nationalization, terrorism, conflict and the threats of war or acts of war may have a significant impact on the business environment.",
+      "score": -0.9493
+    },
+    {
+      "sent": "97 Table of Contents Risks Related to Cybersecurity and Data Governance The failure or disruption of our information technology networks and systems, or those managed by third-party service providers or owned by our business partners and used in furtherance of PMI\u2019s business, due to cybersecurity attacks; unauthorized attempts to corrupt or extract data; security vulnerabilities; misconfigurations; human error; or failure or inability by us, third-parties, or our business partners to adhere to cybersecurity industry best practices, could place us at a competitive disadvantage, cause reputational damage, impact our operations, result in data breaches, significant business disruption, litigation, regulatory action including significant fines or penalties, financial impact, loss of revenue or assets including our intellectual property, personal, confidential, or sensitive data.",
+      "score": -0.9413
+    },
+    {
+      "sent": "97 Table of Contents Risks Related to Cybersecurity and Data Governance The failure or disruption of our information technology networks and systems, or those managed by third-party service providers or owned by our business partners and used in furtherance of PMI\u2019s business, due to cybersecurity attacks; unauthorized attempts to corrupt or extract data; security vulnerabilities; misconfigurations; human error; or failure or inability by us, third-parties, or our business partners to adhere to cybersecurity industry best practices, could place us at a competitive disadvantage, cause reputational damage, impact our operations, result in data breaches, significant business disruption, litigation, regulatory action including significant fines or penalties, financial impact, loss of revenue or assets including our intellectual property, personal, confidential, or sensitive data.",
+      "score": -0.9413
+    }
+  ],
+  "forward_snippets": [
+    "This process may take 6 to 12 months to complete, but we believe the likelihood it will result in additional payments to be remote.",
+    "However, we and our subsidiaries may enter into settlement discussions in particular cases if we believe it is in our best interests to do so.",
+    "We believe that this lawsuit is without merit and will continue to defend it vigorously.",
+    "We believe that the foregoing proceedings by the affiliates of BAT are without merit and will defend them vigorously.",
+    "Now, through our Vectura Fertin Pharma business, with a strong foundation and significant expertise in life sciences, we aim to expand into wellness and healthcare areas."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "PYPL",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.212,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.177
+  },
+  "top_positive": [
+    {
+      "sent": "NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS (continued) (Unaudited) EFFECT OF DERIVATIVE CONTRACTS ON CONDENSED CONSOLIDATED FINANCIAL STATEMENTS The following table provides the location in the condensed consolidated statements of income (loss) and amount of recognized gains or losses related to our derivative instruments: Three Months Ended June 30, 2022 2021 (In millions) Net revenues Other income (expense), net Net revenues Other income (expense), net Total amounts presented in the condensed consolidated statements of income (loss) in which the effects of cash flow hedges and net investment hedges are recorded $ 6,806 $ ( 715 ) $ 6,238 $ 229 Gains (losses) on derivatives in cash flow hedging relationship: Amount of gains (losses) on foreign currency exchange contracts reclassified from AOCI 107 \u2014 ( 89 ) \u2014 Gains on derivatives in net investment hedging relationship: Amount of gains on foreign currency exchange contracts excluded from the assessment of effectiveness \u2014 17 \u2014 \u2014 Gains (losses) on derivatives not designated as hedging instruments: Amount of gains (losses) on foreign currency exchange contracts \u2014 147 \u2014 ( 43 ) Total gains (losses) $ 107 $ 164 $ ( 89 ) $ ( 43 ) Six Months Ended June 30, 2022 2021 (In millions) Net revenues Other income (expense), net Net revenues Other income (expense), net Total amounts presented in the condensed consolidated statements of income (loss) in which the effects of cash flow hedges and net investment hedges are recorded $ 13,289 $ ( 797 ) $ 12,271 $ 59 Gains (losses) on derivatives in cash flow hedging relationship: Amount of gains (losses) on foreign exchange contracts reclassified from AOCI 154 \u2014 ( 148 ) \u2014 Gains on derivatives in net investment hedging relationship: Amount of gains on foreign exchange contracts excluded from the assessment of effectiveness \u2014 26 \u2014 \u2014 Gains (losses) on derivatives not designated as hedging instruments: Amount of gains (losses) on foreign exchange contracts \u2014 108 \u2014 ( 2 ) Total gains (losses) $ 154 $ 134 $ ( 148 ) $ ( 2 ) 33 Table of Contents PayPal Holdings, Inc.",
+      "score": 0.9735
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED BALANCE SHEETS June 30, 2022 December 31, 2021 (In\u00a0millions, except par value) (Unaudited) ASSETS Current assets: Cash and cash equivalents $ 4,583 $ 5,197 Short-term investments 4,723 4,303 Accounts receivable, net 867 800 Loans and interest receivable, net of allowances of $ 455 and $ 491 as of June\u00a030, 2022 and December\u00a031, 2021, respectively 5,749 4,846 Funds receivable and customer accounts 37,221 36,141 Prepaid expenses and other current assets 2,109 1,287 Total current assets 55,252 52,574 Long-term investments 6,270 6,797 Property and equipment, net 1,832 1,909 Goodwill 11,146 11,454 Intangible assets, net 1,001 1,332 Other assets 2,309 1,737 Total assets $ 77,810 $ 75,803 LIABILITIES AND EQUITY Current liabilities: Accounts payable $ 156 $ 197 Funds payable and amounts due to customers 40,221 38,841 Accrued expenses and other current liabilities 4,122 3,755 Income taxes payable 596 236 Total current liabilities 45,095 43,029 Deferred tax liability and other long-term liabilities 2,750 2,998 Long-term debt 10,198 8,049 Total liabilities 58,043 54,076 Commitments and contingencies (Note 13) Equity: Common stock, $ 0.0001 par value; 4,000 shares authorized; 1,156 and 1,168 shares outstanding as of June\u00a030, 2022 and December\u00a031, 2021, respectively \u2014 \u2014 Preferred stock, $ 0.0001 par value; 100 shares authorized, unissued \u2014 \u2014 Treasury stock at cost, 151 and 132 shares as of June\u00a030, 2022 and December\u00a031, 2021, respectively ( 14,130 ) ( 11,880 ) Additional paid-in-capital 17,758 17,208 Retained earnings 16,703 16,535 Accumulated other comprehensive income (loss) ( 564 ) ( 136 ) Total equity 19,767 21,727 Total liabilities and equity $ 77,810 $ 75,803 The accompanying notes are an integral part of these condensed consolidated financial statements.",
+      "score": 0.9726
+    },
+    {
+      "sent": "NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS (continued) (Unaudited) FAIR VALUE OF DERIVATIVE CONTRACTS The fair value of our outstanding derivative instruments as of June\u00a030, 2022 and December\u00a031, 2021 was as follows: Balance Sheet Location June 30, 2022 December 31, 2021 (In millions) Derivative Assets: Foreign currency exchange contracts designated as hedging instruments Other current assets $ 444 $ 205 Foreign currency exchange contracts designated as hedging instruments Other assets (non-current) 167 21 Foreign currency exchange contracts not designated as hedging instruments Other current assets 99 78 Total derivative assets $ 710 $ 304 Derivative Liabilities: Foreign currency exchange contracts designated as hedging instruments Other current liabilities $ 49 $ 27 Foreign currency exchange contracts designated as hedging instruments Other long-term liabilities 1 \u2014 Foreign currency exchange contracts not designated as hedging instruments Other current liabilities 63 103 Total derivative liabilities $ 113 $ 130 MASTER NETTING AGREEMENTS - RIGHTS OF SET-OFF Under master netting agreements with certain counterparties to our foreign currency exchange contracts, subject to applicable requirements, we are allowed to net settle transactions of the same type with a single net amount payable by one party to the other.",
+      "score": 0.9686
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "For those proceedings in which an unfavorable outcome is reasonably possible but not probable, we have disclosed an estimate of the reasonably possible loss or range of losses or we have concluded that an estimate of the reasonably possible loss or range of losses arising directly from the proceeding (i.e., monetary damages or amounts paid in judgment or settlement) are not material.",
+      "score": -0.9505
+    },
+    {
+      "sent": "The Derivative Actions allege claims for breach of fiduciary duty, unjust enrichment, abuse of control, gross mismanagement, waste of corporate assets, and violations of the Securities Exchange Act of 1934, and seek to recover damages on behalf of the Company.",
+      "score": -0.9501
+    },
+    {
+      "sent": "Financial and third-party risks related to our cryptocurrency product offerings, such as inappropriate access to or theft or destruction of cryptocurrency assets held by our custodian, insufficient insurance coverage by the custodian to reimburse us for all such losses, the custodian\u2019s failure to maintain effective controls over the custody and settlement services provided to us, the custodian\u2019s inability to purchase or liquidate cryptocurrency holdings, and defaults on financial or performance obligations by the custodian or other counterparty financial institutions, could significantly harm our business, financial performance and reputation.",
+      "score": -0.9217
+    }
+  ],
+  "forward_snippets": [
+    "We base our estimates on historical experience and various other assumptions which we believe to be reasonable under the circumstances.",
+    "Recent accounting guidance In March 2022, the Financial Accounting Standards Board (\u201cFASB\u201d) issued Accounting Standards Update (\u201cASU\u201d) 2022-02, Troubled Debt Restructurings (\u201cTDRs\u201d) and Vintage Disclosures (Topic 326): Financial Instruments \u2013 Credit Losses .",
+    "This amended guidance will eliminate the accounting designation of a loan modification as a TDR, including eliminating the measurement guidance for TDRs.",
+    "Additionally, this guidance requires entities to disclose gross write-offs by year of origination for financing receivables, such as loans and interest receivable.",
+    "The amended guidance is effective for fiscal years beginning after December 15, 2022 and is required to be applied prospectively, except for the recognition and measurement of TDRs, which can be applied on a modified retrospective basis."
+  ]
+}

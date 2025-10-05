@@ -1,0 +1,606 @@
+{
+  "symbol": "COST",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-05",
+      "time": "Today 09:30AM",
+      "title": "Why Costco Is a Retail Unicorn\n\n\n(Motley Fool)",
+      "link": "/news/184018/why-costco-is-a-retail-unicorn"
+    },
+    {
+      "date": "2025-10-04",
+      "time": "08:17",
+      "title": "Why's Everyone Talking About Costco Stock?\n\n\n(Motley Fool)",
+      "link": "/news/183819/whys-everyone-talking-about-costco-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "MarketBeat Week in Review - 09/29 - 10/03\n\n\n(MarketBeat)",
+      "link": "/news/183811/marketbeat-week-in-review-0929-1003"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "12:31",
+      "title": "'You're A Freaking Genius'A Street Vendor Who Earns $1.5 Million Selling Cleaning Supplies In Just Two Days A Week Wows Dave Ramsey\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/youre-freaking-genius-street-vendor-163110666.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:54AM",
+      "title": "Zacks Market Edge Highlights: FAST, BRK.B and COST\n\n\n(Zacks)",
+      "link": "/news/183040/zacks-market-edge-highlights-fast-brkb-and-cost"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "18:13",
+      "title": "How Costco, Sams Club, and BJs Won Over America\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/185ec89b-b47e-36fc-a448-49c60306cc4c/how-costco%2C-sam%E2%80%99s-club%2C-and.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:09PM",
+      "title": "3 Top Stocks That Aren't the Mag 7\n\n\n(Zacks)",
+      "link": "/news/182714/3-top-stocks-that-arent-the-mag-7"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Costco (COST) is a Top-Ranked Growth Stock: Should You Buy?\n\n\n(Zacks)",
+      "link": "/news/182427/costco-cost-is-a-top-ranked-growth-stock-should-you-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Walmart steps up automation with labour-saving sensors\n\n\n(Financial Times)",
+      "link": "https://finance.yahoo.com/news/walmart-steps-automation-sensors-tracking-130003021.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Why I'm Watching Costco Stock Closely Even if the Market Thinks It's Overvalued\n\n\n(Motley Fool)",
+      "link": "/news/182240/why-im-watching-costco-stock-closely-even-if-the-market-thinks-its-overvalued"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:08AM",
+      "title": "It's Time To Buy Costco (COST), Says Jim Cramer\n\n\n(Insider Monkey)",
+      "link": "/news/181860/its-time-to-buy-costco-cost-says-jim-cramer"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:55AM",
+      "title": "Here's What Analyst Think About Costco Wholesale (COST)\n\n\n(Insider Monkey)",
+      "link": "/news/181849/heres-what-analyst-think-about-costco-wholesale-cost"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:55AM",
+      "title": "UBS Confident in Costco's (COST) Holiday Sales Momentum and Growth\n\n\n(Insider Monkey)",
+      "link": "/news/181856/ubs-confident-in-costcos-cost-holiday-sales-momentum-and-growth"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:30AM",
+      "title": "5 Must-Read Analyst Questions From Costco's Q3 Earnings Call\n\n\n(StockStory)",
+      "link": "/news/181879/5-must-read-analyst-questions-from-costcos-q3-earnings-call"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "15:03",
+      "title": "Amazon Stock Regains Some Ground After Tech Giant Offers New Grocery Line, AI Devices\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/c0a772f8-e585-38d9-9ed3-2af27f1cec5f/amazon-stock-regains-some.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:15AM",
+      "title": "3 Big Takeaways From Costco's Earnings Report Last Week\n\n\n(Motley Fool)",
+      "link": "/news/180977/3-big-takeaways-from-costcos-earnings-report-last-week"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:05AM",
+      "title": "BJ's Wholesale Club Digital Push Lifts Sales and Membership Growth\n\n\n(Zacks)",
+      "link": "/news/181059/bjs-wholesale-club-digital-push-lifts-sales-and-membership-growth"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Prediction: Costco Stock Will Hit $1,000 in 2026\n\n\n(Motley Fool)",
+      "link": "/news/180783/prediction-costco-stock-will-hit-1000-in-2026"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:20AM",
+      "title": "My Honest Take on Costco's Latest Earnings Report\n\n\n(Motley Fool)",
+      "link": "/news/180550/my-honest-take-on-costcos-latest-earnings-report"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:00AM",
+      "title": "How the Warehouse Store Won Retail-and How Sam's Club Is Winning the Warehouse\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/walmart-costco-sams-club-bj-retail-warehouse-stores-d49833f2?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "21:17",
+      "title": "Lightning Round: You want to pull the trigger on Costco, not Sprouts, says Jim Cramer\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=pObeyAbtO04"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:25PM",
+      "title": "3 Surprising Details From Costco's Earnings Release\n\n\n(Motley Fool)",
+      "link": "/news/180371/3-surprising-details-from-costcos-earnings-release"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:05PM",
+      "title": "Why Last Week's Costco Earnings Have Me Excited\n\n\n(Motley Fool)",
+      "link": "/news/180368/why-last-weeks-costco-earnings-have-me-excited"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:17PM",
+      "title": "Stocks end third quarter on high note as Dow clinches record, Big Tech extends gains as AI trade rolls on\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/stocks-end-third-quarter-on-high-note-as-dow-clinches-record-big-tech-extends-gains-as-ai-trade-rolls-on-211744004.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:04PM",
+      "title": "Jim Cramer on Costco: \"It's Time to Start Buying the Best Retailer on Earth\"\n\n\n(Insider Monkey)",
+      "link": "/news/179933/jim-cramer-on-costco-its-time-to-start-buying-the-best-retailer-on-earth"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:15AM",
+      "title": "Why Sprouts Farmers Market Is Gaining Momentum in Grocery Retail\n\n\n(Zacks)",
+      "link": "/news/179599/why-sprouts-farmers-market-is-gaining-momentum-in-grocery-retail"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:46AM",
+      "title": "Costco Earnings Are in -- Here's What's Working for the Company\n\n\n(Motley Fool)",
+      "link": "/news/179218/costco-earnings-are-in-heres-whats-working-for-the-company"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:30AM",
+      "title": "Prediction: Costco Will Be Worth More Than Wall Street Analysts Expect in 10 Years\n\n\n(Motley Fool)",
+      "link": "/news/179104/prediction-costco-will-be-worth-more-than-wall-street-analysts-expect-in-10-years"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15AM",
+      "title": "Why Costco Stock Dropped After Earnings\n\n\n(Motley Fool)",
+      "link": "/news/179098/why-costco-stock-dropped-after-earnings"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:54AM",
+      "title": "Staying put in Vietnam, furniture exporters bet US consumers will absorb tariff blow\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/staying-put-vietnam-furniture-exporters-075405128.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:35AM",
+      "title": "2 Mega-Cap Stocks Worth Your Attention and 1 We Question\n\n\n(StockStory)",
+      "link": "/news/179178/2-mega-cap-stocks-worth-your-attention-and-1-we-question"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "21:42",
+      "title": "Why I'm Thinking About Investing $1,000 in Costco Right Now\n\n\n(Motley Fool)",
+      "link": "/news/179001/why-im-thinking-about-investing-1000-in-costco-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:20PM",
+      "title": "COST Q3 Deep Dive: Member Engagement and New Store Openings Shape Results\n\n\n(StockStory)",
+      "link": "/news/179102/cost-q3-deep-dive-member-engagement-and-new-store-openings-shape-results"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:04PM",
+      "title": "After Posting Another Solid Earnings Beat, Is Costco's Stock Due for a Rally?\n\n\n(Motley Fool)",
+      "link": "/news/178704/after-posting-another-solid-earnings-beat-is-costcos-stock-due-for-a-rally"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:00AM",
+      "title": "Costco's Momentum Continues, But Is the Stock a Buy?\n\n\n(Motley Fool)",
+      "link": "/news/178556/costcos-momentum-continues-but-is-the-stock-a-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:21AM",
+      "title": "Company News for Sep 29, 2025\n\n\n(Zacks)",
+      "link": "/news/178438/company-news-for-sep-29-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:05AM",
+      "title": "Costco Stock's Renewal Rates Are Taking a Hit. Should Investors Be Concerned?\n\n\n(Motley Fool)",
+      "link": "/news/178333/costco-stocks-renewal-rates-are-taking-a-hit-should-investors-be-concerned"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:05AM",
+      "title": "Costco Investors Will Get A \"Special\" Treat For Christmas\n\n\n(MarketBeat)",
+      "link": "/news/178294/costco-investors-will-get-a-special-treat-for-christmas"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Investors Heavily Search Costco Wholesale Corporation (COST): Here is What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/178392/investors-heavily-search-costco-wholesale-corporation-cost-here-is-what-you-need-to-know"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "15:03",
+      "title": "Trick-Or-Treating Is Becoming A Luxury For Households. Halloween Candy Bags Are So Expensive, Many Don't Want To Hand Them Out Anymore\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/trick-treating-becoming-luxury-households-190326387.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "5 Dividend Powerhouses to Buy and Never Sell\n\n\n(Motley Fool)",
+      "link": "/news/177701/5-dividend-powerhouses-to-buy-and-never-sell"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:05AM",
+      "title": "Costco Earnings Look Great. But Is the Stock Overvalued?\n\n\n(Motley Fool)",
+      "link": "/news/177688/costco-earnings-look-great-but-is-the-stock-overvalued"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:20AM",
+      "title": "Could Costco Wholesale Become a Trillion-Dollar Company?\n\n\n(Motley Fool)",
+      "link": "/news/177686/could-costco-wholesale-become-a-trillion-dollar-company"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:30AM",
+      "title": "How penetrated is U.S. club membership?\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/penetrated-u-club-membership-103008280.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:15AM",
+      "title": "5 Things Investors Need to Know About Costco This Week\n\n\n(Motley Fool)",
+      "link": "/news/177668/5-things-investors-need-to-know-about-costco-this-week"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:05AM",
+      "title": "This Washington-Based Company Just Shared Earnings, and Things Are Better Than Expected\n\n\n(Motley Fool)",
+      "link": "/news/177650/this-washington-based-company-just-shared-earnings-and-things-are-better-than-expected"
+    },
+    {
+      "date": "2025-09-27",
+      "time": "13:44",
+      "title": "Meet the Secret Ingredient That Makes American Express and Costco Recession-Resistant Stocks to Buy Even If the S&P Sells Off in 2026.\n\n\n(Motley Fool)",
+      "link": "/news/177581/meet-the-secret-ingredient-that-makes-american-express-and-costco-recession-resistant-stocks-to-buy-even-if-the-sp-sells-off-in-2026"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "17:15",
+      "title": "Podcast: U.S. Stocks Break Three-Day Losing Streak\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/a8362bcc-1da1-3248-98ee-0f0d05bcc8ca/podcast%3A-u.s.-stocks-break.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:50PM",
+      "title": "Review & Preview: Spending Splurge\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/stocks-today-pce-consumer-spending-25ecaadc?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:42PM",
+      "title": "Stock Market Today: Indexes Break Losing Streaks. Why The Surge In Electronic Arts Shares?\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/cbdc7a8a-132d-3ef8-8df9-711d5909e751/stock-market-today%3A-indexes.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15PM",
+      "title": "S&P 500 Gains and Losses Today: Electronic Arts Stock Pops on Buyout Talks; Costco Slips\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/09106a94-3928-3e0b-ae6f-669f96e862b3/s%26p-500-gains-and-losses.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15PM",
+      "title": "These Stocks Moved the Most Today: Eli Lilly, Electronic Arts, Intel, GlobalFoundries, Boeing, AppLovin, Costco, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/527330ab-f922-3d99-a83e-d4d85cfdce8c/these-stocks-moved-the-most.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:10PM",
+      "title": "Costco is among the S&P 500's worst performers today. An analyst still says it's a 'safe place to hide.'\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/costco-is-among-the-s-p-500s-worst-performers-today-an-analyst-still-says-its-a-safe-place-to-hide-6133c441?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00PM",
+      "title": "Tennessee mom of 7 thinks groceries are keeping her broke on a $150K income  but Dave Ramsey disagrees\n\n\n(Moneywise)",
+      "link": "https://finance.yahoo.com/news/tennessee-mom-7-thinks-groceries-200000363.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:49PM",
+      "title": "Stock Market Today: Dow Leads Afternoon Rally; Video Game Maker Soars On Deal News (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/cbdc7a8a-132d-3ef8-8df9-711d5909e751/stock-market-today%3A-dow-leads.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:28PM",
+      "title": "Costco Earnings Beat Expectations. Why the Stock Is Dropping.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/30fe5bcb-93d3-37b8-8fde-ef9a5cce2677/costco-earnings-beat.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:03PM",
+      "title": "Stock Market Today: Dow Surges 375 Points; This Software Name Plunges (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/cbdc7a8a-132d-3ef8-8df9-711d5909e751/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:17PM",
+      "title": "Costco sees more growth for its $31.9 billion real-estate empire and is expanding production of its famous inflation-busting hot dog combo\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/costco-sees-more-growth-31-181751151.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:55PM",
+      "title": "What's Costco's Secret To Staying Profitable In Uncertain Times?\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/whats-costcos-secret-staying-profitable-165548088.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:33PM",
+      "title": "Why Costco Stock Was Heading Lower Today\n\n\n(Motley Fool)",
+      "link": "/news/177176/why-costco-stock-was-heading-lower-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:30PM",
+      "title": "First Amazon conquered retail. Now it's quietly building a $35 billion business that's changing how companies operate.\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/first-amazon-conquered-retail-now-its-quietly-building-a-35-billion-business-thats-changing-how-companies-operate-2a57b3e3?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:55AM",
+      "title": "Costco (COST) Stock Trades Down, Here Is Why\n\n\n(StockStory)",
+      "link": "/news/177091/costco-cost-stock-trades-down-here-is-why"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:12AM",
+      "title": "Costco Stock Slides, Brushing Off Upbeat Q4 Results\n\n\n(Schaeffer's Research)",
+      "link": "/news/177031/costco-stock-slides-brushing-off-upbeat-q4-results"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:56AM",
+      "title": "Stock Market Today: Dow Pops Nearly 200 Points After Inflation Data; Boeing Spikes (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/cbdc7a8a-132d-3ef8-8df9-711d5909e751/stock-market-today%3A-dow-pops.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:55AM",
+      "title": "These Stocks Are Moving the Most Today: Eli Lilly, Intel, Paccar, GlobalFoundries, Boeing, Concentrix, Costco, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/527330ab-f922-3d99-a83e-d4d85cfdce8c/these-stocks-are-moving-the.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:09AM",
+      "title": "Stock Market Today: Dow Rises On Fed Inflation Data; Apple Slides (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/cbdc7a8a-132d-3ef8-8df9-711d5909e751/stock-market-today%3A-dow-rises.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:06AM",
+      "title": "Zacks Investment Ideas feature highlights: Jabil and Costco\n\n\n(Zacks)",
+      "link": "/news/176872/zacks-investment-ideas-feature-highlights-jabil-and-costco"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:24AM",
+      "title": "Costco Q4 Earnings Top Estimates, Comparable Sales Rise 5.7%\n\n\n(Zacks)",
+      "link": "/news/176786/costco-q4-earnings-top-estimates-comparable-sales-rise-57"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:24AM",
+      "title": "Costco Wholesale registers 8% rise in Q4 net sales\n\n\n(Retail Insight Network)",
+      "link": "https://finance.yahoo.com/m/e9fb93ec-b679-3ad7-b77c-0b92ab720fb8/costco-wholesale-registers-8%25.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:47AM",
+      "title": "Fed, Tariff Fears Spell Trouble for Stocks. Why Investors Must Hold Their Nerve.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/fed-tariffs-stock-market-things-to-know-today-dce4715a?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:14AM",
+      "title": "Wayfair falls after Trump tariff announcements and more moving stocks\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-u-s-stocks-point-to-modest-gains-ahead-of-pce-inflation-gauge/card/wayfair-falls-after-trump-tariff-announcements-and-more-moving-stocks-JM375R21wzEulyYVIyX1?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:44AM",
+      "title": "Costco Wholesale Tops Earnings and Sales. Why Investors Arent That Excited.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/30fe5bcb-93d3-37b8-8fde-ef9a5cce2677/costco-wholesale-tops.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:41AM",
+      "title": "These Stocks Are Moving the Most Today: Eli Lilly, Wayfair, Intel, Oracle, Concentrix, Costco, and More\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/stock-movers-2610223c?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:51AM",
+      "title": "Stocks to Watch Friday: Intel, Williams-Sonoma, Daimler Truck, Costco\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/f183844e-dca7-3411-a693-515ef03e9dd5/stocks-to-watch-friday%3A.html"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "23:01",
+      "title": "Costco Wholesale Corp (COST) Q4 2025 Earnings Call Highlights: Strong Sales Growth and ...\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/costco-wholesale-corp-cost-q4-030106735.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:43PM",
+      "title": "Why Costco Wholesale Corporation (COST) Offer Stability in Volatile Markets for Retail Dividend Stocks\n\n\n(Insider Monkey)",
+      "link": "/news/176371/why-costco-wholesale-corporation-cost-offer-stability-in-volatile-markets-for-retail-dividend-stocks"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:43PM",
+      "title": "Costco, Sam's Club and BJ's are opening more stores and attracting younger shoppers\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/shorts/ulHpvDGrNbE"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:43PM",
+      "title": "Costco beats earnings, revenue estimates\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=wj2PWsYqp_o"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:34PM",
+      "title": "Costco Says Giving Members an Extra Hour to Shop Is Paying Off\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/3a0eaf37-b85a-307d-b380-f9cb4f46893e/costco-says-giving-members-an.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:20PM",
+      "title": "Market Indexes Stay Lower 2nd Straight Day, PCE On Deck\n\n\n(Zacks)",
+      "link": "/news/176362/market-indexes-stay-lower-2nd-straight-day-pce-on-deck"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00PM",
+      "title": "Costco (COST) Reports Q4 Earnings: What Key Metrics Have to Say\n\n\n(Zacks)",
+      "link": "/news/176336/costco-cost-reports-q4-earnings-what-key-metrics-have-to-say"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:36PM",
+      "title": "Costco Earnings Beat Estimates on Dependable Consumer Demand\n\n\n(Transport Topics)",
+      "link": "https://www.ttnews.com/articles/costco-earnings-q4-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:25PM",
+      "title": "Costco (COST) Surpasses Q4 Earnings Estimates\n\n\n(Zacks)",
+      "link": "/news/176269/costco-cost-surpasses-q4-earnings-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:15PM",
+      "title": "Costco earnings beat estimates as consumers seek out value\n\n\n(Quartz)",
+      "link": "https://finance.yahoo.com/m/fc272dc1-41b3-3879-8150-c3bab6108c9e/costco-earnings-beat.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:15PM",
+      "title": "Costco earnings beat estimates, showing consumers are prioritizing value\n\n\n(Quartz)",
+      "link": "https://qz.com/costco-earnings-fourth-quarter-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:04PM",
+      "title": "Costco beats  Q4 profit, revenue on steady customer traffic\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/costco-beats-q4-profit-revenue-210406940.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:44PM",
+      "title": "Stocks to Watch Recap: Tesla, Oracle, Intel, Costco\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/ec054959-af21-36bb-a97f-86bfed33a7b8/stocks-to-watch-recap%3A-tesla%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:39PM",
+      "title": "Costco Sales Rise but Same-Store Growth Misses Estimates\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/retail/costco-sales-rise-but-same-store-growth-misses-estimates-25c6c931?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:36PM",
+      "title": "Costco tops Q4 earnings estimates while growing US sales\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/costco-tops-q4-earnings-estimates-203634725.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:35PM",
+      "title": "Costco's (NASDAQ:COST) Q3 Earnings Results: Revenue In Line With Expectations\n\n\n(StockStory)",
+      "link": "/news/176224/costcos-nasdaq-cost-q3-earnings-results-revenue-in-line-with-expectations"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:30PM",
+      "title": "These Stocks Moved the Most Today: Intel, Oracle, CarMax, IBM, Lithium Americas, Jabil, Freeport, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/917e6349-6c9b-324b-9fdb-4fd98e7960cc/these-stocks-moved-the-most.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:30PM",
+      "title": "Costco shares muted after mixed earnings results\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/costco-shares-muted-after-mixed-earnings-results-2ca67110?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:21PM",
+      "title": "Costco: Fiscal Q4 Earnings Snapshot\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/costco-fiscal-q4-earnings-snapshot-202140812.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:18PM",
+      "title": "Costco tops quarterly estimates on strong demand for cheaper essentials\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/costco-beats-quarterly-revenue-estimates-201838877.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15PM",
+      "title": "Costco Wholesale Corporation Reports Fourth Quarter and Fiscal Year 2025 Operating Results\n\n\n(GlobeNewswire)",
+      "link": "/news/176198/costco-wholesale-corporation-reports-fourth-quarter-and-fiscal-year-2025-operating-results"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00PM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq slide for 3rd day as Wall Street slump continues\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-slide-for-3rd-day-as-wall-street-slump-continues-200014895.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:08PM",
+      "title": "6These Stocks Are Moving the Most Today: Intel, Oracle, CarMax, IBM, Lithium Americas, Jabil, Freeport, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/917e6349-6c9b-324b-9fdb-4fd98e7960cc/6these-stocks-are-moving-the.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:47PM",
+      "title": "3 Things to Know About Costco Wholesale Stock Before You Buy\n\n\n(Motley Fool)",
+      "link": "/news/176114/3-things-to-know-about-costco-wholesale-stock-before-you-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:09PM",
+      "title": "Stocks to Watch Thursday: Tesla, Oracle, Intel, IBM\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/ec054959-af21-36bb-a97f-86bfed33a7b8/stocks-to-watch-thursday%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:02AM",
+      "title": "Weekly Jobless Claims Less Than Expected\n\n\n(Zacks)",
+      "link": "/news/175936/weekly-jobless-claims-less-than-expected"
+    }
+  ]
+}

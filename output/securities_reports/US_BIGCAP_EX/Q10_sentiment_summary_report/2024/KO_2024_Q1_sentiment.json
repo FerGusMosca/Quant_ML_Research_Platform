@@ -1,0 +1,47 @@
+{
+  "symbol": "KO",
+  "year": 2024,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2257,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.074
+  },
+  "top_positive": [
+    {
+      "sent": "Price, product and geographic mix was impacted by a variety of factors and events including, but not limited to, the following: \u2022 Europe, Middle East and Africa \u2014 favorable pricing initiatives, including inflationary pricing primarily in Nigeria, T\u00fcrkiye and Zimbabwe, and favorable geographic mix, partially offset by unfavorable category mix; \u2022 Latin America \u2014 favorable pricing initiatives, including inflationary pricing in Argentina; \u2022 North America \u2014 favorable pricing initiatives and favorable category mix, partially offset by unfavorable channel mix; \u2022 Asia Pacific \u2014 favorable geographic mix and favorable pricing initiatives; \u2022 Global Ventures \u2014 unfavorable product mix, partially offset by favorable pricing initiatives; and \u2022 Bottling Investments \u2014 favorable pricing initiatives across most markets and favorable geographic mix.",
+      "score": 0.993
+    },
+    {
+      "sent": "NOTE\u00a04: INVESTMENTS Equity Securities The carrying values of our equity securities were included in the following line items in our consolidated balance sheets (in millions): Fair Value with Changes Recognized in Income Measurement Alternative \u2014 No Readily Determinable Fair Value September 27, 2024 Marketable securities $ 413 $ \u2014 Other investments 2 42 Other noncurrent assets 1,679 \u2014 Total equity securities $ 2,094 $ 42 December 31, 2023 Marketable securities $ 345 $ \u2014 Other investments 76 42 Other noncurrent assets 1,585 \u2014 Total equity securities $ 2,006 $ 42 9 The calculation of net unrealized gains and losses recognized during the period related to equity securities still held at the end of the period is as follows (in millions): Three Months Ended September 27, 2024 September 29, 2023 Net gains (losses) recognized during the period related to equity securities $ 116 $ ( 61 ) Less: Net gains (losses) recognized during the period related to equity securities sold during the period 18 9 Net unrealized gains (losses) recognized during the period related to equity securities still held at the end of the period $ 98 $ ( 70 ) Nine Months Ended September 27, 2024 September 29, 2023 Net gains (losses) recognized during the period related to equity securities $ 351 $ 194 Less: Net gains (losses) recognized during the period related to equity securities sold during the period 85 34 Net unrealized gains (losses) recognized during the \n\u00a027, 2024 was $ 8,130 million.",
+      "score": 0.9921
+    },
+    {
+      "sent": "NOTE\u00a04: INVESTMENTS Equity Securities The carrying values of our equity securities were included in the following line items in our consolidated balance sheets (in millions): Fair Value with Changes Recognized in Income Measurement Alternative \u2014 No Readily Determinable Fair Value September 27, 2024 Marketable securities $ 413 $ \u2014 Other investments 2 42 Other noncurrent assets 1,679 \u2014 Total equity securities $ 2,094 $ 42 December 31, 2023 Marketable securities $ 345 $ \u2014 Other investments 76 42 Other noncurrent assets 1,585 \u2014 Total equity securities $ 2,006 $ 42 9 The calculation of net unrealized gains and losses recognized during the period related to equity securities still held at the end of the period is as follows (in millions): Three Months Ended September 27, 2024 September 29, 2023 Net gains (losses) recognized during the period related to equity securities $ 116 $ ( 61 ) Less: Net gains (losses) recognized during the period related to equity securities sold during the period 18 9 Net unrealized gains (losses) recognized during the period related to equity securities s\npenses.",
+      "score": 0.9873
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The following tables provide a summary of cash, cash equivalents, restricted cash and restricted cash equivalents that constitute the total amounts shown in our consolidated statements of cash flows (in millions): September 27, 2024 December 31, 2023 Cash and cash equivalents $ 13,938 $ 9,366 Restricted cash and restricted cash equivalents 223 326 Cash, cash equivalents, restricted cash and restricted cash equivalents $ 14,161 $ 9,692 6 September 29, 2023 December 31, 2022 Cash and cash equivalents $ 11,883 $ 9,519 Restricted cash and restricted cash equivalents 327 306 Cash, cash equivalents, restricted cash and restricted cash equivalents $ 12,210 $ 9,825 Recently Issued Accounting Guidance In November 2023, the Financial Accounting Standards Board (\u201cFASB\u201d) issued Accounting Standards Update (\u201cASU\u201d) 2023-07, Segment Reporting (Topic 280): Improvements to Reportable Segment Disclosures , which expands annual and interim disclosure requirements for reportable segments, primarily through enhanced disclosures about significant segment expenses.",
+      "score": -0.9612
+    },
+    {
+      "sent": "In general, we are self-insured for large portions of many different types of claims; however, we do use commercial insurance above our self-insured retentions to reduce the Company\u2019s risk of catastrophic loss.",
+      "score": -0.765
+    },
+    {
+      "sent": "Loans, Notes Payable and Long-Term Debt During the nine months ended September\u00a027, 2024, the Company had issuances of debt of $11,298 million, which consisted of $3,129\u00a0million of issuances of commercial paper and short-term debt with maturities greater than 90 days and long-term debt issuances of $8,169 million, net of related discounts and issuance costs.",
+      "score": -0.7579
+    }
+  ],
+  "forward_snippets": [
+    "All statements that address operating performance, events or developments that we expect or anticipate will occur in the future\u00a0\u2014 including statements relating to volume growth, share of sales and net income per share growth, and statements expressing general views about future operating results\u00a0\u2014 are forward-looking statements.",
+    "The following tables provide a summary of cash, cash equivalents, restricted cash and restricted cash equivalents that constitute the total amounts shown in our consolidated statements of cash flows (in millions): September 27, 2024 December 31, 2023 Cash and cash equivalents $ 13,938 $ 9,366 Restricted cash and restricted cash equivalents 223 326 Cash, cash equivalents, restricted cash and restricted cash equivalents $ 14,161 $ 9,692 6 September 29, 2023 December 31, 2022 Cash and cash equivalents $ 11,883 $ 9,519 Restricted cash and restricted cash equivalents 327 306 Cash, cash equivalents, restricted cash and restricted cash equivalents $ 12,210 $ 9,825 Recently Issued Accounting Guidance In November 2023, the Financial Accounting Standards Board (\u201cFASB\u201d) issued Accounting Standards Update (\u201cASU\u201d) 2023-07, Segment Reporting (Topic 280): Improvements to Reportable Segment Disclosures , which expands annual and interim disclosure requirements for reportable segments, primarily through enhanced disclosures about significant segment expenses.",
+    "The Company is currently evaluating the impact that ASU 2023-09 will have on our consolidated financial statements and whether we will apply the standard prospectively or retrospectively.",
+    "NOTE\u00a04: INVESTMENTS Equity Securities The carrying values of our equity securities were included in the following line items in our consolidated balance sheets (in millions): Fair Value with Changes Recognized in Income Measurement Alternative \u2014 No Readily Determinable Fair Value September 2\nGuidance In November 2023, the Financial Accounting Standards Board (\u201cFASB\u201d) issued Accounting Standards Update (\u201cASU\u201d) 2023-07, Segment Reporting (Topic 280): Improvements to Reportable Segment Disclosures , which expands annual and interim disclosure requirements for reportable segments, primarily through enhanced disclosures about significant segment expenses.",
+    "The Company is currently evaluating the impact that ASU 2023-09 will have on our consolidated financial statements and whether we will apply the standard prospectively or retrospectively."
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "symbol": "AMD",
+  "year": 2024,
+  "period": "Y2024",
+  "competition_summary": [
+    {
+      "competitor": "Intel Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Intel",
+      "mentions": 7,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "NVIDIA Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "CPU",
+      "mentions": 2,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "GPU",
+      "mentions": 2,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "DPU",
+      "mentions": 2,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "FPGA",
+      "mentions": 3,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Adaptive SoC",
+      "mentions": 2,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Lattice Semiconductor Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Microsemi Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Microchip",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "ASSP",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Broadcom Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Marvell Technology Group, Ltd.",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Analog Devices",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Texas Instruments Incorporated",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "NXP Semiconductors N.V.",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "ASIC",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "DSP",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "SmartNICs",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "IP",
+      "mentions": 3,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Manufacturing Arrangements and",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Assembly",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Taiwan Semiconductor Manufacturing Company Limited",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "TSMC",
+      "mentions": 2,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "HPC",
+      "mentions": 2,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "WSA",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "GLOBALFOUNDRIES Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "United Microelectronics Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Samsung Electronics Co., Ltd.",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "ATMP",
+      "mentions": 5,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Tongfu Microelectronics Co., Ltd.",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Siliconware Precision Industries Ltd.",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "SPIL",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "King Yuan Electronics Company",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "KYEC",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Intellectual Property",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "AMD",
+      "mentions": 4,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Company",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "Employee Voice",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    },
+    {
+      "competitor": "AMDer Survey",
+      "mentions": 1,
+      "context": "Competition The markets in which our products are sold are highly competitive and delivering the latest and best products to market on a timely basis is critical to achieving revenue growth. We believe that the main factors that determine our product competitiveness are total cost of ownership, timely product introductions, product quality, product features and capabilities (including accelerations for key workloads such as AI, energy efficiency (including power consumption and battery life, giv"
+    }
+  ]
+}

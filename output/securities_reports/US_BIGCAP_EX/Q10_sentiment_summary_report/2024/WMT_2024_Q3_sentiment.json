@@ -1,0 +1,47 @@
+{
+  "symbol": "WMT",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.3093,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.089
+  },
+  "top_positive": [
+    {
+      "sent": "The following table provides, on a settlement date basis, share repurchase information for the three months ended April\u00a030, 2024 and 2023: Three Months Ended April 30, (Amounts in millions, except per share data) 2024 2023 Total number of shares repurchased 18.0 14.3 Average price paid per share $ 59.05 $ 47.82 Total amount paid for share repurchases $ 1,059 $ 686 Material Cash Requirements Material cash requirements from operating activities primarily consist of inventory purchases, employee related costs, taxes, interest and other general operating expenses, which we expect to be primarily satisfied by our cash from operations.",
+      "score": 0.9337
+    },
+    {
+      "sent": "The following table provides, on a settlement date basis, share repurchase information for the three months ended April\u00a030, 2024 and 2023: Three Months Ended April 30, (Amounts in millions, except per share data) 2024 2023 Total number of shares repurchased 18.0 14.3 Average price paid per share $ 59.05 $ 47.82 Total amount paid for share repurchases $ 1,059 $ 686 Material Cash Requirements Material cash requirements from operating activities primarily consist of inventory purchases, employee related costs, taxes, interest and other general operating expenses, which we expect to be primarily satisfied by our cash from operations.",
+      "score": 0.9337
+    },
+    {
+      "sent": "The following table provides, on a settlement date basis, share repurchase information for the three months ended April\u00a030, 2024 and 2023: Three Months Ended April 30, (Amounts in millions, except per share data) 2024 2023 Total number of shares repurchased 18.0 14.3 Average price paid per share $ 59.05 $ 47.82 Total amount paid for share repurchases $ 1,059 $ 686 Material Cash Requirements Material cash requirements from operating activities primarily consist of inventory purchases, employee related costs, taxes, interest and other general operating expenses, which we expect to be primarily satisfied by our cash from operations.",
+      "score": 0.9337
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Long-term Debt The following table provides the changes in our long-term debt for the three months ended April\u00a030, 2024: (Amounts in millions) Long-term debt due within one year Long-term debt Total Balances as of February 1, 2024 $ 3,447 $ 36,132 $ 39,579 Repayments of long-term debt (1,574) \u2014 (1,574) Other (8) (204) (212) Balances as of April 30, 2024 $ 1,865 $ 35,928 $ 37,793 During the three months ended April\u00a030, 2024, our total outstanding long-term debt decreased $1.8\u00a0billion primarily due to maturities of certain long-term debt.",
+      "score": -0.8555
+    },
+    {
+      "sent": "Long-term Debt The following table provides the changes in our long-term debt for the three months ended April\u00a030, 2024: (Amounts in millions) Long-term debt due within one year Long-term debt Total Balances as of February 1, 2024 $ 3,447 $ 36,132 $ 39,579 Repayments of long-term debt (1,574) \u2014 (1,574) Other (8) (204) (212) Balances as of April 30, 2024 $ 1,865 $ 35,928 $ 37,793 During the three months ended April\u00a030, 2024, our total outstanding long-term debt decreased $1.8\u00a0billion primarily due to maturities of certain long-term debt.",
+      "score": -0.8555
+    },
+    {
+      "sent": "Sales related to divested businesses are excluded from comparable sales, and sales related to acquisitions are excluded until such acquisitions have been owned for 12 months.",
+      "score": -0.5859
+    }
+  ],
+  "forward_snippets": [
+    "We intend for this discussion to provide the reader with information that will assist in understanding our financial statements, the changes in certain key items in those financial statements from period to period and the primary factors that accounted for those changes.",
+    "Other Information .\" We expect continued uncertainty in our business and the global economy due to inflationary trends, a challenging macro environment, geopolitical conditions, supply chain disruptions, volatility in employment trends and consumer confidence.",
+    "Other Information .\" We expect continued uncertainty in our business and the global economy due to inflationary trends, a challenging macro environment, geopolitical conditions, supply chain disruptions, volatility in employment trends and consumer confidence.",
+    "Growth Our objective of prioritizing growth means we will focus on serving customers and members however they want to shop through our omni-channel business model.",
+    "as we believe it is a meaningful metric within the context of the U.S."
+  ]
+}

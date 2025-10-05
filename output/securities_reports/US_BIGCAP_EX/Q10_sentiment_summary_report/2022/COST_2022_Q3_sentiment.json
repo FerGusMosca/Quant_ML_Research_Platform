@@ -1,0 +1,47 @@
+{
+  "symbol": "COST",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1495,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.095
+  },
+  "top_positive": [
+    {
+      "sent": "4 Table of Contents COSTCO WHOLESALE CORPORATION CONDENSED CONSOLIDATED BALANCE SHEETS (amounts in millions, except par value and share data) (unaudited) February 13, 2022 August 29, 2021 ASSETS CURRENT ASSETS Cash and cash equivalents $ 11,819 $ 11,258 Short-term investments 477 917 Receivables, net 2,232 1,803 Merchandise inventories 16,485 14,215 Other current assets 1,552 1,312 Total current assets 32,565 29,505 OTHER ASSETS Property and equipment, net 24,052 23,492 Operating lease right-of-use assets 2,840 2,890 Other long-term assets 3,621 3,381 TOTAL ASSETS $ 63,078 $ 59,268 LIABILITIES AND EQUITY CURRENT LIABILITIES Accounts payable $ 17,089 $ 16,278 Accrued salaries and benefits 4,347 4,090 Accrued member rewards 1,798 1,671 Deferred membership fees 2,244 2,042 Current portion of long-term debt \u2014 799 Other current liabilities 6,067 4,561 Total current liabilities 31,545 29,441 OTHER LIABILITIES Long-term debt, excluding current portion 6,658 6,692 Long-term operating lease liabilities 2,588 2,642 Other long-term liabilities 2,311 2,415 TOTAL LIABILITIES 43,102 41,190 COMMITMENTS AND CONTINGENCIES EQUITY Preferred stock $ 0.01 par value; 100,000,000 shares authorized; no shares issued and outstanding \u2014 \u2014 Common stock $ 0.01 par value; 900,000,000 shares authorized; 443,279,000 and 441,825,000 shares issued and outstanding 4 4 Additional paid-in capital 7,186 7,031 Accumulated other comprehensive loss ( 1,246 ) ( 1,137 ) Retained earnings 13,474 11,666 Total Costco stockholders\u2019 equity 19,418 17,564 Noncontrolling interests 558 514 TOTAL EQUITY 19,976 18,078 TOTAL LIABILITIES AND EQUITY $ 63,078 $ 59,268 The accompanying notes are an integral part of these condensed consolidated financial statements.",
+      "score": 0.9698
+    },
+    {
+      "sent": "Item\u00a02\u2014Unregistered Sales of Equity Securities and Use of Proceeds The following table sets forth information on our common stock repurchase program activity for the second quarter of 2022 (amounts in millions, except share and per share data): Period Total Number of Shares Purchased Average Price Paid Per Share Total Number of Shares Purchased as Part of Publicly Announced Programs (1) Maximum Dollar Value of Shares that May Yet be Purchased Under the Programs (1) November 21, 2021 \u2014 December 19, 2021 7,000 $ 551.14 7,000 $ 3,211 December 20, 2021 \u2014 January 16, 2022 61,000 540.43 61,000 3,178 January 17, 2022 \u2014 February 13, 2022 91,000 501.58 91,000 3,132 Total second quarter 159,000 $ 518.73 159,000 _______________ (1) Our share repurchase program is conducted under a $4,000 authorization approved by our Board of Directors in April 2019, which expires in April 2023.",
+      "score": 0.9607
+    },
+    {
+      "sent": "7 Table of Contents COSTCO WHOLESALE CORPORATION CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (amounts in millions) (unaudited) 24 Weeks Ended February 13, 20\nnts Note 7\u2014Net Income per Common and Common Equivalent Share The following table shows the amounts used in computing net income per share and the weighted average number of shares of basic and potentially dilutive common shares outstanding (shares in 000s): 12 Weeks Ended 24 Weeks Ended February 13, 2022 February 14, 2021 February 13, 2022 February 14, 2021 Net income attributable to Costco $ 1,299 $ 951 $ 2,623 $ 2,117 Weighted average basic shares 443,623 443,134 443,500 443,043 RSUs 1,293 1,360 1,260 1,397 Weighted average diluted shares 444,916 444,494 444,760 444,440 Note 8\u2014Commitments and Contingencies Legal Proceedings The Company is involved in a number of claims, proceedings and litigations arising from its business and property ownership.",
+      "score": 0.946
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "22 Table of Contents Gross Margin 12 Weeks Ended 24 Weeks Ended February 13, 2022 February 14, 2021 February 13, 2022 February 14, 2021 Net sales $ 50,937 $ 43,888 $ 100,354 $ 86,235 Less merchandise costs 45,517 39,078 89,469 76,536 Gross margin $ 5,420 $ 4,810 $ 10,885 $ 9,699 Gross margin percentage 10.64 % 10.96 % 10.85 % 11.25 % Quarterly Results The gross margin of core merchandise categories, when expressed as a percentage of core merchandise sales (rather than total net sales), decreased 28 basis points.",
+      "score": -0.9081
+    },
+    {
+      "sent": "In March 2019, employees filed a class action against the Company alleging claims under California law for failure to pay overtime, to provide meal and rest periods and itemized wage statements, to timely pay wages due to terminating employees, to pay minimum wages, and for unfair business practices.",
+      "score": -0.8225
+    },
+    {
+      "sent": "In May 2019, an employee filed a class action against the Company alleging claims under California law for failure to pay overtime, to provide itemized wage statements, to timely pay wages due to terminating employees, to pay minimum wages, and for unfair business practices.",
+      "score": -0.8225
+    }
+  ],
+  "forward_snippets": [
+    "In accordance with applicable accounting guidance, the Company establishes an accrual for legal proceedings if and when those matters present loss contingencies that are both probable and reasonably estimable.",
+    "The Company filed an answer to the second amended class action complaint, denying the\nguidance, the Company establishes an accrual for legal proceedings if and when those matters present loss contingencies that are both probable and reasonably estimable.",
+    "18 Table of Contents We believe that the most important driver of our profitability is increasing net sales, particularly comparable sales growth.",
+    "Generating comparable sales growth is foremost a question of making available to our members the right merchandise at the right prices, a skill that we believe we have repeatedly demonstrated over the long-term.",
+    "While we cannot control or reliably predict general economic health or changes in competition, we believe that we have been successful historically in adapting our business to these changes, such as through adjustments to our pricing and merchandise mix, including increasing the penetration of our private-label items and through online offerings."
+  ]
+}

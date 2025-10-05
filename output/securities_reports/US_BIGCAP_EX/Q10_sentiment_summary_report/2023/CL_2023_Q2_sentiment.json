@@ -1,0 +1,47 @@
+{
+  "symbol": "CL",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.2846,
+    "outlook_sentiment": 0.2374,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.081
+  },
+  "top_positive": [
+    {
+      "sent": "The following tables provide a quantitative reconciliation of Net sales growth to organic sales growth for the three and six months ended June\u00a030, 2023: Three Months Ended June 30, 2023 Net Sales Growth (GAAP) Foreign Exchange Impact Acquisitions and Divestments Impact Organic Sales Growth (Non-GAAP) Oral, Personal and Home Care North America 1.5% (0.5)% \u2014% 2.0% Latin America 15.5% (0.5)% \u2014% 16.0% Europe 6.0% 0.5% \u2014% 5.5% Asia Pacific (4.5)% (5.5)% \u2014% 1.0% Africa/Eurasia 4.5% (16.0)% \u2014% 20.5% Total Oral, Personal and Home Care 5.5% (2.0)% \u2014% 7.5% Pet Nutrition 16.0% (1.5)% 7.0% 10.5% Total Company 7.5% (2.0)% 1.5% 8.0% 52 COLGATE-PALMOLIVE COMPANY Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Dollars in Millions Except Per Share Amounts) Six Months Ended June 30, 2023 Net Sales Growth (GAAP) Foreign Exchange Impact Acquisitions and Divestments Impact Organic Sales Growth (Non-GAAP) Oral, Personal and Home Care North America 2.5% (0.5)% \u2014% 3.0% Latin America 14.0% (1.0)% \u2014% 15.0% Europe 2.5% (2.5)% \u2014% 5.0% Asia Pacific (1.5)% (6.5)% \u2014% 5.0% Africa/Eurasia 6.5% (12.0)% \u2014% 18.5% Total Oral, Personal and Home Care 5.5% (2.5)% \u2014% 8.0% Pet Nutrition 19.0% (1.5)% 8.5% 12.0% Total Company 8.0% (2.5)% 1.5% 9.0% 53 COLGATE-PALMOLIVE COMPANY Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Dollars in Millions Except Per Share Amounts) Liquidity and Capital Resources The Company expects cash flow from operations and debt issuances will be sufficient to meet foreseeable business operating and recurring cash needs (including for debt service, dividends, capital expenditures, share repurchases and acquisitions).",
+      "score": 0.9799
+    },
+    {
+      "sent": "Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time.",
+      "score": 0.9524
+    },
+    {
+      "sent": "Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time.",
+      "score": 0.9524
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "2022-02, \u201cFinancial Instruments-Credit Losses (Topic 326): Troubled Debt Restructurings and Vintage Disclosures.\u201d This ASU eliminates the accounting guidance for troubled debt restructurings by creditors while enhancing disclosure requirements for certain loan refinancing and restructurings by creditors made to borrowers experiencing financial difficulty.",
+      "score": -0.9186
+    },
+    {
+      "sent": "2022-02, \u201cFinancial Instruments-Credit Losses (Topic 326): Troubled Debt Restructurings and Vintage Disclosures.\u201d This ASU eliminates the accounting guidance for troubled debt restructurings by creditors while enhancing disclosure requirements for certain loan refinancing and restructurings by creditors made to borrowers experiencing financial difficulty.",
+      "score": -0.9186
+    },
+    {
+      "sent": "2022-02, \u201cFinancial Instruments-Credit Losses (Topic 326): Troubled Debt Restructurings and Vintage Disclosures.\u201d This ASU eliminates the accounting guidance for troubled debt restructurings by creditors while enhancing disclosure requirements for certain loan refinancing and restructurings by creditors made to borrowers experiencing financial difficulty.",
+      "score": -0.9186
+    }
+  ],
+  "forward_snippets": [
+    "The guidance is effective for the Company beginning on January 1, 2024 and is not expected to have a material impact on the Company\u2019s Consolidated Financial Statements.",
+    "The guidance was effective for the Company beginning on January 1, 2023, except for the roll-forward information, which is effective beginning on January 1, 2024.",
+    "This guidance has not had and is not expected to have a material impact on the Company\u2019s Consolidated Financial Statements.",
+    "2022-02, \u201cFinancial Instruments-Credit Losses (Topic 326): Troubled Debt Restructurings and Vintage Disclosures.\u201d This ASU eliminates the accounting guidance for troubled debt restructurings by creditors while enhancing disclosure requirements for certain loan refinancing and restructurings by creditors made to borrowers experiencing financial difficulty.",
+    "This guidance was effective for the Company beginning on January 1, 2023 and did not have a material impact on the Company\u2019s Consolidated Financial Statements."
+  ]
+}

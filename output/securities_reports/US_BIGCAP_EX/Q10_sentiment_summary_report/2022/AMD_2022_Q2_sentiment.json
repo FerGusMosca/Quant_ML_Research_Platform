@@ -1,0 +1,47 @@
+{
+  "symbol": "AMD",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.116,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.397
+  },
+  "top_positive": [
+    {
+      "sent": "23 NOTE 10 \u2013 Earnings Per Share The following table sets forth the components of basic and diluted earnings per share: Three Months Ended Six Months Ended June 25, 2022 June 26, 2021 June 25, 2022 June 26, 2021 (In\u00a0millions,\u00a0except\u00a0per\u00a0share\u00a0amounts) Numerator Net income for basic earnings per share $ 447 $ 710 $ 1,233 $ 1,265 Denominator Basic weighted average shares 1,618 1,216 1,506 1,214 Potentially dilutive shares from employee equity plans and warrants 14 16 15 17 Diluted weighted average shares 1,632 1,232 1,521 1,231 Earnings per share: Basic $ 0.28 $ 0.58 $ 0.82 $ 1.04 Diluted $ 0.27 $ 0.58 $ 0.81 $ 1.03 NOTE 11 \u2013 Common Stock and Employee Equity Plans Common Stock Shares of common stock outstanding were as follows: Three Months Ended Six Months Ended June 25, 2022 June 26, 2021 June 25, 2022 June 26, 2021 (In millions) Balance, beginning of period 1,620 1,215 1,207 1,211 Common stock issued for the acquisition of Xilinx \u2014 \u2014 429 \u2014 Common stock issued under employee equity plans 3 1 3 2 Common stock repurchases for tax withholding on equity awards ( 1 ) \u2014 ( 1 ) \u2014 Issuance of common stock to settle convertible debt \u2014 \u2014 \u2014 3 Repurchases\nguidance for fair value measurements requires that assets and liabilities carried at fair value be classified and disclosed in one of the following categories: Level 1 \u2014 Quoted (unadjusted) prices in active markets for identical assets or liabilities.",
+      "score": 0.9837
+    },
+    {
+      "sent": "23 NOTE 10 \u2013 Earnings Per Share The following table sets forth the components of basic and diluted earnings per share: Three Months Ended Six Months Ended June 25, 2022 June 26, 2021 June 25, 2022 June 26, 2021 (In\u00a0millions,\u00a0except\u00a0per\u00a0share\u00a0amounts) Numerator Net income for basic earnings per share $ 447 $ 710 $ 1,233 $ 1,265 Denominator Basic weighted average shares 1,618 1,216 1,506 1,214 Potentially dilutive shares from employee equity plans and warrants 14 16 15 17 Diluted weighted average shares 1,632 1,232 1,521 1,231 Earnings per share: Basic $ 0.28 $ 0.58 $ 0.82 $ 1.04 Diluted $ 0.27 $ 0.58 $ 0.81 $ 1.03 NOTE 11 \u2013 Common Stock and Employee Equity Plans Common Stock Shares of common stock outstanding were as follows: Three Months Ended Six Months Ended June 25, 2022 June 26, 2021 June 25, 2022 June 26, 2021 (In millions) Balance, beginning of period 1,620 1,215 1,207 1,211 Common stock issued for the acquisition of Xilinx \u2014 \u2014 429 \u2014 Common stock issued under employee equity plans 3 1 3 2 Common stock repurchases for tax withholding on equity awards ( 1 ) \u2014 ( 1 ) \u2014 Issuance of common stock to settle convertible debt \u2014 \u2014 \u2014 3 Repurchases of common stock ( 10 ) ( 3 ) ( 26 ) ( 3 ) Balance, end of period 1,612 1,213 1,612 1,213 Stock Repurchase Program In May 2021, the Company\u2019s Board of Directors approved a stock repurchase program of up to $ 4 billion of the Company\u2019s common stock (Existing Repurchase Program).",
+      "score": 0.9723
+    },
+    {
+      "sent": "The following table provides information relating to our repurchase of common stock for the three months ended June 25, 2022: Total Number of Shares Repurchased Average Price Paid per Share Total Number of Shares Repurchased as Part of Publicly Announced Program Maximum Dollar Value of Shares That May Yet be Purchased Under the Program (In millions, except shares and per share data) March 27, 2022 - April 23, 2022 \u2014 $ \u2014 \u2014 $ 8,327 April 24, 2022 - May 21, 2022 5,241,763 $ 91.47 5,241,763 $ 7,848 May 22, 2022 - June 25, 2022 4,918,137 $ 89.64 4,918,137 $ 7,407 Total 10,159,900 Equity Award Share Withholding During the three months ended June 25, 2022, we paid $31 million in employee withholding taxes due upon the vesting of net settled equity awards.",
+      "score": 0.9678
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "We cannot assure you that, despite our testing procedures, errors will not be found in new products or releases after commencement of commercial shipments in the future, which could result in loss of or delay in market acceptance of our products, material recall and replacement costs, loss of revenue, writing down the inventory of defective products, the diversion of the attention of our engineering personnel from product development efforts, defending against litigation related to defective products or related liabilities, including property damage, personal injury, damage to our reputation in the industry and loss of data or intangible property, and could adversely affect our relationships with our customers.",
+      "score": -0.9777
+    },
+    {
+      "sent": "If any significant distributor or AIB partner or a substantial number o\nse of third-party information technology providers or business partners, may also be vulnerable to damage or disruption caused by circumstances beyond our control including catastrophic events, power anomalies or outages, natural disasters, viruses or malware, cyber-attacks, data breaches and computer system or network failures, exposing us to significant cost, reputational harm and disruption or damage to our business.",
+      "score": -0.9661
+    },
+    {
+      "sent": "Moreover, if any of our third-party manufacturers (or their subcontractors) suffer any damage to facilities, lose benefits under material agreements, experience power outages, lack sufficient capacity to manufacture our products, encounter financial difficulties, are unable to secure necessary raw materials from their suppliers, suffer any other disruption or reduction in efficiency, or experience uncertain social economic or political circumstances or conditions, we may encounter supply delays or disruptions.",
+      "score": -0.9313
+    }
+  ],
+  "forward_snippets": [
+    "The guidance for fair value measurements requires that assets and liabilities carried at fair value be classified and disclosed in one of the following categories: Level 1 \u2014 Quoted (unadjusted) prices in active markets for identical assets or liabilities.",
+    "23 NOTE 10 \u2013 Earnings Per Share The following table sets forth the components of basic and diluted earnings per share: Three Months Ended Six Months Ended June 25, 2022 June 26, 2021 June 25, 2022 June 26, 2021 (In\u00a0millions,\u00a0except\u00a0per\u00a0share\u00a0amounts) Numerator Net income for basic earnings per share $ 447 $ 710 $ 1,233 $ 1,265 Denominator Basic weighted average shares 1,618 1,216 1,506 1,214 Potentially dilutive shares from employee equity plans and warrants 14 16 15 17 Diluted weighted average shares 1,632 1,232 1,521 1,231 Earnings per share: Basic $ 0.28 $ 0.58 $ 0.82 $ 1.04 Diluted $ 0.27 $ 0.58 $ 0.81 $ 1.03 NOTE 11 \u2013 Common Stock and Employee Equity Plans Common Stock Shares of common stock outstanding were as follows: Three Months Ended Six Months Ended June 25, 2022 June 26, 2021 June 25, 2022 June 26, 2021 (In millions) Balance, beginning of period 1,620 1,215 1,207 1,211 Common stock issued for the acquisition of Xilinx \u2014 \u2014 429 \u2014 Common stock issued under employee equity plans 3 1 3 2 Common stock repurchases for tax withholding on equity awards ( 1 ) \u2014 ( 1 ) \u2014 Issuance of common stock to settle convertible debt \u2014 \u2014 \u2014 3 Repurchases\nguidance for fair value measurements requires that assets and liabilities carried at fair value be classified and disclosed in one of the following categories: Level 1 \u2014 Quoted (unadjusted) prices in active markets for identical assets or liabilities.",
+    "In this section, we will describe the general financial condition and the results of operations of Advanced Micro Devices, Inc.",
+    "We continue to monitor our operations a\nook personal computers; \u2022 discrete GPUs, semi-custom SoC products and development services; and \u2022 embedded microprocessors, GPUs, FPGAs, adaptive SoC products, and Adaptive Compute Acceleration Platform (ACAP) products.",
+    "In this section, we will describe the general financial condition and the results of operations of Advanced Micro Devices, Inc."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "symbol": "AAPL",
+  "year": 2024,
+  "period": "Q2",
+  "competition_summary": [
+    {
+      "competitor": "The California District Court",
+      "mentions": 1,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Store Review Guidelines violate California\u2019s unfair competition law and issued an injunction enjoining the Company from prohibiting developers from including in their apps external links that direct customers to purchasing mechanisms other than Apple in-app purchasing. The injunction applies to apps on the U.S. storefront of the iOS and iPadOS \u00ae Ap"
+    },
+    {
+      "competitor": "Apple",
+      "mentions": 1,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Store Review Guidelines violate California\u2019s unfair competition law and issued an injunction enjoining the Company from prohibiting developers from including in their apps external links that direct customers to purchasing mechanisms other than Apple in-app purchasing. The injunction applies to apps on the U.S. storefront of the iOS and iPadOS \u00ae Ap"
+    },
+    {
+      "competitor": "Company",
+      "mentions": 9,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Store Review Guidelines violate California\u2019s unfair competition law and issued an injunction enjoining the Company from prohibiting developers from including in their apps external links that direct customers to purchasing mechanisms other than Apple in-app purchasing. The injunction applies to apps on the U.S. storefront of the iOS and iPadOS \u00ae Ap"
+    },
+    {
+      "competitor": "the California District Court",
+      "mentions": 2,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Store Review Guidelines violate California\u2019s unfair competition law and issued an injunction enjoining the Company from prohibiting developers from including in their apps external links that direct customers to purchasing mechanisms other than Apple in-app purchasing. The injunction applies to apps on the U.S. storefront of the iOS and iPadOS \u00ae Ap"
+    },
+    {
+      "competitor": "Epic",
+      "mentions": 2,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Store Review Guidelines violate California\u2019s unfair competition law and issued an injunction enjoining the Company from prohibiting developers from including in their apps external links that direct customers to purchasing mechanisms other than Apple in-app purchasing. The injunction applies to apps on the U.S. storefront of the iOS and iPadOS \u00ae Ap"
+    },
+    {
+      "competitor": "Legal Proceedings",
+      "mentions": 1,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Store Review Guidelines violate California\u2019s unfair competition law and issued an injunction enjoining the Company from prohibiting developers from including in their apps external links that direct customers to purchasing mechanisms other than Apple in-app purchasing. The injunction applies to apps on the U.S. storefront of the iOS and iPadOS \u00ae Ap"
+    },
+    {
+      "competitor": "Risk Factors The Company\u2019s",
+      "mentions": 1,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Store Review Guidelines violate California\u2019s unfair competition law and issued an injunction enjoining the Company from prohibiting developers from including in their apps external links that direct customers to purchasing mechanisms other than Apple in-app purchasing. The injunction applies to apps on the U.S. storefront of the iOS and iPadOS \u00ae Ap"
+    }
+  ]
+}

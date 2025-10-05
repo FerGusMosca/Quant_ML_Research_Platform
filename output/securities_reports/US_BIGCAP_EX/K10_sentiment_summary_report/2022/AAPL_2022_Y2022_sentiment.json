@@ -1,0 +1,47 @@
+{
+  "symbol": "AAPL",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.094,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.141
+  },
+  "top_positive": [
+    {
+      "sent": "interest rates affect the interest earned on the Company\u2019s cash, cash equivalents and marketable securities and the fair value of those securities, as well as costs associated with hedging and interest paid on the Company\u2019s debt.",
+      "score": 0.9403
+    },
+    {
+      "sent": "interest rates affect the interest earned on the Company\u2019s cash, cash equivalents and marketable securities and the fair value of those securities, as well as costs associated with hedging and interest paid on the Company\u2019s debt.",
+      "score": 0.9403
+    },
+    {
+      "sent": "Principal competitive factors important to the Company include price, product and service features (including security features), relative price and performance, product and service quality and reliability, design innovation, a strong third-party software and accessories ecosystem, marketing and distribution capability, service and support, and corpora\nItem 7A.",
+      "score": 0.91
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Political events, trade and other international disputes, war, terrorism, natural disasters, public health issues, industrial accidents and other business interruptions can harm or disrupt international commerce and the global economy, and could have a material adverse effect on the Company and its customers, suppliers, contract manufacturers, logistics providers, distributors, cellular network carriers and other channel partners.",
+      "score": -0.9709
+    },
+    {
+      "sent": "The Company\u2019s business can be impacted by political events, trade and other international disputes, war, terrorism, natural disasters, public health issues, industrial accidents and other business interruptions.",
+      "score": -0.9493
+    },
+    {
+      "sent": "Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    }
+  ],
+  "forward_snippets": [
+    "foreign tax credits as a result of regulatory guidance issued by the U.S.",
+    "The Company\u2019s investment policy and strategy are focused on the preservation of capital and supp\nguidance issued by the U.S.",
+    "Those standards require that we plan and perform the audit to obtain reasonable assurance about whether the financial statements are free of material misstatement, whether due to error or fraud.",
+    "We believe that our audits provide a reasonable basis for our opinion.",
+    "Those standards require that we plan and perform the audit to obtain reasonable assurance about whether effective internal control over financial reporting was maintained in all material respects."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "KO",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2181,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.102
+  },
+  "top_positive": [
+    {
+      "sent": "Price, product and geographic mix was impacted by a variety of factors and events including, but not limited to, the following: \u2022 Europe, Middle East and Africa \u2014 favorable channel and package mix and favorable pricing initiatives, including inflationary pricing in Turkey; \u2022 Latin America \u2014 favorable pricing initiatives, including inflationary pricing in Argentina, along with favorable channel and package mix; \u2022 North America \u2014 favorable pricing initiatives, including a benefit resulting from the timing of price increases in the prior year, and favorable channel and product mix; \u2022 Asia Pacific \u2014 unfavorable geographic mix, partially offset by favorable pricing initiatives along with favorable channel and package mix; \u2022 Global Ventures \u2014 unfavorable impact of no longer receiving COVID-related incentives in the current year, partially offset by favorable channel mix, primarily due to the timing of Costa retail store reopenings in the United Kingdom in the prior year; and \u2022 Bottling Investments \u2014 favorable pricing initiatives across most markets, partially offset by unfavorable geographic mix.",
+      "score": 0.9949
+    },
+    {
+      "sent": "NOTE 13: PENSION AND OTHER POSTRETIREMENT BENEFIT PLANS Net periodic benefit cost or income for our pension and other postretirement benefit plans consisted of the following (in millions): Pension Plans Other Postretirement Benefit Plans Three Months Ended July 1, 2022 July 2, 2021 July 1, 2022 July 2, 2021 Service cost $ 22 $ 25 $ 1 $ 3 Interest cost 51 47 5 3 Expected return on plan assets 1 ( 147 ) ( 151 ) ( 4 ) ( 5 ) Amortization of prior service credit \u2014 \u2014 ( 1 ) \u2014 Amortization of net actuarial loss 29 33 \u2014 \u2014 Net periodic benefit cost (income) ( 45 ) ( 46 ) 1 1 Settlement charges 2 \u2014 29 \u2014 \u2014 Total cost (income) $ ( 45 ) $ ( 17 ) $ 1 $ 1 1 The weighted-average expected long-term rates of return on plan assets used in computing 2022 net periodic benefit cost (income) were 7.00 percent for pension plans and 4.00 percent for other postretirement benefit plans.",
+      "score": 0.9789
+    },
+    {
+      "sent": "NOTE 15: FAIR VALUE MEASUREMENTS Recurring Fair Value Measurements The following tables summarize assets and liabilities measured at fair value on a recurring basis (in millions): July 1, 2022 Level\u00a01 Level\u00a02 Level\u00a03 Other 3 Netting Adjustment 4 Fair Value Measurements Assets: Equity securities with readily determinable values 1 $ 1,902 $ 195 $ 17 $ 92 $ \u2014 $ 2,206 Debt securities 1 \u2014 1,775 9 \u2014 \u2014 1,784 Derivatives 2 101 559 \u2014 \u2014 ( 495 ) 165 7 Total assets $ 2,003 $ 2,529 $ 26 $ 92 $ ( 495 ) $ 4,155 Liabilities: Contingent consideration liability $ \u2014 $ \u2014 $ 1,529 5 $ \u2014 $ \u2014 $ 1,529 Derivatives 2 27 1,190 \u2014 \u2014 ( 1,192 ) 6 25 7 Total liabilities $ 27 $ 1,190 $ 1,529 $ \u2014 $ ( 1,192 ) $ 1,554 1 Refer to Note\u00a04 for additional information related to the composition of our equity securities with readily determinable values and debt securities.",
+      "score": 0.978
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "In general, we are self-insured for large portions of many different types of claims; however, we do use commercial insurance above our self-insured retentions to reduce the Company\u2019s risk of catastrophic loss.",
+      "score": -0.765
+    },
+    {
+      "sent": "In general, we are self-insured for large portions of many different types of claims; however, we do use commercial insurance above our self-insured retentions to reduce the Company\u2019s risk of catastrophic loss.",
+      "score": -0.765
+    },
+    {
+      "sent": "These factors are even more difficult to estimate as a result of uncertainties associated with the conflict in Ukraine and the scope, severity and duration of the global COVID-19 pandemic.",
+      "score": -0.7574
+    }
+  ],
+  "forward_snippets": [
+    "All statements that address operating performance, events or developments that we expect or anticipate will occur in the future\u00a0\u2014 including statements relating to volume growth, share of sales and earnings per share growth, and statements expressing general views about future operating results\u00a0\u2014 are forward-looking statements.",
+    "We believe our exposure to concentrations of credit risk is limited due to the diverse geographic areas covered by our operations.",
+    "Management has also identified certain other legal matters where we believe an unfavorable outcome is reasonably possible and/or for which no estimate of possible losses can be made.",
+    "We believe our exposure to concentrations of credit risk is limited due to the diverse geographic areas covered by our operations.",
+    "Management has also identified certain other legal matters where we believe an unfavorable outcome is reasonably possible and/or for which no estimate of possible losses can be made."
+  ]
+}

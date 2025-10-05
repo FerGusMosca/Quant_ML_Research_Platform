@@ -1,0 +1,47 @@
+{
+  "symbol": "MO",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.19,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.184
+  },
+  "top_positive": [
+    {
+      "sent": "The following table provides the fair value of our long-term debt and the change in fair value based on a 1% increase or decrease in market interest rates at March\u00a031, 2023 and December\u00a031, 2022: (in billions) March 31, 2023 December 31, 2022 Fair value $ 22.6 $ 22.9 Decrease in fair value from a 1% increase in market interest rates 1.8 1.7 Increase in fair value from a 1% decrease in market interest rates 2.1 2.0 We expect interest rates on borrowings under the Credit Agreement to be based on the Term Secured Overnight Financing Rate, plus a percentage based on the higher of the ratings of our long-t\nillion of intercompany interest income from non-guarantor subsidiaries.",
+      "score": 0.9925
+    },
+    {
+      "sent": "The following table provides the fair value of our long-term debt and the change in fair value based on a 1% increase or decrease in market interest rates at March\u00a031, 2023 and December\u00a031, 2022: (in billions) March 31, 2023 December 31, 2022 Fair value $ 22.6 $ 22.9 Decrease in fair value from a 1% increase in market interest rates 1.8 1.7 Increase in fair value from a 1% decrease in market interest rates 2.1 2.0 We expect interest rates on borrowings under the Credit Agreement to be based on the Term Secured Overnight Financing Rate, plus a percentage based on the higher of the ratings of our long-term senior unsecured debt from Moody\u2019s and S&P.",
+      "score": 0.9893
+    },
+    {
+      "sent": "The following table provides the fair value of our long-term debt and the change in fair value based on a 1% increase or decrease in market interest rates at March\u00a031, 2023 and December\u00a031, 2022: (in billions) March 31, 2023 December 31, 2022 Fair value $ 22.6 $ 22.9 Decrease in fair value from a 1% increase in market interest rates 1.8 1.7 Increase in fair value from a 1% decrease in market interest rates 2.1 2.0 We expect interest rates on borrowings under the Credit Agreement to be based on the Term Secured Overnight Financing Rate, plus a percentage based on the higher of the ratings of our long-term senior unsecured debt from Moody\u2019s and S&P.",
+      "score": 0.9893
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "(4) Includes as of April 24, 2023, one inactive smoking and health case alleging personal injury and purporting to be brought on behalf of a class of individual plaintiffs and two inactive class action lawsuits alleging that use of the terms \u201cLights\u201d and \u201cUltra Lights\u201d constitute deceptive and unfair trade practices, common law or statutory fraud, unjust enrichment, breach of warranty or violations of RICO.",
+      "score": -0.9517
+    },
+    {
+      "sent": "(4) Includes as of April 24, 2023, one inactive smoking and health case alleging personal injury and purporting to be brought on behalf of a class of individual plaintiffs and two inactive class action lawsuits alleging that use of the terms \u201cLights\u201d and \u201cUltra Lights\u201d constitute deceptive and unfair trade practices, common law or statutory fraud, unjust enrichment, breach of warranty or violations of RICO.",
+      "score": -0.9517
+    },
+    {
+      "sent": "Various types of claims may be raised in these proceedings, including product liability, unfair trade practices, antitrust, income tax liability, contraband shipments, patent infringement, employment matters, claims alleging violation of the Racketeer Influenced and Corrupt Organizations Act (\u201cRICO\u201d), claims for contribution and claims of competitors, shareholders or distributors.",
+      "score": -0.8979
+    }
+  ],
+  "forward_snippets": [
+    "This guidance updates how an entity recognizes and measures contract assets and contract liabilities acquired in a business combination.",
+    "This guidance requires that a buyer in a supplier finance program disclose sufficient qualitative and quantitative information about the program to allow a user of financial statements to understand the program\u2019s nature, activity during the period, changes from period to period and potential magnitude.",
+    "For a description of issued accounting guidance applicable to, but not yet adopted by, us, see Note 12.",
+    "New Accounting Guidance Not Yet Adopted .",
+    "This guidance updates how an entity recognizes and measures contract assets and contract liabilities acquired in a business combination."
+  ]
+}

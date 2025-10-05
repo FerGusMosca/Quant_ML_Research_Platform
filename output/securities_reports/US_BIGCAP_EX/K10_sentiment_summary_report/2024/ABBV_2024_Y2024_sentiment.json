@@ -1,0 +1,47 @@
+{
+  "symbol": "ABBV",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2212,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.172
+  },
+  "top_positive": [
+    {
+      "sent": "The following table presents information as of December\u00a031, 2023 about AbbVie's equity compensation plans under which AbbVie common stock has been authorized for issuance: Plan Category (a) Number of securities to be issued upon exercise of outstanding options, warrants and rights (1) (b) Weighted- average exercise price of outstanding options, warrants and rights (2) (c) Number of securities remaining  available for future issuance under equity compensation  plans (excluding securities reflected in column (a)) (3) Equity compensation plans approved by security holders 18,219,985 $ 102.80 62,004,889 Equity compensation plans not approved by security holders \u2014 \u2014 \u2014 Total 18,219,985 $ 102.80 62,004,889 (1) Includes 12,197 shares issuable under AbbVie's Incentive Stock Program pursuant to awards granted by Abbott and adjusted into AbbVie awards in connection with AbbVie's separation from Abbott.",
+      "score": 0.9875
+    },
+    {
+      "sent": "AbbVie intends to execute its strategy and advance its mission in a number of ways, including: (i) maximizing the benefits of a diversified revenue base with multiple long-term growth drivers; (ii)\u00a0leveraging AbbVie's commercial strength and international infrastructure across therapeutic areas and ensuring strong commercial execution of new product launches; (iii)\u00a0continuing to invest in and expand its pipeline in support of opportunities in immunology, oncology, aesthetics, neuroscience and eye care as well as continued investment in key on-market products; (iv)\u00a0generating substantial operating cash flows to support investment in innovative research and development, and return cash to shareholders via a strong and growing dividend while also continuing to repay debt.",
+      "score": 0.986
+    },
+    {
+      "sent": "The following table presents information as of December\u00a031, 2023 about AbbVie's equity compensation plans under which AbbVie common stock has been authorized for issuance: Plan Category (a) Number of securities to be issued upon exercise of outstanding options, warrants and rights (1) (b) Weighted- average exercise price of outstanding options, warrants and rights (2) (c) Number of securities remaining  available for future issuance under equity compensation  plans (excluding securities reflected in column (a)) (\nbe independent with respect to the Company in accordance with the U.S.",
+      "score": 0.9538
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Problems may arise during manufacturing for a variety of reasons, including equipment malfunction, failure to follow specific protocols and procedures, problems with raw materials, delays related to the construction of new facilities or the expansion of existing facilities, including those intended to support future demand for AbbVie's products, changes in manufacturing production sites and limits to manufacturing capacity due to regulatory requirements, changes in the types of products produced, physical limitations that could inhibit continuous supply, man-made or natural disasters and environmental factors.",
+      "score": -0.8807
+    },
+    {
+      "sent": "Problems may arise during manufacturing for a variety of reasons, including equipment malfunction, failure to follow specific protocols and procedures, problems with raw materials, delays related to the construction of new facilities or the expansion of existing facilities, including those intended to support future demand for AbbVie's products, changes in manufacturing production sites and limits to manufacturing capacity due to regulatory requirements, changes in the types of products produced, physical limitations that could inhibit continuous supply, man-made or natural disasters and environmental factors.",
+      "score": -0.8807
+    },
+    {
+      "sent": "Problems may arise during manufacturing for a variety of reasons, including equipment malfunction, failure to follow specific protocols and procedures, problems with raw materials, delays related to the construction of new facilities or the expansion of existing facilities, including those intended to support future demand for AbbVie's products, changes in manufacturing production sites and limits to manufacturing capacity due to regulatory requirements, changes in the types of products produced, physical limitations that could inhibit continuous supply, man-made or natural disasters and environmental factors.",
+      "score": -0.8807
+    }
+  ],
+  "forward_snippets": [
+    "Orders are generally filled on a current basis and order backlog is not material to AbbVie's business.",
+    "AbbVie's operations are also affected by trade regulations in many countries that limit the import of raw materials and finished products and by laws and regulations that seek to prevent corruption and bribery in the marketplace (including the United States Foreign Corrupt Practices Act and the United Kingdom Bribery Act, which provide guidance on corporate interactions with government officials) and require safeguards for the protection of personal data.",
+    "The price-setting process will conclude by August\nguidance on corporate interactions with government officials) and require safeguards for the protection of personal data.",
+    "AbbVie has developed a deep talent base through ongoing investment in functional and leadership training and by sourcing world-class external talent, ensuring a sustainable talent pipeline.",
+    "In addition, a foundational success factor to AbbVie's leadership pipeline is the company's Professional Development Programs, which attract graduates, postgraduates and post-doctoral talent to participate in formal development programs lasting up to three years, with the objective of strengthening functional and leadership capabilities."
+  ]
+}

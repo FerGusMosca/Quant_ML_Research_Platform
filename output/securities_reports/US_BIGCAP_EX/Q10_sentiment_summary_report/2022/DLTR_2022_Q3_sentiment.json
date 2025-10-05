@@ -1,0 +1,47 @@
+{
+  "symbol": "DLTR",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1798,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.214
+  },
+  "top_positive": [
+    {
+      "sent": "Note 4 - Net Income Per Share The following table sets forth the calculations of basic and diluted net income per share: 13 Weeks Ended April 30, May 1, (in millions, except per share data) 2022 2021 Basic net income per share: Net income $ 536.4 $ 374.5 Weighted average number of shares outstanding 225.3 233.2 Basic net income per share $ 2.38 $ 1.61 Diluted net income per share: Net income $ 536.4 $ 374.5 Weighted average number of shares outstanding 225.3 233.2 Dilutive effect of stock options and restricted stock (as determined by applying the treasury stock method) 1.1 1.2 Weighted average number of shares and dilutive potential shares outstanding 226.4 234.4 Diluted net income per share $ 2.37 $ 1.60 Stock options and other stock-based awards of 2.9 million shares and 0.7 million shares were excluded from the calculation of diluted net income per share for the 13 weeks ended April\u00a030, 2022 and May\u00a01, 2021, respectively, because their inclusion would be anti-dilutive.",
+      "score": 0.9914
+    },
+    {
+      "sent": "The aggregate fair values and carrying values of our long-term borrowings were as follows: April 30, 2022 January 29, 2022 May 1, 2021 (in millions) Fair Value Carrying Value Fair Value Carrying Value Fair Value Carrying Value Level 1 Senior Notes $ 3,232.7 $ 3,424.2 $ 3,558.5 $ 3,423.4 $ 3,581.9 $ 3,232.5 The fair values of our Senior Notes were determined using Level 1 inputs as quoted prices in active markets for identical assets or liabilities are available.",
+      "score": 0.9861
+    },
+    {
+      "sent": "The aggregate fair values and carrying values of our long-term borrowings were as follows: April 30, 2022 January 29, 2022 May 1, 2021 (in millions) Fair Value Carrying Value Fair Value Carrying Value Fair Value Carrying Valu\nated to the sale of products that may be contaminated by virtue of rodent infestation and other unsanitary conditions.",
+      "score": 0.9761
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "On April 28, 2022, the State of Arkansas filed a complaint in state court alleging violations of the Arkansas Deceptive Trade Practices Act, gross negligence and negligence, strict liability in tort, unjust enrichment and civil conspiracy related to the sale of products that may have been contaminated by virtue of rodent infestation and other unsanitary conditions.",
+      "score": -0.9246
+    },
+    {
+      "sent": "On April 28, 2022, the State of Arkansas filed a complaint in state court alleging violations of the Arkansas Deceptive Trade Practices Act, gross negligence and negligence, strict liability in tort, unjust enrichment and civil conspiracy related to the sale of products that may have been contaminated by virtue of rodent infestation and other unsanitary conditions.",
+      "score": -0.9246
+    },
+    {
+      "sent": "On April 28, 2022, the State of Arkansas filed a complaint in state court alleging violations of the Arkansas Deceptive Trade Practices Act, gross negligence and negligence, strict liability in tort, unjust enrichment and civil conspiracy related to the sale of products that may have been contaminated by virtue of rodent infestation and other unsanitary conditions.",
+      "score": -0.9246
+    }
+  ],
+  "forward_snippets": [
+    "We will vigorously defend ourselves in these matters.",
+    "We believe we have made significant improvements in our processes, and the FDA has asked us to make certain additional improvements, which we are addressing.",
+    "We intend to cooperate fully with the subpoena and any related investigation, however, no assurance can be given as to the timing or outcome of this matter.",
+    "We believe we have made significant improvements in our processes, and the FDA has asked us to make certain additional improvements, which we are addressing.",
+    "We intend to cooperate fully with the subpoena and any related investigation, however, no assurance can be given as to the timing or outcome of this matter."
+  ]
+}

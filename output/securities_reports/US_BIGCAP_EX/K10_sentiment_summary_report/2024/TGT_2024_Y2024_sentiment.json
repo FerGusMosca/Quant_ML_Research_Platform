@@ -1,0 +1,47 @@
+{
+  "symbol": "TGT",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1567,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.141
+  },
+  "top_positive": [
+    {
+      "sent": "During 2023, in support of our enterprise strategy described in Item 1 on page 2 of this Form 10-K, we \u2022 Expanded our supply chain capacity and digital fulfillment capabilities, including adding three new supply chain facilities to support our growth and commitment to fast delivery times, while helping our teams work more efficiently and managing our shipping costs; \u2022 Fulfilled over 60 percent of our digital sales through our same-day fulfillment options: Order Pickup, Drive Up, and delivery via Shipt; \u2022 Rolled out Drive Up with Starbucks and Returns with Drive Up nationwide; \u2022 Continued to emphasize newness across our assortment and continued to introduce new owned and exclusive brands and designer collaborations, including our first kitchen owned brand Figmint, collections from Kendra Scott, a collaboration with Rowing Blazers, and Stanley drinkware in exclusive colors; \u2022 Completed 65 full store remodels and continued to invest in other stores, including projects to increase efficiency of our Same-Day Services, build-out and open Ulta Beauty shop-in-shops, and expand Apple and Disney experiences; \u2022 Opened 21 new stores in a variety of sizes with new design elements that reflect the local community; \u2022 Invested in team member wages and benefits; and \u2022 Offered compelling promotions, attractive every day price points on key items, and free and easy payment and fulfillment options.",
+      "score": 0.9906
+    },
+    {
+      "sent": "TARGET CORPORATION 2023 Form 10-K 5 BUSINESS Table of Contents Index to Financial Statements Human Capital Management In support of our purpose\u2014to help all families discover the joy of everyday life\u2014we invest in our team, our most important asset, by giving them opportunities to grow professionally, take care of themselves, each other, and their families, and to make a difference for our guests and our communities.",
+      "score": 0.9651
+    },
+    {
+      "sent": "hourly team members in our stores and supply chain facilities (who comprise the vast majority of our team), a 401(k) plan with dollar-for-dollar matching contributions up to five percent of eligible earnings, paid vacation and holidays, family leave, sick pay, merchandise and other discounts, disability insurance, life insurance, healthcare and dependent care flexible spending accounts, tuition-free education assistance and tuition reimbursement, free mental health services, an annual short-term incentive program, long-term equity awards, and health insurance benefits, including free virtual health care visits.",
+      "score": 0.9623
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These systems are subject to possible damage or interruption from many events, including power outages, telecommunications failures, third-party failures, malicious attacks, security breaches, and implementation errors.",
+      "score": -0.9274
+    },
+    {
+      "sent": "These systems are subject to possible damage or interruption from many events, including power outages, telecommunications failures, third-party failures, malicious attacks, security breaches, and implementation errors.",
+      "score": -0.9274
+    },
+    {
+      "sent": "Negative reputational incidents or negative perceptions of us could adversely affect our business and results of operations, including through lower sales, the termination of business relationships, loss of new store and development opportunities, and team member retention and recruiting difficulties.",
+      "score": -0.9062
+    }
+  ],
+  "forward_snippets": [
+    "Our talent and succession planning process supports the development of a diverse talent pipeline for leadership and other critical roles.",
+    "We believe in paying team members equitably, regardless of gender, race, or ethnicity, and we regularly review the pay data of U.S.",
+    "Our talent and succession planning process supports the development of a diverse talent pipeline for leadership and other critical roles.",
+    "We believe in paying team members equitably, regardless of gender, race, or ethnicity, and we regularly review the pay data of U.S.",
+    "Executive Vic\n the development of a diverse talent pipeline for leadership and other critical roles."
+  ]
+}

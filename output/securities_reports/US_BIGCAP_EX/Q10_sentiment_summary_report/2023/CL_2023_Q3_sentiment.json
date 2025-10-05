@@ -1,0 +1,47 @@
+{
+  "symbol": "CL",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.2846,
+    "outlook_sentiment": 0.2385,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.102
+  },
+  "top_positive": [
+    {
+      "sent": "Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time.",
+      "score": 0.9524
+    },
+    {
+      "sent": "Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time.",
+      "score": 0.9524
+    },
+    {
+      "sent": "Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time.",
+      "score": 0.9524
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "2022-02, \u201cFinancial Instruments-Credit Losses (Topic 326): Troubled Debt Restructurings and Vintage Disclosures.\u201d This ASU eliminates the accounting guidance for troubled debt restructurings by creditors while enhancing disclosure requirements for certain loan refinancing and restructurings by creditors made to borrowers experiencing financial difficulty.",
+      "score": -0.9186
+    },
+    {
+      "sent": "2022-02, \u201cFinancial Instruments-Credit Losses (Topic 326): Troubled Debt Restructurings and Vintage Disclosures.\u201d This ASU eliminates the accounting guidance for troubled debt restructurings by creditors while enhancing disclosure requirements for certain loan refinancing and restructurings by creditors made to borrowers experiencing financial difficulty.",
+      "score": -0.9186
+    },
+    {
+      "sent": "2022-02, \u201cFinancial Instruments-Credit Losses (Topic 326): Troubled Debt Restructurings and Vintage Disclosures.\u201d This ASU eliminates the accounting guidance for troubled debt restructurings by creditors while enhancing disclosure requirements for certain loan refinancing and restructurings by creditors made to borrowers experiencing financial difficulty.",
+      "score": -0.9186
+    }
+  ],
+  "forward_snippets": [
+    "The guidance is effective for the Company beginning on January 1, 2024 and is not expected to have a material impact on the Company's Consolidated Financial Statements.",
+    "The guidance was effective for the Company beginning on January 1, 2023, except for the rollforward information, which is effective beginning on January 1, 2024.",
+    "This guidance has not had and is not expected to have a material impact on the Company\u2019s Consolidated Financial Statements.",
+    "2022-02, \u201cFinancial Instruments-Credit Losses (Topic 326): Troubled Debt Restructurings and Vintage Disclosures.\u201d This ASU eliminates the accounting guidance for troubled debt restructurings by creditors while enhancing disclosure requirements for certain loan refinancing and restructurings by creditors made to borrowers experiencing financial difficulty.",
+    "This guidance was effective for the Company beginning on January 1, 2023 and did not have a material impact on the Company\u2019s Consolidated Financial Statements."
+  ]
+}

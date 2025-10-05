@@ -1,0 +1,277 @@
+{
+  "symbol": "AVGO",
+  "year": 2023,
+  "period": "Y2023",
+  "competition_summary": [
+    {
+      "competitor": "Advanced Micro Devices, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Amlogic Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Analog Devices, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Cisco Systems",
+      "mentions": 2,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "GlobalFoundries Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Hamamatsu Photonics K.K.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Heidenhain Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Intel Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Lumentum Holdings Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "MACOM Technology Solutions Holdings, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Marvell Technology, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "MaxLinear, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "MediaTek Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Microchip Technology Incorporated",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Mitsubishi Electric Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Murata Manufacturing Co., Ltd.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "NVIDIA Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "NXP Semiconductors N.V.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "ON Semiconductor Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "OSRAM Licht AG",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Qualcomm Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Realtek Semiconductor Corp.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Renesas Electronics Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Skyworks Solutions, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "STMicroelectronics N.V.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Sumitomo Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Synaptics Incorporated",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Texas Instruments, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "TDK-EPC Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Toshiba Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Wolfspeed, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Cree, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "II-VI Incorporated",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "FBAR",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Atlassian Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Plc",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "BeyondTrust Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "BMC Software Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "CrowdStrike Holdings, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "CyberArk Software, Ltd.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Dino-Software Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "International Business Machines Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Microsoft Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "OpenText Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Oracle Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Rocket Software",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "SailPoint Technologies Holdings, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Salesforce.com, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "ServiceNow, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "SolarWinds Corporation",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Zscaler, Inc.",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "IP",
+      "mentions": 12,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "AON",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    },
+    {
+      "competitor": "Salary Increase and Turnover Study",
+      "mentions": 1,
+      "context": "Competition The markets in which we participate are highly competitive. Our competitors range from large, international companies offering a wide range of products to smaller companies specializing in narrow markets. The competitive landscape is changing as a result of a trend toward consolidation within many industries, as some of our competitors have merged with or been acquired by other competitors, while others have begun collaborating with each other. We expect this consolidation trend to c"
+    }
+  ]
+}

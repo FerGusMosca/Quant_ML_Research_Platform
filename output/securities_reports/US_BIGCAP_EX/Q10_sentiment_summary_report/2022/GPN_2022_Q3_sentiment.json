@@ -1,0 +1,47 @@
+{
+  "symbol": "GPN",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1885,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.212
+  },
+  "top_positive": [
+    {
+      "sent": "The following table reflects the provisional estimated fair values of the identified intangible assets of Zego and the respective weighted-average estimated amortization periods: Estimated Fair Value Weighted-Average Estimated Amortization Periods (in thousands) (years) Customer-related intangible assets $ 208,000 13 Contract-based intangible assets 119,000 20 Acquired technologies 124,000 6 Trademarks and trade names 22,000 15 Total estimated identifiable intangible assets $ 473,000 14 10 Table of Contents NOTE 3\u2014 REVENUES The following tables present a disaggregation of our revenues from contracts with customers by geography for each of our reportable segments for the three months ended March\u00a031, 2022 and 2021: Three Months Ended March 31, 2022 Merchant Solutions Issuer Solutions Business and Consumer Solutions Intersegment Eliminations Total (in thousands) Americas $ 1,242,620 $ 385,243 $ 191,432 $ ( 15,451 ) $ 1,803,844 Europe 174,055 117,671 4,340 \u2014 296,066 Asia Pacific 56,344 8,587 \u2014 ( 8,587 ) 56,344 $ 1,473,019 $ 511,501 $ 195,772 $ ( 24,038 ) $ 2,156,254 Three Months Ended March 31, 2021 Merchant Solutions Issuer Solutions Business and Consumer Solutions Intersegment Eliminations Total (in thousands) Americas $ 1,080,470 $ 378,043 $ 240,633 $ ( 16,905 ) $ 1,682,241 Europe 132,934 117,412 2,952 \u2014 253,298 Asia Pacific 54,468 4,796 \u2014 ( 4,796 ) 54,468 $ 1,267,872 $ 500,251 $ 243,585 $ ( 21,701 ) $ 1,990,007 The following table presents a disaggregation of our Merchant Solutions segment revenues by distribution channel for the three months ended March\u00a031, 2022 and 2021: Three Months Ended March 31, 2022 March 31, 2021 (in thousands) Relationship-led $ 752,214 $ 668,556 Technology-enabled 720,805 599,316 $ 1,473,019 $ 1,267,872 ASC Topic 606, Revenues from Contracts with Customers (\"ASC 606\"), requires that we determine for each customer arrangement whether revenue should be recognized at a point in time or over time.",
+      "score": 0.9732
+    },
+    {
+      "sent": "The following table reflects the provisional estimated fair values of the identified intangible assets of Zego and the respective weighted-average estimated amortization periods: Estimated Fair Value Weighted-Average Estimated Amortization Periods (in thousands) (years) Customer-related intangible assets $ 208,000 13 Contract-based intangible assets 119,000 20 Acquired technologies 124,000 6 Trademarks and trade names 22,000 15 Total estimated identifiable intangible assets $ 473,000 14 10 Table of Contents NOTE 3\u2014 REVENUES The following tables present a disaggregation of our revenues from contracts with customers by geography for each of our reportable segments for the three months ended March\u00a031, 2022 and 2021: Three Months Ended March 31, 2022 Merchant Solutions Issuer Solutions Business and Consumer Solutions Intersegment Eliminations Total (in thousands) Americas $ 1,242,620 $ 385,243 $ 191,432 $ ( 15,451 ) $ 1,803,844 Europe 174,055 117,671 4,340 \u2014 296,066 Asia Pacific 56,344 8,587 \u2014 ( 8,587 ) 56,344 $ 1,473,019 $ 511,501 $ 195,772 $ ( 24,038 ) $ 2,156,254 Three Months Ended March 31, 2021 Merchant Solutions Issuer Solutions Business and Consumer Solutions Intersegment Eliminations Total (in thousands) Americas $ 1,080,470 $ 378,043 $ 240,633 $ ( 16,905 ) $ 1,682,241 Europe 132,934 117,412 2,952 \u2014 253,298 Asia Pacific 54,468 4,796 \u2014 ( 4,796 ) 54,468 $ 1,267,872 $ 500,251 $ 243,585 $ ( 21,701 ) $ 1,990,007 The following table presents a disaggregation of our Merchant Solutions segment revenues by distribution channel for the three months ended March\u00a031, 2022 and 2021: Three Months Ended March 31, 2022 March 31, 2021 (in thousands) Relationship-led $ 752,214 $ 668,556 Technology-enabled 720,805 599,316 $ 1,473,019 $ 1,267,872 ASC Topic 606, Revenues from Contracts with Customers (\"ASC 606\"), requires that we determine for each customer arrangement whether revenue should be recognized at a point in time or over time.",
+      "score": 0.9732
+    },
+    {
+      "sent": "Forward-Looking Statements Some of the statements we use in this report, and in some of the documents we incorporate by reference in this report, contain forward-looking statements concerning our business operations, economic performance and financial condition, including in particular: our business strategy and means to implement the strategy; measures of future results of operations, such as revenues, expenses, operating margins, income tax rates, and earnings per share; other op\nhe strategy; measures of future results of operations, such as revenues, expenses, operating margins, income tax rates, and earnings per share; other operating metrics such as shares outstanding and capital expenditures; the effects of the COVID-19 pandemic on our business; our success and timing in developing and introducing new services and expanding our business; and statements about the benefits of our acquisitions, including future financial and operating results, the company\u2019s plans, objectives, expectations and intentions, and the successful integration of our acquisitions or completion of anticipated benefits and strategic initiatives.",
+      "score": 0.9694
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Risks associated with heightened geopolitical and economic instability, such as those resulting from the invasion of Ukraine by Russia, include among others, reduction in consumer, government or corporate spending, international sanctions, embargoes, heightened inflation, volatility in global financial markets, increased cyber disruptions or attacks, higher supply chain costs and increased tensions between the United States and countries in which we operate, which could result in charges related to the recoverability of assets, including financial assets, long-lived assets and goodwill and other losses, and could adversely affect our financial position and results of operations.",
+      "score": -0.6808
+    },
+    {
+      "sent": "Risks associated with heightened geopolitical and economic instability, such as those resulting from the invasion of Ukraine by Russia, include among others, reduction in consumer, government or corporate spending, international sanctions, embargoes, heightened inflation, volatility in global financial markets, increased cyber disruptions or attacks, higher supply chain costs and increased tensions between the United States and countries in which we operate, which could result in charges related to the recoverability of assets, including financial assets, long-lived assets and goodwill and other losses, and could adversely affect our financial position and results of operations.",
+      "score": -0.6808
+    },
+    {
+      "sent": "A continuation or worsening of conditions could result in adverse effect on our future fin\nhis discussion and analysis contains forward-looking statements about our plans and expectations of what may happen in the future.",
+      "score": -0.6705
+    }
+  ],
+  "forward_snippets": [
+    "Based on our current estimates, we expect to recognize a charge of approximately $ 130 million during the second quarter of 2022 associated with the sale, including recognition of the associated accumulated foreign currency translation losses.",
+    "We expect that substantially all of the goodwill will be deductible for income tax purposes.",
+    "We expect that substantially all of the goodwill will be deductible for income tax purposes.",
+    "As of March\u00a031, 2022, there was $ 333.5 million of unrecognized compensation expense related to unvested restricted stock and performance awards that we expect to recognize over a weighted-average period of 2.4 years.",
+    "As of March\u00a031, 2022, we had $ 14.0 million of unrecognized compensation expense related to unvested stock options that we expect to recognize over a weighted-average period of 2.3 years."
+  ]
+}

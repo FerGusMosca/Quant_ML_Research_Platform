@@ -1,0 +1,606 @@
+{
+  "symbol": "COP",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-05",
+      "time": "Today 02:42AM",
+      "title": "ConocoPhillips (COP) to Host FQ3 Earnings Conference on November 6\n\n\n(Insider Monkey)",
+      "link": "/news/183925/conocophillips-cop-to-host-fq3-earnings-conference-on-november-6"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "17:24",
+      "title": "Top Stock Reports for AMD, Abbott & Micron Technology\n\n\n(Zacks)",
+      "link": "/news/183716/top-stock-reports-for-amd-abbott-micron-technology"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "20:00",
+      "title": "Supermajors Slim Down to Protect Shareholder Payouts\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/news/supermajors-slim-down-protect-shareholder-000000163.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:57PM",
+      "title": "ConocoPhillips, KKR, and Wyndham Stock Could Have a Rough October\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/conoco-kkr-wyndham-stock-capital-gains-tax-ca31642d?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:23AM",
+      "title": "Celsius Holdings and Builders FirstSource have been highlighted as Zacks Bull and Bear of the Day\n\n\n(Zacks)",
+      "link": "/news/182242/celsius-holdings-and-builders-firstsource-have-been-highlighted-as-zacks-bull-and-bear-of-the-day"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "23:59",
+      "title": "ConocoPhillips sends layoff notifications to some North Slope workers, part of global reduction\n\n\n(Anchorage Daily News, Alaska)",
+      "link": "https://finance.yahoo.com/m/e74fc225-bdb4-3998-95c7-71d72189dac3/conocophillips-sends-layoff.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00PM",
+      "title": "Big Oils Short-Term Worries Mask Bullish Long Term\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/news/big-oil-short-term-worries-230000538.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:45PM",
+      "title": "Exxon to lay off 2,000 workers worldwide as oil prices slide\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/exxon-lay-off-2-000-174548367.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:10AM",
+      "title": "Can Permian Connection Brighten XOM, CVX & COP's Outlook?\n\n\n(Zacks)",
+      "link": "/news/181111/can-permian-connection-brighten-xom-cvx-cops-outlook"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Devon Energy Gains From Multi-Basin Assets & Debt Management\n\n\n(Zacks)",
+      "link": "/news/180966/devon-energy-gains-from-multi-basin-assets-debt-management"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:31AM",
+      "title": "ExxonMobil to axe 2,000 jobs worldwide\n\n\n(Offshore Technology)",
+      "link": "https://finance.yahoo.com/m/31d8e617-3e02-3cb5-870d-324a414b5fd5/exxonmobil-to-axe-2%2C000-jobs.html"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "23:22",
+      "title": "Why ConocoPhillips (COP) is a Great Buy Amidst the LNG Boom\n\n\n(Insider Monkey)",
+      "link": "/news/180393/why-conocophillips-cop-is-a-great-buy-amidst-the-lng-boom"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:11PM",
+      "title": "Big Oil Is Getting Leaner and Leaner\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/4cc2183c-1e6f-3573-9168-cf5ff99b594b/big-oil-is-getting-leaner-and.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:54AM",
+      "title": "Exxon to Cut 2,000 Jobs in Global Restructuring\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/exxon-cut-2-000-workers-100000114.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:32AM",
+      "title": "Equatorial Guinea announces 2026 oil and gas licensing round\n\n\n(Offshore Technology)",
+      "link": "https://finance.yahoo.com/m/8390f217-bde1-35dd-92a0-d376ad761d10/equatorial-guinea-announces.html"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "21:51",
+      "title": "Is ConocoPhillips Stock an Obvious Buy Right Now?\n\n\n(Motley Fool)",
+      "link": "/news/179002/is-conocophillips-stock-an-obvious-buy-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00PM",
+      "title": "ConocoPhillips (COP) Stock Falls Amid Market Uptick: What Investors Need to Know\n\n\n(Zacks)",
+      "link": "/news/178934/conocophillips-cop-stock-falls-amid-market-uptick-what-investors-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:35PM",
+      "title": "Why ConocoPhillips Stock Is Powering Down Today\n\n\n(Motley Fool)",
+      "link": "/news/178744/why-conocophillips-stock-is-powering-down-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:32AM",
+      "title": "Dividend ETF SCHD Draws Buyers as Fed Cuts Spark Rotation\n\n\n(MarketBeat)",
+      "link": "/news/178786/dividend-etf-schd-draws-buyers-as-fed-cuts-spark-rotation"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:08AM",
+      "title": "2 Reasons Why ConocoPhillips Can Sail Through Low Oil Prices\n\n\n(Zacks)",
+      "link": "/news/178545/2-reasons-why-conocophillips-can-sail-through-low-oil-prices"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:41AM",
+      "title": "ExxonMobil's Advantaged Assets: A Hedge Against Oil Price Volatility?\n\n\n(Zacks)",
+      "link": "/news/178512/exxonmobils-advantaged-assets-a-hedge-against-oil-price-volatility"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:02AM",
+      "title": "These 3 Energy Stocks Have Turned Oil Pumps Into Money Printing Machines\n\n\n(Motley Fool)",
+      "link": "/news/177981/these-3-energy-stocks-have-turned-oil-pumps-into-money-printing-machines"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "14:14",
+      "title": "Is COP's Marathon Oil Acquisition Driving Profitability and Growth?\n\n\n(Zacks)",
+      "link": "/news/177263/is-cops-marathon-oil-acquisition-driving-profitability-and-growth"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "12:00",
+      "title": "ConocoPhillips to hold third-quarter earnings conference call on Thursday, Nov. 6\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250925572256/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:19AM",
+      "title": "Balance Sheet Strength Keeps COP Resilient Amid Price Volatility\n\n\n(Zacks)",
+      "link": "/news/175892/balance-sheet-strength-keeps-cop-resilient-amid-price-volatility"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:16AM",
+      "title": "Zacks Industry Outlook Highlights ConocoPhillips, Occidental and National Fuel Gas\n\n\n(Zacks)",
+      "link": "/news/175895/zacks-industry-outlook-highlights-conocophillips-occidental-and-national-fuel-gas"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:34AM",
+      "title": "XOM's Guyana Push: Unlocking 11B Barrels and a Decade of Growth\n\n\n(Zacks)",
+      "link": "/news/175806/xoms-guyana-push-unlocking-11b-barrels-and-a-decade-of-growth"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:09AM",
+      "title": "2 Brilliant Energy Stocks to Buy Now and Hold for the Long Term\n\n\n(Motley Fool)",
+      "link": "/news/175283/2-brilliant-energy-stocks-to-buy-now-and-hold-for-the-long-term"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "16:34",
+      "title": "ConocoPhillips (COP) Attracts Polianta Ltd With Expansion Strategy\n\n\n(Insider Monkey)",
+      "link": "/news/175054/conocophillips-cop-attracts-polianta-ltd-with-expansion-strategy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:55AM",
+      "title": "3 US Integrated Energy Stocks to Gain Despite Industry Headwinds\n\n\n(Zacks)",
+      "link": "/news/174813/3-us-integrated-energy-stocks-to-gain-despite-industry-headwinds"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:24AM",
+      "title": "ConocoPhillips Stock Continues to Fall in 2025. Is There Room for Recovery?\n\n\n(Motley Fool)",
+      "link": "/news/174134/conocophillips-stock-continues-to-fall-in-2025-is-there-room-for-recovery"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:06AM",
+      "title": "Mizuho Reduces PT on ConocoPhillips (COP) Stock\n\n\n(Insider Monkey)",
+      "link": "/news/174007/mizuho-reduces-pt-on-conocophillips-cop-stock"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "22:07",
+      "title": "Why ConocoPhillips (COP) is Among the Top Oil and Gas Dividend Stocks\n\n\n(Insider Monkey)",
+      "link": "/news/173967/why-conocophillips-cop-is-among-the-top-oil-and-gas-dividend-stocks"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:19PM",
+      "title": "ConocoPhillips Sells Anadarko Assets While Cutting Debt and Maintaining Strong Dividend\n\n\n(Insider Monkey)",
+      "link": "/news/173952/conocophillips-sells-anadarko-assets-while-cutting-debt-and-maintaining-strong-dividend"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00PM",
+      "title": "Why the Market Dipped But ConocoPhillips (COP) Gained Today\n\n\n(Zacks)",
+      "link": "/news/173873/why-the-market-dipped-but-conocophillips-cop-gained-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:45AM",
+      "title": "EIA Expects Oil Price to be Weaker: Can ConocoPhillips Survive?\n\n\n(Zacks)",
+      "link": "/news/173515/eia-expects-oil-price-to-be-weaker-can-conocophillips-survive"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:29AM",
+      "title": "ExxonMobil vs. ConocoPhillips: A Safe Stock or a Risky Upside Play?\n\n\n(Zacks)",
+      "link": "/news/173504/exxonmobil-vs-conocophillips-a-safe-stock-or-a-risky-upside-play"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "04:03",
+      "title": "This Top Dividend ETF Is Relying on These Stocks to Fuel Its High-Yielding Payout\n\n\n(Motley Fool)",
+      "link": "/news/171843/this-top-dividend-etf-is-relying-on-these-stocks-to-fuel-its-high-yielding-payout"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "21:17",
+      "title": "ConocoPhillips (COP) Announces Its Plans to Reduce Its Global Workforce by 20% to 25%\n\n\n(Insider Monkey)",
+      "link": "/news/171720/conocophillips-cop-announces-its-plans-to-reduce-its-global-workforce-by-20-to-25"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "04:00",
+      "title": "2 Dividend Stocks to Hold for the Next 5 Years\n\n\n(Motley Fool)",
+      "link": "/news/171371/2-dividend-stocks-to-hold-for-the-next-5-years"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "13:54",
+      "title": "Why ConocoPhillips Stands Out as a High-Resilience Upstream Player\n\n\n(Zacks)",
+      "link": "/news/171114/why-conocophillips-stands-out-as-a-high-resilience-upstream-player"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:48AM",
+      "title": "ExxonMobil's Permian Push: Leveraging Technology for Production Growth\n\n\n(Zacks)",
+      "link": "/news/170856/exxonmobils-permian-push-leveraging-technology-for-production-growth"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "18:00",
+      "title": "ConocoPhillips (COP) Ascends While Market Falls: Some Facts to Note\n\n\n(Zacks)",
+      "link": "/news/167940/conocophillips-cop-ascends-while-market-falls-some-facts-to-note"
+    },
+    {
+      "date": "2025-09-14",
+      "time": "15:00",
+      "title": "U.S. Oil Majors Slash Jobs Despite Trumps Fossil Fuel Push\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/news/u-oil-majors-slash-jobs-190000501.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:00AM",
+      "title": "This Natural Gas Producer Has a New Strategy to Profit Off LNG. Why It Could Be Risky.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/natural-gas-lng-eqt-78aa0c43?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-13",
+      "time": "19:00",
+      "title": "U.S. Oil Patch Sheds Jobs as Producers Face Weaker Prices\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/news/u-oil-patch-sheds-jobs-230000001.html"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "11:38",
+      "title": "ConocoPhillips' High-Quality Assets: Key to Long-Term Profitability?\n\n\n(Zacks)",
+      "link": "/news/165123/conocophillips-high-quality-assets-key-to-long-term-profitability"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:50AM",
+      "title": "Why ExxonMobil Can Weather Market Uncertainty Better Than Peers\n\n\n(Zacks)",
+      "link": "/news/164987/why-exxonmobil-can-weather-market-uncertainty-better-than-peers"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "17:10",
+      "title": "US oil titan to cut up to 25% of its workforce  impacting thousands. So what happened to drill baby drill?\n\n\n(Moneywise)",
+      "link": "https://finance.yahoo.com/news/us-oil-titan-cut-25-211000963.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:24AM",
+      "title": "ConocoPhillips (COP) Enters 20-year LNG Purchase Pact with Sempra Infrastructure\n\n\n(Insider Monkey)",
+      "link": "/news/163895/conocophillips-cop-enters-20-year-lng-purchase-pact-with-sempra-infrastructure"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:52AM",
+      "title": "T\u00fcrkiye signs agreements to secure 15bcm of LNG for 202628\n\n\n(Offshore Technology)",
+      "link": "https://finance.yahoo.com/m/02395fa4-a64f-37ce-8570-d650d9cae4e7/t%C3%BCrkiye-signs-agreements-to.html"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "14:00",
+      "title": "Job Cuts Rock Global Oil and Gas Sector\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/news/job-cuts-rock-global-oil-180000611.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:28AM",
+      "title": "1 Reason to Buy ConocoPhillips Stock\n\n\n(Motley Fool)",
+      "link": "/news/162186/1-reason-to-buy-conocophillips-stock"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "13:22",
+      "title": "US in LNG Sweet Spot: EQT & ConocoPhillips to Ride Clean Energy Wave?\n\n\n(Zacks)",
+      "link": "/news/161655/us-in-lng-sweet-spot-eqt-conocophillips-to-ride-clean-energy-wave"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:00PM",
+      "title": "Rio Grande LNG Train 5 Secures Enough Buyers to Reach FID\n\n\n(Rigzone.com)",
+      "link": "https://finance.yahoo.com/news/rio-grande-lng-train-5-170000708.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:50AM",
+      "title": "ConocoPhillips to procure LNG from NextDecades Rio Grande project\n\n\n(Offshore Technology)",
+      "link": "https://finance.yahoo.com/m/03f4059c-c35e-3811-94df-0dd15060affc/conocophillips-to-procure-lng.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:23AM",
+      "title": "ConocoPhillips Inks 20-Year LNG Offtake Agreement With NextDecade\n\n\n(Zacks)",
+      "link": "/news/161320/conocophillips-inks-20-year-lng-offtake-agreement-with-nextdecade"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "19:34",
+      "title": "ConocoPhillips (COP) Stock Falls Amid Market Uptick: What Investors Need to Know\n\n\n(Zacks)",
+      "link": "/news/160635/conocophillips-cop-stock-falls-amid-market-uptick-what-investors-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:30PM",
+      "title": "NextDecade Completes Commercialization of Rio Grande LNG Train 5 with 1.0 MTPA LNG Sale and Purchase Agreement with ConocoPhillips\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250908030566/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:30PM",
+      "title": "ConocoPhillips adds Gulf Coast LNG supply with latest long-term agreement\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250908160056/en/"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:34PM",
+      "title": "Analysis-ConocoPhillips' deep layoffs highlight need for capital discipline, analysts say\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/analysis-conocophillips-deep-layoffs-highlight-193423568.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:45PM",
+      "title": "ConocoPhillips is Not so Pricey: Should Investors Bet on the Stock Now?\n\n\n(Zacks)",
+      "link": "/news/160242/conocophillips-is-not-so-pricey-should-investors-bet-on-the-stock-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:16AM",
+      "title": "Analysis-Cuts to US oil jobs and spending threaten output growth\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/analysis-cuts-us-oil-jobs-151616588.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "ConocoPhillips to cut up to 25% of workers\n\n\n(C-Store Dive)",
+      "link": "https://finance.yahoo.com/m/517676a1-7c21-35ca-a64a-d002c3142911/conocophillips-to-cut-up-to.html"
+    },
+    {
+      "date": "2025-09-07",
+      "time": "14:38",
+      "title": "You Either Keep The Dividend Or Lay Off, Says Jim Cramer About ConocoPhillips (COP)\n\n\n(Insider Monkey)",
+      "link": "/news/159552/you-either-keep-the-dividend-or-lay-off-says-jim-cramer-about-conocophillips-cop"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:45AM",
+      "title": "3 Beaten-Down High-Yield Dividend Stocks to Double Up on and Buy in September\n\n\n(Motley Fool)",
+      "link": "/news/159459/3-beaten-down-high-yield-dividend-stocks-to-double-up-on-and-buy-in-september"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "12:13",
+      "title": "'I Fault Myself for Not Paying More Attention,' Conoco CEO Tells Employees Facing Deep Job Cuts\n\n\n(Hart Energy)",
+      "link": "https://finance.yahoo.com/news/fault-myself-not-paying-more-161334370.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:04PM",
+      "title": "Halliburton reduces workforce as oil activity slumps, sources say\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/halliburton-reduces-workforce-oil-activity-160436488.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:02PM",
+      "title": "Strong Balance Sheet to Support ConocoPhillips' Long-Term Stability\n\n\n(Zacks)",
+      "link": "/news/159047/strong-balance-sheet-to-support-conocophillips-long-term-stability"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:29AM",
+      "title": "ConocoPhillips to Cut 20-25% of Workforce, Shares Slide\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/conocophillips-cut-20-25-workforce-152948147.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:33AM",
+      "title": "Monkey Island LNG adopts ConocoPhillips technology\n\n\n(Offshore Technology)",
+      "link": "https://finance.yahoo.com/m/3d988a39-ee77-35c8-b17c-de438e67386d/monkey-island-lng-adopts.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:29AM",
+      "title": "2 S&P 500 Dividend Stocks That Could Climb More Than 20% According to Wall Street Analysts\n\n\n(Motley Fool)",
+      "link": "/news/158551/2-sp-500-dividend-stocks-that-could-climb-more-than-20-according-to-wall-street-analysts"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:19AM",
+      "title": "Monkey Island LNG Picks ConocoPhillips Technology for 26 MTPA Louisiana Project\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/news/monkey-island-lng-picks-conocophillips-041955212.html"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "19:30",
+      "title": "This Energy Dividend Stock Is Slashing a Massive 25% of Jobs. Is This a Sign to Stay Far, Far Away?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/f9ad1c48-8372-3c8b-999d-7cc6697bf798/this-energy-dividend-stock-is.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:29PM",
+      "title": "ConocoPhillips to begin layoffs as early as Nov 10, company says in state notice\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/conocophillips-begin-layoffs-early-nov-192902093.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:31PM",
+      "title": "Record profits, layoffs: Wall Street cheers as workers fear\n\n\n(Quartz)",
+      "link": "https://finance.yahoo.com/m/644b89ad-e89c-3d83-a6ba-aa5019c5352b/record-profits%2C-layoffs%3A-wall.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:55PM",
+      "title": "Melius Research Begins Coverage of ConocoPhillips (COP) Stock With a Hold\n\n\n(Insider Monkey)",
+      "link": "/news/158176/melius-research-begins-coverage-of-conocophillips-cop-stock-with-a-hold"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:04PM",
+      "title": "Can Devon Energy Unlock Value Through Strategic Debt Reduction?\n\n\n(Zacks)",
+      "link": "/news/158188/can-devon-energy-unlock-value-through-strategic-debt-reduction"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:43AM",
+      "title": "Can ConocoPhillips Sail Through Oil and Natural Gas Price Volatility?\n\n\n(Zacks)",
+      "link": "/news/157956/can-conocophillips-sail-through-oil-and-natural-gas-price-volatility"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:45AM",
+      "title": "Stock Markets Agree Rate Cuts are Coming. How Far the Fed Will Go.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/stock-markets-agree-rate-cuts-are-coming-how-far-the-fed-will-go-and-4-other-things-to-know-today-daba5f84?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:19AM",
+      "title": "ConocoPhillips to reduce workforce by 2025% due to rising production costs\n\n\n(Offshore Technology)",
+      "link": "https://finance.yahoo.com/m/85865f41-d78b-397b-940c-52cafe5d530d/conocophillips-to-reduce.html"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "22:55",
+      "title": "US oil giant ConocoPhillips will lay off up to 25% of its global workforce\n\n\n(USA TODAY)",
+      "link": "https://finance.yahoo.com/m/05e74bb8-af94-3190-89cd-03104908563f/us-oil-giant-conocophillips.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:58PM",
+      "title": "ConocoPhillips Is Latest U.S. Oil Producer to Announce Major Layoffs\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/630406a0-fda0-3ba1-be33-4d4c6d106077/conocophillips-is-latest-u.s..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:47PM",
+      "title": "Oil Stocks Sink Ahead of OPEC Meeting\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-03-2025/card/oil-stocks-sink-ahead-of-opec-meeting-RC9l2ScjAursfkbLYQBv?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:03PM",
+      "title": "ConocoPhillips says it will lay off up to 25% of its workforce, impacting thousands of jobs\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/conocophillips-says-lay-off-25-190330001.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:30PM",
+      "title": "ConocoPhillips to Slash Workforce By Up to 25%\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/news/conocophillips-slash-workforce-25-183000359.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:16PM",
+      "title": "Why Shares of ConocoPhillips Slumped Today\n\n\n(Motley Fool)",
+      "link": "/news/157193/why-shares-of-conocophillips-slumped-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:02PM",
+      "title": "ConocoPhillips Is Cutting Up to a Quarter of Its Workers. The Stock Is Slumping.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/conoco-phillips-stock-price-job-cuts-layoffs-dc507a99?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:31PM",
+      "title": "ConocoPhillips to Lay Off Up to a Quarter of Workforce\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/conocophillips-to-lay-off-up-to-a-quarter-of-workforce-fd853d1b?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:33AM",
+      "title": "ConocoPhillips Is Cutting Up to 25% of Its Workers. The Stock Is Tumbling.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/conocophillips-stock-job-cuts-dc507a99?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:59AM",
+      "title": "Exclusive-ConocoPhillips says it will\u00a0cut workforce by 20-25%, shares fall\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/exclusive-conocophillips-says-reduce-workforce-145930040.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Trump's Anti-Climate Crusade Puts Big Oil in Awkward Spot\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/energy-oil/trumps-anti-climate-crusade-puts-big-oil-in-awkward-spot-9c98c61a?mod=wsj_FV"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "10:53",
+      "title": "ConocoPhillips Stock: Is COP Underperforming the Energy Sector?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/59eb5553-914c-3773-8ce6-de9d32d21356/conocophillips-stock%3A-is-cop.html"
+    },
+    {
+      "date": "2025-09-01",
+      "time": "08:31",
+      "title": "Is ConocoPhillips (COP) Approaching a Free Cash Flow Inflection?\n\n\n(Insider Monkey)",
+      "link": "/news/154575/is-conocophillips-cop-approaching-a-free-cash-flow-inflection"
+    },
+    {
+      "date": "2025-08-31",
+      "time": "00:10",
+      "title": "UBS Raises PT on ConocoPhillips (COP) to $123 From $116\n\n\n(Insider Monkey)",
+      "link": "/news/154185/ubs-raises-pt-on-conocophillips-cop-to-123-from-116"
+    },
+    {
+      "date": "2025-08-28",
+      "time": "13:55",
+      "title": "ConocoPhillips' Resilient Free Cash Flows Build Long-Term Value\n\n\n(Zacks)",
+      "link": "/news/152659/conocophillips-resilient-free-cash-flows-build-long-term-value"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:37AM",
+      "title": "Can Ongoing Debt Reduction Boost the Prospects of Occidental Stock?\n\n\n(Zacks)",
+      "link": "/news/152558/can-ongoing-debt-reduction-boost-the-prospects-of-occidental-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:04AM",
+      "title": "Is the Current Oil Price Favorable for COP's Upstream Business?\n\n\n(Zacks)",
+      "link": "/news/152343/is-the-current-oil-price-favorable-for-cops-upstream-business"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:00AM",
+      "title": "Sempra and EQT Sign 20-Year LNG Supply Deal for Port Arthur Phase 2\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/news/sempra-eqt-sign-20-lng-090000723.html"
+    },
+    {
+      "date": "2025-08-27",
+      "time": "10:47",
+      "title": "ConocoPhillips, EOG Showdown: LNG Growth Story or Shale Drilling Stock?\n\n\n(Zacks)",
+      "link": "/news/151277/conocophillips-eog-showdown-lng-growth-story-or-shale-drilling-stock"
+    }
+  ]
+}

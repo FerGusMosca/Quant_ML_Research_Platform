@@ -1,0 +1,47 @@
+{
+  "symbol": "AMZN",
+  "year": 2022,
+  "period": "Q2",
+  "competition_summary": [
+    {
+      "competitor": "EUR",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 us-gaap:SubsequentEventMember amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 srt:MinimumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 srt:MaximumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MinimumMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-01 2022-04-30 0001018724 us-gaap:SeniorNotesMe"
+    },
+    {
+      "competitor": "THE SECURITIES EXCHANGE ACT",
+      "mentions": 2,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 us-gaap:SubsequentEventMember amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 srt:MinimumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 srt:MaximumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MinimumMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-01 2022-04-30 0001018724 us-gaap:SeniorNotesMe"
+    },
+    {
+      "competitor": "Commission File No.",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 us-gaap:SubsequentEventMember amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 srt:MinimumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 srt:MaximumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MinimumMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-01 2022-04-30 0001018724 us-gaap:SeniorNotesMe"
+    },
+    {
+      "competitor": "AMAZON.COM, INC.",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 us-gaap:SubsequentEventMember amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 srt:MinimumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 srt:MaximumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MinimumMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-01 2022-04-30 0001018724 us-gaap:SeniorNotesMe"
+    },
+    {
+      "competitor": "Delaware 91-1646860",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 us-gaap:SubsequentEventMember amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 srt:MinimumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 srt:MaximumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MinimumMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-01 2022-04-30 0001018724 us-gaap:SeniorNotesMe"
+    },
+    {
+      "competitor": "Each Exchange on Which Registered Common Stock",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 us-gaap:SubsequentEventMember amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 srt:MinimumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 srt:MaximumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MinimumMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-01 2022-04-30 0001018724 us-gaap:SeniorNotesMe"
+    },
+    {
+      "competitor": "the Securities Exchange Act",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 us-gaap:SubsequentEventMember amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 srt:MinimumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 srt:MaximumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MinimumMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-01 2022-04-30 0001018724 us-gaap:SeniorNotesMe"
+    },
+    {
+      "competitor": "Interactive Data File",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 us-gaap:SubsequentEventMember amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 srt:MinimumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 srt:MaximumMember amzn:EolasTechnologiesMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MinimumMember 2022-04-01 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-01 2022-04-30 0001018724 us-gaap:SeniorNotesMe"
+    }
+  ]
+}

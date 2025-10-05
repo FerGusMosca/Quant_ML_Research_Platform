@@ -1,0 +1,51 @@
+{
+  "symbol": "UPS",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.3753,
+    "outlook_sentiment": 0.2421,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.057
+  },
+  "top_positive": [
+    {
+      "sent": "Domestic Package Operations 44 International Package Operations 47 Supply Chain Solutions Operations 50 Consolidated Operating Expenses 52 Other Income and (Expense) 55 Income Tax Expense 56 Liquidity and Capital Resources 57 Cash Flows From Operating Activities 57 Cash Flows From Investing Activities 58 Cash Flows From Financing Activities 59 Sources of Credit 60 Contractual Commitments 60 Legal Proceedings and Contingencies 60 Collective Bargaining Agreements 60 Recent Accounting Pronouncements 60 Item 3.",
+      "score": 0.7506
+    },
+    {
+      "sent": "AND SUBSIDIARIES NOTES TO UNAUDITED CONSOLIDATED FINANCIAL STATEMENTS Detail of the gains (losses) reclassified from accumulated other comprehensive income (loss) to the statements of consolidated income for the three months ended March\u00a031, 2023 and 2022 is as follows (in millions): Amount Reclassified from AOCI (1) Affected Line Item in the Income Statement Three Months Ended March 31: 2023 2022 Unrealized Gain (Loss) on Foreign Currency Translation: Realized gain (loss) on business wind-down $ ( 3 ) $ \u2014 Other expenses Income tax (expense) benefit \u2014 \u2014 Income tax expense Impact on net income ( 3 ) \u2014 Net income Unrealized gain (loss) on marketable securities: Realized gain (loss) on sale of securities ( 3 ) \u2014 Investment income and other Income tax (expense) benefit 1 \u2014 Income tax expense Impact on net income ( 2 ) \u2014 Net income Unrealized gain (loss) on cash flow hedges: Interest rate contracts ( 1 ) ( 3 ) Interest expense Foreign currency exchange contracts 68 41 Revenue Income tax (expense) benefit ( 16 ) ( 9 ) Income tax expense Impact on net income 51 29 Net income Unrecognized pension and postretirement benefit costs: Prior service costs ( 27 ) ( 23 ) Investment income and other Curtailment of benefit obligation \u2014 33 Investment income and other Income tax (expense) benefit 7 ( 3 ) Income tax expense Impact on net income ( 20 ) 7 Net income Total amount reclassified for the period $ 26 $ 36 Net income ( 1 ) Accumulated other comprehensive income (loss) 29 Table of Contents UNITED PARCEL SERVICE, INC.",
+      "score": 0.9942
+    },
+    {
+      "sent": "The following is a rollforward of our common stock, additional paid-in capital, retained earnings and non-controlling minority interests accounts for the three months ended March\u00a031, 2023 and 2022 (in millions, except per share amounts): Three Months Ended March 31: 2023 2022 Shares Dollars Shares Dollars Class\u00a0A Common Stock: Balance at beginning of period 134 $ 2 138 $ 2 Stock award plans 3 \u2014 4 \u2014 Common stock issuances 1 \u2014 1 \u2014 Conversions of class\u00a0A to class B common stock ( 3 ) \u2014 ( 3 ) \u2014 Class\u00a0A shares outstanding at end of period 135 $ 2 140 $ 2 Class B Common Stock: Balance at beginning of period 725 $ 7 732 $ 7 Common stock purchases ( 4 ) \u2014 ( 1 ) \u2014 Conversions of class\u00a0A to class B common stock 3 \u2014 3 \u2014 Class B shares outstanding at end of period 724 $ 7 734 $ 7 Additional Paid-In Capital: Balance at beginning of period $ \u2014 $ 1,343 Stock award plans 345 ( 35 ) Common stock purchases ( 492 ) ( 260 ) Common stock issuances 147 183 Balance at end of period $ \u2014 $ 1,231 Retained Earnings: Balance at beginning of period $ 21,326 $ 16,179 Net income attributable to controlling interests 1,895 2,662 Dividends ($ 1.62 and $ 1.52 per share) (1) ( 1,453 ) ( 1,406 ) Common stock purchases ( 258 ) \u2014 Other \u2014 ( 2 ) Balance at end of period $ 21,510 $ 17,433 Non-Controlling Interests: Balance at beginning of period $ 17 $ 16 Change in non-controlling interest ( 2 ) 2 Balance at end of period $ 15 $ 18 (1) The dividend per share amount is the same for both class A and class B common stock.",
+      "score": 0.9866
+    },
+    {
+      "sent": "The activity in accumulated other comprehensive income (loss) for the three months ended March\u00a031, 2023 and 2022 was as follows (in millions): Three Months Ended March 31: 2023 2022 Foreign currency translation gain (loss), net of tax: Balance at beginning of period $ ( 1,446 ) $ ( 1,162 ) Translation adjustment (net of tax effect of $( 15 ) and $ 0 ) 115 ( 40 ) Reclassification to earnings (net of tax effect of $ 0 and $ 0 ) 3 \u2014 Balance at end of period ( 1,328 ) ( 1,202 ) Unrealized gain (loss) on marketable securities, net of tax: Balance at beginning of period ( 11 ) ( 1 ) Current period changes in fair value (net of tax effect of $ 1 and $( 2 )) 5 ( 6 ) Reclassification to earnings (net of tax effect of $ 1 and $ 0 ) 2 \u2014 Balance at end of period ( 4 ) ( 7 ) Unrealized gain (loss) on cash flow hedges, net of tax: Balance at beginning of period 167 ( 17 ) Current period changes in fair value (net of tax effect of $( 8 ) and $ 23 ) ( 26 ) 72 Reclassification to earnings (net of tax effect of $( 16 ) and $( 9 )) ( 51 ) ( 29 ) Balance at end of period 90 26 Unrecognized pension and postretirement benefit costs, net of tax: Balance at beginning of period ( 259 ) ( 2,098 ) Net actuarial gain (loss) resulting from remeasurements of plan assets and liabilities (net of tax effect of $ 0 and $ 11 ) \u2014 31 Reclassification to earnings (net of tax effect of $ 7 and $( 3 )) 20 ( 7 ) Balance at end of period ( 239 ) ( 2,074 ) Accumulated other comprehensive income (loss) at end of period $ ( 1,481 ) $ ( 3,257 ) 28 Table of Contents UNITED PARCEL SERVICE, INC.",
+      "score": 0.9857
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "or international tax liabilities; increasingly stringent laws and regulations, including relating to climate change; potential claims or litigation related to labor and employment, personal injury, property damage, business practices, environmental liability and other matters; and other risks discussed in our filings with the Securities and Exchange Commission from time to time, including our Annual Report on Form 10-K for the year ended December\u00a031, 2022, and subsequently filed reports.",
+      "score": -0.8481
+    },
+    {
+      "sent": "Dividends accrued on Restricted Units are reinvested in additional Restricted Units at each dividend payable date and are subject to the same vesting and forfeiture conditions as the underlying Restricted Units.",
+      "score": -0.7783
+    },
+    {
+      "sent": "Accounting Standards Issued But Not Yet Effective See note 2 to the unaudited, consolidated financial statements for a discussion of accounting standards issued, but not yet effective.",
+      "score": -0.7692
+    }
+  ],
+  "forward_snippets": [
+    "In making this determination, we considered the financial condition and prospects of each issuer, the magnitude of the losses compared with the cost, the probability that we will be unable to collect all amounts due according to the contractual terms of the security, the\nle securities: Equity securities $ 2 $ \u2014 $ \u2014 $ 2 Total trading marketable securities 2 \u2014 \u2014 2 Current available-for-sale securities: U.S.",
+    "In making this determination, we considered the financial condition and prospects of each issuer, the magnitude of the losses compared with the cost, the probability that we will be unable to collect all amounts due according to the contractual terms of the security, the credit rating of the security and our ability and intent to hold these investments until the anticipated recovery in market value occurs.",
+    "We expect to contribute approximately $ 78 and $ 44 million over the remainder of the year to our pension and U.S.",
+    "We expect to contribute approximately $ 78 and $ 44 million over the remainder of the year to our pension and U.S.",
+    "We will continue to assess the impact of these uncertainties in accordance with ASC Topic 715."
+  ]
+}

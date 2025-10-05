@@ -1,0 +1,47 @@
+{
+  "symbol": "CSCO",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1305,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.284
+  },
+  "top_positive": [
+    {
+      "sent": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued) (Unaudited) The following amounts were recorded on the Consolidated Balance Sheets related to cumulative basis adjustments for our fair value hedges (in millions): CARRYING AMOUNT OF THE HEDGED ASSETS/(LIABILITIES) CUMULATIVE AMOUNT OF FAIR VALUE HEDGING ADJUSTMENT INCLUDED IN THE CARRYING AMOUNT OF THE HEDGED ASSETS/LIABILITIES Balance Sheet Line Item of Hedged Item October 29, 2022 July 30, 2022 October 29, 2022 July 30, 2022 Long-term debt $ ( 1,448 ) $ ( 1,487 ) $ 49 $ 10 The effect of derivative instruments designated as fair value hedges, recognized in interest and other income (loss), net is summarized as follows (in millions): GAINS (LOSSES) FOR THE THREE MONTHS ENDED October 29, 2022 October 30, 2021 Interest rate derivatives: Hedged items $ 39 $ 26 Derivatives designated as hedging instruments ( 39 ) ( 27 ) Total $ \u2014 $ ( 1 ) The effect on the Consolidated Statements of Operations of derivative instruments not designated as hedges is summarized as follows (in millions): GAINS (LOSSES) FOR THE THREE MONTHS ENDED Derivatives Not Designated as Hedging Instruments Line Item in Statements of Operations October 29, 2022 October 30, 2021 Foreign currency derivatives Other income (loss), net $ ( 72 ) $ ( 20 ) Total return swaps\u2014deferred compensation Operating expenses and other ( 25 ) 21 Equity derivatives Other income (loss), net ( 1 ) 4 Total $ ( 98 ) $ 5 The notional amounts of our outstanding derivatives are summarized as follows (in millions): October 29, 2022 July 30, 2022 Foreign currency derivatives $ 4,183 $ 4,521 Interest rate derivatives 1,500 1,500 Total return swaps\u2014deferred compensation 676 651 Total $ 6,359 $ 6,672 (b) Offsetting of Derivative Instruments We present our derivative instruments at gross fair values in the Consolidated Balance Sheets.",
+      "score": 0.9852
+    },
+    {
+      "sent": "MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS (Continued) Interest and Other Income (Loss), Net Interest Income (Expense), Net The following table summarizes interest income and interest expense (in millions): Three Months Ended October 29, 2022 October 30, 2021 Variance in Dollars Interest income $ 169 $ 121 $ 48 Interest expense (100) (89) (11) Interest income (expense), net $ 69 $ 32 $ 37 For the first quarter of fiscal 2023, the increase in interest income was driven by higher interest rates.",
+      "score": 0.9805
+    },
+    {
+      "sent": "MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS (Continued) Interest and Other Income (Loss), Net Interest Income (Expense), Net The following table summarizes interest income and interest expense (in millions): Three Months Ended October 29, 2022 October 30, 2021 Variance in Dollars Interest income $ 169 $ 121 $ 48 Interest expense (100) (89) (11) Interest income (expense), net $ 69 $ 32 $ 37 For the first quarter of fiscal 2023, the increase in interest income was driven by higher interest rates.",
+      "score": 0.9805
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Risks Related to Cybersecurity, Privacy, and Regulatory Requirements Cyber attacks, data breaches or malware may disrupt our operations, harm our operating results and financial condition, and damage our reputation or otherwise materially harm our business; and cyber attacks or data breaches on our customers\u2019 or third-party providers\u2019 networks, or in cloud-based services provided to, by, or enabled by us, could result in claims of liability against us, give rise to legal and/or regulatory action, damage our reputation or otherwise materially harm our business.",
+      "score": -0.9753
+    },
+    {
+      "sent": "Risks Related to Cybersecurity, Privacy, and Regulatory Requirements Cyber attacks, data breaches or malware may disrupt our operations, harm our operating results and financial condition, and damage our reputation or otherwise materially harm our business; and cyber attacks or data breaches on our customers\u2019 or third-party providers\u2019 networks, or in cloud-based services provided to, by, or enabled by us, could result in claims of liability against us, give rise to legal and/or regulatory action, damage our reputation or otherwise materially harm our business.",
+      "score": -0.9753
+    },
+    {
+      "sent": "A reduction or interruption in supply, including disruptions on our global supply chain, caused in part by public health emergencies (including the COVID-19 pandemic), geopolitical tensions (including as a result of China-Taiwan relations) or a significant natural disaster (including as a result of climate change); a significant increase in the price of one or more components (including as a result of inflation); a failure to adequately authorize procurement of inventory by our contract manufacturers; a failure to appropriately cancel, reschedule, or adjust our requirements based on our business needs; or a decrease in demand for our products could materially adversely affect our business, operating results, and financial condition and could materially damage customer relationships.",
+      "score": -0.9545
+    }
+  ],
+  "forward_snippets": [
+    "However, we believe that the disclosures are adequate to make the information presented not misleading.",
+    "Recent Accounting Pronouncements (a) Recent Accounting Standards or Updates Not Yet Effective Reference Rate Reform In March 2020, the FASB issued an accounting standard update and subsequent amendments that provide optional expedients and exceptions to the current guidance on contract modification and hedging relationships to ease the financial reporting burden of the expected market transition from the London InterBank Offered Rate (LIBOR) and other interbank offered rates to alternative reference rates.",
+    "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued) (Unaudited) We recognize revenue upon transfer of control of promised goods or services in a contract with a customer in an amount that reflects the consideration we expect to receive in exchange for those products or services.",
+    "Significant Judgments Revenue is allocated among these performance obligations in a manner that reflects the consideration that we expect to be entitled to for the promised goods or services based on standalone selling prices (SSP).",
+    "Recent Accounting Pronouncements (a) Recent Accounting Standards or Updates Not Yet Effective Reference Rate Reform In March 2020, the FASB issued an accounting standard update and subsequent amendments that provide optional expedients and exceptions to the current guidance on contract modification and hedging relationships to ease the financial reporting burden of the expected market transition from the London InterBank Offered Rate (LIBOR) and other interbank offered rates to alternative reference rates."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "PG",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2221,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.139
+  },
+  "top_positive": [
+    {
+      "sent": "Reportable Segments % of Net\u00a0Sales (1) % of Net Earnings (1) Product Categories (Sub-Categories) Major Brands Beauty 18% 18% Hair Care ( Conditioners, Shampoos, Styling Aids, Treatments ) Head & Shoulders, Herbal Essences, Pantene, Rejoice Skin and Personal Care ( Antiperspirants and Deodorants, Personal Cleansing, Skin Care ) Olay, Old Spice, Safeguard, Secret, SK-II, Native Grooming 8% 9% Grooming ( Appliances, Female Blades & Razors, Male Blades & Razors, Pre- and Post-Shave Products, Other Grooming ) Braun, Gillette, Venus Health Care 14% 14% Oral Care ( Toothbrushes, Toothpastes, Other Oral Care ) Crest, Oral-B Personal Health Care ( Gastrointestinal, Pain Relief, Rapid Diagnostics, Respiratory, Vitamins/Minerals/Supplements, Other Personal Health Care ) Metamucil, Neurobion, Pepto-Bismol, Vicks Fabric & Home Care 36% 34% Fabric Care ( Fabric Enhancers, Laundry Additives, Laundry Detergents ) Ariel, Downy, Gain, Tide Home Care ( Air Care, Dish Care, P&G Professional, Surface Care ) Cascade, Dawn, Fairy, Febreze, Mr.",
+      "score": 0.9952
+    },
+    {
+      "sent": "Our five reportable segments are comprised of: \u2022 Beauty : Hair Care (Conditioners, Shampoos, Styling Aids, Treatments); Skin and Personal Care (Antiperspirants and Deodorants, Personal Cleansing, Skin Care); \u2022 Grooming : Grooming (Appliances, Female Blades & Razors, Male Blades & Razors, Pre- and Post-Shave Products, Other Grooming); \u2022 Health Care : Oral Care (Toothbrushes, Toothpaste, Other Oral Care); Personal Health Care (Gastrointestinal, Pain Relief, Rapid Diagnostics, Respiratory, Vitamins/Minerals/Supplements, Other Personal Health Care); \u2022 Fabric & Home Care : Fabric Care (Fabric Enhancers, Laundry Additives, Laundry Detergents); Home Care (Air Care, Dish Care, P&G Professional, Surface Care); and \u2022 Baby, Feminine & Family Care : Baby Care (Baby Wipes, Taped Diapers and Pants); Feminine Care (Adult Incontinence, Menstrual Care); Family Care (Paper Towels, Tissues, Toilet Paper).",
+      "score": 0.9933
+    },
+    {
+      "sent": "Our five reportable segments are comprised of: \u2022 Beauty : Hair Care (Conditioners, Shampoos, Styling Aids, Treatments); Skin and Personal Care (Antiperspirants and Deodorants, Personal Cleansing, Skin Care); \u2022 Grooming : Grooming (Appliances, Female Blades & Razors, Male Blades & Razors, Pre- and Post-Shave Products, Other Grooming); \u2022 Health Care : Oral Care (Toothbrushes, Toothpaste, Other Oral Care); Personal Health Care (Gastrointestinal, Pain Relief, Rapid Diagnostics, Respiratory, Vitamins/Minerals/Supplements, Other Personal Health Care); \u2022 Fabric & Home Care : Fabric Care (Fabric Enhancers, Laundry Additives, Laundry Detergents); Home Care (Air Care, Dish Care, P&G Professional, Surface Care); and \u2022 Baby, Feminine & Family Care : Baby Care (Baby Wipes, Taped Diapers and Pants); Feminine Care (Adult Incontinence, Menstrual Care); Family Care (Paper Towels, Tissues, Toilet Paper).",
+      "score": 0.9933
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Uncertain economic or social conditions may adversely impact demand for our products or cause our customers and other business partners to suffer financial hardship, which could adversely impact our business.",
+      "score": -0.8779
+    },
+    {
+      "sent": "Uncertain economic or social conditions may adversely impact demand for our products or cause our customers and other business partners to suffer financial hardship, which could adversely impact our business.",
+      "score": -0.8779
+    },
+    {
+      "sent": "Uncertain economic or social conditions may adversely impact demand for our products or cause our customers and other business partners to suffer financial hardship, which could adversely impact our business.",
+      "score": -0.8779
+    }
+  ],
+  "forward_snippets": [
+    "We aim to retain our talented employees by offering competitive compensation and benefits, strong career development and a respectful and inclusive culture that provides equal opportunity for all.",
+    "We aim to retain our talented employees by offering competitive compensation and benefits, strong career development and a respectful and inclusive culture that provides equal opportunity for all.",
+    "Diversity, Equality and Inclusion As a consumer products company, we believe that it is important for our workforce to reflect the diversity of our consumers worldwide.",
+    "We aim to reduce our own environmental footprint and enable our consumers to reduce their footprint without compromising on the performance of the products they use.",
+    "We discuss our expectations regarding future performance, events and outcomes, such as our business outlook and objectives in this Form 10-K, as well as in our quarterly and annual reports, current reports on Form 8-K, press releases and other written and oral communications."
+  ]
+}

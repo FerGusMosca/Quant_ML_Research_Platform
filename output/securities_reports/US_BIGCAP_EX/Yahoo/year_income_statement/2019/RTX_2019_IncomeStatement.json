@@ -1,0 +1,11 @@
+{
+  "symbol": "RTX",
+  "period": "2019",
+  "report_type": "YearlyIncomeStatement",
+  "items": {
+    "Total Unusual Items": -3183000000.0,
+    "Total Unusual Items Excluding Goodwill": -3183000000.0,
+    "Special Income Charges": -3183000000.0,
+    "Impairment Of Capital Assets": 3183000000.0
+  }
+}

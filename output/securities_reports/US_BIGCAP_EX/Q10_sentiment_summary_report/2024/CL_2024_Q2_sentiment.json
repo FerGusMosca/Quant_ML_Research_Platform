@@ -1,0 +1,51 @@
+{
+  "symbol": "CL",
+  "year": 2024,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.2269,
+    "outlook_sentiment": 0.2586,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.103
+  },
+  "top_positive": [
+    {
+      "sent": "would require certain climate-related disclosures as it relates to severe weather events and other natural conditions and carbon offsets and renewable energy credits.",
+      "score": 0.6808
+    },
+    {
+      "sent": "Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time.",
+      "score": 0.9524
+    },
+    {
+      "sent": "Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time.",
+      "score": 0.9524
+    },
+    {
+      "sent": "Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time.",
+      "score": 0.9524
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "We continue to closely monitor the impact of geopolitical events and tensions, such as the war in Ukraine, the Israel-Hamas war and tensions between China and Taiwan and the challenging market conditions discussed above, on our business and the related uncertainties and risks.",
+      "score": -0.9442
+    },
+    {
+      "sent": "We continue to closely monitor the impact of geopolitical events and tensions, such as the war in Ukraine, the Israel-Hamas war and tensions between China and Taiwan and the challenging market conditions discussed above, on our business and the related uncertainties and risks.",
+      "score": -0.9442
+    },
+    {
+      "sent": "We continue to closely monitor the impact of geopolitical events and tensions, such as the war in Ukraine, the Israel-Hamas war and tensions between China and Taiwan and the challenging market conditions discussed above, on our business and the related uncertainties and risks.",
+      "score": -0.9442
+    }
+  ],
+  "forward_snippets": [
+    "This guidance is effective for the Company for fiscal years beginning after December 15, 2024.",
+    "This guidance is effective for the Company for fiscal years beginning after December 15, 2024 and is not expected to have an impact on the Company\u2019s Consolidated Financial Statements.",
+    "This guidance is effective for the Company for fiscal years beginning after December 15, 2023, and interim periods within fiscal years beginning after December 15, 2024.",
+    "This guidance is effective for the Company no later than June 30, 2027 and is not expected to have a material impact on the Company\u2019s Consolidated Financial Statements.",
+    "This guidance is applicable to joint ventures with a formation date on or after January 1, 2025 and is not expected to have a material impact on the Company\u2019s Consolidated Financial Statements."
+  ]
+}

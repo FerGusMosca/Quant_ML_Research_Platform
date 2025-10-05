@@ -1,0 +1,47 @@
+{
+  "symbol": "BKNG",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2219,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.185
+  },
+  "top_positive": [
+    {
+      "sent": "11 The following table summarizes the activity in performance share units for employees during the nine months ended September\u00a030, 2022: Performance Share Units Shares Weighted-average\u00a0Grant-date\u00a0Fair\u00a0Value Unvested at December 31, 2021 (1) 108,323 $ 2,123 Granted (2),(3) 50,443 $ 2,210 Vested ( 44,276 ) $ 1,859 Performance shares adjustment (4) 33,529 $ 2,390 Forfeited ( 3,033 ) $ 2,325 Unvested at September 30, 2022 144,986 $ 2,294 (1) Excludes 12,251 performance share units awarded during the year ended December\u00a031, 2021 for which the grant date under Accounting Standards Codification (\"ASC\") 718, Compensation - Stock Compensation , was not es\nains included in other comprehensive (loss) income (1) 130 Balance, end of period $ 330 (1) The Company's investment in Grab (see Note 5) had an estimated fair value of $ 330 million and $ 200 million at September 30, 2021 and December 31, 2020, respectively.",
+      "score": 0.979
+    },
+    {
+      "sent": "The competition for talent is exacerbated by an increased willingness of certain companies to offer flexible and remote working policies, which expands the pool of candidates from which our competitors may attract talent.",
+      "score": 0.9287
+    },
+    {
+      "sent": "The competition for talent is exacerbated by an increased willingness of certain companies to offer flexible and remote working policies, which expands the pool of candidates from which our competitors may attract talent.",
+      "score": 0.9287
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Gross bookings resulting from reservations of room nights, rental car days, and airline tickets made through our agency and merchant categories for the three and nine months ended September\u00a030, 2022 and 2021 were as follows (numbers may not total due to rounding): Three Months Ended September 30, (in millions) Increase (Decrease) Nine Months Ended September 30, (in millions) Increase (Decrease) 2022 2021 2022 2021 Agency gross bookings $ 17,614 $ 14,872 18.4 % $ 53,348 $ 38,866 37.3 % Merchant gross bookings 14,506 8,812 64.6 % 40,610 18,709 117.1 % Total gross bookings $ 32,120 $ 23,684 35.6 % $ 93,958 $ 57,575 63.2 % Agency gross bookings are derived from travel-related transactions where we do not facilitate payments from travelers for the services provided, while merchant gross bookings are derived from services where we facilitate payments.",
+      "score": -0.9325
+    },
+    {
+      "sent": "Gross bookings resulting from reservations of room nights, rental car days, and airline tickets made through our agency and merchant categories for the three and nine months ended September\u00a030, 2022 and 2021 were as follows (numbers may not total due to rounding): Three Months Ended September 30, (in millions) Increase (Decrease) Nine Months Ended September 30, (in millions) Increase (Decrease) 2022 2021 2022 2021 Agency gross bookings $ 17,614 $ 14,872 18.4 % $ 53,348 $ 38,866 37.3 % Merchant gross bookings 14,506 8,812 64.6 % 40,610 18,709 117.1 % Total gross bookings $ 32,120 $ 23,684 35.6 % $ 93,958 $ 57,575 63.2 % Agency gross bookings are derived from travel-related transactions where we do not facilitate payments from travelers for the services provided, while merchant gross bookings are derived from services where we facilitate payments.",
+      "score": -0.9325
+    },
+    {
+      "sent": "These forward-looking statements are not guarantees of future performance and are subject to risks, uncertainties, and assumptions that are difficult to predict including the Risk Factors identified in Part I, Item 1A of our Annual Report on Form 10-K for the year ended December 31, 2021; therefore, our actual results could differ materially from those described in the forward-looking statements.",
+      "score": -0.7964
+    }
+  ],
+  "forward_snippets": [
+    "GAAP, the accounting standards update reduces the number of accounting models for convertible debt instruments, requires fewer embedded conversion features to be separately recognized from the host contract, and amends certain guidance to reduce form-over-substance-based accounting conclusions.",
+    "Under the updated guidance, upon the initial recognition of convertible debt, the Company presents the entire amount attributable to the debt as a liability.",
+    "Fair Value Measurement of Equity Securities Subject to Contractual Sale Restrictions In June 2022, the Financial Accounting Standards Board (\"FASB\") issued an accounting standards update with guidance on the fair value measurement of equity securities subject to contractual sale restrictions.",
+    "GAAP, the accounting standards update reduces the number of accounting models for convertible debt instruments, requires fewer embedded conversion features to be separately recognized from the host contract, and amends certain guidance to reduce form-over-substance-based accounting conclusions.",
+    "Under the updated guidance, upon the initial recognition of convertible debt, the Company presents the entire amount attributable to the debt as a liability."
+  ]
+}

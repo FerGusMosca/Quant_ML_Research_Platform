@@ -1,0 +1,47 @@
+{
+  "symbol": "UNP",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2808,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.158
+  },
+  "top_positive": [
+    {
+      "sent": "Additional information regarding stock option exercises appears in the following table: Millions, for the Three Months Ended March 31, 2022 2021 Intrinsic value of stock options exercised $ 42 $ 23 Cash received from option exercises 15 30 Treasury shares repurchased for employee payroll taxes ( 5 ) ( 6 ) Tax benefit realized from option exercises 5 4 Aggregate grant-date fair value of stock options vested 13 14 Retention Awards \u2013 Retention awards are granted at no cost to the employee,\u00a0vest over periods lasting up to 4 years, and dividends and dividend equivalents are paid to participants during the vesting periods.",
+      "score": 0.9552
+    },
+    {
+      "sent": "Additional information regarding stock option exercises appears in the following table: Millions, for the Three Months Ended March 31, 2022 2021 Intrinsic value of stock options exercised $ 42 $ 23 Cash received from option exercises 15 30 Treasury shares repurchased for employee payroll taxes ( 5 ) ( 6 ) Tax benefit realized from option exercises 5 4 Aggregate grant-date fair value of stock options vested 13 14 Retention Awards \u2013 Retention awards are granted at no cost to the employee,\u00a0vest over periods lasting up to 4 years, and dividends and dividend equivalents are paid to participants during the vesting periods.",
+      "score": 0.9552
+    },
+    {
+      "sent": "Additional information regarding stock option exercises appears in the following table: Millions, for the Three Months Ended March 31, 2022 2021 Intrinsic value of stock options exercised $ 42 $ 23 Cash received from option exercises 15 30 Treasury shares repurchased for employee payroll taxes ( 5 ) ( 6 ) Tax benefit realized from option exercises 5 4 Aggregate grant-date fair value of stock options vested 13 14 Retention Awards \u2013 Retention awards are granted at no cost to the employee,\u00a0vest over periods lasting up to 4 years, and dividends and dividend equivalents are paid to participants during the vesting periods.",
+      "score": 0.9552
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Risk Factors For a discussion of our potential risks and uncertainties, see the risk factors disclosed in our Form 10-K for the year ended December 31, 2021 .",
+      "score": -0.7717
+    },
+    {
+      "sent": "Due to uncertainty as to whether claims will be made or how they will be resolved, we cannot reasonably determine the probability of an adverse claim or reasonably estimate any adverse liability or the total maximum exposure under these indemnification arrangements.",
+      "score": -0.7579
+    },
+    {
+      "sent": "Due to uncertainty as to whether claims will be made or how they will be resolved, we cannot reasonably determine the probability of an adverse claim or reasonably estimate any adverse liability or the total maximum exposure under these indemnification arrangements.",
+      "score": -0.7579
+    }
+  ],
+  "forward_snippets": [
+    "(ASU) 2021 - 10, Government Assistance (Topic 832 ): Disclosures by Business Entities about Government Assistance , which requires business entities to provide certain disclosures when they have received government assistance and use a grant or contribution accounting model by analogy to other accounting guidance.",
+    "This guidance was effective beginning on March 12, 2020, and can be adopted on a prospective basis no later than December 31, 2022, with early adoption permitted.",
+    "The Company is currently evaluating the effect that the new guidance will have on our consolidated financial statements and related disclosures.",
+    "9 Table of Contents Changes in our\nut Government Assistance , which requires business entities to provide certain disclosures when they have received government assistance and use a grant or contribution accounting model by analogy to other accounting guidance.",
+    "This guidance was effective beginning on March 12, 2020, and can be adopted on a prospective basis no later than December 31, 2022, with early adoption permitted."
+  ]
+}

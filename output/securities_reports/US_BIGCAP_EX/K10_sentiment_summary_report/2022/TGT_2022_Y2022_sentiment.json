@@ -1,0 +1,47 @@
+{
+  "symbol": "TGT",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1713,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.12
+  },
+  "top_positive": [
+    {
+      "sent": "D Description of Securities (5) (10)A * Target Corporation Executive Officer Cash Incentive Plan (6) B * Target Corporation Long-Term Incentive Plan (as amended and restated effective June\u00a08, 2011) (7) C * Amended and Restated Target Corporation 2011 Long-Term Incentive Plan (as amended and restated effective September 1, 2017) (8) D * Target Corporation 2020 Long-Term Incentive Plan (9) E * Target Corporation SPP I (2016 Plan Statement) (as amended and restated effective April 3, 2016) (10) F * Target Corporation SPP II (2016 Plan Statement) (as amended and restated effective April 3, 2016) (11) G * Target Corporation SPP III (2014 Plan Statement) (as amended and restated effective January 1, 2014) (12) H * Amendment to Target Corporation SPP III (2014 Plan Statement) (effective April 3,",
+      "score": 0.9769
+    },
+    {
+      "sent": "hourly team members (who comprise the vast majority of our team), a 401(k) plan with matching contributions up to five percent of eligible earnings, paid vacation and holidays, family leave, merchandise and other discounts, disability insurance, life insurance, healthcare and dependent care flexible spending accounts, debt-free education assistance and tuition reimbursement, free mental health services, an annual short-term incentive program, long-term equity awards, and health insurance benefits, including free virtual health care visits.",
+      "score": 0.9732
+    },
+    {
+      "sent": "hourly team members (who comprise the vast majority of our team), a 401(k) plan with matching contributions up to five percent of eligible earnings, paid vacation and holidays, family leave, merchandise and other discounts, disability insurance, life insurance, healthcare and dependent care flexible spending accounts, debt-free education assistance and tuition reimbursement, free mental health services, an annual short-term incentive program, long-term equity awards, and health insurance benefits, including free virtual health care visits.",
+      "score": 0.9732
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our systems are subject to damage or interruption from power outages, telecommunications failures, computer viruses, malicious attacks, security breaches, catastrophic events, and implementation errors.",
+      "score": -0.93
+    },
+    {
+      "sent": "Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    },
+    {
+      "sent": "Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    }
+  ],
+  "forward_snippets": [
+    "Our talent and succession planning process supports the development of a diverse talent pipeline for leadership and other critical roles.",
+    "We believe in paying team members equitably, regardless of gender, race or ethnicity, and we regularly review the pay data of U.S.",
+    "Our talent and succession planning process supports the development of a diverse talent pipeline for leadership and other critical roles.",
+    "We believe in paying team members equitably, regardless of gender, race or ethnicity, and we regularly review the pay data of U.S.",
+    "We believe that one of the reasons our shareholders, guests, team members, and vendors choose Target is the positive reputation we have built over many years for serving those constituencies and the communities in which we operate."
+  ]
+}

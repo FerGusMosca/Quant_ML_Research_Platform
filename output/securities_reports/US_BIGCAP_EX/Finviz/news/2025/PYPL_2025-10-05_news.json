@@ -1,0 +1,606 @@
+{
+  "symbol": "PYPL",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-04",
+      "time": "17:16",
+      "title": "PayPal (PYPL) Partners with Spark to Inject $1B PYUSD Liquidity\n\n\n(Insider Monkey)",
+      "link": "/news/183901/paypal-pypl-partners-with-spark-to-inject-1b-pyusd-liquidity"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:45AM",
+      "title": "PayPal's PYUSD Stablecoin Tops $1 Billion Market Cap After Spark Partnership\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/paypals-pyusd-stablecoin-tops-1-154543932.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:46AM",
+      "title": "Walmart-Backed OnePay to Add Bitcoin and Ether Trading to Finance App: CNBC\n\n\n(CoinDesk)",
+      "link": "https://finance.yahoo.com/m/9f8a9954-d584-38d4-ad60-70b6f3bf046c/walmart-backed-onepay-to-add.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "MarketBeat Week in Review - 09/29 - 10/03\n\n\n(MarketBeat)",
+      "link": "/news/183811/marketbeat-week-in-review-0929-1003"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "14:07",
+      "title": "Dow touches above 47,000, while J&J stock receives upgrade\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/dow-touches-above-47-000-180702234.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:15PM",
+      "title": "Why cryptos new hiring spree means tapping traditional finance for candidates\n\n\n(DLNews)",
+      "link": "https://finance.yahoo.com/m/88f1646f-4362-3491-bd89-e4ecca9007ad/why-crypto%E2%80%99s-new-hiring-spree.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:53AM",
+      "title": "Walmart's OnePay Is Wading Into Crypto as Retailer Expands in Finance\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/walmart-stock-onepay-crypto-894739d8?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:32AM",
+      "title": "Analyst Report: PayPal Holdings, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/8a48306b-a7ac-3b35-80d5-2153a37f9099/analyst-report%3A-paypal.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:50AM",
+      "title": "Stock Market Today: Dow Rises As Jobs Report Nixed; Nvidia, Tesla Gain Ground (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/3060a649-6736-337e-94a3-7d286583dd27/stock-market-today%3A-dow-rises.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:42AM",
+      "title": "Apple downgraded, Alibaba upgraded: Wall Street's top analyst calls\n\n\n(The Fly)",
+      "link": "https://finance.yahoo.com/news/apple-downgraded-alibaba-upgraded-wall-134258510.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:13AM",
+      "title": "PayPal downgraded as Wolfe doubts branded growth rebound\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/paypal-downgraded-wolfe-doubts-branded-131325548.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Here is What to Know Beyond Why PayPal Holdings, Inc. (PYPL) is a Trending Stock\n\n\n(Zacks)",
+      "link": "/news/183316/here-is-what-to-know-beyond-why-paypal-holdings-inc-pypl-is-a-trending-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:26AM",
+      "title": "The Zacks Analyst Blog Highlights PayPal, Robinhood Markets, Interactive Brokers and Visa\n\n\n(Zacks)",
+      "link": "/news/183090/the-zacks-analyst-blog-highlights-paypal-robinhood-markets-interactive-brokers-and-visa"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "18:49",
+      "title": "PayPal and Blue Owl Capital Collaborate On A Multi-Year U.S. BNPL Receivables Agreement\n\n\n(Insider Monkey)",
+      "link": "/news/182799/paypal-and-blue-owl-capital-collaborate-on-a-multi-year-us-bnpl-receivables-agreement"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:17PM",
+      "title": "4 Crypto-Centric Stocks to Buy as Bitcoin Makes Steady Recovery\n\n\n(Zacks)",
+      "link": "/news/182728/4-crypto-centric-stocks-to-buy-as-bitcoin-makes-steady-recovery"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:52AM",
+      "title": "Will Agentic Shopping Be Good News For Affirm, Buy Now, Pay Later Firms?\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/eb35c04e-723f-3b1c-9a12-bba270ca0394/will-agentic-shopping-be-good.html"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "11:00",
+      "title": "Trust Wallet Turns Profits, Adds Solana, Targets 1B Users\n\n\n(BeInCrypto)",
+      "link": "https://finance.yahoo.com/m/cf6af1f9-1218-3f4b-a739-50f18ee37b2a/trust-wallet-turns-profits%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:13AM",
+      "title": "Visa Unveils AI-Driven VCS Hub for Commercial Payments\n\n\n(Zacks)",
+      "link": "/news/181077/visa-unveils-ai-driven-vcs-hub-for-commercial-payments"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:10AM",
+      "title": "EEFT's Dandelion & Citi Tie Up to Power Global Digital Wallet Payouts\n\n\n(Zacks)",
+      "link": "/news/181069/eefts-dandelion-citi-tie-up-to-power-global-digital-wallet-payouts"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:51AM",
+      "title": "SWIFT Tests A Blockchain Ledger With 30+ Banks -- What It Means For XRP\n\n\n(Motley Fool)",
+      "link": "/news/180703/swift-tests-a-blockchain-ledger-with-30-banks-what-it-means-for-xrp"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:16AM",
+      "title": "PayPal Sells $7B in US BNPL Receivables to Blue Owl Capital in Two-Year Agreement\n\n\n(Insider Monkey)",
+      "link": "/news/180418/paypal-sells-7b-in-us-bnpl-receivables-to-blue-owl-capital-in-two-year-agreement"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "23:36",
+      "title": "Unpacking Q2 Earnings: PayPal (NASDAQ:PYPL) In The Context Of Other Diversified Financial Services Stocks\n\n\n(StockStory)",
+      "link": "/news/180867/unpacking-q2-earnings-paypal-nasdaq-pypl-in-the-context-of-other-diversified-financial-services-stocks"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:10PM",
+      "title": "PayPal Stock: Why Wall Street May Be Undervaluing This Giant\n\n\n(MarketBeat)",
+      "link": "/news/180274/paypal-stock-why-wall-street-may-be-undervaluing-this-giant"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00PM",
+      "title": "Personal Capital Founder Bill Harris Launches AI-Backed RIA\n\n\n(Wealth Management)",
+      "link": "https://finance.yahoo.com/m/a02b2fca-a5e1-3851-8ffe-ee306ce92ec6/personal-capital-founder-bill.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:51PM",
+      "title": "Why PayPal (PYPL) Stock Is Falling Today\n\n\n(StockStory)",
+      "link": "/news/180030/why-paypal-pypl-stock-is-falling-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:30PM",
+      "title": "AI coding startup Vercel raises $300 million, valued at $9.3 billion\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/ai-coding-startup-vercel-raises-163055044.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:11PM",
+      "title": "PayPals Honey to integrate with ChatGPT and other AIs for shopping assistance\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/paypal-honey-integrate-chatgpt-other-161140924.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:01PM",
+      "title": "Brex to accept stablecoins as payment\n\n\n(Payments Dive)",
+      "link": "https://finance.yahoo.com/m/001cd218-fb3f-353e-8022-a8299f872a7d/brex-to-accept-stablecoins-as.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:39AM",
+      "title": "Venmo and PayPal users will finally be able to send money to each other\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/venmo-paypal-users-finally-able-153944819.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:08AM",
+      "title": "Mastercard Teams Up With Smile ID to Advance Secure Digital Identity\n\n\n(Zacks)",
+      "link": "/news/179747/mastercard-teams-up-with-smile-id-to-advance-secure-digital-identity"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:53AM",
+      "title": "Here's 1 Way a Fed Rate Cut Could Help This Digital Payments Leader\n\n\n(Motley Fool)",
+      "link": "/news/179220/heres-1-way-a-fed-rate-cut-could-help-this-digital-payments-leader"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "21:24",
+      "title": "Prediction: PayPal's New Google Partnership Could Drive the Stock Higher\n\n\n(Motley Fool)",
+      "link": "/news/178996/prediction-paypals-new-google-partnership-could-drive-the-stock-higher"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:53PM",
+      "title": "PayPal (PYPL) Introduces PayPal Links and Crypto Integration, Boosting User Payment Options\n\n\n(Insider Monkey)",
+      "link": "/news/178714/paypal-pypl-introduces-paypal-links-and-crypto-integration-boosting-user-payment-options"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:40PM",
+      "title": "Why PayPal (PYPL) Stock Is Up Today\n\n\n(StockStory)",
+      "link": "/news/178698/why-paypal-pypl-stock-is-up-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:49PM",
+      "title": "Stock Market Today: Dow Dips With Trump Set For Shutdown Talks; Multiple Stocks Clear Entries (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/011e567e-12e3-37f1-87d4-e98fe8e22dd0/stock-market-today%3A-dow-dips.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:01PM",
+      "title": "Peter Thiel-Backed Plasma Quietly Debuts $373M Stablecoin Neobank Promising 10% Yields And Access Across 150 Countries\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/peter-thiel-backed-plasma-quietly-160106409.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:17AM",
+      "title": "Former PayPal Lead David Knox Moves to Hyperliquid-Dedicated Treasury Hyperion as it Scales HYPE Portfolio\n\n\n(CCN)",
+      "link": "https://finance.yahoo.com/m/97dc052e-cd6c-3312-94ee-cf7b2fafb55d/former-paypal-lead-david-knox.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30AM",
+      "title": "Here's Why I Remain Bullish on PayPal Despite the Underperformance\n\n\n(Motley Fool)",
+      "link": "/news/177961/heres-why-i-remain-bullish-on-paypal-despite-the-underperformance"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:30AM",
+      "title": "2 Stocks Down 14% and 21% to Buy and Hold\n\n\n(Motley Fool)",
+      "link": "/news/177934/2-stocks-down-14-and-21-to-buy-and-hold"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "10:30",
+      "title": "PayPal Could Still Be 20% Too Cheap - Use Options to Play PYPL\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/e850107c-cfbc-3e7a-92e1-0b6dc4304a92/paypal-could-still-be-20%25-too.html"
+    },
+    {
+      "date": "2025-09-27",
+      "time": "06:00",
+      "title": "Europe must build better public markets for fintechs and not chase the bubble\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/europe-must-build-better-public-100000719.html"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "09:40",
+      "title": "Here's Why Paypal (PYPL) is a Strong Value Stock\n\n\n(Zacks)",
+      "link": "/news/176934/heres-why-paypal-pypl-is-a-strong-value-stock"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "17:45",
+      "title": "Paypal (PYPL) Suffers a Larger Drop Than the General Market: Key Insights\n\n\n(Zacks)",
+      "link": "/news/176287/paypal-pypl-suffers-a-larger-drop-than-the-general-market-key-insights"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15PM",
+      "title": "Cloudflare To Issue Stablecoin Amid Expected Rise Of Agentic E-Commerce\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/573c4194-8a8e-3bb0-809e-e86c8f5b1f98/cloudflare-to-issue.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:05PM",
+      "title": "Google Shakes Up Cryptocurrency, Digital Payments With AI Agents Protocol\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/facba5b9-82bf-3f73-a19f-952c604cb721/google-shakes-up.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "PYPL or MA: Which Is the Better Value Stock Right Now?\n\n\n(Zacks)",
+      "link": "/news/175957/pypl-or-ma-which-is-the-better-value-stock-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:22AM",
+      "title": "Citi projects $1.9 trillion stablecoin boom by 2030\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/citi-projects-19-trillion-stablecoin-boom-by-2030-152224619.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:30AM",
+      "title": "PayPal taps DeFis Spark to inject $1B into PYUSD stablecoin\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/paypal-taps-defi-spark-inject-143016836.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:11AM",
+      "title": "PayPal's Buy Now Pay Later Grows Fast: What Drives This Surge?\n\n\n(Zacks)",
+      "link": "/news/175890/paypals-buy-now-pay-later-grows-fast-what-drives-this-surge"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "PayPal Taps Spark to Boost PYUSD Liquidity by $1B Through DeFi Lending\n\n\n(CoinDesk)",
+      "link": "https://finance.yahoo.com/m/fa6b84df-698d-345f-b3b3-60a60305db6f/paypal-taps-spark-to-boost.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:48AM",
+      "title": "Big Tech Is Fun Again & The Fed Speaks\n\n\n(Motley Fool)",
+      "link": "/news/175751/big-tech-is-fun-again-the-fed-speaks"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Venmo Teams Up with Quarterback Drew Allar to Launch Penn State Venmo Debit Card\n\n\n(PR Newswire)",
+      "link": "/news/175646/venmo-teams-up-with-quarterback-drew-allar-to-launch-penn-state-venmo-debit-card"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:01AM",
+      "title": "PYPL- Google Deal Shows CEO is Delivering on His Promises\n\n\n(MoneyShow)",
+      "link": "https://finance.yahoo.com/news/pypl-google-deal-shows-ceo-050100879.html"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "14:58",
+      "title": "Technical Resistance Could Keep Pressuring PayPal Stock\n\n\n(Schaeffer's Research)",
+      "link": "/news/174968/technical-resistance-could-keep-pressuring-paypal-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:51AM",
+      "title": "PayPal Partners with Blue Owl. Is PYPL Stock Poised for a Rebound?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/d5a1c00f-a3b6-395a-8fcc-a63b3d743cdd/paypal-partners-with-blue.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:50AM",
+      "title": "PayPal, Circle and Tether Are Backing Stablecoin L1s\n\n\n(CCN)",
+      "link": "https://finance.yahoo.com/m/9fa1f58d-a33c-314f-b82b-6759493263aa/paypal%2C-circle-and-tether-are.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:08AM",
+      "title": "PayPal Trades Cheaper Than Industry: How to Play the Stock?\n\n\n(Zacks)",
+      "link": "/news/174647/paypal-trades-cheaper-than-industry-how-to-play-the-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:45AM",
+      "title": "4 Crypto-Centric Stocks to Grab Before Bitcoin's Next Rally\n\n\n(Zacks)",
+      "link": "/news/174562/4-crypto-centric-stocks-to-grab-before-bitcoins-next-rally"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:32AM",
+      "title": "PayPal Teams Up With Blue Owl In $7 Billion Buy Now, Pay Later Deal\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/paypal-teams-blue-owl-7-123231011.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:21AM",
+      "title": "Buy 5 Financial Technology Giants Amid Fed's Low-Interest-Rate Regime\n\n\n(Zacks)",
+      "link": "/news/174547/buy-5-financial-technology-giants-amid-feds-low-interest-rate-regime"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "PayPal Announces a Multi-Year Relationship for U.S. Buy Now, Pay Later Receivables with Funds Managed by Blue Owl Capital\n\n\n(PR Newswire)",
+      "link": "/news/174319/paypal-announces-a-multi-year-relationship-for-us-buy-now-pay-later-receivables-with-funds-managed-by-blue-owl-capital"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:18AM",
+      "title": "PayPal: A Forgotten Fintech Gem Trading at a Bargain\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/paypal-forgotten-fintech-gem-trading-101845588.html"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "23:04",
+      "title": "ECB Sees 2029 As Realistic Timeline For Digital Euro Launch, Says Cipollone\n\n\n(Cryptonews)",
+      "link": "https://finance.yahoo.com/m/bc507a4a-9f28-3162-87ed-e72eb5b8f9da/ecb-sees-2029-as-realistic.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:53AM",
+      "title": "Stable integrates PayPal USD to expand financial transactions\n\n\n(Electronic Payments)",
+      "link": "https://finance.yahoo.com/m/9ea4d41b-d6f5-38e1-ac7d-df469dd33615/stable-integrates-paypal-usd.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:48AM",
+      "title": "PayPal probed on China ties\n\n\n(Payments Dive)",
+      "link": "https://finance.yahoo.com/m/054f71a7-325b-3b20-b004-b0f8bdeebbc0/paypal-probed-on-china-ties.html"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "09:20",
+      "title": "Is Trending Stock PayPal Holdings, Inc. (PYPL) a Buy Now?\n\n\n(Zacks)",
+      "link": "/news/172274/is-trending-stock-paypal-holdings-inc-pypl-a-buy-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:26AM",
+      "title": "Indias Pine Labs eyes up to $700m in IPO  report\n\n\n(Electronic Payments)",
+      "link": "https://finance.yahoo.com/m/41754a37-1f6c-348a-a56e-ba5a3437d6d2/india%E2%80%99s-pine-labs-eyes-up-to.html"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "18:41",
+      "title": "Alphabet launches Agent Payments Protocol to advance AI-driven commerce\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20250918PD202/alphabet.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:31AM",
+      "title": "PayPal Expands Peer-to-Peer Payments With Bitcoin, Ethereum Integration  Exec Says It's the 'Next Major Step' in Global Money Movement\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/paypal-expands-peer-peer-payments-123105799.html"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "09:00",
+      "title": "The Payments Giant That's Quietly Winning the Crypto War\n\n\n(Motley Fool)",
+      "link": "/news/171409/the-payments-giant-thats-quietly-winning-the-crypto-war"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "18:40",
+      "title": "PYPL Stock Price Prediction: Where PayPal Could Be by 2025, 2026, 2030\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/pypl-stock-price-prediction-where-220451349.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:26PM",
+      "title": "Google and PayPal: The Artificial Intelligence (AI) Agent Revolution Is Here\n\n\n(Motley Fool)",
+      "link": "/news/171125/google-and-paypal-the-artificial-intelligence-ai-agent-revolution-is-here"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:15PM",
+      "title": "Pantera Capital Says Solana at a Major Inflection Point as Third-Largest Crypto Play  Is $300 $SOL Realistic?\n\n\n(Cryptonews)",
+      "link": "https://finance.yahoo.com/m/18c1bcd1-2f68-3eaa-8aff-e651c40559a1/pantera-capital-says-solana.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:24PM",
+      "title": "PayPal, Google and Mastercard are all in on agentic AI\n\n\n(American Banker)",
+      "link": "https://finance.yahoo.com/m/6e033be3-007b-3556-ba07-c0e71630ca46/paypal%2C-google-and-mastercard.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:00PM",
+      "title": "Byte-Sized AI: Uber Freight Upgrades TMS; Ralph Lauren Launches Chatbot With OpenAI and Microsoft\n\n\n(Sourcing Journal)",
+      "link": "https://finance.yahoo.com/m/9fd2ff52-3866-3665-8c4c-778bb4ecfe1d/byte-sized-ai%3A-uber-freight.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:01PM",
+      "title": "Intuit Reaffirms Q1 & Fiscal 2026 Guidance: Is It on Track to Deliver?\n\n\n(Zacks)",
+      "link": "/news/171006/intuit-reaffirms-q1-fiscal-2026-guidance-is-it-on-track-to-deliver"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:50AM",
+      "title": "Here's Why Paypal (PYPL) is a Strong Momentum Stock\n\n\n(Zacks)",
+      "link": "/news/170844/heres-why-paypal-pypl-is-a-strong-momentum-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:38AM",
+      "title": "VoPay introduces PayPal and Venmo payouts on its payment platform\n\n\n(Electronic Payments)",
+      "link": "https://finance.yahoo.com/m/0e99b4f3-a880-390d-ac56-9995b3733ac3/vopay-introduces-paypal-and.html"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "21:47",
+      "title": "PayPals PYUSD Expands Across New Chains With LayerZero\n\n\n(99bitcoins)",
+      "link": "https://finance.yahoo.com/m/4764c1c9-b557-3dc5-a1ec-c369c2e74c38/paypal%E2%80%99s-pyusd-expands-across.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:01PM",
+      "title": "Stocks to Watch Recap: Intel, FedEx, Meta, Darden Restaurants\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/4c9f4b64-852d-3429-bde1-27b8dd38cc6b/stocks-to-watch-recap%3A-intel%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:53PM",
+      "title": "PayPal's $1.3B Stablecoin Expands to 9 New Blockchains With LayerZero Integration\n\n\n(CoinDesk)",
+      "link": "https://finance.yahoo.com/m/ebf6a918-318b-3ce9-b901-e09fe7a58dcb/paypal%27s-%241.3b-stablecoin.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:05PM",
+      "title": "PayPal Stablecoin Tops $1.3 Billion as PYUSD Expands to Tron, Avalanche\n\n\n(decrypt)",
+      "link": "https://finance.yahoo.com/m/7a72a594-6ad0-30be-b40d-7abc41254084/paypal-stablecoin-tops-%241.3.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:34PM",
+      "title": "PayPal and Google Want to Help You Shop Online With AI\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/03f9ef63-cd4b-308e-9db3-f7df709d68bc/paypal-and-google-want-to.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:00PM",
+      "title": "PayPal USD Expands to TRON Network via LayerZero\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/paypal-usd-expands-tron-network-190005416.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:35PM",
+      "title": "CoinDesk Live at Stellar Meridian 2025 Day 2\n\n\n(CoinDesk)",
+      "link": "https://finance.yahoo.com/m/8df6a625-2ea9-30f8-97e9-0f23fde1e7e5/coindesk-live-at-stellar.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:11PM",
+      "title": "Pine Labs, Wynn Resorts price target, Tradeweb downgrade\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/pine-labs-wynn-resorts-price-181149672.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:04PM",
+      "title": "Stocks to Watch Thursday: Intel, Meta, Darden Restaurants, Bullish\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/4c9f4b64-852d-3429-bde1-27b8dd38cc6b/stocks-to-watch-thursday%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:41PM",
+      "title": "PayPal & Google Tie-Up: Is Growth Just Around the Corner?\n\n\n(Zacks)",
+      "link": "/news/169927/paypal-google-tie-up-is-growth-just-around-the-corner"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:58AM",
+      "title": "Google and PayPal team up on agentic commerce\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/google-paypal-team-agentic-commerce-145822159.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:53AM",
+      "title": "Google partnership unlikely to move needle for PayPal stock: Morgan Stanley\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/google-partnership-unlikely-move-needle-115305888.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:19AM",
+      "title": "Alphabet Stock Rises Toward Record Amid Report China Has Ended Google Inquiry\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/alphabet-stock-china-google-inquiry-5b012cc3?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "PayPal, Google enter major tech pact\n\n\n(Payments Dive)",
+      "link": "https://finance.yahoo.com/m/b4be29cb-5b24-30fd-bf7a-bb75b51ea826/paypal%2C-google-enter-major.html"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "17:45",
+      "title": "Why the Market Dipped But Paypal (PYPL) Gained Today\n\n\n(Zacks)",
+      "link": "/news/168987/why-the-market-dipped-but-paypal-pypl-gained-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:12PM",
+      "title": "S&P 500 crypto stocks tank after Feds controversial rate cut\n\n\n(TheStreet)",
+      "link": "https://finance.yahoo.com/m/d6d5eefb-ab21-359a-a985-6c442fd10d82/s%26p-500-crypto-stocks-tank.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:46PM",
+      "title": "Google, PayPal Ink Multiyear Partnership on Digital Commerce\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/tech/ai/google-paypal-ink-multiyear-partnership-on-digital-commerce-b8a4cf0b?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:17PM",
+      "title": "Google, PayPal partner to roll out AI-powered solutions across platforms\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/google-paypal-partner-roll-ai-201718263.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:44PM",
+      "title": "CoinDesk Live at Stellar Meridian 2025\n\n\n(CoinDesk)",
+      "link": "https://finance.yahoo.com/m/a9c1aa18-82e8-3361-b82a-d1b186183506/coindesk-live-at-stellar.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:21PM",
+      "title": "Google and PayPal Forge?Multiyear Partnership to Revolutionize Commerce\n\n\n(PR Newswire)",
+      "link": "/news/168874/google-and-paypal-forgemultiyear-partnership-to-revolutionize-commerce"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:09PM",
+      "title": "Affirm Expands BNPL Reach With ServiceTitan & Vagaro Partnerships\n\n\n(Zacks)",
+      "link": "/news/168729/affirm-expands-bnpl-reach-with-servicetitan-vagaro-partnerships"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:58AM",
+      "title": "Affirm vs. Block: Which Fintech Stock Has More Growth Potential?\n\n\n(Zacks)",
+      "link": "/news/168719/affirm-vs-block-which-fintech-stock-has-more-growth-potential"
+    }
+  ]
+}

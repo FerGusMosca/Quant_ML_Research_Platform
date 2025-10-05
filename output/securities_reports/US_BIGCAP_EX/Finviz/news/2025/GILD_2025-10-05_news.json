@@ -1,0 +1,606 @@
+{
+  "symbol": "GILD",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-04",
+      "time": "09:37",
+      "title": "2 Surefire Dividend Stocks to Buy for the Long Haul\n\n\n(Motley Fool)",
+      "link": "/news/183823/2-surefire-dividend-stocks-to-buy-for-the-long-haul"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "18:00",
+      "title": "Gilead Sciences (GILD) Laps the Stock Market: Here's Why\n\n\n(Zacks)",
+      "link": "/news/183767/gilead-sciences-gild-laps-the-stock-market-heres-why"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:28AM",
+      "title": "RBC Capital Maintains a Hold Rating on Gilead Sciences (GILD)\n\n\n(Insider Monkey)",
+      "link": "/news/183078/rbc-capital-maintains-a-hold-rating-on-gilead-sciences-gild"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:33AM",
+      "title": "Gilead Foundation Commits Over $6.5M in New Grant Funding to Support STEM Education Pathways\n\n\n(Insider Monkey)",
+      "link": "/news/183006/gilead-foundation-commits-over-65m-in-new-grant-funding-to-support-stem-education-pathways"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:00",
+      "title": "Gilead Sciences, Inc. (GILD) Is a Trending Stock: Facts to Know Before Betting on It\n\n\n(Zacks)",
+      "link": "/news/182296/gilead-sciences-inc-gild-is-a-trending-stock-facts-to-know-before-betting-on-it"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "Gilead's Lost Decade Is Over. It's Time to Buy the Stock.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/buy-gilead-sciences-stock-price-pick-0001436958?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "15:19",
+      "title": "Trump Triggered a Rally in Drug Stocks. Why It Might Not Last.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/trump-drug-stocks-pfizer-6a8aa31f?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:38AM",
+      "title": "Kymera Overcomes Sanofi Deal Update, Marches Ahead With Pipeline\n\n\n(Zacks)",
+      "link": "/news/181013/kymera-overcomes-sanofi-deal-update-marches-ahead-with-pipeline"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "14:49",
+      "title": "What Do Analysts Think About Gilead Sciences (GILD)?\n\n\n(Insider Monkey)",
+      "link": "/news/179992/what-do-analysts-think-about-gilead-sciences-gild"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "01:39",
+      "title": "Morgan Stanley Maintains Buy on Gilead Sciences (GILD)\n\n\n(Insider Monkey)",
+      "link": "/news/177890/morgan-stanley-maintains-buy-on-gilead-sciences-gild"
+    },
+    {
+      "date": "2025-09-27",
+      "time": "00:59",
+      "title": "Gilead Sciences (GILD) Stock Sees Positive Outlook Amid HIV, Liver, and Cancer Drug Momentum\n\n\n(Insider Monkey)",
+      "link": "/news/177458/gilead-sciences-gild-stock-sees-positive-outlook-amid-hiv-liver-and-cancer-drug-momentum"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "10:48",
+      "title": "JPMorgan Lifts Gilead Sciences, Inc. (GILD)'s Price Target To $145, Maintains Overweight Rating\n\n\n(Insider Monkey)",
+      "link": "/news/176976/jpmorgan-lifts-gilead-sciences-inc-gilds-price-target-to-145-maintains-overweight-rating"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "18:00",
+      "title": "Gilead Sciences (GILD) Declines More Than Market: Some Information for Investors\n\n\n(Zacks)",
+      "link": "/news/176332/gilead-sciences-gild-declines-more-than-market-some-information-for-investors"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "Why Gilead Sciences (GILD) Deserves Attention in the Cheap Quarterly Dividend Stocks Category\n\n\n(Insider Monkey)",
+      "link": "/news/175913/why-gilead-sciences-gild-deserves-attention-in-the-cheap-quarterly-dividend-stocks-category"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "Gilead Foundation Grants $6.5 Million in Commitment to STEM Education\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250925022835/en"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "10:16",
+      "title": "Gilead Sciences Surges 26.5% YTD: Buy, Sell or Hold the Stock?\n\n\n(Zacks)",
+      "link": "/news/174773/gilead-sciences-surges-265-ytd-buy-sell-or-hold-the-stock"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "09:19",
+      "title": "Gilead Sciences, Inc. (GILD) Expands U.S. Manufacturing Capacity With $32B Investment Through 2030\n\n\n(Insider Monkey)",
+      "link": "/news/171644/gilead-sciences-inc-gild-expands-us-manufacturing-capacity-with-32b-investment-through-2030"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "17:50",
+      "title": "Gilead Sciences (GILD) Outpaces Stock Market Gains: What You Should Know\n\n\n(Zacks)",
+      "link": "/news/170129/gilead-sciences-gild-outpaces-stock-market-gains-what-you-should-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Investors Heavily Search Gilead Sciences, Inc. (GILD): Here is What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/169519/investors-heavily-search-gilead-sciences-inc-gild-here-is-what-you-need-to-know"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "18:00",
+      "title": "Gilead Sciences (GILD) Ascends While Market Falls: Some Facts to Note\n\n\n(Zacks)",
+      "link": "/news/169035/gilead-sciences-gild-ascends-while-market-falls-some-facts-to-note"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "14:58",
+      "title": "Redburn Atlantic Maintains a Buy on Gilead Sciences (GILD), Sets a $143 PT\n\n\n(Insider Monkey)",
+      "link": "/news/167780/redburn-atlantic-maintains-a-buy-on-gilead-sciences-gild-sets-a-143-pt"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:02AM",
+      "title": "3 Reasons GILD is Risky and 1 Stock to Buy Instead\n\n\n(StockStory)",
+      "link": "/news/166807/3-reasons-gild-is-risky-and-1-stock-to-buy-instead"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "11:53",
+      "title": "Why Californias biopharma boom is critical for logistics\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/why-california-biopharma-boom-critical-155327803.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:43AM",
+      "title": "Biotech Sector May Flip to Market Leader by Year-End\n\n\n(MarketBeat)",
+      "link": "/news/166088/biotech-sector-may-flip-to-market-leader-by-year-end"
+    },
+    {
+      "date": "2025-09-14",
+      "time": "05:30",
+      "title": "Biotech stocks: Who wins and who loses if RFK, Jr. goes\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/biotech-stocks-wins-loses-rfk-093009170.html"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "22:01",
+      "title": "Here's How You Can Earn $100 In Passive Income By Investing In Gilead Sciences Stock\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/heres-earn-100-passive-income-020145692.html"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "17:50",
+      "title": "Gilead Sciences (GILD) Exceeds Market Returns: Some Facts to Consider\n\n\n(Zacks)",
+      "link": "/news/164344/gilead-sciences-gild-exceeds-market-returns-some-facts-to-consider"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:25PM",
+      "title": "Biotechs Could Benefit If RFK Jr. Leaves HHS\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/biotechs-could-benefit-rfk-jr-192548633.html"
+    },
+    {
+      "date": "2025-09-07",
+      "time": "10:23",
+      "title": "Leerink Partners Maintains Buy on Gilead Sciences (GILD)\n\n\n(Insider Monkey)",
+      "link": "/news/159514/leerink-partners-maintains-buy-on-gilead-sciences-gild"
+    },
+    {
+      "date": "2025-09-06",
+      "time": "01:13",
+      "title": "Gilead Acquires Interius BioTherapeutics to Advance Next-Gen Cell Therapy\n\n\n(Insider Monkey)",
+      "link": "/news/159293/gilead-acquires-interius-biotherapeutics-to-advance-next-gen-cell-therapy"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "05:00",
+      "title": "Gilead Sciences advances HIV prevention with new US partnership\n\n\n(Pharmaceutical Technology)",
+      "link": "https://finance.yahoo.com/m/bef4d14d-8140-3307-85be-72b7d5eae212/gilead-sciences-advances-hiv.html"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "16:21",
+      "title": "The US will buy 2 million doses of an HIV prevention drug for low-income countries\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/m/a73eaba1-e376-366a-ab38-0cc47959dd7c/the-us-will-buy-2-million.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:15PM",
+      "title": "Gilead Announces Partnership With PEPFAR to Deliver Twice-Yearly Lenacapavir for HIV Prevention for up to Two Million People in Primarily Low- and Lower-Middle-Income Countries\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250903204152/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Gilead Sciences Launches Choose U Campaign Spotlighting the Inspiring Experiences of People Living with HIV\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250902021598/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:57AM",
+      "title": "Is Gilead Sciences Stock Underperforming the Nasdaq?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/93ad8b15-bc10-3596-8b50-e18474f0a5ad/is-gilead-sciences-stock.html"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "12:15",
+      "title": "Gilead starts building manufacturing hub under $32 billion planned US investments\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/gilead-starts-building-manufacturing-hub-161538669.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:30AM",
+      "title": "Gilead Sciences Breaks Ground on New Manufacturing Hub, a Cornerstone of Its U.S. Growth and Innovation Strategy\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250903363682/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:36AM",
+      "title": "1 Healthcare Stock to Consider Right Now and 2 We Question\n\n\n(StockStory)",
+      "link": "/news/156359/1-healthcare-stock-to-consider-right-now-and-2-we-question"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "11:13",
+      "title": "What Do Analysts Think About Gilead Sciences (GILD)?\n\n\n(Insider Monkey)",
+      "link": "/news/155722/what-do-analysts-think-about-gilead-sciences-gild"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:28AM",
+      "title": "Gilead Sciences, Inc. (GILD) Wins FDA Approval for World's First Twice-Yearly HIV Preventive Therapy\n\n\n(Insider Monkey)",
+      "link": "/news/155042/gilead-sciences-inc-gild-wins-fda-approval-for-worlds-first-twice-yearly-hiv-preventive-therapy"
+    },
+    {
+      "date": "2025-09-01",
+      "time": "04:00",
+      "title": "Wyoming State Buys European Bank Stocks, Adjusts Healthcare Holdings\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/wyoming-european-bank-stocks-healthcare-73630db8?mod=bar_FV"
+    },
+    {
+      "date": "2025-08-31",
+      "time": "00:10",
+      "title": "Gilead Sciences (GILD) Announces Marketing Authorization for Yeytuo from the European Commission\n\n\n(Insider Monkey)",
+      "link": "/news/154184/gilead-sciences-gild-announces-marketing-authorization-for-yeytuo-from-the-european-commission"
+    },
+    {
+      "date": "2025-08-28",
+      "time": "09:00",
+      "title": "Here is What to Know Beyond Why Gilead Sciences, Inc. (GILD) is a Trending Stock\n\n\n(Zacks)",
+      "link": "/news/152165/here-is-what-to-know-beyond-why-gilead-sciences-inc-gild-is-a-trending-stock"
+    },
+    {
+      "date": "2025-08-27",
+      "time": "02:56",
+      "title": "Analyst Says Gilead (GILD) is a 'Very High Quality' Cheap Stock - Here's Why\n\n\n(Insider Monkey)",
+      "link": "/news/150534/analyst-says-gilead-gild-is-a-very-high-quality-cheap-stock-heres-why"
+    },
+    {
+      "date": "2025-08-26",
+      "time": "09:40",
+      "title": "GILD Wins Approval for Twice-Yearly HIV Prevention Shot in the EU\n\n\n(Zacks)",
+      "link": "/news/149965/gild-wins-approval-for-twice-yearly-hiv-prevention-shot-in-the-eu"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:43AM",
+      "title": "Gileads Yeytuo approved in EU, boosting its blockbuster potential\n\n\n(Pharmaceutical Technology)",
+      "link": "https://finance.yahoo.com/m/77d94ec0-7cef-3b4f-9bf0-82e58b76141d/gilead%E2%80%99s-yeytuo-approved-in.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:57AM",
+      "title": "Gilead wins European approval for HIV prevention injection\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/gilead-wins-european-approval-hiv-085751136.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:02AM",
+      "title": "Gilead Sciences' 99.9% Effective HIV Treatment Notches Another Win\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/news/technology/gilead-sciences-hiv-prep-yeytuo-yeztugo?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:00AM",
+      "title": "European Commission Authorizes Twice-Yearly Yeytuo (Lenacapavir) for HIV Prevention\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250825698635/en/"
+    },
+    {
+      "date": "2025-08-22",
+      "time": "09:55",
+      "title": "GILD Stock Slips as CVS Health Excludes New HIV Drug Yeztugo\n\n\n(Zacks)",
+      "link": "/news/147397/gild-stock-slips-as-cvs-health-excludes-new-hiv-drug-yeztugo"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:50AM",
+      "title": "Suze Orman is known for money advice - now she's sharing her stock picks and biggest investing mistake\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/suze-orman-is-known-for-money-advice-now-shes-sharing-her-stock-picks-and-biggest-investing-mistake-62fcebbc?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:30AM",
+      "title": "This Overlooked Biotech Stock Is a Buy for Its Hidden Strengths\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/3c1697f9-cb8b-3c6c-b5f9-6673cd6afdc5/this-overlooked-biotech-stock.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:53AM",
+      "title": "Gileads Kite scoops in vivo CAR-T specialist Interius for $350m\n\n\n(Pharmaceutical Technology)",
+      "link": "https://finance.yahoo.com/m/0b46f59f-bcd2-360f-92ac-e62f357182fc/gilead%E2%80%99s-kite-scoops-in-vivo.html"
+    },
+    {
+      "date": "2025-08-21",
+      "time": "16:56",
+      "title": "Gilead Topples On A Surprise Setback For Its 99.9% Effective HIV Drug\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/09b0e250-b374-3cb6-92cf-3a1abd89dba9/gilead-topples-on-a-surprise.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:15PM",
+      "title": "Gilead Needs Insurers to Cover New HIV Prevention Shot. CVS Isn't Paying.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/gilead-insurers-cvs-hiv-yeztugo-79e758ef?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:16AM",
+      "title": "Why Gilead Sciences (GILD) Shares Are Sliding Today\n\n\n(StockStory)",
+      "link": "/news/146509/why-gilead-sciences-gild-shares-are-sliding-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:12AM",
+      "title": "Coty, Gilead Sciences, Rent the Runway: Trending tickers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/coty-gilead-sciences-rent-runway-151222727.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:50AM",
+      "title": "Stock Market Today: Dow Jones Index Falls After Surprise Jobless Claims; Walmart Tumbles On Earnings Miss (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/eff5dc31-f808-31f8-97db-d8652993b89a/stock-market-today%3A-dow-jones.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:50AM",
+      "title": "Gilead stock falls after CVS holds off adding HIV prevention shot to plans\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/gilead-stock-falls-cvs-holds-125002143.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Kite to Acquire Interius BioTherapeutics to Advance In Vivo Platform\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250820272168/en/"
+    },
+    {
+      "date": "2025-08-20",
+      "time": "16:41",
+      "title": "Exclusive-CVS holds off adding Gileads new HIV prevention shot to drug coverage lists\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/exclusive-cvs-holds-off-adding-204111955.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:05PM",
+      "title": "Gilead Sciences to Present at Upcoming Investor Conferences\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250820832510/en"
+    },
+    {
+      "date": "2025-08-18",
+      "time": "09:25",
+      "title": "GILD Stock Up 7% Post Q2 Earnings: Should You Buy Now or Wait?\n\n\n(Zacks)",
+      "link": "/news/143254/gild-stock-up-7-post-q2-earnings-should-you-buy-now-or-wait"
+    },
+    {
+      "date": "2025-08-16",
+      "time": "10:15",
+      "title": "The Saturday Spread: These 3 Stocks Statistically May Be Cooking Up Something Special (GILD, WMB, XPEV)\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/6589a53b-743e-3213-bc52-07e92793eac1/the-saturday-spread%3A-these-3.html"
+    },
+    {
+      "date": "2025-08-15",
+      "time": "09:00",
+      "title": "Is Trending Stock Gilead Sciences, Inc. (GILD) a Buy Now?\n\n\n(Zacks)",
+      "link": "/news/141851/is-trending-stock-gilead-sciences-inc-gild-a-buy-now"
+    },
+    {
+      "date": "2025-08-14",
+      "time": "01:33",
+      "title": "Gilead Sciences's Q2 Earnings Call: Our Top 5 Analyst Questions\n\n\n(StockStory)",
+      "link": "/news/140099/gilead-sciencess-q2-earnings-call-our-top-5-analyst-questions"
+    },
+    {
+      "date": "2025-08-13",
+      "time": "23:33",
+      "title": "Q2 Rundown: Gilead Sciences (NASDAQ:GILD) Vs Other Therapeutics Stocks\n\n\n(StockStory)",
+      "link": "/news/140247/q2-rundown-gilead-sciences-nasdaq-gild-vs-other-therapeutics-stocks"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:36AM",
+      "title": "Will Breyanzi's Strong Uptake Help BMY Offset Generic Competition?\n\n\n(Zacks)",
+      "link": "/news/139170/will-breyanzis-strong-uptake-help-bmy-offset-generic-competition"
+    },
+    {
+      "date": "2025-08-12",
+      "time": "03:29",
+      "title": "GILD Q2 Deep Dive: HIV Franchise Drives Growth, New Launches and Pipeline in Focus\n\n\n(StockStory)",
+      "link": "/news/136295/gild-q2-deep-dive-hiv-franchise-drives-growth-new-launches-and-pipeline-in-focus"
+    },
+    {
+      "date": "2025-08-11",
+      "time": "20:19",
+      "title": "Gilead Receives Favorable CHMP Opinion For HIV Prevention With Twice-Yearly Lenacapavir\n\n\n(Insider Monkey)",
+      "link": "/news/135892/gilead-receives-favorable-chmp-opinion-for-hiv-prevention-with-twice-yearly-lenacapavir"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:10AM",
+      "title": "3 Biotech Stocks Likely to Outpace Q2 Earnings Estimates\n\n\n(Zacks)",
+      "link": "/news/135145/3-biotech-stocks-likely-to-outpace-q2-earnings-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Kymera Therapeutics Announces Second Quarter 2025 Financial Results and Provides a Business Update\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/kymera-therapeutics-announces-second-quarter-110000567.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15AM",
+      "title": "Company News for Aug 11, 2025\n\n\n(Zacks)",
+      "link": "/news/134629/company-news-for-aug-11-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:00AM",
+      "title": "Gilead Stock Is Closing In on an All-Time High. The Case for More Upside.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/21e99a61-5271-353e-b06d-95859eec457a/gilead-stock-is-closing-in-on.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:00AM",
+      "title": "Gilead Sciences Is Closing In on an All-Time High. The Case for More Upside.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/gilead-sciences-stock-price-gild-biotech-buy-cc8088b6?mod=bar_FV"
+    },
+    {
+      "date": "2025-08-09",
+      "time": "23:59",
+      "title": "Gilead Sciences' Twice-Yearly HIV Prevention Drug Recommended for Approval by European Medicines Agency\n\n\n(Insider Monkey)",
+      "link": "/news/134449/gilead-sciences-twice-yearly-hiv-prevention-drug-recommended-for-approval-by-european-medicines-agency"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:26AM",
+      "title": "Gilead Sciences (GILD) Touches New Record High as 10 Analysts Turn Bullish\n\n\n(Insider Monkey)",
+      "link": "/news/134337/gilead-sciences-gild-touches-new-record-high-as-10-analysts-turn-bullish"
+    },
+    {
+      "date": "2025-08-08",
+      "time": "18:32",
+      "title": "Nasdaq posts record closing high with tech gains, rate cut optimism\n\n\n(Reuters Videos)  +8.28%",
+      "link": "https://finance.yahoo.com/video/nasdaq-posts-record-closing-high-223253473.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:23PM",
+      "title": "S&P 500 Gains and Losses Today: Apple Stock Extends Its Rise; The Trade Desk Craters After Earnings\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/97c7d7d0-b835-3f62-a857-bb90ba9636f7/s%26p-500-gains-and-losses.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:28PM",
+      "title": "These Stocks Moved the Most Today: Trade Desk, Expedia, SoundHound, Pinterest, Gilead, Peloton, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/5cbe4f69-28be-36c0-8426-7cacb941d8d4/these-stocks-moved-the-most.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15PM",
+      "title": "How major US stock indexes fared Friday, 8/8/2025\n\n\n(Associated Press)",
+      "link": "https://finance.yahoo.com/news/major-us-stock-indexes-fared-201542415.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:04PM",
+      "title": "Gilead Surges 8%, Flirting With A Breakout, On Growing Enthusiasm For HIV PrEP\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/abcb4be1-8dfc-3a4c-9270-1af9a26e0616/gilead-surges-8%25%2C-flirting.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:27PM",
+      "title": "These Stocks Are Moving Most Today: Trade Desk, Expedia, SoundHound, Pinterest, Gilead, Microchip, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/5cbe4f69-28be-36c0-8426-7cacb941d8d4/these-stocks-are-moving-most.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:32PM",
+      "title": "Gileads Yeztugo sales ahead of expectations following launch\n\n\n(Pharmaceutical Technology)",
+      "link": "https://finance.yahoo.com/m/d8c80e2e-3859-3f74-978f-2464c8472266/gilead%E2%80%99s-yeztugo-sales-%E2%80%9Cahead.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:21PM",
+      "title": "Why Is Gilead Sciences (GILD) Stock Rocketing Higher Today\n\n\n(StockStory)",
+      "link": "/news/133901/why-is-gilead-sciences-gild-stock-rocketing-higher-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:55AM",
+      "title": "Gilead Sciences Lifts Annual Outlook As Yeztugo Launch Nears\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/gilead-lifts-annual-outlook-yeztugo-145532558.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:49AM",
+      "title": "Reason to worry the Fed won't cut rates after all\n\n\n(TheStreet)",
+      "link": "https://finance.yahoo.com/m/9fe7f13f-2434-3ac1-a867-6b3c93ef1b74/reason-to-worry-the-fed-won%27t.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Stock Market Today: Dow Rises, But Under Armour Plunges On This Warning (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/56ddb7c1-81cd-3128-a969-c9100dba4dc8/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:39AM",
+      "title": "Trade Desk downgraded, Instacart upgraded: Wall Street's top analyst calls\n\n\n(The Fly)",
+      "link": "https://finance.yahoo.com/news/trade-desk-downgraded-instacart-upgraded-133934535.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:23AM",
+      "title": "GILD Stock Rises on Q2 Earnings and Sales Beat, '25 View Up\n\n\n(Zacks)",
+      "link": "/news/133670/gild-stock-rises-on-q2-earnings-and-sales-beat-25-view-up"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:18AM",
+      "title": "These Stocks Are Moving Most Today: Trade Desk, Expedia, Pinterest, Twilio, Gilead Sciences\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/stock-movers-8181e83e?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:33AM",
+      "title": "Analyst Report: Gilead Sciences, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/79a437d2-f7d1-320c-9c5e-6ba78f5d4c1e/analyst-report%3A-gilead.html"
+    },
+    {
+      "date": "2025-08-07",
+      "time": "19:00",
+      "title": "Gilead (GILD) Q2 Earnings: Taking a Look at Key Metrics Versus Estimates\n\n\n(Zacks)",
+      "link": "/news/133107/gilead-gild-q2-earnings-taking-a-look-at-key-metrics-versus-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:40PM",
+      "title": "Gilead Sciences (GILD) Tops Q2 Earnings and Revenue Estimates\n\n\n(Zacks)",
+      "link": "/news/132897/gilead-sciences-gild-tops-q2-earnings-and-revenue-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:13PM",
+      "title": "Gilead Earnings Beat Estimates, But All Eyes Are On New HIV Shot\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/gilead-earnings-stock-price-hiv-shot-69aaa220?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:06PM",
+      "title": "Gilead Sciences Raises Guidance After Results Top Views\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/retail/gilead-sciences-raises-guidance-after-results-top-views-561deef6?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:44PM",
+      "title": "Gilead Sciences (NASDAQ:GILD) Beats Q2 Sales Targets\n\n\n(StockStory)",
+      "link": "/news/132774/gilead-sciences-nasdaq-gild-beats-q2-sales-targets"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:39PM",
+      "title": "Gilead Sciences earnings top estimates, boosts full-year outlook\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/gilead-sciences-earnings-top-estimates-203949552.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:35PM",
+      "title": "Gilead: Q2 Earnings Snapshot\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/gilead-q2-earnings-snapshot-203536486.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:28PM",
+      "title": "Will Gilead's Beat-And-Raise Help It Leapfrog Its 50-Day Line Ceiling?\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/news/technology/gilead-stock-gilead-earnings-q2-2025?mod=IBD_FV"
+    }
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "symbol": "CMG",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-04",
+      "time": "17:01",
+      "title": "Jim Cramer Says \"Chipotle Seems Like a Decent Reversal Candidate\"\n\n\n(Insider Monkey)",
+      "link": "/news/183893/jim-cramer-says-chipotle-seems-like-a-decent-reversal-candidate"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:46PM",
+      "title": "Cheap Chipotle? Why CMG Stock Could Be Ready for a Comeback\n\n\n(MarketBeat)",
+      "link": "/news/183846/cheap-chipotle-why-cmg-stock-could-be-ready-for-a-comeback"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "15:15",
+      "title": "Chipotle (CMG) Stock Is Up, What You Need To Know\n\n\n(StockStory)",
+      "link": "/news/183624/chipotle-cmg-stock-is-up-what-you-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:47AM",
+      "title": "Stephens Affirms 'Equal Weight' Rating on Chipotle Mexican Grill Inc. (CMG) amid Menu Improvement\n\n\n(Insider Monkey)",
+      "link": "/news/182925/stephens-affirms-equal-weight-rating-on-chipotle-mexican-grill-inc-cmg-amid-menu-improvement"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:20",
+      "title": "McDonald's Drives Sustainable Growth Through Loyalty & Menu Innovation\n\n\n(Zacks)",
+      "link": "/news/182546/mcdonalds-drives-sustainable-growth-through-loyalty-menu-innovation"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Can Chipotle Balance Expansion With Quality and Brand Strength?\n\n\n(Zacks)",
+      "link": "/news/182368/can-chipotle-balance-expansion-with-quality-and-brand-strength"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "17:12",
+      "title": "A Year After Chipotle's Former CEO Was Tapped to Lead Starbucks' Turnaround -- Is SBUX a Buy?\n\n\n(Motley Fool)",
+      "link": "/news/181544/a-year-after-chipotles-former-ceo-was-tapped-to-lead-starbucks-turnaround-is-sbux-a-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Can CAVA's Strong Cash Flow Fuel Expansion in a Soft Market?\n\n\n(Zacks)",
+      "link": "/news/180967/can-cavas-strong-cash-flow-fuel-expansion-in-a-soft-market"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:31AM",
+      "title": "3 Stocks Under $50 with Promising Prospects\n\n\n(StockStory)",
+      "link": "/news/180711/3-stocks-under-50-with-promising-prospects"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "17:50",
+      "title": "Chipotle Mexican Grill (CMG) Stock Sinks As Market Gains: Here's Why\n\n\n(Zacks)",
+      "link": "/news/180316/chipotle-mexican-grill-cmg-stock-sinks-as-market-gains-heres-why"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Chipotle Mexican Grill, Inc. (CMG) Is a Trending Stock: Facts to Know Before Betting on It\n\n\n(Zacks)",
+      "link": "/news/179571/chipotle-mexican-grill-inc-cmg-is-a-trending-stock-facts-to-know-before-betting-on-it"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "14:16",
+      "title": "Chipotle Aims To Spice Up Sales With Red Chimichurri Launch\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/chipotle-aims-spice-sales-red-181641725.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:44AM",
+      "title": "Chipotle adds red chimichurri as limited-time option\n\n\n(Nation's Restaurant News)",
+      "link": "https://www.nrn.com/fast-casual/chipotle-adds-red-chimichurri-as-limited-time-option"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:51AM",
+      "title": "Strong Traffic Trends at El Pollo Loco: A Signal for More Upside?\n\n\n(Zacks)",
+      "link": "/news/178388/strong-traffic-trends-at-el-pollo-loco-a-signal-for-more-upside"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:53AM",
+      "title": "CHIPOTLE REVEALS RED CHIMICHURRI AS NEXT STEP IN MENU INNOVATION\n\n\n(PR Newswire)",
+      "link": "/news/178138/chipotle-reveals-red-chimichurri-as-next-step-in-menu-innovation"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Massive Portillo's News: Why the CEO Is Out\n\n\n(Motley Fool)",
+      "link": "/news/178078/massive-portillos-news-why-the-ceo-is-out"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "23:34",
+      "title": "Modern Fast Food Stocks Q2 Highlights: Chipotle (NYSE:CMG)\n\n\n(StockStory)",
+      "link": "/news/178141/modern-fast-food-stocks-q2-highlights-chipotle-nyse-cmg"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:37AM",
+      "title": "Chipotle Mexican Grill, Inc. (CMG): A Bull Case Theory\n\n\n(Insider Monkey)",
+      "link": "/news/177715/chipotle-mexican-grill-inc-cmg-a-bull-case-theory"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "13:12",
+      "title": "Jim Cramer Says He Doesn't See \"Clear Roadmap for Growth\" in Chipotle\n\n\n(Insider Monkey)",
+      "link": "/news/176074/jim-cramer-says-he-doesnt-see-clear-roadmap-for-growth-in-chipotle"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:07PM",
+      "title": "Starbucks Announces Store Closings, Layoffs. It Still Hasn't Figured Out Its Turnaround.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/starbucks-store-closing-stock-price-b1e4cbe7?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:39AM",
+      "title": "Chipotle launches a digital menu item with Mr. Fantasy\n\n\n(Nation's Restaurant News)",
+      "link": "https://finance.yahoo.com/m/e8589264-c00d-3dd6-b617-339339c81e8d/chipotle-launches-a-digital.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:06AM",
+      "title": "Starbucks to close stores, lay off 900 workers as part of turnaround plan\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/starbucks-close-stores-lay-off-120602461.html"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "11:40",
+      "title": "BJRI or CMG: Which Is the Better Value Stock Right Now?\n\n\n(Zacks)",
+      "link": "/news/174882/bjri-or-cmg-which-is-the-better-value-stock-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:12AM",
+      "title": "Chipotle Mexican Grill (CMG) Announces its First Expansion into Asia\n\n\n(Insider Monkey)",
+      "link": "/news/174103/chipotle-mexican-grill-cmg-announces-its-first-expansion-into-asia"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "17:45",
+      "title": "Chipotle Mexican Grill (CMG) Falls More Steeply Than Broader Market: What Investors Need to Know\n\n\n(Zacks)",
+      "link": "/news/173844/chipotle-mexican-grill-cmg-falls-more-steeply-than-broader-market-what-investors-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:03AM",
+      "title": "Will Chipotle's Sustainability Push Strengthen Its Brand Edge?\n\n\n(Zacks)",
+      "link": "/news/173484/will-chipotles-sustainability-push-strengthen-its-brand-edge"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "17:50",
+      "title": "Chipotle Mexican Grill (CMG) Laps the Stock Market: Here's Why\n\n\n(Zacks)",
+      "link": "/news/172812/chipotle-mexican-grill-cmg-laps-the-stock-market-heres-why"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:49AM",
+      "title": "Is CAVA Positioned to Capture the Fast-Casual Mediterranean Boom?\n\n\n(Zacks)",
+      "link": "/news/172387/is-cava-positioned-to-capture-the-fast-casual-mediterranean-boom"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "These 3 Stocks Boosting Buybacks Have Rallying Potential\n\n\n(MarketBeat)",
+      "link": "/news/172131/these-3-stocks-boosting-buybacks-have-rallying-potential"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "13:43",
+      "title": "3 Overlooked Value Stocks Set to Surge as Rates Drop\n\n\n(MarketBeat)",
+      "link": "/news/171686/3-overlooked-value-stocks-set-to-surge-as-rates-drop"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:05PM",
+      "title": "This Top Bill Ackman Stock Has Been Hammered. Time to Buy?\n\n\n(Motley Fool)",
+      "link": "/news/171680/this-top-bill-ackman-stock-has-been-hammered-time-to-buy"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "09:30",
+      "title": "Portillo's Stock: Buying Opportunity or Not?\n\n\n(Motley Fool)",
+      "link": "/news/171421/portillos-stock-buying-opportunity-or-not"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "11:05",
+      "title": "Chipotle's Rewards Engine Gains Traction: Can It Drive Traffic?\n\n\n(Zacks)",
+      "link": "/news/170899/chipotles-rewards-engine-gains-traction-can-it-drive-traffic"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:16AM",
+      "title": "2 Magnificent Stocks to Buy That Are Near 52-Week Lows\n\n\n(Motley Fool)",
+      "link": "/news/170791/2-magnificent-stocks-to-buy-that-are-near-52-week-lows"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "13:50",
+      "title": "Chipotle's Honey Chicken drove lapsed consumer visits\n\n\n(Nation's Restaurant News)",
+      "link": "https://www.nrn.com/fast-casual/chipotle-s-honey-chicken-drove-lapsed-consumer-visits"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:13PM",
+      "title": "CAVA's Comp Story: Can Engagement & Efficiency Power the Next Leg?\n\n\n(Zacks)",
+      "link": "/news/169907/cavas-comp-story-can-engagement-efficiency-power-the-next-leg"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:15AM",
+      "title": "Better Growth Stock to Buy Now: Chipotle or Texas Roadhouse?\n\n\n(Motley Fool)",
+      "link": "/news/169258/better-growth-stock-to-buy-now-chipotle-or-texas-roadhouse"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:51AM",
+      "title": "Billionaire Bill Ackman Has Been a 7-Year Seller of Chipotle, and He's Made a Stock Whose Addressable Market Can 10X by 2033 His Fund's No. 1 Holding\n\n\n(Motley Fool)",
+      "link": "/news/169090/billionaire-bill-ackman-has-been-a-7-year-seller-of-chipotle-and-hes-made-a-stock-whose-addressable-market-can-10x-by-2033-his-funds-no-1-holding"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:37AM",
+      "title": "2 Safe-and-Steady Stocks with Exciting Potential and 1 We Brush Off\n\n\n(StockStory)",
+      "link": "/news/169118/2-safe-and-steady-stocks-with-exciting-potential-and-1-we-brush-off"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "13:12",
+      "title": "Chipotle Mexican Grill, Inc. (CMG) Is Facing Difficult Times, Says Jim Cramer\n\n\n(Insider Monkey)",
+      "link": "/news/168733/chipotle-mexican-grill-inc-cmg-is-facing-difficult-times-says-jim-cramer"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:37AM",
+      "title": "Company News for Sep 17, 2025\n\n\n(Zacks)",
+      "link": "/news/168553/company-news-for-sep-17-2025"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "17:45",
+      "title": "Chipotle Mexican Grill (CMG) Increases Despite Market Slip: Here's What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/167900/chipotle-mexican-grill-cmg-increases-despite-market-slip-heres-what-you-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:24PM",
+      "title": "These Stocks Moved the Most Today: Oracle, Tesla, Alphabet, Dave & Busters, Chipotle, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/ec677bab-3ea7-3e13-84ee-f6ca15128c41/these-stocks-moved-the-most.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:11PM",
+      "title": "Is the Options Market Predicting a Spike in Chipotle Stock?\n\n\n(Zacks)",
+      "link": "/news/167836/is-the-options-market-predicting-a-spike-in-chipotle-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:07PM",
+      "title": "These Stocks Are Moving the Most Today: Oracle, Tesla, Alphabet, Dave & Busters, Chipotle, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/ec677bab-3ea7-3e13-84ee-f6ca15128c41/these-stocks-are-moving-the.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:37PM",
+      "title": "Chipotle's Stock Is Under Pressure. The Company Says It's Time to Buy\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/22e68b49-8b81-34fe-84bd-c23768038f7b/chipotle%27s-stock-is-under.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:20AM",
+      "title": "Chipotle OKs Additional $500 Million for Stock Buybacks\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/chipotle-stock-buyback-66f05765?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:38AM",
+      "title": "Chipotle Stock Higher on Raised Share Buyback Plan\n\n\n(Schaeffer's Research)",
+      "link": "/news/167344/chipotle-stock-higher-on-raised-share-buyback-plan"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:37AM",
+      "title": "Chipotle vs. Starbucks: Which Restaurant Titan Can Rebound Stronger?\n\n\n(Zacks)",
+      "link": "/news/167451/chipotle-vs-starbucks-which-restaurant-titan-can-rebound-stronger"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Investors Heavily Search Chipotle Mexican Grill, Inc. (CMG): Here is What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/167252/investors-heavily-search-chipotle-mexican-grill-inc-cmg-here-is-what-you-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:14AM",
+      "title": "Stocks to Watch Tuesday: Tesla, Oracle, Chipotle, Alphabet\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/83c142fa-720d-3ee2-845e-56988df60be1/stocks-to-watch-tuesday%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:39AM",
+      "title": "These Stocks Are Moving the Most Today: Tesla, Alphabet, Oracle, Dave & Buster's, Chipotle, and More\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/stock-movers-489795ec?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "00:35",
+      "title": "1 of Wall Street's Favorite Stock Worth Your Attention and 2 We Turn Down\n\n\n(StockStory)",
+      "link": "/news/165725/1-of-wall-streets-favorite-stock-worth-your-attention-and-2-we-turn-down"
+    },
+    {
+      "date": "2025-09-13",
+      "time": "09:53",
+      "title": "Jim Cramer on Chipotle: \"Let's Just Keep it on the Radar Screen\"\n\n\n(Insider Monkey)",
+      "link": "/news/165499/jim-cramer-on-chipotle-lets-just-keep-it-on-the-radar-screen"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "18:10",
+      "title": "Will Open Stores in South Korea, Singapore: Chipotle CEO\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/video/open-stores-south-korea-singapore-221014652.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:24PM",
+      "title": "Chipotle adds college football players meals to digital menu\n\n\n(Nation's Restaurant News)",
+      "link": "https://finance.yahoo.com/m/b20148bf-10dc-3265-b5a9-068689cdca23/chipotle-adds-college.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:19AM",
+      "title": "Can Chipotle's Expansion Beyond North America Deliver Growth?\n\n\n(Zacks)",
+      "link": "/news/164788/can-chipotles-expansion-beyond-north-america-deliver-growth"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "21:00",
+      "title": "Ethereum Whale Who Received 1 Million ETH Stirs For The First Time In 8 YearsHere's What's Going On\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/ethereum-whale-received-1-million-010055431.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:19PM",
+      "title": "Stocks & Index Items to Watch from August's CPI Data\n\n\n(Zacks)",
+      "link": "/news/164380/stocks-index-items-to-watch-from-augusts-cpi-data"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:09PM",
+      "title": "Chipotle Will Open Its First Asian Eateries. It Needs to Sell a Lot More Burritos Back Home, Too.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/chipotle-stock-price-asia-a7c47a54?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:35PM",
+      "title": "Starbucks Faces Scrutiny as CEO's Pay Is 6,666 Times That of the Median Barista\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/3de836f1-d07b-3d32-9465-3769c740e5d9/starbucks-faces-scrutiny-as.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:11PM",
+      "title": "Chipotle to Debut in Asia With SPC Group to Expand Global Footprint\n\n\n(Zacks)",
+      "link": "/news/164094/chipotle-to-debut-in-asia-with-spc-group-to-expand-global-footprint"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:55AM",
+      "title": "Chipotle Mexican Grill, Inc. (CMG)'s CEOIs Doing A \"Good Job,\" Says Jim Cramer\n\n\n(Insider Monkey)",
+      "link": "/news/163830/chipotle-mexican-grill-inc-cmgs-ceois-doing-a-good-job-says-jim-cramer"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:39AM",
+      "title": "BTIG: Chipotle is cheaper than competitors, but consumers havent noticed\n\n\n(Restaurant Dive)",
+      "link": "https://finance.yahoo.com/m/2821ae53-14fa-307d-a1cc-2587a6029e42/btig%3A-chipotle-is-cheaper.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:39AM",
+      "title": "Chipotles Asian expansion brings restaurants to South Korea and Singapore\n\n\n(Verdict Food Service)",
+      "link": "https://finance.yahoo.com/m/93fb6ac7-365c-37bd-8c1b-dc46e2efe473/chipotle%E2%80%99s-asian-expansion.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:15AM",
+      "title": "Chipotle is coming to Asia in 2026\n\n\n(Restaurant Dive)",
+      "link": "https://finance.yahoo.com/m/b30013be-b431-3cdc-8c7d-e1902430ecf0/chipotle-is-coming-to-asia-in.html"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "17:29",
+      "title": "Chipotle will make its debut in Asia next year\n\n\n(Nation's Restaurant News)",
+      "link": "https://finance.yahoo.com/m/5279c59e-cf9a-3b8f-b4ae-a5bff752a1ec/chipotle-will-make-its-debut.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:54PM",
+      "title": "Chipotle to enter Asia in 2026 with burrito chains in South Korea, Singapore\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/chipotle-enter-asia-2026-burrito-205403951.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:45PM",
+      "title": "CHIPOTLE TO EXPAND TO ASIA FOR THE FIRST TIME THROUGH A JOINT VENTURE WITH SPC GROUP\n\n\n(PR Newswire)",
+      "link": "/news/162991/chipotle-to-expand-to-asia-for-the-first-time-through-a-joint-venture-with-spc-group"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Dave Ramsey Caller Says She's Being Labeled Selfish For Refusing To Pay For Her Sister-In-Law, Her Husband And Their 5 Kids' Vacation Abroad\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/dave-ramsey-caller-says-shes-134519789.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Nitricity raises $50M to go global with unique tech transforming almond waste into organic fertilizer\n\n\n(PR Newswire)",
+      "link": "/news/162232/nitricity-raises-50m-to-go-global-with-unique-tech-transforming-almond-waste-into-organic-fertilizer"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:50AM",
+      "title": "Is It Finally Time to Buy Chipotle Stock After It Cratered This Year?\n\n\n(Motley Fool)",
+      "link": "/news/162107/is-it-finally-time-to-buy-chipotle-stock-after-it-cratered-this-year"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "14:28",
+      "title": "Restaurant promotions to intensify as consumer spending weakens\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/restaurant-promotions-intensify-consumer-spending-182851852.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:30PM",
+      "title": "Trust the Dip in Chipotle (CMG) Because Its Employees Know How to Wash Their Hands\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/21d51338-eb1a-3108-86e7-20e587d56589/trust-the-dip-in-chipotle.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:32AM",
+      "title": "'I Don't Know What To Do With It': Young Worker Finds Out His Dad Built Him A Nearly $50K Nest Egg By Secretly Stashing Rent And Wages\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/dont-know-young-worker-finds-123241066.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:04AM",
+      "title": "VistaShares launches ETF tracking stock bets of hedge fund activist Bill Ackman\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/vistashares-launches-etf-tracking-stock-120444174.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:39AM",
+      "title": "2 Cash-Producing Stocks Worth Your Attention and 1 We Brush Off\n\n\n(StockStory)",
+      "link": "/news/160792/2-cash-producing-stocks-worth-your-attention-and-1-we-brush-off"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "19:41",
+      "title": "Analyst Report: Chipotle Mexican Grill, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/04e05030-0c7f-3397-ba40-0f2af417b485/analyst-report%3A-chipotle.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:33PM",
+      "title": "Chipotle Mexican Grill (CMG) Stock Sinks As Market Gains: Here's Why\n\n\n(Zacks)",
+      "link": "/news/160665/chipotle-mexican-grill-cmg-stock-sinks-as-market-gains-heres-why"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:14PM",
+      "title": "Why CAVA Is the Dip Buy to Outperform Chipotle\n\n\n(MarketBeat)",
+      "link": "/news/160371/why-cava-is-the-dip-buy-to-outperform-chipotle"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:52AM",
+      "title": "CAVA Scales Kitchen Tech: Can Efficiency Power the Next Growth Leg?\n\n\n(Zacks)",
+      "link": "/news/160216/cava-scales-kitchen-tech-can-efficiency-power-the-next-growth-leg"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:46AM",
+      "title": "Why Chipotle (CMG) Shares Are Sliding Today\n\n\n(StockStory)",
+      "link": "/news/160213/why-chipotle-cmg-shares-are-sliding-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:59AM",
+      "title": "Dave Ramsey Says, 'You Can't Earn Your Way Out Of Stupidity,' Which Is Why Teachers Making $61K Become Millionaires But Doctors Often Don't\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/dave-ramsey-says-cant-earn-135919329.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:04AM",
+      "title": "Chipotle (CMG) Traded Down Due to Challenges in Consumer Environment\n\n\n(Insider Monkey)",
+      "link": "/news/159878/chipotle-cmg-traded-down-due-to-challenges-in-consumer-environment"
+    },
+    {
+      "date": "2025-09-06",
+      "time": "03:00",
+      "title": "Restaurant Stocks Are in the Soup. Theres No Quick Fix.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/c9eff0b9-a8be-3a8e-8eaa-58b46ba6b19d/restaurant-stocks-are-in-the.html"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "16:01",
+      "title": "Elizabeth Warren Warns About The Walgreens Takeover, Saying 'Private Equity Has A Record Of Running Companies Into The Ground'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/elizabeth-warren-warns-walgreens-takeover-200110544.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:39PM",
+      "title": "Sweetgreen appoints former Chipotle executive as new CFO\n\n\n(Nation's Restaurant News)",
+      "link": "https://finance.yahoo.com/m/e3bd64cd-05d8-3fd7-870a-8a6497bc912b/sweetgreen-appoints-former.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:12AM",
+      "title": "Sweetgreen swipes Chipotle CAO for CFO\n\n\n(CFO Dive)",
+      "link": "https://finance.yahoo.com/m/0e1bca8c-ad1e-3606-8f86-3e018ee9fbb8/sweetgreen-swipes-chipotle.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:43AM",
+      "title": "Stride and Summit Hotel have been highlighted as Zacks Bull and Bear of the Day\n\n\n(Zacks)",
+      "link": "/news/158888/stride-and-summit-hotel-have-been-highlighted-as-zacks-bull-and-bear-of-the-day"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:25AM",
+      "title": "Chipotle Stock Hits 52-Week Low: Should You Buy, Hold, or Sell?\n\n\n(Zacks)",
+      "link": "/news/158874/chipotle-stock-hits-52-week-low-should-you-buy-hold-or-sell"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:08AM",
+      "title": "Are the Economy's Salad Days Over?\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/jobs-report-august-stock-market-today-09-05-2025/card/are-the-economy-s-salad-days-over--3i8wtDAl6tusphJX1u08?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:38AM",
+      "title": "Sweetgreen hires Chipotle vet as CFO\n\n\n(Restaurant Dive)",
+      "link": "https://finance.yahoo.com/m/8ac982cf-9f96-3cfa-a7a3-22c1966776cc/sweetgreen-hires-chipotle-vet.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:36AM",
+      "title": "1 Profitable Stock with Exciting Potential and 2 We Turn Down\n\n\n(StockStory)",
+      "link": "/news/158649/1-profitable-stock-with-exciting-potential-and-2-we-turn-down"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "11:08",
+      "title": "Can McDonald's Tech Platform Unlock a New Wave of Margin Expansion?\n\n\n(Zacks)",
+      "link": "/news/158022/can-mcdonalds-tech-platform-unlock-a-new-wave-of-margin-expansion"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:48AM",
+      "title": "Is It Finally Time to Buy Chipotle Stock?\n\n\n(Motley Fool)",
+      "link": "/news/157970/is-it-finally-time-to-buy-chipotle-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:36AM",
+      "title": "Is SoundHound Stock a Buy, Sell or Hold at a P/E Multiple of 26.1X?\n\n\n(Zacks)",
+      "link": "/news/157954/is-soundhound-stock-a-buy-sell-or-hold-at-a-pe-multiple-of-261x"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:00AM",
+      "title": "Is Chipotle Mexican Grill Stock Underperforming the Nasdaq?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/0dfd11d5-7c0b-343a-ab9c-7565d615f138/is-chipotle-mexican-grill.html"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "14:23",
+      "title": "Chipotle Stock Is Down 30% This Year. Why There's 'Plenty Left in the Bowl' for Investors.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/chipotle-stock-price-cmg-news-43186cd4?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:11PM",
+      "title": "Google antitrust, Nio Q2 miss, Chipotle upgrade to Buy\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/google-antitrust-nio-q2-miss-171120865.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:02PM",
+      "title": "Jim Cramer Praises Chipotle Mexican Grill, Inc. (CMG) For Increasing Portion Size With Price Hike\n\n\n(Insider Monkey)",
+      "link": "/news/157161/jim-cramer-praises-chipotle-mexican-grill-inc-cmg-for-increasing-portion-size-with-price-hike"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "GPN",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1977,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.173
+  },
+  "top_positive": [
+    {
+      "sent": "22 Table of Content s The following table sets forth the computation of diluted weighted-average number of shares outstanding for the three months ended March\u00a031, 2023 and 2022: Three Months Ended March 31, 2023 March 31, 2022 (in thousands) Basic weighted-average number of shares outstanding 263,115 282,100 Plus: Dilutive effect of stock options and other share-based awards \u2014 467 Diluted weighted-average number of shares outstanding 263,115 282,567 NOTE 13 - SUPPLEMENTAL BALANCE SHEET INFORMATION Cash, cash equivalents and restricted cash Cash and cash equivalents include cash on hand and all liquid investments with a maturity of three months or less when purchased.",
+      "score": 0.9723
+    },
+    {
+      "sent": "22 Table of Content s The following table sets forth the computation of diluted weighted-average number of shares outstanding for the three months ended March\u00a031, 2023 and 2022: Three Months Ended March 31, 2023 March 31, 2022 (in thousands) Basic weighted-average number of shares outstanding 263,115 282,100 Plus: Dilutive effect of stock options and other share-based awards \u2014 467 Diluted weighted-average number of shares outstanding 263,115 282,567 NOTE 13 - SUPPLEMENTAL BALANCE SHEET INFORMATION Cash, cash equivalents and restricted cash Cash and cash equivalents include cash on hand and all liquid investments with a maturity of three months or less when purchased.",
+      "score": 0.9723
+    },
+    {
+      "sent": "Important factors, among others, that may otherwise cause actual events or results to differ materially from those anticipated by such forward-looking statements or historical performance include the effects of global economic, political, market, health and social events or other conditions; foreign currency exchange, continuing inflation and rising interest rate risks; difficulties, delays and higher than anticipated costs related to integrating the businesses of acquired companies, including with respect to implementing controls to prevent a material security breach of any internal systems or to successfully manage credit and fraud risks in business units; the effect of a security breach or operational failure on the Company's business; failing to comply with the applicable requirements of Visa, Mastercard or other payment networks or card schemes or changes in those requirements; the ability to maintain Visa and Mastercard registration and financial institution sponsorship; the ability to retain, develop and hire key personnel; the diversion of management\u2019s attention from ongoing business operations; the continued availability of capital and financing; increased competition in the markets in which we operate and our ability to increase our market share in existing markets and expand into new markets; our ability to safeguard our data; risks associated with our indebtedness; our ability to meet environmental, social and governance targets, goals and commitments; the potential effects of climate change, including natural disasters; the effects of new or changes in current laws, regulations, credit card association rules or other industry standards on us or our partners and customers, including privacy and cybersecurity laws and regulations; and other events beyond our control, and other factors presented in \"Item 1A - Risk Factors\" of our Annual Report on Form 10-K for the year ended December 31, 2022 and subsequent filings we make with the SEC, including this Quarterly Report on Form 10-Q, which we advise you to review.",
+      "score": 0.9559
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Adverse developments that affect financial institutions, such as bank failures, or concerns or speculation about any similar events or risks, could affect our ability to access our cash or cash equivalents, lead to market-wide liquidity problems or adversely affect our merchant settlement activities, which in turn may cause third parties, including customers, to become unable to meet their obligations under various types of financial arrangements as well as general disruptions or instability in the financial markets.",
+      "score": -0.7506
+    },
+    {
+      "sent": "Adverse developments that affect financial institutions, such as bank failures, or concerns or speculation about any similar events or risks, could affect our ability to access our cash or cash equivalents, lead to market-wide liquidity problems or adversely affect our merchant settlement activities, which in turn may cause third parties, including customers, to become unable to meet their obligations under various types of financial arrangements as well as general disruptions or instability in the financial markets.",
+      "score": -0.7506
+    },
+    {
+      "sent": "Adverse developments that affect financial institutions, such as bank failures, or concerns or speculation about any similar events or risks, could affect our ability to access our cash or cash equivalents, lead to market-wide liquidity problems or adversely affect our merchant settlement activities, which in turn may cause third parties, including customers, to become unable to meet their obligations under various types of financial arrangements as well as general disruptions or instability in the financial markets.",
+      "score": -0.7506
+    }
+  ],
+  "forward_snippets": [
+    "We expect that a portion of the goodwill from this acquisition will be deductible for income tax purposes.",
+    "We expect to recognize a gain on the sale of approximately $ 100 million in the second quarter of 2023.",
+    "We expect to recognize a gain on the sale of approximately $ 100 million in the second quarter of 2023.",
+    "As of March\u00a031, 2023, there was $ 265.4 million of unrecognized compensation expense related to unvested restricted stock and performance awards that we expect to recognize over a weighted-average period of 2.3 years.",
+    "As of March\u00a031, 2023, we had $ 4.4 million of unrecognized compensation expense related to unvested stock options that we expect to recognize over a weighted-average period of 2.3 years."
+  ]
+}

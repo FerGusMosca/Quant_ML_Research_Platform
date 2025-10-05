@@ -1,0 +1,606 @@
+{
+  "symbol": "AMZN",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-05",
+      "time": "Today 11:00AM",
+      "title": "'All news is good news': Wall Street shrugs off government shutdown, jobs report delay\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/all-news-is-good-news-wall-street-shrugs-off-government-shutdown-jobs-report-delay-150009238.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:31AM",
+      "title": "The Trade Desk: 2 Signs of a Comeback, 1 Risk Ahead\n\n\n(MarketBeat)",
+      "link": "/news/184021/the-trade-desk-2-signs-of-a-comeback-1-risk-ahead"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:33AM",
+      "title": "AI Stocks Face 'Show Me' Test. OpenAI Holds Big Event As Valuation Soars\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/684c930d-1475-3adc-b013-ae604c056ebc/ai-stocks-face-%27show-me%27.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Wall Street, crypto industry say tokenization will reshape global markets: 'Its going to eat the entire financial system'\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/wall-street-crypto-industry-say-tokenization-will-reshape-global-markets-its-going-to-eat-the-entire-financial-system-133005463.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Analyst on Amazon (AMZN): 'AWS Will Accelerate'\n\n\n(Insider Monkey)",
+      "link": "/news/184010/analyst-on-amazon-amzn-aws-will-accelerate"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30AM",
+      "title": "Startups Are Eating Big Food's Lunch\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/finance/stocks/startups-are-eating-big-foods-lunch-1906cf8e?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:16AM",
+      "title": "33.5% of Warren Buffett's $304 Billion Portfolio Is Invested in 4 Artificial Intelligence (AI) Stocks\n\n\n(Motley Fool)",
+      "link": "/news/183981/335-of-warren-buffetts-304-billion-portfolio-is-invested-in-4-artificial-intelligence-ai-stocks"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:00AM",
+      "title": "Looking for bargains during Amazon's Big Deal Days? Here's how to find them\n\n\n(Quartz)",
+      "link": "https://qz.com/amazon-big-deal-days-track-bargains-best-prices"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15AM",
+      "title": "The Ultimate Growth Stock to Buy With $1,000 Right Now\n\n\n(Motley Fool)",
+      "link": "/news/183956/the-ultimate-growth-stock-to-buy-with-1000-right-now"
+    },
+    {
+      "date": "2025-10-04",
+      "time": "20:00",
+      "title": "Goldman Sachs, Morgan Stanley To Lead Amazon-Backed Beta Technologies $300M GE Deal And IPO As Military-Trained Electric Aircraft Firm Expands\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/goldman-sachs-morgan-stanley-lead-000025414.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:54PM",
+      "title": "Amazon Launches New 'Amazon Grocery' Private Label, Unifies Fresh & Happy Belly Brands\n\n\n(Insider Monkey)",
+      "link": "/news/183875/amazon-launches-new-amazon-grocery-private-label-unifies-fresh-happy-belly-brands"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:45AM",
+      "title": "Prediction: 1 Artificial Intelligence (AI) Stock Will Be Worth More Than Alphabet and Amazon Combined by 2030 (Hint: Not Nvidia)\n\n\n(Motley Fool)",
+      "link": "/news/183844/prediction-1-artificial-intelligence-ai-stock-will-be-worth-more-than-alphabet-and-amazon-combined-by-2030-hint-not-nvidia"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:37AM",
+      "title": "My 3 Favorite Stocks to Buy Right Now\n\n\n(Motley Fool)",
+      "link": "/news/183820/my-3-favorite-stocks-to-buy-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "Think AI is a bubble? Here's what you can do about it.\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/think-ai-is-a-bubble-heres-what-you-can-do-about-it-2793426f?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:04AM",
+      "title": "Jeff Bezos agrees with OpenAIs Sam Altman: Were in an AI bubble. But Amazons founder says the benefits will be gigantic\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/jeff-bezos-agrees-openai-sam-110400758.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:15AM",
+      "title": "3 Must Own Artificial Intelligence (AI) Stocks to Buy Before 2025 Is Over\n\n\n(Motley Fool)",
+      "link": "/news/183806/3-must-own-artificial-intelligence-ai-stocks-to-buy-before-2025-is-over"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:01AM",
+      "title": "Magnificent Seven surpass EU GDP: Is this a tech bubble warning?\n\n\n(Euronews)",
+      "link": "https://finance.yahoo.com/m/c3d5cefe-ac49-3ebc-974c-253b82759fc4/magnificent-seven-surpass-eu.html"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "19:15",
+      "title": "Best Stock to Buy Right Now: Amazon vs. Alphabet\n\n\n(Motley Fool)",
+      "link": "/news/183788/best-stock-to-buy-right-now-amazon-vs-alphabet"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00PM",
+      "title": "The Radical Changes That Are Making Your Smart Home Less Dumb\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/db38d512-1cb2-3c0c-8df1-c9c7462e3736/the-radical-changes-that-are.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:05PM",
+      "title": "Review & Preview: In a Shutdown Vacuum, Stocks Rise Again\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/stocks-today-shutdown-ai-bubble-7f8c33c9?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:56PM",
+      "title": "Tech, Media & Telecom Roundup: Market Talk\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/c03bf04d-739b-3b6a-87b6-5b0d2fbd755a/tech%2C-media-%26-telecom.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:53PM",
+      "title": "Trumps $100,000 H-1B Fee Draws Rare Rebuke From Business Groups\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/trump-100-000-h-1b-205302951.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:07PM",
+      "title": "Netflix stock logs biggest weekly drop since April as Elon Musk calls for users to cancel subscriptions\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/netflix-stock-logs-biggest-weekly-drop-since-april-as-elon-musk-calls-for-users-to-cancel-subscriptions-200715651.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00PM",
+      "title": "Tech Industry Groups Push Back on Trumps $100,000 H-1B Visa Fee\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/d68916a8-1df3-3187-ad6b-31a79eb8c333/tech-industry-groups-push.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:57PM",
+      "title": "Mizuho Securities Reiterates Buy Rating on Amazon, Keeps PT at $300\n\n\n(Insider Monkey)",
+      "link": "/news/183651/mizuho-securities-reiterates-buy-rating-on-amazon-keeps-pt-at-300"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:52PM",
+      "title": "Amazon's Jeff Bezos says there is an AI bubble: What to know\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/amazons-jeff-bezos-says-ai-195243770.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:47PM",
+      "title": "Is Instacart Falling Behind As Amazon, Uber, And Walmart Battle For Grocery Customers?\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/instacart-falling-behind-amazon-uber-194756273.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:37PM",
+      "title": "Growth Minded  Inside Amazon RelayCon 2025 and the Small Carrier Surge\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/growth-minded-inside-amazon-relaycon-193723948.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:34PM",
+      "title": "Goldman says AWS strength underappreciated, raises Amazon price target\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/goldman-says-aws-strength-underappreciated-193426761.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:25PM",
+      "title": "Big Tech ETF slumps, with just two of its holdings in positive territory\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-and-s-p-500-line-up-for-more-records-as-shutdown-cancels-jobs-data/card/big-tech-etf-slumps-with-just-two-of-its-holdings-in-positive-territory-h4AjwAlkXZxJ1GAuF9x3?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:12PM",
+      "title": "??AI Chatbots Move Toward a Future With Advertising and Online Shopping\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/chatgpt-meta-ai-social-media-advertising-d472888f?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:35PM",
+      "title": "Goldman Sachs Lifts Amazon Price Target to $275 on AWS Strength\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/goldman-sachs-lifts-amazon-price-183530265.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:30PM",
+      "title": "This Cold-Storage Stock Looks Like a Hot Buy Right Now\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/buy-americold-stock-price-pick-80c72f1d?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:25PM",
+      "title": "Netflix stock on track to end week down 5% as Elon Musk calls for users to cancel subscriptions\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/netflix-stock-on-track-to-end-week-down-5-as-elon-musk-calls-for-users-to-cancel-subscriptions-182522911.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:10PM",
+      "title": "Google and Amazon are turning your home into the next AI battlefront\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/shorts/GwHS0iWMTfo"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:07PM",
+      "title": "Jeff Bezos Is the Latest Tech Executive to Talk About an AI 'Bubble.' Why He's Still Optimistic.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/jeff-bezos-ai-bubble-76264fa9?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:57PM",
+      "title": "The Magnificent Seven Stocks Are Roaring Again. Can They Keep Climbing?\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/f9409d4a-06fa-33bc-8fc9-bbea8c6eba37/the-magnificent-seven-stocks.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:20PM",
+      "title": "MercadoLibre stock target lowered at JPM on expected Q3 EBIT miss\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/mercadolibre-stock-target-lowered-jpm-172012488.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:05PM",
+      "title": "Pretty Much Everything Is Rallying. Just Not the Mag 7.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/84de44cb-3589-3f3c-8edd-706208fc8c0d/pretty-much-everything-is.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:14PM",
+      "title": "Instacart downgraded as competition tightening grip on online grocery\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/instacart-downgraded-competition-tightening-grip-161435986.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:56AM",
+      "title": "Amazon founder Jeff Bezos says AI bubble is real, but so is the technology\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/amazon-founder-jeff-bezos-says-ai-bubble-is-real-but-so-is-the-technology-155627873.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:48AM",
+      "title": "Palantir, AI bubble comments, pharma stocks: Trending Tickers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/palantir-ai-bubble-comments-pharma-154854119.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:24AM",
+      "title": "Exclusive-Amazon loses devices VP and member of elite CEO advisory just days after launches\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/exclusive-amazon-loses-devices-vp-152442286.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:10AM",
+      "title": "Cramer's Mad Dash: Amazon\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=rEwcEZg5vnI"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:08AM",
+      "title": "Grab Up 62% in 6 Months: Is the Stock Still Worth Betting On?\n\n\n(Zacks)",
+      "link": "/news/183446/grab-up-62-in-6-months-is-the-stock-still-worth-betting-on"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Where Will UPS Be in 1 Year?\n\n\n(Motley Fool)",
+      "link": "/news/183344/where-will-ups-be-in-1-year"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:55AM",
+      "title": "Goldmans Solomon: Market Drawdown in Next Year or Two Wouldnt Be Surprising\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/344b185b-576e-3cd3-a83c-e2ca50764865/goldman%E2%80%99s-solomon%3A-market.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:42AM",
+      "title": "Apple downgraded, Alibaba upgraded: Wall Street's top analyst calls\n\n\n(The Fly)",
+      "link": "https://finance.yahoo.com/news/apple-downgraded-alibaba-upgraded-wall-134258510.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:33AM",
+      "title": "Apple Adds a Bear as Jefferies Downgrades, Sees 20% Downside\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/apple-adds-bear-jefferies-downgrades-133322684.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Jeff Bezos hails AI boom as good kind of bubble\n\n\n(Financial Times)",
+      "link": "https://finance.yahoo.com/news/jeff-bezos-hails-ai-boom-123007767.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:03AM",
+      "title": "AI Shopping Is About To Upend E-Commerce. What It Means for Amazon, Walmart, Meta, Google.\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/news/technology/ecommerce-stocks-ai-shopping-amazon-walmart-ebay?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "Some Brands Are Handing Checkout and Fulfillment to AmazonHeres Why\n\n\n(Sourcing Journal)",
+      "link": "https://finance.yahoo.com/m/04fe1ee2-c9ba-3393-b972-b34e68bf001d/some-brands-are-handing.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:59AM",
+      "title": "Spending on AI is increasingly fueled by debt, Goldman Sachs says\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/spending-ai-increasingly-fueled-debt-115949675.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:40AM",
+      "title": "From Apps to Nutrition: Health & Fitness Stocks to Buy Now\n\n\n(Zacks)",
+      "link": "/news/183211/from-apps-to-nutrition-health-fitness-stocks-to-buy-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "'This Feels Different To Me,' Says Award-Winning Fund Manager\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/09452920-e220-39c5-8d97-ca946b31c966/%27this-feels-different-to-me%2C%27.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "The Ultimate Growth Stock to Buy With $1,000 Right Now\n\n\n(Motley Fool)",
+      "link": "/news/183145/the-ultimate-growth-stock-to-buy-with-1000-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:30AM",
+      "title": "1 No-Brainer Warren Buffett Stock to Buy Right Now\n\n\n(Motley Fool)",
+      "link": "/news/183111/1-no-brainer-warren-buffett-stock-to-buy-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:00AM",
+      "title": "OpenAI Changed the E-Commerce Market With This Announcement\n\n\n(Motley Fool)",
+      "link": "/news/182981/openai-changed-the-e-commerce-market-with-this-announcement"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:00AM",
+      "title": "Meet the Suspicious 8: Dividends Over 6% with Plenty of Problems\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/dividend-yields-over-6-are-tempting-why-investors-should-look-beneath-the-hood-90461aa3?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:50AM",
+      "title": "AWS teams up with NBA to drive smart basketball analytics\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20251002PD242/amazon-aws-machine-learning-partnership-launch.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "22:36",
+      "title": "FOMO Builds as Alibaba Extends $250 Billion AI-Fueled Comeback\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/fomo-builds-alibaba-extends-250-023620517.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:31PM",
+      "title": "When Bill Gates Questioned Lyft CEO Risher's Move To Jeff Bezos' 'Tiny, Little Internet Bookstore''Stupidest Decision' Ever\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/bill-gates-questioned-lyft-ceo-023105112.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:57PM",
+      "title": "Microsoft Expands Renewable Deals With Japans Shizen Energy\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/microsoft-expands-renewable-deals-japan-015758937.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:20PM",
+      "title": "Why MercadoLibre Stock Is Sinking This Week\n\n\n(Motley Fool)",
+      "link": "/news/182877/why-mercadolibre-stock-is-sinking-this-week"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:13PM",
+      "title": "How Costco, Sams Club, and BJs Won Over America\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/185ec89b-b47e-36fc-a448-49c60306cc4c/how-costco%2C-sam%E2%80%99s-club%2C-and.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:41PM",
+      "title": "Elon Musk Still Tops World's Richest. This Billionaire Is Hot on His Heels.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/elon-musk-larry-ellison-net-worth-billionaires-8e2cb5d7?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:32PM",
+      "title": "How 'Snowflake Intelligence' Could Open Doors For Software Maker\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/78d9fe8d-0b3f-3b6f-833d-90a7a2192d6e/how-%27snowflake-intelligence%27.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:06PM",
+      "title": "Amazon unveils new Echo devices designed for Alexa+. Take a look\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/shorts/BeQVPoyPySM"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:24PM",
+      "title": "Amazon launches 'price conscious' grocery brand with most products under $5\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/shorts/8oMPIDFY9ss"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:06PM",
+      "title": "YouTubers arent relying on ad revenue anymore  heres how some are diversifying\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/youtubers-aren-t-relying-ad-180625965.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:21PM",
+      "title": "Snowflake, IBD Stock Of The Day, Is Building AI Customer Base With Tech Companies\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/research/ibd-stock-of-the-day/snowflake-stock-artificial-intelligence-customers-openai?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:03PM",
+      "title": "Move Over, Mag 7. Buy This 1 Missing AI Winner Instead.\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/3d9e861f-51ab-3ee1-aaa2-5509fddd122d/move-over%2C-mag-7.-buy-this-1.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:15PM",
+      "title": "AI Cloud Concerns Hover Over Amazon Stock. But Analyst Says Don't Forget This 'Crown Jewel.'\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/news/technology/amazon-stock-advertising-cloud-ai?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:10AM",
+      "title": "Why The Trade Desk Stock Fell 10.3% in September\n\n\n(Motley Fool)",
+      "link": "/news/182497/why-the-trade-desk-stock-fell-103-in-september"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:47AM",
+      "title": "Can Canada become the next Silicon Valley amid U.S. trade tensions and immigration crackdowns?\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/canada-become-next-silicon-valley-144737227.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:28AM",
+      "title": "FICO Grows Through Expanding Portfolio and Strong Partnerships\n\n\n(Zacks)",
+      "link": "/news/182492/fico-grows-through-expanding-portfolio-and-strong-partnerships"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:23AM",
+      "title": "Netflix Pushes for Global Brand Partnership to Fend Off Competition\n\n\n(Zacks)",
+      "link": "/news/182490/netflix-pushes-for-global-brand-partnership-to-fend-off-competition"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:22AM",
+      "title": "Microsoft Bets $33 Billion on Neoclouds like Nebius to Ease AI Crunch\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/microsoft-bets-33-billion-neoclouds-100000431.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:56AM",
+      "title": "Analyst Explains Why Amazon.com (AMZN) Stock Can Move 'Quite a Bit Higher' Soon\n\n\n(Insider Monkey)",
+      "link": "/news/182286/analyst-explains-why-amazoncom-amzn-stock-can-move-quite-a-bit-higher-soon"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:49AM",
+      "title": "Amazon's 'crown jewel' is this business that doesn't get nearly enough attention\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/amazons-crown-jewel-is-this-business-that-doesnt-get-nearly-enough-attention-d76a627d?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:39AM",
+      "title": "Amazons Stock Appeal Hit by Intensifying Cloud Competition\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/amazon-stock-appeal-hit-intensifying-085520644.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:52AM",
+      "title": "Will Agentic Shopping Be Good News For Affirm, Buy Now, Pay Later Firms?\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/eb35c04e-723f-3b1c-9a12-bba270ca0394/will-agentic-shopping-be-good.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:51AM",
+      "title": "Understanding This Quiet Yet Powerful Catalyst for Amazon Stock Is Key to the Bull Thesis (Hint: It's Not AWS)\n\n\n(Motley Fool)",
+      "link": "/news/182068/understanding-this-quiet-yet-powerful-catalyst-for-amazon-stock-is-key-to-the-bull-thesis-hint-its-not-aws"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:15AM",
+      "title": "1 Reason I'm Still Keeping an Eye on UPS Stock, Despite Recent Lows\n\n\n(Motley Fool)",
+      "link": "/news/182034/1-reason-im-still-keeping-an-eye-on-ups-stock-despite-recent-lows"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:10AM",
+      "title": "After Dumping Nvidia and Palantir, Billionaire Stanley Druckenmiller Recently Dropped Another AI Giant -- and Bought Shares of This Key AI Player\n\n\n(Motley Fool)",
+      "link": "/news/181934/after-dumping-nvidia-and-palantir-billionaire-stanley-druckenmiller-recently-dropped-another-ai-giant-and-bought-shares-of-this-key-ai-player"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:20AM",
+      "title": "Jim Cramer on Amazon: \"An Underrated AI Story\"\n\n\n(Insider Monkey)",
+      "link": "/news/181822/jim-cramer-on-amazon-an-underrated-ai-story"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "20:57",
+      "title": "Heres whats worth streaming in October 2025 on Netflix, Hulu, HBO Max and more\n\n\n(MarketWatch)",
+      "link": "https://finance.yahoo.com/m/fc81152b-5851-3129-bcd4-6d4c9a9b6a68/here%E2%80%99s-what%E2%80%99s-worth-streaming.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30PM",
+      "title": "Amazon.com, Inc. (AMZN) Agrees to Pay $2.5 Billion in Fines and Reimbursements to Resolve Claims Made by the Federal Trade Commission\n\n\n(Insider Monkey)",
+      "link": "/news/181527/amazoncom-inc-amzn-agrees-to-pay-25-billion-in-fines-and-reimbursements-to-resolve-claims-made-by-the-federal-trade-commission"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:07PM",
+      "title": "Amazon Strengthens Growth Outlook with Earnings Beat and Expanded DSP Investment\n\n\n(Insider Monkey)",
+      "link": "/news/181517/amazon-strengthens-growth-outlook-with-earnings-beat-and-expanded-dsp-investment"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:39PM",
+      "title": "Lyft CEO on the time Bill Gates told him he was making the stupidest decision Ive ever heard anyone made\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/lyft-ceo-time-bill-gates-203908141.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:34PM",
+      "title": "Nike Punches Past Resistance; Q1 Shows Turnaround Momentum\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/cbf74fbe-c8f4-3ea5-bf78-9772f56d00ef/nike-punches-past-resistance%3B.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:22PM",
+      "title": "Josh Brown Predicted Amazon.com (AMZN) Will 'Breakout' - Was He Right?\n\n\n(Insider Monkey)",
+      "link": "/news/181454/josh-brown-predicted-amazoncom-amzn-will-breakout-was-he-right"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:17PM",
+      "title": "Fermi IPO Is a Risky Bet on AI Power. The Stock Soared 55% in Its Debut.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/70c3ffb3-5f2b-3b17-808f-68ed3be0055a/fermi-ipo-is-a-risky-bet-on.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00PM",
+      "title": "A Private-Label Push Is Amazon's Latest Move as It Leans Further Into Groceries\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/f19becc0-43d9-3795-96c9-aca95940997f/a-private-label-push-is.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:20PM",
+      "title": "Google and Amazon race to upgrade voice assistants with AI as OpenAI raises the stakes\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=6H27Ke3kHWo"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:18PM",
+      "title": "Amazon, Palo Alto Networks - and 36 more hot stock picks from Deutsche Bank\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/amazon-palo-alto-networks-and-36-more-hot-stock-picks-from-deutsche-bank-caef0627?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:04PM",
+      "title": "Amazon Stock Regains Some Ground After Tech Giant Offers New Grocery Line, AI Devices\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/news/technology/amazon-stock-grocery-ai-kindle-echo-alexa?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:47PM",
+      "title": "Amazon Stock Could Bounce Back Toward Record Highs\n\n\n(Schaeffer's Research)",
+      "link": "/news/181346/amazon-stock-could-bounce-back-toward-record-highs"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:04PM",
+      "title": "AI Stocks: Bubble or Boom Ahead?\n\n\n(Zacks)",
+      "link": "/news/181350/ai-stocks-bubble-or-boom-ahead"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:26PM",
+      "title": "Amazon Just Dropped a Grocery Bomb--And It's All Under $5\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/amazon-just-dropped-grocery-bomb-172619434.html"
+    }
+  ]
+}

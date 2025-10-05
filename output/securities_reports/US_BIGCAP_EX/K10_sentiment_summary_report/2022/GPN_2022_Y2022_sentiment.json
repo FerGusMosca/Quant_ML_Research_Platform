@@ -1,0 +1,51 @@
+{
+  "symbol": "GPN",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.4278,
+    "outlook_sentiment": 0.2684,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.182
+  },
+  "top_positive": [
+    {
+      "sent": "Plan category Number\u00a0of\u00a0securities\u00a0to\u00a0be issued upon exercise of outstanding options, warrants and rights (a) Weighted-average\u00a0exercise price of outstanding options, warrants and rights (b) Number of securities remaining available for future issuance under equity\u00a0compensation\u00a0plans (excluding securities reflected\u00a0in\u00a0column\u00a0(a)) (c) Equity compensation plans approved by security holders 897,113 $ 86.80 33,020,789 Equity compensation plans not approved by security holders \u2014 \u2014 \u2014 Total 897,113 $ 86.80 33,020,789 The number of securities remaining available for future issuance under equity compensation plans reflected in column (c) above includes 8,338,653 shares authorized for issuance under our 2011 Amended and Restated Incentive Plan (the \"2011 Incentive Plan\"), all of which are available for issuance pursuant to grants of full-value stock awards, 1,652,023 shares authorized under our 2000 Employee Stock Purchase Plan (the \"2000 ESPP\"), 13,554,740 shares authorized under our Total System Services 2017 Omnibus Plan, 7,331,435\u00a0shares authorized under our Total System Services 2012 Omnibus Plan, 1,541,327\u00a0shares authorized under\u00a0our Total System Services 2007 Omnibus Plan and 602,611\u00a0shares authorized under our Amended and Restated NetSpend Holdings, Inc.",
+      "score": 0.9924
+    },
+    {
+      "sent": "Plan category Number\u00a0of\u00a0securities\u00a0to\u00a0be issued upon exercise of outstanding options, warrants and rights (a) Weighted-average\u00a0exercise price of outstanding options, warrants and rights (b) Number of securities remaining available for future issuance under equity\u00a0compensation\u00a0plans (excluding securities reflected\u00a0in\u00a0column\u00a0(a)) (c) Equity compensation plans approved by security holders 897,113 $ 86.80 33,020,789 Equity compensation plans not approved by security holders \u2014 \u2014 \u2014 Total 897,113 $ 86.80 33,020,789 The number of securities remaining available for future issuance under equity compensation plans reflected in column (c) above includes 8,338,653 shares authorized for issuance under our 2011 Amended and Restated Incentive Plan (the \"2011 Incentive Plan\"), all of which are available for issuance pursuant to grants of full-value stock awards, 1,652,023 shares authorized under our 2000 Employee Stock Purchase Plan (the \"2000 ESPP\"), 13,554,740 shares authorized under our Total System Services 2017 Omnibus Plan, 7,331,435\u00a0shares authorized under our Total System Services 2012 Omnibus Plan, 1,541,327\u00a0shares authorized under\u00a0our Total System Services 2007 Omnibus Plan and 602,611\u00a0shares authorized under our Amended and Restated NetSpend Holdings, Inc.",
+      "score": 0.9924
+    },
+    {
+      "sent": "The fair value of total purchase consideration was determined as follows (in thousands, except per share data): Shares of TSYS common stock issued and outstanding (including Single-Trigger Awards) 177,643 Exchange Ratio 0.8101 Shares of Global Payments common stock issued to TSYS shareholders 143,909 Price per share of Global Payments common stock $ 163.74 Fair value of common stock issued to TSYS shareholders (1) 23,563,568 Value of Replacement Awards attributable to purchase consideration 207,821 Cash paid to TSYS shareholders in lieu of fractional shares 1,352 Total purchase consideration transferred to TSYS shareholders 23,772,741 Repayment of TSYS' unsecured revolving credit facility (including accrued interest and fees) 702,212 Total purchase consideration $ 24,474,953 (1) Fair value of common stock issued to TSYS shareholders does not equal the product of shares of Global Payments common stock issued to TSYS shareholders and price per share of Global Payments common stock as presented in the table above due to the rounding of the number of shares in thousands.",
+      "score": 0.9904
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK 48 ",
+      "score": -0.4278
+    },
+    {
+      "sent": "82 Table of Contents NOTE 8\u2014 LONG-TERM DEBT AND LINES OF CREDIT As of December\u00a031, 2021 and 2020, long-term debt consisted of the following: December 31, 2021 December 31, 2020 (in thousands) Long-term Debt 3.800 % senior notes due April 1, 2021 $ \u2014 $ 752,199 3.750 % senior notes due June 1, 2023 557,186 562,258 4.000 % senior notes due June 1, 2023 559,338 565,930 1.500 % senior notes due November 15, 2024 497,185 \u2014 2.650 % senior notes due February 15, 2025 994,797 993,110 1.200 % senior notes due March 1, 2026 1,092,016 \u2014 4.800 % senior notes due April 1, 2026 798,024 809,324 2.150 % senior notes due January 15, 2027 743,695 \u2014 4.450 % senior notes due June 1, 2028 478,194 482,588 3.200 % senior notes due August 15, 2029 1,238,006 1,236,424 2.900 % senior notes due May 15, 2030 990,196 989,025 2.900 % senior notes due November 15, 2031 741,716 \u2014 4.150 % senior notes due August 15, 2049 740,146 739,789 Unsecured term loan facility 1,989,793 1,985,776 Unsecured revolving credit facility \u2014 36,000 Finance lease liabilities 64,421 75,989 Other borrowings 8,601 65,352 Total long-term debt 11,493,314 9,293,764 Less current portion 78,505 827,357 Long-term debt, excluding current portion $ 11,414,809 $ 8,466,407 The carrying amounts of our senior notes and term loan in the table above are presented net of unamortized discount and unamortized debt issuance costs, as applicable.",
+      "score": -0.93
+    },
+    {
+      "sent": "If our policies and procedures are not fully effective or if we are not always 23 Table of Contents successful in identifying and mitigating all risks to which we are or may be exposed, we may suffer uninsured liability, harm to our reputation or be subject to litigation or regulatory actions that could have a material adverse effect on our business, financial condition, results of operations and cash flows.",
+      "score": -0.9094
+    },
+    {
+      "sent": "If our policies and procedures are not fully effective or if we are not always 23 Table of Contents successful in identifying and mitigating all risks to which we are or may be exposed, we may suffer uninsured liability, harm to our reputation or be subject to litigation or regulatory actions that could have a material adverse effect on our business, financial condition, results of operations and cash flows.",
+      "score": -0.9094
+    }
+  ],
+  "forward_snippets": [
+    "You can sometimes identify forward-looking statements by our use of the words \"believes,\" \"anticipates,\" \"expects,\" \"intends,\" \"plan,\" \"forecast,\" \"guidance\" and similar expressions.",
+    "Although we believe that the plans and expectations reflected in or suggested by our forward-looking statements are reasonable, those statements are based on a number of assumptions, estimates, projections or plans that are inherently subject to significant risks, uncertainties and contingencies, many of which are beyond our control, cannot be foreseen and reflect future business decisions that are subject to change.",
+    "We intend to continue to invest in and leverage our technology infrastructure and our people to increase our penetration in existing markets.",
+    "You can sometimes identify forward-looking statements by our use of the words \"believes,\" \"anticipates,\" \"expects,\" \"intends,\" \"plan,\" \"forecast,\" \"guidance\" and similar expressions.",
+    "Although we believe that the plans and expectations reflected in or suggested by our forward-looking statements are reasonable, those statements are based on a number of assumptions, estimates, projections or plans that are inherently subject to significant risks, uncertainties and contingencies, many of which are beyond our control, cannot be foreseen and reflect future business decisions that are subject to change."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "SBUX",
+  "year": 2024,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2289,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.134
+  },
+  "top_positive": [
+    {
+      "sent": "20 Table of Contents Long-term Debt Components of long-term debt including the associated interest rates and related estimated fair values by calendar maturity ( in millions, except interest rates) : Mar 31, 2024 Oct 1, 2023 Stated Interest Rate Effective Interest Rate (1) Issuance Amount Estimated Fair Value Amount Estimated Fair Value October 2023 notes (2) $ \u2014 $ \u2014 $ 750.0 $ 749.9 3.850 % 2.859 % February 2024 notes (3) \u2014 \u2014 500.0 504.2 5.848 % 6.079 % March 2024 notes (4) \u2014 \u2014 \nilutive shares outstanding excludes anti-dilutive stock options or unvested RSUs, which were immaterial in the periods presented.",
+      "score": 0.9812
+    },
+    {
+      "sent": "Financial Statements STARBUCKS CORPORATION CONSOLIDATED STATEMENTS OF EARNINGS (in millions, except per share data, unaudited) Quarter Ended Two Quarters Ended Mar 31, 2024 Apr 2, 2023 Mar 31, 2024 Apr 2, 2023 Net revenues: Company-operated stores $ 7,052.6 $ 7,142.3 $ 14,807.9 $ 14,225.7 Licensed stores 1,054.5 1,069.5 2,246.6 2,189.0 Other 455.9 508.0 933.8 1,019.1 Total net revenues 8,563.0 8,719.8 17,988.3 17,433.8 Product and distribution costs 2,648.7 2,801.7 5,629.2 5,611.9 Store operating expenses 3,724.1 3,636.0 7,575.6 7,301.3 Other operating expenses 132.8 126.2 283.2 255.4 Depreciation and amortization expenses 371.9 341.9 737.2 669.0 General and administrative expenses 654.6 620.4 1,302.6 1,201.3 Restructuring and impairments \u2014 8.8 \u2014 14.7 Total operating expenses 7,532.1 7,535.0 15,527.8 15,053.6 Income from equity investees 68.0 51.4 123.8 109.2 Gain from sale of assets \u2014 91.3 \u2014 91.3 Operating income 1,098.9 1,327.5 2,584.3 2,580.7 Interest income and other, net 34.1 18.4 67.9 30.0 Interest expense ( 140.6 ) ( 136.3 ) ( 280.7 ) ( 266.0 ) Earnings before income taxes 992.4 1,209.6 2,371.5 2,344.7 Income tax expense 219.9 301.3 574.6 581.1 Net earnings including noncontrolling interests 772.5 908.3 1,796.9 1,763.6 Net earnings attributable to noncontrolling interests 0.1 0.0 0.1 0.0 Net earnings attributable to Starbucks $ 772.4 $ 908.3 $ 1,796.8 $ 1,763.6 Earnings per share - basic $ 0.68 $ 0.79 $ 1.58 $ 1.54 Earnings per share - diluted $ 0.68 $ 0.79 $ 1.58 $ 1.53 Weighted average shares outstanding: Basic 1,132.4 1,148.5 1,134.5 1,148.4 Diluted 1,135.4 1,152.7 1,138.0 1,152.8 See Notes to Consolidated Financial Statements.",
+      "score": 0.9764
+    },
+    {
+      "sent": "15 Table of Contents Note 4: Fair Value Measurements Assets and liabilities measured at fair value on a recurring basis (in millions) : Fair\u00a0Value\u00a0Measurements\u00a0at\u00a0Reporting\u00a0Date\u00a0Using Balance at March 31, 2024 Quoted\u00a0Prices in Active Markets\u00a0for\u00a0Identical Assets (Level 1) Significant\u00a0 Other Observable\u00a0Inputs (Level 2) Significant Unobservable\u00a0 Inputs (Level 3) Assets: Cash and cash equivalents $ 2,764.1 $ 2,764.1 $ \u2014 $ \u2014 Short-term investments: Available-for-sale debt securities Corporate debt securities 37.7 \u2014 37.7 \u2014 Foreign corporate bonds 0.2 \u2014 0.2 \u2014 Mortgage and other asset-backed securities 0.3 \u2014 0.3 \u2014 State and local governme\n portion of our price-to-be-fixed contracts are effectively fixed through the use of futures.",
+      "score": 0.969
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "tax law and related guidance and regulations that may be implemented, including on tax rates; \u2022 the impact of health epidemics, pandemics, or other public health events on our business and financial results, and the risk of negative economic impacts and related regulatory measures or voluntary actions that may be put in place, including restrictions on business operations or social distancing requirements, and the duration and efficacy of such restrictions; \u2022 failure to comply with anti-corruption laws, trade sanctions, and restrictions, or similar laws or regulations; and \u2022 the impact of significant legal disputes and proceedings, or government investigations.",
+      "score": -0.836
+    },
+    {
+      "sent": "tax law and related guidance and regulations that may be implemented, including on tax rates; \u2022 the impact of health epidemics, pandemics, or other public health events on our business and financial results, and the risk of negative economic impacts and related regulatory measures or voluntary actions that may be put in place, including restrictions on business operations or social distancing requirements, and the duration and efficacy of such restrictions; \u2022 failure to comply with anti-corruption laws, trade sanctions, and restrictions, or similar laws or regulations; and \u2022 the impact of significant legal disputes and proceedings, or government investigations.",
+      "score": -0.836
+    },
+    {
+      "sent": "tax law and related guidance and regulations that may be implemented, including on tax rates; \u2022 the impact of health epidemics, pandemics, or other public health events on our business and financial results, and the risk of negative economic impacts and related regulatory measures or voluntary actions that may be put in place, including restrictions on business operations or social distancing requirements, and the duration and efficacy of such restrictions; \u2022 failure to comply with anti-corruption laws, trade sanctions, and restrictions, or similar laws or regulations; and \u2022 the impact of significant legal disputes and proceedings, or government investigations.",
+      "score": -0.836
+    }
+  ],
+  "forward_snippets": [
+    "Recent Accounting Pronouncements Not Yet Adopted In November 2023, the Financial Accounting Standards Board (\u201cFASB\u201d) issued guidance expanding segment disclosure requirements.",
+    "We expect to adopt the guidance for the fiscal year ending September 28, 2025.",
+    "We are currently evaluating the expanded disclosure requirements and do not expect the adoption of this guidance to have a material impact on our consolidated financial statements.",
+    "In December 2023, the FASB issued guidance expanding disclosure requirements related to income taxes.",
+    "While we are still evaluating the specific impacts and timing of adoption, we anticipate this guidance will have a significant impact on our annual income tax disclosures."
+  ]
+}

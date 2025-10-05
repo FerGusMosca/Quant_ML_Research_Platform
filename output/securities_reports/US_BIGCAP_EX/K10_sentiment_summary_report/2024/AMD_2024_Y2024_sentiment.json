@@ -1,0 +1,47 @@
+{
+  "symbol": "AMD",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.1366,
+    "outlook_sentiment": 0.1723,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.267
+  },
+  "top_positive": [
+    {
+      "sent": "The agreement governing our convertible notes and our Revolving Credit Agreement contains provisions whereby a payment default or acceleration under certain agreements with respect to other material indebtedness would result in cross defaults under our convertible indenture or the Revolving Credit Agreement and allow note holders or the lenders under our Revolving Credit Agreement to declare all amounts outstanding under certain of our indentures or the Revolving Credit Agreement to be immediately due and payable.",
+      "score": 0.9896
+    },
+    {
+      "sent": "The agreement governing our convertible notes and our Revolving Credit Agreement contains provisions whereby a payment default or acceleration under certain agreements with respect to other material indebtedness would result in cross defaults under our convertible indenture or the Revolving Credit Agreement and allow note holders or the lenders under our Revolving Credit Agreement to declare all amounts outstanding under certain of our indentures or the Revolving Credit Agreement to be immediately due and payable.",
+      "score": 0.9896
+    },
+    {
+      "sent": "The agreement governing our convertible notes and our Revolving Credit Agreement contains provisions whereby a payment default or acceleration under certain agreements with respect to other material indebtedness would result in cross defaults under our convertible indenture or the Revolving Credit Agreement and allow note holders or the lenders under our Revolving Credit Agreement to declare all amounts outstanding under certain of our indentures or the Revolving Credit Agreement to be immediately due and payable.",
+      "score": 0.9896
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "In addition, some software drivers licensed fo\ntners, may also be vulnerable to damage or disruption caused by circumstances beyond our control including catastrophic events, power anomalies or outages, natural disasters, viruses or malware, cyberattacks, insider threat attacks, unauthorized system or data modifications, data breaches and computer system or network failures, exposing us to significant cost, reputational harm and disruption or damage to our business.",
+      "score": -0.9829
+    },
+    {
+      "sent": "We cannot assure you that, despite our testing procedures, errors will not be found in new products or releases after commencement of commercial shipments in the future, which could result in loss of or delay in market acceptance of our products, material recall and replacement costs, loss of revenue, writing down the inventory of defective products, the diversion of the attention of our engineering personnel from product development efforts, defending against litigation related to defective products or related liabilities, including property damage, personal injury, damage to our reputation in the industry and loss of data or intangible property, and could adversely affect our relationships with our customers.",
+      "score": -0.9777
+    },
+    {
+      "sent": "Terrorist attacks or other hostile acts may negatively affect our operations, or adversely affect demand for our products, and such attacks or related armed conflicts may impa\n debt financing might not be available on reasonable terms, if at all.",
+      "score": -0.9612
+    }
+  ],
+  "forward_snippets": [
+    "If we make substantive amendments to our Code of Ethics or grant any waiver, including any implicit waiver, to our principal executive officer, principal financial officer, principal accounting officer, controller or persons performing similar functions, we intend to disclose the nature of such amendment or waiver on our website.",
+    "If we make substantive amendments to our Code of Ethics or grant any waiver, including any implicit waiver, to our principal executive officer, principal financial officer, principal accounting officer, controller or persons performing similar functions, we intend to disclose the nature of such amendment or waiver on our website.",
+    "If we make substantive amendments to our Code of Ethics or grant any waiver, including any implicit waiver, to our principal executive officer, principal financial officer, principal accounting officer, controller or persons performing similar functions, we intend to disclose the nature of such amendment or waiver on our website.",
+    "We believe that AI capabilities are central to products and solutions across our markets and we have a broad technology roadmap and products targeting AI training and inference spanning cloud, edge and intelligent endpoints.",
+    "We offer products that include capabilities to support AI deployment and we expect this part of our business to grow."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "MSFT",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1881,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.285
+  },
+  "top_positive": [
+    {
+      "sent": "10 PART I Item 1 NOTE 3 \u2014 OTHER INCOME (EXPENSE), NET The components of other income (expense), net were as follows: (In millions) Three\u00a0Months\u00a0Ended March 31, Nine\u00a0Months\u00a0Ended March 31, 2022 2021 2022 2021 Interest and dividends income $ 519 $ 519 $ 1,542 $ 1,634 Interest expense ( 503 ) ( 633 ) ( 1,567 ) ( 1,793 ) Net recognized gains (losses) on investments ( 76 ) 353 595 837 Net losses on derivatives ( 29 ) ( 2 ) ( 29 ) ( 4 ) Net gains (losses) on foreign currency remeasurements ( 74 ) ( 55 ) ( 152 ) 126 Other, net ( 11 ) 6 ( 9 ) 76 Total $ ( 174 ) $ 188 $ 380 $ 876 Net Recognized Gains (Losses) on Investments Net recognized gains (losses) on debt investments were as follows: (In millions) Three\u00a0Months\u00a0Ended March 31, Nine\u00a0Months\u00a0Ended March 31, 2022 2021 2022 2021 Realized gains from sales of available-for-sale securities $ 119 $ 33 $ 150 $ 84 Realized losses from sales of available-for-sale securities ( 89 ) ( 12 ) ( 102 ) ( 30 ) Impairments and allowance for credit losses ( 45 ) ( 10 ) ( 53 ) ( 7 ) Total $ ( 15 ) $ 11 $ ( 5 ) $ 47 Net recognized gains (losses) on equity investments were as follows: (In millions) Three\u00a0Months\u00a0Ended March 31, Nine\u00a0Months\u00a0Ended March 31, 2022 2021 2022 2021 Net realized gains (losses) on investments sold $ ( 22 ) $ 43 $ 46 $ 76 Net unrealized gains (losses) on investments still held ( 34 ) 299 559 725 Impairments of investments ( 5 ) 0 ( 5 ) ( 11 ) Total $ ( 61 ) $ 342 $ 600 $ 790 11 PART I Item 1 NOTE 4\u00a0\u2014\u00a0INVESTMENTS Investment Components The components of investments were as follows: (In millions) Fair\u00a0Value Level Adjusted Cost\u00a0Basis Unrealized Gains Unrealized Losses Recorded Basis Cash and Cash Equivalents Short-term Investments Equity Investments March 31, 2022 Changes in Fair Value Recorded in Other Comprehensive Income Commercial paper Level 2 $ 883 $ 0 $ 0 $ 883 $ 802 $ 81 $ 0 Certificates of deposit Level 2 3,045 0 0 3,045 3,003 42 0 U.S.",
+      "score": 0.9792
+    },
+    {
+      "sent": "10 PART I Item 1 NOTE 3 \u2014 OTHER INCOME (EXPENSE), NET The components of other income (expense), net were as follows: (In millions) Three\u00a0Months\u00a0Ended March 31, Nine\u00a0Months\u00a0Ended March 31, 2022 2021 2022 2021 Interest and dividends income $ 519 $ 519 $ 1,542 $ 1,634 Interest expense ( 503 ) ( 633 ) ( 1,567 ) ( 1,793 ) Net recognized gains (losses) on investments ( 76 ) 353 595 837 Net losses on derivatives ( 29 ) ( 2 ) ( 29 ) ( 4 ) Net gains (losses) on foreign currency remeasurements ( 74 ) ( 55 ) ( 152 ) 126 Other, net ( 11 ) 6 ( 9 ) 76 Total $ ( 174 ) $ 188 $ 380 $ 876 Net Recognized Gains (Losses) on Investments Net recognized gains (losses) on debt investments were as follows: (In millions) Three\u00a0Months\u00a0Ended March 31, Nine\u00a0Months\u00a0Ended March 31, 2022 2021 2022 2021 Realized gains from sales of available-for-sale securities $ 119 $ 33 $ 150 $ 84 Realized losses from sales of available-for-sale securities ( 89 ) ( 12 ) ( 102 ) ( 30 ) Impairments and allowance for credit losses ( 45 ) ( 10 ) ( 53 ) ( 7 ) Total $ ( 15 ) $ 11 $ ( 5 ) $ 47 Net recognized gains (losses) on equity investments were as follows: (In millions) Three\u00a0Months\u00a0Ended March 31, Nine\u00a0Months\u00a0Ended March 31, 2022 2021 2022 2021 Net realized gains (losses) on investments sold $ ( 22 ) $ 43 $ 46 $ 76 Net unrealized gains (losses) on investments still held ( 34 ) 299 559 725 Impairments of investments ( 5 ) 0 ( 5 ) ( 11 ) Total $ ( 61 ) $ 342 $ 600 $ 790 11 PART I Item 1 NOTE 4\u00a0\u2014\u00a0INVESTMENTS Investment Components The components of investments were as follows: (In millions) Fair\u00a0Value Level Adjusted Cost\u00a0Basis Unrealized Gains Unrealized Losses Recorded Basis Cash and Cash Equivalents Short-term Investments Equity Investments March 31, 2022 Changes in Fair Value Recorded in Other Comprehensive Income Commercial paper Level 2 $ 883 $ 0 $ 0 $ 883 $ 802 $ 81 $ 0 Certificates of deposit Level 2 3,045 0 0 3,045 3,003 42 0 U.S.",
+      "score": 0.9792
+    },
+    {
+      "sent": "10 PART I Item 1 NOTE 3 \u2014 OTHER INCOME (EXPENSE), NET The components of other income (expense), net were as follows: (In millions) Three\u00a0Months\u00a0Ended March 31, Nine\u00a0Months\u00a0Ended March 31, 2022 2021 2022 2021 Interest and dividends income $ 519 $ 519 $ 1,542 $ 1,634 Interest expense ( 503 ) ( 633 ) ( 1,567 ) ( 1,793 ) Net recognized gains (losses) on investments ( 76 ) 353 595 837 Net losses on derivatives ( 29 ) ( 2 ) ( 29 ) ( 4 ) Net gains (losses) on foreign currency remeasurements ( 74 ) ( 55 ) ( 152 ) 126 Other, net ( 11 ) 6 ( 9 ) 76 Total $ ( 174 ) $ 188 $ 380 $ 876 Net Recognized Gains (Losses) on Investments Net recognized gains (losses) on debt investments were as follows: (In millions) Three\u00a0Months\u00a0Ended March 31, Nine\u00a0Months\u00a0Ended March 31, 2022 2021 2022 2021 Realized gains from sales of available-for-sale securities $ 119 $ 33 $ 150 $ 84 Realized losses from sales of available-for-sale securities ( 89 ) ( 12 ) ( 102 ) ( 30 ) Impairments and allowance for credit losses ( 45 ) ( 10 ) ( 53 ) ( 7 ) Total $ ( 15 ) $ 11 $ ( 5 ) $ 47 Net recognized gains (losses) on equity investments were as follows: (In millions) Three\u00a0Months\u00a0Ended March 31, Nine\u00a0Months\u00a0Ended March 31, 2022 2021 2022 2021 Net realized gains (losses) on investments sold $ ( 22 ) $ 43 $ 46 $ 76 Net unrealized gains (losses) on investments still held ( 34 ) 299 559 725 Impairments of investments ( 5 ) 0 ( 5 ) ( 11 ) Total $ ( 61 ) $ 342 $ 600 $ 790 11 PART I Item 1 NOTE 4\u00a0\u2014\u00a0INVESTMENTS Investment Components The components of investments were as follows: (In millions) Fair\u00a0Value Level Adjusted Cost\u00a0Basis Unrealized Gains Unrealized Losses Recorded Basis Cash and Cash Equivalents Short-term Investments Equity Investments March 31, 2022 Changes in Fair Value Recorded in Other Comprehensive Income Commercial paper Level 2 $ 883 $ 0 $ 0 $ 883 $ 802 $ 81 $ 0 Certificates of deposit Level 2 3,045 0 0 3,045 3,003 42 0 U.S.",
+      "score": 0.9792
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "A disruption or failure of our systems or operations because of a major earthquake, weather event, cyberattack, terrorist attack, pandemic, or other catastrophic event could cause delays in completing sales, providing services, or performing other critical functions.",
+      "score": -0.959
+    },
+    {
+      "sent": "A catastrophic event that results in the destruction or disruption of any of our critical business or IT systems, or the infrastructure or systems they rely on, such as power grids, could harm our ability to conduct normal business operations.",
+      "score": -0.9169
+    },
+    {
+      "sent": "We may be subject to enhanced regulatory oversight, civil or criminal liability, or reputational damage if we fail to comply with content moderation regulations, adversely affecting our business and consolidated financial statements.",
+      "score": -0.9136
+    }
+  ],
+  "forward_snippets": [
+    "In addition, we consider specific adverse conditions related to the financial health of, and business outlook for, the investee.",
+    "If we have plans to sell the security or it is more likely than not that we will be required to sell the security before recovery, then a decline in fair value below cost is recorded as an impairment charge in other income (expense), net and a new cost basis in the investment is established.",
+    "Recent Accounting Guidance Accounting for Income Taxes In December 2019, the FASB issued a new standard to simplify the accounting for income taxes.",
+    "The guidance eliminates certain exceptions related to the approach for intraperiod tax allocation, the methodology for calculating income taxes in an interim period, and the recognition of deferred tax liabilities for outside basis differences related to changes in ownership of equity method investments and foreign subsidiaries.",
+    "The guidance also simplifies aspects of accounting for franchise taxes and enacted changes in tax laws or rates and clarifies the accounting for transactions that result in a step-up in the tax basis of goodwill."
+  ]
+}

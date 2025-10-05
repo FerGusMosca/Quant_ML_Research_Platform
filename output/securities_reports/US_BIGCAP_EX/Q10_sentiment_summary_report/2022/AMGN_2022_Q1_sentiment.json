@@ -1,0 +1,47 @@
+{
+  "symbol": "AMGN",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1652,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.095
+  },
+  "top_positive": [
+    {
+      "sent": "25 Impact of hedging transactions The following tables summarize the amounts recorded in income and expense line items and the effects thereon from fair value and cash flow hedging, including discontinued hedging relationships (in millions): Three months ended September 30, 2022 Nine months ended September 30, 2022 Product sales Other income (expense), net Interest expense, net Product sales Other income (expense), net Interest expense, net Total amounts recorded in income and (expense) line items presented in the Condensed Consolidated Statements of Income $ 6,237 $ 100 $ ( 368 ) $ 18,249 $ ( 747 ) $ ( 991 ) The effects of cash flow and fair value hedging: Gains (losses) on cash flow hedging relationships reclassified out of AOCI: Foreign currency contracts $ 69 $ \u2014 $ \u2014 $ 149 $ \u2014 $ \u2014 Cross-currency swap contracts $ \u2014 $ ( 198 ) $ \u2014 $ \u2014 $ ( 461 ) $ \u2014 Gains (losses) on fair value hedging relationships\u2014interest rate swap agreements: Hedged items (1) $ \u2014 $ \u2014 $ 240 $ \u2014 $ \u2014 $ 734 Derivatives designated as hedging instruments $ \u2014 $ \u2014 $ ( 220 ) $ \u2014 $ \u2014 $ ( 670 ) Three months ended September 30, 2021 Nine months ended September 30, 2021 Product sales Other income (expense), net Interest expense, net Product sales Other income (expense), net Interest expense, net Total amounts recorded in income and (expense) line items presented in the Condensed Consolidated Statements of Income $ 6,320 $ 73 $ ( 296 ) $ 18,026 $ 97 $ ( 862 ) The effects of cash flow and fair value hedging: Losses on cash flow hedging relationships reclassified out of AOCI: Foreign currency contracts $ ( 5 ) $ \u2014 $ \u2014 $ ( 24 ) $ \u2014 $ \u2014 Cross-currency swap contracts $ \u2014 $ ( 104 ) $ \u2014 $ \u2014 $ ( 190 ) $ \u2014 Gains (losses) on fair value hedging relationships\u2014interest rate swap agreements: Hedged items (1) $ \u2014 $ \u2014 $ 54 $ \u2014 $ \u2014 $ 195 Derivatives designated as hedging instruments $ \u2014 $ \u2014 $ ( 31 ) $ \u2014 $ \u2014 $ ( 128 ) __________ (1) Gains on hedged items do not exactly offset losses on the related designated hedging instruments due to amortization of the cumulative amounts of fair value hedging adjustments included\nw effects of our derivative contracts in the Condensed Consolidated Statements of Cash Flows are included in Net cash provided by operating activities, except for the settlement of notional amounts of cross-currency swaps, which are included in Net cash used in financing activities.",
+      "score": 0.9928
+    },
+    {
+      "sent": "In addition, our revolving credit agreement includes a financial covenant that requires us to maintain a specified minimum interest coverage ratio of (i) the sum of consolidated net income, interest expense, provision for income taxes, depreciation expense, amortization expense, unusual or nonrecurring charges and other noncash items (consolidated earnings before interest, taxes, depreciation and amortization) to (ii) consolidated interest expense, each as defined and described in the credit agreement.",
+      "score": 0.9686
+    },
+    {
+      "sent": "In addition, our revolving credit agreement includes a financial covenant that requires us to maintain a specified minimum interest coverage ratio of (i) the sum of consolidated net income, interest expense, provision for income taxes, depreciation expense, amortization expense, unusual or nonrecurring charges and other noncash items (consolidated earnings before interest, taxes, depreciation and amortization) to (ii) consolidated interest expense, each as defined and described in the credit agreement.",
+      "score": 0.9686
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "47 Pressures to decrease drug expenditures may further intensify as economic conditions continue to worsen in certain regions, including in Europe where high inflation and the energy crisis relating to the Russia\u2013Ukraine conflict are challenging the economies in that region.",
+      "score": -0.802
+    },
+    {
+      "sent": "Apotex\u2019s answer disputed infringement and/or validity of the patents-in-suit.",
+      "score": -0.6705
+    },
+    {
+      "sent": "Overview Amgen is a biotechnology company committed to unlocking the potential of biology for patients suffering from serious illnesses.",
+      "score": -0.6705
+    }
+  ],
+  "forward_snippets": [
+    "The new standard provides temporary optional expedients and exceptions to current GAAP guidance on contract modifications and hedge accounting.",
+    "We believe our accrual for income tax liabilities is appropriate based on past experience, interpretations of tax law, application of the tax law to our facts and judgments about potential actions by tax authorities; however, due to the complexity of the provision for income taxes and uncertain resolution of these matters, the ultimate outcome of any tax matters may result in payments substantially greater than amounts accrued and could have a material adverse impact on our condensed consolidated financial statements.",
+    "As of September 30, 2022, we believe the carrying value of our equity investment in BeiGene is fully recoverable.",
+    "We believe the fair value option best reflects the economics of the underlying transaction.",
+    "Financing arrangements Our borrowings consisted of the following (in millions): September 30, 2022 December 31, 2021 0.41 % CHF 700 million bonds due 2023 (0.41% 2023 Swiss franc Bonds) $ 709 $ 767 2.25 % notes due 2023 (2.25% 2023 Notes) 750 750 3.625 % notes due 2024 (3.625% 2024 Notes) 1,400 1,400 1.90 % notes due 2025 (1.90% 2025 Notes) 500 500 3.125 % notes due 2025 (3.125% 2025 Notes) 1,000 1,000 2.00 % \u20ac 750 million notes due 2026 (2.00% 2026 euro Notes) 735 853 2.60 % notes due 2026 (2.60% 2026 Notes) 1,250 1,250 5.50 % \u00a3 475 million notes due 2026 (5.50% 2026 pound sterling Notes) 531 643 2.20 % notes due 2027 (2.20% 2027 Notes) 1,724 1,750 3.20 % notes due 2027 (3.20% 2027 Notes) 1,000 1,000 1.65 % notes due 2028 (1.65% 2028 Notes) 1,234 1,250 3.00 % notes due 2029 (3.00% 2029 Notes) 750 \u2014 4.05 % notes due 2029 (4.05% 2029 Note\nptember 30, 2022, we believe the carrying value of our equity investment in BeiGene is fully recoverable."
+  ]
+}

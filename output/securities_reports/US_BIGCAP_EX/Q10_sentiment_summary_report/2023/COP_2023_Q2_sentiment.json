@@ -1,0 +1,47 @@
+{
+  "symbol": "COP",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.142,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.129
+  },
+  "top_positive": [
+    {
+      "sent": "ConocoPhillips \u00a0\u00a0\u00a0\u00a0\u00a02023 Q2 10-Q 2 Financial Statements Table of Contents Consolidated Statement of Comprehensive Income ConocoPhillips Millions of Dollars Three Months Ended June\u00a030 Six Months Ended June\u00a030 2023 2022 2023 2022 Net Income $ 2,232 5,145 5,152 10,904 Other comprehensive income Defined benefit plans Reclassification adjustment for amortization of prior service credit included in net income ( 10 ) ( 10 ) ( 19 ) ( 20 ) Net change ( 10 ) ( 10 ) ( 19 ) ( 20 ) Net actuarial loss arising during the period \u2014 ( 82 ) \u2014 ( 82 ) Reclassification adjustment for amortization of net actuarial losses included in net income 19 25 42 41 Net change 19 ( 57 ) 42 ( 41 ) Income taxes on defined benefit plans ( 3 ) 14 ( 6 ) 12 Defined benefit plans, net of tax 6 ( 53 ) 17 ( 49 ) Unrealized holding gain (loss) on securities ( 3 ) ( 5 ) 3 ( 9 ) Reclassification adjustment for gain included in net income ( 1 ) \u2014 ( 2 ) \u2014 Income taxes on unrealized holding gain (loss) on securities 1 1 \u2014 2 Unrealized holding gain (loss) on securities, net of tax ( 3 ) ( 4 ) 1 ( 7 ) Foreign currency translation adjustments, net of tax 99 ( 448 ) 57 ( 307 ) Other Comprehensive Income (Loss), Net of Tax 102 ( 505 ) 75 ( 363 ) Comprehensive Income $ 2,334 4,640 5,227 10,541 See Notes to Consolidated Financial Statements.",
+      "score": 0.9861
+    },
+    {
+      "sent": "Millions of Dollars (except per share amounts) Three Months Ended June 30 Six Months Ended June 30 2023 2022 2023 2022 Basic earnings per share Net Income $ 2,232 5,145 5,152 10,904 Less: Dividends and undistributed earnings allocated to participating securities 8 17 17 33 Net Income available to common shareholders $ 2,224 5,128 5,135 10,871 Average common shares outstanding (in Millions) 1,207 1,290 1,214 1,296 Net Income Per Share of Common Stock $ 1.84 3.98 4.23 8.39 Diluted earnings per share Net Income available to common shareholders $ 2,224 5,128 5,135 10,871 Average common shares outstanding (in Millions) 1,207 1,290 1,214 1,296 Add: Dilutive impact of options and unvested non-participating RSU/PSUs (in Millions) 3 6 3 5 Average diluted shares outstanding (in Millions) 1,210 1,296 1,217 1,301 Net Income Per Share of Common Stock $ 1.84 3.96 4.22 8.36 23 ConocoPhillips \u00a0\u00a0\u00a0\u00a0\u00a02023 Q2 10-Q Notes to Consolidated Financial Statements Table of Contents Note 18\u2014Segment Disclosures and Related Information We explore for, produce, transport and market crude oil, bitumen, natural gas, LNG and NGLs on a worldwide basis.",
+      "score": 0.979
+    },
+    {
+      "sent": "Millions of Dollars (except per share amounts) Three Months Ended June 30 Six Months Ended June 30 2023 2022 2023 2022 Basic earnings per share Net Income $ 2,232 5,145 5,152 10,904 Less: Dividends and undistributed earnings allocated to participating securities 8 17 17 33 Net Income available to common shareholders $ 2,224 5,128 5,135 10,871 Average common shares outstanding (in Millions) 1,207 1,290 1,214 1,296 Net Income Per Share of Common Stock $ 1.84 3.98 4.23 8.39 Diluted earnings per share Net Income available to common shareholders $ 2,224 5,128 5,135 10,871 Average common shares outstanding (in Millions) 1,207 1,290 1,214 1,296 Add: Dilutive impact of options and unvested non-participating RSU/PSUs (in Millions) 3 6 3 5 Average diluted shares outstanding (in Millions) 1,210 1,296 1,217 1,301 Net Income Per Share of Common Stock $ 1.84 3.96 4.22 8.36 23 ConocoPhillips \u00a0\u00a0\u00a0\u00a0\u00a02023 Q2 10-Q Notes to Consolidated Financial Statements Table of Contents Note 18\u2014Segment Disclosures and Related Information We explore for, produce, transport and market crude oil, bitumen, natural gas, LNG and NGLs on a worldwide basis.",
+      "score": 0.979
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "\u2022 Potential disruption or interruption of our operations and any resulting consequences due to accidents, extraordinary weather events, supply chain disruptions, civil unrest, political events, war, terrorism, cybersecurity threats, and information technology failures, constraints or disruptions.",
+      "score": -0.9761
+    },
+    {
+      "sent": "\u2022 Potential disruption or interruption of our operations and any resulting consequences due to accidents, extraordinary weather events, supply chain disruptions, civil unrest, political events, war, terrorism, cybersecurity threats, and information technology failures, constraints or disruptions.",
+      "score": -0.9761
+    },
+    {
+      "sent": "\u2022 Potential disruption or interruption of our operations and any resulting consequences due to accidents, extraordinary weather events, supply chain disruptions, civil unrest, political events, war, terrorism, cybersecurity threats, and information technology failures, constraints or disruptions.",
+      "score": -0.9761
+    }
+  ],
+  "forward_snippets": [
+    "Upon closing, we will hold 100 percent interest in the Surmont asset.",
+    "Australia Pacific LNG Pty Ltd (APLNG) In March 2023, we announced that, subject to the closing of EIG's transaction with Origin Energy, we intend to purchase up to an additional 2.49 percent shareholding interest in APLNG for $ 0.5 billion, subject to customary adjustments.",
+    "Upon closing we will own up to 49.99 percent interest in APLNG.",
+    "Upon closing, we will hold 100 percent interest in the Surmont asset.",
+    "Australia Pacific LNG Pty Ltd (APLNG) In March 2023, we announced that, subject to the closing of EIG's transaction with Origin Energy, we intend to purchase up to an additional 2.49 percent shareholding interest in APLNG for $ 0.5 billion, subject to customary adjustments."
+  ]
+}

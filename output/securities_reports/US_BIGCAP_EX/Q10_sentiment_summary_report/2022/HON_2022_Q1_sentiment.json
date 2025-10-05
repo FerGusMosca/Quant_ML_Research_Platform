@@ -1,0 +1,47 @@
+{
+  "symbol": "HON",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.176,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.077
+  },
+  "top_positive": [
+    {
+      "sent": "EARNINGS PER SHARE Three Months Ended September 30, Nine Months Ended September 30, Basic 2022 2021 2022 2021 Net income attributable to Honeywell $ 1,552 $ 1,257 $ 3,947 $ 4,114 Weighted average shares outstanding 674.1 690.6 679.3 693.6 Earnings per share of common stock - basic $ 2.30 $ 1.82 $ 5.81 $ 5.93 Three Months Ended September 30, Nine Months Ended September 30, Assuming Dilution 2022 2021 2022 2021 Net income attributable to Honeywell $ 1,552 $ 1,257 $ 3,947 $ 4,114 Average Shares Weighted average shares outstanding 674.1 690.6 679.3 693.6 Dilutive securities issuable - stock plans 5.5 8.3 6.0 8.4 Total weighted average diluted shares outstanding 679.6 698.9 685.3 702.0 Earnings per share of common stock - assuming dilution $ 2.28 $ 1.80 $ 5.76 $ 5.86 The diluted earnings per share calculations exclude the effect of stock options when the options\u2019 exercise price exceed the average market price of the common shares during the period.",
+      "score": 0.9832
+    },
+    {
+      "sent": "The following table sets forth the Company\u2019s financial assets and liabilities accounted for at fair value on a recurring basis: September 30, 2022 December 31, 2021 Level 1 Level 2 Total Level 1 Level 2 Total Assets: Foreign currency exchange contracts $ \u2014 $ 687 $ 687 $ \u2014 $ 374 $ 374 Available for sale investments 83 581 664 176 566 742 Interest rate swap agreements \u2014 \u2014 \u2014 \u2014 60 60 Cross currency swap agreements \u2014 203 203 \u2014 39 39 Investments in equity securities 16 24 40 34 23 57 Total assets $ 99 $ 1,495 $ 1,594 $ 210 $ 1,062 $ 1,272 Liabilities: Foreign currency exchange contracts $ \u2014 $ 498 $ 498 $ \u2014 $ 282 $ 282 Interest rate swap agreements \u2014 294 294 \u2014 \u2014 \u2014 Commodity contracts \u2014 1 1 \u2014 \u2014 \u2014 Total liabilities $ \u2014 $ 793 $ 793 $ \u2014 $ 282 $ 282 The foreign currency exchange contracts, interest rate swap agreements, cross currency swap agreements and commodity contracts are valued using broker quotations or market transactions in either the listed or over-the-counter markets.",
+      "score": 0.975
+    },
+    {
+      "sent": "CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME (Unaudited) Three Months Ended September 30, Nine Months Ended September 30, 2022 2021 2022 2021 (Dollars in millions) Net income $ 1,549 $ 1,273 $ 3,946 $ 4,168 Other comprehensive income (loss), net of tax Foreign exchange translation adjustment ( 423 ) ( 93 ) ( 399 ) 250 Actuarial (gains) losses recognized during year \u2014 ( 1 ) \u2014 ( 1 ) Prior service (credit) cost recognized ( 10 ) ( 21 ) ( 44 ) ( 64 ) Pension and other postretirement benefit adjustments ( 10 ) ( 22 ) ( 44 ) ( 65 ) Changes in fair value of available for sale investments 2 \u2014 ( 7 ) ( 3 ) Cash flow hedges recognized in other comprehensive income (loss) 27 1 66 16 Less: Reclassification adjustment for gains (losses) included in net income 23 5 38 14 Changes in fair value of cash flow hedges 4 ( 4 ) 28 2 Other comprehensive income (loss), net of tax ( 427 ) ( 119 ) ( 422 ) 184 Comprehensive income 1,122 1,154 3,524 4,352 Less: Comprehensive income (loss) attributable to the noncontrolling interest ( 17 ) 15 ( 22 ) 54 Comprehensive income attributable to Honeywell $ 1,139 $ 1,139 $ 3,546 $ 4,298 The Notes to Consolidated Financial Statements are an integral part of this statement.",
+      "score": 0.9745
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "TABLE OF CONTENTS Gross Margin Q3 2022 compared with Q3 2021 Gross margin and Gross margin as a percentage of net sales increased due to the following: \u2022 Favorable pricing, \u2022 Partially offset by lower gross margins due to higher direct and indirect material costs and higher labor costs , higher repositioning and other charges, and lower sales volumes in our Safety and Productivity Solutions reportable business segment.",
+      "score": -0.8481
+    },
+    {
+      "sent": "TABLE OF CONTENTS Gross Margin Q3 2022 compared with Q3 2021 Gross margin and Gross margin as a percentage of net sales increased due to the following: \u2022 Favorable pricing, \u2022 Partially offset by lower gross margins due to higher direct and indirect material costs and higher labor costs , higher repositioning and other charges, and lower sales volumes in our Safety and Productivity Solutions reportable business segment.",
+      "score": -0.8481
+    },
+    {
+      "sent": "TABLE OF CONTENTS Gross Margin Q3 2022 compared with Q3 2021 Gross margin and Gross margin as a percentage of net sales increased due to the following: \u2022 Favorable pricing, \u2022 Partially offset by lower gross margins due to higher direct and indirect material costs and higher labor costs , higher repositioning and other charges, and lower sales volumes in our Safety and Productivity Solutions reportable business segment.",
+      "score": -0.8481
+    }
+  ],
+  "forward_snippets": [
+    "The guidance does not affect recognition, measurement, or financial statement presentation of supplier finance programs.",
+    "The Company is currently evaluating the impacts of this guidance on the Company\u2019s Consolidated Financial Statements.",
+    "In January 2021, the FASB issued ASU 2021-01, Reference Rate Reform (Topic 848): Scope , to expand the scope of this guidance to include derivatives.",
+    "The guidance was effective upon issuance and may be applied prospectively to contract modifications made and hedging relationships entered into on or before December 31, 2022.",
+    "The Company will apply the guidance to impacted transactions during the transition period."
+  ]
+}

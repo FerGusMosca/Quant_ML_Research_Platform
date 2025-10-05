@@ -1,0 +1,47 @@
+{
+  "symbol": "LOW",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2272,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.074
+  },
+  "top_positive": [
+    {
+      "sent": "As a testament to our commitments, in 2021 we received more than 15 notable employer of choice awards including being named: a Disability:IN National Best Place to Work for Disability Inclusion, a Forbes America\u2019s Best Large Employers, a Best of the Best 2021 Top Employer by Black EOE Journal, HISPANIC Network Magazine, and Professional Woman\u2019s Magazine, and a Best Corporation for Veteran\u2019s Business Enterprises of the Year.",
+      "score": 0.9805
+    },
+    {
+      "sent": "As a testament to our commitments, in 2021 we received more than 15 notable employer of choice awards including being named: a Disability:IN National Best Place to Work for Disability Inclusion, a Forbes America\u2019s Best Large Employers, a Best of the Best 2021 Top Employer by Black EOE Journal, HISPANIC Network Magazine, and Professional Woman\u2019s Magazine, and a Best Corporation for Veteran\u2019s Business Enterprises of the Year.",
+      "score": 0.9805
+    },
+    {
+      "sent": "Total Rewards and Wellness In the spirit of building the best team and providing them with the best care, we are proud of the financial and well-being benefits we offer to our associates.",
+      "score": 0.975
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Financial Statement Schedule SCHEDULE II - VALUATION AND QUALIFYING ACCOUNTS AND RESERVES (In millions) Balance at beginning of period Charges to costs and expenses Deductions Balance at end of period January\u00a028, 2022: Reserve for loss on obsolete inventory $ 182 $ \u2014 $ ( 14 ) 1 $ 168 Reserve for inventory shrinkage 365 845 ( 796 ) 2 414 Reserve for sales returns 252 \u2014 ( 7 ) 245 Deferred tax valuation allowance 601 \u2014 ( 11 ) 3 590 Self-insurance liabilities 1,093 1,759 ( 1,736 ) 4 1,116 Reserve for exit activities 69 \u2014 ( 15 ) 54 January\u00a029, 2021: Reserve for loss on obsolete inventory $ 105 $ 77 1 $ \u2014 $ 182 Reserve for inventory shrinkage 244 907 ( 786 ) 2 365 Reserve for sales returns 194 58 \u2014 252 Deferred tax valuation allowance 561 40 3 \u2014 601 Self-insurance liabilities 1,104 1,568 ( 1,579 ) 4 1,093 Reserve for exit activities 88 \u2014 ( 19 ) 69 January\u00a031, 2020: Reserve for loss on obsolete inventory $ 78 $ 27 1 $ \u2014 $ 105 Reserve for inventory shrinkage 222 533 ( 511 ) 2 244 Reserve for sales returns 194 \u2014 \u2014 194 Deferred tax valuation allowance 569 \u2014 ( 8 ) 3 561 Self-insurance liabilities 953 1,711 ( 1,560 ) 4 1,104 Reserve for exit activities 361 \u2014 ( 273 ) 5 88 1 Represents the net (decrease)/increase in the required reserve based on the Company\u2019s evaluation of obsolete inventory.",
+      "score": -0.9776
+    },
+    {
+      "sent": "Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    },
+    {
+      "sent": "Our audits included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    }
+  ],
+  "forward_snippets": [
+    "Statements including words such as \u201cbelieve\u201d, \u201cexpect\u201d, \u201canticipate\u201d, \u201cplan\u201d, \u201cdesire\u201d, \u201cproject\u201d, \u201cestimate\u201d, \u201cintend\u201d, \u201cwill\u201d, \u201cshould\u201d, \u201ccould\u201d, \u201cwould\u201d, \u201cmay\u201d, \u201cstrategy\u201d, \u201cpotential\u201d, \u201copportunity\u201d, \u201coutlook\u201d, \u201cscenario\u201d, \u201cguidance\u201d and similar expressions are forward-looking statements.",
+    "Forward-looking statements involve, among other things, expectations, projections, and assumptions about future financial and operating results, objectives, business outlook, priorities, sales growth, shareholder value, capital expenditures, cash flows, the housing market, the home improvement industry, demand for products and services, share repurchases, Lowe\u2019s strategic initiatives, including those relating to acquisitions and dispositions and the impact of such transactions on our strategic and operational plans and financial results.",
+    "Statements including words such as \u201cbelieve\u201d, \u201cexpect\u201d, \u201canticipate\u201d, \u201cplan\u201d, \u201cdesire\u201d, \u201cproject\u201d, \u201cestimate\u201d, \u201cintend\u201d, \u201cwill\u201d, \u201cshould\u201d, \u201ccould\u201d, \u201cwould\u201d, \u201cmay\u201d, \u201cstrategy\u201d, \u201cpotential\u201d, \u201copportunity\u201d, \u201coutlook\u201d, \u201cscenario\u201d, \u201cguidance\u201d and similar expressions are forward-looking statements.",
+    "Forward-looking statements involve, among other things, expectations, projections, and assumptions about future financial and operating results, objectives, business outlook, priorities, sales growth, shareholder value, capital expenditures, cash flows, the housing market, the home improvement industry, demand for products and services, share repurchases, Lowe\u2019s strategic initiatives, including those relating to acquisitions and dispositions and the impact of such transactions on our strategic and operational plans and financial results.",
+    "Statements including words such as \u201cbelieve\u201d, \u201cexpect\u201d, \u201canticipate\u201d, \u201cplan\u201d, \u201cdesire\u201d, \u201cproject\u201d, \u201cestimate\u201d, \u201cintend\u201d, \u201cwill\u201d, \u201cshould\u201d, \u201ccould\u201d, \u201cwould\u201d, \u201cmay\u201d, \u201cstrategy\u201d, \u201cpotential\u201d, \u201copportunity\u201d, \u201coutlook\u201d, \u201cscenario\u201d, \u201cguidance\u201d and similar expressions are forward-looking statements."
+  ]
+}

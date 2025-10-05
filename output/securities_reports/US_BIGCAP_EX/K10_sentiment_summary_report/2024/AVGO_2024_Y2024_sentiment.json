@@ -1,0 +1,47 @@
+{
+  "symbol": "AVGO",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1961,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.244
+  },
+  "top_positive": [
+    {
+      "sent": "Purchase Consideration (In millions) Fair value of Broadcom common stock issued for outstanding VMware common stock $ 53,398 Cash paid for outstanding VMware common stock 30,788 Cash paid by Broadcom to retire VMware\u2019s term loan 1,257 Fair value of partially vested assumed VMware equity awards 805 Fair value of Broadcom common stock issued for accelerated VMware equity awards 23 Cash paid for accelerated VMware equity awards 13 Effective settlement of pre-existing relationships 6 Total purchase consideration 86,290 Less: cash acquired 6,642 Total purchase consideration, net of cash acquired $ 79,648 We assumed all outstanding VMware RSU awards and performance stock unit (\u201cPSU\u201d) awards held by continuing employees.",
+      "score": 0.9917
+    },
+    {
+      "sent": "Purchase Consideration (In millions) Fair value of Broadcom common stock issued for outstanding VMware common stock $ 53,398 Cash paid for outstanding VMware common stock 30,788 Cash paid by Broadcom to retire VMware\u2019s term loan 1,257 Fair value of partially vested assumed VMware equity awards 805 Fair value of Broadcom common stock issued for accelerated VMware equity awards 23 Cash paid for accelerated VMware equity awards 13 Effective settlement of pre-existing relationships 6 Total purchase consideration 86,290 Less: cash acquired 6,642 Total purchase consideration, net of cash acquired $ 79,648 We assumed all outstanding VMware RSU awards and performance stock unit (\u201cPSU\u201d) awards held by continuing employees.",
+      "score": 0.9917
+    },
+    {
+      "sent": "Pursuant to the Agreement and Plan of Merger, each share of VMware common stock issued and outstanding immediately prior to the VMware Merger was indirectly converted into the right to receive, at the election of the holder of such share of VMware common stock, either $ 142.50 in cash or 2.52 shares of Broadcom common stock (on a split adjusted\newise, if we determine that we are not able to realize all or part of our net deferred tax assets, we increase the provision for income taxes or decrease the benefit from income taxes in the period such determination is made.",
+      "score": 0.9661
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "A prolonged disruption at or shut-down of one or more of our manufacturing facilities or warehouses or those of our CMs or suppliers, due to natural- or man-made disasters or other events outside of our control, such as climate change, water shortages, political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, labor shortages, medical epidemics, economic instability, equipment failure or for any other reason, would limit our capacity to meet customer demands and delay new product development until a replacement facility and equipment, if necessary, were found.",
+      "score": -0.9531
+    },
+    {
+      "sent": "A prolonged disruption at or shut-down of one or more of our manufacturing facilities or warehouses or those of our CMs or suppliers, due to natural- or man-made disasters or other events outside of our control, such as climate change, water shortages, political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, labor shortages, medical epidemics, economic instability, equipment failure or for any other reason, would limit our capacity to meet customer demands and delay new product development until a replacement facility and equipment, if necessary, were found.",
+      "score": -0.9531
+    },
+    {
+      "sent": "This could damage our relationships with our customers, result in litigation for alleged failure to meet our obligations, or result in payment of significant damages, and our net revenue could decline, adversely affecting our business, financial condition, results of operations and gross margin.",
+      "score": -0.9231
+    }
+  ],
+  "forward_snippets": [
+    "While we believe that our assumptions are reasonable, we caution that it is very difficult to predict the impact of known factors, and it is impossible for us to anticipate all factors that could affect our actual results.",
+    "We differentiate ourselves through our high-performance design and integration capabilities and focus on developing semiconductor products for target markets where we believe we can earn attractive margins.",
+    "While we believe that our assumptions are reasonable, we caution that it is very difficult to predict the impact of known factors, and it is impossible for us to anticipate all factors that could affect our actual results.",
+    "We differentiate ourselves through our high-performance design and integration capabilities and focus on developing semiconductor products for target markets where we believe we can earn attractive margins.",
+    "While we believe that our assumptions are reasonable, we caution that it is very difficult to predict the impact of known factors, and it is impossible for us to anticipate all factors that could affect our actual results."
+  ]
+}

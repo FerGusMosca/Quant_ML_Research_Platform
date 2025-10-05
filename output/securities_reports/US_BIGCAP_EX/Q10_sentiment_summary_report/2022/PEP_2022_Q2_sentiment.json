@@ -1,0 +1,47 @@
+{
+  "symbol": "PEP",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.11,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.199
+  },
+  "top_positive": [
+    {
+      "sent": "23 Table of Contents Note 9 - Net Income Attributable to PepsiCo per Common Share The computations of basic and diluted net income attributable to PepsiCo per common share are as follows: 12 Weeks Ended 6/11/2022 6/12/2021 Income Shares (a) Income Shares (a) Basic net income attributable to PepsiCo per common share $ 1.03 $ 1.71 Net income available for PepsiCo common shareholders $ 1,429 1,382 $ 2,358 1,382 Dilutive securities: Stock options, RSUs, PSUs and other (b) \u2014 7 \u2014 6 Diluted $ 1,429 1,389 $ 2,358 1,388 Diluted net income attributable to PepsiCo per common share $ 1.03 $ 1.70 24 Weeks Ended 6/11/2022 6/12/2021 Income Shares (a) Income Shares (a) Basic net income attributable to PepsiCo per common share $ 4.11 $ 2.95 Net income available for PepsiCo common shareholders $ 5,690 1,383 $ 4,072 1,381 Dilutive securities: Stock options, RSUs, PSUs and other (b) \u2014 7 \u2014 6 Diluted $ 5,690 1,390 $ 4,072 1,387 Diluted net income attributable to PepsiCo per common share $ 4.09 $ 2.94 (a) Weighted-average common shares outstanding (in millions).",
+      "score": 0.979
+    },
+    {
+      "sent": "and Subsidiaries (in millions except per share amounts, unaudited) 12 Weeks Ended 24 Weeks Ended 6/11/2022 6/12/2021 6/11/2022 6/12/2021 Net Revenue $ 20,225 $ 19,217 $ 36,425 $ 34,037 Cost of sales 9,415 8,880 16,848 15,551 Gross profit 10,810 10,337 19,577 18,486 Selling, general and administrative expenses 7,387 7,208 13,967 13,045 Gain associated with the Juice Transaction (a) ( 13 ) \u2014 ( 3,335 ) \u2014 Impairment of intangible assets (see Notes 1 and 3) 1,359 \u2014 1,601 \u2014 Operating Profit 2,077 3,129 7,344 5,441 Other pension and retiree medical benefits (expense)/income ( 2 ) 126 132 246 Net interest expense and other ( 236 ) ( 241 ) ( 476 ) ( 499 ) Income before income taxes 1,839 3,014 7,000 5,188 Provision for income taxes 393 642 1,281 1,093 Net income 1,446 2,372 5,719 4,095 Less: Net income attributable to noncontrolling interests 17 14 29 23 Net Income Attributable to PepsiCo $ 1,429 $ 2,358 $ 5,690 $ 4,072 Net Income Attributable to PepsiCo per Common Share Basic $ 1.03 $ 1.71 $ 4.11 $ 2.95 Diluted $ 1.03 $ 1.70 $ 4.09 $ 2.94 Weighted-average common shares outstanding Basic 1,382 1,382 1,383 1,381 Diluted 1,389 1,388 1,390 1,387 (a) In the 24 weeks ended June 11, 2022, we sold our Tropicana, Naked and other select juice brands to PAI Partners for approximately $ 3.5 billion in cash and a 39 % noncontrolling interest in a newly formed joint venture (Tropicana JV) operating across North America and Europe (Juice Transaction).",
+      "score": 0.9776
+    },
+    {
+      "sent": "Fair Value Measurements The fair values of our financial assets and liabilities as of June\u00a011, 2022 and December\u00a025, 2021 are categorized as follows: 6/11/2022 12/25/2021 Fair Value Hierarchy Levels (a) Assets (a) Liabilities (a) Assets (a) Liabilities (a) Index funds (b) 1 $ 279 $ \u2014 $ 337 $ \u2014 Prepaid forward contracts (c) 2 $ 13 $ \u2014 $ 21 $ \u2014 Deferred compensation (d) 2 $ \u2014 $ 440 $ \u2014 $ 505 Derivatives designated as cash flow hedging instruments: Foreign exchange (e) 2 $ 14 $ 42 $ 29 $ 14 Interest rate (e) 2 20 349 14 264 Commodity (f) 2 22 30 70 5 $ 56 $ 421 $ 113 $ 283 Derivatives not designated as hedging instruments: Foreign exchange (e) 2 $ 6 $ 9 $ 19 $ 7 Commodity (f) 2 46 25 35 22 $ 52 $ 34 $ 54 $ 29 Total derivatives at fair value (g) $ 108 $ 455 $ 167 $ 312 Total $ 400 $ 895 $ 525 $ 817 (a) Fair value hierarchy levels are categorized consistently by Level 1 (quoted prices in active markets for identical assets) and Level 2 (significant other observable inputs) in both years.",
+      "score": 0.9756
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "and Subsidiaries (in millions, unaudited) 24 Weeks Ended 6/11/2022 6/12/2021 Financing Activities Payments of long-term debt ( 1,652 ) ( 1,696 ) Debt redemptions ( 1,550 ) \u2014 Short-term borrowings, by original maturity: More than three months - proceeds 1,935 \u2014 More than three months - payments \u2014 ( 397 ) Three months or less, net 844 89 Cash dividends paid ( 2,997 ) ( 2,842 ) Share repurchases - common ( 699 ) ( 106 ) Proceeds from exercises of stock options 89 100 Withholding tax payments on restricted stock units (RSUs) and performance stock units (PSUs) converted ( 87 ) ( 73 ) Other financing ( 15 ) ( 19 ) Net Cash Used for Financing Activities ( 4,132 ) ( 4,944 ) Effect of exchange rate changes on cash and cash equivalents and restricted cash ( 83 ) 12 Net Decrease in Cash and Cash Equivalents and Restricted Cash ( 162 ) ( 2,708 ) Cash and Cash Equivalents and Restricted Cash, Beginning of Year 5,707 8,254 Cash and Cash Equivalents and Restricted Cash, End of Period $ 5,545 $ 5,546 Supplemental Non-Cash Activity Right-of-use assets obtained in exchange for lease obligations $ 428 $ 319 See accompanying notes to the condensed consolidated financial statements.",
+      "score": -0.8957
+    },
+    {
+      "sent": "Risks associated with the deadly conflict in Ukraine The deadly conflict in Ukraine has continued to result in worldwide geopolitical and macroeconomic uncertainty and the majority of our operations in Ukraine remain suspended.",
+      "score": -0.8807
+    },
+    {
+      "sent": "Risks associated with the deadly conflict in Ukraine The deadly conflict in Ukraine has continued to result in worldwide geopolitical and macroeconomic uncertainty and the majority of our operations in Ukraine remain suspended.",
+      "score": -0.8807
+    }
+  ],
+  "forward_snippets": [
+    "As a result, we expect to incur pre-tax charges of approximately $ 3.15 billion, including cash expenditures of approximately $ 2.4 billion.",
+    "In light of the current political and economic environment, we will continue to review and analyze our brand portfolio worldwide.",
+    "In light of the current political and economic environment, we will continue to review and analyze our brand portfolio worldwide.",
+    "We expect to make an additional discretionary contribution of $ 75 million to our U.S.",
+    "We continue to evaluate our hedging strategies related to our Russian business based on the impact of the Russia-Ukraine conflict on financial markets."
+  ]
+}

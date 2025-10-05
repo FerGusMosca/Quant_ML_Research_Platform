@@ -1,0 +1,56 @@
+{
+  "symbol": "VLO",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.1491,
+    "outlook_sentiment": 0.1387,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.11
+  },
+  "top_positive": [
+    {
+      "sent": "Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters \u201cBeneficial Ownership of Valero Securities\u201d and \u201cEquity Compensation Plan Information\u201d 13.",
+      "score": 0.7579
+    },
+    {
+      "sent": "As of February\u00a018, 2022, 409,303,630 shares of the registrant\u2019s common stock were outstanding.",
+      "score": 0.7351
+    },
+    {
+      "sent": "Yes \u2610 No \u2611 The aggregate market value of the voting and non-voting common stock held by non-affiliates was approximately $ 31.9 billion based on the last sales price quoted as of June\u00a030, 2021 on the New York Stock Exchange, the last business day of the registrant\u2019s most recently completed second fiscal quarter.",
+      "score": 0.4404
+    },
+    {
+      "sent": "107 Table of Contents VALERO ENERGY CORPORATION NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued) The changes in benefit obligation related to all of our defined benefit plans, the changes in fair value of plan assets (a) , and the funded status of our defined benefit plans as of and for the years ended below were as follows (in\u00a0millions): Pension Plans Other Postretirement Benefit Plans December 31, December 31, 2021 2020 2021 2020 Changes in benefit obligation Benefit obligation as of beginning of year $ 3,625 $ 3,239 $ 358 $ 336 Service cost 161 140 7 6 Interest cost 73 85 7 9 Participant contributions \u2014 \u2014 13 12 Benefits paid ( 284 ) ( 195 ) ( 29 ) ( 28 ) Actuarial (gain) loss ( 111 ) 339 ( 9 ) 23 Other ( 1 ) 17 \u2014 \u2014 Benefit obligation as of end of year $ 3,463 $ 3,625 $ 347 $ 358 Changes in plan assets (a) Fair value of plan assets as of beginning of year $ 3,067 $ 2,709 $ \u2014 $ \u2014 Actual return on plan assets 389 413 \u2014 \u2014 Company contributions 135 129 16 16 Participant contributions \u2014 \u2014 13 12 Benefits paid ( 284 ) ( 195 ) ( 29 ) ( 28 ) Other ( 4 ) 11 \u2014 \u2014 Fair value of plan assets as of end of year $ 3,303 $ 3,067 $ \u2014 $ \u2014 Reconciliation of funded status (a) Fair value of plan assets as of end of year $ 3,303 $ 3,067 $ \u2014 $ \u2014 Less: Benefit obligation as of end of year 3,463 3,625 347 358 Funded status as of end of year $ ( 160 ) $ ( 558 ) $ ( 347 ) $ ( 358 ) Accumulated benefit obligation $ 3,238 $ 3,398 n/a n/a ________________________ (a) Plan assets include only the assets associated with pension plans subject to legal minimum funding standards.",
+      "score": 0.9955
+    },
+    {
+      "sent": "In building and fostering great teams, we are guided by the following: \u2022 We strive to hire and promote top-talent employees with team-oriented work ethics and values; \u2022 Our pay, benefits, and support programs are designed to attract and retain excellent employees and to reward innovation, ingenuity, and excellence; \u2022 We seek to provide a best-in-class, diverse, and inclusive work environment built on a foundation of respect, accountability, and trust; \u2022 We promote a culture of learning intended to drive excellence at all levels of the organization and to foster career-long growth and development opportunities for employees; and \u2022 We continually assess employee performance, organizational structures, and succession plans to support operational excellence, efficiency, and effectiveness.",
+      "score": 0.9954
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Financial Highlights by Segment and Total Company (millions of dollars) Year Ended December 31, 2021 Refining Renewable Diesel Ethanol Corporate and Eliminations Total Revenues: Revenues from external customers $ 106,947 $ 1,874 $ 5,156 $ \u2014 $ 113,977 Intersegment revenues 14 468 433 (915) \u2014 Total revenues 106,961 2,342 5,589 (915) 113,977 Cost of sales: Cost of materials and other (a) 97,759 1,438 4,428 (911) 102,714 Operating expenses (excluding depreciation and amortization expense reflected below) (a) 5,088 134 556 (2) 5,776 Depreciation and amortization expense 2,169 58 131 \u2014 2,358 Total cost of sales 105,016 1,630 5,115 (913) 110,848 Other operating expenses 83 3 1 \u2014 87 General and administrative expenses (excluding depreciation and amortization expense reflected below) \u2014 \u2014 \u2014 865 865 Depreciation and amortization expense \u2014 \u2014 \u2014 47 47 Operating income by segment $ 1,862 $ 709 $ 473 $ (914) 2,130 Other income, net (c) 16 Interest and debt expense, net of capitalized interest (603) Income before income tax expense 1,543 Income tax expense (d) 255 Net income 1,288 Less: Net income attributable to noncontrolling interests 358 Net income attributable to Valero Energy Corporation stockholders $ 930 42 Table of Contents Financial Highlights by Segment and Total Company (continued) (millions of dollars) Year Ended December 31, 2020 Refining Renewable Diesel Ethanol Corporate and Eliminations Total Revenues: Revenues from external customers $ 60,840 $ 1,055 $ 3,017 $ \u2014 $ 64,912 Intersegment revenues 8 212 226 (446) \u2014 Total revenues 60,848 1,267 3,243 (446) 64,912 Cost of sales: Cost of materials and other (b) 56,093 500 2,784 (444) 58,933 Lower of cost or market (LCM) inventory valuation adjustment (19) \u2014 \u2014 \u2014 (19) Operating expenses (excluding depreciation and amortization expense reflected below) 3,944 85 406 \u2014 4,435 Depreciation and amortization expense 2,138 44 121 \u2014 2,303 Total cost of sales 62,156 629 3,311 (444) 65,652 Other operating expenses 34 \u2014 1 \u2014 35 General and administrative expenses (excluding depreciation and amortization expense reflected below) \u2014 \u2014 \u2014 756 756 Depreciation and amortization expense \u2014 \u2014 \u2014 48 48 Operating income (loss) by segment $ (1,342) $ 638 $ (69) $ (806) (1,579) Other income, net 132 Interest and debt expense, net of capitalized interest (563) Loss before income tax benefit (2,010) Income tax benefit (903) Net loss (1,107) Less: Net income attributable to noncontrolling interests 314 Net loss attributable to Valero Energy Corporation stockholders $ (1,421) 43 Table of Contents Average Market Reference Prices and Differentials Year Ended December 31, 2021 2020 Refining Feedstocks (dollars per barrel) Brent crude oil $ 70.79 $ 43.15 Brent less West Texas Intermediate (WTI) crude oil 2.83 3.84 Brent less Alaska North Slope (ANS) crude oil 0.35 0.82 Brent less LLS crude oil 1.33 1.91 Brent less Argus Sour Crude Index (ASCI) crude oil 3.92 3.26 Brent less Maya crude oil 6.48 6.89 LLS crude oil 69.46 41.24 LLS less ASCI crude oil 2.59 1.35 LLS less Maya crude oil 5.15 4.98 WTI crude oil 67.97 39.31 Natural gas (dollars per million British Thermal Units) 7.85 2.00 Products (dollars per barrel) U.S.",
+      "score": -0.9684
+    },
+    {
+      "sent": "As a result, our operations could be subject to significant interruption if one or more of our refineries or plants were to experience a major accident or mechanical failure, be damaged by severe weather or natural disasters (such as hurricanes) or man-made disasters (such as cybersecurity incidents or acts of terrorism), or otherwise be forced to shut down.",
+      "score": -0.9652
+    },
+    {
+      "sent": "As a result, our operations could be subject to significant interruption if one or more of our refineries or plants were to experience a major accident or mechanical failure, be damaged by severe weather or natural disasters (such as hurricanes) or man-made disasters (such as cybersecurity incidents or acts of terrorism), or otherwise be forced to shut down.",
+      "score": -0.9652
+    }
+  ],
+  "forward_snippets": [
+    "DOCUMENTS INCORPORATED BY REFERENCE We intend to file with the Securities and Exchange Commission a definitive Proxy Statement for our Annual Meeting of Stockholders scheduled for April\u00a028, 2022, at which directors will be elected.",
+    "We believe that liquid transportation fuels\u2014both petroleum-based and low-carbon\u2014 help meet that demand, and we expect that they will continue to be an essential source of transportation fuels well into the future.",
+    "1 Table of Contents Our petroleum refineries operate in locations with current operating cost and/or other advantages, as described below under \u201cOUR OPERATIONS\u2014 Refining ,\u201d and we believe our refineries are positioned to meet the strong worldwide demand for our petroleum-based products.",
+    "Through our refining business, we believe that we have developed expertise in liquid fuels manufacturing and a platform for the marketing and distribution of liquid fuels, and we seek to leverage this expertise and platform to expand and optimize our low-carbon fuels businesses.",
+    "We expect that low-carbon liquid fuels will continue to be a growing part of the energy mix, and we have made multibillion-dollar investments to develop and grow our low-carbon renewable diesel and ethanol businesses, as described below under \u201cOUR OPERATIONS\u2014 Renewable Diesel ,\u201d and \u201c \u2014Ethanol .\u201d These businesses have made us one of the world\u2019s largest low-carbon fuels producers and have helped governments across the world achieve their greenhouse gas (GHG) emissions reduction targets.",
+    "Even so, we continue to seek low-carbon fuel opportunities and to improve our environmental, social, and governance (ESG) practices."
+  ]
+}

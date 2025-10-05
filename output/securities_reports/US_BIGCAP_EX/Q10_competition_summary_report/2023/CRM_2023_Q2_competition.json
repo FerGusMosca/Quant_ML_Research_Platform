@@ -1,0 +1,17 @@
+{
+  "symbol": "CRM",
+  "year": 2023,
+  "period": "Q2",
+  "competition_summary": [
+    {
+      "competitor": "the Internet Corporation for Assigned Numbers and Names",
+      "mentions": 1,
+      "context": "competition, pricing increases or changes and deteriorating general economic conditions. Our future success also depends in part on our ability to sell additional features and services, more subscriptions or enhanced editions of our services to our current customers. This may also require increasingly sophisticated and costly sales efforts that are targeted at senior management. Similarly, the rate at which our customers purchase new or enhanced services depends on a number of factors, including"
+    },
+    {
+      "competitor": "ICANN",
+      "mentions": 1,
+      "context": "competition, pricing increases or changes and deteriorating general economic conditions. Our future success also depends in part on our ability to sell additional features and services, more subscriptions or enhanced editions of our services to our current customers. This may also require increasingly sophisticated and costly sales efforts that are targeted at senior management. Similarly, the rate at which our customers purchase new or enhanced services depends on a number of factors, including"
+    }
+  ]
+}

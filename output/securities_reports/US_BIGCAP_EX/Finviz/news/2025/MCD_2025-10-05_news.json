@@ -1,0 +1,606 @@
+{
+  "symbol": "MCD",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-04",
+      "time": "01:30",
+      "title": "Fast-Casual Restaurant Stocks Lost Their Sizzle. What Could Bring Them Back.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/dbccc09d-ba0f-3303-ac7b-3ad5c15753f3/fast-casual-restaurant-stocks.html"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "19:09",
+      "title": "Wealthy Parents Have Turned Into Banks for Their Children. Why That's a Problem.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/wealthy-parents-have-turned-into-banks-for-their-children-why-thats-a-problem-f6f1878b?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:55PM",
+      "title": "McDonald's is bringing back Monopoly  analyst sees a menu of upside\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/mcdonalds-is-bringing-back-monopoly--analyst-sees-a-menu-of-upside-165514033.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:55PM",
+      "title": "McDonald's is bringing back Monopoly  analyst see a menu of upside\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/mcdonalds-is-bringing-back-monopoly--analyst-see-a-menu-of-upside-165514644.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:54AM",
+      "title": "McDonald's has created a chief data, analytics, AI officer role\n\n\n(Nation's Restaurant News)",
+      "link": "https://www.nrn.com/quick-service/mcdonald-s-has-created-a-chief-data-analytics-ai-officer-role"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:15AM",
+      "title": "McDonald's bringing back Monopoly promotion: Consumer breakdown\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/mcdonalds-bringing-back-monopoly-promotion-141517339.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "16:05",
+      "title": "The Massive Expansion of McDonald's\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/video/massive-expansion-mcdonalds-200552753.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:20AM",
+      "title": "McDonald's Drives Sustainable Growth Through Loyalty & Menu Innovation\n\n\n(Zacks)",
+      "link": "/news/182546/mcdonalds-drives-sustainable-growth-through-loyalty-menu-innovation"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:55AM",
+      "title": "Citi Maintains a Buy on McDonald (MCD), Raises the PT\n\n\n(Insider Monkey)",
+      "link": "/news/181846/citi-maintains-a-buy-on-mcdonald-mcd-raises-the-pt"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "17:50",
+      "title": "McDonald's (MCD) Stock Slides as Market Rises: Facts to Know Before You Trade\n\n\n(Zacks)",
+      "link": "/news/181585/mcdonalds-mcd-stock-slides-as-market-rises-facts-to-know-before-you-trade"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:44PM",
+      "title": "McDonald's Corporation's (MCD) Dividend Policy: A Signal of Financial Discipline\n\n\n(Insider Monkey)",
+      "link": "/news/181277/mcdonalds-corporations-mcd-dividend-policy-a-signal-of-financial-discipline"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:44AM",
+      "title": "McDonalds is bringing back its Monopoly contest after a 10-year break with big changes\n\n\n(Quartz)",
+      "link": "https://qz.com/mcdonalds-monopoly-contest-returns-prizes-rules"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "17:56",
+      "title": "Analyst Report: Lamb Weston Holdings, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/0113def0-2e43-3738-851b-c80d5965ed49/analyst-report%3A-lamb-weston.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:46PM",
+      "title": "Qdoba promotes Jon Burke to chief marketing officer\n\n\n(Nation's Restaurant News)",
+      "link": "https://www.nrn.com/fast-casual/qdoba-promotes-jon-burke-to-chief-marketing-officer"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "12:13",
+      "title": "McDonalds is bringing back Monopoly after a decade  with a high-tech twist\n\n\n(CNN Business)",
+      "link": "https://finance.yahoo.com/m/279dcf23-ead4-32e7-99fe-df5821852c49/mcdonald%E2%80%99s-is-bringing-back.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:49AM",
+      "title": "McDonald's drinks, magnetic brands, Starbucks traffic\n\n\n(Nation's Restaurant News)",
+      "link": "https://www.nrn.com/quick-service/mcdonald-s-drinks-magnetic-brands-starbucks-traffic"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Get Ready to Pass GO: MONOPOLY Game at McDonald's Returns with More Chances to Win\n\n\n(PR Newswire)",
+      "link": "/news/178014/get-ready-to-pass-go-monopoly-game-at-mcdonalds-returns-with-more-chances-to-win"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:02AM",
+      "title": "Foreign issuers tap\u00a0Canadian bond market as demand for non-US assets grows\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/foreign-issuers-tap-canadian-bond-100242669.html"
+    },
+    {
+      "date": "2025-09-27",
+      "time": "18:50",
+      "title": "The Smartest Dividend Stocks to Buy With $10,000 Right Now\n\n\n(Motley Fool)",
+      "link": "/news/177615/the-smartest-dividend-stocks-to-buy-with-10000-right-now"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "10:57",
+      "title": "Exclusive-Starbucks CTO resigned Monday, interim named\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/exclusive-starbucks-cto-resigned-monday-145749630.html"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "16:50",
+      "title": "Top Stock Reports for Alibaba, Bank of America & Verizon\n\n\n(Zacks)",
+      "link": "/news/176262/top-stock-reports-for-alibaba-bank-of-america-verizon"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "18:00",
+      "title": "McDonald's vs. Darden: How to play the restaurant space\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/mcdonalds-vs-darden-play-restaurant-220007518.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:56AM",
+      "title": "Survey shows 1/3 of GLP-1 users are lower-income\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/survey-shows-1-3-glp-125623044.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:28AM",
+      "title": "Jim Cramer on McDonald's: \"It's Been an Amazing Company\"\n\n\n(Insider Monkey)",
+      "link": "/news/174190/jim-cramer-on-mcdonalds-its-been-an-amazing-company"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "10:03",
+      "title": "Will Chipotle's Sustainability Push Strengthen Its Brand Edge?\n\n\n(Zacks)",
+      "link": "/news/173484/will-chipotles-sustainability-push-strengthen-its-brand-edge"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:25AM",
+      "title": "Can McDonalds Stock Hit $381 in 2025?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/417a2f3b-f93d-3db8-ba6e-a42c6d4f5883/can-mcdonald%E2%80%99s-stock-hit-%24381.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:09AM",
+      "title": "De minimis elimination strains Lululemons fulfillment model\n\n\n(Supply Chain Dive)",
+      "link": "https://finance.yahoo.com/m/2bdfa69f-2895-38c2-916d-6823e2becca0/de-minimis-elimination.html"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "17:34",
+      "title": "Bernstein Raises PT on McDonald's Corporation (MCD) to $320, Maintains 'Market Perform' Rating\n\n\n(Insider Monkey)",
+      "link": "/news/172710/bernstein-raises-pt-on-mcdonalds-corporation-mcd-to-320-maintains-market-perform-rating"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "12:40",
+      "title": "Modi urges Indians to get rid of foreign products\n\n\n(Reuters Videos)",
+      "link": "https://finance.yahoo.com/video/modi-urges-indians-rid-foreign-164014255.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:15AM",
+      "title": "McDonald's Corporation's (MCD) Dividend Reliability in Volatile Markets of NYSE Dividend Stocks\n\n\n(Insider Monkey)",
+      "link": "/news/171670/mcdonalds-corporations-mcd-dividend-reliability-in-volatile-markets-of-nyse-dividend-stocks"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "13:01",
+      "title": "The Breakfast Battle: Convenience Stores Are Taking a Bite Out of Fast-Food Chains' Morning Revenues\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/breakfast-battle-convenience-stores-taking-170147940.html"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "19:11",
+      "title": "McDonald's Corporation's (MCD) Dividend History: A Reliable Addition to Any Dividend Stock Portfolio\n\n\n(Insider Monkey)",
+      "link": "/news/171281/mcdonalds-corporations-mcd-dividend-history-a-reliable-addition-to-any-dividend-stock-portfolio"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:46PM",
+      "title": "Aprio Buys Midwest Accounting Firm with Affiliated $1.98B Wealth Business\n\n\n(Wealth Management)",
+      "link": "https://finance.yahoo.com/m/3114cef5-9b86-3afa-b337-62ab325baabc/aprio-buys-midwest-accounting.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:21AM",
+      "title": "McDonald's: New All-Time Highs Are Inevitable\n\n\n(MarketBeat)",
+      "link": "/news/170548/mcdonalds-new-all-time-highs-are-inevitable"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "17:45",
+      "title": "McDonald's (MCD) Stock Slides as Market Rises: Facts to Know Before You Trade\n\n\n(Zacks)",
+      "link": "/news/170127/mcdonalds-mcd-stock-slides-as-market-rises-facts-to-know-before-you-trade"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:50PM",
+      "title": "Chipotles Honey Chicken drove lapsed consumer visits\n\n\n(Nation's Restaurant News)",
+      "link": "https://finance.yahoo.com/m/0c592d59-8e9a-3b1b-a660-1e77e02f51de/chipotle%E2%80%99s-honey-chicken.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:33PM",
+      "title": "Uber Inks Deal on Drone Delivery: Is the Growth Thesis Strengthening?\n\n\n(Zacks)",
+      "link": "/news/169920/uber-inks-deal-on-drone-delivery-is-the-growth-thesis-strengthening"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:44AM",
+      "title": "McDonalds taps seasoned exec to lead data, AI\n\n\n(CIO Dive)",
+      "link": "https://finance.yahoo.com/m/55ff9448-f748-399f-8f61-f2bff7ed5faf/mcdonald%E2%80%99s-taps-seasoned-exec.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "The Smartest Dividend Stocks to Buy With $1,000 Right Now\n\n\n(Motley Fool)",
+      "link": "/news/169564/the-smartest-dividend-stocks-to-buy-with-1000-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Investors Heavily Search McDonald's Corporation (MCD): Here is What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/169515/investors-heavily-search-mcdonalds-corporation-mcd-here-is-what-you-need-to-know"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "10:21",
+      "title": "Denny's activist, McDonald's global impact, FS/TEC wrapup\n\n\n(Nation's Restaurant News)",
+      "link": "https://www.nrn.com/family-dining/denny-s-activist-mcdonald-s-global-impact-fs-tec-wrapup"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:44AM",
+      "title": "Stock Market Today: Dow Wobbles Ahead Of Fed Vote; Nvidia Slides On China Ban (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/07104f85-6de4-3d31-b532-05b15f18ced6/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "07:41",
+      "title": "McDonalds commits $200m to regenerative agriculture initiative\n\n\n(Verdict Food Service)",
+      "link": "https://finance.yahoo.com/m/2e0c0f9a-bd1b-30e1-97ae-e6e7636eea0f/mcdonald%E2%80%99s-commits-%24200m-to.html"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "16:21",
+      "title": "Stock Market Today: Dow Up As Buffett Stock Tests Entry; Tesla Jumps On Musk Move (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/8620f99a-4db8-3e0a-9381-158abddcda17/stock-market-today%3A-dow-up-as.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:04PM",
+      "title": "McDonald's plans $200 million investment to promote regenerative practices on US cattle ranches\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/mcdonalds-plans-200-million-investment-180426129.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:38AM",
+      "title": "McDonalds invests in regenerative agriculture\n\n\n(Nation's Restaurant News)",
+      "link": "https://finance.yahoo.com/m/93c86820-4b21-3ffd-a47b-bacd9d0d7da0/mcdonald%E2%80%99s-invests-in.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:45AM",
+      "title": "IHOP taps TikTok, NASCAR, and $6 breakfasts to win back diners\n\n\n(FastCompany)",
+      "link": "https://finance.yahoo.com/m/1a776e19-de8c-3564-9946-46221bbd881a/ihop-taps-tiktok%2C-nascar%2C-and.html"
+    },
+    {
+      "date": "2025-09-13",
+      "time": "05:30",
+      "title": "Big Brands Play Down Their Americanness Abroad\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/retail/big-brands-play-down-their-americanness-abroad-a7e6db52?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:16AM",
+      "title": "Battle of Top Dividend Stocks: Waste Management vs. McDonald's\n\n\n(Motley Fool)",
+      "link": "/news/165409/battle-of-top-dividend-stocks-waste-management-vs-mcdonalds"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "18:00",
+      "title": "2 consumer traffic trends driving restaurant success\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/2-consumer-traffic-trends-driving-220000280.html"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "15:06",
+      "title": "Consumers Flock Back To Restaurants Driving August Sales Jump\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/consumers-flock-back-restaurants-driving-190647433.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:43PM",
+      "title": "Make America Healthy Again report urges restaurants to provide healthier kids' meals\n\n\n(Nation's Restaurant News)",
+      "link": "https://finance.yahoo.com/m/c2c0c13a-5ed3-3f30-aa05-1a508fcfbe40/%E2%80%98make-america-healthy-again%E2%80%99.html"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "17:45",
+      "title": "McDonald's (MCD) Stock Drops Despite Market Gains: Important Facts to Note\n\n\n(Zacks)",
+      "link": "/news/163128/mcdonalds-mcd-stock-drops-despite-market-gains-important-facts-to-note"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:57AM",
+      "title": "PLAY to Post Q2 Earnings: Time to Buy, Sell or Hold the Stock?\n\n\n(Zacks)",
+      "link": "/news/162714/play-to-post-q2-earnings-time-to-buy-sell-or-hold-the-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:15AM",
+      "title": "2 Dividend Stocks to Double Up on Right Now\n\n\n(Motley Fool)",
+      "link": "/news/162037/2-dividend-stocks-to-double-up-on-right-now"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "16:45",
+      "title": "Smashburgers new CEO, Jim Sullivan, plots brand reinvigoration\n\n\n(Nation's Restaurant News)",
+      "link": "https://finance.yahoo.com/m/90b42f4c-8ecc-312d-b900-65aa33237ea9/smashburger%E2%80%99s-new-ceo%2C-jim.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:28PM",
+      "title": "Restaurant promotions to intensify as consumer spending weakens\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/restaurant-promotions-intensify-consumer-spending-182851852.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:36AM",
+      "title": "1 Unpopular Stock That Deserves Some Love and 2 Facing Challenges\n\n\n(StockStory)",
+      "link": "/news/160838/1-unpopular-stock-that-deserves-some-love-and-2-facing-challenges"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "13:07",
+      "title": "Mod Gen in Milwaukee's Third Ward to close after 25 years in business\n\n\n(Milwaukee Journal Sentinel)",
+      "link": "https://finance.yahoo.com/m/f69faedc-5feb-316f-8b5e-beb8441d65a1/mod-gen-in-milwaukee%27s-third.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:30AM",
+      "title": "McDonalds Chief Blasts Minimum Wage Loophole for Tipped Workers\n\n\n(The Daily Upside)",
+      "link": "https://finance.yahoo.com/m/2216f665-07f7-31d9-8fbd-55cc3d9fe692/mcdonald%E2%80%99s-chief-blasts.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:03AM",
+      "title": "This tea shop and cafe is opening a second location in Milwaukee's Third Ward\n\n\n(Milwaukee Journal Sentinel)",
+      "link": "https://finance.yahoo.com/m/c1be2dd6-e715-3e56-a7be-3d667a677be6/this-tea-shop-and-cafe-is.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:00AM",
+      "title": "McDonalds is giving its value menu another shakeup on Monday\n\n\n(CNN Business)",
+      "link": "https://finance.yahoo.com/m/3af99f8a-0452-3880-bd9b-fda95b6bdd1d/mcdonald%E2%80%99s-is-giving-its.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:51AM",
+      "title": "Inflation is the week's watchword\n\n\n(TheStreet)",
+      "link": "https://finance.yahoo.com/m/70381723-5335-3e45-ac7c-019b9df5126c/inflation-is-the-week%27s.html"
+    },
+    {
+      "date": "2025-09-07",
+      "time": "06:15",
+      "title": "2 Top Dividend Stocks to Buy Right Now\n\n\n(Motley Fool)",
+      "link": "/news/159454/2-top-dividend-stocks-to-buy-right-now"
+    },
+    {
+      "date": "2025-09-06",
+      "time": "06:05",
+      "title": "Can $10,000 in McDonald's Stock Turn Into $50,000 by 2030?\n\n\n(Motley Fool)",
+      "link": "/news/159339/can-10000-in-mcdonalds-stock-turn-into-50000-by-2030"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:00AM",
+      "title": "Restaurant Stocks Are in the Soup. Theres No Quick Fix.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/c9eff0b9-a8be-3a8e-8eaa-58b46ba6b19d/restaurant-stocks-are-in-the.html"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "20:30",
+      "title": "Walmart Stock Will Rise on AI Deployment, Analyst Says. Plus, McDonald's, Scholastic, and More.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/walmart-stock-will-rise-on-ai-deployment-analyst-says-plus-mcdonalds-scholastic-and-more-d91a8162?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:38PM",
+      "title": "Here's How You Can Earn $100 In Passive Income By Investing In McDonald's Stock\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/heres-earn-100-passive-income-203826388.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:35PM",
+      "title": "McDonald's criticizes US restaurant industry for uneven wage policies\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/mcdonalds-presses-end-tipped-wages-203511810.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:43AM",
+      "title": "Stride and Summit Hotel have been highlighted as Zacks Bull and Bear of the Day\n\n\n(Zacks)",
+      "link": "/news/158888/stride-and-summit-hotel-have-been-highlighted-as-zacks-bull-and-bear-of-the-day"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:25AM",
+      "title": "Chipotle Stock Hits 52-Week Low: Should You Buy, Hold, or Sell?\n\n\n(Zacks)",
+      "link": "/news/158874/chipotle-stock-hits-52-week-low-should-you-buy-hold-or-sell"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:51AM",
+      "title": "Lululemon revises outlook as tariff pressures impact US Q2 performance\n\n\n(Just Style)",
+      "link": "https://finance.yahoo.com/m/11f31b29-0185-3074-80b0-680b01172eef/lululemon-revises-outlook-as.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:08AM",
+      "title": "Are the Economy's Salad Days Over?\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/jobs-report-august-stock-market-today-09-05-2025/card/are-the-economy-s-salad-days-over--3i8wtDAl6tusphJX1u08?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Toxic Bosses Can Help You  If You Know How To Handle Them\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/251bd1c9-909d-33a0-9b31-8979c5cb102a/toxic-bosses-can-help-you-%E2%80%94.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:40AM",
+      "title": "1 Mega-Cap Stock on Our Watchlist and 2 We Turn Down\n\n\n(StockStory)",
+      "link": "/news/158662/1-mega-cap-stock-on-our-watchlist-and-2-we-turn-down"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "18:16",
+      "title": "Lululemon Gets Tripped Up in Q2 by Tariffs and Product Missteps\n\n\n(WWD)",
+      "link": "https://finance.yahoo.com/m/0787a1e3-1c99-3fca-9654-5336bcccd30e/lululemon-gets-tripped-up-in.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:45PM",
+      "title": "Lululemon Cuts Outlook as U.S. Sales Underperform\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/fd53496d-f680-3830-8c5e-9d8147e54e60/lululemon-cuts-outlook-as.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:38PM",
+      "title": "People Love McDonald's Corporation (MCD) Because Of Value, Says Jim Cramer\n\n\n(Insider Monkey)",
+      "link": "/news/158416/people-love-mcdonalds-corporation-mcd-because-of-value-says-jim-cramer"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:24PM",
+      "title": "Analyst Report: McDonald's Corporation\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/ebae647e-fd30-3ea6-8b09-e143138c728a/analyst-report%3A-mcdonald%27s.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:12PM",
+      "title": "Stock Market Today: Dow Gains 350 Points; A Biotech Name Tumbles Hard (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/fa257d4c-edb6-3344-a0c7-b12c72b2743d/stock-market-today%3A-dow-gains.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:05PM",
+      "title": "Stock Market Today: Dow Rallies; A Recent IPO Name Tanks On Earnings Report (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/fa257d4c-edb6-3344-a0c7-b12c72b2743d/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:00PM",
+      "title": "McDonalds splits with National Restaurant Association over tip policy\n\n\n(Nation's Restaurant News)",
+      "link": "https://finance.yahoo.com/m/9c90de92-bb80-35c7-bbdf-2d997411516f/mcdonald%E2%80%99s-splits-with.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:40PM",
+      "title": "Stock Market Today: Dow, S&P 500 Pick Up Steam; A Fiber-Optics Name Roars Higher, Gap Gets A Makeover (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/fa257d4c-edb6-3344-a0c7-b12c72b2743d/stock-market-today%3A-dow%2C-s%26p.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:52AM",
+      "title": "Stock Market Today: Dow Up On Jobs Data; American Eagle Soars, Credo Makes New High (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/fa257d4c-edb6-3344-a0c7-b12c72b2743d/stock-market-today%3A-dow-up-on.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:08AM",
+      "title": "Can McDonald's Tech Platform Unlock a New Wave of Margin Expansion?\n\n\n(Zacks)",
+      "link": "/news/158022/can-mcdonalds-tech-platform-unlock-a-new-wave-of-margin-expansion"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:05AM",
+      "title": "McDonalds quits National Restaurant Association over wage dispute\n\n\n(Verdict Food Service)",
+      "link": "https://finance.yahoo.com/m/01250728-a356-3386-a126-24347fce48cb/mcdonald%E2%80%99s-quits-national.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "McDonald's Escalates Restaurant Industry's Fight Over Tipping\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/hospitality/mcdonalds-escalates-restaurant-industrys-fight-over-tipping-93e72854?mod=wsj_FV"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "16:33",
+      "title": "McDonalds CEO is grappling with a two-tier economy as he slashes prices on value mealsand signals backing for a minimum wage increase\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/mcdonald-ceo-grappling-two-tier-203358406.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:51PM",
+      "title": "Value menus seem to be driving restaurant traffic\n\n\n(Nation's Restaurant News)",
+      "link": "https://finance.yahoo.com/m/ceb5798a-e079-3ebf-af1e-54cb64e243af/value-menus-seem-to-be.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:23PM",
+      "title": "Chipotle Stock Is Down 30% This Year. Why There's 'Plenty Left in the Bowl' for Investors.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/chipotle-stock-price-cmg-news-43186cd4?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:28PM",
+      "title": "McDonalds CEO says Trumps no tax on tips amplifies an uneven playing field for its restaurants, which dont get customers to pay for labor\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/mcdonald-ceo-says-trump-no-162844797.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:22PM",
+      "title": "Taco Cabana is the latest chain to go after the late-night crowd\n\n\n(Nation's Restaurant News)",
+      "link": "https://finance.yahoo.com/m/e736ef10-4a5a-374a-a99a-da16dbaa0ffa/taco-cabana-is-the-latest.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "The Smartest Dividend Stocks to Buy With $3,000 Right Now\n\n\n(Motley Fool)",
+      "link": "/news/156855/the-smartest-dividend-stocks-to-buy-with-3000-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:06AM",
+      "title": "Goldman Sachs Picks 2 New Stocks. They're Bets on a Weak Economy.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/walmart-mcdonalds-goldman-sachs-stock-picks-f3b44168?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:09AM",
+      "title": "McDonald's CEO warns of 'two-tiered economy'\n\n\n(Fox Business)",
+      "link": "https://finance.yahoo.com/m/de15e8e3-1a4b-3d88-bf0b-6ea20a7734b3/mcdonald%27s-ceo-warns-of.html"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "17:18",
+      "title": "Nestl\u00e9 fired its scandal-clad CEO without a payouta really unusual move, corporate governance expert says\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/nestl-fired-scandal-clad-ceo-211846832.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:00PM",
+      "title": "McDonald's CEO warns of 'a two-tier economy' as lower-income consumers spend less\n\n\n(NBC News)",
+      "link": "https://finance.yahoo.com/m/37373e2b-1a7d-370f-82ef-95be96196ce0/mcdonald%27s-ceo-warns-of-%27a.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:17PM",
+      "title": "McDonald's adds extra value meals as low income consumer traffic weakens\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=DLVnL3p4EGY"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:04PM",
+      "title": "McDonald's revives Extra Value Meals to woo budget-conscious diners\n\n\n(CBS News)",
+      "link": "https://finance.yahoo.com/m/4e7b18ff-4028-31c5-9c64-61c2bf9ba642/mcdonald%27s-revives-extra.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:24PM",
+      "title": "Walmart, McDonald's Are New Goldman Picks. It's a Bet on a Weak Economy.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/walmart-mcdonalds-goldman-stock-picks-f3b44168?mod=bar_FV"
+    }
+  ]
+}

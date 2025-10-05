@@ -1,0 +1,47 @@
+{
+  "symbol": "DLTR",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2544,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.06
+  },
+  "top_positive": [
+    {
+      "sent": "Note 5 - Net Income Per Share The following table sets forth the calculations of basic and diluted net income per share: 13 Weeks Ended 26 Weeks Ended (in millions, except per share data) July 29, 2023 July 30, 2022 July 29, 2023 July 30, 2022 Basic net income per share: Net income $ 200.4 $ 359.9 $ 499.4 $ 896.3 Weighted average number of shares outstanding 220.1 224.2 220.6 224.7 Basic net income per share $ 0.91 $ 1.61 $ 2.26 $ 3.99 Diluted net income per share: Net income $ 200.4 $ 359.9 $ 499.4 $ 896.3 Weighted average number of shares outstanding 220.1 224.2 220.6 224.7 Dilutive effect of stock options and restricted stock (as determined by applying the treasury stock method) 0.4 0.8 0.5 1.0 Weighted average number of shares and dilutive potential shares outstanding 220.5 225.0 221.1 225.7 Diluted net income per share $ 0.91 $ 1.60 $ 2.26 $ 3.97 Stock options and other stock-based awards of 2.4 million shares and 3.0 million shares were excluded from the calculation of diluted net income per share for the 13 and 26 weeks ended July\u00a029, 2023, respectively, because their inclusion would be anti-dilutive.",
+      "score": 0.9914
+    },
+    {
+      "sent": "The aggregate fair values and carrying values of our long-term borrowings were as follows: July 29, 2023 January 28, 2023 July 30, 2022 (in millions) Fair Value Carrying Value Fair Value Carrying Value Fair Value Carrying Value Level 1 Senior Notes $ 3,087.4 $ 3,428.3 $ 3,162.8 $ 3,426.7 $ 3,244.0 $ 3,425.0 The fair values of our Senior Notes were determined using Level 1 inputs as quoted prices in active markets for identical assets or liabilities are available.",
+      "score": 0.9861
+    },
+    {
+      "sent": "Our supply chain initiatives include enhancing our distribution and transportation network to support store growth and merchandising programs, including investments in building a Dollar Tree Fleet Ownership Program, modernizing the existing Family Dollar fleet, transportation management systems, a new co-bannered distribution center to increase capacity and 18 Table of Contents improve efficiency, and a new rotacart delivery process that is expected to, among other things, streamline the truck unloading and store delivery process, improve associate and driver utilization and improve operational efficiencies.",
+      "score": 0.9607
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "On April 28, 2022, the State of Arkansas filed a complaint in state court alleging violations of the Arkansas Deceptive Trade Practices Act, gross negligence and negligence, strict liability in tort, unjust enrichment and civil conspiracy related to the sale of products that may have been contaminated by virtue of rodent infestation and other unsanitary conditions at DC 202.",
+      "score": -0.9246
+    },
+    {
+      "sent": "The lawsuits are proceeding in federal court in Tennessee using the federal court\u2019s multi-district litigation (\u201cMDL\u201d) process, seek class action status, and allege violations of the Mississippi, Arkansas, Louisiana, Tennessee, Alabama and Missouri consumer protection laws, breach of warranty, negligence, misrepresentation, deception and unjust enrichment related to the sale of products that may be contaminated by virtue of rodent infestation and other unsanitary conditions at DC 202.",
+      "score": -0.9042
+    },
+    {
+      "sent": "The plaintiffs seek compensatory, punitive and exemplary damages, damages for loss of consortium, and attorneys\u2019 fees and costs.",
+      "score": -0.886
+    }
+  ],
+  "forward_snippets": [
+    "We will vigorously defend ourselves in these matters.",
+    "We expect to use the net proceeds of note issuances for general corporate purposes.",
+    "We believe that net sales per selling square foot more accurately depicts the productivity and operating performance of our stores as it isolates that portion of our footprint that is dedicated to selling merchandise.",
+    "Actions taken in recent months have improved Family Dollar\u2019s price position relative to competition, which we believe has positively impacted customer traffic and average ticket.",
+    "Building on this momentum, we plan to improve our product assortment across all of Family Dollar\u2019s formats by expanding our SKUs, continuing to add cooler doors, increasing our standard shelf profile from 72 inches to 78 inches, and implementing planogram and category resets."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "symbol": "AMZN",
+  "year": 2022,
+  "period": "Y2022",
+  "competition_summary": [
+    {
+      "competitor": "THE SECURITIES EXCHANGE ACT",
+      "mentions": 2,
+      "context": "CompetitionAuthorityMatterMember 2021-12-31 0001018724 amzn:February2016ProgramMember 2016-02-29 0001018724 amzn:February2016ProgramMember 2020-01-01 2020-12-31 0001018724 amzn:February2016ProgramMember 2021-01-01 2021-12-31 0001018724 amzn:February2016ProgramMember 2019-01-01 2019-12-31 0001018724 amzn:February2016ProgramMember us-gaap:SubsequentEventMember 2022-01-01 2022-02-02 0001018724 us-gaap:CostOfSalesMember 2019-01-01 2019-12-31 0001018724 us-gaap:CostOfSalesMember 2020-01-01 2020-12-31"
+    },
+    {
+      "competitor": "Commission File No.",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-31 0001018724 amzn:February2016ProgramMember 2016-02-29 0001018724 amzn:February2016ProgramMember 2020-01-01 2020-12-31 0001018724 amzn:February2016ProgramMember 2021-01-01 2021-12-31 0001018724 amzn:February2016ProgramMember 2019-01-01 2019-12-31 0001018724 amzn:February2016ProgramMember us-gaap:SubsequentEventMember 2022-01-01 2022-02-02 0001018724 us-gaap:CostOfSalesMember 2019-01-01 2019-12-31 0001018724 us-gaap:CostOfSalesMember 2020-01-01 2020-12-31"
+    },
+    {
+      "competitor": "AMAZON.COM, INC.",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-31 0001018724 amzn:February2016ProgramMember 2016-02-29 0001018724 amzn:February2016ProgramMember 2020-01-01 2020-12-31 0001018724 amzn:February2016ProgramMember 2021-01-01 2021-12-31 0001018724 amzn:February2016ProgramMember 2019-01-01 2019-12-31 0001018724 amzn:February2016ProgramMember us-gaap:SubsequentEventMember 2022-01-01 2022-02-02 0001018724 us-gaap:CostOfSalesMember 2019-01-01 2019-12-31 0001018724 us-gaap:CostOfSalesMember 2020-01-01 2020-12-31"
+    },
+    {
+      "competitor": "Each Exchange on Which Registered Common Stock",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-31 0001018724 amzn:February2016ProgramMember 2016-02-29 0001018724 amzn:February2016ProgramMember 2020-01-01 2020-12-31 0001018724 amzn:February2016ProgramMember 2021-01-01 2021-12-31 0001018724 amzn:February2016ProgramMember 2019-01-01 2019-12-31 0001018724 amzn:February2016ProgramMember us-gaap:SubsequentEventMember 2022-01-01 2022-02-02 0001018724 us-gaap:CostOfSalesMember 2019-01-01 2019-12-31 0001018724 us-gaap:CostOfSalesMember 2020-01-01 2020-12-31"
+    },
+    {
+      "competitor": "the Securities Exchange Act",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-31 0001018724 amzn:February2016ProgramMember 2016-02-29 0001018724 amzn:February2016ProgramMember 2020-01-01 2020-12-31 0001018724 amzn:February2016ProgramMember 2021-01-01 2021-12-31 0001018724 amzn:February2016ProgramMember 2019-01-01 2019-12-31 0001018724 amzn:February2016ProgramMember us-gaap:SubsequentEventMember 2022-01-01 2022-02-02 0001018724 us-gaap:CostOfSalesMember 2019-01-01 2019-12-31 0001018724 us-gaap:CostOfSalesMember 2020-01-01 2020-12-31"
+    },
+    {
+      "competitor": "Interactive Data File",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-31 0001018724 amzn:February2016ProgramMember 2016-02-29 0001018724 amzn:February2016ProgramMember 2020-01-01 2020-12-31 0001018724 amzn:February2016ProgramMember 2021-01-01 2021-12-31 0001018724 amzn:February2016ProgramMember 2019-01-01 2019-12-31 0001018724 amzn:February2016ProgramMember us-gaap:SubsequentEventMember 2022-01-01 2022-02-02 0001018724 us-gaap:CostOfSalesMember 2019-01-01 2019-12-31 0001018724 us-gaap:CostOfSalesMember 2020-01-01 2020-12-31"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "NKE",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2101,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.183
+  },
+  "top_positive": [
+    {
+      "sent": "\u2022 Consumer connection, engagement and affinity for brands and products, developed through marketing, promotion and digital experiences; social media interaction; customer support and service; identification with prominent and influential athletes, influencers, public figures, coaches, teams, colleges and sports leagues who endorse our brands and use our products and active engagement through sponsored sporting events and clinics.",
+      "score": 0.9509
+    },
+    {
+      "sent": "\u2022 Consumer connection, engagement and affinity for brands and products, developed through marketing, promotion and digital experiences; social media interaction; customer support and service; identification with prominent and influential athletes, influencers, public figures, coaches, teams, colleges and sports leagues who endorse our brands and use our products and active engagement through sponsored sporting events and clinics.",
+      "score": 0.9509
+    },
+    {
+      "sent": "\u2022 Consumer connection, engagement and affinity for brands and products, developed through marketing, promotion and digital experiences; social media interaction; customer support and service; identification with prominent and influential athletes, influencers, public figures, coaches, teams, colleges and sports leagues who endorse our brands and use our products and active engagement through sponsored sporting events and clinics.",
+      "score": 0.9509
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "If one or more of our direct or indirect contractors violates or fails to comply with, or is accused of violating or failing to comply with, such standards and laws, this could harm our reputation or result in a product recall and, as a result, could have an adverse effect on our sales and financial condition.",
+      "score": -0.9643
+    },
+    {
+      "sent": "If one or more of our direct or indirect contractors violates or fails to comply with, or is accused of violating or failing to comply with, such standards and laws, this could harm our reputation or result in a product recall and, as a result, could have an adverse effect on our sales and financial condition.",
+      "score": -0.9643
+    },
+    {
+      "sent": "If Information Technology Systems suffer severe damage, disruption or shutdown and our business continuity plans, or those of our vendors, do not effectively resolve the issues in a timely manner, we could experience delays in reporting our financial results, which could result in lost revenues and profits, as well as reputational damage.",
+      "score": -0.9422
+    }
+  ],
+  "forward_snippets": [
+    "We believe this approach allows us to create products that better meet individual consumer needs while accelerating our largest growth opportunities.",
+    "Our Men\u2019s, Women\u2019s and Jordan Brand footwear products currently lead in footwear sales and we expect them to continue to do so.",
+    "Our Men\u2019s and Women\u2019s apparel products currently lead in apparel sales and we expect them to continue to do so.",
+    "We believe this approach allows us to create products that better meet individual consumer needs while accelerating our largest growth opportunities.",
+    "Our Men\u2019s, Women\u2019s and Jordan Brand footwear products currently lead in footwear sales and we expect them to continue to do so."
+  ]
+}

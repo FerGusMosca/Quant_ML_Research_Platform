@@ -1,0 +1,47 @@
+{
+  "symbol": "DLTR",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1623,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.149
+  },
+  "top_positive": [
+    {
+      "sent": "Incorporated by Reference Exhibit Exhibit Description Form Exhibit Filing Date Filed Herewith 3.1 Amended Articles of Incorporation of Dollar Tree, Inc., effective June 20, 2013 8-K 3.1 6/21/2013 3.1.1 Articles of Amendment to Articles of Incorporation of Dollar Tree, Inc., effective July 1, 2022 X 3.2 Amended and Restated By-Laws of Dollar Tree, Inc., effective July 1, 2022 8-K 3.1 7/1/2022 10.1 * R evised Form of Executive Agreement for Executive Offic ers at the level of Chiefs (portions of the exhibit have been omitted pursuant to Item 601(b)(10)(iv) of Regulation S- K) X 10.2 * Employment Agreement between Dollar Tree Distribution, Inc.",
+      "score": 0.9403
+    },
+    {
+      "sent": "11 Table of Contents Assets and Liabilities Measured at Fair Value on a Nonrecurring Basis Certain assets and liabilities are measured at fair value on a nonrecurring basis; that is, the assets and liabilities are not measured at fair value on an ongoing basis but are subject to fair value adjustments in certain circumstances (e.g., when there is evidence of impairment).",
+      "score": 0.9343
+    },
+    {
+      "sent": "Our assessment of the significance of a particular input to the fair value measurement requires judgment and may affect the valuation of fair value assets and liabilities and their placement within the fair value hierarchy levels.",
+      "score": 0.9201
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "On April 28, 2022, the State of Arkansas filed a complaint in state court alleging violations of the Arkansas Deceptive Trade Practices Act, gross negligence and negligence, strict liability in tort, unjust enrichment and civil conspiracy related to the sale of products that may have been contaminated by virtue of rodent infestation and other unsanitary conditions.",
+      "score": -0.9246
+    },
+    {
+      "sent": "On April 28, 2022, the State of Arkansas filed a complaint in state court alleging violations of the Arkansas Deceptive Trade Practices Act, gross negligence and negligence, strict liability in tort, unjust enrichment and civil conspiracy related to the sale of products that may have been contaminated by virtue of rodent infestation and other unsanitary conditions.",
+      "score": -0.9246
+    },
+    {
+      "sent": "Both actions alleged violation of consumer protection laws, negligent misrepresentation, breach of warranties, fraud and unjust enrichment.",
+      "score": -0.9231
+    }
+  ],
+  "forward_snippets": [
+    "We will vigorously defend ourselves in these matters.",
+    "We believe we have made significant improvements in our processes, and the FDA has asked us to make certain additional improvements, which we are addressing.",
+    "We believe we have made significant improvements in our processes, and the FDA has asked us to make certain additional improvements, which we are addressing.",
+    "We believe that these size stores are in the ranges of our optimal sizes operationally and give our customers a shopping environment which invites them to shop longer, buy more and make return visits.",
+    "We believe that the constant currency basis provides a more accurate measure of comparable store net sales performance."
+  ]
+}

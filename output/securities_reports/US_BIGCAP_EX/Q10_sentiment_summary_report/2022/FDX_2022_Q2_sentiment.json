@@ -1,0 +1,47 @@
+{
+  "symbol": "FDX",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1752,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.105
+  },
+  "top_positive": [
+    {
+      "sent": "Postal Service (\u201cUSPS\u201d), including strategic changes to its operations to reduce its reliance on the air network of FedEx Express, or our relationship with the USPS; - 37 - \u2022 the price and availability of jet and vehicle fuel, including significant increases in fuel prices as a result of the ongoing conflict between Russia and Ukraine; \u2022 our ability to manage our network capacity and cost structure for capital expenditures and operating expenses, and match it to shifting and future customer volume levels; \u2022 the effect of intense competition on our ability to maintain or increase our prices (including our fuel surcharges in response to rising fuel costs) or to maintain or grow our revenue and market share; \u2022 our ability to execute and effectively operate, integrate, leverage, and grow acquired businesses, and to continue to support the value we allocate to these acquired businesses, including their goodwill and other intangible assets; \u2022 the future rate of e-commerce growth and our ability to successfully expand our e-commerce services portfolio; \u2022 the timeline for recovery of passenger airline cargo capacity; \u2022 any effects on our businesses resulting from evolving or new U.S.",
+      "score": 0.9783
+    },
+    {
+      "sent": "Postal Service (\u201cUSPS\u201d), including strategic changes to its operations to reduce its reliance on the air network of FedEx Express, or our relationship with the USPS; - 37 - \u2022 the price and availability of jet and vehicle fuel, including significant increases in fuel prices as a result of the ongoing conflict between Russia and Ukraine; \u2022 our ability to manage our network capacity and cost structure for capital expenditures and operating expenses, and match it to shifting and future customer volume levels; \u2022 the effect of intense competition on our ability to maintain or increase our prices (including our fuel surcharges in response to rising fuel costs) or to maintain or grow our revenue and market share; \u2022 our ability to execute and effectively operate, integrate, leverage, and grow acquired businesses, and to continue to support the value we allocate to these acquired businesses, including their goodwill and other intangible assets; \u2022 the future rate of e-commerce growth and our ability to successfully expand our e-commerce services portfolio; \u2022 the timeline for recovery of passenger airline cargo capacity; \u2022 any effects on our businesses resulting from evolving or new U.S.",
+      "score": 0.9783
+    },
+    {
+      "sent": "Postal Service (\u201cUSPS\u201d), including strategic changes to its operations to reduce its reliance on the air network of FedEx Express, or our relationship with the USPS; - 37 - \u2022 the price and availability of jet and vehicle fuel, including significant increases in fuel prices as a result of the ongoing conflict between Russia and Ukraine; \u2022 our ability to manage our network capacity and cost structure for capital expenditures and operating expenses, and match it to shifting and future customer volume levels; \u2022 the effect of intense competition on our ability to maintain or increase our prices (including our fuel surcharges in response to rising fuel costs) or to maintain or grow our revenue and market share; \u2022 our ability to execute and effectively operate, integrate, leverage, and grow acquired businesses, and to continue to support the value we allocate to these acquired businesses, including their goodwill and other intangible assets; \u2022 the future rate of e-commerce growth and our ability to successfully expand our e-commerce services portfolio; \u2022 the timeline for recovery of passenger airline cargo capacity; \u2022 any effects on our businesses resulting from evolving or new U.S.",
+      "score": 0.9783
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The complaint alleged personal injury and wrongful death.",
+      "score": -0.836
+    },
+    {
+      "sent": "The complaint alleged personal injury and wrongful death.",
+      "score": -0.836
+    },
+    {
+      "sent": "The complaint alleged personal injury and wrongful death.",
+      "score": -0.836
+    }
+  ],
+  "forward_snippets": [
+    "We expect the pre-tax cost of our business realignment activities to be approxim ately $ 420 million through 2023.",
+    "We plan to consolidate our sortation facilities and equipment, reduce pickup and delivery routes, and optimize our enterprise linehaul network by moving beyond discrete collaboration to an end-to-end optimization.",
+    "We expect the pre-tax cost of our business optimization activities to be approximately $ 2.0 billion through 2025.",
+    "We believe the following new accounting guidance is relevant to the readers of our financial statements.",
+    "The guidance was effective upon issuance and can generally be applied through December 31, 2022."
+  ]
+}

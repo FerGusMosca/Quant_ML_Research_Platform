@@ -1,0 +1,606 @@
+{
+  "symbol": "HON",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-05",
+      "time": "Today 04:24AM",
+      "title": "These 2 Blue Chip Stocks Just Declared Dividend Raises. Should You Buy 1 or Both?\n\n\n(Motley Fool)",
+      "link": "/news/183959/these-2-blue-chip-stocks-just-declared-dividend-raises-should-you-buy-1-or-both"
+    },
+    {
+      "date": "2025-10-04",
+      "time": "17:15",
+      "title": "U.S. Department of Energy's Office of Technology Commercialization (OTC) Announces Expansion of Quantum-in-Space Collaboration\n\n\n(Insider Monkey)",
+      "link": "/news/183911/us-department-of-energys-office-of-technology-commercialization-otc-announces-expansion-of-quantum-in-space-collaboration"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "10:38",
+      "title": "Honeywell Exits Asbestos Liabilities In $1.68 Billion Deal\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/honeywell-exits-asbestos-liabilities-1-143857430.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:35AM",
+      "title": "Markel Group Banks on Solid Segmental Growth Amid Cost Woes\n\n\n(Zacks)",
+      "link": "/news/182498/markel-group-banks-on-solid-segmental-growth-amid-cost-woes"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:04AM",
+      "title": "Honeywell Benefits From Business Strength Amid Headwinds\n\n\n(Zacks)",
+      "link": "/news/182469/honeywell-benefits-from-business-strength-amid-headwinds"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "16:05",
+      "title": "HONEYWELL ANNOUNCES TRANSACTION TO DIVEST LEGACY ASBESTOS LIABILITIES\n\n\n(PR Newswire)",
+      "link": "/news/181429/honeywell-announces-transaction-to-divest-legacy-asbestos-liabilities"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "HONEYWELL BOARD OF DIRECTORS SETS RECORD DATE AND ANNOUNCES EXPECTED TIMING FOR SPIN-OFF OF SOLSTICE ADVANCED MATERIALS\n\n\n(PR Newswire)",
+      "link": "/news/180579/honeywell-board-of-directors-sets-record-date-and-announces-expected-timing-for-spin-off-of-solstice-advanced-materials"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "12:44",
+      "title": "Cathie Wood Space Fund Buys This Dow Stock, Trims Its Largest Holding\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/474ee05a-2878-30ef-a5be-8f9cf304495b/cathie-wood-space-fund-buys.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:00PM",
+      "title": "All You Need to Know About Honeywell International (HON) Rating Upgrade to Buy\n\n\n(Zacks)",
+      "link": "/news/179873/all-you-need-to-know-about-honeywell-international-hon-rating-upgrade-to-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Garmin Strengthens Golf Tech Edge With Noonan Partnership\n\n\n(Zacks)",
+      "link": "/news/179731/garmin-strengthens-golf-tech-edge-with-noonan-partnership"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "10:04",
+      "title": "Honeywell's Board Approves 5% Increase in Dividend Rate\n\n\n(Zacks)",
+      "link": "/news/178542/honeywells-board-approves-5-increase-in-dividend-rate"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "18:43",
+      "title": "Honeywell International Inc. (HON) Posts Strong Q2 Earnings, Advances Aerospace and Quantum Tech\n\n\n(Insider Monkey)",
+      "link": "/news/177777/honeywell-international-inc-hon-posts-strong-q2-earnings-advances-aerospace-and-quantum-tech"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:50AM",
+      "title": "These 3 Dividend-Paying Dow Jones Stocks Can't Catch a Break. Here's Why They Are All Top Buys in October.\n\n\n(Motley Fool)",
+      "link": "/news/177646/these-3-dividend-paying-dow-jones-stocks-cant-catch-a-break-heres-why-they-are-all-top-buys-in-october"
+    },
+    {
+      "date": "2025-09-27",
+      "time": "10:45",
+      "title": "UBS Reiterates Its 'Buy' Rating on Honeywell International Inc. (HON) with a $268 Price Target\n\n\n(Insider Monkey)",
+      "link": "/news/177556/ubs-reiterates-its-buy-rating-on-honeywell-international-inc-hon-with-a-268-price-target"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "17:34",
+      "title": "Delta Fixes 300+ Airbus Jets Over Cabin Fume Fears\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/delta-fixes-300-airbus-jets-213400099.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:40PM",
+      "title": "Oracle, Caterpillar, and 10 Other Winners from the 'New Global Trade Order'\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/oracle-caterpillar-winners-global-trade-order-7c89df0c?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:05PM",
+      "title": "HONEYWELL TO INCREASE DIVIDEND EFFECTIVE FOURTH QUARTER 2025\n\n\n(PR Newswire)",
+      "link": "/news/177290/honeywell-to-increase-dividend-effective-fourth-quarter-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:18AM",
+      "title": "Jim Cramer Says Honeywell is \"Part of a Whole Cohort of Industrials That Just Keeps Going Down\"\n\n\n(Insider Monkey)",
+      "link": "/news/177040/jim-cramer-says-honeywell-is-part-of-a-whole-cohort-of-industrials-that-just-keeps-going-down"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:26AM",
+      "title": "Honeywell International Inc. (HON) Raises $600M for Quantum Arm Quantinuum at $10B Valuation\n\n\n(Insider Monkey)",
+      "link": "/news/176905/honeywell-international-inc-hon-raises-600m-for-quantum-arm-quantinuum-at-10b-valuation"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "08:00",
+      "title": "HONEYWELL TO RELEASE THIRD QUARTER FINANCIAL RESULTS AND HOLD ITS INVESTOR CONFERENCE CALL ON THURSDAY, OCTOBER 23\n\n\n(PR Newswire)",
+      "link": "/news/175538/honeywell-to-release-third-quarter-financial-results-and-hold-its-investor-conference-call-on-thursday-october-23"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "11:40",
+      "title": "MARUY or HON: Which Is the Better Value Stock Right Now?\n\n\n(Zacks)",
+      "link": "/news/174893/maruy-or-hon-which-is-the-better-value-stock-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:00AM",
+      "title": "A Once-in-a-Decade Opportunity: 10 Billion Reasons to Pay Attention to This Monster Quantum Computing Company (Hint: Not IonQ)\n\n\n(Motley Fool)",
+      "link": "/news/174124/a-once-in-a-decade-opportunity-10-billion-reasons-to-pay-attention-to-this-monster-quantum-computing-company-hint-not-ionq"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "23:17",
+      "title": "Why Honeywell International (HON) Earns a Spot Among the Best S&P 500 Dividend Stocks\n\n\n(Insider Monkey)",
+      "link": "/news/173991/why-honeywell-international-hon-earns-a-spot-among-the-best-sp-500-dividend-stocks"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:16AM",
+      "title": "Honeywell's Industrial Automation Weakness Persists: What's the Road Ahead?\n\n\n(Zacks)",
+      "link": "/news/173551/honeywells-industrial-automation-weakness-persists-whats-the-road-ahead"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:16AM",
+      "title": "Quantum Computing Stocks: IonQ Claims Telecom Advance\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/f63f94d9-fcd4-3a6b-ade2-b36c063aeebb/quantum-computing-stocks%3A.html"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "10:18",
+      "title": "Strength in Network Software Drives Roper: Can the Momentum Sustain?\n\n\n(Zacks)",
+      "link": "/news/172408/strength-in-network-software-drives-roper-can-the-momentum-sustain"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "15:07",
+      "title": "Honeywell International Inc. (HON): \"The Breakup Is Extraordinarily Good,\" Says Jim Cramer\n\n\n(Insider Monkey)",
+      "link": "/news/171475/honeywell-international-inc-hon-the-breakup-is-extraordinarily-good-says-jim-cramer"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "09:22",
+      "title": "Will Strength in Aerospace Technologies Continue to Drive HON's Growth?\n\n\n(Zacks)",
+      "link": "/news/170763/will-strength-in-aerospace-technologies-continue-to-drive-hons-growth"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "08:05",
+      "title": "Quantum Computing Stocks Rally. D-Wave Hits Record High Amid Tokyo Conference.\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/07ea1b0f-7a8f-3cf2-9145-2c55ca34c0a6/quantum-computing-stocks.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:49AM",
+      "title": "Families Sue Boeing And Honeywell Over Catastrophic Air India Crash\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/families-sue-boeing-honeywell-over-104936381.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:30AM",
+      "title": "Quantinuum Trims the Timeline for Quantum Computing\n\n\n(The Daily Upside)",
+      "link": "https://finance.yahoo.com/m/4fe22437-1b31-3b7f-ab5c-3737569b3332/quantinuum-trims-the-timeline.html"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "14:57",
+      "title": "Honeywell, Caterpillar CTOs say AI can ease labor, skills gaps in manufacturing\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/honeywell-caterpillar-ctos-ai-ease-185721241.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:00PM",
+      "title": "Families of Victims in Air India 171 Crash Sue Boeing, Honeywell\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250917970696/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:51AM",
+      "title": "Honeywell's Unit Prices Senior Notes Offering at $1B in Aggregate\n\n\n(Zacks)",
+      "link": "/news/168648/honeywells-unit-prices-senior-notes-offering-at-1b-in-aggregate"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:23AM",
+      "title": "Why Did Redwire Stock Crash Today?\n\n\n(Motley Fool)",
+      "link": "/news/168566/why-did-redwire-stock-crash-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:20AM",
+      "title": "Quantinuum CEO Says It's at a 'Turning Point.' The Company Is Achieving New Feats in Quantum Computing.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/quantinuum-ceo-quantum-computing-981117b5?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "16:42",
+      "title": "HONEYWELL ANNOUNCES PRICING OF SOLSTICE ADVANCED MATERIALS' OFFERING OF SENIOR NOTES IN CONNECTION WITH PLANNED SPIN-OFF\n\n\n(PR Newswire)",
+      "link": "/news/167857/honeywell-announces-pricing-of-solstice-advanced-materials-offering-of-senior-notes-in-connection-with-planned-spin-off"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:25AM",
+      "title": "Honeywell, Redwire advance collaboration on quantum-secured communications\n\n\n(TipRanks)",
+      "link": "https://finance.yahoo.com/news/honeywell-redwire-advance-collaboration-quantum-132506337.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:01AM",
+      "title": "HONEYWELL ANNOUNCES LAUNCH OF SOLSTICE ADVANCED MATERIALS' OFFERING OF SENIOR NOTES IN CONNECTION WITH PLANNED SPIN-OFF\n\n\n(PR Newswire)",
+      "link": "/news/167008/honeywell-announces-launch-of-solstice-advanced-materials-offering-of-senior-notes-in-connection-with-planned-spin-off"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "12:03",
+      "title": "Corteva shares fall as potential split report stirs worries over operational disruptions\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/corteva-shares-fall-potential-split-160320487.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:05AM",
+      "title": "Honeywell And Redwire Join Forces To Build Quantum Secure Satellite For Europe\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/honeywell-redwire-join-forces-build-150505906.html"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "20:14",
+      "title": "Morningstar | A Weekly Summary of Stock Ideas and Developments in the Companies We Cover\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/4b001331-18b1-3241-8397-807079689f87/morningstar-%7C-a-weekly.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:18PM",
+      "title": "Agrichemicals firm Corteva explores splitting seed and pesticide units, WSJ reports\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/corteva-explores-breaking-two-separate-201808540.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:09AM",
+      "title": "Honeywell International Inc. (HON) Announces $600 Million Equity Capital Raise for Its Quantum Subsidiary Quantinuum\n\n\n(Insider Monkey)",
+      "link": "/news/165024/honeywell-international-inc-hon-announces-600-million-equity-capital-raise-for-its-quantum-subsidiary-quantinuum"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:18AM",
+      "title": "Roper's Application Software Growth Picks Up: A Sign of More Upside?\n\n\n(Zacks)",
+      "link": "/news/164789/ropers-application-software-growth-picks-up-a-sign-of-more-upside"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "11:50",
+      "title": "Honeywell Unveils Ionic Modular All-in-One BESS for Industrial Use\n\n\n(Zacks)",
+      "link": "/news/164043/honeywell-unveils-ionic-modular-all-in-one-bess-for-industrial-use"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:07AM",
+      "title": "Is PepsiCo a Buy After an Activist Investor Took a $4 Billion Stake in the Dividend King Stock?\n\n\n(Motley Fool)",
+      "link": "/news/163362/is-pepsico-a-buy-after-an-activist-investor-took-a-4-billion-stake-in-the-dividend-king-stock"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "20:45",
+      "title": "Honeywell Introduces New BESS for C&I Applications\n\n\n(POWER Magazine)",
+      "link": "https://finance.yahoo.com/m/b547f686-17e4-308a-9a14-a460f43e883e/honeywell-introduces-new-bess.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:15PM",
+      "title": "Honeywell International Inc. (HON) Stock Sinks As Market Gains: What You Should Know\n\n\n(Zacks)",
+      "link": "/news/163171/honeywell-international-inc-hon-stock-sinks-as-market-gains-what-you-should-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:50PM",
+      "title": "Nvidia Just Placed a $1 Billion Quantum Bet--Here's What's Coming Next\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/nvidia-just-placed-1-billion-185005246.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:13AM",
+      "title": "QBTS in Focus Amid Quantum Launches, Competition With IBM, HON\n\n\n(Zacks)",
+      "link": "/news/162746/qbts-in-focus-amid-quantum-launches-competition-with-ibm-hon"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:01AM",
+      "title": "Quantum Computing Stocks: Nvidia's Growing Appetite For Startup Investments\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/8154c87d-433b-35a7-bbd9-c36f69d65b52/quantum-computing-stocks%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "PsiQuantum hits $7 billion valuation as investors bet on quantums AI-style potential\n\n\n(FastCompany)",
+      "link": "https://finance.yahoo.com/m/a73f5a9c-ee38-3700-8bf0-b5bc689c7dee/psiquantum-hits-%247-billion.html"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "15:00",
+      "title": "Quantum Pact: NVIDIA, Honeywell Raise Stakes for IonQ, Rigetti, D-Wave\n\n\n(Zacks)",
+      "link": "/news/161689/quantum-pact-nvidia-honeywell-raise-stakes-for-ionq-rigetti-d-wave"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:32AM",
+      "title": "Should You Buy, Sell or Hold ADI Stock After a 17.2% YTD Rise?\n\n\n(Zacks)",
+      "link": "/news/161534/should-you-buy-sell-or-hold-adi-stock-after-a-172-ytd-rise"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "18:05",
+      "title": "What NVIDIA's Big Bet on Rival Quantinuum Means for D-Wave Stock\n\n\n(MarketBeat)",
+      "link": "/news/160553/what-nvidias-big-bet-on-rival-quantinuum-means-for-d-wave-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30AM",
+      "title": "PepsiCo CEOs Tall Order: Win Over Investor Calling for Strategy Reset\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/7d1201f4-14bd-31e5-86bf-42cd4702b32c/pepsico-ceo%E2%80%99s-tall-order%3A-win.html"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "11:12",
+      "title": "Honeywell International Inc. (HON): A Bull Case Theory\n\n\n(Insider Monkey)",
+      "link": "/news/158939/honeywell-international-inc-hon-a-bull-case-theory"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:58AM",
+      "title": "Zacks Investment Ideas feature highlights: Nvidia, Honeywell, IonQ and D-WAVE QUANTUM\n\n\n(Zacks)",
+      "link": "/news/158903/zacks-investment-ideas-feature-highlights-nvidia-honeywell-ionq-and-d-wave-quantum"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "Wall Street is falling in love with the corporate breakup. Here's why.\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/wall-street-is-falling-in-love-with-the-corporate-breakup-heres-why-100035466.html"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "16:46",
+      "title": "Stocks to Watch Thursday: Amazon, T. Rowe,  Honeywell\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/30e25d3b-fe1d-37ee-b5ea-3db4895396ba/stocks-to-watch-thursday%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:32PM",
+      "title": "Nvidia Just Invested in this Quantum Computing Stock\n\n\n(Zacks)",
+      "link": "/news/158279/nvidia-just-invested-in-this-quantum-computing-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:49AM",
+      "title": "Nvidia Invests in Honeywell's Quantinuum. What It Means for D-Wave, IonQ, and Quantum Stocks.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-honeywell-quantinuum-quantum-stocks-c59dc297?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:30AM",
+      "title": "Nvidias Venture Arm Invests in Honeywells Quantinuum\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/nvidia-venture-arm-invests-honeywell-110011686.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:25AM",
+      "title": "Nvidia Investment In Honeywell's Quantinuum Sends Quantum Computing Stocks Up\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/efe83afc-a993-3159-b9ed-d9e14cbab546/nvidia-investment-in.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:21AM",
+      "title": "Is Honeywell a quantum-computing stock now? There's a new link to Nvidia.\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/is-honeywell-a-quantum-computing-stock-now-theres-a-new-link-to-nvidia-a55d54f3?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "HONEYWELL ANNOUNCES $600 MILLION CAPITAL RAISE FOR QUANTINUUM AT $10B PRE-MONEY EQUITY VALUATION TO ADVANCE QUANTUM COMPUTING AT SCALE\n\n\n(PR Newswire)",
+      "link": "/news/157651/honeywell-announces-600-million-capital-raise-for-quantinuum-at-10b-pre-money-equity-valuation-to-advance-quantum-computing-at-scale"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:44AM",
+      "title": "Honeywell's Quantinuum raises funds from Nvidia, others at $10 billion valuation\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/nvidias-venture-capital-arm-investing-114435171.html"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "14:17",
+      "title": "Stock Market Today: Dow Slides But Apple Jumps; Warren Buffett Stock Reverses Higher Despite His 'Disappointment' (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/b56ccf49-9bee-327b-9e4e-be76c473379a/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:04PM",
+      "title": "Honeywell International Inc. (HON): \"We've Got Three Great Companies Coming Up,\" Says Jim Cramer\n\n\n(Insider Monkey)",
+      "link": "/news/157165/honeywell-international-inc-hon-weve-got-three-great-companies-coming-up-says-jim-cramer"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:57AM",
+      "title": "Here's Why You Should Hold Honeywell Stock in Your Portfolio Now\n\n\n(Zacks)",
+      "link": "/news/156969/heres-why-you-should-hold-honeywell-stock-in-your-portfolio-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:35AM",
+      "title": "2 Safe-and-Steady Stocks to Keep an Eye On and 1 Facing Challenges\n\n\n(StockStory)",
+      "link": "/news/156352/2-safe-and-steady-stocks-to-keep-an-eye-on-and-1-facing-challenges"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "07:33",
+      "title": "Elliott takes aim at PepsiCo with $4 billion stake\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/elliott-management-plans-activist-campaign-113341189.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "America Inc. Swaps Decades for Days in Rush to Commercial Paper\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/america-inc-swaps-decades-days-110000191.html"
+    },
+    {
+      "date": "2025-08-29",
+      "time": "11:26",
+      "title": "Quantinuum CEO Weighs In on Quantum Programming and What's Next for the Industry\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/quantinuum-ceo-weighs-in-on-quantum-programming-and-whats-next-for-the-industry-b31828e3?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:33AM",
+      "title": "Honeywell International Inc. (HON) Announces Acquisition of Three Utility Platforms from SparkMeter, Inc.\n\n\n(Insider Monkey)",
+      "link": "/news/153168/honeywell-international-inc-hon-announces-acquisition-of-three-utility-platforms-from-sparkmeter-inc"
+    },
+    {
+      "date": "2025-08-28",
+      "time": "15:32",
+      "title": "New Timken CEO to have base salary of $1.1 million, receive a signing bonus\n\n\n(The Repository)",
+      "link": "https://finance.yahoo.com/m/51e2a35d-8d5f-33cc-b863-c6c488588686/new-timken-ceo-to-have-base.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:21AM",
+      "title": "Symbotic's Strong Backlog Growth: Is it a Sign for More Upside?\n\n\n(Zacks)",
+      "link": "/news/152492/symbotics-strong-backlog-growth-is-it-a-sign-for-more-upside"
+    },
+    {
+      "date": "2025-08-27",
+      "time": "10:27",
+      "title": "Honeywell Witnesses Rise in Defense Sales: Can the Momentum Sustain?\n\n\n(Zacks)",
+      "link": "/news/151261/honeywell-witnesses-rise-in-defense-sales-can-the-momentum-sustain"
+    },
+    {
+      "date": "2025-08-25",
+      "time": "15:42",
+      "title": "A $10 Billion Reason to Buy This Quantum Computing Stock Now\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/dac8d5c4-e0da-32ea-86ca-7f62d4bbbeba/a-%2410-billion-reason-to-buy.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:27AM",
+      "title": "'He shares our values.' Timken Co. lands its new CEO\n\n\n(The Repository)",
+      "link": "https://finance.yahoo.com/m/3d999c0e-3230-3c83-bec8-483748da843a/%27he-shares-our-values.%27.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:26AM",
+      "title": "3M's Consumer Unit Hurt by Weak Demand: What's the Road Ahead?\n\n\n(Zacks)",
+      "link": "/news/148989/3ms-consumer-unit-hurt-by-weak-demand-whats-the-road-ahead"
+    },
+    {
+      "date": "2025-08-23",
+      "time": "18:05",
+      "title": "If I Could Only Buy 1 S&P 500 Stock From Each Sector for the Rest of 2025, I'd Go With These 11 Dividend Stocks\n\n\n(Motley Fool)",
+      "link": "/news/148095/if-i-could-only-buy-1-sp-500-stock-from-each-sector-for-the-rest-of-2025-id-go-with-these-11-dividend-stocks"
+    },
+    {
+      "date": "2025-08-22",
+      "time": "10:55",
+      "title": "Stock Market Today: Dow Jones Surges 800 Points With Powell In Focus; Nvidia Fights Back After Early Drop (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/6320a349-d1e8-348a-a817-0efff318f7e3/stock-market-today%3A-dow-jones.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:26AM",
+      "title": "Honeywell Expands Smart Energy Portfolio With SparkMeter Acquisition\n\n\n(Zacks)",
+      "link": "/news/147324/honeywell-expands-smart-energy-portfolio-with-sparkmeter-acquisition"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Honeywell Appoints Peter Lau to Lead Industrial Automation\n\n\n(PR Newswire)",
+      "link": "/news/147110/honeywell-appoints-peter-lau-to-lead-industrial-automation"
+    },
+    {
+      "date": "2025-08-21",
+      "time": "23:32",
+      "title": "Q2 Earnings Highlights: Honeywell (NASDAQ:HON) Vs The Rest Of The General Industrial Machinery Stocks\n\n\n(StockStory)",
+      "link": "/news/147157/q2-earnings-highlights-honeywell-nasdaq-hon-vs-the-rest-of-the-general-industrial-machinery-stocks"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:30PM",
+      "title": "Honeywell Unveils Strategic Board of Directors to Lead Solstice Advanced Materials\n\n\n(PR Newswire)",
+      "link": "/news/146883/honeywell-unveils-strategic-board-of-directors-to-lead-solstice-advanced-materials"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:30PM",
+      "title": "Honeywell Announces Filing of Form 10 Registration Statement and Upcoming Investor Day for Planned Spin-Off of Solstice Advanced Materials\n\n\n(PR Newswire)",
+      "link": "/news/146884/honeywell-announces-filing-of-form-10-registration-statement-and-upcoming-investor-day-for-planned-spin-off-of-solstice-advanced-materials"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:31PM",
+      "title": "Honeywell vs. 3M: Which Industrial Conglomerate Stock Should You Bet On?\n\n\n(Zacks)",
+      "link": "/news/146715/honeywell-vs-3m-which-industrial-conglomerate-stock-should-you-bet-on"
+    },
+    {
+      "date": "2025-08-20",
+      "time": "17:34",
+      "title": "Nvidia Circles Quantum Giant Quantinuum in $10B Power Play\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/nvidia-circles-quantum-giant-quantinuum-213401842.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:22AM",
+      "title": "3M's Margins Expand Despite Rising Costs: Can the Momentum Sustain?\n\n\n(Zacks)",
+      "link": "/news/145432/3ms-margins-expand-despite-rising-costs-can-the-momentum-sustain"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:10AM",
+      "title": "Honeywell's Industrial Automation Unit Hit by Weak Sales: Recovery Ahead?\n\n\n(Zacks)",
+      "link": "/news/145415/honeywells-industrial-automation-unit-hit-by-weak-sales-recovery-ahead"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "HONEYWELL ANNOUNCES PARTICIPATION AT UPCOMING INVESTOR CONFERENCES\n\n\n(PR Newswire)",
+      "link": "/news/145158/honeywell-announces-participation-at-upcoming-investor-conferences"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:10AM",
+      "title": "HONEYWELL ACQUIRES SPARKMETER'S DATA PLATFORM AND SOFTWARE TECHNOLOGIES TO STRENGTHEN ITS PORTFOLIO OF UTILITY SOLUTIONS\n\n\n(PR Newswire)",
+      "link": "/news/145097/honeywell-acquires-sparkmeters-data-platform-and-software-technologies-to-strengthen-its-portfolio-of-utility-solutions"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:33AM",
+      "title": "Honeywell's (HON) Building Automation Drives Upgraded 2025 Revenue Projection\n\n\n(Insider Monkey)",
+      "link": "/news/144799/honeywells-hon-building-automation-drives-upgraded-2025-revenue-projection"
+    },
+    {
+      "date": "2025-08-18",
+      "time": "06:25",
+      "title": "Honeywell, Stereolabs partner on AI-powered vision tool for warehouses\n\n\n(Supply Chain Dive)",
+      "link": "https://finance.yahoo.com/m/add0d0ff-df34-368b-bfa9-4750195e72c9/honeywell%2C-stereolabs-partner.html"
+    },
+    {
+      "date": "2025-08-15",
+      "time": "15:11",
+      "title": "Buffett bought UnitedHealth. I bet on Caterpillar. Why Berkshire Hathaways picks are smarter.\n\n\n(MarketWatch)",
+      "link": "https://finance.yahoo.com/m/d7c6d576-8f79-3b6a-9408-780210848966/buffett-bought-unitedhealth..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:47AM",
+      "title": "Aircraft Sequencing Systems Market Analysis 2018-2024 and Opportunity Forecast 2025-2030 Featuring Thales, Leonardo, Honeywell International and Other Leading Players\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/aircraft-sequencing-systems-market-analysis-144700149.html"
+    },
+    {
+      "date": "2025-08-14",
+      "time": "09:47",
+      "title": "Personal Protective Equipment Company Evaluation Report 2025 | Honeywell, DuPont, and 3M Lead with Innovations Across Advanced Materials, Industrial Technologies, and Sustainability Solutions\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/personal-protective-equipment-company-evaluation-134700031.html"
+    }
+  ]
+}

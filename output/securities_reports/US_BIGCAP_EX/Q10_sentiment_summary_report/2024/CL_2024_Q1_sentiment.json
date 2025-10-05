@@ -1,0 +1,51 @@
+{
+  "symbol": "CL",
+  "year": 2024,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.2269,
+    "outlook_sentiment": 0.2593,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.103
+  },
+  "top_positive": [
+    {
+      "sent": "would require certain climate-related disclosures as it relates to severe weather events and other natural conditions and carbon offsets and renewable energy credits.",
+      "score": 0.6808
+    },
+    {
+      "sent": "Description 10-B Form of Nonqualified Option Award Agreement used in connection with grants under the Colgate-Palmolive Company 2019 Incentive Compensation Plan.* ** 10-C Form of Restricted Stock Unit Award Agreement used in connection with grants under the Colgate-Palmolive Company 2019 Incentive Compensation Plan.* ** 31-A Certificate of the Chairman of the Board, President and Chief Executive Officer of Colgate-Palmolive Company pursuant to Rule 13a-14(a) under the Securities Exchange Act of 1934.** 31-B Certificate of the Chief Financial Officer of Colgate-Palmolive Company pursuant to Rule 13a-14(a) under the Securities Exchange Act of 1934.** 32 Certificate of the Chairman of the Board, President and Chief Executive Officer and the Chief Financial Officer of Colgate-Palmolive Company pursuant to Rule 13a-14(b) under the Securities Exchange Act of 1934 and 18 U.S.C.",
+      "score": 0.9726
+    },
+    {
+      "sent": "Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time.",
+      "score": 0.9524
+    },
+    {
+      "sent": "Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time.",
+      "score": 0.9524
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "We continue to closely monitor the impact of geopolitical events and tensions, such as the wars in Ukraine and the Middle East and tensions between China and Taiwan and the challenging market conditions discussed above, on our business and the related uncertainties and risks.",
+      "score": -0.8979
+    },
+    {
+      "sent": "We continue to closely monitor the impact of geopolitical events and tensions, such as the wars in Ukraine and the Middle East and tensions between China and Taiwan and the challenging market conditions discussed above, on our business and the related uncertainties and risks.",
+      "score": -0.8979
+    },
+    {
+      "sent": "We continue to closely monitor the impact of geopolitical events and tensions, such as the wars in Ukraine and the Middle East and tensions between China and Taiwan and the challenging market conditions discussed above, on our business and the related uncertainties and risks.",
+      "score": -0.8979
+    }
+  ],
+  "forward_snippets": [
+    "This guidance is effective for the Company for fiscal years beginning after December 15, 2024.",
+    "This guidance is effective for the Company for fiscal years beginning after December 15, 2024 and is not expected to have an impact on the Company\u2019s Consolidated Financial Statements.",
+    "This guidance is effective for the Company for fiscal years beginning after December 15, 2023, and interim periods within fiscal years beginning after December 15, 2024.",
+    "This guidance is effective for the Company no later than June 30, 2027.",
+    "This guidance is applicable to joint ventures with a formation date on or after January 1, 2025 and is not expected to have a material impact on the Company\u2019s Consolidated Financial Statements."
+  ]
+}

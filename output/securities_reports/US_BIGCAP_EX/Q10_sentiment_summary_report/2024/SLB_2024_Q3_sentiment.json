@@ -1,0 +1,47 @@
+{
+  "symbol": "SLB",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.3275,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.082
+  },
+  "top_positive": [
+    {
+      "sent": "Factors and risks that may impact future results and performance include, but are not limited to, and in each case as a possible result of the proposed transaction on each of SLB and ChampionX: the ultimate outcome of the proposed transaction between SLB and ChampionX, including the possibility that ChampionX stockholders will not adopt the merger agreement in respect of the proposed transaction; the effect of the announcement of the proposed transaction; the ability to operate the SLB and ChampionX respective businesses, including business disruptions; difficulties in retaining and hiring key personnel and employees; the ability to maintain favorable business relationships with customers, suppliers and other business partners; the terms and timing of the proposed transaction; the occurrence of any event, change or other circumstance that could give rise to the termination of the proposed transaction; the anticipated or actual tax treatment of the proposed transaction; the ability to satisfy closing conditions to the completion of the proposed transaction (including the adoption of the merger agreement in respect of the proposed transaction by ChampionX stockholders); other risks related to the completion of the proposed transaction and actions related thereto; the ability of SLB and ChampionX to integrate the business successfully and to achieve anticipated synergies and value creation from the proposed transaction, as well as the risk factors discussed in SLB\u2019s and ChampionX\u2019s most recent Forms 10-K, 10-Q, and 8-K filed with or furnished to the SEC.",
+      "score": 0.9921
+    },
+    {
+      "sent": "Factors and risks that may impact future results and performance include, but are not limited to, and in each case as a possible result of the proposed transaction on each of SLB and ChampionX: the ultimate outcome of the proposed transaction between SLB and ChampionX, including the possibility that ChampionX stockholders will not adopt the merger agreement in respect of the proposed transaction; the effect of the announcement of the proposed transaction; the ability to operate the SLB and ChampionX respective businesses, including business disruptions; difficulties in retaining and hiring key personnel and employees; the ability to maintain favorable business relationships with customers, suppliers and other business partners; the terms and timing of the proposed transaction; the occurrence of any event, change or other circumstance that could give rise to the termination of the proposed transaction; the anticipated or actual tax treatment of the proposed transaction; the ability to satisfy closing conditions to the completion of the proposed transaction (including the adoption of the merger agreement in respect of the proposed transaction by ChampionX stockholders); other risks related to the completion of the proposed transaction and actions related thereto; the ability of SLB and ChampionX to integrate the business successfully and to achieve anticipated synergies and value creation from the proposed transaction, as well as the risk factors discussed in SLB\u2019s and ChampionX\u2019s most recent Forms 10-K, 10-Q, and 8-K filed with or furnished to the SEC.",
+      "score": 0.9921
+    },
+    {
+      "sent": "SCHLUMBERGER LIMITED AND SUBSIDIARIES CONSOLIDATED STATEMENT OF INCOME (Unaudited) (Stated in millions, except per share amounts ) Three Months Ended March 31, 2024 2023 Revenue Services $ 5,676 $ 5,334 Product sales 3,031 2,402 Total Revenue 8,707 7,736 Interest & other income 84 92 Expenses Cost of services 4,415 4,129 Cost of sales 2,592 2,156 Research & engineering 182 174 General & administrative 121 91 Merger & integration 11 - Interest 113 117 Income before taxes 1,357 1,161 Tax expense 259 217 Net income 1,098 944 Net income attributable to noncontrolling interests 30 10 Net income attributable to SLB $ 1,068 $ 934 Basic income per share of SLB $ 0.75 $ 0.65 Diluted income per share of SLB $ 0.74 $ 0.65 Average shares outstanding: Basic 1,431 1,426 Assuming dilution 1,447 1,446 See Notes to Consolidated Financial Statements 3 SCHLUMBERGER LIMITED AND SUBSIDIARIES CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME (Unaudited) (Stated in millions) Three Months Ended March 31, 2024 2023 Net income $ 1,098 $ 944 Currency translation adjustments Unrealized net change arising during the period 23 ( 34 ) Cash flow hedges Net loss on cash flow hedges ( 17 ) ( 33 ) Reclassification to net income of net realized gain ( 1 ) ( 5 ) Pension and other postretirement benefit plans Amortization to net income of net actuarial gain - ( 2 ) Amortization to net income of net prior service credit ( 6 ) ( 6 ) Income taxes on pension and other postretirement benefit plans 1 2 Other 5 - Comprehensive income 1,103 866 Comprehensive income attributable to noncontrolling interests 30 10 Comprehensive income attributable to SLB $ 1,073 $ 856 See Notes to Consolidated Financial Statements 4 SCHLUMBERGER LIMITED AND SUBSIDIARIES CONSOLIDATED BALANCE SHEET (Stated in millions) Mar.",
+      "score": 0.9835
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "If the proposed acquisition is not completed for any reason, including as a result of failure to obtain required regulatory approvals or if the ChampionX stockholders fail to approve the acquisition, the market price of our common stock may be adversely affected; we may experience negative reactions from the financial markets, customers, suppliers and other constituencies; we will be required to pay certain costs relating to the acquisition; and SLB may be required to pay a termination fee under certain circumstances set forth in the merger agreement.",
+      "score": -0.8074
+    },
+    {
+      "sent": "If the proposed acquisition is not completed for any reason, including as a result of failure to obtain required regulatory approvals or if the ChampionX stockholders fail to approve the acquisition, the market price of our common stock may be adversely affected; we may experience negative reactions from the financial markets, customers, suppliers and other constituencies; we will be required to pay certain costs relating to the acquisition; and SLB may be required to pay a termination fee under certain circumstances set forth in the merger agreement.",
+      "score": -0.8074
+    },
+    {
+      "sent": "These statements are subject to risks and uncertainties, including, but not limited to, changing global economic and geopolitical conditions; changes in exploration and production spending by SLB\u2019s customers and changes in the level of oil and natural gas exploration and development; the results of operations and financial condition of SLB\u2019s customers and suppliers; SLB\u2019s inability to achieve its financial and performance targets and other forecasts and expectations; SLB\u2019s inability to achieve net-zero carbon emissions goals or interim emissions reduction goals; general economic, geopolitical and business conditions in key regions of the world; the ongoing conflict in Ukraine; foreign currency risk; inflation; changes in monetary policy by governments; pricing pressure; weather and seasonal factors; unfavorable effects of health pandemics; availability and cost of raw materials; operational modifications, delays or cancellations; challenges in SLB\u2019s supply chain; production declines; the extent of future charges; SLB\u2019s inability to recognize efficiencies and other intended benefits from its business strategies and initiatives, such as digital or new energy, as well as its cost reduction strategies; changes in government regulations and regulatory requirements, including those 18 related to offshore oil and gas exploration, radioactive sources, explosives, chemicals, and climate-related initiatives; the inability of technology to meet new challenges in exploration; the competitiveness of alternative energy sources or product substitutes; and other risks and uncertainties detailed in this Form 10-Q and our most recent Form 10-K and Forms 8-K filed with or furnished to the SEC.",
+      "score": -0.6061
+    }
+  ],
+  "forward_snippets": [
+    "SLB remains confident in its global revenue growth outlook for 2024, with softness in North America being offset by upside in the international markets.",
+    "Margin expansion throughout the year is expected to be driven by tight service and equipment capacity internationally, increased technology adoption, and further operational efficiency.",
+    "In the second quarter of 2024, SLB expects a seasonal rebound in activity in the Northern Hemisphere coupled with robust activity internationally, led by the Middle East, Asia, and Africa, which will drive broad sequential margin expansion across all Divisions and geographies.",
+    "The oil and gas industry continues to benefit from strong market fundamentals driven by a growing demand outlook.",
+    "SLB remains confident in its global revenue growth outlook for 2024, with softness in North America being offset by upside in the international markets."
+  ]
+}

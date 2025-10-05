@@ -1,0 +1,47 @@
+{
+  "symbol": "HON",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2015,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.055
+  },
+  "top_positive": [
+    {
+      "sent": "EARNINGS PER SHARE Three Months Ended March 31, Basic 2022 2021 Net income attributable to Honeywell $ 1,134 $ 1,427 Weighted average shares outstanding 684.7 696.2 Earnings per share of common stock - basic $ 1.66 $ 2.05 Three Months Ended March 31, Assuming Dilution 2022 2021 Net income attributable to Honeywell $ 1,134 $ 1,427 Average Shares Weighted average shares outstanding 684.7 696.2 Dilutive securities issuable - stock plans 6.6 8.3 Total weighted average diluted shares outstanding 691.3 704.5 Earnings per share of common stock - assuming dilution $ 1.64 $ 2.03 The diluted earnings per share calculations exclude the effect of stock options when the options\u2019 exercise price exceed the average market price of the common shares during the period.",
+      "score": 0.9832
+    },
+    {
+      "sent": "CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME (Unaudited) Three Months Ended March 31, 2022 2021 (Dollars in millions) Net income $ 1,134 $ 1,448 Other comprehensive income (loss), net of tax Foreign exchange translation adjustment 126 214 Prior service (credit) cost recognized ( 17 ) ( 22 ) Pension and other postretirement benefit adjustments ( 17 ) ( 22 ) Changes in fair value of available for sale investments ( 6 ) ( 3 ) Cash flow hedges recognized in other comprehensive income (loss) 8 8 Less: Reclassification adjustment for gains (losses) included in net income 3 3 Changes in fair value of cash flow hedges 5 5 Other comprehensive income (loss), net of tax 108 194 Comprehensive income 1,242 1,642 Less: Comprehensive income attributable to the noncontrolling interest \u2014 22 Comprehensive income attributable to Honeywell $ 1,242 $ 1,620 The Notes to Consolidated Financial Statements are an integral part of this statement.",
+      "score": 0.9789
+    },
+    {
+      "sent": "CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME (Unaudited) Three Months Ended March 31, 2022 2021 (Dollars in millions) Net income $ 1,134 $ 1,448 Other comprehensive income (loss), net of tax Foreign exchange translation adjustment 126 214 Prior service (credit) cost recognized ( 17 ) ( 22 ) Pension and other postretirement benefit adjustments ( 17 ) ( 22 ) Changes in fair value of available for sale investments ( 6 ) ( 3 ) Cash flow hedges recognized in other comprehensive income (loss) 8 8 Less: Reclassification adjustment for gains (losses) included in net income 3 3 Changes in fair value of cash flow hedges 5 5 Other comprehensive income (loss), net of tax 108 194 Comprehensive income 1,242 1,642 Less: Comprehensive income attributable to the noncontrolling interest \u2014 22 Comprehensive income attributable to Honeywell $ 1,242 $ 1,620 The Notes to Consolidated Financial Statements are an integral part of this statement.",
+      "score": 0.9789
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "RISK FACTORS Other than as noted below, there have been no material changes to our Risk Factors presented in our 2021 Annual Report on Form 10-K under the section titled Risk Factors.",
+      "score": -0.8038
+    },
+    {
+      "sent": "RISK FACTORS Other than as noted below, there have been no material changes to our Risk Factors presented in our 2021 Annual Report on Form 10-K under the section titled Risk Factors.",
+      "score": -0.8038
+    },
+    {
+      "sent": "RISK FACTORS Other than as noted below, there have been no material changes to our Risk Factors presented in our 2021 Annual Report on Form 10-K under the section titled Risk Factors.",
+      "score": -0.8038
+    }
+  ],
+  "forward_snippets": [
+    "In January 2021, the FASB issued ASU 2021-01, Reference Rate Reform (Topic 848): Scope , to expand the scope of this guidance to include derivatives.",
+    "The guidance was effective upon issuance and may be applied prospectively to contract modifications made and hedging relationships entered into on or before December 31, 2022.",
+    "The Company will apply the guidance to impacted transactions during the transition period.",
+    "The Company adopted this guidance on January 1, 2022.",
+    "In January 2021, the FASB issued ASU 2021-01, Reference Rate Reform (Topic 848): Scope , to expand the scope of this guidance to include derivatives."
+  ]
+}

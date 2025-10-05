@@ -1,0 +1,47 @@
+{
+  "symbol": "PSX",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1483,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.112
+  },
+  "top_positive": [
+    {
+      "sent": "19 Table of Contents Note 14\u2014 Fair Value Measurements Recurring Fair Value Measurements We carry certain assets and liabilities at fair value, which we measure at the reporting date using the price that would be received to sell an asset or paid to transfer a liability (i.e., an exit price), and disclose the quality of these fair values based on the valuation inputs used in these measurements under the following hierarchy: \u2022 Level 1: Fair value measured with unadjusted quoted prices from an active market for identical assets or liabilities.",
+      "score": 0.9753
+    },
+    {
+      "sent": "19 Table of Contents Note 14\u2014 Fair Value Measurements Recurring Fair Value Measurements We carry certain assets and liabilities at fair value, which we measure at the reporting date using the price that would be received to sell an asset or paid to transfer a liability (i.e., an exit price), and disclose the quality of these fair values based on the valuation inputs used in these measurements under the following hierarchy: \u2022 Level 1: Fair value measured with unadjusted quoted prices from an active market for identical assets or liabilities.",
+      "score": 0.9753
+    },
+    {
+      "sent": "2 Table of Contents Consolidated Balance Sheet Phillips\u00a066 Millions of Dollars March 31 2024 December 31 2023 Assets Cash and cash equivalents $ 1,570 3,323 Accounts and notes receivable (net of allowances of $ 75 million in 2024 and $ 71 million in 2023) 10,078 10,483 Accounts and notes receivable\u2014related parties 1,454 1,247 Inventories 6,286 3,750 Prepaid expenses and other current assets 1,316 1,138 Total Current Assets 20,704 19,941 Investments and long-term receivables 15,592 15,302 Net properties, plants and equipment 35,549 35,712 Goodwill 1,553 1,550 Intangibles 911 920 Other assets 2,090 2,076 Total Assets $ 76,399 75,501 Liabilities Accounts payable $ 11,745 10,332 Accounts payable\u2014related parties 729 569 Short-term debt 2,325 1,482 Accrued income and other taxes 1,087 1,200 Employee benefit obligations 459 863 Other accruals 1,322 1,410 Total Current Liabilities 17,667 15,856 Long-term debt 17,829 17,877 Asset retirement obligations and accrued environmental costs 919 864 Deferred income taxes 7,368 7,424 Employee benefit obligations 613 630 Other liabilities and deferred credits 1,210 1,200 Total Liabilities 45,606 43,851 Equity Common stock ( 2,500,000,000 shares authorized at $ 0.01 par value) Issued (2024\u2014 656,284,691 shares; 2023\u2014 654,842,101 shares) Par value 7 7 Capital in excess of par 19,674 19,650 Treasury stock (at cost: 2024\u2014 232,332,556 shares; 2023\u2014 224,377,439 shares) ( 20,489 ) ( 19,342 ) Retained earnings 30,846 30,550 Accumulated other comprehensive loss ( 312 ) ( 282 ) Total Stockholders\u2019 Equity 29,726 30,583 Noncontrolling interests 1,067 1,067 Total Equity 30,793 31,650 Total Liabilities and Equity $ 76,399 75,501 See Notes to Consolidated Financial Statements.",
+      "score": 0.9612
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "35 Table of Contents Thousands of Barrels Daily Three Months Ended March 31 Operating Statistics 2024 2023 Refining operations* Atlantic Basin/Europe Crude oil capacity 537 537 Crude oil processed 472 443 Capacity utilization (percent) 88 % 82 Refinery production 522 438 Gulf Coast Crude oil capacity 529 529 Crude oil processed 475 519 Capacity utilization (percent) 90 % 98 Refinery production 526 580 Central Corridor Crude oil capacity 531 531 Crude oil processed 509 475 Capacity utilization (percent) 96 % 89 Refinery production 527 494 West Coast** Crude oil capacity 244 319 Crude oil processed 244 281 Capacity utilization (percent) 100 % 88 Refinery production 266 314 Worldwide Crude oil capacity 1,841 1,916 Crude oil processed 1,700 1,718 Capacity utilization (percent) 92 % 90 Refinery production 1,841 1,826 * Includes our share of equity affiliates.",
+      "score": -0.9889
+    },
+    {
+      "sent": "35 Table of Contents Thousands of Barrels Daily Three Months Ended March 31 Operating Statistics 2024 2023 Refining operations* Atlantic Basin/Europe Crude oil capacity 537 537 Crude oil processed 472 443 Capacity utilization (percent) 88 % 82 Refinery production 522 438 Gulf Coast Crude oil capacity 529 529 Crude oil processed 475 519 Capacity utilization (percent) 90 % 98 Refinery production 526 580 Central Corridor Crude oil capacity 531 531 Crude oil processed 509 475 Capacity utilization (percent) 96 % 89 Refinery production 527 494 West Coast** Crude oil capacity 244 319 Crude oil processed 244 281 Capacity utilization (percent) 100 % 88 Refinery production 266 314 Worldwide Crude oil capacity 1,841 1,916 Crude oil processed 1,700 1,718 Capacity utilization (percent) 92 % 90 Refinery production 1,841 1,826 * Includes our share of equity affiliates.",
+      "score": -0.9889
+    },
+    {
+      "sent": "\u2022 Damage to our facilities due to accidents, weather and climate events, civil unrest, insurrections, political events, terrorism or cyberattacks.",
+      "score": -0.8779
+    }
+  ],
+  "forward_snippets": [
+    "The DCP LP Merger increased our aggregate direct and indirect economic interest in DCP LP from 43.3 % to 86.8 % and our aggregate direct and indirect economic interests in DCP Sand Hills Pipeline, LLC (DCP Sand Hills) and DCP Southern Hills Pipeline, LLC (DCP Southern Hills) increased from 62.2 % to 91.2 %.",
+    "We will complete a final determination of the fair values of assets acquired and liabilities assumed within the one-year measurement period from the date of the acquisition.",
+    "The DCP LP Merger increased our aggregate direct and indirect economic interest in DCP LP from 43.3 % to 86.8 % and our aggregate direct and indirect economic interests in DCP Sand Hills Pipeline, LLC (DCP Sand Hills) and DCP Southern Hills Pipeline, LLC (DCP Southern Hills) increased from 62.2 % to 91.2 %.",
+    "We will complete a final determination of the fair values of assets acquired and liabilities assumed within the one-year measurement period from the date of the acquisition.",
+    "We will complete a final determination of the fair values of assets acquired and liabilities assumed within the one-year measurement period from the date of the acquisition."
+  ]
+}

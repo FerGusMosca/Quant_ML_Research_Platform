@@ -1,0 +1,47 @@
+{
+  "symbol": "AEP",
+  "year": 2023,
+  "period": "Q1",
+  "competition_summary": [
+    {
+      "competitor": "Company",
+      "mentions": 1,
+      "context": "competition Agreement between the Company and Ann P. Kelly. X 31(a) Certification of Chief Executive Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 31(b) Certification of Chief Financial Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 32(a) Certification of Chief Executive Officer Pursuant to Section 1350 of Chapter 63 of Title 18 of the United States Code X X X X X X X X 32(b) Certification of Chief Financial Officer Pursuant "
+    },
+    {
+      "competitor": "the Sarbanes-Oxley Act",
+      "mentions": 2,
+      "context": "competition Agreement between the Company and Ann P. Kelly. X 31(a) Certification of Chief Executive Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 31(b) Certification of Chief Financial Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 32(a) Certification of Chief Executive Officer Pursuant to Section 1350 of Chapter 63 of Title 18 of the United States Code X X X X X X X X 32(b) Certification of Chief Financial Officer Pursuant "
+    },
+    {
+      "competitor": "the Securities Exchange Act",
+      "mentions": 1,
+      "context": "competition Agreement between the Company and Ann P. Kelly. X 31(a) Certification of Chief Executive Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 31(b) Certification of Chief Financial Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 32(a) Certification of Chief Executive Officer Pursuant to Section 1350 of Chapter 63 of Title 18 of the United States Code X X X X X X X X 32(b) Certification of Chief Financial Officer Pursuant "
+    },
+    {
+      "competitor": "AMERICAN ELECTRIC POWER COMPANY",
+      "mentions": 1,
+      "context": "competition Agreement between the Company and Ann P. Kelly. X 31(a) Certification of Chief Executive Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 31(b) Certification of Chief Financial Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 32(a) Certification of Chief Executive Officer Pursuant to Section 1350 of Chapter 63 of Title 18 of the United States Code X X X X X X X X 32(b) Certification of Chief Financial Officer Pursuant "
+    },
+    {
+      "competitor": "AEP TEXAS INC",
+      "mentions": 1,
+      "context": "competition Agreement between the Company and Ann P. Kelly. X 31(a) Certification of Chief Executive Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 31(b) Certification of Chief Financial Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 32(a) Certification of Chief Executive Officer Pursuant to Section 1350 of Chapter 63 of Title 18 of the United States Code X X X X X X X X 32(b) Certification of Chief Financial Officer Pursuant "
+    },
+    {
+      "competitor": "AEP TRANSMISSION COMPANY",
+      "mentions": 1,
+      "context": "competition Agreement between the Company and Ann P. Kelly. X 31(a) Certification of Chief Executive Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 31(b) Certification of Chief Financial Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 32(a) Certification of Chief Executive Officer Pursuant to Section 1350 of Chapter 63 of Title 18 of the United States Code X X X X X X X X 32(b) Certification of Chief Financial Officer Pursuant "
+    },
+    {
+      "competitor": "LLC APPALACHIAN POWER COMPANY",
+      "mentions": 1,
+      "context": "competition Agreement between the Company and Ann P. Kelly. X 31(a) Certification of Chief Executive Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 31(b) Certification of Chief Financial Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 32(a) Certification of Chief Executive Officer Pursuant to Section 1350 of Chapter 63 of Title 18 of the United States Code X X X X X X X X 32(b) Certification of Chief Financial Officer Pursuant "
+    },
+    {
+      "competitor": "INDIANA MICHIGAN POWER COMPANY OHIO POWER COMPANY PUBLIC SERVICE COMPANY OF OKLAHOMA SOUTHWESTERN ELECTRIC POWER COMPANY",
+      "mentions": 1,
+      "context": "competition Agreement between the Company and Ann P. Kelly. X 31(a) Certification of Chief Executive Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 31(b) Certification of Chief Financial Officer Pursuant to Section 302 of the Sarbanes-Oxley Act of 2002 X X X X X X X X 32(a) Certification of Chief Executive Officer Pursuant to Section 1350 of Chapter 63 of Title 18 of the United States Code X X X X X X X X 32(b) Certification of Chief Financial Officer Pursuant "
+    }
+  ]
+}

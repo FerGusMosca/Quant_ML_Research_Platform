@@ -1,0 +1,47 @@
+{
+  "symbol": "MSFT",
+  "year": 2024,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1729,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.281
+  },
+  "top_positive": [
+    {
+      "sent": "Microsoft 365 Commercial cloud revenue growth Revenue from Microsoft 365 Commercial subscriptions, comprising Microsoft 365 Commercial, Enterprise Mobility + Security, the cloud portion of Windows Commercial, the per-user portion of Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft Viva, and Microsoft 365 Copilot Microsoft 365 Commercial seat growth The number of Microsoft 365 Commercial seats at end of period where seats are paid users covered by a Microsoft 365 Commercial subscription Microsoft 365 Consumer cloud revenue growth Revenue from Microsoft 365 Consumer subscriptions and other consumer services Microsoft 365 Consumer subscribers The number of Microsoft 365 Consumer subscribers at end of period LinkedIn revenue growth Revenue from LinkedIn, including Talent Solutions, Marketing Solutions, Premium Subscriptions, and Sales Solutions Dynamics 365 revenue growth Revenue from Dynamics 365, including a set of intelligent, cloud-based applications across ERP, CRM, Power Apps, and Power Automate Azure and other cloud services revenue growth Revenue from Azure and other cloud services, including cloud and AI consumption-based services, GitHub cloud services, Nuance Healthcare cloud services, virtual desktop offerings, and other cloud services\n three months ended September 30, 2024, primarily due to earnings taxed at lower rates in foreign jurisdictions resulting from producing and distributing our products and services through our foreign regional operations center in Ireland.",
+      "score": 0.9816
+    },
+    {
+      "sent": "Development and deployment of defensive measures To defend against security threats to our internal IT systems, our cloud-based services, and our customers\u2019 systems, we must continuously engineer more secure products and services, enhance security, threat detection, and reliability features, escalate and improve the deployment of software updates to address security vulnerabilities in our own products as well as those provided by others in a timely manner, develop mitigation technologies that help to secure customers from attacks even when software updates are not deployed, maintain the digital security infrastructure that protects the integrity of our network, products, and services, and provide security tools such as firewalls, anti-virus software, and advanced security and information about the need to deploy security measures and the impact of doing so.",
+      "score": 0.969
+    },
+    {
+      "sent": "Development and deployment of defensive measures To defend against security threats to our internal IT systems, our cloud-based services, and our customers\u2019 systems, we must continuously engineer more secure products and services, enhance security, threat detection, and reliability features, escalate and improve the deployment of software updates to address security vulnerabilities in our own products as well as those provided by others in a timely manner, develop mitigation technologies that help to secure customers from attacks even when software updates are not deployed, maintain the digital security infrastructure that protects the integrity of our network, products, and services, and provide security tools such as firewalls, anti-virus software, and advanced security and information about the need to deploy security measures and the impact of doing so.",
+      "score": 0.969
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "In addition, some users may also engage in fraudulent or abusive activities through our cloud-based and AI services, such as unauthorized account access, payment fraud, or terms of service violations including cryptocurrency mining or launching cyberattacks.",
+      "score": -0.9217
+    },
+    {
+      "sent": "In addition, some users may also engage in fraudulent or abusive activities through our cloud-based and AI services, such as unauthorized account access, payment fraud, or terms of service violations including cryptocurrency mining or launching cyberattacks.",
+      "score": -0.9217
+    },
+    {
+      "sent": "In addition, some users may also engage in fraudulent or abusive activities through our cloud-based and AI services, such as unauthorized account access, payment fraud, or terms of service violations including cryptocurrency mining or launching cyberattacks.",
+      "score": -0.9217
+    }
+  ],
+  "forward_snippets": [
+    "In addition, we consider specific adverse conditions related to the financial health of, and business outlook for, the investee.",
+    "If we have plans to sell the security or it is more likely than not that we will be required to sell the security before recovery, then a decline in fair value below cost is recorded as an impairment charge in other income (expense), net and a new cost basis in the investment is established.",
+    "In addition, we consider specific adverse conditions related to the financial health of, and business outlook for, the investee.",
+    "If we have plans to sell the security or it is more likely than not that we will be required to sell the security before recovery, then a decline in fair value below cost is recorded as an impairment charge in other income (expense), net and a new cost basis in the investment is established.",
+    "As of th\noutlook for, the investee."
+  ]
+}

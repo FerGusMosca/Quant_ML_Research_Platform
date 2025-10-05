@@ -1,0 +1,47 @@
+{
+  "symbol": "TSLA",
+  "year": 2023,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2926,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.119
+  },
+  "top_positive": [
+    {
+      "sent": "Consolidated Statements of Redeemable Noncontrolling Interests and Equity (in millions, except per share data) (unaudited) Three Months Ended September 30, 2023 Redeemable Noncontrolling Interests Common Stock Additional Paid-In Capital Accumulated Other Comprehensive Loss Retained Earnings Total Stockholders\u2019 Equity Noncontrolling Interests in Subsidiaries Total Equity Shares Amount Balance as of June 30, 2023 $ 288 3,174 $ 3 $ 33,436 $ ( 410 ) $ 18,101 $ 51,130 $ 764 $ 51,894 Exercises of conversion feature of convertible senior notes \u2014 0 0 0 \u2014 \u2014 0 \u2014 0 Issuance of common stock for equity incentive awards \u2014 5 0 254 \u2014 \u2014 254 \u2014 254 Stock-based compensation \u2014 \u2014 \u2014 513 \u2014 \u2014 513 \u2014 513 Distributions to noncontrolling interests ( 10 ) \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 ( 33 ) ( 33 ) Buy-outs of noncontrolling interests ( 5 ) \u2014 \u2014 ( 2 ) \u2014 \u2014 ( 2 ) \u2014 ( 2 ) Net income 4 \u2014 \u2014 \u2014 \u2014 1,853 1,853 21 1,874 Other comprehensive loss \u2014 \u2014 \u2014 \u2014 ( 282 ) \u2014 ( 282 ) \u2014 ( 282 ) Balance as of September 30, 2023 $ 277 3,179 $ 3 $ 34,201 $ ( 692 ) $ 19,954 $ 53,466 $ 752 $ 54,218 Nine Months Ended September 30, 2023 Redeemable Noncontrolling Interests Common Stock Additional Paid-In Capital Accumulated Other Comprehensive Loss Retained Earnings Total Stockholders\u2019 Equity Noncontrolling Interests in Subsidiaries Total Equity Shares Amount Balance as of December 31, 2022 $ 409 3,164 $ 3 $ 32,177 $ ( 361 ) $ 12,885 $ 44,704 $ 785 $ 45,489 Exercises of conversion feature of convertible senior notes \u2014 0 0 0 \u2014 \u2014 0 \u2014 0 Issuance of common stock for equity incentive awards \u2014 15 0 548 \u2014 \u2014 548 \u2014 548 Stock-based compensation \u2014 \u2014 \u2014 1,473 \u2014 \u2014 1,473 \u2014 1,473 Distributions to noncontrolling interests ( 24 ) \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 ( 83 ) ( 83 ) Buy-outs of noncontrolling interests ( 8 ) \u2014 \u2014 3 \u2014 \u2014 3 ( 12 ) ( 9 ) Net (loss) income ( 100 ) \u2014 \u2014 \u2014 \u2014 7,069 7,069 62 7,13\nent Automotive Sales Revenue Deferred revenue is related to the access to our Full Self Driving (\u201cFSD\u201d) features and ongoing maintenance, internet connectivity, free Supercharging programs and over-the-air software updates primarily on automotive sales, which amounted to $ 3.27 billion and $ 2.91 billion as of September\u00a030, 2023 and December\u00a031, 2022, respectively.",
+      "score": 0.9856
+    },
+    {
+      "sent": "The following table presents the estimated fair values and the carrying values (in millions): September 30, 2023 December 31, 2022 Carrying Value Fair Value Carrying Value Fair Value 2024 Notes $ 37 $ 452 $ 37 $ 223 Digital assets, net $ 184 $ 311 $ 184 $ 191 Note 3 \u2013 Inventory Our inventory consisted of the following (in millions): September 30, 2023 December 31, 2022 Raw materials $ 5,817 $ 6,137 Work in process 2,246 2,385 Finished goods (1) 4,550 3,475 Service parts 1,108 842 Total $ 13,721 $ 12,839 (1) Finished goods inventory includes vehicles in transit to fulfill customer orders, new vehicles available for sale, used vehicles and energy products available for sale.",
+      "score": 0.9738
+    },
+    {
+      "sent": "The following table presents the estimated fair values and the carrying values (in millions): September 30, 2023 December 31, 2022 Carrying Value Fair Value Carrying Value Fair Value 2024 Notes $ 37 $ 452 $ 37 $ 223 Digital assets, net $ 184 $ 311 $ 184 $ 191 Note 3 \u2013 Inventory Our inventory consisted of the following (in millions): September 30, 2023 December 31, 2022 Raw materials $ 5,817 $ 6,137 Work in process 2,246 2,385 Finished goods (1) 4,550 3,475 Service parts 1,108 842 Total $ 13,721 $ 12,839 (1) Finished goods inventory includes vehicles in transit to fulfill customer orders, new vehicles available for sale, used vehicles and energy products available for sale.",
+      "score": 0.9738
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "30 Table of Contents Cost of Revenues and Gross Margin Three Months Ended September 30, Change Nine Months Ended September 30, Change (Dollars in millions) 2023 2022 $ % 2023 2022 $ % Cost of revenues Automotive sales $ 15,656 $ 13,099 $ 2,557 20 % $ 47,919 $ 34,166 $ 13,753 40 % Automotive leasing 301 381 (80) (21) % 972 1,157 (185) (16) % Total automotive cost of revenues 15,957 13,480 2,477 18 % 48,891 35,323 13,568 38 % Services and other 2,037 1,579 458 29 % 5,723 4,275 1,448 34 % Total automotive & services and other segment cost of revenues 17,994 15,059 2,935 19 % 54,614 39,598 15,016 38 % Energy generation and storage segment 1,178 1,013 165 16 % 3,770 2,470 1,300 53 % Total cost of revenues $ 19,172 $ 16,072 $ 3,100 19 % $ 58,384 $ 42,068 $ 16,316 39 % Gross profit total automotive $ 3,668 $ 5,212 $ 11,965 $ 14,832 Gross margin total automotive 18.7 % 27.9 % 19.7 % 29.6 % Gross profit total automotive & services and other segment $ 3,797 $ 5,278 $ 12,395 $ 14,947 Gross margin total automotive & services and other segment 17.4 % 26.0 % 18.5 % 27.4 % Gross profit energy generation and storage segment $ 381 $ 104 $ 827 $ 129 Gross margin energy generation and storage segment 24.4 % 9.3 % 18.0 % 5.0 % Total gross profit $ 4,178 $ 5,382 $ 13,222 $ 15,076 Total gross margin 17.9 % 25.1 % 18.5 % 26.4 % Automotive & Services and Other Segment Cost of automotive sales revenue increased $2.56 billion, or 20%, in the three months ended September\u00a030, 2023 as compared to the three months ended September\u00a030, 2022.",
+      "score": -0.872
+    },
+    {
+      "sent": "On September 20, 2019, the Court granted the motion to dismiss as to the corporate waste claim but denied the motion as to the breach of fiduciary duty and unjust enrichment claims.",
+      "score": -0.8658
+    },
+    {
+      "sent": "RISK FACTORS Our operations and financial results are subject to various risks and uncertainties, including the factors discussed in Part I, Item 1A, Risk Factors in our Annual Report on Form 10-K for the year ended December\u00a031, 2022, which could adversely affect our business, financial conditions and future results.",
+      "score": -0.8494
+    }
+  ],
+  "forward_snippets": [
+    "Of the total deferred revenue balance as of September\u00a030, 2023, we expect to recognize $ 815 million of revenue in the next 12 months.",
+    "Of this amount, we expect to recognize $ 709 million in the next 12 months and the rest over the remaining performance obligation period.",
+    "We will release the valuation allowance when there is sufficient positive evidence to support a conclusion that it is more likely than not the deferred tax assets will be realized.",
+    "Of this amount, we expect to recognize $ 709 million in the next 12 months and the rest over the remaining performance obligation period.",
+    "We will release the valuation allowance when there is sufficient positive evidence to support a conclusion that it is more likely than not the deferred tax assets will be realized."
+  ]
+}

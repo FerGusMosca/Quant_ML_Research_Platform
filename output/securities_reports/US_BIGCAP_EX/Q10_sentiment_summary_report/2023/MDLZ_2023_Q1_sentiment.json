@@ -1,0 +1,47 @@
+{
+  "symbol": "MDLZ",
+  "year": 2023,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2027,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.105
+  },
+  "top_positive": [
+    {
+      "sent": "dollars, except per share data) (Unaudited) Mondel\u0113z International Shareholders\u2019 Equity Common Stock Additional Paid-in Capital Retained Earnings Accumulated Other Comprehensive Earnings/ (Losses) Treasury Stock Non-controlling Interest Total Equity Three Months Ended September 30, 2023 Balances at July 1, 2023 $ \u2014 $ 32,148 $ 33,458 $ ( 10,710 ) $ ( 26,249 ) $ 32 $ 28,679 Comprehensive earnings/(losses): Net earnings \u2014 \u2014 984 \u2014 \u2014 4 988 Other comprehensive earnings/(losses), net of income taxes \u2014 \u2014 \u2014 ( 522 ) \u2014 ( 6 ) ( 528 ) Exercise of stock options and issuance of other stock awards \u2014 33 4 \u2014 26 \u2014 63 Common Stock repurchased \u2014 \u2014 ( 57 ) \u2014 ( 57 ) Cash dividends declared ($ 0.425 per share) \u2014 \u2014 ( 580 ) \u2014 \u2014 \u2014 ( 580 ) Dividends paid on noncontrolling interest and other activities \u2014 \u2014 \u2014 \u2014 \u2014 ( 5 ) ( 5 ) Balances at September 30, 2023 $ \u2014 $ 32,181 $ 33,866 $ ( 11,232 ) $ ( 26,280 ) $ 25 $ 28,560 Nine Months Ended September 30, 2023 Balances at January 1, 2023 $ \u2014 $ 32,143 $ 31,481 $ ( 10,947 ) $ ( 25,794 ) $ 37 $ 26,920 Comprehensive earnings/(losses): Net earnings \u2014 \u2014 4,009 \u2014 \u2014 9 4,018 Other comprehensive earnings/(losses), net of income taxes \u2014 \u2014 \u2014 ( 285 ) \u2014 ( 12 ) ( 297 ) Exercise of stock options and issuance of other stock awards \u2014 38 ( 5 ) \u2014 176 \u2014 209 Common Stock repurchased \u2014 \u2014 \u2014 \u2014 ( 662 ) \u2014 ( 662 ) Cash dividends declared ($ 1.195 per share) \u2014 \u2014 ( 1,633 ) \u2014 \u2014 \u2014 ( 1,633 ) Dividends paid on noncontrolling interest and other activities \u2014 \u2014 14 \u2014 \u2014 ( 9 ) 5 Balances at September 30, 2023 $ \u2014 $ 32,181 $ 33,866 $ ( 11,232 ) $ ( 26,280 ) $ 25 $ 28,560 Three Months Ended September 30, 2022 Balances at July 1, 2022 $ \u2014 $ 32,086 $ 31,431 $ ( 10,638 ) $ ( 25,368 ) $ 42 $ 27,553 Comprehensive earnings/(losses): Net earnings \u2014 \u2014 532 \u2014 \u2014 1 533 Other comprehensive earnings/(losses), net of income taxes \u2014 \u2014 \u2014 ( 593 ) \u2014 ( 12 ) ( 605 ) Exercise of stock options and issuance of other stock awards \u2014 30 ( 2 ) \u2014 25 \u2014 53 Common Stock repurchased \u2014 \u2014 \u2014 \u2014 ( 338 ) \u2014 ( 338 ) Cash dividends declared ($ 0.385 per share) \u2014 \u2014 ( 524 ) \u2014 \u2014 \u2014 ( 524 ) Dividends paid on noncontrolling interest and other activities \u2014 \u2014 \u2014 \u2014 \u2014 ( 2 ) ( 2 ) Balances at September 30, 2022 $ \u2014 $ 32,116 $ 31,437 $ ( 11,231 ) $ ( 25,681 ) $ 29 $ 26,670 Nine Months Ended September 30, 2022 Balances at January 1, 2022 $ \u2014 $ 32,097 $ 30,806 $ ( 10,624 ) $ ( 24,010 ) $ 54 $ 28,323 Comprehensive earnings/(losses): Net earnings \u2014 \u2014 2,134 \u2014 \u2014 8 2,142 Other comprehensive earnings/(losses), net of income taxes \u2014 \u2014 \u2014 ( 607 ) \u2014 ( 27 ) ( 634 ) Exercise of stock options and issuance of other stock awards \u2014 19 ( 13 ) \u2014 172 \u2014 178 Common Stock repurchased \u2014 \u2014 \u2014 \u2014 ( 1,843 ) \u2014 ( 1,843 ) Cash dividends declared ($ 1.085 per share) \u2014 \u2014 ( 1,493 ) \u2014 \u2014 \u2014 ( 1,493 ) Dividends paid on noncontrolling interest and other activities \u2014 \u2014 3 \u2014 \u2014 ( 6 ) ( 3 ) Bal\naccounting.",
+      "score": 0.9913
+    },
+    {
+      "sent": "Performance Share Units and Other Stock-Based Awards Our performance share unit (PSU), deferred stock unit (DSU) and other stock-based activity is reflected below: Number of Shares Grant\u00a0Date Weighted-Average Fair Value Per Share (4) Weighted-Average Aggregate Fair Value (3) Balance at January 1, 2023 4,451,674 $ 60.12 Annual grant to eligible employees: Mar 2, 2023 Performance share units 895,410 68.59 Deferred stock units 578,570 65.36 Additional shares granted (1) 728,381 Various 65.73 Total shares granted 2,202,361 66.79 $ 147 million Vested (2) (3) ( 1,658,391 ) 62.71 $ 104 million Forfeited (2) ( 247,953 ) 62.58 Balance\u00a0at\u00a0September 30, 2023 4,747,691 62.18 (1) Includes PSUs and DSUs.",
+      "score": 0.9844
+    },
+    {
+      "sent": "We believe the successful implementation of our strategic priorities and leveraging of our attractive global footprint, strong core of iconic global and local brands, marketing, sales, distribution and cost excellence capabilities, and top talent with a growth mindset, will drive consistent top- and bottom-line growth, enabling us to continue to create long-term value for our shareholders.",
+      "score": 0.9803
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "However, if a serious economic or credit market crisis ensues or other adverse developments arise, it could have a material adverse effect on our liquidity, results of operations and financial condition.",
+      "score": -0.7783
+    },
+    {
+      "sent": "However, if a serious economic or credit market crisis ensues or other adverse developments arise, it could have a material adverse effect on our liquidity, results of operations and financial condition.",
+      "score": -0.7783
+    },
+    {
+      "sent": "However, if a serious economic or credit market crisis ensues or other adverse developments arise, it could have a material adverse effect on our liquidity, results of operations and financial condition.",
+      "score": -0.7783
+    }
+  ],
+  "forward_snippets": [
+    "We continue to make targeted repairs on both our plants and have partially reopened and restarted limited production in both plants.",
+    "We continue to consolidate both our Ukrainian and Russian subsidiaries and continue to evaluate our ability to control our operating activities and businesses on an ongoing basis.",
+    "We base our estimates on historical experience, expectations of future impacts and other assumptions that we believe are reasonable.",
+    "We continue to make targeted repairs on both our plants and have partially reopened and restarted limited production in both plants.",
+    "We continue to consolidate both our Ukrainian and Russian subsidiaries and continue to evaluate our ability to control our operating activities and businesses on an ongoing basis."
+  ]
+}

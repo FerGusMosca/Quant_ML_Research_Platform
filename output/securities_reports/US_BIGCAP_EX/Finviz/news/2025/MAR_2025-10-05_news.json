@@ -1,0 +1,606 @@
+{
+  "symbol": "MAR",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-04",
+      "time": "06:00",
+      "title": "What is wrong with low end hotels?\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/wrong-low-end-hotels-100003802.html"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "11:31",
+      "title": "Analyst Report: Host Hotels & Resorts, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/0a144189-53d2-35c2-8168-4f5550a36e7d/analyst-report%3A-host-hotels-%26.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "05:03",
+      "title": "Africa emerges as the next battleground for global hotel brands\n\n\n(Hotel Management Network)",
+      "link": "https://finance.yahoo.com/m/ca3d059f-aec6-35cf-897d-6d28cbaff953/africa-emerges-as-the-next.html"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "13:42",
+      "title": "Hotel guests are slamming resort fees as the biggest scam in travel\n\n\n(MarketWatch)",
+      "link": "https://finance.yahoo.com/m/5f506d3f-eea4-3a4a-8fd6-4910e986dd19/hotel-guests-are-slamming.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:16AM",
+      "title": "Marriott launches outdoors-focused digital platform, collection brand\n\n\n(Hotel Dive)",
+      "link": "https://finance.yahoo.com/m/705f2aca-0a50-3ce3-be84-94c0f2006f53/marriott-launches.html"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "15:39",
+      "title": "Hotel guests are slamming resort fees as 'the biggest scam in travel'\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/hotel-guests-are-slamming-resort-fees-as-the-biggest-scam-in-travel-fb8d7192?mod=mw_FV"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "08:45",
+      "title": "ON SALE: TICKETS FOR THE HIGHLY ANTICIPATED 17th ANNUAL RITZ-CARLTON CAYMAN COOKOUT AVAILABLE OCTOBER 1\n\n\n(PR Newswire)",
+      "link": "/news/178242/on-sale-tickets-for-the-highly-anticipated-17th-annual-ritz-carlton-cayman-cookout-available-october-1"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "05:12",
+      "title": "KSL Capital Partners acquires Westin Hilton Head resort\n\n\n(Hotel Dive)",
+      "link": "https://finance.yahoo.com/m/3dc90a80-b25d-328b-837e-b0bd250577c8/ksl-capital-partners-acquires.html"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "12:24",
+      "title": "Market Cap Game Show: Planes, Steaks & Automobiles\n\n\n(Motley Fool)",
+      "link": "/news/175989/market-cap-game-show-planes-steaks-automobiles"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "07:44",
+      "title": "Marriott signs agreements to launch Series hotel brand in US\n\n\n(Hotel Management Network)",
+      "link": "https://finance.yahoo.com/m/39c40649-69b5-32a1-b332-4957a4d382f1/marriott-signs-agreements-to.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:09AM",
+      "title": "Series by Marriott enters US amid demand for upscale collection brands\n\n\n(Hotel Dive)",
+      "link": "https://finance.yahoo.com/m/e27669f9-6d9d-392a-8407-4c590662f738/series-by-marriott-enters-us.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:34AM",
+      "title": "3 Unpopular Stocks We Keep Off Our Radar\n\n\n(StockStory)",
+      "link": "/news/174127/3-unpopular-stocks-we-keep-off-our-radar"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "09:00",
+      "title": "Marriott International and Hawkins Way Capital Announce Five Signed Agreements to Launch Series by Marriott in the United States\n\n\n(PR Newswire)",
+      "link": "/news/173263/marriott-international-and-hawkins-way-capital-announce-five-signed-agreements-to-launch-series-by-marriott-in-the-united-states"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "14:13",
+      "title": "Analyst Report: Pebblebrook Hotel Trust\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/4fa53d7c-b7b7-31a5-9f45-04889e942679/analyst-report%3A-pebblebrook.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:10AM",
+      "title": "Marriott bets on independent hotels with collection brand expansion\n\n\n(Hotel Dive)",
+      "link": "https://finance.yahoo.com/m/e5d7219c-1aa9-3b0e-94f6-605cb58983c6/marriott-bets-on-independent.html"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "02:43",
+      "title": "Jim Cramer Says \"Marriott Was Crushed\" But it \"Makes No Sense at All\"\n\n\n(Insider Monkey)",
+      "link": "/news/171342/jim-cramer-says-marriott-was-crushed-but-it-makes-no-sense-at-all"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "03:58",
+      "title": "3 Top Stocks to Buy and Hold Forever\n\n\n(Motley Fool)",
+      "link": "/news/168114/3-top-stocks-to-buy-and-hold-forever"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "07:48",
+      "title": "Marriott partners with Kuzu Group to launch St Regis brand in Bodrum, T\u00fcrkiye\n\n\n(Hotel Management Network)",
+      "link": "https://finance.yahoo.com/m/1a4de7cc-b342-3d5d-9fbe-50d79ac7053c/marriott-partners-with-kuzu.html"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "14:57",
+      "title": "Analyst Report: Host Hotels & Resorts, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/fa87d6b4-8f43-37cc-9b21-e20fa6f02107/analyst-report%3A-host-hotels-%26.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:35AM",
+      "title": "Marriotts Moxy brand makes debut in Northern Ireland\n\n\n(Hotel Management Network)",
+      "link": "https://finance.yahoo.com/m/cf6d494d-a128-31ca-a99c-d7265692ada0/marriott%E2%80%99s-moxy-brand-makes.html"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "20:19",
+      "title": "Stocks & Index Items to Watch from August's CPI Data\n\n\n(Zacks)",
+      "link": "/news/164380/stocks-index-items-to-watch-from-augusts-cpi-data"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:26AM",
+      "title": "Marriotts StudioRes expansion continues with tenth hotel\n\n\n(Hotel Management Network)",
+      "link": "https://finance.yahoo.com/m/c8b0f615-8328-3210-b299-045d2c004fd9/marriott%E2%80%99s-studiores.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:15AM",
+      "title": "Marriott opens first dual-branded hotel in Las Vegas\n\n\n(Hotel Dive)",
+      "link": "https://finance.yahoo.com/m/a16b67a8-1229-3bea-b01d-c64fe7ae389b/marriott-opens-first.html"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "08:00",
+      "title": "Marriott International and Noble Investment Group Break Ground on Their 10th StudioRes Hotel, Scaling New Extended Stay Brand\n\n\n(PR Newswire)",
+      "link": "/news/162324/marriott-international-and-noble-investment-group-break-ground-on-their-10th-studiores-hotel-scaling-new-extended-stay-brand"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "09:35",
+      "title": "Yum Brands taps tech chief amid slew of leadership changes\n\n\n(CIO Dive)",
+      "link": "https://finance.yahoo.com/m/06d9ef4e-d5ca-3023-ad47-d3e760d3e79f/yum-brands-taps-tech-chief.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:29AM",
+      "title": "Yotel taps Marriott exec as CEO\n\n\n(Hotel Dive)",
+      "link": "https://finance.yahoo.com/m/f42fa59f-c520-3edf-aa2a-e57dd9c77e88/yotel-taps-marriott-exec-as.html"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "23:33",
+      "title": "Travel and Vacation Providers Stocks Q2 Recap: Benchmarking Marriott (NASDAQ:MAR)\n\n\n(StockStory)",
+      "link": "/news/160855/travel-and-vacation-providers-stocks-q2-recap-benchmarking-marriott-nasdaq-mar"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:29AM",
+      "title": "Marriott strengthens leadership with new senior VP for South Asia\n\n\n(Hotel Management Network)",
+      "link": "https://finance.yahoo.com/m/23f191cd-deb8-314f-98f5-88ab46c597af/marriott-strengthens.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:13AM",
+      "title": "Marriotts W New York  Union Square opens after $100M renovation\n\n\n(Hotel Dive)",
+      "link": "https://finance.yahoo.com/m/eb4e50c8-d0db-3449-83b5-cf881077cb96/marriott%E2%80%99s-w-new-york-%E2%80%93-union.html"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "11:28",
+      "title": "Marriott International Stock: Is MAR Underperforming the Consumer Cyclical Sector?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/717692c8-186a-30b9-b17b-7129f7e3ccc8/marriott-international-stock%3A.html"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "16:34",
+      "title": "Should Investors Buy the Post-Earnings Dip in Salesforce (CRM) Stock?\n\n\n(Zacks)",
+      "link": "/news/158451/should-investors-buy-the-post-earnings-dip-in-salesforce-crm-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:00AM",
+      "title": "Marriott checks out AI agents amid technology transformation\n\n\n(CIO Dive)",
+      "link": "https://finance.yahoo.com/m/457e79e1-8f9b-30d4-8562-b65fecb173f4/marriott-checks-out-ai-agents.html"
+    },
+    {
+      "date": "2025-08-29",
+      "time": "06:39",
+      "title": "Marriott Vacation Clubs boosts presence in Asia Pacific\n\n\n(Hotel Management Network)",
+      "link": "https://finance.yahoo.com/m/c476db50-df55-3f19-9922-1c624a0a78af/marriott-vacation-clubs.html"
+    },
+    {
+      "date": "2025-08-28",
+      "time": "08:00",
+      "title": "Marriott International President and Chief Executive Officer to Speak at Bank of America Gaming and Lodging Conference September 4; Remarks to be Webcast\n\n\n(PR Newswire)",
+      "link": "/news/151951/marriott-international-president-and-chief-executive-officer-to-speak-at-bank-of-america-gaming-and-lodging-conference-september-4-remarks-to-be-webcast"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:29AM",
+      "title": "Hotel Tech-in: Marriott takes holistic wellness high-tech across luxury portfolio\n\n\n(Hotel Dive)",
+      "link": "https://finance.yahoo.com/m/d2eb6da7-c2cf-31ed-8953-7fa3f8cbfe98/hotel-tech-in%3A-marriott-takes.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:28AM",
+      "title": "Accor appoints Ranju Alex as CEO for South Asia to drive growth\n\n\n(Hotel Management Network)",
+      "link": "https://finance.yahoo.com/m/a8f826ba-971e-3fa4-818e-e59cbf0e3bc1/accor-appoints-ranju-alex-as.html"
+    },
+    {
+      "date": "2025-08-26",
+      "time": "14:51",
+      "title": "Final Trades: Toast Inc, KeyCorp, Global X Cybersecurity ETF and Marriott International\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=eTsNHHjQNTE"
+    },
+    {
+      "date": "2025-08-23",
+      "time": "05:23",
+      "title": "Are Wall Street Analysts Bullish on Marriott International Stock?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/4f937e76-5f65-3b57-888e-e71bd1c25149/are-wall-street-analysts.html"
+    },
+    {
+      "date": "2025-08-22",
+      "time": "05:22",
+      "title": "Aimbridge names Chris ODonnell president for select service\n\n\n(Hotel Dive)",
+      "link": "https://finance.yahoo.com/m/6ea822bb-e903-344c-a071-b35a6f70da5d/aimbridge-names-chris.html"
+    },
+    {
+      "date": "2025-08-18",
+      "time": "09:21",
+      "title": "Eli Lilly Taps High-Grade Bond Market With Rare 40-Year Paper\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/eli-lilly-taps-high-grade-132106942.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:45AM",
+      "title": "Marriott Executive Apartments launches urban retreat in Kuala Lumpur\n\n\n(Hotel Management Network)",
+      "link": "https://finance.yahoo.com/m/d5d03a39-7b75-3584-8440-d446af9d8168/marriott-executive-apartments.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:01AM",
+      "title": "3 Reasons MAR is Risky and 1 Stock to Buy Instead\n\n\n(StockStory)",
+      "link": "/news/142846/3-reasons-mar-is-risky-and-1-stock-to-buy-instead"
+    },
+    {
+      "date": "2025-08-14",
+      "time": "14:46",
+      "title": "Cinnamon Beach Vacations Now Offers Luxury and Premium Rental Properties on Homes & Villas by Marriott Bonvoy\n\n\n(Business Wire)",
+      "link": "https://finance.yahoo.com/news/cinnamon-beach-vacations-now-offers-184600047.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Marriott Executive Apartments Expands in Malaysia, Introducing an Enriching Urban Retreat in the Heart of Kuala Lumpur\n\n\n(PR Newswire)",
+      "link": "https://finance.yahoo.com/news/marriott-executive-apartments-expands-malaysia-130000984.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:12AM",
+      "title": "Construction commences on The Dunes Fort Lauderdale hotel\n\n\n(World Construction Network)",
+      "link": "https://finance.yahoo.com/m/2d1f52eb-c1ba-3c8d-967d-ffaf07746d30/construction-commences-on-the.html"
+    },
+    {
+      "date": "2025-08-13",
+      "time": "12:56",
+      "title": "Travel-Industry Outlook Stabilizes as Higher-Income Americans Pack Their Bags\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/c18e71be-f2e7-34a6-b44d-afb21639b163/travel-industry-outlook.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:06AM",
+      "title": "Moss Breaks Ground on The Dunes Fort Lauderdale, an Autograph Collection Hotel\n\n\n(Business Wire)",
+      "link": "https://finance.yahoo.com/news/moss-breaks-ground-dunes-fort-140600200.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:55AM",
+      "title": "Peachtree Group Receives USCIS Approval for EB-5 Funded Madison Bradenton Multifamily Development\n\n\n(Business Wire)",
+      "link": "https://finance.yahoo.com/news/peachtree-group-receives-uscis-approval-125500362.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:33AM",
+      "title": "Hotel CEOs weigh in on widespread US RevPAR declines\n\n\n(Hotel Dive)",
+      "link": "https://finance.yahoo.com/m/0f103011-a6b9-3d07-9da7-6409483e259f/hotel-ceos-weigh-in-on.html"
+    },
+    {
+      "date": "2025-08-12",
+      "time": "23:24",
+      "title": "MAR Q2 Deep Dive: International Strength and Brand Expansion Shape Outlook\n\n\n(StockStory)",
+      "link": "/news/138530/mar-q2-deep-dive-international-strength-and-brand-expansion-shape-outlook"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:13PM",
+      "title": "5 Must-Read Analyst Questions From Marriott's Q2 Earnings Call\n\n\n(StockStory)",
+      "link": "/news/138698/5-must-read-analyst-questions-from-marriotts-q2-earnings-call"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "HHM Hotels Builds Out Senior Executive Team Hiring Jeremiah Galvin\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/hhm-hotels-builds-senior-executive-140000853.html"
+    },
+    {
+      "date": "2025-08-11",
+      "time": "10:46",
+      "title": "Remington Hospitality appoints chief commercial officer\n\n\n(Hotel Dive)",
+      "link": "https://finance.yahoo.com/m/7ac2ff8b-902e-38f0-8e9c-336c1ba83182/remington-hospitality.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:51AM",
+      "title": "Golden State Perks Await in Paradise: Hacienda del Mar Unveils Limited-Time California Resident Offer\n\n\n(PR Newswire)",
+      "link": "https://finance.yahoo.com/news/golden-state-perks-await-paradise-125100161.html"
+    },
+    {
+      "date": "2025-08-08",
+      "time": "07:25",
+      "title": "Sonder Secures New Funding, Amends Marriott Agreement\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/sonder-secures-funding-amends-marriott-112555593.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:51AM",
+      "title": "Prediction: This Dividend Stock Will Beat the Market Over the Next 5 Years\n\n\n(Motley Fool)",
+      "link": "/news/133240/prediction-this-dividend-stock-will-beat-the-market-over-the-next-5-years"
+    },
+    {
+      "date": "2025-08-07",
+      "time": "13:00",
+      "title": "Marriott International Declares Quarterly Cash Dividend and Increases Share Buyback Authorization\n\n\n(PR Newswire)",
+      "link": "/news/132326/marriott-international-declares-quarterly-cash-dividend-and-increases-share-buyback-authorization"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:33AM",
+      "title": "/DISREGARD RELEASE: Marriott International/\n\n\n(PR Newswire)",
+      "link": "https://finance.yahoo.com/news/american-express-marriott-international-launch-083400678.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:17AM",
+      "title": "Holiday Inn owner IHG's profit rises, notes easing pressures after US slowdown\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/holiday-inn-owner-ihgs-us-061751762.html"
+    },
+    {
+      "date": "2025-08-06",
+      "time": "22:18",
+      "title": "Jim Cramer Says a Pullback After Marriott's Earning is Usually a \"Buying Opportunity\"\n\n\n(Insider Monkey)",
+      "link": "/news/131169/jim-cramer-says-a-pullback-after-marriotts-earning-is-usually-a-buying-opportunity"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:07PM",
+      "title": "Airbnb forecasts Q3 revenue above estimates; plans $6 billion share buyback\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/airbnb-forecasts-quarterly-revenue-above-200754622.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Marriott International and La Tabl\u00e9e Des Chefs Combat Food Insecurity with Announcement of 2025 Ready-To-Cook Soups Goal\n\n\n(PR Newswire)",
+      "link": "https://finance.yahoo.com/news/marriott-international-la-tabl-e-133000404.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:04AM",
+      "title": "From Hyatt to Marriott: LA lifestyle hotel undergoes brand conversion\n\n\n(Hotel Dive)",
+      "link": "https://finance.yahoo.com/m/5d39a084-ca6a-3e22-b6e6-3d5b9e0b3b75/from-hyatt-to-marriott%3A-la.html"
+    },
+    {
+      "date": "2025-08-05",
+      "time": "21:00",
+      "title": "An All-Inclusive Resort for $900 a Night? I Put One to the Test\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/e6f11c3f-4a2f-328c-a375-91407b8aebfd/an-all-inclusive-resort-for.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:06PM",
+      "title": "Analyst Report: Marriott International, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/a062f7db-fec2-3977-bd90-5264d8d8d634/analyst-report%3A-marriott.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:25PM",
+      "title": "From ingredient costs to sagging demand, tariffs further pinch company earnings\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/ingredient-costs-sagging-demand-tariffs-162541064.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:23PM",
+      "title": "Marriott CEO Highlights Luxury Spend Offset By Economic Uncertainty, Reduced Government And Business Travel\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/marriott-ceo-highlights-luxury-spend-162308659.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:14PM",
+      "title": "Marriott Trims Its Full Year Outlook\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/video/marriott-trims-full-outlook-161405618.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:07AM",
+      "title": "Marriott Stock Up as Q2 Earnings Beat Estimates, RevPAR Rises Y/Y\n\n\n(Zacks)",
+      "link": "/news/128451/marriott-stock-up-as-q2-earnings-beat-estimates-revpar-rises-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Compared to Estimates, Marriott (MAR) Q2 Earnings: A Look at Key Metrics\n\n\n(Zacks)",
+      "link": "/news/128372/compared-to-estimates-marriott-mar-q2-earnings-a-look-at-key-metrics"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:41AM",
+      "title": "Marriott's (NASDAQ:MAR) Q2 Sales Beat Estimates\n\n\n(StockStory)",
+      "link": "/news/128088/marriotts-nasdaq-mar-q2-sales-beat-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:33AM",
+      "title": "Caterpillar tariff warning, Yum misses, Marriott cuts outlook\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/caterpillar-tariff-warning-yum-misses-133355816.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:21AM",
+      "title": "Pfizer, Caterpillar and Marriott: Market Movers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/pfizer-caterpillar-marriott-market-movers-122100343.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:10AM",
+      "title": "Marriott International (MAR) Surpasses Q2 Earnings and Revenue Estimates\n\n\n(Zacks)",
+      "link": "/news/128003/marriott-international-mar-surpasses-q2-earnings-and-revenue-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:47AM",
+      "title": "Marriott earnings top estimates despite economic uncertainty\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/marriott-earnings-top-estimates-despite-114745532.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:42AM",
+      "title": "Marriott International Narrows Guidance After Gains\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/earnings/marriott-international-narrows-guidance-after-gains-caa6e574?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:07AM",
+      "title": "Marriott: Q2 Earnings Snapshot\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/marriott-q2-earnings-snapshot-110723275.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:06AM",
+      "title": "Marriott cuts 2025 revenue forecast on soft travel demand\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/marriott-cuts-2025-revenue-forecast-110604597.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Marriott International Reports Second Quarter 2025 Results\n\n\n(PR Newswire)",
+      "link": "/news/127641/marriott-international-reports-second-quarter-2025-results"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:51AM",
+      "title": "Disney Earnings, New Tariff Deadline, PMIs: What to Watch This Week\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/a971e932-3d29-35ec-8ccd-f0baea8ff9a4/disney-earnings%2C-new-tariff.html"
+    },
+    {
+      "date": "2025-08-04",
+      "time": "13:04",
+      "title": "Marriott Q2: Gaming, lodging, & leisure earnings preview\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/marriott-q2-gaming-lodging-leisure-170437126.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:52AM",
+      "title": "Travel guru The Points Guy wants to revamp the luxury travel points system with Journey\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/travel-guru-points-guy-wants-115213402.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:23AM",
+      "title": "McDonalds Earnings, New Tariff Deadline, PMIs: What to Watch This Week\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/e823428f-68b3-337a-a897-c0f9dce9b878/mcdonald%E2%80%99s-earnings%2C-new.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:00AM",
+      "title": "The Westin Singapore Launches Exclusive \"Move Well Marathon Package\" for SCSM 2025 Participants\n\n\n(PR Newswire)",
+      "link": "https://finance.yahoo.com/news/westin-singapore-launches-exclusive-move-070000471.html"
+    },
+    {
+      "date": "2025-08-03",
+      "time": "23:03",
+      "title": "Marriott (MAR) Q2 Earnings Report Preview: What To Look For\n\n\n(StockStory)",
+      "link": "/news/125900/marriott-mar-q2-earnings-report-preview-what-to-look-for"
+    },
+    {
+      "date": "2025-08-02",
+      "time": "01:00",
+      "title": "Consumer Confidence Is Down. Marriott's CEO Explains Why the Appetite for Travel Won't Waver.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/consumer-confidence-is-down-marriotts-ceo-explains-why-the-appetite-for-travel-wont-waver-0335081b?mod=bar_FV"
+    },
+    {
+      "date": "2025-08-01",
+      "time": "16:38",
+      "title": "McDonalds, Palantir, Novo Nordisk Earnings: What to Watch Next Week\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/2320cff2-8e3a-3a57-abdf-ddec6cad507c/mcdonald%E2%80%99s%2C-palantir%2C-novo.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Marriott to Report Q2 Earnings: What's in Store for the Stock?\n\n\n(Zacks)",
+      "link": "/news/124767/marriott-to-report-q2-earnings-whats-in-store-for-the-stock"
+    },
+    {
+      "date": "2025-07-31",
+      "time": "09:15",
+      "title": "Exploring Analyst Estimates for Marriott (MAR) Q2 Earnings, Beyond Revenue and EPS\n\n\n(Zacks)",
+      "link": "/news/122700/exploring-analyst-estimates-for-marriott-mar-q2-earnings-beyond-revenue-and-eps"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Marriott International Elevates Caribbean Escapes Through Celestial Connections\n\n\n(PR Newswire)",
+      "link": "https://finance.yahoo.com/news/marriott-international-elevates-caribbean-escapes-130000173.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:45AM",
+      "title": "Hilton Grand Vacations (HGV) Q2 Earnings and Revenues Lag Estimates\n\n\n(Zacks)",
+      "link": "/news/122613/hilton-grand-vacations-hgv-q2-earnings-and-revenues-lag-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:58AM",
+      "title": "Pacific Reach and Dilawri partner to acquire the Ritz-Carlton in Toronto\n\n\n(Hotel Management Network)",
+      "link": "https://finance.yahoo.com/m/44a450ea-d4c6-3b24-b308-327dcc1bd15d/pacific-reach-and-dilawri.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:25AM",
+      "title": "Niio Launches Streaming Art & Signage Service, Bringing Curated Visual Art Experiences to Every Screen\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/niio-launches-streaming-art-signage-102500962.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:39AM",
+      "title": "1 Profitable Stock with Exciting Potential and 2 We Turn Down\n\n\n(StockStory)",
+      "link": "/news/123431/1-profitable-stock-with-exciting-potential-and-2-we-turn-down"
+    },
+    {
+      "date": "2025-07-30",
+      "time": "15:46",
+      "title": "Analyst Report: Pebblebrook Hotel Trust\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/ca978557-9c62-337d-aa39-c82e58966724/analyst-report%3A-pebblebrook.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Choice Hotels (CHH) Earnings Expected to Grow: Should You Buy?\n\n\n(Zacks)",
+      "link": "/news/121066/choice-hotels-chh-earnings-expected-to-grow-should-you-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:26AM",
+      "title": "JW Marriott brand hotel to debut in Uzbekistan\n\n\n(Hotel Management Network)",
+      "link": "https://finance.yahoo.com/m/3e002548-5fed-35bb-9a60-d98560d6fc38/jw-marriott-brand-hotel-to.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:00AM",
+      "title": "Hyatt Has Room for Improvement. The Stock Is a Buy.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/buy-hyatt-stock-price-pick-6524dc09?mod=bar_FV"
+    },
+    {
+      "date": "2025-07-29",
+      "time": "13:00",
+      "title": "Pacific Reach and Dilawri Acquire The Ritz-Carlton, Toronto\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/pacific-reach-dilawri-acquire-ritz-170000106.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Marriott International (MAR) Earnings Expected to Grow: What to Know Ahead of Next Week's Release\n\n\n(Zacks)",
+      "link": "/news/119220/marriott-international-mar-earnings-expected-to-grow-what-to-know-ahead-of-next-weeks-release"
+    }
+  ]
+}

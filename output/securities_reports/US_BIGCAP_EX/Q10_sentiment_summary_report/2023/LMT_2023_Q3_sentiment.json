@@ -1,0 +1,47 @@
+{
+  "symbol": "LMT",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1419,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.171
+  },
+  "top_positive": [
+    {
+      "sent": "Description 3.1 Bylaws of Lockheed Martin Corporation, as amended and restated effective February 22, 2023 (incorporated by reference to Exhibit 3.1 to Lockheed Martin Corporation's Current Report on Form 8-K filed with the SEC on February 23, 2023) 10.1 Form of 2023 Annual Restricted Stock Unit Award Agreement under the Lockheed Martin Corporation 2020 Incentive Performance Award Plan 10.2 Form of Performance Stock Unit Award Agreement (2023 - 2025 Performance Period) under the Lockheed Martin Corporation 2020 Incentive Performance Award Plan 10.3 Form of Long Term Incentive Performance Award Agreement (2023 - 2025 Performance Period) under the Lockheed Martin Corporation 2020 Incentive Performance Award Plan 10.4 Amendment to Outstanding Long-Term Incentive Performance and Performance Stock Unit Award Agreements (effective February 22, 2023) 10.5 Lockheed Martin Corporation 2021 Management Incentive Compensation Plan, amended and restated effective January 1, 2023 15 Acknowledgment of Independent Registered Public Accounting Firm 31.1 Certification of James D.",
+      "score": 0.9953
+    },
+    {
+      "sent": "Description 3.1 Bylaws of Lockheed Martin Corporation, as amended and restated effective February 22, 2023 (incorporated by reference to Exhibit 3.1 to Lockheed Martin Corporation's Current Report on Form 8-K filed with the SEC on February 23, 2023) 10.1 Form of 2023 Annual Restricted Stock Unit Award Agreement under the Lockheed Martin Corporation 2020 Incentive Performance Award Plan 10.2 Form of Performance Stock Unit Award Agreement (2023 - 2025 Performance Period) under the Lockheed Martin Corporation 2020 Incentive Performance Award Plan 10.3 Form of Long Term Incentive Performance Award Agreement (2023 - 2025 Performance Period) under the Lockheed Martin Corporation 2020 Incentive Performance Award Plan 10.4 Amendment to Outstanding Long-Term Incentive Performance and Performance Stock Unit Award Agreements (effective February 22, 2023) 10.5 Lockheed Martin Corporation 2021 Management Incentive Compensation Plan, amended and restated effective January 1, 2023 15 Acknowledgment of Independent Registered Public Accounting Firm 31.1 Certification of James D.",
+      "score": 0.9953
+    },
+    {
+      "sent": "8 Table of Contents Lockheed Martin Corporation Notes to Consolidated Financial Statements (unaudited) (continued) NOTE 2\u00a0- EARNINGS PER COMMON SHARE The weighted average number of shares outstanding used to compute earnings per common share were as follows (in\u00a0millions): Quarters Ended March 26, 2023 March 27, 2022 Weighted average common shares outstanding for basic computations 254.7 268.3 Weighted average dilutive effect of equity awards 1.0 0.9 Weighted average common shares outstanding for diluted computations 255.7 269.2 We compute basic and diluted earnings per common share by dividing net earnings by the respective weighted average number of common shares outstanding for the periods presented.",
+      "score": 0.9887
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Army selected Sikorsky\u2019s competitor in the Future Long Range Assault Aircraft Competition, a component of its Future Vertical Lift initiative to replace a portion of its assault and utility helicopter fleet.",
+      "score": -0.8225
+    },
+    {
+      "sent": "Army selected Sikorsky\u2019s competitor in the Future Long Range Assault Aircraft Competition, a component of its Future Vertical Lift initiative to replace a portion of its assault and utility helicopter fleet.",
+      "score": -0.8225
+    },
+    {
+      "sent": "Actual results may differ materially due to factors such as: \u2022 budget uncertainty, the risk of future budget cuts, the impact of continuing resolution funding mechanisms and the debt ceiling and the potential for government shutdowns and changing funding and acquisition priorities; \u2022 our reliance on contracts with the U.S.",
+      "score": -0.802
+    }
+  ],
+  "forward_snippets": [
+    "We base these estimates on historical experience and on various other assumptions that we believe are reasonable under the circumstances, the results of which form the basis for making judgments about the carrying amounts of assets and liabilities that are not readily apparent from other sources.",
+    "We base these estimates on historical experience and on various other assumptions that we believe are reasonable under the circumstances, the results of which form the basis for making judgments about the carrying amounts of assets and liabilities that are not readily apparent from other sources.",
+    "We believe the probability is remote that the outcome of each of these matters, including the legal proceedings described below, will have a material adverse effect on the company as a whole, notwithstanding that the unfavorable resolution of any matter may have a material effect on our net earnings and cash flows in any particular interim reporting period.",
+    "Among the factors that we consider in this assessment are the nature of existing legal proceedings and claims, the asserted or possible damages or loss contingency (if estimable), the progress of the case, existing law and precedent, the opinions or views of legal counsel and other advisers, our experience in similar cases and the experience of other companies, the facts available to us at the time of assessment and how we intend to respond to the proceeding or claim.",
+    "We believe that we have legal and factual defenses to the U.S."
+  ]
+}

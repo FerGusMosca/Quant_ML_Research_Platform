@@ -1,0 +1,47 @@
+{
+  "symbol": "PYPL",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2074,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.177
+  },
+  "top_positive": [
+    {
+      "sent": "The interest earned on our cash and cash equivalents and interest paid on our revolving credit facilities described above is based on variable interest rates; therefore, the exposure to our net income to a change in interest rates is partially mitigated as an increase in rates would increase both interest income and interest expense and a reduction in rates would decrease both interest income and interest expense.",
+      "score": 0.9821
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS\u2019 EQUITY Common Stock Shares Treasury Stock Additional Paid-In Capital Accumulated Other Comprehensive Income (Loss) Retained Earnings Total Equity (In millions) (Unaudited) Balances at December 31, 2021 1,168 $ ( 11,880 ) $ 17,208 $ ( 136 ) $ 16,535 $ 21,727 Net income \u2014 \u2014 \u2014 \u2014 509 509 Foreign CTA \u2014 \u2014 \u2014 ( 95 ) \u2014 ( 95 ) Net investment hedges CTA gains, net \u2014 \u2014 \u2014 21 \u2014 21 Tax expense on net investment hedges CTA gains, net \u2014 \u2014 \u2014 ( 5 ) \u2014 ( 5 ) Unrealized losses on cash flow hedges, net \u2014 \u2014 \u2014 ( 3 ) \u2014 ( 3 ) Unrealized losses on investments, net \u2014 \u2014 \u2014 ( 293 ) \u2014 ( 293 ) Tax benefit on unrealized losses on investments, net \u2014 \u2014 \u2014 67 \u2014 67 Common stock and stock-based awards issued and assumed, net of shares withheld for employee taxes 4 \u2014 ( 273 ) \u2014 \u2014 ( 273 ) Common stock repurchased ( 11 ) ( 1,500 ) \u2014 \u2014 \u2014 ( 1,500 ) Stock-based compensation \u2014 \u2014 447 \u2014 \u2014 447 Other \u2014 \u2014 1 \u2014 \u2014 1 Balances at March 31, 2022 1,161 $ ( 13,380 ) $ 17,383 $ ( 444 ) $ 17,044 $ 20,603 Net loss \u2014 \u2014 \u2014 \u2014 ( 341 ) ( 341 ) Foreign CTA \u2014 \u2014 \u2014 ( 300 ) \u2014 ( 300 ) Net investment hedge CTA gains, net \u2014 \u2014 \u2014 135 \u2014 135 Tax expense on net investment hedges CTA gains, net \u2014 \u2014 \u2014 ( 31 ) \u2014 ( 31 ) Unrealized gains on cash flow hedges, net \u2014 \u2014 \u2014 213 \u2014 213 Tax expense on unrealized gains on cash flow hedges, net \u2014 \u2014 \u2014 ( 11 ) \u2014 ( 11 ) Unrealized losses on investments, net \u2014 \u2014 \u2014 ( 164 ) \u2014 ( 164 ) Tax benefit on unrealized losses on investments, net \u2014 \u2014 \u2014 38 \u2014 38 Common stock and stock-based awards issued and assumed, net of shares withheld for employee taxes 3 \u2014 51 \u2014 \u2014 51 Common stock repurchased ( 8 ) ( 750 ) \u2014 \u2014 \u2014 ( 750 ) Stock-based compensation \u2014 \u2014 324 \u2014 \u2014 324 Balances at June 30, 2022 1,156 $ ( 14,130 ) $ 17,758 $ ( 564 ) $ 16,703 $ 19,767 Net income \u2014 \u2014 \u2014 \u2014 1,330 1,330 Foreign CTA \u2014 \u2014 \u2014 ( 206 ) \u2014 ( 206 ) Net investment hedge CTA gains, net \u2014 \u2014 \u2014 97 \u2014 97 Tax expense on net investment hedges CTA gains, net \u2014 \u2014 \u2014 ( 23 ) \u2014 ( 23 ) Unrealized gains on cash flow hedges, net \u2014 \u2014 \u2014 138 \u2014 138 Tax expense on unrealized gains on cash flow hedges, net \u2014 \u2014 \u2014 ( 7 ) \u2014 ( 7 ) Unrealized losses on investments, net \u2014 \u2014 \u2014 ( 157 ) \u2014 ( 157 ) Tax benefit on unrealized losses on investments, net \u2014 \u2014 \u2014 41 \u2014 41 Common stock and stock-based awards issued and assumed, net of shares withheld for employee taxes 1 \u2014 ( 14 ) \u2014 \u2014 ( 14 ) Common stock repurchased ( 10 ) ( 939 ) \u2014 \u2014 \u2014 ( 939 ) Stock-based compensation \u2014 \u2014 237 \u2014 \u2014 237 Balances at September 30, 2022 1,147 $ ( 15,069 ) $ 17,981 $ ( 681 ) $ 18,033 $ 20,264 7 Table of Contents PayPal Holdings, Inc.",
+      "score": 0.9808
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED BALANCE SHEETS September 30, 2022 December 31, 2021 (In\u00a0millions, except par value) (Unaudited) ASSETS Current assets: Cash and cash equivalents $ 6,659 $ 5,197 Short-term investments 4,190 4,303 Accounts receivable, net 889 800 Loans and interest receivable, net of allowances of $ 478 and $ 491 as of September\u00a030, 2022 and December\u00a031, 2021, respectively 6,002 4,846 Funds receivable and customer accounts 34,824 36,141 Prepaid expenses and other current assets 2,541 1,287 Total current assets 55,105 52,574 Long-term investments 5,215 6,797 Property and equipment, net 1,773 1,909 Goodwill 11,053 11,454 Intangible assets, net 855 1,332 Other assets 2,434 1,737 Total assets $ 76,435 $ 75,803 LIABILITIES AND EQUITY Current liabilities: Accounts payable $ 114 $ 197 Funds payable and amounts due to customers 37,824 38,841 Accrued expenses and other current liabilities 4,638 3,755 Income taxes payable 652 236 Total current liabilities 43,228 43,029 Deferred tax liability and other long-term liabilities 2,702 2,998 Long-term debt 10,241 8,049 Total liabilities 56,171 54,076 Commitments and contingencies (Note 13) Equity: Common stock, $ 0.0001 par value; 4,000 shares authorized; 1,147 and 1,168 shares outstanding as of September\u00a030, 2022 and December\u00a031, 2021, respectively \u2014 \u2014 Preferred stock, $ 0.0001 par value; 100 shares authorized, unissued \u2014 \u2014 Treasury stock at cost, 161 and 132 shares as of September\u00a030, 2022 and December\u00a031, 2021, respectively ( 15,069 ) ( 11,880 ) Additional paid-in-capital 17,981 17,208 Retained earnings 18,033 16,535 Accumulated other comprehensive income (loss) ( 681 ) ( 136 ) Total equity 20,264 21,727 Total liabilities and equity $ 76,435 $ 75,803 The accompanying notes are an integral part of these condensed consolidated financial statements.",
+      "score": 0.9726
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "For those proceedings in which an unfavorable outcome is reasonably possible but not probable, we have disclosed an estimate of the reasonably possible loss or range of losses or we have concluded that an estimate of the reasonably possible loss or range of losses arising directly from the proceeding (i.e., monetary damages or amounts paid in judgment or settlement) are not material.",
+      "score": -0.9505
+    },
+    {
+      "sent": "Financial and third-party risks related to our cryptocurrency product offerings, such as inappropriate access to, theft, or destruction of cryptocurrency assets held by our custodian, insufficient insurance coverage by the custodian to reimburse us for all such losses, the custodian\u2019s failure to maintain effective controls over the custody and settlement services provided to us, the custodian\u2019s inability to purchase or liquidate cryptocurrency holdings, and defaults on financial or performance obligations by the custodian, or other counterparty financial institutions, could significantly harm our business, financial performance, and reputation.",
+      "score": -0.9217
+    },
+    {
+      "sent": "Financial and third-party risks related to our cryptocurrency product offerings, such as inappropriate access to, theft, or destruction of cryptocurrency assets held by our custodian, insufficient insurance coverage by the custodian to reimburse us for all such losses, the custodian\u2019s failure to maintain effective controls over the custody and settlement services provided to us, the custodian\u2019s inability to purchase or liquidate cryptocurrency holdings, and defaults on financial or performance obligations by the custodian, or other counterparty financial institutions, could significantly harm our business, financial performance, and reputation.",
+      "score": -0.9217
+    }
+  ],
+  "forward_snippets": [
+    "We base our estimates on historical experience and various other assumptions which we believe to be reasonable under the circumstances.",
+    "Recent accounting guidance In March 2022, the Financial Accounting Standards Board (\u201cFASB\u201d) issued Accounting Standards Update (\u201cASU\u201d) 2022-02, Troubled Debt Restructurings (\u201cTDRs\u201d) and Vintage Disclosures (Topic 326): Financial Instruments \u2013 Credit Losses .",
+    "This amended guidance will eliminate the accounting designation of a loan modification as a TDR, including eliminating the measurement guidance for TDRs.",
+    "Additionally, this guidance requires entities to disclose gross write-offs by year of origination for financing receivables, such as loans and interest receivable.",
+    "The amended guidance is effective for fiscal years beginning after December 15, 2022 and is required to be applied prospectively, except for the recognition and measurement of TDRs, which can be applied on a modified retrospective basis."
+  ]
+}

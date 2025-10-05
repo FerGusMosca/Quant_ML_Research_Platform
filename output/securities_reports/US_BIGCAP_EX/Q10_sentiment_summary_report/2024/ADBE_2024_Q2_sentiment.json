@@ -1,0 +1,47 @@
+{
+  "symbol": "ADBE",
+  "year": 2024,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1607,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.474
+  },
+  "top_positive": [
+    {
+      "sent": "FAIR VALUE MEASUREMENTS Assets and Liabilities Measured and Recorded at Fair Value on a Recurring Basis The fair value of our financial assets and liabilities at May\u00a031, 2024 was determined using the following inputs: (in millions) Fair Value Measurements at Reporting Date Using Quoted Prices in Active Markets for Identical Assets Significant Other Observable Inputs Significant Unobservable Inputs Total (Level\u00a01) (Level\u00a02) (Level\u00a03) Assets: Cash equivalents: Money market funds $ 7,012 $ 7,012 $ \u2014 $ \u2014 Time deposits 84 84 \u2014 \u2014 Short-term investments: Asset-backed securities 8 \u2014 8 \u2014 Corporate debt securities 201 \u2014 201 \u2014 U.S.",
+      "score": 0.98
+    },
+    {
+      "sent": "FAIR VALUE MEASUREMENTS Assets and Liabilities Measured and Recorded at Fair Value on a Recurring Basis The fair value of our financial assets and liabilities at May\u00a031, 2024 was determined using the following inputs: (in millions) Fair Value Measurements at Reporting Date Using Quoted Prices in Active Markets for Identical Assets Significant Other Observable Inputs Significant Unobservable Inputs Total (Level\u00a01) (Level\u00a02) (Level\u00a03) Assets: Cash equivalents: Money market funds $ 7,012 $ 7,012 $ \u2014 $ \u2014 Time deposits 84 84 \u2014 \u2014 Short-term investments: Asset-backed securities 8 \u2014 8 \u2014 Corporate debt securities 201 \u2014 201 \u2014 U.S.",
+      "score": 0.98
+    },
+    {
+      "sent": "The fair value of derivative instruments as of May\u00a031, 2024 and December\u00a01, 2023 were as follows: (in millions) 2024 2023 Fair Value Asset Derivatives Fair Value Liability Derivatives Fair Value Asset Derivatives Fair Value Liability Derivatives Derivatives designated as hedging instruments: Foreign exchange option contracts $ 44 $ \u2014 $ 42 $ \u2014 Foreign exchange forward contracts 3 \u2014 1 \u2014 Derivatives not designated as hedging instruments: Foreign exchange forward contracts 4 4 9 4 Total derivatives $ 51 $ 4 $ 52 $ 4 For the three and six months ended May\u00a031, 2024 and June\u00a02, 2023, gains and losses on derivative instruments, net of tax, recognized in our condensed consolidated statements of comprehensive income and the effects of derivative instruments on our condensed consolidated statements of income were immaterial.",
+      "score": 0.9705
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "A disruption, infiltration or failure of our systems, data centers or operations, or those of our third-party service providers due to a major earthquake, other natural disasters, including climate-related events (such as drought, water security, heat waves, cold waves, wildfires and poor air quality), power shutoff or loss, telecommunications failure, epidemic, pandemic, war, terrorist attack or other catastrophic event, could cause interruptions to our systems and business operations, damage to critical infrastructure, loss of intellectual property, data security breaches and data loss.",
+      "score": -0.9874
+    },
+    {
+      "sent": "Risks Related to the Operation of Our Business Service interruptions or failures of our or third-party information technology systems may impair the availability of our products, services and solutions, which may expose us to liability, damage our reputation and harm our future financial results.",
+      "score": -0.9349
+    },
+    {
+      "sent": "Risks Related to the Operation of Our Business Service interruptions or failures of our or third-party information technology systems may impair the availability of our products, services and solutions, which may expose us to liability, damage our reputation and harm our future financial results.",
+      "score": -0.9349
+    }
+  ],
+  "forward_snippets": [
+    "Incremental costs of obtaining a contract with a customer are capitalized if we expect the benefit of those costs to be longer than one year and primarily relate to sales commissions paid to our sales force personnel.",
+    "For debt securities in unrealized loss positions, we determine whether any portion of the decline in fair value below the amortized cost basis is due to credit-related factors if we neither intend to sell nor anticipate that it is more likely than not that we will be required to sell prior to recovery of the amortized cost basis.",
+    "For debt securities in unrealized loss positions, we determine whether any portion of the decline in fair value below the amortized cost basis is due to credit-related factors if we neither intend to sell nor anticipate that it is more likely than not that we will be required to sell prior to recovery of the amortized cost basis.",
+    "We believe the estimated fair value of these indemnification agreements in excess of applicable insurance coverage is minimal.",
+    "However, we believe that we have valid defenses with respect to the legal matters pending against us."
+  ]
+}

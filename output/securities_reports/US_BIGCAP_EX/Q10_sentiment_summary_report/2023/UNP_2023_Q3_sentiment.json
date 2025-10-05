@@ -1,0 +1,47 @@
+{
+  "symbol": "UNP",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.166,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.136
+  },
+  "top_positive": [
+    {
+      "sent": "The table below represents shares repurchased under repurchase programs in the three months ended March 31, 2023 and 2022 : Number of Shares Purchased Average Price Paid [a] 2023 2022 2023 2022 First quarter [b] 2,908,703 11,014,201 $ 203.19 $ 249.95 Remaining number of shares that may be repurchased under current authority 80,998,608 [a] In the period of the final settlement, the average price paid under the accelerated share repurchase programs is calculated based\u00a0on the total program value less the value assigned to the initial delivery of shares.",
+      "score": 0.9287
+    },
+    {
+      "sent": "The table below represents shares repurchased under repurchase programs in the three months ended March 31, 2023 and 2022 : Number of Shares Purchased Average Price Paid [a] 2023 2022 2023 2022 First quarter [b] 2,908,703 11,014,201 $ 203.19 $ 249.95 Remaining number of shares that may be repurchased under current authority 80,998,608 [a] In the period of the final settlement, the average price paid under the accelerated share repurchase programs is calculated based\u00a0on the total program value less the value assigned to the initial delivery of shares.",
+      "score": 0.9287
+    },
+    {
+      "sent": "The table below represents shares repurchased under repurchase programs in the three months ended March 31, 2023 and 2022 : Number of Shares Purchased Average Price Paid [a] 2023 2022 2023 2022 First quarter [b] 2,908,703 11,014,201 $ 203.19 $ 249.95 Remaining number of shares that may be repurchased under current authority 80,998,608 [a] In the period of the final settlement, the average price paid under the accelerated share repurchase programs is calculated based\u00a0on the total program value less the value assigned to the initial delivery of shares.",
+      "score": 0.9287
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Other \u2013 Other expenses include state and local taxes; freight, equipment, and property damage; utilities; insurance; personal injury; environmental remediation; employee travel; telephone and cellular; computer software; bad debt; and other general expenses.",
+      "score": -0.9001
+    },
+    {
+      "sent": "Forward-looking statements and information also include any other statements or information in this report (including information incorporated herein by reference) regarding: potential impacts of public health crises, including the outbreak of pandemic or contagious disease, such as the coronavirus and its variant strains\u00a0(COVID)\u037e the Russian Ukraine conflict on our business operations, financial results, liquidity, and financial position, and on the world economy (including our customers, employees, and supply chains), including as a result of fluctuations in volume and carloadings\u037e \n 142 $ 113 Ties 120 111 Ballast 48 44 Other [a] 154 113 Total road infrastructure replacements 464 381 Line expansion and other capacity projects 23 70 Commercial facilities 63 28 Total capacity and commercial facilities 86 98 Locomotives and freight cars [b] 136 239 Technology and other 86 130 Total cash capital investments [c] $ 772 $ 848 [a] Other includes bridges and tunnels, signals, other road assets, and road work equipment.",
+      "score": -0.8555
+    },
+    {
+      "sent": "Volume declines were driven by a weak freight market for domestic intermodal due to high inventories and inflationary pressures impacting consumer demand, lower forest product shipments due to a softening housing market, lower coal shipments due to repeated weather-related outages, and a softening export grain market.",
+      "score": -0.8442
+    }
+  ],
+  "forward_snippets": [
+    "While we believe that we have strong defenses to the complaint and will vigorously defend the case, there is no assurance regarding the ultimate outcome.",
+    "We do not have any reason to believe that we will be required to make any material payments under these indemnity provisions.",
+    "We expect to fund any share repurchases under this program through cash generated from operations, the sale or lease of various operating and non-operating properties, debt issuances, and cash on hand.",
+    "We do not have any reason to believe that we will be required to make any material payments under these indemnity provisions.",
+    "We expect to fund any share repurchases under this program through cash generated from operations, the sale or lease of various operating and non-operating properties, debt issuances, and cash on hand."
+  ]
+}

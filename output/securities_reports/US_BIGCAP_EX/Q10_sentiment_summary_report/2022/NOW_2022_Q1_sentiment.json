@@ -1,0 +1,47 @@
+{
+  "symbol": "NOW",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2672,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.14
+  },
+  "top_positive": [
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS\u2019 EQUITY (in millions, except number of shares which are reflected in thousands) (unaudited) Three Months Ended September 30, 2022 Three Months Ended September 30, 2021 Common Stock Additional Paid-in Capital Retained Earnings (Accumulated Deficit) Accumulated Other Comprehensive Income (Loss) Total Stockholders\u2019 Equity Common Stock Additional Paid-in Capital Retained Earnings (Accumulated Deficit) Accumulated Other Comprehensive Income (Loss) Total Stockholders\u2019 Equity Shares Amount Shares Amount Balance at beginning of the period 201,614 $ \u2014 $ 4,186 $ 108 $ ( 100 ) $ 4,194 198,135 $ \u2014 $ 3,298 $ ( 93 ) $ 70 $ 3,275 Common stock issued under employee stock plans 751 \u2014 71 \u2014 \u2014 71 860 \u2014 71 \u2014 \u2014 71 Taxes paid related to net share settlement of equity awards \u2014 \u2014 ( 111 ) \u2014 \u2014 ( 111 ) \u2014 \u2014 ( 142 ) \u2014 \u2014 ( 142 ) Stock-based compensation \u2014 \u2014 361 \u2014 \u2014 361 \u2014 \u2014 290 \u2014 \u2014 290 Settlement of 2022 Notes conversion feature \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 ( 25 ) \u2014 \u2014 ( 25 ) Benefit from exercise of 2022 Note Hedge \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 24 \u2014 \u2014 24 Other comprehensive income (loss), net of tax \u2014 \u2014 \u2014 \u2014 ( 72 ) ( 72 ) \u2014 \u2014 \u2014 \u2014 ( 22 ) ( 22 ) Net income \u2014 \u2014 \u2014 80 \u2014 80 \u2014 \u2014 \u2014 63 \u2014 63 Balance at end of the period 202,365 $ \u2014 $ 4,507 $ 188 $ ( 172 ) $ 4,523 198,995 $ \u2014 $ 3,516 $ ( 30 ) $ 48 $ 3,534 Nine Months Ended September 30, 2022 Nine Months Ended September 30, 2021 Common Stock Additional Paid-in Capital Retained Earnings (Accumulated Deficit) Accumulated Other Comprehensive Income (Loss) Total Stockholders\u2019 Equity Common Stock Additional Paid-in Capital Retained Earnings (Accumulated Deficit) Accumulated Other Comprehensive Income (Loss) Total Stockholders\u2019 Equity Shares Amount Shares Amount Balance at beginning of the period 199,608 $ \u2014 $ 3,665 $ ( 4 ) $ 34 $ 3,695 195,845 $ \u2014 $ 2,974 $ ( 234 ) $ 94 $ 2,834 Cumulative-effect adjustment from adoption of Accounting Standards Update (ASU) 2020-06 \u2014 \u2014 ( 19 ) 17 \u2014 ( 2 ) \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 Common stock issued under employee stock plans 2,154 \u2014 177 \u2014 \u2014 177 2,614 \u2014 166 \u2014 \u2014 166 Taxes paid related to net share settlement of equity awards \u2014 \u2014 ( 352 ) \u2014 \u2014 ( 352 ) \u2014 \u2014 ( 457 ) \u2014 \u2014 ( 457 ) Stock-based compensation \u2014 \u2014 1,036 \u2014 \u2014 1,036 \u2014 \u2014 828 \u2014 \u2014 828 Shares granted related to business combination \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 6 \u2014 \u2014 6 Settlement of 2022 Warrants 603 \u2014 \u2014 \u2014 \u2014 \u2014 536 \u2014 \u2014 \u2014 \u2014 \u2014 Settlement of 2022 Notes conversion feature \u2014 \u2014 ( 233 ) \u2014 \u2014 ( 233 ) \u2014 \u2014 ( 216 ) \u2014 \u2014 ( 216 ) Benefit from exercise of 2022 Note Hedge \u2014 \u2014 233 \u2014 \u2014 233 \u2014 \u2014 215 \u2014 \u2014 215 Other comprehensive income (loss), net of tax \u2014 \u2014 \u2014 \u2014 ( 206 ) ( 206 ) \u2014 \u2014 \u2014 \u2014 ( 46 ) ( 46 ) Net income \u2014 \u2014 \u2014 175 \u2014 175 \u2014 \u2014 \u2014 204 \u2014 204 Balance at end of the period 202,365 $ \u2014 $ 4,507 $ 188 $ ( 172 ) $ 4,523 198,995 $ \u2014 $ 3,516 $ ( 30 ) $ 48 $ 3,534 See accompanying notes to condensed consolidated financial statements 3 Table of Contents SERVICENOW, INC.",
+      "score": 0.9885
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS) (in millions, except number of shares which are reflected in thousands and per share data) (unaudited) Three Months Ended September 30, Nine Months Ended September 30, 2022 2021 2022 2021 Revenues: Subscription $ 1,742 $ 1,427 $ 5,031 $ 4,050 Professional services and other 89 85 274 232 Total revenues 1,831 1,512 5,305 4,282 Cost of revenues (1) : Subscription 301 264 863 740 Professional services and other 99 86 295 239 Total cost of revenues 400 350 1,158 979 Gross profit 1,431 1,162 4,147 3,303 Operating expenses (1) : Sales and marketing 697 579 2,092 1,660 Research and development 456 358 1,314 1,005 General and administrative 187 151 541 416 Total operating expenses 1,340 1,088 3,947 3,081 Income from operations 91 74 200 222 Interest expense ( 8 ) ( 7 ) ( 20 ) ( 21 ) Other income, net 19 1 36 16 Income before income taxes 102 68 216 217 Provision for income taxes 22 5 41 13 Net income $ 80 $ 63 $ 175 $ 204 Net income per share - basic $ 0.39 $ 0.32 $ 0.87 $ 1.03 Net income per share - diluted $ 0.39 $ 0.31 $ 0.86 $ 1.00 Weighted-average shares used to compute net income per share - basic 202,045 198,600 201,026 197,680 Weighted-average shares used to compute net income per share - diluted 203,121 203,124 203,350 202,729 Other comprehensive income (loss): Foreign currency translation adjustments $ ( 51 ) $ ( 20 ) $ ( 125 ) $ ( 37 ) Unrealized gain (loss) on investments, net of tax ( 21 ) ( 2 ) ( 81 ) ( 9 ) Other comprehensive income (loss) ( 72 ) ( 22 ) ( 206 ) ( 46 ) Comprehensive income (loss) $ 8 $ 41 $ ( 31 ) $ 158 (1) Includes stock-based compensation as follows: Three Months Ended September 30, Nine Months Ended September 30, 2022 2021 2022 2021 Cost of revenues: Subscription $ 41 $ 33 $ 116 $ 95 Professional services and other $ 17 $ 15 51 43 Operating expenses: Sales and marketing $ 119 $ 101 337 293 Research and development $ 127 $ 102 368 288 General and administrative $ 57 $ 40 166 110 See accompanying notes to condensed consolidated financial statements 2 Table of Contents SERVICENOW, INC.",
+      "score": 0.9644
+    },
+    {
+      "sent": "Issuance costs were presented as a deduction from the outstanding principal balance of the 2022 Notes and amortized to interest expense using the effective interest method over the term of the 2022 Notes.",
+      "score": 0.9313
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "A security breach suffered by us or our third-party service providers, an attack against our service availability or unauthorized access or loss of data could result in a disruption to our service, litigation, service level agreement claims, indemnification and other contractual obligations, regulatory investigations, government fines and penalties, reputational damage, loss of sales and customers, mitigation and remediation expenses and other significant costs and liabilities.",
+      "score": -0.8957
+    },
+    {
+      "sent": "Foreign Corrupt Practices Act of 1977, as amended (the \u201cFCPA\u201d), the UK Bribery Act, other applicable anti-corruption and anti-bribery laws, or applicable export control or trade sanctions laws by our employees or third-party intermediaries could result in regulatory investigations and whistleblower complaints, which could subject us to significant risks such as adverse media coverage and/or severe criminal or civil sanctions, which could materially adversely affect our reputation, business, operating results, and prospects.",
+      "score": -0.8779
+    },
+    {
+      "sent": "Foreign Corrupt Practices Act of 1977, as amended (the \u201cFCPA\u201d), the UK Bribery Act, other applicable anti-corruption and anti-bribery laws, or applicable export control or trade sanctions laws by our employees or third-party intermediaries could result in regulatory investigations and whistleblower complaints, which could subject us to significant risks such as adverse media coverage and/or severe criminal or civil sanctions, which could materially adversely affect our reputation, business, operating results, and prospects.",
+      "score": -0.8779
+    }
+  ],
+  "forward_snippets": [
+    "We adopted this standard effective January\u00a01, 2022 using a modified retrospective method, under which the basis of all convertible instruments outstanding at adoption have been adjusted to the amounts that would have been recorded had the new guidance been applied from inception.",
+    "However, adoption in an interim period other than the first fiscal quarter requires an entity to apply the new guidance to all prior business combinations that have occurred since the beginning of the annual period in which the new guidance is adopted .",
+    "The decline in fair value below amortized cost basis was not considered other than temporary as it is more likely than not we will hold the securities until maturity or a recovery of the cost basis, and credit-related impairment losses were not material as of September 30, 2022.",
+    "Such market prices may be quoted prices in active markets for identical assets (Level 1 inputs) or pricing determined using inputs other than quoted prices that are observable either directly or indirectly (L\nguidance been applied from inception.",
+    "However, adoption in an interim period other than the first fiscal quarter requires an entity to apply the new guidance to all prior business combinations that have occurred since the beginning of the annual period in which the new guidance is adopted ."
+  ]
+}

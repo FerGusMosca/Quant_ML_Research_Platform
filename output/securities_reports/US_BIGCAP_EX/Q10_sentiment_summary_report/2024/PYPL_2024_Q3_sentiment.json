@@ -1,0 +1,47 @@
+{
+  "symbol": "PYPL",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2017,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.169
+  },
+  "top_positive": [
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS\u2019 EQUITY Common Stock Shares Treasury Stock Additional Paid-In Capital Accumulated Other Comprehensive Income (Loss) Retained Earnings Total Equity (In millions) (Unaudited) Balances at December 31, 2023 1,072 $ ( 21,045 ) $ 19,642 $ ( 746 ) $ 23,200 $ 21,051 Net income \u2014 \u2014 \u2014 \u2014 888 888 Foreign CTA \u2014 \u2014 \u2014 ( 143 ) \u2014 ( 143 ) Net investment hedges CTA gains, net \u2014 \u2014 \u2014 99 \u2014 99 Tax expense on net investment hedges CTA gains, net \u2014 \u2014 \u2014 ( 23 ) \u2014 ( 23 ) Unrealized gains on cash flow hedges, net \u2014 \u2014 \u2014 96 \u2014 96 Tax expense on unrealized gains on cash flow hedges, net \u2014 \u2014 \u2014 ( 5 ) \u2014 ( 5 ) Unrealized gains on available-for-sale debt securities, net \u2014 \u2014 \u2014 83 \u2014 83 Tax expense on unrealized gains on available-for-sale debt securities, net \u2014 \u2014 \u2014 ( 20 ) \u2014 ( 20 ) Common stock and stock-based awards issued, net of shares withheld for employee taxes 6 \u2014 ( 193 ) \u2014 \u2014 ( 193 ) Common stock repurchased ( 25 ) ( 1,511 ) \u2014 \u2014 ( 1,511 ) Treasury stock reissuance \u2014 4 \u2014 \u2014 \u2014 4 Stock-based compensation \u2014 \u2014 376 \u2014 \u2014 376 Balances at March 31, 2024 1,053 $ ( 22,552 ) $ 19,825 $ ( 659 ) $ 24,088 $ 20,702 Common Stock Shares Treasury Stock Additional Paid-In Capital Accumulated Other Comprehensive Income (Loss) Retained Earnings Total Equity (In millions) (Unaudited) Balances at December 31, 2022 1,136 $ ( 16,079 ) $ 18,327 $ ( 928 ) $ 18,954 $ 20,274 Net income \u2014 \u2014 \u2014 \u2014 795 795 Foreign CTA \u2014 \u2014 \u2014 ( 20 ) \u2014 ( 20 ) Net investment hedges CTA gains, net \u2014 \u2014 \u2014 27 \u2014 27 Tax expense on net investment hedges CTA gains, net \u2014 \u2014 \u2014 ( 6 ) \u2014 ( 6 ) Unrealized losses on cash flow hedges, net \u2014 \u2014 \u2014 ( 111 ) \u2014 ( 111 ) Tax benefit on unrealized losses on cash flow hedges, net \u2014 \u2014 \u2014 6 \u2014 6 Unrealized gains on available-for-sale debt securities, net \u2014 \u2014 \u2014 175 \u2014 175 Tax expense on unrealized gains on available-for-sale debt securities, net \u2014 \u2014 \u2014 ( 41 ) \u2014 ( 41 ) Common stock and stock-based awards issued and assumed, net of shares withheld for employee taxes 5 \u2014 ( 157 ) \u2014 \u2014 ( 157 ) Common stock repurchased ( 19 ) ( 1,443 ) \u2014 \u2014 \u2014 ( 1,443 ) Stock-based compensation \u2014 \u2014 359 \u2014 \u2014 359 Balances at March 31, 2023 1,122 $ ( 17,522 ) $ 18,529 $ ( 898 ) $ 19,749 $ 19,858 The accompanying notes are an integral part of these condensed consolidated financial statements.",
+      "score": 0.9924
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED BALANCE SHEETS March 31, 2024 December 31, 2023 (In\u00a0millions, except par value) (Unaudited) ASSETS Current assets: Cash and cash equivalents $ 9,693 $ 9,081 Short-term investments 4,625 4,979 Accounts receivable, net 1,108 1,069 Loans and interest receivable, held for sale 307 563 Loans and interest receivable, net of allowances of $ 465 and $ 540 as of March\u00a031, 2024 and December\u00a031, 2023, respectively 5,202 5,433 Funds receivable and customer accounts 38,353 38,935 Prepaid expenses and other current assets 4,418 2,509 Total current assets 63,706 62,569 Long-term investments 3,409 3,273 Property and equipment, net 1,426 1,488 Goodwill 10,916 11,026 Intangible assets, net 465 537 Other assets 3,425 3,273 Total assets $ 83,347 $ 82,166 LIABILITIES AND EQUITY Current liabilities: Accounts payable $ 108 $ 139 Funds payable and amounts due to customers 41,353 41,935 Accrued expenses and other current liabilities 8,385 6,392 Total current liabilities 49,846 48,466 Other long-term liabilities 3,116 2,973 Long-term debt 9,683 9,676 Total liabilities 62,645 61,115 Commitments and contingencies (Note 13) Equity: Common stock, $ 0.0001 par value; 4,000 shares authorized; 1,053 and 1,072 shares outstanding as of March\u00a031, 2024 and December\u00a031, 2023, respectively \u2014 \u2014 Preferred stock, $ 0.0001 par value; 100 shares authorized, unissued \u2014 \u2014 Treasury stock at cost, 270 and 245 shares as of March\u00a031, 2024 and December\u00a031, 2023, respectively ( 22,552 ) ( 21,045 ) Additional paid-in-capital 19,825 19,642 Retained earnings 24,088 23,200 Accumulated other comprehensive income (loss) ( 659 ) ( 746 ) Total equity 20,702 21,051 Total liabilities and equity $ 83,347 $ 82,166 The accompanying notes are an integral part of these condensed consolidated financial statements.",
+      "score": 0.9799
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (LOSS) Three Months Ended March 31, 2024 2023 (In millions) (Unaudited) Net income (loss) $ 888 $ 795 Other comprehensive income (loss), net of reclassification adjustments: Foreign currency translation adjustments (\u201cCTA\u201d) ( 143 ) ( 20 ) Net investment hedges CTA gains, net 99 27 Tax expense on net investment hedges CTA gains, net ( 23 ) ( 6 ) Unrealized gains (losses) on cash flow hedges, net 96 ( 111 ) Tax (expense) benefit on unrealized gains (losses) on cash flow hedges, net ( 5 ) 6 Unrealized gains on available-for-sale debt securities, net 83 175 Tax expense on unrealized gains on available-for-sale debt securities, net ( 20 ) ( 41 ) Other comprehensive income (loss), net of tax 87 30 Comprehensive income (loss) $ 975 $ 825 The accompanying notes are an integral part of these condensed consolidated financial statements.",
+      "score": 0.977
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "For those proceedings in which an unfavorable outcome is reasonably possible but not probable, we have disclosed an estimate of the reasonably possible loss or range of losses or we have concluded that an estimate of the reasonably possible loss or range of losses arising directly from the proceeding (i.e., monetary damages or amounts paid in judgment or settlement) are not material.",
+      "score": -0.9505
+    },
+    {
+      "sent": "The Shah and Nelson Actions allege claims for breach of fiduciary duty, aiding and abetting breach of fiduciary duty, unjust enrichment, waste of corporate assets, gross mismanagement and violations of the Exchange Act, and seek to recover damages on behalf of the Company.",
+      "score": -0.93
+    },
+    {
+      "sent": "The Shah and Nelson Actions allege claims for breach of fiduciary duty, aiding and abetting breach of fiduciary duty, unjust enrichment, waste of corporate assets, gross mismanagement and violations of the Exchange Act, and seek to recover damages on behalf of the Company.",
+      "score": -0.93
+    }
+  ],
+  "forward_snippets": [
+    "We base our estimates on historical experience and various other assumptions which we believe to be reasonable under the circumstances.",
+    "Recent accounting guidance In November 2023, the Financial Accounting Standards Board (\u201cFASB\u201d) issued Accounting Standards Update (\u201cASU\u201d) 2023-07, Segment Reporting (Topic 280): Improvements to Reportable Segment Disclosures .",
+    "The amended guidance requires incremental reportable segment disclosures, primarily about significant segment expenses.",
+    "We are evaluating the impact this amended guidance may have on the footnotes to our condensed consolidated financial statements.",
+    "This amended guidance requires fair value measurement of certain crypto assets each reporting period with the changes in fair value reflected in net income."
+  ]
+}

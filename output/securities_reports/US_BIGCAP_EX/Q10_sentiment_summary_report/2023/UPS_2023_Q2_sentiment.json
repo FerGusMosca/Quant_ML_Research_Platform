@@ -1,0 +1,51 @@
+{
+  "symbol": "UPS",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.3753,
+    "outlook_sentiment": 0.2303,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.07
+  },
+  "top_positive": [
+    {
+      "sent": "Domestic Package Operations 48 International Package Operations 51 Supply Chain Solutions Operations 54 Consolidated Operating Expenses 56 Other Income and (Expense) 59 Income Tax Expense 60 Liquidity and Capital Resources 61 Cash Flows From Operating Activities 61 Cash Flows From Investing Activities 62 Cash Flows From Financing Activities 63 Sources of Credit 64 Contractual Commitments 64 Legal Proceedings and Contingencies 64 Collective Bargaining Agreements 64 Recent Accounting Pronouncements 64 Item 3.",
+      "score": 0.7506
+    },
+    {
+      "sent": "AND SUBSIDIARIES NOTES TO UNAUDITED CONSOLIDATED FINANCIAL STATEMENTS Detail of the gains (losses) reclassified from accumulated other comprehensive income (loss) to the statements of consolidated income for the three and six months ended June\u00a030, 2023 and 2022 is as follows (in millions): Amount Reclassified from AOCI (1) Affected Line Item in the Income Statement Three Months Ended June 30: 2023 2022 Unrealized Gain (Loss) on Cash Flow Hedges: Interest rate contracts $ ( 2 ) $ ( 2 ) Interest expense Foreign currency exchange contracts 51 67 Revenue Income tax (expense) benefit ( 12 ) ( 16 ) Income tax expense Impact on net income 37 49 Net income Unrecognized Pension and Postretirement Benefit Costs: Prior service costs ( 27 ) ( 24 ) Investment income and other Income tax (expense) benefit 6 6 Income tax expense Impact on net income ( 21 ) ( 18 ) Net income Total amount reclassified for the period $ 16 $ 31 Net income ( 1 ) Accumulated other comprehensive income (loss) Amount Reclassified from AOCI (1) Affected Line Item in the Income Statement Six Months Ended June 30: 2023 2022 Unrealized Gain (Loss) on Foreign Currency Translation: Realized gain (loss) on business wind-down $ ( 3 ) $ \u2014 Other expenses Income tax (expense) benefit \u2014 \u2014 Income tax expense Impact on net income ( 3 ) \u2014 Net income Unrealized gain (loss) on marketable securities: Realized gain (loss) on sale of securities ( 3 ) \u2014 Investment income and other Income tax (expense) benefit 1 \u2014 Income tax expense Impact on net income ( 2 ) \u2014 Net income Unrealized gain (loss) on cash flow hedges: Interest rate contracts ( 3 ) ( 5 ) Interest expense Foreign currency exchange contracts 119 108 Revenue Income tax (expense) benefit ( 28 ) ( 25 ) Income tax expense Impact on net income 88 78 Net income Unrecognized pension and postretirement benefit costs: Prior service costs ( 54 ) ( 47 ) Investment income and other Curtailment of benefit obligation \u2014 33 Investment income and other Income tax (expense) benefit 13 3 Income tax expense Impact on net income ( 41 ) ( 11 ) Net income Total amount reclassified for the period $ 42 $ 67 Net income ( 1 ) Accumulated other comprehensive income (loss) 31 Table of Contents UNITED PARCEL SERVICE, INC.",
+      "score": 0.9968
+    },
+    {
+      "sent": "The activity in accumulated other comprehensive income (loss) for the three and six months ended June\u00a030, 2023 and 2022 was as follows (in millions): Three Months Ended June 30: 2023 2022 Foreign Currency Translation Gain (Loss), Net of Tax: Balance at beginning of period $ ( 1,328 ) $ ( 1,202 ) Translation adjustment (net of tax effect of $ 2 and $ 7 ) ( 18 ) ( 245 ) Reclassification to earnings (net of tax effect of $ 0 and $ 0 ) \u2014 \u2014 Balance at end of period ( 1,346 ) ( 1,447 ) Unrealized Gain (Loss) on Marketable Securities, Net of Tax: Balance at beginning of period ( 4 ) ( 7 ) Current period changes in fair value (net of tax effect of $( 5 ) and $ 0 ) ( 16 ) ( 1 ) Reclassification to earnings (net of tax effect of $ 0 and $ 0 ) \u2014 \u2014 Balance at end of period ( 20 ) ( 8 ) Unrealized Gain (Loss) on Cash Flow Hedges, Net of Tax: Balance at beginning of period 90 26 Current period changes in fair value (net of tax effect of $( 14 ) and $ 89 ) ( 43 ) 283 Reclassification to earnings (net of tax effect of $( 12 ) and $( 16 )) ( 37 ) ( 49 ) Balance at end of period 10 260 Unrecognized Pension and Postretirement Benefit Costs, Net of Tax: Balance at beginning of period ( 239 ) ( 2,074 ) Net actuarial gain (loss) resulting from remeasurements of plan assets and liabilities (net of tax effect of $ 0 and $ 0 ) \u2014 \u2014 Reclassification to earnings (net of tax effect of $ 6 and $ 6 ) 21 18 Balance at end of period ( 218 ) ( 2,056 ) Accumulated other comprehensive income (loss) at end of period $ ( 1,574 ) $ ( 3,251 ) 29 Table of Contents UNITED PARCEL SERVICE, INC.",
+      "score": 0.9857
+    },
+    {
+      "sent": "AND SUBSIDIARIES NOTES TO UNAUDITED CONSOLIDATED FINANCIAL STATEMENTS Six Months Ended June 30: 2023 2022 Foreign currency translation gain (loss), net of tax: Balance at beginning of period $ ( 1,446 ) $ ( 1,162 ) Translation adjustment (net of tax effect of $( 13 ) and $ 7 ) 97 ( 285 ) Reclassification to earnings (net of tax effect of $ 0 and $ 0 ) 3 \u2014 Balance at end of period ( 1,346 ) ( 1,447 ) Unrealized gain (loss) on marketable securities, net of tax: Balance at beginning of period ( 11 ) ( 1 ) Current period changes in fair value (net of tax effect of $( 4 ) and $( 2 )) ( 11 ) ( 7 ) Reclassification to earnings (net of tax effect of $ 1 and $ 0 ) 2 \u2014 Balance at end of period ( 20 ) ( 8 ) Unrealized gain (loss) on cash flow hedges, net of tax: Balance at beginning of period 167 ( 17 ) Current period changes in fair value (net of tax effect of $( 22 ) and $ 112 ) ( 69 ) 355 Reclassification to earnings (net of tax effect of $( 28 ) and $( 25 )) ( 88 ) ( 78 ) Balance at end of period 10 260 Unrecognized pension and postretirement benefit costs, net of tax: Balance at beginning of period ( 259 ) ( 2,098 ) Net actuarial gain (loss) resulting from remeasurements of plan assets and liabilities (net of tax effect of $ 0 and $ 11 ) \u2014 31 Reclassification to earnings (net of tax effect of $ 13 and $ 3 ) 41 11 Balance at end of period ( 218 ) ( 2,056 ) Accumulated other comprehensive income (loss) at end of period $ ( 1,574 ) $ ( 3,251 ) 30 Table of Contents UNITED PARCEL SERVICE, INC.",
+      "score": 0.9843
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "or international tax liabilities; increasingly stringent laws and regulations, including relating to climate change; potential claims or litigation related to labor and employment, personal injury, property damage, business practices, environmental liability and other matters; and other risks discussed in our filings with the Securities and Exchange Commission from time to time, including our Annual Report on Form 10-K for the year ended December\u00a031, 2022, and subsequently filed reports.",
+      "score": -0.8481
+    },
+    {
+      "sent": "Accordingly, at this time, we are not able to estimate a possible loss or range of losses that may result from this matter or to determine whether such loss, if any, would have a material adverse effect on our operations or financial condition.",
+      "score": -0.826
+    },
+    {
+      "sent": "Dividends accrued on Restricted Units are reinvested in additional Restricted Units at each dividend payable date and are subject to the same vesting and forfeiture conditions as the underlying Restricted Units.",
+      "score": -0.7783
+    }
+  ],
+  "forward_snippets": [
+    "From time to time, we expect to participate in analyst and investor conferences.",
+    "From time to time, we expect to participate in analyst and investor conferences.",
+    "In making this determination, we considered the financial condition and prospects of each issuer, the magnitude of the losses compared with the cost, the probability that we will be unable to collect all amounts due according to the contractual terms of the security, the credit rating of the security and our ability and intent to hold these investments until the anticipated recovery in market value occurs.",
+    "We expect to contribute approximately $ 45 and $ 26 million over the remainder of the year to our pension and U.S.",
+    "We will continue to assess the impact of these uncertainties in accordance with ASC Topic 715."
+  ]
+}

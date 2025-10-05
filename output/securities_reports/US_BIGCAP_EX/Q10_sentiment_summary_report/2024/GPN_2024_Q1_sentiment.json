@@ -1,0 +1,47 @@
+{
+  "symbol": "GPN",
+  "year": 2024,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2502,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.18
+  },
+  "top_positive": [
+    {
+      "sent": "Forward-Looking Statements Some of the statements we use in this report, and in some of the documents we incorporate by reference in this report, contain forward-looking statements concerning our business operations, economic performance and financial condition, including, but not limited to, statements we make regarding our business strategy and means to implement the strategy; measures of future results of operations, such as revenues, expenses, operating margins, income tax rates, and earnings per share; other operating metrics such as shares outstanding and capital expenditures, liquidity, deleveraging plans and capital available for allocation; statements we make regarding guidance and projected financial results for the year 2024; the effects of general economic conditions on our business; statements about the benefits of our acquisitions or divestitures, such as the proposed sale of AdvancedMD, Inc., including future financial and operating results and the successful integration of acquisitions, statements about the completion of anticipated benefits or strategic or operational initiatives; statements regarding our success and timing in developing and introducing new services and expanding our business; and other statements regarding our future financial performance and the company's plans, objectives, expectations and intentions.",
+      "score": 0.9851
+    },
+    {
+      "sent": "25 Table of Contents The following table sets forth the computation of diluted weighted-average number of shares outstanding for the three and nine months ended September\u00a030, 2024 and 2023: Three Months Ended Nine Months Ended September 30, 2024 September 30, 2023 September 30, 2024 September 30, 2023 (in thousands) Basic weighted-average number of shares outstanding 254,402 260,232 255,355 260,890 Plus: Dilutive effect of stock options and other share-based awards 495 703 525 520 Diluted weighted-average number of shares outstanding 254,897 260,935 255,880 261,410 NOTE 13\u2014 SUPPLEMENTAL BALANCE SHEET INFORMATION Cash, cash equivalents and restricted cash Cash and cash equivalents include cash on hand and all liquid investments with a maturity of three months or less when purchased.",
+      "score": 0.9723
+    },
+    {
+      "sent": "25 Table of Contents The following table sets forth the computation of diluted weighted-average number of shares outstanding for the three and nine months ended September\u00a030, 2024 and 2023: Three Months Ended Nine Months Ended September 30, 2024 September 30, 2023 September 30, 2024 September 30, 2023 (in thousands) Basic weighted-average number of shares outstanding 254,402 260,232 255,355 260,890 Plus: Dilutive effect of stock options and other share-based awards 495 703 525 520 Diluted weighted-average number of shares outstanding 254,897 260,935 255,880 261,410 NOTE 13\u2014 SUPPLEMENTAL BALANCE SHEET INFORMATION Cash, cash equivalents and restricted cash Cash and cash equivalents include cash on hand and all liquid investments with a maturity of three months or less when purchased.",
+      "score": 0.9723
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Although we have not experienced significant exposure or adverse effects on our business and financial results to date, the extent to which these events could affect the global economy and our operations is difficult to predict at this time.",
+      "score": -0.68
+    },
+    {
+      "sent": "Although we have not experienced significant exposure or adverse effects on our business and financial results to date, the extent to which these events could affect the global economy and our operations is difficult to predict at this time.",
+      "score": -0.68
+    },
+    {
+      "sent": "Restricted cash consists of amounts under legal restriction, amounts deposited by customers for prepaid card transactions and funds held as a liquidity reserve that are subject to local regulatory restrictions requiring appropriate segregation and restriction in their use.",
+      "score": -0.6486
+    }
+  ],
+  "forward_snippets": [
+    "We are evaluating how the enhanced disclosure requirements of ASU 2023-09 will affect our presentation, and we will include the incremental disclosures upon the effective date.",
+    "We are evaluating how the enhanced disclosure requirements of ASU 2023-07 will affect our presentation, and we will include the incremental disclosures upon the effective date.",
+    "We expect that approximately $ 1.2 billion of the goodwill from this acquisition will be deductible for income tax purposes.",
+    "We are evaluating how the enhanced disclosure requirements of ASU 2023-07 will affect our presentation, and we will include the incremental disclosures upon the effective date.",
+    "We expect that approximately $ 1.2 billion of the goodwill from this acquisition will be deductible for income tax purposes."
+  ]
+}

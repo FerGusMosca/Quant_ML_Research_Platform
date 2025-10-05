@@ -1,0 +1,47 @@
+{
+  "symbol": "BKNG",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1466,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.15
+  },
+  "top_positive": [
+    {
+      "sent": "10 The following table summarizes the activity in restricted stock units and performance share units for employees and non-employee directors during the six months ended June\u00a030, 2023: Restricted Stock Units Performance Share Units Shares Weighted-average\u00a0Grant-date\u00a0Fair\u00a0Value Shares Weighted-average\u00a0Grant-date\u00a0Fair\u00a0Value Unvested at December 31, 2022 (1) 280,460 $ 2,070 143,702 $ 2,294 Granted (2) 163,120 $ 2,621 51,941 $ 2,679 Vested ( 127,428 ) $ 1,984 ( 30,118 ) $ 2,327 Performance shares adjustment (3) 33,096 $ 2,411 Forfeited ( 9,586 ) $ 2,283 ( 7,141 ) $ 2,262 Unvested at June 30, 2023 306,566 $ 2,392 191,480 $ 2,415 (1) Excludes 14,087 performance share units awarded during the years ended December\u00a031, 2022 and 2021 for which the grant date under Accounting Standards Codification (\"ASC\") 718, Compensation - Stock Compensation , was not established as of December\u00a031, 2022.",
+      "score": 0.9648
+    },
+    {
+      "sent": "Incentive Programs At June\u00a030, 2023 and December\u00a031, 2022, liabilities of $ 173 million and $ 143 million, respectively, were included in \"Accrued expenses and other current liabilities\" in the Consolidated Balance Sheets for incentives granted to consumers, including referral bonuses, rebates, credits, discounts, and loyalty programs.",
+      "score": 0.9607
+    },
+    {
+      "sent": "ISSUER\u00a0PURCHASES\u00a0OF\u00a0EQUITY\u00a0SECURITIES Period Total\u00a0Number of\u00a0Shares\u00a0(or Units)\u00a0Purchased Average Price\u00a0Paid\u00a0per Share\u00a0(or\u00a0Unit) (1) Total\u00a0Number\u00a0of Shares\u00a0(or\u00a0Units) Purchased\u00a0as\u00a0Part\u00a0of Publicly\u00a0Announced Plans\u00a0or\u00a0Programs Maximum Number\u00a0(or Approximate\u00a0Dollar\u00a0Value) of\u00a0Shares\u00a0(or\u00a0Units) that\u00a0May Yet\u00a0Be\u00a0Purchased Under\u00a0the Plans\u00a0or\u00a0Programs April 1, 2023 \u2013 292,335 (2) $ 2,631 292,335 $ 21,118,657,214 (2) (4) April 30, 2023 23 (3) $ 2,653 N/A N/A May 1, 2023 \u2013 447,539 (2) (4) $ 2,641 447,539 $ 19,936,533,082 (4) May 31, 2023 1,162 (3) $ 2,656 N/A N/A June 1, 2023 \u2013 436,848 (4) $ 2,644 436,848 $ 18,781,555,424 (4) June 30, 2023 23 (3) $ 2,562 N/A N/A Total 1,177,930 1,176,722 $ 18,781,555,424 _____________________________ (1)\u00a0\u00a0\u00a0\u00a0These amounts exclude the 1% excise tax mandated by the Inflation Reduction Act on share repurchases.",
+      "score": 0.8986
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These forward-looking statements are not guarantees of future performance and are subject to risks, uncertainties, and assumptions that are difficult to predict including the Risk Factors identified in Part I, Item 1A of our Annual Report on Form 10-K for the year ended December 31, 2022; therefore, our actual results could differ materially from those described in the forward-looking statements.",
+      "score": -0.7964
+    },
+    {
+      "sent": "These forward-looking statements are not guarantees of future performance and are subject to risks, uncertainties, and assumptions that are difficult to predict including the Risk Factors identified in Part I, Item 1A of our Annual Report on Form 10-K for the year ended December 31, 2022; therefore, our actual results could differ materially from those described in the forward-looking statements.",
+      "score": -0.7964
+    },
+    {
+      "sent": "These initiatives have resulted and, in the future, may result in lower ADRs and lower revenue as a percentage of gross bookings.",
+      "score": -0.7579
+    }
+  ],
+  "forward_snippets": [
+    "We believe the easing of government-imposed travel restrictions throughout the world helped drive an increase in the mix of our room nights booked for international travel in the second quarter of 2023 as compared to the second quarter of 2022.",
+    "We continue to see favorable repeat direct booking behavior from consumers in our mobile apps, which allow us more opportunities to engage directly with consumers.",
+    "We believe that expanding these types of service offerings will benefit consumers and travel service providers, as well as our gross bookings, room night, and earnings growth rates.",
+    "We continue to see favorable repeat direct booking behavior from consumers in our mobile apps, which allow us more opportunities to engage directly with consumers.",
+    "We believe that expanding these types of service offerings will benefit consumers and travel service providers, as well as our gross bookings, room night, and earnings growth rates."
+  ]
+}

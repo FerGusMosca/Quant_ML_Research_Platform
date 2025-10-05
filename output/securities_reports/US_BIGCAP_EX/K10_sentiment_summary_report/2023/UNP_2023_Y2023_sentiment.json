@@ -1,0 +1,47 @@
+{
+  "symbol": "UNP",
+  "year": 2023,
+  "Period": "Y2023",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.3182,
+    "outlook_sentiment": 0.222,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.13
+  },
+  "top_positive": [
+    {
+      "sent": "58 Table of Contents As of December 31, 2022 , the pension plan assets measured at fair value on a recurring basis were as follows: Quoted Prices Significant in Active Other Significant Markets for Observable Unobservable Identical Inputs Inputs Inputs Millions (Level 1) (Level 2) (Level 3) Total Plan assets at fair value: Temporary cash investments $ 1 $ - $ - $ 1 Registered investment companies [a] 6 - - 6 Federal government securities - 803 - 803 Bonds and debentures - 1,069 - 1,069 Corporate stock 1,104 7 - 1,111 Total plan assets at fair value $ 1,111 $ 1,879 $ - $ 2,990 Plan assets at NAV: Registered investment companies [b] 68 Venture capital and buyout partnerships 611 Real estate funds 37 Collective trust and other funds 622 Total plan assets at NAV $ 1,338 Other assets/(liabilities) [c] 35 Total plan assets $ 4,363 As of December 31, 2021 , the pension plan assets measured at fair value on a recurring basis were as follows: Quoted Prices Significant in Active Other Significant Markets for Observable Unobservable Identical Inputs Inputs Inputs Millions (Level 1) (Level 2) (Level 3) Total Plan assets at fair value: Temporary cash investments $ 9 $ - $ - $ 9 Registered investment companies [a] 10 - - 10 Federal government securities - 742 - 742 Bonds and debentures - 1,116 - 1,116 Corporate stock 1,980 10 - 1,990 Total plan assets at fair value $ 1,999 $ 1,868 $ - $ 3,867 Plan assets at NAV: Registered investment companies [b] 185 Venture capital and buyout partnerships 710 Real estate funds 48 Collective trust and other funds 756 Total plan assets at NAV $ 1,699 Other assets/(liabilities) [c] ( 12 ) Total plan assets $ 5,554 [a] Registered investment companies measured at fair value are stock investments.",
+      "score": 0.9955
+    },
+    {
+      "sent": "43 Table of Contents CONSOLIDATED STATEMENTS OF INCOME Union Pacific Corporation and Subsidiary Companies Millions, Except Per Share Amounts, for the Years Ended December 31, 2022 2021 2020 Operating revenues: Freight revenues $ 23,159 $ 20,244 $ 18,251 Other revenues 1,716 1,560 1,282 Total operating revenues 24,875 21,804 19,533 Operating expenses: Compensation and benefits 4,645 4,158 3,993 Fuel 3,439 2,049 1,314 Purchased services and materials 2,442 2,016 1,962 Depreciation 2,246 2,208 2,210 Equipment and other rents 898 859 875 Other 1,288 1,176 1,345 Total operating expenses 14,958 12,466 11,699 Operating income 9,917 9,338 7,834 Other income, net (Note 6) 426 297 287 Interest expense ( 1,271 ) ( 1,157 ) ( 1,141 ) Income before income taxes 9,072 8,478 6,980 Income tax expense (Note 7) ( 2,074 ) ( 1,955 ) ( 1,631 ) Net income $ 6,998 $ 6,523 $ 5,349 Share and Per Share (Note 8): Earnings per share - basic $ 11.24 $ 9.98 $ 7.90 Earnings per share - diluted $ 11.21 $ 9.95 $ 7.88 Weighted average number of shares - basic 622.7 653.8 677.3 Weighted average number of shares - diluted 624.0 655.4 679.1 CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME Union Pacific Corporation and Subsidiary Companies Millions, for the Years Ended December 31, 2022 2021 2020 Net income $ 6,998 $ 6,523 $ 5,349 Other comprehensive income/(loss): Defined benefit plans 280 723 ( 231 ) Foreign currency translation 52 ( 44 ) ( 6 ) Total other comprehensive income/(loss) [a] 332 679 ( 237 ) Comprehensive income $ 7,330 $ 7,202 $ 5,112 [a] Net of deferred taxes of ($92)\u00a0million, ($237)\u00a0million, and $75\u00a0million during 2022, 2021, and 2020, respectively.",
+      "score": 0.983
+    },
+    {
+      "sent": "43 Table of Contents CONSOLIDATED STATEMENTS OF INCOME Union Pacific Corporation and Subsidiary Companies Millions, Except Per Share Amounts, for the Years Ended December 31, 2022 2021 2020 Operating revenues: Freight revenues $ 23,159 $ 20,244 $ 18,251 Other revenues 1,716 1,560 1,282 Total operating revenues 24,875 21,804 19,533 Operating expenses: Compensation and benefits 4,645 4,158 3,993 Fuel 3,439 2,049 1,314 Purchased services and materials 2,442 2,016 1,962 Depreciation 2,246 2,208 2,210 Equipment and other rents 898 859 875 Other 1,288 1,176 1,345 Total operating expenses 14,958 12,466 11,699 Operating income 9,917 9,338 7,834 Other income, net (Note 6) 426 297 287 Interest expense ( 1,271 ) ( 1,157 ) ( 1,141 ) Income before income taxes 9,072 8,478 6,980 Income tax expense (Note 7) ( 2,074 ) ( 1,955 ) ( 1,631 ) Net income $ 6,998 $ 6,523 $ 5,349 Share and Per Share (Note 8): Earnings per share - basic $ 11.24 $ 9.98 $ 7.90 Earnings per share - diluted $ 11.21 $ 9.95 $ 7.88 Weighted average number of shares - basic 622.7 653.8 677.3 Weighted average number of shares - diluted 624.0 655.4 679.1 CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME Union Pacific Corporation and Subsidiary Companies Millions, for the Years Ended December 31, 2022 2021 2020 Net income $ 6,998 $ 6,523 $ 5,349 Other comprehensive income/(loss): Defined benefit plans 280 723 ( 231 ) Foreign currency translation 52 ( 44 ) ( 6 ) Total other comprehensive income/(loss) [a] 332 679 ( 237 ) Comprehensive income $ 7,330 $ 7,202 $ 5,112 [a] Net of deferred taxes of ($92)\u00a0million, ($237)\u00a0million, and $75\u00a0million during 2022, 2021, and 2020, respectively.",
+      "score": 0.983
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "We May Be Affected by Acts of Terrorism, War, or Risk of War \u2013 Our rail lines, facilities, and equipment, including rail cars carrying hazardous materials, could be direct targets or indirect casualties of terrorist attacks.",
+      "score": -0.9741
+    },
+    {
+      "sent": "Any material changes to litigation trends or a catastrophic rail accident or series of accidents involving any or all of property damage, personal injury, and environmental liability that exceed our insurance coverage for such risks could have a material adverse effect on our results of operations, financial condition, and liquidity.",
+      "score": -0.9628
+    },
+    {
+      "sent": "Terrorist attacks, or other similar events, any government response thereto, and war or risk of war may adversely affect our results of operations, financial condition, and liquidity.",
+      "score": -0.9601
+    }
+  ],
+  "forward_snippets": [
+    "We will build upon this improvement by enhancing training programs and solidifying our safety culture through ownership and personal accountability on the path to achieving our goal of world-class safety performance.",
+    "To address constrained crew bases, we hired and trained over 1,300 new transportation employees in 2022 and have almost 600 more in the training pipeline as we enter 2023.",
+    "We continue to make significant investments in our infrastructure to support our service product.",
+    "And those business development wins will provide a tailwind in 2023 as we navigate an uncertain economy.",
+    "We continue to evolve our comprehensive approach to Environmental, Social, and Governance\u00a0issues as laid out in \u201cBuilding a Sustainable Future 2030\u201d."
+  ]
+}

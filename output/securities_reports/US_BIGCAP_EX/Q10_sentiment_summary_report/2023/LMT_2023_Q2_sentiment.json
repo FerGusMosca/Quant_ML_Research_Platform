@@ -1,0 +1,47 @@
+{
+  "symbol": "LMT",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.144,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.202
+  },
+  "top_positive": [
+    {
+      "sent": "9 Table of Contents Lockheed Martin Corporation Notes to Consolidated Financial Statements (unaudited) (continued) NOTE 2\u00a0- EARNINGS PER COMMON SHARE The weighted average number of shares outstanding used to compute earnings per common share were as follows (in\u00a0millions): Quarters Ended Six Months Ended June 25, 2023 June 26, 2022 June 25, 2023 June 26, 2022 Weighted average common shares outstanding for basic computations 252.8 265.8 253.7 267.0 Weighted average dilutive effect of equity awards 0.8 0.9 0.9 0.9 Weighted average common shares outstanding for diluted computations 253.6 266.7 254.6 267.9 We compute basic and diluted earnings per common share by dividing net earnings by the respective weighted average number of common shares outstanding for the periods presented.",
+      "score": 0.9887
+    },
+    {
+      "sent": "Government sanctions on T\u00fcrkish entities and persons, and potential indirect effects of sanctions on Russia to our supply chain); \u2022\u00a0\u00a0\u00a0\u00a0our success expanding into and doing business in adjacent markets and internationally and the risks posed by international sales; \u2022\u00a0\u00a0\u00a0\u00a0changes in foreign national priorities and foreign government budgets and planned orders, including potential effects from fluctuations in currency exchange rates; 43 Table of Contents \u2022\u00a0\u00a0\u00a0\u00a0the competitive environment for our products and services, including competition from startups and non-traditional defense contractors; \u2022\u00a0\u00a0\u00a0\u00a0our ability to develop and commercialize new technologies and products, including emerging digital and network technologies and capabilities; \u2022 our ability to benefit fully from or adequately protect our intellectual property rights; \u2022\u00a0\u00a0\u00a0\u00a0our ability to attract and retain a highly skilled workforce, the impact of work stoppages or other labor disruptions; \u2022\u00a0\u00a0\u00a0\u00a0cyber or other security threats or other disruptions faced by us or our suppliers; \u2022\u00a0\u00a0\u00a0\u00a0our ability to implement and continue, and the timing and impact of, capitalization changes such as share repurchases, dividend payments and financing transactions; \u2022\u00a0\u00a0\u00a0\u00a0the accuracy of our estimates and projections; \u2022\u00a0\u00a0\u00a0\u00a0the impact of pension risk transfers, including potential noncash settlement charges, timing and estimates regarding pension funding and movements in interest rates and other changes that may affect pension plan assumptions, stockholders\u2019 equity, the level of the FAS/CAS adjustment, and actual returns on pension plan assets; \u2022\u00a0\u00a0\u00a0\u00a0realizing the anticipated benefits of acquisitions or divestitures, investments, joint ventures, teaming arrangements or internal reorganizations, and market volatility affecting the fair value of investments that are marked to market; \u2022\u00a0\u00a0\u00a0\u00a0our efforts to increase the efficiency of our operations and improve the affordability of our products and services, including through digital transformation and cost reduction initiatives; \u2022\u00a0\u00a0\u00a0\u00a0the risk of an impairment of our assets, including the potential impairment of goodwill recorded at the Sikorsky line of business; \u2022\u00a0\u00a0\u00a0\u00a0the availability and adequacy of our insurance and indemnities; \u2022\u00a0\u00a0\u00a0\u00a0impacts of climate change and compliance with laws, regulations, policies, and customer requirements in response to climate change concerns; \u2022\u00a0\u00a0\u00a0\u00a0changes in accounting, U.S.",
+      "score": 0.9855
+    },
+    {
+      "sent": "Government sanctions on T\u00fcrkish entities and persons, and potential indirect effects of sanctions on Russia to our supply chain); \u2022\u00a0\u00a0\u00a0\u00a0our success expanding into and doing business in adjacent markets and internationally and the risks posed by international sales; \u2022\u00a0\u00a0\u00a0\u00a0changes in foreign national priorities and foreign government budgets and planned orders, including potential effects from fluctuations in currency exchange rates; 43 Table of Contents \u2022\u00a0\u00a0\u00a0\u00a0the competitive environment for our products and services, including competition from startups and non-traditional defense contractors; \u2022\u00a0\u00a0\u00a0\u00a0our ability to develop and commercialize new technologies and products, including emerging digital and network technologies and capabilities; \u2022 our ability to benefit fully from or adequately protect our intellectual property rights; \u2022\u00a0\u00a0\u00a0\u00a0our ability to attract and retain a highly skilled workforce, the impact of work stoppages or other labor disruptions; \u2022\u00a0\u00a0\u00a0\u00a0cyber or other security threats or other disruptions faced by us or our suppliers; \u2022\u00a0\u00a0\u00a0\u00a0our ability to implement and continue, and the timing and impact of, capitalization changes such as share repurchases, dividend payments and financing transactions; \u2022\u00a0\u00a0\u00a0\u00a0the accuracy of our estimates and projections; \u2022\u00a0\u00a0\u00a0\u00a0the impact of pension risk transfers, including potential noncash settlement charges, timing and estimates regarding pension funding and movements in interest rates and other changes that may affect pension plan assumptions, stockholders\u2019 equity, the level of the FAS/CAS adjustment, and actual returns on pension plan assets; \u2022\u00a0\u00a0\u00a0\u00a0realizing the anticipated benefits of acquisitions or divestitures, investments, joint ventures, teaming arrangements or internal reorganizations, and market volatility affecting the fair value of investments that are marked to market; \u2022\u00a0\u00a0\u00a0\u00a0our efforts to increase the efficiency of our operations and improve the affordability of our products and services, including through digital transformation and cost reduction initiatives; \u2022\u00a0\u00a0\u00a0\u00a0the risk of an impairment of our assets, including the potential impairment of goodwill recorded at the Sikorsky line of business; \u2022\u00a0\u00a0\u00a0\u00a0the availability and adequacy of our insurance and indemnities; \u2022\u00a0\u00a0\u00a0\u00a0impacts of climate change and compliance with laws, regulations, policies, and customer requirements in response to climate change concerns; \u2022\u00a0\u00a0\u00a0\u00a0changes in accounting, U.S.",
+      "score": 0.9855
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Government prevails on the remaining issues in this matter and proves damages at or near $ 52 million and is successful in having such damages trebled, the outcome could have an adverse effect on our results of operations in the period in which a liability is recognized and on our cash flows for the period in which any damages are paid.",
+      "score": -0.795
+    },
+    {
+      "sent": "Government prevails on the remaining issues in this matter and proves damages at or near $ 52 million and is successful in having such damages trebled, the outcome could have an adverse effect on our results of operations in the period in which a liability is recognized and on our cash flows for the period in which any damages are paid.",
+      "score": -0.795
+    },
+    {
+      "sent": "Government prevails on the remaining issues in this matter and proves damages at or near $ 52 million and is successful in having such damages trebled, the outcome could have an adverse effect on our results of operations in the period in which a liability is recognized and on our cash flows for the period in which any damages are paid.",
+      "score": -0.795
+    }
+  ],
+  "forward_snippets": [
+    "We base these estimates on historical experience and on various other assumptions that we believe are reasonable under the circumstances, the results of which form the basis for making judgments about the carrying amounts of assets and liabilities that are not readily apparent from other sources.",
+    "We believe the probability is remote that the outcome of each of these matters, including the legal proceedings described below, will have a material adverse effect on the company as a whole, notwithstanding that the unfavorable resolution of any matter may have a material effect on our net earnings and cash flows in any particular interim reporting period.",
+    "Among the factors that we consider in this assessment are the nature of existing legal proceedings and claims, the asserted or possible damages or loss contingency (if estimable), the progress of the case, existing law and precedent, the opinions or views of legal counsel and other advisers, our experience in similar cases and the experience of other companies, the facts available to us at the time of assessment and how we intend to respond to the proceeding or claim.",
+    "We believe that we have legal and factual defenses to the U.S.",
+    "Although we continue to evaluate our liability and exposure, we do not currently believe that it is probable that we will incur a material loss."
+  ]
+}

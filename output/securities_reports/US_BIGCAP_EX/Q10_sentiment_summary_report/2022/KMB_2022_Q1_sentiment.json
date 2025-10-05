@@ -1,0 +1,47 @@
+{
+  "symbol": "KMB",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2493,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.075
+  },
+  "top_positive": [
+    {
+      "sent": "- Not Meaningful 16 GAAP to Non-GAAP Reconciliations of Selected Financial Results Three Months Ended September 30, 2022 As Reported Pension Settlements As Adjusted Non-GAAP Nonoperating expense $ (18) $ (10) $ (8) Provision for income taxes (127) 2 (129) Effective tax rate 22.4 % \u2014 22.3 % Net Income Attributable to Kimberly-Clark Corporation 467 (8) 475 Diluted Earnings per Share (a) 1.38 (0.02) 1.40 Three Months Ended September 30, 2021 As Reported 2018 Global Restructuring Program As Adjusted Non-GAAP Cost of products sold $ 3,527 $ 48 $ 3,479 Gross Profit 1,483 (48) 1,531 Marketing, research and general expenses 819 39 780 Other (income) and expense, net 7 1 6 Operating Profit 657 (88) 745 Nonoperating expense (10) (9) (1) Provision for income taxes (126) 16 (142) Effective tax rate 21.6 % \u2014 20.9 % Net income attributable to noncontrolling interests (10) 2 (12) Net Income Attributable to Kimberly-Clark Corporation 469 (79) 548 Diluted Earnings per Share (a) 1.39 (0.23) 1.62 Nine Months Ended September 30, 2022 As Reported Acquisition of Controlling Interest in Thinx Pension Settlements As Adjusted Non-GAAP Marketing, research and general expenses $ 2,665 $ 21 $ \u2014 $ 2,644 Other (income) and expense, net (42) (85) \u2014 43 Operating Profit 1,969 64 \u2014 1,905 Nonoperating expense (49) \u2014 (34) (15) Provision for income taxes (356) 4 8 (368) Effective tax rate 20.7 % \u2014 \u2014 21.8 % Net Income Attributable to Kimberly-Clark Corporation 1,427 68 (26) 1,385 Diluted Earnings per Share (a) 4.22 0.20 (0.08) 4.09 17 Nine Months Ended September 30, 2021 As Reported 2018 Global Restructuring Program As Adjusted Non-GAAP Cost of products sold $ 9,923 $ 98 $ 9,825 Gross Profit 4,552 (98) 4,650 Marketing, research and general expenses 2,488 78 2,410 Other (income) and expense, net 24 9 15 Operating Profit 2,040 (185) 2,225 Nonoperating expense (71) (65) (6) Provision for income taxes (386) 48 (434) Effective tax rate 21.7 % \u2014 21.4 % Net income attributable to noncontrolling interests (26) 3 (29) Net Income Attributable to Kimberly-Clark Corporation 1,457 (199) 1,656 Diluted Earnings per Share (a) 4.31 (0.59) 4.89 (a)   \"As Adjusted Non-GAAP\" may not equal \"As Reported\" plus \"Adjustments\" as a result of rounding.",
+      "score": 0.9842
+    },
+    {
+      "sent": "- Not Meaningful 16 GAAP to Non-GAAP Reconciliations of Selected Financial Results Three Months Ended September 30, 2022 As Reported Pension Settlements As Adjusted Non-GAAP Nonoperating expense $ (18) $ (10) $ (8) Provision for income taxes (127) 2 (129) Effective tax rate 22.4 % \u2014 22.3 % Net Income Attributable to Kimberly-Clark Corporation 467 (8) 475 Diluted Earnings per Share (a) 1.38 (0.02) 1.40 Three Months Ended September 30, 2021 As Reported 2018 Global Restructuring Program As Adjusted Non-GAAP Cost of products sold $ 3,527 $ 48 $ 3,479 Gross Profit 1,483 (48) 1,531 Marketing, research and general expenses 819 39 780 Other (income) and expense, net 7 1 6 Operating Profit 657 (88) 745 Nonoperating expense (10) (9) (1) Provision for income taxes (126) 16 (142) Effective tax rate 21.6 % \u2014 20.9 % Net income attributable to noncontrolling interests (10) 2 (12) Net Income Attributable to Kimberly-Clark Corporation 469 (79) 548 Diluted Earnings per Share (a) 1.39 (0.23) 1.62 Nine Months Ended September 30, 2022 As Reported Acquisition of Controlling Interest in Thinx Pension Settlements As Adjusted Non-GAAP Marketing, research and general expenses $ 2,665 $ 21 $ \u2014 $ 2,644 Other (income) and expense, net (42) (85) \u2014 43 Operating Profit 1,969 64 \u2014 1,905 Nonoperating expense (49) \u2014 (34) (15) Provision for income taxes (356) 4 8 (368) Effective tax rate 20.7 % \u2014 \u2014 21.8 % Net Income Attributable to Kimberly-Clark Corporation 1,427 68 (26) 1,385 Diluted Earnings per Share (a) 4.22 0.20 (0.08) 4.09 17 Nine Months Ended September 30, 2021 As Reported 2018 Global Restructuring Program As Adjusted Non-GAAP Cost of products sold $ 9,923 $ 98 $ 9,825 Gross Profit 4,552 (98) 4,650 Marketing, research and general expenses 2,488 78 2,410 Other (income) and expense, net 24 9 15 Operating Profit 2,040 (185) 2,225 Nonoperating expense (71) (65) (6) Provision for income taxes (386) 48 (434) Effective tax rate 21.7 % \u2014 21.4 % Net income attributable to noncontrolling interests (26) 3 (29) Net Income Attributable to Kimberly-Clark Corporation 1,457 (199) 1,656 Diluted Earnings per Share (a) 4.31 (0.59) 4.89 (a)   \"As Adjusted Non-GAAP\" may not equal \"As Reported\" plus \"Adjustments\" as a result of rounding.",
+      "score": 0.9842
+    },
+    {
+      "sent": "The total purchase price consideration was allocated to the net assets acquired based upon their respective estimated fair values as follows: Current Assets $ 28 Property, Plant and Equipment, Net 2 Goodwill 297 Other Intangible Assets, Net 123 Other Assets 4 Current Liabilities ( 17 ) Deferred Income Taxes ( 18 ) Other Liabilities ( 4 ) Fair value of net assets acquired 415 Less fair value of non-controlling interest ( 234 ) Total purchase price consideration $ 181 Other Intangible Assets, Net includes brands and customer relationships which have estimated useful lives of 4 to 15 years, primarily 15 years.",
+      "score": 0.9741
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "We are also monitoring the increased risk of cyber-based attacks as a result of the Russian invasion of Ukraine and have implemented heightened cyber-security monitoring of our systems designed to address the evolving threat landscape.",
+      "score": -0.743
+    },
+    {
+      "sent": "(d) Long-term debt includes the current portion of these debt instruments.",
+      "score": -0.6124
+    },
+    {
+      "sent": "In addition, many factors outside our cont rol, including the war in Ukraine (including the related responses of consumers, customers, and suppliers and sanctions issued by the U.S., the European Union, Russia or other countries), pandemics (including the ongoing COVID-19 outbreak and the related responses of governments, consumers, customers, suppliers and employees), epidemics, fluctuations in foreign currency exchange rates, the prices and availability of our raw materials, supply chain disruptions, changes in customer preferences, severe weather conditions, government trade or similar regulatory actions, potential competitive pressures on selling prices for our products, energy costs, general economic and political conditions globally and in the markets in which we do business, as well as our ability to maintain key customer relationships, could affect the realization of these estimates.",
+      "score": -0.6124
+    }
+  ],
+  "forward_snippets": [
+    "guidance requires the use of highly inflationary accounting for countries whose cumulative three-year inflation exceeds 100 percent.",
+    "The new guidance requires that a buyer in a supplier finance program disclose sufficient information about the program to allow a user of the financial statements to understand the program\u2019s nature, activity during the period, changes from period to period, and potential magnitude.",
+    "As the guidance requires only additional disclosures, the effects of this standard on our financial position, results of operations and cash flows are not expected to be material.",
+    "We continue to evaluate potential contingencies that may have existed as of the acquisition date and expect to finalize the purchase price allocation no later than the first quarter of 2023.",
+    "The new guidance requires that a buyer in a supplier finance program disclose sufficient information about the program to allow a user of the financial statements to understand the program\u2019s nature, activity during the period, changes from period to period, and potential magnitude."
+  ]
+}

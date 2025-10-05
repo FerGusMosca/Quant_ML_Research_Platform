@@ -1,0 +1,47 @@
+{
+  "symbol": "ADBE",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2996,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.193
+  },
+  "top_positive": [
+    {
+      "sent": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued) Summary of Performance Shares Performance share activity for fiscal 2023 was as follows: Number of Shares (in millions) Weighted Average Grant Date Fair Value Aggregate Fair Value (1) (in millions) Weighted Average Remaining Contractual Life (years) Beginning outstanding balance 0.4 $ 495.23 Awarded 0.2 $ 437.58 Released ( 0.1 ) $ 498.74 Forfeited \u2014 $ 491.86 Ending outstanding balance 0.5 $ 465.71 $ 284 1.32 Expected to vest 0.4 $ 466.10 $ 255 1.26 _________________________________________ (1) The aggregate fair value is calculated using the closing stock price as of December\u00a01, 2023 of $ 612.47 .",
+      "score": 0.9837
+    },
+    {
+      "sent": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued) Cloud-based features that are integral to our Creative Cloud and Document Cloud offerings and that work together with the on-premise/on-device software include, but are not limited to: Creative Cloud Libraries, which enable customers to access their work, settings, preferences and other assets seamlessly across desktop and mobile devices and collaborate across teams in real time; shared reviews which enable simultaneous editing and commenting of digital assets across desktop, mobile and web; automatic cloud rendering of a design which enables it to be worked on in multiple mediums; and Sensei, Adobe\u2019s cloud-hosted artificial intelligence and machine learning framework, which enables features such as automated photo-editing, photograph content-awareness, natural language processing, optical character recognition and automated document tagg\narnings, we reclassify the related gain or loss on the foreign currency revenue, foreign currency expense or Treasury lock cash flow hedge to revenue, operating expense or interest expense, as applicable.",
+      "score": 0.9822
+    },
+    {
+      "sent": "We believe we have significant opportunities to grow our Digital Media business by advancing every creative category across all surfaces; expanding content-first, task-based creativity with Adobe Express; enabling seamless collaboration across all stakeholders; inspiring the creative community through sharing and monetization; and expanding the user base of our tools through the infusion of AI into our products, services and solutions to enable users of any skill level to easily and efficiently create content using tools like Adobe Express while also enhancing the power and AI capabilities of our flagship apps for creative professionals.",
+      "score": 0.9819
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "A disruption, infiltration or failure of our systems, data centers or operations, or those of our third-party service providers due to a major earthquake, other natural disasters, including climate-related events (such as drought, water security, heat waves, cold waves, wildfires and poor air quality), power shutoff or loss, telecommunications failure, epidemic, pandemic, war, terrorist attack or other catastrophic event, could cause interruptions to our systems and business operations, damage to critical infrastructure, loss of intellectual property, data security breaches and data loss.",
+      "score": -0.9874
+    },
+    {
+      "sent": "24 Table of Contents Risks Related to the Operation of Our Business Service interruptions or failures of our or third-party information technology systems may impair the availability of our products, services and solutions, which may expose us to liability, damage our reputation and harm our future financial results.",
+      "score": -0.9349
+    },
+    {
+      "sent": "24 Table of Contents Risks Related to the Operation of Our Business Service interruptions or failures of our or third-party information technology systems may impair the availability of our products, services and solutions, which may expose us to liability, damage our reputation and harm our future financial results.",
+      "score": -0.9349
+    }
+  ],
+  "forward_snippets": [
+    "We are also empowering creators by putting the power of artificial intelligence (\u201cAI\u201d) in their hands, and doing so in ways we believe are responsible.",
+    "We believe we are positioned to compete well in both the Digital Media and Digital Experience strategic areas where our mission to change the world through personalized digital experiences has never been more relevant as people seek new ways to create, collaborate and communicate and businesses continue to invest in digital transformation.",
+    "We believe in creativity for all, and Creative Cloud addresses the needs of all content creators, from creative professionals, such as artists, designers, developers, students, and administrators, to knowledge workers, marketers, educators, enthusiasts, communicators, and consumers.",
+    "We are also empowering creators by putting the power of artificial intelligence (\u201cAI\u201d) in their hands, and doing so in ways we believe are responsible.",
+    "We believe we are positioned to compete well in both the Digital Media and Digital Experience strategic areas where our mission to change the world through personalized digital experiences has never been more relevant as people seek new ways to create, collaborate and communicate and businesses continue to invest in digital transformation."
+  ]
+}

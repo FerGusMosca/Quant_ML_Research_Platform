@@ -1,0 +1,606 @@
+{
+  "symbol": "ORLY",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-04",
+      "time": "03:00",
+      "title": "These Retailers Wring Profits From Every Cent. 2 Stocks to Buy.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/retail-deckers-o-reilly-lululemon-stock-a57ff28c?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "08:51",
+      "title": "OReilly Automotive's Q3 2025 Earnings: What to Expect\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/279dadf8-1214-3c25-b73c-d36415d98bc3/o%E2%80%99reilly-automotive%27s-q3-2025.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:01AM",
+      "title": "3 Reasons ORLY Has Explosive Upside Potential\n\n\n(StockStory)",
+      "link": "/news/183192/3-reasons-orly-has-explosive-upside-potential"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "13:13",
+      "title": "AutoZone VP Sells $12 Million Worth of Stock After the Companys 5th Straight Earnings Miss\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/e9550e8a-1654-3da9-842e-cd19287acd16/autozone-vp-sells-%2412-million.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:13PM",
+      "title": "AutoZone VP Sells $12 Million Worth of Company Stock\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/autozone-vp-stock-sale-6822f49f?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:51AM",
+      "title": "1 Magnificent Stock-Split Stock to Pile Into in October, and the High-Profile Reverse Split of the Year to Avoid\n\n\n(Motley Fool)",
+      "link": "/news/181897/1-magnificent-stock-split-stock-to-pile-into-in-october-and-the-high-profile-reverse-split-of-the-year-to-avoid"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "16:30",
+      "title": "O'Reilly Automotive, Inc. Announces Dates for Its Third Quarter 2025 Earnings Release and Conference Call\n\n\n(GlobeNewswire)",
+      "link": "/news/181468/oreilly-automotive-inc-announces-dates-for-its-third-quarter-2025-earnings-release-and-conference-call"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:45AM",
+      "title": "THOR Q4 Earnings Beat Expectations, Revenues Decrease Y/Y\n\n\n(Zacks)",
+      "link": "/news/181098/thor-q4-earnings-beat-expectations-revenues-decrease-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:40AM",
+      "title": "Are Retail-Wholesale Stocks Lagging  Boot Barn (BOOT) This Year?\n\n\n(Zacks)",
+      "link": "/news/181011/are-retail-wholesale-stocks-lagging-boot-barn-boot-this-year"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "10:35",
+      "title": "AutoZone Q4 Earnings Miss Expectations, Sales Increase Y/Y\n\n\n(Zacks)",
+      "link": "/news/179762/autozone-q4-earnings-miss-expectations-sales-increase-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:34AM",
+      "title": "1 Cash-Producing Stock Worth Your Attention and 2 We Brush Off\n\n\n(StockStory)",
+      "link": "/news/179445/1-cash-producing-stock-worth-your-attention-and-2-we-brush-off"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "07:15",
+      "title": "Is O'Reilly Auto Parts Stock a Buy?\n\n\n(Motley Fool)",
+      "link": "/news/176634/is-oreilly-auto-parts-stock-a-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:31AM",
+      "title": "1 Consumer Stock to Target This Week and 2 We Find Risky\n\n\n(StockStory)",
+      "link": "/news/176493/1-consumer-stock-to-target-this-week-and-2-we-find-risky"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "09:08",
+      "title": "Why This Auto Parts Stock Is Worth Its Premium Price\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/oreilly-automotive-stock-premium-price-50ae1d3b?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "CarMax (KMX) Q2 Earnings and Revenues Lag Estimates\n\n\n(Zacks)",
+      "link": "/news/175627/carmax-kmx-q2-earnings-and-revenues-lag-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:00AM",
+      "title": "O'Reilly Automotive Stock Is Worth the Premium Price\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/oreilly-automotive-stock-worth-premium-price-50ae1d3b?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "11:14",
+      "title": "AutoZone Stock Falls After 5th Straight Earnings Miss. Why Its Still Up 29% This Year.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/b2e292d6-dbb6-356b-a435-901a3f3a5433/autozone-stock-falls-after.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:05AM",
+      "title": "AutoZone (AZO) Lags Q4 Earnings Estimates\n\n\n(Zacks)",
+      "link": "/news/173272/autozone-azo-lags-q4-earnings-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:33AM",
+      "title": "AutoZone Stock Falls After Its Fifth Consecutive Earnings Miss\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/autozone-stock-price-earnings-ba279e88?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "09:52",
+      "title": "Josh Brown Highlights His Top Cheap Stock Pick With 'Best Long-Term Charts'\n\n\n(Insider Monkey)",
+      "link": "/news/170705/josh-brown-highlights-his-top-cheap-stock-pick-with-best-long-term-charts"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "09:38",
+      "title": "Target initiated, Nike upgraded: Wall Street's top analyst calls\n\n\n(The Fly)",
+      "link": "https://finance.yahoo.com/news/target-initiated-nike-upgraded-wall-133840821.html"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "03:51",
+      "title": "These 3 Stock-Split Stocks Are Absolutely Crushing the Benchmark S&P 500 This Year\n\n\n(Motley Fool)",
+      "link": "/news/168113/these-3-stock-split-stocks-are-absolutely-crushing-the-benchmark-sp-500-this-year"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "00:31",
+      "title": "1 High-Flying Stock to Own for Decades and 2 We Turn Down\n\n\n(StockStory)",
+      "link": "/news/166759/1-high-flying-stock-to-own-for-decades-and-2-we-turn-down"
+    },
+    {
+      "date": "2025-09-14",
+      "time": "14:51",
+      "title": "O'Reilly Automotive: The '\"Boring\" Retailer Beating Wall Street's Hottest Stocks\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/oreilly-automotive-boring-retailer-beating-185111087.html"
+    },
+    {
+      "date": "2025-09-13",
+      "time": "13:14",
+      "title": "Is O'Reilly Automotive Stock a Buy After Recent Earnings?\n\n\n(Motley Fool)",
+      "link": "/news/165535/is-oreilly-automotive-stock-a-buy-after-recent-earnings"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "07:20",
+      "title": "1 Thing I Can't Stop Thinking About Following O'Reilly Automotive's Recent Earnings Report\n\n\n(Motley Fool)",
+      "link": "/news/163488/1-thing-i-cant-stop-thinking-about-following-oreilly-automotives-recent-earnings-report"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "10:15",
+      "title": "This All-Star Stock Just Set New All-Time Highs\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/50665a9c-72b9-3087-a8e9-466549b23617/this-all-star-stock-just-set.html"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "00:37",
+      "title": "1 Unpopular Stock That Deserves a Second Chance and 2 That Underwhelm\n\n\n(StockStory)",
+      "link": "/news/158651/1-unpopular-stock-that-deserves-a-second-chance-and-2-that-underwhelm"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "13:14",
+      "title": "What Do Analysts Think About O'Reilly Automotive (ORLY)?\n\n\n(Insider Monkey)",
+      "link": "/news/158211/what-do-analysts-think-about-oreilly-automotive-orly"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:42AM",
+      "title": "2 Large-Cap Stocks Worth Your Attention and 1 We Brush Off\n\n\n(StockStory)",
+      "link": "/news/157548/2-large-cap-stocks-worth-your-attention-and-1-we-brush-off"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "12:08",
+      "title": "Energy Stock for September Options Bulls\n\n\n(Schaeffer's Research)",
+      "link": "/news/155775/energy-stock-for-september-options-bulls"
+    },
+    {
+      "date": "2025-08-31",
+      "time": "22:53",
+      "title": "Is O'Reilly Automotive Stock Outperforming the S&P 500 Index?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/7ab7f5a4-f4ae-3b1b-a463-3c9a8162272e/is-o%27reilly-automotive-stock.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:15AM",
+      "title": "Could Buying O'Reilly Automotive Stock Today Help Set You Up for Life?\n\n\n(Motley Fool)",
+      "link": "/news/154305/could-buying-oreilly-automotive-stock-today-help-set-you-up-for-life"
+    },
+    {
+      "date": "2025-08-27",
+      "time": "09:41",
+      "title": "OReilly Automotive Stock: Analyst Estimates & Ratings\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/5742bf30-da0f-3df9-b9d1-8808894f9cde/o%E2%80%99reilly-automotive-stock%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "Best and Worst Stocks to Own Over Labor Day Week\n\n\n(Schaeffer's Research)",
+      "link": "/news/150817/best-and-worst-stocks-to-own-over-labor-day-week"
+    },
+    {
+      "date": "2025-08-26",
+      "time": "20:14",
+      "title": "What Is the Highest O'Reilly Automotive Stock Has Ever Been?\n\n\n(Motley Fool)",
+      "link": "/news/150408/what-is-the-highest-oreilly-automotive-stock-has-ever-been"
+    },
+    {
+      "date": "2025-08-25",
+      "time": "23:34",
+      "title": "Q2 Earnings Roundup: O'Reilly (NASDAQ:ORLY) And The Rest Of The Auto Parts Retailer Segment\n\n\n(StockStory)",
+      "link": "/news/149727/q2-earnings-roundup-oreilly-nasdaq-orly-and-the-rest-of-the-auto-parts-retailer-segment"
+    },
+    {
+      "date": "2025-08-22",
+      "time": "11:30",
+      "title": "Why Is O'Reilly Automotive (ORLY) Up 4.8% Since Last Earnings Report?\n\n\n(Zacks)",
+      "link": "/news/147471/why-is-oreilly-automotive-orly-up-48-since-last-earnings-report"
+    },
+    {
+      "date": "2025-08-20",
+      "time": "08:40",
+      "title": "If You Buy O'Reilly Automotive With $10,000 in 2025, Will You Become a Millionaire in 10 Years?\n\n\n(Motley Fool)",
+      "link": "/news/145173/if-you-buy-oreilly-automotive-with-10000-in-2025-will-you-become-a-millionaire-in-10-years"
+    },
+    {
+      "date": "2025-08-18",
+      "time": "04:40",
+      "title": "Is O'Reilly Automotive Stock a Buy?\n\n\n(Motley Fool)",
+      "link": "/news/142787/is-oreilly-automotive-stock-a-buy"
+    },
+    {
+      "date": "2025-08-16",
+      "time": "03:48",
+      "title": "1 Unstoppable Growth Stock That's On Track to Double by 2030\n\n\n(Motley Fool)",
+      "link": "/news/142369/1-unstoppable-growth-stock-thats-on-track-to-double-by-2030"
+    },
+    {
+      "date": "2025-08-15",
+      "time": "01:01",
+      "title": "ORLY- A \"Cannibal\" Stock that You Should Consider\n\n\n(MoneyShow)",
+      "link": "https://finance.yahoo.com/news/orly-cannibal-stock-consider-050100543.html"
+    },
+    {
+      "date": "2025-08-14",
+      "time": "10:38",
+      "title": "Advance Auto Parts Stock Skids After Earnings Beat. Here's Why.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/advance-auto-parts-earnings-stock-price-85480cc1?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "C3 AI downgraded, Capri upgraded: Wall Streets top analyst calls\n\n\n(TipRanks)",
+      "link": "https://finance.yahoo.com/news/c3-ai-downgraded-capri-upgraded-134528564.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "O'Reilly Achieves Workday Certified Integration and Joins the Workday Marketplace to Support Workforces in Building Critical Tech and Business Skills\n\n\n(Business Wire)",
+      "link": "https://finance.yahoo.com/news/oreilly-achieves-workday-certified-integration-130000575.html"
+    },
+    {
+      "date": "2025-08-13",
+      "time": "09:40",
+      "title": "C3 AI downgraded, Capri upgraded: Wall Street's top analyst calls\n\n\n(The Fly)",
+      "link": "https://finance.yahoo.com/news/c3-ai-downgraded-capri-upgraded-134035825.html"
+    },
+    {
+      "date": "2025-08-11",
+      "time": "03:51",
+      "title": "O'Reilly Automotive's Historic Stock Split Was Spurred by a 65,000% Gain Since Its IPO. Is Its Biggest Rival About to Become Wall Street's Next Stock-Split Stock?\n\n\n(Motley Fool)",
+      "link": "/news/134597/oreilly-automotives-historic-stock-split-was-spurred-by-a-65000-gain-since-its-ipo-is-its-biggest-rival-about-to-become-wall-streets-next-stock-split-stock"
+    },
+    {
+      "date": "2025-08-05",
+      "time": "13:05",
+      "title": "Can $10,000 in O'Reilly Automotive Stock Turn Into $61,917 by 2035?\n\n\n(Motley Fool)",
+      "link": "/news/128634/can-10000-in-oreilly-automotive-stock-turn-into-61917-by-2035"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:53AM",
+      "title": "OReilly Automotive acquires Texas distribution center amid capacity constraints\n\n\n(Supply Chain Dive)",
+      "link": "https://finance.yahoo.com/m/1c533797-1d20-365c-a5ce-91c9de6a3b23/o%E2%80%99reilly-automotive-acquires.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:43AM",
+      "title": "2 Soaring Growth Stocks That Could Climb Another 15% to 20%, According to Wall Street Analysts\n\n\n(Motley Fool)",
+      "link": "/news/127449/2-soaring-growth-stocks-that-could-climb-another-15-to-20-according-to-wall-street-analysts"
+    },
+    {
+      "date": "2025-08-04",
+      "time": "03:51",
+      "title": "1 Magnificent Stock-Split Stock to Buy Hand Over Fist in August and 1 to Absolutely Avoid\n\n\n(Motley Fool)",
+      "link": "/news/125795/1-magnificent-stock-split-stock-to-buy-hand-over-fist-in-august-and-1-to-absolutely-avoid"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:36AM",
+      "title": "3 Market-Beating Stocks with Promising Prospects\n\n\n(StockStory)",
+      "link": "/news/125828/3-market-beating-stocks-with-promising-prospects"
+    },
+    {
+      "date": "2025-08-01",
+      "time": "00:44",
+      "title": "1 Cash-Producing Stock for Long-Term Investors and 2 We Turn Down\n\n\n(StockStory)",
+      "link": "/news/124314/1-cash-producing-stock-for-long-term-investors-and-2-we-turn-down"
+    },
+    {
+      "date": "2025-07-31",
+      "time": "08:45",
+      "title": "What O'Reilly Automotive's Earnings Say About the Health of Its Business\n\n\n(Motley Fool)",
+      "link": "/news/122531/what-oreilly-automotives-earnings-say-about-the-health-of-its-business"
+    },
+    {
+      "date": "2025-07-30",
+      "time": "09:04",
+      "title": "LAD Q2 Earnings Beat on Used Vehicle & Aftersales Outperformance\n\n\n(Zacks)",
+      "link": "/news/120841/lad-q2-earnings-beat-on-used-vehicle-aftersales-outperformance"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:06AM",
+      "title": "The Most Anticipated Stock Split of 2025 May Be Announced Later Today\n\n\n(Motley Fool)",
+      "link": "/news/120128/the-most-anticipated-stock-split-of-2025-may-be-announced-later-today"
+    },
+    {
+      "date": "2025-07-28",
+      "time": "14:59",
+      "title": "Analyst Report: O'Reilly Automotive, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/9ee73ee2-4737-36de-b90c-077058b0d2a3/analyst-report%3A-o%27reilly.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:32AM",
+      "title": "1 Consumer Stock on Our Buy List and 2 That Underwhelm\n\n\n(StockStory)",
+      "link": "/news/116886/1-consumer-stock-on-our-buy-list-and-2-that-underwhelm"
+    },
+    {
+      "date": "2025-07-26",
+      "time": "03:45",
+      "title": "Billionaires Sell Apple Stock and Buy a Stock-Split Stock Up 510% in the Last Decade\n\n\n(Motley Fool)",
+      "link": "/news/116294/billionaires-sell-apple-stock-and-buy-a-stock-split-stock-up-510-in-the-last-decade"
+    },
+    {
+      "date": "2025-07-25",
+      "time": "08:23",
+      "title": "SAH Surpasses Q2 Earnings Estimates, Hikes Dividend by 9%\n\n\n(Zacks)",
+      "link": "/news/115423/sah-surpasses-q2-earnings-estimates-hikes-dividend-by-9"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:20AM",
+      "title": "O'Reilly Automotive Inc (ORLY) Q2 2025 Earnings Call Highlights: Strong Sales Growth and ...\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/oreilly-automotive-inc-orly-q2-072000562.html"
+    },
+    {
+      "date": "2025-07-24",
+      "time": "17:08",
+      "title": "Auto & Transport Roundup: Market Talk\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/1caab948-b3cf-3609-9ec7-fa8dab5254ae/auto-%26-transport-roundup%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:49PM",
+      "title": "Why O'Reilly Automotive Stock Raced Higher Today\n\n\n(Motley Fool)",
+      "link": "/news/114714/why-oreilly-automotive-stock-raced-higher-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:06PM",
+      "title": "O'Reilly (ORLY) Stock Trades Up, Here Is Why\n\n\n(StockStory)",
+      "link": "/news/114514/oreilly-orly-stock-trades-up-here-is-why"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:16AM",
+      "title": "O'Reilly Q2 Earnings Beat Estimates, '25 Revenue Outlook Raised\n\n\n(Zacks)",
+      "link": "/news/114361/oreilly-q2-earnings-beat-estimates-25-revenue-outlook-raised"
+    },
+    {
+      "date": "2025-07-23",
+      "time": "19:18",
+      "title": "Analyst Report: O'Reilly Automotive, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/e4528233-4c8d-314a-8ee6-cd3da1d80927/analyst-report%3A-o%27reilly.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:40PM",
+      "title": "O'Reilly Automotive (ORLY) Surpasses Q2 Earnings Estimates\n\n\n(Zacks)",
+      "link": "/news/113059/oreilly-automotive-orly-surpasses-q2-earnings-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:18PM",
+      "title": "OReilly automotive shares slip as full-year guidance disappoints\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/o-reilly-automotive-shares-slip-211822657.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:13PM",
+      "title": "O'Reilly (NASDAQ:ORLY) Posts Q2 Sales In Line With Estimates\n\n\n(StockStory)",
+      "link": "/news/112966/oreilly-nasdaq-orly-posts-q2-sales-in-line-with-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:46PM",
+      "title": "O'Reilly Automotive: Q2 Earnings Snapshot\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/oreilly-automotive-q2-earnings-snapshot-204621537.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:30PM",
+      "title": "O'Reilly Automotive, Inc. Reports Second Quarter 2025 Results\n\n\n(GlobeNewswire)",
+      "link": "/news/112921/oreilly-automotive-inc-reports-second-quarter-2025-results"
+    },
+    {
+      "date": "2025-07-22",
+      "time": "08:05",
+      "title": "Genuine Parts (GPC) Q2 Earnings and Revenues Surpass Estimates\n\n\n(Zacks)",
+      "link": "/news/110533/genuine-parts-gpc-q2-earnings-and-revenues-surpass-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:32AM",
+      "title": "1 Stock-Split Stock to Buy Hand Over Fist in July and 1 to Avoid\n\n\n(Motley Fool)",
+      "link": "/news/110296/1-stock-split-stock-to-buy-hand-over-fist-in-july-and-1-to-avoid"
+    },
+    {
+      "date": "2025-07-21",
+      "time": "23:08",
+      "title": "O'Reilly (ORLY) To Report Earnings Tomorrow: Here Is What To Expect\n\n\n(StockStory)",
+      "link": "/news/110048/oreilly-orly-to-report-earnings-tomorrow-here-is-what-to-expect"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:37AM",
+      "title": "Earnings live: Verizon, Domino's kick off busy week for second quarter earnings\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/earnings-live-verizon-dominos-kick-off-busy-week-for-second-quarter-earnings-143736222.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:38AM",
+      "title": "Zacks Industry Outlook Highlights O'Reilly Automotive and Advance Auto Parts\n\n\n(Zacks)",
+      "link": "/news/108901/zacks-industry-outlook-highlights-oreilly-automotive-and-advance-auto-parts"
+    },
+    {
+      "date": "2025-07-20",
+      "time": "07:35",
+      "title": "Tesla, Alphabet highlight earnings rush as market hovers near record highs: What to know this week\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/tesla-alphabet-highlight-earnings-rush-as-market-hovers-near-record-highs-what-to-know-this-week-113529744.html"
+    },
+    {
+      "date": "2025-07-18",
+      "time": "16:24",
+      "title": "Earnings live: Second quarter earnings season off to strong start with Tesla, Google on deck\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/earnings-live-second-quarter-earnings-season-off-to-strong-start-with-tesla-google-on-deck-202455792.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:29AM",
+      "title": "2 Auto Parts Retailers to Capitalize on Favorable Industry Dynamics\n\n\n(Zacks)",
+      "link": "/news/108020/2-auto-parts-retailers-to-capitalize-on-favorable-industry-dynamics"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:15AM",
+      "title": "Insights Into O'Reilly Automotive (ORLY) Q2: Wall Street Projections for Key Metrics\n\n\n(Zacks)",
+      "link": "/news/107826/insights-into-oreilly-automotive-orly-q2-wall-street-projections-for-key-metrics"
+    },
+    {
+      "date": "2025-07-17",
+      "time": "11:46",
+      "title": "O'Reilly Gears Up to Report Q2 Earnings: What's in the Cards?\n\n\n(Zacks)",
+      "link": "/news/106918/oreilly-gears-up-to-report-q2-earnings-whats-in-the-cards"
+    },
+    {
+      "date": "2025-07-16",
+      "time": "10:00",
+      "title": "O'Reilly Automotive (ORLY) Earnings Expected to Grow: What to Know Ahead of Next Week's Release\n\n\n(Zacks)",
+      "link": "/news/105451/oreilly-automotive-orly-earnings-expected-to-grow-what-to-know-ahead-of-next-weeks-release"
+    },
+    {
+      "date": "2025-07-15",
+      "time": "23:31",
+      "title": "Winners And Losers Of Q1: O'Reilly (NASDAQ:ORLY) Vs The Rest Of The Auto Parts Retailer Stocks\n\n\n(StockStory)",
+      "link": "/news/105049/winners-and-losers-of-q1-oreilly-nasdaq-orly-vs-the-rest-of-the-auto-parts-retailer-stocks"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Here's How Much a $1000 Investment in O'Reilly Automotive Made 10 Years Ago Would Be Worth Today\n\n\n(Zacks)",
+      "link": "/news/103928/heres-how-much-a-1000-investment-in-oreilly-automotive-made-10-years-ago-would-be-worth-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:06AM",
+      "title": "Wall Street's Premier Stock-Split Stocks of 2025 Have Gained Up to 137,000% Since Their IPOs and Show No Signs of Slowing Down\n\n\n(Motley Fool)",
+      "link": "/news/103510/wall-streets-premier-stock-split-stocks-of-2025-have-gained-up-to-137000-since-their-ipos-and-show-no-signs-of-slowing-down"
+    },
+    {
+      "date": "2025-07-14",
+      "time": "12:03",
+      "title": "O'Reilly Automotive, Inc. (ORLY): A Bear Case Theory\n\n\n(Insider Monkey)",
+      "link": "/news/102984/oreilly-automotive-inc-orly-a-bear-case-theory"
+    },
+    {
+      "date": "2025-07-12",
+      "time": "06:57",
+      "title": "Could Buying O'Reilly Automotive Stock Today Set You Up for Life?\n\n\n(Motley Fool)",
+      "link": "/news/101994/could-buying-oreilly-automotive-stock-today-set-you-up-for-life"
+    },
+    {
+      "date": "2025-07-11",
+      "time": "06:52",
+      "title": "How Tariffs Helped Turn Hertz and AutoZone Into Winning Bets\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-07-11-2025/card/how-tariffs-helped-turn-hertz-and-autozone-into-winning-bets-xB6j1JdO03v46yhEpwIg?mod=wsj_FV"
+    },
+    {
+      "date": "2025-07-10",
+      "time": "21:01",
+      "title": "'Everybody Is Chasing The Next AI Hype,' Says Investor. But They're Asking: What Are The Boring Stocks With 'Tech-Like Returns?'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/everybody-chasing-next-ai-hype-010100877.html"
+    },
+    {
+      "date": "2025-07-08",
+      "time": "00:33",
+      "title": "1 Unpopular Stock that Deserves Some Love and 2 to Be Wary Of\n\n\n(StockStory)",
+      "link": "/news/97829/1-unpopular-stock-that-deserves-some-love-and-2-to-be-wary-of"
+    },
+    {
+      "date": "2025-07-07",
+      "time": "16:19",
+      "title": "3 retail stock picks as Trump's trade deadline looms\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/3-retail-stock-picks-trumps-201921146.html"
+    },
+    {
+      "date": "2025-07-04",
+      "time": "12:33",
+      "title": "3 Growth Stocks to Buy and Forget About\n\n\n(Motley Fool)",
+      "link": "/news/96222/3-growth-stocks-to-buy-and-forget-about"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:36AM",
+      "title": "Here's What Boosted O'Reilly Automotive's (ORLY) Performance in Q1\n\n\n(Insider Monkey)",
+      "link": "/news/95951/heres-what-boosted-oreilly-automotives-orly-performance-in-q1"
+    },
+    {
+      "date": "2025-07-03",
+      "time": "06:18",
+      "title": "O'Reilly Automotive Earnings Preview: What to Expect\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/abe2b151-88be-345e-8aad-7d2310650c67/o%27reilly-automotive-earnings.html"
+    },
+    {
+      "date": "2025-07-01",
+      "time": "16:30",
+      "title": "O'Reilly Automotive, Inc. Announces Dates for Its Second Quarter 2025 Earnings Release and Conference Call\n\n\n(GlobeNewswire)",
+      "link": "/news/93634/oreilly-automotive-inc-announces-dates-for-its-second-quarter-2025-earnings-release-and-conference-call"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:46AM",
+      "title": "Is O'Reilly Automotive (ORLY) a Defensive Stock?\n\n\n(Insider Monkey)",
+      "link": "/news/93094/is-oreilly-automotive-orly-a-defensive-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:51AM",
+      "title": "1 Magnificent Stock-Split Stock to Buy Hand Over Fist in July and 1 to Completely Avoid\n\n\n(Motley Fool)",
+      "link": "/news/92760/1-magnificent-stock-split-stock-to-buy-hand-over-fist-in-july-and-1-to-completely-avoid"
+    },
+    {
+      "date": "2025-06-29",
+      "time": "13:28",
+      "title": "O'Reilly Stock Split Drives Price Target Adjustment Despite Mixed Q1 Results\n\n\n(Insider Monkey)",
+      "link": "/news/91486/oreilly-stock-split-drives-price-target-adjustment-despite-mixed-q1-results"
+    },
+    {
+      "date": "2025-06-28",
+      "time": "07:45",
+      "title": "This Stock Is Up 55,000% Since Its IPO: Here's 1 Reason It Could Still Be a Smart Buy\n\n\n(Motley Fool)",
+      "link": "/news/91284/this-stock-is-up-55000-since-its-ipo-heres-1-reason-it-could-still-be-a-smart-buy"
+    },
+    {
+      "date": "2025-06-26",
+      "time": "10:14",
+      "title": "3 Notable Stocks Just Split: Which One Could Be The Big Winner?\n\n\n(MarketBeat)",
+      "link": "/news/89623/3-notable-stocks-just-split-which-one-could-be-the-big-winner"
+    }
+  ]
+}

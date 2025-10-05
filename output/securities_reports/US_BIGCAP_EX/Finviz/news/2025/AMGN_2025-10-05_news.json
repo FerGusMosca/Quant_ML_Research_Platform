@@ -1,0 +1,606 @@
+{
+  "symbol": "AMGN",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-04",
+      "time": "06:45",
+      "title": "4 Reasons to Buy Amgen Stock Right Now\n\n\n(Motley Fool)",
+      "link": "/news/183812/4-reasons-to-buy-amgen-stock-right-now"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "11:10",
+      "title": "Cramer's Stop Trading: Amgen\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=lAGrlvq6ynw"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:46AM",
+      "title": "Long-term benefit of Amgens Repatha in reducing MACE shown in Phase III trial\n\n\n(Clinical Trials Arena)",
+      "link": "https://finance.yahoo.com/m/2fb72bb0-021b-384c-a020-8957b7445630/long-term-benefit-of-amgen%E2%80%99s.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:46AM",
+      "title": "Amgens Phase III data supports FDA label expansion of Repatha\n\n\n(Pharmaceutical Technology)",
+      "link": "https://finance.yahoo.com/m/c32316f3-cddd-34b2-9465-13c1a92b42f6/amgen%E2%80%99s-phase-iii-data.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:46AM",
+      "title": "Amgens Phase III data cements FDA decision to expand Repatha label\n\n\n(Clinical Trials Arena)",
+      "link": "https://finance.yahoo.com/m/2fb72bb0-021b-384c-a020-8957b7445630/amgen%E2%80%99s-phase-iii-data.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:50",
+      "title": "Why Amgen (AMGN) is a Top Momentum Stock for the Long-Term\n\n\n(Zacks)",
+      "link": "/news/182441/why-amgen-amgn-is-a-top-momentum-stock-for-the-long-term"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:23AM",
+      "title": "Stock Market News for Oct 2, 2025\n\n\n(Zacks)",
+      "link": "/news/182347/stock-market-news-for-oct-2-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "LANDMARK PHASE 3 TRIAL (VESALIUS-CV) MEETS PRIMARY ENDPOINTS IN A CARDIOVASCULAR PRIMARY PREVENTION STUDY OF 12,000 PATIENTS\n\n\n(PR Newswire)",
+      "link": "/news/182214/landmark-phase-3-trial-vesalius-cv-meets-primary-endpoints-in-a-cardiovascular-primary-prevention-study-of-12000-patients"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:53AM",
+      "title": "Amgen claims landmark study result that could widen heart drugs use\n\n\n(BioPharma Dive)",
+      "link": "https://finance.yahoo.com/m/0249a769-eefe-3efa-8bf5-64a5d1899be2/amgen-claims-%E2%80%98landmark%E2%80%99-study.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Bruce Beutler Unlocked Key Mystery To Disease  And He's Not Done\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/3b8f45fb-6bd7-3a25-93a0-b625fcfdaf72/bruce-beutler-unlocked-key.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:26AM",
+      "title": "2 High-Yield Dividend Growth Stocks to Buy in October and Hold for a Decade or Longer\n\n\n(Motley Fool)",
+      "link": "/news/181866/2-high-yield-dividend-growth-stocks-to-buy-in-october-and-hold-for-a-decade-or-longer"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:55AM",
+      "title": "Amgen Inc (AMGN) Ramps Up Manufacturing Capacity in US, Amidst Hefty Tariffs\n\n\n(Insider Monkey)",
+      "link": "/news/181843/amgen-inc-amgn-ramps-up-manufacturing-capacity-in-us-amidst-hefty-tariffs"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:33AM",
+      "title": "Amgen (AMGN) Announces $650M Puerto Rico Facility Expansion\n\n\n(Insider Monkey)",
+      "link": "/news/181837/amgen-amgn-announces-650m-puerto-rico-facility-expansion"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "19:31",
+      "title": "Analyst Report: Amgen Inc.\n\n\n(Morningstar Research)  +5.78%",
+      "link": "https://finance.yahoo.com/m/d3d60a79-181e-349c-99db-2cfbcedee6c9/analyst-report%3A-amgen-inc..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:30PM",
+      "title": "Marjorie Taylor Greene Loads Up On Six-Figure Treasury Bill Diversifies Portfolio With Bitcoin ETF, Tech Stocks\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/marjorie-taylor-greene-loads-six-233046635.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:55PM",
+      "title": "Drug Stock Rally Helps Push Dow and S&P 500 to Records\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/finance/stocks/global-stocks-markets-dow-news-10-01-2025-bf78f02f?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:36PM",
+      "title": "Why Drug Stocks Are Celebrating Trump's 100% Pharmaceutical Tariff\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/c8ec04d0-47af-3508-bd4e-66680a3f8a6a/why-drug-stocks-are.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00PM",
+      "title": "Why Are Amgen (AMGN) Shares Soaring Today\n\n\n(StockStory)",
+      "link": "/news/181374/why-are-amgen-amgn-shares-soaring-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:50AM",
+      "title": "Why Investors Need to Take Advantage of These 2 Medical Stocks Now\n\n\n(Zacks)",
+      "link": "/news/180872/why-investors-need-to-take-advantage-of-these-2-medical-stocks-now"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "16:47",
+      "title": "Pfizer Stock Soars on Trumps New Drug Pricing Plan. Heres Why.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/6adbb16c-c0b2-3173-bebd-3200eca0816f/pfizer-stock-soars-on-trump%E2%80%99s.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:49PM",
+      "title": "Bank of America Securities Maintains a Sell Rating on Amgen (AMGN)\n\n\n(Insider Monkey)",
+      "link": "/news/179985/bank-of-america-securities-maintains-a-sell-rating-on-amgen-amgn"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:06PM",
+      "title": "Pfizers Trump Deal Eases Drug Pricing, Tariff Pressure. Drug Stocks Are Up.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/6adbb16c-c0b2-3173-bebd-3200eca0816f/pfizer%E2%80%99s-trump-deal-eases.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:34AM",
+      "title": "Pfizer, Other Drug Stocks Jump on Reports of Trump Pricing Plan\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/pfizer-stock-price-trump-drug-price-plan-pharma-d2d4fb98?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:50AM",
+      "title": "Why Investors Need to Take Advantage of These 2 Medical Stocks Now\n\n\n(Zacks)",
+      "link": "/news/179541/why-investors-need-to-take-advantage-of-these-2-medical-stocks-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:46AM",
+      "title": "Amgen to expand US drug production with $650M investment\n\n\n(Manufacturing Dive)",
+      "link": "https://finance.yahoo.com/m/41635b66-8bd8-350f-b27f-9e6e9452af87/amgen-to-expand-us-drug.html"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "04:29",
+      "title": "Amgen to invest $650m in US manufacturing network expansion\n\n\n(Pharmaceutical Technology)",
+      "link": "https://finance.yahoo.com/m/d437393e-6f43-3e15-b6d5-2c3ceb604048/amgen-to-invest-%24650m-in-us.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:39AM",
+      "title": "Amgen Inc.'s (AMGN) and AstraZeneca's (AZN) Tezspire Receives Positive Recommendation from the EU Medicines Agency\n\n\n(Insider Monkey)",
+      "link": "/news/177889/amgen-incs-amgn-and-astrazenecas-azn-tezspire-receives-positive-recommendation-from-the-eu-medicines-agency"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "18:43",
+      "title": "Amgen Inc. (AMGN) Invests $650M to Expand Puerto Rico Biologics Facility, Adds 750 Jobs\n\n\n(Insider Monkey)",
+      "link": "/news/177776/amgen-inc-amgn-invests-650m-to-expand-puerto-rico-biologics-facility-adds-750-jobs"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "17:30",
+      "title": "GLP-1 race evolves as Amgen & weight-loss pills enter the scene\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/glp-1-race-evolves-amgen-213000226.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:51PM",
+      "title": "Eli Lilly, Pfizer, Amgen Stocks Rise After Trumps 100% Pharma Tariff Threat. Heres Why.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/56f949c4-0da7-3f93-bd14-99e92ada288d/eli-lilly%2C-pfizer%2C-amgen.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:40PM",
+      "title": "All bark, no bite: Trumps latest trade war turns into another TACO salad for Wall Street\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/bark-no-bite-trump-latest-204046597.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15PM",
+      "title": "These Stocks Moved the Most Today: Eli Lilly, Electronic Arts, Intel, GlobalFoundries, Boeing, AppLovin, Costco, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/527330ab-f922-3d99-a83e-d4d85cfdce8c/these-stocks-moved-the-most.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:19PM",
+      "title": "These Stocks Are Moving the Most Today: Eli Lilly, Intel, Paccar, GlobalFoundries, Boeing, AppLovin, Costco, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/527330ab-f922-3d99-a83e-d4d85cfdce8c/these-stocks-are-moving-the.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:10AM",
+      "title": "Analysts Cite Amgen's (AMGN) Strong Therapies Pipeline to Reaffirm Bullish Outlook\n\n\n(Insider Monkey)",
+      "link": "/news/177028/analysts-cite-amgens-amgn-strong-therapies-pipeline-to-reaffirm-bullish-outlook"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:29AM",
+      "title": "Amgen to Invest $650 Million in U.S. Production Expansion as Trump Hikes Tariffs\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/amgen-to-invest-650-million-in-u-s-production-expansion-as-trump-hikes-tariffs-6b2a687e?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Amgen Inc. (AMGN) is Attracting Investor Attention: Here is What You Should Know\n\n\n(Zacks)",
+      "link": "/news/176852/amgen-inc-amgn-is-attracting-investor-attention-here-is-what-you-should-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "AMGEN ANNOUNCES $650M EXPANSION OF U.S. MANUFACTURING, CREATING HUNDREDS OF NEW JOBS\n\n\n(PR Newswire)",
+      "link": "/news/176761/amgen-announces-650m-expansion-of-us-manufacturing-creating-hundreds-of-new-jobs"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:15AM",
+      "title": "Eli Lilly, Pfizer Stocks Rise After Trump's 100% Pharma Tariff Threat. Here's Why.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/eli-lilly-pfizer-stock-trump-pharma-tariffs-2b9ddfb7?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "22:52",
+      "title": "US, European pharma stocks steady after Trump's tariff move, Asia slips\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/shares-asian-drugmakers-drop-trump-025200888.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:36AM",
+      "title": "Is Amgen (AMGN) a Safe Bet for Income Investors in Cheap Quarterly Dividend Stocks?\n\n\n(Insider Monkey)",
+      "link": "/news/175912/is-amgen-amgn-a-safe-bet-for-income-investors-in-cheap-quarterly-dividend-stocks"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "17:50",
+      "title": "Amgen (AMGN) Dips More Than Broader Market: What You Should Know\n\n\n(Zacks)",
+      "link": "/news/175128/amgen-amgn-dips-more-than-broader-market-what-you-should-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:25PM",
+      "title": "LLY vs. NVO: Which Obesity Drug Stock Is the Better Buy Now?\n\n\n(Zacks)",
+      "link": "/news/174935/lly-vs-nvo-which-obesity-drug-stock-is-the-better-buy-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00AM",
+      "title": "Pharmas next generation of blockbuster antibodies takes a more is better approach\n\n\n(Pharma Voice)",
+      "link": "https://finance.yahoo.com/m/cdc66e37-0a1f-3a72-8144-f5e4ac5dad57/pharma%E2%80%99s-next-generation-of.html"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "11:57",
+      "title": "AZN Gets CHMP Nod for Label Expansion of Koselugo & Tezspire\n\n\n(Zacks)",
+      "link": "/news/173603/azn-gets-chmp-nod-for-label-expansion-of-koselugo-tezspire"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "10:37",
+      "title": "Stock Market Today: Dow Up As Apple, Tesla Gain On These Calls; Oracle Pops After Executive Shuffle (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/296bfec4-debf-3635-a8f4-e936a36cf1b0/stock-market-today%3A-dow-up-as.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:37AM",
+      "title": "Stock Market Today: Dow Falls As Apple, Tesla Gain On These Calls; Obesity Play Rockets On Pfizer Move (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/296bfec4-debf-3635-a8f4-e936a36cf1b0/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:22AM",
+      "title": "Amgen (AMGN) Moves 3.5% Higher: Will This Strength Last?\n\n\n(Zacks)",
+      "link": "/news/172411/amgen-amgn-moves-35-higher-will-this-strength-last"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:16AM",
+      "title": "J&J Adds $63B in Market Cap in 3 Months: Time to Buy the Stock?\n\n\n(Zacks)",
+      "link": "/news/172287/jj-adds-63b-in-market-cap-in-3-months-time-to-buy-the-stock"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "16:09",
+      "title": "Top Research Reports for Costco, Morgan Stanley & Caterpillar\n\n\n(Zacks)",
+      "link": "/news/171201/top-research-reports-for-costco-morgan-stanley-caterpillar"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:05PM",
+      "title": "Why Amgen (AMGN) Stock Is Trading Up Today\n\n\n(StockStory)",
+      "link": "/news/171151/why-amgen-amgn-stock-is-trading-up-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:17PM",
+      "title": "EMA Backs Amgen Drug For Rare Autoimmune Disorder\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/ema-backs-amgen-drug-rare-171710015.html"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "11:30",
+      "title": "J&J Expects Innovative Medicines Growth Despite Stelara LOE: Here's Why\n\n\n(Zacks)",
+      "link": "/news/169846/jj-expects-innovative-medicines-growth-despite-stelara-loe-heres-why"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "09:53",
+      "title": "NVO Stock Rises on Upbeat Phase III Data for Cagrilintide in Obesity\n\n\n(Zacks)",
+      "link": "/news/168586/nvo-stock-rises-on-upbeat-phase-iii-data-for-cagrilintide-in-obesity"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:40AM",
+      "title": "Why Amgen (AMGN) is a Top Value Stock for the Long-Term\n\n\n(Zacks)",
+      "link": "/news/168550/why-amgen-amgn-is-a-top-value-stock-for-the-long-term"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:30AM",
+      "title": "Ollin debuts with $100M and plans to challenge top-selling eye drugs\n\n\n(BioPharma Dive)",
+      "link": "https://finance.yahoo.com/m/7080f7b0-5ef7-3bd5-9e26-79d04edd3fcf/ollin-debuts-with-%24100m-and.html"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "14:58",
+      "title": "What Do Analysts Think About Amgen Inc. (AMGN)?\n\n\n(Insider Monkey)",
+      "link": "/news/167772/what-do-analysts-think-about-amgen-inc-amgn"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:58PM",
+      "title": "AMGN vs. VKTX: Which Biotech Stock Is the Better Obesity Play?\n\n\n(Zacks)",
+      "link": "/news/167699/amgn-vs-vktx-which-biotech-stock-is-the-better-obesity-play"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:09AM",
+      "title": "Stock Market Today: Dow Wavers Amid Surprise Retail Sales; Dave & Busters Plunges (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/0a73413b-b9d7-35ef-ba69-839e6e6980f1/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "15:31",
+      "title": "Stock Market Today: Indexes Up As Chips Fall On China; Buffett Stock Tests Entry (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/8620f99a-4db8-3e0a-9381-158abddcda17/stock-market-today%3A-indexes.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:40PM",
+      "title": "Stock Market Today: Dow Steadies, Nasdaq Up But These Chip Stocks Fall On China Move; Gold Stock Hits Entry (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/8620f99a-4db8-3e0a-9381-158abddcda17/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:44PM",
+      "title": "Stock Market Today: Dow, Nasdaq Gain As Uber Clears Entry; Gold Stock Hits Entry (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/8620f99a-4db8-3e0a-9381-158abddcda17/stock-market-today%3A-dow%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:53AM",
+      "title": "Why Californias biopharma boom is critical for logistics\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/why-california-biopharma-boom-critical-155327803.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:08AM",
+      "title": "Lilly Moves Past 50-Day SMA: Should You Consider Buying the Stock Now?\n\n\n(Zacks)",
+      "link": "/news/166369/lilly-moves-past-50-day-sma-should-you-consider-buying-the-stock-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Amgen Inc. (AMGN) Is a Trending Stock: Facts to Know Before Betting on It\n\n\n(Zacks)",
+      "link": "/news/166155/amgen-inc-amgn-is-a-trending-stock-facts-to-know-before-betting-on-it"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:14AM",
+      "title": "Samsung Biologics, Amgen and Biocon invest in US pharma sites\n\n\n(Manufacturing Dive)",
+      "link": "https://finance.yahoo.com/m/e5f25881-fff5-3199-870d-760af03a56cc/samsung-biologics%2C-amgen-and.html"
+    },
+    {
+      "date": "2025-09-14",
+      "time": "07:15",
+      "title": "2 Healthcare Dividend Stocks to Buy and Hold\n\n\n(Motley Fool)",
+      "link": "/news/165636/2-healthcare-dividend-stocks-to-buy-and-hold"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:17AM",
+      "title": "Guggenheim Maintains a Hold on Amgen Inc. (AMGN)\n\n\n(Insider Monkey)",
+      "link": "/news/165587/guggenheim-maintains-a-hold-on-amgen-inc-amgn"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "20:14",
+      "title": "Morningstar | A Weekly Summary of Stock Ideas and Developments in the Companies We Cover\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/4b001331-18b1-3241-8397-807079689f87/morningstar-%7C-a-weekly.html"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "12:49",
+      "title": "Amgen Inc (AMGN) Releases Top-Line Results From ASCEND Study of Rocatinlimab\n\n\n(Insider Monkey)",
+      "link": "/news/164030/amgen-inc-amgn-releases-top-line-results-from-ascend-study-of-rocatinlimab"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:02AM",
+      "title": "Where Does VKTX Stock Stand After the Obesity Pill Setback?\n\n\n(Zacks)",
+      "link": "/news/163861/where-does-vktx-stock-stand-after-the-obesity-pill-setback"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "10:28",
+      "title": "Is NVO's Major Restructuring Plan an Indication to Sell the Stock?\n\n\n(Zacks)",
+      "link": "/news/162679/is-nvos-major-restructuring-plan-an-indication-to-sell-the-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:33AM",
+      "title": "Kriya, Odyssey secure megarounds; Amgen boosts R&D leadership\n\n\n(BioPharma Dive)",
+      "link": "https://finance.yahoo.com/m/758c7bf5-7ace-3014-b16f-3456b9f15052/kriya%2C-odyssey-secure.html"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "15:06",
+      "title": "Amgen Rocatinlimab's Data Shows Potential As Long-Term Therapy For Atopic Dermatitis\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/amgen-rocatinlimabs-data-shows-potential-190624746.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:22AM",
+      "title": "Amgen and Kyowa Kirin report preliminary outcomes from AD treatment trial\n\n\n(Clinical Trials Arena)",
+      "link": "https://finance.yahoo.com/m/810f2a5b-d529-33eb-b593-4cc870b01443/amgen-and-kyowa-kirin-report.html"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "21:06",
+      "title": "If You'd Invested $10,000 in Amgen Stock (AMGN) 3 Years Ago, Here's How Much You'd Have Today\n\n\n(Motley Fool)",
+      "link": "/news/160690/if-youd-invested-10000-in-amgen-stock-amgn-3-years-ago-heres-how-much-youd-have-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:04PM",
+      "title": "AMGEN AND KYOWA KIRIN ANNOUNCE TOP-LINE RESULTS FROM ROCATINLIMAB PHASE 3 ASCEND LONG-TERM EXTENSION STUDY IN ADULTS WITH MODERATE TO SEVERE ATOPIC DERMATITIS\n\n\n(PR Newswire)",
+      "link": "/news/160617/amgen-and-kyowa-kirin-announce-top-line-results-from-rocatinlimab-phase-3-ascend-long-term-extension-study-in-adults-with-moderate-to-severe-atopic-dermatitis"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:33PM",
+      "title": "Amgen (AMGN) Stock Slides as Market Rises: Facts to Know Before You Trade\n\n\n(Zacks)",
+      "link": "/news/160653/amgen-amgn-stock-slides-as-market-rises-facts-to-know-before-you-trade"
+    },
+    {
+      "date": "2025-09-07",
+      "time": "10:24",
+      "title": "William Blair Reiterates a Buy on Amgen Inc (AMGN)\n\n\n(Insider Monkey)",
+      "link": "/news/159512/william-blair-reiterates-a-buy-on-amgen-inc-amgn"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "22:00",
+      "title": "How Much Would It Take To Earn $100 A Month From Amgen Stock\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/much-earn-100-month-amgen-020012786.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:01PM",
+      "title": "AMGEN TO PRESENT AT THE MORGAN STANLEY 23RD ANNUAL GLOBAL HEALTHCARE CONFERENCE\n\n\n(PR Newswire)",
+      "link": "/news/158351/amgen-to-present-at-the-morgan-stanley-23rd-annual-global-healthcare-conference"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:54PM",
+      "title": "Nvidia Invests in Honeywells Quantinuum. What It Means for D-Wave, IonQ, and Quantum Stocks.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/66151c1e-99a5-333f-8270-59bc36350033/nvidia-invests-in-honeywell%E2%80%99s.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:46PM",
+      "title": "Biotech company Amgen set to build $600-million research center in Thousand Oaks\n\n\n(LA Times)",
+      "link": "https://finance.yahoo.com/news/biotech-company-amgen-set-build-184611246.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:36PM",
+      "title": "Why Is Sanofi Stock Falling Thursday?\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/why-sanofi-stock-falling-thursday-183614792.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:25AM",
+      "title": "Nvidia Investment In Honeywell's Quantinuum Sends Quantum Computing Stocks Up\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/efe83afc-a993-3159-b9ed-d9e14cbab546/nvidia-investment-in.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Nvidias Venture Arm Invests in Honeywells Quantinuum\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/nvidia-venture-arm-invests-honeywell-110011686.html"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "16:25",
+      "title": "Investors Heavily Search Amgen Inc. (AMGN): Here is What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/156159/investors-heavily-search-amgen-inc-amgn-here-is-what-you-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:12AM",
+      "title": "Leerink Partners Maintains a Hold on Amgen (AMGN)\n\n\n(Insider Monkey)",
+      "link": "/news/155727/leerink-partners-maintains-a-hold-on-amgen-amgn"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:40AM",
+      "title": "Nio, Signet Jewelers, Amgen: Trending Tickers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/nio-signet-jewelers-amgen-trending-144006841.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:01AM",
+      "title": "AMGEN INVESTING MORE THAN HALF A BILLION DOLLARS IN NEW, STATE-OF-THE-ART CENTER FOR SCIENCE AND INNOVATION AT U.S. GLOBAL HEADQUARTERS\n\n\n(PR Newswire)",
+      "link": "/news/155573/amgen-investing-more-than-half-a-billion-dollars-in-new-state-of-the-art-center-for-science-and-innovation-at-us-global-headquarters"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:20AM",
+      "title": "Amgen to invest $600M in new US center; Sanofi drug for ITP approved\n\n\n(BioPharma Dive)",
+      "link": "https://finance.yahoo.com/m/647688de-b04a-3193-acb4-442443f2a424/amgen-to-invest-%24600m-in-new.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:29AM",
+      "title": "Amgen Inc. (AMGN)'s Experimental Obesity Drug MariTide Shows Up to 20% Weight Loss Potential\n\n\n(Insider Monkey)",
+      "link": "/news/155044/amgen-inc-amgns-experimental-obesity-drug-maritide-shows-up-to-20-weight-loss-potential"
+    },
+    {
+      "date": "2025-09-01",
+      "time": "16:59",
+      "title": "Here's What Jim Cramer Wishes Amgen Inc. (AMGN) Should Do To Its Drug That Hurts Like A \"Banshee\"\n\n\n(Insider Monkey)",
+      "link": "/news/154898/heres-what-jim-cramer-wishes-amgen-inc-amgn-should-do-to-its-drug-that-hurts-like-a-banshee"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:11PM",
+      "title": "Investing in the Age of Longevity: Silver Economy Stocks in Focus\n\n\n(Zacks)",
+      "link": "/news/154867/investing-in-the-age-of-longevity-silver-economy-stocks-in-focus"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:05AM",
+      "title": "Is Amgen Stock Underperforming the S&P 500?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/9fcf1273-4a56-39d7-9db8-6851fe07203c/is-amgen-stock.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:40AM",
+      "title": "Here's Why Amgen (AMGN) is a Strong Value Stock\n\n\n(Zacks)",
+      "link": "/news/154712/heres-why-amgen-amgn-is-a-strong-value-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:31AM",
+      "title": "2 Profitable Stocks Worth Your Attention and 1 We Avoid\n\n\n(StockStory)",
+      "link": "/news/154490/2-profitable-stocks-worth-your-attention-and-1-we-avoid"
+    },
+    {
+      "date": "2025-08-31",
+      "time": "00:10",
+      "title": "Piper Sandler Lifts PT on Amgen (AMGN) to $342 From $328, Keeps an Overweight Rating\n\n\n(Insider Monkey)",
+      "link": "/news/154180/piper-sandler-lifts-pt-on-amgen-amgn-to-342-from-328-keeps-an-overweight-rating"
+    },
+    {
+      "date": "2025-08-29",
+      "time": "16:01",
+      "title": "AMGEN TO PRESENT AT THE 2025 WELLS FARGO HEALTHCARE CONFERENCE\n\n\n(PR Newswire)",
+      "link": "/news/153903/amgen-to-present-at-the-2025-wells-fargo-healthcare-conference"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:40AM",
+      "title": "Amgen partners with Veeva Systems to enhance clinical trial processes\n\n\n(Clinical Trials Arena)",
+      "link": "https://finance.yahoo.com/m/866b0e75-d0c3-3c5a-9931-f841c5450ba1/amgen-partners-with-veeva.html"
+    },
+    {
+      "date": "2025-08-28",
+      "time": "04:29",
+      "title": "2 Dividend Stocks to Hold for the Next 10 Years\n\n\n(Motley Fool)",
+      "link": "/news/151766/2-dividend-stocks-to-hold-for-the-next-10-years"
+    }
+  ]
+}

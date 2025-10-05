@@ -1,0 +1,606 @@
+{
+  "symbol": "CL",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-03",
+      "time": "04:40",
+      "title": "2 Overlooked Dividend Stocks for Investors to Pounce On\n\n\n(Motley Fool)",
+      "link": "/news/182947/2-overlooked-dividend-stocks-for-investors-to-pounce-on"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:36AM",
+      "title": "1 Cash-Producing Stock to Keep an Eye On and 2 That Underwhelm\n\n\n(StockStory)",
+      "link": "/news/182954/1-cash-producing-stock-to-keep-an-eye-on-and-2-that-underwhelm"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "13:22",
+      "title": "Colgate-Palmolive (CL): A Steady Dividend Payer in the S&P 500\n\n\n(Insider Monkey)",
+      "link": "/news/181256/colgate-palmolive-cl-a-steady-dividend-payer-in-the-sp-500"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "17:32",
+      "title": "US oil futures rise from settlement lows as API shows fall in crude stocks\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/us-oil-futures-rise-settlement-213200448.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:17PM",
+      "title": "Stocks end third quarter on high note as Dow clinches record, Big Tech extends gains as AI trade rolls on\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/stocks-end-third-quarter-on-high-note-as-dow-clinches-record-big-tech-extends-gains-as-ai-trade-rolls-on-211744004.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:31PM",
+      "title": "OPEC dismisses reports of G8 production increase plans\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/opec-dismisses-reports-g8-production-163122932.html"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "11:40",
+      "title": "GO vs. CL: Which Stock Is the Better Value Option?\n\n\n(Zacks)",
+      "link": "/news/178598/go-vs-cl-which-stock-is-the-better-value-option"
+    },
+    {
+      "date": "2025-09-27",
+      "time": "13:05",
+      "title": "A Once-in-a-Decade Opportunity: 1 Magnificent S&P 500 Dividend King Down 26% to Buy Right Now\n\n\n(Motley Fool)",
+      "link": "/news/177571/a-once-in-a-decade-opportunity-1-magnificent-sp-500-dividend-king-down-26-to-buy-right-now"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "00:39",
+      "title": "1 S&P 500 Stock to Consider Right Now and 2 We Brush Off\n\n\n(StockStory)",
+      "link": "/news/176451/1-sp-500-stock-to-consider-right-now-and-2-we-brush-off"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "14:50",
+      "title": "Will Colgate's Strategic Efforts and Innovation Bolster Growth?\n\n\n(Zacks)",
+      "link": "/news/176151/will-colgates-strategic-efforts-and-innovation-bolster-growth"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "11:52",
+      "title": "Dividend Stock Portfolio Strategy: The Role of Colgate-Palmolive Company (CL)\n\n\n(Insider Monkey)",
+      "link": "/news/174811/dividend-stock-portfolio-strategy-the-role-of-colgate-palmolive-company-cl"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "19:22",
+      "title": "Analyst Report: Colgate-Palmolive Company\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/0590c845-5487-31cb-8534-bf5651e3e3b0/analyst-report%3A.html"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "09:45",
+      "title": "Here's Why Colgate-Palmolive (CL) is a Strong Growth Stock\n\n\n(Zacks)",
+      "link": "/news/170832/heres-why-colgate-palmolive-cl-is-a-strong-growth-stock"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "05:37",
+      "title": "Colgate agrees to modify toothpaste packaging after Texas AG scrutiny\n\n\n(Packaging Gateway)",
+      "link": "https://finance.yahoo.com/m/9449bdc4-0d00-3c7e-af8b-0dcad58eda0a/colgate-agrees-to-modify.html"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "22:58",
+      "title": "Oil prices slip lower, consolidating ahead of Fed rate decision\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/oil-prices-steady-2-wk-025806587.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:33PM",
+      "title": "US oil futures climb as API reports larger-than-expect draw in US crude oil stocks\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/us-oil-futures-climb-api-213302688.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:42AM",
+      "title": "Colgate-Palmolive Company (CL) Partners with Erthos To Design Sustainable Biopolymer Packaging\n\n\n(Insider Monkey)",
+      "link": "/news/167471/colgate-palmolive-company-cl-partners-with-erthos-to-design-sustainable-biopolymer-packaging"
+    },
+    {
+      "date": "2025-09-14",
+      "time": "23:33",
+      "title": "Q2 Earnings Roundup: Colgate-Palmolive (NYSE:CL) And The Rest Of The Household Products Segment\n\n\n(StockStory)",
+      "link": "/news/166128/q2-earnings-roundup-colgate-palmolive-nyse-cl-and-the-rest-of-the-household-products-segment"
+    },
+    {
+      "date": "2025-09-13",
+      "time": "09:53",
+      "title": "Jim Cramer on Colgate-Palmolive: \"One of the Premier Consumer Packaged Goods\"\n\n\n(Insider Monkey)",
+      "link": "/news/165481/jim-cramer-on-colgate-palmolive-one-of-the-premier-consumer-packaged-goods"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "12:43",
+      "title": "Can Colgate's New Productivity Program Drive Long-Term Growth?\n\n\n(Zacks)",
+      "link": "/news/165186/can-colgates-new-productivity-program-drive-long-term-growth"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "16:35",
+      "title": "Colgate Declares Regular Quarterly Dividend\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250909823198/en"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "08:55",
+      "title": "Here's How You Can Earn $100 In Passive Income By Investing In Colgate-Palmolive Stock\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/heres-earn-100-passive-income-125551127.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:54AM",
+      "title": "Colgate-Palmolive signs on to AI tool for biomaterials development\n\n\n(Packaging Dive)",
+      "link": "https://finance.yahoo.com/m/05910610-365b-3789-9b7c-6458114fcdc1/colgate-palmolive-signs-on-to.html"
+    },
+    {
+      "date": "2025-09-07",
+      "time": "05:30",
+      "title": "Heres what you would need to know about the equity market this summer\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/know-equity-market-summer-093002563.html"
+    },
+    {
+      "date": "2025-09-06",
+      "time": "04:10",
+      "title": "Trump, Fed, Russia and more: BCA offers 5 tactical views\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/trump-fed-russia-more-bca-081025093.html"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "11:12",
+      "title": "Exports rise, imports fall: Canadas trade deficit shrinks to $4.9 billion\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/exports-rise-imports-fall-canada-151207943.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:41AM",
+      "title": "Trump urges Putin-Zelenskiy meeting, tells Europe to stop buying Russian oil\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/m/5bc6d0f2-81d2-35d1-b13d-d3383515d610/trump-urges-putin-zelenskiy.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:14AM",
+      "title": "These 3 key conditions need to be met for stocks to continue rallying: strategist\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/3-key-conditions-met-stocks-111443898.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:32AM",
+      "title": "How Is Colgate-Palmolives Stock Performance Compared to Other Consumer Staples Stocks?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/b6d88d56-91aa-318d-bbb6-638af818a035/how-is-colgate-palmolive%E2%80%99s.html"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "17:22",
+      "title": "US oil futures dip after API inventory shows unexpected build in crude stocks\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/us-oil-futures-dip-api-212251110.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:07AM",
+      "title": "BofA lifts Valero rating on heavy crude advantage but downgrade Phillips 66\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/bofa-lifts-valero-rating-heavy-130731984.html"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "10:42",
+      "title": "Colgate-Palmolive reaches $332-million settlement with employees over pensions\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/colgate-palmolive-reaches-332-million-144224384.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:53AM",
+      "title": "All bullish catalysts for S&P 500 will be tested post-Labor day: Raymond James\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/bullish-catalysts-p-500-tested-115330751.html"
+    },
+    {
+      "date": "2025-09-01",
+      "time": "19:24",
+      "title": "Analyst Report: Colgate-Palmolive Company\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/e4895f14-d3e3-36ad-8a7a-7e12334536d2/analyst-report%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:06PM",
+      "title": "Trump says India offers tariff cuts after U.S. doubles duties over Russian oil\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/trump-says-india-offers-tariff-180600900.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:10AM",
+      "title": "Procter & Gamble vs. Colgate: Which Household Staple Is a Better Pick?\n\n\n(Zacks)",
+      "link": "/news/154800/procter-gamble-vs-colgate-which-household-staple-is-a-better-pick"
+    },
+    {
+      "date": "2025-08-28",
+      "time": "08:24",
+      "title": "Colgate-Palmolive earmarks $300M for supply chain, efficiencies\n\n\n(Supply Chain Dive)",
+      "link": "https://finance.yahoo.com/m/5c11e827-9087-374d-9724-2b3232e2416c/colgate-palmolive-earmarks.html"
+    },
+    {
+      "date": "2025-08-27",
+      "time": "12:08",
+      "title": "Procter & Gamble's Innovation Playbook: Working or Wearing Thin?\n\n\n(Zacks)",
+      "link": "/news/151401/procter-gambles-innovation-playbook-working-or-wearing-thin"
+    },
+    {
+      "date": "2025-08-26",
+      "time": "08:32",
+      "title": "Colgate-Palmolive launches up to $300M supply chain revamp\n\n\n(Supply Chain Dive)",
+      "link": "https://finance.yahoo.com/m/5c11e827-9087-374d-9724-2b3232e2416c/colgate-palmolive-launches-up.html"
+    },
+    {
+      "date": "2025-08-25",
+      "time": "11:39",
+      "title": "William Blair backs oil producers, cautious on gas near term\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/william-blair-backs-oil-producers-153922703.html"
+    },
+    {
+      "date": "2025-08-22",
+      "time": "13:46",
+      "title": "Rubrik rival Netskope files for a Nasdaq IPO\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/rubrik-rival-netskope-files-nasdaq-174630820.html"
+    },
+    {
+      "date": "2025-08-20",
+      "time": "12:05",
+      "title": "Will Slowing Global Demand Dent PG's Emerging Market Strategy?\n\n\n(Zacks)",
+      "link": "/news/145549/will-slowing-global-demand-dent-pgs-emerging-market-strategy"
+    },
+    {
+      "date": "2025-08-19",
+      "time": "09:30",
+      "title": "Colgate-Palmolive Webcasts Presentation at the Barclays 2025 Global Consumer Staples Conference\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250813289274/en"
+    },
+    {
+      "date": "2025-08-18",
+      "time": "09:45",
+      "title": "Why Colgate-Palmolive (CL) is a Top Growth Stock for the Long-Term\n\n\n(Zacks)",
+      "link": "/news/143323/why-colgate-palmolive-cl-is-a-top-growth-stock-for-the-long-term"
+    },
+    {
+      "date": "2025-08-15",
+      "time": "11:00",
+      "title": "Will Colgate's Innovation Drive Market Share Gains in 2025?\n\n\n(Zacks)",
+      "link": "/news/142052/will-colgates-innovation-drive-market-share-gains-in-2025"
+    },
+    {
+      "date": "2025-08-12",
+      "time": "23:12",
+      "title": "Colgate-Palmolive's Q2 Earnings Call: Our Top 5 Analyst Questions\n\n\n(StockStory)",
+      "link": "/news/138641/colgate-palmolives-q2-earnings-call-our-top-5-analyst-questions"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:01PM",
+      "title": "CL Q2 Deep Dive: Modest Growth Amid Cost Pressures and Strategic Shifts\n\n\n(StockStory)",
+      "link": "/news/138864/cl-q2-deep-dive-modest-growth-amid-cost-pressures-and-strategic-shifts"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:42PM",
+      "title": "US oil futures fall after API inventory shows unexpected build in crude stocks\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/us-oil-futures-fall-api-214226041.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:29AM",
+      "title": "PG vs. Inflation: How Long Can Price Hikes Offset Input Costs?\n\n\n(Zacks)",
+      "link": "/news/136990/pg-vs-inflation-how-long-can-price-hikes-offset-input-costs"
+    },
+    {
+      "date": "2025-08-10",
+      "time": "00:00",
+      "title": "BofA Sees Execution Strength in Colgate (CL), Modestly Trims Price Target to $98\n\n\n(Insider Monkey)",
+      "link": "/news/134463/bofa-sees-execution-strength-in-colgate-cl-modestly-trims-price-target-to-98"
+    },
+    {
+      "date": "2025-08-08",
+      "time": "11:40",
+      "title": "ADRNY vs. CL: Which Stock Is the Better Value Option?\n\n\n(Zacks)",
+      "link": "/news/133918/adrny-vs-cl-which-stock-is-the-better-value-option"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:46AM",
+      "title": "US and Russia seek Ukraine peace deal, oil prices dip\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/m/2f0c6d06-96b5-3e15-a900-bfa69e5a6f0d/us-and-russia-seek-ukraine.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:38AM",
+      "title": "Saudi Arabia Household Cleaners Market Analysis Report 2025-2033 | Rise in Eco-Friendly Household Cleaners as Saudi Consumers Opt for Natural and Non-Toxic Products\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/saudi-arabia-household-cleaners-market-133800576.html"
+    },
+    {
+      "date": "2025-08-07",
+      "time": "23:48",
+      "title": "Jim Cramer Notes \"Colgate Quarter Was Darn Good\"\n\n\n(Insider Monkey)",
+      "link": "/news/133223/jim-cramer-notes-colgate-quarter-was-darn-good"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:22AM",
+      "title": "Procter & Gamble's Margins Stay Firm: Is Premiumization Paying Off?\n\n\n(Zacks)",
+      "link": "/news/132235/procter-gambles-margins-stay-firm-is-premiumization-paying-off"
+    },
+    {
+      "date": "2025-08-06",
+      "time": "10:36",
+      "title": "Trump imposes additional 25% tariff on India over Russian oil purchases\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/trump-imposes-additional-25-tariff-143648682.html"
+    },
+    {
+      "date": "2025-08-05",
+      "time": "05:34",
+      "title": "Colgate-Palmolive Stock: Is Wall Street Bullish or Bearish?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/1987efa0-d4c9-3d78-8777-c79621d906e1/colgate-palmolive-stock%3A-is.html"
+    },
+    {
+      "date": "2025-08-04",
+      "time": "17:01",
+      "title": "Colgate-Palmolive Company (CL): A Bull Case Theory\n\n\n(Insider Monkey)",
+      "link": "/news/127053/colgate-palmolive-company-cl-a-bull-case-theory"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:25AM",
+      "title": "Trump to substantially hike India tariffs over Russian oil trade\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/trump-substantially-hike-india-tariffs-152541506.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:50AM",
+      "title": "How to Find Strong Consumer Staples Stocks Slated for Positive Earnings Surprises\n\n\n(Zacks)",
+      "link": "/news/126264/how-to-find-strong-consumer-staples-stocks-slated-for-positive-earnings-surprises"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "Armis Rapidly Surpasses $300M ARR as Demand For Cyber Exposure Management and Cyber-Physical Systems Security Soars\n\n\n(Business Wire)",
+      "link": "https://finance.yahoo.com/news/armis-rapidly-surpasses-300m-arr-120000879.html"
+    },
+    {
+      "date": "2025-08-02",
+      "time": "03:07",
+      "title": "Colgate-Palmolive Co (CL) Q2 2025 Earnings Call Highlights: Resilient Growth Amidst Challenges\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/colgate-palmolive-co-cl-q2-070705616.html"
+    },
+    {
+      "date": "2025-08-01",
+      "time": "17:16",
+      "title": "Analyst Report: Colgate-Palmolive Company\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/d692d39a-e285-3185-a464-3b2e4f67e223/analyst-report%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:57PM",
+      "title": "Colgate-Palmolive, Rocket, Regeneron: Trending Tickers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/colgate-palmolive-rocket-regeneron-trending-195718912.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:35PM",
+      "title": "Colgate Plans More Price Increases to Offset Slower Sales, Higher Costs\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/cabc6dbb-7104-3963-8213-920904820e50/colgate-plans-more-price.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:13AM",
+      "title": "Colgate Tops Q2 Earnings & Sales Estimates, Tweaks Organic Sales View\n\n\n(Zacks)",
+      "link": "/news/124907/colgate-tops-q2-earnings-sales-estimates-tweaks-organic-sales-view"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:10AM",
+      "title": "Nonfarm Payrolls Come in SIgnificantly Below Expectations\n\n\n(Zacks)",
+      "link": "/news/124898/nonfarm-payrolls-come-in-significantly-below-expectations"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:46AM",
+      "title": "Jobs Shrink in the Summer of '25, Pre-Markets Lower\n\n\n(Zacks)",
+      "link": "/news/124882/jobs-shrink-in-the-summer-of-25-pre-markets-lower"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Compared to Estimates, Colgate-Palmolive (CL) Q2 Earnings: A Look at Key Metrics\n\n\n(Zacks)",
+      "link": "/news/124660/compared-to-estimates-colgate-palmolive-cl-q2-earnings-a-look-at-key-metrics"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:03AM",
+      "title": "Colgate-Palmolive's Outlook Remains Cautious As Restructuring Plans Take Shape\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/colgate-palmolives-outlook-remains-cautious-130329702.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:22AM",
+      "title": "Colgate-Palmolive beats quarterly estimates on steady demand for essentials\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/colgate-palmolive-beats-quarterly-estimates-122200771.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:05AM",
+      "title": "Colgate-Palmolive (CL) Q2 Earnings and Revenues Beat Estimates\n\n\n(Zacks)",
+      "link": "/news/124487/colgate-palmolive-cl-q2-earnings-and-revenues-beat-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:37AM",
+      "title": "Colgate-Palmolive shares rise as Q2 profit, revenue top estimates\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/colgate-palmolive-shares-rise-q2-113705853.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:32AM",
+      "title": "Colgate-Palmolive Aims to Bolster Productivity as Profit, Revenue Rise\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/earnings/colgate-palmolive-aims-to-bolster-productivity-as-profit-revenue-rise-af5866de?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:15AM",
+      "title": "Colgate-Palmolive (NYSE:CL) Surprises With Q2 Sales\n\n\n(StockStory)",
+      "link": "/news/124337/colgate-palmolive-nyse-cl-surprises-with-q2-sales"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:04AM",
+      "title": "Colgate-Palmolive: Q2 Earnings Snapshot\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/colgate-palmolive-q2-earnings-snapshot-110430963.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:55AM",
+      "title": "Colgate-Palmolive Company Announces 2nd Quarter 2025 Results\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250801612356/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:19AM",
+      "title": "Chevron and Exxon Mobil head earnings for Friday\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-and-nasdaq-point-lower-as-fresh-tariffs-hit-jobs-data-looms/card/chevron-and-exxon-mobil-head-earnings-for-friday-E5wJTWMEwOjMupoqQ5nB?mod=mw_FV"
+    },
+    {
+      "date": "2025-07-31",
+      "time": "22:22",
+      "title": "Retirement Dividend Stocks to Watch: The Case for Colgate-Palmolive Company (CL)\n\n\n(Insider Monkey)",
+      "link": "/news/124079/retirement-dividend-stocks-to-watch-the-case-for-colgate-palmolive-company-cl"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Got $5,000? These 3 High-Yielding Dividend Stocks Are Trading Near Their 52-Week Lows\n\n\n(Motley Fool)",
+      "link": "/news/122492/got-5000-these-3-high-yielding-dividend-stocks-are-trading-near-their-52-week-lows"
+    },
+    {
+      "date": "2025-07-30",
+      "time": "23:00",
+      "title": "Colgate-Palmolive (CL) Q2 Earnings Report Preview: What To Look For\n\n\n(StockStory)",
+      "link": "/news/122052/colgate-palmolive-cl-q2-earnings-report-preview-what-to-look-for"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:28AM",
+      "title": "Colgate Q2 Earnings: Do Productivity Initiatives Suggest a Beat?\n\n\n(Zacks)",
+      "link": "/news/121211/colgate-q2-earnings-do-productivity-initiatives-suggest-a-beat"
+    },
+    {
+      "date": "2025-07-29",
+      "time": "17:41",
+      "title": "US oil futures flat after API inventory shows surprise build in crude stocks\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/us-oil-futures-flat-api-214125660.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:15AM",
+      "title": "Countdown to Colgate-Palmolive (CL) Q2 Earnings: A Look at Estimates Beyond Revenue and EPS\n\n\n(Zacks)",
+      "link": "/news/118891/countdown-to-colgate-palmolive-cl-q2-earnings-a-look-at-estimates-beyond-revenue-and-eps"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "Pure Strategies Announces \"Ambition to Action\" Full Day Program during Climate Week NYC - September 24, 2025\n\n\n(PR Newswire)",
+      "link": "https://finance.yahoo.com/news/pure-strategies-announces-ambition-action-120000665.html"
+    },
+    {
+      "date": "2025-07-28",
+      "time": "10:21",
+      "title": "US-EU trade deal labeled anti-Russian by former President Medvedev\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/m/ac4e8257-234e-357e-9081-c905224773ab/us-eu-trade-deal-labeled.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Are You a Growth Investor? This 1 Stock Could Be the Perfect Pick\n\n\n(Zacks)",
+      "link": "/news/117407/are-you-a-growth-investor-this-1-stock-could-be-the-perfect-pick"
+    },
+    {
+      "date": "2025-07-25",
+      "time": "10:00",
+      "title": "Analysts Estimate Colgate-Palmolive (CL) to Report a Decline in Earnings: What to Look Out for\n\n\n(Zacks)",
+      "link": "/news/115776/analysts-estimate-colgate-palmolive-cl-to-report-a-decline-in-earnings-what-to-look-out-for"
+    },
+    {
+      "date": "2025-07-23",
+      "time": "09:50",
+      "title": "Here's Why Colgate-Palmolive (CL) is a Strong Momentum Stock\n\n\n(Zacks)",
+      "link": "/news/112315/heres-why-colgate-palmolive-cl-is-a-strong-momentum-stock"
+    },
+    {
+      "date": "2025-07-22",
+      "time": "17:24",
+      "title": "Oil futures slip after API report shows weekly decline in US crude supplies\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/oil-futures-slip-api-report-212458124.html"
+    },
+    {
+      "date": "2025-07-21",
+      "time": "18:55",
+      "title": "Analyst Report: Colgate-Palmolive Company\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/ae045ad9-6ffe-382f-9125-d143c195f091/analyst-report%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Colgate-Palmolive Webcasts 2025 Second Quarter Earnings Conference Call August 1, 2025 8:30 a.m. ET\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250716330926/en/"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:13AM",
+      "title": "Oral Care Market Analysis Report 2025-2032 | Emergence of Electric Toothbrushes, Introduction of Skincare-Inspired Oral Care Products, and Integration of AI in Toothbrushes\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/oral-care-market-analysis-report-111300973.html"
+    },
+    {
+      "date": "2025-07-16",
+      "time": "08:57",
+      "title": "Albertsons' Q1 Earnings Beat Estimates, Identical Sales Rise 2.8% Y/Y\n\n\n(Zacks)",
+      "link": "/news/105274/albertsons-q1-earnings-beat-estimates-identical-sales-rise-28-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:44AM",
+      "title": "Zacks.com featured highlights include Walt Disney, TE Connectivity, Fortinet, Banco Bilbao Vizcaya Argentaria and Colgate-Palmolive\n\n\n(Zacks)",
+      "link": "/news/105221/zackscom-featured-highlights-include-walt-disney-te-connectivity-fortinet-banco-bilbao-vizcaya-argentaria-and-colgate-palmolive"
+    },
+    {
+      "date": "2025-07-15",
+      "time": "17:22",
+      "title": "US oil futures pare losses despite API showing\u00a019M jump in US crude inventories\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/us-oil-futures-pare-losses-212216892.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:33AM",
+      "title": "Zacks Industry Outlook Highlights Procter & Gamble, Colgate-Palmolive, Church & Dwight and Grocery Outlet\n\n\n(Zacks)",
+      "link": "/news/104311/zacks-industry-outlook-highlights-procter-gamble-colgate-palmolive-church-dwight-and-grocery-outlet"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:15AM",
+      "title": "Can Clorox's Pricing Strength Keep Earnings Buoyant in 2025?\n\n\n(Zacks)",
+      "link": "/news/104234/can-cloroxs-pricing-strength-keep-earnings-buoyant-in-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:03AM",
+      "title": "5 High-ROE Stocks to Buy as Markets Soar Despite Tariff Threats\n\n\n(Zacks)",
+      "link": "/news/104224/5-high-roe-stocks-to-buy-as-markets-soar-despite-tariff-threats"
+    },
+    {
+      "date": "2025-07-14",
+      "time": "09:32",
+      "title": "4 Resilient Consumer Product Stocks to Watch Amid Market Challenges\n\n\n(Zacks)",
+      "link": "/news/102801/4-resilient-consumer-product-stocks-to-watch-amid-market-challenges"
+    }
+  ]
+}

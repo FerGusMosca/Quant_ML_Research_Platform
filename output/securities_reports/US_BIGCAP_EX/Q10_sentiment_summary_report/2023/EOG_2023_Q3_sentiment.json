@@ -1,0 +1,47 @@
+{
+  "symbol": "EOG",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.223,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.094
+  },
+  "top_positive": [
+    {
+      "sent": "UNREGISTERED SALES OF EQUITY SECURITIES AND USE OF PROCEEDS The following table sets forth, for the periods indicated, EOG's share repurchase activity: Period Total Number of Shares Purchased (1) Average Price Paid Per Share Total Value of Shares Purchased as Part of Publicly Announced Plans or Programs (2) Approximate Dollar Value of Shares that May Yet Be Purchased Under the Plans or Programs (2) January 1, 2023 - January 31, 2023 11,621 $ 130.57 $ \u2014 $ 5,000,000,000 February 1, 2023 - February 28, 2023 32,989 114.40 \u2014 $ 5,000,000,000 March 1, 2023 - March 31, 2023 2,956,488 105.50 310,256,971 $ 4,689,743,029 Total 3,001,098 105.70 310,256,971 (1) Includes 2,941,836 shares repurchased during March 2023, at an average price of $105.46 per share (inclusive of commissions and transaction fees), pursuant to the November 2021 Authorization (as defined and further discussed below); such repurchases count against the November 2021 Authorization.",
+      "score": 0.9609
+    },
+    {
+      "sent": "UNREGISTERED SALES OF EQUITY SECURITIES AND USE OF PROCEEDS The following table sets forth, for the periods indicated, EOG's share repurchase activity: Period Total Number of Shares Purchased (1) Average Price Paid Per Share Total Value of Shares Purchased as Part of Publicly Announced Plans or Programs (2) Approximate Dollar Value of Shares that May Yet Be Purchased Under the Plans or Programs (2) January 1, 2023 - January 31, 2023 11,621 $ 130.57 $ \u2014 $ 5,000,000,000 February 1, 2023 - February 28, 2023 32,989 114.40 \u2014 $ 5,000,000,000 March 1, 2023 - March 31, 2023 2,956,488 105.50 310,256,971 $ 4,689,743,029 Total 3,001,098 105.70 310,256,971 (1) Includes 2,941,836 shares repurchased during March 2023, at an average price of $105.46 per share (inclusive of commissions and transaction fees), pursuant to the November 2021 Authorization (as defined and further discussed below); such repurchases count against the November 2021 Authorization.",
+      "score": 0.9609
+    },
+    {
+      "sent": "Natural gas deliveries for the first quarter of 2023 increased 181 MMcfd, or 12%, compared to the same period of 2022 due primarily to increased production of associated natural gas from the Permian Basin and higher deliveries in the Dorado gas play, partially offset by lower natural gas deliveries in Trinidad, lower natural gas volumes due to the sale of certain legacy natural gas assets in the Rocky Mountain area in the first quarter of 2022 and decreased production of associated natural gas from the Eagle Ford play.",
+      "score": 0.9607
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "EOG's exposure to commodity price risk, interest rate risk and foreign currency exchange rate risk is discussed in (i) the \"Financial Commodity Derivative Transactions,\" \"Financing,\" \"Foreign Currency Exchange Rate Risk\" and \"Outlook\" sections of \"Management's Discussion and Analysis of Financial Condition and Results of Operations - Capital Resources and Liquidity\" included in EOG's Annual Report on Form 10-K for the year ended December 31, 2022, filed on February 23, 2023 (EOG's 2022 Annual Report); and (ii) Note 12, \"Risk Management Activities,\" to EOG's Consolidated Financial Statements included in EOG's 2022 Annual Report.",
+      "score": -0.6705
+    },
+    {
+      "sent": "-25- Wellhead crude oil and condensate revenues for the first quarter of 2023 decreased $707 million, or 18%, to $3,182 million from $3,889 million for the same period of 2022.",
+      "score": -0.5574
+    },
+    {
+      "sent": "EOG's composite wellhead crude oil and condensate price for the first quarter of 2023 decreased 20% to $77.26 per barrel compared to $96.00 per barrel for the same period of 2022.",
+      "score": -0.5574
+    }
+  ],
+  "forward_snippets": [
+    "EOG maintains quantitative guidance as part of its cash return framework - specifically, a commitment to return a minimum of 60% of annual net cash provided by operating activities before certain balance sheet-related changes, less total capital expenditures, to stockholders, through a combination of quarterly dividends, special dividends and share repurchases.",
+    "Natural gas deliveries for the first quart\nguidance as part of its cash return framework - specifically, a commitment to return a minimum of 60% of annual net cash provided by operating activities before certain balance sheet-related changes, less total capital expenditures, to stockholders, through a combination of quarterly dividends, special dividends and share repurchases.",
+    "Transportation costs include transportation fees, storage and terminal fees, the cost of compression (the cost of compressing natural gas to meet pipeline pressure requirements), the cost of dehydration (the cost associated with removing water from natural gas to meet pipeline requirements), gathering fees and fuel costs.",
+    "Transportation costs include transportation fees, storage and terminal fees, the cost of compression (the cost of compressing natural gas to meet pipeline pressure requirements), the cost of dehydration (the cost associated with removing water from natural gas to meet pipeline requirements), gathering fees and fuel costs.",
+    "EOG's exposure to commodity price risk, interest rate risk and foreign currency exchange rate risk is discussed in (i) the \"Financial Commodity Derivative Transactions,\" \"Financing,\" \"Foreign Currency Exchange Rate Risk\" and \"Outlook\" sections of \"Management's Discussion and Analysis of Financial Condition and Results of Operations - Capital Resources and Liquidity\" included in EOG's Annual Report on Form 10-K for the year ended December 31, 2022, filed on February 23, 2023 (EOG's 2022 Annual Report); and (ii) Note 12, \"Risk Management Activities,\" to EOG's Consolidated Financial Statements included in EOG's 2022 Annual Report."
+  ]
+}

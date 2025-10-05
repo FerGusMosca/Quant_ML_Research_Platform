@@ -1,0 +1,47 @@
+{
+  "symbol": "KDP",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2334,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.086
+  },
+  "top_positive": [
+    {
+      "sent": "NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS (UNAUDITED, CONTINUED) VARIABLE-RATE BORROWING ARRANGEMENTS Revolving Credit Agreement The following table summarizes information about the Revolving Credit Agreement: Amounts Outstanding (in millions) Maturity Date Capacity March 31, 2024 December 31, 2023 Revolving Credit Agreement (1) February 23, 2027 $ 4,000 $ \u2014 $ \u2014 (1) The Revolving Credit Agreement has $ 200 million letters of credit available, none of which were utilized as of March 31, 2024.",
+      "score": 0.9814
+    },
+    {
+      "sent": "First Quarter (in millions, except per share data) 2024 2023 Net income $ 454 $ 467 Weighted average common shares outstanding 1,380.7 1,406.2 Dilutive effect of stock-based awards 7.0 10.8 Weighted average common shares outstanding and common stock equivalents 1,387.7 1,417.0 Basic EPS $ 0.33 $ 0.33 Diluted EPS 0.33 0.33 Anti-dilutive shares excluded from the diluted weighted average shares outstanding calculation 2.1 1.0 9.",
+      "score": 0.9705
+    },
+    {
+      "sent": "First Quarter (in millions, except per share data) 2024 2023 Net income $ 454 $ 467 Weighted average common shares outstanding 1,380.7 1,406.2 Dilutive effect of stock-based awards 7.0 10.8 Weighted average common shares outstanding and common stock equivalents 1,387.7 1,417.0 Basic EPS $ 0.33 $ 0.33 Diluted EPS 0.33 0.33 Anti-dilutive shares excluded from the diluted weighted average shares outstanding calculation 2.1 1.0 9.",
+      "score": 0.9705
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "At this time, we are unable to predict the outcome of these lawsuits, the potential loss or range of loss, if any, associated with the resolution of these lawsuits or any potential effect they may have on us or our results of operations.",
+      "score": -0.7003
+    },
+    {
+      "sent": "Quantitative and Qualitative Disclosures About Market Risk There have been no material changes to the disclosures on market risk made in our Annual Report.",
+      "score": -0.6597
+    },
+    {
+      "sent": "Quantitative and Qualitative Disclosures About Market Risk There have been no material changes to the disclosures on market risk made in our Annual Report.",
+      "score": -0.6597
+    }
+  ],
+  "forward_snippets": [
+    "These estimates and judgments are based on historical experience, future expectations and other factors and assumptions we believe to be reasonable under the circumstances.",
+    "NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS (UNAUDITED, CONTINUED) IMPACT OF CASH FLOW HEDGES The following table presents the amount of (gains) losses, net, reclassified from AOCI into the unaudited Condensed Consolidated Statements of Income related to derivative instruments designated as cash flow hedging instruments during the periods presented: First Quarter (in millions) Income Statement Location 2024 2023 Interest rate contracts Interest expense, net $ ( 2 ) $ ( 68 ) FX contracts Cost of sales \u2014 ( 1 ) We expect to reclassify approximately $ 13 million of pre-tax net gains and $ 10 million of pre-tax net losses from AOCI into net income during the next twelve months related to interest rate contracts and FX contracts, respectively.",
+    "Revenue is measured as the amount of consideration that we expect to receive in exchange for transferring goods.",
+    "Revenue is measured as the amount of consideration that we expect to receive in exchange for transferring goods.",
+    "We have also identified certain other legal matters where we believe an unfavorable outcome is reasonably possible and/or for which no estimate of possible losses can be made."
+  ]
+}

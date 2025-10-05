@@ -1,0 +1,32 @@
+{
+  "symbol": "ADP",
+  "year": 2023,
+  "period": "Y2023",
+  "competition_summary": [
+    {
+      "competitor": "HCM",
+      "mentions": 3,
+      "context": "COMPETITION The industries in which we operate are highly competitive. We know of no reliable statistics by which we can determine the number of our competitors, but we believe that we are one of the largest providers of HCM solutions in the world. HCM Solutions, Global Solutions and HRO Solutions (other than PEO) compete with other business outsourcing companies, companies providing ERP services, providers of cloud-based HCM solutions and financial institutions. Our PEO business competes with o"
+    },
+    {
+      "competitor": "HCM Solutions",
+      "mentions": 1,
+      "context": "COMPETITION The industries in which we operate are highly competitive. We know of no reliable statistics by which we can determine the number of our competitors, but we believe that we are one of the largest providers of HCM solutions in the world. HCM Solutions, Global Solutions and HRO Solutions (other than PEO) compete with other business outsourcing companies, companies providing ERP services, providers of cloud-based HCM solutions and financial institutions. Our PEO business competes with o"
+    },
+    {
+      "competitor": "Global Solutions",
+      "mentions": 1,
+      "context": "COMPETITION The industries in which we operate are highly competitive. We know of no reliable statistics by which we can determine the number of our competitors, but we believe that we are one of the largest providers of HCM solutions in the world. HCM Solutions, Global Solutions and HRO Solutions (other than PEO) compete with other business outsourcing companies, companies providing ERP services, providers of cloud-based HCM solutions and financial institutions. Our PEO business competes with o"
+    },
+    {
+      "competitor": "PEO",
+      "mentions": 1,
+      "context": "COMPETITION The industries in which we operate are highly competitive. We know of no reliable statistics by which we can determine the number of our competitors, but we believe that we are one of the largest providers of HCM solutions in the world. HCM Solutions, Global Solutions and HRO Solutions (other than PEO) compete with other business outsourcing companies, companies providing ERP services, providers of cloud-based HCM solutions and financial institutions. Our PEO business competes with o"
+    },
+    {
+      "competitor": "ERP",
+      "mentions": 2,
+      "context": "COMPETITION The industries in which we operate are highly competitive. We know of no reliable statistics by which we can determine the number of our competitors, but we believe that we are one of the largest providers of HCM solutions in the world. HCM Solutions, Global Solutions and HRO Solutions (other than PEO) compete with other business outsourcing companies, companies providing ERP services, providers of cloud-based HCM solutions and financial institutions. Our PEO business competes with o"
+    }
+  ]
+}

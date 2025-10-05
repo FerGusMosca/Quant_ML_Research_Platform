@@ -1,0 +1,52 @@
+{
+  "symbol": "MCD",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.2654,
+    "outlook_sentiment": 0.2047,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.212
+  },
+  "top_positive": [
+    {
+      "sent": "McDonald's Corporation believes the format used in this Form 10-K improves readability and better presents how it organizes and manages its business.",
+      "score": 0.6908
+    },
+    {
+      "sent": "McDonald's Corporation 2023 Annual Report 46 The following table presents the fair values of derivative instruments included on the Consolidated Balance Sheet as of December\u00a031, 2023 and 2022: Derivative Assets Derivative Liabilities In millions Balance Sheet Classification 2023 2022 Balance Sheet Classification 2023 2022 Derivatives designated as hedging instruments Foreign currency Prepaid expenses and other current assets $ 8.5 $ 53.3 Accrued payroll and other liabilities $ ( 37.3 ) $ ( 17.9 ) Interest rate Prepaid expenses and other current assets 4.3 $ \u2014 Accrued payroll and other liabilities ( 3.6 ) \u2014 Foreign currency Miscellaneous other assets 2.4 28.7 Other long-term liabilities ( 14.3 ) ( 30.7 ) Interest rate Miscellaneous other assets \u2014 \u2014 Other long-term liabilities ( 58.2 ) ( 91.5 ) Total derivatives designated as hedging instruments $ 15.2 $ 82.0 $ ( 113.4 ) $ ( 140.1 ) Derivatives not designated as hedging instruments Equity Prepaid expenses and other current assets $ \u2014 $ 200.5 Accrued payroll and other liabilities Foreign currency Prepaid expenses and other current assets 5.5 \u2014 Accrued payroll and other liabilities ( 4.8 ) ( 1.6 ) Equity Miscellaneous other assets 188.6 \u2014 Total derivatives not designated as hedging instruments $ 194.1 $ 200.5 $ ( 4.8 ) $ ( 1.6 ) Total derivatives $ 209.3 $ 282.5 $ ( 118.2 ) $ ( 141.7 ) The following table presents the pre-tax amounts from derivative instruments affecting income and AOCI for the year ended December 31, 2023 and 2022, respectively: Location of gain or loss recognized in income on derivative Gain (loss) recognized in AOCI Gain (loss) reclassified into income from AOCI Gain (loss) recognized in income on derivative In millions 2023 2022 2023 2022 2023 2022 Foreign currency Nonoperating income/expense $ ( 39.7 ) $ 122.5 $ 20.2 $ 137.8 Interest rate Interest expense 14.6 83.9 0.9 ( 2.9 ) Cash flow hedges $ ( 25.1 ) $ 206.4 $ 21.1 $ 134.9 Foreign currency denominated debt Nonoperating income/expense $ ( 435.2 ) $ 902.8 Foreign currency derivatives Nonoperating income/expense 40.1 ( 12.0 ) Foreign currency derivatives (1) Interest expense $ 25.8 $ 11.2 Net investment hedges $ ( 395.1 ) $ 890.8 $ 25.8 $ 11.2 Foreign currency Nonoperating income/expense $ 4.3 $ 9.3 Equity Selling, general & administrative expenses 26.8 ( 9.3 ) Undesignated derivatives $ 31.1 (1) The amount of gain (loss) recognized in income related to components excluded from effectiveness testing.",
+      "score": 0.9851
+    },
+    {
+      "sent": "Shares repurchased and dividends In millions, except per share data 2023 2022 2021 Number of shares repurchased 11.1 15.8 3.4 Shares outstanding at year end 723 731 745 Dividends declared per share $ 6.23 $ 5.66 $ 5.25 Treasury stock purchases (in Shareholders' equity) $ 3,105 $ 3,896 $ 846 Dividends paid 4,533 4,168 3,919 Total returned to shareholders $ 7,638 $ 8,064 $ 4,765 In December 2019, the Company's Board of Directors approved a share repurchase program, effective January 1, 2020, that authorized the purchase of up to $15 billion of the Company's outstanding stock, with no specified expiration date.",
+      "score": 0.975
+    },
+    {
+      "sent": "Shares repurchased and dividends In millions, except per share data 2023 2022 2021 Number of shares repurchased 11.1 15.8 3.4 Shares outstanding at year end 723 731 745 Dividends declared per share $ 6.23 $ 5.66 $ 5.25 Treasury stock purchases (in Shareholders' equity) $ 3,105 $ 3,896 $ 846 Dividends paid 4,533 4,168 3,919 Total returned to shareholders $ 7,638 $ 8,064 $ 4,765 In December 2019, the Company's Board of Directors approved a share repurchase program, effective January 1, 2020, that authorized the purchase of up to $15 billion of the Company's outstanding stock, with no specified expiration date.",
+      "score": 0.975
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Such interruptions and price increases could be caused by shortages, inflationary pressures, unexpected increases in demand, transportation-related issues, labor-related issues, technology-related issues, weather-related events, natural disasters, acts of war, terrorism or other hostilities, or other factors beyond the control of us or our suppliers or franchisees.",
+      "score": -0.9628
+    },
+    {
+      "sent": "Such interruptions and price increases could be caused by shortages, inflationary pressures, unexpected increases in demand, transportation-related issues, labor-related issues, technology-related issues, weather-related events, natural disasters, acts of war, terrorism or other hostilities, or other factors beyond the control of us or our suppliers or franchisees.",
+      "score": -0.9628
+    },
+    {
+      "sent": "Such disruptions or volatility can also result from acts of war, terrorism or other hostilities.",
+      "score": -0.9325
+    }
+  ],
+  "forward_snippets": [
+    "Page Forward-Looking Statements 3 About McDonald's 3 Business Summary 3 Management's Discussion and Analysis of Financial Condition and Results of Operations 8 Management's View of the Business 8 2023 Financial Performance 8 Strategic Direction 9 Outlook 11 Consolidated Operating Results 12 Cash Flows 20 Financial Position and Capital Resources 23 Other Matters 25 Other Key Information 26 Stock Performance Graph 26 Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 27 ",
+    "Outlook 11 Consolidated Operating Results 12 Cash Flows 20 Financial Position and Capital Resources 23 Other Matters 25 Other Key Information 26 Stock Performance Graph 26 Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 27 Risk Factors 28 Legal Proceedings 35 Properties 35 Information About our Executive Officers 36 Availability of Company Information 37 Financial Statements and Supplementary Data 37 Controls and Procedures 65 Security Ownership of Certain Beneficial Owners and Management and Related Stockholder Matters 65 Exhibits and Financial Statement Schedules 66 Form 10-K Cross-Reference Index 68 Signatures 69 All trademarks used herein are the property of their respective owners and are used with permission.",
+    "McDonald's Corporation 2023 Annual Report 10 OUTLOOK 2024 Outlook Based on current conditions, the following is provided to assist in forecasting the Company's future results for 2024.",
+    "Long-Term Outlook Over the long-term, the Company expects to achieve the following average annual financial targets: \u2022 Net restaurant unit expansion of about 2.5% of Systemwide sales growth, in constant currencies; \u2022 Continued operating margin expansion; \u2022 From the 2024 Outlook capital expenditures between $2.5 and $2.7 billion, with sequential increases of about $300 million to $500 million each year through 2027; \u2022 Between 4% and 5% net new restaurant unit growth, targeting 50,000 global units by 2027 with a run rate of about 1,000 gross restaurant openings across the U.S.",
+    "McDonald's Corporation 2023 Annual Report 10 OUTLOOK 2024 Outlook Based on current conditions, the following is provided to assist in forecasting the Company's future results for 2024.",
+    "Long-Term Outlook Over the long-term, the Company expects to achieve the following average annual financial targets: \u2022 Net restaurant unit expansion of about 2.5% of Systemwide sales growth, in constant currencies; \u2022 Continued operating margin expansion; \u2022 From the 2024 Outlook capital expenditures between $2.5 and $2.7 billion, with sequential increases of about $300 million to $500 million each year through 2027; \u2022 Between 4% and 5% net new restaurant unit growth, targeting 50,000 global units by 2027 with a run rate of about 1,000 gross restaurant openings across the U.S."
+  ]
+}

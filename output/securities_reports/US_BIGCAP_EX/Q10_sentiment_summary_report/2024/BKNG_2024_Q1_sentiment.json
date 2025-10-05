@@ -1,0 +1,47 @@
+{
+  "symbol": "BKNG",
+  "year": 2024,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2176,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.124
+  },
+  "top_positive": [
+    {
+      "sent": "A reconciliation of the weighted-average number of shares outstanding used in calculating diluted net income per share is as follows (in thousands): Three Months Ended September 30, Nine Months Ended September 30, 2024 2023 2024 2023 Weighted-average number of basic common shares outstanding 33,401 35,570 33,814 36,615 Weighted-average dilutive stock options, restricted stock units, and performance share units 215 231 229 211 Assumed conversion of convertible senior notes 248 186 235 145 Weighted-average number of diluted common and c\nurities \u2014 151 \u2014 151 Corporate debt securities \u2014 362 \u2014 362 Long-term investments: Equity securities 311 \u2014 \u2014 311 Derivatives: Foreign currency exchange derivatives \u2014 62 \u2014 62 Total assets at fair value $ 11,279 $ 638 $ \u2014 $ 11,917 LIABILITIES: Foreign currency exchange derivatives $ \u2014 $ 36 $ \u2014 $ 36 Nonrecurring fair value measurements Investment in equity securities of a private entity (1) $ \u2014 $ \u2014 $ 98 $ 98 (1)\u00a0\u00a0\u00a0\u00a0During the year ended December\u00a031, 2023, the investment in Yanolja was written down to its estimated fair value.",
+      "score": 0.9808
+    },
+    {
+      "sent": "The following table summarizes the activity in restricted stock units and performance share units for employees and non-employee directors during the nine months ended September\u00a030, 2024: Restricted Stock Units Performance Share Units Shares Weighted-average\u00a0Grant-date\u00a0Fair\u00a0Value Shares Weighted-average\u00a0Grant-date\u00a0Fair\u00a0Value Unvested at December 31, 2023 (1) 291,404 $ 2,404 233,026 $ 2,467 Granted (2) 141,702 $ 3,511 35,301 $ 3,660 Vested ( 134,476 ) $ 2,328 ( 76,070 ) $ 2,452 Performance shares adjustment (3) 2,124 $ 3,899 Forfeited ( 13,019 ) $ 2,782 ( 5,596 ) $ 2,617 Unvested at September 30, 2024 285,611 $ 2,972 188,785 $ 2,709 (1)\u00a0\u00a0\u00a0\u00a0Excludes 4,399 performance share units awarded during the year ended December 31, 2022 for which the grant date under ASC 718, Compensation - Stock Compensation , was not established as of December\u00a031, 2023.",
+      "score": 0.9648
+    },
+    {
+      "sent": "The following table summarizes the activity in restricted stock units and performance share units for employees and non-employee directors during the nine months ended September\u00a030, 2024: Restricted Stock Units Performance Share Units Shares Weighted-average\u00a0Grant-date\u00a0Fair\u00a0Value Shares Weighted-average\u00a0Grant-date\u00a0Fair\u00a0Value Unvested at December 31, 2023 (1) 291,404 $ 2,404 233,026 $ 2,467 Granted (2) 141,702 $ 3,511 35,301 $ 3,660 Vested ( 134,476 ) $ 2,328 ( 76,070 ) $ 2,452 Performance shares adjustment (3) 2,124 $ 3,899 Forfeited ( 13,019 ) $ 2,782 ( 5,596 ) $ 2,617 Unvested at September 30, 2024 285,611 $ 2,972 188,785 $ 2,709 (1)\u00a0\u00a0\u00a0\u00a0Excludes 4,399 performance share units awarded during the year ended December 31, 2022 for which the grant date under ASC 718, Compensation - Stock Compensation , was not established as of December\u00a031, 2023.",
+      "score": 0.9648
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Gross bookings resulting from reservations of room nights, rental car days, and airline tickets made through our merchant and agency categories for the three and nine months ended September\u00a030, 2024 and 2023 were as follows (numbers may not total due to rounding): Three Months Ended September 30, Increase (Decrease) Nine Months Ended September 30, Increase (Decrease) (in millions) 2024 2023 2024 2023 Merchant gross bookings $ 28,362 $ 22,271 27.3 % $ 79,952 $ 63,320 26.3 % Agency gross bookings 15,085 17,542 (14.0) % 48,460 55,612 (12.9) % Total gross bookings $ 43,447 $ 39,813 9.1 % $ 128,413 $ 118,932 8.0 % Merchant gross bookings increased and agency gross bookings decreased for the three and nine months ended September\u00a030, 2024 compared to the three and nine months ended September\u00a030, 2023, due primarily to the ongoing shift from agency bookings to merchant bookings at Booking.com.",
+      "score": -0.9169
+    },
+    {
+      "sent": "Gross bookings resulting from reservations of room nights, rental car days, and airline tickets made through our merchant and agency categories for the three and nine months ended September\u00a030, 2024 and 2023 were as follows (numbers may not total due to rounding): Three Months Ended September 30, Increase (Decrease) Nine Months Ended September 30, Increase (Decrease) (in millions) 2024 2023 2024 2023 Merchant gross bookings $ 28,362 $ 22,271 27.3 % $ 79,952 $ 63,320 26.3 % Agency gross bookings 15,085 17,542 (14.0) % 48,460 55,612 (12.9) % Total gross bookings $ 43,447 $ 39,813 9.1 % $ 128,413 $ 118,932 8.0 % Merchant gross bookings increased and agency gross bookings decreased for the three and nine months ended September\u00a030, 2024 compared to the three and nine months ended September\u00a030, 2023, due primarily to the ongoing shift from agency bookings to merchant bookings at Booking.com.",
+      "score": -0.9169
+    },
+    {
+      "sent": "Gross bookings resulting from reservations of room nights, rental car days, and airline tickets made through our merchant and agency categories for the three and nine months ended September\u00a030, 2024 and 2023 were as follows (numbers may not total due to rounding): Three Months Ended September 30, Increase (Decrease) Nine Months Ended September 30, Increase (Decrease) (in millions) 2024 2023 2024 2023 Merchant gross bookings $ 28,362 $ 22,271 27.3 % $ 79,952 $ 63,320 26.3 % Agency gross bookings 15,085 17,542 (14.0) % 48,460 55,612 (12.9) % Total gross bookings $ 43,447 $ 39,813 9.1 % $ 128,413 $ 118,932 8.0 % Merchant gross bookings increased and agency gross bookings decreased for the three and nine months ended September\u00a030, 2024 compared to the three and nine months ended September\u00a030, 2023, due primarily to the ongoing shift from agency bookings to merchant bookings at Booking.com.",
+      "score": -0.9169
+    }
+  ],
+  "forward_snippets": [
+    "Improved guidance to help determine transactions to be accounted for as share-based payment arrangements In March 2024, the Financial Accounting Standards Board issued an Accounting Standards Update adding illustrative guidance to help entities determine whether profits interest and similar awards should be accounted for as share-based payment arrangements within the scope of the Accounting Standards Codification (\"ASC\") 718, Compensation - Stock Compensation .",
+    "Improved guidance to help determine transactions to be accounted for as share-based payment arrangements In March 2024, the Financial Accounting Standards Board issued an Accounting Standards Update adding illustrative guidance to help entities determine whether profits interest and similar awards should be accounted for as share-based payment arrangements within the scope of the Accounting Standards Codification (\"ASC\") 718, Compensation - Stock Compensation .",
+    "Improved guidance to help determine transactions to be accounted for as share-based payment arrangements In March 2024, the Financial Accounting Standards Board issued an Accounting Standards Update adding illustrative guidance to help entities determine whether profits interest and similar awards should be accounted for as share-based payment arrangements within the scope of the Accounting Standards Codification (\"ASC\") 718, Compensation - Stock Compensation .",
+    "The Company uses the if-converted method for the convertible senior notes in\nguidance to help determine transactions to be accounted for as share-based payment arrangements In March 2024, the Financial Accounting Standards Board issued an Accounting Standards Update adding illustrative guidance to help entities determine whether profits interest and similar awards should be accounted for as share-based payment arrangements within the scope of the Accounting Standards Codification (\"ASC\") 718, Compensation - Stock Compensation .",
+    "The Company's investments in debt securities are measured using \"Level 2\" inputs as the Company has access to quoted prices for identical or comparable securities, but does not have visibility into the volume and frequency of trading for these investments."
+  ]
+}

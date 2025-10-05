@@ -1,0 +1,47 @@
+{
+  "symbol": "PG",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.3267,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.09
+  },
+  "top_positive": [
+    {
+      "sent": "Risks and uncertainties to which our forward-looking statements are subject include, without limitation: (1) the ability to successfully manage global financial risks, including foreign currency fluctuations, currency exchange or pricing controls and localized volatility; (2) the ability to successfully manage local, regional or global economic volatility, including reduced market growth rates, and to generate sufficient income and cash flow to allow the Company to effect the expected share repurchases and dividend payments; (3) the ability to manage disruptions in credit markets or to our banking partners or changes to our credit rating; (4) the ability to maintain key manufacturing and supply arrangements (including execution of supply chain optimizations and sole supplier and sole manufacturing plant arrangements) and to manage disruption of business due to various factors, including ones outside of our control, such as natural disasters, acts of war (including the Russia-Ukraine War) or terrorism or disease outbreaks; (5) the ability to successfully manage cost fluctuations and pressures, including prices of commodities and raw materials and costs of labor, transportation, energy, pension and healthcare; (6) the ability to stay on the leading edge of innovation, obtain necessary intellectual property protections and successfully respond to changing consumer habits, evolving digital marketing and selling platform requirements and technological advances attained by, and patents granted to, competitors; (7) the ability to compete with our local and global competitors in new and existing sales channels, including by successfully responding to competitive factors such as prices, promotional incentives and trade terms for products; (8) the ability to manage and maintain key customer relationships; (9) the ability to protect our reputation and brand equity by successfully managing real or perceived issues, including concerns about safety, quality, ingredients, efficacy, packaging content, supply chain practices or similar matters that may arise; (10) the ability to successfully manage the financial, legal, reputational and operational risk associated with third-party relationships, such as our suppliers, contract manufacturers, distributors, contractors and external business partners; (11) the ability to rely on and maintain key company and third-party information and operational technology systems, networks and services and maintain the security and functionality of such systems, networks and services and the data contained therein; (12) the ability to successfully manage uncertainties related to changing political conditions and potential implications such as exchange rate fluctuations and market contraction; (13) the ability to successfully manage current and expanding regulatory and legal requirements and matters (including, without limitation, those laws and regulations involving product liability, product and packaging composition, intellectual property, labor and employment, antitrust, privacy and data protection, tax, the environment, due diligence, risk oversight, accounting and financial reporting) and to resolve new and pending matters within current estimates; (14) the ability to manage changes in applicable tax laws and regulations; (15) the ability to successfully manage our ongoing acquisition, divestiture and joint venture activities, in each case to achieve the Company\u2019s overall business strategy and financial objectives, without impacting the delivery of base business objectives; (16) the ability to successfully achieve productivity improvements and cost savings and manage ongoing organizational changes while successfully identifying, developing and retaining key employees, including in key growth markets where the availability of skilled or experienced employees may be limited; (17) the ability to successfully manage the demand, supply and operational challenges, as well as governmental responses or mandates, associated with a disease outbreak, including epidemics, pandemics or similar widespread public health concerns (including COVID-19); (18) the ability to manage the uncertainties, sanctions and economic effects from the war between Russia and Ukraine; and (19) the ability to successfully achieve our ambition of reducing our greenhouse gas emissions and delivering progress towards our environmental sustainability priorities.",
+      "score": 0.9982
+    },
+    {
+      "sent": "Reportable\u00a0Segments Product Categories (Sub-Categories) Major Brands Beauty Hair Care ( Conditioners, Shampoos, Styling Aids, Treatments ) Head & Shoulders,  Herbal Essences, Pantene, Rejoice Skin and Personal Care ( Antiperspirants and Deodorants, Personal Cleansing, Skin Care ) Olay, Old Spice,  Safeguard, Secret, SK-II Grooming (1) Grooming ( Appliances, Female Blades & Razors, Male Blades & Razors, Pre- and Post-Shave Products, Other Grooming ) Braun, Gillette, Venus Health Care Oral Care ( Toothbrushes, Toothpastes, Other Oral Care ) Crest, Oral-B Personal Health Care ( Gastrointestinal, Pain Relief, Rapid Diagnostics, Respiratory, Vitamins/Minerals/Supplements, Other Personal Health Care ) Metamucil, Neurobion, Pepto-Bismol, Vicks Fabric & Home Care Fabric Care ( Fabric Enhancers, Laundry Additives, Laundry Detergents ) Ariel, Downy, Gain, Tide Home Care ( Air Care, Dish Care, P&G Professional, Surface Care ) Cascade, Dawn, Fairy, Febreze, Mr.",
+      "score": 0.9952
+    },
+    {
+      "sent": "Reportable\u00a0Segments Product Categories (Sub-Categories) Major Brands Beauty Hair Care ( Conditioners, Shampoos, Styling Aids, Treatments ) Head & Shoulders,  Herbal Essences, Pantene, Rejoice Skin and Personal Care ( Antiperspirants and Deodorants, Personal Cleansing, Skin Care ) Olay, Old Spice,  Safeguard, Secret, SK-II Grooming (1) Grooming ( Appliances, Female Blades & Razors, Male Blades & Razors, Pre- and Post-Shave Products, Other Grooming ) Braun, Gillette, Venus Health Care Oral Care ( Toothbrushes, Toothpastes, Other Oral Care ) Crest, Oral-B Personal Health Care ( Gastrointestinal, Pain Relief, Rapid Diagnostics, Respiratory, Vitamins/Minerals/Supplements, Other Personal Health Care ) Metamucil, Neurobion, Pepto-Bismol, Vicks Fabric & Home Care Fabric Care ( Fabric Enhancers, Laundry Additives, Laundry Detergents ) Ariel, Downy, Gain, Tide Home Care ( Air Care, Dish Care, P&G Professional, Surface Care ) Cascade, Dawn, Fairy, Febreze, Mr.",
+      "score": 0.9952
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "If we are not successful in executing and sustaining these changes, there could be a negative impact on our gross margin, operating margin, net earnings and cash flows.",
+      "score": -0.8712
+    },
+    {
+      "sent": "Increased pricing in response to certain fluctuations in foreign currency exchange rates may offset portions of the currency impacts but could also have a negative impact on the consumption of our products, which would negatively affect our net sales, gross margin, operating margin, net earnings\nar tax accruals in excess of estimated payments.",
+      "score": -0.8442
+    },
+    {
+      "sent": "A detailed discussion of risks and uncertainties that could cause actual results and events to differ materially from those projected herein is included in the section titled \"Economic Conditions and Uncertainties\" and the section titled \"Risk Factors\" (Part II, Item 1A) of this Form 10-Q.",
+      "score": -0.7906
+    }
+  ],
+  "forward_snippets": [
+    "This guidance requires annual disclosures for transactions with a government authority that are accounted for by applying a grant or contribution model.",
+    "The guidance has not had, and is not expected to have, a material impact on the Company's Consolidated Financial Statements.",
+    "This guidance requires annual and interim disclosures for entities that use supplier finance programs in connection with the purchase of goods and services.",
+    "We are currently assessing the impact of this guidance on our Consolidated Financial Statements.",
+    "This guidance requires annual disclosures for transactions with a government authority that are accounted for by applying a grant or contribution model."
+  ]
+}

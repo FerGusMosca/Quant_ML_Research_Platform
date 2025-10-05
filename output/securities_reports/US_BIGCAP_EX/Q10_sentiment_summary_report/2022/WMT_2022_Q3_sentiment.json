@@ -1,0 +1,47 @@
+{
+  "symbol": "WMT",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.3034,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.1
+  },
+  "top_positive": [
+    {
+      "sent": "Strong, Efficient Growth Our objective of prioritizing strong, efficient growth means we will focus on the most productive growth opportunities, increasing comparable store and club sales, accelerating eCommerce sales growth and expansion of omni-channel initiatives while slowing the rate of growth of new stores and clubs.",
+      "score": 0.9778
+    },
+    {
+      "sent": "Strong, Efficient Growth Our objective of prioritizing strong, efficient growth means we will focus on the most productive growth opportunities, increasing comparable store and club sales, accelerating eCommerce sales growth and expansion of omni-channel initiatives while slowing the rate of growth of new stores and clubs.",
+      "score": 0.9778
+    },
+    {
+      "sent": "Strong, Efficient Growth Our objective of prioritizing strong, efficient growth means we will focus on the most productive growth opportunities, increasing comparable store and club sales, accelerating eCommerce sales growth and expansion of omni-channel initiatives while slowing the rate of growth of new stores and clubs.",
+      "score": 0.9778
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "To be consistent with the r\nic events, weather and other risks related to climate change, global health epidemics, including the COVID-19 pandemic, competitive pressures, consumer disposable income, consumer debt levels and buying patterns, consumer credit availability, supply chain disruptions, cost and availability of goods, currency exchange rate fluctuations, customer preferences, deflation, inflation, fuel and energy prices, general economic conditions, insurance costs, interest rates, labor availability and costs, tax rates, the imposition of tariffs, cybersecurity attacks and unemployment.",
+      "score": -0.6908
+    },
+    {
+      "sent": "Sales related to divested businesses are excluded from comparable sales, and sales related to acquisitions are excluded until such acquisitions have been owned for 12 months.",
+      "score": -0.5859
+    },
+    {
+      "sent": "Prescription Opiate Litigation: In re National Prescription Opiate Litigation (MDL No.",
+      "score": -0.5859
+    }
+  ],
+  "forward_snippets": [
+    "We intend for this discussion to provide the reader with information that will assist in understanding our financial statements, the changes in certain key items in those financial statements from period to period and the primary factors that accounted for those changes.",
+    "Other Information .\" 15 Table of Contents We expect continued uncertainty in our business and the global economy due to the duration and intensity of the COVID-19 pandemic; the duration and extent of economic stimulus measures; the effectiveness and extent of administration of vaccinations and medical treatment; pressure from inflation; supply chain disruptions; and volatility in employment trends and consumer confidence which may impact our results.",
+    "As we execute on this financial framework, we believe our returns on capital will improve over time.",
+    "Strong, Efficient Growth Our objective of prioritizing strong, efficient growth means we will focus on the most productive growth opportunities, increasing comparable store and club sales, accelerating eCommerce sales growth and expansion of omni-channel initiatives while slowing the rate of growth of new stores and clubs.",
+    "Other Information .\" 15 Table of Contents We expect continued uncertainty in our business and the global economy due to the duration and intensity of the COVID-19 pandemic; the duration and extent of economic stimulus measures; the effectiveness and extent of administration of vaccinations and medical treatment; pressure from inflation; supply chain disruptions; and volatility in employment trends and consumer confidence which may impact our results."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "HON",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2413,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.077
+  },
+  "top_positive": [
+    {
+      "sent": "EARNINGS PER SHARE The details of the earnings per share calculations for the three and six months ended June 30, 2023, and 2022, are as follows (shares in\u00a0millions): Three Months Ended June 30, Six Months Ended June 30, Basic 2023 2022 2023 2022 Net income attributable to Honeywell $ 1,487 $ 1,261 $ 2,881 $ 2,395 Weighted average shares outstanding 665.3 679.0 666.5 681.8 Earnings per share of common stock\u2014basic $ 2.24 $ 1.86 $ 4.32 $ 3.51 Three Months Ended June 30, Six Months Ended June 30, Assuming Dilution 2023 2022 2023 2022 Net income attributable to Honeywell $ 1,487 $ 1,261 $ 2,881 $ 2,395 Average shares Weighted average shares outstanding 665.3 679.0 666.5 681.8 Dilutive securities issuable\u2014stock plans 4.9 6.0 5.4 6.3 Total weighted average diluted shares outstanding 670.2 685.0 671.9 688.1 Earnings per share of common stock\u2014assuming dilution $ 2.22 $ 1.84 $ 4.29 $ 3.48 The diluted earnings per share calculations exclude the effect of stock options when the cost to exercise an option exceeds the average market price of the common shares during the period.",
+      "score": 0.9849
+    },
+    {
+      "sent": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Unaudited) (Dollars in tables in millions, except per share amounts) The following table sets forth a reconciliation of beginning and ending balances of assets and liabilities that were accounted for at fair value using level 3 measurements: Three Months Ended June 30, 2023 Six Months Ended June 30, 2023 Balance at beginning of period $ 39 $ 295 Receipt of HWI Net Sale Proceeds ( 19 ) ( 275 ) Fair value adjustment of HWI Net Sale Proceeds ( 11 ) ( 11 ) Balance at end of period $ 9 $ 9 The following table sets forth the Company\u2019s financial assets and liabilities that were not carried at fair value: June 30, 2023 December 31, 2022 Carrying Value Fair Value Carrying Value Fair Value Assets Long-term receivables $ 229 $ 168 $ 229 $ 183 Liabilities Long-term debt and related current maturities $ 18,545 $ 17,157 $ 16,853 $ 15,856 The Company determined the fair value of the long-term receivables by utilizing transactions in the listed markets for identical or similar assets.",
+      "score": 0.9826
+    },
+    {
+      "sent": "CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME (Unaudited) Three Months Ended June 30, Six Months Ended June 30, 2023 2022 2023 2022 (Dollars in millions) Net income $ 1,501 $ 1,263 $ 2,909 $ 2,397 Other comprehensive income (loss), net of tax Foreign exchange translation adjustment ( 77 ) ( 102 ) ( 135 ) 24 Pension and other postretirement benefit adjustments ( 12 ) ( 17 ) ( 24 ) ( 34 ) Changes in fair value of available for sale investments 9 ( 3 ) 3 ( 9 ) Cash flow hedges recognized in other comprehensive income (loss) 14 31 30 39 Less: Reclassification adjustment for gains (losses) included in net income 11 12 13 15 Changes in fair value of cash flow hedges 3 19 17 24 Other comprehensive income (loss), net of tax ( 77 ) ( 103 ) ( 139 ) 5 Comprehensive income 1,424 1,160 2,770 2,402 Less: Comprehensive income (loss) attributable to the noncontrolling interest 10 ( 5 ) 25 ( 5 ) Comprehensive income attributable to Honeywell $ 1,414 $ 1,165 $ 2,745 $ 2,407 The Notes to Consolidated Financial Statements are an integral part of this statement.",
+      "score": 0.9789
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "RISK FACTORS There have been no material changes to our Risk Factors presented in our 2022 Annual Report on Form 10-K under the section titled Risk Factors.",
+      "score": -0.8038
+    },
+    {
+      "sent": "RISK FACTORS There have been no material changes to our Risk Factors presented in our 2022 Annual Report on Form 10-K under the section titled Risk Factors.",
+      "score": -0.8038
+    },
+    {
+      "sent": "RISK FACTORS There have been no material changes to our Risk Factors presented in our 2022 Annual Report on Form 10-K under the section titled Risk Factors.",
+      "score": -0.8038
+    }
+  ],
+  "forward_snippets": [
+    "The guidance does not affect recognition, measurement, or financial statement presentation of supplier finance programs.",
+    "The Company adopted this guidance on January 1, 2023, with the exception of the rollforward that will be effective beginning January 1, 2024.",
+    "The Company adopted this guidance on January 1, 2022.",
+    "In January 2021, the FASB issued ASU 2021-01, Reference Rate Reform (Topic 848): Scope , to expand the scope of this guidance to include derivatives.",
+    "The guidance was effective upon issuance and may be applied prospectively to contract modifications made and hedging relationships entered into on or before December 31, 2022."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "ROST",
+  "year": 2024,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2733,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.117
+  },
+  "top_positive": [
+    {
+      "sent": "However, we believe there are opportunities to grow our market share through the execution of our merchandising initiatives and remain confident that our ongoing focus and commitment to deliver the most compelling values possible will best position our Company for profitable growth .",
+      "score": 0.9735
+    },
+    {
+      "sent": "However, we believe there are opportunities to grow our market share through the execution of our merchandising initiatives and remain confident that our ongoing focus and commitment to deliver the most compelling values possible will best position our Company for profitable growth .",
+      "score": 0.9735
+    },
+    {
+      "sent": "However, we believe there are opportunities to grow our market share through the execution of our merchandising initiatives and remain confident that our ongoing focus and commitment to deliver the most compelling values possible will best position our Company for profitable growth .",
+      "score": 0.9735
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "\u2022 A public health or public safety crisis, or a natural or man-made disaster in California or another region where we have a concentration of stores, offices, or a distribution center, that could harm our business.",
+      "score": -0.8126
+    },
+    {
+      "sent": "\u2022 A public health or public safety crisis, or a natural or man-made disaster in California or another region where we have a concentration of stores, offices, or a distribution center, that could harm our business.",
+      "score": -0.8126
+    },
+    {
+      "sent": "\u2022 A public health or public safety crisis, or a natural or man-made disaster in California or another region where we have a concentration of stores, offices, or a distribution center, that could harm our business.",
+      "score": -0.8126
+    }
+  ],
+  "forward_snippets": [
+    "The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements.",
+    "The new guidance is effective for annual reporting periods beginning after December 15, 2024, with retrospective application permitted.",
+    "The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements.",
+    "The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements.",
+    "The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements."
+  ]
+}

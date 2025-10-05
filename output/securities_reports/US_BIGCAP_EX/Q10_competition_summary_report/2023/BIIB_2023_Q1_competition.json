@@ -1,0 +1,717 @@
+{
+  "symbol": "BIIB",
+  "year": 2023,
+  "period": "Q1",
+  "competition_summary": [
+    {
+      "competitor": "COVID-19",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "IRA",
+      "mentions": 4,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "3 Table of Contents",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Solothurn",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Biogen Inc.",
+      "mentions": 13,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "MabThera",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "TYSABRI\u00ae",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Biogen",
+      "mentions": 4,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "BENEPALI",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "FLIXABI",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "FUMADERM",
+      "mentions": 4,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "IMRALDI",
+      "mentions": 3,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "TOFIDENCE",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "ENBREL\u00ae",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "FAMPYRA",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "LEQEMBI\u00ae",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "ZURZUVAE",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Share Repurchase Program Board of Directors",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Binney Street",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "MA AI Artificial Intelligence ALS Amyotrophic Lateral Sclerosis AOCI Accumulated Other Comprehensive Income",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Good Manufacturing Practices CJEU Court",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "the European Union",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Leukemia CMS Centers",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Medicare & Medicaid Services",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Convergence Convergence Pharmaceuticals Ltd.",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Response Letter CROs Contract Research Organizations DEA Drug Enforcement Agency",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Denali Therapeutics Inc.",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Neuropathy EC European Commission Eisai Eisai Co.",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "EMA European Medicines Agency",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "E.U. European Union FA Friedreich's",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Ataxia FASB Financial Accounting Standards Board",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "FDA U.S. Food and Drug Administration",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Genentech Genentech",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Humana Humana Inc.",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Research and Development Ionis Ionis Pharmaceuticals Inc. IRA Inflation Reduction Act",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "LRRK2 Leucine-Rich Repeat Kinase",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "MAA Marketing Authorization Application",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "MDD",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Healthcare",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Mylan Ireland Ltd.",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "NCD National Coverage Decision NDA New Drug Application NDS New Drug Submission Neurimmune",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "AG NMPA National Medicinal Products Administration OECD Organization for Economic Co-operation",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Development Polpharma Polpharma Biologics S.A. PPACA Patient Protection",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Reata Pharmaceuticals, Inc.",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Samsung Bioepis Co.",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Samsung BioLogics Samsung BioLogics Co.",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Sangamo Sangamo Therapeutics, Inc.",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Silicon Valley Bank",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Therapeutic Products TGN",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "the U.S. 6 Table of Contents",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Diluted",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "7 Table of Contents BIOGEN INC.",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Contents BIOGEN INC.",
+      "mentions": 9,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "EQUITY",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Taxes",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Treasury",
+      "mentions": 5,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "9 Table of Contents BIOGEN INC.",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Reata",
+      "mentions": 52,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Samsung Bioepis",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Retained",
+      "mentions": 4,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Total Biogen Inc.",
+      "mentions": 4,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "38.7 Issuance",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Share Repurchase Program",
+      "mentions": 9,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "CONDENSED CONSOLIDATED FINANCIAL STATEMENTS",
+      "mentions": 25,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Significant Accounting Policies References",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Business Overview Biogen",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "SMA",
+      "mentions": 4,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "TECFIDERA",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "VUMERITY",
+      "mentions": 3,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "AVONEX",
+      "mentions": 3,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "TYSABRI",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "ALS",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "FDA",
+      "mentions": 10,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Eisai",
+      "mentions": 4,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "PPD",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "DEA",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "non-Hodgkin's",
+      "mentions": 3,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "CLL",
+      "mentions": 3,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "PPMS",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "RMS",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "LUNSUMIO",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "COLUMVI",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Genentech",
+      "mentions": 3,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "the Roche Group",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "ENBREL",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "HUMIRA",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "BYOOVIZ",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Consolidated Financial Statements",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "FASB",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Fair Value Measurement",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Acquisitions Reata Pharmaceuticals, Inc.",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "QALSODY",
+      "mentions": 3,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Indebtedness",
+      "mentions": 3,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Business Combinations",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Blackstone",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Consolidated Financial Statement Detail",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "EMA",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "the Allocations of Purchase Price",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Samsung BioLogics",
+      "mentions": 11,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "AOCI",
+      "mentions": 10,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Severance Costs Accelerated Depreciation",
+      "mentions": 3,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Reata Integration Following",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Cost Saving Initiatives",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Reata Integration",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "137.8 Total Fumarate",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "891.6 Total",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Contract Manufacturing Revenue Contract",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "LEQEMBI",
+      "mentions": 6,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "NCD",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Goodwill Intangible Assets Intangible",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Impairments For",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Completed Technology Completed",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "ac",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Sangamo",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "TGN",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "DPN",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Level",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Fair Value Carrying Value Fair Value Carrying Value",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "300.3 Government",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Marketable Debt Securities",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Effectiveness Testing",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Foreign Currency Forward Contracts - Other Derivative Instruments We",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Plant and Equipment Property",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Switzerland Manufacturing Facility",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "GMP",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "SWISSMEDIC",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Plant and Equipment",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Binney Street Lease Modification",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Indebtedness Term Loan Credit Agreement",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Equity Share Repurchases",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Cash Flow Hedges",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Pension Benefit Obligation",
+      "mentions": 2,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "AOCI 13.4",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Net Investment Hedges",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Net of Tax",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "AOCI 7.4",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "AOCI Income Statement Location",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Share-Based Payments Share",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "72.6 Selling",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "Share-Based",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    },
+    {
+      "competitor": "IRS",
+      "mentions": 1,
+      "context": "competition in the markets in which we compete, including increased competition from new originator therapies, generics, prodrugs and biosimilars of existing products and products approved under abbreviated regulatory pathways, including generic or biosimilar versions of our products or competing products; \u2022 patent terms, patent term extensions, patent office actions and expected availability and periods of regulatory exclusivity; \u2022 our plans and investments in our portfolio as well as implement"
+    }
+  ]
+}

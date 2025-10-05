@@ -1,0 +1,47 @@
+{
+  "symbol": "DD",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2066,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.123
+  },
+  "top_positive": [
+    {
+      "sent": "On February 17, 2022, DuPont and certain of its subsidiaries entered into a Transaction Agreement (the \u201cTransaction Agreement\u201d) with Celanese Corporation, a Delaware Corporation (\u201cCelanese\u201d), pursuant to which, subject to the satisfaction of the conditions set forth in the Transaction Agreement, DuPont has agreed to sell to Celanese a majority of the Company\u2019s historic Mobility & Materials segment, including the Engineering Polymers business line and select product lines within the Performance Resins and Advanced Solutions business lines (the \u201cM&M Business\u201d) for $11 billion in cash, subject to customary transaction adjustments in accordance with the Transaction Agreement (the \u201cM&M Divestiture\u201d).",
+      "score": 0.9545
+    },
+    {
+      "sent": "Components of management\u2019s discussion and analysis of financial condition and results of operations include: \u2022 Overview \u2022 Result of Operations \u2022 Segment Results \u2022 Changes in Financial Condition OVERVIEW DuPont is a global innovation leader with technology-based materials and solutions that help transform industries and everyday life by applying diverse science and expertise to help customers advance their best ideas and deliver essential innovations in key markets including electronics, transportation, building and construction, healthcare and worker safety.",
+      "score": 0.9403
+    },
+    {
+      "sent": "The acquisition is expected to close in the third quarter of 2022, pending receipt of regulatory approvals and satisfaction of customary closi\nGuidance 13 3 Acquisitions 13 4 Divestitures 14 5 Revenue 18 6 Restructuring and Asset Related Charges - Net 20 7 Supplementary Information 21 8 Income Taxes 22 9 Earnings Per Share Calculations 23 10 Accounts and Notes Receivable - Net 24 11 Inventories 24 12 Property, Plant, and Equipment 24 13 Nonconsolidated Affiliates 24 14 Goodwill and Other Intangible Assets 25 15 Short-Term Borrowings, Long-Term Debt and Available Credit Facilities 27 16 Commitments and Contingent Liabilities 29 17 Leases 33 18 Stockholders' Equity 34 19 Pension Plans and Other Post-Employment Benefits 35 20 Stock-Based Compensation 35 21 Financial Instruments 36 22 Fair Value Measurements 38 23 Segments and Geographic Regions 39 11 Table of Contents NOTE 1 - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES Basis of Presentation In these notes, the terms \"DuPont\" or \"Company\" used herein mean DuPont de Nemours, Inc.",
+      "score": 0.9304
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "LEGAL PROCEEDINGS The Company and its subsidiaries are subject to various litigation matters, including, but not limited to, product liability, patent infringement, antitrust claims, and claims for third party property damage or personal injury stemming from alleged environmental torts.",
+      "score": -0.8603
+    },
+    {
+      "sent": "RISK FACTORS Other than the risk factor set forth below, there have been no material changes in the Company's risk factors discussed in Part I, Item 1A, Risk Factors, in the Company\u2019s 2021 Annual Report on Form 10-K for the year ended December\u00a031, 2021.",
+      "score": -0.8531
+    },
+    {
+      "sent": "The extent to which the conflict may continue to impact DuPont in future periods will depend on future developments, including the severity and duration of the conflict, its impact on regional and global economic conditions, and the extent of supply chain disruptions.",
+      "score": -0.7184
+    }
+  ],
+  "forward_snippets": [
+    "10 Table of Contents NOTES TO THE CONSOLIDATED FINANCIAL STATEMENTS Table of Contents Note Page 1 Summary of Significant Accounting Policies 12 2 Recent Accounting Guidance 13 3 Acquisitions 13 4 Divestitures 14 5 Revenue 18 6 Restructuring and Asset Related Charges - Net 20 7 Supplementary Information 21 8 Income Taxes 22 9 Earnings Per Share Calculations 23 10 Accounts and Notes Receivable - Net 24 11 Inventories 24 12 Property, Plant, and Equipment 24 13 Nonconsolidated Affiliates 24 14 Goodwill and Other Intangible Assets 25 15 Short-Term Borrowings, Long-Term Debt and Available Credit Facilities 27 16 Commitments and Contingent Liabilities 29 17 Leases 33 18 Stockholders' Equity 34 19 Pension Plans and Other Post-Employment Benefits 35 20 Stock-Based Compensation 35 21 Financial Instruments 36 22 Fair Value Measurements 38 23 Segments and Geographic Regions 39 11 Table of Contents NOTE 1 - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES Basis of Presentation In these notes, the terms \"DuPont\" or \"Company\" used herein mean DuPont de Nemours, Inc.",
+    "12 Table of Contents NOTE 2 - RECENT ACCOUNTING GUIDANCE Accounting Guidance Issued But Not Adopted at June 30, 2022 In October 2021, the FASB issued Accounting Standards Update No.",
+    "The acquisition is expected to close in the third quarter of 2022, pending receipt of regulatory approvals and satisfaction of customary closi\nGuidance 13 3 Acquisitions 13 4 Divestitures 14 5 Revenue 18 6 Restructuring and Asset Related Charges - Net 20 7 Supplementary Information 21 8 Income Taxes 22 9 Earnings Per Share Calculations 23 10 Accounts and Notes Receivable - Net 24 11 Inventories 24 12 Property, Plant, and Equipment 24 13 Nonconsolidated Affiliates 24 14 Goodwill and Other Intangible Assets 25 15 Short-Term Borrowings, Long-Term Debt and Available Credit Facilities 27 16 Commitments and Contingent Liabilities 29 17 Leases 33 18 Stockholders' Equity 34 19 Pension Plans and Other Post-Employment Benefits 35 20 Stock-Based Compensation 35 21 Financial Instruments 36 22 Fair Value Measurements 38 23 Segments and Geographic Regions 39 11 Table of Contents NOTE 1 - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES Basis of Presentation In these notes, the terms \"DuPont\" or \"Company\" used herein mean DuPont de Nemours, Inc.",
+    "12 Table of Contents NOTE 2 - RECENT ACCOUNTING GUIDANCE Accounting Guidance Issued But Not Adopted at June 30, 2022 In October 2021, the FASB issued Accounting Standards Update No.",
+    "12 Table of Contents NOTE 2 - RECENT ACCOUNTING GUIDANCE Accounting Guidance Issued But Not Adopted at June 30, 2022 In October 2021, the FASB issued Accounting Standards Update No."
+  ]
+}

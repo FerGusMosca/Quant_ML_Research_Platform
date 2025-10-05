@@ -1,0 +1,47 @@
+{
+  "symbol": "UNH",
+  "year": 2023,
+  "Period": "Y2023",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2767,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.135
+  },
+  "top_positive": [
+    {
+      "sent": "36 Table of Contents UnitedHealth Group Consolidated Balance Sheets (in millions, except per share data) December 31, 2022 December 31, 2021 Assets Current assets: Cash and cash equivalents $ 23,365 $ 21,375 Short-term investments 4,546 2,532 Accounts receivable, net of allowances of $ 877 and $ 954 17,681 14,216 Other current receivables, net of allowances of $ 1,433 and $ 993 12,769 13,866 Assets under management 4,087 4,449 Prepaid expenses and other current assets 6,621 5,320 Total current assets 69,069 61,758 Long-term investments 43,728 43,114 Property, equipment and capitalized software, net of accumulated depreciation and amortization of $ 6,930 and $ 5,992 10,128 8,969 Goodwill 93,352 75,795 Other intangible assets, net of accumulated amortization of $ 6,137 and $ 5,636 14,401 10,044 Other assets 15,027 12,526 Total assets $ 245,705 $ 212,206 Liabilities, redeemable noncontrolling interests and equity Current liabilities: Medical costs payable $ 29,056 $ 24,483 Accounts payable and accrued liabilities 27,715 24,643 Short-term borrowings and current maturities of long-term debt 3,110 3,620 Unearned revenues 3,075 2,571 Other current liabilities 26,281 22,975 Total current liabilities 89,237 78,292 Long-term debt, less current maturities 54,513 42,383 Deferred income taxes 2,769 3,265 Other liabilities 12,839 11,787 Total liabilities 159,358 135,727 Commitments and contingencies (Note 12) Redeemable noncontrolling interests 4,897 1,434 Equity: Preferred stock, $ 0.001 par value - 10 shares authorized; no shares issued or outstanding \u2014 \u2014 Common stock, $ 0.01 par value - 3,000 shares authorized; 934 and 941 issued and outstanding 9 10 Retained earnings 86,156 77,134 Accumulated other comprehensive loss ( 8,393 ) ( 5,384 ) Nonredeemable noncontrolling interests 3,678 3,285 Total equity 81,450 75,045 Total liabilities, redeemable noncontrolling interests and equity $ 245,705 $ 212,206 See Notes to the Consolidated Financial Statements 37 Table of Contents UnitedHealth Group Consolidated Statements of Operations For the Years Ended December 31, (in millions, except per share data) 2022 2021 2020 Revenues: Premiums $ 257,157 $ 226,233 $ 201,478 Products 37,424 34,437 34,145 Services 27,551 24,603 20,016 Investment and other income 2,030 2,324 1,502 Total revenues 324,162 287,597 257,141 Operating costs: Medical costs 210,842 186,911 159,396 Operating costs 47,782 42,579 41,704 Cost of products sold 33,703 31,034 30,745 Depreciation and amortization 3,400 3,103 2,891 Total operating costs 295,727 263,627 234,736 Earnings from operations 28,435 23,970 22,405 Interest expense ( 2,092 ) ( 1,660 ) ( 1,663 ) Earnings before income taxes 26,343 22,310 20,742 Provision for income taxes ( 5,704 ) ( 4,578 ) ( 4,973 ) Net earnings 20,639 17,732 15,769 Earnings attributable to noncontrolling interests ( 519 ) ( 447 ) ( 366 ) Net earnings attributable to UnitedHealth Group common shareholders $ 20,120 $ 17,285 $ 15,403 Earnings per share attributable to UnitedHealth Group common shareholders: Basic $ 21.47 $ 18.33 $ 16.23 Diluted $ 21.18 $ 18.08 $ 16.03 Basic weighted-average number of common shares outstanding 937 943 949 Dilutive effect of common share equivalents 13 13 12 Diluted weighted-average number of common shares outstanding 950 956 961 Anti-dilutive shares excluded from the calculation of dilutive effect of common share equivalents 3 1 8 See Notes to the Consolidated Financial Statements 38 Table of Contents UnitedHealth Group Consolidated Statements of Comprehensive Income For the Years Ended December 31, (in millions) 2022 2021 2020 Net earnings $ 20,639 $ 17,732 $ 15,769 Other comprehensi\ns that could have a material effect on the consolidated financial statements.",
+      "score": 0.9929
+    },
+    {
+      "sent": "SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT AND RELATED STOCKHOLDER MATTERS Equity Compensation Plan Information The following table sets forth certain information as of December 31, 2022, concerning shares of common stock authorized for issuance under all of our equity compensation plans: Plan category (a) Number of securities to be issued upon exercise of outstanding options, warrants and rights (b) Weighted-average exercise price of outstanding options, warrants and rights (c) Number of securities remaining available for future issuance under equity compensation plans (excluding securities reflected in column (a)) (in millions) (in millions) Equity compensation plans approved by shareholders (1) 23 $ 279 77 (3) Equity compensation plans not approved by shareholders (2) \u2014 \u2014 Total (2) 23 $ 279 77 (1) Consists of the UnitedHealth Group Incorporated 2020 Stock Incentive Plan, as amended, and the UnitedHealth Group 1993 Employee Stock Purchase Plan, as amended.",
+      "score": 0.9882
+    },
+    {
+      "sent": "SECURITY OWNERSHIP OF CERTAIN BENEFICIAL OWNERS AND MANAGEMENT AND RELATED STOCKHOLDER MATTERS Equity Compensation Plan Information The following table sets forth certain information as of December 31, 2022, concerning shares of common stock authorized for issuance under all of our equity compensation plans: Plan category (a) Number of securities to be issued upon exercise of outstanding options, warrants and rights (b) Weighted-average exercise price of outstanding options, warrants and rights (c) Number of securities remaining available for future issuance under equity compensation plans (excluding securities reflected in column (a)) (in millions) (in millions) Equity compensation plans approved by shareholders (1) 23 $ 279 77 (3) Equity compensation plans not approved by shareholders (2) \u2014 \u2014 Total (2) 23 $ 279 77 (1) Consists of the UnitedHealth Group Incorporated 2020 Stock Incentive Plan, as amended, and the UnitedHealth Group 1993 Employee Stock Purchase Plan, as amended.",
+      "score": 0.9882
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our businesses could suffer if our affiliated physician organizations fail to maintain relationships with these companies, or fail to adequately price their contracts with these third-party payers.",
+      "score": -0.8885
+    },
+    {
+      "sent": "If the data we rely upon to run our businesses is found to be inaccurate or unreliable or if we fail to maintain or protect our information systems and data integrity effectively, we could experience failures in our health, wellness and information technology products; lose existing customers; have difficulty attracting new customers; experience problems in determining medical cost estimates and establishing appropriate pricing; have difficulty preventing, detecting and controlling fraud; have disputes with customers, physicians and other health care professionals; become subject to regulatory sanctions, penalties, investigations or audits; incur increases in operating expenses; or suffer other adverse consequences.",
+      "score": -0.886
+    },
+    {
+      "sent": "If the data we rely upon to run our businesses is found to be inaccurate or unreliable or if we fail to maintain or protect our information systems and data integrity effectively, we could experience failures in our health, wellness and information technology products; lose existing customers; have difficulty attracting new customers; experience problems in determining medical cost estimates and establishing appropriate pricing; have difficulty preventing, detecting and controlling fraud; have disputes with customers, physicians and other health care professionals; become subject to regulatory sanctions, penalties, investigations or audits; incur increases in operating expenses; or suffer other adverse consequences.",
+      "score": -0.886
+    }
+  ],
+  "forward_snippets": [
+    "Optum combines clinical expertise, technology and data to empower people, partners and providers with the guidance and tools they need to achieve better health.",
+    "Optum combines clinical expertise, technology and data to empower people, partners and providers with the guidance and tools they need to achieve better health.",
+    "Optum combines clinical expertise, technology and data to empower people, partners and providers with the guidance and tools they need to achieve better health.",
+    "Optum combines clinical expertise, technology and data to empower people, partners and providers with the guidance and tools they need to achieve better health.",
+    "Serves hospitals, physicians and other care providers to improve operating performance, better coordina\nguidance and tools they need to achieve better health."
+  ]
+}

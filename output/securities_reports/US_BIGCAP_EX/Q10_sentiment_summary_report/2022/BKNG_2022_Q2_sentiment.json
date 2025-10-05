@@ -1,0 +1,47 @@
+{
+  "symbol": "BKNG",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2366,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.171
+  },
+  "top_positive": [
+    {
+      "sent": "(4)\u00a0\u00a0\u00a0\u00a0Probable outcome for performance-based awards is updated based upon changes in actual and forecasted operating results or \nevel 3 Recurring Fair Value Measurements The following table summarizes the fair value adjustments for debt securities measured using significant unobservable inputs (level 3) (in millions): For the Six Months Ended June 30, 2021 Balance, beginning of year $ 200 Unrealized gains included in other comprehensive (loss) income (1) 126 Balance, end of period $ 326 (1) Included in Net unrealized gains on available-for-sale securities in the Unaudited Consolidated Statements of Comprehensive Income (Loss).",
+      "score": 0.9633
+    },
+    {
+      "sent": "11 The following table summarizes the activity in performance share units for employees during the six months ended June\u00a030, 2022: Performance Share Units Shares Weighted-average\u00a0Grant-date\u00a0Fair\u00a0Value Unvested at December\u00a031, 2021 (1) 108,323 $ 2,123 Granted (2),(3) 50,443 $ 2,210 Vested ( 44,276 ) $ 1,859 Performance shares adjustment (4) 34,271 $ 2,389 Forfeited ( 1,521 ) $ 2,413 Unvested at June 30, 2022 147,240 $ 2,293 (1)\u00a0\u00a0\u00a0\u00a0Excludes 12,251 performance share units awarded during the year ended December 31, 2021 for which the grant date under ASC 718, Compensation - Stock Compensation , was not established as of December 31, 2021.",
+      "score": 0.9612
+    },
+    {
+      "sent": "In addition, the Company offers loyalty programs, such as OpenTable's loyalty program, where participating consumers may be awarded loyalty points on current transactions that can be redeemed in the future.",
+      "score": 0.9382
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Factors beyond our control, such as terrorist attacks, extreme weather or natural disasters, travel-related health concerns including pandemics and epidemics such as COVID-19, wars and regional hostilities, travel-related accidents, or increased focus on the environmental impact of travel, can disrupt travel, limit the ability or willingness of travelers to visit certain locations, or otherwise result in declines in travel demand, negatively affecting our business and results of operations.",
+      "score": -0.9118
+    },
+    {
+      "sent": "Factors beyond our control, such as terrorist attacks, extreme weather or natural disasters, travel-related health concerns including pandemics and epidemics such as COVID-19, wars and regional hostilities, travel-related accidents, or increased focus on the environmental impact of travel, can disrupt travel, limit the ability or willingness of travelers to visit certain locations, or otherwise result in declines in travel demand, negatively affecting our business and results of operations.",
+      "score": -0.9118
+    },
+    {
+      "sent": "Factors beyond our control, such as terrorist attacks, extreme weather or natural disasters, travel-related health concerns including pandemics and epidemics such as COVID-19, wars and regional hostilities, travel-related accidents, or increased focus on the environmental impact of travel, can disrupt travel, limit the ability or willingness of travelers to visit certain locations, or otherwise result in declines in travel demand, negatively affecting our business and results of operations.",
+      "score": -0.9118
+    }
+  ],
+  "forward_snippets": [
+    "GAAP, the accounting standards update reduces the number of accounting models for convertible debt instruments, requires fewer embedded conversion features to be separately recognized from the host contract, and amends certain guidance to reduce form-over-substance-based accounting conclusions.",
+    "Under the updated guidance, upon the initial recognition of convertible debt, the Company presents the entire amount attributable to the debt as a liability.",
+    "Fair Value Measurement of Equity Securities Subject to Contractual Sale Restrictions In June 2022, the Financial Accounting Standards Board issued an accounting standards update with guidance on the fair value measurement of equity securities subject to contractual sale restrictions.",
+    "GAAP, the accounting standards update reduces the number of accounting models for convertible debt instruments, requires fewer embedded conversion features to be separately recognized from the host contract, and amends certain guidance to reduce form-over-substance-based accounting conclusions.",
+    "Under the updated guidance, upon the initial recognition of convertible debt, the Company presents the entire amount attributable to the debt as a liability."
+  ]
+}

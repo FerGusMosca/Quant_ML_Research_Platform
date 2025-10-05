@@ -1,0 +1,47 @@
+{
+  "symbol": "ADBE",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.148,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.325
+  },
+  "top_positive": [
+    {
+      "sent": "FAIR VALUE MEASUREMENTS Assets and Liabilities Measured and Recorded at Fair Value on a Recurring Basis The fair value of our financial assets and liabilities at June\u00a03, 2022 was determined using the following inputs: (in millions) Fair Value Measurements at Reporting Date Using Quoted Prices in Active Markets for Identical Assets Significant Other Observable Inputs Significant Unobservable Inputs Total (Level\u00a01) (Level\u00a02) (Level\u00a03) Assets: Cash equivalents: Corporate debt securities $ 13 $ \u2014 $ 13 $ \u2014 Money market funds 2,588 2,588 \u2014 \u2014 Time deposits 24 24 \u2014 \u2014 Short-term investments: Asset-backed securities 117 \u2014 117 \u2014 Corporate debt securities 1,362 \u2014 1,362 \u2014 Foreign government securities 5 \u2014 5 \u2014 Municipal securities 31 \u2014 31 \u2014 U.S.",
+      "score": 0.9837
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS\u2019 EQUITY (In millions) (Unaudited) Three Months Ended June\u00a03, 2022 Common\u00a0Stock Additional Paid-In Capital Retained Earnings Accumulated Other Comprehensive Income (Loss) Treasury\u00a0Stock Shares Amount Shares Amount Total Balances at March\u00a04, 2022 601 $ \u2014 $ 8,750 $ 24,961 $ ( 177 ) ( 129 ) $ ( 19,759 ) $ 13,775 Net income \u2014 \u2014 \u2014 1,178 \u2014 \u2014 \u2014 1,178 Other comprehensive income (loss), net of taxes \u2014 \u2014 \u2014 \u2014 ( 18 ) \u2014 \u2014 ( 18 ) Re-issuance of treasury stock under stock compensation plans \u2014 \u2014 \u2014 ( 117 ) \u2014 1 16 ( 101 ) Repurchases of common stock \u2014 \u2014 \u2014 \u2014 \u2014 ( 2 ) ( 1,200 ) ( 1,200 ) Stock-based compensation \u2014 \u2014 352 \u2014 \u2014 \u2014 \u2014 352 Value of shares in deferred  compensation plan \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 ( 1 ) ( 1 ) Balances at June\u00a03, 2022 601 $ \u2014 $ 9,102 $ 26,022 $ ( 195 ) ( 130 ) $ ( 20,944 ) $ 13,985 Three Months Ended June\u00a04, 2021 Common\u00a0Stock Additional Paid-In Capital Retained Earnings Accumulated Other Comprehensive Income (Loss) Treasury\u00a0Stock Shares Amount Shares Amount Total Balances at March\u00a05, 2021 601 $ \u2014 $ 7,617 $ 20,521 $ ( 141 ) ( 122 ) $ ( 14,451 ) $ 13,546 Net income \u2014 \u2014 \u2014 1,116 \u2014 \u2014 \u2014 1,116 Other comprehensive income (loss), net of taxes \u2014 \u2014 \u2014 \u2014 20 \u2014 \u2014 20 Re-issuance of treasury stock under stock compensation plans \u2014 \u2014 \u2014 ( 99 ) \u2014 \u2014 10 ( 89 ) Repurchases of common stock \u2014 \u2014 \u2014 \u2014 \u2014 ( 2 ) ( 1,000 ) ( 1,000 ) Stock-based compensation \u2014 \u2014 260 \u2014 \u2014 \u2014 \u2014 260 Value of shares in deferred  compensation plan \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 ( 1 ) ( 1 ) Balances at June\u00a04, 2021 601 $ \u2014 $ 7,877 $ 21,538 $ ( 121 ) ( 124 ) $ ( 15,442 ) $ 13,852 6 Table of Contents ADOBE INC.",
+      "score": 0.9761
+    },
+    {
+      "sent": "By combining the creativity of our Digital Media business with the science of our Digital Experience business, we help our customers to more efficiently and effectively make, manage\n long-term revenue growth through a continued expansion of our customer base by attracting new users with new features and products like Adobe Express that make creative tools accessible to first-time creators and communicators, continuing to acquire users with low cost of entry and delivery of additional features and value to Creative Cloud, and delivering new features and technologies to existing customers with our latest releases.",
+      "score": 0.9743
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "A disruption, infiltration or failure of these systems or third-party hosted services in the event of a major earthquake, fire, flood, tsunami or other weather event, power loss, telecommunications failure, software or hardware malfunctions, pandemics (including the COVID-19 pandemic), cyber-attack, war, terrorist attack or other catastrophic event that our disaster recovery plans do not adequately address, could cause system interruptions, reputational harm, loss of intellectual property, delays in our product development, lengthy interruptions in our services, breaches of data security and loss of critical data.",
+      "score": -0.9911
+    },
+    {
+      "sent": "A disruption, infiltration or failure of these systems or third-party hosted services in the event of a major earthquake, fire, flood, tsunami or other weather event, power loss, telecommunications failure, software or hardware malfunctions, pandemics (including the COVID-19 pandemic), cyber-attack, war, terrorist attack or other catastrophic event that our disaster recovery plans do not adequately address, could cause system interruptions, reputational harm, loss of intellectual property, delays in our product development, lengthy interruptions in our services, breaches of data security and loss of critical data.",
+      "score": -0.9911
+    },
+    {
+      "sent": "These risks include: \u2022 inability to achieve the financial and strategic goals for the acquired and combined businesses; \u2022 difficulty in, and the cost of, effectively integrating the operations, technologies, products or services, and personnel of the acquired business; \u2022 entry into markets in which we have minimal prior experience and where competitors in such markets have stronger market positions; \u2022 disruption of our ongoing business and distraction of our management and other employees from other opportunities and challenges; \u2022 inability to retain personnel of the acquired business; \u2022 inability to retain key customers, distributors, vendors and other business partners of the acquired business; \u2022 inability to take advantage of anticipated tax benefits; \u2022 incurring acquisition-related costs or amortization costs for acquired intangible assets that could impact our operating results; \u2022 elevated delinquency or bad debt write-offs related to receivables of the acquired business we assume; \u2022 additional costs of bringing acquired companies into compliance with laws and regulations applicable to a multinational corporation; \u2022 difficulty in maintaining controls, procedures and policies during the transition and integration; \u2022 impairment of our relationships with employees, customers, partners, distributors or third-party providers of our technologies, products or services; \u2022 failure of our due diligence processes to identify significant problems, liabilities or other challenges of an acquired company or technology; \u2022 exposure to litigation or other claims in connection with, or inheritance of claims or litigation risk as a result of, an acquisition, such as claims from terminated employees, customers, former stockholders or other third parties; \u2022 incurring significant exit charges if products or services acquired in business combinations are unsuccessful; \u2022 inability to conclude that our internal controls over financial reporting are effective; \u2022 inability to obtain, or obtain in a timely manner, approvals from governmental authorities, which could delay or prevent such acquisitions; \u2022 the failure of strategic investments to perform as expected or to meet financial projections; \u2022 delay in customer and distributor purchasing decisions due to uncertainty about the direction of our product and service offerings; 42 T able of Contents \u2022 increased accounts receivables collection times and working capital requirements associated with acquired business models; and \u2022 incompatibility of business cultures.",
+      "score": -0.984
+    }
+  ],
+  "forward_snippets": [
+    "Adopted Accounting Guidance and Accounting Pronouncements Not Yet Effective There have been no recent accounting pronouncements, changes in accounting pronouncements or recently adopted accounting guidance during the six months ended June\u00a03, 2022 that are of significance or potential significance to us.",
+    "Incremental costs of obtaining a contract with a customer are capitalized if we expect the benefit of those costs to be longer than one year and primarily relate to sales commissions paid to our sales force personnel.",
+    "Adopted Accounting Guidance and Accounting Pronouncements Not Yet Effective There have been no recent accounting pronouncements, changes in accounting pronouncements or recently adopted accounting guidance during the six months ended June\u00a03, 2022 that are of significance or potential significance to us.",
+    "Incremental costs of obtaining a contract with a customer are capitalized if we expect the benefit of those costs to be longer than one year and primarily relate to sales commissions paid to our sales force personnel.",
+    "We record refund liabilities f\nGuidance and Accounting Pronouncements Not Yet Effective There have been no recent accounting pronouncements, changes in accounting pronouncements or recently adopted accounting guidance during the six months ended June\u00a03, 2022 that are of significance or potential significance to us."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "V",
+  "year": 2024,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1663,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.038
+  },
+  "top_positive": [
+    {
+      "sent": "litigation escrow 1,596 1,764 Investment securities 3,697 3,842 Settlement receivable 2,128 2,183 Accounts receivable 2,521 2,291 Customer collateral 3,472 3,005 Current portion of client incentives 1,821 1,577 Prepaid expenses and other current assets 2,857 2,584 Total current assets 31,039 33,532 Investment securities 3,037 1,921 Client incentives 4,133 3,789 Property, equipment and technology, net 3,766 3,425 Goodwill 18,816 17,997 Intangible assets, net 26,243 26,104 Other assets 4,006 3,731 Total assets $ 91,040 $ 90,499 Liabilities Accounts payable $ 331 $ 375 Settlement payable 2,576 3,269 Customer collateral 3,472 3,005 Accrued compensation and benefits 1,251 1,506 Client incentives 8,562 8,177 Accrued liabilities 4,732 5,015 Accrued litigation 1,688 1,751 Total current liabilities 22,612 23,098 Long-term debt 20,602 20,463 Deferred tax liabilities 5,119 5,114 Other liabilities 2,978 3,091 Total liabilities 51,311 51,766 Commitments and contingencies (Note 13) Equity Preferred stock, $ 0.0001 par value, 5 shares issued and outstanding as of June\u00a030, 2024 and September\u00a030, 2023 1,425 1,698 Common stock, $ 0.0001 par value: Class A common stock, 1,678 and 1,594 shares issued and outstanding as of June\u00a030, 2024 and September\u00a030, 2023, respectively \u2014 \u2014 Class B-1 and B-2 total common stock, 125 and 245 shares issued and outstanding as of June\u00a030, 2024 and September\u00a030, 2023, respectively \u2014 \u2014 Class C common stock, 27 and 10 shares issued and outstanding as of June\u00a030, 2024 and September\u00a030, 2023, respectively \u2014 \u2014 Right to recover for covered losses ( 46 ) ( 140 ) Additional paid-in capital 20,832 20,452 Accumulated income 18,578 18,040 Accumulated other comprehensive income (loss): Investment securities ( 19 ) ( 64 ) Defined benefit pension and other postretirement plans ( 145 ) ( 155 ) Derivative instruments ( 120 ) ( 177 ) Foreign currency translation adjustments ( 776 ) ( 921 ) Total accumulated other comprehensive income (loss) ( 1,060 ) ( 1,317 ) Total equity 39,729 38,733 Total liabilities and equity $ 91,040 $ 90,499 See accompanying notes, which are an integral part of these unaudited consolidated financial statements.",
+      "score": 0.992
+    },
+    {
+      "sent": "GAAP, to our respective non-GAAP financial measures: Three Months Ended June 30, 2024 Operating Expenses Non-operating Income (Expense) Income Tax Provision (1) Effective Income Tax Rate (2) Net Income Diluted Earnings Per Share (2) (in millions, except percentages and per share data) As reported $ 2,962 $ 51 $ 1,117 18.6 % $ 4,872 $ 2.40 (Gains) losses on equity investments, net \u2014 22 5 17 0.01 Amortization of acquired intangible assets (48) \u2014 13 35 0.02 Acquisition-related costs (28) \u2014 3 25 0.01 Litigation provision (10) \u2014 2 8 \u2014 Indirect taxes 118 \u2014 (29) (89) (0.04) Charitable contribution (67) \u2014 26 41 0.02 Non-GAAP $ 2,927 $ 73 $ 1,137 18.8 % $ 4,909 $ 2.42 Nine Months Ended June 30, 2024 Operating Expenses Non-operating Income (Expense) Income Tax Provision (1) Effective Income Tax Rate (2) Net Income Diluted Earnings Per Share (2) (in millions, except percentages and per share data) As reported $ 9,063 $ 298 $ 3,119 17.8 % $ 14,425 $ 7.08 (Gains) losses on equity investments, net \u2014 48 11 37 0.02 Amortization of acquired intangible assets (131) \u2014 32 99 0.05 Acquisition-related costs (75) \u2014 5 70 0.03 Litigation provision (434) \u2014 97 337 0.17 Lease consolidation costs (57) \u2014 13 44 0.02 Indirect taxes 118 \u2014 (29) (89) (0.04) Charitable contribution (67) \u2014 26 41 0.02 Non-GAAP $ 8,417 $ 346 $ 3,274 17.9 % $ 14,964 $ 7.34 31 Table of Contents Three Months Ended June 30, 2023 Operating Expenses Non-operating Income (Expense) Income Tax Provision (1) Effective Income Tax Rate (2) Net Income Diluted Earnings Per Share (2) (in millions, except percentages and per share data) As reported $ 3,099 $ 122 $ 990 19.2 % $ 4,156 $ 2.00 (Gains) losses on equity investments, net \u2014 (85) (18) (67) (0.03) Amortization of acquired intangible assets (41) \u2014 9 32 0.02 Acquisition-related costs (24) \u2014 1 23 0.01 Litigation provision (456) \u2014 101 355 0.17 Non-GAAP $ 2,578 $ 37 $ 1,083 19.4 % $ 4,499 $ 2.16 Nine Months Ended June 30, 2023 Operating Expenses Non-operating Income (Expense) Income Tax Provision (1) Effective Income Tax Rate (2) Net Income Diluted Earnings Per Share (2) \ntrends.",
+      "score": 0.9786
+    },
+    {
+      "sent": "GAAP, to our respective non-GAAP financial measures: Three Months Ended June 30, 2024 Operating Expenses Non-operating Income (Expense) Income Tax Provision (1) Effective Income Tax Rate (2) Net Income Diluted Earnings Per Share (2) (in millions, except percentages and per share data) As reported $ 2,962 $ 51 $ 1,117 18.6 % $ 4,872 $ 2.40 (Gains) losses on equity investments, net \u2014 22 5 17 0.01 Amortization of acquired intangible assets (48) \u2014 13 35 0.02 Acquisition-related costs (28) \u2014 3 25 0.01 Litigation provision (10) \u2014 2 8 \u2014 Indirect taxes 118 \u2014 (29) (89) (0.04) Charitable contribution (67) \u2014 26 41 0.02 Non-GAAP $ 2,927 $ 73 $ 1,137 18.8 % $ 4,909 $ 2.42 Nine Months Ended June 30, 2024 Operating Expenses Non-operating Income (Expense) Income Tax Provision (1) Effective Income Tax Rate (2) Net Income Diluted Earnings Per Share (2) (in millions, except percentages and per share data) As reported $ 9,063 $ 298 $ 3,119 17.8 % $ 14,425 $ 7.08 (Gains) losses on equity investments, net \u2014 48 11 37 0.02 Amortization of acquired intangible assets (131) \u2014 32 99 0.05 Acquisition-related costs (75) \u2014 5 70 0.03 Litigation provision (434) \u2014 97 337 0.17 Lease consolidation costs (57) \u2014 13 44 0.02 Indirect taxes 118 \u2014 (29) (89) (0.04) Charitable contribution (67) \u2014 26 41 0.02 Non-GAAP $ 8,417 $ 346 $ 3,274 17.9 % $ 14,964 $ 7.34 31 Table of Contents Three Months Ended June 30, 2023 Operating Expenses Non-operating Income (Expense) Income Tax Provision (1) Effective Income Tax Rate (2) Net Income Diluted Earnings Per Share (2) (in millions, except percentages and per share data) As reported $ 3,099 $ 122 $ 990 19.2 % $ 4,156 $ 2.00 (Gains) losses on equity investments, net \u2014 (85) (18) (67) (0.03) Amortization of acquired intangible assets (41) \u2014 9 32 0.02 Acquisition-related costs (24) \u2014 1 23 0.01 Litigation provision (456) \u2014 101 355 0.17 Non-GAAP $ 2,578 $ 37 $ 1,083 19.4 % $ 4,499 $ 2.16 Nine Months Ended June 30, 2023 Operating Expenses Non-operating Income (Expense) Income Tax Provision (1) Effective Income Tax Rate (2) Net Income Diluted Earnings Per Share (2) (in millions, except percentages and per share data) As reported $ 8,594 $ (49) $ 2,809 18.2 % $ 12,592 $ 6.02 (Gains) losses on equity investments, net \u2014 111 25 86 0.04 Amortization of acquired intangible assets (130) \u2014 28 102 0.05 Acquisition-related costs (69) \u2014 5 64 0.03 Litigation provision (797) \u2014 177 620 0.30 Non-GAAP $ 7,598 $ 62 $ 3,044 18.4 % $ 13,464 $ 6.44 (1) Determined by applying applicable tax rates.",
+      "score": 0.9781
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Quantitative and Qualitative Disclosures about Market Risk There have been no significant changes to our market risks since September\u00a030, 2023.",
+      "score": -0.5574
+    },
+    {
+      "sent": "Quantitative and Qualitative Disclosures about Market Risk There have been no significant changes to our market risks since September\u00a030, 2023.",
+      "score": -0.5574
+    },
+    {
+      "sent": "Quantitative and Qualitative Disclosures about Market Risk There have been no significant changes to our market risks since September\u00a030, 2023.",
+      "score": -0.5574
+    }
+  ],
+  "forward_snippets": [
+    "We use non-GAAP financial measures of our performance which exclude certain items which we believe are not representative of our continuing operations, as they may be non-recurring or have no cash impact, and may distort our longer-term operating trends.",
+    "Based on our current cash flow budgets and forecasts of our short-term and long-term liquidity needs, we believe that our current and projected sources of liquidity will be sufficient to meet our projected liquidity needs for more than the next 12 months.",
+    "We will continue to assess our liquidity position and potential sources of supplemental liquidity in view of our operating performance, current economic and capital market conditions and other relevant circumstances.",
+    "We expect to continue paying quarterly dividends in cash, subject to approval by the board.",
+    "Based on our current cash flow budgets and forecasts of our short-term and long-term liquidity needs, we believe that our current and projected sources of liquidity will be sufficient to meet our projected liquidity needs for more than the next 12 months."
+  ]
+}

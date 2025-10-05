@@ -1,0 +1,47 @@
+{
+  "symbol": "V",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1564,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.052
+  },
+  "top_positive": [
+    {
+      "sent": "litigation escrow 1,616 1,764 Investment securities 5,005 3,842 Settlement receivable 2,525 2,183 Accounts receivable 2,506 2,291 Customer collateral 3,164 3,005 Current portion of client incentives 1,572 1,577 Prepaid expenses and other current assets 2,753 2,584 Total current assets 32,732 33,532 Investment securities 2,809 1,921 Client incentives 3,941 3,789 Property, equipment and technology, net 3,472 3,425 Goodwill 18,120 17,997 Intangible assets, net 26,739 26,104 Other assets 3,596 3,731 Total assets $ 91,409 $ 90,499 Liabilities Accounts payable $ 348 $ 375 Settlement payable 3,724 3,269 Customer collateral 3,164 3,005 Accrued compensation and benefits 816 1,506 Client incentives 8,034 8,177 Accrued liabilities 5,077 5,015 Accrued litigation 1,471 1,751 Total current liabilities 22,634 23,098 Long-term debt 20,703 20,463 Deferred tax liabilities 5,275 5,114 Other liabilities 3,064 3,091 Total liabilities 51,676 51,766 Commitments and contingencies (Note 13) Equity Series A, Series B and Series C convertible participating preferred stock (preferred stock), $ 0.0001 par value: 25 shares authorized and 5 (Series A less than one, Series B 2 , Series C 3 ) shares issued and outstanding as of December 31, 2023 and September 30, 2023 1,615 1,698 Class A, Class B and Class C common stock and additional paid-in capital, $ 0.0001 par value: 2,003,341 shares authorized (Class A 2,001,622 , Class B 622 , Class C 1,097 ); 1,836 (Class A 1,582 , Class B 245 , Class C 9 ) and 1,849 (Class A 1,594 , Class B 245 , Class C 10 ) shares issued and outstanding as of December 31, 2023 and September 30, 2023, respectively 20,490 20,452 Right to recover for covered losses ( 139 ) ( 140 ) Accumulated income 18,422 18,040 Accumulated other comprehensive income (loss): Investment securities ( 18 ) ( 64 ) Defined benefit pension and other postretirement plans ( 153 ) ( 155 ) Derivative instruments ( 208 ) ( 177 ) Foreign currency translation adjustments ( 276 ) ( 921 ) Total accumulated other comprehensive income (loss) ( 655 ) ( 1,317 ) Total equity 39,733 38,733 Total liabilities and equity $ 91,409 $ 90,499 See accompanying notes, which are an integral part of these unaudited consolidated financial statements.",
+      "score": 0.9844
+    },
+    {
+      "sent": "CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (UNAUDITED) Three Months Ended December 31, 2023 2022 (in\u00a0millions) Net income $ 4,890 $ 4,179 Other comprehensive income (loss): Investment securities: Net unrealized gain (loss) 58 15 Income tax effect ( 12 ) ( 3 ) Defined benefit pension and other postretirement plans: Net unrealized actuarial gain (loss) and prior service credit (cost) \u2014 2 Income tax effect \u2014 ( 1 ) Reclassification adjustments 3 1 Income tax effect ( 1 ) \u2014 Derivative instruments: Net unrealized gain (loss) ( 77 ) ( 116 ) Income tax effect 16 14 Reclassification adjustments 39 ( 7 ) Income tax effect ( 9 ) ( 4 ) Foreign currency translation adjustments Translation adjustments 588 1,209 Income tax effect 57 \u2014 Other comprehensive income (loss) 662 1,110 Comprehensive income $ 5,552 $ 5,289 See accompanying notes, which are an integral part of these unaudited consolidated financial statements.",
+      "score": 0.9742
+    },
+    {
+      "sent": "2022 (1),(2) Nominal Constant (7) Nominal Constant (7) Payments volume growth Consumer credit growth 7 % 10 % 6 % 8 % Consumer debit growth (3) 17 % 13 % 12 % 10 % Commercial growth (4) 15 % 15 % 9 % 9 % Total payments volume growth 12 % 12 % 9 % 9 % Cash volume growth (5) 5 % 4 % 4 % 3 % Total volume growth 11 % 10 % 8 % 8 % (1) Service revenues in a given quarter are primarily assessed based on nominal payments volume in the prior quarter.",
+      "score": 0.9571
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Quantitative and Qualitative Disclosures about Market Risk There have been no significant changes to our market risks since September\u00a030, 2023.",
+      "score": -0.5574
+    },
+    {
+      "sent": "Quantitative and Qualitative Disclosures about Market Risk There have been no significant changes to our market risks since September\u00a030, 2023.",
+      "score": -0.5574
+    },
+    {
+      "sent": "Quantitative and Qualitative Disclosures about Market Risk There have been no significant changes to our market risks since September\u00a030, 2023.",
+      "score": -0.5574
+    }
+  ],
+  "forward_snippets": [
+    "We use non-GAAP financial measures of our performance which exclude certain items which we believe are not representative of our continuing operations, as they may be non-recurring or have no cash impact, and may distort our longer-term operating trends.",
+    "Based on our current cash flow budgets and forecasts of our short-term and long-term liquidity needs, we believe that our current and projected sources of liquidity will be sufficient to meet our projected liquidity needs for more than the next 12 months.",
+    "We will continue to assess our liquidity position and potential sources of supplemental liquidity in view of our operating performance, current economic and capital market conditions and other relevant circumstances.",
+    "We expect to continue paying quarterly dividends in cash, subject to approval by the board.",
+    "Based on our current cash flow budgets and forecasts of our short-term and long-term liquidity needs, we believe that our current and projected sources of liquidity will be sufficient to meet our projected liquidity needs for more than the next 12 months."
+  ]
+}

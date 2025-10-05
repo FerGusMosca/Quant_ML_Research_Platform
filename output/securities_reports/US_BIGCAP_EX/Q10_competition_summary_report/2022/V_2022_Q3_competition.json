@@ -1,0 +1,22 @@
+{
+  "symbol": "V",
+  "year": 2022,
+  "period": "Q3",
+  "competition_summary": [
+    {
+      "competitor": "CAT",
+      "mentions": 1,
+      "context": "Competition Appeal Tribunal (CAT) found that UK and certain other domestic and intra-European Economic Area consumer interchange fees before the introduction of the Interchange Fee "
+    },
+    {
+      "competitor": "intra-European Economic Area",
+      "mentions": 1,
+      "context": "Competition Appeal Tribunal (CAT) found that UK and certain other domestic and intra-European Economic Area consumer interchange fees before the introduction of the Interchange Fee "
+    },
+    {
+      "competitor": "the Interchange Fee",
+      "mentions": 1,
+      "context": "Competition Appeal Tribunal (CAT) found that UK and certain other domestic and intra-European Economic Area consumer interchange fees before the introduction of the Interchange Fee "
+    }
+  ]
+}

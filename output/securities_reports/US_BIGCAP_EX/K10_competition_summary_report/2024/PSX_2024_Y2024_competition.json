@@ -1,0 +1,947 @@
+{
+  "symbol": "PSX",
+  "year": 2024,
+  "period": "Y2024",
+  "competition_summary": [
+    {
+      "competitor": "Legal Proceedings",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Issuer Purchases of",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Management's Discussion and Analysis of Financial Condition",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Financial Statements",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Disclosure Regarding Foreign Jurisdictions that Prevent Inspections",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Security Ownership of Certain Beneficial Owners and Management",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Exhibit and Financial Statement Schedules",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Signatures 172 Table of Contents Index",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "the Private Securities Litigation Reform Act",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "ConocoPhillips",
+      "mentions": 2,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Phillips 66",
+      "mentions": 8,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Phillips",
+      "mentions": 3,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "the New York Stock Exchange",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "PSX",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "NGL",
+      "mentions": 30,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "NOVONIX Limited",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "NOVONIX",
+      "mentions": 5,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Chevron Phillips Chemical Company LLC",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "CPChem",
+      "mentions": 13,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Marketing & Specialties",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Consolidated Financial Statements",
+      "mentions": 3,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "\u2022 Transportation",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "DCP Midstream",
+      "mentions": 8,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "LLC",
+      "mentions": 4,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Gray Oak Holdings LLC Merger",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "DCP Midstream Merger",
+      "mentions": 3,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "DCP Midstream, LP",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "DCP Midstream\u2019s",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "DCP LP",
+      "mentions": 20,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "DCP Midstream Class A Segment",
+      "mentions": 3,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "DCP",
+      "mentions": 8,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "DCP Southern Hills",
+      "mentions": 5,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "LP Merger",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "DCP LP Merger",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "DCP LP Merger Agreement",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "the DCP Midstream",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "DCP LP Mergers",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Phillips 66 Partners",
+      "mentions": 3,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Phillips 66 Partners LP",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Financial Statements Asset Dispositions",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "the South Texas Gateway Terminal",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "the Belle Chasse Terminal",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Transportation",
+      "mentions": 3,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Bayou Bridge Texas",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "New Mexico Crude",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Oklahoma Crude",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "STACK PL Oklahoma",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Borger to Amarillo",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Borger-Denver",
+      "mentions": 3,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Cross Channel Connector",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Gold Line Texas",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Paola Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Pioneer Wyoming/Utah",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Seminoe Montana/Wyoming",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Standish Oklahoma/",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Blue Line Texas",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Skelly-Belvieu",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Facility Name Location Commodity Handled Interest Gross Storage Capacity",
+      "mentions": 2,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "MBbl",
+      "mentions": 3,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "New Mexico Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Amarillo Texas Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Oil, Refined Petroleum Products",
+      "mentions": 2,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Montana Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "N/A Coalinga California Crude Oil",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Cushing Oklahoma Crude",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "N/A Cut Bank",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Denver Colorado Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Glenpool Oklahoma Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Great Falls Montana Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Hartford Illinois Refined Petroleum Products",
+      "mentions": 2,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Helena Montana Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Missouri Refined Petroleum Products",
+      "mentions": 2,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Junction California Crude Oil, Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Kansas City Kansas Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Keene North Dakota Crude",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "La Junta Colorado Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Lincoln Nebraska Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Linden New Jersey Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Lubbock Texas Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "N/A Missoula Montana Refined Petroleum",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Mount",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "North Spokane Washington Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Oklahoma City Oklahoma Crude Oil, Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Financial Statements Facility Name Location Commodity Handled Interest Gross Storage Capacity",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Palermo North Dakota Crude",
+      "mentions": 2,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "N/A Paola Kansas Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Pasadena Texas Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Refined Petroleum Products",
+      "mentions": 2,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Oklahoma Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Ponca City Crude Oklahoma Crude Oil 100 1,229",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "N/A Portland Oregon Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Renton Washington Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Richmond California Refined Petroleum Products",
+      "mentions": 2,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Rock Springs Wyoming Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Sacramento California Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Santa Margarita",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Spokane Washington Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Washington Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "N/A Tremley Point New Jersey Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Louisiana Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Wichita Falls",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Wichita South",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Kansas Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Facility Name Location Commodity Handled Interest Gross Loading Capacity* Marine",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Portland Oregon Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Missoula Montana Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Thompson Falls Montana Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "MB/h",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Financial Statements Marine Vessels",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Sentinel Transportation LLC",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "7 Table of Contents Index",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Financial Statements NGL",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Midcontinent",
+      "mentions": 6,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "the U.S. Gulf Coast",
+      "mentions": 3,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "DCP LP\u2019s",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "DCP Sand Hills",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Pipeline Systems",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "the Eagle Ford",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "the Mont Belvieu",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "BPD",
+      "mentions": 3,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "LPG",
+      "mentions": 2,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Raw NGL",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "the Clemens Caverns",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Clemens Caverns",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Corpus Christi",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "The Freeport LPG Export Terminal",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Chisholm Oklahoma/",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Powder River Wyoming/Colorado",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Seabreeze/Wilbreeze",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Texas Express",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Gulf Coast Express",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Spindletop",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Texas Natural Gas",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Facility Name Location Commodity Handled Interest Gross Loading Capacity",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Marine Freeport",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Texas Refined Petroleum Products",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Facility Name Location Interest Capacity",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Gulf Coast Fractionators*",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Sweeny Fractionators",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Transmission Systems",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Financial Statements CHEMICALS",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "NAO",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Benzene",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "GTP",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "The Ras Laffan Petrochemical",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "RLP",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Barrels Daily Region/Refinery Location Interest Net\u00a0Crude Throughput Capacity Net Clean Product Capacity** Clean",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "NJ",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "TX",
+      "mentions": 2,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Rodeo",
+      "mentions": 7,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Financial Statements Primary",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "United States Canada South",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Humber l l l l l l MiRO l l l l l l Lake Charles l l l l l l l l l Sweeny l l l l l l l Wood River l l l l",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Borger l l l l l Ponca City l l l l l Billings",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Ferndale l l l l l l",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "KOH",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "the New York Harbor",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Bayway",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "MiRO Refinery",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "MiRO",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Refinery",
+      "mentions": 5,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Marketing and Specialties",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "M&S",
+      "mentions": 2,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Sweeny Refinery",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Central Corridor Region Ponca City Refinery",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "WRB Refining LP",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "WRB",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "\u2022 Wood River Refinery The Wood River Refinery",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "the Texas Panhandle",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "U.S.-Canada",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "California Air Resources Board",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "CARB)-grade",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "the Santa Maria Facility",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Financial Statements MARKETING AND",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Conoco",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "JET",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Coop",
+      "mentions": 2,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Pure Performance",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "ENERGY RESEARCH & INNOVATION Our Energy Research & Innovation",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Refining, Midstream",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "\u2022 Safety \u2014Safety",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "TRR",
+      "mentions": 2,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "the I&D council",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "I&D efforts",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Chemicals and Refining",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "Health, Safety and Environmental",
+      "mentions": 1,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    },
+    {
+      "competitor": "HSE",
+      "mentions": 3,
+      "context": "Competition 19 General 20 1A.  Risk Factors 21 1B.  Unresolved Staff Comments 36 1C.  Cybersecurity 36 3.  Legal Proceedings 37 4.  Mine Safety Disclosures 38 Information About Our Executive Officers 39 PART II 5.  Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities 40 6.  [Reserved] 41 7.  Management's Discussion and Analysis of Financial Condition and Results of Operations 42 7A. Quantitative and Qualitative Disclosures About Market Risk"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "PEP",
+  "year": 2024,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2211,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.126
+  },
+  "top_positive": [
+    {
+      "sent": "20 Table of Contents Losses/(gains) recognized in the income statement related to our non-designated hedges are categorized as follows: 12 Weeks Ended 6/15/2024 6/17/2023 Cost of sales Selling, general and administrative expenses Total Cost of sales Selling, general and administrative expenses Total Foreign exchange $ \u2014 $ 24 $ 24 $ \u2014 $ 44 $ 44 Commodity ( 14 ) 5 ( 9 ) 5 3 8 Total $ ( 14 ) $ 29 $ 15 $ 5 $ 47 $ 52 24 Weeks Ended 6/15/2024 6/17/2023 Cost of sales Selling, general and administrative expenses Total Cost of sales Selling, general and administrative expenses Total Foreign exchange $ \u2014 $ 42 $ 42 $ ( 1 ) $ 39 $ 38 Commodity ( 15 ) ( 20 ) ( 35 ) 36 53 89 Total $ ( 15 ) $ 22 $ 7 $ 35 $ 92 $ 127 Note 10 - Net Income Attributable to PepsiCo per Common Share The computations of basic and diluted net income attributable to PepsiCo per common share are as follows: 12 Weeks Ended 6/15/2024 6/17/2023 Income Shares (a) Income Shares (a) Basic net income attributable to PepsiCo per common share $ 2.24 $ 1.99 Net income available for PepsiCo common shareholders $ 3,083 1,375 $ 2,748 1,378 Dilutive securities: Stock options, RSUs, PSUs and other (b) \u2014 4 \u2014 6 Diluted $ 3,083 1,379 $ 2,748 1,384 Diluted net income attributable to PepsiCo per common share $ 2.23 $ 1.99 24 Weeks Ended 6/15/2024 6/17/2023 Income Shares (a) Income Shares (a) Basic net income attributable to PepsiCo per common share $ 3.73 $ 3.40 Net income available for PepsiCo common shareholders $ 5,125 1,375 $ 4,680 1,378 Dilutive securities: Stock options, RSUs, PSUs and other (b) \u2014 5 \u2014 6 Diluted $ 5,125 1,380 $ 4,680 1,384 Diluted net income attributable to PepsiCo per common share $ 3.71 $ 3.38 (a) Weighted-average common shares outstanding (in millions).",
+      "score": 0.979
+    },
+    {
+      "sent": "and Subsidiaries (in millions except per share amounts, unaudited) 12 Weeks Ended 24 Weeks Ended 6/15/2024 6/17/2023 6/15/2024 6/17/2023 Net Revenue $ 22,501 $ 22,322 $ 40,751 $ 40,168 Cost of sales 9,919 10,121 18,167 18,109 Gross profit 12,582 12,201 22,584 22,059 Selling, general and administrative expenses 8,534 8,542 15,819 15,771 Operating Profit 4,048 3,659 6,765 6,288 Other pension and retiree medical benefits income 56 60 114 121 Net interest expense and other ( 234 ) ( 201 ) ( 436 ) ( 401 ) Income before income taxes 3,870 3,518 6,443 6,008 Provision for income taxes 776 747 1,296 1,293 Net income 3,094 2,771 5,147 4,715 Less: Net income attributable to noncontrolling interests 11 23 22 35 Net Income Attributable to PepsiCo $ 3,083 $ 2,748 $ 5,125 $ 4,680 Net Income Attributable to PepsiCo per Common Share Basic $ 2.24 $ 1.99 $ 3.73 $ 3.40 Diluted $ 2.23 $ 1.99 $ 3.71 $ 3.38 Weighted-average common shares outstanding Basic 1,375 1,378 1,375 1,378 Diluted 1,379 1,384 1,380 1,384 See accompanying notes to the condensed consolidated financial statements.",
+      "score": 0.9578
+    },
+    {
+      "sent": "Other Consolidated Results 12 Weeks Ended 24 Weeks Ended 6/15/2024 6/17/2023 Change 6/15/2024 6/17/2023 Change Other pension and retiree medical benefits income $ 56 $ 60 $ (4) $ 114 $ 121 $ (7) Net interest expense and other $ 234 $ 201 $ 33 $ 436 $ 401 $ 35 Tax rate 20.1 % 21.3 % 20.1 % 21.5 % Net income attributable to PepsiCo $ 3,083 $ 2,748 12 % $ 5,125 $ 4,680 10 % Net income attributable to PepsiCo per common share \u2013 diluted $ 2.23 $ 1.99 13 % $ 3.71 $ 3.38 10 % 12 Weeks Other pension and retiree medical benefits income decreased $4 million, primarily reflecting the recognition of special termination benefits due to restructuring actions as part of our 2019 Productivity Plan, partially offset by the recognition of gains on plan assets and impact of discretionary plan contributions.",
+      "score": 0.9501
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "and Subsidiaries (in millions, unaudited) 24 Weeks Ended 6/15/2024 6/17/2023 Financing Activities Proceeds from issuances of long-term debt $ 1,765 $ 2,986 Payments of long-term debt ( 2,882 ) ( 2,252 ) Short-term borrowings, by original maturity: More than three months - proceeds 3,080 1,660 More than three months - payments ( 2,138 ) ( 26 ) Three months or less, net 1,286 2,023 Cash dividends paid ( 3,506 ) ( 3,199 ) Share repurchases ( 461 ) ( 453 ) Proceeds from exercises of stock options 107 86 Withholding tax payments on restricted stock units (RSUs) and performance stock units (PSUs) converted ( 131 ) ( 119 ) Other financing ( 20 ) ( 16 ) Net Cash (Used for)/Provided by Financing Activities ( 2,900 ) 690 Effect of exchange rate changes on cash and cash equivalents and restricted cash ( 304 ) ( 144 ) Net (Decrease)/Increase in Cash and Cash Equivalents and Restricted Cash ( 3,343 ) 1,142 Cash and Cash Equivalents and Restricted Cash, Beginning of Year 9,761 5,100 Cash and Cash Equivalents and Restricted Cash, End of Period $ 6,418 $ 6,242 Supplemental Non-Cash Activity Right-of-use assets obtained in exchange for lease obligations $ 541 $ 439 Debt discharged via legal defeasance $ \u2014 $ 94 See accompanying notes to the condensed consolidated financial statements.",
+      "score": -0.9371
+    },
+    {
+      "sent": "In addition, volatile economic, political, social and geopolitical conditions, civil unrest and wars and other military conflicts, acts of terrorism and natural disasters and other catastrophic events in certain markets in which our products are made, manufactured, distributed or s\noutlook,\u201d \u201cplan,\u201d \u201cposition,\u201d \u201cpotential,\u201d \u201cproject,\u201d \u201cseek,\u201d \u201cshould,\u201d \u201cstrategy,\u201d \u201ctarget,\u201d \u201cwill\u201d or similar statements or variations of such words and other similar expressions.",
+      "score": -0.9325
+    },
+    {
+      "sent": "In addition, volatile economic, political, social and geopolitical conditions, civil unrest and wars and other military conflicts, acts of terrorism and natural disasters and other catastrophic events in certain markets in which our products are made, manufactured, distributed or sold, including in Argentina, Brazil, China, Mexico, the Middle East, Pakistan, Russia, Turkey and Ukraine, continue to result in challenging operating environments and have resulted in and could continue to result in changes in how we operate in certain of these markets.",
+      "score": -0.9062
+    }
+  ],
+  "forward_snippets": [
+    "10 Table of Contents Note 2 - Recently Issued Accounting Pronouncements Adopted In September 2022, the Financial Accounting Standards Board (FASB) issued guidance to enhance the transparency of supplier finance programs to allow financial statement users to understand the effect on working capital, liquidity and cash flows.",
+    "The new guidance requires disclosure of key terms of the program, including a description of the payment terms, payment timing and assets pledged as security or other forms of guarantees provided to the finance provider or intermediary.",
+    "We adopted the guidance in the first quarter of 2023, except for the rollforward, which is effective for the current fiscal year 2024.",
+    "We will adopt the rollforward guidance when it becomes effective in our 2024 annual reporting, on a prospective basis.",
+    "See Note 12 for disclosures currently required under this guidance."
+  ]
+}

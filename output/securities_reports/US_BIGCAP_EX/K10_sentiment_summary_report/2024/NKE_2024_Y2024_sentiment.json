@@ -1,0 +1,47 @@
+{
+  "symbol": "NKE",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2026,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.233
+  },
+  "top_positive": [
+    {
+      "sent": "2024 FORM 10-K 70 Table of Contents The following tables present information about the Company's derivative assets and liabilities measured at fair value on a recurring basis and indicate the level in the fair value hierarchy in which the Company classifies the fair value measurement: MAY 31, 2024 DERIVATIVE ASSETS DERIVATIVE LIABILITIES (Dollars in millions) ASSETS AT FAIR VALUE OTHER CURRENT ASSETS OTHER LONG-TERM ASSETS LIABILITIES AT FAIR VALUE ACCRUED LIABILITIES OTHER LONG-TERM LIABILITIES Level 2: Foreign exchange forwards and options (1) $ 343 $ 299 $ 44 $ 120 $ 115 $ 5 Interest rate swaps (1) \u2014 \u2014 \u2014 31 \u2014 31 TOTAL $ 343 $ 299 $ 44 $ 151 $ 115 $ 36 (1) If the foreign exchange and interest rate swap derivative instruments had been netted on the Consolidated Balance Sheets, the asset and liability positions each would have been reduced by $ 142 million as of May\u00a031, 2024.",
+      "score": 0.9828
+    },
+    {
+      "sent": "2024 FORM 10-K 70 Table of Contents The following tables present information about the Company's derivative assets and liabilities measured at fair value on a recurring basis and indicate the level in the fair value hierarchy in which the Company classifies the fair value measurement: MAY 31, 2024 DERIVATIVE ASSETS DERIVATIVE LIABILITIES (Dollars in millions) ASSETS AT FAIR VALUE OTHER CURRENT ASSETS OTHER LONG-TERM ASSETS LIABILITIES AT FAIR VALUE ACCRUED LIABILITIES OTHER LONG-TERM LIABILITIES Level 2: Foreign exchange forwards and options (1) $ 343 $ 299 $ 44 $ 120 $ 115 $ 5 Interest rate swaps (1) \u2014 \u2014 \u2014 31 \u2014 31 TOTAL $ 343 $ 299 $ 44 $ 151 $ 115 $ 36 (1) If the foreign exchange and interest rate swap derivative instruments had been netted on the Consolidated Balance Sheets, the asset and liability positions each would have been reduced by $ 142 million as of May\u00a031, 2024.",
+      "score": 0.9828
+    },
+    {
+      "sent": "NOTE\u00a03 \u2014 ACCRUED LIABILITIES Accrued liabilities included the following: MAY 31, (Dollars in millions) 2024 2023 Compensation and benefits, excluding taxes $ 1,291 $ 1,737 Sales-related reserves 1,282 994 Endorsement compensation 578 552 Dividends payable 563 529 Other 2,011 1,911 Total Accrued Liabilities $ 5,725 $ 5,723 2024 FORM 10-K 69 Table of Contents NOTE\u00a04 \u2014 FAIR VALUE MEASUREMENTS The following tables present information about the Company's financial assets measured at fair value on a recurring basis as of May\u00a031, 2024 and 2023, and indicate the level in the fair value hierarchy in which the Company classifies the fair value measurement.",
+      "score": 0.9567
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "If one or more of our direct or indirect contractors violates or fails to comply with, or is accused of violating or failing to comply with, such standards and laws, this could harm our reputation or result in a product recall and, as a result, could have an adverse effect on our sales and financial condition.",
+      "score": -0.9643
+    },
+    {
+      "sent": "If one or more of our direct or indirect contractors violates or fails to comply with, or is accused of violating or failing to comply with, such standards and laws, this could harm our reputation or result in a product recall and, as a result, could have an adverse effect on our sales and financial condition.",
+      "score": -0.9643
+    },
+    {
+      "sent": "If Information Technology Systems suffer severe damage, disruption or shutdown and our 2024 FORM 10-K 16 Table of Contents business continuity plans, or those of our vendors, do not effectively resolve the issues in a timely manner, we could experience delays in reporting our financial results, which could result in lost revenues and profits, as well as reputational damage.",
+      "score": -0.9422
+    }
+  ],
+  "forward_snippets": [
+    "We believe this approach allows us to create products that better meet individual consumer needs while accelerating our largest growth opportunities.",
+    "PRODUCT RESEARCH, DESIGN AND DEVELOPMENT We believe our research, design and development efforts are key factors in our success.",
+    "As we continue to develop new technologies, we are simultaneously focused on the design of innovative products and experiences incorporating such technologies throughout our product categories and consumer applications.",
+    "PRODUCT RESEARCH, DESIGN AND DEVELOPMENT We believe our research, design and development efforts are key factors in our success.",
+    "As we continue to develop new technologies, we are simultaneously focused on the design of innovative products and experiences incorporating such technologies throughout our product categories and consumer applications."
+  ]
+}

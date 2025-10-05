@@ -1,0 +1,27 @@
+{
+  "symbol": "AXP",
+  "year": 2024,
+  "period": "Q2",
+  "competition_summary": [
+    {
+      "competitor": "American Express",
+      "mentions": 3,
+      "context": "competition in the payments industry, including competitive pressure and competitor settlements and mergers that may materially impact the prices charged to merchants that accept American Express cards, surcharging by merchants and merchant acceptance, the desirability of our premium card products, competition for new and existing cobrand relationships, competition with respect to new products, services and technologies, competition from new and non-traditional competitors and the success of mar"
+    },
+    {
+      "competitor": "Card Members",
+      "mentions": 2,
+      "context": "competition in the payments industry, including competitive pressure and competitor settlements and mergers that may materially impact the prices charged to merchants that accept American Express cards, surcharging by merchants and merchant acceptance, the desirability of our premium card products, competition for new and existing cobrand relationships, competition with respect to new products, services and technologies, competition from new and non-traditional competitors and the success of mar"
+    },
+    {
+      "competitor": "Card",
+      "mentions": 1,
+      "context": "competition in the payments industry, including competitive pressure and competitor settlements and mergers that may materially impact the prices charged to merchants that accept American Express cards, surcharging by merchants and merchant acceptance, the desirability of our premium card products, competition for new and existing cobrand relationships, competition with respect to new products, services and technologies, competition from new and non-traditional competitors and the success of mar"
+    },
+    {
+      "competitor": "Amex",
+      "mentions": 1,
+      "context": "competition in the payments industry, including competitive pressure and competitor settlements and mergers that may materially impact the prices charged to merchants that accept American Express cards, surcharging by merchants and merchant acceptance, the desirability of our premium card products, competition for new and existing cobrand relationships, competition with respect to new products, services and technologies, competition from new and non-traditional competitors and the success of mar"
+    }
+  ]
+}

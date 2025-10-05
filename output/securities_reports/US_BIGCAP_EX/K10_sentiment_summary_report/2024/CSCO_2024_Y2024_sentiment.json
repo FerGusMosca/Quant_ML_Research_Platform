@@ -1,0 +1,47 @@
+{
+  "symbol": "CSCO",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1911,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.209
+  },
+  "top_positive": [
+    {
+      "sent": "The hypothetical fair values as of July\u00a027, 2024 and July\u00a029, 2023 are as follows (in millions): VALUATION OF SECURITIES GIVEN AN INTEREST RATE DECREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS FAIR\u00a0VALUE AS OF JULY\u00a027, 2024 VALUATION OF SECURITIES GIVEN AN INTEREST RATE INCREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS (150\u00a0BPS) (100\u00a0BPS) (50\u00a0BPS) 50\u00a0BPS 100\u00a0BPS 150\u00a0BPS Available-for-sale debt investments $10,057 $9,993 $9,929 $9,865 $9,800 $9,736 $9,672 VALUATION OF SECURITIES GIVEN AN INTEREST RATE DECREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS FAIR\u00a0VALUE AS OF JULY\u00a029, 2023 VALUATION OF SECURITIES GIVEN AN INTEREST RATE INCREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS (150\u00a0BPS) (100\u00a0BPS) (50\u00a0BPS) 50\u00a0BPS 100\u00a0BPS 150\u00a0BPS Available-for-sale debt investments $15,901 $15,798 $15,695 $15,592 $15,489 $15,386 $15,284 Financing Receivables As of July\u00a027, 2024, our financing receivables had a carrying value of $6.7 billion, compared with $6.8 billion as of July\u00a029, 2023.",
+      "score": 0.993
+    },
+    {
+      "sent": "The hypothetical fair values as of July\u00a027, 2024 and July\u00a029, 2023 are as follows (in millions): VALUATION OF SECURITIES GIVEN AN INTEREST RATE DECREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS FAIR\u00a0VALUE AS OF JULY\u00a027, 2024 VALUATION OF SECURITIES GIVEN AN INTEREST RATE INCREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS (150\u00a0BPS) (100\u00a0BPS) (50\u00a0BPS) 50\u00a0BPS 100\u00a0BPS 150\u00a0BPS Available-for-sale debt investments $10,057 $9,993 $9,929 $9,865 $9,800 $9,736 $9,672 VALUATION OF SECURITIES GIVEN AN INTEREST RATE DECREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS FAIR\u00a0VALUE AS OF JULY\u00a029, 2023 VALUATION OF SECURITIES GIVEN AN INTEREST RATE INCREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS (150\u00a0BPS) (100\u00a0BPS) (50\u00a0BPS) 50\u00a0BPS 100\u00a0BPS 150\u00a0BPS Available-for-sale debt investments $15,901 $15,798 $15,695 $15,592 $15,489 $15,386 $15,284 Financing Receivables As of July\u00a027, 2024, our financing receivables had a carrying value of $6.7 billion, compared with $6.8 billion as of July\u00a029, 2023.",
+      "score": 0.993
+    },
+    {
+      "sent": "The hypothetical fair values as of July\u00a027, 2024 and July\u00a029, 2023 are as follows (in millions): VALUATION OF SECURITIES GIVEN AN INTEREST RATE DECREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS FAIR\u00a0VALUE AS OF JULY\u00a027, 2024 VALUATION OF SECURITIES GIVEN AN INTEREST RATE INCREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS (150\u00a0BPS) (100\u00a0BPS) (50\u00a0BPS) 50\u00a0BPS 100\u00a0BPS 150\u00a0BPS Available-for-sale debt investments $10,057 $9,993 $9,929 $9,865 $9,800 $9,736 $9,672 VALUATION OF SECURITIES GIVEN AN INTEREST RATE DECREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS FAIR\u00a0VALUE AS OF JULY\u00a029, 2023 VALUATION OF SECURITIES GIVEN AN INTEREST RATE INCREASE\u00a0OF\u00a0X\u00a0BASIS\u00a0POINTS (150\u00a0BPS) (100\u00a0BPS) (50\u00a0BPS) 50\u00a0BPS 100\u00a0BPS 150\u00a0BPS Available-for-sale debt investments $15,901 $15,798 $15,695 $15,592 $15,489 $15,386 $15,284 Financing Receivables As of July\u00a027, 2024, our financing receivables had a carrying value of $6.7 billion, compared with $6.8 billion as of July\u00a029, 2023.",
+      "score": 0.993
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Risk Factors,\u201d including the risk factors entitled \u201cOur operating results may be negatively impacted by unfavorable economic and market conditions and the uncertain geopolitical environment;\u201d \u201cEntrance into new or developing markets exposes us to additional competition and will likely increase demands on our service and support operations;\u201d \u201cDue to the global nature of our operations, political or economic changes or other factors in a specific country or region could harm our operating results and financial condition;\u201d \u201cWe are exposed to fluctuations in currency exchange rates that could negatively impact our financial results and cash flows;\u201d and \u201cCyber attacks, data breaches or other incidents impacting our solutions and IT environment may disrupt our operations, harm our operating results and financial condition, and damage our reputation or otherwise materially harm our business; and cyber attacks, data breaches or other incidents on our customers\u2019 or third-party providers\u2019 networks, or in third-party products we use, could result in claims of liability against us, give rise to legal and/or regulatory action, damage our reputation or otherwise materially harm our business,\u201d among others.",
+      "score": -0.9774
+    },
+    {
+      "sent": "24 Table of Contents Risks Related to Cybersecurity, Privacy, and Regulatory Requirements Cyber attacks, data breaches or other incidents impacting our solutions and IT environment may disrupt our operations, harm our operating results and financial condition, and damage our reputation or otherwise materially harm our business; and cyber attacks, data breaches or other incidents on our customers\u2019 or third-party providers\u2019 networks, or in third-party products we use, could result in claims of liability against us, give rise to legal and/or regulatory action, damage our reputation or otherwise materially harm our business.",
+      "score": -0.9732
+    },
+    {
+      "sent": "Some of our competitors compete across many of our pro\ntuations in currency exchange rates that could negatively impact our financial results and cash flows;\u201d and \u201cCyber attacks, data breaches or other incidents impacting our solutions and IT environment may disrupt our operations, harm our operating results and financial condition, and damage our reputation or otherwise materially harm our business; and cyber attacks, data breaches or other incidents on our customers\u2019 or third-party providers\u2019 networks, or in third-party products we use, could result in claims of liability against us, give rise to legal and/or regulatory action, damage our reputation or otherwise materially harm our business,\u201d among others.",
+      "score": -0.9694
+    }
+  ],
+  "forward_snippets": [
+    "Third, through the visibility we have into data across the network, connected devices and applications, we provide context and insights to our customers about what is happening in their technology architecture, not only in their on-premise infrastructure and private data centers, but also their cloud infrastructure.",
+    "We continue to transform our enterprise networking portfolio by bringing together several technologies to form an integrated architecture.",
+    "We continue to make significant investments in the development of software, silicon and optics, which we believe are the building blocks for the internet for the future.",
+    "Third, through the visibility we have into data across the network, connected devices and applications, we provide context and insights to our customers about what is happening in their technology architecture, not only in their on-premise infrastructure and private data centers, but also their cloud infrastructure.",
+    "We continue to transform our enterprise networking portfolio by bringing together several technologies to form an integrated architecture."
+  ]
+}

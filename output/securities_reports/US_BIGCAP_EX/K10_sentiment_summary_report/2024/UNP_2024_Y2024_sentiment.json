@@ -1,0 +1,47 @@
+{
+  "symbol": "UNP",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.3182,
+    "outlook_sentiment": 0.1788,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.134
+  },
+  "top_positive": [
+    {
+      "sent": "57 Table of Contents As of December 31, 2023 , the pension plan assets measured at fair value on a recurring basis were as follows: Quoted Prices Significant in Active Other Significant Markets for Observable Unobservable Identical Inputs Inputs Inputs Millions (Level 1) (Level 2) (Level 3) Total Plan assets at fair value: Temporary cash investments $ - $ - $ - $ - Registered investment companies [a] - - - - Federal government securities - 1,508 - 1,508 Bonds and debentures - 1,696 - 1,696 Corporate stock 176 5 - 181 Total plan assets at fair value $ 176 $ 3,209 $ - $ 3,385 Plan assets at NAV: Registered investment companies [b] - Venture capital and buyout partnerships 554 Real estate funds 30 Collective trust and other funds 382 Total plan assets at NAV $ 966 Other assets/(liabilities) [c] 49 Total plan assets $ 4,400 As of December 31, 2022 , the pension plan assets measured at fair value on a recurring basis were as follows: Quoted Prices Significant in Active Other Significant Markets for Observable Unobservable Identical Inputs Inputs Inputs Millions (Level 1) (Level 2) (Level 3) Total Plan assets at fair value: Temporary cash investments $ 1 $ - $ - $ 1 Registered investment companies [a] 6 - - 6 Federal government securities - 803 - 803 Bonds and debentures - 1,069 - 1,069 Corporate stock 1,104 7 - 1,111 Total plan assets at fair value $ 1,111 $ 1,879 $ - $ 2,990 Plan assets at NAV: Registered investment companies [b] 68 Venture capital and buyout partnerships 611 Real estate funds 37 Collective trust and other funds 622 Total plan assets at NAV $ 1,338 Other assets/(liabilities) [c] 35 Total plan assets $ 4,363 [a] Registered investment companies measured at fair value are stock investments.",
+      "score": 0.9955
+    },
+    {
+      "sent": "57 Table of Contents As of December 31, 2023 , the pension plan assets measured at fair value on a recurring basis were as follows: Quoted Prices Significant in Active Other Significant Markets for Observable Unobservable Identical Inputs Inputs Inputs Millions (Level 1) (Level 2) (Level 3) Total Plan assets at fair value: Temporary cash investments $ - $ - $ - $ - Registered investment companies [a] - - - - Federal government securities - 1,508 - 1,508 Bonds and debentures - 1,696 - 1,696 Corporate stock 176 5 - 181 Total plan assets at fair value $ 176 $ 3,209 $ - $ 3,385 Plan assets at NAV: Registered investment companies [b] - Venture capital and buyout partnerships 554 Real estate funds 30 Collective trust and other funds 382 Total plan assets at NAV $ 966 Other assets/(liabilities) [c] 49 Total plan assets $ 4,400 As of December 31, 2022 , the pension plan assets measured at fair value on a recurring basis were as follows: Quoted Prices Significant in Active Other Significant Markets for Observable Unobservable Identical Inputs Inputs Inputs Millions (Level 1) (Level 2) (Level 3) Total Plan assets at fair value: Temporary cash investments $ 1 $ - $ - $ 1\nl be made from cash generated from operations.",
+      "score": 0.9913
+    },
+    {
+      "sent": "42 Table of Contents CONSOLIDATED STATEMENTS OF INCOME Union Pacific Corporation and Subsidiary Companies Millions, Except Per Share Amounts, for the Years Ended December 31, 2023 2022 2021 Operating revenues: Freight revenues $ 22,571 $ 23,159 $ 20,244 Other revenues 1,548 1,716 1,560 Total operating revenues 24,119 24,875 21,804 Operating expenses: Compensation and benefits 4,818 4,645 4,158 Fuel 2,891 3,439 2,049 Purchased services and materials 2,616 2,442 2,016 Depreciation 2,318 2,246 2,208 Equipment and other rents 947 898 859 Other 1,447 1,288 1,176 Total operating expenses 15,037 14,958 12,466 Operating income 9,082 9,917 9,338 Other income, net (Note 6) 491 426 297 Interest expense ( 1,340 ) ( 1,271 ) ( 1,157 ) Income before income taxes 8,233 9,072 8,478 Income tax expense (Note 7) ( 1,854 ) ( 2,074 ) ( 1,955 ) Net income $ 6,379 $ 6,998 $ 6,523 Share and Per Share (Note 8): Earnings per share - basic $ 10.47 $ 11.24 $ 9.98 Earnings per share - diluted $ 10.45 $ 11.21 $ 9.95 Weighted average number of shares - basic 609.2 622.7 653.8 Weighted average number of shares - diluted 610.2 624.0 655.4 CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME Union Pacific Corporation and Subsidiary Companies Millions, for the Years Ended December 31, 2023 2022 2021 Net income $ 6,379 $ 6,998 $ 6,523 Other comprehensive income/(loss): Defined benefit plans ( 106 ) 280 723 Foreign currency translation 58 52 ( 44 ) Unrealized gain on derivative instruments 16 - - Total other comprehensive income/(loss) [a] ( 32 ) 332 679 Comprehensive income $ 6,347 $ 7,330 $ 7,202 [a] Net of deferred taxes of $31\u00a0million, ($92)\u00a0million, and ($237)\u00a0million during 2023, 2022, and 2021, respectively.",
+      "score": 0.9863
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "15 Table of Contents We May Be Affected by Acts of Terrorism, War, or Risk of War \u2013 Our rail lines, facilities, and equipment, including rail cars carrying hazardous materials, could be direct targets or indirect casualties of terrorist attacks.",
+      "score": -0.9741
+    },
+    {
+      "sent": "Any material changes to litigation trends or a catastrophic rail accident or series of accidents involving any or all of property damage, personal injury, and environmental liability that exceed our insurance coverage for such risks could have a material adverse effect on our results of operations, financial condition, and liquidity.",
+      "score": -0.9628
+    },
+    {
+      "sent": "A cyber incident\u00a0that results in significant service interruption; safety failure; other operational difficulties; unauthorized access to (or the loss of access to) competitively sensitive, confidential, or other critical data or systems; loss of customers; financial losses; regulatory fines; reputational harm; or\u00a0misuse or corruption of critical data and proprietary information, could have a material adverse impact on our results of operations, financial condition, and liquidity.",
+      "score": -0.9601
+    }
+  ],
+  "forward_snippets": [
+    "We will drive value\u00a0with our available resources, but also maintain a buffer so our\u00a0service is resilient, managing\u00a0the inevitable ups and downs that come with weather, fluctuating volumes, and securing growth.",
+    "The Company\u2019s petroleum and LPG shipments are primarily impacted by refinery utilization rates, regional crude pricing differentials, pipeline capacity, and the use of asphalt for road programs.",
+    "The Company\u2019s petroleum and LPG shipments are primarily impacted by refinery utilization rates, regional crude pricing differentials, pipeline capacity, and the use of asphalt for road programs.",
+    "We believe that\u00a0a diverse and supportive culture increases employee engagement, improves morale, and allows qualified employees to succeed and contribute to Union Pacific's success.",
+    "We believe that\u00a0a diverse and supportive culture increases employee engagement, improves morale, and allows qualified employees to succeed and contribute to Union Pacific's success."
+  ]
+}

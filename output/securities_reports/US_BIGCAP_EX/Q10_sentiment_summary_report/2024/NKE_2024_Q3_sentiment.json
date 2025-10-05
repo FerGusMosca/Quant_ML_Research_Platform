@@ -1,0 +1,47 @@
+{
+  "symbol": "NKE",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1793,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.122
+  },
+  "top_positive": [
+    {
+      "sent": "The following tables present information about the Company's derivative assets and liabilities measured at fair value on a recurring basis and indicate the level in the fair value hierarchy in which the Company classifies the fair value measurement: NOVEMBER 30, 2023 DERIVATIVE ASSETS DERIVATIVE LIABILITIES (Dollars in millions) ASSETS AT FAIR VALUE OTHER CURRENT ASSETS OTHER LONG-TERM ASSETS LIABILITIES AT FAIR VALUE ACCRUED LIABILITIES OTHER LONG-TERM LIABILITIES Level 2: Foreign exchange forwards and options (1) $ 371 $ 322 $ 49 $ 202 $ 162 $ 40 (1) If the foreign exchange derivative instruments had been netted on the Unaudited Condensed Consolidated Balance Sheets, the asset and liability positions each would have been reduced by $ 180 million as of November\u00a030, 2023.",
+      "score": 0.9739
+    },
+    {
+      "sent": "The following tables present information about the Company's derivative assets and liabilities measured at fair value on a recurring basis and indicate the level in the fair value hierarchy in which the Company classifies the fair value measurement: NOVEMBER 30, 2023 DERIVATIVE ASSETS DERIVATIVE LIABILITIES (Dollars in millions) ASSETS AT FAIR VALUE OTHER CURRENT ASSETS OTHER LONG-TERM ASSETS LIABILITIES AT FAIR VALUE ACCRUED LIABILITIES OTHER LONG-TERM LIABILITIES Level 2: Foreign exchange forwards and options (1) $ 371 $ 322 $ 49 $ 202 $ 162 $ 40 (1) If the foreign exchange derivative instruments had been netted on the Unaudited Condensed Consolidated Balance Sheets, the asset and liability positions each would have been reduced by $ 180 million as of November\u00a030, 2023.",
+      "score": 0.9739
+    },
+    {
+      "sent": "The following tables present information about the Company's derivative assets and liabilities measured at fair value on a recurring basis and indicate the level in the fair value hierarchy in which the Company classifies the fair value measurement: NOVEMBER 30, 2023 DERIVATIVE ASSETS DERIVATIVE LIABILITIES (Dollars in millions) ASSETS AT FAIR VALUE OTHER CURRENT ASSETS OTHER LONG-TERM ASSETS LIABILITIES AT FAIR VALUE ACCRUED LIABILITIES OTHER LONG-TERM LIABILITIES Level 2: Foreign exchange forwards and options (1) $ 371 $ 322 $ 49 $ 202 $ 162 $ 40 (1) If the foreign exchange derivative instruments had been netted on the Unaudited Condensed Consolidated Balance Sheets, the asset and liability positions each would have been reduced by $ 180 million as of November\u00a030, 2023.",
+      "score": 0.9739
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "RESTRICTED STOCK AND RESTRICTED STOCK UNITS As of November\u00a030, 2023, the Company had $ 859 million of unrecognized compensation costs from restricted stock and restricted stock units, net of estimated forfeitures, to be recognized in Cost of sales or Operating overhead expense, as applicable, over a weighted average remaining period of 2.7 years.",
+      "score": -0.8971
+    },
+    {
+      "sent": "\u2022 Cost Inflationary Pressures: Inflationary pressures, including higher product input costs, continued to negatively impact our gross margin.",
+      "score": -0.7717
+    },
+    {
+      "sent": "\u2022 Cost Inflationary Pressures: Inflationary pressures, including higher product input costs, continued to negatively impact our gross margin.",
+      "score": -0.7717
+    }
+  ],
+  "forward_snippets": [
+    "The new guidance requires qualitative and quantitative disclosure sufficient to enable users of the financial statements to understand the nature, activity during the period, changes from period to period and potential magnitude of such programs.",
+    "The Company adopted the required guidance in the first quarter of fiscal 2024.",
+    "As a result of this new guidance, the Company recognized a one-time tax benefit related to prior year tax positions in the first three months of fiscal 2024.",
+    "The new guidance requires qualitative and quantitative disclosure sufficient to enable users of the financial statements to understand the nature, activity during the period, changes from period to period and potential magnitude of such programs.",
+    "The Company adopted the required guidance in the first quarter of fiscal 2024."
+  ]
+}

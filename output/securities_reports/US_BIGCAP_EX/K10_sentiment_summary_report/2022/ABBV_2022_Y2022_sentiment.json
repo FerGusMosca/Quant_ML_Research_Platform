@@ -1,0 +1,47 @@
+{
+  "symbol": "ABBV",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2313,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.159
+  },
+  "top_positive": [
+    {
+      "sent": "The following table presents information as of December\u00a031, 2021 about AbbVie's equity compensation plans under which AbbVie common stock has been authorized for issuance: Plan Category (a) Number of securities to be issued upon exercise of outstanding options, warrants and rights (1) (b) Weighted- average exercise price of outstanding options, warrants and rights (2) (c) Number of securities remaining  available for future issuance under equity compensation  plans (excluding securities reflected in column (a)) (3) Equity compensation plans approved by security holders 27,264,327 $ 81.98 74,075,427 Equity compensation plans not approved by security holders \u2014 \u2014 \u2014 Total 27,264,327 $ 81.98 74,075,427 (1) Includes 138,085 shares issuable under AbbVie's Incentive Stock Program pursuant to awards granted by Abbott and adjusted into AbbVie awards in connection with AbbVie's separation from Abbott.",
+      "score": 0.9875
+    },
+    {
+      "sent": "The following table presents information as of December\u00a031, 2021 about AbbVie's equity compensation plans under which AbbVie common stock has been authorized for issuance: Plan Category (a) Number of securities to be issued upon exercise of outstanding options, warrants and rights (1) (b) Weighted- average exercise price of outstanding options, warrants and rights (2) (c) Number of securities remaining  available for future issuance under equity compensation  plans (excluding securities reflected in column (a)) (3) Equity compensation plans approved by security holders 27,264,327 $ 81.98 74,075,427 Equity compensation plans not approved by security holders \u2014 \u2014 \u2014 Total 27,264,327 $ 81.98 74,075,427 (1) Includes 138,085 shares issuable under AbbVie's Incentive Stock Program pursuant to awards granted by Abbott and adjusted into AbbVie awards in connection with AbbVie's separation from Abbott.",
+      "score": 0.9875
+    },
+    {
+      "sent": "AbbVie intends to continue to advance its mission in a number of ways, including: (i) maximizing the benefits of a diversified revenue base with multiple long-term growth drivers; (ii)\u00a0growing revenues by leveraging AbbVie's commercial strength and international infrastructure across therapeutic areas and ensuring strong commercial execution of new product launches; (iii)\u00a0continuing to invest in and expand its pipeline in support of opportunities in immunology, oncology, aesthetics, neuroscience and eye care as well as continued investment in key on-market products; (iv)\u00a0expanding operating margins; and (v)\u00a0returning cash to shareholders via a strong and growing dividend while also reducing debt.",
+      "score": 0.9803
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Problems may arise during manufacturing for a variety of reasons, including equipment malfunction, failure to follow specific protocols and procedures, problems with raw materials, delays related to the construction of new facilities or the expansion of existing facilities, including those intended to support future demand for AbbVie's products, changes in manufacturing production sites and limits to manufacturing capacity due to regulatory requirements, changes in the types of products produced, physical limitations that could inhibit continuous supply, man-made or natural disasters and environmental factors.",
+      "score": -0.8807
+    },
+    {
+      "sent": "Problems may arise during manufacturing for a variety of reasons, including equipment malfunction, failure to follow specific protocols and procedures, problems with raw materials, delays related to the construction of new facilities or the expansion of existing facilities, including those intended to support future demand for AbbVie's products, changes in manufacturing production sites and limits to manufacturing capacity due to regulatory requirements, changes in the types of products produced, physical limitations that could inhibit continuous supply, man-made or natural disasters and environmental factors.",
+      "score": -0.8807
+    },
+    {
+      "sent": "Problems may arise during manufacturing for a variety of reasons, including equipment malfunction, failure to follow specific protocols and procedures, problems with raw materials, delays related to the construction of new facilities or the expansion of existing facilities, including those intended to support future demand for AbbVie's products, changes in manufacturing production sites and limits to manufacturing capacity due to regulatory requirements, changes in the types of products produced, physical limitations that could inhibit continuous supply, man-made or natural disasters and environmental factors.",
+      "score": -0.8807
+    }
+  ],
+  "forward_snippets": [
+    "In the continued operation of its business, AbbVie has followed health and safety guidance from relevant health authorities, managed manufacturing and supply chain resources and monitored closely its clinical trial sites.",
+    "In the continued operation of its business, AbbVie has followed health and safety guidance from relevant health authorities, managed manufacturing and supply chain resources and monitored closely its clinical trial sites.",
+    "In the continued operation of its business, AbbVie has followed health and safety guidance from relevant health authorities, managed manufacturing and supply chain resources and monitored closely its clinical trial sites.",
+    "In the continued operation of its business, AbbVie has followed health and safety guidance from relevant health authorities, managed manufacturing and supply chain resources and monitored closely its clinical trial sites.",
+    "AbbVie\u2019s Aesthetics portfolio consists of facial injectables, plastics and regenerative medicine, body contouring and skincare products, which hold market-leading positions in th\nguidance from relevant health authorities, managed manufacturing and supply chain resources and monitored closely its clinical trial sites."
+  ]
+}

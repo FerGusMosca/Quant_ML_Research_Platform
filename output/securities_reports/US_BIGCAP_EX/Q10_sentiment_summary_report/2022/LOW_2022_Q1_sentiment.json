@@ -1,0 +1,47 @@
+{
+  "symbol": "LOW",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2391,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.116
+  },
+  "top_positive": [
+    {
+      "sent": "Consolidated Statements of Earnings (Unaudited) In Millions, Except Per Share and Percentage Data Three Months Ended Nine Months Ended October 28, 2022 October 29, 2021 October 28, 2022 October 29, 2021 Current Earnings Amount % Sales Amount % Sales Amount % Sales Amount % Sales Net sales $ 23,479 100.00 % $ 22,918 100.00 % $ 74,614 100.00 % $ 74,911 100.00 % Cost of sales 15,661 66.70 15,331 66.90 49,614 66.49 49,882 66.59 Gross margin 7,818 33.30 7,587 33.10 25,000 33.51 25,029 33.41 Expenses: Selling, general and administrative 6,443 27.45 4,373 19.08 15,200 20.38 13,559 18.10 Depreciation and amortization 451 1.92 425 1.85 1,345 1.80 1,226 1.64 Operating income 924 3.93 2,789 12.17 8,455 11.33 10,244 13.67 Interest \u2013 net 295 1.25 223 0.97 802 1.07 650 0.86 Pre-tax earnings 629 2.68 2,566 11.20 7,653 10.26 9,594 12.81 Income tax provision 475 2.02 670 2.93 2,174 2.92 2,359 3.15 Net earnings $ 154 0.66 % $ 1,896 8.27 % $ 5,479 7.34 % $ 7,235 9.66 % Weighted average common shares outstanding \u2013 basic 618 690 638 704 Basic earnings per common share $ 0.25 $ 2.74 $ 8.56 $ 10.23 Weighted average common shares outstanding \u2013 diluted 620 692 640 706 Diluted earnings per common share $ 0.25 $ 2.73 $ 8.53 $ 10.21 See accompanying notes to the consolidated financial statements (unaudited).",
+      "score": 0.9552
+    },
+    {
+      "sent": "Consolidated Statements of Earnings (Unaudited) In Millions, Except Per Share and Percentage Data Three Months Ended Nine Months Ended October 28, 2022 October 29, 2021 October 28, 2022 October 29, 2021 Current Earnings Amount % Sales Amount % Sales Amount % Sales Amount % Sales Net sales $ 23,479 100.00 % $ 22,918 100.00 % $ 74,614 100.00 % $ 74,911 100.00 % Cost of sales 15,661 66.70 15,331 66.90 49,614 66.49 49,882 66.59 Gross margin 7,818 33.30 7,587 33.10 25,000 33.51 25,029 33.41 Expenses: Selling, general and administrative 6,443 27.45 4,373 19.08 15,200 20.38 13,559 18.10 Depreciation and amortization 451 1.92 425 1.85 1,345 1.80 1,226 1.64 Operating income 924 3.93 2,789 12.17 8,455 11.33 10,244 13.67 Interest \u2013 net 295 1.25 223 0.97 802 1.07 650 0.86 Pre-tax earnings 629 2.68 2,566 11.20 7,653 10.26 9,594 12.81 Income tax provision 475 2.02 670 2.93 2,174 2.92 2,359 3.15 Net earnings $ 154 0.66 % $ 1,896 8.27 % $ 5,479 7.34 % $ 7,235 9.66 % Weighted average common shares outstanding \u2013 basic 618 690 638 704 Basic earnings per common share $ 0.25 $ 2.74 $ 8.56 $ 10.23 Weighted average common shares outstanding \u2013 diluted 620 692 640 706 Diluted earnings per common share $ 0.25 $ 2.73 $ 8.53 $ 10.21 See accompanying notes to the consolidated financial statements (unaudited).",
+      "score": 0.9552
+    },
+    {
+      "sent": "Consolidated Statements of Earnings (Unaudited) In Millions, Except Per Share and Percentage Data Three Months Ended Nine Months Ended October 28, 2022 October 29, 2021 October 28, 2022 October 29, 2021 Current Earnings Amount % Sales Amount % Sales Amount % Sales Amount % Sales Net sales $ 23,479 100.00 % $ 22,918 100.00 % $ 74,614 100.00 % $ 74,911 100.00 % Cost of sales 15,661 66.70 15,331 66.90 49,614 66.49 49,882 66.59 Gross margin 7,818 33.30 7,587 33.10 25,000 33.51 25,029 33.41 Expenses: Selling, general and administrative 6,443 27.45 4,373 19.08 15,200 20.38 13,559 18.10 Depreciation and amortization 451 1.92 425 1.85 1,345 1.80 1,226 1.64 Operating income 924 3.93 2,789 12.17 8,455 11.33 10,244 13.67 Interest \u2013 net 295 1.25 223 0.97 802 1.07 650 0.86 Pre-tax earnings 629 2.68 2,566 11.20 7,653 10.26 9,594 12.81 Income tax provision 475 2.02 670 2.93 2,174 2.92 2,359 3.15 Net earnings $ 154 0.66 % $ 1,896 8.27 % $ 5,479 7.34 % $ 7,235 9.66 % Weighted average common shares outstanding \u2013 basic 618 690 638 704 Basic earnings per common share $ 0.25 $ 2.74 $ 8.56 $ 10.23 Weighted average common shares outstanding \u2013 diluted 620 692 640 706 Diluted earnings per common share $ 0.25 $ 2.73 $ 8.53 $ 10.21 See accompanying notes to the consolidated financial statements (unaudited).",
+      "score": 0.9552
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Debt Ratings S&P Moody\u2019s Commercial Paper A-2 P-2 Senior Debt BBB+ Baa1 Senior Debt Outlook Stable Stable There are no provisions in any agreements that would require early cash settlement of existing debt or leases as a result of a downgrade in our debt rating or a decrease in our stock price.",
+      "score": -0.802
+    },
+    {
+      "sent": "Debt Ratings S&P Moody\u2019s Commercial Paper A-2 P-2 Senior Debt BBB+ Baa1 Senior Debt Outlook Stable Stable There are no provisions in any agreements that would require early cash settlement of existing debt or leases as a result of a downgrade in our debt rating or a decrease in our stock price.",
+      "score": -0.802
+    },
+    {
+      "sent": "Debt Ratings S&P Moody\u2019s Commercial Paper A-2 P-2 Senior Debt BBB+ Baa1 Senior Debt Outlook Stable Stable There are no provisions in any agreements that would require early cash settlement of existing debt or leases as a result of a downgrade in our debt rating or a decrease in our stock price.",
+      "score": -0.802
+    }
+  ],
+  "forward_snippets": [
+    "Statements including words such as \u201cbelieve\u201d, \u201cexpect\u201d, \u201canticipate\u201d, \u201cplan\u201d, \u201cdesire\u201d, \u201cproject\u201d, \u201cestimate\u201d, \u201cintend\u201d, \u201cwill\u201d, \u201cshould\u201d, \u201ccould\u201d, \u201cwould\u201d, \u201cmay\u201d, \u201cstrategy\u201d, \u201cpotential\u201d, \u201copportunity\u201d, \u201coutlook\u201d, \u201cscenario\u201d, \u201cguidance\u201d, and similar expressions are forward-looking statements.",
+    "Forward-looking statements involve, among other things, expectations, projections, and assumptions about future financial and operating results, objectives, business outlook, priorities, sales growth, shareholder value, capital expenditures, cash flows, the housing market, the home improvement industry, demand for products and services, share repurchases, Lowe\u2019s strategic initiatives, including those relating to acquisitions and dispositions and the impact of such transactions on our strategic and operational plans and financial results.",
+    "Statements including words such as \u201cbelieve\u201d, \u201cexpect\u201d, \u201canticipate\u201d, \u201cplan\u201d, \u201cdesire\u201d, \u201cproject\u201d, \u201cestimate\u201d, \u201cintend\u201d, \u201cwill\u201d, \u201cshould\u201d, \u201ccould\u201d, \u201cwould\u201d, \u201cmay\u201d, \u201cstrategy\u201d, \u201cpotential\u201d, \u201copportunity\u201d, \u201coutlook\u201d, \u201cscenario\u201d, \u201cguidance\u201d, and similar expressions are forward-looking statements.",
+    "Forward-looking statements involve, among other things, expectations, projections, and assumptions about future financial and operating results, objectives, business outlook, priorities, sales growth, shareholder value, capital expenditures, cash flows, the housing market, the home improvement industry, demand for products and services, share repurchases, Lowe\u2019s strategic initiatives, including those relating to acquisitions and dispositions and the impact of such transactions on our strategic and operational plans and financial results.",
+    "Statements including words such as \u201cbelieve\u201d, \u201cexpect\u201d, \u201canticipate\u201d, \u201cplan\u201d, \u201cdesire\u201d, \u201cproject\u201d, \u201cestimate\u201d, \u201cintend\u201d, \u201cwill\u201d, \u201cshould\u201d, \u201ccould\u201d, \u201cwould\u201d, \u201cmay\u201d, \u201cstrategy\u201d, \u201cpotential\u201d, \u201copportunity\u201d, \u201coutlook\u201d, \u201cscenario\u201d, \u201cguidance\u201d, and similar expressions are forward-looking statements."
+  ]
+}

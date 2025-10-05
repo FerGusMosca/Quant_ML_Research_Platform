@@ -1,0 +1,47 @@
+{
+  "symbol": "UPS",
+  "year": 2024,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.321,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.058
+  },
+  "top_positive": [
+    {
+      "sent": "AND SUBSIDIARIES MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS Three Months Ended September 30, Change Nine Months Ended September 30, Change 2024 2023 $ % 2024 2023 $ % Non-GAAP Adjustments to Operating Expenses (in millions): Transformation Strategy Costs Compensation $ 5 $ 5 $ \u2014 \u2014 % $ 18 $ 15 $ 3 20.0 % Benefits 105 75 30 40.0 % 143 163 (20) (12.3) % Other expenses 44 14 30 214.3 % 66 58 8 13.8 % Total Transformation Strategy Costs $ 154 $ 94 $ 60 63.8 % $ 227 $ 236 $ (9) (3.8) % Gain on Divestiture of Coyote Other expenses $ (156) $ \u2014 $ (156) N/A $ (156) $ \u2014 $ (156) N/A Total Gain on Divestiture of Coyote $ (156) $ \u2014 $ (156) N/A $ (156) $ \u2014 $ (156) N/A One-Time Payment for International Regulatory Matter Other expenses $ \u2014 $ \u2014 $ \u2014 N/A $ 88 $ \u2014 $ 88 N/A Total One-Time Payment for International Regulatory Matter $ \u2014 $ \u2014 $ \u2014 N/A $ 88 $ \u2014 $ 88 N/A Goodwill and Asset Impairment Charges Other expenses $ \u2014 $ 117 $ (117) (100.0) % $ 48 $ 125 $ (77) (61.6) % Total Asset Impairment Charges $ \u2014 $ 117 $ (117) (100.0) % $ 48 $ 125 $ (77) (61.6) % One-Time Compensation Payment Benefits $ \u2014 $ 61 $ (61) (100.0) % $ \u2014 $ 61 $ (61) (100.0) % Total One-Time Compensation Payment $ \u2014 $ 61 $ (61) (100.0) % $ \u2014 $ 61 $ (61) (100.0) % Expense for Regulatory Matter Other expenses $ \u2014 $ \u2014 $ \u2014 N/A $ 45 $ \u2014 $ 45 N/A Total Expense for Regulatory Matter $ \u2014 $ \u2014 $ \u2014 N/A $ 45 $ \u2014 $ 45 N/A Total Non-GAAP Adjustments to Operating Expenses $ (2) $ 272 $ (274) N/A $ 252 $ 422 $ (170) (40.3) % 65 Table of Contents UNITED PARCEL SERVICE, INC.",
+      "score": 0.968
+    },
+    {
+      "sent": "Non-GAAP adjusted diluted earnings per share were $1.76 for the third quarter ($4.97 per share, year to date) after adjusting for the after-tax impacts of: \u25e6 a gain on the divestiture of Coyote of $152 million or ($0.18) per diluted share in the quarter and year-to-date periods; \u25e6 a payment to settle a one-time international regulatory matter of $94 million, or $0.11 per diluted share, including interest, in the year-to-date period; \u25e6 non-cash asset impairment charges of $35 million, or $0.04 per diluted share in the year-to-date period; \u25e6 transformation strategy costs of $116 million, or $0.14 per diluted share in the quarter ($172 million, or $0.21 per diluted share, year to date); and \u25e6 an expense accrual related to a regulatory matter unrelated to our ongoing operations of $45 million, or $0.05 per diluted share in the year-to-date period.",
+      "score": 0.9666
+    },
+    {
+      "sent": "Non-GAAP adjusted diluted earnings per share were $1.76 for the third quarter ($4.97 per share, year to date) after adjusting for the after-tax impacts of: \u25e6 a gain on the divestiture of Coyote of $152 million or ($0.18) per diluted share in the quarter and year-to-date periods; \u25e6 a payment to settle a one-time international regulatory matter of $94 million, or $0.11 per diluted share, including interest, in the year-to-date period; \u25e6 non-cash asset impairment charges of $35 million, or $0.04 per diluted share in the year-to-date period; \u25e6 transformation strategy costs of $116 million, or $0.14 per diluted share in the quarter ($172 million, or $0.21 per diluted share, year to date); and \u25e6 an expense accrual related to a regulatory matter unrelated to our ongoing operations of $45 million, or $0.05 per diluted share in the year-to-date period.",
+      "score": 0.9666
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Accordingly, we are not able to estimate a possible loss or range of losses that may result from these disputes or to determine whether such losses, if any, would have a material impact on our financial condition, results of operations or liquidity.",
+      "score": -0.8316
+    },
+    {
+      "sent": "Accordingly, we are not able to estimate a possible loss or range of losses that may result from these disputes or to determine whether such losses, if any, would have a material impact on our financial condition, results of operations or liquidity.",
+      "score": -0.8316
+    },
+    {
+      "sent": "Accordingly, we are not able to estimate a possible loss or range of loss that may result from this matter or to determine whether such loss, if any, would have a material adverse effect on our financial condition, results of operations or liquidity.",
+      "score": -0.8061
+    }
+  ],
+  "forward_snippets": [
+    "We will be required to define significant segment expense categories and we anticipate providing additional qualitative and quantitative information in accordance with this ASU.",
+    "We will be required to define significant segment expense categories and we anticipate providing additional qualitative and quantitative information in accordance with this ASU.",
+    "In making this determination, we considered the financial condition and prospects of each issuer, the magnitude of the losses compared with the cost, the probability that we will be unable to collect all amounts due according to the contractual terms of the security, the credit rating of the security and our ability and intent to hold these investments until the anticipated recovery in market value occurs.",
+    "In making this determination, we considered the financial condition and prospects of each issuer, the magnitude of the losses compared with the cost, the probability that we will be unable to collect all amounts due according to the contractual terms of the security, the credit rating of the security and our ability and intent to hold these investments until the anticipated recovery in market value occurs.",
+    "We expect to contribute approximately $ 25 and $ 55 million over the remainder of the year to our company-sponsored pension and U.S."
+  ]
+}

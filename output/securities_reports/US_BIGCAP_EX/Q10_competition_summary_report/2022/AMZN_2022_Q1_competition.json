@@ -1,0 +1,47 @@
+{
+  "symbol": "AMZN",
+  "year": 2022,
+  "period": "Q1",
+  "competition_summary": [
+    {
+      "competitor": "EUR",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 amzn:IRobotCorporationMember 2022-08-01 2022-08-31 0001018724 srt:MinimumMember amzn:BroadbandiTVMember 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-30 0001018724 us-gaap:SeniorNotesMember 2022-09-30 0001018724 us-gaap:SeniorNotesMember 2022-04-30 0001018724 us-gaap:RevolvingCreditFacilityMember us-gaap:LineOfCreditMember 2022-09-30"
+    },
+    {
+      "competitor": "THE SECURITIES EXCHANGE ACT",
+      "mentions": 2,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 amzn:IRobotCorporationMember 2022-08-01 2022-08-31 0001018724 srt:MinimumMember amzn:BroadbandiTVMember 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-30 0001018724 us-gaap:SeniorNotesMember 2022-09-30 0001018724 us-gaap:SeniorNotesMember 2022-04-30 0001018724 us-gaap:RevolvingCreditFacilityMember us-gaap:LineOfCreditMember 2022-09-30"
+    },
+    {
+      "competitor": "Commission File No.",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 amzn:IRobotCorporationMember 2022-08-01 2022-08-31 0001018724 srt:MinimumMember amzn:BroadbandiTVMember 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-30 0001018724 us-gaap:SeniorNotesMember 2022-09-30 0001018724 us-gaap:SeniorNotesMember 2022-04-30 0001018724 us-gaap:RevolvingCreditFacilityMember us-gaap:LineOfCreditMember 2022-09-30"
+    },
+    {
+      "competitor": "AMAZON.COM, INC.",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 amzn:IRobotCorporationMember 2022-08-01 2022-08-31 0001018724 srt:MinimumMember amzn:BroadbandiTVMember 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-30 0001018724 us-gaap:SeniorNotesMember 2022-09-30 0001018724 us-gaap:SeniorNotesMember 2022-04-30 0001018724 us-gaap:RevolvingCreditFacilityMember us-gaap:LineOfCreditMember 2022-09-30"
+    },
+    {
+      "competitor": "Delaware 91-1646860",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 amzn:IRobotCorporationMember 2022-08-01 2022-08-31 0001018724 srt:MinimumMember amzn:BroadbandiTVMember 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-30 0001018724 us-gaap:SeniorNotesMember 2022-09-30 0001018724 us-gaap:SeniorNotesMember 2022-04-30 0001018724 us-gaap:RevolvingCreditFacilityMember us-gaap:LineOfCreditMember 2022-09-30"
+    },
+    {
+      "competitor": "Each Exchange on Which Registered Common Stock",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 amzn:IRobotCorporationMember 2022-08-01 2022-08-31 0001018724 srt:MinimumMember amzn:BroadbandiTVMember 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-30 0001018724 us-gaap:SeniorNotesMember 2022-09-30 0001018724 us-gaap:SeniorNotesMember 2022-04-30 0001018724 us-gaap:RevolvingCreditFacilityMember us-gaap:LineOfCreditMember 2022-09-30"
+    },
+    {
+      "competitor": "the Securities Exchange Act",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 amzn:IRobotCorporationMember 2022-08-01 2022-08-31 0001018724 srt:MinimumMember amzn:BroadbandiTVMember 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-30 0001018724 us-gaap:SeniorNotesMember 2022-09-30 0001018724 us-gaap:SeniorNotesMember 2022-04-30 0001018724 us-gaap:RevolvingCreditFacilityMember us-gaap:LineOfCreditMember 2022-09-30"
+    },
+    {
+      "competitor": "Interactive Data File",
+      "mentions": 1,
+      "context": "CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 amzn:A1LifeHealthcareMember 2022-07-01 2022-07-31 0001018724 amzn:IRobotCorporationMember 2022-08-01 2022-08-31 0001018724 srt:MinimumMember amzn:BroadbandiTVMember 2022-04-30 0001018724 amzn:BroadbandiTVMember srt:MaximumMember 2022-04-30 0001018724 us-gaap:SeniorNotesMember 2022-09-30 0001018724 us-gaap:SeniorNotesMember 2022-04-30 0001018724 us-gaap:RevolvingCreditFacilityMember us-gaap:LineOfCreditMember 2022-09-30"
+    }
+  ]
+}

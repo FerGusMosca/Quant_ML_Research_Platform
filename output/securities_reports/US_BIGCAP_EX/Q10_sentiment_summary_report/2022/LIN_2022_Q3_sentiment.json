@@ -1,0 +1,47 @@
+{
+  "symbol": "LIN",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.3134,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.041
+  },
+  "top_positive": [
+    {
+      "sent": "3 Table of Contents LINDE PLC AND SUBSIDIARIES CONSOLIDATED STATEMENTS OF INCOME (Millions of dollars, except per share data) (UNAUDITED) Quarter\u00a0Ended\u00a0March 31, 2022 2021 Sales $ 8,211 $ 7,243 Cost of sales, exclusive of depreciation and amortization 4,798 4,054 Selling, general and administrative 802 787 Depreciation and amortization 1,112 1,166 Research and development 35 35 Cost reduction programs and other charges ( 4 ) ( 8 ) Other income (expense) - net 12 4 Operating Profit 1,480 1,213 Interest expense - net 9 20 Net pension and OPEB cost (benefit), excluding service cost ( 64 ) ( 49 ) Income From Continuing Operations Before Income Taxes and Equity Investments 1,535 1,242 Income taxes on continuing operations 369 268 Income From Continuing Operations  Before Equity Investments 1,166 974 Income from equity investments 44 43 Income From Continuing Operations (Including Noncontrolling Interests) 1,210 1,017 Income from discontinued operations, net of tax \u2014 1 Net Income (Including Noncontrolling Interests) 1,210 1,018 Less: noncontrolling interests from continuing operations ( 36 ) ( 38 ) Net Income \u2013 Linde plc $ 1,174 $ 980 Net Income \u2013 Linde plc Income from continuing operations $ 1,174 $ 979 Income from discontinued operations $ \u2014 $ 1 Per Share Data \u2013 Linde plc Shareholders Basic earnings per share from continuing operations $ 2.31 $ 1.87 Basic earnings per share from discontinued operations \u2014 \u2014 Basic earnings per share $ 2.31 $ 1.87 Diluted earnings per share from continuing operations $ 2.30 $ 1.86 Diluted earnings per share from discontinued operations \u2014 \u2014 Diluted earnings per share $ 2.30 $ 1.86 Weighted Average Shares Outstanding (000\u2019s): Basic shares outstanding 507,152 522,459 Diluted shares outstanding 511,410 526,927 The accompanying notes are an integral part of these financial statements.",
+      "score": 0.9902
+    },
+    {
+      "sent": "The adjusted amounts are intended to supplement investors' understanding of the company's financial information and are not a substitute for GAAP measures: Quarter\u00a0Ended\u00a0March 31, (Millions of dollars, except per share data) 2022 2021 Variance Sales $ 8,211 $ 7,243 13 % Cost of sales, exclusive of depreciation and amortization $ 4,798 $ 4,054 18 % As a percent of sales 58.4 % 56.0 % Selling, general and administrative $ 802 $ 787 2 % As a percent of sales 9.8 % 10.9 % Depreciation and amortization $ 1,112 $ 1,166 (5) % Cost reduction programs and other charges (b) $ (4) $ (8) (50) % Other income (expense) - net $ 12 $ 4 (200) % Operating profit $ 1,480 $ 1,213 22 % Operating margin 18.0 % 16.7 % Interest expense - net $ 9 $ 20 (55) % Net pension and OPEB cost (benefit), excluding service cost $ (64) $ (49) 31 % Effective tax rate 24.0 % 21.6 % Income from equity investments $ 44 $ 43 2 % Noncontrolling interests from continuing operations $ (36) $ (38) (5) % Income from continuing operations $ 1,174 $ 979 20 % Diluted earnings per share from continuing operations $ 2.30 $ 1.86 24 % Diluted shares outstanding 511,410 526,927 (3) % Number of employees 72,507 71,699 1 % Adjusted Amounts (a) Operating profit $ 1,905 $ 1,688 13 % Operating margin 23.2 % 23.3 % Effective tax rate 24.3 % 23.9 % Income from continuing operations $ 1,500 $ 1,312 14 % Diluted earnings per share from continuing operations $ 2.93 $ 2.49 18 % Other Financial Data (a) EBITDA from continuing operations $ 2,636 $ 2,422 9 % As percent of sales 32.1 % 33.4 % Adjusted EBITDA from continuing operations $ 2,663 $ 2,438 9 % As percent of sales 32.4 % 33.7 % (a)   Adjusted Amounts and Other Financial Data are non-GAAP performance measures.",
+      "score": 0.9812
+    },
+    {
+      "sent": "The adjusted amounts are intended to supplement investors' understanding of the company's financial information and are not a substitute for GAAP measures: Quarter\u00a0Ended\u00a0March 31, (Millions of dollars, except per share data) 2022 2021 Variance Sales $ 8,211 $ 7,243 13 % Cost of sales, exclusive of depreciation and amortization $ 4,798 $ 4,054 18 % As a percent of sales 58.4 % 56.0 % Selling, general and administrative $ 802 $ 787 2 % As a percent of sales 9.8 % 10.9 % Depreciation and amortization $ 1,112 $ 1,166 (5) % Cost reduction programs and other charges (b) $ (4) $ (8) (50) % Other income (expense) - net $ 12 $ 4 (200) % Operating profit $ 1,480 $ 1,213 22 % Operating margin 18.0 % 16.7 % Interest expense - net $ 9 $ 20 (55) % Net pension and OPEB cost (benefit), excluding service cost $ (64) $ (49) 31 % Effective tax rate 24.0 % 21.6 % Income from equity investments $ 44 $ 43 2 % Noncontrolling interests from continuing operations $ (36) $ (38) (5) % Income from continuing operations $ 1,174 $ 979 20 % Diluted earnings per share from continuing operations $ 2.30 $ 1.86 24 % Diluted shares outstanding 511,410 526,927 (3) % Number of employees 72,507 71,699 1 % Adjusted Amounts (a) Operating profit $ 1,905 $ 1,688 13 % Operating margin 23.2 % 23.3 % Effective tax rate 24.3 % 23.9 % Income from continuing operations $ 1,500 $ 1,312 14 % Diluted earnings per share from continuing operations $ 2.93 $ 2.49 18 % Other Financial Data (a) EBITDA from continuing operations $ 2,636 $ 2,422 9 % As percent of sales 32.1 % 33.4 % Adjusted EBITDA from continuing operations $ 2,663 $ 2,438 9 % As percent of sales 32.4 % 33.7 % (a)   Adjusted Amounts and Other Financial Data are non-GAAP performance measures.",
+      "score": 0.9812
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "These risks and uncertainties include, without limitation: the performance of stock markets generally; developments in worldwide and national economies and other international events and circumstances, including trade conflicts and tariffs; changes in foreign currencies and in interest rates; the cost and availability of electric power, natural gas and other raw materials; the ability to achieve price increases to offset cost increases; catastrophic events including natural disasters, epidemics, pandemics such as COVID-19, and acts of war and terrorism; the ability to attract, hire, and retain qualified personnel; the impact of changes in financial accounting standards; the impact of changes in pension plan liabilities; the impact of tax, environmental, healthcare and other legislation and government regulation in jurisdictions in which the company operates; the cost and outcomes of investigations, litigation and regulatory proceedings; the impact of potential unusual or non-recurring items; continued timely development and market acceptance of new products and applications; the impact of competitive products and pricing; future financial and operating performance of major customers and industries served; the impact of information technology system failures, network disruptions and breaches in data security; and the effectiveness and speed of integrating new acquisitions into the business.",
+      "score": -0.8523
+    },
+    {
+      "sent": "They are based on management\u2019s reasonable expectations and assumptions as of the date the statements are made but involve risks and uncertainties.",
+      "score": -0.6956
+    },
+    {
+      "sent": "These risks and uncertainties may cause future results or circumstances to differ materially from adjusted projections, estimates or other forward-looking statements.",
+      "score": -0.5423
+    }
+  ],
+  "forward_snippets": [
+    "Linde constructs plants on or adjacent to these customers\u2019 sites and supplies the product directly to customers by pipeline.",
+    "Where there are large concentrations of customers, a single pipeline may be connected to several plants and customers.",
+    "Linde constructs plants on or adjacent to these customers\u2019 sites and supplies the product directly to customers by pipeline.",
+    "Where there are large concentrations of customers, a single pipeline may be connected to several plants and customers.",
+    "Outlook Linde provides quarterly updates on operating results, material trends that may affect financial performance, and financial guidance via quarterly earnings releases and investor teleconferences."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "ROST",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2679,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.117
+  },
+  "top_positive": [
+    {
+      "sent": "The fair value measurement for funds with quoted market prices in active markets (Level 1) are as follows: ($000) July 30, 2022 January 29, 2022 July 31, 2021 Level 1 $ 158,223 $ 163,891 $ 176,095 Note C: Management Incentive Plan and Stock-Based Compensation The Company has incentive compensation programs which provide cash incentive bonuses and performance share awards to key management and employees based on Company and individual performance.",
+      "score": 0.967
+    },
+    {
+      "sent": "The fair value measurement for funds with quoted market prices in active markets (Level 1) are as follows: ($000) July 30, 2022 January 29, 2022 July 31, 2021 Level 1 $ 158,223 $ 163,891 $ 176,095 Note C: Management Incentive Plan and Stock-Based Compensation The Company has incentive compensation programs which provide cash incentive bonuses and performance share awards to key management and employees based on Company and individual performance.",
+      "score": 0.967
+    },
+    {
+      "sent": "The fair value measurement for funds with quoted market prices in active markets (Level 1) are as follows: ($000) July 30, 2022 January 29, 2022 July 31, 2021 Level 1 $ 158,223 $ 163,891 $ 176,095 Note C: Management Incentive Plan and Stock-Based Compensation The Company has incentive compensation programs which provide cash incentive bonuses and performance share awards to key management and employees based on Company and individual performance.",
+      "score": 0.967
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "\u2022 Risks associated with importing and selling merchandise produced in other countries, including risks from supply chain disruptions due to port of exit/entry congestion, shipping delays, and ocean freight cost increases, and risks from other supply chain related disruptions in other countries, including those due to COVID-19 closures.",
+      "score": -0.8442
+    },
+    {
+      "sent": "\u2022 Risks associated with importing and selling merchandise produced in other countries, including risks from supply chain disruptions due to port of exit/entry congestion, shipping delays, and ocean freight cost increases, and risks from other supply chain related disruptions in other countries, including those due to COVID-19 closures.",
+      "score": -0.8442
+    },
+    {
+      "sent": "23 \u2022 An additional public health or public safety crisis, demonstrations, natural or man-made disaster in California or in another region where we have a concentration of stores, offices, or a distribution center that could harm our business.",
+      "score": -0.8126
+    }
+  ],
+  "forward_snippets": [
+    "The guidance in this ASU will be effective for the Company for its fiscal 2022 Form 10-K.",
+    "The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements.",
+    "The guidance in this ASU will be effective for the Company for its fiscal 2022 Form 10-K.",
+    "The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements.",
+    "Diluted EPS reflects the total potential dilution that could occur from outstanding equity plan awards and unvested shares of both performance and non-performance based award\nguidance in this ASU will be effective for the Company for its fiscal 2022 Form 10-K."
+  ]
+}

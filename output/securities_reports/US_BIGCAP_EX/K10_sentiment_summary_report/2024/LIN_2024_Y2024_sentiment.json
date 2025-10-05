@@ -1,0 +1,47 @@
+{
+  "symbol": "LIN",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1731,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.093
+  },
+  "top_positive": [
+    {
+      "sent": "50 Table of Contents CONSOLIDATED STATEMENTS OF INCOME LINDE PLC AND SUBSIDIARIES (Dollar amounts in millions, except per share data) Year Ended December\u00a031, 2023 2022 2021 Sales $ 32,854 $ 33,364 $ 30,793 Cost of sales, exclusive of depreciation and amortization 17,492 19,450 17,543 Selling, general and administrative 3,295 3,107 3,189 Depreciation and amortization 3,816 4,204 4,635 Research and development 146 143 143 Other charges 40 1,029 273 Other income (expenses) \u2013 net ( 41 ) ( 62 ) ( 26 ) Operating Profit 8,024 5,369 4,984 Interest expense \u2013 net 200 63 77 Net pension and OPEB cost (benefit), excluding service cost ( 164 ) ( 237 ) ( 192 ) Income Before Income Taxes and Equity Investments 7,988 5,543 5,099 Income taxes 1,814 1,434 1,262 Income From Continuing Operations  Before Equity Investments 6,174 4,109 3,837 Income from equity investments 167 172 119 Income From Continuing Operations (Including Noncontrolling Interests) 6,341 4,281 3,956 Income from discontinued operations, net of tax \u2014 \u2014 5 Net Income (Including Noncontrolling Interests) 6,341 4,281 3,961 Less: noncontrolling interests from continuing operations ( 142 ) ( 134 ) ( 135 ) Net Income \u2013 Linde plc $ 6,199 $ 4,147 $ 3,826 Net Income \u2013 Linde plc Income from continuing operations $ 6,199 $ 4,147 $ 3,821 Income from discontinued operations $ \u2014 $ \u2014 $ 5 Per Share Data \u2013 Linde plc Shareholders Basic earnings per share from continuing operations $ 12.70 $ 8.30 $ 7.39 Basic earnings per share from discontinued operations \u2014 \u2014 0.01 Basic earnings per share $ 12.70 $ 8.30 $ 7.40 Diluted earnings per share from continuing operations $ 12.59 $ 8\n value exceeds its estimated fair value.",
+      "score": 0.986
+    },
+    {
+      "sent": "(Millions of dollars, except per share data) Year Ended December\u00a031, 2023 2022 Variance Reported Amounts Sales $ 32,854 $ 33,364 (2) % Cost of sales, exclusive of depreciation and amortization $ 17,492 $ 19,450 (10) % As a percent of sales 53.2 % 58.3 % Selling, general and administrative $ 3,295 $ 3,107 6 % As a percent of sales 10.0 % 9.3 % Depreciation and amortization $ 3,816 $ 4,204 (9) % Other charges (a) $ 40 $ 1,029 \u2014 Operating Profit $ 8,024 $ 5,369 49 % Operating margin 24.4 % 16.1 % Interest expense \u2013 net $ 200 $ 63 217 % Net pension and OPEB cost (benefit), excluding service cost $ (164) $ (237) (31) % Effective tax rate 22.7 % 25.9 % Income from equity investments $ 167 $ 172 (3) % Noncontrolling interests $ (142) $ (134) 6 % Net Income - Linde plc $ 6,199 $ 4,147 49 % Diluted earnings per share $ 12.59 $ 8.23 53 % Diluted shares outstanding 492,290 504,038 (2) % Number of employees 66,323 65,010 2 % Adjusted Amounts (b) Operating profit $ 9,070 $ 7,904 15 % Operating margin 27.6 % 23.7 % Net Income - Linde plc $ 6,989 $ 6,195 13 % Diluted earnings per share $ 14.20 $ 12.29 16 % Other Financial Data (b) EBITDA $ 12,007 $ 9,745 23 % As percent of sales 36.5 % 29.2 % Adjusted EBITDA $ 12,133 $ 10,873 12 % As percent of sales 36.9 % 32.6 % ________________________ (a) See Note 3 to the consolidated financial statements.",
+      "score": 0.9766
+    },
+    {
+      "sent": "(Millions of dollars, except per share data) Year Ended December\u00a031, 2023 2022 Variance Reported Amounts Sales $ 32,854 $ 33,364 (2) % Cost of sales, exclusive of depreciation and amortization $ 17,492 $ 19,450 (10) % As a percent of sales 53.2 % 58.3 % Selling, general and administrative $ 3,295 $ 3,107 6 % As a percent of sales 10.0 % 9.3 % Depreciation and amortization $ 3,816 $ 4,204 (9) % Other charges (a) $ 40 $ 1,029 \u2014 Operating Profit $ 8,024 $ 5,369 49 % Operating margin 24.4 % 16.1 % Interest expense \u2013 net $ 200 $ 63 217 % Net pension and OPEB cost (benefit), excluding service cost $ (164) $ (237) (31) % Effective tax rate 22.7 % 25.9 % Income from equity investments $ 167 $ 172 (3) % Noncontrolling interests $ (142) $ (134) 6 % Net Income - Linde plc $ 6,199 $ 4,147 49 % Diluted earnings per share $ 12.59 $ 8.23 53 % Diluted shares outstanding 492,290 504,038 (2) % Number of employees 66,323 65,010 2 % Adjusted Amounts (b) Operating profit $ 9,070 $ 7,904 15 % Operating margin 27.6 % 23.7 % Net Income - Linde plc $ 6,989 $ 6,195 13 % Diluted earnings per share $ 14.20 $ 12.29 16 % Other Financial Data (b) EBITDA $ 12,007 $ 9,745 23 % As percent of sales 36.5 % 29.2 % Adjusted EBITDA $ 12,133 $ 10,873 12 % As percent of sales 36.9 % 32.6 % ________________________ (a) See Note 3 to the consolidated financial statements.",
+      "score": 0.9766
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Material operating failures at production, storage facilities or pipelines, including fire, toxic release and explosions, or the occurrence of vehicle transportation accidents could result in loss of life, damage to the environment, loss of production and/or extensive property damage, all of which may negatively impact Linde\u2019s financial results.",
+      "score": -0.9493
+    },
+    {
+      "sent": "The occurrence of catastrophic events or natural disasters such as extreme weather, including hurricanes and floods; health epidemics; pandemics, such as COVID-19; and acts of war or terrorism, could disrupt or delay Linde\u2019s ability to produce and distribute its products to customers and could potentially expose Linde to third-party liability claims.",
+      "score": -0.9451
+    },
+    {
+      "sent": "Our audits of the consolidated financial statements included performing procedures to assess the risks of material misstatement of the consolidated financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    }
+  ],
+  "forward_snippets": [
+    "Linde constructs plants on or 4 Table of Contents adjacent to these customers\u2019 sites and supplies the product directly to customers by pipeline.",
+    "On-site plants and pipeline complexes have limited inventory.",
+    "In locations where Linde has pipeline networks, which enable the company to provide reliable and economic supply of products to larger customers, Linde derives a competitive advantage.",
+    "On-site plants and pipeline complexes have limited inventory.",
+    "In locations where Linde has pipeline networks, which enable the company to provide reliable and economic supply of products to larger customers, Linde derives a competitive advantage."
+  ]
+}

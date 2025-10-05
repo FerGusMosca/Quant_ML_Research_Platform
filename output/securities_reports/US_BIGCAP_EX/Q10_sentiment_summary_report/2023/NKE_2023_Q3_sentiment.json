@@ -1,0 +1,47 @@
+{
+  "symbol": "NKE",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1478,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.14
+  },
+  "top_positive": [
+    {
+      "sent": "The following table presents a summary of share repurchases made during the quarter ended November\u00a030, 2022: PERIOD TOTAL NUMBER OF SHARES PURCHASED AVERAGE PRICE PAID PER SHARE APPROXIMATE DOLLAR VALUE OF SHARES THAT MAY YET BE PURCHASED UNDER THE PLAN OR PROGRAM (IN MILLIONS) September 1 - September 30, 2022 3,280,909 $ 102.26 $ 17,383 October 1 - October 31, 2022 5,602,879 $ 89.77 $ 16,880 November 1 - November 30, 2022 7,631,068 $ 100.65 $ 16,112 16,514,856 $ 97.28 46 Table of Contents ITEM 6.",
+      "score": 0.9345
+    },
+    {
+      "sent": "The following table presents a summary of share repurchases made during the quarter ended November\u00a030, 2022: PERIOD TOTAL NUMBER OF SHARES PURCHASED AVERAGE PRICE PAID PER SHARE APPROXIMATE DOLLAR VALUE OF SHARES THAT MAY YET BE PURCHASED UNDER THE PLAN OR PROGRAM (IN MILLIONS) September 1 - September 30, 2022 3,280,909 $ 102.26 $ 17,383 October 1 - October 31, 2022 5,602,879 $ 89.77 $ 16,880 November 1 - November 30, 2022 7,631,068 $ 100.65 $ 16,112 16,514,856 $ 97.28 46 Table of Contents ITEM 6.",
+      "score": 0.9345
+    },
+    {
+      "sent": "33 Table of Contents GREATER CHINA THREE MONTHS ENDED NOVEMBER 30, SIX MONTHS ENDED NOVEMBER 30, (Dollars\u00a0in\u00a0millions) 2022 2021 % CHANGE % CHANGE EXCLUDING CURRENCY CHANGES 2022 2021 % CHANGE % CHANGE EXCLUDING CURRENCY CHANGES Revenues by: Footwear $ 1,370 $ 1,235 11 % 21 % $ 2,603 $ 2,684 -3 % 4 % Apparel 393 564 -30 % -24 % 767 1,040 -26 % -21 % Equipment 25 45 -44 % -39 % 74 102 -27 % -23 % TOTAL REVENUES $ 1,788 $ 1,844 -3 % 6 % $ 3,444 $ 3,826 -10 % -4 % Revenues by: Sales to Wholesale Customers $ 897 $ 896 0 % 8 % $ 1,736 $ 2,010 -14 % -8 % Sales through NIKE Direct 891 948 -6 % 4 % 1,708 1,816 -6 % 1 % TOTAL REVENUES $ 1,788 $ 1,844 -3 % 6 % $ 3,444 $ 3,826 -10 % -4 % EARNINGS BEFORE INTEREST AND TAXES $ 511 $ 569 -10 % $ 1,052 $ 1,270 -17 % SECOND QUARTER OF FISCAL 2023 COMPARED TO SECOND QUARTER OF FISCAL 2022 On a currency-neutral basis, Greater China revenues for the second quarter of fiscal 2023 increased 6%.The increase in revenues was primarily due to higher revenues in the Jordan Brand.",
+      "score": 0.9164
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "27 Table of Contents GROSS MARGIN THREE MONTHS ENDED NOVEMBER 30, SIX MONTHS ENDED NOVEMBER 30, (Dollars in millions) 2022 2021 % CHANGE 2022 2021 % CHANGE Gross profit $ 5,711 $ 5,213 10 % $ 11,326 $ 10,909 4 % Gross margin 42.9 % 45.9 % (300) bps 43.6 % 46.2 % (260) bps For the second quarter of fiscal 2023, our consolidated gross margin was 300 basis points lower than the prior year and primarily reflected the following factors: \u2022 Lower margin in our NIKE Direct business, driven by higher promotional activity in the current period, largely in North America to liquidate excess inventory (decreasing margin approximately 160 basis points); \u2022 Unfavorable changes in net foreign currency exchange rates, including hedges, (decreasing gross margin approximately 90 basis points); and \u2022 Lower NIKE Brand full-price product margins, on a wholesale equivalent basis, (decreasing gross margin approximately 20 basis points) reflecting: \u25e6 Higher NIKE Brand product costs, (decreasing margin approximately 430 basis points) primarily due to product mix, elevated inbound freight and logistics costs, and product input costs such as materials and labor; and \u25e6 Higher full-price ASP, net of discounts, (increasing gross margin approximately 410 basis points) due primarily to product mix and strategic pricing actions.",
+      "score": -0.9754
+    },
+    {
+      "sent": "For the first six months of fiscal 2023, our consolidated gross margin was 260 basis points lower than the prior year period and primarily reflected the following factors: \u2022 Lower margin in our NIKE Direct business, driven by higher promotional activity in the current period, largely in North America to liquidate excess inventory (decreasing margin approximately 120 basis points); \u2022 Unfavorable changes in net foreign currency exchange rates, including hedges, (decreasing gross margin approximately 80 basis points); \u2022 Higher other costs (decreasing gross margin approximately 60 basis points); and \u2022 NIKE Brand full-price product margins, on a wholesale equivalent basis, were flat, reflecting: \u25e6 Higher full-price ASP, net of discounts, (increasing gross margin approximately 320 basis points) due primarily to strategic pricing actions and product mix; and \u25e6 Higher NIKE Brand product costs, (decreasing margin approximately 320 basis points) primarily due to product mix, elevated inbound freight and logistics costs, and product input costs.",
+      "score": -0.9413
+    },
+    {
+      "sent": "We expect net unfavorable changes in foreign currency exchange rates, including hedges, will have a material negative impact on reported Revenues, gross margin and Income before income taxes for the remainder of fiscal 2023.",
+      "score": -0.7783
+    }
+  ],
+  "forward_snippets": [
+    "Additionally, we have aligned our product creation and category organizations around a new consumer construct focused on Men\u2019s, Women\u2019s and Kids\u2019 and continue to invest in data and analytics, demand sensing, insight gathering, inventory management and other areas to create an end-to-end technology foundation, which we expect will further accelerate our digital transformation.",
+    "We believe this unified approach will accelerate growth and unlock more efficiency for our business, while driving speed and responsiveness as we serve consumers globally.",
+    "We have also adjusted our inventory purchases for the remainder of fiscal 2023 as we continue to prioritize reducing excess inventory in the marketplace across our geographies.",
+    "In Greater China however, we continue to experience a higher level of store closures and reduced traffic in our retail stores due to COVID-19 related disruptions.",
+    "Although these restrictions were lifted In December 2022, we expect the operating environment will remain volatile which could continue to cause disruptions to our operations."
+  ]
+}

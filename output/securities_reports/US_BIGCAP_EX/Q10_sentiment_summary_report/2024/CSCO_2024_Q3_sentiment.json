@@ -1,0 +1,47 @@
+{
+  "symbol": "CSCO",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1341,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.287
+  },
+  "top_positive": [
+    {
+      "sent": "MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS (Continued) Interest and Other Income (Loss), Net Interest Income (Expense), Net The following table summarizes interest income and interest expense (in millions): Three Months Ended Six Months Ended January 27, 2024 January 28, 2023 Variance in Dollars January 27, 2024 January 28, 2023 Variance in Dollars Interest income $ 324 $ 219 $ 105 $ 684 $ 388 $ 296 Interest expense (120) (107) (13) (231) (207) (24) Interest income (expense), net $ 204 $ 112 $ 92 $ 453 $ 181 $ 272 For each of the second quarter and first six months of fiscal 2024, the increase in interest income was driven by higher average balance of cash and available-for-sale debt investments and higher interest rates.",
+      "score": 0.9771
+    },
+    {
+      "sent": "MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS (Continued) Interest and Other Income (Loss), Net Interest Income (Expense), Net The following table summarizes interest income and interest expense (in millions): Three Months Ended Six Months Ended January 27, 2024 January 28, 2023 Variance in Dollars January 27, 2024 January 28, 2023 Variance in Dollars Interest income $ 324 $ 219 $ 105 $ 684 $ 388 $ 296 Interest expense (120) (107) (13) (231) (207) (24) Interest income (expense), net $ 204 $ 112 $ 92 $ 453 $ 181 $ 272 For each of the second quarter and first six months of fiscal 2024, the increase in interest income was driven by higher average balance of cash and available-for-sale debt investments and higher interest rates.",
+      "score": 0.9771
+    },
+    {
+      "sent": "MANAGEMENT\u2019S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS (Continued) Interest and Other Income (Loss), Net Interest Income (Expense), Net The following table summarizes interest income and interest expense (in millions): Three Months Ended Six Months Ended January 27, 2024 January 28, 2023 Variance in Dollars January 27, 2024 January 28, 2023 Variance in Dollars Interest income $ 324 $ 219 $ 105 $ 684 $ 388 $ 296 Interest expense (120) (107) (13) (231) (207) (24) Interest income (expense), net $ 204 $ 112 $ 92 $ 453 $ 181 $ 272 For each of the second quarter and first six months of fiscal 2024, the increase in interest income was driven by higher average balance of cash and available-for-sale debt investments and higher interest rates.",
+      "score": 0.9771
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Risks Related to Cybersecurity, Privacy, and Regulatory Requirements Cyber attacks, data breaches or other incidents may disrupt our operations, harm our operating results and financial condition, and damage our reputation or otherwise materially harm our business; and cyber attacks, data breaches or other incidents on our customers\u2019 or third-party providers\u2019 networks, in third-party products we use, or in cloud-based services provided to, by, or enabled by us, could result in claims of liability against us, give rise to legal and/or regulatory action, damage our reputation or otherwise materially harm our business.",
+      "score": -0.9753
+    },
+    {
+      "sent": "Risks Related to Cybersecurity, Privacy, and Regulatory Requirements Cyber attacks, data breaches or other incidents may disrupt our operations, harm our operating results and financial condition, and damage our reputation or otherwise materially harm our business; and cyber attacks, data breaches or other incidents on our customers\u2019 or third-party providers\u2019 networks, in third-party products we use, or in cloud-based services provided to, by, or enabled by us, could result in claims of liability against us, give rise to legal and/or regulatory action, damage our reputation or otherwise materially harm our business.",
+      "score": -0.9753
+    },
+    {
+      "sent": "CONSOLIDATED STATEMENTS OF CASH FLOWS (in millions) (Unaudited) Six Months Ended January 27, 2024 January 28, 2023 Cash flows from operating activities: Net income $ 6,272 $ 5,443 Adjustments to reconcile net income to net cash provided by operating activities: Depreciation, amortization, and other 823 853 Share-based compensation expense 1,463 1,097 Provision (benefit) for receivables 12 6 Deferred income taxes ( 816 ) ( 845 ) (Gains) losses on divestitures, investments and other, net 205 109 Change in operating assets and liabilities, net of effects of acquisitions and divestitures: Accounts receivable 941 1,393 Inventories 442 ( 569 ) Financing receivables ( 33 ) 834 Other assets ( 403 ) ( 210 ) Accounts payable ( 476 ) 42 Income taxes, net ( 4,656 ) 118 Accrued compensation ( 763 ) ( 146 ) Deferred revenue 293 633 Other liabilities ( 125 ) ( 57 ) Net cash provided by operating activities 3,179 8,701 Cash flows from investing activities: Purchases of investments ( 2,253 ) ( 3,797 ) Proceeds from sales of investments 2,484 587 Proceeds from maturities of investments 4,044 2,316 Acquisitions, net of cash and cash equivalents acquired ( 878 ) ( 3 ) Purchases of investments in privately held companies ( 50 ) ( 70 ) Return of investments in privately held companies 123 39 Acquisition of property and equipment ( 304 ) ( 346 ) Other ( 1 ) ( 19 ) Net cash provided by (used in) investing activities 3,165 ( 1,293 ) Cash flows from financing activities: Issuances of common stock 349 316 Repurchases of common stock \u2014 repurchase program ( 2,504 ) ( 1,760 ) Shares repurchased for tax withholdings on vesting of restricted stock units ( 581 ) ( 310 ) Short-term borrowings, original maturities of 90 days or less, net 1,398 ( 602 ) Issuances of debt 2,537 \u2014 Repayments of debt ( 750 ) \u2014 Dividends paid ( 3,163 ) ( 3,120 ) Other ( 7 ) ( 5 ) Net cash used in financing activities ( 2,721 ) ( 5,481 ) Effect of foreign currency exchange rate changes on cash, cash equivalents, restricted cash and restricted cash equivalents ( 32 ) 3 Net increase (decrease) in cash, cash equivalents, restricted cash and restricted cash equivalents 3,591 1,930 Cash, cash equivalents, restricted cash and restricted cash equivalents, beginning of period 11,627 8,579 Cash, cash equivalents, restricted cash and restricted cash equivalents, end of period $ 15,218 $ 10,509 Supplemental cash flow information: Cash paid for inte\nope, Middle East, and Africa (EMEA); and Asia Pacific, Japan, and China (APJC).",
+      "score": -0.9678
+    }
+  ],
+  "forward_snippets": [
+    "However, we believe that the disclosures are adequate to make the information presented not misleading.",
+    "We recognize revenue upon transfer of control of promised goods or services in a contract with a customer in an amount that reflects the consideration we expect to receive in exchange for those products or services.",
+    "Significant Judgments Revenue is allocated among these performance obligations in a manner that reflects the consideration that we expect to be entitled to for the promised goods or services based on standalone selling prices (SSP).",
+    "We recognize revenue upon transfer of control of promised goods or services in a contract with a customer in an amount that reflects the consideration we expect to receive in exchange for those products or services.",
+    "Significant Judgments Revenue is allocated among these performance obligations in a manner that reflects the consideration that we expect to be entitled to for the promised goods or services based on standalone selling prices (SSP)."
+  ]
+}

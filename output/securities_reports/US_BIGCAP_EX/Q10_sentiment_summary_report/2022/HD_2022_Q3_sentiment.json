@@ -1,0 +1,47 @@
+{
+  "symbol": "HD",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1333,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.276
+  },
+  "top_positive": [
+    {
+      "sent": "CONSOLIDATED STATEMENTS OF EARNINGS (Unaudited) Three Months Ended in millions, except per share data May 1, 2022 May 2, 2021 Net sales $ 38,908 $ 37,500 Cost of sales 25,763 24,758 Gross profit 13,145 12,742 Operating expenses: Selling, general and administrative 6,610 6,374 Depreciation and amortization 606 587 Total operating expenses 7,216 6,961 Operating income 5,929 5,781 Interest and other (income) expense: Interest income and other, net ( 3 ) ( 6 ) Interest expense 372 339 Interest and other, net 369 333 Earnings before provision for income taxes 5,560 5,448 Provision for income taxes 1,329 1,303 Net earnings $ 4,231 $ 4,145 Basic weighted average common shares 1,030 1,071 Basic earnings per share $ 4.11 $ 3.87 Diluted weighted average common shares 1,034 1,075 Diluted earnings per share $ 4.09 $ 3.86 See accompanying notes to consolidated financial statements.",
+      "score": 0.9657
+    },
+    {
+      "sent": "CONSOLIDATED STATEMENTS OF EARNINGS (Unaudited) Three Months Ended in millions, except per share data May 1, 2022 May 2, 2021 Net sales $ 38,908 $ 37,500 Cost of sales 25,763 24,758 Gross profit 13,145 12,742 Operating expenses: Selling, general and administrative 6,610 6,374 Depreciation and amortization 606 587 Total operating expenses 7,216 6,961 Operating income 5,929 5,781 Interest and other (income) expense: Interest income and other, net ( 3 ) ( 6 ) Interest expense 372 339 Interest and other, net 369 333 Earnings before provision for income taxes 5,560 5,448 Provision for income taxes 1,329 1,303 Net earnings $ 4,231 $ 4,145 Basic weighted average common shares 1,030 1,071 Basic earnings per share $ 4.11 $ 3.87 Diluted weighted average common shares 1,034 1,075 Diluted earnings per share $ 4.09 $ 3.86 See accompanying notes to consolidated financial statements.",
+      "score": 0.9657
+    },
+    {
+      "sent": "CONSOLIDATED STATEMENTS OF EARNINGS (Unaudited) Three Months Ended in millions, except per share data May 1, 2022 May 2, 2021 Net sales $ 38,908 $ 37,500 Cost of sales 25,763 24,758 Gross profit 13,145 12,742 Operating expenses: Selling, general and administrative 6,610 6,374 Depreciation and amortization 606 587 Total operating expenses 7,216 6,961 Operating income 5,929 5,781 Interest and other (income) expense: Interest income and other, net ( 3 ) ( 6 ) Interest expense 372 339 Interest and other, net 369 333 Earnings before provision for income taxes 5,560 5,448 Provision for income taxes 1,329 1,303 Net earnings $ 4,231 $ 4,145 Basic weighted average common shares 1,030 1,071 Basic earnings per share $ 4.11 $ 3.87 Diluted weighted average common shares 1,034 1,075 Diluted earnings per share $ 4.09 $ 3.86 See accompanying notes to consolidated financial statements.",
+      "score": 0.9657
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Critical Accounting Policies During the first three months of fiscal 2022, there were no changes to our critical accounting policies as disclosed in the 2021 Form 10-K.",
+      "score": -0.7003
+    },
+    {
+      "sent": "Critical Accounting Policies During the first three months of fiscal 2022, there were no changes to our critical accounting policies as disclosed in the 2021 Form 10-K.",
+      "score": -0.7003
+    },
+    {
+      "sent": "Critical Accounting Policies During the first three months of fiscal 2022, there were no changes to our critical accounting policies as disclosed in the 2021 Form 10-K.",
+      "score": -0.7003
+    }
+  ],
+  "forward_snippets": [
+    "Forward-looking statements may relate to, among other things, the impact of the COVID-19 pandemic and the related recovery on our business, results of operations, cash flows and financial condition (which, among other things, may affect many of the items listed below); the demand for our products and services; net sales growth; comparable sales; the effects of competition; our brand and reputation; implementation of store, interconnected retail, supply chain and technology initiatives; inventory and in-stock positions; the state of the economy; the state of the housing and home improvement markets; the state of the credit markets, including mortgages, home equity loans, and consumer credit; impact of tariffs; issues related to the payment methods we accept; demand for credit offerings; management of relationships with our associates, potential associates, suppliers and service providers; cost and availability of labor; costs of fuel and other energy sources; international trade disputes, natural disasters, climate change, public health issues (including pandemics and quarantines, related shut-downs and other governmental orders, and similar restrictions, as well as subsequent re-openings), cybersecurity events, military conflicts or acts of war, and other business interruptions that could disrupt operation of our stores, distribution centers and other facilities, our ability to operate or access communications, financial or banking systems, or supply or delivery of, or demand for, the Company\u2019s products or services; our ability to meet environmental, social and governance (ESG) goals; continuation or suspension of share repurchases; net earnings performance; earnings per share; dividend targets; capital allocation and expenditures; liquidity; return on invested capital; expense leverage; stock-based compensation expense; commodity or other price inflation and deflation; our ability to issue debt on terms and at rates acceptable to us; the impact and expected outcome of investigations, inquiries, claims, and litigation, including compliance with related settlements; the effect of accounting charges; the effect of adopting certain accounting standards; the impact of regulatory changes, including changes to tax laws and regulations; store openings and closures; financial outlook; and the impact of acquired companies on our organization and the ability to recognize the anticipated benefits of those acquisitions.",
+    "CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (Unaudited) Three Months Ended in millions May 1, 2022 May 2, 2021 Net earnings $ 4,231 $ 4,145 Other comprehensive income (loss), net of tax: Foreign cur\n Company\u2019s products or services; our ability to meet environmental, social and governance (ESG) goals; continuation or suspension of share repurchases; net earnings performance; earnings per share; dividend targets; capital allocation and expenditures; liquidity; return on invested capital; expense leverage; stock-based compensation expense; commodity or other price inflation and deflation; our ability to issue debt on terms and at rates acceptable to us; the impact and expected outcome of investigations, inquiries, claims, and litigation, including compliance with related settlements; the effect of accounting charges; the effect of adopting certain accounting standards; the impact of regulatory changes, including changes to tax laws and regulations; store openings and closures; financial outlook; and the impact of acquired companies on our organization and the ability to recognize the anticipated benefits of those acquisitions.",
+    "CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited) Three Months Ended in millions May 1, 2022 May 2, 2021 Cash Flows from Operating Activities: Net earnings $ 4,231 $ 4,145 Reconciliation of net earnings to net cash provided by operating activities: Depreciation and amortization 727 703 Stock-based compensation expense 115 146 Changes in receivables, net ( 489 ) ( 640 ) Changes in merchandise inventories ( 3,226 ) ( 2,519 ) Changes in other current assets ( 589 ) ( 277 ) Changes in accounts payable and accrued expenses 1,744 3,013 Changes in deferred revenue 79 586 Changes in income taxes payable 1,121 1,138 Changes in deferred income taxes ( 44 ) ( 87 ) Other operating activities 120 102 Net cash provided by operating activities 3,789 6,310 Cash Flows from Investing Activities: Capital expenditures ( 704 ) ( 524 ) Other investing activities 3 ( 4 ) Net cash used in investing activities ( 701 ) ( 528 ) Cash Flows from Financing Activities: Repayments of short-term debt, net ( 1,035 ) \u2014 Proceeds from long-term debt, net of discounts 3,957 \u2014 Repayments of long-term debt\noutlook; and the impact of acquired companies on our organization and the ability to recognize the anticipated benefits of those acquisitions.",
+    "We believe ROIC is meaningful for investors and management because it measures how effectively we deploy our capital base.",
+    "We believe that our current cash position, cash flow generated from operations, funds available from our commercial paper programs, and access to the long-term debt capital markets should be sufficient not only for our operating requirements but also to enable us to invest in the business through capital expenditures, fund dividend payments, fund any share repurchases, make any required debt payments, and satisfy other contractual obligations through the next several fiscal years."
+  ]
+}

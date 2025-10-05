@@ -1,0 +1,606 @@
+{
+  "symbol": "UPS",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-03",
+      "time": "12:50",
+      "title": "FedEx relocates freighter aircraft to support intra-Asia trade growth\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/fedex-relocates-freighter-aircraft-support-165037997.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Where Will UPS Be in 1 Year?\n\n\n(Motley Fool)",
+      "link": "/news/183344/where-will-ups-be-in-1-year"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:24AM",
+      "title": "Meet the Suspicious 8: Dividends Over 6% with Plenty of Problems\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/dividend-stocks-yields-suspicious-90461aa3?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:03AM",
+      "title": "Jim Cramer Regards United Parcel's High Dividend as a \"Total Red Flag\"\n\n\n(Insider Monkey)",
+      "link": "/news/183050/jim-cramer-regards-united-parcels-high-dividend-as-a-total-red-flag"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "06:15",
+      "title": "1 Reason I'm Still Keeping an Eye on UPS Stock, Despite Recent Lows\n\n\n(Motley Fool)",
+      "link": "/news/182034/1-reason-im-still-keeping-an-eye-on-ups-stock-despite-recent-lows"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "18:00",
+      "title": "Why United Parcel Service (UPS) Outpaced the Stock Market Today\n\n\n(Zacks)",
+      "link": "/news/181607/why-united-parcel-service-ups-outpaced-the-stock-market-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:55PM",
+      "title": "Top 3 Dividend Achievers for October: High Yields, Growth Ahead\n\n\n(MarketBeat)",
+      "link": "/news/181552/top-3-dividend-achievers-for-october-high-yields-growth-ahead"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:13PM",
+      "title": "UPS Dividends: Consistent Income from a Global Delivery Giant\n\n\n(Insider Monkey)",
+      "link": "/news/181249/ups-dividends-consistent-income-from-a-global-delivery-giant"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:05AM",
+      "title": "Striking Canada Post workers endanger future parcel business, execs say\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/striking-canada-post-workers-endanger-140522582.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Google unveils AI-powered Nest indoor and outdoor cameras, and a new doorbell\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/m/fef3707b-60a8-3f13-b6e5-e5343bbb89ed/google-unveils-ai-powered.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:51AM",
+      "title": "3 Ultra-High-Yield Dividend Stocks -- Sporting an Average Yield of 9.5% -- Which Are No-Brainer Buys in October\n\n\n(Motley Fool)",
+      "link": "/news/180462/3-ultra-high-yield-dividend-stocks-sporting-an-average-yield-of-95-which-are-no-brainer-buys-in-october"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "04:44",
+      "title": "Should You Buy UPS Stock While It's Below $90?\n\n\n(Motley Fool)",
+      "link": "/news/179111/should-you-buy-ups-stock-while-its-below-90"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "19:53",
+      "title": "US holiday package deliveries to rise 5% from 2024, ShipMatrix forecasts\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/us-holiday-package-deliveries-rise-235326391.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:30PM",
+      "title": "Pro Traders are Quietly Positioning Bullish Options on United Parcel Service (UPS) Stock: Heres the Evidence\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/940107ab-78c7-373d-9f24-3c7ef8a40431/pro-traders-are-quietly.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:06AM",
+      "title": "FedEx, UPS peak season surcharges could drive shippers to competitors\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/fedex-ups-peak-season-surcharges-140647815.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:00AM",
+      "title": "3 Dividend Stocks to Hold for the Next 10 Years\n\n\n(Motley Fool)",
+      "link": "/news/177950/3-dividend-stocks-to-hold-for-the-next-10-years"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:54AM",
+      "title": "United Parcel Service Is Making Big Moves: Time to Buy Before It Skyrockets?\n\n\n(Motley Fool)",
+      "link": "/news/177920/united-parcel-service-is-making-big-moves-time-to-buy-before-it-skyrockets"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "08:35",
+      "title": "Is There Hope Left for UPS Investors?\n\n\n(Motley Fool)",
+      "link": "/news/177693/is-there-hope-left-for-ups-investors"
+    },
+    {
+      "date": "2025-09-27",
+      "time": "14:48",
+      "title": "1 Reason Why Now Is the Time to Buy United Parcel Service\n\n\n(Motley Fool)",
+      "link": "/news/177596/1-reason-why-now-is-the-time-to-buy-united-parcel-service"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:15AM",
+      "title": "3 Magnificent S&P 500 Dividend Stocks Down 33% to 40% to Buy and Hold Forever -- Including United Parcel Service (UPS) and Target (TGT)\n\n\n(Motley Fool)",
+      "link": "/news/177546/3-magnificent-sp-500-dividend-stocks-down-33-to-40-to-buy-and-hold-forever-including-united-parcel-service-ups-and-target-tgt"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "11:50",
+      "title": "UPS stock: BofA maintains Q3 estimates below Street\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/ups-stock-bofa-maintains-q3-155001994.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Bargains or Busts? These 3 Dividend Stocks Pay More Than 4% and Are Trading Near Their 52-Week Lows\n\n\n(Motley Fool)",
+      "link": "/news/176825/bargains-or-busts-these-3-dividend-stocks-pay-more-than-4-and-are-trading-near-their-52-week-lows"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "United Parcel Service, Inc. (UPS) Is a Trending Stock: Facts to Know Before Betting on It\n\n\n(Zacks)",
+      "link": "/news/176849/united-parcel-service-inc-ups-is-a-trending-stock-facts-to-know-before-betting-on-it"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "18:00",
+      "title": "United Parcel Service (UPS) Falls More Steeply Than Broader Market: What Investors Need to Know\n\n\n(Zacks)",
+      "link": "/news/176316/united-parcel-service-ups-falls-more-steeply-than-broader-market-what-investors-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:02AM",
+      "title": "3 Reasons to Sell UPS and 1 Stock to Buy Instead\n\n\n(StockStory)",
+      "link": "/news/175435/3-reasons-to-sell-ups-and-1-stock-to-buy-instead"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "21:06",
+      "title": "United Parcel Service, Inc. (UPS) Terminates Its Planned Acquisition of Estafeta\n\n\n(Insider Monkey)",
+      "link": "/news/175225/united-parcel-service-inc-ups-terminates-its-planned-acquisition-of-estafeta"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:07AM",
+      "title": "Should You Buy the 3 Highest-Paying Dividend Stocks in the S&P 500?\n\n\n(Motley Fool)",
+      "link": "/news/174666/should-you-buy-the-3-highest-paying-dividend-stocks-in-the-sp-500"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:54AM",
+      "title": "BMO Capital Markets Reduces Rating on United Parcel Service (UPS) Stock\n\n\n(Insider Monkey)",
+      "link": "/news/174596/bmo-capital-markets-reduces-rating-on-united-parcel-service-ups-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Is UPS Stock a Buy Right Now?\n\n\n(Motley Fool)",
+      "link": "/news/174645/is-ups-stock-a-buy-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:02AM",
+      "title": "UPS buyouts: Experts weigh impacts, risks\n\n\n(Supply Chain Dive)",
+      "link": "https://finance.yahoo.com/m/3c2715df-8af1-38c3-870b-bcd3b2d33550/ups-buyouts%3A-experts-weigh.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Prediction: United Parcel Service Will Help Make You Richer by 2030\n\n\n(Motley Fool)",
+      "link": "/news/174354/prediction-united-parcel-service-will-help-make-you-richer-by-2030"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "12:03",
+      "title": "Jim Cramer Mentions Important Factor About United Parcel Service, Inc. (UPS) Stock\n\n\n(Insider Monkey)",
+      "link": "/news/173524/jim-cramer-mentions-important-factor-about-united-parcel-service-inc-ups-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:37AM",
+      "title": "UPS Margins Under Pressure: Is a Turnaround on the Cards?\n\n\n(Zacks)",
+      "link": "/news/173572/ups-margins-under-pressure-is-a-turnaround-on-the-cards"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30AM",
+      "title": "Self-made millionaire behind $4 billion Skims says it all began with a cold call to Kris Jenner: I have no delusions of who gets to run a business\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/self-made-millionaire-behind-4-093000692.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:24AM",
+      "title": "3 Big Dividends That Could Be at Risk and 1 That Isn't\n\n\n(Motley Fool)",
+      "link": "/news/172929/3-big-dividends-that-could-be-at-risk-and-1-that-isnt"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00AM",
+      "title": "3 High-Yielding Dividend Stocks to Buy and Hold for the Long Haul -- Including United Parcel Service (UPS) and Pfizer\n\n\n(Motley Fool)",
+      "link": "/news/172920/3-high-yielding-dividend-stocks-to-buy-and-hold-for-the-long-haul-including-united-parcel-service-ups-and-pfizer"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:51AM",
+      "title": "3 Magnificent Stocks I'm Close to Buying, Even Amid a Historically Pricey Stock Market\n\n\n(Motley Fool)",
+      "link": "/news/172919/3-magnificent-stocks-im-close-to-buying-even-amid-a-historically-pricey-stock-market"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "13:49",
+      "title": "3 High-Yields at 52-Week Lows: Buy, Sell, or Hold\n\n\n(MarketBeat)",
+      "link": "/news/172547/3-high-yields-at-52-week-lows-buy-sell-or-hold"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:55AM",
+      "title": "UPS Terminates Estafeta Deal: How Should You Approach the Stock Now?\n\n\n(Zacks)",
+      "link": "/news/172466/ups-terminates-estafeta-deal-how-should-you-approach-the-stock-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:16AM",
+      "title": "UPS boosts intra-Asia air capacity as US volumes wane\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/ups-boosts-intra-asia-air-131614661.html"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "13:43",
+      "title": "3 Overlooked Value Stocks Set to Surge as Rates Drop\n\n\n(MarketBeat)",
+      "link": "/news/171686/3-overlooked-value-stocks-set-to-surge-as-rates-drop"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "18:41",
+      "title": "Could Buying United Parcel Service Today Set You Up for Life?\n\n\n(Motley Fool)",
+      "link": "/news/171494/could-buying-united-parcel-service-today-set-you-up-for-life"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:15PM",
+      "title": "Is UPS a Millionaire-Maker Stock?\n\n\n(Motley Fool)",
+      "link": "/news/171457/is-ups-a-millionaire-maker-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:01AM",
+      "title": "United Parcel Service Stock: Bull vs. Bear\n\n\n(Motley Fool)",
+      "link": "/news/171357/united-parcel-service-stock-bull-vs-bear"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:43AM",
+      "title": "Jim Cramer Shows Concern About United Parcel's High Yield\n\n\n(Insider Monkey)",
+      "link": "/news/171338/jim-cramer-shows-concern-about-united-parcels-high-yield"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "17:07",
+      "title": "Stocks to Watch Recap: Lennar, FedEx, Apple\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/29c44e28-1a0a-3a55-b35c-48bfbd47a442/stocks-to-watch-recap%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:31PM",
+      "title": "UPS Stock Gets Downgraded Despite Solid FedEx Earnings. What's Bugging the Analyst.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/ups-stock-downgrade-fedex-earnings-12a679c6?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:37PM",
+      "title": "UPS Walks Away From Estafeta Deal After Hurdles\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/ups-walks-away-estafeta-deal-173741421.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:37AM",
+      "title": "Paramount and WBD, UPS, Apple iPhone 17: Trending Tickers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/paramount-wbd-ups-apple-iphone-153752201.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:56AM",
+      "title": "UPS adds surcharges to various US import, export services\n\n\n(Supply Chain Dive)",
+      "link": "https://finance.yahoo.com/m/8b7b0fa4-7e41-3f03-a233-c2daeb8a2699/ups-adds-surcharges-to.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:42AM",
+      "title": "Intel, FedEx and UPS, Tesla: Top Analyst Calls\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/intel-fedex-ups-tesla-top-144236672.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:39AM",
+      "title": "Intel downgraded, Tesla upgraded: Wall Street's top analyst calls\n\n\n(The Fly)",
+      "link": "https://finance.yahoo.com/news/intel-downgraded-tesla-upgraded-wall-133934859.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:35AM",
+      "title": "Stocks to Watch Friday: Lennar, FedEx, Apple\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/29c44e28-1a0a-3a55-b35c-48bfbd47a442/stocks-to-watch-friday%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:59AM",
+      "title": "UPS downgraded by BMO as B2B recovery remains elusive\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/ups-downgraded-bmo-b2b-recovery-115916006.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:13AM",
+      "title": "Wall St set for muted open but indexes on track for weekly gains; FedEx jumps\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/us-stock-futures-steady-indexes-101301319.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:29AM",
+      "title": "FedEx shares rise as U.S. deliveries, cost cuts drive first-quarter results beat\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/fedex-shares-rally-wall-street-092911610.html"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "23:52",
+      "title": "Jim Cramer on UPS: \"I Wish I Could Be More Positive\"\n\n\n(Insider Monkey)",
+      "link": "/news/170225/jim-cramer-on-ups-i-wish-i-could-be-more-positive"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:52PM",
+      "title": "UPS cancels deal for Estafeta\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/ups-cancels-deal-estafeta-215209450.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:40PM",
+      "title": "FedEx Stock Pops as Shipping Giant Reinstates Its Full-Year Outlook\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/c6e66233-5d65-3f02-82ae-63f358316a97/fedex-stock-pops-as-shipping.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:49PM",
+      "title": "UPS Terminates Plan to Buy Estafeta\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/logistics/ups-terminates-plan-to-buy-estafeta-4a5f45c0?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:43PM",
+      "title": "FedEx Earnings Have Been Disappointing. Where Charts Say Transportation Stocks Go Next\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/47487cef-bbc7-3813-b8d6-f4859d1099c6/fedex-earnings-have-been.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:46AM",
+      "title": "UPS Stock Just Keeps Falling. What Should Investors Do?\n\n\n(Motley Fool)",
+      "link": "/news/169179/ups-stock-just-keeps-falling-what-should-investors-do"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "06:06",
+      "title": "FedEx profit to be dragged down by US tariffs on previously exempt parcels\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/fedex-profit-dragged-down-us-100650874.html"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "18:00",
+      "title": "United Parcel Service (UPS) Increases Despite Market Slip: Here's What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/167936/united-parcel-service-ups-increases-despite-market-slip-heres-what-you-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:35PM",
+      "title": "The end of 'de minimis' has hit Temu and Shein. Now, it's a problem for bigger companies like FedEx.\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/the-end-of-de-minimis-has-hit-temu-and-shein-now-its-a-problem-for-bigger-companies-like-fedex-e91f9016?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:46PM",
+      "title": "FedEx vs. UPS: Is Either Delivery Stock Still Portfolio Worthy?\n\n\n(Zacks)",
+      "link": "/news/167860/fedex-vs-ups-is-either-delivery-stock-still-portfolio-worthy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:42AM",
+      "title": "Bank of America Securities Downgrades United Parcel Service (UPS) to Sell, Reduces the PT\n\n\n(Insider Monkey)",
+      "link": "/news/167467/bank-of-america-securities-downgrades-united-parcel-service-ups-to-sell-reduces-the-pt"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "20:00",
+      "title": "The New Pitfall of Online Shopping: A Surprise Tariff Bill\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/logistics/the-new-pitfall-of-online-shopping-a-surprise-tariff-bill-bc4f333f?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:31AM",
+      "title": "Jason Calacanis Says Amazon Will Replace All Factory Workers And Drivers By 2030. The Idea Of A Human Touching Your Package Will Be 'Insane'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/jason-calacanis-says-amazon-replace-123101588.html"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "15:40",
+      "title": "United Parcel Service, Inc. (UPS): Jim Cramer Warns About Its High Dividend Yield\n\n\n(Insider Monkey)",
+      "link": "/news/165246/united-parcel-service-inc-ups-jim-cramer-warns-about-its-high-dividend-yield"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Should You Buy UPS While It's Below $85?\n\n\n(Motley Fool)",
+      "link": "/news/164740/should-you-buy-ups-while-its-below-85"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:30AM",
+      "title": "3 Absurdly Cheap Stocks to Buy for the Long Haul\n\n\n(Motley Fool)",
+      "link": "/news/164653/3-absurdly-cheap-stocks-to-buy-for-the-long-haul"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:30AM",
+      "title": "Drop the Ship-pers: FedEx, UPS Downgraded as US Policy Bites Into Import Revenue\n\n\n(The Daily Upside)",
+      "link": "https://finance.yahoo.com/m/0a4fe886-25b9-3531-87eb-94ae2fe74887/drop-the-ship-pers%3A-fedex%2C.html"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "13:38",
+      "title": "De Minimis Shock Morphs Into De Majoris Challenge For UPS And FedEx\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/minimis-shock-morphs-majoris-challenge-173811406.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:43PM",
+      "title": "These Wall Street Analysts Are Wary About Shares of UPS and FedEx. Here's Why.\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/26c3861d-7309-37ba-aeb0-25e8ee2f42b1/these-wall-street-analysts.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:44AM",
+      "title": "Trump's Tariffs Help Trigger a Downgrade of FedEx and UPS Stocks. Why Shares Are Rising.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/trump-tariffs-fedex-ups-stock-price-6d273a13?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:36AM",
+      "title": "United Parcel Service Director Buy Signals Confidence Amid Revenue Dip and EPS Miss\n\n\n(Insider Monkey)",
+      "link": "/news/163919/united-parcel-service-director-buy-signals-confidence-amid-revenue-dip-and-eps-miss"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:31AM",
+      "title": "Stocks to Watch Thursday: Opendoor, Kroger, Centene\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/7db1d06b-8646-36f4-b336-4e2c1758b485/stocks-to-watch-thursday%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:31AM",
+      "title": "UBS Maintains a Buy Rating on United Parcel Service (UPS)\n\n\n(Insider Monkey)",
+      "link": "/news/163906/ubs-maintains-a-buy-rating-on-united-parcel-service-ups"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:55AM",
+      "title": "2 Shipping Stocks Downgraded on End to Tariff Exemption\n\n\n(Schaeffer's Research)",
+      "link": "/news/163829/2-shipping-stocks-downgraded-on-end-to-tariff-exemption"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:49AM",
+      "title": "Nvidia upgrade, UPS downgrade, Klarna's post-IPO fall\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/nvidia-upgrade-ups-downgrade-klarnas-144954237.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:47AM",
+      "title": "Apple downgraded, Nvidia upgraded: Wall Street's top analyst calls\n\n\n(The Fly)",
+      "link": "https://finance.yahoo.com/news/apple-downgraded-nvidia-upgraded-wall-134736182.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:40AM",
+      "title": "Buy, Sell or Hold FDX Stock? Key Tips Ahead of Q1 Earnings\n\n\n(Zacks)",
+      "link": "/news/163788/buy-sell-or-hold-fdx-stock-key-tips-ahead-of-q1-earnings"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:41AM",
+      "title": "BofA cuts UPS, FedEx ratings, citing de minimis volume and cost pressures\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/bofa-cuts-ups-fedex-ratings-114132329.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:07AM",
+      "title": "UPS rolls out small business discounts ahead of peak season\n\n\n(Supply Chain Dive)",
+      "link": "https://finance.yahoo.com/m/ae62edd6-3f05-397a-8058-53b05b17c685/ups-rolls-out-small-business.html"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "12:33",
+      "title": "Veho brings e-commerce delivery network to southern California\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/veho-brings-e-commerce-delivery-163349973.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:21AM",
+      "title": "UPS vs. JBHT: Which Dividend-Paying Transportation Stock Has an Edge?\n\n\n(Zacks)",
+      "link": "/news/162546/ups-vs-jbht-which-dividend-paying-transportation-stock-has-an-edge"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "UPS and American Express Announce Collaboration at the Intersection of Logistics and Payments\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250910505613/en"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "16:18",
+      "title": "OnTrac challenges FedEx, UPS with cross-country delivery services\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/ontrac-challenges-fedex-ups-cross-201829655.html"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "09:03",
+      "title": "United Parcel Service Stock: Is UPS Underperforming the Industrial Sector?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/a2ed495e-fd84-3b70-8cd0-fdeb6e175de1/united-parcel-service-stock%3A.html"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "06:04",
+      "title": "Chinese Robotics Company Geekplus Eyes New Listing as It Nears Profitability\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/dec2dfe9-34e0-3ade-84ff-9e934c85b89d/chinese-robotics-company.html"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "12:57",
+      "title": "United Parcel Service, Inc. (UPS): A Bull Case Theory\n\n\n(Insider Monkey)",
+      "link": "/news/158178/united-parcel-service-inc-ups-a-bull-case-theory"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "07:54",
+      "title": "Where Will UPS Be in 3 Years?\n\n\n(Motley Fool)",
+      "link": "/news/156627/where-will-ups-be-in-3-years"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "18:00",
+      "title": "Here's Why United Parcel Service (UPS) Fell More Than Broader Market\n\n\n(Zacks)",
+      "link": "/news/156221/heres-why-united-parcel-service-ups-fell-more-than-broader-market"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:54AM",
+      "title": "Parcel carriers hike surcharges for busy holiday season\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/parcel-carriers-hike-surcharges-busy-125438846.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:14AM",
+      "title": "UPS unveils 2025 holiday shipping surcharges\n\n\n(Supply Chain Dive)",
+      "link": "https://finance.yahoo.com/m/5bbe07b2-44f2-3114-8562-854c27ecde59/ups-unveils-2025-holiday.html"
+    },
+    {
+      "date": "2025-08-31",
+      "time": "07:45",
+      "title": "Where Will UPS Be After Its Next Earnings Report?\n\n\n(Motley Fool)",
+      "link": "/news/154307/where-will-ups-be-after-its-next-earnings-report"
+    },
+    {
+      "date": "2025-08-30",
+      "time": "08:45",
+      "title": "4 Dividend Stocks to Double Up on Right Now -- Including United Parcel Service and Pfizer\n\n\n(Motley Fool)",
+      "link": "/news/154107/4-dividend-stocks-to-double-up-on-right-now-including-united-parcel-service-and-pfizer"
+    },
+    {
+      "date": "2025-08-29",
+      "time": "10:54",
+      "title": "Revenue Woes Continue to Plague UPS: Is a Turnaround on the Horizon?\n\n\n(Zacks)",
+      "link": "/news/153566/revenue-woes-continue-to-plague-ups-is-a-turnaround-on-the-horizon"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Is the stock market open on Labor Day? Does the post office deliver mail?\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/is-the-stock-market-open-on-labor-day-does-the-post-office-deliver-mail-bb5eb801?mod=mw_FV"
+    }
+  ]
+}

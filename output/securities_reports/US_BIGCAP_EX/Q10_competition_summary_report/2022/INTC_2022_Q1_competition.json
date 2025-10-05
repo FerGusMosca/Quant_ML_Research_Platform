@@ -1,0 +1,1132 @@
+{
+  "symbol": "INTC",
+  "year": 2022,
+  "period": "Q1",
+  "competition_summary": [
+    {
+      "competitor": "COVID-19",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "SEC",
+      "mentions": 3,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Intel",
+      "mentions": 110,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Intel Core",
+      "mentions": 3,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Intel Corporation",
+      "mentions": 3,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Review Total",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "CCG",
+      "mentions": 19,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "DCAI",
+      "mentions": 12,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "NEX",
+      "mentions": 6,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Edge",
+      "mentions": 8,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "GPU",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "IoT Edge",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "IoT",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Semiconductor Co-Investment Program",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Brookfield Asset Management",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Smart Capital",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "IDM",
+      "mentions": 4,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Ocotillo",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "IFS",
+      "mentions": 5,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "IPO",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Consolidated Condensed Financial Statements and Supplemental Details",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Diluted",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Restricted",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "880",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Consolidated Condensed Financial Statements Note",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Consolidated Condensed Financial Statements",
+      "mentions": 9,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Consolidated Financial Statements",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "CODM",
+      "mentions": 4,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Accelerated Computing Systems and Graphics",
+      "mentions": 4,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "AXG",
+      "mentions": 6,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Mobileye",
+      "mentions": 6,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "SoC",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Client Computing Desktop",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Intel Foundry Services",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Client Computing",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "CXL",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Consolidated Condensed Statements of Income",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Corporate",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Financial Statements 9 Table of Contents Note",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "treasury",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Net Three Months Ended Nine Months Ended",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "NAND",
+      "mentions": 12,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Financial Statements 10 Table of Contents Note 5",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Restructuring Program",
+      "mentions": 4,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Consolidated Condensed Balance Sheets",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "EC",
+      "mentions": 16,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "VLSI",
+      "mentions": 43,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Contingencies",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Financial Statements 11 Table of Contents Equity Investments",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "McAfee Corp. McAfee Corp.",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "McAfee",
+      "mentions": 5,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Beijing Unisoc Technology Ltd.",
+      "mentions": 3,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Tower Semiconductor",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Tower Semiconductor Ltd.",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Tower",
+      "mentions": 3,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "IDM 2.0",
+      "mentions": 4,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Financial Statements Notes",
+      "mentions": 4,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Financial Statements 12 Table of Contents Divestitures NAND Memory Business",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "SK hynix Inc.",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "IP",
+      "mentions": 3,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the NAND OpCo Business",
+      "mentions": 8,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Consolidated Condensed Balance Sheets",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Financial Statements 13 Table of Contents Note",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Industrial Development Authority of the City of Chandler",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 3,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Reporting Date Using Fair\u00a0Value\u00a0Measured",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Reporting Date Using",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Financial",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "receivable\u00b3",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "U.S. Treasury",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Non-Recurring Basis Our",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Financial Statements 15 Table of Contents Financial Instruments Not Recorded",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Basis Financial",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Derivatives Actuarial Valuation and Other Pension Expenses Translation Adjustments",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Derivative Financial Instruments Volume of Derivative Activity Total",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "2,517 Total",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Balance Sheet Net Amounts Presented",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Balance Sheet Financial Instruments Cash",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Non-Cash Collateral",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Financial Statements 17 Table",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Consolidated",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Arizona Fab",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "European Commission Competition Matter In",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the European Commission",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Advanced Micro Devices, Inc.",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "AMD",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the European Economic Area Agreement",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Court of First Instance",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the General Court",
+      "mentions": 7,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the European Court of Justice",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Intervener Association for Competitive Technologies",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "The Court of Justice",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Court of Justice",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the General Court's",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Intervener Association for Competitive Technologies",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Litigation Related to",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Google",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Ninth Circuit Court of Appeals",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Superior Court of Justice of Ontario",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Superior Court of Justice of Quebec",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the District Court",
+      "mentions": 4,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "VLSI Technology",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "LLC",
+      "mentions": 5,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "District Court",
+      "mentions": 4,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "NXP Semiconductors",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "NXP",
+      "mentions": 4,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Freescale Semiconductor, Inc.",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "NXP B.V.",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "FPGA",
+      "mentions": 3,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Inter Partes Review",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "IPR",
+      "mentions": 5,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "The Patent Trial and Appeal Board",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "The Federal Circuit",
+      "mentions": 3,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Financial Statements 20 Table of Contents In",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Treasury",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Shenzhen Intermediate People\u2019s Court",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Intel Trading",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Shanghai) Co., Ltd.",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Intel Products",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Chengdu) Co.,",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "CNIPA",
+      "mentions": 8,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Shanghai Intellectual Property Court",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Apple Inc.",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Fortress Investment Group",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Fortress Credit Co.",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Uniloc 2017",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Uniloc USA, Inc.",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "DSS Technology Management, Inc.",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "IXI IP",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "California Business and Professions Code section",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Apple",
+      "mentions": 3,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Networks",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Second Amended Complaint",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Financial Statements 21 Table of Contents In",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Finjan Holdings",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Finjan",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Delaware Chancery Court",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Chancery Court",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Delaware Court",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "The Delaware Court",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Texas Court",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "VLSI Texas",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Supreme Court",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "OpenSky Industries",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "OpenSky",
+      "mentions": 5,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "PQA",
+      "mentions": 6,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the United States Patent & Trademark Office",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Litigation Related",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "node",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "AI Artificial intelligence ASP Average",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "CCG Client Computing Group",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the World Health Organization CPU Processor",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Compute Express",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "EC European Commission",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "GPU Graphics",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "IDM Integrated",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "IFS Intel Foundry Services",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "IP Intellectual",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "London Inter-Bank Offered Rate",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "MD&A Management's Discussion & Analysis MG&A Marketing",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "NEX Networking",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Nanometer ODM Original",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "OEM Original",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "R&D Research",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "RSU Restricted",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "SCIP Semiconductor Co-Investment Program",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "SEC U.S. Securities and Exchange Commission",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Tax Reform U.S. Tax Cuts and Jobs Act",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "U.S. Generally Accepted Accounting",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Financial Statements 23 Table of Contents Management's Discussion and Analysis",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Enthusiast",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "MD&A",
+      "mentions": 16,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Q3 2022",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Notebook and Desktop",
+      "mentions": 4,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "AI",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "SuperFin",
+      "mentions": 5,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Contents Network & Edge NEX",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "MD&A 28 Table of Contents Operating Income Summary Operating",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "HPC",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "ADAS",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Robotaxi",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Mobileye Revenue",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Contents Intel Foundry Services IFS",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "IPs",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "MD&A 33 Table of Contents Revenue Segment Revenue Walk",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "MG&A",
+      "mentions": 5,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Equity Investments and Interest",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Montage Technology",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Co. Ltd",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "MD&A 37 Table of Contents Liquidity and Capital Resources",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Definition Usefulness",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Share",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Tax Reform",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Nine Months Ended",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "MD&A 42 Table of Contents Other Key Information Quantitative and Qualitative Disclosures About Market Risk We",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Internal Control Over Financial Reporting",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Issuer Purchases of",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Key Information 43 Table of Contents Disclosure Pursuant to Section",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Securities Exchange Act",
+      "mentions": 3,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "State",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the Federal Security Service",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "FSB",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the U.S. Department of the Treasury\u2019s Office of Foreign Assets Control (OFAC",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "the U.S. Department",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "AO",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Positive Technologies",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "OFAC",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Key Information 44 Table",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Computershare Trust Company",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "National Association",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Wells Fargo Bank",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "8/5/2022 10.1 Purchase and Contribution Agreement",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Arizona Fab HoldCo Inc.",
+      "mentions": 2,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Foundry JV Holdco LLC",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Restated Limited Liability Company Agreement",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Arizona Fab LLC",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Foundry JV Holdco",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Intel Corporation Form of Non-Employee",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Restricted Stock",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Consolidated Condensed Financial Statements and Supplemental Details X 104 Cover Page Interactive Data File",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Key Information 45 Table of Contents Form 10-Q Cross-Reference Index Item Number Item",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Management's Discussion and Analysis of Financial Condition",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Pages 2",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "Mine Safety Disclosures Not applicable Item 5",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    },
+    {
+      "competitor": "INTEL CORPORATION",
+      "mentions": 1,
+      "context": "competition, investments in R&D and our business, products, and technologies, vulnerability to product and manufacturing-related risks, the effects of the COVID-19 pandemic, supply chain risks, cybersecurity and privacy risks, investment and transaction risk, evolving regulatory and legal requirements, and the risks of our global operations, among others. Given these risks and uncertainties, readers are cautioned not to place undue reliance on such forward-looking statements. Readers are urged t"
+    }
+  ]
+}

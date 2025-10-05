@@ -1,0 +1,12 @@
+{
+  "symbol": "NOW",
+  "period": "2019",
+  "report_type": "YearlyIncomeStatement",
+  "items": {
+    "Total Unusual Items": -47000000.0,
+    "Total Unusual Items Excluding Goodwill": -47000000.0,
+    "Special Income Charges": -47000000.0,
+    "Other Special Charges": 47000000.0,
+    "Gain On Sale Of Security": -14076000.0
+  }
+}

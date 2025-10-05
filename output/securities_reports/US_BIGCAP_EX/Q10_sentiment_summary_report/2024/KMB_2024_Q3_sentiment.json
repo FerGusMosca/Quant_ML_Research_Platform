@@ -1,0 +1,47 @@
+{
+  "symbol": "KMB",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1436,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.067
+  },
+  "top_positive": [
+    {
+      "sent": "On March 27, 2024, we announced the 2024 Transformation Initiative designed  to sharpen our strategic focus through a new operating model that leverages three synergistic forces: \u2022 Accelerating pioneering innovation to capture significant growth available in our categories by investing in science and technology to satisfy unmet and evolving consumer needs, \u2022 Optimizing our margin structure to deliver superior consumer propositions and implement initiatives and deploy technology and data analytics designed to create a fast, adaptable, integrated supply chain with greater visibility that can deliver continuous improvement, and \u2022 Wiring our organization for growth to drive agility, speed, and focused execution that extends our competitive advantages further into the future.",
+      "score": 0.9834
+    },
+    {
+      "sent": "On March 27, 2024, we announced the 2024 Transformation Initiative designed  to sharpen our strategic focus through a new operating model that leverages three synergistic forces: \u2022 Accelerating pioneering innovation to capture significant growth available in our categories by investing in science and technology to satisfy unmet and evolving consumer needs, \u2022 Optimizing our margin structure to deliver superior consumer propositions and implement initiatives and deploy technology and data analytics designed to create a fast, adaptable, integrated supply chain with greater visibility that can deliver continuous improvement, and \u2022 Wiring our organization for growth to drive agility, speed, and focused execution that extends our competitive advantages further into the future.",
+      "score": 0.9834
+    },
+    {
+      "sent": "Fair Value Information The following fair value information is based on a fair value hierarchy that prioritizes the inputs to valuation techniques used to measure fair value.",
+      "score": 0.9413
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "In addition, many factors outside our control, including the risk that we are not able to realize the anticipated benefits of the 2024 21 Transformation Initiative (including risks related to disruptions to our business or operations or related to any delays in implementation), war in Ukraine (including the related responses of consumers, customers, and suppliers and sanctions issued by the U.S., the European Union, Russia or other countries), pandemics, epidemics, fluctuations in foreign currency exchange rates, the prices and availability of our raw materials, supply chain disruptions, disruptions in the capital and credit markets, counterparty defaults (including customers, suppliers and financial institutions with which we do business), failure to realize the expected benefits or synergies from our acquisition and disposition activity, impairment of goodwill and intangible assets and our projections of operating results and other factors that may affect our impairment testing, changes in customer preferences, severe weather conditions, regional instabilities and hostilities (including the war in Israel), government trade or similar regulatory actions, potential competitive pressures on selling prices for our products, energy costs, general economic and political conditions globally and in the markets in which we do business, as well as our ability to maintain key customer relationships, could affect the realization of these estimates.",
+      "score": -0.93
+    },
+    {
+      "sent": "In addition, many factors outside our control, including the risk that we are not able to realize the anticipated benefits of the 2024 21 Transformation Initiative (including risks related to disruptions to our business or operations or related to any delays in implementation), war in Ukraine (including the related responses of consumers, customers, and suppliers and sanctions issued by the U.S., the European Union, Russia or other countries), pandemics, epidemics, fluctuations in foreign currency exchange rates, the prices and availability of our raw materials, supply chain disruptions, disruptions in the capital and credit markets, counterparty defaults (including customers, suppliers and financial institutions with which we do business), failure to realize the expected benefits or synergies from our acquisition and disposition activity, impairment of goodwill and intangible assets and our projections of operating results and other factors that may affect our impairment testing, changes in customer preferences, severe weather conditions, regional instabilities and hostilities (including the war in Israel), government trade or similar regulatory actions, potential competitive pressures on selling prices for our products, energy costs, general economic and political conditions globally and in the markets in which we do business, as well as our ability to maintain key customer relationships, could affect the realization of these estimates.",
+      "score": -0.93
+    },
+    {
+      "sent": "In addition, many factors outside our control, including the risk that we are not able to realize the anticipated benefits of the 2024 21 Transformation Initiative (including risks related to disruptions to our business or operations or related to any delays in implementation), war in Ukraine (including the related responses of consumers, customers, and suppliers and sanctions issued by the U.S., the European Union, Russia or other countries), pandemics, epidemics, fluctuations in foreign currency exchange rates, the prices and availability of our raw materials, supply chain disruptions, disruptions in the capital and credit markets, counterparty defaults (including customers, suppliers and financial institutions with which we do business), failure to realize the expected benefits or synergies from our acquisition and disposition activity, impairment of goodwill and intangible assets and our projections of operating results and other factors that may affect our impairment testing, changes in customer preferences, severe weather conditions, regional instabilities and hostilities (including the war in Israel), government trade or similar regulatory actions, potential competitive pressures on selling prices for our products, energy costs, general economic and political conditions globally and in the markets in which we do business, as well as our ability to maintain key customer relationships, could affect the realization of these estimates.",
+      "score": -0.93
+    }
+  ],
+  "forward_snippets": [
+    "guidance requires the use of highly inflationary accounting for countries whose cumulative three-year inflation exceeds 100 percent.",
+    "The new guidance requires that a buyer in a supplier finance program disclose sufficient information about the program to allow a user of the financial statements to understand the program\u2019s nature, activity during the period, changes from period to period, and potential magnitude.",
+    "As the guidance requires only additional disclosure, there were no effects of this standard on our financial position, results of operations or cash flows.",
+    "The new guidance improves reportable segment disclosures primarily through enhanced disclosures about significant segment expenses and by requiring current annual disclosures to be provided in interim periods.",
+    "The new guidance is to be applied retrospectively to all prior periods presented unless impracticable to do so."
+  ]
+}

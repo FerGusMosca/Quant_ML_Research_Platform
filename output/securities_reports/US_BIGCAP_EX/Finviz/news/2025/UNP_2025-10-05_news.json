@@ -1,0 +1,606 @@
+{
+  "symbol": "UNP",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-05",
+      "time": "Today 08:30AM",
+      "title": "Why tariffs should overtake government shutdown as your biggest investing concern\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/why-tariffs-should-overtake-government-shutdown-as-your-biggest-investing-concern-123032647.html"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "05:01",
+      "title": "The Zacks Analyst Blog Highlights Boston Scientific, Union Pacific, Realty Income and Weyco\n\n\n(Zacks)",
+      "link": "/news/183064/the-zacks-analyst-blog-highlights-boston-scientific-union-pacific-realty-income-and-weyco"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "17:06",
+      "title": "Top Research Reports for Boston Scientific, Union Pacific & Realty Income\n\n\n(Zacks)",
+      "link": "/news/182771/top-research-reports-for-boston-scientific-union-pacific-realty-income"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:20AM",
+      "title": "Canadian National Railway Banks on Dividends Amid Freight Challenges\n\n\n(Zacks)",
+      "link": "/news/182545/canadian-national-railway-banks-on-dividends-amid-freight-challenges"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "East Coast Freight Growth Gets Boost as CSX Reopens Tunnel\n\n\n(Zacks)",
+      "link": "/news/182364/east-coast-freight-growth-gets-boost-as-csx-reopens-tunnel"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "12:56",
+      "title": "Union Pacific CEO: US economy remains resilient, consumer demand holds strong\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/union-pacific-ceo-us-economy-remains-resilient-consumer-demand-holds-strong-165641977.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:18AM",
+      "title": "Union Pacific CEO: Trump 'sees the value' of $85 billion Norfolk Southern deal\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/union-pacific-ceo-trump-sees-the-value-of-85-billion-norfolk-southern-deal-151845466.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:01AM",
+      "title": "Union Pacific CEO talks US innovation, Norfolk Southern deal\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/union-pacific-ceo-talks-us-150113167.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:26AM",
+      "title": "Canadian Pacific Banks on Dividends Amid Freight Challenges\n\n\n(Zacks)",
+      "link": "/news/180974/canadian-pacific-banks-on-dividends-amid-freight-challenges"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "16:26",
+      "title": "Ford CEO Jim Farley says skilled labor shortage holds back 'made in America' ambitions\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/ford-ceo-jim-farley-says-skilled-labor-shortage-holds-back-made-in-america-ambitions-202609423.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:19PM",
+      "title": "UNP Strong on Dividends & Buybacks Amid Freight Weakness\n\n\n(Zacks)",
+      "link": "/news/179968/unp-strong-on-dividends-buybacks-amid-freight-weakness"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:12PM",
+      "title": "CSX Replaces CEO Amid Merger Pressure from Activist Investor\n\n\n(Sourcing Journal)",
+      "link": "https://finance.yahoo.com/m/36ce6c0a-44fd-32a7-90b1-28794aa768ab/csx-replaces-ceo-amid-merger.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:45AM",
+      "title": "Are You Looking for a High-Growth Dividend Stock?\n\n\n(Zacks)",
+      "link": "/news/179836/are-you-looking-for-a-high-growth-dividend-stock"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "11:24",
+      "title": "CSX railroad replaces CEO after investor pressure and poor performance as Union Pacific merger looms\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/csx-railroad-replaces-ceo-investor-152409727.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:41AM",
+      "title": "Hinrichs out as CSX CEO\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/hinrichs-csx-ceo-134113246.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:50AM",
+      "title": "Why Investors Need to Take Advantage of These 2 Transportation Stocks Now\n\n\n(Zacks)",
+      "link": "/news/178383/why-investors-need-to-take-advantage-of-these-2-transportation-stocks-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "CSX appoints Steve Angel as CEO amid activist pressure\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/csx-appoints-steve-angel-ceo-123053421.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:21AM",
+      "title": "Investor: CSX can now search out willing partner for rail merger\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/investor-csx-now-search-willing-122100113.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:24AM",
+      "title": "Rail regulator wants more time to review UP-NS merger\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/rail-regulator-wants-more-time-102400226.html"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "13:08",
+      "title": "Will Ryder's Shareholder-Friendly Initiatives Aid the Bottom Line?\n\n\n(Zacks)",
+      "link": "/news/177227/will-ryders-shareholder-friendly-initiatives-aid-the-bottom-line"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "15:22",
+      "title": "Kirby Approves $8 Million Buyback Program: Will it Aid the Bottom Line?\n\n\n(Zacks)",
+      "link": "/news/176200/kirby-approves-8-million-buyback-program-will-it-aid-the-bottom-line"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:01PM",
+      "title": "Goldman Sachs sees M&A growth driven by industry consolidation, its president says\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/goldman-sachs-sees-m-growth-190140066.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:41AM",
+      "title": "CSX Stock Has Had a Bumpy Ride. It's Time to Buy, Says Wells Fargo.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/csx-stock-price-rating-buy-4b0b236d?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "Union Pacific Corporation Announces Third Quarter 2025 Earnings Release Date\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250925341100/en"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "15:01",
+      "title": "Rail merger: Lifetime job is great until you are stuck in it\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/rail-merger-lifetime-job-great-190114093.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:50AM",
+      "title": "How to Boost Your Portfolio with Top Transportation Stocks Set to Beat Earnings\n\n\n(Zacks)",
+      "link": "/news/174572/how-to-boost-your-portfolio-with-top-transportation-stocks-set-to-beat-earnings"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "06:30",
+      "title": "Biggest rail union backs UP-NS merger after railroads guarantee job protections\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/biggest-rail-union-backs-ns-103000808.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:11AM",
+      "title": "Union Pacific-Norfolk Southern: Shippers flag merger concerns\n\n\n(Supply Chain Dive)",
+      "link": "https://finance.yahoo.com/m/b7012711-68b2-3023-a75f-fe8100101738/union-pacific-norfolk.html"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "17:48",
+      "title": "Biggest rail union joins others in endorsing Union Pacific merger but some still have reservations\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/biggest-rail-union-joins-others-214831795.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:46PM",
+      "title": "Trump, Top Labor Group Signal Support for Union Pacific-Norfolk Southern Merger\n\n\n(Sourcing Journal)",
+      "link": "https://finance.yahoo.com/m/e5ed4dce-777c-377c-8221-811cbcbabb00/trump%2C-top-labor-group-signal.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:31PM",
+      "title": "Union Pacific Corporation (UNP) CEO Holds Meeting with President Donald Trump to Discuss Norfolk Southern Acquisition\n\n\n(Insider Monkey)",
+      "link": "/news/172702/union-pacific-corporation-unp-ceo-holds-meeting-with-president-donald-trump-to-discuss-norfolk-southern-acquisition"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:36PM",
+      "title": "Largest US rail union endorses Union Pacific, Norfolk Southern merger\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/largest-us-rail-union-endorses-163627351.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:37AM",
+      "title": "SMART-TD and Union Pacific Announce Landmark Agreement Securing Jobs and the Future of Railroading\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250922776661/en/"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:11AM",
+      "title": "Union Pacific adds 15 focus sites to network\n\n\n(Supply Chain Dive)",
+      "link": "https://finance.yahoo.com/m/07d6de72-d633-3e9f-8ecf-ee85fa40efea/union-pacific-adds-15-focus.html"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "03:00",
+      "title": "M&A Has Surged. It Doesn't Always Work Out for Buyers.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/mergers-acquisitions-stock-buyers-sellers-57f34717?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "23:22",
+      "title": "Dividend Paying Stocks in Railroads: The Case for Union Pacific Corporation (UNP)\n\n\n(Insider Monkey)",
+      "link": "/news/171506/dividend-paying-stocks-in-railroads-the-case-for-union-pacific-corporation-unp"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30AM",
+      "title": "The Years Biggest Deal Could Yield a Record Payout for Bank of America\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/693de84b-69f7-3d02-81cb-94c6c8023595/the-year%E2%80%99s-biggest-deal-could.html"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "22:15",
+      "title": "Trump: Union Pacific, Norfolk Southern merger sounds good to me\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/trump-union-pacific-norfolk-southern-021523623.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:37PM",
+      "title": "Trump says Union Pacific merger with Norfolk Southern 'sounds good'\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/trump-says-union-pacific-merger-223731149.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:12PM",
+      "title": "Beware This Bull Trap as Stocks Keep Hitting New Highs\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/552d1274-dbda-3ab8-85ab-71389cd345ba/beware-this-%E2%80%98bull-trap%E2%80%99-as.html"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "12:00",
+      "title": "Union Pacifics Legendary Big Boy 4014 to Make Two Whistle-Stops in Colorado During Limited Fall Excursion\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250918073000/en/Union"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:14AM",
+      "title": "RBC upgrades CSX, says shares gain under most rail merger outcomes\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/rbc-upgrades-csx-says-shares-141434959.html"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "09:40",
+      "title": "Apple initiated, Hershey upgraded: Wall Streets top analyst calls\n\n\n(TipRanks)",
+      "link": "https://finance.yahoo.com/news/apple-initiated-hershey-upgraded-wall-134053219.html"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "23:59",
+      "title": "Norfolk Southern, Union Pacific to have joint intermodal operation in Louisville\n\n\n(The Portsmouth Daily Times, Ohio)",
+      "link": "https://finance.yahoo.com/m/2f062ede-a0a6-3d12-9c22-ffc4acc81784/norfolk-southern%2C-union.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:04PM",
+      "title": "Rail merger warning: Higher costs, worse service ahead\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/rail-merger-warning-higher-costs-160438998.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:58AM",
+      "title": "Freight Demand and Consistent Dividends: Why Union Pacific (UNP) Remains a Dividend Favorite\n\n\n(Insider Monkey)",
+      "link": "/news/167229/freight-demand-and-consistent-dividends-why-union-pacific-unp-remains-a-dividend-favorite"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:35AM",
+      "title": "Apple initiated, Hershey upgraded: Wall Street's top analyst calls\n\n\n(The Fly)",
+      "link": "https://finance.yahoo.com/news/apple-initiated-hershey-upgraded-wall-133534443.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:19AM",
+      "title": "UP, NS intermodal service to connect western, southern markets\n\n\n(Supply Chain Dive)",
+      "link": "https://finance.yahoo.com/m/d2b9b0c0-baf5-39a9-881b-3f8d2adaf455/up%2C-ns-intermodal-service-to.html"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "16:56",
+      "title": "Auto & Transport Roundup: Market Talk\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/282e27d9-285e-3e57-87f8-2cdd46cf9dfe/auto-%26-transport-roundup%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:25PM",
+      "title": "This Railroad Stock Is On Track for Gains After Merger Mania. The Case to Buy.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/ac4da0ea-67d0-3b22-999e-e29798e4ae07/this-railroad-stock-is-on.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:47PM",
+      "title": "China probes Texas Instruments, CoreWeave & Nvidia, Union Pacific\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/china-probes-texas-instruments-coreweave-194709296.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:29AM",
+      "title": "Union Pacific, Norfolk Southern roll out new domestic intermodal\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/union-pacific-norfolk-southern-roll-152917390.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:40AM",
+      "title": "Broadcom initiated, Beyond Meat downgraded: Wall Street's top analyst calls\n\n\n(The Fly)",
+      "link": "https://finance.yahoo.com/news/broadcom-initiated-beyond-meat-downgraded-134059715.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:55AM",
+      "title": "NYSE Content Advisory: Pre-Market Update + S&P comes off best week since August\n\n\n(PR Newswire)",
+      "link": "/news/165989/nyse-content-advisory-pre-market-update-sp-comes-off-best-week-since-august"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "New Union Pacific and Norfolk Southern Intermodal Gateway Expands Market Access\n\n\n(PR Newswire)",
+      "link": "/news/165876/new-union-pacific-and-norfolk-southern-intermodal-gateway-expands-market-access"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:47AM",
+      "title": "This Railroad Stock Is On Track for Gains. The Case to Buy.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/union-pacific-stock-buy-upgrade-2e180a0a?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00AM",
+      "title": "Fed Rate Decision, MKR-SKY Conversion Deadline: Crypto Week Ahead\n\n\n(CoinDesk)",
+      "link": "https://finance.yahoo.com/m/d3757f52-35c1-3dea-8e6f-f44d59ed62a1/fed-rate-decision%2C-mkr-sky.html"
+    },
+    {
+      "date": "2025-09-14",
+      "time": "13:40",
+      "title": "Union Pacific CEO pitched Trump on National Guard deployments\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/union-pacific-ceo-pitched-trump-174041417.html"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "17:41",
+      "title": "Trump, Union Pacific CEO Discussed $72 Billion Acquisition of\u00a0Norfolk Southern\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/trump-union-pacific-ceo-discussed-170713729.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:41PM",
+      "title": "Union Pacific CEO held talks with Trump on $85 billion plan to buy Norfolk\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/union-pacific-ceo-says-had-184146561.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:06PM",
+      "title": "After Trump Meeting, Union Pacific CEO Defends Norfolk Southern Deal as Catalyst for Fiercer Rail Competition\n\n\n(Sourcing Journal)",
+      "link": "https://finance.yahoo.com/m/525ce610-11c4-3ac7-a143-32c43698cd11/after-trump-meeting%2C-union.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:57AM",
+      "title": "Union Pacific Corporation (UNP) Announces Ratified Agreements with 11 Unions\n\n\n(Insider Monkey)",
+      "link": "/news/164995/union-pacific-corporation-unp-announces-ratified-agreements-with-11-unions"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:50AM",
+      "title": "How to Boost Your Portfolio with Top Transportation Stocks Set to Beat Earnings\n\n\n(Zacks)",
+      "link": "/news/164828/how-to-boost-your-portfolio-with-top-transportation-stocks-set-to-beat-earnings"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "13:51",
+      "title": "Trump Nominates New Board Member for Regulator Weighing Rail Merger\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/cpi-report-today-inflation-stock-market-09-11-2025/card/trump-nominates-new-board-member-for-regulator-weighing-rail-merger-lpJfmZGaFHRlxCkqVcyA?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:45AM",
+      "title": "Union Pacific (UNP) Could Be a Great Choice\n\n\n(Zacks)",
+      "link": "/news/164013/union-pacific-unp-could-be-a-great-choice"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:35AM",
+      "title": "Union Pacific, Norfolk Southern: Rival alliances bolster merger case\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/union-pacific-norfolk-southern-rival-133537639.html"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "20:39",
+      "title": "Union Pacific CEO Vena says Norfolk Southern merger will win approval\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/union-pacific-ceo-vena-says-003947061.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:29PM",
+      "title": "Kirby Rewards Shareholders With New Share Repurchase Authorization\n\n\n(Zacks)",
+      "link": "/news/162885/kirby-rewards-shareholders-with-new-share-repurchase-authorization"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:22AM",
+      "title": "CN, CSX join on new Nashville intermodal service\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/anti-merger-cn-csx-join-132200963.html"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "00:04",
+      "title": "3 Reasons UNP is Risky and 1 Stock to Buy Instead\n\n\n(StockStory)",
+      "link": "/news/159731/3-reasons-unp-is-risky-and-1-stock-to-buy-instead"
+    },
+    {
+      "date": "2025-09-07",
+      "time": "10:07",
+      "title": "Union Pacific: Laying the Tracks for America's Industrial Renewal\n\n\n(MarketBeat)",
+      "link": "/news/159490/union-pacific-laying-the-tracks-for-americas-industrial-renewal"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "14:00",
+      "title": "Union Pacific Railroad Announces Pay Raises and Labor Agreements with 11 Unions that Cover 12 Crafts\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250903151591/en/"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "Union Pacific Corporation Executives to Address Morgan Stanley's 13th Annual Laguna Conference\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250903413931/en"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "23:38",
+      "title": "Q2 Earnings Highs And Lows: Union Pacific (NYSE:UNP) Vs The Rest Of The Transportation and Logistics Stocks\n\n\n(StockStory)",
+      "link": "/news/156429/q2-earnings-highs-and-lows-union-pacific-nyse-unp-vs-the-rest-of-the-transportation-and-logistics-stocks"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:20PM",
+      "title": "Goldman Sachs Predicts Potential Record-Breaking M&A in 2026\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/goldman-sachs-minnis-sees-m-102724653.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:10AM",
+      "title": "White Paper: State of the Industry  September 2025\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/white-paper-state-industry-september-151050086.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:33AM",
+      "title": "Is Union Pacific Stock Underperforming the Nasdaq?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/59ae3863-ab09-34b9-aa2a-79bfcbd5dbd6/is-union-pacific-stock.html"
+    },
+    {
+      "date": "2025-08-31",
+      "time": "16:19",
+      "title": "Union Pacific Corp (UNP) Expands Network with 15 Focus Sites\n\n\n(Insider Monkey)",
+      "link": "/news/154386/union-pacific-corp-unp-expands-network-with-15-focus-sites"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:55AM",
+      "title": "Union Pacific Corporation (UNP)'s Merger Could Suffer From CSX CEO's Belief,  Says Jim Cramer\n\n\n(Insider Monkey)",
+      "link": "/news/154322/union-pacific-corporation-unps-merger-could-suffer-from-csx-ceos-belief-says-jim-cramer"
+    },
+    {
+      "date": "2025-08-30",
+      "time": "09:00",
+      "title": "Trumps Revenge Summer Heats Up With Fed Ouster, Bolton Raid\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/trump-revenge-summer-heats-fed-130000907.html"
+    },
+    {
+      "date": "2025-08-29",
+      "time": "17:00",
+      "title": "Auto & Transport Roundup: Market Talk\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/3f52b13d-3d16-3e54-a2f5-5a041991e1ed/auto-%26-transport-roundup%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:30AM",
+      "title": "Why Is Canadian Pacific Kansas City (CP) Up 3.7% Since Last Earnings Report?\n\n\n(Zacks)",
+      "link": "/news/153655/why-is-canadian-pacific-kansas-city-cp-up-37-since-last-earnings-report"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Trump fires Robert Primus amid Norfolk buyout review, WSJ says\n\n\n(TipRanks)",
+      "link": "https://finance.yahoo.com/news/trump-fires-robert-primus-amid-134515086.html"
+    },
+    {
+      "date": "2025-08-28",
+      "time": "17:59",
+      "title": "Top Stock Reports for Eli Lilly, Oracle & Procter & Gamble\n\n\n(Zacks)",
+      "link": "/news/152857/top-stock-reports-for-eli-lilly-oracle-procter-gamble"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:54PM",
+      "title": "Trump Fires Rail Regulator. Investors Are Taking Note.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/rail-mergers-trump-fires-stb-board-fd43ebe9?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:46AM",
+      "title": "Trump Fires Board Member of Regulator Weighing Rail Merger\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/2fc8f2af-8de7-377e-bc9f-1fa080b8ea33/trump-fires-board-member-of.html"
+    },
+    {
+      "date": "2025-08-27",
+      "time": "17:41",
+      "title": "Wall Street's $1 Trillion Summer: Mega-Deals Reshape the Global M&A Landscape\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/wall-streets-1-trillion-summer-214105244.html"
+    },
+    {
+      "date": "2025-08-26",
+      "time": "17:12",
+      "title": "CSX railroad's merger prospects derail as BNSF and CPKC make clear they aren't interested in a deal\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/csx-railroads-merger-prospects-derail-211253264.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:03PM",
+      "title": "Auto & Transport Roundup: Market Talk\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/ce2f1c17-0994-356e-afdb-a001b37a1cc8/auto-%26-transport-roundup%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:20PM",
+      "title": "CSX Stock Drops Because Buffett Isn't Interested in Rail Merger. It Has Wider Consequences.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/csx-stock-warren-buffett-berkshire-hathaway-rail-merger-f5eff20f?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:04PM",
+      "title": "Analysis-Canadian Pacific joins Buffett in rejecting railroad consolidation, narrowing merger prospects\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/analysis-canadian-pacific-joins-buffett-200456439.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:50PM",
+      "title": "CPKC shares climb as firm rejects rail consolidation push\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/cpkc-shares-climb-firm-rejects-165008541.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:02PM",
+      "title": "CPKC Opposes Union Pacific's Merger with Norfolk Southern\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-08-26-2025/card/cpkc-opposes-union-pacific-s-merger-with-norfolk-southern-ccxnZ9cSCrYzqcdLCNNP?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:35AM",
+      "title": "Zacks Industry Outlook Highlights Union Pacific Corporation, Canadian Pacific Kansas City Limited and CSX Corporation\n\n\n(Zacks)",
+      "link": "/news/150014/zacks-industry-outlook-highlights-union-pacific-corporation-canadian-pacific-kansas-city-limited-and-csx-corporation"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:10AM",
+      "title": "CSX Stock Falls, Buffett Isn't Interested in Rail Merger. That Has Much Wider Consequences.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/csx-stock-buffett-berkshire-rail-merge-f5eff20f?mod=bar_FV"
+    },
+    {
+      "date": "2025-08-25",
+      "time": "13:54",
+      "title": "Warren Buffett Quashes BNSF-CSX Merger Rumors as Railroads Roll Out Coast-to-Coast Services\n\n\n(Sourcing Journal)",
+      "link": "https://finance.yahoo.com/m/b1650bb1-bea9-3751-8e48-d8d61287432f/warren-buffett-quashes.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:24PM",
+      "title": "Buffett shoots down talk of Berkshire railroad merger, CSX shares slide\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/berkshire-hathaway-not-looking-buy-172401826.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:05PM",
+      "title": "3 Railroad Stocks to Watch From the Prospering Industry\n\n\n(Zacks)",
+      "link": "/news/149145/3-railroad-stocks-to-watch-from-the-prospering-industry"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:26PM",
+      "title": "Buffett: Berkshire will not bid for CSX or Norfolk Southern\n\n\n(FreightWaves)",
+      "link": "https://finance.yahoo.com/news/buffett-berkshire-not-bid-csx-162600199.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:45AM",
+      "title": "Are You Looking for a High-Growth Dividend Stock?\n\n\n(Zacks)",
+      "link": "/news/149067/are-you-looking-for-a-high-growth-dividend-stock"
+    }
+  ]
+}

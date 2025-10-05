@@ -1,0 +1,27 @@
+{
+  "symbol": "BKNG",
+  "year": 2022,
+  "period": "Y2022",
+  "competition_summary": [
+    {
+      "competitor": "Google",
+      "mentions": 2,
+      "context": "Competition We compete globally with both online and traditional travel and restaurant reservation and related services. The markets for the services we offer are intensely competitive, constantly evolving, and subject to rapid change, and current and new competitors can launch new services at a relatively low cost. Some of our current and potential competitors, such as Google, Apple, Alibaba, Tencent, Amazon, and Facebook, have significantly more customers or users, consumer data, and financial"
+    },
+    {
+      "competitor": "Apple",
+      "mentions": 1,
+      "context": "Competition We compete globally with both online and traditional travel and restaurant reservation and related services. The markets for the services we offer are intensely competitive, constantly evolving, and subject to rapid change, and current and new competitors can launch new services at a relatively low cost. Some of our current and potential competitors, such as Google, Apple, Alibaba, Tencent, Amazon, and Facebook, have significantly more customers or users, consumer data, and financial"
+    },
+    {
+      "competitor": "Amazon",
+      "mentions": 1,
+      "context": "Competition We compete globally with both online and traditional travel and restaurant reservation and related services. The markets for the services we offer are intensely competitive, constantly evolving, and subject to rapid change, and current and new competitors can launch new services at a relatively low cost. Some of our current and potential competitors, such as Google, Apple, Alibaba, Tencent, Amazon, and Facebook, have significantly more customers or users, consumer data, and financial"
+    },
+    {
+      "competitor": "Google Travel",
+      "mentions": 1,
+      "context": "Competition We compete globally with both online and traditional travel and restaurant reservation and related services. The markets for the services we offer are intensely competitive, constantly evolving, and subject to rapid change, and current and new competitors can launch new services at a relatively low cost. Some of our current and potential competitors, such as Google, Apple, Alibaba, Tencent, Amazon, and Facebook, have significantly more customers or users, consumer data, and financial"
+    }
+  ]
+}

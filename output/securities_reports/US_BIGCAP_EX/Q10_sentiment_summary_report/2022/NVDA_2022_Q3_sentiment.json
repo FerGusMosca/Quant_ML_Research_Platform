@@ -1,0 +1,47 @@
+{
+  "symbol": "NVDA",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.108,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.29
+  },
+  "top_positive": [
+    {
+      "sent": "The following is a summary of cash equivalents and marketable securities as of May\u00a01, 2022 and January\u00a030, 2022: May 1, 2022 Amortized Cost Unrealized Gain Unrealized Loss Estimated Fair Value Reported as Cash Equivalents Marketable Securities (In millions) Corporate debt securities $ 9,827 $ \u2014 $ ( 9 ) $ 9,818 $ 1,232 $ 8,586 Debt securities issued by the United States Treasury 6,157 3 ( 38 ) 6,122 1,324 4,798 Debt securities issued by United States government agencies 2,116 \u2014 \u2014 2,116 460 1,656 Certificates of deposit 1,302 \u2014 \u2014 1,302 41 1,261 Money market funds 419 \u2014 \u2014 419 419 \u2014 Foreign government bonds 185 \u2014 \u2014 185 35 150 Total $ 20,006 $ 3 $ ( 47 ) $ 19,962 $ 3,511 $ 16,451 January 30, 2022 Amortized Cost Unrealized Gain Unrealized Loss Estimated Fair Value Reported as Cash Equivalents Marketable Securities (In millions) Corporate debt securities $ 9,977 $ \u2014 $ ( 3 ) $ 9,974 $ 1,102 $ 8,872 Debt securities issued by the United States Treasury 7,314 \u2014 ( 14 ) 7,300 \u2014 7,300 Debt securities issued by United States government agencies 1,612 \u2014 \u2014 1,612 256 1,356 Certificates of deposit 1,561 \u2014 \u2014 1,561 21 1,540 Money market funds 316 \u2014 \u2014 316 316 \u2014 Foreign government bonds 150 \u2014 \u2014 150 \u2014 150 Total $ 20,930 $ \u2014 $ ( 17 ) $ 20,913 $ 1,695 $ 19,218 The following tables provide the breakdown of unrealized losses, aggregated by investment category and length of time that individual securities have been in a continuous loss position: May 1, 2022 Less than 12 Months 12 Months or Greater Total Estimated Fair Value Gross Unrealized Loss Estimated Fair Value Gross Unrealized Loss Estimated Fair Value Gross Unrealized Loss (In millions) Debt securities issued by the United States Treasury $ 2,955 $ ( 38 ) $ \u2014 $ \u2014 $ 2,955 $ ( 38 ) Corporate debt securities 2,594 ( 9 ) 19 \u2014 2,613 ( 9 ) Total $ 5,549 $ ( 47 ) $ 19 $ \u2014 $ 5,568 $ ( 47 ) January 30, 2022 Less than 12 Months 12 Months or Greater Total Estimated Fair Value Gross Unrealized Loss Estimated Fair Value Gross Unrealized Loss Estimated Fair Value Gross Unrealized Loss (In millions) Debt securities issued by the United States Treasury $ 5,292 $ ( 14 ) $ \u2014 $ \u2014 $ 5,292 $ ( 14 ) Corporate debt securities 2,445 ( 3 ) 19 \u2014 2,464 ( 3 ) Total $ 7,737 $ ( 17 ) $ 19 $ \u2014 $ 7,756 $ ( 17 ) The gross unrealized losses are related to fixed income securities, driven primarily by changes in interest rates.",
+      "score": 0.9821
+    },
+    {
+      "sent": "The following is a summary of cash equivalents and marketable securities as of May\u00a01, 2022 and January\u00a030, 2022: May 1, 2022 Amortized Cost Unrealized Gain Unrealized Loss Estimated Fair Value Reported as Cash Equivalents Marketable Securities (In millions) Corporate debt securities $ 9,827 $ \u2014 $ ( 9 ) $ 9,818 $ 1,232 $ 8,586 Debt securities issued by the United States Treasury 6,157 3 ( 38 ) 6,122 1,324 4,798 Debt securities issued by United States government agencies 2,116 \u2014 \u2014 2,116 460 1,656 Certificates of deposit 1,302 \u2014 \u2014 1,302 41 1,261 Money market funds 419 \u2014 \u2014 419 419 \u2014 Foreign government bonds 185 \u2014 \u2014 185 35 150 Total $ 20,006 $ 3 $ ( 47 ) $ 19,962 $ 3,511 $ 16,451 January 30, 2022 Amortized Cost Unrealized Gain Unrealized Loss Estimated Fair Value Reported as Cash Equivalents Marketable Securities (In millions) Corporate debt securities $ 9,977 $ \u2014 $ ( 3 ) $ 9,974 $ 1,102 $ 8,872 Debt securities issued by the United States Treasury 7,314 \u2014 ( 14 ) 7,300 \u2014 7,300 Debt securities issued by United States government agencies 1,612 \u2014 \u2014 1,612 256 1,356 Certificates of deposit 1,561 \u2014 \u2014 1,561 21 1,540 Money market funds 316 \u2014 \u2014 316 316 \u2014 Foreign government bonds 150 \u2014 \u2014 150 \u2014 150 Total $ 20,930 $ \u2014 $ ( 17 ) $ 20,913 $ 1,695 $ 19,218 The following tables provide the breakdown of unrealized losses, aggregated by investment category and length of time that individual securities have been in a continuous loss position: May 1, 2022 Less than 12 Months 12 Months or Greater Total Estimated Fair Value Gross Unrealized Loss Estimated Fair Value Gross Unrealized Loss Estimated Fair Value Gross Unrealized Loss (In millions) Debt securities issued by the United States Treasury $ 2,955 $ ( 38 ) $ \u2014 $ \u2014 $ 2,955 $ ( 38 ) Corporate debt securities 2,594 ( 9 ) 19 \u2014 2,613 ( 9 ) Total $ 5,549 $ ( 47 ) $ 19 $ \u2014 $ 5,568 $ ( 47 ) January 30, 2022 Less than 12 Months 12 Months or Greater Total Estimated Fair Value Gross Unrealized Loss Estimated Fair Value Gross Unrealized Loss Estimated Fair Value Gross Unrealized Loss (In millions) Debt securities issued by the United States Treasury $ 5,292 $ ( 14 ) $ \u2014 $ \u2014 $ 5,292 $ ( 14 ) Corporate debt securities 2,445 ( 3 ) 19 \u2014 2,464 ( 3 ) Total $ 7,737 $ ( 17 ) $ 19 $ \u2014 $ 7,756 $ ( 17 ) The gross unrealized losses are related to fixed income securities, driven primarily by changes in interest rates.",
+      "score": 0.9821
+    },
+    {
+      "sent": "May 1, 2022 January 30, 2022 Amortized Cost Estimated Fair Value Amortized Cost Estimated Fair Value (In millions) Less than one year $ 15,196 $ 15,185 $ 16,346 $ 16,343 Due in 1 - 5 years 4,810 4,777 4,584 4,570 Total $ 20,006 $ 19,962 $ 20,930 $ 20,913 Note 8 \u2013 Fair Value of Financial Assets and Liabilities The fair values of our financial assets and liabilities are determined using quoted market prices of identical assets or quoted market prices of similar assets from active markets.",
+      "score": 0.975
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Violations of these laws and regulations can result in fines; criminal sanctions against us, our officers, or our employees; prohibitions on the conduct of our business; and damage to our reputation.",
+      "score": -0.875
+    },
+    {
+      "sent": "If we fail to estimate customer demand properly, there may be a mismatch between supply and demand, and our financial results could be harmed.",
+      "score": -0.8225
+    },
+    {
+      "sent": "If we fail to estimate customer demand properly, there may be a mismatch between supply and demand, and our financial results could be harmed.",
+      "score": -0.8225
+    }
+  ],
+  "forward_snippets": [
+    "While we believe that we have adequately provided for all uncertain tax positions, or tax positions where we believe it is not more-likely-than-not that the position will be sustained upon review, amounts asserted by tax authorities could be greater or less than our accrued position.",
+    "While we believe that we have adequately provided for all uncertain tax positions, or tax positions where we believe it is not more-likely-than-not that the position will be sustained upon review, amounts asserted by tax authorities could be greater or less than our accrued position.",
+    "As of May\u00a01, 2022, $ 652 million of revenue related to performance obligations had not been recognized, of which we expect to recognize approximately 47 % over the next twelve months and the remainder thereafter.",
+    "We are engaged in legal actions not described above arising in the ordinary course of business and, while there can be no assurance of favorable outcomes, we believe that the ultimate outcome of these actions will not have a material adverse effect on our operating results, liquidity or financial position.",
+    "We are engaged in legal actions not described above arising in the ordinary course of business and, while there can be no assurance of favorable outcomes, we believe that the ultimate outcome of these actions will not have a material adverse effect on our operating results, liquidity or financial position."
+  ]
+}

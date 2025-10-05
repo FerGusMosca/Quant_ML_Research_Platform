@@ -1,0 +1,47 @@
+{
+  "symbol": "AMGN",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.175,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.14
+  },
+  "top_positive": [
+    {
+      "sent": "26 Impact of hedging transactions The following tables summarize the amounts recorded in income and expense line items and the effects thereon from fair value and cash flow hedging, including discontinued hedging relationships (in millions): Three months ended June 30, 2023 Six months ended June 30, 2023 Product sales Other (expense) income, net Interest expense, net Product sales Other (expense) income, net Interest expense, net Total amounts recorded in income and (expense) line items presented in the Condensed Consolidated Statements of Income $ 6,683 $ ( 318 ) $ ( 752 ) $ 12,529 $ 1,746 $ ( 1,295 ) The effects of cash flow and fair value hedging: Gains on cash flow hedging relationships reclassified out of AOCI: Foreign currency forward contracts $ 36 $ \u2014 $ \u2014 $ 88 $ \u2014 $ \u2014 Cross-currency swap contracts $ \u2014 $ 51 $ \u2014 $ \u2014 $ 29 $ \u2014 Gains (losses) on fair value hedging relationships\u2014interest rate swap agreements: Hedged items (1) $ \u2014 $ \u2014 $ 93 $ \u2014 $ \u2014 $ 5 Derivatives designated as hedging instruments $ \u2014 $ \u2014 $ ( 72 ) $ \u2014 $ \u2014 $ 42 Three months ended June 30, 2022 Six months ended June 30, 2022 Product sales Other (expense) income, net Interest expense, net Product sales Other (expense) income, net Interest expense, net Total amounts recorded in income and (expense) line items presented in the Condensed Consolidated Statements of Income $ 6,281 $ ( 317 ) $ ( 328 ) $ 12,012 $ ( 847 ) $ ( 623 ) The effects of cash flow and fair value hedging: Gains (losses) on cash flow hedging relationships reclassified out of AOCI: Foreign currency forward contracts $ 53 $ \u2014 $ \u2014 $ 80 $ \u2014 $ \u2014 Cross-currency swap contracts $ \u2014 $ ( 185 ) $ \u2014 $ \u2014 $ ( 263 ) $ \u2014 Gains (losses) on fair value hedging relationships\u2014interest rate swap agreements: Hedged items (1) $ \u2014 $ \u2014 $ 157 $ \u2014 $ \u2014 $ 494 Derivatives designated as hedging instruments $ \u2014 $ \u2014 $ ( 135 ) $ \u2014 $ \u2014 $ ( 450 ) __________ (1) Gains on hedged items do not exactly offset losses on the related designated hedging instruments due to amortization of the cumulative amounts of fair value hedging adjustments included in the carrying amount of the hedged debt for discontinued hedging relationships a\nof our derivative contracts in the Condensed Consolidated Statements of Cash Flows are included in Net cash provided by operating activities, except for the settlement of notional amounts of cross-currency swaps, which are included in Net cash provided by (used in) financing activities.",
+      "score": 0.9935
+    },
+    {
+      "sent": "40 Nonoperating expense/income and income taxes Nonoperating expense/income and income taxes were as follows (dollar amounts in millions): Three months ended June 30, Six months ended June 30, 2023 2022 2023 2022 Interest expense, net $ (752) $ (328) $ (1,295) $ (623) Other (expense) income, net $ (318) $ (317) $ 1,746 $ (847) Provision for income taxes $ 235 $ 214 $ 836 $ 413 Effective tax rate 14.6 % 14.0 % 16.5 % 12.9 % Interest expense, net The increase in Interest expense, net, for the three and six months ended June 30, 2023, was primarily due to higher overall debt outstanding and higher interest rates on debt for which we effectively pay a variable rate of interest through the use of interest rate swaps.",
+      "score": 0.9747
+    },
+    {
+      "sent": "40 Nonoperating expense/income and income taxes Nonoperating expense/income and income taxes were as follows (dollar amounts in millions): Three months ended June 30, Six months ended June 30, 2023 2022 2023 2022 Interest expense, net $ (752) $ (328) $ (1,295) $ (623) Other (expense) income, net $ (318) $ (317) $ 1,746 $ (847) Provision for income taxes $ 235 $ 214 $ 836 $ 413 Effective tax rate 14.6 % 14.0 % 16.5 % 12.9 % Interest expense, net The increase in Interest expense, net, for the three and six months ended June 30, 2023, was primarily due to higher overall debt outstanding and higher interest rates on debt for which we effectively pay a variable rate of interest through the use of interest rate swaps.",
+      "score": 0.9747
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Pressures to decrease drug expenditures may further intensify as the COVID-19 pandemic has strained government budgets and as economic conditions continue to worsen in certain regions, including in Europe where high inflation and the energy crisis relating to the Russia\u2013Ukraine conflict are challenging the economies in that region.",
+      "score": -0.872
+    },
+    {
+      "sent": "responded to the amended and supplemental complaint on July 7, 2023, denying infringement and asserting counterclaims seeking a declaratory judgment that asserted patents are invalid and/or unenforceable.",
+      "score": -0.7717
+    },
+    {
+      "sent": "Tarlatamab The DeLLphi-301 study, evaluating tarlatamab, a first-in-class DLL3 targeting bi-specific T-cell engager (BiTE \u00ae ) molecule, in patients with relapsed or refractory small cell lung cancer (SCLC) who had failed two or more prior lines of treatment, demonstrated a durable objective response rate (primary endpoint) that substantially exceeds what was previously reported in the Phase 1 study.",
+      "score": -0.765
+    }
+  ],
+  "forward_snippets": [
+    "We estimate that we will incur $ 300 million to $ 400 million of pretax charges in 2023 in connection with our restructuring plan, including (i) separation and other headcount-related costs with respect to staff reductions and (ii) asset-related charges that consist primarily of asset impairments, accelerated depreciation and other related costs resulting from rationalization of our geographic footprint.",
+    "Horizon has 12 marketed medicines and a pipeline with more than 20 development programs.",
+    "Horizon has 12 marketed medicines and a pipeline with more than 20 development programs.",
+    "We continue to believe our accrual for income tax liabilities is appropriate based on past experience, interpretations of tax law, application of the tax law to our facts and judgments about potential actions by tax authorities; however, due to the complexity of the provision for income taxes and uncertain resolution of these matters, the ultimate outcome of any tax matters may result in payments substantially greater than amounts accrued and could have a material adverse impact on our condensed consolidated financial statements.",
+    "We believe the fair value option best reflects the economics of the underlying transaction."
+  ]
+}

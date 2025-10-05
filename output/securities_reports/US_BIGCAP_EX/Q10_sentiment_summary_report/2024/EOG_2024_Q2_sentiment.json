@@ -1,0 +1,45 @@
+{
+  "symbol": "EOG",
+  "year": 2024,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1721,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.127
+  },
+  "top_positive": [
+    {
+      "sent": "UNREGISTERED SALES OF EQUITY SECURITIES AND USE OF PROCEEDS The following table sets forth, for the periods indicated, EOG's share repurchase activity: Period Total Number of Shares Purchased (1) Average Price Paid Per Share Total Value of Shares Purchased as Part of Publicly Announced Plans or Programs (2) Approximate Dollar Value of Shares that May Yet Be Purchased Under the Plans or Programs (2)(3) April 1, 2024 - April 30, 2024 44,585 $ 133.98 $ \u2014 $ 3,278,852,627 May 1, 2024 - May 31, 2024 3,930,751 127.68 499,999,900 2,778,852,727 June 1, 2024 - June 30, 2024 1,588,246 120.04 190,122,039 2,588,730,688 Total 5,563,582 125.55 690,121,939 (1) Includes 5,500,122 shares repurchased during the quarter ended June 30, 2024, at an average price of $125.47 per share (inclusive of commissions and transaction fees), pursuant to the November 2021 Authorization (as defined and further discussed below); such repurchases count against the November 2021 Authorization.",
+      "score": 0.9609
+    },
+    {
+      "sent": "UNREGISTERED SALES OF EQUITY SECURITIES AND USE OF PROCEEDS The following table sets forth, for the periods indicated, EOG's share repurchase activity: Period Total Number of Shares Purchased (1) Average Price Paid Per Share Total Value of Shares Purchased as Part of Publicly Announced Plans or Programs (2) Approximate Dollar Value of Shares that May Yet Be Purchased Under the Plans or Programs (2)(3) April 1, 2024 - April 30, 2024 44,585 $ 133.98 $ \u2014 $ 3,278,852,627 May 1, 2024 - May 31, 2024 3,930,751 127.68 499,999,900 2,778,852,727 June 1, 2024 - June 30, 2024 1,588,246 120.04 190,122,039 2,588,730,688 Total 5,563,582 125.55 690,121,939 (1) Includes 5,500,122 shares repurchased during the quarter ended June 30, 2024, at an average price of $125.47 per share (inclusive of commissions and transaction fees), pursuant to the November 2021 Authorization (as defined and further discussed below); such repurchases count against the November 2021 Authorization.",
+      "score": 0.9609
+    },
+    {
+      "sent": "In November 2023, EOG announced an increase in its cash return commitment - specifically, a commitment, effective beginning with fiscal year 2024, to return a minimum of 70% of annual net cash provided by operating activities before certain balance sheet-related changes, less total capital expenditures, to stockholders, through a combination of quarterly dividends, special dividends and share repurchases.",
+      "score": 0.9393
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "oped and are producing natural gas which is sold to the National Gas Company of Trinidad and Tobago Limited, and crude oil and condensate which is sold to Heritage Petroleum Company Limited.",
+      "score": -0.6124
+    },
+    {
+      "sent": "EOG's exposure to commodity price risk, interest rate risk and foreign currency exchange rate risk is discussed in (i) the \"Financial Commodity Derivative Transactions,\" \"Financing\" and \"Outlook\" sections of \"Management's Discussion and Analysis of Financial Condition and Results of Operations - Capital Resources and Liquidity\" included in EOG's Annual Report on Form 10-K for the year ended December 31, 2023, filed on February 22, 2024 (EOG's 2023 Annual Report); and (ii) Note 12, \"Risk Management Activities,\" to EOG's Consolidated Financial Statements included in EOG's 2023 Annual Report.",
+      "score": -0.5267
+    },
+    {
+      "sent": "The November 2021 Authorization has no time limit, does not require EOG to repurchase a specific number of shares and may be modified, suspended, or terminated by the Board at any time.",
+      "score": -0.4215
+    }
+  ],
+  "forward_snippets": [
+    "In the second half of 2024, EOG expects to drill an exploratory well in the deep Teak, Samaan and Poui Area, and complete construction and installation of the platform and commence pipeline installation in the Mento Area.",
+    "EOG's exposure to commodity price risk, interest rate risk and foreign currency exchange rate risk is discussed in (i) the \"Financial Commodity Derivative Transactions,\" \"Financing\" and \"Outlook\" sections of \"Management's Discussion and Analysis of Financial Condition and Results of Operations - Capital Resources and Liquidity\" included in EOG's Annual Report on Form 10-K for the year ended December 31, 2023, filed on February 22, 2024 (EOG's 2023 Annual Report); and (ii) Note 12, \"Risk Management Activities,\" to EOG's Consolidated Financial Statements included in EOG's 2023 Annual Report.",
+    "3.1(b) - Certificate of Amendment of Restated Certificate of Incorporation\nOutlook\" sections of \"Management's Discussion and Analysis of Financial Condition and Results of Operations - Capital Resources and Liquidity\" included in EOG's Annual Report on Form 10-K for the year ended December 31, 2023, filed on February 22, 2024 (EOG's 2023 Annual Report); and (ii) Note 12, \"Risk Management Activities,\" to EOG's Consolidated Financial Statements included in EOG's 2023 Annual Report."
+  ]
+}

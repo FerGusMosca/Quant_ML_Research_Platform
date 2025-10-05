@@ -1,0 +1,937 @@
+{
+  "symbol": "ADBE",
+  "year": 2023,
+  "period": "Y2023",
+  "competition_summary": [
+    {
+      "competitor": "Digital Media",
+      "mentions": 3,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Express",
+      "mentions": 4,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "PDF",
+      "mentions": 4,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Digital",
+      "mentions": 6,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "XML",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "PRINCIPAL PRODUCTS",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe.com",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Lightroom Adobe Photoshop",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "iPad",
+      "mentions": 3,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Content-Aware Fill",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Lightroom",
+      "mentions": 3,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Select Objects",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Content-Aware Remove",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Photoshop",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Photography Plan",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Lightroom Classic",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Photoshop Express",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Illustrator",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Fresco Adobe Illustrator",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Illustrator",
+      "mentions": 4,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Intertwine",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "iPhone",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Windows",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "eBooks",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe",
+      "mentions": 36,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Acrobat",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Stock",
+      "mentions": 4,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe InCopy",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "InDesign",
+      "mentions": 3,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Android",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Amazon",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "YouTubers",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Premiere Pro",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Frame.io",
+      "mentions": 5,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "YouTube",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "TikTok",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Express Adobe Express",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Stock Adobe Stock",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe\u2019s",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Substance 3D Painter",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Substance 3D Designer",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Substance 3D Modeler",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Smart Materials",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Meta Quest VR",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe After Effects Adobe After Effects",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Apple M1",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Premiere Pro, Photoshop",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Audition",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Frame.io Frame.io",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Premiere Pro and After Effects",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Behance",
+      "mentions": 3,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "API",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Document Cloud",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe PDF",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Edge",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the Adobe Document Cloud",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Microsoft OneDrive",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Experience",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Digital Experience Offerings Adobe",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Digital Enrollment",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Query Service and Data Science Workspace",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "AI",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Customer Data",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Analytics Adobe Analytics",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Analytics",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Experience Platform",
+      "mentions": 3,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Real-Time Customer Data Platform Adobe\u2019s Real-time",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Customer Data Platform",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Commerce",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Content and Commerce",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "UI",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Commerce Adobe Commerce",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Commerce",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Analytics, Target",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Customer Journeys",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Campaign Adobe Campaign",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Campaign",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Campaign\u2019s",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Target Adobe Target",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Target",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Products and Services",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "www.adobe.com",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "OPERATIONS Marketing",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "OEM",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Consulting Services",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Global Services",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe\u2019s Solution Partner Program",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Customer Success Account Management",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Customer Success Managers",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Technical Support Adobe",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Getting Started",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Premium Services",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Digital Learning Services Adobe Customer Solutions",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Digital Experience",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe Digital Learning Services",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Managed Services",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Human Capital",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Black/African American",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Hispanic/Latinx",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "AfroTech",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "BreakLine",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "HBCU",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe\u2019s Black",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe for All Week",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Diversity & Inclusion",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "ParityPledge",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the Adobe Equity and Advancement Initiative",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Supplier Diversity",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Company",
+      "mentions": 3,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Employee Assistance Program",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Employee Networks",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "COVID-19",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "The Global Talent Development",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe\u2019s Learning Fund",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the Securities Exchange Act",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "SEC",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Board",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Worldwide Products",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Pfizer Inc.",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Osmania University",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Computer Science",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Bowling Green State University",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the University of California,",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "CFO of Applied Materials",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "CFO",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "NXP Semiconductors N.V.",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Freescale Semiconductor",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Finance",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "GlobalFoundries",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Mubadala Technology Fund",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Mergers and Acquisitions",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Goldman Sachs & Company",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Columbia Business School",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the U.S. Naval Academy",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Control Systems Engineering",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Navy",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe\u2019s Digital",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Worldwide Field Operations",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Digital Experience Business",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Informatica",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Symantec Corporation",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Executive",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "McKinsey & Company",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Ansys, Inc.",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the Silicon Valley Leadership Group",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Bachelor of Technology",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the Institute of Technology",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the Massachusetts Institute of Technology",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe\u2019s Digital Media",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Venture Partner",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Greylock Partners",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "AppDynamics",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Adobe as Senior",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Macromedia, Inc.",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Brown University",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Gem Software",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the Board of Trustees for StoryCorps",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the Fine Arts Museums",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Benchmark",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Pinterest, Uber",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Globality",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Cornell University's Entrepreneurship Program",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the Smithsonian Cooper-Hewitt National Design Museum",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "BS",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the University of Washington",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Carnegie Mellon University",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Harvard Business School",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Intel Corporation",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Mattel and Sundance Institute",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "General Counsel & Chief Trust",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Intellectual Property and Litigation",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Microsoft Corporation",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Associate General Counsel of Intellectual Property",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Fenwick & West",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Electrical Engineering",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Villanova University",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "George Washington University",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Cloudflare, Inc.",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Brightstar Corporation",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Advanced Micro Devices",
+      "mentions": 2,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "LoudCloud",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the Adobe Foundation",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "Business Economics",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "the University of California",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    },
+    {
+      "competitor": "adobe.com",
+      "mentions": 1,
+      "context": "COMPETITION Overview Adobe participates in a highly competitive environment globally, where our competitors vary by industry segment and range from large multinational enterprises to smaller entities with more narrowly focused product offerings. Across our business, we recognize hundreds of competitors worldwide. The markets for our products and services are characterized by new industry standards, evolving distribution models, technology innovation, frequent product introductions, short product"
+    }
+  ]
+}

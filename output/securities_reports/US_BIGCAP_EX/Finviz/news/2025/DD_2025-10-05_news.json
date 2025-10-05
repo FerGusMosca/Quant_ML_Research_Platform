@@ -1,0 +1,606 @@
+{
+  "symbol": "DD",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-03",
+      "time": "09:19",
+      "title": "Company News for Oct 3, 2025\n\n\n(Zacks)",
+      "link": "/news/183340/company-news-for-oct-3-2025"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "19:34",
+      "title": "Analyst Report: DuPont de Nemours, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/4a6354c4-9fb4-3220-b051-00a2ae2a77ed/analyst-report%3A-dupont-de.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:06PM",
+      "title": "Top Research Reports for Boston Scientific, Union Pacific & Realty Income\n\n\n(Zacks)",
+      "link": "/news/182771/top-research-reports-for-boston-scientific-union-pacific-realty-income"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:38AM",
+      "title": "JPMorgan says Corteva split announcement has not lowered companys value\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/jpmorgan-says-corteva-split-announcement-153811924.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "DuPont Announces 2025 Lavoisier Medal and Pedersen Award Recipients\n\n\n(PR Newswire)",
+      "link": "/news/182215/dupont-announces-2025-lavoisier-medal-and-pedersen-award-recipients"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "07:42",
+      "title": "Corteva to Spin Seed Business Into Separate Company\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/corteva-to-spin-seed-business-into-separate-company-e81ebefa?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:04AM",
+      "title": "Olympus partners DuPont to launch sustainable medical device packaging\n\n\n(Packaging Gateway)",
+      "link": "https://finance.yahoo.com/m/38258fb1-3f42-3b2d-a308-8a7eb27ac962/olympus-partners-dupont-to.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:15AM",
+      "title": "Corteva Is Breaking Up. It's the Latest Twist in a Long M&A Saga.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/corteva-stock-breakup-seeds-chemicals-e281d8c9?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:45AM",
+      "title": "DuPont Announces Effectiveness of Form 10 Registration Statement for Qnity\n\n\n(PR Newswire)",
+      "link": "/news/180639/dupont-announces-effectiveness-of-form-10-registration-statement-for-qnity"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:45AM",
+      "title": "DuPont Announces Final Results of Exchange Offers and Consent Solicitations for Senior Notes\n\n\n(PR Newswire)",
+      "link": "/news/180551/dupont-announces-final-results-of-exchange-offers-and-consent-solicitations-for-senior-notes"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "10:00",
+      "title": "Qnity to Preview New Brand and Product Launches at SEMICON West 2025\n\n\n(PR Newswire)",
+      "link": "/news/179575/qnity-to-preview-new-brand-and-product-launches-at-semicon-west-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:20AM",
+      "title": "DOW Launches Polymer Processing Aid Solution for Safer Packaging\n\n\n(Zacks)",
+      "link": "/news/179605/dow-launches-polymer-processing-aid-solution-for-safer-packaging"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "09:00",
+      "title": "DuPont to Expand FilmTec Manufacturing into China through Reverse Osmosis Acquisition\n\n\n(PR Newswire)",
+      "link": "/news/178287/dupont-to-expand-filmtec-manufacturing-into-china-through-reverse-osmosis-acquisition"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "13:05",
+      "title": "Jim Cramer on DuPont: The Sum of the Parts Could be as High as $100\n\n\n(Insider Monkey)",
+      "link": "/news/176055/jim-cramer-on-dupont-the-sum-of-the-parts-could-be-as-high-as-100"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "16:15",
+      "title": "DuPont Announces Record Date for the Intended Qnity Spin-Off\n\n\n(PR Newswire)",
+      "link": "/news/175025/dupont-announces-record-date-for-the-intended-qnity-spin-off"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:45AM",
+      "title": "Are You Looking for a High-Growth Dividend Stock?\n\n\n(Zacks)",
+      "link": "/news/174899/are-you-looking-for-a-high-growth-dividend-stock"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "11:58",
+      "title": "Analyst Report: DuPont de Nemours, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/a1b66715-dfa8-36d7-b9e9-ff304f4b619e/analyst-report%3A-dupont-de.html"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "16:45",
+      "title": "Qnity Electronics, Inc. Outlines Strategic Plan to Accelerate Growth as Future Independent Company at 2025 Investor Day\n\n\n(PR Newswire)",
+      "link": "/news/170044/qnity-electronics-inc-outlines-strategic-plan-to-accelerate-growth-as-future-independent-company-at-2025-investor-day"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:10AM",
+      "title": "DuPont Cuts Full-Year Sales Guidance to Reflect Divestiture, Spinoff\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/1651d695-0d69-3134-b5a7-ef335081839d/dupont-cuts-full-year-sales.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:36AM",
+      "title": "DuPont Cuts Full-Year Sales Guidance to Reflect Discontinued Aramids Operations\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/retail/dupont-cuts-full-year-sales-guidance-to-reflect-discontinued-aramids-operations-49eaa0cc?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:58AM",
+      "title": "DuPont revises 2025 net sales forecast to reflect Qnity spin-off\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/dupont-cuts-third-quarter-profit-105827018.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:50AM",
+      "title": "Qnity Electronics, Inc. to Host 2025 Investor Day on September 18, 2025 at 2:00pm ET\n\n\n(PR Newswire)",
+      "link": "/news/169269/qnity-electronics-inc-to-host-2025-investor-day-on-september-18-2025-at-2-00pm-et"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:45AM",
+      "title": "DuPont to Outline Value Creation Strategy and Financial Framework\n\n\n(PR Newswire)",
+      "link": "/news/169267/dupont-to-outline-value-creation-strategy-and-financial-framework"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "08:45",
+      "title": "DuPont Announces Amendment to Exchange Offers and Consent Solicitations for Senior Notes\n\n\n(PR Newswire)",
+      "link": "/news/167078/dupont-announces-amendment-to-exchange-offers-and-consent-solicitations-for-senior-notes"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "17:30",
+      "title": "Heres how investors can play latest wave of corporate breakups\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/investors-play-latest-wave-corporate-213000624.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:03PM",
+      "title": "Corteva shares fall as potential split report stirs worries over operational disruptions\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/corteva-shares-fall-potential-split-160320487.html"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "15:52",
+      "title": "Corteva, a $50 Billion Seed-and-Pesticide Maker, Is Exploring a Breakup\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/deals/corteva-a-50-billion-seed-and-pesticide-maker-is-exploring-a-breakup-2c5c9be1?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:35AM",
+      "title": "DuPont Stock: Is DD Underperforming the Materials Sector?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/ce68c81c-366e-38c2-8b22-e66238ba1827/dupont-stock%3A-is-dd.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:11AM",
+      "title": "Zacks Industry Outlook Highlights DuPont de Nemours, Albemarle and Methanex\n\n\n(Zacks)",
+      "link": "/news/164471/zacks-industry-outlook-highlights-dupont-de-nemours-albemarle-and-methanex"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "09:18",
+      "title": "3 Diversified Chemical Stocks to Watch Amid Demand Worries\n\n\n(Zacks)",
+      "link": "/news/163727/3-diversified-chemical-stocks-to-watch-amid-demand-worries"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "09:31",
+      "title": "DuPont secures 10-year US import ban on China's Dawnsens in Tyvek case\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/dupont-secures-10-us-import-133127983.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Dawnsens New-Materials Co. Voluntarily Consents to Order Prohibiting the Importation of Flashspun Nonwoven Materials into the United States\n\n\n(PR Newswire)",
+      "link": "/news/159972/dawnsens-new-materials-co-voluntarily-consents-to-order-prohibiting-the-importation-of-flashspun-nonwoven-materials-into-the-united-states"
+    },
+    {
+      "date": "2025-09-07",
+      "time": "10:08",
+      "title": "Mizuho Raises DuPont (DD) Price Target, Cites Strong EV Supply Chain Role\n\n\n(Insider Monkey)",
+      "link": "/news/159495/mizuho-raises-dupont-dd-price-target-cites-strong-ev-supply-chain-role"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "06:00",
+      "title": "Wall Street is falling in love with the corporate breakup. Here's why.\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/wall-street-is-falling-in-love-with-the-corporate-breakup-heres-why-100035466.html"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "16:00",
+      "title": "DuPont and Qnity to Webcast Investor Days\n\n\n(PR Newswire)",
+      "link": "/news/157262/dupont-and-qnity-to-webcast-investor-days"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:02AM",
+      "title": "DuPont to divest Kevlar, Nomex business for $1.8B\n\n\n(Manufacturing Dive)",
+      "link": "https://finance.yahoo.com/m/32ca9cc5-e4c1-3555-8eb8-8fe0b3380a0a/dupont-to-divest-kevlar%2C.html"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "17:41",
+      "title": "DuPont Announces Commencement of Exchange Offers and Consent Solicitations for Senior Notes\n\n\n(PR Newswire)",
+      "link": "/news/156187/dupont-announces-commencement-of-exchange-offers-and-consent-solicitations-for-senior-notes"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:55AM",
+      "title": "DuPont de Nemours (DD) Just Flashed Golden Cross Signal: Do You Buy?\n\n\n(Zacks)",
+      "link": "/news/155691/dupont-de-nemours-dd-just-flashed-golden-cross-signal-do-you-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:50AM",
+      "title": "DuPont Agrees to Divest Its Aramids Business to Arclin for $1.8B\n\n\n(Zacks)",
+      "link": "/news/155534/dupont-agrees-to-divest-its-aramids-business-to-arclin-for-18b"
+    },
+    {
+      "date": "2025-09-01",
+      "time": "09:50",
+      "title": "Why DuPont de Nemours (DD) is a Top Momentum Stock for the Long-Term\n\n\n(Zacks)",
+      "link": "/news/154734/why-dupont-de-nemours-dd-is-a-top-momentum-stock-for-the-long-term"
+    },
+    {
+      "date": "2025-08-29",
+      "time": "16:23",
+      "title": "DuPont Sells Aramids Business, Keeps Stake In Future Growth\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/dupont-sells-aramids-business-keeps-202315271.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:47PM",
+      "title": "Analyst Report: DuPont de Nemours, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/fa53adcd-1587-39a0-aff6-48b272635a21/analyst-report%3A-dupont-de.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:47AM",
+      "title": "DuPont Divests Aramids Business In $1.8 Billion Deal To Sharpen Portfolio\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/dupont-divests-aramids-business-1-124730269.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:44AM",
+      "title": "DuPont to Sell Kevlar, Nomex Business to Arclin for $1.8 Billion\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/ab36ef12-aa61-36f8-851e-303ebb2be5fa/dupont-to-sell-kevlar%2C-nomex.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:45AM",
+      "title": "DuPont de Nemours to Sell Kevlar, Nomex Business to Arclin for $1.8 Billion\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/deals/dupont-de-nemours-to-sell-kevlar-nomex-business-to-arclin-for-1-8-billion-eaebdd64?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:01AM",
+      "title": "Arclin Enters into Definitive Agreement to Acquire Aramids Business, including Kevlar and Nomex Brands, from DuPont\n\n\n(PR Newswire)",
+      "link": "/news/153224/arclin-enters-into-definitive-agreement-to-acquire-aramids-business-including-kevlar-and-nomex-brands-from-dupont"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:55AM",
+      "title": "DuPont Announces Agreement to Divest Aramids Business to Arclin\n\n\n(PR Newswire)",
+      "link": "/news/153213/dupont-announces-agreement-to-divest-aramids-business-to-arclin"
+    },
+    {
+      "date": "2025-08-21",
+      "time": "09:00",
+      "title": "DuPont Wins Three 2025 R&D 100 Awards\n\n\n(PR Newswire)",
+      "link": "/news/146208/dupont-wins-three-2025-rd-100-awards"
+    },
+    {
+      "date": "2025-08-20",
+      "time": "06:00",
+      "title": "Federal court orders Chemours to stop PFAS discharge from West Virginia facility\n\n\n(Manufacturing Dive)",
+      "link": "https://finance.yahoo.com/m/44ad2f85-20ec-3e50-a1c0-06bca3b45e2c/federal-court-orders-chemours.html"
+    },
+    {
+      "date": "2025-08-18",
+      "time": "04:24",
+      "title": "Nano Silver Inks Market Forecast Report 2025-2030 | With Key Players Like DuPont and Heraeus Driving Innovation and Sustainability, the Market is Poised for Significant Growth\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/nano-silver-inks-market-forecast-082400435.html"
+    },
+    {
+      "date": "2025-08-16",
+      "time": "10:52",
+      "title": "3 Stocks Helping Build Tomorrow's Data Centers\n\n\n(MarketBeat)",
+      "link": "/news/142412/3-stocks-helping-build-tomorrows-data-centers"
+    },
+    {
+      "date": "2025-08-14",
+      "time": "09:47",
+      "title": "Personal Protective Equipment Company Evaluation Report 2025 | Honeywell, DuPont, and 3M Lead with Innovations Across Advanced Materials, Industrial Technologies, and Sustainability Solutions\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/personal-protective-equipment-company-evaluation-134700031.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "DuPont Water Solutions Wins BIG Sustainability Award for Advancements in Industrial Wastewater Reuse\n\n\n(PR Newswire)",
+      "link": "/news/140622/dupont-water-solutions-wins-big-sustainability-award-for-advancements-in-industrial-wastewater-reuse"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:47AM",
+      "title": "Polyimide Films & Tapes Company Evaluation Report 2025 | Kaneka, DuPont, and UBE Lead with Specialty Chemicals, Advanced Materials, and Next-Generation Technologies\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/polyimide-films-tapes-company-evaluation-114700895.html"
+    },
+    {
+      "date": "2025-08-13",
+      "time": "09:27",
+      "title": "Saudi Arabia Water and Wastewater Treatment Industry Report 2025-2033 Featuring Ecolab, Veolia, 3M, Pentair, Dow Chemical, Aquatech Int'l, Calgon Carbon, Xylem, DuPont, Parkson\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/saudi-arabia-water-wastewater-treatment-132700296.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:46AM",
+      "title": "Is Wall Street Bullish or Bearish on DuPont de Nemours Stock?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/a1a5ed1e-54d5-3760-9a1b-4fa5b302a05c/is-wall-street-bullish-or.html"
+    },
+    {
+      "date": "2025-08-12",
+      "time": "11:35",
+      "title": "DUPONT DE NEMOURS, INC. AND QNITY ELECTRONICS, INC. ANNOUNCE PRICING OF SENIOR SECURED NOTES AND SENIOR NOTES\n\n\n(PR Newswire)",
+      "link": "/news/136997/dupont-de-nemours-inc-and-qnity-electronics-inc-announce-pricing-of-senior-secured-notes-and-senior-notes"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:00AM",
+      "title": "NantBioRenewables Named Finalist for Product Innovation at 2025 Reuters Global Sustainability Awards\n\n\n(Business Wire)",
+      "link": "https://finance.yahoo.com/news/nantbiorenewables-named-finalist-product-innovation-150000156.html"
+    },
+    {
+      "date": "2025-08-11",
+      "time": "07:15",
+      "title": "DUPONT DE NEMOURS, INC. AND QNITY ELECTRONICS, INC. ANNOUNCE OFFERING OF SENIOR SECURED NOTES AND SENIOR NOTES\n\n\n(PR Newswire)",
+      "link": "/news/134743/dupont-de-nemours-inc-and-qnity-electronics-inc-announce-offering-of-senior-secured-notes-and-senior-notes"
+    },
+    {
+      "date": "2025-08-10",
+      "time": "21:00",
+      "title": "Technical Textiles Market worth $324.83 billion in 2030, at 5.6%, says MarketsandMarkets\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/technical-textiles-market-worth-324-010000019.html"
+    },
+    {
+      "date": "2025-08-08",
+      "time": "10:10",
+      "title": "North America Automotive Paint Market Growth Trends and Forecast Report 2025-2033 | Rising Vehicle Production, EV Adoption, and Eco Regulations Drive Growth\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/north-america-automotive-paint-market-141000583.html"
+    },
+    {
+      "date": "2025-08-07",
+      "time": "04:30",
+      "title": "[Latest] Global Antioxidant BHT Market Size/Share Worth USD 542 Million by 2034 at a 6.5% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth Rate, Value, SWOT Analysis)\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/latest-global-antioxidant-bht-market-083000258.html"
+    },
+    {
+      "date": "2025-08-06",
+      "time": "18:38",
+      "title": "Starboard Value Builds Over 9% Stake in Engineering-Materials Maker Rogers\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/0a770349-3ee3-3aa1-b3d8-1f0c4ec36a49/starboard-value-builds-over.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:30AM",
+      "title": "[Latest] Global Lawn and Garden Consumables Market Size/Share Worth USD 38 Billion by 2034 at a 4.36% CAGR: Custom Market Insights (Analysis, Outlook, Leaders, Report, Trends, Forecast, Segmentation, Growth Rate, Value, SWOT Analysis)\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/latest-global-lawn-garden-consumables-113000487.html"
+    },
+    {
+      "date": "2025-08-05",
+      "time": "19:57",
+      "title": "Why DuPont Stock Topped the Market on Tuesday\n\n\n(Motley Fool)",
+      "link": "/news/129138/why-dupont-stock-topped-the-market-on-tuesday"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30PM",
+      "title": "Basic Materials Roundup: Market Talk\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/51d99e7b-1a4a-3be0-ad38-940ae8bfce87/basic-materials-roundup%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:30PM",
+      "title": "Air Products Appoints Megan Britt Vice President, Investor Relations\n\n\n(PR Newswire)",
+      "link": "https://finance.yahoo.com/news/air-products-appoints-megan-britt-203000028.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:46PM",
+      "title": "Analyst Report: DuPont de Nemours, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/573b806e-5eef-3394-bab8-3b22100036eb/analyst-report%3A-dupont-de.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:38AM",
+      "title": "Top Stock Movers Now: Gartner, Axon Enterprise, Palantir, and More\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/44fde8b8-4089-3c7b-b628-a5ec84929d4e/top-stock-movers-now%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:06AM",
+      "title": "Hims & Hers Health, DuPont, Gartner: Trending Tickers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/hims-hers-health-dupont-gartner-150612406.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:28AM",
+      "title": "DuPont Says Tariff Maneuvers Are Paying Off\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-08-05-2025/card/dupont-says-tariff-maneuvers-are-paying-off-j7iTRe0BOpA6ZfnW6Mkm?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:05AM",
+      "title": "DuPont Tops Estimates, Raises Outlook on Sales Increase, Lower Tariff Impact\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/5e99274c-3f4c-3051-bfd4-9e9fbeb740f3/dupont-tops-estimates%2C-raises.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:38AM",
+      "title": "Stocks to Watch Tuesday: Palantir, Hims, Pfizer, TSMC\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/ece15fb9-9c8f-3367-92c6-c6f750227961/stocks-to-watch-tuesday%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Compared to Estimates, DuPont de Nemours (DD) Q2 Earnings: A Look at Key Metrics\n\n\n(Zacks)",
+      "link": "/news/128226/compared-to-estimates-dupont-de-nemours-dd-q2-earnings-a-look-at-key-metrics"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:12AM",
+      "title": "DuPont's Earnings & Sales Top Estimates in Q2 on Higher Volumes\n\n\n(Zacks)",
+      "link": "/news/128207/duponts-earnings-sales-top-estimates-in-q2-on-higher-volumes"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:40AM",
+      "title": "DuPont Lifts Outlook On Strong Demand In Key Markets\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/dupont-lifts-outlook-strong-demand-124041721.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:10AM",
+      "title": "DuPont de Nemours (DD) Surpasses Q2 Earnings and Revenue Estimates\n\n\n(Zacks)",
+      "link": "/news/127840/dupont-de-nemours-dd-surpasses-q2-earnings-and-revenue-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:48AM",
+      "title": "DuPont de Nemours Adjusts 2025 Outlook Following Sales Gains\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/earnings/dupont-de-nemours-adjusts-2025-outlook-following-sales-gains-d11cd241?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:26AM",
+      "title": "DuPont Stock Rises After Earnings. Why It's Shrugging Off Tariffs.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/dupont-earnings-stock-price-ae9c3b27?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:17AM",
+      "title": "DuPont forecasts Q3 results above estimates on robust electronics, healthcare demand\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/dupont-forecasts-q3-results-above-101756389.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:07AM",
+      "title": "DuPont de Nemours: Q2 Earnings Snapshot\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/dupont-nemours-q2-earnings-snapshot-100722915.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "DuPont Reports Second Quarter 2025 Results\n\n\n(PR Newswire)",
+      "link": "/news/127539/dupont-reports-second-quarter-2025-results"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30AM",
+      "title": "AMD and Super Micro lead tech results as earnings season continues\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p500-nasdaq-extend-rebound-as-bond-yields-steady-palantir-earnings/card/amd-and-super-micro-lead-tech-results-as-earnings-season-continues-J8xFAfRcoFLwiOjJ9oal?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:39AM",
+      "title": "Stock Market Today: Dow, S&P 500 and Nasdaq look to extend the rebound as Treasury yields steady ahead of services surveys; Palantir shares hit record after earnings.\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p500-nasdaq-extend-rebound-as-bond-yields-steady-palantir-earnings?mod=mw_FV"
+    },
+    {
+      "date": "2025-08-04",
+      "time": "12:24",
+      "title": "Analyst Report: DuPont de Nemours, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/e7157b1c-c1d3-36e6-9748-7ecf242a946f/analyst-report%3A-dupont-de.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:31AM",
+      "title": "Chemours, DuPont, Corteva settle New Jersey PFAS claims for $875 million\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/chemours-dupont-corteva-settle-environmental-113140646.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:45AM",
+      "title": "Chemours, DuPont and Corteva Reach Agreement with the State of New Jersey to Comprehensively Resolve All Environmental Claims Including PFAS\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250804977033/en/"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:29AM",
+      "title": "HAZMAT Suits Market Forecast Report 2025-2030, with Profiles of 3M, DuPont de Nemours, Honeywell, Ansell, Dragerwerk, Kimberly-Clark, Lakeland Industries, Alpha Pro Tech, Halyard Health, and Kappler\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/hazmat-suits-market-forecast-report-082900961.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15AM",
+      "title": "White Biotechnology: Transforming Industrial Production with Renewable Resources\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/white-biotechnology-transforming-industrial-production-081500134.html"
+    },
+    {
+      "date": "2025-08-01",
+      "time": "04:12",
+      "title": "Egg Replacers Market Forecast and Company Analysis Report 2025-2030, with Profiles of Cargill, ADM, Kerry Group, Ingredion, Tate & Lyle, Puratos, Corbion, Glanbia, Arla Foods, and DuPont\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/egg-replacers-market-forecast-company-081200482.html"
+    },
+    {
+      "date": "2025-07-31",
+      "time": "10:29",
+      "title": "Hollow Fiber Ultrafiltration Company Evaluation Report 2025 | DuPont, Toray Industries, and Veolia Lead the Market with Advanced Membrane Technologies, Strategic Acquisitions, and Sustainability Focus\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/hollow-fiber-ultrafiltration-company-evaluation-142900070.html"
+    },
+    {
+      "date": "2025-07-30",
+      "time": "17:55",
+      "title": "Tronox (TROX) Reports Q2 Loss, Lags Revenue Estimates\n\n\n(Zacks)",
+      "link": "/news/121866/tronox-trox-reports-q2-loss-lags-revenue-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Analysts Estimate Kronos Worldwide (KRO) to Report a Decline in Earnings: What to Look Out for\n\n\n(Zacks)",
+      "link": "/news/121061/analysts-estimate-kronos-worldwide-kro-to-report-a-decline-in-earnings-what-to-look-out-for"
+    },
+    {
+      "date": "2025-07-29",
+      "time": "10:00",
+      "title": "DuPont de Nemours (DD) Earnings Expected to Grow: Should You Buy?\n\n\n(Zacks)",
+      "link": "/news/119116/dupont-de-nemours-dd-earnings-expected-to-grow-should-you-buy"
+    },
+    {
+      "date": "2025-07-28",
+      "time": "15:19",
+      "title": "Three Builder Resources to Help Meet Codes\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/three-builder-resources-help-meet-191900061.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:07PM",
+      "title": "Stock Market News, Nov. 5, 2024: S&P 500, Nasdaq Rise as Election Day Votes Pour In\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp500-nasdaq-live-11-05-2024?mod=wsj_FV"
+    },
+    {
+      "date": "2025-07-25",
+      "time": "09:50",
+      "title": "Are You a Momentum Investor? This 1 Stock Could Be the Perfect Pick\n\n\n(Zacks)",
+      "link": "/news/115729/are-you-a-momentum-investor-this-1-stock-could-be-the-perfect-pick"
+    },
+    {
+      "date": "2025-07-24",
+      "time": "06:01",
+      "title": "Dow declares quarterly dividend of 35 cents per share\n\n\n(PR Newswire)",
+      "link": "https://finance.yahoo.com/news/dow-declares-quarterly-dividend-35-100100851.html"
+    },
+    {
+      "date": "2025-07-23",
+      "time": "09:02",
+      "title": "Aero Tec Laboratories (ATL) Supplies Every World Rally Championship Car Using Equipment Made With DuPont's Kevlar EXO\n\n\n(PR Newswire)",
+      "link": "/news/112011/aero-tec-laboratories-atl-supplies-every-world-rally-championship-car-using-equipment-made-with-duponts-kevlar-exo"
+    },
+    {
+      "date": "2025-07-22",
+      "time": "16:15",
+      "title": "DuPont Schedules Second Quarter 2025 Earnings Conference Call\n\n\n(PR Newswire)",
+      "link": "/news/111335/dupont-schedules-second-quarter-2025-earnings-conference-call"
+    }
+  ]
+}

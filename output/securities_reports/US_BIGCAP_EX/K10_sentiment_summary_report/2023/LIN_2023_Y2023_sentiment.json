@@ -1,0 +1,47 @@
+{
+  "symbol": "LIN",
+  "year": 2023,
+  "Period": "Y2023",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1634,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.083
+  },
+  "top_positive": [
+    {
+      "sent": "49 Table of Contents CONSOLIDATED STATEMENTS OF INCOME LINDE PLC AND SUBSIDIARIES (Dollar amounts in millions, except per share data) Year Ended December\u00a031, 2022 2021 2020 Sales $ 33,364 $ 30,793 $ 27,243 Cost of sales, exclusive of depreciation and amortization 19,450 17,543 15,383 Selling, general and administrative 3,107 3,189 3,193 Depreciation and amortization 4,204 4,635 4,626 Research and development 143 143 152 Russia-Ukraine conflict and other charges 1,029 273 506 Other income (expenses) \u2013 net ( 62 ) ( 26 ) ( 61 ) Operating Profit 5,369 4,984 3,322 Interest expense \u2013 net 63 77 115 Net pension and OPEB cost (benefit), excluding service cost ( 237 ) ( 192 ) ( 177 ) Income From Continuing Operations Before Income Taxes and Equity Investments 5,543 5,099 3,384 Income taxes on continuing operations 1,434 1,262 847 Income From Continuing Operations  Before Equity Investments 4,109 3,837 2,537 Income from equity investments 172 119 85 Income From Continuing Operations (Including Noncontrolling Interests) 4,281 3,956 2,622 Income from discontinued operations, net of tax \u2014 5 4 Net Income (Including Noncontrolling Interests) 4,281 3,961 2,626 Less: noncontrolling interests from continuing operations ( 134 ) ( 135 ) ( 125 ) Net Income \u2013 Linde plc $ 4,147 $ 3,826 $ 2,501 Net Income \u2013 Linde plc Income from continuing operations $ 4,147 $ 3,821 $ 2,497 Income from discontinued operations $ \u2014 $ 5 $ 4 Per Share Data \u2013 Linde plc Shareholders Basic earnings per share from continuing operations $ 8.30 $ 7.39 $ 4.74 Basic earnings per share from discontinued operations \u2014 0.01 0.01 Basic earnings per share $ 8.30 $\n value exceeds its estimated fair value.",
+      "score": 0.9825
+    },
+    {
+      "sent": "(Millions of dollars, except per share data) Year Ended December\u00a031, 2022 2021 Variance Reported Amounts Sales $ 33,364 $ 30,793 8 % Cost of sales, exclusive of depreciation and amortization $ 19,450 $ 17,543 11 % As a percent of sales 58.3 % 57.0 % Selling, general and administrative $ 3,107 $ 3,189 (3) % As a percent of sales 9.3 % 10.4 % Depreciation and amortization $ 4,204 $ 4,635 (9) % Russia-Ukraine conflict and other charges (a) $ 1,029 $ 273 \u2014 Operating Profit $ 5,369 $ 4,984 8 % Operating margin 16.1 % 16.2 % Interest expense \u2013 net $ 63 $ 77 (18) % Net pension and OPEB cost (benefit), excluding service cost $ (237) $ (192) 23 % Effective tax rate 25.9 % 24.7 % Income from equity investments $ 172 $ 119 45 % Noncontrolling interests from continuing operations $ (134) $ (135) (1) % Income from continuing operations $ 4,147 $ 3,821 9 % Diluted earnings per share from continuing operations $ 8.23 $ 7.32 12 % Diluted shares outstanding 504,038 521,875 (3) % Number of employees 65,010 72,327 (10) % Adjusted Amounts (b) Operating profit $ 7,904 $ 7,176 10 % Operating margin 23.7 % 23.3 % Income from continuing operations $ 6,195 $ 5,579 11 % Diluted earnings per share from continuing operations $ 12.29 $ 10.69 15 % Other Financial Data (b) EBITDA from continuing\nOutlook 20 Consolidated Results and Other Information 21 Segment Discussion 27 Liquidity, Capital Resources and Other Financial Data 33 Off-Balance Sheet Arrangements 35 Critical Accounting Estimates 35 New Accounting Standards 38 Fair Value Measurements 38 Non-GAAP Financial Measures 39 Supplemental Guarantee Information 43 18 Table of Contents BUSINESS OVERVIEW The company's primary products in its industrial gases business are atmospheric gases (oxygen, nitrogen, argon, rare gases) and process gases (carbon dioxide, helium, hydrogen, electronic gases, specialty gases, acetylene).",
+      "score": 0.9792
+    },
+    {
+      "sent": "(Millions of dollars, except per share data) Year Ended December\u00a031, 2022 2021 Variance Reported Amounts Sales $ 33,364 $ 30,793 8 % Cost of sales, exclusive of depreciation and amortization $ 19,450 $ 17,543 11 % As a percent of sales 58.3 % 57.0 % Selling, general and administrative $ 3,107 $ 3,189 (3) % As a percent of sales 9.3 % 10.4 % Depreciation and amortization $ 4,204 $ 4,635 (9) % Russia-Ukraine conflict and other charges (a) $ 1,029 $ 273 \u2014 Operating Profit $ 5,369 $ 4,984 8 % Operating margin 16.1 % 16.2 % Interest expense \u2013 net $ 63 $ 77 (18) % Net pension and OPEB cost (benefit), excluding service cost $ (237) $ (192) 23 % Effective tax rate 25.9 % 24.7 % Income from equity investments $ 172 $ 119 45 % Noncontrolling interests from continuing operations $ (134) $ (135) (1) % Income from continuing operations $ 4,147 $ 3,821 9 % Diluted earnings per share from continuing operations $ 8.23 $ 7.32 12 % Diluted shares outstanding 504,038 521,875 (3) % Number of employees 65,010 72,327 (10) % Adjusted Amounts (b) Operating profit $ 7,904 $ 7,176 10 % Operating margin 23.7 % 23.3 % Income from continuing operations $ 6,195 $ 5,579 11 % Diluted earnings per share from continuing operations $ 12.29 $ 10.69 15 % Other Financial Data (b) EBITDA from continuing operations $ 9,745 $ 9,738 \u2014 % As percent of sales 29.2 % 31.6 % Adjusted EBITDA from continuing operations $ 10,873 $ 10,179 7 % As percent of sales 32.6 % 33.1 % ________________________ (a) See Note 3 to the consolidated financial statements.",
+      "score": 0.9729
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Material operating failures at production, storage facilities or pipelines, including fire, toxic release and explosions, or the occurrence of vehicle transportation accidents could result in loss of life, damage to the environment, loss of production and/or extensive property damage, all of which may negatively impact Linde\u2019s financial results.",
+      "score": -0.9493
+    },
+    {
+      "sent": "The occurrence of catastrophic events or natural disasters such as extreme weather, including hurricanes and floods; health epidemics; pandemics, such as COVID-19; and acts of war or terrorism, could disrupt or delay Linde\u2019s ability to produce and distribute its products to customers and could potentially expose Linde to third-party liability claims.",
+      "score": -0.9451
+    },
+    {
+      "sent": "Russia-Ukraine Conflict and Other Charges 2022 Charges Russia-Ukraine conflict and other charges were $ 1 billion ($ 896 million, after tax and noncontrolling interests) for the year ended December\u00a031, 2022, largely attributable to the Russia-Ukraine conflict.",
+      "score": -0.8807
+    }
+  ],
+  "forward_snippets": [
+    "Linde constructs plants on or 4 Table of Contents adjacent to these customers\u2019 sites and supplies the product directly to customers by pipeline.",
+    "On-site plants and pipeline complexes have limited inventory.",
+    "In locations where Linde has pipeline networks, which enable the company to provide reliable and economic supply of products to larger customers, Linde derives a competitive advantage.",
+    "On-site plants and pipeline complexes have limited inventory.",
+    "In locations where Linde has pipeline networks, which enable the company to provide reliable and economic supply of products to larger customers, Linde derives a competitive advantage."
+  ]
+}

@@ -1,0 +1,606 @@
+{
+  "symbol": "ABNB",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-03",
+      "time": "17:45",
+      "title": "Airbnb, Inc. (ABNB) Stock Slides as Market Rises: Facts to Know Before You Trade\n\n\n(Zacks)",
+      "link": "/news/183718/airbnb-inc-abnb-stock-slides-as-market-rises-facts-to-know-before-you-trade"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:02AM",
+      "title": "Airbnb (ABNB): Buy, Sell, or Hold Post Q2 Earnings?\n\n\n(StockStory)",
+      "link": "/news/183195/airbnb-abnb-buy-sell-or-hold-post-q2-earnings"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "09:00",
+      "title": "Airbnb, Inc. (ABNB) Is a Trending Stock: Facts to Know Before Betting on It\n\n\n(Zacks)",
+      "link": "/news/182291/airbnb-inc-abnb-is-a-trending-stock-facts-to-know-before-betting-on-it"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "07:23",
+      "title": "Mizuho launches U.S. internet coverage, names Meta a favorite and backs Airbnb\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/mizuho-launches-u-internet-coverage-112345174.html"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "16:24",
+      "title": "Airbnb, Inc. (ABNB): A Bull Case Theory\n\n\n(Insider Monkey)",
+      "link": "/news/177766/airbnb-inc-abnb-a-bull-case-theory"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:24PM",
+      "title": "Warner Bros. Notches Another Box Office Win. 'One Battle After Another' Tops Sales.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/warner-bros-box-office-sales-debut-cd1e706f?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "17:45",
+      "title": "Airbnb, Inc. (ABNB) Laps the Stock Market: Here's Why\n\n\n(Zacks)",
+      "link": "/news/177341/airbnb-inc-abnb-laps-the-stock-market-heres-why"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:35PM",
+      "title": "More than 150 firms have ties to Israeli settlements, UN finds\n\n\n(Reuters Videos)",
+      "link": "https://finance.yahoo.com/video/more-150-firms-ties-israeli-163550057.html"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "16:52",
+      "title": "Airbnb Services: What We Know 4 Months After Launch\n\n\n(Skift)",
+      "link": "https://finance.yahoo.com/news/airbnb-services-know-4-months-205211058.html"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "14:36",
+      "title": "Squawk Pod: Kevin Mayer, Fmr. TikTok CEO & Disney Executive - 09/23/25  Audio Only\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=9STbHLIL_5s"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:35PM",
+      "title": "Y Combinator, Base and Coinbase Ventures Launch Fintech 3.0 as Finance Goes On-Chain\n\n\n(CoinDesk)",
+      "link": "https://finance.yahoo.com/m/ff681a82-8bf1-30e6-99ad-882b183c39bf/y-combinator%2C-base-and.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:30AM",
+      "title": "Down 42%, Should You Buy This Top Growth Stock With $10,000 Right Now?\n\n\n(Motley Fool)",
+      "link": "/news/173088/down-42-should-you-buy-this-top-growth-stock-with-10000-right-now"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "17:50",
+      "title": "Airbnb, Inc. (ABNB) Stock Falls Amid Market Uptick: What Investors Need to Know\n\n\n(Zacks)",
+      "link": "/news/172815/airbnb-inc-abnb-stock-falls-amid-market-uptick-what-investors-need-to-know"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "08:30",
+      "title": "This couple says theyre $12M in debt after buying 12 Airbnbs  but the risky move gave them financial freedom\n\n\n(Moneywise)",
+      "link": "https://finance.yahoo.com/news/couple-says-12m-debt-buying-123000940.html"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "18:07",
+      "title": "ABNB Stock Price Prediction: Where Airbnb Could Be by 2025, 2026, and 2030\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/abnb-stock-price-prediction-where-123711938.html"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "23:25",
+      "title": "Jim Cramer Says \"I Think You Buy Airbnb\"\n\n\n(Insider Monkey)",
+      "link": "/news/170200/jim-cramer-says-i-think-you-buy-airbnb"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:35PM",
+      "title": "Expedia CEO says any quarterly reporting change won't affect internal decisions\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/expedia-ceo-says-any-quarterly-reporting-change-wont-affect-internal-decisions-213519393.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:30PM",
+      "title": "Numeral raises $35M to automate sales tax with AI\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/numeral-raises-35m-automate-sales-163000140.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Investors Heavily Search Airbnb, Inc. (ABNB): Here is What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/169509/investors-heavily-search-airbnb-inc-abnb-here-is-what-you-need-to-know"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "11:52",
+      "title": "Cathie Wood Goes Bargain Hunting: 3 Stocks She Just Bought\n\n\n(Motley Fool)",
+      "link": "/news/168654/cathie-wood-goes-bargain-hunting-3-stocks-she-just-bought"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:46AM",
+      "title": "Teen Founders, Tap The Brakes: Paul Graham Says Curiosity Beats Companies In High School  Despite YC Wins With Airbnb, Reddit, And Sam Altman At 19\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/teen-founders-tap-brakes-paul-154608228.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "NCLH vs. ABNB: Which Stock Is the Better Value Option?\n\n\n(Zacks)",
+      "link": "/news/168675/nclh-vs-abnb-which-stock-is-the-better-value-option"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:49AM",
+      "title": "Sands Capital Global Growth Fund Sold Airbnb (ABNB) as Top-line Growth Decelerated\n\n\n(Insider Monkey)",
+      "link": "/news/168257/sands-capital-global-growth-fund-sold-airbnb-abnb-as-top-line-growth-decelerated"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:54AM",
+      "title": "I Was Making $20K A Month Off 2 Texas Properties In My 20s, But Now I'm Bleeding $1700 Each Month. Should I Sell Them or Raise the Rent?\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/making-20k-month-off-2-075432257.html"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "17:45",
+      "title": "Airbnb, Inc. (ABNB) Advances While Market Declines: Some Information for Investors\n\n\n(Zacks)",
+      "link": "/news/167908/airbnb-inc-abnb-advances-while-market-declines-some-information-for-investors"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:48AM",
+      "title": "OpenAI hires former xAI CFO Mike Liberatore as business finance officer\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/openai-hires-former-xai-cfo-044820410.html"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "17:50",
+      "title": "Airbnb, Inc. (ABNB) Stock Slides as Market Rises: Facts to Know Before You Trade\n\n\n(Zacks)",
+      "link": "/news/166641/airbnb-inc-abnb-stock-slides-as-market-rises-facts-to-know-before-you-trade"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:38AM",
+      "title": "2 Profitable Stocks to Target This Week and 1 We Brush Off\n\n\n(StockStory)",
+      "link": "/news/165711/2-profitable-stocks-to-target-this-week-and-1-we-brush-off"
+    },
+    {
+      "date": "2025-09-13",
+      "time": "05:05",
+      "title": "Deep dive on the hotel opportunity for Airbnb\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/deep-dive-hotel-opportunity-airbnb-090502445.html"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "16:03",
+      "title": "Im 67. My wife, 48, is financially illiterate. How do I teach her to manage our money? After all, I wont be around forever.\n\n\n(MarketWatch)",
+      "link": "https://finance.yahoo.com/m/c646cf71-9603-3186-ad0d-ef6fe018d9b2/i%E2%80%99m-67.-my-wife%2C-48%2C-is.html"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "11:11",
+      "title": "2 Growth Stocks Down 20% or More to Buy Right Now\n\n\n(Motley Fool)",
+      "link": "/news/163916/2-growth-stocks-down-20-or-more-to-buy-right-now"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "08:56",
+      "title": "Airbnbs Brian Chesky: AI Opens New Markets, Everything Is Now Back on the Table\n\n\n(Skift)",
+      "link": "https://finance.yahoo.com/news/airbnb-brian-chesky-ai-opens-125612885.html"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "08:05",
+      "title": "Airbnb Wants to Be an \"Everything App.\" Should Investors Buy the Vision?\n\n\n(Motley Fool)",
+      "link": "/news/159893/airbnb-wants-to-be-an-everything-app-should-investors-buy-the-vision"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "Dave Stephenson Joins SiriusXM's Board of Directors\n\n\n(PR Newswire)",
+      "link": "/news/159861/dave-stephenson-joins-siriusxms-board-of-directors"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:05AM",
+      "title": "Will AI Be a Game-Changer for Airbnb?\n\n\n(Motley Fool)",
+      "link": "/news/159628/will-ai-be-a-game-changer-for-airbnb"
+    },
+    {
+      "date": "2025-09-07",
+      "time": "19:03",
+      "title": "The 3 Biggest Red Flags Airbnb Investors Shouldn't Ignore\n\n\n(Motley Fool)",
+      "link": "/news/159578/the-3-biggest-red-flags-airbnb-investors-shouldnt-ignore"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:37AM",
+      "title": "3 Ways Airbnb Can Sustain Its Growth Engines\n\n\n(Motley Fool)",
+      "link": "/news/159536/3-ways-airbnb-can-sustain-its-growth-engines"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:30AM",
+      "title": "What will Google Search remedies mean for online travel?\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/google-search-remedies-mean-online-103002287.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:30AM",
+      "title": "New Yorks Airbnb Crackdown, in Force for Two Years, Hasnt Improved Housing Supply\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/c3917590-4115-3dc1-99f7-2a6d474a607f/new-york%E2%80%99s-airbnb-crackdown%2C.html"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "16:11",
+      "title": "TikTok is obsessed with this guy who bought an abandoned golf course in Maine\n\n\n(FastCompany)",
+      "link": "https://finance.yahoo.com/m/94800aba-e180-30da-9138-d2ff462a6d46/tiktok-is-obsessed-with-this.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:58AM",
+      "title": "The exit of Elon Musks xAI CFO is the latest example of executive turnover at high-profile startups\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/exit-elon-musk-xai-cfo-115803591.html"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "05:24",
+      "title": "xAIs CFO resigns  report\n\n\n(Verdict)",
+      "link": "https://finance.yahoo.com/m/caacd5e0-c645-3b00-83e1-d6277785f00f/xai%E2%80%99s-cfo-resigns-%E2%80%93-report.html"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "16:27",
+      "title": "xAIs CFO is the latest executive to leave Elon Musks AI firm\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/xai-cfo-latest-executive-leave-202706121.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:47PM",
+      "title": "xAI's finance chief steps down after a few months on job, WSJ reports\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/xais-finance-chief-steps-down-184709836.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:42PM",
+      "title": "xAIs CFO Steps Down, the Latest in a String of Executive Departures\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/b1f818d4-ff44-3d1c-9ec3-9f5a2e021f15/xai%E2%80%99s-cfo-steps-down%2C-the.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "Should You Forget Opendoor Technologies? Why These Unstoppable Stocks Are Better Buys\n\n\n(Motley Fool)",
+      "link": "/news/156459/should-you-forget-opendoor-technologies-why-these-unstoppable-stocks-are-better-buys"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "16:05",
+      "title": "Airbnb to Participate in the Goldman Sachs Communacopia + Technology Conference\n\n\n(PR Newswire)",
+      "link": "/news/156010/airbnb-to-participate-in-the-goldman-sachs-communacopia-technology-conference"
+    },
+    {
+      "date": "2025-09-01",
+      "time": "23:32",
+      "title": "Consumer Internet Stocks Q2 In Review: Airbnb (NASDAQ:ABNB) Vs Peers\n\n\n(StockStory)",
+      "link": "/news/155211/consumer-internet-stocks-q2-in-review-airbnb-nasdaq-abnb-vs-peers"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:38AM",
+      "title": "Is Airbnb Stock Underperforming the Dow?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/28d550e2-1448-31cf-a761-b8fcd93b1fc4/is-airbnb-stock.html"
+    },
+    {
+      "date": "2025-08-30",
+      "time": "08:00",
+      "title": "3 Magnificent Stocks to Buy in September\n\n\n(Motley Fool)",
+      "link": "/news/154102/3-magnificent-stocks-to-buy-in-september"
+    },
+    {
+      "date": "2025-08-29",
+      "time": "07:51",
+      "title": "Is the Short-Term Rental Market Oversaturated? What Experts Say in 2025\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/short-term-rental-market-oversaturated-115141513.html"
+    },
+    {
+      "date": "2025-08-28",
+      "time": "17:36",
+      "title": "Airbnb to Move Property Managers to a Single-Fee Payment System\n\n\n(Skift)",
+      "link": "https://finance.yahoo.com/news/airbnb-move-property-managers-single-213616664.html"
+    },
+    {
+      "date": "2025-08-27",
+      "time": "07:55",
+      "title": "AT&T Stock and 21 Other 'Compounders' That Could Beat the Stock Market\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/att-stock-price-market-compounders-to-buy-ef593e91?mod=bar_FV"
+    },
+    {
+      "date": "2025-08-26",
+      "time": "13:36",
+      "title": "This Metric Predicts Outperformance, Trivariate Says. These 22 Stocks Pass the Test.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/amazon-att-stocks-gross-margin-growth-trivariate-ef593e91?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:11PM",
+      "title": "Airbnb CEO Brian Chesky says hes still in founder modehe personally handpicks staff, treats them as direct reports, and decides who stays\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/airbnb-ceo-brian-chesky-says-171123101.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:40AM",
+      "title": "2 Cash-Heavy Stocks to Own for Decades and 1 Facing Headwinds\n\n\n(StockStory)",
+      "link": "/news/150084/2-cash-heavy-stocks-to-own-for-decades-and-1-facing-headwinds"
+    },
+    {
+      "date": "2025-08-25",
+      "time": "23:55",
+      "title": "Airbnb (ABNB) Introduces 'Reserve Now, Pay Later' Option in the US\n\n\n(Insider Monkey)",
+      "link": "/news/149358/airbnb-abnb-introduces-reserve-now-pay-later-option-in-the-us"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:30PM",
+      "title": "How to take your business from $0 to $10M ARR\n\n\n(Stacker)",
+      "link": "https://finance.yahoo.com/m/e79a9b89-4a66-3f62-8713-19b227242d7b/how-to-take-your-business.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:09AM",
+      "title": "Burke Wealth Management Sold Airbnb (ABNB) due To Elevated Economic Sensitivity And Reduced Visibility\n\n\n(Insider Monkey)",
+      "link": "/news/148788/burke-wealth-management-sold-airbnb-abnb-due-to-elevated-economic-sensitivity-and-reduced-visibility"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:14AM",
+      "title": "Figma draws 'neutral' ratings as Wall Street flags lofty valuation, rising competition\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/figma-draws-neutral-ratings-wall-111421380.html"
+    },
+    {
+      "date": "2025-08-24",
+      "time": "06:45",
+      "title": "Should You Forget Palantir and Buy These 2 Millionaire-Maker Stocks Instead?\n\n\n(Motley Fool)",
+      "link": "/news/148202/should-you-forget-palantir-and-buy-these-2-millionaire-maker-stocks-instead"
+    },
+    {
+      "date": "2025-08-23",
+      "time": "13:02",
+      "title": "Renting in San Francisco turns cutthroat as AI jobs boom collides with low supply\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/renting-in-san-francisco-turns-cutthroat-as-ai-jobs-boom-collides-with-low-supply-170225356.html"
+    },
+    {
+      "date": "2025-08-21",
+      "time": "16:48",
+      "title": "Trump reportedly taps Joe Gebbia to become first US chief design officer\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/m/b7803efd-5231-3433-813e-a9b3bb8ce74e/trump-reportedly-taps-joe.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:40PM",
+      "title": "Trump to Tap Airbnb Co-Founder as First Government Design Chief\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/trump-tap-airbnb-co-founder-194004681.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:42AM",
+      "title": "OpenAI may soon be the most valuable private companybut Sam Altmans net worth wont jolt, as the CEO holds no equity and makes just $76,001 a year\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/openai-may-soon-world-most-154251418.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Here is What to Know Beyond Why Airbnb, Inc. (ABNB) is a Trending Stock\n\n\n(Zacks)",
+      "link": "/news/146292/here-is-what-to-know-beyond-why-airbnb-inc-abnb-is-a-trending-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:35AM",
+      "title": "Travel Tech Association CEO talks major tourism events, hotel legislation\n\n\n(Hotel Dive)",
+      "link": "https://finance.yahoo.com/m/cde81b3f-acb0-323b-9dbc-c04ffcc280c2/travel-tech-association-ceo.html"
+    },
+    {
+      "date": "2025-08-20",
+      "time": "09:46",
+      "title": "Airbnb Investors Once Counted Easy Profits. Now One Says, 'Last Year, It Paid For Itself And Made Us $8kThis Year We're $6k In The Hole'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/airbnb-investors-once-counted-easy-134604252.html"
+    },
+    {
+      "date": "2025-08-16",
+      "time": "22:34",
+      "title": "Airbnb, Inc. (ABNB): A Bull Case Theory\n\n\n(Insider Monkey)",
+      "link": "/news/142435/airbnb-inc-abnb-a-bull-case-theory"
+    },
+    {
+      "date": "2025-08-15",
+      "time": "16:31",
+      "title": "Personal Finance Influencer Explains How You Can Dodge AirBnb Fees With A Google Reverse Image Search\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/personal-finance-influencer-explains-dodge-203106065.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:05PM",
+      "title": "PhillipCapital Upgrades Airbnb (ABNB) to Neutral, Raises Price Target\n\n\n(Insider Monkey)",
+      "link": "/news/142139/phillipcapital-upgrades-airbnb-abnb-to-neutral-raises-price-target"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:01PM",
+      "title": "Jeff Bezos Once Asked Warren Buffett Why People Don't Just Copy His 'Simple' Investment Strategy He Said 'Because No One Wants To Get Rich Slow'\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/jeff-bezos-once-asked-warren-160106441.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:58AM",
+      "title": "Business travel surges as companies prioritize face-to-face meetings\n\n\n(Fox Business)",
+      "link": "https://finance.yahoo.com/m/201488bd-c9fa-3dac-8b1c-dcec66dc5e7f/business-travel-surges-as.html"
+    },
+    {
+      "date": "2025-08-14",
+      "time": "18:33",
+      "title": "How Did Peter Thiel-Backed Crypto Exchange Bullish's IPO Go?\n\n\n(MarketBeat)",
+      "link": "/news/141390/how-did-peter-thiel-backed-crypto-exchange-bullishs-ipo-go"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Airbnb will allow US users to book stays without paying up front\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/airbnb-allow-us-users-book-130000282.html"
+    },
+    {
+      "date": "2025-08-13",
+      "time": "12:25",
+      "title": "As degrees get branded worthless, LinkedIns just revealed the universities that give Gen Z the best shot at corner office jobs\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/degrees-branded-worthless-linkedin-just-162559652.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:59AM",
+      "title": "Recent IPO Stock Gains Suggest a 'Spillover' Effect Could Boost Upcoming Debuts\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/278be2cd-7e39-3f91-a2c5-47177aba80f7/recent-ipo-stock-gains.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:33AM",
+      "title": "5 Insightful Analyst Questions From Airbnb's Q2 Earnings Call\n\n\n(StockStory)",
+      "link": "/news/137854/5-insightful-analyst-questions-from-airbnbs-q2-earnings-call"
+    },
+    {
+      "date": "2025-08-12",
+      "time": "03:23",
+      "title": "ABNB Q2 Deep Dive: Product Expansion and International Markets Shape Outlook\n\n\n(StockStory)",
+      "link": "/news/136367/abnb-q2-deep-dive-product-expansion-and-international-markets-shape-outlook"
+    },
+    {
+      "date": "2025-08-11",
+      "time": "14:10",
+      "title": "Analyst Report: Airbnb, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/cd45f219-dc68-38eb-89a1-3071c4599c33/analyst-report%3A-airbnb%2C-inc..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:33AM",
+      "title": "Arm initiated, Adobe downgraded: Wall Street's top analyst calls\n\n\n(The Fly)",
+      "link": "https://finance.yahoo.com/news/arm-initiated-adobe-downgraded-wall-133303774.html"
+    },
+    {
+      "date": "2025-08-08",
+      "time": "20:31",
+      "title": "I Tried To Buy 1,000 Shares Of The Figma IPO...Here's What Happened\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/tried-buy-1-000-shares-003145105.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:48PM",
+      "title": "FlyJets CEO On Rising Private Jet Rentals\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/video/flyjets-ceo-rising-private-jet-224857436.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:51PM",
+      "title": "Airbnb Beats Earnings, But the Growth Story Is Losing Altitude\n\n\n(MarketBeat)",
+      "link": "/news/134169/airbnb-beats-earnings-but-the-growth-story-is-losing-altitude"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:50PM",
+      "title": "Nasdaq, S&P 500 Look to Win Turbulent Week With Records\n\n\n(Schaeffer's Research)",
+      "link": "/news/134048/nasdaq-sp-500-look-to-win-turbulent-week-with-records"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:30AM",
+      "title": "Airbnb embraces a paradox: CEO Brian Chesky says hotels are the future\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/airbnb-embraces-paradox-ceo-brian-153056103.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:28AM",
+      "title": "Airbnb Stock Just Went on Sale. Heres How to (Safely) Trade the Post-Earnings Dive with Options.\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/541ff581-d0ea-37f5-832c-592ec3db6b46/airbnb-stock-just-went-on.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:25AM",
+      "title": "Airbnb charts AI-first path as it expands customer service agent\n\n\n(CX Dive)",
+      "link": "https://finance.yahoo.com/m/1261a2f0-c19f-3abd-bbfb-703655cb63ae/airbnb-charts-ai-first-path.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:03AM",
+      "title": "Expedia Posted Strong Earnings. What Wall Street Is Saying About the Stock.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/expedia-earnings-stock-wall-street-420d74ff?mod=bar_FV"
+    },
+    {
+      "date": "2025-08-07",
+      "time": "19:05",
+      "title": "Analyst Report: Airbnb, Inc.\n\n\n(Morningstar Research)  -8.02%",
+      "link": "https://finance.yahoo.com/m/1ff8077e-d94a-3035-be96-65785699fa2d/analyst-report%3A-airbnb%2C-inc..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:53PM",
+      "title": "Tech, Media & Telecom Roundup: Market Talk\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/68464bec-a7dd-33cf-b680-610a420a7c33/tech%2C-media-%26-telecom.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:28PM",
+      "title": "These Stocks Moved the Most Today: Eli Lilly, Fortinet, AppLovin, Sunrun, Airbnb, Duolingo, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/e9ac0364-17d8-3f19-8d8c-9ad051dea14f/these-stocks-moved-the-most.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:57PM",
+      "title": "Duolingo, Eli Lilly, Airbnb: Trending Tickers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/duolingo-eli-lilly-airbnb-trending-195731515.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:20PM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq mixed as Trump tariffs kick in, Apple jumps\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-mixed-as-trump-tariffs-kick-in-apple-jumps-230246093.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:19PM",
+      "title": "ABNB Q2 Earnings Beat Estimates, Revenues Rise Y/Y, Shares Drop\n\n\n(Zacks)",
+      "link": "/news/132358/abnb-q2-earnings-beat-estimates-revenues-rise-yy-shares-drop"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:38AM",
+      "title": "These Stocks Are Moving the Most Today: Eli Lilly, Fortinet, AppLovin, Sunrun, Airbnb, Duolingo, and More\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/e9ac0364-17d8-3f19-8d8c-9ad051dea14f/these-stocks-are-moving-the.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:37AM",
+      "title": "AI agents arent the new Google, says Airbnb CEO\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/ai-agents-aren-t-google-153735338.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:21AM",
+      "title": "Airbnb Stock Drops. Why Wall Street Is Cautious About Its Experiences Relaunch.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/airbnb-earning-stock-price-99aa6ada?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:13AM",
+      "title": "Airbnb Stock Sinks Despite Strong Q2 Results\n\n\n(Schaeffer's Research)",
+      "link": "/news/132172/airbnb-stock-sinks-despite-strong-q2-results"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:40AM",
+      "title": "How Airbnb's $200M investment could weigh on profit margins\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/airbnbs-200m-investment-could-weigh-144056922.html"
+    }
+  ]
+}

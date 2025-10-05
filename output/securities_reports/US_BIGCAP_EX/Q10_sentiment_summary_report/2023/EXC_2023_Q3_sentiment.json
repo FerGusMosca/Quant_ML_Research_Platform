@@ -1,0 +1,39 @@
+{
+  "symbol": "EXC",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.1531,
+    "outlook_sentiment": 0.2827,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.132
+  },
+  "top_positive": [
+    {
+      "sent": "EXHIBITS 136 SIGNATURES 139 Exelon Corporation 139 Commonwealth Edison Company 140 PECO Energy Company 141 Baltimore Gas and Electric Company 142 Pepco Holdings LLC 143 Potomac Electric Power Company 144 Delmarva Power & Light Company 145 Atlantic City Electric Company 146 3 Table of Contents GLOSSARY OF TERMS AND ABBREVIATIONS Exelon Corporation and Related Entities Exelon Exelon Corporation ComEd Commonwealth Edison Company PECO PECO Energy Company BGE Baltimore Gas and Electric Company Pepco Holdings or PHI Pepco Holdings LLC Pepco Potomac Electric Power Company DPL Delmarva Power & Light Company ACE Atlantic City Electric Company Registrants Exelon, ComEd, PECO, BGE, PHI, Pepco, DPL, and ACE, collectively Utility Registrants ComEd, PECO, BGE, Pepco, DPL, and ACE, collectively BSC Exelon Business Services Company, LLC Exelon Corporate Exelon in its corporate capacity as a holding company PCI Potomac Capital Investment Corporation and its subsidiaries PECO Trust III PECO Energy Capital Trust III PECO Trust IV PECO Energy Capital Trust IV PHI Corporate PHI in its corporate capacity as a holding company PHISCO PHI Service Company Former Related Entities Constellation Constellation Energy Corporation Generation Constellation Energy Generation, LLC (formerly Exelon Generation Company, LLC, a subsidiary of Exelon prior to separation on February 1, 2022) 4 Table of Contents GLOSSARY OF TERMS AND ABBREVIATIONS Other Terms and Abbreviations Note - of the 2022 Form 10-K Reference to specific Combined Note to Consolidated Financial Statements within Exelon's 2022 Annual Report on Form 10-K ABO Accumulated Benefit Obligation AECs Alternative Energy Credits that are issued for each megawatt hour of generation from a qualified alternative energy source AFUDC Allowance for Funds Used During Construction AMI Advanced Metering Infrastructure AOCI Accumulated Other Comprehensive Income (Loss) ARO Asset Retirement Obligation BGS Basic Generation Service BSA Bill Stabilization Adjustment CEJA Climate and Equitable Jobs Act; Illinois Public Act 102-0662 signed into law on September 15, 2021 CERCLA Comprehensive Environmental Response, Compensation, and Liability Act of 1980, as amended CIP Conservation Incentive Program CMC Carbon Mitigation Credit CODMs Chief Operating Decision Maker(s) DC PLUG District of Columbia Power Line Undergrounding Initiative DCPSC Public Service Commission of the District of Columbia DEPSC Delaware Public Service Commission DOEE District of Columbia Department of Energy & Environment DPA Deferred Prosecution Agreement DPP Deferred Purchase Price DSIC Distribution System Improvement Charge EIMA Energy Infrastructure Modernization Act (Illinois Senate Bill 1652 and Illinois House Bill 3036) EPA United States Environmental Protection Agency ERCOT Electric Reliability Council of Texas ERISA Employee Retirement Income Security Act of 1974, as amended ERP Enterprise Resource Program ETAC Energy Transition Assistance Charge FEJA Illinois Public Act 99-0906 or Future Energy Jobs Act FERC Federal Energy Regulatory Commission GAAP Generally Accepted Accounting Principles in the United States GCR Gas Cost Rate GSA Generation Supply Adjustment GWhs Gigawatt hours ICC Illinois Commerce Commission IIJA Infrastructure Investment and Jobs Act Illinois Settlement Legislation Legislation enacted in 2007 affecting electric utilities in Illinois IPA Illinois Power Agency IRA Inflation Reduction Act IRC Internal Revenue Code IRS Internal Revenue Service MDPSC Maryland Public Service Commission MGP Manufactured Gas Plant 5 Table of Contents GLOSSARY OF TERMS AND ABBREVIATIONS Other Terms and Abbreviations mmcf Million Cubic Feet MMG Middle Mile Grant MRP Multi-Year Rate Plan MWh Megawatt hour N/A Not applicable NAV Net Asset Value NDT Nuclear Decommissioning Trust NJBPU New Jersey Board of Public Utilities NPNS Normal Purchase Normal Sale scope exception NPS National Park Service NRD Natural Resources Damages OCI Other Comprehensive Income OPEB Other Postretirement Employee Benefits PAPUC Pennsylvania Public Utility Commission PGC Purchased Gas Cost Clause PJM PJM Interconnection, LLC POLR Provider of Last Resort PPA Power Purchase Agreement PP&E Property, plant, and equipment PRPs Potentially Responsible Parties REC Renewable Energy Credit which is issued for each megawatt hour of generation from a qualified renewable energy source Regulatory Agreement Units Nuclear generating units or portions thereof whose decommissioning-related activities are subject to contractual elimination under regulatory accounting RFP Request for Proposal Rider Reconcilable Surcharge Recovery Mechanism ROE Return on equity ROU Right-of-use RPS Renewable Energy Portfolio Standards RTO Regional Transmission Organization SEC United States Securities and Exchange Commission SOFR Secured Overnight Financing Rate SOS Standard Offer Service STRIDE Maryland Strategic Infrastructure Development and Enhancement Program TCJA Tax Cuts and Jobs Act ZEC Zero Emission Credit or Zero Emission Certificate 6 Table of Contents FILING FORMAT This combined Form\u00a010-Q is being filed separately by Exelon Corporation, Commonwealth Edison Company, PECO Energy Company, Baltimore Gas and Electric Company, Pepco Holdings LLC, Potomac Electric Power Company, Delmarva Power & Light Company, and Atlantic City Electric Company (Registrants).",
+      "score": 0.9986
+    },
+    {
+      "sent": "Pension Benefits OPEB Three Months Ended March 31, Three Months Ended March 31, 2023 2022 2023 2022 Components of net periodic benefit cost: Service cost $ 39 $ 61 $ 6 $ 10 Interest cost 145 110 25 19 Expected return on assets ( 189 ) ( 209 ) ( 21 ) ( 25 ) Amortization of: Prior service cost (credit) 1 1 ( 2 ) ( 5 ) Actuarial loss 41 76 \u2014 4 Net periodic benefit cost $ 37 $ 39 $ 8 $ 3 The amounts below represent the Registrants' allocated pension and OPEB costs.",
+      "score": 0.891
+    },
+    {
+      "sent": "Pension Benefits OPEB Three Months Ended March 31, Three Months Ended March 31, 2023 2022 2023 2022 Components of net periodic benefit cost: Service cost $ 39 $ 61 $ 6 $ 10 Interest cost 145 110 25 19 Expected return on assets ( 189 ) ( 209 ) ( 21 ) ( 25 ) Amortization of: Prior service cost (credit) 1 1 ( 2 ) ( 5 ) Actuarial loss 41 76 \u2014 4 Net periodic benefit cost $ 37 $ 39 $ 8 $ 3 The amounts below represent the Registrants' allocated pension and OPEB costs.",
+      "score": 0.891
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK 134 ITEM\u00a04.",
+      "score": -0.4278
+    }
+  ],
+  "forward_snippets": [
+    "Exelon is continuing to assess the financial statement impacts of the IRA and will update estimates based on future guidance issued by the U.S.",
+    "Authoritative guidance requires that derivative instruments be recognized as either assets or liabilities at fair value, with changes in fair value of the derivative recognized in earnings immediately.",
+    "DPL Electricit\nguidance issued by the U.S.",
+    "Authoritative guidance requires that derivative instruments be recognized as either assets or liabilities at fair value, with changes in fair value of the derivative recognized in earnings immediately.",
+    "Authoritative guidance requires that derivative instruments be recognized as either assets or liabilities at fair value, with changes in fair value of the derivative recognized in earnings immediately."
+  ]
+}

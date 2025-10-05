@@ -1,0 +1,40 @@
+{
+  "symbol": "EXC",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.1531,
+    "outlook_sentiment": 0.2358,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.157
+  },
+  "top_positive": [
+    {
+      "sent": "EXHIBITS 135 SIGNATURES 138 Exelon Corporation 138 Commonwealth Edison Company 139 PECO Energy Company 140 Baltimore Gas and Electric Company 141 Pepco Holdings LLC 142 Potomac Electric Power Company 143 Delmarva Power & Light Company 144 Atlantic City Electric Company 145 3 Table of Contents GLOSSARY OF TERMS AND ABBREVIATIONS Exelon Corporation and Related Entities Exelon Exelon Corporation ComEd Commonwealth Edison Company PECO PECO Energy Company BGE Baltimore Gas and Electric Company Pepco Holdings or PHI Pepco Holdings LLC Pepco Potomac Electric Power Company DPL Delmarva Power & Light Company ACE Atlantic City Electric Company Registrants Exelon, ComEd, PECO, BGE, PHI, Pepco, DPL, and ACE, collectively Utility Registrants ComEd, PECO, BGE, Pepco, DPL, and ACE, collectively ACE Funding or ATF Atlantic City Electric Transition Funding LLC BSC Exelon Business Services Company, LLC Exelon Corporate Exelon in its corporate capacity as a holding company PCI Potomac Capital Investment Corporation and its subsidiaries PECO Trust III PECO Energy Capital Trust III PECO Trust IV PECO Energy Capital Trust IV PHI Corporate PHI in its corporate capacity as a holding company PHISCO PHI Service Company Former Related Entities Constellation Constellation Energy Corporation Generation Constellation Energy Generation, LLC (formerly Exelon Generation Company, LLC, a subsidiary of Exelon prior to separation on February 1, 2022) 4 Table of Contents GLOSSARY OF TERMS AND ABBREVIATIONS Other Terms and Abbreviations Note - of the 2021 Form 10-K Reference to specific Combined Note to Consolidated Financial Statements within Exelon's 2021 Annual Report on Form 10-K AEC Alternative Energy Credit that is issued for each megawatt hour of generation from a qualified alternative energy source AFUDC Allowance for Funds Used During Construction AMI Advanced Metering Infrastructure AOCI Accumulated Other Comprehensive Income (Loss) ARO Asset Retirement Obligation BGS Basic Generation Service CEJA (formerly Clean Energy Law in the Exelon 2021 Form 10-K) Climate and Equitable Jobs Act; Illinois Public Act 102-0662 signed into law on September 15, 2021 CERCLA Comprehensive Environmental Response, Compensation, and Liability Act of 1980, as amended CMC Carbon Mitigation Credit CODM Chief Operating Decision Maker(s) DC PLUG District of Columbia Power Line Undergrounding Initiative DCPSC Public Service Commission of the District of Columbia DEPSC Delaware Public Service Commission DOEE District of Columbia Department of Energy & Environment DPP Deferred Purchase Price EIMA Energy Infrastructure Modernization Act (Illinois Senate Bill 1652 and Illinois House Bill 3036) EPA United States Environmental Protection Agency ERCOT Electric Reliability Council of Texas ERISA Employee Retirement Income Security Act of 1974, as amended ETAC Energy Transition Assistance Charge FEJA Illinois Public Act 99-0906 or Future Energy Jobs Act FERC Federal Energy Regulatory Commission GAAP Generally Accepted Accounting Principles in the United States GCR Gas Cost Rate GSA Generation Supply Adjustment GWh Gigawatt hour ICC Illinois Commerce Commission Illinois Settlement Legislation Legislation enacted in 2007 affecting electric utilities in Illinois IPA Illinois Power Agency IRC Internal Revenue Code IRS Internal Revenue Service LIBOR London Interbank Offered Rate MDPSC Maryland Public Service Commission MGP Manufactured Gas Plant mmcf Million Cubic Feet MW Megawatt MWh Megawatt hour N/A Not applicable NDT Nuclear Decommissioning Trust NJBPU New Jersey Board of Public Utilities NPNS Normal Purchase Normal Sale scope exception 5 Table of Contents GLOSSARY OF TERMS AND ABBREVIATIONS Other Terms and Abbreviations NPS National Park Service OCI Other Comprehensive Income OPEB Other Postretirement Employee Benefits PAPUC Pennsylvania Public Utility Commission PGC Purchased Gas Cost Clause PJM PJM Interconnection, LLC POLR Provider of Last Resort PPA Power Purchase Agreement PP&E Property, plant, and equipment PRP Potentially Responsible Parties REC Renewable Energy Credit which is issued for each megawatt hour of generation from a qualified renewable energy source Regulatory Agreement Units Nuclear generating units or portions thereof whose decommissioning-related activities are subject to contractual elimination under regulatory accounting RFP Request for Proposal Rider Reconcilable Surcharge Recovery Mechanism ROE Return on equity ROU Right-of-use RPS Renewable Energy Portfolio Standards RTO Regional Transmission Organization SEC United States Securities and Exchange Commission SOFR Secured Overnight Financing Rate SOS Standard Offer Service STRIDE Maryland Strategic Infrastructure Development and Enhancement Program TCJA Tax Cuts and Jobs Act Transition Bonds Transition Bonds issued by ACE Funding ZEC Zero Emission Credit or Zero Emission Certificate 6 Table of Contents FILING FORMAT This combined Form\u00a010-Q is being filed separately by Exelon Corporation, Commonwealth Edison Company, PECO Energy Company, Baltimore Gas and Electric Company, Pepco Holdings LLC, Potomac Electric Power Company, Delmarva Power & Light Company, and Atlantic City Electric Company (Registrants).",
+      "score": 0.9983
+    },
+    {
+      "sent": "Outstanding Commercial Paper as of Average\u00a0Interest\u00a0Rate\u00a0on Commercial\u00a0Paper\u00a0Borrowings as of Commercial Paper Issuer March 31, 2022 December 31, 2021 March 31, 2022 December 31, 2021 Exelon (a) $ 250 $ 599 0.87 % 0.35 % BGE 250 130 0.87 % 0.37 % PHI (b) \u2014 469 \u2014 % 0.35 % Pepco \u2014 175 \u2014 % 0.33 % DPL \u2014 149 \u2014 % 0.36 % ACE \u2014 145 \u2014 % 0.35 % __________ (a) Exelon Corporate had no outstanding commercial paper borrowings as of March\u00a031, 2022 \noutlooks, credit default swap levels, capital raising, and merger activity.",
+      "score": 0.9081
+    },
+    {
+      "sent": "The Registrants\u2019 borrowings are not subject to default or prepayment as a result of a downgrading of securities, although such a downgrading of a Registrant\u2019s securities could increase fees and interest charges under that Registrant\u2019s credit agreements.",
+      "score": 0.8834
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "On January 14, 2022, Fitch lowered Exelon Corporate's long-term and senior unsecured ratings from BBB+ to BBB and affirmed the short-term rating of F2.",
+      "score": -0.4767
+    },
+    {
+      "sent": "QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK 133 ITEM\u00a04.",
+      "score": -0.4278
+    }
+  ],
+  "forward_snippets": [
+    "Authoritative guidance requires that derivative instruments be recognized as either assets or liabilities at fair value, with changes in fair value of the derivative recognized in earnings immediately.",
+    "The Registrants may use their respective cre\nguidance requires that derivative instruments be recognized as either assets or liabilities at fair value, with changes in fair value of the derivative recognized in earnings immediately."
+  ]
+}

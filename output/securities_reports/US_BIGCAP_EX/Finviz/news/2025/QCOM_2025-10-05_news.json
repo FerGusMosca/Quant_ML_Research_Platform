@@ -1,0 +1,606 @@
+{
+  "symbol": "QCOM",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-04",
+      "time": "08:00",
+      "title": "Think AI is a bubble? Here's what you can do about it.\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/think-ai-is-a-bubble-heres-what-you-can-do-about-it-2793426f?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "MarketBeat Week in Review - 09/29 - 10/03\n\n\n(MarketBeat)",
+      "link": "/news/183811/marketbeat-week-in-review-0929-1003"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "09:16",
+      "title": "NVIDIA Stock Hits 52-Week High: Still Worth Holding or Book Profit?\n\n\n(Zacks)",
+      "link": "/news/183342/nvidia-stock-hits-52-week-high-still-worth-holding-or-book-profit"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:49AM",
+      "title": "Qualcomm wins lawsuit to secure Oryon CPU, hints at easing ties with Arm\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20251003PD222/qualcomm-arm-oryon-cpu-legal.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "17:45",
+      "title": "Qualcomm (QCOM) Laps the Stock Market: Here's Why\n\n\n(Zacks)",
+      "link": "/news/182784/qualcomm-qcom-laps-the-stock-market-heres-why"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:50AM",
+      "title": "Qualcomm (QCOM) is a Top-Ranked Momentum Stock: Should You Buy?\n\n\n(Zacks)",
+      "link": "/news/182433/qualcomm-qcom-is-a-top-ranked-momentum-stock-should-you-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:08AM",
+      "title": "QUALCOMM(QCOM) Leverages Adobe GenStudio to Streamline Global Marketing Efforts\n\n\n(Insider Monkey)",
+      "link": "/news/181798/qualcommqcom-leverages-adobe-genstudio-to-streamline-global-marketing-efforts"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:41AM",
+      "title": "2 Value Stocks for Long-Term Investors and 1 We Turn Down\n\n\n(StockStory)",
+      "link": "/news/181895/2-value-stocks-for-long-term-investors-and-1-we-turn-down"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "14:22",
+      "title": "Qualcomm (QCOM) and Google Cloud Strengthen Automotive AI Collaboration\n\n\n(Insider Monkey)",
+      "link": "/news/181336/qualcomm-qcom-and-google-cloud-strengthen-automotive-ai-collaboration"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:51AM",
+      "title": "Qualcomm Prevails Over Arm in Court. Next, an Appeal.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/qualcomm-arm-lawsuit-nuvia-c674e171?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:40AM",
+      "title": "GEN Boosts Cyber Safety With Norton Deepfake Protection on Intel PCs\n\n\n(Zacks)",
+      "link": "/news/181095/gen-boosts-cyber-safety-with-norton-deepfake-protection-on-intel-pcs"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:10AM",
+      "title": "CoreWeave Is Winning Over Wall Street Amid Flurry of New Deals\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/coreweave-winning-over-wall-street-112503420.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Why Qualcomm (QCOM) is a Top Growth Stock for the Long-Term\n\n\n(Zacks)",
+      "link": "/news/181021/why-qualcomm-qcom-is-a-top-growth-stock-for-the-long-term"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Exclusive-Qualcomm shifts chips to newer Arm tech as competition with Apple, MediaTek heats up\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/exclusive-qualcomm-shifts-chips-newer-130030624.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:52AM",
+      "title": "Stocks to Watch Wednesday: Nike, Lithium Americas, Cal-Maine, Occidental\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/dbd7d2ef-4676-358b-ad93-8a5454de0703/stocks-to-watch-wednesday%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:16AM",
+      "title": "Qualcomm Announces Snapdragon 8 Elite Gen 5 Mobile Platform with Major AI, Performance Upgrades\n\n\n(Insider Monkey)",
+      "link": "/news/180413/qualcomm-announces-snapdragon-8-elite-gen-5-mobile-platform-with-major-ai-performance-upgrades"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "22:17",
+      "title": "Arm plans to appeal final ruling in Qualcomm dispute\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/arm-plans-appeal-final-ruling-021740549.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:12PM",
+      "title": "Qualcomm Achieves Complete Victory Over Arm in Litigation Challenging Licensing Agreements\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250930042277/en"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:59PM",
+      "title": "QCraft Globalizes With European HQ And Collaborates With Qualcomm\n\n\n(Insider Monkey)",
+      "link": "/news/180018/qcraft-globalizes-with-european-hq-and-collaborates-with-qualcomm"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:56PM",
+      "title": "Qualcomm promises it can be an AI winner. But does it know what Nvidia and Intel do?\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/qualcomm-promises-it-can-be-an-ai-winner-but-does-it-know-what-nvidia-and-intel-do-7f6a3155?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:02AM",
+      "title": "Qualcomm Is on Its Biggest Uptrend in 2 Years-Can It Continue?\n\n\n(MarketBeat)",
+      "link": "/news/179244/qualcomm-is-on-its-biggest-uptrend-in-2-years-can-it-continue"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "23:26",
+      "title": "AI phones still lack killer feature despite Qualcomm, MediaTek, and Apple's push\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20250930PD214/qualcomm-snapdragon-mediatek-apple-processor.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:19PM",
+      "title": "Qualcomm elevates China at Snapdragon Summit 2025 in Beijing\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20250926PD222/qualcomm-beijing-snapdragon-2025-ceo.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:18PM",
+      "title": "Qualcomm AI PC strategy emerges with enhanced creator features and gaming support\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20250926PD229/qualcomm-gaming-snapdragon-pc-performance.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:39AM",
+      "title": "QUALCOMM Incorporated (QCOM) Announces New Chips for PC's and Phones\n\n\n(Insider Monkey)",
+      "link": "/news/177891/qualcomm-incorporated-qcom-announces-new-chips-for-pcs-and-phones"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:34AM",
+      "title": "1 S&P 500 Stock for Long-Term Investors and 2 We Avoid\n\n\n(StockStory)",
+      "link": "/news/178108/1-sp-500-stock-for-long-term-investors-and-2-we-avoid"
+    },
+    {
+      "date": "2025-09-27",
+      "time": "07:00",
+      "title": "MarketBeat Week in Review - 09/22 - 09/26\n\n\n(MarketBeat)",
+      "link": "/news/177513/marketbeat-week-in-review-0922-0926"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:20AM",
+      "title": "3 Dividend Stocks Perfect for Gen Z Investors\n\n\n(Motley Fool)",
+      "link": "/news/177489/3-dividend-stocks-perfect-for-gen-z-investors"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "11:40",
+      "title": "GlobalFoundries Stock Climbs. Whats Behind the Chip Manufacturers Momentum.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/c4847a7a-d111-35b8-be4e-ca0615859b8a/globalfoundries-stock-climbs..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:09AM",
+      "title": "Can Qualcomm's (QCOM) Automotive Bet Deliver the Next Big Growth Wave?\n\n\n(Insider Monkey)",
+      "link": "/news/177029/can-qualcomms-qcom-automotive-bet-deliver-the-next-big-growth-wave"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:13AM",
+      "title": "Robotics Demand Rises: Will Jetson Thor Unlock a New Market for NVDA?\n\n\n(Zacks)",
+      "link": "/news/176777/robotics-demand-rises-will-jetson-thor-unlock-a-new-market-for-nvda"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:59AM",
+      "title": "Apple, Qualcomm, and MediaTek pivot toward AI accelerators as 3nm era closes\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20250926PD224/qualcomm-3nm-apple-2025-mediatek.html"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "18:21",
+      "title": "Why Qualcomm Stock Tumbled on Thursday\n\n\n(Motley Fool)",
+      "link": "/news/176273/why-qualcomm-stock-tumbled-on-thursday"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:13PM",
+      "title": "Qualcomm Unveils Next-Gen Snapdragon Mobile Platform\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/video/qualcomm-unveils-next-gen-snapdragon-201308834.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "These Overlooked AI Stocks Could Deliver Explosive Returns Over the Next 5 Years\n\n\n(Motley Fool)",
+      "link": "/news/175753/these-overlooked-ai-stocks-could-deliver-explosive-returns-over-the-next-5-years"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:21AM",
+      "title": "Can the Snapdragon X2 Elite PC Chip Be a Trump Card for Qualcomm?\n\n\n(Zacks)",
+      "link": "/news/175784/can-the-snapdragon-x2-elite-pc-chip-be-a-trump-card-for-qualcomm"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:30AM",
+      "title": "AI trade has 'more room to run': Investment plays beyond Nvidia\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/ai-trade-more-room-run-113011581.html"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "20:04",
+      "title": "Qualcomm showcases new PC\u00a0chip with features aimed at business market\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/qualcomm-showcases-pc-chip-features-000451226.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:45PM",
+      "title": "Qualcomm (QCOM) Ascends While Market Falls: Some Facts to Note\n\n\n(Zacks)",
+      "link": "/news/175112/qualcomm-qcom-ascends-while-market-falls-some-facts-to-note"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:39PM",
+      "title": "Qualcomm CEO on its latest chips: 'We are going to bring AI everywhere '\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=KcBxZii57RU"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:24PM",
+      "title": "COHR vs. ARM: Which Tech Growth Stock Offers More Upside Now?\n\n\n(Zacks)",
+      "link": "/news/174959/cohr-vs-arm-which-tech-growth-stock-offers-more-upside-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:02PM",
+      "title": "How QUALCOMM (QCOM) Enhances Growth Potential in a Dividend Stock Portfolio\n\n\n(Insider Monkey)",
+      "link": "/news/174824/how-qualcomm-qcom-enhances-growth-potential-in-a-dividend-stock-portfolio"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:44AM",
+      "title": "MRVL's Carrier Infrastructure Segment Recovering: What Lies Ahead?\n\n\n(Zacks)",
+      "link": "/news/174805/mrvls-carrier-infrastructure-segment-recovering-what-lies-ahead"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:08AM",
+      "title": "Qualcomm's RSI Just Hit Its High of the Year-Why That's Bullish\n\n\n(MarketBeat)",
+      "link": "/news/174643/qualcomms-rsi-just-hit-its-high-of-the-year-why-thats-bullish"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "23:51",
+      "title": "Verizon forms 6G Innovation Forum with major industry partners, including Samsung\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20250924VL206/6g-samsung-development-wireless-testing.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40PM",
+      "title": "Qualcomm outlines AI-driven future and 6G rollout at Snapdragon Summit 2025\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20250924PD223/qualcomm-2025-snapdragon-6g-technology.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:24AM",
+      "title": "Indian EV startup Ultraviolette open to licensing battery tech to add revenue stream\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/indian-ev-startup-ultraviolette-open-142445488.html"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "18:08",
+      "title": "QUALCOMM Incorporated (QCOM)'s SVP & CAO Patricia Y. Grech Sells Roughly $44,067 Worth of Shares Under a Pre-Arranged Rule 10b5-1 Plan\n\n\n(Insider Monkey)",
+      "link": "/news/172738/qualcomm-incorporated-qcoms-svp-cao-patricia-y-grech-sells-roughly-44067-worth-of-shares-under-a-pre-arranged-rule-10b5-1-plan"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:38PM",
+      "title": "QUALCOMM Incorporated (QCOM) Collaborates with HARMAN to Reshape the Automotive Cockpit\n\n\n(Insider Monkey)",
+      "link": "/news/172716/qualcomm-incorporated-qcom-collaborates-with-harman-to-reshape-the-automotive-cockpit"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:20AM",
+      "title": "QUALCOMM Incorporated (QCOM) is Attracting Investor Attention: Here is What You Should Know\n\n\n(Zacks)",
+      "link": "/news/172265/qualcomm-incorporated-qcom-is-attracting-investor-attention-here-is-what-you-should-know"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "09:10",
+      "title": "The Intel-Nvidia Deal Looks Like Terrible News for AMD\n\n\n(Motley Fool)",
+      "link": "/news/171655/the-intel-nvidia-deal-looks-like-terrible-news-for-amd"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:05AM",
+      "title": "3 Bargain Stocks for Investors on a Budget\n\n\n(Motley Fool)",
+      "link": "/news/171598/3-bargain-stocks-for-investors-on-a-budget"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:19AM",
+      "title": "QUALCOMM Incorporated (QCOM) Partners With HARMAN\n\n\n(Insider Monkey)",
+      "link": "/news/171573/qualcomm-incorporated-qcom-partners-with-harman"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "11:02",
+      "title": "Anatoly Yakovenko Net Worth: Solana CEO's Wealth In Spotlight As ETF Deadline Nears\n\n\n(CCN)",
+      "link": "https://finance.yahoo.com/m/174d2ee5-785b-3585-9f1d-19f8c3758822/anatoly-yakovenko-net-worth%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:44AM",
+      "title": "Prediction: These Could Be the Best-Performing Value Stocks Through 2030\n\n\n(Motley Fool)",
+      "link": "/news/171381/prediction-these-could-be-the-best-performing-value-stocks-through-2030"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "19:08",
+      "title": "Why QUALCOMM (QCOM) Belongs in a Dividend Stock Portfolio for Steady Income\n\n\n(Insider Monkey)",
+      "link": "/news/171279/why-qualcomm-qcom-belongs-in-a-dividend-stock-portfolio-for-steady-income"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:11PM",
+      "title": "Will Qualcomm's Deep Foray Into AI Realm Work Wonders for the Stock?\n\n\n(Zacks)",
+      "link": "/news/171018/will-qualcomms-deep-foray-into-ai-realm-work-wonders-for-the-stock"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "17:45",
+      "title": "Qualcomm (QCOM) Rises Higher Than Market: Key Facts\n\n\n(Zacks)",
+      "link": "/news/170120/qualcomm-qcom-rises-higher-than-market-key-facts"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:45PM",
+      "title": "Analyst Report: Arm Holdings plc\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/309aab4d-5651-31d0-8276-766276545e1c/analyst-report%3A-arm-holdings.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:10PM",
+      "title": "ARM's Powerful Lumex Launch Poised to Accelerate AI Leadership\n\n\n(Zacks)",
+      "link": "/news/169970/arms-powerful-lumex-launch-poised-to-accelerate-ai-leadership"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:39AM",
+      "title": "Cracker Barrel, Live Nation, chip stocks: Trending Tickers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/cracker-barrel-live-nation-chip-153944539.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:55AM",
+      "title": "Can IBM's Focus on Quantum Computing be a Key Differentiator?\n\n\n(Zacks)",
+      "link": "/news/169678/can-ibms-focus-on-quantum-computing-be-a-key-differentiator"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Qualcomm Taps Adobe GenStudio to Optimize Content Supply Chain with Generative AI\n\n\n(Business Wire)",
+      "link": "https://www.businesswire.com/news/home/20250918022133/en/"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:03AM",
+      "title": "Nvidia bets big on Intel with $5 billion stake and chip partnership\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/nvidia-bets-big-intel-5-110333928.html"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "14:17",
+      "title": "Final Trades: Qualcomm, Vertiv, Northern Trust and the FXI\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=9Wy5ZclVp20"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Gesture-Control Wearables Redefine Human-Technology Interaction\n\n\n(PR Newswire)",
+      "link": "/news/168318/gesture-control-wearables-redefine-human-technology-interaction"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "23:35",
+      "title": "A Look Back at Processors and Graphics Chips Stocks' Q2 Earnings: Qualcomm (NASDAQ:QCOM) Vs The Rest Of The Pack\n\n\n(StockStory)",
+      "link": "/news/168086/a-look-back-at-processors-and-graphics-chips-stocks-q2-earnings-qualcomm-nasdaq-qcom-vs-the-rest-of-the-pack"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:38PM",
+      "title": "Qualcomm dominates physical AI with robot and automotive chips\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20250916PD211/qualcomm-chips-on-device-ai-language-robot.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:36PM",
+      "title": "Xiaomi 17 smartphone to launch in September 2025 with Qualcomm Snapdragon 8 Elite Gen 5\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20250916PD227/xiaomi-smartphone-qualcomm-snapdragon-2025.html"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "17:00",
+      "title": "Unlock Momentum with the Rare, Powerful High-Tight Flag Pattern\n\n\n(Zacks)",
+      "link": "/news/166595/unlock-momentum-with-the-rare-powerful-high-tight-flag-pattern"
+    },
+    {
+      "date": "2025-09-13",
+      "time": "07:00",
+      "title": "MarketBeat Week in Review - 09/08 - 09/12\n\n\n(MarketBeat)",
+      "link": "/news/165444/marketbeat-week-in-review-0908-0912"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "10:58",
+      "title": "QUALCOMM Incorporated (QCOM) and BMW Launches Snapdragon Ride Pilot, A Next-Generation Automated Driving System\n\n\n(Insider Monkey)",
+      "link": "/news/164998/qualcomm-incorporated-qcom-and-bmw-launches-snapdragon-ride-pilot-a-next-generation-automated-driving-system"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Here's Why Qualcomm (QCOM) is a Strong Growth Stock\n\n\n(Zacks)",
+      "link": "/news/164966/heres-why-qualcomm-qcom-is-a-strong-growth-stock"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "17:45",
+      "title": "Qualcomm (QCOM) Laps the Stock Market: Here's Why\n\n\n(Zacks)",
+      "link": "/news/164320/qualcomm-qcom-laps-the-stock-market-heres-why"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:49PM",
+      "title": "QUALCOMM (QCOM) Expands its Collaboration with Google Cloud\n\n\n(Insider Monkey)",
+      "link": "/news/164040/qualcomm-qcom-expands-its-collaboration-with-google-cloud"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:10PM",
+      "title": "Qualcomm and Harman forge alliance to elevate AI in car cockpits\n\n\n(Just Auto)",
+      "link": "https://finance.yahoo.com/m/6b12c9e0-b66b-3adc-8362-8ca996227811/qualcomm-and-harman-forge.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:48AM",
+      "title": "ARM's 11% Rise in Three Months: Should You Buy, Hold, or Sell?\n\n\n(Zacks)",
+      "link": "/news/164044/arms-11-rise-in-three-months-should-you-buy-hold-or-sell"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:50AM",
+      "title": "Here's Why Qualcomm (QCOM) is a Strong Momentum Stock\n\n\n(Zacks)",
+      "link": "/news/163809/heres-why-qualcomm-qcom-is-a-strong-momentum-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:00AM",
+      "title": "Accenture and 5 Other AI Stocks That Don't Stint on Dividends\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/accenture-ai-stocks-strong-dividend-yields-d085247c?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "18:42",
+      "title": "Jobs Data Mess & AI's Moment: Unpacking the Week's Biggest News\n\n\n(Zacks)",
+      "link": "/news/163176/jobs-data-mess-ais-moment-unpacking-the-weeks-biggest-news"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "19:31",
+      "title": "Synopsys reports quarterly revenue below estimates, shares fall\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/synopsys-reports-quarterly-revenue-below-233110633.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:13PM",
+      "title": "Is Qualcomm Tesla's Next Rival in Autonomous Driving?\n\n\n(MarketBeat)",
+      "link": "/news/161885/is-qualcomm-teslas-next-rival-in-autonomous-driving"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:33PM",
+      "title": "Is QUALCOMM (QCOM) The Best AI Chip Stock to Buy Now?\n\n\n(Insider Monkey)",
+      "link": "/news/161803/is-qualcomm-qcom-the-best-ai-chip-stock-to-buy-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:03AM",
+      "title": "IBM vs. QCOM: Which Tech Stock Deserves a Spot in Your Portfolio Now?\n\n\n(Zacks)",
+      "link": "/news/161512/ibm-vs-qcom-which-tech-stock-deserves-a-spot-in-your-portfolio-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "QUALCOMM Incorporated (QCOM) Is a Trending Stock: Facts to Know Before Betting on It\n\n\n(Zacks)",
+      "link": "/news/161262/qualcomm-incorporated-qcom-is-a-trending-stock-facts-to-know-before-betting-on-it"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:19AM",
+      "title": "Nokia Strengthens Defense Lineup With New Mission Safe Phone And 5G Tactical Radio\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/nokia-strengthens-defense-lineup-mission-101949844.html"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "18:24",
+      "title": "Samsung's Exynos comeback aims for Qualcomm's mobile chip dominance\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20250908PD224/samsung-exynos-qualcomm-flagship-galaxy.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:17PM",
+      "title": "Qualcomm And Google Cloud Forge AI Alliance To Transform Cars Into Smart Agents\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/qualcomm-google-cloud-forge-ai-171723383.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:59PM",
+      "title": "QCOM Expands Automotive Portfolio: Will it Deliver Sustainable Growth?\n\n\n(Zacks)",
+      "link": "/news/160247/qcom-expands-automotive-portfolio-will-it-deliver-sustainable-growth"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:07AM",
+      "title": "Cybersecurity firm Netskope eyes up to $6.5 billion valuation in US IPO\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/cybersecurity-firm-netskope-eyes-6-110738845.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:20AM",
+      "title": "Qualcomm And Valeo Broaden Collaboration To Speed Hands Off Driving Features\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/qualcomm-valeo-broaden-collaboration-speed-102045198.html"
+    },
+    {
+      "date": "2025-09-07",
+      "time": "11:07",
+      "title": "Qualcomm just made a massive leap into Teslas turf\n\n\n(TheStreet)",
+      "link": "https://finance.yahoo.com/m/96cc3d0d-693e-34ac-99f6-afec4dacaab3/qualcomm-just-made-a-massive.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:00AM",
+      "title": "Where Will Apple Stock Be in 3 Years?\n\n\n(Motley Fool)",
+      "link": "/news/159527/where-will-apple-stock-be-in-3-years"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:23AM",
+      "title": "QUALCOMM (QCOM) Launches Dragonwing Q-6690, World's First Enterprise Mobile Processor\n\n\n(Insider Monkey)",
+      "link": "/news/159516/qualcomm-qcom-launches-dragonwing-q-6690-worlds-first-enterprise-mobile-processor"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:57AM",
+      "title": "Qualcomm Appoints Patricia Grech as Chief Accounting Officer, Neil Martin Shifts to Corporate Development\n\n\n(Insider Monkey)",
+      "link": "/news/159481/qualcomm-appoints-patricia-grech-as-chief-accounting-officer-neil-martin-shifts-to-corporate-development"
+    },
+    {
+      "date": "2025-09-06",
+      "time": "07:00",
+      "title": "MarketBeat Week in Review - 09/01 - 09/05\n\n\n(MarketBeat)",
+      "link": "/news/159347/marketbeat-week-in-review-0901-0905"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "16:28",
+      "title": "Qualcomm Rolls Out New Self-Driving Stack on BMWs\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/video/qualcomm-rolls-self-driving-stack-202845194.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:10AM",
+      "title": "Qualcomm to power advanced driving systems in BMW's latest iX3\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/qualcomm-to-power-advanced-driving-systems-in-bmws-latest-ix3-131016217.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:42AM",
+      "title": "Qualcomm, BMW launch automated driving system to better compete in growing market\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/qualcomm-bmw-launch-automated-driving-114219334.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:17AM",
+      "title": "BMW Debuts Snapdragon Ride Pilot Powered By Qualcomm In New iX3\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/bmw-debuts-snapdragon-ride-pilot-111737139.html"
+    }
+  ]
+}

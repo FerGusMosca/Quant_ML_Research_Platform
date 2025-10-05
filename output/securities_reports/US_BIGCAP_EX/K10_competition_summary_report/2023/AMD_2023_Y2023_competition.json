@@ -1,0 +1,257 @@
+{
+  "symbol": "AMD",
+  "year": 2023,
+  "period": "Y2023",
+  "competition_summary": [
+    {
+      "competitor": "Intel Corporation",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Intel",
+      "mentions": 6,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "FPGA",
+      "mentions": 3,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "CPU",
+      "mentions": 3,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "DPU",
+      "mentions": 3,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "NVIDIA Corporation",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "GPU",
+      "mentions": 2,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "9 Table of Contents Competition in Gaming Segment In",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "IGP",
+      "mentions": 2,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Lattice Semiconductor Corporation",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Microsemi Corporation",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Microchip",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "ASSP",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Broadcom Corporation",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Marvell Technology Group, Ltd.",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Analog Devices",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Texas Instruments Incorporated",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "NXP Semiconductors N.V.",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "ASIC",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "DSP",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "SmartNICs",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "IP",
+      "mentions": 3,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Manufacturing Arrangements and",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Assembly",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Taiwan Semiconductor Manufacturing Company Limited",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "TSMC",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "HPC",
+      "mentions": 2,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Adaptive SoC",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "WSA",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "GLOBALFOUNDRIES Inc.",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "United Microelectronics Corporation",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Samsung Electronics Co., Ltd.",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Third-Party",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "ATMP",
+      "mentions": 5,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Tongfu Microelectronics Co., Ltd.",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Siliconware Precision Industries Ltd.",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "SPIL",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "King Yuan Electronics Company",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "KYEC",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Intellectual Property",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "AMD",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "the Human Rights Campaign Foundation",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Bloomberg\u2019s Gender Equality",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "the \u201cWoman Innovation Award",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "the Global Semiconductor Alliance",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Barron\u2019s World\u2019s Best",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Forbes\u2019 World\u2019s Most Powerful Women",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Biden\u2019s Council of Advisors on Science and Technology",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    },
+    {
+      "competitor": "Company",
+      "mentions": 1,
+      "context": "Competition in Data Center Segment In Data Center, we compete against Intel Corporation (Intel) with our FPGA, Adaptive SoC, CPU and DPU server products and NVIDIA Corporation (NVIDIA) with our CPU, GPU and DPU server products. A variety of companies provide or have developed ARM-based microprocessors and platforms. ARM-based designs are being used in the server market, which could lead to further growth and development of the ARM ecosystem. Competition in Client Segment The markets in which we "
+    }
+  ]
+}

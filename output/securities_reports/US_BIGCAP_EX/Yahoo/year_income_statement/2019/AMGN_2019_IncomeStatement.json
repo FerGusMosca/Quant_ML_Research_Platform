@@ -1,0 +1,12 @@
+{
+  "symbol": "AMGN",
+  "period": "2019",
+  "report_type": "YearlyIncomeStatement",
+  "items": {
+    "Total Unusual Items": 0.0,
+    "Total Unusual Items Excluding Goodwill": 0.0,
+    "Interest Income": 256000000.0,
+    "Special Income Charges": 0.0,
+    "Interest Income Non Operating": 256000000.0
+  }
+}

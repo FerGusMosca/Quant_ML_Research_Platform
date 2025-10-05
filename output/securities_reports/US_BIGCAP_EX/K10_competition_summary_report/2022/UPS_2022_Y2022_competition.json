@@ -1,0 +1,72 @@
+{
+  "symbol": "UPS",
+  "year": 2022,
+  "period": "Y2022",
+  "competition_summary": [
+    {
+      "competitor": "EUR",
+      "mentions": 2,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 ups:Defendant 0001090727 srt:MinimumMember 2021-01-01 2021-12-31 0001090727 srt:MaximumMember 2021-01-01 2021-12-31 ups:aircraft ups:Classes_of_Common_Stock ups:Vote 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2020-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2019-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2018-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMe"
+    },
+    {
+      "competitor": "HKD",
+      "mentions": 2,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 ups:Defendant 0001090727 srt:MinimumMember 2021-01-01 2021-12-31 0001090727 srt:MaximumMember 2021-01-01 2021-12-31 ups:aircraft ups:Classes_of_Common_Stock ups:Vote 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2020-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2019-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2018-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMe"
+    },
+    {
+      "competitor": "UNITED STATES SECURITIES AND EXCHANGE COMMISSION",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 ups:Defendant 0001090727 srt:MinimumMember 2021-01-01 2021-12-31 0001090727 srt:MaximumMember 2021-01-01 2021-12-31 ups:aircraft ups:Classes_of_Common_Stock ups:Vote 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2020-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2019-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2018-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMe"
+    },
+    {
+      "competitor": "THE SECURITIES EXCHANGE ACT",
+      "mentions": 2,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 ups:Defendant 0001090727 srt:MinimumMember 2021-01-01 2021-12-31 0001090727 srt:MaximumMember 2021-01-01 2021-12-31 ups:aircraft ups:Classes_of_Common_Stock ups:Vote 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2020-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2019-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2018-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMe"
+    },
+    {
+      "competitor": "Commission",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 ups:Defendant 0001090727 srt:MinimumMember 2021-01-01 2021-12-31 0001090727 srt:MaximumMember 2021-01-01 2021-12-31 ups:aircraft ups:Classes_of_Common_Stock ups:Vote 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2020-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2019-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2018-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMe"
+    },
+    {
+      "competitor": "United Parcel Service, Inc.",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 ups:Defendant 0001090727 srt:MinimumMember 2021-01-01 2021-12-31 0001090727 srt:MaximumMember 2021-01-01 2021-12-31 ups:aircraft ups:Classes_of_Common_Stock ups:Vote 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2020-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2019-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2018-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMe"
+    },
+    {
+      "competitor": "N.E",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 ups:Defendant 0001090727 srt:MinimumMember 2021-01-01 2021-12-31 0001090727 srt:MaximumMember 2021-01-01 2021-12-31 ups:aircraft ups:Classes_of_Common_Stock ups:Vote 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2020-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2019-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2018-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMe"
+    },
+    {
+      "competitor": "Georgia 30328 (Address of Principal Executive Offices",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 ups:Defendant 0001090727 srt:MinimumMember 2021-01-01 2021-12-31 0001090727 srt:MaximumMember 2021-01-01 2021-12-31 ups:aircraft ups:Classes_of_Common_Stock ups:Vote 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2020-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2019-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2018-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMe"
+    },
+    {
+      "competitor": "Registrant",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 ups:Defendant 0001090727 srt:MinimumMember 2021-01-01 2021-12-31 0001090727 srt:MaximumMember 2021-01-01 2021-12-31 ups:aircraft ups:Classes_of_Common_Stock ups:Vote 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2020-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2019-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2018-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMe"
+    },
+    {
+      "competitor": "UPS New York Stock Exchange",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 ups:Defendant 0001090727 srt:MinimumMember 2021-01-01 2021-12-31 0001090727 srt:MaximumMember 2021-01-01 2021-12-31 ups:aircraft ups:Classes_of_Common_Stock ups:Vote 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2020-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2019-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2018-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMe"
+    },
+    {
+      "competitor": "New York Stock Exchange",
+      "mentions": 4,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 ups:Defendant 0001090727 srt:MinimumMember 2021-01-01 2021-12-31 0001090727 srt:MaximumMember 2021-01-01 2021-12-31 ups:aircraft ups:Classes_of_Common_Stock ups:Vote 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2020-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2019-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2018-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMe"
+    },
+    {
+      "competitor": "the Securities Exchange Act",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 ups:Defendant 0001090727 srt:MinimumMember 2021-01-01 2021-12-31 0001090727 srt:MaximumMember 2021-01-01 2021-12-31 ups:aircraft ups:Classes_of_Common_Stock ups:Vote 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2020-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2019-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2018-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMe"
+    },
+    {
+      "competitor": "Interactive Data File",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 ups:Defendant 0001090727 srt:MinimumMember 2021-01-01 2021-12-31 0001090727 srt:MaximumMember 2021-01-01 2021-12-31 ups:aircraft ups:Classes_of_Common_Stock ups:Vote 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2020-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2019-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMember 2018-12-31 0001090727 us-gaap:CommonStockMember us-gaap:CommonClassAMe"
+    }
+  ]
+}

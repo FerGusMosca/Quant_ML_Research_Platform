@@ -1,0 +1,47 @@
+{
+  "symbol": "UPS",
+  "year": 2024,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.3021,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.06
+  },
+  "top_positive": [
+    {
+      "sent": "AND SUBSIDIARIES NOTES TO UNAUDITED CONSOLIDATED FINANCIAL STATEMENTS Detail of the gains (losses) reclassified from accumulated other comprehensive income (loss) to the statements of consolidated income for the three and six months ended June\u00a030, 2024 and 2023 is as follows (in millions): Amount Reclassified from AOCI (1) Affected Line Item in the Income Statement Three Months Ended June 30: 2024 2023 Unrealized Gain (Loss) on Cash Flow Hedges: Interest rate contracts $ ( 2 ) $ ( 2 ) Interest expense Foreign currency exchange contracts 47 51 Revenue Income tax (expense) benefit ( 10 ) ( 12 ) Income tax expense Impact on net income 35 37 Net income Unrecognized Pension and Postretirement Benefit Costs: Prior service costs ( 39 ) ( 27 ) Investment income and other Income tax (expense) benefit 10 6 Income tax expense Impact on net income ( 29 ) ( 21 ) Net income Total amount reclassified for the period $ 6 $ 16 Net income Amount Reclassified from AOCI (1) Affected Line Item in the Income Statement Six Months Ended June 30: 2024 2023 Unrealized gain (loss) on foreign currency translation: Realized gain (loss) on business wind-down $ \u2014 $ ( 3 ) Other expenses Impact on net income \u2014 ( 3 ) Net income Unrealized gain (loss) on marketable securities: Realized gain (loss) on sale of securities \u2014 ( 3 ) Investment income and other Income tax (expense) benefit \u2014 1 Income tax expense Impact on net income \u2014 ( 2 ) Net income Unrealized gain (loss) on cash flow hedges: Interest rate contracts ( 3 ) ( 3 ) Interest expense Foreign currency exchange contracts 88 119 Revenue Income tax (expense) benefit ( 20 ) ( 28 ) Income tax expense Impact on net income 65 88 Net income Unrecognized pension and postretirement benefit costs: Prior service costs ( 77 ) ( 54 ) Investment income and other Income tax (expense) benefit 18 13 Income tax expense Impact on net income ( 59 ) ( 41 ) Net income Total amount reclassified for the period $ 6 $ 42 Net income (1) Accumulated other comprehensive income (loss) 30 Table of Contents UNITED PARCEL SERVICE, INC.",
+      "score": 0.9961
+    },
+    {
+      "sent": "AND SUBSIDIARIES MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS Cash Flows From Financing Activities Our primary sources (uses) of cash from financing activities were as follows (in millions, except per share data): Six Months Ended June 30, 2024 2023 Net cash (used in) from financing activities $ (2,767) $ (3,582) Share Repurchases: Cash paid to repurchase shares $ \u2014 $ (1,498) Number of shares repurchased \u2014 (8.4) Shares outstanding at period end 857 855 Dividends: Dividends declared per share $ 3.26 $ 3.24 Cash p\n: Six Months Ended June 30, 2024 2023 Net cash (used in) from financing activities $ (2,767) $ (3,582) Share Repurchases: Cash paid to repurchase shares $ \u2014 $ (1,498) Number of shares repurchased \u2014 (8.4) Shares outstanding at period end 857 855 Dividends: Dividends declared per share $ 3.26 $ 3.24 Cash paid for dividends $ (2,701) $ (2,693) Borrowings: Net borrowings (repayments) of debt principal $ 5 $ 907 Other Financing Activities: Cash received for common stock issuances $ 131 $ 119 Other financing activities $ (202) $ (417) Capitalization: Total debt outstanding at period end $ 22,205 $ 20,763 Total shareowners' equity at period end 17,053 20,037 Total capitalization $ 39,258 $ 40,800 We did not repurchase any shares under our stock repurchase program in the first six months of 2024.",
+      "score": 0.9834
+    },
+    {
+      "sent": "AND SUBSIDIARIES STATEMENTS OF CONSOLIDATED INCOME (In millions, except per share amounts) (unaudited) Three Months Ended June 30, Six Months Ended June 30, 2024 2023 2024 2023 Revenue $ 21,818 $ 22,055 $ 43,524 $ 44,980 Operating Expenses: Compensation and benefits 11,503 11,196 23,142 22,660 Repairs and maintenance 734 682 1,452 1,407 Depreciation and amortization 887 828 1,785 1,662 Purchased transportation 3,273 3,171 6,519 6,712 Fuel 1,126 1,090 2,186 2,361 Other occupancy 492 458 1,056 1,009 Other expenses 1,859 1,850 3,827 3,848 Total Operating Expenses 19,874 19,275 39,967 39,659 Operating Profit 1,944 2,780 3,557 5,321 Other Income (Expense): Investment income and other 137 131 255 300 Interest expense ( 212 ) ( 191 ) ( 407 ) ( 379 ) Total Other Income (Expense) ( 75 ) ( 60 ) ( 152 ) ( 79 ) Income Before Income Taxes 1,869 2,720 3,405 5,242 Income Tax Expense 460 639 883 1,266 Net Income $ 1,409 $ 2,081 $ 2,522 $ 3,976 Basic Earnings Per Share $ 1.65 $ 2.42 $ 2.95 $ 4.62 Diluted Earnings Per Share $ 1.65 $ 2.42 $ 2.94 $ 4.61 STATEMENTS OF CONSOLIDATED COMPREHENSIVE INCOME (LOSS) (In millions) (unaudited) Three Months Ended June 30, Six Months Ended June 30, 2024 2023 2024 2023 Net Income $ 1,409 $ 2,081 $ 2,522 $ 3,976 Change in foreign currency translation adjustment, net of tax ( 58 ) ( 18 ) ( 183 ) 100 Change in unrealized gain (loss) on marketable securities, net of tax \u2014 ( 16 ) ( 1 ) ( 9 ) Change in unrealized gain (loss) on cash flow hedges, net of tax 3 ( 80 ) 76 ( 157 ) Change in unrecognized pension and postretirement benefit costs, net of tax 29 21 59 41 Comprehensive Income $ 1,383 $ 1,988 $ 2,473 $ 3,951 See notes to unaudited, consolidated financial statements.",
+      "score": 0.9825
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Accordingly, we are not able to estimate a possible loss or range of losses that may result from these disputes or to determine whether such losses, if any, would have a material impact on our financial condition, results of operations or liquidity.",
+      "score": -0.8316
+    },
+    {
+      "sent": "Accordingly, we are not able to estimate a possible loss or range of loss that may result from this matter or to determine whether such loss, if any, would have a material adverse effect on our financial condition, results of operations or liquidity.",
+      "score": -0.8061
+    },
+    {
+      "sent": "Accounting Standards Issued But Not Yet Effective See note 2 to the unaudited, consolidated financial statements for a discussion of accounting standards issued, but not yet effective.",
+      "score": -0.7692
+    }
+  ],
+  "forward_snippets": [
+    "From time to time, we expect to participate in analyst and investor conferences.",
+    "We will be required to define significant segment expense categories and we anticipate providing additional qualitative and quantitative information in accordance with this ASU.",
+    "We will be required to define significant segment expense categories and we anticipate providing additional qualitative and quantitative information in accordance with this ASU.",
+    "In making this determination, we considered the financial condition and prospects of each issuer, the magnitude of the losses compared with the cost, the probability that we will be unable to collect all amounts due according to the contractual terms of the security, the credit rating of the security and our ability and intent to hold these investments until the anticipated recovery in market value occurs.",
+    "In making this determination, we considered the financial condition and prospects of each issuer, the magnitude of the losses compared with the cost, the probability that we will be unable to collect all amounts due according to the contractual terms of the security, the credit rating of the security and our ability and intent to hold these investments until the anticipated recovery in market value occurs."
+  ]
+}

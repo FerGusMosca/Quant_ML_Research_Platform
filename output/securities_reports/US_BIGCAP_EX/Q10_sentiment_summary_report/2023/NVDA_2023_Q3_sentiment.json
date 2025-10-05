@@ -1,0 +1,47 @@
+{
+  "symbol": "NVDA",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.088,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.261
+  },
+  "top_positive": [
+    {
+      "sent": "April 30, 2023 January 29, 2023 Amortized Cost Estimated Fair Value Amortized Cost Estimated Fair Value (In millions) Less than one year $ 12,654 $ 12,625 $ 9,738 $ 9,708 Due in 1 - 5 years 2,453 2,446 3,374 3,347 Total $ 15,107 $ 15,071 $ 13,112 $ 13,055 13 Note 8 \u2013 Fair Value of Financial Assets and Liabilities The fair values of our financial assets and liabilities are determined using quoted market prices of identical assets or quoted market prices of similar assets from active markets.",
+      "score": 0.975
+    },
+    {
+      "sent": "April 30, 2023 January 29, 2023 Amortized Cost Estimated Fair Value Amortized Cost Estimated Fair Value (In millions) Less than one year $ 12,654 $ 12,625 $ 9,738 $ 9,708 Due in 1 - 5 years 2,453 2,446 3,374 3,347 Total $ 15,107 $ 15,071 $ 13,112 $ 13,055 13 Note 8 \u2013 Fair Value of Financial Assets and Liabilities The fair values of our financial assets and liabilities are determined using quoted market prices of identical assets or quoted market prices of similar assets from active markets.",
+      "score": 0.975
+    },
+    {
+      "sent": "Our Condensed Consolidated Statements of Income include stock-based compensation expense, net of amounts allocated to inventory, as follows: Three Months Ended April 30, 2023 May 1, 2022 (In millions) Cost of revenue $ 27 $ 38 Research and development 524 384 Sales, general and administrative 184 156 Total $ 735 $ 578 Equity Award Activity The following is a summary of our equity award transactions under our equity incentive plans: RSUs, PSUs, and Market-based PSUs Outstanding Number of Shares Weighted Average Grant-Date Fair Value Per Share (In millions, except per share data) Balances, January 29, 2023 45 $ 158.45 Granted 2 $ 226.08 Vested restricted stock ( 6 ) $ 115.99 Canceled and forfeited ( 1 ) $ 199.37 Balances, April 30, 2023 40 $ 167.07 As of April\u00a030, 2023, there was $ 6.55 billion of aggregate unearned stock-based compensation expense.",
+      "score": 0.9723
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "RISK FACTORS Other than the risk factors listed below, there have been no material changes from the risk factors previously described under Item 1A of our Annual Report on Form 10-K for the fiscal year ended January\u00a029, 2023.",
+      "score": -0.8038
+    },
+    {
+      "sent": "RISK FACTORS Other than the risk factors listed below, there have been no material changes from the risk factors previously described under Item 1A of our Annual Report on Form 10-K for the fiscal year ended January\u00a029, 2023.",
+      "score": -0.8038
+    },
+    {
+      "sent": "RISK FACTORS Other than the risk factors listed below, there have been no material changes from the risk factors previously described under Item 1A of our Annual Report on Form 10-K for the fiscal year ended January\u00a029, 2023.",
+      "score": -0.8038
+    }
+  ],
+  "forward_snippets": [
+    "These estimates are based on historical facts and various other assumptions that we believe are reasonable.",
+    "While we believe that we have adequately provided for all uncertain tax positions, or tax positions where we believe it is not more-likely-than-not that the position will be sustained upon review, amounts asserted by tax authorities could be greater or less than our accrued position.",
+    "While we believe that we have adequately provided for all uncertain tax positions, or tax positions where we believe it is not more-likely-than-not that the position will be sustained upon review, amounts asserted by tax authorities could be greater or less than our accrued position.",
+    "While we believe that we have adequately provided for all uncertain tax positions, or tax positions where we believe it is not more-likely-than-not that the position will be sustained upon review, amounts asserted by tax authorities could be greater or less than our accrued position.",
+    "We expect to recognize approximately 46 % of this revenue over the next twelve months and the remainder thereafter."
+  ]
+}

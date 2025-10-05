@@ -1,0 +1,47 @@
+{
+  "symbol": "DLTR",
+  "year": 2024,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1298,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.103
+  },
+  "top_positive": [
+    {
+      "sent": "The aggregate fair values and carrying values of our long-term borrowings, including current portion, were as follows: November 2, 2024 February 3, 2024 October 28, 2023 (in millions) Fair Value Carrying Value Fair Value Carrying Value Fair Value Carrying Value Level 1 Senior Notes $ 3,123.9 $ 3,432.7 $ 3,140.0 $ 3,430.1 $ 2,952.6 $ 3,429.2 The fair values of our Senior Notes were determined using Level 1 inputs as quoted prices in active markets for identical assets or liabilities are available.",
+      "score": 0.9861
+    },
+    {
+      "sent": "Across both of our segments, we are investing in our talent, including initiatives to provide competitive pay and benefits, enhanced training, and attractive career opportunities to deliver an enhanced associate experience, reduce turnover, and improve our store standards and efficiencies and ultimately the customer experience.",
+      "score": 0.9403
+    },
+    {
+      "sent": "Across both of our segments, we are investing in our talent, including initiatives to provide competitive pay and benefits, enhanced training, and attractive career opportunities to deliver an enhanced associate experience, reduce turnover, and improve our store standards and efficiencies and ultimately the customer experience.",
+      "score": 0.9403
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Acetaminophen Matters Beginning in August 2022, more than 50 personal injury cases have been filed in federal court against Dollar Tree, Family Dollar, or both, on behalf of minors alleging that their mothers took acetaminophen while pregnant, that the acetaminophen interfered with fetal development such that plaintiffs were born with autism and/or ADHD, and that we knew or should have known of the danger, had a duty to warn and failed to include appropriate warnings on the product labels.",
+      "score": -0.9001
+    },
+    {
+      "sent": "Acetaminophen Matters Beginning in August 2022, more than 50 personal injury cases have been filed in federal court against Dollar Tree, Family Dollar, or both, on behalf of minors alleging that their mothers took acetaminophen while pregnant, that the acetaminophen interfered with fetal development such that plaintiffs were born with autism and/or ADHD, and that we knew or should have known of the danger, had a duty to warn and failed to include appropriate warnings on the product labels.",
+      "score": -0.9001
+    },
+    {
+      "sent": "Acetaminophen Matters Beginning in August 2022, more than 50 personal injury cases have been filed in federal court against Dollar Tree, Family Dollar, or both, on behalf of minors alleging that their mothers took acetaminophen while pregnant, that the acetaminophen interfered with fetal development such that plaintiffs were born with autism and/or ADHD, and that we knew or should have known of the danger, had a duty to warn and failed to include appropriate warnings on the product labels.",
+      "score": -0.9001
+    }
+  ],
+  "forward_snippets": [
+    "We expect ASU 2023-07 to impact only our disclosures with no impact to our consolidated financial condition, results of operations, or cash flows.",
+    "We expect that the remaining inventory losses and property and equipment losses will be fully offset by insurance recoveries under our distribution center insurance policies.",
+    "We continue to assess these estimates and will recognize any changes to these estimates in the period(s) in which they are determined.",
+    "We will vigorously defend ourselves in these matters.",
+    "We expect that the remaining inventory losses and property and equipment losses will be fully offset by insurance recoveries under our distribution center insurance policies."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "NOW",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2201,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.087
+  },
+  "top_positive": [
+    {
+      "sent": "12 Table of Contents Stock Options A summary of stock option activity for the three months ended March 31, 2023 was as follows: Number of Shares Weighted- Average Exercise Price Per Share Weighted- Average Remaining Contractual Term Aggregate Intrinsic Value (in thousands) (in years) (in millions) Outstanding at December 31, 2022 1,237 $ 590.36 Exercised ( 4 ) $ 71.26 $ 1 Forfeited \u2014 $ 84.97 Outstanding at March 31, 2023 1,233 $ 591.98 8.1 $ 58 Vested and expected to vest as of March 31, 2023 965 $ 572.11 8.0 $ 56 Vested and exercisable as of March 31, 2023 149 $ 171.79 5.1 $ 44 Aggregate intrinsic value represents the difference between the estimated fair value of our common stock and the exercise price of outstanding, in-the-money options.",
+      "score": 0.9786
+    },
+    {
+      "sent": "As of March 31, 2023, we had 203.7 million shares of common stock outstanding and had reserved shares of common stock for future issuance as follows (in thousands): March 31, 2023 Stock plans: Options outstanding 1,233 RSUs (1) 8,421 Shares of common stock available for future grants: 2021 Equity Incentive Plan (2) 1,966 Amended and Restated 2012 Employee Stock Purchase Plan (2) 8,693 2022 New-Hire Equity Incentive Plan (2) 869 Total shares of common stock reserved for future issuance 21,182 (1) Represents the number of shares issuable upon settlement of outstanding restricted stock units (\u201cRSUs\u201d) and performance-based RSUs (\u201cPRSUs\u201d), as discussed in Note 12.",
+      "score": 0.9766
+    },
+    {
+      "sent": "As of March 31, 2023, we had 203.7 million shares of common stock outstanding and had reserved shares of common stock for future issuance as follows (in thousands): March 31, 2023 Stock plans: Options outstanding 1,233 RSUs (1) 8,421 Shares of common stock available for future grants: 2021 Equity Incentive Plan (2) 1,966 Amended and Restated 2012 Employee Stock Purchase Plan (2) 8,693 2022 New-Hire Equity Incentive Plan (2) 869 Total shares of common stock reserved for future issuance 21,182 (1) Represents the number of shares issuable upon settlement of outstanding restricted stock units (\u201cRSUs\u201d) and performance-based RSUs (\u201cPRSUs\u201d), as discussed in Note 12.",
+      "score": 0.9766
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our business could be harmed by any of these risks or additional risks and uncertainties not presently known to us or that we currently believe to be immaterial.",
+      "score": -0.8271
+    },
+    {
+      "sent": "Our business could be harmed by any of these risks or additional risks and uncertainties not presently known to us or that we currently believe to be immaterial.",
+      "score": -0.8271
+    },
+    {
+      "sent": "We accrue for loss contingencies when it is both probable that we will incur the loss and when we can reasonably estimate the amount of the loss or range of loss.",
+      "score": -0.802
+    }
+  ],
+  "forward_snippets": [
+    "The decline in fair value below amortized cost basis was not considered other than temporary as it is more likely than not we will hold the securities until maturity or a recovery of the cost basis, and credit-related impairment losses were not material as of March 31, 2023.",
+    "RPO excludes contracts that are billed in arrears, such as certain time and materials contracts, as we apply the \u201cright to invoice\u201d practical expedient under relevant accounting guidance.",
+    "As of March 31, 2023, the total non-cancellable RPO under our contracts with customers was $ 14.0 billion and we expect to recognize revenues on approximately 50 % of these RPO over the following 12 months.",
+    "RPO excludes contracts that are billed in arrears, such as certain time and materials contracts, as we apply the \u201cright to invoice\u201d practical expedient under relevant accounting guidance.",
+    "As of March 31, 2023, the total non-cancellable RPO under our contracts with customers was $ 14.0 billion and we expect to recognize revenues on approximately 50 % of these RPO over the following 12 months."
+  ]
+}

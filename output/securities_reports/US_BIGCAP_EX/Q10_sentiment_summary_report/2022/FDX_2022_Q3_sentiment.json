@@ -1,0 +1,47 @@
+{
+  "symbol": "FDX",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1699,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.095
+  },
+  "top_positive": [
+    {
+      "sent": "Postal Service (\u201cUSPS\u201d), including strategic changes to its operations to reduce its reliance on the air network of FedEx Express, or our relationship with the USPS; \u2022 the price and availability of jet and vehicle fuel, including significant increases in fuel prices as a result of the ongoing conflict between Russia and Ukraine; \u2022 our ability to manage our network capacity and cost structure for capital expenditures and operating expenses, and match it to shifting and future customer volume levels; \u2022 the effect of intense competition on our ability to maintain or increase our prices (including our fuel surcharges in response to rising fuel costs) or to maintain or grow our revenue and market share; \u2022 our ability to execute and effectively operate, integrate, leverage, and grow acquired businesses, and to continue to support the value we allocate to these acquired businesses, including their goodwill and other intangible assets; \u2022 the future rate of e-commerce growth and our ability to successfully expand our e-commerce services portfolio; \u2022 the timeline for recovery of passenger airline cargo capacity; \u2022 any effects on our businesses resulting from evolving or new U.S.",
+      "score": 0.9783
+    },
+    {
+      "sent": "Postal Service (\u201cUSPS\u201d), including strategic changes to its operations to reduce its reliance on the air network of FedEx Express, or our relationship with the USPS; \u2022 the price and availability of jet and vehicle fuel, including significant increases in fuel prices as a result of the ongoing conflict between Russia and Ukraine; \u2022 our ability to manage our network capacity and cost structure for capital expenditures and operating expenses, and match it to shifting and future customer volume levels; \u2022 the effect of intense competition on our ability to maintain or increase our prices (including our fuel surcharges in response to rising fuel costs) or to maintain or grow our revenue and market share; \u2022 our ability to execute and effectively operate, integrate, leverage, and grow acquired businesses, and to continue to support the value we allocate to these acquired businesses, including their goodwill and other intangible assets; \u2022 the future rate of e-commerce growth and our ability to successfully expand our e-commerce services portfolio; \u2022 the timeline for recovery of passenger airline cargo capacity; \u2022 any effects on our businesses resulting from evolving or new U.S.",
+      "score": 0.9783
+    },
+    {
+      "sent": "Postal Service (\u201cUSPS\u201d), including strategic changes to its operations to reduce its reliance on the air network of FedEx Express, or our relationship with the USPS; \u2022 the price and availability of jet and vehicle fuel, including significant increases in fuel prices as a result of the ongoing conflict between Russia and Ukraine; \u2022 our ability to manage our network capacity and cost structure for capital expenditures and operating expenses, and match it to shifting and future customer volume levels; \u2022 the effect of intense competition on our ability to maintain or increase our prices (including our fuel surcharges in response to rising fuel costs) or to maintain or grow our revenue and market share; \u2022 our ability to execute and effectively operate, integrate, leverage, and grow acquired businesses, and to continue to support the value we allocate to these acquired businesses, including their goodwill and other intangible assets; \u2022 the future rate of e-commerce growth and our ability to successfully expand our e-commerce services portfolio; \u2022 the timeline for recovery of passenger airline cargo capacity; \u2022 any effects on our businesses resulting from evolving or new U.S.",
+      "score": 0.9783
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "FedEx and its subsidiaries are subject to other legal proceedings that arise in the ordinary course of business, including certain lawsuits containing various class-action allegations of wage-and-hour violations in which plaintiffs claim, among other things, that they were forced to work \u201coff the clock,\u201d were not paid overtime, or were not provided work breaks or other benefits, as well as lawsuits containing allegations that FedEx and its subsidiaries are responsible for third-party losses related to vehicle accidents that could exceed our insurance coverage for such losses.",
+      "score": -0.7717
+    },
+    {
+      "sent": "Russia and Ukraine Conflict The crisis in Russia and Ukraine that began in February 2022 continues as of the date of this quarterly report.",
+      "score": -0.7506
+    },
+    {
+      "sent": "Russia and Ukraine Conflict The crisis in Russia and Ukraine that began in February 2022 continues as of the date of this quarterly report.",
+      "score": -0.7506
+    }
+  ],
+  "forward_snippets": [
+    "We expect the pre-tax cost of our business realignment activities to range fro m $ 380 million to $ 450 million throu gh 2023.",
+    "We believe the following new accounting guidance is relevant to the readers of our financial statements.",
+    "The guidance was effective upon issuance and can generally be applied through December 31, 2022.",
+    "While there has been no material effect to our financial condition, results of operations, or cash flows from reference rate reform as of February 28, 2022, we continue to monitor our contracts and transactions for potential application of this ASU.",
+    "The guidance allows lessors to classify and account for a lease with variable lease payments that do not depend on a reference index or rate as an operating lease if certain criteria are met."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "DD",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.241,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.141
+  },
+  "top_positive": [
+    {
+      "sent": "Consolidated Statements of Operations (In millions, except for per share amounts) For the years ended December 31, 2021 2020 2019 Net sales $ 16,653 $ 14,338 $ 15,436 Cost of sales 10,803 9,508 10,026 Research and development expenses 618 625 689 Selling, general and administrative expenses 1,855 1,701 2,057 Amortization of intangibles 725 696 701 Restructuring and asset related charges - net 55 845 152 Goodwill impairment charges \u2014 3,214 242 Acquisition, integration and separation costs 133 177 1,257 Equity in earnings of nonconsolidated affiliates 94 187 85 Sundry income (expense) - net 163 667 144 Interest expense 525 672 667 Income (loss) from continuing operations before income taxes 2,196 ( 2,246 ) ( 126 ) Provision for (benefit from) income taxes on continuing operations 392 160 ( 2 ) Income (loss) from continuing operations, net of tax 1,804 ( 2,406 ) ( 124 ) Income (loss) from discontinued operations, net of tax 4,711 ( 517 ) 724 Net income (loss) 6,515 ( 2,923 ) 600 Net income attributable to noncontrolling interests 48 28 102 Net income (loss) available for DuPont common stockholders $ 6,467 $ ( 2,951 ) $ 498 Per common share data: Earnings (loss) per common share from continuing operations - basic $ 3.24 $ ( 3.31 ) $ ( 0.21 ) Earnings (loss) per common share from discontinued operations - basic 8.68 ( 0.70 ) 0.87 Earnings (loss) earnings per common share - basic $ 11.92 $ ( 4.01 ) $ 0.67 Earnings (loss) per common share from continuing operations - diluted $ 3.23 $ ( 3.31 ) $ ( 0.21 ) Earnings (loss) per common share from discontinued operations - diluted 8.66 ( 0.70 ) 0.87 Earnings (loss) per common share - diluted $ 11.89 $ ( 4.01 ) $ 0.67 Weighted-average common shares outstanding - basic 542.7 735.5 746.3 Weighted-average common shares outstanding - diluted 544.2 735.5 746.3 See Notes to the Consolidated Financial Statements.",
+      "score": 0.9771
+    },
+    {
+      "sent": "Consolidated Statements of Operations (In millions, except for per share amounts) For the years ended December 31, 2021 2020 2019 Net sales $ 16,653 $ 14,338 $ 15,436 Cost of sales 10,803 9,508 10,026 Research and development expenses 618 625 689 Selling, general and administrative expenses 1,855 1,701 2,057 Amortization of intangibles 725 696 701 Restructuring and asset related charges - net 55 845 152 Goodwill impairment charges \u2014 3,214 242 Acquisition, integration and separation costs 133 177 1,257 Equity in earnings of nonconsolidated affiliates 94 187 85 Sundry income (expense) - net 163 667 144 Interest expense 525 672 667 Income (loss) from continuing operations before income taxes 2,196 ( 2,246 ) ( 126 ) Provision for (benefit from) income taxes on continuing operations 392 160 ( 2 ) Income (loss) from continuing operations, net of tax 1,804 ( 2,406 ) ( 124 ) Income (loss) from discontinued operations, net of tax 4,711 ( 517 ) 724 Net income (loss) 6,515 ( 2,923 ) 600 Net income attributable to noncontrolling interests 48 28 102 Net income (loss) available for DuPont common stockholders $ 6,467 $ ( 2,951 ) $ 498 Per common share data: Earnings (loss) per common share from continuing operations - basic $ 3.24 $ ( 3.31 ) $ ( 0.21 ) Earnings (loss) per common share from discontinued operations - basic 8.68 ( 0.70 ) 0.87 Earnings (loss) earnings per common share - basic $ 11.92 $ ( 4.01 ) $ 0.67 Earnings (loss) per common share from continuing operations - diluted $ 3.23 $ ( 3.31 ) $ ( 0.21 ) Earnings (loss) per common share from discontinued operations - diluted 8.66 ( 0.70 ) 0.87 Earnings (loss) per common share - diluted $ 11.89 $ ( 4.01 ) $ 0.67 Weighted-average common shares outstanding - basic 542.7 735.5 746.3 Weighted-average common shares outstanding - diluted 544.2 735.5 746.3 See Notes to the Consolidated Financial Statements.",
+      "score": 0.9771
+    },
+    {
+      "sent": "Final determination of the fair values may result in further adjustments to the values presented in the following table: Laird PM Assets Acquired and Liabilities Assumed on July 1, 2021 (in millions) Fair Value of Assets Acquired Cash and cash equivalents $ 92 Accounts and notes receivable 99 Inventories 50 Property, plant, and equipment 104 Other current assets 10 Goodwill 1,213 Other intangible assets 1,160 Deferred income tax assets 3 Deferred charges and other assets 26 Total Assets $ 2,757 Fair Value of Liabilities Assumed Accounts payable $ 75 Income taxes payable 10 Accrued and other current liabilities 46 Deferred income tax liabilities 184 Pension & other post-employment benefits - noncurrent 10 Other noncurrent obligations 28 Total Liabilities $ 353 Net Assets (Consideration for Laird PM) $ 2,404 The significant fair value adjustments included in the provisional allocation of purchase price are discussed below.",
+      "score": 0.9761
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our audits of the consolidated financial statements included performing procedures to assess the risks of material misstatement of the consolidated financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    },
+    {
+      "sent": "Our audit included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    },
+    {
+      "sent": "Our audit included performing procedures to assess the risks of material misstatement of the financial statements, whether due to error or fraud, and performing procedures that respond to those risks.",
+      "score": -0.8658
+    }
+  ],
+  "forward_snippets": [
+    "Additionally, success in achieving the Company\u2019s growth objectives is significantly dependent on the timing and market acceptance of the Company\u2019s new product offerings, including the Company\u2019s ability to renew the Company\u2019s pipeline of new product offerings and to bring those offerings to market.",
+    "Components of management\u2019s discussion and analysis of financial condition and results of operations include: \u2022 Overview \u2022 Analysis of Operations \u2022 Result of Operations \u2022 Supplemental Unaudited Pro Forma Combined Financial Information \u2022 Segment Results \u2022 Outlook \u2022 Liquidity and Capital Resources \u2022 Recent Accounting Pronouncements \u2022 Critical Accounting Estimates \u2022 Long-Term Employee Benefits \u2022 Environmental Matters OVERVIEW As of December 31, 2021, the Company has $3.8 billion of net working capital and over $2 billion in cash and cash equivalents.",
+    "Divestitures On December 31, 2021, the Company \nOutlook \u2022 Liquidity and Capital Resources \u2022 Recent Accounting Pronouncements \u2022 Critical Accounting Estimates \u2022 Long-Term Employee Benefits \u2022 Environmental Matters OVERVIEW As of December 31, 2021, the Company has $3.8 billion of net working capital and over $2 billion in cash and cash equivalents.",
+    "OUTLOOK In 2022, the Company expects demand to remain strong across all segments led by on-going strength in semiconductors, along with continued demand in industrial technologies, smartphone sales, water filtration and residential construction.",
+    "At January 31, 2022, DuPont's credit ratings were as follows: Credit Ratings Long-Term Rating Short-Term Rating Outlook Standard & Poor\u2019s BBB+ A-2 Stable Moody\u2019s Investors Service Baa1 P-2 Negative Fitch Ratings BBB+ F-2 Stable The Company's indenture covenants include customary limitations on liens, sale and leaseback transactions, and mergers and consolidations, subject to certain limitations."
+  ]
+}

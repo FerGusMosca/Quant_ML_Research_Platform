@@ -1,0 +1,47 @@
+{
+  "symbol": "DD",
+  "year": 2023,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2092,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.055
+  },
+  "top_positive": [
+    {
+      "sent": "Final determination of the fair values may result in further adjustments to the values presented in the following table: Spectrum Assets Acquired and Liabilities Assumed on August 1, 2023 (In millions) Fair Value of Assets Acquired Cash and cash equivalents $ 31 Accounts and notes receivable 68 Inventories 52 Property, plant and equipment 125 Other intangible assets 1,032 Deferred charges and other assets 34 Total Assets Acquired $ 1,342 Fair value of liabilities assumed Accounts payable $ 21 Accrued and other current liabilities 17 Deferred income tax liabilities 206 Other noncurrent liabilities 37 Total Liabilities Assumed $ 281 Goodwill 731 Total Consideration $ 1,792 The significant fair value estimates included in the provisional allocation of purchase price are discussed below.",
+      "score": 0.9578
+    },
+    {
+      "sent": "Final determination of the fair values may result in further adjustments to the values presented in the following table: Spectrum Assets Acquired and Liabilities Assumed on August 1, 2023 (In millions) Fair Value of Assets Acquired Cash and cash equivalents $ 31 Accounts and notes receivable 68 Inventories 52 Property, plant and equipment 125 Other intangible assets 1,032 Deferred charges and other assets 34 Total Assets Acquired $ 1,342 Fair value of liabilities assumed Accounts payable $ 21 Accrued and other current liabilities 17 Deferred income tax liabilities 206 Other noncurrent liabilities 37 Total Liabilities Assumed $ 281 Goodwill 731 Total Consideration $ 1,792 The significant fair value estimates included in the provisional allocation of purchase price are discussed below.",
+      "score": 0.9578
+    },
+    {
+      "sent": "Final determination of the fair values may result in further adjustments to the values presented in the following table: Spectrum Assets Acquired and Liabilities Assumed on August 1, 2023 (In millions) Fair Value of Assets Acquired Cash and cash equivalents $ 31 Accounts and notes receivable 68 Inventories 52 Property, plant and equipment 125 Other intangible assets 1,032 Deferred charges and other assets 34 Total Assets Acquired $ 1,342 Fair value of liabilities assumed Accounts payable $ 21 Accrued and other current liabilities 17 Deferred income tax liabilities 206 Other noncurrent liabilities 37 Total Liabilities Assumed $ 281 Goodwill 731 Total Consideration $ 1,792 The significant fair value estimates included in the provisional allocation of purchase price are discussed below.",
+      "score": 0.9578
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "LEGAL PROCEEDINGS The Company and its subsidiaries are subject to various litigation matters, including, but not limited to, product liability, patent infringement, antitrust claims, and claims for third party property damage or personal injury stemming from alleged environmental torts.",
+      "score": -0.8603
+    },
+    {
+      "sent": "RISK FACTORS There have been no material changes in the Company's risk factors discussed in Part I, Item 1A, Risk Factors, in the Company\u2019s Annual Report on Form 10-K for the year ended December\u00a031, 2022.",
+      "score": -0.8038
+    },
+    {
+      "sent": "QUANTITATIVE AND QUALITATIVE DISCLOSURES ABOUT MARKET RISK See Note 19 to the interim Consolidated Financial Statements.",
+      "score": -0.4278
+    }
+  ],
+  "forward_snippets": [
+    "10 Table of Contents NOTES TO THE CONSOLIDATED FINANCIAL STATEMENTS Table of Contents Note Page 1 Summary of Significant Accounting Policies 12 2 Recent Accounting Guidance 12 3 Acquisitions 13 4 Divestitures 14 5 Revenue 16 6 Restructuring and Asset Related Charges - Net 17 7 Supplementary Information 18 8 Income Taxes 18 9 Earnings Per Share Calculations 19 10 Inventories 20 11 Nonconsolidated Affiliates 20 12 Goodwill and Other Intangible Assets 20 13 Short-Term Borrowings, Long-Term Debt, Available Credit Facilities and Other Obligations 22 14 Commitments and Contingent Liabilities 23 15 Operating L eases 28 16 Stockholders' Equity 29 17 Pension Plans and Other Post-Employment Benefits 30 18 Stock-Based Compensation 30 19 Financial Instruments 31 20 Fair Value Measurements 33 21 Segments and Geographic Regions 34 22 Subsequent Events 36 11 Table of Contents NOTE 1 - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES Basis of Presentation In these notes, the terms \"DuPont\" or \"Company\" used herein mean DuPont de Nemours, Inc.",
+    "NOTE 2 - RECENT ACCOUNTING GUIDANCE Recently Adopted Accounting Guidance In September 2022, the FASB issued Accounting Standards Update No.",
+    "The new guidance requires that a buyer in a supplier finance program provides additional qualitative and quantitative disclosures about its program including the nature of the program, activity during the period, changes from period to period, and the potential magnitude of the program.",
+    "The purchase accounting and purchase price a\nGuidance 12 3 Acquisitions 13 4 Divestitures 14 5 Revenue 16 6 Restructuring and Asset Related Charges - Net 17 7 Supplementary Information 18 8 Income Taxes 18 9 Earnings Per Share Calculations 19 10 Inventories 20 11 Nonconsolidated Affiliates 20 12 Goodwill and Other Intangible Assets 20 13 Short-Term Borrowings, Long-Term Debt, Available Credit Facilities and Other Obligations 22 14 Commitments and Contingent Liabilities 23 15 Operating L eases 28 16 Stockholders' Equity 29 17 Pension Plans and Other Post-Employment Benefits 30 18 Stock-Based Compensation 30 19 Financial Instruments 31 20 Fair Value Measurements 33 21 Segments and Geographic Regions 34 22 Subsequent Events 36 11 Table of Contents NOTE 1 - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES Basis of Presentation In these notes, the terms \"DuPont\" or \"Company\" used herein mean DuPont de Nemours, Inc.",
+    "NOTE 2 - RECENT ACCOUNTING GUIDANCE Recently Adopted Accounting Guidance In September 2022, the FASB issued Accounting Standards Update No."
+  ]
+}

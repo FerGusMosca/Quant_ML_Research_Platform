@@ -1,0 +1,47 @@
+{
+  "symbol": "ADP",
+  "year": 2024,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.4028,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.082
+  },
+  "top_positive": [
+    {
+      "sent": "and Subsidiaries Consolidated Balance Sheets (In millions, except per share amounts) (Unaudited) September 30, June 30, 2024 2024 Assets Current assets: Cash and cash equivalents $ 2,104.9 $ 2,913.4 Short-term marketable securities (A) 5,242.2 384.0 Accounts receivable, net of allowance for doubtful accounts of $ 53.2 and $ 52.2 , respectively 3,316.7 3,428.2 Other current assets 1,070.5 820.8 Total current assets before funds held for clients 11,734.3 7,546.4 Funds held for clients 28,176.9 37,996.1 Total current assets 39,911.2 45,542.5 Long-term marketable securities (A) 940.6 \u2014 Long-term receivables, net of allowance for doubtful accounts of $ 0.2 and $ 0.1 , respectively 6.6 7.3 Property, plant and equipment, net 692.5 685.6 Operating lease right-of-use asset 362.5 370.6 Deferred contract costs 2,975.5 2,965.0 Other assets 923.2 1,102.1 Goodwill 2,369.0 2,353.6 Intangible assets, net 1,330.3 1,336.0 Total assets $ 49,511.4 $ 54,362.7 Liabilities and Stockholders' Equity Current liabilities: Accounts payable $ 145.2 $ 100.6 Accrued expenses and other current liabilities 2,973.9 3,349.0 Accrued payroll and payroll-related expenses 552.7 958.7 Dividends payable 565.9 566.4 Short-term deferred revenues 188.6 199.8 Obligations under reverse repurchase agreements (A) 679.1 385.4 Obligations under commercial paper borrowing 4,375.4 \u2014 Short-term debt 1,000.3 1.1 Income taxes payable 170.4 15.1 Total current liabilities before client funds obligations 10,651.5 5,576.1 Client funds obligations 28,720.9 39,503.9 Total current liabilities 39,372.4 45,080.0 Long-term debt 2,981.4 2,991.3 Operating lease liabilities 316.1 328.6 Other liabilities 977.0 990.8 Deferred income taxes 154.4 64.3 Long-term deferred revenues 361.5 360.1 Total liabilities 44,162.8 49,815.1 Commitments and contingencies (Note 13) Stockholders' equity: Preferred stock, $ 1.00 par value: authorized, 0.3 shares; issued, no ne \u2014 \u2014 Common stock, $ 0.10 par value: authorized, 1,000.0 shares; issued, 638.7 shares at September 30, 2024 and June 30, 2024; outstanding, 407.7 and 408.1 shares at September 30, 2024 and June 30, 2024, respectively 63.9 63.9 Capital in excess of par value 2,528.6 2,406.9 Retained earnings 24,001.2 23,622.2 Treasury stock - at cost: 231.0 and 230.6 shares at September 30, 2024 and June 30, 2024, respectively ( 20,144.9 ) ( 19,737.1 ) Accumulated other comprehensive (loss)/ income ( 1,100.2 ) ( 1,808.3 ) Total stockholders\u2019 equity 5,348.6 4,547.6 Total liabilities and stockholders\u2019 equity $ 49,511.4 $ 54,362.7 (A ) As of September\u00a030, 2024, $ 578.6 million of short-term marketable securities, $ 98.8 million of long-term marketable securities and $ 1.7 million of cash and cash equivalents have been pledged as collateral under the Company's reverse repurchase agreements.",
+      "score": 0.9853
+    },
+    {
+      "sent": "and Subsidiaries Statements of Consolidated Earnings (In millions, except per share amounts) (Unaudited) Three Months Ended September 30, 2024 2023 REVENUES: Revenues, other than interest on funds held for clients and PEO revenues $ 3,007.2 $ 2,843.0 Interest on funds held for clients 253.3 201.7 PEO revenues (A) 1,572.2 1,467.7 TOTAL REVENUES 4,832.7 4,512.4 EXPENSES: Costs of revenues: Operating expenses 2,285.8 2,157.6 Research and development 232.6 236.5 Depreciation and amortization 115.3 121.3 TOTAL COSTS OF REVENUES 2,633.7 2,515.4 Selling, general, and administrative expenses 926.7 880.3 Interest expense 137.8 91.6 TOTAL EXPENSES 3,698.2 3,487.3 Other (income)/expense, net ( 101.7 ) ( 67.7 ) EARNINGS BEFORE INCOME TAXES 1,236.2 1,092.8 Provision for income taxes 279.9 233.4 NET EARNINGS $ 956.3 $ 859.4 BASIC EARNINGS PER SHARE $ 2.34 $ 2.09 DILUTED EARNINGS PER SHARE $ 2.34 $ 2.08 Basic weighted average shares outstanding 407.9 411.7 Diluted weighted average shares outstanding 409.5 413.6 (A) Professional Employer Organization (\u201cPEO\u201d) revenues are net of direct pass-through costs, primarily consisting of payroll wages and payroll taxes of $ 17,193.6 million and $ 15,994.6 million for the three months ended September\u00a030, 2024 and 2023, respectively.",
+      "score": 0.9841
+    },
+    {
+      "sent": "The following tables provide details of revenue by our business pillars, and include a reconciliation to the Company\u2019s reportable segments: Three Months Ended September 30, Types of Revenues 2024 2023 HCM $ 2,025.4 $ 1,914.4 HRO, excluding PEO zero-margin benefits pass-throughs 865.2 811.7 PEO zero-margin benefits pass-throughs 1,049.2 976.7 Global 639.6 607.9 Interest on funds held for clients 253.3 201.7 Total Revenues $ 4,832.7 $ 4,512.4 Reconciliation of disaggregated revenue to our reportable segments for the three months ended September\u00a030, 2024: Types of Revenues Employer Services PEO Other Total HCM $ 2,027.6 $ \u2014 $ ( 2.2 ) $ 2,025.4 HRO, excluding PEO zero-margin benefits pass-throughs 342.8 523.0 ( 0.6 ) 865.2 PEO zero-margin benefits pass-throughs \u2014 1,049.2 \u2014 1,049.2 Global 639.6 \u2014 \u2014 639.6 Interest on funds held for clients 251.0 2.3 \u2014 253.3 Total Segment Revenues $ 3,261.0 $ 1,574.5 $ ( 2.8 ) $ 4,832.7 Reconciliation of disaggregated revenue to our reportable segments for the three months ended September\u00a030, 2023: Types of Revenues Employer Services PEO Other Total HCM $ 1,916.7 $ \u2014 $ ( 2.3 ) $ 1,914.4 HRO, excluding PEO zero-margin benefits pass-throughs 322.0 491.0 ( 1.3 ) 811.7 PEO zero-margin benefits pass-throughs \u2014 976.7 \u2014 976.7 Global 607.9 \u2014 \u2014 607.9 Interest on funds held for clients 199.8 1.9 \u2014 201.7 Total Segment Revenues $ 3,046.4 $ 1,469.6 $ ( 3.6 ) $ 4,512.4 Contract Balances The timing of revenue recognition for HCM, HRO and Global is consistent with the invoicing of clients, as invoicing occurs in the period the services are provided.",
+      "score": 0.9705
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Changes in deferred revenues related to set up fees for the three months ended September\u00a030, 2024 were as follows: Contract Liability Contract liability, July 1, 2024 $ 491.6 Recognition of revenue included in beginning of year contract liability ( 35.9 ) Contract liability, net of revenue recognized on contracts during the period 28.0 Currency translation adjustments 10.8 Contract liability, September 30, 2024 $ 494.5 8 Note 4.",
+      "score": -0.7184
+    },
+    {
+      "sent": "Changes in deferred revenues related to set up fees for the three months ended September\u00a030, 2024 were as follows: Contract Liability Contract liability, July 1, 2024 $ 491.6 Recognition of revenue included in beginning of year contract liability ( 35.9 ) Contract liability, net of revenue recognized on contracts during the period 28.0 Currency translation adjustments 10.8 Contract liability, September 30, 2024 $ 494.5 8 Note 4.",
+      "score": -0.7184
+    },
+    {
+      "sent": "Changes in deferred revenues related to set up fees for the three months ended September\u00a030, 2024 were as follows: Contract Liability Contract liability, July 1, 2024 $ 491.6 Recognition of revenue included in beginning of year contract liability ( 35.9 ) Contract liability, net of revenue recognized on contracts during the period 28.0 Currency translation adjustments 10.8 Contract liability, September 30, 2024 $ 494.5 8 Note 4.",
+      "score": -0.7184
+    }
+  ],
+  "forward_snippets": [
+    "June 30, 2026 (Fiscal 2026) The Company is assessing this guidance.",
+    "June 30, 2025 (Fiscal 2025) The Company is assessing this guidance.",
+    "June 30, 2026 (Fiscal 2026) The Company is assessing this guidance.",
+    "June 30, 2025 (Fiscal 2025) The Company is assessing this guidance.",
+    "The unrealized losses and fair values of available-for-sale securities that have been in an unrealized loss position for a period of less than and greater than 12 months as of September\u00a030, 2024, are as follows: September 30, 2024 Securities in Unrealized Loss Position Less Than 12 Months Securities in Unrealized Loss Position Greater Than 12 Months Total Gross Unrealized Losses Fair Market Value Gross Unrealized Losses Fair Market Value Gross Unre\nguidance."
+  ]
+}

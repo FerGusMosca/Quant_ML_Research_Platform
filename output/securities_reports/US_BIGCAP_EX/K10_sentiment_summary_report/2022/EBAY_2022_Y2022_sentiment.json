@@ -1,0 +1,47 @@
+{
+  "symbol": "EBAY",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1987,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.254
+  },
+  "top_positive": [
+    {
+      "sent": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS\u2014(Continued) Note\u00a016 \u2014 Gain (Loss) on Equity Investments and Warrant, Net and Interest and Other, Net The following table presents components of gain (loss) on equity investments and warrant, net for the periods indicated (in millions): Year Ended December 31, 2021 2020 2019 Change in fair value of equity investment in Adevinta $ ( 3,070 ) $ \u2014 $ \u2014 Gain (loss) on sale of shares in Adevinta (1) 9 \u2014 \u2014 Change in fair value of warrant 354 770 133 Change in fair value of equity investment in Adyen ( 10 ) \u2014 \u2014 Change in fair value of equity investment in KakaoBank 403 239 \u2014 Gain (loss) on sale of shares in KakaoBank 83 \u2014 \u2014 Impairment of equity investment in Paytm Mall ( 160 ) \u2014 \u2014 Gain (loss) on other investments (2) 26 ( 2 ) \u2014 Total gain (loss) on equity investments and warrant, net $ ( 2,365 ) $ 1,007 $ 133 (1) Gain (loss) on sale of shares in Adevinta included an $ 88 million gain recognized on the sale of the shares offset by a $ 79 million loss from the change in fair value of the shares sold through the date of sale.",
+      "score": 0.9952
+    },
+    {
+      "sent": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS\u2014(Continued) Note\u00a016 \u2014 Gain (Loss) on Equity Investments and Warrant, Net and Interest and Other, Net The following table presents components of gain (loss) on equity investments and warrant, net for the periods indicated (in millions): Year Ended December 31, 2021 2020 2019 Change in fair value of equity investment in Adevinta $ ( 3,070 ) $ \u2014 $ \u2014 Gain (loss) on sale of shares in Adevinta (1) 9 \u2014 \u2014 Change in fair value of warrant 354 770 133 Change in fair value of equity investment in Adyen ( 10 ) \u2014 \u2014 Change in fair value of equity investment in KakaoBank 403 239 \u2014 Gain (loss) on sale of shares in KakaoBank 83 \u2014 \u2014 Impairment of equity investment in Paytm Mall ( 160 ) \u2014 \u2014 Gain (loss) on other investments (2) 26 ( 2 ) \u2014 Total gain (loss) on equity investments and warrant, net $ ( 2,365 ) $ 1,007 $ 133 (1) Gain (loss) on sale of shares in Adevinta included an $ 88 million gain recognized on the sale of the shares offset by a $ 79 million loss from the change in fair value of the shares sold through the date of sale.",
+      "score": 0.9952
+    },
+    {
+      "sent": "The following table presents gain (loss) on equity investments and warrant, net for the periods indicated (in millions, except percentages): Year Ended December 31, 2021 % Change 2020 % Change 2019 Change in fair value of equity investment in Adevinta $ (3,070) ** $ \u2014 \u2014 % $ \u2014 Gain (loss) on sale of shares in Adevinta (1) 9 ** \u2014 \u2014 % \u2014 Change in fair value of warrant 354 (54) % 770 ** 133 Change in fair value of equity investment in Adyen (10) ** \u2014 \u2014 % \u2014 Change in fair value of equity investment in KakaoBank 403 69 % 239 ** \u2014 Gain (loss) on sale of shares in KakaoBank 83 ** \u2014 \u2014 % \u2014 Impairment of equity investment in Paytm Mall (160) ** \u2014 \u2014 % \u2014 Gain (loss) on other investments (2) 26 ** (2) ** \u2014 Total gain (loss) on equity investments and warrant, net $ (2,365) ** $ 1,007 ** $ 133 (1) Gain (loss) on sale of shares in Adevinta included an $88\u00a0million gain recognized on the sale of the shares offset by a $79\u00a0million loss from the change in fair value of the shares sold through the date of sale.",
+      "score": 0.9939
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our systems may experience service interruptions or degradation due to hardware and software defects or malfunctions, computer denial-of-service and other cyberattacks, human error, earthquakes, hurricanes, floods, fires, natural disasters, power losses, disruptions in telecommunications services, fraud, military or political conflicts, terrorist attacks, computer viruses, or other events.",
+      "score": -0.9844
+    },
+    {
+      "sent": "In addition to uncertainty about our ability to generate revenues from our foreign operations and expand into international markets, there are risks inherent in doing business internationally, including: \u2022 uncertainties and instability in economic and market conditions resulting from Brexit; \u2022 expenses associated with localizing our products and services and customer data, including offering customers the ability to transact business in the local currency and adapting our products and services to local preferences (e.g., payment methods) with which we may have limited or no experience; \u2022 trade barriers and changes in trade regulations; \u2022 difficulties in developing, staffing, and simultaneously managing a large number of varying foreign operations as a result of distance, language, and cultural differences; \u2022 stringent local labor laws and regulations; \u2022 credit risk and higher levels of payment fraud; \u2022 profit repatriation restrictions, foreign currency exchange restrictions or extreme fluctuations in foreign currency exchange rates for a particular currency; \u2022 global or regional economic conditions that impact companies and customers with which we do business; \u2022 political or social unrest, economic instability, repression, or human rights issues; \u2022 geopolitical events, including natural disasters, public health issues (such as the coronavirus), acts of war, and terrorism; \u2022 supply chain disruptions; \u2022 import or export regulations; \u2022 compliance with U.S.",
+      "score": -0.9638
+    },
+    {
+      "sent": "In addition to uncertainty about our ability to generate revenues from our foreign operations and expand into international markets, there are risks inherent in doing business internationally, including: \u2022 uncertainties and instability in economic and market conditions resulting from Brexit; \u2022 expenses associated with localizing our products and services and customer data, including offering customers the ability to transact business in the local currency and adapting our products and services to local preferences (e.g., payment methods) with which we may have limited or no experience; \u2022 trade barriers and changes in trade regulations; \u2022 difficulties in developing, staffing, and simultaneously managing a large number of varying foreign operations as a result of distance, language, and cultural differences; \u2022 stringent local labor laws and regulations; \u2022 credit risk and higher levels of payment fraud; \u2022 profit repatriation restrictions, foreign currency exchange restrictions or extreme fluctuations in foreign currency exchange rates for a particular currency; \u2022 global or regional economic conditions that impact companies and customers with which we do business; \u2022 political or social unrest, economic instability, repression, or human rights issues; \u2022 geopolitical events, including natural disasters, public health issues (such as the coronavirus), acts of war, and terrorism; \u2022 supply chain disruptions; \u2022 import or export regulations; \u2022 compliance with U.S.",
+      "score": -0.9638
+    }
+  ],
+  "forward_snippets": [
+    "We will also be carbon neutral for our scope 1 and 2 emissions by the end of 2021 and each year moving forward.",
+    "We believe that GMV provides a useful measure of the overall volume of paid transactions that flow through our platforms in a given period.",
+    "As our product offerings continue to broaden into new categories of items and new commerce formats, we expect to face additional competition from other online, mobile and offline channels for those new offerings.",
+    "For more information regarding regulatory risks, see the information in \u201cItem 1A: Risk Factors\u201d under the caption \u201cOur business is subject to extensive government regulation and oversight, which could adversely impact our business\u201d and \u201cOur business and our sellers and buyers may be subject to sales and other tax regimes in various jurisdictions, which may harm our business.\u201d 7 Table of Contents Seasonality We expect transaction activity patterns on our platforms to mirror general consumer buying patterns.",
+    "We believe that GMV provides a useful measure of the overall volume of paid transactions that flow through our platforms in a given period."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "LMT",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1704,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.152
+  },
+  "top_positive": [
+    {
+      "sent": "NOTE 2\u00a0- EARNINGS PER COMMON SHARE The weighted average number of shares outstanding used to compute earnings per common share were as follows (in\u00a0millions): Quarters Ended Six Months Ended June 26, 2022 June 27, 2021 June 26, 2022 June 27, 2021 Weighted average common shares outstanding for basic computations 265.8 277.4 267.0 278.1 Weighted average dilutive effect of equity awards 0.9 1.0 0.9 1.0 Weighted average common shares outstanding for diluted computations 266.7 278.4 267.9 279.1 We compute basic and diluted earnings per common share by dividing net earnings by the respective weighted average number of common shares outstanding for the periods presented.",
+      "score": 0.9887
+    },
+    {
+      "sent": "Government contracts, the mix of fixed-price and cost-reimbursable contracts, risks related to losses on fixed-price development programs, and the impacts of cost overruns and inflation; \u2022 the accuracy of our estimates and projections; \u2022 the impact of pension risk transfers, including potential noncash settlement charges, timing and estimates regarding pension funding and movements in interest rates and other changes that may affect pension plan assumptions, stockholders\u2019 equity, the level of the FAS/CAS adjustment, and actual returns on pension plan assets; \u2022 realizing the anticipated benefits of acquisitions or divestitures, investments, joint ventures, teaming arrangements or internal reorganizations, and market volatility affecting the fair value of investments in our Lockheed Martin Ventures Fund that are marked to market; \u2022 our efforts to increase the efficiency of our operations and improve the affordability of our products and services; \u2022 the risk of an impairment of our assets, including the potential impairment of goodwill recorded at the Sikorsky line of business; \u2022 the availability and adequacy of our insurance and indemnities; \u2022 our ability to benefit fully from or adequately protect our intellectual property rights; \u2022 procurement and other regulations and policies affecting our industry, export of its products, cost allowability or recovery, preferred contract type, and performance and progress payments policy; \u2022 climate change and changes to laws, regulations, policies, markets and customer requirements in response to climate change concerns; \u2022 changes in accounting, U.S.",
+      "score": 0.9694
+    },
+    {
+      "sent": "Government contracts, the mix of fixed-price and cost-reimbursable contracts, risks related to losses on fixed-price development programs, and the impacts of cost overruns and inflation; \u2022 the accuracy of our estimates and projections; \u2022 the impact of pension risk transfers, including potential noncash settlement charges, timing and estimates regarding pension funding and movements in interest rates and other changes that may affect pension plan assumptions, stockholders\u2019 equity, the level of the FAS/CAS adjustment, and actual returns on pension plan assets; \u2022 realizing the anticipated benefits of acquisitions or divestitures, investments, joint ventures, teaming arrangements or internal reorganizations, and market volatility affecting the fair value of investments in our Lockheed Martin Ventures Fund that are marked to market; \u2022 our efforts to increase the efficiency of our operations and improve the affordability of our products and services; \u2022 the risk of an impairment of our assets, including the potential impairment of goodwill recorded at the Sikorsky line of business; \u2022 the availability and adequacy of our insurance and indemnities; \u2022 our ability to benefit fully from or adequately protect our intellectual property rights; \u2022 procurement and other regulations and policies affecting our industry, export of its products, cost allowability or recovery, preferred contract type, and performance and progress payments policy; \u2022 climate change and changes to laws, regulations, policies, markets and customer requirements in response to climate change concerns; \u2022 changes in accounting, U.S.",
+      "score": 0.9694
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Actual results may differ materially due to factors such as: \u2022 the impact of COVID-19 or future epidemics on our business and financial results, including supply chain disruptions and delays, labor challenges associated with employee absences, quarantine restrictions, travel restrictions, site access, program delays, changes in customer payment policies and the impacts of potential vaccine mandates or other requirements; \u2022 budget uncertainty, the risk of future budget cuts and the impacts of inflation, the debt ceiling and the potential for government shutdowns and changing funding and acquisition priorities; \u2022 our reliance on contracts with the U.S.",
+      "score": -0.8519
+    },
+    {
+      "sent": "Actual results may differ materially due to factors such as: \u2022 the impact of COVID-19 or future epidemics on our business and financial results, including supply chain disruptions and delays, labor challenges associated with employee absences, quarantine restrictions, travel restrictions, site access, program delays, changes in customer payment policies and the impacts of potential vaccine mandates or other requirements; \u2022 budget uncertainty, the risk of future budget cuts and the impacts of inflation, the debt ceiling and the potential for government shutdowns and changing funding and acquisition priorities; \u2022 our reliance on contracts with the U.S.",
+      "score": -0.8519
+    },
+    {
+      "sent": "Actual results may differ materially due to factors such as: \u2022 the impact of COVID-19 or future epidemics on our business and financial results, including supply chain disruptions and delays, labor challenges associated with employee absences, quarantine restrictions, travel restrictions, site access, program delays, changes in customer payment policies and the impacts of potential vaccine mandates or other requirements; \u2022 budget uncertainty, the risk of future budget cuts and the impacts of inflation, the debt ceiling and the potential for government shutdowns and changing funding and acquisition priorities; \u2022 our reliance on contracts with the U.S.",
+      "score": -0.8519
+    }
+  ],
+  "forward_snippets": [
+    "We base these estimates on historical experience and on various other assumptions that we believe are reasonable under the circumstances, the results of which form the basis for making judgments about the carrying amounts of assets and liabilities that are not readily apparent from other sources.",
+    "We believe the probability is remote that the outcome of each of these matters, including the legal proceedings described below, will have a material adverse effect on the corporation as a whole, notwithstanding that the unfavorable resolution of any matter may have a material effect on our net earnings and cash flows in any particular interim reporting period.",
+    "Among the factors that we consider in this assessment are the nature of existing legal proceedings and claims, the asserted or possible damages or loss contingency (if estimable), the progress of the case, existing law and precedent, the opinions or views of legal counsel and other advisers, our experience in similar cases and the experience of other companies, the facts available to us at the time of assessment and how we intend to respond to the proceeding or claim.",
+    "We believe that we have legal and factual defenses to the U.S.",
+    "Although we continue to evaluate our liability and exposure, we do not currently believe that it is probable that we will incur a material loss."
+  ]
+}

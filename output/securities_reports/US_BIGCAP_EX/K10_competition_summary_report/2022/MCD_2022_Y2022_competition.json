@@ -1,0 +1,27 @@
+{
+  "symbol": "MCD",
+  "year": 2022,
+  "period": "Y2022",
+  "competition_summary": [
+    {
+      "competitor": "Company",
+      "mentions": 2,
+      "context": "COMPETITION McDonald\u2019s restaurants compete with international, national, regional and local retailers of traditional, fast casual and other food service competitors. The Company competes in the quick-service restaurant industry on the basis of price, convenience, service, experience, menu variety and product quality in a highly fragmented global restaurant industry. In measuring the Company\u2019s competitive position, management reviews data compiled by Euromonitor International, a leading source of"
+    },
+    {
+      "competitor": "IEO",
+      "mentions": 5,
+      "context": "COMPETITION McDonald\u2019s restaurants compete with international, national, regional and local retailers of traditional, fast casual and other food service competitors. The Company competes in the quick-service restaurant industry on the basis of price, convenience, service, experience, menu variety and product quality in a highly fragmented global restaurant industry. In measuring the Company\u2019s competitive position, management reviews data compiled by Euromonitor International, a leading source of"
+    },
+    {
+      "competitor": "McDonald\u2019s Systemwide",
+      "mentions": 2,
+      "context": "COMPETITION McDonald\u2019s restaurants compete with international, national, regional and local retailers of traditional, fast casual and other food service competitors. The Company competes in the quick-service restaurant industry on the basis of price, convenience, service, experience, menu variety and product quality in a highly fragmented global restaurant industry. In measuring the Company\u2019s competitive position, management reviews data compiled by Euromonitor International, a leading source of"
+    },
+    {
+      "competitor": "McDonald\u2019s",
+      "mentions": 1,
+      "context": "COMPETITION McDonald\u2019s restaurants compete with international, national, regional and local retailers of traditional, fast casual and other food service competitors. The Company competes in the quick-service restaurant industry on the basis of price, convenience, service, experience, menu variety and product quality in a highly fragmented global restaurant industry. In measuring the Company\u2019s competitive position, management reviews data compiled by Euromonitor International, a leading source of"
+    }
+  ]
+}

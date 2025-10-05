@@ -1,0 +1,47 @@
+{
+  "symbol": "EBAY",
+  "year": 2023,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2331,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.183
+  },
+  "top_positive": [
+    {
+      "sent": "NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS\u2014(Continued) Note 15 \u2014 Accumulated Other Comprehensive Income The following tables summarize the changes in AOCI for the periods indicated (in millions): Unrealized Gains (Losses) on Derivative Instruments Unrealized Gains (Losses) on Investments Foreign Currency Translation Estimated Tax (Expense) Benefit Total Balance as of June 30, 2023 $ 24 $ ( 79 ) $ 186 $ 36 $ 167 Other comprehensive income (loss) before reclassifications 43 13 ( 30 ) ( 13 ) 13 Less: Amount of gain (loss) reclassified from AOCI 3 \u2014 \u2014 ( 2 ) 1 Net current period other comprehensive income (loss) 40 13 ( 30 ) ( 11 ) 12 Balance as of September 30, 2023 $ 64 $ ( 66 ) $ 156 $ 25 $ 179 Unrealized Gains (Losses) on Derivative Instruments Unrealized Gains (Losses) on Investments Foreign Currency Translation Estimated Tax (Expense) Benefit Total Balance as of June 30, 2022 $ 190 $ ( 75 ) $ 209 $ ( 1 ) $ 323 Other comprehensive income (loss) before reclassifications 185 ( 30 ) ( 77 ) ( 17 ) 61 Less: Amount of gain (loss) reclassified from AOCI 35 1 \u2014 8 44 Net current period other comprehensive income (loss) 150 ( 31 ) ( 77 ) ( 25 ) 17 Balance as of September 30, 2022 $ 340 $ ( 106 ) $ 132 $ ( 26 ) $ 340 Unrealized Gains (Losses) on Derivative Instruments Unrealized Gains (Losses) on Investments Foreign Currency Translation Estimated Tax (Expense) Benefit Total Balance as of December 31, 2022 $ 114 $ ( 98 ) $ 222 $ 21 $ 259 Other comprehensive income (loss) before reclassifications 2 32 ( 66 ) ( 9 ) ( 41 ) Less: Amount of gain (loss) reclassified from AOCI 52 \u2014 \u2014 ( 13 ) 39 Net current period other comprehensive income (loss) ( 50 ) 32 ( 66 ) 4 ( 80 ) Balance as of September 30, 2023 $ 64 $ ( 66 ) $ 156 $ 25 $ 179 Unrealized Gains (Losses) on Derivative Instruments Unrealized Gains (Losses) on Investments Foreign Currency Translation Estimated Tax (Expense) Benefit Total Balance as of December 31, 2021 $ 65 $ ( 7 ) $ 328 $ 12 $ 398 Other comprehensive income (loss) before reclassifications 325 ( 100 ) ( 196 ) ( 35 ) ( 6 ) Less: Amount of gain (loss) reclassified from AOCI 50 ( 1 ) \u2014 3 52 Net current period other comprehensive income (loss) 275 ( 99 ) ( 196 ) ( 38 ) ( 58 ) Balance as of September 30, 2022 $ 340 $ ( 106 ) $ 132 $ ( 26 ) $ 340 41 Table of Contents eBay Inc.",
+      "score": 0.9945
+    },
+    {
+      "sent": "The following table presents gain (loss) on equity investments and warrant, net for the periods indicated (in millions, except percentages): Three Months Ended September 30, Nine Months Ended September 30, 2023 2022 % Change 2023 2022 % Change Unrealized change in fair value of equity investment in Adevinta $ 1,367 $ (501) 373 % $ 1,331 $ (2,973) 145 % Unrealized change in fair value of equity investment in Adyen \u2014 \u2014 ** \u2014 (118) ** Unrealized change in fair value of equity investment in Gmarket (43) (40) 8 % (83) (299) (72) % Unrealized change in fair value of equity investment in KakaoBank (4) (50) (92) % (11) (246) (96) % Change in fair value of warrant (109) (27) 304 % (40) (246) (84) % Realized change in fair value of shares sold in Adyen \u2014 24 ** \u2014 (143) ** Realized change in fair value of shares sold in KakaoBank \u2014 \u2014 ** \u2014 (75) ** Gain (loss) on other investments 1 1 ** (1) (5) ** Total gain (loss) on equity investments and warrant, net $ 1,212 $ (593) (304) % $ 1,196 $ (4,105) (129) % Percentage of net revenues 48 % (25) % 16 % (56) % ** Not meaningful The change in gain (loss) on equity investments and warrant, net during the three and nine months ended September\u00a030, 2023 compared to the same periods in 2022 was primarily driven by the change in the fair value of our equity investments in Adevinta, Gmarket and KakaoBank and the warrant.",
+      "score": 0.993
+    },
+    {
+      "sent": "The following table presents gain (loss) on equity investments and warrant, net for the periods indicated (in millions, except percentages): Three Months Ended September 30, Nine Months Ended September 30, 2023 2022 % Change 2023 2022 % Change Unrealized change in fair value of equity investment in Adevinta $ 1,367 $ (501) 373 % $ 1,331 $ (2,973) 145 % Unrealized change in fair value of equity investment in Adyen \u2014 \u2014 ** \u2014 (118) ** Unrealized change in fair value of equity investment in Gmarket (43) (40) 8 % (83) (299) (72) % Unrealized change in fair value of equity investment in KakaoBank (4) (50) (92) % (11) (246) (96) % Change in fair value of warrant (109) (27) 304 % (40) (246) (84) % Realized change in fair value of shares sold in Adyen \u2014 24 ** \u2014 (143) ** Realized change in fair value of shares sold in KakaoBank \u2014 \u2014 ** \u2014 (75) ** Gain (loss) on other investments 1 1 ** (1) (5) ** Total gain (loss) on equity investments and warrant, net $ 1,212 $ (593) (304) % $ 1,196 $ (4,105) (129) % Percentage of net revenues 48 % (25) % 16 % (56) % ** Not meaningful The change in gain (loss) on equity investments and warrant, net during the three and nine months ended September\u00a030, 2023 compared to the same periods in 2022 was primarily driven by the change in the fair value of our equity investments in Adevinta, Gmarket and KakaoBank and the warrant.",
+      "score": 0.993
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Provision for Transaction Losses Provision for transaction losses primarily consists of transaction loss expense associated with our buyer protection programs, losses from our managed payments services, fraud and bad debt expense associated with our accounts receivable balance.",
+      "score": -0.9595
+    },
+    {
+      "sent": "Provision for Transaction Losses Provision for transaction losses primarily consists of transaction loss expense associated with our buyer protection programs, losses from our managed payments services, fraud and bad debt expense associated with our accounts receivable balance.",
+      "score": -0.9595
+    },
+    {
+      "sent": "For those proceedings in which an unfavorable outcome is reasonably possible but not probable, we have disclosed an estimate of the reasonably possible loss or range of losses or we have concluded that an estimate of the reasonably possible loss or range of losses arising directly from the proceeding (i.e., monetary damages or amounts paid in judgment or settlement) is not material.",
+      "score": -0.9505
+    }
+  ],
+  "forward_snippets": [
+    "We base our estimates on historical experience and on various other assumptions that we believe to be reasonable under the circumstances.",
+    "Revenue Recognition We recognize revenue when we transfer control of promised goods or services to customers in an amount that reflects the consideration to which we expect to be entitled in exchange for those goods or services.",
+    "Revenue Recognition We recognize revenue when we transfer control of promised goods or services to customers in an amount that reflects the consideration to which we expect to be entitled in exchange for those goods or services.",
+    "Recent Accounting Pronouncements Not Yet Adopted In June 2022, the Financial Accounting Standards Board issued new guidance to clarify the fair value measurement guidance for equity securities subject to contractual restrictions that prohibit the sale of an equity security.",
+    "Further, the guidance introduces new disclosure requirements for equity securities subject to contractual sale restrictions that are measured at fair value."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "symbol": "INTC",
+  "year": 2024,
+  "period": "Q1",
+  "competition_summary": [
+    {
+      "competitor": "AI",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u25aa the significant long-term and inherently risky investments we are making in R&D and manufacturing facilities that may not realize a favorable return; \u25aa the complexities and uncertainties in developing and implementing new semiconductor products and manufacturing process technologies; \u25aa our ability to time and scale our capital investments appropriately and successfully secure favorable alternative financing arrangements and government"
+    },
+    {
+      "competitor": "1 Table of Contents \u25aa",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u25aa the significant long-term and inherently risky investments we are making in R&D and manufacturing facilities that may not realize a favorable return; \u25aa the complexities and uncertainties in developing and implementing new semiconductor products and manufacturing process technologies; \u25aa our ability to time and scale our capital investments appropriately and successfully secure favorable alternative financing arrangements and government"
+    },
+    {
+      "competitor": "IP",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u25aa the significant long-term and inherently risky investments we are making in R&D and manufacturing facilities that may not realize a favorable return; \u25aa the complexities and uncertainties in developing and implementing new semiconductor products and manufacturing process technologies; \u25aa our ability to time and scale our capital investments appropriately and successfully secure favorable alternative financing arrangements and government"
+    }
+  ]
+}

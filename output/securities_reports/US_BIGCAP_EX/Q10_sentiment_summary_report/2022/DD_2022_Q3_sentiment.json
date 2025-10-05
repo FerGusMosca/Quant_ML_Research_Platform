@@ -1,0 +1,47 @@
+{
+  "symbol": "DD",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1956,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.112
+  },
+  "top_positive": [
+    {
+      "sent": "On February 17, 2022, DuPont and certain of its subsidiaries entered into a Transaction Agreement (the \u201cTransaction Agreement\u201d) with Celanese Corporation, a Delaware Corporation (\u201cCelanese\u201d), pursuant to which, subject to the satisfaction of the conditions set forth in the Transaction Agreement, DuPont has agreed to sell to Celanese a majority of the Company\u2019s historic Mobility & Materials segment, including the Engineering Polymers business line and select product lines within the Performance Resins and Advanced Solutions business lines (the \u201cM&M Business\u201d) for $11 billion in cash, subject to customary transaction adjustments in accordance with the Transaction Agreement (the \u201cM&M Divestiture\u201d).",
+      "score": 0.9545
+    },
+    {
+      "sent": "13 Table of Contents The following table summarizes the major classes of assets and liabilities of the M&M Businesses classified as held for sale presented as discontinued operations at March 31, 2022 and December 31, 2021: In millions March 31, 2022 December 31, 2021 Assets Cash and cash equivalents $ 39 $ 39 Accounts and notes receivable - net 632 552 Inventories 880 776 Other current assets 80 59 Property, plant and equipment - net 1,202 1,213 Goodwill 2,566 2,597 Other intangible assets 2,184 2,220 Investments and noncurrent receivables 56 62 Deferred income tax assets 24 27 Deferred charges and other assets 112 119 Total assets of discontinued operations $ 7,775 $ 7,664 Liabilities Accounts payable $ 569 $ 510 Income taxes payable 21 77 Accrued and other current liabilities 117 157 Deferred income tax liabilities 484 515 Pension and other post employment benefits - noncurrent 90 90 Other noncurrent liabilities 54 64 Total liabilities of discontinued operations $ 1,335 $ 1,413 M&M Divestiture to Celanese Transaction Agreement In accordance with Transaction Agreement, consummation of the transaction is subject to the satisfaction or waiver of certain customary mutual closing conditions, including (i) the absence of an injunction in certain agreed jurisdictions that would prohibit consummation of the Transaction and (ii) the expiration or termination of the required waiting, notice or review periods and approvals or clearances under the Hart-Scott-Rodino Act, as amended, and certain other approvals under non-U.S.",
+      "score": 0.946
+    },
+    {
+      "sent": "13 Table of Contents The following table summarizes the major classes of assets and liabilities of the M&M Businesses classified as held for sale presented as discontinued operations at March 31, 2022 and December 31, 2021: In millions March 31, 2022 December 31, 2021 Assets Cash and cash equivalents $ 39 $ 39 Accounts and notes receivable - net 632 552 Inventories 880 776 Other current assets 80 59 Property, plant and equipment - net 1,202 1,213 Goodwill 2,566 2,597 Other intangible assets 2,184 2,220 Investments and noncurrent receivables 56 62 Deferred income tax assets 24 27 Deferred charges and other assets 112 119 Total assets of discontinued operations $ 7,775 $ 7,664 Liabilities Accounts payable $ 569 $ 510 Income taxes payable 21 77 Accrued and other current liabilities 117 157 Deferred income tax liabilities 484 515 Pension and other post employment benefits - noncurrent 90 90 Other noncurrent liabilities 54 64 Total liabilities of discontinued operations $ 1,335 $ 1,413 M&M Divestiture to Celanese Transaction Agreement In accordance with Transaction Agreement, consummation of the transaction is subject to the satisfaction or waiver of certain customary mutual closing conditions, including (i) the absence of an injunction in certain agreed jurisdictions that would prohibit consummation of the Transaction and (ii) the expiration or termination of the required waiting, notice or review periods and approvals or clearances under the Hart-Scott-Rodino Act, as amended, and certain other approvals under non-U.S.",
+      "score": 0.946
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "LEGAL PROCEEDINGS The Company and its subsidiaries are subject to various litigation matters, including, but not limited to, product liability, patent infringement, antitrust claims, and claims for third party property damage or personal injury stemming from alleged environmental torts.",
+      "score": -0.8603
+    },
+    {
+      "sent": "RISK FACTORS Other than the risk factor set forth below, there have been no material changes in the Company's risk factors discussed in Part I, Item 1A, Risk Factors, in the Company\u2019s 2021 Annual Report on Form 10-K for the year ended December\u00a031, 2021.",
+      "score": -0.8531
+    },
+    {
+      "sent": "DuPont has experienced supply chain challenges and increased logistics and raw materials costs due in part to the negative impact on the global economy from the ongoing war in Ukraine.",
+      "score": -0.7351
+    }
+  ],
+  "forward_snippets": [
+    "9 Table of Contents NOTES TO THE CONSOLIDATED FINANCIAL STATEMENTS Table of Contents Note Page 1 Summary of Significant Accounting Policies 11 2 Recent Accounting Guidance 12 3 Acquisitions 12 4 Divestitures 13 5 Revenue 17 6 Restructuring and Asset Related Charges - Net 18 7 Supplementary Information 19 8 Income Taxes 20 9 Earnings Per Share Calculations 21 10 Accounts and Notes Receivable - Net 22 11 Inventories 22 12 Property, Plant, and Equipment 22 13 Nonconsolidated Affiliates 22 14 Goodwill and Other Intangible Assets 23 15 Short-Term Borrowings, Long-Term Debt and Available Credit Facilities 25 16 Commitments and Contingent Liabilities 27 17 Leases 31 18 Stockholders' Equity 32 19 Pension Plans and Other Post-Employment Benefits 33 20 Stock-Based Compensation 33 21 Financial Instruments 34 22 Fair Value Measurements 36 23 Segments and Geographic Regions 37 10 Table of Contents NOTE 1 - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES Basis of Presentation In these notes, the terms \"DuPont\" or \"Company\" used herein mean DuPont de Nemours, Inc.",
+    "11 Table of Contents NOTE 2 - RECENT ACCOUNTING GUIDANCE Accounting Guidance Issued But Not Adopted at March 31, 2022 In October 2021, the FASB issued Accounting Standards Update No.",
+    "Guidance 12 3 Acquisitions 12 4 Divestitures 13 5 Revenue 17 6 Restructuring and Asset Related Charges - Net 18 7 Supplementary Information 19 8 Income Taxes 20 9 Earnings Per Share Calculations 21 10 Accounts and Notes Receivable - Net 22 11 Inventories 22 12 Property, Plant, and Equipment 22 13 Nonconsolidated Affiliates 22 14 Goodwill and Other Intangible Assets 23 15 Short-Term Borrowings, Long-Term Debt and Available Credit Facilities 25 16 Commitments and Contingent Liabilities 27 17 Leases 31 18 Stockholders' Equity 32 19 Pension Plans and Other Post-Employment Benefits 33 20 Stock-Based Compensation 33 21 Financial Instruments 34 22 Fair Value Measurements 36 23 Segments and Geographic Regions 37 10 Table of Contents NOTE 1 - SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES Basis of Presentation In these notes, the terms \"DuPont\" or \"Company\" used herein mean DuPont de Nemours, Inc.",
+    "11 Table of Contents NOTE 2 - RECENT ACCOUNTING GUIDANCE Accounting Guidance Issued But Not Adopted at March 31, 2022 In October 2021, the FASB issued Accounting Standards Update No.",
+    "11 Table of Contents NOTE 2 - RECENT ACCOUNTING GUIDANCE Accounting Guidance Issued But Not Adopted at March 31, 2022 In October 2021, the FASB issued Accounting Standards Update No."
+  ]
+}

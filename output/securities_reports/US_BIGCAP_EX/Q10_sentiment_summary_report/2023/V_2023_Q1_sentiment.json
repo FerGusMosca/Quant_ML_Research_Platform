@@ -1,0 +1,47 @@
+{
+  "symbol": "V",
+  "year": 2023,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1346,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.072
+  },
+  "top_positive": [
+    {
+      "sent": "litigation escrow 1,627 1,449 Investment securities 3,166 2,833 Settlement receivable 2,454 1,932 Accounts receivable 2,282 2,020 Customer collateral 2,907 2,342 Current portion of client incentives 1,525 1,272 Prepaid expenses and other current assets 2,119 2,668 Total current assets 31,670 30,205 Investment securities 2,122 2,136 Client incentives 3,811 3,348 Property, equipment and technology, net 3,370 3,223 Goodwill 18,082 17,787 Intangible assets, net 26,576 25,065 Other assets 3,603 3,737 Total assets $ 89,234 $ 85,501 Liabilities Accounts payable $ 281 $ 340 Settlement payable 3,675 3,281 Customer collateral 2,907 2,342 Accrued compensation and benefits 1,215 1,359 Client incentives 7,532 6,099 Accrued liabilities 4,075 3,726 Current maturities of debt \u2014 2,250 Accrued litigation 1,545 1,456 Total current liabilities 21,230 20,853 Long-term debt 20,560 20,200 Deferred tax liabilities 5,380 5,332 Other liabilities 3,083 3,535 Total liabilities 50,253 49,920 Equity Series A, Series B and Series C convertible participating preferred stock (preferred stock), $ 0.0001 par value: 25 shares authorized and 5 (Series A less than one, Series B 2 , Series C 3 ) shares issued and outstanding 1,786 2,324 Class A, Class B and Class C common stock and additional paid-in capital, $ 0.0001 par value: 2,003,341 shares authorized (Class A 2,001,622 , Class B 622 , Class C 1,097 ); 1,862 (Class A 1,607 , Class B 245 , Class C 10 ) and 1,890 (Class A 1,635 , Class B 245 , Class C 10 ) shares issued and outstanding 20,290 19,545 Right to recover for covered losses ( 25 ) ( 35 ) Accumulated income 17,908 16,116 Accumulated other comprehensive income (loss), net: Investment securities ( 80 ) ( 106 ) Defined benefit pension and other postretirement plans ( 158 ) ( 169 ) Derivative instruments ( 259 ) 418 Foreign currency translation adjustments ( 481 ) ( 2,512 ) Total accumulated other comprehensive income (loss), net ( 978 ) ( 2,369 ) Total equity 38,981 35,581 Total liabilities and equity $ 89,234 $ 85,501 See accompanying notes, which are an integral part of these unaudited consolidated financial statements.",
+      "score": 0.9783
+    },
+    {
+      "sent": "CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (UNAUDITED) Three Months Ended June 30, Nine Months Ended June 30, 2023 2022 2023 2022 (in\u00a0millions) Net income $ 4,156 $ 3,411 $ 12,592 $ 11,017 Other comprehensive income (loss): Investment securities: Net unrealized gain (loss) ( 18 ) ( 43 ) 33 ( 93 ) Income tax effect 4 10 ( 7 ) 20 Defined benefit pension and other postretirement plans: Net unrealized actuarial gain (loss) and prior service credit (cost) 1 \u2014 6 ( 1 ) Income tax effect \u2014 \u2014 ( 1 ) \u2014 Reclassification adjustments 3 \u2014 7 2 Income tax effect ( 1 ) \u2014 ( 1 ) \u2014 Derivative instruments: Net unrealized gain (loss) ( 4 ) 348 ( 195 ) 539 Income tax effect 5 ( 68 ) 36 ( 103 ) Reclassification adjustments 18 ( 9 ) 17 ( 48 ) Income tax effect ( 10 ) \u2014 ( 17 ) 4 Foreign currency translation adjustments 14 ( 1,100 ) 1,513 ( 2,023 ) Other comprehensive income (loss), net of tax 12 ( 862 ) 1,391 ( 1,703 ) Comprehensive income $ 4,168 $ 2,549 $ 13,983 $ 9,314 See accompanying notes, which are an integral part of these unaudited consolidated financial statements.",
+      "score": 0.9742
+    },
+    {
+      "sent": "GAAP, to our respective non-GAAP financial measures: Three Months Ended June 30, 2023 Operating Expenses Non-operating Income (Expense) Income Tax Provision Effective Income Tax Rate (1) Net Income Diluted Earnings Per Share (1) (in millions, except percentages and per share data) As reported $ 3,099 $ 122 $ 990 19.2 % $ 4,156 $ 2.00 (Gains) losses on equity investments, net \u2014 (85) (18) (67) (0.03) Amortization of acquired intangible assets (41) \u2014 9 32 0.02 Acquisition-related costs (24) \u2014 1 23 0.01 Litigation provision (456) \u2014 101 355 0.17 Non-GAAP $ 2,578 $ 37 $ 1,083 19.4 % $ 4,499 $ 2.16 Nine Months Ended June 30, 2023 Operating Expenses Non-operating Income (Expense) Income Tax Provision Effective Income Tax Rate (1) Net Income Diluted Earnings Per Share (1) (in millions, except percentages and per share data) As reported $ 8,594 $ (49) $ 2,809 18.2 % $ 12,592 $ 6.02 (Gains) losses on equity investments, net \u2014 111 25 86 0.04 Amortization of acquired intangible assets (130) \u2014 28 102 0.05 Acquisition-related costs (69) \u2014 5 64 0.03 Litigation provision (797) \u2014 177 620 0.30 Non-GAAP $ 7,598 $ 62 $ 3,044 18.4 % $ 13,464 $ 6.44 Three Months Ended June 30, 2022 Operating Expenses Non-operating Income (Expense) Income Tax Provision Effective Income Tax Rate (1) Net Income Diluted Earnings Per Share (1) (in millions, except percentages and per share data) As reported $ 3,127 $ (319) $ 418 10.9 % $ 3,411 $ 1.60 (Gains) losses on equity investments, net \u2014 246 54 192 0.09 Amortization of acquired intangible assets (44) \u2014 10 34 0.02 Acquisition-related costs (14) \u2014 2 12 0.01 Litigation provision (716) \u2014 159 557 0.26 Non-GAAP $ 2,353 $ (73) $ 643 13.3 % $ 4,206 $ 1.98 31 Table of Contents Nine Months Ended June 30, 2022 Operating Expenses Non-operating Income (Expense) Income Tax Provision Effective Income Tax Rate (1) Net Income Diluted Earnings Per Share (1) (in millions, except percentages and per share data) As reported $ 7,797 $ (458) $ 2,251 17.0 % $ 11,017 $ 5.14 (Gains) losses on equity investments, net \u2014 142 40 102 0.05 Amortization of acquired intangible assets (77) \u2014 17 60 0.03 Acquisition-related costs (44) \u2014 6 38 0.02 Litigation provision (861) \u2014 191 670 0.31 Russia-Ukraine charges (60) \u2014 4 56 0.03 Non-GAAP $ 6,755 $ (316) $ 2,509 17.4 % $ 11,943 $ 5.57 (1) Figures in the table may not recalculate exactly due to rounding.",
+      "score": 0.9538
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The continuing effects of the recent liquidity issues at certain financial institutions and the war in Ukraine are difficult to predict due to numerous uncertainties identified in Part I, Item 1A \u201cRisk Factors\u201d in our Annual Report on Form 10-K for the year ended September 30, 2022 .",
+      "score": -0.7717
+    },
+    {
+      "sent": "In March 2022, we suspended our operations in Russia and as a result, are no longer generating revenue from domestic and cross-border activities related to Russia.",
+      "score": -0.6486
+    },
+    {
+      "sent": "Quantitative and Qualitative Disclosures about Market Risk There have been no significant changes to our market risks since September\u00a030, 2022.",
+      "score": -0.5574
+    }
+  ],
+  "forward_snippets": [
+    "We will continue to evaluate the nature and extent of the impact to our business.",
+    "We use non-GAAP financial measures of our performance which exclude certain items which we believe are not representative of our continuing operations, as they may be non-recurring or have no cash impact, and may distort our longer-term operating trends.",
+    "We use non-GAAP financial measures of our performance which exclude certain items which we believe are not representative of our continuing operations, as they may be non-recurring or have no cash impact, and may distort our longer-term operating trends.",
+    "Based on our current cash flow budgets and forecasts of our short-term and long-term liquidity needs, we believe that our current and projected sources of liquidity will be sufficient to meet our projected liquidity needs for more than the next 12 months.",
+    "We will continue to assess our liquidity position and potential sources of supplemental liquidity in view of our operating performance, current economic and capital market conditions and other relevant circumstances."
+  ]
+}

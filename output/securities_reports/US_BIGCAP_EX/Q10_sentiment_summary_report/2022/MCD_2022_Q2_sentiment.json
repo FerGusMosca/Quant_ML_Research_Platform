@@ -1,0 +1,47 @@
+{
+  "symbol": "MCD",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1938,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.332
+  },
+  "top_positive": [
+    {
+      "sent": "Whether these strategies are successful depends mainly on our System\u2019s continued ability to: \u2022 capitalize on our global scale, iconic brand and local market presence to build upon our historic strengths and competitive advantages, such as our marketing, core menu items and digital, delivery and drive thru; \u2022 innovate and differentiate the McDonald\u2019s experience, including by preparing and serving our food in a way that balances value and convenience to our customers with profitability; \u2022 accelerate technology investments for a fast and easy customer experience; \u2022 run great restaurants by driving efficiencies and expanding capacities while continuing to prioritize health and safety; \u2022 identify and develop restaurant sites consistent with our plans for net growth of Systemwide restaurants; \u2022 accelerate our existing strategies, including through growth opportunities and potential acquisitions, investments and partnerships; and 32 Table of Contents \u2022 evolve and adjust our business strategies in re\ne do not undertake to update such forward-looking statements.",
+      "score": 0.989
+    },
+    {
+      "sent": "Whether these strategies are successful depends mainly on our System\u2019s continued ability to: \u2022 capitalize on our global scale, iconic brand and local market presence to build upon our historic strengths and competitive advantages, such as our marketing, core menu items and digital, delivery and drive thru; \u2022 innovate and differentiate the McDonald\u2019s experience, including by preparing and serving our food in a way that balances value and convenience to our customers with profitability; \u2022 accelerate technology investments for a fast and easy customer experience; \u2022 run great restaurants by driving efficiencies and expanding capacities while continuing to prioritize health and safety; \u2022 identify and develop restaurant sites consistent with our plans for net growth of Systemwide restaurants; \u2022 accelerate our existing strategies, including through growth opportunities and potential acquisitions, investments and partnerships; and 32 Table of Contents \u2022 evolve and adjust our business strategies in response to, among other things, changing consumer behavior, operational restrictions and impacts to our results of operations and liquidity, including as a result of the COVID-19 pandemic.",
+      "score": 0.989
+    },
+    {
+      "sent": "Whether these strategies are successful depends mainly on our System\u2019s continued ability to: \u2022 capitalize on our global scale, iconic brand and local market presence to build upon our historic strengths and competitive advantages, such as our marketing, core menu items and digital, delivery and drive thru; \u2022 innovate and differentiate the McDonald\u2019s experience, including by preparing and serving our food in a way that balances value and convenience to our customers with profitability; \u2022 accelerate technology investments for a fast and easy customer experience; \u2022 run great restaurants by driving efficiencies and expanding capacities while continuing to prioritize health and safety; \u2022 identify and develop restaurant sites consistent with our plans for net growth of Systemwide restaurants; \u2022 accelerate our existing strategies, including through growth opportunities and potential acquisitions, investments and partnerships; and 32 Table of Contents \u2022 evolve and adjust our business strategies in response to, among other things, changing consumer behavior, operational restrictions and impacts to our results of operations and liquidity, including as a result of the COVID-19 pandemic.",
+      "score": 0.989
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Such interruptions and price increases could be caused by shortages, inflationary pressures, unexpected increases in demand, transportation-related issues, labor-related issues, technology-related issues, weather-related events, natural disasters, acts of war, terrorism or other hostilities, or other factors beyond the control of us or our suppliers or franchisees.",
+      "score": -0.9628
+    },
+    {
+      "sent": "Such interruptions and price increases could be caused by shortages, inflationary pressures, unexpected increases in demand, transportation-related issues, labor-related issues, technology-related issues, weather-related events, natural disasters, acts of war, terrorism or other hostilities, or other factors beyond the control of us or our suppliers or franchisees.",
+      "score": -0.9628
+    },
+    {
+      "sent": "Such disruptions or volatility can also result from acts of war, terrorism or other hostilities.",
+      "score": -0.9325
+    }
+  ],
+  "forward_snippets": [
+    "The pronouncement amends the current guidance on classification for a lease that includes variable lease payments that do not depend on an index or rate.",
+    "Under the amended guidance, a lessor must classify as an operating lease any lease that would otherwise be classified as a sales-type or direct financing lease and that would result in the recognition of a selling loss at lease commencement.",
+    "The pronouncement provides temporary optional expedients and exceptions to the current guidance on contract modifications and hedge accounting to ease the financial reporting burdens related to the expected market transition from the London Interbank Offered Rate and other interbank offered rates to alternative reference rates.",
+    "The guidance was effective upon issuance and may be applied prospectively to contract modifications made and hedging relationships entered into or evaluated on or before December 31, 2022.",
+    "The Company continues to monitor the economic uncertainty, while assessing the financial impact and outlook for restaurant operations in this market."
+  ]
+}

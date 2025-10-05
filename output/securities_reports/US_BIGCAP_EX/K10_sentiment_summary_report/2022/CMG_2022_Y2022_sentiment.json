@@ -1,0 +1,47 @@
+{
+  "symbol": "CMG",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.1366,
+    "outlook_sentiment": 0.2057,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.248
+  },
+  "top_positive": [
+    {
+      "sent": "Our mission is to win today while creating a bright future by focusing on five key fundamental strategies: \uf0b7 Running successful restaurants with a people accountable culture that provides great food with integrity while delivering exceptional in-restaurant and digital experiences; \uf0b7 Sustaining world class people leadership by developing and retaining diverse talent at every level; \uf0b7 Making the brand visible, relevant, and loved to improve overall guest engagement; \uf0b7 Amplifying technology and innovation to drive digital growth and productivity at our restaurants and support centers; \uf0b7 And expanding access and convenience by accelerating new restaurant openings.",
+      "score": 0.9898
+    },
+    {
+      "sent": "Non-Vested Stock Awards (RSUs) A summary of RSU award activity was as follows (in thousands, except per share data): Shares Weighted-Average Grant Date Fair Value per Share Outstanding, January 1, 2021 92 $ 631.66 Granted 25 1,492.15 Vested ( 50 ) 497.97 Forfeited or cancelled ( 9 ) 1,021.45 Outstanding, December 31, 2021 58 1,064.67 Vested and expected to vest, December 31, 2021 53 1,042.33 The weighted average grant date fair value per RSU granted during the years ended December\u00a031, 2020 and 2019, was $ 905.96 and $ 627.94 , respectively.",
+      "score": 0.9892
+    },
+    {
+      "sent": "Earnings Per Share The following table sets forth the computations of basic and diluted earnings per share: Year ended December 31, 2021 2020 2019 Net income $ 652,984 $ 355,766 $ 350,158 Shares: Weighted-average number of common shares outstanding (for basic calculation) 28,132 27,917 27,740 Dilutive stock awards 379 499 555 Weighted-average number of common shares outstanding (for diluted calculation) 28,511 28,416 28,295 Basic earnings per share $ 23.21 $ 12.74 $ 12.62 Diluted earnings per share $ 22.90 $ 12.52 $ 12.38 The following stock awards were excluded from the calculation of diluted earnings per share: Year ended December 31, 2021 2020 2019 Stock awards subject to performance conditions 66 87 81 Stock awards that were antidilutive 34 57 139 Total stock awards excluded from diluted earnings per share 100 144 220 12.",
+      "score": 0.9878
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The actual or perceived threat of a pandemic or communicable disease, terrorist attack, mass shooting, heightened security requirements, including cybersecurity, or a failure to protect information systems for critical infrastructure, such as the electrical grid and telecommunications systems, could harm our operations, the economy or consumer confidence generally.",
+      "score": -0.9186
+    },
+    {
+      "sent": "The actual or perceived threat of a pandemic or communicable disease, terrorist attack, mass shooting, heightened security requirements, including cybersecurity, or a failure to protect information systems for critical infrastructure, such as the electrical grid and telecommunications systems, could harm our operations, the economy or consumer confidence generally.",
+      "score": -0.9186
+    },
+    {
+      "sent": "The actual or perceived threat of a pandemic or communicable disease, terrorist attack, mass shooting, heightened security requirements, including cybersecurity, or a failure to protect information systems for critical infrastructure, such as the electrical grid and telecommunications systems, could harm our operations, the economy or consumer confidence generally.",
+      "score": -0.9186
+    }
+  ],
+  "forward_snippets": [
+    "We believe our efforts to manage our workforce have been effective, as evidenced by a strong culture and our employees\u2019 demonstrated commitment to living our purpose and values.",
+    "We believe we have a compelling employee value proposition that enables us to engage current team members, as well as the communities we serve, via these partnerships.",
+    "We believe our overall talent strategy will allow us to effectively leverage existing talent to grow future leaders and mitigate turnover, while increasing employee engagement and driving business results.",
+    "We believe we have a compelling employee value proposition that enables us to engage current team members, as well as the communities we serve, via these partnerships.",
+    "We believe our overall talent strategy will allow us to effectively leverage existing talent to grow future leaders and mitigate turnover, while increasing employee engagement and driving business results."
+  ]
+}

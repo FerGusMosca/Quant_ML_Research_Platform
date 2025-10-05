@@ -1,0 +1,47 @@
+{
+  "symbol": "GILD",
+  "year": 2024,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.071,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.369
+  },
+  "top_positive": [
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS\u2019 EQUITY (unaudited) Three Months Ended March 31, 2024 (in millions, except per share amounts) Gilead Stockholders\u2019 Equity Noncontrolling Interest Total Stockholders\u2019 Equity Common Stock Additional Paid-In Capital Accumulated Other Comprehensive Income Retained Earnings Shares Amount Balance as of December 31, 2023 1,246 $ 1 $ 6,500 $ 28 $ 16,304 $ ( 84 ) $ 22,749 Net loss \u2014 \u2014 \u2014 \u2014 ( 4,170 ) \u2014 ( 4,170 ) Other comprehensive income, net \u2014 \u2014 \u2014 41 \u2014 \u2014 41 Issuances under employee stock purchase plan 1 \u2014 80 \u2014 \u2014 \u2014 80 Issuances under equity incentive plans 6 \u2014 65 \u2014 \u2014 \u2014 65 Stock-based compensation \u2014 \u2014 188 \u2014 \u2014 \u2014 188 Repurchases of common stock under repurchase programs ($ 76.88 average price per share) ( 5 ) \u2014 ( 20 ) \u2014 ( 380 ) \u2014 ( 400 ) Repurchases of common stock for employee tax withholding under equity incentive plans and other ( 2 ) \u2014 \u2014 \u2014 ( 116 ) \u2014 ( 116 ) Dividends declared ($ 0.77 per share) \u2014 \u2014 \u2014 \u2014 ( 980 ) \u2014 ( 980 ) Balance as of March 31, 2024 1,246 $ 1 $ 6,813 $ 69 $ 10,656 $ ( 84 ) $ 17,455 Three Months Ended March 31, 2023 (in millions, except per share amounts) Gilead Stockholders\u2019 Equity Noncontrolling Interest Total Stockholders\u2019 Equity Common Stock Additional Paid-In Capital Accumulated Other Comprehensive Income (Loss) Retained Earnings Shares Amount Balance as of December 31, 2022 1,247 $ 1 $ 5,550 $ 2 $ 15,687 $ ( 31 ) $ 21,209 Net income (loss) \u2014 \u2014 \u2014 \u2014 1,010 ( 26 ) 985 Other comprehensive loss, net \u2014 \u2014 \u2014 ( 22 ) \u2014 \u2014 ( 22 ) Issuances under employee stock purchase plan 1 \u2014 67 \u2014 \u2014 \u2014 67 Issuances under equity incentive plans 6 \u2014 27 \u2014 \u2014 \u2014 27 Stock-based compensation \u2014 \u2014 165 \u2014 \u2014 \u2014 165 Repurchases of common stock under repurchase programs ($ 82.29 average price per share) ( 5 ) \u2014 ( 17 ) \u2014 ( 383 ) \u2014 ( 400 ) Repurchases of common stock for employee tax withholding under equity incentive plans ( 2 ) \u2014 \u2014 \u2014 ( 135 ) \u2014 ( 135 ) Dividends declared ($ 0.75 per share) \u2014 \u2014 \u2014 \u2014 ( 957 ) \u2014 ( 957 ) Balance as of March 31, 2023 1,248 $ 1 $ 5,793 $ ( 20 ) $ 15,223 $ ( 58 ) $\n (in millions) December 31, 2023 Cash and cash equivalents $ 83 Short-term marketable debt securities 1,179 Long-term marketable debt securities 1,163 Total $ 2,426 12 Equity Securities The following table summarizes the classification of our equity securities on our Condensed Consolidated Balance Sheets: (in millions) March 31, 2024 December 31, 2023 Equity securities measured at fair value: Cash and cash equivalents $ 1,550 $ 4,465 Prepaid and other current assets 1,341 1,086 Other long-term assets 785 656 Equity method investments and other equity investments without readily determinable fair values: Other long-term assets 359 $ 340 Total $ 4,036 $ 6,547 For our equity method investments in Galapagos and Arcus Biosciences, Inc.",
+      "score": 0.9895
+    },
+    {
+      "sent": "(2) 3.1 Restated Certificate of Incorporation of Registrant (3) 3.2 Amended and Restated Bylaws of Registrant 4.1 Reference is made to Exhibit 3.1 and Exhibit 3.2 (4) 4.2 Indenture related to Senior Notes, dated as of March\u00a030, 2011, between Registrant and Wells Fargo, National Association, as Trustee (4) 4.3 First Supplemental Indenture related to Senior Notes, dated as of March 30, 2011, between Registrant and Wells Fargo, National Association, as Trustee (including form of Senior Notes) (5) 4.4 Second Supplemental Indenture related to Senior Notes, dated as of December 13, 2011, between Registrant and Wells Fargo, National Association, as Trustee (including Form of 2041 Note) (6) 4.5 Third Supplemental Indenture related to Senior Notes, dated as of March 7, 2014, between Registrant and Wells Fargo, National Association, as Trustee (including Form of 2024 Note and Form of 2044 Note) (7) 4.6 Fourth Supplemental Indenture related to Senior Notes, dated as of November 17, 2014, between Registrant and Wells Fargo, National Association, as Trustee (including Form of 2025 Note and Form of 2045 Note) (8) 4.7 Fifth Supplemental Indenture, dated as of September 14, 2015, between Registrant and Wells Fargo Bank, National Association, as Trustee (including Form of 2026 Note, Form of 2035 Note and Form of 2046 Note) (9) 4.8 Sixth Supplemental Indenture, dated as of September 20, 2016, between Registrant and Wells Fargo Bank, National Association, as Trustee (including Form of 2027 Note, Form of 2036 Note and Form of 2047 Note) 10 4.9 Eighth Supplemental Indenture, dated as of September 30, 2020, between the Registrant and Wells Fargo Bank, National Association, as Trustee (including Form of 2027 Note, Form of 2030 Note, Form of 2040 Note, and Form of 2050 Note) (11) 4.10 Ninth Supplemental Indenture, dated as of September 14, 2023, between the Registrant and Computershare Trust Company, National Association, as successor to Wells Fargo Bank, National Association, as Trustee (including Form of 2033 Note and Form of 2053 Note) (12) 4.11 Description of Registrant\u2019s Securities (13) 10.1* Gilead Sciences, Inc.",
+      "score": 0.9854
+    },
+    {
+      "sent": "EARNINGS (LOSS) PER SHARE The following table shows the calculation of basic and diluted (loss) earnings per share attributable to Gilead: Three Months Ended March 31, (in millions, except per share amounts) 2024 2023 Net (loss) income attributable to Gilead $ ( 4,170 ) $ 1,010 Shares used in basic (loss) earnings per share attributable to Gilead calculation 1,247 1,248 Dilutive effect of stock options and equivalents \u2014 13 Shares used in diluted (loss) earnings per share attributable to Gilead calculation 1,247 1,261 Basic (loss) earnings per share attributable to Gilead $ ( 3.34 ) $ 0.81 Diluted (loss) earnings per share attributable to Gilead $ ( 3.34 ) $ 0.80 Potential shares of common stock excluded from the computation of diluted (loss) earnings per share attributable to Gilead b\nrelief and other relief.",
+      "score": 0.9742
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Problems with any of the single suppliers or facilities we depend on, including in the event of a disaster, such as an earthquake, flood or fire, equipment failure or other difficulty, may negatively impact our development and commercialization efforts.",
+      "score": -0.9313
+    },
+    {
+      "sent": "Problems with any of the single suppliers or facilities we depend on, including in the event of a disaster, such as an earthquake, flood or fire, equipment failure or other difficulty, may nega\nhere we believe commercialization will be difficult relative to other opportunities in our pipeline.",
+      "score": -0.93
+    },
+    {
+      "sent": "\u2022 Political instability or disruption in a geographic region where we operate, regardless of cause, including war, terrorism, social unrest and political changes, including in China, Russia, Ukraine, Israel and surrounding areas.",
+      "score": -0.9001
+    }
+  ],
+  "forward_snippets": [
+    "(\u201cArcus\u201d), we elected and applied the fair value option as we believe it best reflects the underlying economics of these investments.",
+    "Although we cannot predict with certainty the ultimate outcome of each of these litigation matters, we believe that the U.S.",
+    "While we intend to vigorously oppose the appeal and defend against the Phase II claims, we cannot predict the ultimate outcome.",
+    "While we intend to vigorously oppose the appeal and defend against the Phase II claims, we cannot predict the ultimate outcome.",
+    "The court denied the motion, and we intend to file a writ of appeal with the California Court of Appeals."
+  ]
+}

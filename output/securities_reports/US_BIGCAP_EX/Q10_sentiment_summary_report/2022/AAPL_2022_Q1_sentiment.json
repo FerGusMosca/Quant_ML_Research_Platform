@@ -1,0 +1,41 @@
+{
+  "symbol": "AAPL",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1429,
+    "forward_ratio": 0.0,
+    "hedge_ratio": 0.098
+  },
+  "top_positive": [
+    {
+      "sent": "Unregistered Sales of Equity Securities and Use of Proceeds Purchases of Equity Securities by the Issuer and Affiliated Purchasers Share repurchase activity during the three months ended June\u00a025, 2022 was as follows (in millions, except number of shares, which are reflected in thousands, and per share amounts): Periods Total Number of Shares Purchased Average Price Paid Per Share Total Number of Shares Purchased as Part of Publicly Announced Plans or Programs Approximate Dollar Value of Shares That May Yet Be Purchased Under the Plans or Programs (1) March 27, 2022 to April 30, 2022: Open market and privately negotiated purchases 50,578 $ 168.06 50,578 May 1, 2022 to May 28, 2022: Open market and privately negotiated purchases 42,069 $ 148.45 42,069 May 29, 2022 to June 25, 2022: Open market and privately negotiated purchases 50,027 $ 139.06 50,027 Total 142,674 $ 85,877 (1) On April 28, 2022, the Board of Directors authorized the purchase of an additional $90\u00a0billion of the Company\u2019s common stock under the Program.",
+      "score": 0.959
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF SHAREHOLDERS\u2019 EQUITY (Unaudited) (In millions, except per share amounts) Three Months Ended Nine Months Ended June 25, 2022 June 26, 2021 June 25, 2022 June 26, 2021 Total shareholders\u2019 equity, beginning balances $ 67,399 $ 69,178 $ 63,090 $ 65,339 Common stock and additional paid-in capital: Beginning balances 61,181 54,203 57,365 50,779 Common stock issued \u2014 \u2014 593 561 Common stock withheld related to net share settlement of equity awards ( 1,371 ) ( 1,224 ) ( 2,783 ) ( 2,460 ) Share-based compensation 2,305 2,010 6,940 6,109 Ending balances 62,115 54,989 62,115 54,989 Retained earnings: Beginning balances 12,712 15,261 5,562 14,966 Net income 19,442 21,744 79,082 74,129 Dividends and dividend equivalents declared ( 3,760 ) ( 3,713 ) ( 11,058 ) ( 10,755 ) Common stock withheld related to net share settlement of equity awards ( 1,403 ) ( 1,559 ) ( 3,323 ) ( 3,606 ) Common stock repurchased ( 21,702 ) ( 22,500 ) ( 64,974 ) ( 65,501 ) Ending balances 5,289 9,233 5,289 9,233 Accumulated other comprehensive income/(loss): Beginning balances ( 6,494 ) ( 286 ) 163 ( 406 ) Other comprehensive income/(loss) ( 2,803 ) 344 ( 9,460 ) 464 Ending balances ( 9,297 ) 58 ( 9,297 ) 58 Total shareholders\u2019 equity, ending balances $ 58,107 $ 64,280 $ 58,107 $ 64,280 Dividends and dividend equivalents declared per share or RSU $ 0.23 $ 0.22 $ 0.67 $ 0.63 See accompanying Notes to Condensed Consolidated Financial Statements.",
+      "score": 0.9423
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (Unaudited) (In millions) Three Months Ended Nine Months Ended June 25, 2022 June 26, 2021 June 25, 2022 June 26, 2021 Net income $ 19,442 $ 21,744 $ 79,082 $ 74,129 Other comprehensive income/(loss): Change in foreign currency translation, net of tax ( 721 ) 188 ( 1,102 ) 659 Change in unrealized gains/losses on derivative instruments, net of tax: Change in fair value of derivative instruments 852 ( 24 ) 1,548 4 Adjustment for net (gains)/losses realized and included in net income 121 17 ( 87 ) 593 Total change in unrealized gains/losses on derivative instruments 973 ( 7 ) 1,461 597 Change in unrealized gains/losses on marketable debt securities, net of tax: Change in fair value of marketable debt securities ( 3,150 ) 217 ( 9,959 ) ( 558 ) Adjustment for net (gains)/losses realized and included in net income 95 ( 54 ) 140 ( 234 ) Total change in unrealized gains/losses on marketable debt securities ( 3,055 ) 163 ( 9,819 ) ( 792 ) Total other comprehensive income/(loss) ( 2,803 ) 344 ( 9,460 ) 464 Total comprehensive income $ 16,639 $ 22,088 $ 69,622 $ 74,593 See accompanying Notes to Condensed Consolidated Financial Statements.",
+      "score": 0.9222
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "District Court for the Northern District of California (the \u201cNorthern California District Court\u201d) against the Company alleging violations of federal and state antitrust laws and California\u2019s unfair competition law based upon the Company\u2019s operation of its App Store.",
+      "score": -0.7579
+    },
+    {
+      "sent": "The Northern California District Court found that certain provisions of the Company\u2019s App Store Review Guidelines violate California\u2019s unfair competition law and issued an injunction.",
+      "score": -0.6369
+    },
+    {
+      "sent": "There have been no material changes to the Company\u2019s risk factors since the 2021 Form 10-K.",
+      "score": -0.5106
+    }
+  ],
+  "forward_snippets": []
+}

@@ -1,0 +1,606 @@
+{
+  "symbol": "CAT",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-03",
+      "time": "16:09",
+      "title": "Top 3 Dow Stocks Include This New Player In Quantum Computing\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/dc55e573-3285-3aa9-8f17-781f6720a30b/top-3-dow-stocks-include-this.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:48AM",
+      "title": "Stock Market Today: Dow Rises As Jobs Report Nixed; Astera, Nvidia, Tesla Rally (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/3060a649-6736-337e-94a3-7d286583dd27/stock-market-today%3A-dow-rises.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "14:34",
+      "title": "Stock Market Today: Nasdaq Hits High Even As Tesla, Silver Sink; These Metals Plays Shine (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/f464db28-e154-36c8-b0be-7dbf0f6469d0/stock-market-today%3A-nasdaq.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Caterpillar Emerges as Unlikely AI Winner on Turbine Demand\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/caterpillar-emerges-unlikely-ai-winner-110000713.html"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "01:19",
+      "title": "A Traders Guide to US Markets If the Government Shuts Down\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/traders-guide-us-markets-government-170526489.html"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "23:00",
+      "title": "Caterpillar Stock Has Outperformed the S&P 500. Its Rally May Only Be Getting Started.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/caterpillar-stock-pick-follow-up-0001443075?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:49PM",
+      "title": "AI's Winners Aren't All in Tech. 22 Cheaper Stocks to Consider.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/ai-winners-stocks-outside-tech-1d870da4?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "17:45",
+      "title": "Why Caterpillar (CAT) Outpaced the Stock Market Today\n\n\n(Zacks)",
+      "link": "/news/178865/why-caterpillar-cat-outpaced-the-stock-market-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:45PM",
+      "title": "Stock Market Today: Dow Up Despite Shutdown Worries; These Stocks Fall On Trump Tariff Threat\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/011e567e-12e3-37f1-87d4-e98fe8e22dd0/stock-market-today%3A-dow-up.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:45PM",
+      "title": "Stock Market Today: Dow Firm Before Trump Shutdown Talks; Carnival Trips Sell Rule (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/011e567e-12e3-37f1-87d4-e98fe8e22dd0/stock-market-today%3A-dow-firm.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:38PM",
+      "title": "Stock Market Today: Dow Dips As Trump Shutdown Talks Loom; These 3 Stocks Test Entries (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/011e567e-12e3-37f1-87d4-e98fe8e22dd0/stock-market-today%3A-dow-dips.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:49PM",
+      "title": "How Caterpillar's (CAT) Dividend Policy Supports Long-Term Shareholder Value\n\n\n(Insider Monkey)",
+      "link": "/news/178637/how-caterpillars-cat-dividend-policy-supports-long-term-shareholder-value"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:55AM",
+      "title": "Stock Market Today: Dow Jones Wavers With Trump Set For Shutdown Talks; Nvidia, EA, Tesla Rally (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/011e567e-12e3-37f1-87d4-e98fe8e22dd0/stock-market-today%3A-dow-jones.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:15AM",
+      "title": "Is Caterpillar Stock a Buy After Recent Bump?\n\n\n(Motley Fool)",
+      "link": "/news/178117/is-caterpillar-stock-a-buy-after-recent-bump"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "2 Juggernaut Dividend Stocks to Buy With $500\n\n\n(Motley Fool)",
+      "link": "/news/177982/2-juggernaut-dividend-stocks-to-buy-with-500"
+    },
+    {
+      "date": "2025-09-27",
+      "time": "01:00",
+      "title": "Tariffs Aren't Hitting Earnings-Yet. Why That Might Not Last.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/tariff-effects-companies-trump-stock-earnings-aaa33ca2?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "16:48",
+      "title": "The AI trade increasingly hinges on OpenAI - and that's a big risk for the entire market\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/the-ai-trade-increasingly-hinges-on-openai-and-thats-a-big-risk-for-the-entire-market-aef0cf3c?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:40PM",
+      "title": "Oracle, Caterpillar, and 10 Other Winners from the 'New Global Trade Order'\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/oracle-caterpillar-winners-global-trade-order-7c89df0c?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:50PM",
+      "title": "Former Caterpillar CEO Jim Umpleby sells nearly $8 million of company stock\n\n\n(Journal Star)",
+      "link": "https://finance.yahoo.com/m/71a8c45a-c97d-31fc-bc08-c7cbe3e688fa/former-caterpillar-ceo-jim.html"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "13:23",
+      "title": "Stock Market Today: Dow Off Lows; Oklo Thrashed But IBM Jumps On Quantum Hopes (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/28ada64c-17ab-3971-87b8-40882c2ab3ec/stock-market-today%3A-dow-off.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:05PM",
+      "title": "Jim Cramer on Caterpillar: \"I Think it's Got More Upside\"\n\n\n(Insider Monkey)",
+      "link": "/news/176042/jim-cramer-on-caterpillar-i-think-its-got-more-upside"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:56AM",
+      "title": "Stock Market Today: Dow Falls On Surprise GDP, Jobless Claims; Nvidia, Tesla Slide (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/28ada64c-17ab-3971-87b8-40882c2ab3ec/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:55AM",
+      "title": "US-Norway spat over wealth fund's Caterpillar exit is settling, foreign minister says\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/us-norway-spat-over-wealth-105512672.html"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "09:00",
+      "title": "Investors Heavily Search Caterpillar Inc. (CAT): Here is What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/174606/investors-heavily-search-caterpillar-inc-cat-here-is-what-you-need-to-know"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "17:45",
+      "title": "Caterpillar (CAT) Rises Higher Than Market: Key Facts\n\n\n(Zacks)",
+      "link": "/news/172783/caterpillar-cat-rises-higher-than-market-key-facts"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:43AM",
+      "title": "The Zacks Analyst Blog Highlights Costco Wholesale, Morgan Stanley and Caterpillar\n\n\n(Zacks)",
+      "link": "/news/172371/the-zacks-analyst-blog-highlights-costco-wholesale-morgan-stanley-and-caterpillar"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:05AM",
+      "title": "3 Reasons CAT is Risky and 1 Stock to Buy Instead\n\n\n(StockStory)",
+      "link": "/news/171971/3-reasons-cat-is-risky-and-1-stock-to-buy-instead"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "11:08",
+      "title": "Why Caterpillar (CAT) Remains a Heavyweight Among NYSE Dividend Stocks\n\n\n(Insider Monkey)",
+      "link": "/news/171669/why-caterpillar-cat-remains-a-heavyweight-among-nyse-dividend-stocks"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "12:03",
+      "title": "Caterpillar Stock Hits All-Time High-Is There More Room to Run?\n\n\n(MarketBeat)",
+      "link": "/news/171445/caterpillar-stock-hits-all-time-high-is-there-more-room-to-run"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "16:09",
+      "title": "Top Research Reports for Costco, Morgan Stanley & Caterpillar\n\n\n(Zacks)",
+      "link": "/news/171201/top-research-reports-for-costco-morgan-stanley-caterpillar"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:03PM",
+      "title": "Boost Your Portfolio With These Top-Ranked ETFs\n\n\n(Zacks)",
+      "link": "/news/171005/boost-your-portfolio-with-these-top-ranked-etfs"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:26AM",
+      "title": "Caterpillar and 11 More Unconventional Stocks That Will Benefit From the AI Boom\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/caterpillar-stock-price-ai-unconventional-buys-78e361af?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "19:05",
+      "title": "Caterpillar, Cadre, ESCO, EnerSys, and Vicor Shares Are Soaring, What You Need To Know\n\n\n(StockStory)",
+      "link": "/news/170172/caterpillar-cadre-esco-enersys-and-vicor-shares-are-soaring-what-you-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:57PM",
+      "title": "Stock Market Today: Russell 2000 Soars To New High; These Chip Stocks Break Out (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/2efa848d-1e4b-329f-9aff-c5ca5d43b3a0/stock-market-today%3A-russell.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:47PM",
+      "title": "Stock Market Today: Growth Leads As These Players Eye Entries; CrowdStrike Surges (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/2efa848d-1e4b-329f-9aff-c5ca5d43b3a0/stock-market-today%3A-growth.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:12PM",
+      "title": "Stock Market Today: Dow Up 200 Points As Nvidia Jumps On Intel Stake; Cadence, Spotify, TTM Tech Eye Buy Points (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/2efa848d-1e4b-329f-9aff-c5ca5d43b3a0/stock-market-today%3A-dow-up.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:12AM",
+      "title": "Caterpillar and 11 More Stocks That Will Benefit From the Booming AI Trade\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/caterpillar-dell-nvidia-ai-stocks-78e361af?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:59AM",
+      "title": "The Zacks Analyst Blog Highlights Exxon Mobil, Advanced Micro Devices, Caterpillar, Ohio Valley Banc and Where Food Comes From\n\n\n(Zacks)",
+      "link": "/news/169234/the-zacks-analyst-blog-highlights-exxon-mobil-advanced-micro-devices-caterpillar-ohio-valley-banc-and-where-food-comes-from"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:00AM",
+      "title": "The AI Boom Is Far From Over. Dell and 11 Other Industrial Stocks That Benefit.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/the-ai-boom-is-far-from-over-dell-and-11-other-industrial-stocks-that-benefit-78e361af?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:03AM",
+      "title": "Caterpillar (CAT): Buy, Sell, or Hold Post Q2 Earnings?\n\n\n(StockStory)",
+      "link": "/news/170502/caterpillar-cat-buy-sell-or-hold-post-q2-earnings"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "16:48",
+      "title": "Top Stock Reports for Exxon Mobil, AMD & Caterpillar\n\n\n(Zacks)",
+      "link": "/news/168972/top-stock-reports-for-exxon-mobil-amd-caterpillar"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:57PM",
+      "title": "Honeywell, Caterpillar CTOs say AI can ease labor, skills gaps in manufacturing\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/honeywell-caterpillar-ctos-ai-ease-185721241.html"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "17:45",
+      "title": "Why the Market Dipped But Caterpillar (CAT) Gained Today\n\n\n(Zacks)",
+      "link": "/news/167905/why-the-market-dipped-but-caterpillar-cat-gained-today"
+    },
+    {
+      "date": "2025-09-14",
+      "time": "08:45",
+      "title": "These Were the 5 Worst-Performing Stocks in the Dow Jones Industrial Average in August 2025\n\n\n(Motley Fool)",
+      "link": "/news/165647/these-were-the-5-worst-performing-stocks-in-the-dow-jones-industrial-average-in-august-2025"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "08:02",
+      "title": "These Were the 3 Worst-Performing Stocks in the Dow Jones Industrial Average in August 2025\n\n\n(Motley Fool)",
+      "link": "/news/164681/these-were-the-3-worst-performing-stocks-in-the-dow-jones-industrial-average-in-august-2025"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "13:47",
+      "title": "These Were the 5 Top-Performing Stocks in the Dow Jones Industrial Average in August 2025\n\n\n(Motley Fool)",
+      "link": "/news/164131/these-were-the-5-top-performing-stocks-in-the-dow-jones-industrial-average-in-august-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:17AM",
+      "title": "Dow up 500 points, touches intraday record high, as blue chips see big gains\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-sp500-nasdaq-hold-near-record-highs-ai-boom-cpi-inflation-data/card/dow-up-500-points-touches-intraday-record-high-as-blue-chips-see-big-gains-wBrPj2WXJlwuJ2wKfFFi?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Here is What to Know Beyond Why Caterpillar Inc. (CAT) is a Trending Stock\n\n\n(Zacks)",
+      "link": "/news/163681/here-is-what-to-know-beyond-why-caterpillar-inc-cat-is-a-trending-stock"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "17:45",
+      "title": "Caterpillar (CAT) Stock Sinks As Market Gains: What You Should Know\n\n\n(Zacks)",
+      "link": "/news/161847/caterpillar-cat-stock-sinks-as-market-gains-what-you-should-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:12AM",
+      "title": "Norway says it seeks to keep large US investments despite Caterpillar brawl\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/norway-says-seeks-keep-large-131215795.html"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "16:47",
+      "title": "Wall Street Bulls Look Optimistic About Caterpillar (CAT): Should You Buy?\n\n\n(Zacks)",
+      "link": "/news/160496/wall-street-bulls-look-optimistic-about-caterpillar-cat-should-you-buy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:03AM",
+      "title": "Can Deere Maintain Its Dividend Yield Edge Amid Industry Weakness?\n\n\n(Zacks)",
+      "link": "/news/160110/can-deere-maintain-its-dividend-yield-edge-amid-industry-weakness"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:59AM",
+      "title": "Meta AI Spending Spree Set to Top $600 Billion Over 3 Years. Which Stocks Will Get a Boost.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/meta-stock-price-ai-spending-broadcom-49ead3b8?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:45AM",
+      "title": "Caterpillar Stock Keeps Inching Along. Is It a Good Buy for Steady Growth?\n\n\n(Motley Fool)",
+      "link": "/news/159884/caterpillar-stock-keeps-inching-along-is-it-a-good-buy-for-steady-growth"
+    },
+    {
+      "date": "2025-09-06",
+      "time": "03:41",
+      "title": "Can $10,000 in Caterpillar Stock Turn Into $50,000 by 2030?\n\n\n(Motley Fool)",
+      "link": "/news/159318/can-10000-in-caterpillar-stock-turn-into-50000-by-2030"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "14:47",
+      "title": "Tariffs Are Hitting This Blue-Chip Dividend Stock. Should You Buy the Dip?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/527b5f22-a1c9-30fa-b75f-cf571ab7dcf2/tariffs-are-hitting-this.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:09AM",
+      "title": "Jim Cramer Keeps Silent About Caterpillar Inc. (CAT)\n\n\n(Insider Monkey)",
+      "link": "/news/158856/jim-cramer-keeps-silent-about-caterpillar-inc-cat"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:45AM",
+      "title": "2 No-Brainer Industrial Stocks to Buy With $100 Right Now\n\n\n(Motley Fool)",
+      "link": "/news/158769/2-no-brainer-industrial-stocks-to-buy-with-100-right-now"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "22:31",
+      "title": "Trump Admin Slams Norway's $2 Trillion Wealth Fund Exit From Caterpillar Over Gaza Bulldozer Use\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/trump-admin-slams-norways-2-023102233.html"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "19:31",
+      "title": "US 'very troubled' by Norway wealth fund's divestment from Caterpillar\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/us-very-troubled-norway-wealth-233146299.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:07AM",
+      "title": "Trump Ally Says Will Seek Norway Visa Denials Over Caterpillar\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/trump-ally-says-seek-norway-140750687.html"
+    },
+    {
+      "date": "2025-09-01",
+      "time": "11:14",
+      "title": "Caterpillar Stock: Is CAT Outperforming the Industrial Sector?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/a9a55805-93bb-38d5-a48a-ae3b06cba375/caterpillar-stock%3A-is-cat.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:03AM",
+      "title": "Caterpillar raises its 2025 tariff hit estimate to as much as $1.8 billion\n\n\n(Journal Star)",
+      "link": "https://finance.yahoo.com/m/0207a6e7-5427-3c7c-aef5-28243c7a12b5/caterpillar-raises-its-2025.html"
+    },
+    {
+      "date": "2025-08-30",
+      "time": "09:07",
+      "title": "Smaller Industrials Names Seeing Surging Growth: Here's Why\n\n\n(MarketBeat)",
+      "link": "/news/154106/smaller-industrials-names-seeing-surging-growth-heres-why"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:06AM",
+      "title": "Morning Movers: Celsius jumps after PepsiCo agrees to increase stake\n\n\n(TipRanks)",
+      "link": "https://finance.yahoo.com/news/morning-movers-celsius-jumps-pepsico-130607773.html"
+    },
+    {
+      "date": "2025-08-29",
+      "time": "18:38",
+      "title": "Why Caterpillar Stock Slumped by Nearly 4% on Friday\n\n\n(Motley Fool)",
+      "link": "/news/154021/why-caterpillar-stock-slumped-by-nearly-4-on-friday"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:43PM",
+      "title": "Stocks to Watch Recap: Dell, Alibaba, Caterpillar, Ulta\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/a3140bdf-0eb4-31c3-8135-749f00b54349/stocks-to-watch-recap%3A-dell%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:27PM",
+      "title": "Stock Market Today: Dow Sinks, But Nasdaq Fares Much Worse; Nvidia Extends A Losing Streak (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/a7e7ca49-0d28-3836-b235-e4157ddb5c76/stock-market-today%3A-dow.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:19PM",
+      "title": "Norway's $2T Fund Just Dumped Caterpillar--Graham Isn't Taking It Lightly\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/norways-2t-fund-just-dumped-201929546.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:40PM",
+      "title": "Stocks to Watch Friday: Dell, Alibaba, Caterpillar, Ulta\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/a3140bdf-0eb4-31c3-8135-749f00b54349/stocks-to-watch-friday%3A-dell%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:27PM",
+      "title": "Stock Market Today: Dow Falls Despite A Leader Hitting A High; These Names Delight Warren Buffett (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/a7e7ca49-0d28-3836-b235-e4157ddb5c76/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:46PM",
+      "title": "Why Caterpillar (CAT) Shares Are Trading Lower Today\n\n\n(StockStory)",
+      "link": "/news/153775/why-caterpillar-cat-shares-are-trading-lower-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:12PM",
+      "title": "CAT May Face $1.8B Tariff Impacts This Year: Are Margins at Risk?\n\n\n(Zacks)",
+      "link": "/news/153805/cat-may-face-18b-tariff-impacts-this-year-are-margins-at-risk"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:42AM",
+      "title": "Top Stock Movers Now: Caterpillar, Nvidia, Autodesk, and More\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/7869b28e-5612-3e50-ba3d-6975b6c9215d/top-stock-movers-now%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:33AM",
+      "title": "Fed is facing a troublesome and delicate policy dilemma this fall: Opening Bid top takeaway\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/fed-is-facing-a-troublesome-and-delicate-policy-dilemma-this-fall-opening-bid-top-takeaway-153332477.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:57AM",
+      "title": "Caterpillar Says It Will Take $1.8 Billion Hit on Tariffs\n\n\n(Transport Topics)",
+      "link": "https://www.ttnews.com/articles/caterpillar-hit-tariffs"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:51AM",
+      "title": "Chip stocks, Caterpillar, PepsiCo & Celsius: Trending Tickers\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/chip-stocks-caterpillar-pepsico-celsius-145138087.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:47AM",
+      "title": "Caterpillar Warns of Tariff Hit to Margins\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/video/caterpillar-warns-tariff-hit-margins-144757781.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:54AM",
+      "title": "Stocks to Watch Friday: Alibaba, Dell, Caterpillar, Ulta\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-inflation-08-29-2025/card/stocks-to-watch-friday-alibaba-dell-marvell-ulta-uDKi1delTy0kr3dj4Puo?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Is Caterpillar Stock Poised for a Metamorphosis?\n\n\n(Motley Fool)",
+      "link": "/news/153416/is-caterpillar-stock-poised-for-a-metamorphosis"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:36AM",
+      "title": "Others likely to follow Caterpillar's tariff-cost warning as prices rise\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/others-likely-to-follow-caterpillars-tariff-cost-warning-as-prices-rise-980c7069?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:32AM",
+      "title": "Caterpillar Warns Tariff Impact Bigger Than Previously Seen\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/caterpillar-sees-tariff-impact-1-000705992.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:07AM",
+      "title": "Caterpillar Stock Drops as It Expects Tariffs Hit of Up to $1.8B This Year\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/004ed4b8-7b4b-3c64-a609-c02fc36cfee5/caterpillar-stock-drops-as-it.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:12AM",
+      "title": "Caterpillar Warns Of Bigger Hit From Trump Tariffs; CAT Stock Dings Dow Jones\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/news/caterpillar-earnings-warning-trump-tariffs-steel-aluminum-cat-stock-dow-jones-inudstrial-average?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "Caterpillar falls after raising annual tariff hit forecast\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/caterpillar-falls-raising-annual-tariff-110037132.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:52AM",
+      "title": "Caterpillar Stock Drops as It Resizes Tariff Hit. Why Wall Street Isn't Worried.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/caterpillar-stock-price-tariff-hit-1bd10d16?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:32AM",
+      "title": "Norway seeks to defuse clash with Trump ally over fund's Caterpillar exit\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/norway-seeks-defuse-clash-trump-103205261.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:27AM",
+      "title": "Wall St futures slip ahead of key inflation data\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/wall-st-futures-slip-ahead-102717882.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:53AM",
+      "title": "Marvell Technology slides after results and other early market movers\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation/card/marvell-technology-slides-after-results-and-other-early-market-movers-ajOEnWjS8m8teB04O6aZ?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:01AM",
+      "title": "Stock Market Today: Dow, S&P 500 and Nasdaq futures point to losses after record session as investors brace for Fed's preferred inflation gauge ahead of holiday weekend\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-poised-for-pullbacks-ahead-of-pce-inflation?mod=mw_FV"
+    },
+    {
+      "date": "2025-08-28",
+      "time": "21:00",
+      "title": "Trump Leans on National Security to Justify Next Wave of Tariffs\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/0ff41640-f71b-3c06-aabe-2d390288d3cb/trump-leans-on-national.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:15PM",
+      "title": "Caterpillar Says Tariffs Might Cost It Up to $1.8 Billion This Year\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/661156af-c0ea-38bd-952d-9fcb813d53f3/caterpillar-says-tariffs.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:25PM",
+      "title": "Caterpillar Says Higher Tariff Costs May Reach $1.8 Billion\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/caterpillar-says-higher-tariff-costs-may-reach-1-8-billion-e65fc2be?mod=wsj_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:20PM",
+      "title": "Caterpillar stock slides in premarket after raising 2025 tariff impact estimate\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/caterpillar-stock-falls-raising-2025-212023539.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:48PM",
+      "title": "Caterpillar lifts 2025 tariff hit estimate to as much as $1.8 billion\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/caterpillar-lifts-2025-tariff-cost-204851721.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:17PM",
+      "title": "Commentary: Trumps trade war is hurting most sectors of the economy\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/commentary-trumps-trade-war-is-hurting-most-sectors-of-the-economy-191706763.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:17AM",
+      "title": "US second-quarter GDP revised higher as businesses boost investment in AI\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/us-corporate-profits-rebound-second-131704637.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:17AM",
+      "title": "US corporate profits rebound in second quarter; GDP growth revised higher\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/us-corporate-profits-rebound-second-131704132.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:11AM",
+      "title": "Stock Market Today: Dow Rises After Surprise GDP, Jobless Claims; Nvidia Drops On Earnings (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/50d78d4b-726d-35c7-93da-e231175a5784/stock-market-today%3A-dow-rises.html"
+    },
+    {
+      "date": "2025-08-27",
+      "time": "17:32",
+      "title": "3 Undervalued Stocks Analysts Are Loving Right Now-Should You?\n\n\n(MarketBeat)",
+      "link": "/news/151637/3-undervalued-stocks-analysts-are-loving-right-now-should-you"
+    }
+  ]
+}

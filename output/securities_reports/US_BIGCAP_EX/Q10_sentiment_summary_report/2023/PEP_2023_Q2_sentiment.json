@@ -1,0 +1,47 @@
+{
+  "symbol": "PEP",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1483,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.167
+  },
+  "top_positive": [
+    {
+      "sent": "and Subsidiaries (in millions except per share amounts, unaudited) 12 Weeks Ended 24 Weeks Ended 6/17/2023 6/11/2022 6/17/2023 6/11/2022 Net Revenue $ 22,322 $ 20,225 $ 40,168 $ 36,425 Cost of sales 10,121 9,415 18,109 16,848 Gross profit 12,201 10,810 22,059 19,577 Selling, general and administrative expenses 8,542 7,387 15,771 13,967 Gain associated with the Juice Transaction (a) \u2014 ( 13 ) \u2014 ( 3,335 ) Impairment of intangible assets (see Notes 1 and 4) \u2014 1,359 \u2014 1,601 Operating Profit 3,659 2,077 6,288 7,344 Other pension and retiree medical benefits income/(expense) 60 ( 2 ) 121 132 Net interest expense and other ( 201 ) ( 236 ) ( 401 ) ( 476 ) Income before income taxes 3,518 1,839 6,008 7,000 Provision for income taxes 747 393 1,293 1,281 Net income 2,771 1,446 4,715 5,719 Less: Net income attributable to noncontrolling interests 23 17 35 29 Net Income Attributable to PepsiCo $ 2,748 $ 1,429 $ 4,680 $ 5,690 Net Income Attributable to PepsiCo per Common Share Basic $ 1.99 $ 1.03 $ 3.40 $ 4.11 Diluted $ 1.99 $ 1.03 $ 3.38 $ 4.09 Weighted-average common shares outstanding Basic 1,378 1,382 1,378 1,383 Diluted 1,384 1,389 1,384 1,390 (a) In the 24 weeks ended June 11, 2022, we sold our Tropicana, Naked and other select juice brands to PAI Partners for $ 3.5 billion in cash and a 39 % noncontrolling interest in a joint venture, Tropicana Brands Group (TBG), operating across North America and Europe (Juice Transaction).",
+      "score": 0.9776
+    },
+    {
+      "sent": "21 Table of Contents Losses/(gains) recognized in the income statement related to our non-designated hedges are categorized as follows: 12 Weeks Ended 6/17/2023 6/11/2022 Cost of sales Selling, general and administrative expenses Total Cost of sales Selling, general and administrative expenses Total Foreign exchange $ \u2014 $ 44 $ 44 $ ( 14 ) $ 35 $ 21 Commodity 5 3 8 ( 60 ) ( 121 ) ( 181 ) Total $ 5 $ 47 $ 52 $ ( 74 ) $ ( 86 ) $ ( 160 ) 24 Weeks Ended 6/17/2023 6/11/2022 Cost of sales Selling, general and administrative expenses Total Cost of sales Selling, general and administrative expenses Total Foreign exchange $ ( 1 ) $ 39 $ 38 $ ( 3 ) $ 8 $ 5 Commodity 36 53 89 ( 134 ) ( 213 ) ( 347 ) Total $ 35 $ 92 $ 127 $ ( 137 ) $ ( 205 ) $ ( 342 ) Note 10 - Net Income Attributable to PepsiCo per Common Share The computations of basic and diluted net income attributable to PepsiCo per common share are as follows: 12 Weeks Ended 6/17/2023 6/11/2022 Income Shares (a) Income Shares (a) Basic net income attributable to PepsiCo per common share $ 1.99 $ 1.03 Net income available for PepsiCo common shareholders $ 2,748 1,378 $ 1,429 1,382 Dilutive securities: Stock options, RSUs, PSUs and other (b) \u2014 6 \u2014 7 Diluted $ 2,748 1,384 $ 1,429 1,389 Diluted net income attributable to PepsiCo per common share $ 1.99 $ 1.03 24 Weeks Ended 6/17/2023 6/11/2022 Income Shares (a) Income Shares (a) Basic net income attributable to PepsiCo per common share $ 3.40 $ 4.11 Net income available for PepsiCo common shareholders $ 4,680 1,378 $ 5,690 1,383 Dilutive securities: Stock options, RSUs, PSUs and other (b) \u2014 6 \u2014 7 Diluted $ 4,680 1,384 $ 5,690 1,390 Diluted net income attributable to PepsiCo per common share $ 3.38 $ 4.09 (a) Weighted-average common shares outstanding (in millions).",
+      "score": 0.975
+    },
+    {
+      "sent": "Fair Value Measurements The fair values of our financial assets and liabilities as of June\u00a017, 2023 and December\u00a031, 2022 are categorized as follows: 6/17/2023 12/31/2022 Fair Value Hierarchy Levels (a) Assets (a) Liabilities (a) Assets (a) Liabilities (a) Available-for-sale debt securities (b) 2 $ 574 $ \u2014 $ 660 $ \u2014 Index funds (c) 1 $ 273 $ \u2014 $ 257 $ \u2014 Prepaid forward contracts (d) 2 $ 14 $ \u2014 $ 14 $ \u2014 Deferred compensation (e) 2 $ \u2014 $ 447 $ \u2014 $ 434 Derivatives designated as cash flow hedging instruments: Foreign exchange (f) 2 $ 5 $ 43 $ 24 $ 22 Interest rate (f) 2 6 144 \u2014 164 Commodity (g) 2 \u2014 58 2 60 $ 11 $ 245 $ 26 $ 246 Derivatives not designated as hedging instruments: Foreign exchange (f) 2 $ 9 $ 37 $ 21 $ 21 Commodity (g) 2 7 33 11 51 $ 16 $ 70 $ 32 $ 72 Total derivatives at fair value (h) $ 27 $ 315 $ 58 $ 318 Total $ 888 $ 762 $ 989 $ 752 (a) Fair value hierarchy levels are categorized consistently by Level 1 (quoted prices in active markets for identical assets) and Level 2 (significant other observable inputs) in both years.",
+      "score": 0.9747
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "and Subsidiaries (in millions, unaudited) 24 Weeks Ended 6/17/2023 6/11/2022 Financing Activities Proceeds from issuances of long-term debt $ 2,986 $ \u2014 Payments of long-term debt ( 2,252 ) ( 1,652 ) Debt redemptions \u2014 ( 1,550 ) Short-term borrowings, by original maturity: More than three months - proceeds 1,660 1,935 More than three months - payments ( 26 ) \u2014 Three months or less, net 2,023 844 Cash dividends paid ( 3,199 ) ( 2,997 ) Share repurchases - common ( 453 ) ( 699 ) Proceeds from exercises of stock options 86 89 Withholding tax payments on restricted stock units (RSUs) and performance stock units (PSUs) converted ( 119 ) ( 87 ) Other financing ( 16 ) ( 15 ) Net Cash Provided by/(Used for) Financing Activities 690 ( 4,132 ) Effect of exchange rate changes on cash and cash equivalents and restricted cash ( 144 ) ( 83 ) Net Increase/(Decrease) in Cash and Cash Equivalents and Restricted Cash 1,142 ( 162 ) Cash and Cash Equivalents and Restricted Cash, Beginning of Year 5,100 5,707 Cash and Cash Equivalents and Restricted Cash, End of Period $ 6,242 $ 5,545 Supplemental Non-Cash Activity Right-of-use assets obtained in exchange for lease obligations $ 439 $ 428 Debt discharged via legal defeasance $ 94 $ \u2014 See accompanying notes to the condensed consolidated financial statements.",
+      "score": -0.9509
+    },
+    {
+      "sent": "A summary of our 2019 Productivity Plan activity for the 24 weeks ended June\u00a017, 2023 is as follows: Severance and\u00a0Other Employee Costs Other\u00a0Costs Total Liability as of December 31, 2022 $ 188 $ 8 $ 196 2023 restructuring charges 142 62 204 Cash payments ( 120 ) ( 67 ) ( 187 ) Non-cash charges and translation ( 7 ) \u2014 ( 7 ) Liability as of June 17, 2023 $ 203 $ 3 $ 206 The majority of the restructuring accrual at June\u00a017, 2023 is expected to be paid by the end of 2023.",
+      "score": -0.872
+    },
+    {
+      "sent": "A summary of our 2019 Productivity Plan activity for the 24 weeks ended June\u00a017, 2023 is as follows: Severance and\u00a0Other Employee Costs Other\u00a0Costs Total Liability as of December 31, 2022 $ 188 $ 8 $ 196 2023 restructuring charges 142 62 204 Cash payments ( 120 ) ( 67 ) ( 187 ) Non-cash charges and translation ( 7 ) \u2014 ( 7 ) Liability as of June 17, 2023 $ 203 $ 3 $ 206 The majority of the restructuring accrual at June\u00a017, 2023 is expected to be paid by the end of 2023.",
+      "score": -0.872
+    }
+  ],
+  "forward_snippets": [
+    "A summary of pre-tax charges related to the impairment of intangible assets is as follows: 6/11/2022 12 Weeks Ended 24 Weeks Ended Russia-Ukraine conflict impairment charges $ 1,197 $ 1,198 Brand portfolio impairment charges 162 403 Total $ 1,359 $ 1,601 Note 2 - Recently Issued Accounting Pronouncements Adopted In September 2022, the Financial Accounting Standards Board issued guidance to enhance the transparency of supplier finance programs to allow financial statement users to understand the effect on working capital, liquidity and cash flows.",
+    "The new guidance requires disclosure of key terms of the program, including a description of the payment terms, payment timing and assets pledged as security or other forms of guarantees provided to the finance provider or intermediary.",
+    "We adopted the guidance in the first quarter of 2023, except for the rollforward, which is effective in fiscal year 2024 with early adoption permitted.",
+    "We currently plan to adopt the rollforward guidance when effective.",
+    "See Note 13 for disclosures currently required under this guidance."
+  ]
+}

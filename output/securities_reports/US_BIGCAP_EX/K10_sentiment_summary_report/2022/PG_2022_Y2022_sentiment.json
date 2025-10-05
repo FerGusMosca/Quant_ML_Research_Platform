@@ -1,0 +1,47 @@
+{
+  "symbol": "PG",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2399,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.164
+  },
+  "top_positive": [
+    {
+      "sent": "Reportable Segments % of Net\u00a0Sales (1) % of Net Earnings (1) Product Categories (Sub-Categories) Major Brands Beauty 18% 22% Hair Care ( Conditioner, Shampoo, Styling Aids, Treatments ) Head & Shoulders, Herbal Essences, Pantene, Rejoice Skin and Personal Care ( Antiperspirant and Deodorant, Personal Cleansing, Skin Care ) Olay, Old Spice, Safeguard, Secret, SK-II Grooming 8% 10% Grooming (2) (Shave Care - Female Blades & Razors, Male Blades & Razors, Pre- and Post-Shave Products, Other Shave Care; Appliances) Braun, Gillette, Venus Health Care 14% 14% Oral Care ( Toothbrushes, Toothpaste, Other Oral Care ) Crest, Oral-B Personal Health Care ( Gastrointestinal, Rapid Diagnostics, Respiratory, Vitamins/Minerals/Supplements, Pain Relief, Other Personal Health Care ) Metamucil, Neurobion, Pepto-Bismol, Vicks Fabric & Home Care 35% 31% Fabric Care ( Fabric Enhancers, Laundry Additives, Laundry Detergents ) Ariel, Downy, Gain, Tide Home Care ( Air Care, Dish Care, P&G Professional, Surface Care ) Cascade, Dawn, Fairy, Febreze, Mr.",
+      "score": 0.9961
+    },
+    {
+      "sent": "Reportable Segments % of Net\u00a0Sales (1) % of Net Earnings (1) Product Categories (Sub-Categories) Major Brands Beauty 18% 22% Hair Care ( Conditioner, Shampoo, Styling Aids, Treatments ) Head & Shoulders, Herbal Essences, Pantene, Rejoice Skin and Personal Care ( Antiperspirant and Deodorant, Personal Cleansing, Skin Care ) Olay, Old Spice, Safeguard, Secret, SK-II Grooming 8% 10% Grooming (2) (Shave Care - Female Blades & Razors, Male Blades & Razors, Pre- and Post-Shave Products, Other Shave Care; Appliances) Braun, Gillette, Venus Health Care 14% 14% Oral Care ( Toothbrushes, Toothpaste, Other Oral Care ) Crest, Oral-B Personal Health Care ( Gastrointestinal, Rapid Diagnostics, Respiratory, Vitamins/Minerals/Supplements, Pain Relief, Other Personal Health Care ) Metamucil, Neurobion, Pepto-Bismol, Vicks Fabric & Home Care 35% 31% Fabric Care ( Fabric Enhancers, Laundry Additives, Laundry Detergents ) Ariel, Downy, Gain, Tide Home Care ( Air Care, Dish Care, P&G Professional, Surface Care ) Cascade, Dawn, Fairy, Febreze, Mr.",
+      "score": 0.9961
+    },
+    {
+      "sent": "Our five reportable segments are comprised of: \u2022 Beauty :  Hair Care (Conditioner, Shampoo, Styling Aids, Treatments); Skin and Personal Care (Antiperspirant and Deodorant, Personal Cleansing, Skin Care); \u2022 Grooming :  Shave Care (Female Blades & Razors, Male Blades & Razors, Pre- and Post-Shave Products, Other Shave Care); Appliances \u2022 Health Care :  Oral Care (Toothbrushes, Toothpaste, Other Oral Care); Personal Health Care  (Gastrointestinal, Rapid Diagnostics, Respiratory, Vitamins/Minerals/Supplements, Pain Relief, Other Personal Health Care); \u2022 Fabric & Home Care :  Fabric Care (Fabric Enhancers, Laundry Additives, Laundry Detergents); Home Care (Air Care, Dish Care, P&G Professional, Surface Care); and \u2022 Baby, Feminine & Family Care :  Baby Care (Baby Wipes, Taped Diapers and Pants); Feminine Care (Adult Incontinence, Feminine Care); Family Care (Paper Towels, Tissues, Toilet Paper).",
+      "score": 0.9941
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Uncertain economic or social conditions may adversely impact demand for our products or cause our customers and other business partners to suffer financial hardship, which could adversely impact our business.",
+      "score": -0.8779
+    },
+    {
+      "sent": "Uncertain economic or social conditions may adversely impact demand for our products or cause our customers and other business partners to suffer financial hardship, which could adversely impact our business.",
+      "score": -0.8779
+    },
+    {
+      "sent": "Uncertain economic or social conditions may adversely impact demand for our products or cause our customers and other business partners to suffer financial hardship, which could adversely impact our business.",
+      "score": -0.8779
+    }
+  ],
+  "forward_snippets": [
+    "We believe this combination provides the most efficient method of marketing for these types of products.",
+    "We believe this combination provides the most efficient method of marketing for these types of products.",
+    "We believe this combination provides the most efficient method of marketing for these types of products.",
+    "We aim to retain our talented employees by offering competitive compensation and benefits, strong career development and a respectful and inclusive culture that provides equal opportunity for all.",
+    "Diversity, Equality and Inclusion As a consumer products company, we believe that it is important for our workforce to reflect the diversity of our consumers worldwide."
+  ]
+}

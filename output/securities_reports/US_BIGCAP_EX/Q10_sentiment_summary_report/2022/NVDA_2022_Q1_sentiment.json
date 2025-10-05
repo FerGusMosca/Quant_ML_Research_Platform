@@ -1,0 +1,47 @@
+{
+  "symbol": "NVDA",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.0771,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.263
+  },
+  "top_positive": [
+    {
+      "sent": "5 NVIDIA CORPORATION AND SUBSIDIARIES CONDENSED CONSOLIDATED STATEMENTS OF SHAREHOLDERS\u2019 EQUITY FOR THE THREE MONTHS ENDED OCTOBER\u00a030, 2022 AND OCTOBER\u00a031, 2021 (Unaudited) Common\u00a0Stock Outstanding Additional Paid-in Capital Treasury Stock Accumulated Other Comprehensive Income (Loss) Retained Earnings Total Shareholders' Equity (In millions, except per share data) Shares Amount Balances, July 31, 2022 2,489 $ 2 $ 10,968 $ \u2014 $ ( 90 ) $ 12,971 $ 23,851 Net income \u2014 \u2014 \u2014 \u2014 \u2014 680 680 Other comprehensive loss \u2014 \u2014 \u2014 \u2014 ( 33 ) \u2014 ( 33 ) Issuance of common stock from stock plans 9 \u2014 143 \u2014 \u2014 \u2014 143 Tax withholding related to vesting of restricted stock units ( 2 ) \u2014 ( 294 ) \u2014 \u2014 \u2014 ( 294 ) Shares repurchased ( 28 ) \u2014 ( 1 ) \u2014 \u2014 ( 3,646 ) ( 3,647 ) Cash dividends declared and paid ($ 0.04 per common share) \u2014 \u2014 \u2014 \u2014 \u2014 ( 100 ) ( 100 ) Stock-based compensation \u2014 \u2014 749 \u2014 \u2014 \u2014 749 Balances, October 30, 2022 2,468 $ 2 $ 11,565 $ \u2014 $ ( 123 ) $ 9,905 $ 21,349 Balances, August 1, 2021 2,496 $ 3 $ 9,745 $ ( 11,604 ) $ 8 $ 22,995 $ 21,147 Net income \u2014 \u2014 \u2014 \u2014 \u2014 2,464 2,464 Other comprehensive income \u2014 \u2014 \u2014 \u2014 1 \u2014 1 Issuance of common stock from stock plans 8 \u2014 150 \u2014 \u2014 \u2014 150 Tax withholding related to vesting of restricted stock units ( 2 ) \u2014 \u2014 ( 434 ) \u2014 \u2014 ( 434 ) Cash dividends declared and paid ($ 0.04 per common share) \u2014 \u2014 \u2014 \u2014 \u2014 ( 100 ) ( 100 ) Fair value of partially vested equity awards assumed in connection with acquisitions \u2014 \u2014 18 \u2014 \u2014 \u2014 18 Stock-based compensation \u2014 \u2014 552 \u2014 \u2014 \u2014 552 Balances, October 31, 2021 2,502 $ 3 $ 10,465 $ ( 12,038 ) $ 9 $ 25,359 $ 23,798 See accompanying Notes to Condensed Consolidated Financial Statements.",
+      "score": 0.9769
+    },
+    {
+      "sent": "October 30, 2022 January 30, 2022 Amortized Cost Estimated Fair Value Amortized Cost Estimated Fair Value (In millions) Less than one year $ 8,985 $ 8,952 $ 16,346 $ 16,343 Due in 1 - 5 years 3,929 3,880 4,584 4,570 Total $ 12,914 $ 12,832 $ 20,930 $ 20,913 13 NVIDIA CORPORATION AND SUBSIDIARIES NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS (Continued) (Unaudited) Note 8 \u2013 Fair Value of Financial Assets and Liabilities The fair values of our financial assets and liabilities are determined using quoted market prices of identical assets or quoted market prices of similar assets from active markets.",
+      "score": 0.975
+    },
+    {
+      "sent": "October 30, 2022 January 30, 2022 Amortized Cost Estimated Fair Value Amortized Cost Estimated Fair Value (In millions) Less than one year $ 8,985 $ 8,952 $ 16,346 $ 16,343 Due in 1 - 5 years 3,929 3,880 4,584 4,570 Total $ 12,914 $ 12,832 $ 20,930 $ 20,913 13 NVIDIA CORPORATION AND SUBSIDIARIES NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS (Continued) (Unaudited) Note 8 \u2013 Fair Value of Financial Assets and Liabilities The fair values of our financial assets and liabilities are determined using quoted market prices of identical assets or quoted market prices of similar assets from active markets.",
+      "score": 0.975
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our worldwide operations could be disrupted by natural disasters and extreme weather conditions, power or water shortages, telecommunications failures, cloud service provider outages, terrorist attacks, or acts of violence, political and/or civil unrest, acts of war or other military actions, epidemics or pandemics and other natural or man-made disasters and catastrophic events.",
+      "score": -0.979
+    },
+    {
+      "sent": "In the event a disaster, war or catastrophic event affects us, the third-party systems on which we rely, or our customers, our business could be harmed as a result of declines in revenue, increases in expenses, and substantial expenditures and time spent to fully resume operations.",
+      "score": -0.926
+    },
+    {
+      "sent": "If we fail to estimate customer demand properly, mismatches between supply and demand can occur, harming our financial results.",
+      "score": -0.8442
+    }
+  ],
+  "forward_snippets": [
+    "12 NVIDIA CORPORATION AND SUBSIDIARIES NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS (Continued) (Unaudited) While we believe that we have adequately provided for all uncertain tax positions, or tax positions where we believe it is not more-likely-than-not that the position will be sustained upon review, amounts asserted by tax authorities could be greater or less than our accrued position.",
+    "12 NVIDIA CORPORATION AND SUBSIDIARIES NOTES TO CONDENSED CONSOLIDATED FINANCIAL STATEMENTS (Continued) (Unaudited) While we believe that we have adequately provided for all uncertain tax positions, or tax positions where we believe it is not more-likely-than-not that the position will be sustained upon review, amounts asserted by tax authorities could be greater or less than our accrued position.",
+    "As of October\u00a030, 2022, $ 681 million of revenue related to performance obligations had not been recognized, of which we expect to recognize approximately 47 % over the next twelve months and the remainder thereafter.",
+    "We are engaged in legal actions not described above arising in the ordinary course of business and, while there can be no assurance of favorable outcomes, we believe that the ultimate outcome of these actions will not have a material adverse effect on our operating results, liquidity or financial position.",
+    "You should read this Quarterly Report on Form 10-Q completely and with the understanding that our actual future results may be materially different from what we expect."
+  ]
+}

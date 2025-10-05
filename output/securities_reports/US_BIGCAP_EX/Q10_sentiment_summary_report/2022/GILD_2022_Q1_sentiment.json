@@ -1,0 +1,47 @@
+{
+  "symbol": "GILD",
+  "year": 2022,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.0829,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.311
+  },
+  "top_positive": [
+    {
+      "sent": "The following table summarizes the classification and fair values of derivative instruments in our Condensed Consolidated Balance Sheets: September 30, 2022 Derivative Assets Derivative Liabilities (in millions) Classification Fair Value Classification Fair Value Derivatives designated as hedges: Foreign currency exchange contracts Prepaid and other current assets $ 215 Accrued and other current liabilities $ \u2014 Foreign currency exchange contracts Other long-term assets 17 Other\u00a0long-term\u00a0obligations \u2014 Total derivatives designated as hedges 232 \u2014 Derivatives not designated as hedges: Foreign currency exchange contracts Prepaid and other current assets 10 Accrued and other current liabilities 2 Total derivatives not designated as hedges 10 2 Total derivatives $ 242 $ 2 16 December 31, 2021 Derivative Assets Derivative Liabilities (in millions) Classification Fair Value Classification Fair Value Derivatives designated as hedges: Foreign currency exchange contracts Prepaid and other\u00a0current\u00a0assets $ 75 Accrued and other current liabilities $ 4 Foreign currency exchange contracts Other\u00a0long-term\u00a0assets 5 Other\u00a0long-term\u00a0obligations 1 Total derivatives designated as hedges 80 5 Derivatives not designated as hedges: Foreign currency exchange contracts Prepaid and other\u00a0current\u00a0assets \u2014 Accrued and other current liabilities \u2014 Total derivatives not designated as hedges \u2014 \u2014 Total derivatives $ 80 $ 5 The following table summarizes the effect of our foreign\nng-term marketable debt securities 1,282 1,309 Total $ 2,290 $ 2,497 The following table summarizes our available-for-sale debt securities by contractual maturity: September 30, 2022 (in millions) Amortized\u00a0Cost Fair Value Within one year $ 1,018 $ 1,008 After one year through five years 1,298 1,268 After five years through ten years 7 7 After ten years 7 7 Total $ 2,331 $ 2,290 Equity Securities Equity Securities Measured at Fair Value The following table summarizes the classification of our equity securities measured at fair value on a recurring basis on our Condensed Consolidated Balance Sheets.",
+      "score": 0.9895
+    },
+    {
+      "sent": "2022 Equity Incentive Plan (13) 10.4* Form of employee stock option agreement under 2004 Equity Incentive Plan (for grants made in 2011 through 2018) (14) 10.5* Form of employee stock option agreement under 2004 Equity Incentive Plan (for grants made in 2019) (15) 10.6* Form of global employee stock option agreement under 2004 Equity Incentive Plan (4 year vest) (for grants made in 2019) (16) 10.7* Form of global employee stock option agreement under 2004 Equity Incentive Plan (4 year vest) (for grants made in 2020) (17) 10.8* Form of global employee stock option agreement under 2004 Equity Incen",
+      "score": 0.985
+    },
+    {
+      "sent": "FAIR VALUE MEASUREMENTS We determine the fair value of financial and non-financial assets and liabilities using the fair value hierarchy, which establishes three levels of inputs that may be used to measure fair value, as follows: \u2022 Level 1 inputs include quoted prices in active markets for identical assets or liabilities; \u2022 Level 2 inputs include observable inputs other than Level 1 inputs, such as quoted prices for similar assets or liabilities in active markets; quoted prices for identical or similar assets or liabilities in markets that are not active; or other inputs that are observable or can be corroborated by observable market data for substantially the full term of the asset or liability; and \u2022 Level 3 inputs include unobservable inputs that are suppo\nFair Value U.S.",
+      "score": 0.9824
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Food and Drug Administration (\u201cFDA\u201d) in October 2020 as a treatment for patients hospitalized with coronavirus disease 2019 (\u201cCOVID-19\u201d), in January 2022 as a treatment for non-hospitalized adult and adolescent patients who are at high risk of progression to severe COVID-19, including hospitalization or death, and in April 2022 as a treatment for pediatric patients who are older than 28 days, weighing at least 3 kg, and are either hospitalized with COVID-19 or have mild-to-moderate COVID-19 and are considered high risk for progression to severe COVID-19, including hospitalization or death.",
+      "score": -0.9451
+    },
+    {
+      "sent": "Food and Drug Administration (\u201cFDA\u201d) in October 2020 as a treatment for patients hospitalized with coronavirus disease 2019 (\u201cCOVID-19\u201d), in January 2022 as a treatment for non-hospitalized adult and adolescent patients who are at high risk of progression to severe COVID-19, including hospitalization or death, and in April 2022 as a treatment for pediatric patients who are older than 28 days, weighing at least 3 kg, and are either hospitalized with COVID-19 or have mild-to-moderate COVID-19 and are considered high risk for progression to severe COVID-19, including hospitalization or death.",
+      "score": -0.9451
+    },
+    {
+      "sent": "Food and Drug Administration (\u201cFDA\u201d) in October 2020 as a treatment for patients hospitalized with coronavirus disease 2019 (\u201cCOVID-19\u201d), in January 2022 as a treatment for non-hospitalized adult and adolescent patients who are at high risk of progression to severe COVID-19, including hospitalization or death, and in April 2022 as a treatment for pediatric patients who are older than 28 days, weighing at least 3 kg, and are either hospitalized with COVID-19 or have mild-to-moderate COVID-19 and are considered high risk for progression to severe COVID-19, including hospitalization or death.",
+      "score": -0.9451
+    }
+  ],
+  "forward_snippets": [
+    "We believe this presentation assists users of the financial statements to better understand the total costs incurred to acquire in-process research and development (\u201cIPR&D\u201d) projects.",
+    "No allowance for credit losses was recognized for investments with unrealized losses as of September\u00a030, 2022, as we do not currently intend to sell, and it is not more likely than not that we will be required to sell, such investments before recovery of their amortized cost bases.",
+    "Prepaid and other current assets and Other long-term assets include our equity method investments in Arcus and Galapagos, respectively, for which we elected and applied the fair value option as we believe it best reflects the underlying economics of these investments.",
+    "Prepaid and other current assets and Other long-term assets include our equity method investments in Arcus and Galapagos, respectively, for which we elected and applied the fair value option as we believe it best reflects the underlying economics of these investments.",
+    "We believe the \u2019830 patent is invalid and will not be infringed by the continued commercialization of sofosbuvir."
+  ]
+}

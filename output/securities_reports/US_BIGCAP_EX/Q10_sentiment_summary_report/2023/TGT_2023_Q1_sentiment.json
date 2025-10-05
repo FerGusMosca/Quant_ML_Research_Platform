@@ -1,0 +1,47 @@
+{
+  "symbol": "TGT",
+  "year": 2023,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2268,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.051
+  },
+  "top_positive": [
+    {
+      "sent": "TARGET CORPORATION Q3 2023 Form 10-Q 4 FINANCIAL STATEMENTS Table of Contents Index to Notes Consolidated Statements of Shareholders\u2019 Investment Common Stock Additional Accumulated Other Stock Par Paid-in Retained Comprehensive (millions)\u00a0(unaudited) Shares Value Capital Earnings (Loss) / Income Total January 29, 2022 471.3 $ 39 $ 6,421 $ 6,920 $ ( 553 ) $ 12,827 Net earnings \u2014 \u2014 \u2014 1,009 \u2014 1,009 Other comprehensive income \u2014 \u2014 \u2014 \u2014 201 201 Dividends declared \u2014 \u2014 \u2014 ( 426 ) \u2014 ( 426 ) Repurchase of stock ( 0.1 ) \u2014 \u2014 ( 10 ) \u2014 ( 10 ) Accelerated share repurchase pending final settlement ( 8.9 ) ( 1 ) ( 751 ) ( 1,998 ) \u2014 ( 2,750 ) Stock options and awards 1.4 1 ( 78 ) \u2014 \u2014 ( 77 ) April 30, 2022 463.7 $ 39 $ 5,592 $ 5,495 $ ( 352 ) $ 10,774 Net earnings \u2014 \u2014 \u2014 183 \u2014 183 Other comprehensive loss \u2014 \u2014 \u2014 \u2014 ( 17 ) ( 17 ) Dividends declared \u2014 \u2014 \u2014 ( 502 ) \u2014 ( 502 ) Repurchase of stock ( 3.6 ) ( 1 ) 870 ( 755 ) \u2014 114 Stock options and awards 0.1 \u2014 40 \u2014 \u2014 40 July 30, 2022 460.2 $ 38 $ 6,502 $ 4,421 $ ( 369 ) $ 10,592 Net earnings \u2014 \u2014 \u2014 712 \u2014 712 Other comprehensive income \u2014 \u2014 \u2014 \u2014 161 161 Dividends declared \u2014 \u2014 \u2014 ( 502 ) \u2014 ( 502 ) Stock options and awards 0.1 \u2014 56 \u2014 \u2014 56 October 29, 2022 460.3 $ 38 $ 6,558 $ 4,631 $ ( 208 ) $ 11,019 Net earnings \u2014 \u2014 \u2014 876 \u2014 876 Other comprehensive loss \u2014 \u2014 \u2014 \u2014 ( 211 ) ( 211 ) Dividends declared \u2014 \u2014 \u2014 ( 502 ) \u2014 ( 502 ) Stock options and awards \u2014 \u2014 50 \u2014 \u2014 50 January 28, 2023 460.3 $ 38 $ 6,608 $ 5,005 $ ( 419 ) $ 11,232 TARGET CORPORATION Q3 2023 Form 10-Q 5 FINANCIAL STATEMENTS Table of Contents Index to Notes Consolidated Statements of Shareholders\u2019 Investment Common Stock Additional Accumulated Other Stock Par Paid-in Retained Comprehensive (millions)\u00a0(unaudited) Shares Value Capital Earnings (Loss) / Income Total January 28, 2023 460.3 $ 38 $ 6,608 $ 5,005 $ ( 419 ) $ 11,232 Net earnings \u2014 \u2014 \u2014 950 \u2014 950 Other comprehensive loss \u2014 \u2014 \u2014 \u2014 ( 3 ) ( 3 ) Dividends declared \u2014 \u2014 \u2014 ( 507 ) \u2014 ( 507 ) Stock options and awards 1.3 \u2014 ( 67 ) \u2014\nd October\u00a029, 2022.",
+      "score": 0.9812
+    },
+    {
+      "sent": "TARGET CORPORATION Q3 2023 Form 10-Q 20 MANAGEMENT'S DISCUSSION AND ANALYSIS Table of Contents ANALYSIS OF FINANCIAL CONDITION Index to Notes Analysis of Financial Condition Liquidity and Capital Resources Capital Allocation We follow a disciplined and balanced approach to capital allocation based on the following priorities, ranked in order of importance: first, we fully invest in opportunities to profitably grow our business, create sustainable long-term value, and maintain our current operations and assets; second, we maintain a competitive quarterly dividend and seek to grow it annually; and finally, we return any excess cash to shareholders by repurchasing shares within the limits of our credit rating goals.",
+      "score": 0.949
+    },
+    {
+      "sent": "TARGET CORPORATION Q3 2023 Form 10-Q 20 MANAGEMENT'S DISCUSSION AND ANALYSIS Table of Contents ANALYSIS OF FINANCIAL CONDITION Index to Notes Analysis of Financial Condition Liquidity and Capital Resources Capital Allocation We follow a disciplined and balanced approach to capital allocation based on the following priorities, ranked in order of importance: first, we fully invest in opportunities to profitably grow our business, create sustainable long-term value, and maintain our current operations and assets; second, we maintain a competitive quarterly dividend and seek to grow it annually; and finally, we return any excess cash to shareholders by repurchasing shares within the limits of our credit rating goals.",
+      "score": 0.949
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Quantitative and Qualitative Disclosures About Market Risk There have been no material changes in our primary risk exposures or management of market risks from those disclosed in Part II, Item 7A, Quantitative and Qualitative Disclosures About Market Risk of our Form\u00a010-K for the fiscal year ended January\u00a028, 2023.",
+      "score": -0.8225
+    },
+    {
+      "sent": "Quantitative and Qualitative Disclosures About Market Risk There have been no material changes in our primary risk exposures or management of market risks from those disclosed in Part II, Item 7A, Quantitative and Qualitative Disclosures About Market Risk of our Form\u00a010-K for the fiscal year ended January\u00a028, 2023.",
+      "score": -0.8225
+    },
+    {
+      "sent": "TARGET CORPORATION Q3 2023 Form 10-Q 14 MANAGEMENT'S DISCUSSION AND ANALYSIS Table of Contents FINANCIAL SUMMARY Index to Notes Analysis of Results of Operations Summary of Operating Income Three\u00a0Months\u00a0Ended Nine Months Ended (dollars in millions) October 28, 2023 October 29, 2022 Change October 28, 2023 October 29, 2022 Change Sales $ 25,004 $ 26,122 (4.3) % $ 74,336 $ 76,605 (3.0) % Other revenue 394 396 (0.6) 1,157 1,120 3.3 Total revenue 25,398 26,518 (4.2) 75,493 77,725 (2.9) Cost of sales 18,149 19,680 (7.8) 54,333 58,283 (6.8) Selling, general and administrative expenses 5,316 5,219 1.8 15,525 14,983 3.6 Depreciation and amortization (exclusive of depreciation included in cost of sales) 616 597 3.2 1,793 1,770 1.3 Operating income $ 1,317 $ 1,022 28.9 % $ 3,842 $ 2,689 42.9 % Rate\u00a0Analysis Three Months Ended Nine Months Ended October 28, 2023 October 29, 2022 October 28, 2023 October 29, 2022 Gross margin rate 27.4 % 24.7 % 26.9 % 23.9 % SG&A expense rate 20.9 19.7 20.6 19.3 Depreciation and amortization expense rate (exclusive of depreciation included in cost of sales) 2.4 2.3 2.4 2.3 Operating income margin rate 5.2 3.9 5.1 3.5 Note: Gross margin rate is calculated as gross margin (sales less cost of sales) divided by sales.",
+      "score": -0.7964
+    }
+  ],
+  "forward_snippets": [
+    "We report after-tax return on invested capital (ROIC) because we believe ROIC provides a meaningful measure of our capital allocation effectiveness over time.",
+    "We continue to experience higher inventory shrink, as a percentage of sales, relative to historical levels \u2014 including significantly higher shrink rates at certain stores.",
+    "We believe that this trend is pervasive across the retail industry.",
+    "We expect that comparable sales growth will drive the majority of our total sales growth.",
+    "We believe that our ability to successfully differentiate our guests\u2019 shopping experience through a careful combination of merchandise assortment, price, convenience, guest experience, and other factors will, over the long-term, drive both increasing shopping frequency (number of transactions, or \"traffic\") and the amount spent each visit (average transaction amount)."
+  ]
+}

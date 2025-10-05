@@ -1,0 +1,606 @@
+{
+  "symbol": "AMD",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-04",
+      "time": "13:45",
+      "title": "Should You Buy AMD Before Its Next Big Earnings Report?\n\n\n(Motley Fool)",
+      "link": "/news/183854/should-you-buy-amd-before-its-next-big-earnings-report"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "17:24",
+      "title": "Top Stock Reports for AMD, Abbott & Micron Technology\n\n\n(Zacks)",
+      "link": "/news/183716/top-stock-reports-for-amd-abbott-micron-technology"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:22PM",
+      "title": "AMD not fabbing at Intel, says SemiAccurate; shares retreat\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/amd-not-fabbing-intel-says-202247952.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:09PM",
+      "title": "Top 3 Dow Stocks Include This New Player In Quantum Computing\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/dc55e573-3285-3aa9-8f17-781f6720a30b/top-3-dow-stocks-include-this.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:02PM",
+      "title": "Record Closes, Resiliency Define First Week of October\n\n\n(Schaeffer's Research)",
+      "link": "/news/183473/record-closes-resiliency-define-first-week-of-october"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:04AM",
+      "title": "Intel Stock Has Doubled Since April 8. Here Is Where the Stock Could Be at the End of 2025\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/2b822660-b1de-35f8-b16b-0f7f3fc659ed/intel-stock-has-doubled-since.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "New to Investing? This 1 Computer and Technology Stock Could Be the Perfect Starting Point\n\n\n(Zacks)",
+      "link": "/news/183360/new-to-investing-this-1-computer-and-technology-stock-could-be-the-perfect-starting-point"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:19AM",
+      "title": "Stock Market News for Oct 3, 2025\n\n\n(Zacks)",
+      "link": "/news/183341/stock-market-news-for-oct-3-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:37AM",
+      "title": "Nvidia's UAE Sales Hit Snag, Report Says, Stock Rises Anyway\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-uae-ai-chips-3e6e71b2?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:15AM",
+      "title": "Dow Futures, Chip Stocks Rise as Shutdown Enters Day Three\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/6084a854-902e-375b-8daa-fd5d814be3eb/dow-futures%2C-chip-stocks-rise.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:35AM",
+      "title": "Nvidia Stock Rises. It's Riding a Wave of AI Spending.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-ai-chips-uae-3e6e71b2?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:05AM",
+      "title": "Meet Mira Murati, the 36-year-old tech prodigy who shot to fame at OpenAI and now runs a startup thats a poaching target for Mark Zuckerberg\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/meet-mira-murati-36-old-100500868.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:31AM",
+      "title": "Heard on the Street Thursday Recap: Taking Credit\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/9e8fafa3-5fde-3ab8-90e8-8f8ccdc98e78/heard-on-the-street-thursday.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:18AM",
+      "title": "$200 Billion Chip Frenzy: AI Mania Sends Stocks Into Overdrive\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/200-billion-chip-frenzy-ai-051826508.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "17:40",
+      "title": "Stocks to Watch Recap: Fair Isaac, Tesla, Stellantis, Netflix\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/02c7e1ae-39dc-3e13-8a56-2b18e427ddbc/stocks-to-watch-recap%3A-fair.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:55PM",
+      "title": "Stock Market Today: Nasdaq Hits High Even As Tesla Sinks; China Stock Futu Trampled\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/f464db28-e154-36c8-b0be-7dbf0f6469d0/stock-market-today%3A-nasdaq.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:37PM",
+      "title": "Heard on the Street Recap: Taking Credit\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/04d6689f-e9b1-395b-be66-72dfa1e18c3a/heard-on-the-street-recap%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:02PM",
+      "title": "Dow, S&P 500, Nasdaq notch records on AI buzz even as government shutdown drags on\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/dow-sp-500-nasdaq-notch-records-on-ai-buzz-even-as-government-shutdown-drags-on-200207403.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:27PM",
+      "title": "Options Traders Are Going to Like This AMD-Intel Rumor\n\n\n(Schaeffer's Research)",
+      "link": "/news/182647/options-traders-are-going-to-like-this-amd-intel-rumor"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:13PM",
+      "title": "Could AMD Make Intel's Business as Hot as Its Stock?\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/6dc96567-0c44-31c9-9fa8-8791ac3c8e17/could-amd-make-intel%27s.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:10PM",
+      "title": "Top Stock Movers Now: Intel, AMD, Starbucks, Fair Isaac, and More\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/1884ffc9-16a5-3d3c-9165-062de6a58685/top-stock-movers-now%3A-intel%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:58PM",
+      "title": "AMD Shares Jump on Talk of Intel Partnership in Chipmaking Shift\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/amd-shares-jump-talk-intel-175816915.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:34PM",
+      "title": "Stocks to Watch Thursday: Fair Isaac, Tesla, Stellantis, Netflix\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/02c7e1ae-39dc-3e13-8a56-2b18e427ddbc/stocks-to-watch-thursday%3A.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:20PM",
+      "title": "AMD (AMD) Stock Is Up, What You Need To Know\n\n\n(StockStory)",
+      "link": "/news/182624/amd-amd-stock-is-up-what-you-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:12PM",
+      "title": "Stock Market Today: Nasdaq Up Even As Tesla And Silver Both Sink 3%, But AMD, Astera Hit New Buy Points (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/f464db28-e154-36c8-b0be-7dbf0f6469d0/stock-market-today%3A-nasdaq-up.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:29PM",
+      "title": "Stock Market Today: Indexes Lose Some Early Lift; Tesla Reverses Lower, But AMD, Astera Hit New Buy Points (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/f464db28-e154-36c8-b0be-7dbf0f6469d0/stock-market-today%3A-indexes.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:05AM",
+      "title": "Bernstein somewhat skeptical on rumors Intel will add AMD as a foundry customer\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/bernstein-somewhat-skeptical-rumors-intel-150523352.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:52AM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq mixed as AI optimism blots out US shutdown risks\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-mixed-as-ai-optimism-blots-out-us-shutdown-risks-145218407.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:52AM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq gains fizzle with AI buzz, Trump's shutdown threats in focus\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-gains-fizzle-with-ai-buzz-trumps-shutdown-threats-in-focus-145218301.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:23AM",
+      "title": "Nvidia, AMD Stocks Rise. Whats Driving the AI Chip Rally.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/e2f78341-f3a8-3ddd-b5ab-bdac6fdf1e4f/nvidia%2C-amd-stocks-rise..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:10AM",
+      "title": "BofA Has Options Play to Bet on Tech Rally as Hedge Funds Sell\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/bofa-options-play-bet-tech-093000074.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:58AM",
+      "title": "Stocks Edge Higher as Shutdown Enters Second Day\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/31c83384-e6c0-3a8c-a5ca-3ec96f0771ac/stocks-edge-higher-as.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:54AM",
+      "title": "Intel's Stock Price Has Doubled Since Hitting Its 2025 LowWatch These Key Levels\n\n\n(Investopedia)",
+      "link": "https://finance.yahoo.com/m/6063902b-926b-39b8-8333-02343a7a8511/intel%27s-stock-price-has.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:46AM",
+      "title": "Stock Market Today: Dow Falls As Jobless Data Gets The Ax; Tesla Jumps On Strong Deliveries (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/f464db28-e154-36c8-b0be-7dbf0f6469d0/stock-market-today%3A-dow-falls.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:31AM",
+      "title": "AI stock rally: OpenAI valuation lifts Nvidia, AMD, Intel & more\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/ai-stock-rally-openai-valuation-133157224.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:31AM",
+      "title": "Stock market today: S&P 500, Nasdaq rise as AI optimism blots out US shutdown risks\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-nasdaq-rise-as-ai-optimism-blots-out-us-shutdown-risks-133118033.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:31AM",
+      "title": "Stock market today: S&P 500, Nasdaq jump as AI optimism blots out US shutdown risks\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-nasdaq-jump-as-ai-optimism-blots-out-us-shutdown-risks-133118631.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:13AM",
+      "title": "DigitalOcean Unveils AI Hub To Supercharge Developer Innovation\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/digitalocean-unveils-ai-hub-supercharge-131359267.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:05AM",
+      "title": "Chip stocks rise as OpenAIs Stargate project fuels AI memory demand hype\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/chip-stocks-rise-openai-stargate-130531665.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:10AM",
+      "title": "Intel Shareholders Got Amazing News From a Massive Competitor\n\n\n(Motley Fool)",
+      "link": "/news/182179/intel-shareholders-got-amazing-news-from-a-massive-competitor"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:24AM",
+      "title": "Nvidia, AMD Stocks Rise. How OpenAI Is Driving the AI Chip Rally.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-amd-openai-4801d64a?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:12AM",
+      "title": "Stock Futures Inch Up as Shutdown Enters Second Day\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/31c83384-e6c0-3a8c-a5ca-3ec96f0771ac/stock-futures-inch-up-as.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:20AM",
+      "title": "Chipmakers Add $200 Billion in Global Rally on AI Frenzy\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/global-chipmakers-add-200-billion-073238397.html"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "22:40",
+      "title": "Rumored Intel-AMD foundry deal signals potential shift in chipmaking landscape\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20251002VL200/intel-amd-chips-manufacturing-production.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:02PM",
+      "title": "Analyst Report: Taiwan Semiconductor Manufacturing Company Limited\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/6d2d80a9-ce68-3bc0-8cd9-7c5628465486/analyst-report%3A-taiwan.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:03PM",
+      "title": "Stock market today: S&P 500, Nasdaq futures rise as AI optimism blots out US shutdown\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-sp-500-nasdaq-futures-rise-as-ai-optimism-blots-out-us-shutdown-230340381.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:37PM",
+      "title": "Intel's stock extends its gains on hopes AMD could go from rival to partner\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/intels-stock-extends-its-gains-on-hopes-amd-could-go-from-rival-to-partner-dafbafbd?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:36PM",
+      "title": "Why Lam Research Rocketed to All-Time Highs Today\n\n\n(Motley Fool)",
+      "link": "/news/181500/why-lam-research-rocketed-to-all-time-highs-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:20PM",
+      "title": "Intel reportedly in early talks to add AMD as foundry customer\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=hiFK5rjqhe4"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:48PM",
+      "title": "Intel Stock Rallies On Report Chip Giant Looking To Add AMD As Foundry Customer\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/8db19195-db15-3a46-a228-897272169fff/intel-stock-rallies-on-report.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:37PM",
+      "title": "Intel spikes on reports of potential AMD manufacturing deal\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/intel-spikes-reports-potential-amd-183737608.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:10PM",
+      "title": "Intel in early talks to add AMD as foundry customer, Semafor reports\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/intel-early-talks-add-amd-181049115.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:28PM",
+      "title": "How To Ride AMD Stock Higher Through A Long Straddle Option Move\n\n\n(Investor's Business Daily)",
+      "link": "https://www.investors.com/research/options/advanced-micro-devices-amd-stock-long-straddle-option?mod=IBD_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:03PM",
+      "title": "AMD Expands AI Partnership With Cohere for Enterprise and Sovereign AI\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/amd-expands-ai-partnership-cohere-170350900.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:43PM",
+      "title": "Meta Reportedly Eyes Rivos AI Chip Startup Deal\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/meta-reportedly-eyes-rivos-ai-164309580.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:40AM",
+      "title": "GEN Boosts Cyber Safety With Norton Deepfake Protection on Intel PCs\n\n\n(Zacks)",
+      "link": "/news/181095/gen-boosts-cyber-safety-with-norton-deepfake-protection-on-intel-pcs"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:02AM",
+      "title": "Nvidia Stock Drops. Meta Is Pushing Ahead with Its Own AI Chips.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/535ceef9-4e2a-307f-8e3e-4ced7e0fbb14/nvidia-stock-drops.-meta-is.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:10AM",
+      "title": "Zyphra Taps IBM, AMD To Build Next-Gen AI Superagent\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/zyphra-taps-ibm-amd-build-131051288.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "3 Best Tech Stocks to Buy in October\n\n\n(Motley Fool)",
+      "link": "/news/180784/3-best-tech-stocks-to-buy-in-october"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:26AM",
+      "title": "Nvidia Stock Drops from Record High. The AI Chip Maker Faces a New Challenge.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-ai-chips-10584ac9?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:04AM",
+      "title": "IBM and AMD Collaborate with Zyphra on Next Generation AI Infrastructure\n\n\n(PR Newswire)",
+      "link": "/news/180590/ibm-and-amd-collaborate-with-zyphra-on-next-generation-ai-infrastructure"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "21:30",
+      "title": "AMD Expands AI Partnership With Cohere to Power Enterprise and Sovereign AI\n\n\n(Insider Monkey)",
+      "link": "/news/180382/amd-expands-ai-partnership-with-cohere-to-power-enterprise-and-sovereign-ai"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:46PM",
+      "title": "Cohere hits US$7 billion valuation, deepens AMD partnership\n\n\n(DigiTimes)",
+      "link": "https://www.digitimes.com/news/a20250930PD204/amd-cohere-partnership-startup-canada.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:41PM",
+      "title": "Intel Soars on Nvidia Deal, But This 1 Stock Could Be the Biggest Loser\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/7396ace2-4b78-3016-a88c-52a127703cc8/intel-soars-on-nvidia-deal%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:16AM",
+      "title": "Nvidia Stock Is on Pace for a Record High. Can It Keep Its Lead Over AMD?\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/7a0c068c-122b-32f1-8ffa-752c8aba5834/nvidia-stock-is-on-pace-for-a.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:24AM",
+      "title": "Nvidia Stock Edges Up. Can It Keep Its Lead Over AMD?\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/7a0c068c-122b-32f1-8ffa-752c8aba5834/nvidia-stock-edges-up.-can-it.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:02AM",
+      "title": "Nvidia Stock Rally Pauses. How the Chip Maker Intends to Keep Its Lead Over AMD.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-ai-chips-amd-ea18d8d5?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:54AM",
+      "title": "What Is One of the Best AI Hardware Stocks to Buy Today?\n\n\n(Motley Fool)",
+      "link": "/news/179273/what-is-one-of-the-best-ai-hardware-stocks-to-buy-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:43AM",
+      "title": "These 2 AI stocks stand out as supply chain winners, says KeyBanc\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/2-ai-stocks-stand-supply-094329511.html"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "17:45",
+      "title": "Advanced Micro Devices (AMD) Outpaces Stock Market Gains: What You Should Know\n\n\n(Zacks)",
+      "link": "/news/178873/advanced-micro-devices-amd-outpaces-stock-market-gains-what-you-should-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:10PM",
+      "title": "Why AI has a familiar tune to the Dot-Com Bubble\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/why-ai-familiar-tune-dot-201010895.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:24AM",
+      "title": "Wall Street Says AMD Stock Could Gain 40% in a Year\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/4e257216-c252-33f0-99d1-3f21e444d80e/wall-street-says-amd-stock.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:30AM",
+      "title": "Nvidia Stock Rises. Watch OpenAI to See Where It Goes Next.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-openai-b24b56b6?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "19:43",
+      "title": "Advanced Micro Devices, Inc. (AMD): A Bull Case Theory\n\n\n(Insider Monkey)",
+      "link": "/news/177809/advanced-micro-devices-inc-amd-a-bull-case-theory"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00PM",
+      "title": "The 5 Best S&P 500 Stocks of the Last 10 Years\n\n\n(Motley Fool)",
+      "link": "/news/177770/the-5-best-sp-500-stocks-of-the-last-10-years"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:33PM",
+      "title": "Intel quietly makes aggressive move to repair recent failures\n\n\n(TheStreet)",
+      "link": "https://finance.yahoo.com/m/18f6a357-2dde-3a84-9c3c-6e3a1ea3ad0b/intel-quietly-makes.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Is AMD Stock Your Ticket to Becoming a Millionaire?\n\n\n(Motley Fool)",
+      "link": "/news/177696/is-amd-stock-your-ticket-to-becoming-a-millionaire"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:55AM",
+      "title": "Prediction: 1 Stock That Will Be Worth More Than Palantir 5 Years From Now\n\n\n(Motley Fool)",
+      "link": "/news/177665/prediction-1-stock-that-will-be-worth-more-than-palantir-5-years-from-now"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "17:05",
+      "title": "Trump moves toward deal to give US an equity stake in company developing Nevada lithium mine\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/trump-moves-toward-deal-us-210512979.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:26PM",
+      "title": "Nvidia vs. AMD: Which Artificial Intelligence (AI) Stock Is the Smarter Buy After Groq's $750 Million Equity Raise?\n\n\n(Motley Fool)",
+      "link": "/news/177215/nvidia-vs-amd-which-artificial-intelligence-ai-stock-is-the-smarter-buy-after-groqs-750-million-equity-raise"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "MU or AMD: Which Is the Better Value Stock Right Now?\n\n\n(Zacks)",
+      "link": "/news/177142/mu-or-amd-which-is-the-better-value-stock-right-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:40AM",
+      "title": "GlobalFoundries Stock Climbs. What's Behind the Chip Manufacturer's Momentum.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/globalfoundries-stock-price-50ab6c05?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Investors Heavily Search Advanced Micro Devices, Inc. (AMD): Here is What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/176846/investors-heavily-search-advanced-micro-devices-inc-amd-here-is-what-you-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:13AM",
+      "title": "Robotics Demand Rises: Will Jetson Thor Unlock a New Market for NVDA?\n\n\n(Zacks)",
+      "link": "/news/176777/robotics-demand-rises-will-jetson-thor-unlock-a-new-market-for-nvda"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:03AM",
+      "title": "Nvidia Stock Has Avoided the Worst of the AI Selloff. It Will Try to Rise Again Today.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-today-ai-e74afde5?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:04AM",
+      "title": "Nvidia Stock Falls. What's Dragging on the AI Chip Maker.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-ai-chips-e74afde5?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:00AM",
+      "title": "What AMD Shareholders Should Know About Recent Updates\n\n\n(Motley Fool)",
+      "link": "/news/176527/what-amd-shareholders-should-know-about-recent-updates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:32AM",
+      "title": "1 S&P 500 Stock with Impressive Fundamentals and 2 We Question\n\n\n(StockStory)",
+      "link": "/news/176491/1-sp-500-stock-with-impressive-fundamentals-and-2-we-question"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:07AM",
+      "title": "AMD Shares Updates and Talks Growth at Goldman Sachs Conference\n\n\n(Insider Monkey)",
+      "link": "/news/176407/amd-shares-updates-and-talks-growth-at-goldman-sachs-conference"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "16:49",
+      "title": "Trump Has Taken Stakes in These Companies. How Their Stocks Have Fared.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/7ff241ca-625e-3a57-91eb-eeaa6093e781/trump-has-taken-stakes-in.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:59PM",
+      "title": "Cathie Wood Triggers AMD Selloff With $22 Million Stock Sale\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/cathie-wood-triggers-amd-selloff-195932150.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:41PM",
+      "title": "Intel approaches TSMC for investments or partnership, WSJ reports\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/intel-approaches-tsmc-investments-partnership-194119380.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:38PM",
+      "title": "Trump Has Taken Control Over These Companies. How Their Stocks Have Fared.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/trump-control-companies-stock-f33490e0?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:40PM",
+      "title": "AMD Gains Traction in AI Infrastructure Market: A Sign of More Upside?\n\n\n(Zacks)",
+      "link": "/news/176098/amd-gains-traction-in-ai-infrastructure-market-a-sign-of-more-upside"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:27PM",
+      "title": "Nvidia Stock Is Rising. It Can Gain 37% From Here, Says This Analyst.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/7bd2b94b-b4ba-3a14-acc3-01943d32d5f9/nvidia-stock-is-rising.-it.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:18AM",
+      "title": "Broadcom and AMD Are Set to Share This Much of the $475 Billion AI Chip Market by 2030\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-broadcom-amd-stock-ai-chips-market-share-8da59418?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:48AM",
+      "title": "Nvidia Stock Is Falling. This Analyst Says It Can Gain 37% from Here.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/7bd2b94b-b4ba-3a14-acc3-01943d32d5f9/nvidia-stock-is-falling.-this.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:02AM",
+      "title": "Nvidia Stock Is Falling. This Analyst Says It Can Gain 37% Gain from Here.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-analyst-target-raise-fd45e58b?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:49AM",
+      "title": "Nvidia Stock Falls. Why This Analyst Backs a Near 40% Gain from Here.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/nvidia-stock-price-ai-investment-fd45e58b?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:55AM",
+      "title": "Seaport ups Intel on near-term catalysts, remains cautions on long-term prospects\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/seaport-ups-intel-near-term-085523159.html"
+    }
+  ]
+}

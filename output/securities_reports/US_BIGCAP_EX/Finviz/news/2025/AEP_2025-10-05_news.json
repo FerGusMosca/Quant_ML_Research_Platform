@@ -1,0 +1,606 @@
+{
+  "symbol": "AEP",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-03",
+      "time": "10:49",
+      "title": "Renewable Push & Key Investments to Drive Growth for American Electric\n\n\n(Zacks)",
+      "link": "/news/183466/renewable-push-key-investments-to-drive-growth-for-american-electric"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "11:40",
+      "title": "IBDRY or AEP: Which Is the Better Value Stock Right Now?\n\n\n(Zacks)",
+      "link": "/news/182557/ibdry-or-aep-which-is-the-better-value-stock-right-now"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "14:04",
+      "title": "Jim Cramer Says He Has Been Recommending American Electric For Multiple Years\n\n\n(Insider Monkey)",
+      "link": "/news/179935/jim-cramer-says-he-has-been-recommending-american-electric-for-multiple-years"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "17:14",
+      "title": "American Electric Power (AEP)'s Stock Looks Very Much Like Intel's, Says Jim Cramer\n\n\n(Insider Monkey)",
+      "link": "/news/178824/american-electric-power-aeps-stock-looks-very-much-like-intels-says-jim-cramer"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "11:11",
+      "title": "Bloom Energy, Oklo Stocks Slide as Analysts Question Gains\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/bloom-energy-oklo-stocks-analyst-ratings-459ba63d?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "14:29",
+      "title": "Bloom Energy Stock Is an AI Darling. Why Investors Should Sell Anyway.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/bloom-energy-stock-price-downgrade-ai-1330e101?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "12:21",
+      "title": "Bloom Energy Booms on AI Power Demand and Analyst Upgrades\n\n\n(MarketBeat)",
+      "link": "/news/169836/bloom-energy-booms-on-ai-power-demand-and-analyst-upgrades"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "13:13",
+      "title": "Is American Electric Power Stock Underperforming the Nasdaq?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/39947f5e-47e8-30b4-a0c6-c83c3ea14e90/is-american-electric-power.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:55AM",
+      "title": "FERC transmission rate decision sparks dissent over possible bill increases\n\n\n(Utility Dive)",
+      "link": "https://finance.yahoo.com/m/9b990d6b-c1e5-3d3c-b299-623befc71fdf/ferc-transmission-rate.html"
+    },
+    {
+      "date": "2025-09-01",
+      "time": "05:30",
+      "title": "Data Centers That Don't Exist Yet Are Already Haunting the Grid\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/business/energy-oil/data-centers-that-dont-exist-yet-are-already-haunting-the-grid-c5ec7620?mod=wsj_FV"
+    },
+    {
+      "date": "2025-08-29",
+      "time": "11:30",
+      "title": "Why Is AEP (AEP) Down 1.2% Since Last Earnings Report?\n\n\n(Zacks)",
+      "link": "/news/153664/why-is-aep-aep-down-12-since-last-earnings-report"
+    },
+    {
+      "date": "2025-08-27",
+      "time": "01:01",
+      "title": "American Electric Power (AEP) Plans $70 Billion Capital Expenditures Through 2029, Analyst Boosts Target\n\n\n(Insider Monkey)",
+      "link": "/news/150518/american-electric-power-aep-plans-70-billion-capital-expenditures-through-2029-analyst-boosts-target"
+    },
+    {
+      "date": "2025-08-21",
+      "time": "10:49",
+      "title": "NextEra is Trading Above 50 & 200 Day SMA: Is it Time to Add the Stock?\n\n\n(Zacks)",
+      "link": "/news/146545/nextera-is-trading-above-50-200-day-sma-is-it-time-to-add-the-stock"
+    },
+    {
+      "date": "2025-08-16",
+      "time": "07:00",
+      "title": "MarketBeat Week in Review - 08/11 - 08/15\n\n\n(MarketBeat)",
+      "link": "/news/142389/marketbeat-week-in-review-0811-0815"
+    },
+    {
+      "date": "2025-08-15",
+      "time": "09:30",
+      "title": "Exelon to Invest $38B in Infrastructure Amid Changing Usage Patterns\n\n\n(Zacks)",
+      "link": "/news/141918/exelon-to-invest-38b-in-infrastructure-amid-changing-usage-patterns"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:06AM",
+      "title": "How AEP Became a Critical AI Infrastructure Play\n\n\n(MarketBeat)",
+      "link": "/news/141690/how-aep-became-a-critical-ai-infrastructure-play"
+    },
+    {
+      "date": "2025-08-14",
+      "time": "13:36",
+      "title": "Hope Utilities to Construct Natural Gas Pipeline in Ohio to Power Data Center Project\n\n\n(GlobeNewswire)",
+      "link": "https://finance.yahoo.com/news/hope-utilities-construct-natural-gas-173600096.html"
+    },
+    {
+      "date": "2025-08-11",
+      "time": "10:44",
+      "title": "Weekly Stock\u00a0Grader\u00a0Analysis: Upgrades & Downgrades on Top Blue-Chip Stocks\n\n\n(InvestorPlace)",
+      "link": "https://finance.yahoo.com/news/weekly-stock-grader-analysis-upgrades-144421624.html"
+    },
+    {
+      "date": "2025-08-08",
+      "time": "13:01",
+      "title": "Vistra Q2 Earnings Beat Estimates, Revenues Miss, Both Up Y/Y\n\n\n(Zacks)",
+      "link": "/news/134023/vistra-q2-earnings-beat-estimates-revenues-miss-both-up-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:42AM",
+      "title": "Are Wall Street Analysts Predicting American Electric Power Stock Will Climb or Sink?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/eb6b0ee9-19e6-335a-acb5-dc0fc2e69268/are-wall-street-analysts.html"
+    },
+    {
+      "date": "2025-08-06",
+      "time": "11:13",
+      "title": "NRG Energy Q2 Earnings Surpass Estimates, Revenues Increase Y/Y\n\n\n(Zacks)",
+      "link": "/news/130226/nrg-energy-q2-earnings-surpass-estimates-revenues-increase-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00AM",
+      "title": "8 Undervalued Stocks for a Rocky Market\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/8-undervalued-stocks-screen-7c21dc66?mod=bar_FV"
+    },
+    {
+      "date": "2025-08-05",
+      "time": "14:14",
+      "title": "Public Service Enterprise Q2 Earnings Beat Estimates, Revenues Increase Y/Y\n\n\n(Zacks)",
+      "link": "/news/128702/public-service-enterprise-q2-earnings-beat-estimates-revenues-increase-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:36AM",
+      "title": "Duke Energy Q2 Earnings Higher Than Estimates, Revenues Rise Y/Y\n\n\n(Zacks)",
+      "link": "/news/128415/duke-energy-q2-earnings-higher-than-estimates-revenues-rise-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:11AM",
+      "title": "CEG vs. AEP: Which Utility Is Best Positioned for Long-Term Growth? (Revised)\n\n\n(Zacks)",
+      "link": "/news/127687/ceg-vs-aep-which-utility-is-best-positioned-for-long-term-growth-revised"
+    },
+    {
+      "date": "2025-08-04",
+      "time": "12:23",
+      "title": "Why Alphabet Stock Popped on Monday\n\n\n(Motley Fool)",
+      "link": "/news/126710/why-alphabet-stock-popped-on-monday"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:00AM",
+      "title": "Utilities Witness Longest Win Streak Since 2009: ETFs to Play\n\n\n(Zacks)",
+      "link": "/news/126625/utilities-witness-longest-win-streak-since-2009-etfs-to-play"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:16AM",
+      "title": "I&M, Google Filing to Support Reliability Through Demand Response Structure\n\n\n(PR Newswire)",
+      "link": "/news/126233/im-google-filing-to-support-reliability-through-demand-response-structure"
+    },
+    {
+      "date": "2025-08-01",
+      "time": "17:22",
+      "title": "Top Analyst Reports for Oracle, Walt Disney & KKR\n\n\n(Zacks)",
+      "link": "/news/125269/top-analyst-reports-for-oracle-walt-disney-kkr"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:51AM",
+      "title": "Dominion Beats on Q2 Earnings & Revenues, Adds Customers\n\n\n(Zacks)",
+      "link": "/news/124996/dominion-beats-on-q2-earnings-revenues-adds-customers"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:41AM",
+      "title": "IDACORP Q2 Earnings Match Estimates, Revenues Lag, EPS View Narrowed\n\n\n(Zacks)",
+      "link": "/news/124878/idacorp-q2-earnings-match-estimates-revenues-lag-eps-view-narrowed"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:58AM",
+      "title": "AES Q2 Earnings Outpace Estimates, Revenues Decline Y/Y\n\n\n(Zacks)",
+      "link": "/news/124807/aes-q2-earnings-outpace-estimates-revenues-decline-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:33AM",
+      "title": "Ameren Q2 Earnings Higher Than Expected, Revenues Increase Y/Y\n\n\n(Zacks)",
+      "link": "/news/124713/ameren-q2-earnings-higher-than-expected-revenues-increase-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:15AM",
+      "title": "AEP expects to add 24 GW of load by 2030, mainly from data centers\n\n\n(Utility Dive)",
+      "link": "https://finance.yahoo.com/m/1388d7be-4069-3f97-83fd-0fd2f2c6e122/aep-expects-to-add-24-gw-of.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:00AM",
+      "title": "2 Utilities That Stand to Gain From Big Tech's Power Play\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/2-utilities-gain-big-tech-power-play-7790dcb0?mod=bar_FV"
+    },
+    {
+      "date": "2025-07-31",
+      "time": "16:41",
+      "title": "Big Beat, Bigger Plans: AEP Stock Powers Up on Data Center Boom\n\n\n(MarketBeat)",
+      "link": "/news/123695/big-beat-bigger-plans-aep-stock-powers-up-on-data-center-boom"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:00PM",
+      "title": "Xcel Energy Beats Q2 Earnings Estimates, Sales Miss, Adds Customers\n\n\n(Zacks)",
+      "link": "/news/123247/xcel-energy-beats-q2-earnings-estimates-sales-miss-adds-customers"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:58AM",
+      "title": "Exelon's Q2 Earnings Surpass Estimates, Sales Lag, Delivery Volume Up\n\n\n(Zacks)",
+      "link": "/news/123249/exelons-q2-earnings-surpass-estimates-sales-lag-delivery-volume-up"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:55AM",
+      "title": "CMS Energy Q2 Earnings Surpass Estimates, Revenues Increase Y/Y\n\n\n(Zacks)",
+      "link": "/news/123228/cms-energy-q2-earnings-surpass-estimates-revenues-increase-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:22AM",
+      "title": "Company News for Jul 31, 2025\n\n\n(Zacks)",
+      "link": "/news/122748/company-news-for-jul-31-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:23AM",
+      "title": "American Electric Power (AEP) Board Approves Quarterly Dividend\n\n\n(Insider Monkey)",
+      "link": "/news/122114/american-electric-power-aep-board-approves-quarterly-dividend"
+    },
+    {
+      "date": "2025-07-30",
+      "time": "17:57",
+      "title": "Analyst Report: American Electric Power Company, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/22dc9014-0d44-3138-90af-563df65a2d59/analyst-report%3A-american.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:21PM",
+      "title": "American Electric Power Lifts Annual GAAP Outlook, To Announce $70 Billion Capital Plan\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/american-electric-power-lifts-annual-172157952.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:18AM",
+      "title": "American Electric's Q2 Earnings Beat Estimates, Revenues Increase Y/Y\n\n\n(Zacks)",
+      "link": "/news/121204/american-electrics-q2-earnings-beat-estimates-revenues-increase-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Compared to Estimates, AEP (AEP) Q2 Earnings: A Look at Key Metrics\n\n\n(Zacks)",
+      "link": "/news/120907/compared-to-estimates-aep-aep-q2-earnings-a-look-at-key-metrics"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:05AM",
+      "title": "American Electric Power (AEP) Surpasses Q2 Earnings and Revenue Estimates\n\n\n(Zacks)",
+      "link": "/news/120683/american-electric-power-aep-surpasses-q2-earnings-and-revenue-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:48AM",
+      "title": "AEP beats profit estimates, expects new five-year capital plan of $70 billion\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/aep-beats-profit-estimates-expects-114826139.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:03AM",
+      "title": "AEP: Q2 Earnings Snapshot\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/aep-q2-earnings-snapshot-110304093.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:57AM",
+      "title": "AEP Reports Record Second-Quarter Operating Earnings, Guides to Upper Half of 2025 Guidance Range\n\n\n(PR Newswire)",
+      "link": "/news/120326/aep-reports-record-second-quarter-operating-earnings-guides-to-upper-half-of-2025-guidance-range"
+    },
+    {
+      "date": "2025-07-29",
+      "time": "11:38",
+      "title": "Ameren Gears Up to Report Q2 Earnings: Here's What to Expect\n\n\n(Zacks)",
+      "link": "/news/119308/ameren-gears-up-to-report-q2-earnings-heres-what-to-expect"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:37AM",
+      "title": "Edison International to Post Q2 Earnings: What's in Store for the Stock?\n\n\n(Zacks)",
+      "link": "/news/118778/edison-international-to-post-q2-earnings-whats-in-store-for-the-stock"
+    },
+    {
+      "date": "2025-07-28",
+      "time": "09:57",
+      "title": "PUCO Adopts AEP Ohio Data Center Proposal to Protect Consumers\n\n\n(Insider Monkey)",
+      "link": "/news/117221/puco-adopts-aep-ohio-data-center-proposal-to-protect-consumers"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:19AM",
+      "title": "AES to Report Q2 Earnings: What's in Store for the Stock?\n\n\n(Zacks)",
+      "link": "/news/117155/aes-to-report-q2-earnings-whats-in-store-for-the-stock"
+    },
+    {
+      "date": "2025-07-25",
+      "time": "09:47",
+      "title": "PG&E Corporation to Report Q2 Earnings: Here's What to Expect\n\n\n(Zacks)",
+      "link": "/news/115732/pge-corporation-to-report-q2-earnings-heres-what-to-expect"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:39AM",
+      "title": "CMS Energy Set to Report Q2 Earnings: What's in Store for the Stock?\n\n\n(Zacks)",
+      "link": "/news/115703/cms-energy-set-to-report-q2-earnings-whats-in-store-for-the-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:15AM",
+      "title": "AEP (AEP) Q2 Earnings on the Horizon: Analysts' Insights on Key Performance Measures\n\n\n(Zacks)",
+      "link": "/news/115590/aep-aep-q2-earnings-on-the-horizon-analysts-insights-on-key-performance-measures"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:37AM",
+      "title": "CEG vs. AEP: Which Utility Is Best Positioned for Long-Term Growth?\n\n\n(Zacks)",
+      "link": "/news/115440/ceg-vs-aep-which-utility-is-best-positioned-for-long-term-growth"
+    },
+    {
+      "date": "2025-07-24",
+      "time": "10:40",
+      "title": "American Electric Power to Post Q2 Earnings: What's in Store?\n\n\n(Zacks)",
+      "link": "/news/114307/american-electric-power-to-post-q2-earnings-whats-in-store"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:09AM",
+      "title": "DTE Energy Gears Up to Report Q2 Earnings: What's in the Cards?\n\n\n(Zacks)",
+      "link": "/news/114278/dte-energy-gears-up-to-report-q2-earnings-whats-in-the-cards"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:05AM",
+      "title": "Entergy Gears Up to Report Q2 Earnings: What's in the Cards?\n\n\n(Zacks)",
+      "link": "/news/114203/entergy-gears-up-to-report-q2-earnings-whats-in-the-cards"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Earnings Preview: Edison International (EIX) Q2 Earnings Expected to Decline\n\n\n(Zacks)",
+      "link": "/news/114153/earnings-preview-edison-international-eix-q2-earnings-expected-to-decline"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Oracle and Bloom Energy Collaborate to Deliver Power to Data Centers at the Speed of AI\n\n\n(Business Wire)",
+      "link": "https://finance.yahoo.com/news/oracle-bloom-energy-collaborate-deliver-130000302.html"
+    },
+    {
+      "date": "2025-07-23",
+      "time": "10:00",
+      "title": "American Electric Power (AEP) Expected to Beat Earnings Estimates: What to Know Ahead of Q2 Release\n\n\n(Zacks)",
+      "link": "/news/112417/american-electric-power-aep-expected-to-beat-earnings-estimates-what-to-know-ahead-of-q2-release"
+    },
+    {
+      "date": "2025-07-22",
+      "time": "12:04",
+      "title": "AEP Declares Quarterly Dividend on Common Stock\n\n\n(PR Newswire)",
+      "link": "/news/111025/aep-declares-quarterly-dividend-on-common-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:52AM",
+      "title": "CenterPoint Energy to Report Q2 Earnings: What's in the Cards?\n\n\n(Zacks)",
+      "link": "/news/111015/centerpoint-energy-to-report-q2-earnings-whats-in-the-cards"
+    },
+    {
+      "date": "2025-07-18",
+      "time": "08:50",
+      "title": "These 2 Utilities Stocks Could Beat Earnings: Why They Should Be on Your Radar\n\n\n(Zacks)",
+      "link": "/news/107776/these-2-utilities-stocks-could-beat-earnings-why-they-should-be-on-your-radar"
+    },
+    {
+      "date": "2025-07-14",
+      "time": "10:51",
+      "title": "NextEra Energy Outpaces Industry in a Month: How to Play the Stock?\n\n\n(Zacks)",
+      "link": "/news/102977/nextera-energy-outpaces-industry-in-a-month-how-to-play-the-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Are You a Growth Investor? This 1 Stock Could Be the Perfect Pick\n\n\n(Zacks)",
+      "link": "/news/102849/are-you-a-growth-investor-this-1-stock-could-be-the-perfect-pick"
+    },
+    {
+      "date": "2025-07-11",
+      "time": "18:58",
+      "title": "Analyst Report: American Electric Power Company, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/06f490a2-2b99-3fc8-a27c-57baebf55f24/analyst-report%3A-american.html"
+    },
+    {
+      "date": "2025-07-10",
+      "time": "08:52",
+      "title": "Implied Volatility Surging for American Electric Power Stock Options\n\n\n(Zacks)",
+      "link": "/news/100241/implied-volatility-surging-for-american-electric-power-stock-options"
+    },
+    {
+      "date": "2025-07-09",
+      "time": "16:36",
+      "title": "AEP Ohio Proposal on Data Centers to Protect Ohio Consumers Adopted by PUCO\n\n\n(PR Newswire)",
+      "link": "/news/99593/aep-ohio-proposal-on-data-centers-to-protect-ohio-consumers-adopted-by-puco"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:01PM",
+      "title": "Bloom Energy Stock Is Getting a Big Beautiful Bump. An Analyst Sees More.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/bloom-energy-stock-wall-street-c26ae088?mod=bar_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:12PM",
+      "title": "Can VST Gain From Surging Electricity Demand in Its Service Areas?\n\n\n(Zacks)",
+      "link": "/news/99465/can-vst-gain-from-surging-electricity-demand-in-its-service-areas"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:09AM",
+      "title": "American Electric Power Company (AEP) Bolsters Management Team\n\n\n(Insider Monkey)",
+      "link": "/news/99042/american-electric-power-company-aep-bolsters-management-team"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:50AM",
+      "title": "Why Investors Need to Take Advantage of These 2 Utilities Stocks Now\n\n\n(Zacks)",
+      "link": "/news/99088/why-investors-need-to-take-advantage-of-these-2-utilities-stocks-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:20AM",
+      "title": "What to Expect From American Electric Power's Next Quarterly Earnings Report\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/689c521e-0b2f-32f3-b44d-8a0c67a31606/what-to-expect-from-american.html"
+    },
+    {
+      "date": "2025-07-08",
+      "time": "08:30",
+      "title": "Chesapeake Utilities Corporation Expands Energy Infrastructure in Ohio to Support New Data Center\n\n\n(PR Newswire)",
+      "link": "https://finance.yahoo.com/news/chesapeake-utilities-corporation-expands-energy-123000349.html"
+    },
+    {
+      "date": "2025-07-07",
+      "time": "09:33",
+      "title": "Can Inorganic and Organic Assets Power NextEra's Long-Term Growth?\n\n\n(Zacks)",
+      "link": "/news/96981/can-inorganic-and-organic-assets-power-nexteras-long-term-growth"
+    },
+    {
+      "date": "2025-07-02",
+      "time": "10:39",
+      "title": "3 Utility Stocks That Combine Income and Stability\n\n\n(MarketBeat)",
+      "link": "/news/94338/3-utility-stocks-that-combine-income-and-stability"
+    },
+    {
+      "date": "2025-07-01",
+      "time": "09:50",
+      "title": "Why American Electric Power (AEP) is a Top Momentum Stock for the Long-Term\n\n\n(Zacks)",
+      "link": "/news/93377/why-american-electric-power-aep-is-a-top-momentum-stock-for-the-long-term"
+    },
+    {
+      "date": "2025-06-30",
+      "time": "08:50",
+      "title": "These 2 Utilities Stocks Could Beat Earnings: Why They Should Be on Your Radar\n\n\n(Zacks)",
+      "link": "/news/92132/these-2-utilities-stocks-could-beat-earnings-why-they-should-be-on-your-radar"
+    },
+    {
+      "date": "2025-06-27",
+      "time": "16:23",
+      "title": "Power Demand For Data Centers, AI Fuels 870% Rally For Quanta Services\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/0853be6e-98bd-3a07-8f94-37e9c3aac3e5/power-demand-for-data.html"
+    },
+    {
+      "date": "2025-06-26",
+      "time": "09:45",
+      "title": "Here's Why American Electric Power (AEP) is a Strong Growth Stock\n\n\n(Zacks)",
+      "link": "/news/89705/heres-why-american-electric-power-aep-is-a-strong-growth-stock"
+    },
+    {
+      "date": "2025-06-25",
+      "time": "10:22",
+      "title": "American Electric to Gain From Investments and Renewable Expansion\n\n\n(Zacks)",
+      "link": "/news/88506/american-electric-to-gain-from-investments-and-renewable-expansion"
+    },
+    {
+      "date": "2025-06-22",
+      "time": "04:51",
+      "title": "American Electric Power Strengthens Dividend Potential with New Investment Deal\n\n\n(Insider Monkey)",
+      "link": "/news/85351/american-electric-power-strengthens-dividend-potential-with-new-investment-deal"
+    },
+    {
+      "date": "2025-06-18",
+      "time": "08:47",
+      "title": "Watch These Renewable Energy & Battery Energy Stocks for Valuable Gains\n\n\n(Zacks)",
+      "link": "/news/83304/watch-these-renewable-energy-battery-energy-stocks-for-valuable-gains"
+    },
+    {
+      "date": "2025-06-17",
+      "time": "08:00",
+      "title": "AEP Announces Executive Leadership Changes\n\n\n(PR Newswire)",
+      "link": "/news/82137/aep-announces-executive-leadership-changes"
+    },
+    {
+      "date": "2025-06-12",
+      "time": "09:30",
+      "title": "American Electric to recover $1.5B from insurers\n\n\n(TipRanks)",
+      "link": "https://finance.yahoo.com/news/american-electric-recover-1-5b-133012817.html"
+    },
+    {
+      "date": "2025-06-11",
+      "time": "16:09",
+      "title": "Trump Unveils Plan to Scrap Power Plant Pollution Controls\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/trump-unveils-plan-scrap-biden-181309433.html"
+    },
+    {
+      "date": "2025-06-05",
+      "time": "13:30",
+      "title": "AEP Closes on Transmission Investment Strategic Partnership with KKR and PSP Investments\n\n\n(PR Newswire)",
+      "link": "/news/74658/aep-closes-on-transmission-investment-strategic-partnership-with-kkr-and-psp-investments"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "OCC Approves PSO's Acquisition of Green Country Plant, Powering Oklahoma's Energy Needs\n\n\n(PR Newswire)",
+      "link": "/news/73940/occ-approves-psos-acquisition-of-green-country-plant-powering-oklahomas-energy-needs"
+    },
+    {
+      "date": "2025-06-03",
+      "time": "06:45",
+      "title": "Prediction: These 3 Unstoppable Value Stocks Will Continue Crushing the S&P 500 Beyond 2025\n\n\n(Motley Fool)",
+      "link": "/news/72076/prediction-these-3-unstoppable-value-stocks-will-continue-crushing-the-sp-500-beyond-2025"
+    },
+    {
+      "date": "2025-05-27",
+      "time": "13:19",
+      "title": "Implied Volatility Surging for American Electric Power Company (AEP) Stock Options\n\n\n(Zacks)",
+      "link": "/news/67096/implied-volatility-surging-for-american-electric-power-company-aep-stock-options"
+    },
+    {
+      "date": "2025-05-24",
+      "time": "04:24",
+      "title": "Could Investing in These American-Made High Yielders Pay Dividends for Your Portfolio?\n\n\n(Motley Fool)",
+      "link": "/news/65597/could-investing-in-these-american-made-high-yielders-pay-dividends-for-your-portfolio"
+    },
+    {
+      "date": "2025-05-20",
+      "time": "14:00",
+      "title": "AEP Names Industry Veteran Doug Cannon President of AEP Transmission\n\n\n(PR Newswire)",
+      "link": "/news/62073/aep-names-industry-veteran-doug-cannon-president-of-aep-transmission"
+    },
+    {
+      "date": "2025-05-16",
+      "time": "14:24",
+      "title": "American Electric Power Stock Earns RS Rating Upgrade\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/bf5f5332-563e-3119-98c6-87d2a219fc60/american-electric-power-stock.html"
+    },
+    {
+      "date": "2025-05-07",
+      "time": "06:40",
+      "title": "Fidelity Select Utilities Portfolio Q1 2025 Commentary\n\n\n(Seeking Alpha)",
+      "link": "https://seekingalpha.com/article/4782822-fidelity-select-utilities-portfolio-q1-2025-commentary?utm_source=finviz.com&utm_medium=referral&feed_item_type=article"
+    },
+    {
+      "date": "2025-05-06",
+      "time": "12:31",
+      "title": "Analyst Report: American Electric Power Company, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/5683df1e-c0dc-3cfb-99a1-1c80e5b31501/analyst-report%3A-american.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:23AM",
+      "title": "American Electric's Q1 Earnings Beat Estimates, Revenues Increase Y/Y\n\n\n(Zacks)",
+      "link": "/news/48491/american-electrics-q1-earnings-beat-estimates-revenues-increase-yy"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "Compared to Estimates, AEP (AEP) Q1 Earnings: A Look at Key Metrics\n\n\n(Zacks)",
+      "link": "/news/48289/compared-to-estimates-aep-aep-q1-earnings-a-look-at-key-metrics"
+    }
+  ]
+}

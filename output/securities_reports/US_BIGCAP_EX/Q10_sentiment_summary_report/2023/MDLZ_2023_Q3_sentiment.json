@@ -1,0 +1,47 @@
+{
+  "symbol": "MDLZ",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1907,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.095
+  },
+  "top_positive": [
+    {
+      "sent": "Performance Share Units and Other Stock-Based Awards Our performance share unit (PSU), deferred stock unit (DSU) and other stock-based activity is reflected below: Number of Shares Grant\u00a0Date Weighted-Average Fair Value Per Share (4) Weighted-Average Aggregate Fair Value (3) Balance at January 1, 2023 4,451,674 $ 60.12 Annual grant to eligible employees: Mar 2, 2023 Performance share units 895,410 68.59 Deferred stock units 578,570 65.36 Additional shares granted (1) 675,395 Various 65.13 Total shares granted 2,149,375 66.63 $ 143 million Vested (2) (3) ( 1,598,781 ) 63.07 $ 101 million Forfeited (2) ( 91,430 ) 60.77 Balance\u00a0at\u00a0March 31, 2023 4,910,838 61.99 (1) Includes PSUs and DSUs.",
+      "score": 0.9881
+    },
+    {
+      "sent": "We believe the successful implementation of our strategic priorities and leveraging of our attractive global footprint, strong core of iconic global and local brands, marketing, sales, distribution and cost excellence capabilities, and top talent with a growth mindset, will drive consistent top- and bottom-line growth, enabling us to continue to create long-term value for our shareholders.",
+      "score": 0.9803
+    },
+    {
+      "sent": "We believe the successful implementation of our strategic priorities and leveraging of our attractive global footprint, strong core of iconic global and local brands, marketing, sales, distribution and cost excellence capabilities, and top talent with a growth mindset, will drive consistent top- and bottom-line growth, enabling us to continue to create long-term value for our shareholders.",
+      "score": 0.9803
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Forward-looking statements may include, among others, the words, and variations of words, \u201cwill,\u201d \u201cmay,\u201d \u201cexpect,\u201d \u201cwould,\u201d \u201ccould,\u201d \u201c\nd in financing activities was primarily due to lower debt proceeds, partially offset by lower debt repayments and lower share repurchases in the first three months of 2023 compared to the same prior-year period.",
+      "score": -0.8126
+    },
+    {
+      "sent": "This debt is not reflected in the table above, but is included in long-term debt discussed in Note 8, Debt and Borrowing Arrangements .",
+      "score": -0.8047
+    },
+    {
+      "sent": "We believe the war in Ukraine has had a negative impact on our business throughout the rest of our Europe operating segment, but the impact of this is difficult to quantify.",
+      "score": -0.7935
+    }
+  ],
+  "forward_snippets": [
+    "We continue to make targeted repairs on both our plants and have partially reopened and restarted limited production in both plants.",
+    "We continue to consolidate both our Ukrainian and Russian subsidiaries and continue to evaluate our ability to control our operating activities and businesses on an ongoing basis.",
+    "We base our estimates on historical experience, expectations of future impacts and other assumptions that we believe are reasonable.",
+    "We continue to make targeted repairs on both our plants and have partially reopened and restarted limited production in both plants.",
+    "We continue to consolidate both our Ukrainian and Russian subsidiaries and continue to evaluate our ability to control our operating activities and businesses on an ongoing basis."
+  ]
+}

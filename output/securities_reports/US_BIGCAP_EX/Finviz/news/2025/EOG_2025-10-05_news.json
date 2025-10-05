@@ -1,0 +1,606 @@
+{
+  "symbol": "EOG",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-02",
+      "time": "09:57",
+      "title": "10 stocks that not only beat the S&P 500 but also grew their dividends the most\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/10-stocks-that-not-only-beat-the-s-p-500-but-also-grew-their-dividends-the-most-a36c1a7b?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "4 Oil Giants Stand Tall as Permian Basin Fuels U.S. Growth\n\n\n(Zacks)",
+      "link": "/news/182313/4-oil-giants-stand-tall-as-permian-basin-fuels-us-growth"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "06:29",
+      "title": "The Zacks Analyst Blog Highlights Wells Fargo, CME Group, EOG Resources, AmeriServ Financial\n\n\n(Zacks)",
+      "link": "/news/179296/the-zacks-analyst-blog-highlights-wells-fargo-cme-group-eog-resources-ameriserv-financial"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "18:45",
+      "title": "Top Research Reports for Wells Fargo, CME & EOG Resources\n\n\n(Zacks)",
+      "link": "/news/178987/top-research-reports-for-wells-fargo-cme-eog-resources"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:08AM",
+      "title": "2 Reasons Why ConocoPhillips Can Sail Through Low Oil Prices\n\n\n(Zacks)",
+      "link": "/news/178545/2-reasons-why-conocophillips-can-sail-through-low-oil-prices"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:41AM",
+      "title": "ExxonMobil's Advantaged Assets: A Hedge Against Oil Price Volatility?\n\n\n(Zacks)",
+      "link": "/news/178512/exxonmobils-advantaged-assets-a-hedge-against-oil-price-volatility"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "09:46",
+      "title": "CarMax downgraded, Kenvue upgraded: Wall Street's top analyst calls\n\n\n(The Fly)",
+      "link": "https://finance.yahoo.com/news/carmax-downgraded-kenvue-upgraded-wall-134654108.html"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "10:19",
+      "title": "Balance Sheet Strength Keeps COP Resilient Amid Price Volatility\n\n\n(Zacks)",
+      "link": "/news/175892/balance-sheet-strength-keeps-cop-resilient-amid-price-volatility"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:34AM",
+      "title": "XOM's Guyana Push: Unlocking 11B Barrels and a Decade of Growth\n\n\n(Zacks)",
+      "link": "/news/175806/xoms-guyana-push-unlocking-11b-barrels-and-a-decade-of-growth"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:00AM",
+      "title": "Shareholder Yields Are Better Than Dividend Yields. 10 Stocks That Fit the Bill.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/shareholder-yields-dividend-yields-10-stocks-47b97ee6?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "16:36",
+      "title": "IFM Investors Increases Stake in EOG Resources, Inc. (EOG) as Shale Projects Advance\n\n\n(Insider Monkey)",
+      "link": "/news/175061/ifm-investors-increases-stake-in-eog-resources-inc-eog-as-shale-projects-advance"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15PM",
+      "title": "EOG Resources Schedules Conference Call and Webcast of Third Quarter 2025 Results for November 7, 2025\n\n\n(PR Newswire)",
+      "link": "/news/175020/eog-resources-schedules-conference-call-and-webcast-of-third-quarter-2025-results-for-november-7-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:06AM",
+      "title": "Mizuho Reduces PT on EOG Resources (EOG) Stock\n\n\n(Insider Monkey)",
+      "link": "/news/174003/mizuho-reduces-pt-on-eog-resources-eog-stock"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "22:09",
+      "title": "EOG Resources (EOG) - A Strong Dividend Stock for Your Portfolio\n\n\n(Insider Monkey)",
+      "link": "/news/173969/eog-resources-eog-a-strong-dividend-stock-for-your-portfolio"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:18PM",
+      "title": "Following a Strong Second Quarter, EOG Completes the Encino Acquisition\n\n\n(Insider Monkey)",
+      "link": "/news/173948/following-a-strong-second-quarter-eog-completes-the-encino-acquisition"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "13:54",
+      "title": "Why ConocoPhillips Stands Out as a High-Resilience Upstream Player\n\n\n(Zacks)",
+      "link": "/news/171114/why-conocophillips-stands-out-as-a-high-resilience-upstream-player"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:48AM",
+      "title": "ExxonMobil's Permian Push: Leveraging Technology for Production Growth\n\n\n(Zacks)",
+      "link": "/news/170856/exxonmobils-permian-push-leveraging-technology-for-production-growth"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "08:42",
+      "title": "Can $13.8B in Cash Flow Shield Chevron From Oil Price Swings?\n\n\n(Zacks)",
+      "link": "/news/167199/can-138b-in-cash-flow-shield-chevron-from-oil-price-swings"
+    },
+    {
+      "date": "2025-09-15",
+      "time": "14:14",
+      "title": "Analyst Report: EOG Resources, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/c97eca71-d681-300e-b049-c2c253adaabe/analyst-report%3A-eog.html"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "11:38",
+      "title": "ConocoPhillips' High-Quality Assets: Key to Long-Term Profitability?\n\n\n(Zacks)",
+      "link": "/news/165123/conocophillips-high-quality-assets-key-to-long-term-profitability"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "11:31",
+      "title": "Melius Launches Coverage on EOG Resources (EOG), Assigns Buy Rating\n\n\n(Insider Monkey)",
+      "link": "/news/163910/melius-launches-coverage-on-eog-resources-eog-assigns-buy-rating"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "12:45",
+      "title": "ConocoPhillips is Not so Pricey: Should Investors Bet on the Stock Now?\n\n\n(Zacks)",
+      "link": "/news/160242/conocophillips-is-not-so-pricey-should-investors-bet-on-the-stock-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "EOG Resources Advances Shale Project With ADNOC in the Middle East\n\n\n(Zacks)",
+      "link": "/news/160031/eog-resources-advances-shale-project-with-adnoc-in-the-middle-east"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "12:02",
+      "title": "Strong Balance Sheet to Support ConocoPhillips' Long-Term Stability\n\n\n(Zacks)",
+      "link": "/news/159047/strong-balance-sheet-to-support-conocophillips-long-term-stability"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:32AM",
+      "title": "Is EOG Resources Stock Underperforming the S&P 500?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/3ef9a4fc-b8c9-328a-ba8d-1bffb8fe1b26/is-eog-resources-stock.html"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "12:55",
+      "title": "UBS Raises PT on EOG Resources (EOG) Stock\n\n\n(Insider Monkey)",
+      "link": "/news/158168/ubs-raises-pt-on-eog-resources-eog-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:43AM",
+      "title": "Can ConocoPhillips Sail Through Oil and Natural Gas Price Volatility?\n\n\n(Zacks)",
+      "link": "/news/157956/can-conocophillips-sail-through-oil-and-natural-gas-price-volatility"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "15:47",
+      "title": "Oil Stocks Sink Ahead of OPEC Meeting\n\n\n(The Wall Street Journal)",
+      "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-09-03-2025/card/oil-stocks-sink-ahead-of-opec-meeting-RC9l2ScjAursfkbLYQBv?mod=wsj_FV"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "17:31",
+      "title": "Vinson & Elkins Advises Bapco Energies in Joint Venture with EOG Resources, Inc.\n\n\n(CorpGov.com)",
+      "link": "https://finance.yahoo.com/news/vinson-elkins-advises-bapco-energies-213148308.html"
+    },
+    {
+      "date": "2025-08-28",
+      "time": "10:04",
+      "title": "Is the Current Oil Price Favorable for COP's Upstream Business?\n\n\n(Zacks)",
+      "link": "/news/152343/is-the-current-oil-price-favorable-for-cops-upstream-business"
+    },
+    {
+      "date": "2025-08-27",
+      "time": "10:47",
+      "title": "ConocoPhillips, EOG Showdown: LNG Growth Story or Shale Drilling Stock?\n\n\n(Zacks)",
+      "link": "/news/151277/conocophillips-eog-showdown-lng-growth-story-or-shale-drilling-stock"
+    },
+    {
+      "date": "2025-08-26",
+      "time": "08:30",
+      "title": "MPLX Names Ray Walker to Board of Directors\n\n\n(Hart Energy)",
+      "link": "https://finance.yahoo.com/news/mplx-names-ray-walker-board-123000438.html"
+    },
+    {
+      "date": "2025-08-22",
+      "time": "10:00",
+      "title": "Is ConocoPhillips a Bullish Bet Despite Volatile Oil Prices?\n\n\n(Zacks)",
+      "link": "/news/147408/is-conocophillips-a-bullish-bet-despite-volatile-oil-prices"
+    },
+    {
+      "date": "2025-08-21",
+      "time": "16:15",
+      "title": "EOG Resources to Present at Upcoming Conference\n\n\n(PR Newswire)",
+      "link": "/news/146869/eog-resources-to-present-at-upcoming-conference"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:50PM",
+      "title": "Strong Earnings and Dividend Hike Spark Mixed Analyst Views on EOG Resources\n\n\n(Insider Monkey)",
+      "link": "/news/146722/strong-earnings-and-dividend-hike-spark-mixed-analyst-views-on-eog-resources"
+    },
+    {
+      "date": "2025-08-13",
+      "time": "12:34",
+      "title": "Susquehanna Hikes Price Target on EOG Resources to $170, Citing Strong Cash Flow and Diversified Assets\n\n\n(Insider Monkey)",
+      "link": "/news/139485/susquehanna-hikes-price-target-on-eog-resources-to-170-citing-strong-cash-flow-and-diversified-assets"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:39AM",
+      "title": "Will Chevron's Permian Production Strength Power Future Gains?\n\n\n(Zacks)",
+      "link": "/news/139165/will-chevrons-permian-production-strength-power-future-gains"
+    },
+    {
+      "date": "2025-08-11",
+      "time": "09:12",
+      "title": "APA Q2 Earnings Shine With Beat on Both Top and Bottom Lines\n\n\n(Zacks)",
+      "link": "/news/135197/apa-q2-earnings-shine-with-beat-on-both-top-and-bottom-lines"
+    },
+    {
+      "date": "2025-08-09",
+      "time": "23:59",
+      "title": "Raymond James Raises EOG Resources (EOG) PT to $161 Following Production Exceeding Guidance\n\n\n(Insider Monkey)",
+      "link": "/news/134448/raymond-james-raises-eog-resources-eog-pt-to-161-following-production-exceeding-guidance"
+    },
+    {
+      "date": "2025-08-08",
+      "time": "15:05",
+      "title": "Analyst Report: EOG Resources, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/d072b968-36fd-32ab-aaca-96a2a72e2a53/analyst-report%3A-eog.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "EOG Q2 Earnings Beat Estimates on Higher Oil Equivalent Production\n\n\n(Zacks)",
+      "link": "/news/133761/eog-q2-earnings-beat-estimates-on-higher-oil-equivalent-production"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:30AM",
+      "title": "EOG Resources Soars Past Q2 Earnings Expectations\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/news/eog-resources-soars-past-q2-133000426.html"
+    },
+    {
+      "date": "2025-08-07",
+      "time": "18:00",
+      "title": "EOG Resources (EOG) Q2 Earnings: How Key Metrics Compare to Wall Street Estimates\n\n\n(Zacks)",
+      "link": "/news/132941/eog-resources-eog-q2-earnings-how-key-metrics-compare-to-wall-street-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:25PM",
+      "title": "EOG Resources (EOG) Surpasses Q2 Earnings and Revenue Estimates\n\n\n(Zacks)",
+      "link": "/news/132864/eog-resources-eog-surpasses-q2-earnings-and-revenue-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:25PM",
+      "title": "EOG Resources: Q2 Earnings Snapshot\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/eog-resources-q2-earnings-snapshot-202528990.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:20PM",
+      "title": "EOG Resources raises annual production forecast on Encino deal as profit beats\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/us-oil-producer-eog-beats-202050128.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15PM",
+      "title": "EOG Resources Reports Second Quarter 2025 Results and Updates 2025 Guidance\n\n\n(PR Newswire)",
+      "link": "/news/132702/eog-resources-reports-second-quarter-2025-results-and-updates-2025-guidance"
+    },
+    {
+      "date": "2025-08-06",
+      "time": "18:20",
+      "title": "Talos Energy (TALO) Reports Q2 Loss, Misses Revenue Estimates\n\n\n(Zacks)",
+      "link": "/news/130968/talos-energy-talo-reports-q2-loss-misses-revenue-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:03PM",
+      "title": "/C O R R E C T I O N -- EnerCom, Inc./\n\n\n(PR Newswire)",
+      "link": "https://finance.yahoo.com/news/enercom-announces-andrew-rapp-senior-181400981.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:14PM",
+      "title": "EnerCom Announces Andrew Rapp, Senior Advisor in the U.S. Department of Energy, as Keynote Speaker on August 18th at EnerCom's 30th Anniversary Energy Investment Conference\n\n\n(PR Newswire)",
+      "link": "/news/130414/enercom-announces-andrew-rapp-senior-advisor-in-the-us-department-of-energy-as-keynote-speaker-on-august-18th-at-enercoms-30th-anniversary-energy-investment-conference"
+    },
+    {
+      "date": "2025-08-05",
+      "time": "23:39",
+      "title": "UBS Keeps Buy Rating on EOG Before Q2 2025 Results\n\n\n(Insider Monkey)",
+      "link": "/news/129293/ubs-keeps-buy-rating-on-eog-before-q2-2025-results"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00PM",
+      "title": "EOG Resources: Evaluating a Key Player in the Oil Industry\n\n\n(Motley Fool)",
+      "link": "/news/129067/eog-resources-evaluating-a-key-player-in-the-oil-industry"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:39AM",
+      "title": "Are Wall Street Analysts Bullish on EOG Resources Stock?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/25bc1301-5cac-3b21-b44a-1bb1a57c11f7/are-wall-street-analysts.html"
+    },
+    {
+      "date": "2025-08-04",
+      "time": "09:41",
+      "title": "EOG Resources to Report Q2 Earnings: Here's What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/126528/eog-resources-to-report-q2-earnings-heres-what-you-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:15AM",
+      "title": "Exploring Analyst Estimates for EOG Resources (EOG) Q2 Earnings, Beyond Revenue and EPS\n\n\n(Zacks)",
+      "link": "/news/126384/exploring-analyst-estimates-for-eog-resources-eog-q2-earnings-beyond-revenue-and-eps"
+    },
+    {
+      "date": "2025-07-31",
+      "time": "13:34",
+      "title": "Energy Transition Meets Emerging Tech on August 20th at EnerCom's 30th Anniversary Energy Investment Conference\n\n\n(PR Newswire)",
+      "link": "/news/123280/energy-transition-meets-emerging-tech-on-august-20th-at-enercoms-30th-anniversary-energy-investment-conference"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:28AM",
+      "title": "Can COP's Low-Cost Asset Portfolio Survive Oil Price Volatility?\n\n\n(Zacks)",
+      "link": "/news/123175/can-cops-low-cost-asset-portfolio-survive-oil-price-volatility"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Earnings Preview: EOG Resources (EOG) Q2 Earnings Expected to Decline\n\n\n(Zacks)",
+      "link": "/news/122897/earnings-preview-eog-resources-eog-q2-earnings-expected-to-decline"
+    },
+    {
+      "date": "2025-07-30",
+      "time": "17:50",
+      "title": "Antero Resources (AR) Lags Q2 Earnings Estimates\n\n\n(Zacks)",
+      "link": "/news/121855/antero-resources-ar-lags-q2-earnings-estimates"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15PM",
+      "title": "EOG Resources to Present at Upcoming Conference\n\n\n(PR Newswire)",
+      "link": "/news/121592/eog-resources-to-present-at-upcoming-conference"
+    },
+    {
+      "date": "2025-07-29",
+      "time": "14:36",
+      "title": "EOG Resources (EOG): A Top Crude Oil Stock for Passive Income\n\n\n(Insider Monkey)",
+      "link": "/news/119502/eog-resources-eog-a-top-crude-oil-stock-for-passive-income"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:33PM",
+      "title": "EOG or OXY: Which Oil & Gas Stock Has Better Long-Term Potential?\n\n\n(Zacks)",
+      "link": "/news/119411/eog-or-oxy-which-oil-gas-stock-has-better-long-term-potential"
+    },
+    {
+      "date": "2025-07-24",
+      "time": "06:20",
+      "title": "Should You Invest in the iShares U.S. Oil & Gas Exploration & Production ETF (IEO)?\n\n\n(Zacks)",
+      "link": "/news/113500/should-you-invest-in-the-ishares-us-oil-gas-exploration-production-etf-ieo"
+    },
+    {
+      "date": "2025-07-23",
+      "time": "15:14",
+      "title": "Nuclear Energy Newcomers Electrify Final Day of EnerCom's 30th Anniversary Energy Investment Conference\n\n\n(PR Newswire)",
+      "link": "/news/112777/nuclear-energy-newcomers-electrify-final-day-of-enercoms-30th-anniversary-energy-investment-conference"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:20AM",
+      "title": "Should You Invest in the First Trust Natural Gas ETF (FCG)?\n\n\n(Zacks)",
+      "link": "/news/111802/should-you-invest-in-the-first-trust-natural-gas-etf-fcg"
+    },
+    {
+      "date": "2025-07-21",
+      "time": "20:00",
+      "title": "Global Upstream M&A Drops 34% as U.S. Activity Slumps\n\n\n(Oilprice.com)",
+      "link": "https://finance.yahoo.com/news/global-upstream-m-drops-34-000000821.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:02AM",
+      "title": "Can Strategic Hedging Enhance Devon's Long-Term Stability and Growth?\n\n\n(Zacks)",
+      "link": "/news/109258/can-strategic-hedging-enhance-devons-long-term-stability-and-growth"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:28AM",
+      "title": "What You Need to Know Ahead of EOG Resources' Earnings Release\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/e671ac81-5f64-3908-9c94-69949f20092e/what-you-need-to-know-ahead.html"
+    },
+    {
+      "date": "2025-07-18",
+      "time": "10:43",
+      "title": "BKR Set to Report Q2 Earnings: Here's What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/108032/bkr-set-to-report-q2-earnings-heres-what-you-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:38AM",
+      "title": "Solaris Energy to Report Q2 Earnings: Here's What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/108028/solaris-energy-to-report-q2-earnings-heres-what-you-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:34AM",
+      "title": "WTI Oil Price Nearing USD70 Per Barrel Mark: Boon for ConocoPhillips?\n\n\n(Zacks)",
+      "link": "/news/108025/wti-oil-price-nearing-usd70-per-barrel-mark-boon-for-conocophillips"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:38AM",
+      "title": "EQT to Report Q2 Earnings: Here's What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/107755/eqt-to-report-q2-earnings-heres-what-you-need-to-know"
+    },
+    {
+      "date": "2025-07-17",
+      "time": "10:20",
+      "title": "COP's Valuation Looks Attractive: Should You Bet on the Stock or Wait?\n\n\n(Zacks)",
+      "link": "/news/106848/cops-valuation-looks-attractive-should-you-bet-on-the-stock-or-wait"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:05AM",
+      "title": "SLB Poised to Report Q2 Earnings: Here's What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/106832/slb-poised-to-report-q2-earnings-heres-what-you-need-to-know"
+    },
+    {
+      "date": "2025-07-16",
+      "time": "08:50",
+      "title": "Why Investors Need to Take Advantage of These 2 Oils and Energy Stocks Now\n\n\n(Zacks)",
+      "link": "/news/105236/why-investors-need-to-take-advantage-of-these-2-oils-and-energy-stocks-now"
+    },
+    {
+      "date": "2025-07-14",
+      "time": "14:53",
+      "title": "EnerCom Denver Releases Full Presenter Lineup for Landmark 30th Energy Investment Conference\n\n\n(PR Newswire)",
+      "link": "/news/103153/enercom-denver-releases-full-presenter-lineup-for-landmark-30th-energy-investment-conference"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:32AM",
+      "title": "Is Kinder Morgan Poised for a Beat in Second-Quarter Earnings?\n\n\n(Zacks)",
+      "link": "/news/102684/is-kinder-morgan-poised-for-a-beat-in-second-quarter-earnings"
+    },
+    {
+      "date": "2025-07-10",
+      "time": "11:13",
+      "title": "Roth Capital Downgrades EOG Resources (EOG) to Neutral From Buy, Lowers PT to $134\n\n\n(Insider Monkey)",
+      "link": "/news/100454/roth-capital-downgrades-eog-resources-eog-to-neutral-from-buy-lowers-pt-to-134"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:55AM",
+      "title": "How ConocoPhillips' Low-Cost Inventory Drives Competitive Advantage\n\n\n(Zacks)",
+      "link": "/news/100394/how-conocophillips-low-cost-inventory-drives-competitive-advantage"
+    },
+    {
+      "date": "2025-07-09",
+      "time": "10:12",
+      "title": "UBS Maintains 'Buy' Rating on EOG Resources, Inc. (EOG); Keeps PT of $140\n\n\n(Insider Monkey)",
+      "link": "/news/99145/ubs-maintains-buy-rating-on-eog-resources-inc-eog-keeps-pt-of-140"
+    },
+    {
+      "date": "2025-07-08",
+      "time": "12:10",
+      "title": "Will EOG Resources (EOG) Beat Estimates Again in Its Next Earnings Report?\n\n\n(Zacks)",
+      "link": "/news/98272/will-eog-resources-eog-beat-estimates-again-in-its-next-earnings-report"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:15AM",
+      "title": "Softer Oil & Gas Prices in Q2: Will XOM's Bottom Line Be Affected?\n\n\n(Zacks)",
+      "link": "/news/98171/softer-oil-gas-prices-in-q2-will-xoms-bottom-line-be-affected"
+    },
+    {
+      "date": "2025-07-04",
+      "time": "08:50",
+      "title": "Looking for Stocks with Positive Earnings Momentum? Check Out These 2 Oils and Energy Names\n\n\n(Zacks)",
+      "link": "/news/96030/looking-for-stocks-with-positive-earnings-momentum-check-out-these-2-oils-and-energy-names"
+    },
+    {
+      "date": "2025-07-03",
+      "time": "10:11",
+      "title": "Can Occidental Sustain and Increase its Dividend Amid Energy Cycles?\n\n\n(Zacks)",
+      "link": "/news/95410/can-occidental-sustain-and-increase-its-dividend-amid-energy-cycles"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:47AM",
+      "title": "EOG Resources (EOG) To Acquire Encino Acquisition Partners (EAP)\n\n\n(Insider Monkey)",
+      "link": "/news/94901/eog-resources-eog-to-acquire-encino-acquisition-partners-eap"
+    },
+    {
+      "date": "2025-07-02",
+      "time": "10:07",
+      "title": "Can Disciplined Cost Management Fuel ExxonMobil's Future?\n\n\n(Zacks)",
+      "link": "/news/94435/can-disciplined-cost-management-fuel-exxonmobils-future"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:39AM",
+      "title": "Can Multi-Basin Assets Fuel Devon Energy's Long-Term Growth?\n\n\n(Zacks)",
+      "link": "/news/94370/can-multi-basin-assets-fuel-devon-energys-long-term-growth"
+    },
+    {
+      "date": "2025-07-01",
+      "time": "09:59",
+      "title": "Is ConocoPhillips' Operation Resistant to Oil Price Volatility?\n\n\n(Zacks)",
+      "link": "/news/93392/is-conocophillips-operation-resistant-to-oil-price-volatility"
+    },
+    {
+      "date": "2025-06-27",
+      "time": "14:53",
+      "title": "EOG COO: US Shale Peak Near as E&Ps Confront Declines\n\n\n(Hart Energy)",
+      "link": "https://finance.yahoo.com/news/eog-coo-us-shale-peak-185300933.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:15AM",
+      "title": "Dividends Declared in the Months of May, June 2025\n\n\n(Hart Energy)",
+      "link": "https://finance.yahoo.com/news/dividends-declared-months-may-june-121501555.html"
+    },
+    {
+      "date": "2025-06-24",
+      "time": "16:15",
+      "title": "EOG Resources Schedules Conference Call and Webcast of Second Quarter 2025 Results for August 8, 2025\n\n\n(PR Newswire)",
+      "link": "/news/87544/eog-resources-schedules-conference-call-and-webcast-of-second-quarter-2025-results-for-august-8-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:00PM",
+      "title": "If Iran Closes the Strait of Hormuz, These 3 U.S. Oil Stocks Could Soar\n\n\n(Motley Fool)",
+      "link": "/news/87267/if-iran-closes-the-strait-of-hormuz-these-3-us-oil-stocks-could-soar"
+    },
+    {
+      "date": "2025-06-23",
+      "time": "13:52",
+      "title": "Calls of the Day: Caterpillar, Constellation Energy, Vistra, BWX Tech, EOG Resources and Doordash\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=Zn63ZbN4DSY"
+    },
+    {
+      "date": "2025-06-20",
+      "time": "09:32",
+      "title": "Jefferies Lifts EOG Resources (EOG) Price Target, Keeps Buy Rating\n\n\n(Insider Monkey)",
+      "link": "/news/84662/jefferies-lifts-eog-resources-eog-price-target-keeps-buy-rating"
+    },
+    {
+      "date": "2025-06-19",
+      "time": "11:23",
+      "title": "EnerCom Announces Liberty Energy and Baker Hughes as Keynote Speakers at the 30th Annual EnerCom Denver - The Energy Investment Conference\n\n\n(PR Newswire)",
+      "link": "/news/84125/enercom-announces-liberty-energy-and-baker-hughes-as-keynote-speakers-at-the-30th-annual-enercom-denver-the-energy-investment-conference"
+    },
+    {
+      "date": "2025-06-18",
+      "time": "09:51",
+      "title": "Roku upgraded, Sarepta downgraded: Wall Streets top analyst calls\n\n\n(TipRanks)",
+      "link": "https://finance.yahoo.com/news/roku-upgraded-sarepta-downgraded-wall-135128113.html"
+    },
+    {
+      "date": "2025-06-16",
+      "time": "09:06",
+      "title": "EOG Resources (EOG) Soars 3.9%: Is Further Upside Left in the Stock?\n\n\n(Zacks)",
+      "link": "/news/81377/eog-resources-eog-soars-39-is-further-upside-left-in-the-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:09AM",
+      "title": "Chevron's Permian Wells Deliver More - With Less Spending\n\n\n(Zacks)",
+      "link": "/news/81284/chevrons-permian-wells-deliver-more-with-less-spending"
+    },
+    {
+      "date": "2025-06-14",
+      "time": "04:48",
+      "title": "Better Energy Stock: EOG Resources vs. ConocoPhillips\n\n\n(Motley Fool)",
+      "link": "/news/80641/better-energy-stock-eog-resources-vs-conocophillips"
+    },
+    {
+      "date": "2025-06-13",
+      "time": "12:25",
+      "title": "Analyst Report: EOG Resources, Inc.\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/ca54f33a-69fa-3e3b-ac20-55fc63f2d413/analyst-report%3A-eog.html"
+    }
+  ]
+}

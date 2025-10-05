@@ -1,0 +1,606 @@
+{
+  "symbol": "ADP",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-05",
+      "time": "Today 11:00AM",
+      "title": "'All news is good news': Wall Street shrugs off government shutdown, jobs report delay\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/all-news-is-good-news-wall-street-shrugs-off-government-shutdown-jobs-report-delay-150009238.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:37AM",
+      "title": "Stocks trade at record highs as government shutdown leaves economic data in limbo: What to watch\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/stocks-trade-at-record-highs-as-government-shutdown-leaves-economic-data-in-limbo-what-to-watch-113726926.html"
+    },
+    {
+      "date": "2025-10-03",
+      "time": "17:18",
+      "title": "Jobs Gains May Be Stalling, but Markets Keep Driving Growth\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/44b0d2ef-566c-315d-913a-b8165409de8b/jobs-gains-may-be-stalling%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:29PM",
+      "title": "Government shutdown leaves investors in a data void. Here's how they get around it.\n\n\n(MarketWatch)",
+      "link": "https://www.marketwatch.com/story/government-shutdown-leaves-investors-in-a-data-void-heres-how-they-get-around-it-4cb5fc12?mod=mw_FV"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:04PM",
+      "title": "No jobs report leaves Fed flying blind. Markets still expect rate cuts.\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/no-jobs-report-leaves-fed-flying-blind-markets-still-expect-rate-cuts-160434345.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:15AM",
+      "title": "Market Minute 10-3-25- \"Jobs Friday\" Cancelled; Stocks, Gold Rise Anyway\n\n\n(MoneyShow)",
+      "link": "https://finance.yahoo.com/news/market-minute-10-3-25-141500550.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:41AM",
+      "title": "Bitcoin Jumps Above $120,000. Why the Crypto Rally Is Gaining Momentum.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/b152fe1b-a849-3faf-ad80-7338a3de2054/bitcoin-jumps-above-%24120%2C000..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:24AM",
+      "title": "Treasuries, Dollar Hold Steady as September Jobs Report Is Delayed\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/6089a0f7-0d59-306c-b508-e835fd2245f1/treasuries%2C-dollar-hold.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:00AM",
+      "title": "Government shutdown delays key monthly jobs report at pivotal moment for the U.S. economy\n\n\n(NBC News)",
+      "link": "https://finance.yahoo.com/m/24c4b0ac-634c-3c4f-8f1c-d0090ee22ef0/government-shutdown-delays.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:18AM",
+      "title": "Treasury Yields Edge Higher Amid Mixed Jobs Signals\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/b85e3377-3adf-3375-af09-a32a6d2f29de/treasury-yields-edge-higher.html"
+    },
+    {
+      "date": "2025-10-02",
+      "time": "17:52",
+      "title": "Why the Stock Market Keeps Going UpEven During a Government Shutdown\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/f95915e1-431c-302b-9184-3138d82f4826/why-the-stock-market-keeps.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:47PM",
+      "title": "Treasuries Lose Momentum as US Government Shutdown Delays Data\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/treasuries-lose-momentum-us-government-184719684.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:16PM",
+      "title": "Why the Stock Market Couldnt Care Less About a Shutdownand Whether It Should\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/f95915e1-431c-302b-9184-3138d82f4826/why-the-stock-market-couldn%E2%80%99t.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:15PM",
+      "title": "Mortgage rates rise for second straight week, sapping refinancing demand\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/mortgage-rates-rise-for-second-straight-week-sapping-refinancing-demand-161533427.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:50AM",
+      "title": "Fed's dual mandate 'tension' exacerbated by shutdown data delays\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/feds-dual-mandate-tension-exacerbated-155000685.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:02AM",
+      "title": "Jobless Claims Continue to Come in Low\n\n\n(Zacks)",
+      "link": "/news/182537/jobless-claims-continue-to-come-in-low"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:27AM",
+      "title": "No Jobless Claims, Factory Orders - Tech Trade Still Hot\n\n\n(Zacks)",
+      "link": "/news/182493/no-jobless-claims-factory-orders-tech-trade-still-hot"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:06AM",
+      "title": "BNB Climbs 3.5% as Fed Rate Cut Bets Fuel Rally Past Key Resistance\n\n\n(CoinDesk)",
+      "link": "https://finance.yahoo.com/m/9b556fbd-abd3-3dd6-a748-6c6e67147a2b/bnb-climbs-3.5%25-as-fed-rate.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Bitcoin Jumps Again. Coinbase and Strategy Stocks Are Getting a Boost, Too.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/6e833fab-7031-3de7-a65e-6a60e8a03ccd/bitcoin-jumps-again.-coinbase.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:56AM",
+      "title": "US hiring plans sink to lowest since 2009 in September as labor market slowdown continues\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/us-hiring-plans-sink-to-lowest-since-2009-in-september-as-labor-market-slowdown-continues-135623856.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:23AM",
+      "title": "Stock Market News for Oct 2, 2025\n\n\n(Zacks)",
+      "link": "/news/182347/stock-market-news-for-oct-2-2025"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:20AM",
+      "title": "US Has a Stagnant Labor Market, ADP's Richardson Says\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/video/us-stagnant-labor-market-adps-132042499.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:45AM",
+      "title": "Jobless Claims, Factory Orders Data Suspended Due to Government Shutdown\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/905c1067-f28f-3888-8ce7-e5d7ff410aa0/jobless-claims%2C-factory.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:15AM",
+      "title": "Bitcoin Entering 'Most Dynamic' Month on 99% Fed Rate Cut Odds: Crypto Daybook Americas\n\n\n(CoinDesk)",
+      "link": "https://finance.yahoo.com/m/ca048e15-388b-3d81-bea3-2627553b5962/bitcoin-entering-%27most.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:39AM",
+      "title": "Stock Markets Keep Hitting New Highs. No Government, No Problem.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/3aac1de5-0ba1-3fb3-8997-7e971501d533/stock-markets-keep-hitting.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:33AM",
+      "title": "Wall Street Certain of Rate Cuts After Soft Jobs Data\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/9cc2af43-cc0c-393c-80a3-5fe596f3f9b8/wall-street-certain-of-rate.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:23AM",
+      "title": "Markets surge on US rate hopes, tech fired by chip deal\n\n\n(AFP)",
+      "link": "https://finance.yahoo.com/news/asian-markets-surge-us-rate-030111115.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:09AM",
+      "title": "XRP, DOGE Zoom Higher as U.S. Shutdowns, Japan Bond Slowdown Charge Bitcoin Appetite\n\n\n(CoinDesk)",
+      "link": "https://finance.yahoo.com/m/44e8b757-da5a-3699-897e-e3f405749976/xrp%2C-doge-zoom-higher-as-u.s..html"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "19:03",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures trade flat as government shutdown drags on\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-trade-flat-as-government-shutdown-drags-on-230340468.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:03PM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures mixed despite government shutdown\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-mixed-despite-government-shutdown-230340880.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:03PM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures edge up despite government shutdown\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-edge-up-despite-government-shutdown-230340749.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:45PM",
+      "title": "Government Shutdown, Government Shmutdown\n\n\n(Zacks)",
+      "link": "/news/181684/government-shutdown-government-shmutdown"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:26PM",
+      "title": "Private jobs sink in September, but Morgan Stanley wary of bets on jumbo rate cut\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/private-jobs-sink-september-morgan-202615347.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:22PM",
+      "title": "U.S. Stocks Climb After Government Shutdown\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/212c4363-63ff-3a73-93cb-b0e6d0093869/u.s.-stocks-climb-after.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00PM",
+      "title": "Stock market today: Dow, S&P 500 notch records as Wall Street shrugs at shutdown, amps up rate cut bets\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-notch-records-as-wall-street-shrugs-at-shutdown-amps-up-rate-cut-bets-200022081.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:53PM",
+      "title": "Treasury Yields Fall as Dismal Jobs Data Meet Government Shutdown\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/76fe7ef0-33b5-3335-98ea-0a410b95fd77/treasury-yields-fall-as.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:36PM",
+      "title": "Weak Jobs Numbers Wont Derail a Hot Economy. 3 ETFs to Buy.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/d2be35a7-096a-3d71-981e-232bfa0ef1bf/weak-jobs-numbers-won%E2%80%99t.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:30PM",
+      "title": "U.S. Stocks Rise After Government Shutdown\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/212c4363-63ff-3a73-93cb-b0e6d0093869/u.s.-stocks-rise-after.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:18PM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq waver as US shutdown begins, ADP shows unexpected jobs decline\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-waver-as-us-shutdown-begins-adp-shows-unexpected-jobs-decline-232709049.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:18PM",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq rise as US shutdown begins, rate cut bets jump after ADP surprise\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-rise-as-us-shutdown-begins-rate-cut-bets-jump-after-adp-surprise-181813509.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:50PM",
+      "title": "What Does the Shutdown Mean for the Jobs Report and Other Economic Data?\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/39d1216b-7ab5-3161-8894-69ef02b838b2/what-does-the-shutdown-mean.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:06PM",
+      "title": "Lower Mortgage Rates Are Good for Home Buyers. The Reasons for Lower Rates Arent.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/164e352a-e2d8-36e9-8b6a-54a124ed1cb8/lower-mortgage-rates-are-good.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:34AM",
+      "title": "Bitcoin Regains$ 117K Level As Fresh Economic Data Flags Weak Growth\n\n\n(CoinDesk)",
+      "link": "https://finance.yahoo.com/m/1d8341f4-eab7-3010-8afe-bf175c083479/bitcoin-regains%24-117k-level.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:31AM",
+      "title": "The BLS Is Closed. Here Are the Jobs Data the Fed Might Rely on Instead.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/c5ddd19e-981c-3edc-82d9-88d175ff67e9/the-bls-is-closed.-here-are.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:30AM",
+      "title": "What a gov't shutdown, jobs data delay means for the Fed\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/govt-shutdown-jobs-data-delay-153017035.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:30AM",
+      "title": "Treasurys Undisturbed as Supreme Court Allows Feds Cook to Stay\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/76fe7ef0-33b5-3335-98ea-0a410b95fd77/treasurys-undisturbed-as.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:11AM",
+      "title": "Stocks Are Flat. Wall Street Isn't Fazed by the Shutdown.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/1d285672-a5f7-3bd7-8205-1c08b5092293/stocks-are-flat.-wall-street.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:47AM",
+      "title": "Private-Sector Payroll Numbers Come in Grim\n\n\n(Zacks)",
+      "link": "/news/181101/private-sector-payroll-numbers-come-in-grim"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:41AM",
+      "title": "Weak ADP Jobs Data Cements Rate-Cut Expectations\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/020f53a9-f657-3f94-8674-64935f614c4a/weak-adp-jobs-data-cements.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:38AM",
+      "title": "U.S. Lost Jobs in September, ADP Says. Why the Picture May Not Be So Bleak.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/6663edc5-ebe2-3fd4-8b19-361e3dacf2be/u.s.-lost-jobs-in-september%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:15AM",
+      "title": "Fed won't get 'clearest read' of economy without jobs report\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/fed-wont-clearest-read-economy-141500877.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:14AM",
+      "title": "ADP Sees Negative -32K Jobs in September\n\n\n(Zacks)",
+      "link": "/news/181075/adp-sees-negative-32k-jobs-in-september"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:09AM",
+      "title": "ADP Reports Surprise Job Loss As Government Shuts Down. Cue The Fed Rate Cuts. (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/1acc7f86-6196-33ee-aa07-97f85c5fd63e/adp-reports-surprise-job-loss.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:01AM",
+      "title": "Stocks Fall as Labor Market Shows More Signs of Weakening\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/58451261-f683-32a0-80c1-642efce79028/stocks-fall-as-labor-market.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:58AM",
+      "title": "U.S. Stocks Lower as ADP Report Shows Jobs Drop\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/212c4363-63ff-3a73-93cb-b0e6d0093869/u.s.-stocks-lower-as-adp.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:51AM",
+      "title": "US private jobs plunge by 32K in September, ADP reports\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/us-private-jobs-plunge-32k-135107405.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:43AM",
+      "title": "Stocks Wobble as Labor Market Shows More Signs of Weakening\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/58451261-f683-32a0-80c1-642efce79028/stocks-wobble-as-labor-market.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:34AM",
+      "title": "ADP reports biggest private payroll drop in 2.5 years, fueling Fed cut bets\n\n\n(Investing.com)",
+      "link": "https://finance.yahoo.com/news/adp-reports-biggest-private-payroll-133411671.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:04AM",
+      "title": "Highlights From the ADP Employment Report\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/9ad57973-e1d4-3b39-9626-685476639be0/highlights-from-the-adp.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:02AM",
+      "title": "Gold Futures Hold Above $3,900 After ADP Reports Surprise Job Loss\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/e8042e72-84f9-3b52-bafa-bd1bc814fc95/gold-futures-hold-above.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:54AM",
+      "title": "U.S. Shed 32,000 Private Sector Jobs in September, According to ADP\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/6663edc5-ebe2-3fd4-8b19-361e3dacf2be/u.s.-shed-32%2C000-private.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:43AM",
+      "title": "October Rate-Cut Odds Hit 100% After Weak ADP Report\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/de8a60ab-cef7-353f-94aa-102a35dc94ff/october-rate-cut-odds-hit.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:37AM",
+      "title": "Private employers shed 32,000 jobs in September\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/private-employers-shed-32000-jobs-in-september-123714442.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:37AM",
+      "title": "ADP report: Private employers unexpectedly shed 32,000 jobs as labor market continues pullback\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/adp-report-private-employers-unexpectedly-shed-32000-jobs-as-labor-market-continues-pullback-123714355.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:34AM",
+      "title": "Treasury Yields Slide, Stock Futures Hold Lower After ADP Report\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/6926e401-774f-3650-bcae-fe2ccaeba704/treasury-yields-slide%2C-stock.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:15AM",
+      "title": "ADP National Employment Report: Private Sector Employment Shed 32,000 Jobs in September; Annual Pay was Up 4.5%\n\n\n(PR Newswire)",
+      "link": "/news/180707/adp-national-employment-report-private-sector-employment-shed-32000-jobs-in-september-annual-pay-was-up-45"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:06AM",
+      "title": "ADP Jobs Report In Focus Amid Government Shutdown (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/1acc7f86-6196-33ee-aa07-97f85c5fd63e/adp-jobs-report-in-focus-amid.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:50AM",
+      "title": "Stock Futures Fall After Government Shutdown Begins\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/212c4363-63ff-3a73-93cb-b0e6d0093869/stock-futures-fall-after.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:07AM",
+      "title": "S&P Futures Slip on U.S. Government Shutdown, ADP Jobs Report in Focus\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/8e2b5f12-88c2-31db-84c3-b3d31bc7e0c3/s%26p-futures-slip-on-u.s..html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "Private economic data is set to take on an even bigger role\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/private-economic-data-is-set-to-take-on-an-even-bigger-role-100049442.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:50AM",
+      "title": "ADP Jobs Report, Conagra Earnings, PMIs: Still to Come This Week\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/de2db2fe-8ac0-3072-be02-6d79a7e30c89/adp-jobs-report%2C-conagra.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:00AM",
+      "title": "While the government is closed, jobs and inflation data go unreported\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/while-the-government-is-closed-jobs-and-inflation-data-go-unreported-090023761.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:53AM",
+      "title": "Todays ADP Jobs Data Will Matter. The Government Shutdown Might Delay BLSs Numbers.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/6663edc5-ebe2-3fd4-8b19-361e3dacf2be/today%E2%80%99s-adp-jobs-data-will.html"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "19:27",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures slide as a US government shutdown begins\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-slide-as-a-us-government-shutdown-begins-232709070.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:40PM",
+      "title": "Treasury Yields Fall for Third Consecutive Quarter\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/063bb5a2-91f4-37df-a221-1a2e692f8612/treasury-yields-fall-for.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:44AM",
+      "title": "Consumer, Labor Data Keep Treasury Yields Weak\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/063bb5a2-91f4-37df-a221-1a2e692f8612/consumer%2C-labor-data-keep.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:58AM",
+      "title": "Case Shiller Home Prices Come in Cooler\n\n\n(Zacks)",
+      "link": "/news/179790/case-shiller-home-prices-come-in-cooler"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:26AM",
+      "title": "Pre-markets Fight Toward the Green with Gov't Shutdown Top of Mind\n\n\n(Zacks)",
+      "link": "/news/179761/pre-markets-fight-toward-the-green-with-govt-shutdown-top-of-mind"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:58AM",
+      "title": "Treasury Yields Keep Falling as U.S. Looks Headed for a Shutdown\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/063bb5a2-91f4-37df-a221-1a2e692f8612/treasury-yields-keep-falling.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:12AM",
+      "title": "Nike Earnings, Jobs Data, New Tariffs: What to Watch This Week\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/e029868f-3e1a-351f-ac01-725654e8a8b3/nike-earnings%2C-jobs-data%2C-new.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:12AM",
+      "title": "Jobs Data, Nike Earnings, New Tariffs: What to Watch This Week\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/e029868f-3e1a-351f-ac01-725654e8a8b3/jobs-data%2C-nike-earnings%2C-new.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:01AM",
+      "title": "3 Reasons We Love ADP (ADP)\n\n\n(StockStory)",
+      "link": "/news/179156/3-reasons-we-love-adp-adp"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "13:00",
+      "title": "ADP Embedded Payroll Gives Partners a Competitive Edge with Integrated HCM Solution\n\n\n(PR Newswire)",
+      "link": "/news/178665/adp-embedded-payroll-gives-partners-a-competitive-edge-with-integrated-hcm-solution"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:54AM",
+      "title": "Market Awaits Tuesday's JOLTS Report\n\n\n(Zacks)",
+      "link": "/news/178572/market-awaits-tuesdays-jolts-report"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:26AM",
+      "title": "Pre-markets Up at Record Highs - Will Jobs Numbers Be a Wet Blanket?\n\n\n(Zacks)",
+      "link": "/news/178558/pre-markets-up-at-record-highs-will-jobs-numbers-be-a-wet-blanket"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:06AM",
+      "title": "Treasury Yields, Dollar Weaken Ahead of Labor Data\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/b1cf988f-622b-3151-a810-7bd03a045934/treasury-yields%2C-dollar.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "ADP to Announce First Quarter Fiscal 2026 Financial Results on October 29, 2025\n\n\n(PR Newswire)",
+      "link": "/news/178182/adp-to-announce-first-quarter-fiscal-2026-financial-results-on-october-29-2025"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "15:00",
+      "title": "Bond traders say rally hinges on jobs data at risk from shutdown\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/bond-traders-rally-hinges-jobs-190000655.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:00PM",
+      "title": "Will a Government Shutdown Nix the Jobs Report? Plus, Nike, Carnival, Paychex, and More Stocks to Watch.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/6371d928-aa4f-3221-8721-addc516f013d/will-a-government-shutdown.html"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "15:53",
+      "title": "Treasury Yields Up for The Week Ahead of Key Labor Data\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/fa3e9a37-a3a3-397a-9b6b-9dbefda6ef6c/treasury-yields-up-for-the.html"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "16:05",
+      "title": "ADP Nominates Karen S. Lynch and Robert H. Swan to Board of Directors\n\n\n(PR Newswire)",
+      "link": "/news/176165/adp-nominates-karen-s-lynch-and-robert-h-swan-to-board-of-directors"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "11:23",
+      "title": "Implied Volatility Surging for Automatic Data Processing Stock Options\n\n\n(Zacks)",
+      "link": "/news/173555/implied-volatility-surging-for-automatic-data-processing-stock-options"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:39AM",
+      "title": "Pre-Markets Flat After Record-High Level\n\n\n(Zacks)",
+      "link": "/news/173513/pre-markets-flat-after-record-high-level"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:14AM",
+      "title": "Pre-markets Flat Following AI Tech Boost\n\n\n(Zacks)",
+      "link": "/news/173489/pre-markets-flat-following-ai-tech-boost"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:35AM",
+      "title": "Chicago Fed releases interim unemployment estimate, with September at 4.3%\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/chicago-fed-releases-interim-unemployment-123542956.html"
+    },
+    {
+      "date": "2025-09-19",
+      "time": "22:15",
+      "title": "Morningstar | A Weekly Summary of Stock Ideas and Developments in the Companies We Cover\n\n\n(Morningstar Research)",
+      "link": "https://finance.yahoo.com/m/089a00b6-193f-31af-8664-63168385ca2e/morningstar-%7C-a-weekly.html"
+    },
+    {
+      "date": "2025-09-07",
+      "time": "09:30",
+      "title": "Fairly weak: Wall Street reacts to August jobs report miss with just 22,000 added\n\n\n(Yahoo Finance)",
+      "link": "https://finance.yahoo.com/news/fairly-weak-wall-street-reacts-to-august-jobs-report-miss-with-just-22000-added-133019048.html"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "10:15",
+      "title": "Market Minute 9-5-25- Wretched Jobs Report Fuels Wild Market Moves\n\n\n(MoneyShow)",
+      "link": "https://finance.yahoo.com/news/market-minute-9-5-25-141500674.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:11AM",
+      "title": "Ahead of the Jobs Report, Here Are Four Key Charts on the Labor Market\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/76aeaea0-e852-3256-ab20-71a09f3b560d/ahead-of-the-jobs-report%2C.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:07AM",
+      "title": "Stock Market News for Sep 5, 2025\n\n\n(Zacks)",
+      "link": "/news/158692/stock-market-news-for-sep-5-2025"
+    }
+  ]
+}

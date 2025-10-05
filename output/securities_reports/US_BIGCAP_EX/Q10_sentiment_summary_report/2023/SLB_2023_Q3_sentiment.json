@@ -1,0 +1,47 @@
+{
+  "symbol": "SLB",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.3797,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.052
+  },
+  "top_positive": [
+    {
+      "sent": "SCHLUMBERGER LIMITED AND SUBSIDIARIES CONSOLIDATED STATEMENT OF INCOME (Unaudited) (Stated in millions, except per share amounts ) Three Months Ended March 31, 2023 2022 Revenue Services $ 5,334 $ 4,222 Product sales 2,402 1,740 Total Revenue 7,736 5,962 Interest & other income 92 50 Expenses Cost of services 4,129 3,387 Cost of sales 2,156 1,626 Research & engineering 174 141 General & administrative 91 97 Interest 117 123 Income before taxes 1,161 638 Tax expense 217 118 Net income 944 520 Net income attributable to noncontrolling interests 10 10 Net income attributable to SLB $ 934 $ 510 Basic income per share of SLB $ 0.65 $ 0.36 Diluted income per share of SLB $ 0.65 $ 0.36 Average shares outstanding: Basic 1,426 1,412 Assuming dilution 1,446 1,434 See Notes to Consolidated Financial Statements 3 SCHLUMBERGER LIMITED AND SUBSIDIARIES CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME (Unaudited) (Stated in millions) Three Months Ended March 31, 2023 2022 Net income $ 944 $ 520 Currency translation adjustments Unrealized net change arising during the period ( 34 ) ( 106 ) Cash flow hedges Net gain (loss) on cash flow hedges ( 33 ) 9 Reclassification to net income of net realized (gain) loss ( 5 ) 17 Pension and other postretirement benefit plans Amortization to net income of net actuarial loss ( 2 ) 16 Amortization to net income of net prior service credit ( 6 ) ( 5 ) Income taxes on pension and other postretirement benefit plans 2 - Comprehensive income 866 451 Comprehensive income attributable to noncontrolling interests 10 10 Comprehensive income attributable to SLB $ 856 $ 441 See Notes to Consolidated Financial Statements 4 SCHLUMBERGER LIMITED AND SUBSIDIARIES CONSOLIDATED BALANCE SHEET (Stated in millions) Mar.",
+      "score": 0.9822
+    },
+    {
+      "sent": "See Notes to Consolidated Financial Statements 6 SCHLUMBERGER LIMITED AND SUBSIDIARIES CONSOLIDATED STATEMENT O F STOCKHOLDERS\u2019 EQUITY (Unaudited) (Stated in millions, except per share amounts) Accumulated Other Common Stock Retained Comprehensive Noncontrolling January 1, 2023 \u2013 March 31, 2023 Issued In Treasury Earnings Loss Interests Total Balance, January 1, 2023 $ 11,837 $ ( 1,016 ) $ 10,719 $ ( 3,855 ) $ 304 $ 17,989 Net income 934 10 944 Currency translation adjustments ( 34 ) ( 34 ) Changes in fair value of cash flow hedges ( 38 ) ( 38 ) Pension and other postretirement benefit plans ( 6 ) ( 6 ) Shares sold to optionees, less shares exchanged ( 28 ) 63 35 Vesting of restricted stock, net of taxes withheld ( 503 ) 415 ( 88 ) Employee stock purchase plan ( 123 ) 209 86 Stock repurchase program ( 230 ) ( 230 ) Stock-based compensation expense 81 81 Dividends declared ($ 0.25 per share) ( 357 ) ( 357 ) Dividends paid to noncontrolling interests ( 2 ) ( 2 ) Balance, March 31, 2023 $ 11,264 $ ( 559 ) $ 11,296 $ ( 3,933 ) $ 312 $ 18,380 Accumulated Other Common Stock Retained Comprehensive Noncontrolling January 1, 2022 \u2013 March 31, 2022 Issued In Treasury Earnings Loss Interests Total Balance, January 1, 2022 $ 12,608 $ ( 2,233 ) $ 8,199 $ ( 3,570 ) $ 282 $ 15,286 Net income 510 10 520 Currency translation adjustments ( 106 ) ( 106 ) Changes in fair value of cash flow hedges 26 26 Pension and other postretirement benefit plans 11 11 Shares sold to optionees, less shares exchanged ( 5 ) 12 7 Vesting of restricted stock, net of taxes withheld ( 631 ) 550 ( 81 ) Employee stock purchase plan ( 104 ) 168 64 Stock-based compensation expense 89 89 Dividends declared ($ 0.125 per share) ( 177 ) ( 177 ) Balance, March 31, 2022 $ 11,957 $ ( 1,503 ) $ 8,532 $ ( 3,639 ) $ 292 $ 15,639 SHARES OF COMMON STOCK (Unaudited) (Stated in millions) Shares Issued In Treasury Outstanding Balance, January 1, 2023 1,434 ( 14 ) 1,420 Shares sold to optionees, less shares exchanged - 1 1 Vesting of restricted stock - 5 5 Shares issued under employee stock purchase plan - 3 3 Stock repurchase program - ( 4 ) ( 4 ) Balance, March 31, 2023 1,434 ( 9 ) 1,425 See Notes to Consolidated Financial Statements 7 SCHLUMBERGER LIMITED AND SUBSIDIARIES NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Unaudited) 1.",
+      "score": 0.981
+    },
+    {
+      "sent": "Interest and Other Income Interest & other income consisted of the following: (Stated in millions) First Quarter 2023 2022 Gain on sale of Liberty shares $ 36 $ 26 Earnings of equity method investments 39 10 Interest income 17 14 $ 92 $ 50 Earnings of equity method investments for the three months ended March 31, 2023 increased $29 million as compared to the same period of 2022 primarily due to SLB\u2019s share of net income associated with its investment in Liberty Energy Inc.",
+      "score": 0.9771
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Continuation or escalation of the conflict may also aggravate the risk factors that SLB identified in its Annual Report on Form 10-K for the year ended December 31, 2022, including cybersecurity, regulatory, and reputational risks.",
+      "score": -0.8402
+    },
+    {
+      "sent": "The APS revenue decline resulted primarily from a temporary production interruption in the projects in Ecuador due to a pipeline disruption and lower commodity prices that impacted the project in Canada.",
+      "score": -0.7351
+    },
+    {
+      "sent": "The APS revenue decline resulted primarily from a temporary production interruption in the projects in Ecuador due to a pipeline disruption and lower commodity prices that impacted the project in Canada.",
+      "score": -0.7351
+    }
+  ],
+  "forward_snippets": [
+    "From a macro perspective, SLB maintains its very constructive multiyear outlook as the upcycle attributes and key activity drivers continue to evolve very positively.",
+    "On balance, SLB believes the global activity outlook for the full year remains very solid.",
+    "These attributes are highlighted by the following factors: \u2022 There is broader recognition of the positive long-term demand outlook for oil and gas and the potential for a stronger demand rebound in the second half of the year.",
+    "In fact, we expect investments will become even more extensive internationally as the pursuit of supply diversity remains a global priority and gathers greater urgency.",
+    "This growth scenario provides support for broad sequential margin expansion across the Divisions and geographies."
+  ]
+}

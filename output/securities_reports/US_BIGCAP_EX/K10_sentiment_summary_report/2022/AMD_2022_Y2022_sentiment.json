@@ -1,0 +1,47 @@
+{
+  "symbol": "AMD",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.1366,
+    "outlook_sentiment": 0.1829,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.281
+  },
+  "top_positive": [
+    {
+      "sent": "Under the Merger Agreement, at the effective time of the Merger (the Effective Time), each share of common stock of Xilinx (Xilinx Common Stock) issued and outstanding immediately prior to the Effective Time (other than treasury shares and any shares of Xilinx Common Stock held directly by us or Merger Sub) will be converted into the right to receive 1.7234 fully paid and non-assessable shares of our common stock and, if applicable, cash in lieu of fractional shares, subject to any applicable withholding.",
+      "score": 0.9783
+    },
+    {
+      "sent": "Under the Merger Agreement, at the effective time of the Merger (the Effective Time), each share of common stock of Xilinx (Xilinx Common Stock) issued and outstanding immediately prior to the Effective Time (other than treasury shares and any shares of Xilinx Common Stock held directly by us or Merger Sub) will be converted into the right to receive 1.7234 fully paid and non-assessable shares of our common stock and, if applicable, cash in lieu of fractional shares, subject to any applicable withholding.",
+      "score": 0.9783
+    },
+    {
+      "sent": "It is not certain that Xilinx\u2019s business can be successfully integrated with our business in a timely manner or at all, or that any of the anticipated benefits will be realized for a variety of reasons, including, but not limited to: failure to obtain applicable regulatory approval in a timely manner or otherwise; failure to satisfy other closing conditions to the Merger; our inability to integrate or benefit from Xilinx\u2019s acquired technologies or services in a profitable manner; diversion of capital and other resources, including management\u2019s attention from our existing business; unanticipated costs or liabilities associated with the Merger; failure to leverage the increased scale of the combined businesses quickly and effectively; coordinating and integrating in countries in which we have not previously operated; the potential impact of the Merger on our relationships with employees, vendors, suppliers and customers; the impairment of relationships with, or the loss of, Xilinx\u2019s employees, vendors, suppliers and customers; adverse changes in general economic conditions in regions in which we and Xilinx operate; potential litigation associated with the Merger; difficulties in the assimilation of employees and culture; difficulties in managing the expanded operations of a larger and more complex company; challenges in attracting and retaining key personnel; and difficulties with integrating and upgrading our and Xilinx\u2019s financial reporting systems.",
+      "score": 0.9723
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "We cannot assure you that, despite our testing procedures, errors will not be found in new products or releases after commencement of commercial shipments in the future, which could result in loss of or delay in market acceptance of our products, material recall and replacement costs, loss of revenue, writing down the inventory of defective products, the diversion of the attention of our engineering personnel from product development efforts, defending against litigation related to defective products or related liabilities, including property damage, personal injury, damage to our reputation in the industry and loss of data or intangible property, and could adversely affect our relationships with our customers.",
+      "score": -0.9777
+    },
+    {
+      "sent": "If Microsoft does not continue to design and develop its operating systems so that they work with our x86 instruction sets or does not continue to develop and maintain their operating systems to support our graphics products, independent software pro\nse of third-party information technology providers or business partners, may also be vulnerable to damage or disruption caused by circumstances beyond our control including catastrophic events, power anomalies or outages, natural disasters, viruses or malware, cyber-attacks, data breaches and computer system or network failures, exposing us to significant cost, reputational harm and disruption or damage to our business.",
+      "score": -0.967
+    },
+    {
+      "sent": "Moreover, if any of our third-party manufacturers suffer any damage to facilities, lose benefits under material agreements, experience power outages, lack sufficient capacity to manufacture our products, encounter financial difficulties, are unable to secure necessary raw materials from their suppliers, suffer any other disruption or reduction in efficiency, or experience uncertain social economic or political circumstances or conditions, we may encounter supply delays or disruptions.",
+      "score": -0.9313
+    }
+  ],
+  "forward_snippets": [
+    "If we make substantive amendments to our Code of Ethics or grant any waiver, including any implicit waiver, to our principal executive officer, principal financial officer, principal accounting officer, controller or persons performing similar functions, we intend to disclose the nature of such amendment or waiver on our website.",
+    "If we make substantive amendments to our Code of Ethics or grant any waiver, including any implicit waiver, to our principal executive officer, principal financial officer, principal accounting officer, controller or persons performing similar functions, we intend to disclose the nature of such amendment or waiver on our website.",
+    "We believe that integrated, balanced computing platforms consisting of microprocessors, chipsets (either as discrete devices or integrated into an SoC) and GPUs (either as discrete GPUs or integrated into an APU or SoC) that work together at the system level bring end users improved system stability, increased performance and enhanced power efficiency.",
+    "In addition, we believe our customers also benefit from an all-AMD platform (consisting of an APU or CPU, a discrete GPU, and a chipset when needed), as we are able to optimize interoperability, provide our customers a single point of contact for the key platform components and enable them to bring the platforms to market quickly in a variety of PC and server system form factors.",
+    "We believe that integrated, balanced computing platforms consisting of microprocessors, chipsets (either as discrete devices or integrated into an SoC) and GPUs (either as discrete GPUs or integrated into an APU or SoC) that work together at the system level bring end users improved system stability, increased performance and enhanced power efficiency."
+  ]
+}

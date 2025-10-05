@@ -1,0 +1,47 @@
+{
+  "symbol": "V",
+  "year": 2024,
+  "Period": "Y2024",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.15,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.267
+  },
+  "top_positive": [
+    {
+      "sent": "5 Table of Contents Our net revenue in fiscal 2024 consisted of the following: SERVICE REVENUE Earned for services provided in support of client usage of Visa payment services OTHER REVENUE Consist mainly of value-added services related to advisory, marketing and certain card benefits; license fees for use of the Visa brand or technology; and fees for account holder services, certification and licensing DATA PROCESSING REVENUE Earned for authorization, clearing and settlement; value-added services related to issuing, acceptance, and risk and identity solutions; network access; and other maintenance and support services that facilitate transaction and information processing among our clients globally CLIENT INCENTIVES Paid to financial institution clients, merchants and other business partners to grow payments volume; increase Visa product acceptance; encourage merchant acceptance and use of Visa payment services; and drive innovation INTERNATIONAL TRANSACTION REVENUE Earned for cross-border transaction processing and currency conversion activities Please see Item 7 and Note 1\u2014Summary of Significant Accounting Policies to our consolidated financial statements included in Item 8 of this report, which include disclosures on how we earn and recognize our revenue.",
+      "score": 0.9835
+    },
+    {
+      "sent": "Effective Income Tax Rate The following table presents our effective income tax rates: For the Years Ended September\u00a030, 2024 2023 2022 Effective income tax rate 17 % 18 % 18 % The effective income tax rate in fiscal 2024 differs from the effective tax rate in fiscal 2023 primarily due to a tax position taken across jurisdictions, as well as the following: \u2022 during fiscal 2024, a $223 million tax benefit as a result of the conclusion of audits; and \u2022 during fiscal 2023, a $142 million tax benefit due to the reassessment of an uncertain tax position as a result of new information obtained during an ongoing tax examination.",
+      "score": 0.9657
+    },
+    {
+      "sent": "We enter into long-term incentive agreements with financial institution clients, merchants and other business partners for various programs that provide cash and other incentives designed to increase revenue by growing payments volume, increasing Visa product acceptance, encouraging merchant acceptance and use of Visa payment services and driving innovation.",
+      "score": 0.9633
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our cybersecurity and processing systems, as well as those of financial institutions, merchants and third-party service providers, have experienced and may continue to experience errors, interruptions, delays or damage from a number of causes, including power outages, hardware, software and network failures, computer viruses, ransomware, malware or other destructive software, AI technologies by bad actors, internal design, manual or user errors, cyber attacks, terrorism, political tensions, war or other military conflicts, or civil unrest, security breaches of our physical premises, workplace violence or wrongdoing, catastrophic events, natural disasters, severe weather conditions and other effects from climate change.",
+      "score": -0.9923
+    },
+    {
+      "sent": "Our cybersecurity and processing systems, as well as those of financial institutions, merchants and third-party service providers, have experienced and may continue to experience errors, interruptions, delays or damage from a number of causes, including power outages, hardware, software and network failures, computer viruses, ransomware, malware or other destructive software, AI technologies by bad actors, internal design, manual or user errors, cyber attacks, terrorism, political tensions, war or other military conflicts, or civil unrest, security breaches o\nificant losses and harm our business.",
+      "score": -0.9901
+    },
+    {
+      "sent": "Any of these events, individually or in the ag\ne or other destructive software, AI technologies by bad actors, internal design, manual or user errors, cyber attacks, terrorism, political tensions, war or other military conflicts, or civil unrest, security breaches of our physical premises, workplace violence or wrongdoing, catastrophic events, natural disasters, severe weather conditions and other effects from climate change.",
+      "score": -0.9884
+    }
+  ],
+  "forward_snippets": [
+    "We aim to provide a single connection point so that Visa clients can enable money movement for businesses, governments and consumers, regardless of which network is used to start or complete the transaction.",
+    "We aim to provide a single connection point so that Visa clients can enable money movement for businesses, governments and consumers, regardless of which network is used to start or complete the transaction.",
+    "We aim to provide a single connection point so that Visa clients can enable money movement for businesses, governments and consumers, regardless of which network is used to start or complete the transaction.",
+    "We aim to provide a single connection point so that Visa clients can enable money movement for businesses, governments and consumers, regardless of which network is used to start or complete the transaction.",
+    "We aim to grow consumer payments through expansion of credentials and acceptance points and deepening engagement with consumers through key enablers."
+  ]
+}

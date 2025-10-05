@@ -1,0 +1,17 @@
+{
+  "symbol": "FDX",
+  "year": 2023,
+  "period": "Q2",
+  "competition_summary": [
+    {
+      "competitor": "FedEx Express",
+      "mentions": 1,
+      "context": "competition on our ability to maintain or increase our prices (including our fuel surcharges in response to rising fuel costs) or to maintain or grow our revenue and market share; - 40 - \u2022 our ability to execute and effectively operate, integrate, leverage, and grow acquired businesses, and to continue to support the value we allocate to these acquired businesses; \u2022 noncash impairment charges related to our goodwill and certain deferred tax assets; \u2022 failure to attract and retain employee talent"
+    },
+    {
+      "competitor": "FedEx Ground",
+      "mentions": 2,
+      "context": "competition on our ability to maintain or increase our prices (including our fuel surcharges in response to rising fuel costs) or to maintain or grow our revenue and market share; - 40 - \u2022 our ability to execute and effectively operate, integrate, leverage, and grow acquired businesses, and to continue to support the value we allocate to these acquired businesses; \u2022 noncash impairment charges related to our goodwill and certain deferred tax assets; \u2022 failure to attract and retain employee talent"
+    }
+  ]
+}

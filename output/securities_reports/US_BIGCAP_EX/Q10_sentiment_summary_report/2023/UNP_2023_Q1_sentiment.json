@@ -1,0 +1,47 @@
+{
+  "symbol": "UNP",
+  "year": 2023,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.181,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.176
+  },
+  "top_positive": [
+    {
+      "sent": "The table below represents shares repurchased under repurchase programs in the nine months ended September 30, 2023 and 2022 : Number of Shares Purchased Average Price Paid [a] 2023 2022 2023 2022 First quarter [b] 2,908,703 11,014,201 $ 203.19 $ 249.95 Second quarter [c] 606,581 3,100,683 199.81 232.87 Third quarter - 9,490,339 - 221.52 Total 3,515,284 23,605,223 $ 202.61 $ 236.28 Remaining number of shares that may be repurchased under current authority 80,392,027 [a] In the period of the final settlement, the average price paid under the accelerated share repurchase programs is calculated based\u00a0on the total program value less the value assigned to the initial delivery of shares.",
+      "score": 0.9287
+    },
+    {
+      "sent": "The table below represents shares repurchased under repurchase programs in the nine months ended September 30, 2023 and 2022 : Number of Shares Purchased Average Price Paid [a] 2023 2022 2023 2022 First quarter [b] 2,908,703 11,014,201 $ 203.19 $ 249.95 Second quarter [c] 606,581 3,100,683 199.81 232.87 Third quarter - 9,490,339 - 221.52 Total 3,515,284 23,605,223 $ 202.61 $ 236.28 Remaining number of shares that may be repurchased under current authority 80,392,027 [a] In the period of the final settlement, the average price paid under the accelerated share repurchase programs is calculated based\u00a0on the total program value less the value assigned to the initial delivery of shares.",
+      "score": 0.9287
+    },
+    {
+      "sent": "The table below represents shares repurchased under repurchase programs in the nine months ended September 30, 2023 and 2022 : Number of Shares Purchased Average Price Paid [a] 2023 2022 2023 2022 First quarter [b] 2,908,703 11,014,201 $ 203.19 $ 249.95 Second quarter [c] 606,581 3,100,683 199.81 232.87 Third quarter - 9,490,339 - 221.52 Total 3,515,284 23,605,223 $ 202.61 $ 236.28 Remaining number of shares that may be repurchased under current authority 80,392,027 [a] In the period of the final settlement, the average price paid under the accelerated share repurchase programs is calculated based\u00a0on the total program value less the value assigned to the initial delivery of shares.",
+      "score": 0.9287
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Other \u2013 Other expenses include state and local taxes; freight, equipment, and property damage; utilities; insurance; personal injury; environmental remediation; employee travel; telephone and cellular; computer software; bad debt; and other general expenses.",
+      "score": -0.9001
+    },
+    {
+      "sent": "Forward-looking statements and information also include any other statements or information in this report (including information incorporated herein by reference) regarding: potential impacts of public health crises, including pandemics, epidemics, and the outbreak of other\u00a0contagious diseases, such as the coronavirus and its variant strains\u00a0(COVID)\u037e the Russia-Ukraine and Israeli wars\u00a0and any\u00a0impacts on our business operations, financial results, liquidity, and financial position, and on the world economy (including our customers, employees, and supply chains), including as a result of fluctuations in volume and carloadings\u037e expecta\nffset by less debt issued.",
+      "score": -0.8558
+    },
+    {
+      "sent": "The tables above provide\u00a0a reconciliation\u00a0from net income to adjusted EBITDA, debt to adjusted debt, and debt to net income to adjusted debt to adjusted EBITDA.",
+      "score": -0.8402
+    }
+  ],
+  "forward_snippets": [
+    "While we believe that we have strong defenses to the claims made in the complaint and will vigorously defend\u00a0ourselves, there is no assurance regarding the ultimate outcome.",
+    "We do not have any reason to believe that we will be required to make any material payments under these indemnity provisions.",
+    "We expect to fund any share repurchases under this program through cash generated from operations, the sale or lease of various operating and non-operating properties, debt issuances, and cash on hand.",
+    "We do not have any reason to believe that we will be required to make any material payments under these indemnity provisions.",
+    "We expect to fund any share repurchases under this program through cash generated from operations, the sale or lease of various operating and non-operating properties, debt issuances, and cash on hand."
+  ]
+}

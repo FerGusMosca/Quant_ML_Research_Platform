@@ -1,0 +1,47 @@
+{
+  "symbol": "NVDA",
+  "year": 2024,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2078,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.236
+  },
+  "top_positive": [
+    {
+      "sent": "Condensed Consolidated Statements of Income include stock-based compensation expense, net of amounts capitalized into inventory and subsequently recognized to cost of revenue, as follows: Three Months Ended Six Months Ended Jul 28, 2024 Jul 30, 2023 Jul 28, 2024 Jul 30, 2023 (In millions) Cost of revenue $ 40 $ 31 $ 75 $ 58 Research and development 832 600 1,559 1,124 Sales, general and administrative 282 211 530 394 Total $ 1,154 $ 842 $ 2,164 $ 1,576 Equity Award Activity The following is a summary of our equity award transactions under our equity incentive plans: RSUs, PSUs, and Market-based PSUs Outstanding Number of Shares Weighted Average Grant-Date Fair Value Per Share (In millions, except per share data) Balances, Jan 28, 2024 367 $ 24.59 Granted 79 $ 82.68 Vested ( 93 ) $ 19.23 Canceled and forfeited ( 5 ) $ 28.82 Balances, Jul 28, 2024 348 $ 39.16 As of July\u00a028, 2024, aggregate unearned stock-based compensation expense was $ 12.8 billion, which is expected to be recognized over a weighted average period of 2.5 years for RSUs, PSUs, and market-based PSUs, and 0.8 years for ESPP.",
+      "score": 0.9769
+    },
+    {
+      "sent": "Condensed Consolidated Statements of Income include stock-based compensation expense, net of amounts capitalized into inventory and subsequently recognized to cost of revenue, as follows: Three Months Ended Six Months Ended Jul 28, 2024 Jul 30, 2023 Jul 28, 2024 Jul 30, 2023 (In millions) Cost of revenue $ 40 $ 31 $ 75 $ 58 Research and development 832 600 1,559 1,124 Sales, general and administrative 282 211 530 394 Total $ 1,154 $ 842 $ 2,164 $ 1,576 Equity Award Activity The following is a summary of our equity award transactions under our equity incentive plans: RSUs, PSUs, and Market-based PSUs Outstanding Number of Shares Weighted Average Grant-Date Fair Value Per Share (In millions, except per share data) Balances, Jan 28, 2024 367 $ 24.59 Granted 79 $ 82.68 Vested ( 93 ) $ 19.23 Canceled and forfeited ( 5 ) $ 28.82 Balances, Jul 28, 2024 348 $ 39.16 As of July\u00a028, 2024, aggregate unearned stock-based compensation expense was $ 12.8 billion, which is expected to be recognized over a weighted average period of 2.5 years for RSUs, PSUs, and market-based PSUs, and 0.8 years for ESPP.",
+      "score": 0.9769
+    },
+    {
+      "sent": "Condensed Consolidated Statements of Income include stock-based compensation expense, net of amounts capitalized into inventory and subsequently recognized to cost of revenue, as follows: Three Months Ended Six Months Ended Jul 28, 2024 Jul 30, 2023 Jul 28, 2024 Jul 30, 2023 (In millions) Cost of revenue $ 40 $ 31 $ 75 $ 58 Research and development 832 600 1,559 1,124 Sales, general and administrative 282 211 530 394 Total $ 1,154 $ 842 $ 2,164 $ 1,576 Equity Award Activity The following is a summary of our equity award transactions under our equity incentive plans: RSUs, PSUs, and Market-based PSUs Outstanding Number of Shares Weighted Average Grant-Date Fair Value Per Share (In millions, except per share data) Balances, Jan 28, 2024 367 $ 24.59 Granted 79 $ 82.68 Vested ( 93 ) $ 19.23 Canceled and forfeited ( 5 ) $ 28.82 Balances, Jul 28, 2024 348 $ 39.16 As of July\u00a028, 2024, aggregate unearned stock-based compensation expense was $ 12.8 billion, which is expected to be recognized over a weighted average period of 2.5 years for RSUs, PSUs, and market-based PSUs, and 0.8 years for ESPP.",
+      "score": 0.9769
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The lawsuits assert claims, purportedly on behalf of us, against certain officers and directors of the Company for breach of fiduciary duty, unjust enrichment, insider trading, misappropriation of information, corporate waste and violations of Sections 14(a), 10(b), and 20(a) of the Exchange Act based on the dissemination of allegedly false, and misleading statements related to channel inventory and the impact of cryptocurrency mining on GPU demand.",
+      "score": -0.9042
+    },
+    {
+      "sent": "The lawsuit asserts claims, purportedly on behalf of us, against certain officers and directors of the Company for breach of fiduciary duty, unjust enrichment, waste of corporate assets, and violations of Sections 14(a), 10(b), and 20(a) of the Exchange Act based on the dissemination of allegedly false and misleading statements related to channel inventory and the impact of cryptocurrency mining on GPU demand.",
+      "score": -0.8957
+    },
+    {
+      "sent": "If we cannot procure sufficient supply to meet demand or otherwise fail to fulfill our customers\u2019 orders on a timely basis, or at all, our customer relationships could be damaged, we could lose revenue and market share and our reputation could be harmed.",
+      "score": -0.8225
+    }
+  ],
+  "forward_snippets": [
+    "These estimates are based on historical facts and other assumptions that we believe are reasonable.",
+    "We expect to adopt this standard in our annual reporting starting with fiscal year 2025.",
+    "We expect to adopt this standard in our annual reporting starting with fiscal year 2026.",
+    "Given our current and anticipated future earnings, we believe that we may release the valuation allowance associated with certain state deferred tax assets in the near term, which would decrease our income tax expense for the period the release is recorded.",
+    "While we believe that we have adequately provided for all uncertain tax positi\nporting period."
+  ]
+}

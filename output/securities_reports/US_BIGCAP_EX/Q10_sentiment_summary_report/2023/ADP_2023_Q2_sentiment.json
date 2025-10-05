@@ -1,0 +1,47 @@
+{
+  "symbol": "ADP",
+  "year": 2023,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.4508,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.07
+  },
+  "top_positive": [
+    {
+      "sent": "and Subsidiaries Statements of Consolidated Earnings (In millions, except per share amounts) (Unaudited) Three Months Ended Nine Months Ended March 31, March 31, 2023 2022 2023 2022 REVENUES: Revenues, other than interest on funds held for clients and PEO revenues $ 3,088.7 $ 2,882.3 $ 8,437.3 $ 7,911.9 Interest on funds held for clients 249.4 118.0 577.7 325.0 PEO revenues (A) 1,589.7 1,512.7 4,519.4 4,133.7 TOTAL REVENUES 4,927.8 4,513.0 13,534.4 12,370.6 EXPENSES: Costs of revenues: Operating expenses 2,299.8 2,212.5 6,508.7 6,184.0 Systems development and programming costs 208.6 197.3 622.6 585.8 Depreciation and amortization 115.4 102.4 336.8 306.2 TOTAL COSTS OF REVENUES 2,623.8 2,512.2 7,468.1 7,076.0 Selling, general, and administrative expenses 938.0 817.5 2,594.2 2,319.0 Interest expense 38.3 18.4 146.4 55.3 TOTAL EXPENSES 3,600.1 3,348.1 10,208.7 9,450.3 Other (income)/expense, net ( 36.3 ) ( 25.0 ) ( 106.3 ) ( 80.4 ) EARNINGS BEFORE INCOME TAXES 1,364.0 1,189.9 3,432.0 3,000.7 Provision for income taxes 320.9 261.4 796.7 677.3 NET EARNINGS $ 1,043.1 $ 928.5 $ 2,635.3 $ 2,323.4 BASIC EARNINGS PER SHARE $ 2.52 $ 2.22 $ 6.36 $ 5.53 DILUTED EARNINGS PER SHARE $ 2.51 $ 2.21 $ 6.33 $ 5.51 Basic weighted average shares outstanding 413.7 418.1 414.2 419.8 Diluted weighted average shares outstanding 415.5 420.2 416.2 422.0 (A) Professional Employer Organization (\u201cPEO\u201d) revenues are net of direct pass-through costs, primarily consisting of payroll wages and payroll taxes of $ 17,301.8 million and $ 16,826.6 million for the three months ended March\u00a031, 2023 and 2022, respectively, and $ 50,688.4 million and $ 46,863.8 million for the nine months ended March\u00a031, 2023 and 2022, respectively.",
+      "score": 0.986
+    },
+    {
+      "sent": "and Subsidiaries Consolidated Balance Sheets (In millions, except per share amounts) (Unaudited) March 31, June 30, 2023 2022 Assets Current assets: Cash and cash equivalents $ 1,828.4 $ 1,436.3 Accounts receivable, net of allowance for doubtful accounts of $ 51.2 and $ 56.8 , respectively 3,072.1 3,170.6 Other current assets 769.3 628.8 Total current assets before funds held for clients 5,669.8 5,235.7 Funds held for clients 45,848.4 49,569.2 Total current assets 51,518.2 54,804.9 Long-term receivables, net of allowance for doubtful accounts of $ 0.2 and $ 0.1 , respectively 8.9 9.1 Property, plant and equipment, net 663.5 652.6 Operating lease right-of-use asset 394.3 450.9 Deferred contract costs 2,641.0 2,579.7 Other assets 959.9 937.4 Goodwill 2,335.7 2,300.5 Intangible assets, net 1,360.3 1,333.1 Total assets $ 59,881.8 $ 63,068.2 Liabilities and Stockholders' Equity Current liabilities: Accounts payable $ 74.8 $ 110.2 Accrued expenses and other current liabilities 2,188.6 2,107.8 Accrued payroll and payroll-related expenses 754.8 862.6 Dividends payable 511.6 429.6 Short-term deferred revenues 187.1 188.2 Obligations under reverse repurchase agreements (A) \u2014 136.4 Income taxes payable 62.4 38.4 Total current liabilities before client funds obligations 3,779.3 3,873.2 Client funds obligations 47,756.8 51,285.5 Total current liabilities 51,536.1 55,158.7 Long-term debt 2,988.6 2,987.1 Operating lease liabilities 332.1 370.9 Other liabilities 918.7 924.2 Deferred income taxes 67.7 67.0 Long-term deferred revenues 344.8 335.0 Total liabilities 56,188.0 59,842.9 Commitments and contingencies (Note 13) Stockholders' equity: Preferred stock, $ 1.00 par value: authorized, 0.3 shares; issued, no ne \u2014 \u2014 Common sto ck, $ 0.10 par value: authorized, 1,000.0 shares; issued, 638.7 shares at March 31, 2023 and June 30, 2022; outstanding, 413.5 and 416.1 shares at March 31, 2023 and June 30, 2022, respectively 63.9 63.9 Capital in excess of par value 2,061.9 1,794.2 Retained earnings 21,857.8 20,696.3 Treasury stock - at cost: 225.2 and 222.7 shares at March 31, 2023 and June 30, 2022, respectively ( 18,162.0 ) ( 17,335.4 ) Accumulated other comprehensive (loss)/ income ( 2,127.8 ) ( 1,993.7 ) Total stockholders\u2019 equity 3,693.8 3,225.3 Total liabilities and stockholders\u2019 equity $ 59,881.8 $ 63,068.2 (A ) As of June 30, 2022, $ 14.3 million of short-term marketable securities and  $ 122.1 million of long-term marketable securities have been pledged as collateral under the Company's reverse repurchase agreements (see Note 9) .",
+      "score": 0.984
+    },
+    {
+      "sent": "Other (Income)/Expense, net Three Months Ended Nine Months Ended March 31, March 31, 2023 2022 $ Change 2023 2022 $ Change Interest income on corporate funds $ (24.1) $ (5.6) $ 18.5 $ (82.8) $ (23.8) $ 59.0 Realized losses/(gains) on available-for-sale securities, net 0.9 0.3 (0.6) 13.9 (0.2) (14.1) Gain on sale of assets \u2014 (6.2) (6.2) \u2014 (7.5) (7.5) Impairment of assets \u2014 4.3 4.3 0.3 4.3 4.0 Non-service components of pension income, net (13.1) (17.8) (4.7) (37.7) (53.2) (15.5) Other (income)/expense, net $ (36.3) $ (25.0) $ 11.3 $ (106.3) $ (80.4) $ 25.9 26 Interest income on corporate funds increased due to higher average interest rates of 2.7% and 2.0% for the three and nine months ended March\u00a031, 2023, respectively, as compared to 0.7% and 0.8% for the three and nine months ended March\u00a031, 2022, respectively.",
+      "score": 0.9678
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "33 Operating, Investing and Financing Cash Flows Our cash flows from operating, investing, and financing activities, as reflected in the Statements of Consolidated Cash Flows for the nine months ended March\u00a031, 2023 and 2022, respectively, are summarized as follows: Nine Months Ended March 31, 2023 2022 $ Change Cash provided by / (used in): Operating activities $ 3,021.9 $ 2,186.6 $ 835.3 Investing activities (2,052.8) (5,963.7) 3,910.9 Financing activities (5,686.2) 22,378.7 (28,064.9) Effect of exchange rate changes on cash, cash equivalents, restricted cash, and restricted cash equivalents (25.3) (14.2) (11.1) Net change in cash, cash equivalents, restricted cash, and restricted cash equivalents $ \nAAP results, we use the adjusted results and other non-GAAP metrics set forth in the table below to evaluate our operating performance in the absence of certain items and for planning and forecasting of future periods: Adjusted Financial Measure U.S.",
+      "score": -0.7096
+    },
+    {
+      "sent": "These risks and uncertainties, along with the risk factors discussed under \u201cItem 1A.",
+      "score": -0.6808
+    },
+    {
+      "sent": "These risks and uncertainties, along with the risk factors discussed under \u201cItem 1A.",
+      "score": -0.6808
+    }
+  ],
+  "forward_snippets": [
+    "Statements that are not historical in nature and which may be identified by the use of words like \u201cexpects,\u201d \u201cassumes,\u201d \u201cprojects,\u201d \u201canticipates,\u201d \u201cestimates,\u201d \u201cwe believe,\u201d \u201ccould\u201d, \"is designed to\" and other words of similar meaning, are forward-looking statements.",
+    "23 EXECUTIVE OVERVIEW Highlights from the nine months ended March\u00a031, 2023 include: 9% 110 basis points 15% Revenue Growth Earnings Before Income Taxes Margin Expansion Diluted EPS Growth 11% 90 basis points 15% Organic Constant Currency Revenue Growth Adjusted EBIT Margin Expansion Adjusted Diluted EPS Growth 5% Employer Services Pays Per Control Growth 8% PEO Services Average Worksite Employee Growth $2.2B Cash Returned via Shareholder Friendly Actions $1.4B Dividends | $0.8B Share Repurchases We are a leading global provider of cloud-based Human Capital Management (\u201cHCM\u201d) technology solutions to employers around the world.",
+    "Our financial condition remains solid at March 31, 2023 and we remain well positioned to support our associates and our clients.",
+    "23 EXECUTIVE OVERVIEW Highlights from the nine months ended March\u00a031, 2023 include: 9% 110 basis points 15% Revenue Growth Earnings Before Income Taxes Margin Expansion Diluted EPS Growth 11% 90 basis points 15% Organic Constant Currency Revenue Growth Adjusted EBIT Margin Expansion Adjusted Diluted EPS Growth 5% Employer Services Pays Per Control Growth 8% PEO Services Average Worksite Employee Growth $2.2B Cash Returned via Shareholder Friendly Actions $1.4B Dividends | $0.8B Share Repurchases We are a leading global provider of cloud-based Human Capital Management (\u201cHCM\u201d) technology solutions to employers around the world.",
+    "Our financial condition remains solid at March 31, 2023 and we remain well positioned to support our associates and our clients."
+  ]
+}

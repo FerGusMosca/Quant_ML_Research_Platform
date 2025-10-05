@@ -1,0 +1,47 @@
+{
+  "symbol": "PEP",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1272,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.134
+  },
+  "top_positive": [
+    {
+      "sent": "and Subsidiaries (in millions except per share amounts, unaudited) 12 Weeks Ended 3/25/2023 3/19/2022 Net Revenue $ 17,846 $ 16,200 Cost of sales 7,988 7,433 Gross profit 9,858 8,767 Selling, general and administrative expenses 7,229 6,580 Gain associated with the Juice Transaction (a) \u2014 ( 3,322 ) Impairment of intangible assets (see Notes 1 and 4) \u2014 242 Operating Profit 2,629 5,267 Other pension and retiree medical benefits income 61 134 Net interest expense and other ( 200 ) ( 240 ) Income before income taxes 2,490 5,161 Provision for income taxes 546 888 Net income 1,944 4,273 Less: Net income attributable to noncontrolling interests 12 12 Net Income Attributable to PepsiCo $ 1,932 $ 4,261 Net Income Attributable to PepsiCo per Common Share Basic $ 1.40 $ 3.08 Diluted $ 1.40 $ 3.06 Weighted-average common shares outstanding Basic 1,378 1,383 Diluted 1,384 1,391 (a) In the 12 weeks ended March 19, 2022, we sold our Tropicana, Naked and other select juice brands to PAI Partners for $ 3.5 billion in cash and a 39 % noncontrolling interest in a joint venture, Tropicana Brands Group (TBG), operating across North America and Europe (Juice Transaction).",
+      "score": 0.9776
+    },
+    {
+      "sent": "17 Table of Contents Fair Value Measurements The fair values of our financial assets and liabilities as of March\u00a025, 2023 and December\u00a031, 2022 are categorized as follows: 3/25/2023 12/31/2022 Fair Value Hierarchy Levels (a) Assets (a) Liabilities (a) Assets (a) Liabilities (a) Available-for-sale debt securities (b) 2 $ 658 $ \u2014 $ 660 $ \u2014 Index funds (c) 1 $ 250 $ \u2014 $ 257 $ \u2014 Prepaid forward contracts (d) 2 $ 14 $ \u2014 $ 14 $ \u2014 Deferred compensation (e) 2 $ \u2014 $ 432 $ \u2014 $ 434 Derivatives designated as cash flow hedging instruments: Foreign exchange (f) 2 $ 23 $ 34 $ 24 $ 22 Interest rate (f) 2 \u2014 175 \u2014 164 Commodity (g) 2 2 50 2 60 $ 25 $ 259 $ 26 $ 246 Derivatives not designated as hedging instruments: Foreign exchange (f) 2 $ 17 $ 17 $ 21 $ 21 Commodity (g) 2 9 45 11 51 $ 26 $ 62 $ 32 $ 72 Total derivatives at fair value (h) $ 51 $ 321 $ 58 $ 318 Total $ 973 $ 753 $ 989 $ 752 (a) Fair value hierarchy levels are categorized consistently by Level 1 (quoted prices in active markets for identical assets) and Level 2 (significant other observable inputs) in both years.",
+      "score": 0.9747
+    },
+    {
+      "sent": "17 Table of Contents Fair Value Measurements The fair values of our financial assets and liabilities as of March\u00a025, 2023 and December\u00a031, 2022 are categorized as follows: 3/25/2023 12/31/2022 Fair Value Hierarchy Levels (a) Assets (a) Liabilities (a) Assets (a) Liabilities (a) Available-for-sale debt securities (b) 2 $ 658 $ \u2014 $ 660 $ \u2014 Index funds (c) 1 $ 250 $ \u2014 $ 257 $ \u2014 Prepaid forward contracts (d) 2 $ 14 $ \u2014 $ 14 $ \u2014 Deferred compensation (e) 2 $ \u2014 $ 432 $ \u2014 $ 434 Derivatives designated as cash flow hedging instruments: Foreign exchange (f) 2 $ 23 $ 34 $ 24 $ 22 Interest rate (f) 2 \u2014 175 \u2014 164 Commodity (g) 2 2 50 2 60 $ 25 $ 259 $ 26 $ 246 Derivatives not designated as hedging instruments: Foreign exchange (f) 2 $ 17 $ 17 $ 21 $ 21 Commodity (g) 2 9 45 11 51 $ 26 $ 62 $ 32 $ 72 Total derivatives at fair value (h) $ 51 $ 321 $ 58 $ 318 Total $ 973 $ 753 $ 989 $ 752 (a) Fair value hierarchy levels are categorized consistently by Level 1 (quoted prices in active markets for identical assets) and Level 2 (significant other observable inputs) in both years.",
+      "score": 0.9747
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "and Subsidiaries (in millions, unaudited) 12 Weeks Ended 3/25/2023 3/19/2022 Financing Activities Proceeds from issuances of long-term debt $ 2,986 $ \u2014 Payments of long-term debt ( 1,251 ) ( 1,251 ) Short-term borrowings, by original maturity: More than three months - proceeds 393 559 More than three months - payments ( 1 ) \u2014 Three months or less, net 491 647 Cash dividends paid ( 1,608 ) ( 1,505 ) Share repurchases - common ( 160 ) ( 193 ) Proceeds from exercises of stock options 46 49 Withholding tax payments on restricted stock units (RSUs) and performance stock units (PSUs) converted ( 116 ) ( 85 ) Other financing ( 3 ) ( 1 ) Net Cash Provided by/(Used for) Financing Activities 777 ( 1,780 ) Effect of exchange rate changes on cash and cash equivalents and restricted cash ( 116 ) ( 17 ) Net (Decrease)/Increase in Cash and Cash Equivalents and Restricted Cash ( 263 ) 984 Cash and Cash Equivalents and Restricted Cash, Beginning of Year 5,100 5,707 Cash and Cash Equivalents and Restricted Cash, End of Period $ 4,837 $ 6,691 Supplemental Non-Cash Activity Right-of-use assets obtained in exchange for lease obligations $ 213 $ 100 See accompanying notes to the condensed consolidated financial statements.",
+      "score": -0.8957
+    },
+    {
+      "sent": "Risks Associated with the Deadly Conflict in Ukraine In addition to the risks associated with international operations discussed above, we continue to face risks associated with the deadly conflict in Ukraine.",
+      "score": -0.836
+    },
+    {
+      "sent": "Risks Associated with the Deadly Conflict in Ukraine In addition to the risks associated with international operations discussed above, we continue to face risks associated with the deadly conflict in Ukraine.",
+      "score": -0.836
+    }
+  ],
+  "forward_snippets": [
+    "Note 2 - Recently Issued Accounting Pronouncements Adopted In September 2022, the Financial Accounting Standards Board issued guidance to enhance the transparency of supplier finance programs to allow financial statement users to understand the effect on working capital, liquidity and cash flows.",
+    "The new guidance requires disclosure of key terms of the program, including a description of the payment terms, payment timing and assets pledged as security or other forms of guarantees provided to the finance provider or intermediary.",
+    "We adopted the guidance in the first quarter of 2023, except for the rollforward, which is effective in fiscal year 2024 with early adoption permitted.",
+    "We currently plan to adopt the rollforward guidance when effective.",
+    "See Note 13 for disclosures currently required under this guidance."
+  ]
+}

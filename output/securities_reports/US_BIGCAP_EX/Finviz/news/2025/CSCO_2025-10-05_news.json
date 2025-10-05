@@ -1,0 +1,606 @@
+{
+  "symbol": "CSCO",
+  "date": "2025-10-05",
+  "headlines": [
+    {
+      "date": "2025-10-03",
+      "time": "08:36",
+      "title": "Silicon Valley leader who navigated the internet's boom and bust sees another wild ride with AI\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/silicon-valley-leader-navigated-internets-123623069.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:05AM",
+      "title": "Meet Mira Murati, the 36-year-old tech prodigy who shot to fame at OpenAI and now runs a startup thats a poaching target for Mark Zuckerberg\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/meet-mira-murati-36-old-100500868.html"
+    },
+    {
+      "date": "2025-10-01",
+      "time": "16:31",
+      "title": "'I Don't Think It's Lasting,' Cisco Exec Says Entry-Level Hiring Slowdown Is Nothing To Worry About\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/dont-think-lasting-cisco-exec-203121333.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "The H-1B fee hike will hold back\u00a0 Americas tech community\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/h-1b-fee-hike-hold-120000600.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:21AM",
+      "title": "The Zacks Analyst Blog Highlights Comcast, Amazon, Microsoft and Cisco\n\n\n(Zacks)",
+      "link": "/news/180501/the-zacks-analyst-blog-highlights-comcast-amazon-microsoft-and-cisco"
+    },
+    {
+      "date": "2025-09-30",
+      "time": "17:45",
+      "title": "Cisco Systems (CSCO) Rises Higher Than Market: Key Facts\n\n\n(Zacks)",
+      "link": "/news/180279/cisco-systems-csco-rises-higher-than-market-key-facts"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:34PM",
+      "title": "Hackers Take Advantage of an Undiscovered Flaw in Cisco Systems Inc. (CSCO)'s Adaptive Security Appliance 5500-X Series Devices\n\n\n(Insider Monkey)",
+      "link": "/news/180186/hackers-take-advantage-of-an-undiscovered-flaw-in-cisco-systems-inc-cscos-adaptive-security-appliance-5500-x-series-devices"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:55PM",
+      "title": "Cisco Stock Moves Higher As Analysts Raise Target Prices - Short Put Plays Work Here\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/d748052c-229c-3d12-a338-cbf93a8da478/cisco-stock-moves-higher-as.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:53PM",
+      "title": "A comprehensive list of 2025 tech layoffs\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/comprehensive-list-2025-tech-layoffs-134836336.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:00PM",
+      "title": "Cisco Unveils Advanced AI-Powered Webex Contact Center Solutions and Industry Integrations\n\n\n(PR Newswire)",
+      "link": "/news/179793/cisco-unveils-advanced-ai-powered-webex-contact-center-solutions-and-industry-integrations"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:00PM",
+      "title": "Cisco Introduces Agentic Capabilities for Next-Generation Collaboration\n\n\n(PR Newswire)",
+      "link": "/news/179795/cisco-introduces-agentic-capabilities-for-next-generation-collaboration"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:50AM",
+      "title": "Can AI-Driven IoT Unlock a Long-Term Growth Path for Comcast?\n\n\n(Zacks)",
+      "link": "/news/179724/can-ai-driven-iot-unlock-a-long-term-growth-path-for-comcast"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:07AM",
+      "title": "Cisco firewall flaws endanger nearly 50,000 devices worldwide\n\n\n(Cybersecurity Dive)",
+      "link": "https://finance.yahoo.com/m/1c8ce7e9-d034-38d6-a4a7-a8954e7f5d18/cisco-firewall-flaws-endanger.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00AM",
+      "title": "Cisco Systems Inc. (CSCO) Opens New Austin Office to Showcase Workplace Technologies\n\n\n(Insider Monkey)",
+      "link": "/news/179045/cisco-systems-inc-csco-opens-new-austin-office-to-showcase-workplace-technologies"
+    },
+    {
+      "date": "2025-09-29",
+      "time": "16:45",
+      "title": "Stock Market Today: Dow Up Despite Shutdown Worries; These Stocks Fall On Trump Tariff Threat\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/011e567e-12e3-37f1-87d4-e98fe8e22dd0/stock-market-today%3A-dow-up.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "02:45PM",
+      "title": "Stock Market Today: Dow Firm Before Trump Shutdown Talks; Carnival Trips Sell Rule (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/011e567e-12e3-37f1-87d4-e98fe8e22dd0/stock-market-today%3A-dow-firm.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:49PM",
+      "title": "Stock Market Today: Dow Dips With Trump Set For Shutdown Talks; Multiple Stocks Clear Entries (Live Coverage)\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/011e567e-12e3-37f1-87d4-e98fe8e22dd0/stock-market-today%3A-dow-dips.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:42AM",
+      "title": "The questions companies need to ask themselves about H-1B visas\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/questions-companies-ask-themselves-h-124256933.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:25AM",
+      "title": "Cisco Quantum Labs announces Quantum Compiler prototype\n\n\n(Verdict)",
+      "link": "https://finance.yahoo.com/m/9aa00b3d-f2e5-3449-8247-90db6bab9eca/cisco-quantum-labs-announces.html"
+    },
+    {
+      "date": "2025-09-28",
+      "time": "21:48",
+      "title": "How Cisco Systems (CSCO) Supports Shareholder Returns Through Innovation and Networking Solutions\n\n\n(Insider Monkey)",
+      "link": "/news/177839/how-cisco-systems-csco-supports-shareholder-returns-through-innovation-and-networking-solutions"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:15AM",
+      "title": "Did Nvidia Just Repeat Cisco's Mistake and Build a House of Cards With OpenAI Investment?\n\n\n(Motley Fool)",
+      "link": "/news/177654/did-nvidia-just-repeat-ciscos-mistake-and-build-a-house-of-cards-with-openai-investment"
+    },
+    {
+      "date": "2025-09-26",
+      "time": "11:09",
+      "title": "BofA Reaffirms Buy on Cisco (CSCO), Citing Growth Catalysts and Inexpensive valuation\n\n\n(Insider Monkey)",
+      "link": "/news/177030/bofa-reaffirms-buy-on-cisco-csco-citing-growth-catalysts-and-inexpensive-valuation"
+    },
+    {
+      "date": "2025-09-25",
+      "time": "15:10",
+      "title": "Cisco rolls out software aimed at connecting a quantum computing cloud\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/m/73442e6f-8b10-3dc4-9c88-74c1d2a62965/cisco-rolls-out-software.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:35AM",
+      "title": "The Zacks Analyst Blog Highlights Broadcom Oracle, Cisco Systems and United-Guardian\n\n\n(Zacks)",
+      "link": "/news/175908/the-zacks-analyst-blog-highlights-broadcom-oracle-cisco-systems-and-united-guardian"
+    },
+    {
+      "date": "2025-09-24",
+      "time": "17:26",
+      "title": "Top Research Reports for Broadcom, Oracle & Cisco Systems\n\n\n(Zacks)",
+      "link": "/news/175096/top-research-reports-for-broadcom-oracle-cisco-systems"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:59AM",
+      "title": "AVGO's Infrastructure Software Sales Rise: A Sign of More Upside?\n\n\n(Zacks)",
+      "link": "/news/174822/avgos-infrastructure-software-sales-rise-a-sign-of-more-upside"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:57AM",
+      "title": "Cisco, Tata Communications Partner to Integrate Global eSIM Orchestration into IoT Control Center\n\n\n(Insider Monkey)",
+      "link": "/news/174081/cisco-tata-communications-partner-to-integrate-global-esim-orchestration-into-iot-control-center"
+    },
+    {
+      "date": "2025-09-23",
+      "time": "12:16",
+      "title": "Even if the AI bubble bursts its value will remain\n\n\n(Verdict)",
+      "link": "https://finance.yahoo.com/m/f81d8efc-06f1-36dd-b52d-5423a37b274a/even-if-the-ai-bubble-bursts.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:27AM",
+      "title": "ANET Rides on Strength in Cloud Networking Market: Will it Sustain?\n\n\n(Zacks)",
+      "link": "/news/173560/anet-rides-on-strength-in-cloud-networking-market-will-it-sustain"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:21AM",
+      "title": "Zoom's Global Expansion Picks Up: A Sign of More Upside?\n\n\n(Zacks)",
+      "link": "/news/173501/zooms-global-expansion-picks-up-a-sign-of-more-upside"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Cisco Systems, Inc. (CSCO) is Attracting Investor Attention: Here is What You Should Know\n\n\n(Zacks)",
+      "link": "/news/173339/cisco-systems-inc-csco-is-attracting-investor-attention-here-is-what-you-should-know"
+    },
+    {
+      "date": "2025-09-22",
+      "time": "12:36",
+      "title": "DELL Gains From AI and Data Center Growth: A Sign for More Upside?\n\n\n(Zacks)",
+      "link": "/news/172542/dell-gains-from-ai-and-data-center-growth-a-sign-for-more-upside"
+    },
+    {
+      "date": "2025-09-21",
+      "time": "09:30",
+      "title": "Analysts Push Cisco's Target Price Higher - Shorting CSCO Puts Works Here\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/ef2f0f22-1b59-3756-ae9b-55e0b6acda8f/analysts-push-cisco%27s-target.html"
+    },
+    {
+      "date": "2025-09-20",
+      "time": "23:07",
+      "title": "Dividend Paying Stocks With Consistency: What Sets Cisco Systems (CSCO) Apart\n\n\n(Insider Monkey)",
+      "link": "/news/171500/dividend-paying-stocks-with-consistency-what-sets-cisco-systems-csco-apart"
+    },
+    {
+      "date": "2025-09-18",
+      "time": "23:26",
+      "title": "Jim Cramer Explains Why Cisco Remains in the Charitable Trust Portfolio\n\n\n(Insider Monkey)",
+      "link": "/news/170197/jim-cramer-explains-why-cisco-remains-in-the-charitable-trust-portfolio"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:45PM",
+      "title": "Cisco Systems (CSCO) Laps the Stock Market: Here's Why\n\n\n(Zacks)",
+      "link": "/news/170116/cisco-systems-csco-laps-the-stock-market-heres-why"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "03:06PM",
+      "title": "Why Supermicro Still Isn't A Buy Despite Its Sharp Post-Earnings Dip\n\n\n(Motley Fool)",
+      "link": "/news/169980/why-supermicro-still-isnt-a-buy-despite-its-sharp-post-earnings-dip"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:23PM",
+      "title": "Should Investors Buy the ZOOM Stock at a Discounted P/E of 14.8X?\n\n\n(Zacks)",
+      "link": "/news/169946/should-investors-buy-the-zoom-stock-at-a-discounted-pe-of-148x"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:10PM",
+      "title": "OKTA vs. Cisco Systems: Which Cybersecurity Stock Has an Edge?\n\n\n(Zacks)",
+      "link": "/news/169938/okta-vs-cisco-systems-which-cybersecurity-stock-has-an-edge"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "05:49AM",
+      "title": "Groq obtains $750m in funding for AI inference technology\n\n\n(Verdict)",
+      "link": "https://finance.yahoo.com/m/786e3a4f-e2ac-3575-8b0c-0ce2896e80c7/groq-obtains-%24750m-in-funding.html"
+    },
+    {
+      "date": "2025-09-17",
+      "time": "19:51",
+      "title": "Nvidia AI chip challenger Groq raises even more than expected, hits $6.9B valuation\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/nvidia-ai-chip-challenger-groq-235142786.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:21AM",
+      "title": "CommScope Rides on Strength in ANS Segment: Will it Persist?\n\n\n(Zacks)",
+      "link": "/news/168491/commscope-rides-on-strength-in-ans-segment-will-it-persist"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:37AM",
+      "title": "Chip startup Groq raises $750 million at $6.9 billion valuation\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/chip-startup-groq-raises-750-113709495.html"
+    },
+    {
+      "date": "2025-09-16",
+      "time": "13:11",
+      "title": "DELL's ISG Growth Accelerates: Is AI Infrastructure the Catalyst?\n\n\n(Zacks)",
+      "link": "/news/167726/dells-isg-growth-accelerates-is-ai-infrastructure-the-catalyst"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:59PM",
+      "title": "Will FTNT's Heavy Infrastructure Build-Out Drive Next Phase of Growth?\n\n\n(Zacks)",
+      "link": "/news/167698/will-ftnts-heavy-infrastructure-build-out-drive-next-phase-of-growth"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:22AM",
+      "title": "HPE's Networking Business Improves: What's Driving the Growth?\n\n\n(Zacks)",
+      "link": "/news/167435/hpes-networking-business-improves-whats-driving-the-growth"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "AI Workforce Consortium Finds 78% of ICT Roles Now Include AI Technical Skills, While Human Skills Gain Priority for Responsible Tech Adoption\n\n\n(PR Newswire)",
+      "link": "/news/167104/ai-workforce-consortium-finds-78-of-ict-roles-now-include-ai-technical-skills-while-human-skills-gain-priority-for-responsible-tech-adoption"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:36AM",
+      "title": "'CEO's need to master AI': Interview with Cisco President Jeetu Patel\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/ceos-master-ai-interview-cisco-123622244.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:27AM",
+      "title": "Cybersecurity firm Netskope lifts IPO price range, eyes $7.3 billion valuation\n\n\n(Reuters)",
+      "link": "https://finance.yahoo.com/news/cybersecurity-firm-netskope-lifts-ipo-122745544.html"
+    },
+    {
+      "date": "2025-09-14",
+      "time": "23:37",
+      "title": "IT Services & Other Tech Stocks Q2 Recap: Benchmarking Cisco (NASDAQ:CSCO)\n\n\n(StockStory)",
+      "link": "/news/166069/it-services-other-tech-stocks-q2-recap-benchmarking-cisco-nasdaq-csco"
+    },
+    {
+      "date": "2025-09-12",
+      "time": "13:10",
+      "title": "If You'd Invested $10,000 in Arista Networks (ANET) Stock 10 Years Ago, Here's How Much You'd Have Today\n\n\n(Motley Fool)",
+      "link": "/news/165179/if-youd-invested-10000-in-arista-networks-anet-stock-10-years-ago-heres-how-much-youd-have-today"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:30AM",
+      "title": "Cisco (CSCO) Down 2.3% Since Last Earnings Report: Can It Rebound?\n\n\n(Zacks)",
+      "link": "/news/165104/cisco-csco-down-23-since-last-earnings-report-can-it-rebound"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:12AM",
+      "title": "Okta Shares Rise 17% Year to Date: Buy, Sell or Hold the Stock?\n\n\n(Zacks)",
+      "link": "/news/165095/okta-shares-rise-17-year-to-date-buy-sell-or-hold-the-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Cisco Systems, Inc. (CSCO) Is a Trending Stock: Facts to Know Before Betting on It\n\n\n(Zacks)",
+      "link": "/news/164844/cisco-systems-inc-csco-is-a-trending-stock-facts-to-know-before-betting-on-it"
+    },
+    {
+      "date": "2025-09-11",
+      "time": "09:22",
+      "title": "Cisco Systems Stock Outlook: Still the Backbone of Modern Networks?\n\n\n(GuruFocus.com)",
+      "link": "https://finance.yahoo.com/news/cisco-systems-stock-outlook-still-132223034.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:00AM",
+      "title": "Ascend Communications: How To Find & Own America's Greatest Opportunities\n\n\n(Investor's Business Daily)",
+      "link": "https://finance.yahoo.com/m/a9364f0d-ce34-3568-a0c8-a7caea38a11c/ascend-communications%3A-how-to.html"
+    },
+    {
+      "date": "2025-09-10",
+      "time": "12:09",
+      "title": "Is Cisco Stock's 4.42X PS Still Worth it? Buy, Sell, or Hold?\n\n\n(Zacks)",
+      "link": "/news/162855/is-cisco-stocks-442x-ps-still-worth-it-buy-sell-or-hold"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:35AM",
+      "title": "Cisco Systems Inc. (CSCO) Expands Secure AI Factory with the Nvidia Platform\n\n\n(Insider Monkey)",
+      "link": "/news/162298/cisco-systems-inc-csco-expands-secure-ai-factory-with-the-nvidia-platform"
+    },
+    {
+      "date": "2025-09-09",
+      "time": "14:53",
+      "title": "AI Is Now Entering Second Phase, Cisco's Patel Says\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/video/ai-now-entering-second-phase-185308971.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:11PM",
+      "title": "Tata Communications and Cisco partner on IoT connectivity\n\n\n(Just Auto)",
+      "link": "https://finance.yahoo.com/m/d7a2543a-af70-3e83-ab55-e264e415d76c/tata-communications-and-cisco.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:35PM",
+      "title": "ANET Gains Traction in AI Networking Vertical: Will the Trend Continue?\n\n\n(Zacks)",
+      "link": "/news/161597/anet-gains-traction-in-ai-networking-vertical-will-the-trend-continue"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:29AM",
+      "title": "Broadcom Rises 13% Post Q3 Earnings: Buy, Sell or Hold the Stock?\n\n\n(Zacks)",
+      "link": "/news/161529/broadcom-rises-13-post-q3-earnings-buy-sell-or-hold-the-stock"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Cisco Supercharges Observability with Agentic AI for Real-Time Business Insights\n\n\n(PR Newswire)",
+      "link": "/news/161101/cisco-supercharges-observability-with-agentic-ai-for-real-time-business-insights"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:30AM",
+      "title": "Cisco Elevates the SOC with Agentic AI for Faster Threat Response and Reduced Complexity\n\n\n(PR Newswire)",
+      "link": "/news/161100/cisco-elevates-the-soc-with-agentic-ai-for-faster-threat-response-and-reduced-complexity"
+    },
+    {
+      "date": "2025-09-08",
+      "time": "18:00",
+      "title": "Cisco Data Fabric Transforms Machine Data into AI-Ready Intelligence\n\n\n(PR Newswire)",
+      "link": "/news/160550/cisco-data-fabric-transforms-machine-data-into-ai-ready-intelligence"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00PM",
+      "title": "Cisco Advances Open Data Ecosystems with Splunk Federated Search for Snowflake\n\n\n(PR Newswire)",
+      "link": "/news/160551/cisco-advances-open-data-ecosystems-with-splunk-federated-search-for-snowflake"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:00AM",
+      "title": "Financial Bubbles Happen Less Often Than You Think\n\n\n(The Wall Street Journal)",
+      "link": "https://finance.yahoo.com/m/6bae065b-f978-32b0-80e3-ccbeb5c32452/financial-bubbles-happen-less.html"
+    },
+    {
+      "date": "2025-09-07",
+      "time": "10:54",
+      "title": "What is Mistral AI? Everything to know about the OpenAI competitor\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/mistral-ai-everything-know-openai-194318445.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "Palantir Technologies: 3 Motley Fool Contributors Weigh In\n\n\n(Motley Fool)",
+      "link": "/news/159451/palantir-technologies-3-motley-fool-contributors-weigh-in"
+    },
+    {
+      "date": "2025-09-05",
+      "time": "15:33",
+      "title": "HPE-Juniper deal should be probed, Democratic AGs tell court\n\n\n(Reuters)",
+      "link": "https://ca.finance.yahoo.com/news/hpe-deal-probed-democratic-ags-193317637.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:05AM",
+      "title": "Arista Rises 79.7% in a Year: How Should You Play the Stock?\n\n\n(Zacks)",
+      "link": "/news/158912/arista-rises-797-in-a-year-how-should-you-play-the-stock"
+    },
+    {
+      "date": "2025-09-04",
+      "time": "14:31",
+      "title": "Record profits, layoffs: Wall Street cheers as workers fear\n\n\n(Quartz)",
+      "link": "https://finance.yahoo.com/m/644b89ad-e89c-3d83-a6ba-aa5019c5352b/record-profits%2C-layoffs%3A-wall.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:55PM",
+      "title": "Fortinet Gains From SASE & SecOps Momentum: More Upside Ahead?\n\n\n(Zacks)",
+      "link": "/news/158236/fortinet-gains-from-sase-secops-momentum-more-upside-ahead"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "12:08PM",
+      "title": "Fortinet vs. Cisco: Which Networking Security Stock Has Better Upside?\n\n\n(Zacks)",
+      "link": "/news/158191/fortinet-vs-cisco-which-networking-security-stock-has-better-upside"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Cisco Secure AI Factory with NVIDIA Unlocks Enterprise Data for Agentic AI\n\n\n(PR Newswire)",
+      "link": "/news/157855/cisco-secure-ai-factory-with-nvidia-unlocks-enterprise-data-for-agentic-ai"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:54AM",
+      "title": "HPE Stock Climbs. What Earnings Say About Server Demand.\n\n\n(Barrons.com)",
+      "link": "https://finance.yahoo.com/m/e90a4f6a-4b38-3318-ae78-b439e0d028e0/hpe-stock-climbs.-what.html"
+    },
+    {
+      "date": "2025-09-03",
+      "time": "16:05",
+      "title": "HPE's Earnings Beat Estimates. Demand for Servers Was Strong.\n\n\n(Barrons.com)",
+      "link": "https://www.barrons.com/articles/hpe-earnings-stock-price-a766c92b?mod=bar_FV"
+    },
+    {
+      "date": "2025-09-02",
+      "time": "16:30",
+      "title": "Cisco to Participate in September 2025 Events with the Financial Community\n\n\n(PR Newswire)",
+      "link": "/news/156077/cisco-to-participate-in-september-2025-events-with-the-financial-community"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:38PM",
+      "title": "Buy, Sell or Hold AVGO Stock: Key Tips Ahead of Q3 Earnings?\n\n\n(Zacks)",
+      "link": "/news/155941/buy-sell-or-hold-avgo-stock-key-tips-ahead-of-q3-earnings"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:30AM",
+      "title": "BC-Most Active Stocks\n\n\n(Associated Press Finance)",
+      "link": "https://finance.yahoo.com/news/bc-most-active-stocks-143017384.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:05AM",
+      "title": "Cisco (CSCO) Provides Bullish Guidance on AI Infrastructure Momentum\n\n\n(Insider Monkey)",
+      "link": "/news/154973/cisco-csco-provides-bullish-guidance-on-ai-infrastructure-momentum"
+    },
+    {
+      "date": "2025-09-01",
+      "time": "12:18",
+      "title": "Cisco's Security Portfolio Gains Traction: A Sign of More Upside?\n\n\n(Zacks)",
+      "link": "/news/154876/ciscos-security-portfolio-gains-traction-a-sign-of-more-upside"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:00AM",
+      "title": "Investors Heavily Search Cisco Systems, Inc. (CSCO): Here is What You Need to Know\n\n\n(Zacks)",
+      "link": "/news/154619/investors-heavily-search-cisco-systems-inc-csco-here-is-what-you-need-to-know"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "01:56AM",
+      "title": "Is Cisco Systems Stock Outperforming the S&P 500?\n\n\n(Barchart)",
+      "link": "https://finance.yahoo.com/m/f1503132-27c2-3b94-831d-dc5dbe843e91/is-cisco-systems-stock.html"
+    },
+    {
+      "date": "2025-08-31",
+      "time": "00:27",
+      "title": "Jim Cramer Says \"Cisco's Still Very Much Alive\"\n\n\n(Insider Monkey)",
+      "link": "/news/154238/jim-cramer-says-ciscos-still-very-much-alive"
+    },
+    {
+      "date": "2025-08-30",
+      "time": "08:15",
+      "title": "The 5 Best Dividend Stocks to Buy Now\n\n\n(Motley Fool)",
+      "link": "/news/154104/the-5-best-dividend-stocks-to-buy-now"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "07:00AM",
+      "title": "MarketBeat Week in Review - 08/25 - 08/29\n\n\n(MarketBeat)",
+      "link": "/news/154095/marketbeat-week-in-review-0825-0829"
+    },
+    {
+      "date": "2025-08-29",
+      "time": "14:01",
+      "title": "Final Trades: ServiceNow, Regeneron, Cisco Systems and Truist Financial\n\n\n(CNBC TV)",
+      "link": "https://www.youtube.com/watch?v=OrWad5nEyCw"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:09AM",
+      "title": "T Expands Enterprise Network Security Offerings: Will it Drive Growth?\n\n\n(Zacks)",
+      "link": "/news/153579/t-expands-enterprise-network-security-offerings-will-it-drive-growth"
+    },
+    {
+      "date": "2025-08-28",
+      "time": "14:58",
+      "title": "Nutanix Poised To Capture Market Share With Expanding Cloud Platform And VMware Disruption: Analyst\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/nutanix-poised-capture-market-share-185800810.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:45AM",
+      "title": "Nvidia Faces New Rival As DataPelago Launches Nucleus Engine That Runs 38.6x Faster On Hash Joins And Promises Hardware Neutrality\n\n\n(Benzinga)",
+      "link": "https://finance.yahoo.com/news/nvidia-faces-rival-datapelago-launches-134512054.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "08:04AM",
+      "title": "TransUnion says hackers stole 4.4 million customers personal information\n\n\n(TechCrunch)",
+      "link": "https://finance.yahoo.com/news/transunion-says-hackers-stole-4-120457245.html"
+    },
+    {
+      "date": "2025-08-27",
+      "time": "12:27",
+      "title": "How Cisco Systems CIO is rethinking work in an AI-powered world for the companys 10,000 IT employees\n\n\n(Fortune)",
+      "link": "https://finance.yahoo.com/news/cisco-systems-cio-rethinking-ai-162728066.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "09:50AM",
+      "title": "Fortinet Captures EMEA Momentum: Can It Secure Long-Term Growth?\n\n\n(Zacks)",
+      "link": "/news/151192/fortinet-captures-emea-momentum-can-it-secure-long-term-growth"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "06:00AM",
+      "title": "Nvidia earnings preview and the Trump chip tariff twist\n\n\n(Yahoo Finance Video)",
+      "link": "https://finance.yahoo.com/video/nvidia-earnings-preview-trump-chip-100025160.html"
+    },
+    {
+      "date": "2025-08-26",
+      "time": "17:19",
+      "title": "Cisco Systems, Inc. (CSCO) Gains 33% After Cramer Said You Shouldn't Chase It Over $50\n\n\n(Insider Monkey)",
+      "link": "/news/150342/cisco-systems-inc-csco-gains-33-after-cramer-said-you-shouldnt-chase-it-over-50"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "11:30AM",
+      "title": "Cisco Rides AI Boom With $2B Orders: Can It Sustain the Growth Curve?\n\n\n(Zacks)",
+      "link": "/news/150134/cisco-rides-ai-boom-with-2b-orders-can-it-sustain-the-growth-curve"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "10:50AM",
+      "title": "Stock Market Today: Stocks rise despite Trump threats against Fed, tech regulation\n\n\n(TheStreet)",
+      "link": "https://finance.yahoo.com/m/44d579c1-bb12-3e93-82f6-200f693399c7/stock-market-today%3A-stocks.html"
+    },
+    {
+      "date": "2025-10-05",
+      "time": "04:00AM",
+      "title": "Execs worry about unknown identity-security weaknesses\n\n\n(Cybersecurity Dive)",
+      "link": "https://finance.yahoo.com/m/b1c27db6-ce55-3769-89c1-0cb4c1b59db7/execs-worry-about-unknown.html"
+    },
+    {
+      "date": "2025-08-25",
+      "time": "13:27",
+      "title": "Saudis Humain to Open Data Centers With US Chips in Early 2026\n\n\n(Bloomberg)",
+      "link": "https://finance.yahoo.com/news/saudi-humain-open-data-centers-172755625.html"
+    }
+  ]
+}

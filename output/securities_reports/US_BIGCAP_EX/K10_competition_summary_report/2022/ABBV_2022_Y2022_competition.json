@@ -1,0 +1,37 @@
+{
+  "symbol": "ABBV",
+  "year": 2022,
+  "period": "Y2022",
+  "competition_summary": [
+    {
+      "competitor": "Humira",
+      "mentions": 2,
+      "context": "Competition The markets for AbbVie's products are highly competitive. AbbVie competes with other research-based pharmaceuticals and biotechnology companies that discover, manufacture, market and sell proprietary pharmaceutical products, therapies 5 | 2021 Form 10-K and biologics. For example, Humira competes with anti-TNF products, JAK inhibitors and other competitive products intended to treat a number of disease states and Mavyret/Maviret competes with other available HCV treatment options. In"
+    },
+    {
+      "competitor": "Botox",
+      "mentions": 1,
+      "context": "Competition The markets for AbbVie's products are highly competitive. AbbVie competes with other research-based pharmaceuticals and biotechnology companies that discover, manufacture, market and sell proprietary pharmaceutical products, therapies 5 | 2021 Form 10-K and biologics. For example, Humira competes with anti-TNF products, JAK inhibitors and other competitive products intended to treat a number of disease states and Mavyret/Maviret competes with other available HCV treatment options. In"
+    },
+    {
+      "competitor": "FDA",
+      "mentions": 1,
+      "context": "Competition The markets for AbbVie's products are highly competitive. AbbVie competes with other research-based pharmaceuticals and biotechnology companies that discover, manufacture, market and sell proprietary pharmaceutical products, therapies 5 | 2021 Form 10-K and biologics. For example, Humira competes with anti-TNF products, JAK inhibitors and other competitive products intended to treat a number of disease states and Mavyret/Maviret competes with other available HCV treatment options. In"
+    },
+    {
+      "competitor": "the Federal Food, Drug",
+      "mentions": 1,
+      "context": "Competition The markets for AbbVie's products are highly competitive. AbbVie competes with other research-based pharmaceuticals and biotechnology companies that discover, manufacture, market and sell proprietary pharmaceutical products, therapies 5 | 2021 Form 10-K and biologics. For example, Humira competes with anti-TNF products, JAK inhibitors and other competitive products intended to treat a number of disease states and Mavyret/Maviret competes with other available HCV treatment options. In"
+    },
+    {
+      "competitor": "FFDCA",
+      "mentions": 1,
+      "context": "Competition The markets for AbbVie's products are highly competitive. AbbVie competes with other research-based pharmaceuticals and biotechnology companies that discover, manufacture, market and sell proprietary pharmaceutical products, therapies 5 | 2021 Form 10-K and biologics. For example, Humira competes with anti-TNF products, JAK inhibitors and other competitive products intended to treat a number of disease states and Mavyret/Maviret competes with other available HCV treatment options. In"
+    },
+    {
+      "competitor": "the Public Health Service Act",
+      "mentions": 1,
+      "context": "Competition The markets for AbbVie's products are highly competitive. AbbVie competes with other research-based pharmaceuticals and biotechnology companies that discover, manufacture, market and sell proprietary pharmaceutical products, therapies 5 | 2021 Form 10-K and biologics. For example, Humira competes with anti-TNF products, JAK inhibitors and other competitive products intended to treat a number of disease states and Mavyret/Maviret competes with other available HCV treatment options. In"
+    }
+  ]
+}

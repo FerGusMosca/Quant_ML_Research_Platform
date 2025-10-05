@@ -1,0 +1,47 @@
+{
+  "symbol": "MO",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1831,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.211
+  },
+  "top_positive": [
+    {
+      "sent": "The following table provides the fair value of Altria\u2019s long-term debt and the change in fair value based on a 1% increase or decrease in market interest rates at December 31: (in billions) 2021 2020 Fair value $ 30.5 $ 34.7 Decrease in fair value from a 1% increase in market interest rates 2.7 2.7 Increase in fair value from a 1% decrease in market interest rates 3.2 3.1 Interest rates on borrowings under the Credit Agreement are expected to be based on the London Interbank Offered Rate (\u201cLIBOR\u201d), or a fallback benchmark rate determined based on prevailing market convention, plus a percentage based on the higher of the ratings of Altria\u2019s long-term senior unsecured debt from Moody\u2019s and S&P.",
+      "score": 0.9891
+    },
+    {
+      "sent": "17 T able of Contents Consolidated Results of Operations The changes in net earnings (losses) attributable to Altria and diluted earnings (losses) per share (\u201cEPS\u201d) attributable to Altria for the year ended December\u00a031, 2021, from the year ended December\u00a031, 2020, were due primarily to the following: (in millions, except per share data) Net Earnings (Losses) Diluted EPS For the year ended December 31, 2020 $ 4,467 $ 2.40 2020 NPM Adjustment Items 3 \u2014 2020 Asset impairment, exit, implementation, acquisition and disposition-related costs 342 0.18 2020 Tobacco and health and certain other litigation items 62 0.03 2020 Impairment of JUUL equity securities 2,600 1.40 2020 JUUL changes in fair value (100) (0.05) 2020 ABI-related special items 603 0.32 2020 Cronos-related special items 53 0.03 2020 COVID-19 special items 37 0.02 2020 Tax items 50 0.03 Subtotal 2020 special items 3,650 1.96 2021 NPM Adjustment Items 57 0.03 2021 Asset impairment, exit, implementation, acquisition and disposition-related costs (99) (0.05) 2021 Tobacco and health and certain other litigation items (138) (0.07) 2021 ABI-related special items (4,901) (2.66) 2021 Cronos-related special items (470) (0.25) 2021 Loss on early extinguishment of debt (496) (0.27) 2021 Tax items 3 \u2014 Subtotal 2021 special items (6,044) (3.27) Fewer shares outstanding \u2014 0.03 Change in tax rate (33) (0.02) Operations 435 0.24 For the year ended December 31, 2021 $ 2,475 $ 1.34 2021 Reported Net Earnings (Losses) $ 2,475 $ 1.34 2020 Reported Net Earnings (Losses) $ 4,467 $ 2.40 % Change (44.6) % (44.2) % 2021 Adjusted Net Earnings and Adjusted Diluted EPS $ 8,519 $ 4.61 2020 Adjusted Net Earnings and Adjusted Diluted EPS $ 8,117 $ 4.36 % Change 5.0 % 5.7 % For a discussion of special items and other business drivers affecting the comparability of statements of earnings (losses) amounts and reconciliations of adjusted earnings attributable to Altria and adjusted diluted EPS attributable to Altria, see the Consolidated Operating Results section below.",
+      "score": 0.9881
+    },
+    {
+      "sent": "17 T able of Contents Consolidated Results of Operations The changes in net earnings (losses) attributable to Altria and diluted earnings (losses) per share (\u201cEPS\u201d) attributable to Altria for the year ended December\u00a031, 2021, from the year ended December\u00a031, 2020, were due primarily to the following: (in millions, except per share data) Net Earnings (Losses) Diluted EPS For the year ended December 31, 2020 $ 4,467 $ 2.40 2020 NPM Adjustment Items 3 \u2014 2020 Asset impairment, exit, implementation, acquisition and disposition-related costs 342 0.18 2020 Tobacco and health and certain other litigation items 62 0.03 2020 Impairment of JUUL equity securities 2,600 1.40 2020 JUUL changes in fair value (100) (0.05) 2020 ABI-related special items 603 0.32 2020 Cronos-related special items 53 0.03 2020 COVID-19 special items 37 0.02 2020 Tax items 50 0.03 Subtotal 2020 special items 3,650 1.96 2021 NPM Adjustment Items 57 0.03 2021 Asset impairment, exit, implementation, acquisition and disposition-related costs (99) (0.05) 2021 Tobacco and health and certain other litigation items (138) (0.07) 2021 ABI-related special items (4,901) (2.66) 2021 Cronos-related special items (470) (0.25) 2021 Loss on early extinguishment of debt (496) (0.27) 2021 Tax items 3 \u2014 Subtotal 2021 special items (6,044) (3.27) Fewer shares outstanding \u2014 0.03 Change in tax rate (33) (0.02) Operations 435 0.24 For the year ended December 31, 2021 $ 2,475 $ 1.34 2021 Reported Net Earnings (Losses) $ 2,475 $ 1.34 2020 Reported Net Earnings (Losses) $ 4,467 $ 2.40 % Change (44.6) % (44.2) % 2021 Adjusted Net Earnings and Adjusted Diluted EPS $ 8,519 $ 4.61 2020 Adjusted Net Earnings and Adjusted Diluted EPS $ 8,117 $ 4.36 % Change 5.0 % 5.7 % For a discussion of special items and other business drivers affecting the comparability of statements of earnings (losses) amounts and reconciliations of adjusted earnings attributable to Altria and adjusted diluted EPS attributable to Altria, see the Consolidated Operating Results section below.",
+      "score": 0.9881
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Altria\u2019s subsidiaries paid approximately $4.7 bi\nnnection with the 2021 debt tender offers and redemption and payments of $0.6 billion for the premiums and fees in connection with the debt tender offers described above and in Note 9; \u25aa proceeds of $2.0 billion from the issuance of long-term senior unsecured notes in 2020; \u25aa repayment of $1.5 billion in full of Altria senior unsecured notes at scheduled maturity in May 2021; \u25aa repurchases of common stock in 2021; and \u25aa higher dividends paid in 2021; partially offset by: \u25aa proceeds of $5.5 billion from the issuance of long-term senior unsecured notes used to repurchase and redeem senior unsecured notes in connection with the 2021 debt tender offers and redemption; and \u25aa repayment of $1.0 billion in full of Altria senior unsecured notes at scheduled maturity in January 2020.",
+      "score": -0.9552
+    },
+    {
+      "sent": "A natural or man-made disaster, cyber-incident, global pandemic or other disruption that affects the manufacturing operations of any of Altria\u2019s tobacco operating companies or investees, the operations of any key supplier, distributor or distribution chain service provider of any of Altria\u2019s tobacco operating companies or investees or any other disruption in the supply or distribution of goods or services (including a key supplier\u2019s inability to comply with government regulations, lack of available workers or unwillingness to supply goods or services to a tobacco company) could adversely impact the operations of the affected subsidiaries and investees.",
+      "score": -0.9186
+    },
+    {
+      "sent": "Further, a failure by Cronos or Altria to comply with applicable laws, including cannabis laws, could result in criminal, civil or tax liability or reputational harm for Altria.",
+      "score": -0.9001
+    }
+  ],
+  "forward_snippets": [
+    "\u25aa Human Capital Resources: We believe our workforce is critical to achieving our Vision.",
+    "We believe culture influences employee actions and decision-making.",
+    "\u25aa Human Capital Resources: We believe our workforce is critical to achieving our Vision.",
+    "We believe culture influences employee actions and decision-making.",
+    "\u25aa Human Capital Resources: We believe our workforce is critical to achieving our Vision."
+  ]
+}

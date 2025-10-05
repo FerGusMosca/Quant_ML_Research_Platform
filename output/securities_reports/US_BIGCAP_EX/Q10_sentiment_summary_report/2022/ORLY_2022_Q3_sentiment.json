@@ -1,0 +1,47 @@
+{
+  "symbol": "ORLY",
+  "year": 2022,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2916,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.055
+  },
+  "top_positive": [
+    {
+      "sent": "\u200b The table below outlines the calculations of the consolidated fixed charge coverage ratio and consolidated leverage ratio covenants, as defined in the Credit Agreement governing the Revolving Credit Facility, for the twelve\u00a0months ended March\u00a031,\u00a02022 and 2021 (dollars in thousands): \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b For the Twelve Months Ended \u200b \u200b \u200b March\u00a031, \u200b \u200b 2022 2021 GAAP net income \u200b $ 2,144,956 \u200b $ 1,953,473 Add: Interest expense \u200b 142,103 \u200b 159,246 \u200b Rent expense (1) \u200b 375,942 \u200b 358,653 \u200b Provision for income taxes \u200b 614,392 \u200b 589,099 \u200b Depreciation expense \u200b 323,539 \u200b 311,037 \u200b Amortization expense \u200b 7,844 \u200b 9,392 \u200b Non-cash share-based compensation \u200b 24,897 \u200b 23,164 Non-GAAP EBITDAR \u200b $ 3,633,673 \u200b $ 3,404,064 \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b Interest expense \u200b $ 142,103 \u200b $ 159,246 \u200b Capitalized interest \u200b 6,425 \u200b 9,324 \u200b Rent expense (1) \u200b 375,942 \u200b 358,653 Total fixed charges \u200b $ 524,470 \u200b $ 527,223 \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b Consolidated fixed charge coverage ratio \u200b 6.93 \u200b 6.46 \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b GAAP debt \u200b $ 3,827,891 \u200b $ 4,124,168 Add: Stand-by letters of credit \u200b 139,569 \u200b 84,045 \u200b Discount on senior notes \u200b 4,188 \u200b 4,892 \u200b Debt issuance costs \u200b 17,921 \u200b 20,940 \u200b Five-times rent expense \u200b 1,879,710 \u200b 1,793,265 Non-GAAP adjusted debt \u200b $ 5,869,279 \u200b $ 6,027,310 \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b Consolidated leverage ratio \u200b 1.62 \u200b 1.77 (1) The table below outlines the calculation of Rent expense and reconciles Rent expense to Total lease cost, per Accounting Standard Codification 842 (\u201cASC 842\u201d) the most directly comparable GAAP financial measure, for the twelve\u00a0months ended March\u00a031,\u00a02022 and 2021 (in thousands): \u200b \u200b \u200b \u200b \u200b Total lease cost, per ASC 842, for the twelve months ended March\u00a031,\u00a02022 $ 448,384 Less: Variable non-contract operating lease components, related to property taxes and insurance, for the twelve months ended March\u00a031,\u00a02022 \u200b 72,442 Rent expense for the twelve months ended March\u00a031,\u00a02022 \u200b $ 375,942 \u200b \u200b \u200b \u200b \u200b\n,\u00a02022 and 2021 (in thousands): \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b For\u00a0the Three Months Ended \u200b \u200b \u200b March\u00a031, \u200b \u200b 2022 2021 Cash provided by operating activities \u200b $ 689,886 \u200b $ 890,672 Less: Capital expenditures \u200b 103,990 \u200b 94,879 \u200b Excess tax benefit from share-based compensation payments \u200b 2,466 \u200b 6,007 \u200b Investment in tax credit equity investments \u200b 4,080 \u200b 6 Free cash flow \u200b $ 579,350 \u200b $ 789,780 \u200b 21 Free cash flow, the consolidated fixed charge coverage ratio and the consolidated leverage ratio discussed and presented in the tables above are not derived in accordance with United States generally accepted accounting principles (\u201cGAAP\u201d).",
+      "score": 0.9801
+    },
+    {
+      "sent": "\u200b The table below identifies the weighted-average assumptions used for grants awarded during the three months ended March\u00a031,\u00a02022 and 2021: \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b March\u00a031, \u200b 2022 \u200b 2021 Risk free interest rate 1.61 % \u200b 0.85 % Expected life 6.5 Years \u200b 6.4 Years Expected volatility 28.5 % \u200b 29.9 % Expected dividend yield \u2014 % \u200b \u2014 % \u200b 12 The following table summarizes activity related to stock options awarded by the Company for the three months ended March\u00a031,\u00a02022 and 2021 (in thousands, except per share data): \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b For the Three Months Ended \u200b \u200b March\u00a031, \u200b 2022 2021 Compensation expense for stock options awarded \u200b $ 5,301 \u200b $ 5,262 Income tax benefit from compensation expense related to stock options \u200b 1,346 \u200b 1,296 Weighted-average grant-date fair value of options awarded \u200b $ 217.68 \u200b $ 144.30 \u200b The remaining unrecognized compensation expense related to unvested stock option awards at March\u00a031,\u00a02022, was $ 44.0 million, and the weighted-average period of time over which this cost will be recognized is 2.8 years.",
+      "score": 0.9794
+    },
+    {
+      "sent": "\u200b NOTE\u00a011\u00a0\u2013 EARNINGS PER SHARE \u200b The following table illustrates the computation of basic and diluted earnings per share for the three months ended March\u00a031,\u00a02022 and 2021 (in thousands, except per share data): \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b For the Three Months Ended \u200b \u200b March\u00a031, \u200b 2022 2021 Numerator (basic and diluted): \u200b \u200b Net income \u200b $ 481,880 \u200b $ 501,609 \u200b \u200b \u200b \u200b \u200b \u200b \u200b Denominator: \u200b \u200b Weighted-average common shares outstanding \u2013 basic \u200b 66,572 \u200b 70,383 Effect of stock options (1) \u200b 618 \u200b 632 Weighted-average common shares outstanding \u2013 assuming dilution \u200b 67,190 \u200b 71,015 \u200b \u200b \u200b \u200b \u200b \u200b \u200b Earnings per share: \u200b \u200b Earnings per share-basic \u200b $ 7.24 \u200b $ 7.13 Earnings per share-assuming dilution \u200b $ 7.17 \u200b $ 7.06 \u200b \u200b \u200b \u200b \u200b \u200b \u200b Antidilutive potential common shares not included in the calculation of diluted earnings per share: \u200b \u200b Stock options (1) \u200b \nram; drum and rotor resurfacing; custom hydraulic hoses;\u00a0professional paint shop mixing and related materials; and machine shops.",
+      "score": 0.973
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Based on existing facts and historical patterns, the Company accrues for litigation losses in instances where an adverse outcome is probable and the Company is able to reasonably estimate the probable loss in accordance with Accounting Standard Codification 450-20.",
+      "score": -0.8074
+    },
+    {
+      "sent": "Based on existing facts and historical patterns, the Company accrues for litigation losses in instances where an adverse outcome is probable and the Company is able to reasonably estimate the probable loss in accordance with Accounting Standard Codification 450-20.",
+      "score": -0.8074
+    },
+    {
+      "sent": "Risk Factors \u200b As of March\u00a031,\u00a02022, there have been no material changes to the risk factors set forth in our Annual Report on Form 10-K for the year ended December\u00a031,\u00a02021.",
+      "score": -0.6597
+    }
+  ],
+  "forward_snippets": [
+    "\u200b We believe the key drivers of current and future long-term demand for the products sold within the automotive aftermarket include the number of U.S.",
+    "However, the current 2022 outlook for the SAAR is estimated to be approximately 13.3 million, which again remains below the historical average.",
+    "While the annual changes to the vehicle population resulting from new vehicle sales and the fluctuation in vehicle scrappage rates in any given year represent a small percentage of the total light vehicle population and have a muted impact on the total number and average age of vehicles on the road over the short term, we believe our business benefits from the current environment of a new vehicle scarcity and higher than typical used vehicle prices, as consumers are more willing to continue to invest in their current vehicle.",
+    "\u200b We believe the increase in average vehicle age over the long-term can be attributed to better engineered and manufactured vehicles, which can be reliably driven at higher mileages due to better quality power trains, interiors and exteriors, and the consumer\u2019s willingness to invest in maintaining these higher-mileage, better built vehicles.",
+    "We believe consumers will continue to invest in these reliable, higher-quality, higher-mileage vehicles and these investments, along with an increasing total light vehicle fleet, will support continued demand for automotive aftermarket products."
+  ]
+}

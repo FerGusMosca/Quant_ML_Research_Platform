@@ -1,0 +1,47 @@
+{
+  "symbol": "ROST",
+  "year": 2023,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2706,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.155
+  },
+  "top_positive": [
+    {
+      "sent": "As of April\u00a029, 2023, we had no borrowings or standby letters of credit outstanding under the Credit Facility, the $1.3 billion Credit Facility remained in place and ava\n interest (income) expense, net increased $49.1\u00a0million compared to the three month period ended April\u00a030, 2022, primarily due to increased interest income from higher interest rates.",
+      "score": 0.9674
+    },
+    {
+      "sent": "The table below shows the components of interest expense and income for the three month periods ended April\u00a029, 2023 and April\u00a030, 2022: Three Months Ended ($000) April 29, 2023 April 30, 2022 Interest expense on long-term debt $ 21,166 $ 21,154 Other interest expense 373 388 Capitalized interest ( 2,108 ) ( 2,651 ) Interest income ( 50,828 ) ( 1,195 ) Interest (income) expense, net $ ( 31,397 ) $ 17,696 13 Note F: Taxes on Earnings The Company\u2019s effective tax rate for the three month periods ended April\u00a029, 2023 and April\u00a030, 2022, was approximately 24 % and 25 %, respectively.",
+      "score": 0.9638
+    },
+    {
+      "sent": "The table below shows the components of interest expense and income for the three month periods ended April\u00a029, 2023 and April\u00a030, 2022: Three Months Ended ($000) April 29, 2023 April 30, 2022 Interest expense on long-term debt $ 21,166 $ 21,154 Other interest expense 373 388 Capitalized interest ( 2,108 ) ( 2,651 ) Interest income ( 50,828 ) ( 1,195 ) Interest (income) expense, net $ ( 31,397 ) $ 17,696 13 Note F: Taxes on Earnings The Company\u2019s effective tax rate for the three month periods ended April\u00a029, 2023 and April\u00a030, 2022, was approximately 24 % and 25 %, respectively.",
+      "score": 0.9638
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "\u2022 An additional public health or public safety crisis, demonstrations, natural or man-made disaster in California or in another region where we have a concentration of stores, offices, or a distribution center that could harm our business.",
+      "score": -0.8126
+    },
+    {
+      "sent": "\u2022 An additional public health or public safety crisis, demonstrations, natural or man-made disaster in California or in another region where we have a concentration of stores, offices, or a distribution center that could harm our business.",
+      "score": -0.8126
+    },
+    {
+      "sent": "\u2022 An additional public health or public safety crisis, demonstrations, natural or man-made disaster in California or in another region where we have a concentration of stores, offices, or a distribution center that could harm our business.",
+      "score": -0.8126
+    }
+  ],
+  "forward_snippets": [
+    "The fair value is estimated by obtaining comparable market quotes which are considered to be Level 1 inputs under the fair value measurements and disclosures guidance.",
+    "The Company\u2019s effective tax rate is impacted by changes in tax law and accounting guidance, location of new stores, level of earnings, tax effects associated with stock-based compensation, and uncertain tax positions.",
+    "Ross is the largest off-price apparel and home fashion chain in the United States, wi\nguidance.",
+    "The Company\u2019s effective tax rate is impacted by changes in tax law and accounting guidance, location of new stores, level of earnings, tax effects associated with stock-based compensation, and uncertain tax positions.",
+    "The Company\u2019s effective tax rate is impacted by changes in tax law and accounting guidance, location of new stores, level of earnings, tax effects associated with stock-based compensation, and uncertain tax positions."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "BKNG",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2521,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.24
+  },
+  "top_positive": [
+    {
+      "sent": "These representations and warranties have been made solely for the benefit of the other parties to the applicable agreement and: \u2022 should not be treated as categorical statements of fact, but rather as a way of allocating the risk to one of the parties if those statements prove to be inaccurate; \u2022 may have been qualified by disclosures that were made to the other party in connection with the negotiation of the applicable agreement, which disclosures are not necessarily reflected in the agreement; \u2022 may apply standards of materiality in a way that is different from what may be viewed as material to you or other investors; and \u2022 were made only as of the date of the applicable agreement or such other date or dates as may be specified in the agreement and are subject to more recent developments.",
+      "score": 0.981
+    },
+    {
+      "sent": "These representations and warranties have been made solely for the benefit of the other parties to the applicable agreement and: \u2022 should not be treated as categorical statements of fact, but rather as a way of allocating the risk to one of the parties if those statements prove to be inaccurate; \u2022 may have been qualified by disclosures that were made to the other party in connection with the negotiation of the applicable agreement, which disclosures are not necessarily reflected in the agreement; \u2022 may apply standards of materiality in a way that is different from what may be viewed as material to you or other investors; and \u2022 were made only as of the date of the applicable agreement or such other date or dates as may be specified in the agreement and are subject to more recent developments.",
+      "score": 0.981
+    },
+    {
+      "sent": "Loyalty and Other Incentive Programs The Company provides loyalty programs, such as OpenTable's loyalty program, where participating consumers are awarded loyalty points on current transactions that can be redeemed in the future.",
+      "score": 0.9661
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Gross bookings resulting from reservations of room nights, rental car days, and airline tickets made through our agency and merchant categories for the years ended December\u00a031, 2021 and 2020 were as follows (numbers may not total due to rounding): Year Ended December 31, (in millions) Increase (Decrease) 2021 2020 Agency gross bookings $ 50,741 $ 24,475 107.3 % Merchant gross bookings 25,845 10,920 136.7 % Total gross bookings $ 76,586 $ 35,395 116.4 % Agency gross bookings are derived from travel-related transactions where we do not facilitate payments from travelers for the services provided, while merchant gross bookings are derived from services where we facilitate payments.",
+      "score": -0.946
+    },
+    {
+      "sent": "With any technical innovation such as the Connected Trip effort, there could be bugs, vulnerabilities and other system failures, which could result in lost business, harm to our brand or reputation, consumer complaints and other adverse consequences, any of which could adversely affect our business and results of operations.",
+      "score": -0.9153
+    },
+    {
+      "sent": "With any technical innovation such as the Connected Trip effort, there could be bugs, vulnerabilities and other system failures, which could result in lost business, harm to our brand or reputation, consumer complaints and other adverse consequences, any of which could adversely affect our business and results of operations.",
+      "score": -0.9153
+    }
+  ],
+  "forward_snippets": [
+    "We remain confident that over time there will be a strong recovery for travel demand globally, and are focused on executing on our key strategic priorities so we emerge from this period in a position of strength.",
+    "We continue to increase the collaboration, cooperation, and interdependency among our brands to provide consumers with the most comprehensive services and maximize the benefits of our scale.",
+    "We remain confident that over time there will be a strong recovery for travel demand globally, and are focused on executing on our key strategic priorities so we emerge from this period in a position of strength.",
+    "We continue to increase the collaboration, cooperation, and interdependency among our brands to provide consumers with the most comprehensive services and maximize the benefits of our scale.",
+    "2 Our Strategy We aim to demonstrate global leadership in online travel and restaurant reservation and related services by: \u2022 providing consumers with the most comprehensive choices and prices at any time, in any place, on any device; \u2022 making it easy for people to find, book, pay for, and experience their travel desires; \u2022 offering platforms, tools, and insights to our business partners to help them be successful; and \u2022 operating our business sustainably and supporting sustainable travel choices by our consumers and partners."
+  ]
+}

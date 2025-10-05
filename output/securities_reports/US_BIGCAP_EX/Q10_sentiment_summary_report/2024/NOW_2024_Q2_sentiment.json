@@ -1,0 +1,47 @@
+{
+  "symbol": "NOW",
+  "year": 2024,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2726,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.121
+  },
+  "top_positive": [
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS\u2019 EQUITY (in millions, except number of shares which are reflected in thousands) (unaudited) Three Months Ended June 30, 2024 Three Months Ended June 30, 2023 Common Stock Treasury Stock Additional Paid-in Capital Retained Earnings Accumulated Other Comprehensive Loss Total Stockholders\u2019 Equity Common Stock Additional Paid-in Capital Retained Earnings Accumulated Other Comprehensive Loss Total Stockholders\u2019 Equity Shares Amount Shares Amount Shares Amount Balance at beginning of the period 206,497 $ \u2014 ( 1,115 ) $ ( 707 ) $ 6,466 $ 2,416 $ ( 68 ) $ 8,107 203,740 $ \u2014 $ 5,182 $ 488 $ ( 70 ) $ 5,600 Common stock and Treasury stock issued under employee stock plans 470 \u2014 5 3 ( 3 ) \u2014 \u2014 \u2014 527 \u2014 \u2014 \u2014 \u2014 \u2014 Taxes paid related to net share settlement of equity awards \u2014 \u2014 \u2014 \u2014 ( 137 ) \u2014 \u2014 ( 137 ) \u2014 \u2014 ( 94 ) \u2014 \u2014 ( 94 ) Stock-based compensation \u2014 \u2014 \u2014 \u2014 444 \u2014 \u2014 444 \u2014 \u2014 397 \u2014 \u2014 397 Other comprehensive loss, net of tax \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 ( 10 ) ( 10 ) \u2014 \u2014 \u2014 \u2014 ( 21 ) ( 21 ) Net income \u2014 \u2014 \u2014 \u2014 \u2014 262 \u2014 262 \u2014 \u2014 \u2014 1,044 \u2014 1,044 Balance at end of the period 206,967 $ \u2014 ( 1,110 ) $ ( 704 ) $ 6,770 $ 2,678 $ ( 78 ) $ 8,666 204,267 $ \u2014 $ 5,485 $ 1,532 $ ( 91 ) $ 6,926 Six Months Ended June 30, 2024 Six Months Ended June 30, 2023 Common Stock Treasury Stock Additional Paid-in Capital Retained Earnings Accumulated Other Comprehensive Loss Total Stockholders\u2019 Equity Common Stock Additional Paid-in Capital Retained Earnings Accumulated Other Comprehensive Loss Total Stockholders\u2019 Equity Shares Amount Shares Amount Shares Amount Balance at beginning of the period 205,619 $ \u2014 ( 895 ) $ ( 535 ) $ 6,131 $ 2,069 $ ( 37 ) $ 7,628 202,882 $ \u2014 $ 4,796 $ 338 $ ( 102 ) $ 5,032 Common stock and Treasury Stock issued under employee stock plans 1,348 \u2014 10 6 125 \u2014 \u2014 131 1,385 \u2014 117 \u2014 \u2014 117 Common stock repurchased \u2014 \u2014 ( 225 ) ( 175 ) \u2014 \u2014 \u2014 ( 175 ) \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 Taxes paid related to net share settlement of equity awards \u2014 \u2014 \u2014 \u2014 ( 352 ) \u2014 \u2014 ( 352 ) \u2014 \u2014 ( 206 ) \u2014 \u2014 ( 206 ) Stock-based compensation \u2014 \u2014 \u2014 \u2014 866 \u2014 \u2014 866 \u2014 \u2014 778 \u2014 \u2014 778 Other comprehensive (loss) income, net of tax \u2014 \u2014 \u2014 \u2014 \u2014 \u2014 ( 41 ) ( 41 ) \u2014 \u2014 \u2014 \u2014 11 11 Net income \u2014 \u2014 \u2014 \u2014 \u2014 609 \u2014 609 \u2014 \u2014 \u2014 1,194 \u2014 1,194 Balance at end of the period 206,967 $ \u2014 ( 1,110 ) $ ( 704 ) $ 6,770 $ 2,678 $ ( 78 ) $ 8,666 204,267 $ \u2014 $ 5,485 $ 1,532 $ ( 91 ) $ 6,926 See accompanying notes to condensed consolidated financial statements 4 Table of Contents SERVICENOW, INC.",
+      "score": 0.9781
+    },
+    {
+      "sent": "CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (in millions, except number of shares which are reflected in thousands and per share data) (unaudited) Three Months Ended June 30, Six Months Ended June 30, 2024 2023 2024 2023 Revenues: Subscription $ 2,542 $ 2,075 $ 5,065 $ 4,099 Professional services and other 85 75 165 147 Total revenues 2,627 2,150 5,230 4,246 Cost of revenues (1) : Subscription 469 389 910 743 Professional services and other 83 82 162 166 Total cost of revenues 552 471 1,072 909 Gross profit 2,075 1,679 4,158 3,337 Operating expenses (1) : Sales and marketing 960 832 1,883 1,655 Research and development 643 521 1,249 1,013 General and administrative 232 209 454 408 Total operating expenses 1,835 1,562 3,586 3,076 Income from operations 240 117 572 261 Interest income 104 74 205 134 Other expense, net ( 10 ) ( 17 ) ( 18 ) ( 33 ) Income before income taxes 334 174 759 362 Provision for (benefit from) income taxes 72 ( 870 ) 150 ( 832 ) Net income $ 262 $ 1,044 $ 609 $ 1,194 Net income per share - basic $ 1.27 $ 5.12 $ 2.97 $ 5.86 Net income per share - diluted $ 1.26 $ 5.08 $ 2.93 $ 5.83 Weighted-average shares used to compute net income per share - basic 205,644 204,021 205,376 203,705 Weighted-average shares used to compute net income per share - diluted 207,799 205,351 207,740 204,690 Other comprehensive (loss) income: Foreign currency translation adjustments $ ( 17 ) $ \u2014 $ ( 47 ) $ 13 Unrealized loss on investments, net of tax ( 3 ) ( 21 ) ( 16 ) ( 2 ) Unrealized gain on derivative instruments, net of tax 10 \u2014 22 \u2014 Other comprehensive (loss) income ( 10 ) ( 21 ) ( 41 ) 11 Comprehensive income $ 252 $ 1,023 $ 568 $ 1,205 (1) Includes stock-based compensation as follows: 2 Table of Contents Three Months Ended June 30, Six Months Ended June 30, 2024 2023 2024 2023 Cost of revenues: Subscription $ 62 $ 50 $ 120 $ 96 Professional services and other 12 15 24 29 Operating expenses: Sales and marketing 141 120 275 246 Research and development 170 145 329 280 General and administrative 59 67 118 127 See accompanying notes to condensed consolidated financial statements 3 Table of Contents SERVICENOW, INC.",
+      "score": 0.9765
+    },
+    {
+      "sent": "As of June 30, 2024, we had 205.9 million shares of common stock, net of treasury stock, outstanding and had reserved shares of common stock for future issuance as follows (in thousands): June 30, 2024 Stock plans: Options outstanding 1,144 RSUs (1) 7,024 Shares of common stock available for future grants: Amended and Restated 2021 Equity Incentive Plan (2) 9,569 Amended and Restated 2012 Employee Stock Purchase Plan (2) 8,246 Total shares of common stock reserved for future issuance 25,983 (1) Represents the number of shares issuable upon settlement of outstanding restricted stock units (\u201cRSUs\u201d) and performance-based RSUs (\u201cPRSUs\u201d), as discussed in Note 13.",
+      "score": 0.9747
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The adverse consequences can include accidental or unlawful destruction, loss, alteration, unauthorized disclosure of or access to data; disruptions to our services; diversion of funds; litigation; indemnification and other contractual obligations; regulatory investigations; government fines and penalties; reputational damage; negative publicity; business and operational interruptions; loss of sales, customers, and partners; mitigation and remediation expenses; and other material costs and liabilities.",
+      "score": -0.9741
+    },
+    {
+      "sent": "The adverse consequences can include accidental or unlawful destruction, loss, alteration, unauthorized disclosure of or access to data; disruptions to our services; diversion of funds; litigation; indemnification and other contractual obligations; regulatory investigations; government fines and penalties; reputational damage; negative publicity; business and operational interruptions; loss of sales, customers, and partners; mitigation and remediation expenses; and other material costs and liabilities.",
+      "score": -0.9741
+    },
+    {
+      "sent": "Our growing business operations increase our exposure to cyberattacks by a range of actors, who have used and will continue to use assorted tactics, techniques, and procedures, including malicious code, ransomware, social engineering, business email compromises, supply chain attacks, denial of service attacks and similar internet-enabled, fraudulent activity, and the frequency of those attacks have become more common.",
+      "score": -0.836
+    }
+  ],
+  "forward_snippets": [
+    "For all available-for-sale debt securities that were in unrealized loss positions, we have determined that it is more likely than not we will hold the securities until maturity or a recovery of the cost basis.",
+    "RPO excludes contracts that are billed in arrears, such as certain time and materials contracts, as we apply the \u201cright to invoice\u201d practical expedient under relevant accounting guidance.",
+    "As of June 30, 2024, the total non-cancellable RPO under our contracts with customers was $ 18.6 billion and we expect to recognize revenues on approximately 47 % of these RPO over the following 12 months.",
+    "RPO excludes contracts that are billed in arrears, such as certain time and materials contracts, as we apply the \u201cright to invoice\u201d practical expedient under relevant accounting guidance.",
+    "As of June 30, 2024, the total non-cancellable RPO under our contracts with customers was $ 18.6 billion and we expect to recognize revenues on approximately 47 % of these RPO over the following 12 months."
+  ]
+}

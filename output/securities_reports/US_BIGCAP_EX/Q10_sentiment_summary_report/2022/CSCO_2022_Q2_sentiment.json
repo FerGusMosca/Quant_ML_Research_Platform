@@ -1,0 +1,47 @@
+{
+  "symbol": "CSCO",
+  "year": 2022,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1106,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.294
+  },
+  "top_positive": [
+    {
+      "sent": "CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME (in millions) (Unaudited) Three Months Ended Nine Months Ended April 30, 2022 May 1, 2021 April 30, 2022 May 1, 2021 Net income $ 3,044 $ 2,863 $ 8,997 $ 7,582 Available-for-sale investments: Change in net unrealized gains and losses, net of tax benefit (expense) of $ 45 and $ 120 for the third quarter and first nine months of fiscal 2022, respectively, and $ 30 and $ 47 for the corresponding periods of fiscal 2021, respectively ( 376 ) ( 85 ) ( 597 ) ( 103 ) Net (gains) losses reclassified into earnings, net of tax (benefit) expense of $ 2 and $ 7 for the third quarter and first nine months of fiscal 2022, respectively, and $ 5 and $ 12 for the corresponding periods of fiscal 2021, respectively \u2014 ( 17 ) ( 11 ) ( 34 ) ( 376 ) ( 102 ) ( 608 ) ( 137 ) Cash flow hedging instruments: Change in unrealized gains and losses, net of tax benefit (expense) of $( 10 ) and $( 14 ) for the third quarter and first nine months of fiscal 2022, respectively, and $( 5 ) and $( 4 ) for the corresponding periods of fiscal 2021, respectively 35 16 49 12 Net (gains) losses reclassified into earnings, net of tax (benefit) expense of $ 2 and $ 3 for the third quarter and first nine months of fiscal 2022, respectively, and $ 1 and $ 2 for the corresponding periods of fiscal 2021, respectively ( 10 ) ( 6 ) ( 12 ) ( 10 ) 25 10 37 2 Net change in cumulative translation adjustment and actuarial gains and losses net of tax benefit (expense) of $ 0 and $ 9 for the third quarter and first nine months of fiscal 2022, respectively, and $ 2 and $( 1 ) for the corresponding periods of fiscal 2021, respectively ( 323 ) 22 ( 475 ) 366 Other comprehensive income (loss) ( 674 ) ( 70 ) ( 1,046 ) 231 Comprehensive income $ 2,370 $ 2,793 $ 7,951 $ 7,813 See Notes to Consolidated Financial Statements.",
+      "score": 0.9807
+    },
+    {
+      "sent": "NOTES TO CONSOLIDATED FINANCIAL STATEMENTS (Continued) (Unaudited) The effect of derivative instruments designated as fair value hedges, recognized in interest and other income (loss), net is summarized as follows (in millions): Three Months Ended Nine Months Ended April 30, 2022 May 1, 2021 April 30, 2022 May 1, 2021 Interest rate derivatives: Hedged items $ 54 $ 25 $ 112 $ 58 Derivatives designated as hedging instruments ( 55 ) ( 25 ) ( 114 ) ( 59 ) Total $ ( 1 ) $ \u2014 $ ( 2 ) $ ( 1 ) The effect on the Consolidated Statements of Operations of derivative instruments not designated as hedges is summarized as follows (in millions): GAINS (LOSSES) FOR THE THREE MONTHS ENDED GAINS (LOSSES) FOR THE NINE MONTHS ENDED Derivatives Not Designated as Hedging Instruments Line Item in Statements of Operations April 30, 2022 May 1, 2021 April 30, 2022 May 1, 2021 Foreign currency derivatives Other income (loss), net $ ( 99 ) $ ( 12 ) $ ( 155 ) $ 35 Total return swaps\u2014deferred compensation Operating expenses and other ( 38 ) 45 ( 58 ) 144 Equity derivatives Other income (loss), net 5 5 6 19 Total $ ( 132 ) $ 38 $ ( 207 ) $ 198 The notional amounts of our outstanding derivatives are summarized as follows (in millions): April 30, 2022 July 31, 2021 Foreign currency derivatives $ 4,501 $ 4,139 Interest rate derivatives 2,000 2,000 Total return swaps\u2014deferred compensation 689 730 Total $ 7,190 $ 6,869 (b) Offsetting of Derivative Instruments We present our derivative instruments at gross fair values in the Consolidated Balance Sheets.",
+      "score": 0.9746
+    },
+    {
+      "sent": "The principal competitive factors in the markets in which we presently compete and may compete in the future include the ability to sell successful business outcomes; the ability to provide a broad range of networking and communications products 73 Table of Contents and services; product performance; price; the ability to introduce new products, including providing continuous new customer value and products with price-performance advantages; the ability to reduce production costs; the ability to provide value-added features such as security, reliability, and investment protection; conformance to standards; market presence; the ability to provide financing; and disruptive technology shifts and new business models.",
+      "score": 0.9652
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Risks Related to Cybersecurity and Regulations Cyber attacks, data breaches or malware may disrupt our operations, harm our operating results and financial condition, and damage our reputation or otherwise materially harm our business; and cyber attacks or data breaches on our customers\u2019 or third-party providers\u2019 networks, or in cloud-based services provided to, by, or enabled by us, could result in claims of liability against us, give rise to legal and/or regulatory action, damage our reputation or otherwise materially harm our business.",
+      "score": -0.9753
+    },
+    {
+      "sent": "Risks Related to Cybersecurity and Regulations Cyber attacks, data breaches or malware may disrupt our operations, harm our operating results and financial condition, and damage our reputation or otherwise materially harm our business; and cyber attacks or data breaches on our customers\u2019 or third-party providers\u2019 networks, or in cloud-based services provided to, by, or enabled by us, could result in claims of liability against us, give rise to legal and/or regulatory action, damage our reputation or otherwise materially harm our business.",
+      "score": -0.9753
+    },
+    {
+      "sent": "A reduction or interruption in supply, including disruptions on our global supply chain as a result of the COVID-19 pandemic or a significant natural disaster (including as a result of climate change); a significant increase in the price of one or more components; a failure to adequately authorize procurement of inventory by our contract manufacturers; a failure to appropriately cancel, reschedule, or adjust our requirements based on our business needs; or a decrease in demand for our products could materially adversely affect our business, operating results, and financial condition and could materially damage customer relationships.",
+      "score": -0.9456
+    }
+  ],
+  "forward_snippets": [
+    "However, we believe that the disclosures are adequate to make the information presented not misleading.",
+    "(b) Recent Accounting Standards or Updates Not Yet Effective Reference Rate Reform In March 2020, the FASB issued an accounting standard update and subsequent amendments that provide optional expedients and exceptions to the current guidance on contract modification and hedging relationships to ease the financial reporting burden of the expected market transition from the London InterBank Offered Rate (LIBOR) and other 9 Table of Contents CISCO SYSTEMS, INC.",
+    "We recognize revenue upon transfer of control of promised goods or services in a contract with a customer in an amount that reflects the consideration we expect to receive in exchange for those products or services.",
+    "Significant Judgments Revenue is allocated among these performance obligations in a manner that reflects the consideration that we expect to be entitled to for the promised goods or services based on standalone selling prices (SSP).",
+    "(b) Recent Accounting Standards or Updates Not Yet Effective Reference Rate Reform In March 2020, the FASB issued an accounting standard update and subsequent amendments that provide optional expedients and exceptions to the current guidance on contract modification and hedging relationships to ease the financial reporting burden of the expected market transition from the London InterBank Offered Rate (LIBOR) and other 9 Table of Contents CISCO SYSTEMS, INC."
+  ]
+}

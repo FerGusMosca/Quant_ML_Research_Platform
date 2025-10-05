@@ -1,0 +1,47 @@
+{
+  "symbol": "PYPL",
+  "year": 2022,
+  "Period": "Y2022",
+  "report_type": "K10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.199,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.218
+  },
+  "top_positive": [
+    {
+      "sent": "NOTES\u00a0TO CONSOLIDATED FINANCIAL STATEMENTS\u2014(Continued) ACCUMULATED OTHER COMPREHENSIVE INCOME (LOSS) The following table summarizes the changes in accumulated balances of other comprehensive income (loss) for the year ended December\u00a031, 2021: Unrealized Gains (Losses) on Cash Flow Hedges Unrealized Gains (Losses) on Investments Foreign Currency Translation Adjustment ( \u201c CTA \u201d) Net Investment Hedge CTA Gain Estimated Tax (Expense) Benefit Total (In millions) Beginning balance $ ( 323 ) $ 11 $ ( 198 ) $ 24 $ 2 $ ( 484 ) Other comprehensive income (loss) before reclassifications 332 ( 98 ) ( 72 ) \u2014 ( 4 ) 158 Less: Amount of loss reclassified from AOCI ( 190 ) \u2014 \u2014 \u2014 \u2014 ( 190 ) Net current period other comprehensive income (loss) 522 ( 98 ) ( 72 ) \u2014 ( 4 ) 348 Ending balance $ 199 $ ( 87 ) $ ( 270 ) $ 24 $ ( 2 ) $ ( 136 ) The following table summarizes the changes in accumulated balances of other comprehensive income (loss) for the year ended December\u00a031, 2020: Unrealized Gains (Losses) on Cash Flow Hedges Unrealized Gains on Investments Foreign CTA Net Investment Hedge CTA Gain (Loss) Estimated Tax Benefit Total (In millions) Beginning balance $ 6 $ 2 $ ( 150 ) $ ( 31 ) $ \u2014 $ ( 173 ) Other comprehensive income (loss) before reclassifications ( 309 ) 9 ( 48 ) 55 2 ( 291 ) Less: Amount of gain reclassified from AOCI 20 \u2014 \u2014 \u2014 \u2014 20 Net current period other comprehensive income (loss) ( 329 ) 9 ( 48 ) 55 2 ( 311 ) Ending balance $ ( 323 ) $ 11 $ ( 198 ) $ 24 $ 2 $ ( 484 ) The following table summarizes the changes in accumulated balances of other comprehensive income (loss) for the year ended December\u00a031, 2019: Unrealized Gains (Losses) on Cash Flow Hedges Unrealized Gains (Losses) on Investments Foreign CTA Net Investment Hedge CTA Loss Estimated Tax (Expense) Benefit Total (In millions) Beginning balance $ 182 $ ( 13 ) $ ( 93 ) $ \u2014 $ 2 $ 78 Other comprehensive income (loss) before reclassifications 62 14 ( 57 ) ( 31 ) ( 2 ) ( 14 ) Less: Amount of gain (loss) reclassified from AOCI 238 ( 1 ) \u2014 \u2014 \u2014 237 Net current period other comprehensive income (loss) ( 176 ) 15 ( 57 ) ( 31 ) ( 2 ) ( 251 ) Ending balance $ 6 $ 2 $ ( 150 ) $ ( 31 ) $ \u2014 $ ( 173 ) 85 Table of Contents PayPal Holdings, Inc.",
+      "score": 0.9912
+    },
+    {
+      "sent": "Our strategy to drive growth in our business includes the following: \u2022 Growing our core business : through expanding our global capabilities, customer base and scale, increasing our customers\u2019 use of our products and services by better addressing their everyday needs related to accessing, managing, and moving money, creating seamless checkout experiences, and expanding the adoption of our solutions by merchants and consumers; \u2022 Expanding our value proposition for merchants and consumers : by being technology and platform agnostic, partnering with our merchants to grow and expand their business online and in-store, and providing consumers with simple, secure, and flexible ways to manage and move money across different markets, merchants, and platforms and simplifying their shopping experiences; \u2022 Forming strategic partnerships : by building new strategic partnerships to provide better experiences for our customers, offer greater choice and flexibility, acquire new customers, and reinforce our role in the payments ecosystem; and \u2022 Seeking new areas of growth : organically and through acquisitions and strategic investments in our existing and new international markets around the world and focusing on innovation in both the digital and physical world.",
+      "score": 0.9801
+    },
+    {
+      "sent": "CONSOLIDATED BALANCE SHEETS As of December 31, 2021 2020 (In\u00a0millions, except par value) ASSETS Current assets: Cash and cash equivalents $ 5,197 $ 4,794 Short-term investments 4,303 8,289 Accounts receivable, net 800 577 Loans and interest receivable, net of allowances of $ 491 and $ 838 as of December\u00a031, 2021 and 2020, respectively 4,846 2,769 Funds receivable and customer accounts 36,141 33,418 Prepaid expenses and other current assets 1,287 1,148 Total current assets 52,574 50,995 Long-term investments 6,797 6,089 Property and equipment, net 1,909 1,807 Goodwill 11,454 9,135 Intangible assets, net 1,332 1,048 Other assets 1,737 1,305 Total assets $ 75,803 $ 70,379 LIABILITIES AND EQUITY Current liabilities: Accounts payable $ 197 $ 252 Funds payable and amounts due to customers 38,841 35,418 Accrued expenses and other current liabilities 3,755 2,648 Income taxes payable 236 129 Total current liabilities 43,029 38,447 Deferred tax liability and other long-term liabilities 2,998 2,930 Long-term debt 8,049 8,939 Total liabilities 54,076 50,316 Commitments and contingencies (Note 13) Equity: Common stock, $ 0.0001 par value; 4,000 shares authorized; 1,168 and 1,172 shares outstanding as of December\u00a031, 2021 and 2020, respectively \u2014 \u2014 Preferred stock, $ 0.0001 par value; 100 shares authorized, unissued \u2014 \u2014 Treasury stock at cost, 132 and 117 shares as of December\u00a031, 2021 and 2020, respectively ( 11,880 ) ( 8,507 ) Additional paid-in-capital 17,208 16,644 Retained earnings 16,535 12,366 Accumulated other comprehensive income (loss) ( 136 ) ( 484 ) Total PayPal stockholders\u2019 equity 21,727 20,019 Noncontrolling interest \u2014 44 Total equity 21,727 20,063 Total liabilities and equity $ 75,803 $ 7\near ended December\u00a031, 2021.",
+      "score": 0.9781
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Our systems and operations and those of our service providers and partners have experienced from time to time, and may experience in the future, business interruptions or degradation because of distributed denial-of-service and other cyberattacks, insider threats, hardware and software defects or malfunctions, human error, earthquakes, hurricanes, floods, fires, and other natural disasters, public health crises (including pandemics), power losses, disruptions in telecommunications services, fraud, military or political conflicts, terrorist attacks, computer viruses or other malware, or other events.",
+      "score": -0.9867
+    },
+    {
+      "sent": "Our systems and operations and those of our service providers and partners have experienced from time to time, and may experience in the future, business interruptions or degradation because of distributed denial-of-service and other cyberattacks, insider threats, hardware and software defects or malfunctions, human error, earthquakes, hurricanes, floods, fires, and other natural disasters, public health crises (including pandemics), power losses, disruptions in telecommunications services, fraud, military or political conflicts, terrorist attacks, computer viruses or other malware, or other events.",
+      "score": -0.9867
+    },
+    {
+      "sent": "Users have attempted, and may attempt in the future, to use our payments platform for illegal activities or improper uses, such as money laundering, terrorist financing, sanctions evasion, illegal online gambling, fraudulent sales of goods or services, illegal telemarketing activities, illegal sales of prescription medications or controlled substances, piracy of software, movies, music, and other copyrighted or trademarked goods (in particular, digital goods), bank fraud, child pornography, human trafficking, prohibited sales of alcoholic beverages or tobacco products, securities fraud, pyramid or ponzi schemes, or the facilitation of other illegal or improper activity.",
+      "score": -0.9865
+    }
+  ],
+  "forward_snippets": [
+    "We believe that effective management of environmental, social, and governance (\u201cESG\u201d) risks and opportunities is essential to deliver on our mission and strategy.",
+    "We believe that they help stimulate the creativity and engagement of our global workforce to deliver products and services designed to meet the diverse needs of our customers.",
+    "We believe that effective management of environmental, social, and governance (\u201cESG\u201d) risks and opportunities is essential to deliver on our mission and strategy.",
+    "We believe that they help stimulate the creativity and engagement of our global workforce to deliver products and services designed to meet the diverse needs of our customers.",
+    "We believe that effective management of environmental, social, and governance (\u201cESG\u201d) risks and opportunities is essential to deliver on our mission and strategy."
+  ]
+}
