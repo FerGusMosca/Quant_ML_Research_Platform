@@ -26,6 +26,7 @@ from common.enums.trading_algo_strategy import TradingAlgoStrategy as tas, Tradi
 from common.util.downloaders.FRED_downloader import FredDownloader
 from common.util.downloaders.SEC_securities_downloader import SECSecuritiesDownloader
 from common.util.downloaders.finviz_news_downloader import FinVizNewsDownloader
+from common.util.downloaders.ib_income_statement import IBIncomeStatement
 from common.util.downloaders.k10_downloader import K10Downloader
 from common.util.downloaders.q10_downloader import Q10Downloader
 from common.util.downloaders.tradingview_downloader import TradingViewDownloader
@@ -477,6 +478,26 @@ class AlgosOrchestationLogic:
                 q10_files = Q10Downloader.download_q10s(symbol, cik, year, base_path)
                 self.logger.do_log(
                     f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded {len(q10_files)} Q10(s) for {symbol}",
+                    MessageType.INFO
+                )
+            except Exception as e:
+                self.logger.do_log(
+                    f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {str(e)}",
+                    MessageType.ERROR
+                )
+
+    def _run_download_last_income_statement(self,portfolio):
+        # ✅ Get securities from portfolio
+        securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
+        self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
+        ibIncomeStatementDownloader=IBIncomeStatement()
+        for i, sec in enumerate(securities):
+            symbol = sec.ticker
+            try:
+                files = ibIncomeStatementDownloader.download(symbol,portfolio=portfolio)
+
+                self.logger.do_log(
+                    f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded {len(files)} yearly Income Statements for {symbol}",
                     MessageType.INFO
                 )
             except Exception as e:
@@ -2356,6 +2377,8 @@ class AlgosOrchestationLogic:
             self._run_competition_summary_report(year, SECReports.K10.value,portfolio=portfolio)
         elif report_key.lower() == ReportType.FINVIZ_NEWS_DOWNLOAD.value:
             self._run_fin_viz_news_downloader(portfolio)
+        elif report_key.lower() == ReportType.DOWNLOAD_LAST_INCOME_STATEMENT.value:
+            self._run_download_last_income_statement(portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_YEARLY_INCOME_STATEMENT.value:
             self._run_yearly_income_statement(portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_QUARTERLY_INCOME_STATEMENT.value:
