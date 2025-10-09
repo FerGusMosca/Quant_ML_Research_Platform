@@ -1,0 +1,133 @@
+{
+  "symbol": "QCOM",
+  "year": 2025,
+  "period": "Q3",
+  "curated_text": "Symbol: QCOM. Year: 2025. Period: Q3. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: Apple Inc., the United States Court of Appeals, the Ninth Circuit, Ninth Circuit, Qualcomm, the Supreme Court, the Quebec Superior Court, the Haifa District Court, the Competition Appeal Tribunal, ParkerVision, Inc., QUALCOMM Incorporated, ParkerVision, RF, the Federal Circuit, Federal Circuit, Arm Ltd., Qualcomm Technologies, Inc., NuVia, Inc., Nuvia\u2019s Architecture License Agreement with Arm, Nuvia, Answer, the Technology License Agreement between, First Amended Complaint, the Qualcomm ALA, Contingent Losses. Context excerpt: competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution, as well as an order that we be enjoined from further unlawful conduct. On September 27, 2018, the court certified the class. We appealed the court\u2019s class certification order to the United States Court of Appeals for the Ninth Circuit (Ninth Circuit). On September 29, 2021, the Ninth Circuit vacated the class certification order, ruling that the district court had failed to correctly assess the propriety of applying California law to a nationwide class, and remanded the case to the district co",
+  "competition_summary": [
+    {
+      "competitor": "Apple Inc.",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "the United States Court of Appeals",
+      "mentions": 2,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "the Ninth Circuit",
+      "mentions": 3,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "Ninth Circuit",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "Qualcomm",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "the Supreme Court",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "the Quebec Superior Court",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "the Haifa District Court",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "the Competition Appeal Tribunal",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "ParkerVision, Inc.",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "QUALCOMM Incorporated",
+      "mentions": 4,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "ParkerVision",
+      "mentions": 5,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "RF",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "the Federal Circuit",
+      "mentions": 2,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "Federal Circuit",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "Arm Ltd.",
+      "mentions": 2,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "Qualcomm Technologies, Inc.",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "NuVia, Inc.",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "Nuvia\u2019s Architecture License Agreement with Arm",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "Nuvia",
+      "mentions": 2,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "Answer",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "the Technology License Agreement between",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "First Amended Complaint",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "the Qualcomm ALA",
+      "mentions": 5,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    },
+    {
+      "competitor": "Contingent Losses",
+      "mentions": 1,
+      "context": "competition laws by, among other things, refusing to license standard-essential patents to our competitors, conditioning the supply of certain of our baseband chipsets on the purchaser first agreeing to license our entire patent portfolio, entering into exclusive deals with companies, including Apple Inc., and charging unreasonably high royalties that do not comply with our commitments to standard setting organizations. The complaint sought unspecified damages and disgorgement and/or restitution"
+    }
+  ]
+}

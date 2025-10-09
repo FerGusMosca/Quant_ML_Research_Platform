@@ -1,0 +1,23 @@
+{
+  "symbol": "MCD",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: MCD. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: IEO, McDonald\u2019s, System. Context excerpt: competition in our markets, which could hurt our business. We compete primarily in the IEO segment, which is highly competitive. We also face sustained, intense competition from traditional, fast casual and other competitors, which may include many non-traditional market participants such as convenience stores, grocery stores, coffee shops and online retailers. We expect our environment to continue to be highly competitive and our results in any particular reporting period may be impacted by a contracting IEO segment or by new or continuing actions, product offerings, technologies or consolidation of our competitors and third-party partners, which may have short- and long-term impacts on our results. We compete primarily on the basis of product choice, quality, affordability, service and location. In particular, we believe our ability to compete successfully in the current market environment depends on our ability to improve existing products, successfully develop and introduce new pro",
+  "competition_summary": [
+    {
+      "competitor": "IEO",
+      "mentions": 2,
+      "context": "competition in our markets, which could hurt our business. We compete primarily in the IEO segment, which is highly competitive. We also face sustained, intense competition from traditional, fast casual and other competitors, which may include many non-traditional market participants such as convenience stores, grocery stores, coffee shops and online retailers. We expect our environment to continue to be highly competitive and our results in any particular reporting period may be impacted by a c"
+    },
+    {
+      "competitor": "McDonald\u2019s",
+      "mentions": 3,
+      "context": "competition in our markets, which could hurt our business. We compete primarily in the IEO segment, which is highly competitive. We also face sustained, intense competition from traditional, fast casual and other competitors, which may include many non-traditional market participants such as convenience stores, grocery stores, coffee shops and online retailers. We expect our environment to continue to be highly competitive and our results in any particular reporting period may be impacted by a c"
+    },
+    {
+      "competitor": "System",
+      "mentions": 2,
+      "context": "competition in our markets, which could hurt our business. We compete primarily in the IEO segment, which is highly competitive. We also face sustained, intense competition from traditional, fast casual and other competitors, which may include many non-traditional market participants such as convenience stores, grocery stores, coffee shops and online retailers. We expect our environment to continue to be highly competitive and our results in any particular reporting period may be impacted by a c"
+    }
+  ]
+}

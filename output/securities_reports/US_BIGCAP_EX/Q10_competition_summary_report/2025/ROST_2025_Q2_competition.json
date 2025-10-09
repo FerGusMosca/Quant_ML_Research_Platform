@@ -1,0 +1,78 @@
+{
+  "symbol": "ROST",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: ROST. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: SG&A, Financial Condition Liquidity, Capital Resources, Facility, Consolidated Financial Statements, Current Liabilities, Board of Directors, treasury, The Board of Directors, Credit Facility, Contractual Obligations, \u2022 Unseasonable, the Credit Facility, Internal Control Over Financial Reporting. Context excerpt: competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect to open a total of approximately 90 new stores this year. We expect to open 31 stores in the three month period ending August 2, 2025, including 28 Ross and three dd\u2019s DISCOUNTS locations. 18 The following table summarizes the stores opened and closed during the three month periods ended May\u00a03, 2025 and May\u00a04, 2024: Three Months Ended Store Count May 3, 2025 May 4, 2024 Ross Dress for Less Beginning of the period 1,831 1,764 Opened in the period 16 11 Closed in the period \u2014 \u2014 Total Ross Dress for",
+  "competition_summary": [
+    {
+      "competitor": "SG&A",
+      "mentions": 2,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    },
+    {
+      "competitor": "Financial Condition Liquidity",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    },
+    {
+      "competitor": "Capital Resources",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    },
+    {
+      "competitor": "Facility",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    },
+    {
+      "competitor": "Consolidated Financial Statements",
+      "mentions": 3,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    },
+    {
+      "competitor": "Current Liabilities",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 2,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    },
+    {
+      "competitor": "treasury",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    },
+    {
+      "competitor": "The Board of Directors",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    },
+    {
+      "competitor": "Credit Facility",
+      "mentions": 2,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    },
+    {
+      "competitor": "Contractual Obligations",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    },
+    {
+      "competitor": "\u2022 Unseasonable",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    },
+    {
+      "competitor": "the Credit Facility",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    },
+    {
+      "competitor": "Internal Control Over Financial Reporting",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that consumers\u2019 focus on value and convenience provide opportunities for us to gain market share. We opened 19 new stores in the first quarter of fiscal 2025 and expect t"
+    }
+  ]
+}

@@ -89,7 +89,7 @@ class SentimentSummaryReport:
 
     # -------- Public API --------
     def run(self) -> None:
-        """Process filings and save one *_sentiment.json per symbol under the YEAR folder."""
+        """Process fifings and save one *_sentiment.json per symbol under the YEAR folder."""
         files = [f for f in os.listdir(self.input_dir) if f.lower().endswith(".html")]
         if self.whitelist:
             files = [f for f in files if f.split("_")[0].upper() in self.whitelist]
@@ -107,6 +107,20 @@ class SentimentSummaryReport:
                 result = self._score_sections(sections)
                 period=self._extract_period_from_filename(file)
 
+
+                curated_text = (
+                        f"Symbol: {symbol}. Year: {self.year}. "
+                        f"Period: {period}. ReportType: {self.report_type}. "
+                        "Section: Management Discussion and Analysis (MD&A). "
+                        "Key metrics include sentiment, forward outlook, and risk hedging. "
+                        + " Top positive sentences: "
+                        + " ".join(p["sent"] for p in result["top_positive"])
+                        + " Top negative sentences: "
+                        + " ".join(n["sent"] for n in result["top_negative"])
+                        + " Forward-looking snippets: "
+                        + " ".join(result["forward_snippets"])
+                )
+
                 out = {
                     "symbol": symbol,
                     "year": self.year,
@@ -116,7 +130,9 @@ class SentimentSummaryReport:
                     "top_positive": result["top_positive"],
                     "top_negative": result["top_negative"],
                     "forward_snippets": result["forward_snippets"],
+                    "curated_text": curated_text  # ← nuevo campo
                 }
+
                 out_path = os.path.join(self.output_dir, f"{symbol}_{self.year}_{period}_sentiment.json")
                 with open(out_path, "w", encoding="utf-8") as f:
                     json.dump(out, f, indent=2)

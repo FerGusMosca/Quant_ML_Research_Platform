@@ -1,0 +1,163 @@
+{
+  "symbol": "UNH",
+  "year": 2025,
+  "period": "Q1",
+  "curated_text": "Symbol: UNH. Year: 2025. Period: Q1. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: Medicare Advantage, Medicare, Medicaid, IRA, UnitedHealthcare, Consolidated, UnitedHealth Group, MCR, the Condensed Consolidated Financial Statements, Optum Health, UnitedHealthcare Employer & Individual - Domestic, UnitedHealthcare Employer & Individual - Global, UnitedHealthcare Employer & Individual - Total, UnitedHealthcare Medicare & Retirement, UnitedHealthcare Community & State, Total UnitedHealthcare, Optum Health Revenues, Optum Insight Revenues, Optum Insight, CAPITAL RESOURCES Liquidity Summary, Financial Condition, Contents Capital Resources, Management\u2019s Discussion and Analysis of Financial Condition, Short-Term Borrowings, the Consolidated Financial Statements, Moody\u2019s S&P, A2 Negative A+ Negative A Stable A Negative Commercial, HMO, Board of Directors, The Board of Directors, Consolidated Financial Statements. Context excerpt: competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discussed below in \u201cRegulatory Trends and Uncertainties\u201d and we have observed increased care patterns as discussed below in \u201cMedical Cost Trends,\u201d which may impact pricing and benefit design in future periods. 16 Table of Contents Optum Health\u2019s fully accountable value-based care businesses have been impacted by Medicare funding reductions and have also seen continued medical cost trend pressures, which may impact future pricing in the markets we continue to participate. The Medicaid redetermination ",
+  "competition_summary": [
+    {
+      "competitor": "Medicare Advantage",
+      "mentions": 8,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Medicare",
+      "mentions": 12,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Medicaid",
+      "mentions": 5,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "IRA",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "UnitedHealthcare",
+      "mentions": 9,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Consolidated",
+      "mentions": 3,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "UnitedHealth Group",
+      "mentions": 4,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "MCR",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "the Condensed Consolidated Financial Statements",
+      "mentions": 3,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Optum Health",
+      "mentions": 4,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "UnitedHealthcare Employer & Individual - Domestic",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "UnitedHealthcare Employer & Individual - Global",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "UnitedHealthcare Employer & Individual - Total",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "UnitedHealthcare Medicare & Retirement",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "UnitedHealthcare Community & State",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Total UnitedHealthcare",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Optum Health Revenues",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Optum Insight Revenues",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Optum Insight",
+      "mentions": 2,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "CAPITAL RESOURCES Liquidity Summary",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Financial Condition",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Contents Capital Resources",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Management\u2019s Discussion and Analysis of Financial Condition",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Short-Term Borrowings",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "the Consolidated Financial Statements",
+      "mentions": 4,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Moody\u2019s S&P",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "A2 Negative A+ Negative A Stable A Negative Commercial",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "HMO",
+      "mentions": 2,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 2,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "The Board of Directors",
+      "mentions": 1,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    },
+    {
+      "competitor": "Consolidated Financial Statements",
+      "mentions": 2,
+      "context": "competition to continue as the industry adapts to individual and employer needs. Continued increased medical costs may impact both future pricing and benefit design, including for our individual exchange products in markets we choose to remain, and result in shifts between product categories for our employer benefits. These potential changes, along with certain regulatory impacts, may result in decreased membership in future periods. Medicare Advantage funding continues to be pressured, as discu"
+    }
+  ]
+}

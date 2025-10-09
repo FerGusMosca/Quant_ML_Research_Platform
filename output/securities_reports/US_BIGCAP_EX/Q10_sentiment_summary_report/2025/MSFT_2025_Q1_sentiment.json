@@ -1,0 +1,48 @@
+{
+  "symbol": "MSFT",
+  "year": 2025,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1732,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.284
+  },
+  "top_positive": [
+    {
+      "sent": "Development and deployment of defensive measures To defend against security threats to our internal infrastructure, our cloud-based services, and our customers\u2019 systems, we must continuously engineer more secure products and services, enhance security, threat detection, and reliability features, escalate and improve the deployment of software updates to address security vulnerabilities in our own products as well as those provided by others in a timely manner, develop mitigation technologies that help to secure customers from attacks even when software updates are not deployed, maintain the digital security infrastructure that protects the integrity of our network, products, and services, and provide security tools such as firewalls, anti-virus software, and advanced security and information about the need to deploy security measures and the impact of doing so.",
+      "score": 0.969
+    },
+    {
+      "sent": "Development and deployment of defensive measures To defend against security threats to our internal infrastructure, our cloud-based services, and our customers\u2019 systems, we must continuously engineer more secure products and services, enhance security, threat detection, and reliability features, escalate and improve the deployment of software updates to address security vulnerabilities in our own products as well as those provided by others in a timely manner, develop mitigation technologies that help to secure customers from attacks even when software updates are not deployed, maintain the digital security infrastructure that protects the integrity of our network, products, and services, and provide security tools such as firewalls, anti-virus software, and advanced security and information about the need to deploy security measures and the impact of doing so.",
+      "score": 0.969
+    },
+    {
+      "sent": "Development and deployment of defensive measures To defend against security threats to our internal infrastructure, our cloud-based services, and our customers\u2019 systems, we must continuously engineer more secure products and services, enhance security, threat detection, and reliability features, escalate and improve the deployment of software updates to address security vulnerabilities in our own products as well as those provided by others in a timely manner, develop mitigation technologies that help to secure customers from attacks even when software updates are not deployed, maintain the digital security infrastructure that protects the integrity of our network, products, and services, and provide security tools such as firewalls, anti-virus software, and advanced security and information about the need to deploy security measures and the impact of doing so.",
+      "score": 0.969
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "In addition, some users may also engage in fraudulent or abusive activities through our cloud-based and AI services, such as unauthorized account access, payment fraud, or terms of service violations including cryptocurrency mining or launching cyberattacks.",
+      "score": -0.9217
+    },
+    {
+      "sent": "In addition, some users may also engage in fraudulent or abusive activities through our cloud-based and AI services, such as unauthorized account access, payment fraud, or terms of service violations including cryptocurrency mining or launching cyberattacks.",
+      "score": -0.9217
+    },
+    {
+      "sent": "Failure to comply with content requirements may subject us to enhanced regulatory oversight, civil or criminal liability, or reputational damage, which could adversely affect our business, financial condition, and results of operations.",
+      "score": -0.91
+    }
+  ],
+  "forward_snippets": [
+    "In addition, we consider specific adverse conditions related to the financial health of, and business outlook for, the investee.",
+    "If we have plans to sell the security or it is more likely than not that we will be required to sell the security before recovery, then a decline in fair value below cost is recorded as an impairment charge in other income (expense), net and a new cost basis in the investment is established.",
+    "In addition, we consider specific adverse conditions related to the financial health of, and business outlook for, the investee.",
+    "If we have plans to sell the security or it is more likely than not that we will be required to sell the security before recovery, then a decline in fair value below cost is recorded as an impairment charge in other income (expense), net and a new cost basis in the investment is established.",
+    "As of the date of the agreement with Inflection, Repro\noutlook for, the investee."
+  ],
+  "curated_text": "Symbol: MSFT. Year: 2025. Period: Q1. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: Development and deployment of defensive measures To defend against security threats to our internal infrastructure, our cloud-based services, and our customers\u2019 systems, we must continuously engineer more secure products and services, enhance security, threat detection, and reliability features, escalate and improve the deployment of software updates to address security vulnerabilities in our own products as well as those provided by others in a timely manner, develop mitigation technologies that help to secure customers from attacks even when software updates are not deployed, maintain the digital security infrastructure that protects the integrity of our network, products, and services, and provide security tools such as firewalls, anti-virus software, and advanced security and information about the need to deploy security measures and the impact of doing so. Development and deployment of defensive measures To defend against security threats to our internal infrastructure, our cloud-based services, and our customers\u2019 systems, we must continuously engineer more secure products and services, enhance security, threat detection, and reliability features, escalate and improve the deployment of software updates to address security vulnerabilities in our own products as well as those provided by others in a timely manner, develop mitigation technologies that help to secure customers from attacks even when software updates are not deployed, maintain the digital security infrastructure that protects the integrity of our network, products, and services, and provide security tools such as firewalls, anti-virus software, and advanced security and information about the need to deploy security measures and the impact of doing so. Development and deployment of defensive measures To defend against security threats to our internal infrastructure, our cloud-based services, and our customers\u2019 systems, we must continuously engineer more secure products and services, enhance security, threat detection, and reliability features, escalate and improve the deployment of software updates to address security vulnerabilities in our own products as well as those provided by others in a timely manner, develop mitigation technologies that help to secure customers from attacks even when software updates are not deployed, maintain the digital security infrastructure that protects the integrity of our network, products, and services, and provide security tools such as firewalls, anti-virus software, and advanced security and information about the need to deploy security measures and the impact of doing so. Top negative sentences: In addition, some users may also engage in fraudulent or abusive activities through our cloud-based and AI services, such as unauthorized account access, payment fraud, or terms of service violations including cryptocurrency mining or launching cyberattacks. In addition, some users may also engage in fraudulent or abusive activities through our cloud-based and AI services, such as unauthorized account access, payment fraud, or terms of service violations including cryptocurrency mining or launching cyberattacks. Failure to comply with content requirements may subject us to enhanced regulatory oversight, civil or criminal liability, or reputational damage, which could adversely affect our business, financial condition, and results of operations. Forward-looking snippets: In addition, we consider specific adverse conditions related to the financial health of, and business outlook for, the investee. If we have plans to sell the security or it is more likely than not that we will be required to sell the security before recovery, then a decline in fair value below cost is recorded as an impairment charge in other income (expense), net and a new cost basis in the investment is established. In addition, we consider specific adverse conditions related to the financial health of, and business outlook for, the investee. If we have plans to sell the security or it is more likely than not that we will be required to sell the security before recovery, then a decline in fair value below cost is recorded as an impairment charge in other income (expense), net and a new cost basis in the investment is established. As of the date of the agreement with Inflection, Repro\noutlook for, the investee."
+}

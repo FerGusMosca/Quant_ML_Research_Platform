@@ -1,0 +1,88 @@
+{
+  "symbol": "COP",
+  "year": 2025,
+  "period": "Q1",
+  "curated_text": "Symbol: COP. Year: 2025. Period: Q1. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: E&P, Marathon Oil, PDVSA, \u2022 Uncertainty, SEC, ConocoPhillips, the Securities Exchange Act, ERP, Marathon Oil Corporation, Legal Proceedings ConocoPhillips, Equity Securities Millions of Dollars Period Total Number of Shares Purchased, Programs Approximate Dollar Value, Board of Directors, treasury, Omnibus Stock, Controller. Context excerpt: Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisition of Marathon Oil or any future asset dispositions or acquisitions we elect to pursue; potential disruption of our operations, including the diversion of management time and attention; our inability to realize anticipated cost savings or capital expenditure reductions; difficulties integrating acquired businesses and technologies; or other unanticipated changes. \u2022 Our inability to deploy the net proceeds from any asset dispositions that are pending or that we elect to undertake in the future ",
+  "competition_summary": [
+    {
+      "competitor": "E&P",
+      "mentions": 1,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "Marathon Oil",
+      "mentions": 2,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "PDVSA",
+      "mentions": 1,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "\u2022 Uncertainty",
+      "mentions": 1,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "SEC",
+      "mentions": 2,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "ConocoPhillips",
+      "mentions": 10,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "the Securities Exchange Act",
+      "mentions": 2,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "ERP",
+      "mentions": 1,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "Marathon Oil Corporation",
+      "mentions": 1,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "Legal Proceedings ConocoPhillips",
+      "mentions": 1,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "Equity Securities Millions of Dollars Period Total Number of Shares Purchased",
+      "mentions": 1,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "Programs Approximate Dollar Value",
+      "mentions": 1,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 1,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "treasury",
+      "mentions": 1,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "Omnibus Stock",
+      "mentions": 2,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    },
+    {
+      "competitor": "Controller",
+      "mentions": 1,
+      "context": "Competition and consolidation in the oil and gas E&P industry, including competition for sources of supply, services, personnel and equipment. \u2022 Any limitations on our access to capital or increase in our cost of capital or insurance, including as a result of illiquidity, changes or uncertainty in domestic or international financial markets, foreign currency exchange rate fluctuations or investment sentiment. \u2022 Challenges or delays to our execution of, or successful implementation of the acquisi"
+    }
+  ]
+}

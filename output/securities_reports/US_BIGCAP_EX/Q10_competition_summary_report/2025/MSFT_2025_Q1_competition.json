@@ -1,0 +1,88 @@
+{
+  "symbol": "MSFT",
+  "year": 2025,
+  "period": "Q1",
+  "curated_text": "Symbol: MSFT. Year: 2025. Period: Q1. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: Business Combinations \u2013 Valuation of Intangible Assets Accounting, Interest Rate Securities, Equity Securities, Fair Value Interest, Fair Value Credit, Fair Value Equity, PROCEDURES, Windows, OEM, AI, Nuance Communications, Inc., Activision Blizzard, Inc., the Federal Trade Commission, CYBERSECURITY, the Securities and Exchange Commission, Microsoft. Context excerpt: competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires significant judgments, including estimation of future cash flows, which is dependent on internal forecasts, estimation of the long-term rate of growth for our business, estimation of the useful life over which cash flows will occur, and determination of our weighted average cost of capital. The estimates used to calculate the fair value of a reporting unit change from year to year based on operating results, market conditions, and other factors. Changes in these estimates and assumptions could material",
+  "competition_summary": [
+    {
+      "competitor": "Business Combinations \u2013 Valuation of Intangible Assets Accounting",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "Interest Rate Securities",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "Equity Securities",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "Fair Value Interest",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "Fair Value Credit",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "Fair Value Equity",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "PROCEDURES",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "Windows",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "OEM",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "AI",
+      "mentions": 13,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "Nuance Communications, Inc.",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "Activision Blizzard, Inc.",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "the Federal Trade Commission",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "CYBERSECURITY",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "the Securities and Exchange Commission",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    },
+    {
+      "competitor": "Microsoft",
+      "mentions": 1,
+      "context": "competition, or sale or disposition of a significant portion of a reporting unit. Application of the goodwill impairment test requires judgment, including the identification of reporting units, assignment of assets and liabilities to reporting units, assignment of goodwill to reporting units, and determination of the fair value of each reporting unit. The fair value of each reporting unit is estimated primarily through the use of a discounted cash flow methodology. This analysis requires signifi"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "symbol": "AAPL",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: AAPL. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: The California District Court, the Company\u2019s App Review Guidelines, Company, the California District Court, the California District Court\u2019s, Legal Proceedings, Apple Inc., Risk Factors, EU, the U.S. Department of Commerce, COVID-19. Context excerpt: competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Review Guidelines violate California\u2019s unfair competition law and issued an injunction (the \u201c2021 Injunction\u201d) enjoining the Company from prohibiting developers from including in their apps buttons, external links, or other calls to action that direct customers to purchasing mechanisms other than the Company\u2019s in-app purchase system. The 2021 Injunction applies to apps on the U.S. storefronts of the iOS and iPadOS \u00ae App Stores. On January 16, 2024, the Company implemented a plan to comply with the 2021 Injunction and filed a statement of compliance with the California District Court. On September 30, 2024, the Company filed a motion with the California District Court to narrow or vacate the 2021 Injunction. On April 30, 2025, the California District Court found the Company to be in violation of the 2021 Injunction and enjoined the Company",
+  "competition_summary": [
+    {
+      "competitor": "The California District Court",
+      "mentions": 2,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Review Guidelines violate California\u2019s unfair competition law and issued an injunction (the \u201c2021 Injunction\u201d) enjoining the Company from prohibiting developers from including in their apps buttons, external links, or other calls to action that direct customers to purchasing mechanisms other than the Company\u2019s in-app purchase system. The 2021 Injun"
+    },
+    {
+      "competitor": "the Company\u2019s App Review Guidelines",
+      "mentions": 1,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Review Guidelines violate California\u2019s unfair competition law and issued an injunction (the \u201c2021 Injunction\u201d) enjoining the Company from prohibiting developers from including in their apps buttons, external links, or other calls to action that direct customers to purchasing mechanisms other than the Company\u2019s in-app purchase system. The 2021 Injun"
+    },
+    {
+      "competitor": "Company",
+      "mentions": 37,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Review Guidelines violate California\u2019s unfair competition law and issued an injunction (the \u201c2021 Injunction\u201d) enjoining the Company from prohibiting developers from including in their apps buttons, external links, or other calls to action that direct customers to purchasing mechanisms other than the Company\u2019s in-app purchase system. The 2021 Injun"
+    },
+    {
+      "competitor": "the California District Court",
+      "mentions": 3,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Review Guidelines violate California\u2019s unfair competition law and issued an injunction (the \u201c2021 Injunction\u201d) enjoining the Company from prohibiting developers from including in their apps buttons, external links, or other calls to action that direct customers to purchasing mechanisms other than the Company\u2019s in-app purchase system. The 2021 Injun"
+    },
+    {
+      "competitor": "the California District Court\u2019s",
+      "mentions": 1,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Review Guidelines violate California\u2019s unfair competition law and issued an injunction (the \u201c2021 Injunction\u201d) enjoining the Company from prohibiting developers from including in their apps buttons, external links, or other calls to action that direct customers to purchasing mechanisms other than the Company\u2019s in-app purchase system. The 2021 Injun"
+    },
+    {
+      "competitor": "Legal Proceedings",
+      "mentions": 1,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Review Guidelines violate California\u2019s unfair competition law and issued an injunction (the \u201c2021 Injunction\u201d) enjoining the Company from prohibiting developers from including in their apps buttons, external links, or other calls to action that direct customers to purchasing mechanisms other than the Company\u2019s in-app purchase system. The 2021 Injun"
+    },
+    {
+      "competitor": "Apple Inc.",
+      "mentions": 2,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Review Guidelines violate California\u2019s unfair competition law and issued an injunction (the \u201c2021 Injunction\u201d) enjoining the Company from prohibiting developers from including in their apps buttons, external links, or other calls to action that direct customers to purchasing mechanisms other than the Company\u2019s in-app purchase system. The 2021 Injun"
+    },
+    {
+      "competitor": "Risk Factors",
+      "mentions": 1,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Review Guidelines violate California\u2019s unfair competition law and issued an injunction (the \u201c2021 Injunction\u201d) enjoining the Company from prohibiting developers from including in their apps buttons, external links, or other calls to action that direct customers to purchasing mechanisms other than the Company\u2019s in-app purchase system. The 2021 Injun"
+    },
+    {
+      "competitor": "EU",
+      "mentions": 1,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Review Guidelines violate California\u2019s unfair competition law and issued an injunction (the \u201c2021 Injunction\u201d) enjoining the Company from prohibiting developers from including in their apps buttons, external links, or other calls to action that direct customers to purchasing mechanisms other than the Company\u2019s in-app purchase system. The 2021 Injun"
+    },
+    {
+      "competitor": "the U.S. Department of Commerce",
+      "mentions": 1,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Review Guidelines violate California\u2019s unfair competition law and issued an injunction (the \u201c2021 Injunction\u201d) enjoining the Company from prohibiting developers from including in their apps buttons, external links, or other calls to action that direct customers to purchasing mechanisms other than the Company\u2019s in-app purchase system. The 2021 Injun"
+    },
+    {
+      "competitor": "COVID-19",
+      "mentions": 1,
+      "context": "competition law based upon the Company\u2019s operation of its App Store. The California District Court found that certain provisions of the Company\u2019s App Review Guidelines violate California\u2019s unfair competition law and issued an injunction (the \u201c2021 Injunction\u201d) enjoining the Company from prohibiting developers from including in their apps buttons, external links, or other calls to action that direct customers to purchasing mechanisms other than the Company\u2019s in-app purchase system. The 2021 Injun"
+    }
+  ]
+}

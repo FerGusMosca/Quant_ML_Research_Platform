@@ -1,0 +1,48 @@
+{
+  "symbol": "NKE",
+  "year": 2025,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.1576,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.105
+  },
+  "top_positive": [
+    {
+      "sent": "THREE MONTHS ENDED NINE MONTHS ENDED (In millions, except per share data) FEBRUARY 28, 2025 FEBRUARY 29, 2024 FEBRUARY 28, 2025 FEBRUARY 29, 2024 Net income available to common stockholders $ 794 $ 1,172 $ 3,008 $ 4,200 Determination of shares: Weighted average common shares outstanding 1,478.1 1,513.2 1,487.6 1,520.8 Assumed conversion of dilutive stock options and awards 2.5 13.3 3.4 13.2 DILUTED WEIGHTED AVERAGE COMMON SHARES OUTSTANDING 1,480.6 1,526.5 1,491.0 1,534.0 Earnings per common share: Basic $ 0.54 $ 0.77 $ 2.02 $ 2.76 Diluted $ 0.54 $ 0.77 $ 2.02 $ 2.74 13 Table of Contents NOTE\u00a08 \u2014 RISK MANAGEMENT AND DERIVATIVES The Company is exposed to global market risks, including the effect of changes in foreign currency exchange rates and interest rates, and uses derivatives to manage financial exposures that occur in the normal course of business.",
+      "score": 0.9717
+    },
+    {
+      "sent": "The computations of diluted earnings per common share exclude restricted stock, restricted stock units and options, including shares under ESPPs, to purchase an estimated additional 77.1 million and 40.9 million shares of common stock outstanding for the three months ended February 28, 2025 and February 29, 2024, respectively, and 75.3 million and 42.6 million shares of common stock outstanding for the nine months ended February 28, 2025 and February 29, 2024, respectively, because the awards were assumed to be anti-dilutive.",
+      "score": 0.9477
+    },
+    {
+      "sent": "The computations of diluted earnings per common share exclude restricted stock, restricted stock units and options, including shares under ESPPs, to purchase an estimated additional 77.1 million and 40.9 million shares of common stock outstanding for the three months ended February 28, 2025 and February 29, 2024, respectively, and 75.3 million and 42.6 million shares of common stock outstanding for the nine months ended February 28, 2025 and February 29, 2024, respectively, because the awards were assumed to be anti-dilutive.",
+      "score": 0.9477
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "RESTRICTED STOCK AND RESTRICTED STOCK UNITS As of February\u00a028, 2025, the Company had $ 696 million of unrecognized compensation costs from restricted stock and restricted stock units, net of estimated forfeitures, to be recognized within Cost of sales or Operating overhead expense, as applicable, over a weighted average remaining period of 2.6 years.",
+      "score": -0.8971
+    },
+    {
+      "sent": "RESTRICTED STOCK AND RESTRICTED STOCK UNITS As of February\u00a028, 2025, the Company had $ 696 million of unrecognized compensation costs from restricted stock and restricted stock units, net of estimated forfeitures, to be recognized within Cost of sales or Operating overhead expense, as applicable, over a weighted average remaining period of 2.6 years.",
+      "score": -0.8971
+    },
+    {
+      "sent": "Restricted stock units include both time-vesting restricted stock units as well as performance-based restricted stock units (\"PSUs\").",
+      "score": -0.6908
+    }
+  ],
+  "forward_snippets": [
+    "As a result of this guidance, the Company recognized a one-time tax benefit related to fiscal 2023 tax positions in the first three months of fiscal 2024.",
+    "THREE MONTHS ENDED NINE MONTHS ENDED (In millions, except per share dat\nguidance, the Company recognized a one-time tax benefit related to fiscal 2023 tax positions in the first three months of fiscal 2024.",
+    "Despite these factors, we are focused on building a complete product portfolio, creating stories to inspire and emotionally connect with consumers, and elevating and growing the entire marketplace as we continue to take actions across the following areas: \u2022 Product Management: Reducing the supply of certain footwear products in the marketplace as we shift to new and innovative products and rebalance the mix of our footwear portfolio.",
+    "Over the next several quarters, we expect these actions will have a negative impact on our Revenues and gross margin as well as higher Demand creation expense.",
+    "However, we believe these actions will reignite brand momentum and reposition our business to drive long-term shareholder value."
+  ],
+  "curated_text": "Symbol: NKE. Year: 2025. Period: Q2. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: THREE MONTHS ENDED NINE MONTHS ENDED (In millions, except per share data) FEBRUARY 28, 2025 FEBRUARY 29, 2024 FEBRUARY 28, 2025 FEBRUARY 29, 2024 Net income available to common stockholders $ 794 $ 1,172 $ 3,008 $ 4,200 Determination of shares: Weighted average common shares outstanding 1,478.1 1,513.2 1,487.6 1,520.8 Assumed conversion of dilutive stock options and awards 2.5 13.3 3.4 13.2 DILUTED WEIGHTED AVERAGE COMMON SHARES OUTSTANDING 1,480.6 1,526.5 1,491.0 1,534.0 Earnings per common share: Basic $ 0.54 $ 0.77 $ 2.02 $ 2.76 Diluted $ 0.54 $ 0.77 $ 2.02 $ 2.74 13 Table of Contents NOTE\u00a08 \u2014 RISK MANAGEMENT AND DERIVATIVES The Company is exposed to global market risks, including the effect of changes in foreign currency exchange rates and interest rates, and uses derivatives to manage financial exposures that occur in the normal course of business. The computations of diluted earnings per common share exclude restricted stock, restricted stock units and options, including shares under ESPPs, to purchase an estimated additional 77.1 million and 40.9 million shares of common stock outstanding for the three months ended February 28, 2025 and February 29, 2024, respectively, and 75.3 million and 42.6 million shares of common stock outstanding for the nine months ended February 28, 2025 and February 29, 2024, respectively, because the awards were assumed to be anti-dilutive. The computations of diluted earnings per common share exclude restricted stock, restricted stock units and options, including shares under ESPPs, to purchase an estimated additional 77.1 million and 40.9 million shares of common stock outstanding for the three months ended February 28, 2025 and February 29, 2024, respectively, and 75.3 million and 42.6 million shares of common stock outstanding for the nine months ended February 28, 2025 and February 29, 2024, respectively, because the awards were assumed to be anti-dilutive. Top negative sentences: RESTRICTED STOCK AND RESTRICTED STOCK UNITS As of February\u00a028, 2025, the Company had $ 696 million of unrecognized compensation costs from restricted stock and restricted stock units, net of estimated forfeitures, to be recognized within Cost of sales or Operating overhead expense, as applicable, over a weighted average remaining period of 2.6 years. RESTRICTED STOCK AND RESTRICTED STOCK UNITS As of February\u00a028, 2025, the Company had $ 696 million of unrecognized compensation costs from restricted stock and restricted stock units, net of estimated forfeitures, to be recognized within Cost of sales or Operating overhead expense, as applicable, over a weighted average remaining period of 2.6 years. Restricted stock units include both time-vesting restricted stock units as well as performance-based restricted stock units (\"PSUs\"). Forward-looking snippets: As a result of this guidance, the Company recognized a one-time tax benefit related to fiscal 2023 tax positions in the first three months of fiscal 2024. THREE MONTHS ENDED NINE MONTHS ENDED (In millions, except per share dat\nguidance, the Company recognized a one-time tax benefit related to fiscal 2023 tax positions in the first three months of fiscal 2024. Despite these factors, we are focused on building a complete product portfolio, creating stories to inspire and emotionally connect with consumers, and elevating and growing the entire marketplace as we continue to take actions across the following areas: \u2022 Product Management: Reducing the supply of certain footwear products in the marketplace as we shift to new and innovative products and rebalance the mix of our footwear portfolio. Over the next several quarters, we expect these actions will have a negative impact on our Revenues and gross margin as well as higher Demand creation expense. However, we believe these actions will reignite brand momentum and reposition our business to drive long-term shareholder value."
+}

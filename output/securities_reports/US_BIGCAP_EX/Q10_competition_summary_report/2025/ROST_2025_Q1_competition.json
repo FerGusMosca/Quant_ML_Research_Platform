@@ -1,0 +1,78 @@
+{
+  "symbol": "ROST",
+  "year": 2025,
+  "period": "Q1",
+  "curated_text": "Symbol: ROST. Year: 2025. Period: Q1. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: SG&A, Taxes, OBBBA, Financial Condition Liquidity, Capital Resources, Credit Facility, Facility, Consolidated Financial Statements, Board of Directors, treasury, The Board of Directors, Contractual Obligations, \u2022 Unseasonable, Internal Control Over Financial Reporting. Context excerpt: competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric used by management and across the retail industry to evaluate the performance of existing stores by measuring the change in net sales for a particular period over the comparable prior period of equivalent length. We define comp store sales to be sales from stores that have been open for 14 complete months. Sales excluded from comp store sales (\u201cnon-comp store sales\u201d) consist primarily of sales from new stores that have been open for less than 14 complete months. Non-comp store sales also include s",
+  "competition_summary": [
+    {
+      "competitor": "SG&A",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    },
+    {
+      "competitor": "Taxes",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    },
+    {
+      "competitor": "OBBBA",
+      "mentions": 2,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    },
+    {
+      "competitor": "Financial Condition Liquidity",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    },
+    {
+      "competitor": "Capital Resources",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    },
+    {
+      "competitor": "Credit Facility",
+      "mentions": 4,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    },
+    {
+      "competitor": "Facility",
+      "mentions": 2,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    },
+    {
+      "competitor": "Consolidated Financial Statements",
+      "mentions": 3,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 2,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    },
+    {
+      "competitor": "treasury",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    },
+    {
+      "competitor": "The Board of Directors",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    },
+    {
+      "competitor": "Contractual Obligations",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    },
+    {
+      "competitor": "\u2022 Unseasonable",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    },
+    {
+      "competitor": "Internal Control Over Financial Reporting",
+      "mentions": 1,
+      "context": "competition, expected store profitability, and the ability to leverage overhead expenses. We continually evaluate opportunistic real estate acquisitions and opportunities for potential new store locations. We also evaluate our current store locations and determine store closures based on similar criteria. We continue to believe that customers\u2019 focus on value and convenience provide opportunities for us to gain market share. Sales Metrics Comparable store sales (\u201ccomp store sales\u201d) is a metric us"
+    }
+  ]
+}

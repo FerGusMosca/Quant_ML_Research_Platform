@@ -1,0 +1,28 @@
+{
+  "symbol": "INTC",
+  "year": 2025,
+  "period": "Q1",
+  "curated_text": "Symbol: INTC. Year: 2025. Period: Q1. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: Intel, 1 Table of Contents, AI, IP. Context excerpt: competition and rapid technological change in our industry; \u25aa the significant long-term and inherently risky investments we are making in R&D and manufacturing facilities that may not realize a favorable return; \u25aa the complexities and uncertainties in developing and implementing new semiconductor products and manufacturing process technologies; \u25aa our ability to time and scale our capital investments appropriately and successfully secure favorable alternative financing arrangements and government grants; \u25aa a potential pause or discontinuation of our pursuit of Intel 14A and other next generation leading-edge process technologies if we are unable to secure a significant external customer for Intel 14A; \u25aa implementing new business strategies and investing in new businesses and technologies; \u25aa changes in demand for our products; 1 Table of Contents \u25aa macroeconomic conditions and geopolitical tensions and conflicts, including geopolitical and trade tensions between the US and China, the imp",
+  "competition_summary": [
+    {
+      "competitor": "Intel",
+      "mentions": 2,
+      "context": "competition and rapid technological change in our industry; \u25aa the significant long-term and inherently risky investments we are making in R&D and manufacturing facilities that may not realize a favorable return; \u25aa the complexities and uncertainties in developing and implementing new semiconductor products and manufacturing process technologies; \u25aa our ability to time and scale our capital investments appropriately and successfully secure favorable alternative financing arrangements and government"
+    },
+    {
+      "competitor": "1 Table of Contents",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u25aa the significant long-term and inherently risky investments we are making in R&D and manufacturing facilities that may not realize a favorable return; \u25aa the complexities and uncertainties in developing and implementing new semiconductor products and manufacturing process technologies; \u25aa our ability to time and scale our capital investments appropriately and successfully secure favorable alternative financing arrangements and government"
+    },
+    {
+      "competitor": "AI",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u25aa the significant long-term and inherently risky investments we are making in R&D and manufacturing facilities that may not realize a favorable return; \u25aa the complexities and uncertainties in developing and implementing new semiconductor products and manufacturing process technologies; \u25aa our ability to time and scale our capital investments appropriately and successfully secure favorable alternative financing arrangements and government"
+    },
+    {
+      "competitor": "IP",
+      "mentions": 1,
+      "context": "competition and rapid technological change in our industry; \u25aa the significant long-term and inherently risky investments we are making in R&D and manufacturing facilities that may not realize a favorable return; \u25aa the complexities and uncertainties in developing and implementing new semiconductor products and manufacturing process technologies; \u25aa our ability to time and scale our capital investments appropriately and successfully secure favorable alternative financing arrangements and government"
+    }
+  ]
+}

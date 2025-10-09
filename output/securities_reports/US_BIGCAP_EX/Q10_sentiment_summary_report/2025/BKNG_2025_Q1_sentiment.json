@@ -1,0 +1,48 @@
+{
+  "symbol": "BKNG",
+  "year": 2025,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.219,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.162
+  },
+  "top_positive": [
+    {
+      "sent": "INVESTMENTS The following table summarizes the Company's investments by major security type: (in millions) Cost Gross Unrealized Gains / Upward Adjustments Gross Unrealized Losses / Downward Adjustments Carrying Value June\u00a030, 2025 Equity securities with readily determinable fair values $ 715 $ 13 $ ( 313 ) $ 415 Equity securities of private entities 111 259 ( 226 ) 144 Total long-term investments $ 826 $ 272 $ ( 539 ) $ 559 December\u00a031, 2024 Equity securities with readily determinable fair values $ 715 $ \u2014 $ ( 324 ) $ 391 Equity securities of private entities 111 259 ( 225 ) 145 Total long-term investments $ 826 $ 259 $ ( 549 ) $ 536 Equity securities with readily determinable fair values include the Company's investments in Grab Holdings Limited and DiDi Global Inc., with fair values of $ 213 million and $ 192 million, respectively, at June\u00a030, 2025 and $ 200 million and $ 179 million, respectively, at December\u00a031, 2024.",
+      "score": 0.9833
+    },
+    {
+      "sent": "A reconciliation of the weighted-average number of shares outstanding used in calculating diluted net income per share is as follows: Three Months Ended June 30, Six Months Ended June 30, (in thousands) 2025 2024 2025 2024 Weighted-average number of basic common shares outstanding 32,494 33,839 32,669 34,023 Weighted-average dilutive stock options, restricted stock units, and performance share units 125 183 186 236 Assumed conversion of convertible senior notes \u2014 245 \u2014 227 Weighted-average number of diluted common and common equivalent shares outstanding 32,619 34,267 32,855 34,486 5.",
+      "score": 0.9652
+    },
+    {
+      "sent": "9 The following table summarizes the activity in restricted stock units and performance share units during the six months ended June\u00a030, 2025: Restricted Stock Units Performance Share Units Shares Weighted-average Grant-date\u00a0Fair\u00a0Value Shares Weighted-average Grant-date\u00a0Fair\u00a0Value Unvested at December 31, 2024 278,723 $ 2,994 200,154 $ 2,779 Granted 100,340 $ 4,950 20,113 $ 5,054 Vested ( 138,714 ) $ 2,789 ( 85,764 ) $ 2,533 Performance shares adjustment (1) 4,810 $ 4,051 Forfeited ( 9,248 ) $ 3,599 ( 4,010 ) $ 2,918 Unvested at June 30, 2025 231,101 $ 3,942 135,303 $ 3,314 (1) Probable outcome for performance-based awards is updated based upon changes in actual and forecasted operating results and the impact of modifications, if any.",
+      "score": 0.9501
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Gross bookings resulting from reservations of room nights, rental car days, and airline tickets made through our merchant and agency categories were as follows (numbers may not total due to rounding): Three Months Ended June 30, Increase (Decrease) Six Months Ended June 30, Increase (Decrease) (in millions) 2025 2024 2025 2024 Merchant gross bookings $ 32,305 $ 25,830 25.1 % $ 63,474 $ 51,591 23.0 % Agency gross bookings 14,432 15,601 (7.5) % 29,931 33,375 (10.3) % Total gross bookings $ 46,736 $ 41,431 12.8 % $ 93,406 $ 84,966 9.9 % Merchant gross bookings increased year-over-year and agency gross bookings decreased year-over-year for the three and six months ended June\u00a030, 2025 due primarily to the ongoing shift from agency to merchant bookings at Booking.com.",
+      "score": -0.9169
+    },
+    {
+      "sent": "These initiatives have resulted and, in the future, may result in lower ADRs and lower revenues as a percentage of gross bookings.",
+      "score": -0.7579
+    },
+    {
+      "sent": "These initiatives have resulted and, in the future, may result in lower ADRs and lower revenues as a percentage of gross bookings.",
+      "score": -0.7579
+    }
+  ],
+  "forward_snippets": [
+    "We aim to provide consumers with a best-in-class experience offering the travel choices they want, with tailored planning, payment, language, and other options, seamlessly connecting them with our travel service provider partners.",
+    "We believe our diversified global portfolio of leading travel brands, flexible platforms, and strong financial position would help us to navigate a range of economic scenarios.",
+    "We continue to take a long-term view, staying focused on delivering value to our travelers and partners, maintaining disciplined cost management, and making strategic investments as appropriate.",
+    "We believe these efforts will help improve traveler loyalty, frequency, and mix of direct bookings over time.",
+    "We believe these improvements will benefit revenue growth and marketing efficiency in the future, however, to the extent our non-accommodation services have lower margins and increase as a percentage of our total business, our operating margins may be negatively affected."
+  ],
+  "curated_text": "Symbol: BKNG. Year: 2025. Period: Q1. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: INVESTMENTS The following table summarizes the Company's investments by major security type: (in millions) Cost Gross Unrealized Gains / Upward Adjustments Gross Unrealized Losses / Downward Adjustments Carrying Value June\u00a030, 2025 Equity securities with readily determinable fair values $ 715 $ 13 $ ( 313 ) $ 415 Equity securities of private entities 111 259 ( 226 ) 144 Total long-term investments $ 826 $ 272 $ ( 539 ) $ 559 December\u00a031, 2024 Equity securities with readily determinable fair values $ 715 $ \u2014 $ ( 324 ) $ 391 Equity securities of private entities 111 259 ( 225 ) 145 Total long-term investments $ 826 $ 259 $ ( 549 ) $ 536 Equity securities with readily determinable fair values include the Company's investments in Grab Holdings Limited and DiDi Global Inc., with fair values of $ 213 million and $ 192 million, respectively, at June\u00a030, 2025 and $ 200 million and $ 179 million, respectively, at December\u00a031, 2024. A reconciliation of the weighted-average number of shares outstanding used in calculating diluted net income per share is as follows: Three Months Ended June 30, Six Months Ended June 30, (in thousands) 2025 2024 2025 2024 Weighted-average number of basic common shares outstanding 32,494 33,839 32,669 34,023 Weighted-average dilutive stock options, restricted stock units, and performance share units 125 183 186 236 Assumed conversion of convertible senior notes \u2014 245 \u2014 227 Weighted-average number of diluted common and common equivalent shares outstanding 32,619 34,267 32,855 34,486 5. 9 The following table summarizes the activity in restricted stock units and performance share units during the six months ended June\u00a030, 2025: Restricted Stock Units Performance Share Units Shares Weighted-average Grant-date\u00a0Fair\u00a0Value Shares Weighted-average Grant-date\u00a0Fair\u00a0Value Unvested at December 31, 2024 278,723 $ 2,994 200,154 $ 2,779 Granted 100,340 $ 4,950 20,113 $ 5,054 Vested ( 138,714 ) $ 2,789 ( 85,764 ) $ 2,533 Performance shares adjustment (1) 4,810 $ 4,051 Forfeited ( 9,248 ) $ 3,599 ( 4,010 ) $ 2,918 Unvested at June 30, 2025 231,101 $ 3,942 135,303 $ 3,314 (1) Probable outcome for performance-based awards is updated based upon changes in actual and forecasted operating results and the impact of modifications, if any. Top negative sentences: Gross bookings resulting from reservations of room nights, rental car days, and airline tickets made through our merchant and agency categories were as follows (numbers may not total due to rounding): Three Months Ended June 30, Increase (Decrease) Six Months Ended June 30, Increase (Decrease) (in millions) 2025 2024 2025 2024 Merchant gross bookings $ 32,305 $ 25,830 25.1 % $ 63,474 $ 51,591 23.0 % Agency gross bookings 14,432 15,601 (7.5) % 29,931 33,375 (10.3) % Total gross bookings $ 46,736 $ 41,431 12.8 % $ 93,406 $ 84,966 9.9 % Merchant gross bookings increased year-over-year and agency gross bookings decreased year-over-year for the three and six months ended June\u00a030, 2025 due primarily to the ongoing shift from agency to merchant bookings at Booking.com. These initiatives have resulted and, in the future, may result in lower ADRs and lower revenues as a percentage of gross bookings. These initiatives have resulted and, in the future, may result in lower ADRs and lower revenues as a percentage of gross bookings. Forward-looking snippets: We aim to provide consumers with a best-in-class experience offering the travel choices they want, with tailored planning, payment, language, and other options, seamlessly connecting them with our travel service provider partners. We believe our diversified global portfolio of leading travel brands, flexible platforms, and strong financial position would help us to navigate a range of economic scenarios. We continue to take a long-term view, staying focused on delivering value to our travelers and partners, maintaining disciplined cost management, and making strategic investments as appropriate. We believe these efforts will help improve traveler loyalty, frequency, and mix of direct bookings over time. We believe these improvements will benefit revenue growth and marketing efficiency in the future, however, to the extent our non-accommodation services have lower margins and increase as a percentage of our total business, our operating margins may be negatively affected."
+}

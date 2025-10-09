@@ -1,0 +1,508 @@
+{
+  "symbol": "INTU",
+  "year": 2025,
+  "period": "Q1",
+  "curated_text": "Symbol: INTU. Year: 2025. Period: Q1. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: Intuit, the Securities and Exchange Commission, CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS, Contents INTUIT INC, CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME, Treasury, INTUIT INC, CONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS\u2019, EQUITY, Common Stock Common Stock, Additional Paid-In Capital Treasury Stock, CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited, Contents INTUIT INC., Description of Business and Summary of, Business Intuit Inc., TurboTax, Credit Karma, QuickBooks, ProSeries, ProConnect Tax Online, Small Business & Self-Employed, the Global Business Solutions, Global Business Solutions, ProTax, SSP, treasury, Diluted, Credit Risk and Significant Customers, the Financial Accounting Standards Board, FASB, CODM, Clarifying the Effective Date, ASU, Business Combinations and Consolidation -, Business Combinations, Fair Value, Non-Recurring Basis Long, Funds Receivable and, Restricted, Receivable and Allowances for Credit Losses As, the Internal Revenue Service, IRS, Customer Lists / User Relationships Purchased Technology Trade Names, Logos Total, Effective Interest Rate, Thereafter 3,000 Total, Credit Facilities 2024 Credit Facility, Credit Facility, Secured Overnight Finance Rate, Intuit Inc., the 2022 Secured Facility, The 2022 Secured Facility, the 2024 Secured Facility, The 2024 Secured Facility, Commercial Paper Program, Description of Business and Summary, Thereafter 411 Total, Contents Unrecognized Tax, Stockholders\u2019 Equity Stock Repurchase Programs, Intuit\u2019s Board of Directors, Board of Directors, RSU, Share-Based Awards Available, Restricted Stock Unit, Restricted Stock, Options Outstanding (, Legal Proceedings Beginning, the Intuit Free File Litigation, the Ninth Circuit Court of Appeals, the Ontario (Canada) Superior Court of Justice, the Federal Trade Commission, FTC, FTC Actions, ALJ, the United States Court of Appeals, the Fifth Circuit, the Court of Appeals, the FTC Actions, the Los Angeles City, Intuit Q3 Fiscal 2025, FDIC, ProFile, TurboTax Live, QuickBooks Live, QuickBooks Online Accounting, QuickBooks Desktop Accounting, Desktop Services and Supplies, 928 947 Total Desktop, Plan, Total Costs Incurred, Date Total Expected Plan Cost Global Business Solutions, ANALYSIS OF FINANCIAL CONDITION, MD&A, \u2022 Executive Overview, \u2022 Critical Accounting Policies, Capital Resources: Discussion, Contents About Intuit Intuit, Big Bets, GenAI, Trends and Seasonality Industry Trends AI. Context excerpt: competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broader industry and government to protect our customers from fraud; \u2022 our expectation that we will generate significant cash from operations; \u2022 our expectation that total service revenue as a percentage of our total revenue to grow over the long term; \u2022 our expectations regarding the development of future products, services, business models and technology platforms and our research and development efforts; \u2022 our assumptions underlying our critical accounting policies and estimates, including our judg",
+  "competition_summary": [
+    {
+      "competitor": "Intuit",
+      "mentions": 13,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the Securities and Exchange Commission",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "CONDENSED CONSOLIDATED STATEMENTS OF OPERATIONS",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Contents INTUIT INC",
+      "mentions": 4,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Treasury",
+      "mentions": 2,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "INTUIT INC",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "CONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS\u2019",
+      "mentions": 2,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "EQUITY",
+      "mentions": 2,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Common Stock Common Stock",
+      "mentions": 4,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Additional Paid-In Capital Treasury Stock",
+      "mentions": 4,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS (Unaudited",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Contents INTUIT INC.",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Description of Business and Summary of",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Business Intuit Inc.",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "TurboTax",
+      "mentions": 6,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Credit Karma",
+      "mentions": 7,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "QuickBooks",
+      "mentions": 6,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "ProSeries",
+      "mentions": 3,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "ProConnect Tax Online",
+      "mentions": 3,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Small Business & Self-Employed",
+      "mentions": 3,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the Global Business Solutions",
+      "mentions": 3,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Global Business Solutions",
+      "mentions": 13,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "ProTax",
+      "mentions": 11,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "SSP",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "treasury",
+      "mentions": 6,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Diluted",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Credit Risk and Significant Customers",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the Financial Accounting Standards Board",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "FASB",
+      "mentions": 5,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "CODM",
+      "mentions": 2,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Clarifying the Effective Date",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "ASU",
+      "mentions": 3,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Business Combinations and Consolidation -",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Business Combinations",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Fair Value",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Non-Recurring Basis Long",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Funds Receivable and",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Restricted",
+      "mentions": 2,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Receivable and Allowances for Credit Losses As",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the Internal Revenue Service",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "IRS",
+      "mentions": 2,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Customer Lists / User Relationships Purchased Technology Trade Names",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Logos Total",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Effective Interest Rate",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Thereafter 3,000 Total",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Credit Facilities 2024 Credit Facility",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Credit Facility",
+      "mentions": 16,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Secured Overnight Finance Rate",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Intuit Inc.",
+      "mentions": 3,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the 2022 Secured Facility",
+      "mentions": 5,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "The 2022 Secured Facility",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the 2024 Secured Facility",
+      "mentions": 6,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "The 2024 Secured Facility",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Commercial Paper Program",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Description of Business and Summary",
+      "mentions": 2,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Thereafter 411 Total",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Contents Unrecognized Tax",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Stockholders\u2019 Equity Stock Repurchase Programs",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Intuit\u2019s Board of Directors",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 5,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "RSU",
+      "mentions": 2,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Share-Based Awards Available",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Restricted Stock Unit",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Restricted Stock",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Options Outstanding (",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Legal Proceedings Beginning",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the Intuit Free File Litigation",
+      "mentions": 2,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the Ninth Circuit Court of Appeals",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the Ontario (Canada) Superior Court of Justice",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the Federal Trade Commission",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "FTC",
+      "mentions": 9,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "FTC Actions",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "ALJ",
+      "mentions": 2,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the United States Court of Appeals",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the Fifth Circuit",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the Court of Appeals",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the FTC Actions",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "the Los Angeles City",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Intuit Q3 Fiscal 2025",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "FDIC",
+      "mentions": 4,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "ProFile",
+      "mentions": 2,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "TurboTax Live",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "QuickBooks Live",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "QuickBooks Online Accounting",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "QuickBooks Desktop Accounting",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Desktop Services and Supplies",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "928 947 Total Desktop",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Plan",
+      "mentions": 8,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Total Costs Incurred",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Date Total Expected Plan Cost Global Business Solutions",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "ANALYSIS OF FINANCIAL CONDITION",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "MD&A",
+      "mentions": 5,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "\u2022 Executive Overview",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "\u2022 Critical Accounting Policies",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Capital Resources: Discussion",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Contents About Intuit Intuit",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Big Bets",
+      "mentions": 3,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "GenAI",
+      "mentions": 3,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    },
+    {
+      "competitor": "Trends and Seasonality Industry Trends AI",
+      "mentions": 1,
+      "context": "competition, and other trends that affect our business; \u2022 our expectation that we will continue to invest significant resources in our product development, marketing and sales capabilities, including products and services incorporating artificial intelligence; \u2022 our expectation that we will continue to invest significant management attention and resources in our information technology infrastructure and in our privacy and security capabilities; \u2022 our expectation that we will work with the broade"
+    }
+  ]
+}

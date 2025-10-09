@@ -1,0 +1,53 @@
+{
+  "symbol": "AXP",
+  "year": 2025,
+  "period": "Q1",
+  "curated_text": "Symbol: AXP. Year: 2025. Period: Q1. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: the Private Securities Litigation Reform Act, the \u201cCautionary Note Regarding Forward-Looking Statements, Consolidated Financial Statements, Bank Holding Company American Express, the Bank Holding Company Act, The Board of Governors, the Federal Reserve System, the Federal Reserve, the Federal Reserve\u2019s. Context excerpt: competition for premium customers. Forward-Looking Statements and Non-GAAP Measures Certain of the statements in this Form 10-Q are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Refer to the \u201cCautionary Note Regarding Forward-Looking Statements\u201d section. We prepare our Consolidated Financial Statements in accordance with accounting principles generally accepted in the United States of America (GAAP). However, certain information included within this Form 10-Q constitutes non-GAAP financial measures. Our calculations of non-GAAP financial measures may differ from the calculations of similarly titled measures by other companies. Bank Holding Company American Express is a bank holding company under the Bank Holding Company Act of 1956 and The Board of Governors of the Federal Reserve System (the Federal Reserve) is our primary federal regulator. As such, we are subject to the Federal Reserve\u2019s ",
+  "competition_summary": [
+    {
+      "competitor": "the Private Securities Litigation Reform Act",
+      "mentions": 1,
+      "context": "competition for premium customers. Forward-Looking Statements and Non-GAAP Measures Certain of the statements in this Form 10-Q are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Refer to the \u201cCautionary Note Regarding Forward-Looking Statements\u201d section. We prepare our Consolidated Financial Statements in accordance with accounting principles generally accepted in the United States of America (GAAP). However, certain information included w"
+    },
+    {
+      "competitor": "the \u201cCautionary Note Regarding Forward-Looking Statements",
+      "mentions": 1,
+      "context": "competition for premium customers. Forward-Looking Statements and Non-GAAP Measures Certain of the statements in this Form 10-Q are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Refer to the \u201cCautionary Note Regarding Forward-Looking Statements\u201d section. We prepare our Consolidated Financial Statements in accordance with accounting principles generally accepted in the United States of America (GAAP). However, certain information included w"
+    },
+    {
+      "competitor": "Consolidated Financial Statements",
+      "mentions": 1,
+      "context": "competition for premium customers. Forward-Looking Statements and Non-GAAP Measures Certain of the statements in this Form 10-Q are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Refer to the \u201cCautionary Note Regarding Forward-Looking Statements\u201d section. We prepare our Consolidated Financial Statements in accordance with accounting principles generally accepted in the United States of America (GAAP). However, certain information included w"
+    },
+    {
+      "competitor": "Bank Holding Company American Express",
+      "mentions": 1,
+      "context": "competition for premium customers. Forward-Looking Statements and Non-GAAP Measures Certain of the statements in this Form 10-Q are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Refer to the \u201cCautionary Note Regarding Forward-Looking Statements\u201d section. We prepare our Consolidated Financial Statements in accordance with accounting principles generally accepted in the United States of America (GAAP). However, certain information included w"
+    },
+    {
+      "competitor": "the Bank Holding Company Act",
+      "mentions": 1,
+      "context": "competition for premium customers. Forward-Looking Statements and Non-GAAP Measures Certain of the statements in this Form 10-Q are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Refer to the \u201cCautionary Note Regarding Forward-Looking Statements\u201d section. We prepare our Consolidated Financial Statements in accordance with accounting principles generally accepted in the United States of America (GAAP). However, certain information included w"
+    },
+    {
+      "competitor": "The Board of Governors",
+      "mentions": 1,
+      "context": "competition for premium customers. Forward-Looking Statements and Non-GAAP Measures Certain of the statements in this Form 10-Q are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Refer to the \u201cCautionary Note Regarding Forward-Looking Statements\u201d section. We prepare our Consolidated Financial Statements in accordance with accounting principles generally accepted in the United States of America (GAAP). However, certain information included w"
+    },
+    {
+      "competitor": "the Federal Reserve System",
+      "mentions": 1,
+      "context": "competition for premium customers. Forward-Looking Statements and Non-GAAP Measures Certain of the statements in this Form 10-Q are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Refer to the \u201cCautionary Note Regarding Forward-Looking Statements\u201d section. We prepare our Consolidated Financial Statements in accordance with accounting principles generally accepted in the United States of America (GAAP). However, certain information included w"
+    },
+    {
+      "competitor": "the Federal Reserve",
+      "mentions": 1,
+      "context": "competition for premium customers. Forward-Looking Statements and Non-GAAP Measures Certain of the statements in this Form 10-Q are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Refer to the \u201cCautionary Note Regarding Forward-Looking Statements\u201d section. We prepare our Consolidated Financial Statements in accordance with accounting principles generally accepted in the United States of America (GAAP). However, certain information included w"
+    },
+    {
+      "competitor": "the Federal Reserve\u2019s",
+      "mentions": 1,
+      "context": "competition for premium customers. Forward-Looking Statements and Non-GAAP Measures Certain of the statements in this Form 10-Q are forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995. Refer to the \u201cCautionary Note Regarding Forward-Looking Statements\u201d section. We prepare our Consolidated Financial Statements in accordance with accounting principles generally accepted in the United States of America (GAAP). However, certain information included w"
+    }
+  ]
+}

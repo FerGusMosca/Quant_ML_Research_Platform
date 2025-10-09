@@ -1,0 +1,123 @@
+{
+  "symbol": "AMD",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: AMD. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: the Creating Helpful Incentives, Data Center, Client, Data Center, AI, GPU, Sony, Microsoft, Adaptive SoC, Taiwan Semiconductor Manufacturing Company Limited, TSMC, GLOBALFOUNDRIES Inc., United Microelectronics Corporation, Samsung Electronics Co., Ltd., ATMP, Tongfu Microelectronics Co., Ltd., IT Systems, Confidential Data, AMD, MFA, PII, litigation and/or regulatory, European Union\u2019s, General Data Protection. Context excerpt: competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to customer requirements and emerging technologies. For example, the AI market is subject to rapid technological change, product obsolescence, frequent new product introductions and feature enhancements, changes in end-user requirements and evolving industry trends and legal standards. We cannot guarantee that we will be able to compete successfully against current or new competitors who may have stronger positions in these new markets or superior ability to anticipate customer requirements and emerging i",
+  "competition_summary": [
+    {
+      "competitor": "the Creating Helpful Incentives",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "Data Center, Client",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "Data Center",
+      "mentions": 2,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "AI",
+      "mentions": 9,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "GPU",
+      "mentions": 6,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "Sony",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "Microsoft",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "Adaptive SoC",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "Taiwan Semiconductor Manufacturing Company Limited",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "TSMC",
+      "mentions": 7,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "GLOBALFOUNDRIES Inc.",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "United Microelectronics Corporation",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "Samsung Electronics Co., Ltd.",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "ATMP",
+      "mentions": 9,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "Tongfu Microelectronics Co., Ltd.",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "IT Systems",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "Confidential Data",
+      "mentions": 4,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "AMD",
+      "mentions": 3,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "MFA",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "PII",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "litigation and/or regulatory",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "European Union\u2019s",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    },
+    {
+      "competitor": "General Data Protection",
+      "mentions": 1,
+      "context": "competition will continue to be intense due to rapid technological changes, new and evolving industry standards, changing customer preferences and requirements, and frequent introductions by our competitors or new competitors of products that may provide better performance/experience or that may include additional features that render our products comparatively less competitive. In addition, we are entering markets with current and new competitors who may be able to adapt more quickly to custome"
+    }
+  ]
+}

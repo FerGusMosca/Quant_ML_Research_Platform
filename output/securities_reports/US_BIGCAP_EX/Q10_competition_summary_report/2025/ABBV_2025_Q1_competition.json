@@ -1,0 +1,278 @@
+{
+  "symbol": "ABBV",
+  "year": 2025,
+  "period": "Q1",
+  "curated_text": "Symbol: ABBV. Year: 2025. Period: Q1. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: the California Business and Professions Code, MDL, National Prescription Opiate Litigation, the United States Tax Court, AbbVie Inc., Subsidiaries, the Internal Revenue Service, the Commissioner of Internal Revenue\u2019s, The United States Tax Court, Shareholder and Securities Litigation, Delaware Chancery Court, Order Voluntarily Dismissing the Action as Moot and Retaining Jurisdiction, Counsel\u2019s Application, Holwill, Humira, Product Liability, Camargo, Biocell\u00ae, Allergan Biocell Textured Breast Implant Product Liability Litigation, Sheet Metal Workers\u2019 Health Plan of Southern California, Intellectual Property Litigation AbbVie Inc., Rinvoq, Hetero USA, Inc., Hetero Labs Limited Unit-V, Aurobindo Pharma Ltd., Aurobindo Pharma U.S.A., Aurobindo Pharma Limited, Zydus Pharmaceuticals, Zydus Lifesciences Limited, MSN Pharmaceuticals Inc., MSN Laboratories Private Limited, MSN Life Sciences Private Limited, Hetero USA Inc., Limited, Merck Sharp & Dohme, CODM, 739 Total, 781 Total, Neuroscience, Botox Therapeutic United, Vyalev United, Venclexta United, 12 Total, 523 Total, Eye Care Ozurdex, Lumigan/Ganfort United States, Linzess/Constella United, ANALYSIS OF FINANCIAL CONDITION, the Condensed Consolidated Financial Statements, Supplementary Data, Health and Human Services, HHS, MFN, Organization for Economic Co-operation. Context excerpt: competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the United States District Court for the Northern District of Ohio under the MDL rules as In re: National Prescription Opiate Litigation, MDL No. 2804. Approximately 25 of the lawsuits are pending in various state courts. The plaintiffs in these lawsuits, which include states, counties, cities, other municipal entities, Native American tribes, union trust funds and other third-party payors, private hospitals and personal injury claimants, generally seek compensatory and punitive damages. Of these approxi",
+  "competition_summary": [
+    {
+      "competitor": "the California Business and Professions Code",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "MDL",
+      "mentions": 2,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "National Prescription Opiate Litigation",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "the United States Tax Court",
+      "mentions": 2,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "AbbVie Inc.",
+      "mentions": 5,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Subsidiaries",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "the Internal Revenue Service",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "the Commissioner of Internal Revenue\u2019s",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "The United States Tax Court",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Shareholder and Securities Litigation",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Delaware Chancery Court",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Order Voluntarily Dismissing the Action as Moot and Retaining Jurisdiction",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Counsel\u2019s Application",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Holwill",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Humira",
+      "mentions": 10,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Product Liability",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Camargo",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Biocell\u00ae",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Allergan Biocell Textured Breast Implant Product Liability Litigation",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Sheet Metal Workers\u2019 Health Plan of Southern California",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Intellectual Property Litigation AbbVie Inc.",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Rinvoq",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Hetero USA, Inc.",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Hetero Labs Limited Unit-V",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Aurobindo Pharma Ltd.",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Aurobindo Pharma U.S.A.",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Aurobindo Pharma Limited",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Zydus Pharmaceuticals",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Zydus Lifesciences Limited",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "MSN Pharmaceuticals Inc.",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "MSN Laboratories Private Limited",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "MSN Life Sciences Private Limited",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Hetero USA Inc.",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Limited",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Merck Sharp & Dohme",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "CODM",
+      "mentions": 6,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "739 Total",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "781 Total",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Neuroscience",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Botox Therapeutic United",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Vyalev United",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Venclexta United",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "12 Total",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "523 Total",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Eye Care Ozurdex",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Lumigan/Ganfort United States",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Linzess/Constella United",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "ANALYSIS OF FINANCIAL CONDITION",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "the Condensed Consolidated Financial Statements",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Supplementary Data",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Health and Human Services",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "HHS",
+      "mentions": 2,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "MFN",
+      "mentions": 2,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    },
+    {
+      "competitor": "Organization for Economic Co-operation",
+      "mentions": 1,
+      "context": "competition provision of the California Business and Professions Code seeking injunctive relief, restitution, civil penalties and attorneys\u2019 fees. Government Proceedings Lawsuits are pending against Allergan and several other manufacturers generally alleging that they improperly promoted and sold prescription opioid products. Approximately 380 lawsuits are pending against Allergan in federal and state courts. Most of the federal court lawsuits are consolidated for pre-trial purposes in the Unite"
+    }
+  ]
+}

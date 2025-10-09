@@ -1,0 +1,18 @@
+{
+  "symbol": "AVGO",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: AVGO. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: IP, \u2022 Corporate. Context excerpt: Competition in our industries could prevent us from growing our revenue. \u2022 Our ability to maintain or improve gross margin. \u2022 If we are unable to protect the significant amount of IP we utilize in our business, our business could be adversely affected. \u2022 We are subject to warranty claims, product recalls and product liability. \u2022 The complexity of our products could result in unforeseen delays or expense or undetected defects or bugs. \u2022 We are subject to privacy and data security laws and contractual commitments, and our actual or perceived failure to comply with such laws and commitments could harm our business. \u2022 Corporate responsibility matters may adversely affect our relationships with customers and investors. \u2022 We must comply with a variety of technical standards, domestic and international laws and ",
+  "competition_summary": [
+    {
+      "competitor": "IP",
+      "mentions": 1,
+      "context": "Competition in our industries could prevent us from growing our revenue. \u2022 Our ability to maintain or improve gross margin. \u2022 If we are unable to protect the significant amount of IP we utilize in our business, our business could be adversely affected. \u2022 We are subject to warranty claims, product recalls and product liability. \u2022 The complexity of our products could result in unforeseen delays or expense or undetected defects or bugs. \u2022 We are subject to privacy and data security laws and contrac"
+    },
+    {
+      "competitor": "\u2022 Corporate",
+      "mentions": 1,
+      "context": "Competition in our industries could prevent us from growing our revenue. \u2022 Our ability to maintain or improve gross margin. \u2022 If we are unable to protect the significant amount of IP we utilize in our business, our business could be adversely affected. \u2022 We are subject to warranty claims, product recalls and product liability. \u2022 The complexity of our products could result in unforeseen delays or expense or undetected defects or bugs. \u2022 We are subject to privacy and data security laws and contrac"
+    }
+  ]
+}

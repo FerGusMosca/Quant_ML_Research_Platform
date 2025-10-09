@@ -2,6 +2,7 @@
   "symbol": "ABBV",
   "year": 2024,
   "period": "Y2024",
+  "curated_text": "Symbol: ABBV. Year: 2024. Period: Y2024. ReportType: K10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: BTK, Botox, Humira, FDA, the Federal Food, Drug, FFDCA, the Public Health Service Act. Context excerpt: Competition The markets for AbbVie's products are highly competitive. AbbVie competes with other research-based pharmaceuticals and biotechnology companies that discover, manufacture, market and sell proprietary pharmaceutical products, therapies and biologics. For example, AbbVie's immunology products compete with anti-TNF products, JAK inhibitors and other competitive products intended to treat a number of disease states, and AbbVie's oncology products compete with BTK inhibitors and other competitive products intended to treat certain cancers. In addition, in the past few years, a number of other companies have started to develop, have successfully developed and/or are currently marketing products that are being positioned as competitors to Botox. The search for technological innovations in pharmaceutical products is a significant aspect of competition. The introduction of new products by competitors and changes in medical practices and procedures can result in product obsolescence.",
   "competition_summary": [
     {
       "competitor": "BTK",

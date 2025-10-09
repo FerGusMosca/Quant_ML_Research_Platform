@@ -1,0 +1,48 @@
+{
+  "symbol": "UNP",
+  "year": 2025,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2142,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.164
+  },
+  "top_positive": [
+    {
+      "sent": "Changes in our retention awards during the three months ended March\u00a031, 2025, were as follows: Shares (thous.) Weighted-average grant-date fair value Nonvested at January 1, 2025 915 $ 222.50 Granted 228 243.51 Vested ( 223 ) 204.69 Forfeited ( 7 ) 227.18 Nonvested at March 31, 2025 913 $ 232.06 At March\u00a031, 2025, there was $ 108 million of total unrecognized compensation expense related to nonvested retention awards, which is expected to be recognized over a weighted-average period of 1.5 years 9 Table of Contents Performance stock unit awards \u2013 In February 2025, our Board of Directors approved performance stock unit grants.",
+      "score": 0.9648
+    },
+    {
+      "sent": "Changes in our retention awards during the three months ended March\u00a031, 2025, were as follows: Shares (thous.) Weighted-average grant-date fair value Nonvested at January 1, 2025 915 $ 222.50 Granted 228 243.51 Vested ( 223 ) 204.69 Forfeited ( 7 ) 227.18 Nonvested at March 31, 2025 913 $ 232.06 At March\u00a031, 2025, there was $ 108 million of total unrecognized compensation expense related to nonvested retention awards, which is expected to be recognized over a weighted-average period of 1.5 years 9 Table of Contents Performance stock unit awards \u2013 In February 2025, our Board of Directors approved performance stock unit grants.",
+      "score": 0.9648
+    },
+    {
+      "sent": "Changes in our retention awards during the three months ended March\u00a031, 2025, were as follows: Shares (thous.) Weighted-average grant-date fair value Nonvested at January 1, 2025 915 $ 222.50 Granted 228 243.51 Vested ( 223 ) 204.69 Forfeited ( 7 ) 227.18 Nonvested at March 31, 2025 913 $ 232.06 At March\u00a031, 2025, there was $ 108 million of total unrecognized compensation expense related to nonvested retention awards, which is expected to be recognized over a weighted-average period of 1.5 years 9 Table of Contents Performance stock unit awards \u2013 In February 2025, our Board of Directors approved performance stock unit grants.",
+      "score": 0.9648
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The tables above provide reconciliations from net income to adjusted EBITDA, debt to adjusted debt, and debt to net income to adjusted debt to adjusted EBITDA.",
+      "score": -0.8402
+    },
+    {
+      "sent": "Volume decreases in first quarter of 2025 compared to 2024 were driven by decreased shipments of petroleum due to business losses, a weaker global soda ash market, and a soft housing market along with ongoing tariff uncertainties that drove declines in lumber.",
+      "score": -0.7906
+    },
+    {
+      "sent": "Risk Factors For a discussion of our potential risks and uncertainties, see the risk factors disclosed in our Form 10-K for the year ended December\u00a031, 2024.",
+      "score": -0.7717
+    }
+  ],
+  "forward_snippets": [
+    "The Company is currently evaluating the effect that the new guidance will have on our related disclosures.",
+    "The Company is currently evaluating the effect that the new guidance will have on our related disclosures.",
+    "The Company is currently evaluating the effect that the new guidance will have on our related disclosures.",
+    "The Company is currently evaluating the effect that the new guidance will have on our related disclosures.",
+    "We measure the fair value of performance stock units based upon the cl\nguidance will have on our related disclosures."
+  ],
+  "curated_text": "Symbol: UNP. Year: 2025. Period: Q2. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: Changes in our retention awards during the three months ended March\u00a031, 2025, were as follows: Shares (thous.) Weighted-average grant-date fair value Nonvested at January 1, 2025 915 $ 222.50 Granted 228 243.51 Vested ( 223 ) 204.69 Forfeited ( 7 ) 227.18 Nonvested at March 31, 2025 913 $ 232.06 At March\u00a031, 2025, there was $ 108 million of total unrecognized compensation expense related to nonvested retention awards, which is expected to be recognized over a weighted-average period of 1.5 years 9 Table of Contents Performance stock unit awards \u2013 In February 2025, our Board of Directors approved performance stock unit grants. Changes in our retention awards during the three months ended March\u00a031, 2025, were as follows: Shares (thous.) Weighted-average grant-date fair value Nonvested at January 1, 2025 915 $ 222.50 Granted 228 243.51 Vested ( 223 ) 204.69 Forfeited ( 7 ) 227.18 Nonvested at March 31, 2025 913 $ 232.06 At March\u00a031, 2025, there was $ 108 million of total unrecognized compensation expense related to nonvested retention awards, which is expected to be recognized over a weighted-average period of 1.5 years 9 Table of Contents Performance stock unit awards \u2013 In February 2025, our Board of Directors approved performance stock unit grants. Changes in our retention awards during the three months ended March\u00a031, 2025, were as follows: Shares (thous.) Weighted-average grant-date fair value Nonvested at January 1, 2025 915 $ 222.50 Granted 228 243.51 Vested ( 223 ) 204.69 Forfeited ( 7 ) 227.18 Nonvested at March 31, 2025 913 $ 232.06 At March\u00a031, 2025, there was $ 108 million of total unrecognized compensation expense related to nonvested retention awards, which is expected to be recognized over a weighted-average period of 1.5 years 9 Table of Contents Performance stock unit awards \u2013 In February 2025, our Board of Directors approved performance stock unit grants. Top negative sentences: The tables above provide reconciliations from net income to adjusted EBITDA, debt to adjusted debt, and debt to net income to adjusted debt to adjusted EBITDA. Volume decreases in first quarter of 2025 compared to 2024 were driven by decreased shipments of petroleum due to business losses, a weaker global soda ash market, and a soft housing market along with ongoing tariff uncertainties that drove declines in lumber. Risk Factors For a discussion of our potential risks and uncertainties, see the risk factors disclosed in our Form 10-K for the year ended December\u00a031, 2024. Forward-looking snippets: The Company is currently evaluating the effect that the new guidance will have on our related disclosures. The Company is currently evaluating the effect that the new guidance will have on our related disclosures. The Company is currently evaluating the effect that the new guidance will have on our related disclosures. The Company is currently evaluating the effect that the new guidance will have on our related disclosures. We measure the fair value of performance stock units based upon the cl\nguidance will have on our related disclosures."
+}

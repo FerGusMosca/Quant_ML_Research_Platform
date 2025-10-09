@@ -1,0 +1,28 @@
+{
+  "symbol": "MO",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: MO. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: PM USA, UST Litigation, UST, fault and/or contributory. Context excerpt: competition in the U.S. closed-system electronic cigarette market.  Plaintiffs seek various remedies, including treble damages, attorneys\u2019 fees, a declaration that the agreements between Altria and JUUL are invalid and rescission of the transaction.  In February 2024, the court ordered that certain of the direct-purchaser plaintiffs\u2019 claims against JUUL be sent to arbitration pursuant to an arbitration provision in JUUL\u2019s online purchase agreement and dismissed without prejudice the direct-purchaser plaintiffs\u2019 claims for injunctive relief.  The trial with respect to the consolidated lawsuits is set to commence in May 2026. 31 Table of Contents Federal and State Shareholder Derivative Lawsuits In October 2022, we agreed to settle a series of federal and state derivative cases brought by Altria shareholders on behalf of themselves and Altria against Altria and certain of our current and former executives and directors and JUUL, its founders and certain of its current and former executiv",
+  "competition_summary": [
+    {
+      "competitor": "PM USA",
+      "mentions": 1,
+      "context": "competition in the U.S. closed-system electronic cigarette market.  Plaintiffs seek various remedies, including treble damages, attorneys\u2019 fees, a declaration that the agreements between Altria and JUUL are invalid and rescission of the transaction.  In February 2024, the court ordered that certain of the direct-purchaser plaintiffs\u2019 claims against JUUL be sent to arbitration pursuant to an arbitration provision in JUUL\u2019s online purchase agreement and dismissed without prejudice the direct-purch"
+    },
+    {
+      "competitor": "UST Litigation",
+      "mentions": 1,
+      "context": "competition in the U.S. closed-system electronic cigarette market.  Plaintiffs seek various remedies, including treble damages, attorneys\u2019 fees, a declaration that the agreements between Altria and JUUL are invalid and rescission of the transaction.  In February 2024, the court ordered that certain of the direct-purchaser plaintiffs\u2019 claims against JUUL be sent to arbitration pursuant to an arbitration provision in JUUL\u2019s online purchase agreement and dismissed without prejudice the direct-purch"
+    },
+    {
+      "competitor": "UST",
+      "mentions": 2,
+      "context": "competition in the U.S. closed-system electronic cigarette market.  Plaintiffs seek various remedies, including treble damages, attorneys\u2019 fees, a declaration that the agreements between Altria and JUUL are invalid and rescission of the transaction.  In February 2024, the court ordered that certain of the direct-purchaser plaintiffs\u2019 claims against JUUL be sent to arbitration pursuant to an arbitration provision in JUUL\u2019s online purchase agreement and dismissed without prejudice the direct-purch"
+    },
+    {
+      "competitor": "fault and/or contributory",
+      "mentions": 1,
+      "context": "competition in the U.S. closed-system electronic cigarette market.  Plaintiffs seek various remedies, including treble damages, attorneys\u2019 fees, a declaration that the agreements between Altria and JUUL are invalid and rescission of the transaction.  In February 2024, the court ordered that certain of the direct-purchaser plaintiffs\u2019 claims against JUUL be sent to arbitration pursuant to an arbitration provision in JUUL\u2019s online purchase agreement and dismissed without prejudice the direct-purch"
+    }
+  ]
+}

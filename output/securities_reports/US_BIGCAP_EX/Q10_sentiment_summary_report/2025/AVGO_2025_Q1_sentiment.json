@@ -1,0 +1,48 @@
+{
+  "symbol": "AVGO",
+  "year": 2025,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.1489,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.415
+  },
+  "top_positive": [
+    {
+      "sent": "The fair value of money-market funds, which was consistent with their carrying value, was determined using unadjusted prices in active, accessible markets for identical assets, and as such, they were classified as Level 1 assets in the fair value hierarchy.",
+      "score": 0.946
+    },
+    {
+      "sent": "The fair value of money-market funds, which was consistent with their carrying value, was determined using unadjusted prices in active, accessible markets for identical assets, and as such, they were classified as Level 1 assets in the fair value hierarchy.",
+      "score": 0.946
+    },
+    {
+      "sent": "The fair value of money-market funds, which was consistent with their carrying value, was determined using unadjusted prices in active, accessible markets for identical assets, and as such, they were classified as Level 1 assets in the fair value hierarchy.",
+      "score": 0.946
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "A prolonged disruption at or shut-down of one or more of our manufacturing or other facilities or those of our CMs or suppliers, due to natural- or man-made disasters or other events outside of our control, such as climate change, water shortages, political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, labor shortages, medical epidemics, economic instability, equipment failure or for any other reason, would limit our capacity to meet customer demands and delay new product development until a replacement facility and equipment, if necessary, were found, and could destroy our hardware products, inventory or equipment.",
+      "score": -0.967
+    },
+    {
+      "sent": "A prolonged disruption at or shut-down of one or more of our manufacturing or other facilities or those of our CMs or suppliers, due to natural- or man-made disasters or other events outside of our control, such as climate change, water shortages, political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, labor shortages, medical epidemics, economic instability, equipment failure or for any other reason, would limit our capacity to meet customer demands and delay new product development until a replacement facility and equipment, if necessary, were found, and could destroy our hardware products, inventory or equipment.",
+      "score": -0.967
+    },
+    {
+      "sent": "This could damage our relationships with our customers, result in litigation for alleged failure to meet our obligations, or result in payment of significant damages, and our net revenue could decline, adversely affecting our business, financial condition, results of operations and gross margin.",
+      "score": -0.9231
+    }
+  ],
+  "forward_snippets": [
+    "Revenue from Contracts with Customers We account for a contract with a customer when both parties have approved the contract and are committed to perform their respective obligations, each party\u2019s rights can be identified, payment terms can be identified, the contract has commercial substance, and it is probable that we will collect substantially all of the consideration to which we are entitled.",
+    "8 Table of Contents Disaggregation We have considered (1) information that is regularly reviewed by our Chief Executive Officer, who has been identified as the chief operating decision maker (the \u201cCODM\u201d) as defined by the authoritative guidance on segment reporting, in evaluating financial performance and (2) disclosures presented outside of our financial statements in our earnings releases and used in investor presentations to disaggregate revenues.",
+    "We expect approximately 34 % of this amount to be recognized as revenue over the next 12 months.",
+    "Revenue from Contracts with Customers We account for a contract with a customer when both parties have approved the contract and are committed to perform their respective obligations, each party\u2019s rights can be identified, payment terms can be identified, the contract has commercial substance, and it is probable that we will collect substantially all of the consideration to which we are entitled.",
+    "8 Table of Contents Disaggregation We have considered (1) information that is regularly reviewed by our Chief Executive Officer, who has been identified as the chief operating decision maker (the \u201cCODM\u201d) as defined by the authoritative guidance on segment reporting, in evaluating financial performance and (2) disclosures presented outside of our financial statements in our earnings releases and used in investor presentations to disaggregate revenues."
+  ],
+  "curated_text": "Symbol: AVGO. Year: 2025. Period: Q1. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: The fair value of money-market funds, which was consistent with their carrying value, was determined using unadjusted prices in active, accessible markets for identical assets, and as such, they were classified as Level 1 assets in the fair value hierarchy. The fair value of money-market funds, which was consistent with their carrying value, was determined using unadjusted prices in active, accessible markets for identical assets, and as such, they were classified as Level 1 assets in the fair value hierarchy. The fair value of money-market funds, which was consistent with their carrying value, was determined using unadjusted prices in active, accessible markets for identical assets, and as such, they were classified as Level 1 assets in the fair value hierarchy. Top negative sentences: A prolonged disruption at or shut-down of one or more of our manufacturing or other facilities or those of our CMs or suppliers, due to natural- or man-made disasters or other events outside of our control, such as climate change, water shortages, political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, labor shortages, medical epidemics, economic instability, equipment failure or for any other reason, would limit our capacity to meet customer demands and delay new product development until a replacement facility and equipment, if necessary, were found, and could destroy our hardware products, inventory or equipment. A prolonged disruption at or shut-down of one or more of our manufacturing or other facilities or those of our CMs or suppliers, due to natural- or man-made disasters or other events outside of our control, such as climate change, water shortages, political unrest, military conflicts, geopolitical turmoil, trade tensions, government orders, labor shortages, medical epidemics, economic instability, equipment failure or for any other reason, would limit our capacity to meet customer demands and delay new product development until a replacement facility and equipment, if necessary, were found, and could destroy our hardware products, inventory or equipment. This could damage our relationships with our customers, result in litigation for alleged failure to meet our obligations, or result in payment of significant damages, and our net revenue could decline, adversely affecting our business, financial condition, results of operations and gross margin. Forward-looking snippets: Revenue from Contracts with Customers We account for a contract with a customer when both parties have approved the contract and are committed to perform their respective obligations, each party\u2019s rights can be identified, payment terms can be identified, the contract has commercial substance, and it is probable that we will collect substantially all of the consideration to which we are entitled. 8 Table of Contents Disaggregation We have considered (1) information that is regularly reviewed by our Chief Executive Officer, who has been identified as the chief operating decision maker (the \u201cCODM\u201d) as defined by the authoritative guidance on segment reporting, in evaluating financial performance and (2) disclosures presented outside of our financial statements in our earnings releases and used in investor presentations to disaggregate revenues. We expect approximately 34 % of this amount to be recognized as revenue over the next 12 months. Revenue from Contracts with Customers We account for a contract with a customer when both parties have approved the contract and are committed to perform their respective obligations, each party\u2019s rights can be identified, payment terms can be identified, the contract has commercial substance, and it is probable that we will collect substantially all of the consideration to which we are entitled. 8 Table of Contents Disaggregation We have considered (1) information that is regularly reviewed by our Chief Executive Officer, who has been identified as the chief operating decision maker (the \u201cCODM\u201d) as defined by the authoritative guidance on segment reporting, in evaluating financial performance and (2) disclosures presented outside of our financial statements in our earnings releases and used in investor presentations to disaggregate revenues."
+}

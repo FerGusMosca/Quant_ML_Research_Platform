@@ -1,0 +1,208 @@
+{
+  "symbol": "QCOM",
+  "year": 2025,
+  "period": "Q1",
+  "curated_text": "Symbol: QCOM. Year: 2025. Period: Q1. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: IoT, QTL, QCT, Qualcomm Technology Licensing, QSI, QGOV, Qualcomm Government Technologies, Data Center, QUALCOMM Incorporated, Qualcomm Technologies, Inc., QTI, Interest Expense and Investment, Change Interest, Income Tax Expense, OBBB, FDDEI, the Non-Arriver, Consolidated Financial Statements, Segment Information, EBT, Snapdragon, Mobile Data Modems, QTL Segment, Transsion, Huawei, QTL EBT, QSI Segment, Apple, Contingencies, Liquidity and Capital Resources, Capital Return Program, Capital Stock, Additional Capital Requirements, Management\u2019s Discussion and Analysis of Financial Condition, CONTROLS AND PROCEDURES Evaluation, Internal Control, RISKS RELATED TO HUMAN CAPITAL MANAGEMENT \u2022, Standards Development Organizations, RISKS RELATED TO INDUSTRY DYNAMICS, CDMA. Context excerpt: competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in or anticipated by the forward-looking statements. Factors that could cause or contribute to such differences in results and outcomes include without limitation those discussed under the heading \u201cRisk Factors\u201d below, as well as those discussed elsewhere in this Quarterly Report . Readers are ur ged not to place undue reliance on these forward-looking statements, which speak only as of the date of this Quarterly Report. We undertake no obligation to revise or update any forward-looking statements",
+  "competition_summary": [
+    {
+      "competitor": "IoT",
+      "mentions": 4,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "QTL",
+      "mentions": 7,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "QCT",
+      "mentions": 6,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Qualcomm Technology Licensing",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "QSI",
+      "mentions": 5,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "QGOV",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Qualcomm Government Technologies",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Data Center",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "QUALCOMM Incorporated",
+      "mentions": 4,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Qualcomm Technologies, Inc.",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "QTI",
+      "mentions": 3,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Interest Expense and Investment",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Change Interest",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Income Tax Expense",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "OBBB",
+      "mentions": 3,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "FDDEI",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "the Non-Arriver",
+      "mentions": 2,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Consolidated Financial Statements",
+      "mentions": 10,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Segment Information",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "EBT",
+      "mentions": 6,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Snapdragon",
+      "mentions": 5,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Mobile Data Modems",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "QTL Segment",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Transsion",
+      "mentions": 2,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Huawei",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "QTL EBT",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "QSI Segment",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Apple",
+      "mentions": 2,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Contingencies",
+      "mentions": 2,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Liquidity and Capital Resources",
+      "mentions": 2,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Capital Return Program",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Capital Stock",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Additional Capital Requirements",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Management\u2019s Discussion and Analysis of Financial Condition",
+      "mentions": 2,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "CONTROLS AND PROCEDURES Evaluation",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Internal Control",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "RISKS RELATED TO HUMAN CAPITAL MANAGEMENT \u2022",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "Standards Development Organizations",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "RISKS RELATED TO INDUSTRY DYNAMICS",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    },
+    {
+      "competitor": "CDMA",
+      "mentions": 1,
+      "context": "competition; annual effective tax rates; and other statements regarding matters that are not historical are also forward-looking statements. Although forward-looking statements in this Quarterly Report reflect our good faith judgment, such statements can only be based on facts and factors currently known by us. Consequently, forward-looking statements are inherently subject to risks and uncertainties and actual results and outcomes may differ materially from the results and outcomes discussed in"
+    }
+  ]
+}

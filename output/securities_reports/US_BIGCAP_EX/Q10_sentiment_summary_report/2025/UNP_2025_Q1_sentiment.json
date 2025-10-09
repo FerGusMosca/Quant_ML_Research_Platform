@@ -1,0 +1,48 @@
+{
+  "symbol": "UNP",
+  "year": 2025,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2056,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.173
+  },
+  "top_positive": [
+    {
+      "sent": "Changes in our retention awards during the six months ended June\u00a030, 2025, were as follows: Shares (thous.) Weighted-average grant-date fair value Nonvested at January 1, 2025 915 $ 222.50 Granted 229 243.48 Vested ( 224 ) 204.78 Forfeited ( 20 ) 229.95 Nonvested at June 30, 2025 900 $ 232.08 10 Table of Contents At June\u00a030, 2025, there was $ 88 million of total unrecognized compensation expense related to nonvested retention awards, which is expected to be recognized over a weighted-average period of 1.2 years Performance stock unit awards \u2013 In February 2025, our Board of Directors approved performance stock unit grants.",
+      "score": 0.9648
+    },
+    {
+      "sent": "Changes in our retention awards during the six months ended June\u00a030, 2025, were as follows: Shares (thous.) Weighted-average grant-date fair value Nonvested at January 1, 2025 915 $ 222.50 Granted 229 243.48 Vested ( 224 ) 204.78 Forfeited ( 20 ) 229.95 Nonvested at June 30, 2025 900 $ 232.08 10 Table of Contents At June\u00a030, 2025, there was $ 88 million of total unrecognized compensation expense related to nonvested retention awards, which is expected to be recognized over a weighted-average period of 1.2 years Performance stock unit awards \u2013 In February 2025, our Board of Directors approved performance stock unit grants.",
+      "score": 0.9648
+    },
+    {
+      "sent": "We plan to continue to make investments to support our growth strategy, improve the safety, resiliency, and operational efficiency of the network, harden our infrastructure, and replace older assets, including modernization of our locomotive fleet and acquiring freight cars to support replacement and growth opportunities.",
+      "score": 0.9643
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "The tables above provide reconciliations from net income to adjusted EBITDA, debt to adjusted debt, and debt to net income to adjusted debt to adjusted EBITDA.",
+      "score": -0.8402
+    },
+    {
+      "sent": "These increases were partially offset by productivity, lower fuel prices, and lower casualty costs.",
+      "score": -0.7783
+    },
+    {
+      "sent": "These increases were partially offset by productivity, lower fuel prices, and lower casualty costs.",
+      "score": -0.7783
+    }
+  ],
+  "forward_snippets": [
+    "The Company is currently evaluating the effect that the new guidance will have on our related disclosures.",
+    "The Company is currently evaluating the effect that the new guidance will have on our related disclosures.",
+    "The Company is currently evaluating the effect that the new guidance will have on our related disclosures.",
+    "The Company is currently evaluating the effect that the new guidance will have on our related disclosures.",
+    "We define ROIC as net operating profit adjusted for interest expense (including inter\nguidance will have on our related disclosures."
+  ],
+  "curated_text": "Symbol: UNP. Year: 2025. Period: Q1. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: Changes in our retention awards during the six months ended June\u00a030, 2025, were as follows: Shares (thous.) Weighted-average grant-date fair value Nonvested at January 1, 2025 915 $ 222.50 Granted 229 243.48 Vested ( 224 ) 204.78 Forfeited ( 20 ) 229.95 Nonvested at June 30, 2025 900 $ 232.08 10 Table of Contents At June\u00a030, 2025, there was $ 88 million of total unrecognized compensation expense related to nonvested retention awards, which is expected to be recognized over a weighted-average period of 1.2 years Performance stock unit awards \u2013 In February 2025, our Board of Directors approved performance stock unit grants. Changes in our retention awards during the six months ended June\u00a030, 2025, were as follows: Shares (thous.) Weighted-average grant-date fair value Nonvested at January 1, 2025 915 $ 222.50 Granted 229 243.48 Vested ( 224 ) 204.78 Forfeited ( 20 ) 229.95 Nonvested at June 30, 2025 900 $ 232.08 10 Table of Contents At June\u00a030, 2025, there was $ 88 million of total unrecognized compensation expense related to nonvested retention awards, which is expected to be recognized over a weighted-average period of 1.2 years Performance stock unit awards \u2013 In February 2025, our Board of Directors approved performance stock unit grants. We plan to continue to make investments to support our growth strategy, improve the safety, resiliency, and operational efficiency of the network, harden our infrastructure, and replace older assets, including modernization of our locomotive fleet and acquiring freight cars to support replacement and growth opportunities. Top negative sentences: The tables above provide reconciliations from net income to adjusted EBITDA, debt to adjusted debt, and debt to net income to adjusted debt to adjusted EBITDA. These increases were partially offset by productivity, lower fuel prices, and lower casualty costs. These increases were partially offset by productivity, lower fuel prices, and lower casualty costs. Forward-looking snippets: The Company is currently evaluating the effect that the new guidance will have on our related disclosures. The Company is currently evaluating the effect that the new guidance will have on our related disclosures. The Company is currently evaluating the effect that the new guidance will have on our related disclosures. The Company is currently evaluating the effect that the new guidance will have on our related disclosures. We define ROIC as net operating profit adjusted for interest expense (including inter\nguidance will have on our related disclosures."
+}

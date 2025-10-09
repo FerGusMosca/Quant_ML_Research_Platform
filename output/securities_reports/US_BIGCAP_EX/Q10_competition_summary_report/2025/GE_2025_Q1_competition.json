@@ -1,0 +1,13 @@
+{
+  "symbol": "GE",
+  "year": 2025,
+  "period": "Q1",
+  "curated_text": "Symbol: GE. Year: 2025. Period: Q1. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: Bank BPH. Context excerpt: competition and geopolitical risks, including evolving impacts from tariffs, sanctions or other trade tensions between the U.S. and other countries (including implementation of new tariffs and retaliatory measures); demand or supply shocks from events such as a major terrorist attack, war (including the ongoing conflict between Russia and Ukraine and conflict in the Middle East), natural disasters or actual or threatened public health pandemics or other emergencies; \u2022 market or other developments that may affect demand or the financial strength and performance of airframers, airlines, suppliers and other key aerospace and defense industry participants, such as demand for air travel, supply chain or other production constraints, shifts in U.S. or foreign government defense programs and other industry dynamics; \u2022 pricing, cost, volume and the timing of sales, deliveries, investment and production by us and our customers, suppliers or other industry participants; \u2022 the impact of actual or",
+  "competition_summary": [
+    {
+      "competitor": "Bank BPH",
+      "mentions": 1,
+      "context": "competition and geopolitical risks, including evolving impacts from tariffs, sanctions or other trade tensions between the U.S. and other countries (including implementation of new tariffs and retaliatory measures); demand or supply shocks from events such as a major terrorist attack, war (including the ongoing conflict between Russia and Ukraine and conflict in the Middle East), natural disasters or actual or threatened public health pandemics or other emergencies; \u2022 market or other development"
+    }
+  ]
+}

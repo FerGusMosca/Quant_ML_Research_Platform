@@ -1,0 +1,538 @@
+{
+  "symbol": "PFE",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: PFE. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: BMS, the Court of Appeal, the Supreme Court, CureVac AG, CureVac, the German Regional Court, PFIZER INC., UNAUDITED, Comirnaty, Trademark Office, the European Patent Office, FDA, District Court, Alkem Laboratories Ltd., Alkem, Annora Pharma Private Limited, Teva Pharmaceuticals, Inc., Teva, Vyndaqel-Vyndamax, Scripps Research Institute, Scripps, Zydus Pharmaceuticals, Zydus Lifesciences Limited, MSN Pharmaceuticals Inc., MSN Laboratories Private Ltd., MSN, Rubicon Research Private Limited, Changzhou Pharmaceutical Factory, Aurobindo Pharma U.S.A. Inc., Apotex Inc., Apotex Corp., Sandoz Inc., Sandoz, the U.S., Inlyta., Alnylam Pharmaceuticals, Inc., Alnylam, Pfizer, Pharmacia & Upjohn Company LLC, ModernaTX, Inc., ModernaTX, Moderna US, US Inc., the U.S. Patent Office Patent Trial & Appeal Board, the U.S. Patent Office, Arbutus Biopharma Corporation, Arbutus, Genevant Sciences GmbH, GlaxoSmithKline Biologicals SA, LLC, GSK Group, the Unified Patent Court, Local Division Munich, Enanta Pharmaceuticals, Inc., the District Court, Enanta, the GSK Group, GSK Group\u2019s Arexvy, GSK, RSV, the U.K. Court, Company, Collaboration/Licensing Partners Comirnaty, the U.S. District Court, Sumitomo Pharma America, Takeda and Takeda Pharmaceuticals International AG, Warner-Lambert, American Optical Corporation, American Optical, Docetaxel, MDL, Zantac, Zantac OTC, Johnson & Johnson, the Federal MDL Court, the Federal MDL Court\u2019s, the State of New Mexico, City Council of Baltimore, Judicial Council Coordinated Proceeding, the Superior Court of California, the Superior Court of Delaware, Champix, MPA, Monsanto Company, Monsanto, Solutia Inc., Pharmacia & Upjohn Company, Solutia, New Monsanto, Bayer AG, Wyeth Holdings Corporation, American Cyanamid Company, Bound Brook, the U.S. Environmental Protection Agency, the New Jersey Department of Environmental Protection, the Comprehensive Environmental Response, Iraqi Ministry of Health In, the Iraqi Ministry of Health, the Court of Appeals, the District Court\u2019s, the U.S. Supreme Court, Allergan Finance LLC, the State of New York, Breach of Contract \u2013 Comirnaty, Court of First Instance of Brussels, Court. Context excerpt: competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related to Eliquis due to expire in 2026. In May 2023, the Court of Appeal dismissed BMS\u2019s appeal and in October 2023, the Supreme Court refused BMS permission to appeal. Additional challenges are pending in other jurisdictions. Also, in July 2022, CureVac AG (CureVac) brought a patent infringement action against BioNTech and certain of its subsidiaries in the German Regional Court alleging that Comirnaty infringes certain German utility model patents and certain expired and unexpired European patents.",
+  "competition_summary": [
+    {
+      "competitor": "BMS",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the Court of Appeal",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the Supreme Court",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "CureVac AG",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "CureVac",
+      "mentions": 8,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the German Regional Court",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "PFIZER INC.",
+      "mentions": 6,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "UNAUDITED",
+      "mentions": 6,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Comirnaty",
+      "mentions": 12,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Trademark Office",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the European Patent Office",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "FDA",
+      "mentions": 13,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "District Court",
+      "mentions": 24,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Alkem Laboratories Ltd.",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Alkem",
+      "mentions": 3,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Annora Pharma Private Limited",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Teva Pharmaceuticals, Inc.",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Teva",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Vyndaqel-Vyndamax",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Scripps Research Institute",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Scripps",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Zydus Pharmaceuticals",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Zydus Lifesciences Limited",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "MSN Pharmaceuticals Inc.",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "MSN Laboratories Private Ltd.",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "MSN",
+      "mentions": 3,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Rubicon Research Private Limited",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Changzhou Pharmaceutical Factory",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Aurobindo Pharma U.S.A. Inc.",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Apotex Inc.",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Apotex Corp.",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Sandoz Inc.",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Sandoz",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the U.S.",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Inlyta.",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Alnylam Pharmaceuticals, Inc.",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Alnylam",
+      "mentions": 3,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Pfizer",
+      "mentions": 8,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Pharmacia & Upjohn Company LLC",
+      "mentions": 4,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "ModernaTX, Inc.",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "ModernaTX",
+      "mentions": 5,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Moderna US",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "US Inc.",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the U.S. Patent Office Patent Trial & Appeal Board",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the U.S. Patent Office",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Arbutus Biopharma Corporation",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Arbutus",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Genevant Sciences GmbH",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "GlaxoSmithKline Biologicals SA",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "LLC",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "GSK Group",
+      "mentions": 4,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the Unified Patent Court",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Local Division Munich",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Enanta Pharmaceuticals, Inc.",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the District Court",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Enanta",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the GSK Group",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "GSK Group\u2019s Arexvy",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "GSK",
+      "mentions": 3,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "RSV",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the U.K. Court",
+      "mentions": 3,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Company",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Collaboration/Licensing Partners Comirnaty",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the U.S. District Court",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Sumitomo Pharma America",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Takeda and Takeda Pharmaceuticals International AG",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Warner-Lambert",
+      "mentions": 4,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "American Optical Corporation",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "American Optical",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Docetaxel",
+      "mentions": 3,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "MDL",
+      "mentions": 6,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Zantac",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Zantac OTC",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Johnson & Johnson",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the Federal MDL Court",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the Federal MDL Court\u2019s",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the State of New Mexico",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "City Council of Baltimore",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Judicial Council Coordinated Proceeding",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the Superior Court of California",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the Superior Court of Delaware",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Champix",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "MPA",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Monsanto Company",
+      "mentions": 3,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Monsanto",
+      "mentions": 7,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Solutia Inc.",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Pharmacia & Upjohn Company",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Solutia",
+      "mentions": 3,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "New Monsanto",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Bayer AG",
+      "mentions": 2,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Wyeth Holdings Corporation",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "American Cyanamid Company",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Bound Brook",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the U.S. Environmental Protection Agency",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the New Jersey Department of Environmental Protection",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the Comprehensive Environmental Response",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Iraqi Ministry of Health In",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the Iraqi Ministry of Health",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the Court of Appeals",
+      "mentions": 3,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the District Court\u2019s",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the U.S. Supreme Court",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Allergan Finance LLC",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "the State of New York",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Breach of Contract \u2013 Comirnaty",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Court of First Instance of Brussels",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    },
+    {
+      "competitor": "Court",
+      "mentions": 1,
+      "context": "competition and/or violations of antitrust laws. In addition to the challenges to the U.S. patents that are discussed below, patent rights to certain of our products or those of our collaboration/licensing partners are being challenged in various other jurisdictions. Some of our collaboration or licensing partners face challenges to the validity of their patent rights in non-U.S. jurisdictions. For example, in April 2022, the U.K. High Court issued a judgment finding invalid a BMS patent related"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "symbol": "ROST",
+  "year": 2025,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2775,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.178
+  },
+  "top_positive": [
+    {
+      "sent": "11 A summary of stock awards activity for the six month period ended August\u00a02, 2025, is presented below: Number of shares (000) Weighted-average grant date fair value Unvested at February 1, 2025 4,157 $ 117.02 Awarded 1,025 136.66 Released ( 1,190 ) 111.40 Forfeited ( 85 ) 119.27 Unvested at August 2, 2025 3,907 $ 123.84 The 51,164 PRSU shares awarded in fiscal 2024 all remain unvested as of August\u00a02, 2025.",
+      "score": 0.9538
+    },
+    {
+      "sent": "11 A summary of stock awards activity for the six month period ended August\u00a02, 2025, is presented below: Number of shares (000) Weighted-average grant date fair value Unvested at February 1, 2025 4,157 $ 117.02 Awarded 1,025 136.66 Released ( 1,190 ) 111.40 Forfeited ( 85 ) 119.27 Unvested at August 2, 2025 3,907 $ 123.84 The 51,164 PRSU shares awarded in fiscal 2024 all remain unvested as of August\u00a02, 2025.",
+      "score": 0.9538
+    },
+    {
+      "sent": "11 A summary of stock awards activity for the six month period ended August\u00a02, 2025, is presented below: Number of shares (000) Weighted-average grant date fair value Unvested at February 1, 2025 4,157 $ 117.02 Awarded 1,025 136.66 Released ( 1,190 ) 111.40 Forfeited ( 85 ) 119.27 Unvested at August 2, 2025 3,907 $ 123.84 The 51,164 PRSU shares awarded in fiscal 2024 all remain unvested as of August\u00a02, 2025.",
+      "score": 0.9538
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "\u2022 A public health or public safety crisis, or a natural or man-made disaster in California or another region where we have a concentration of stores, offices, or a distribution center could harm our business.",
+      "score": -0.8126
+    },
+    {
+      "sent": "\u2022 A public health or public safety crisis, or a natural or man-made disaster in California or another region where we have a concentration of stores, offices, or a distribution center could harm our business.",
+      "score": -0.8126
+    },
+    {
+      "sent": "\u2022 A public health or public safety crisis, or a natural or man-made disaster in California or another region where we have a concentration of stores, offices, or a distribution center could harm our business.",
+      "score": -0.8126
+    }
+  ],
+  "forward_snippets": [
+    "The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements.",
+    "The new guidance is effective for annual reporting periods beginning after December 15, 2024, with retrospective application permitted.",
+    "The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements.",
+    "The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements.",
+    "The new guidance is effective for annual reporting periods beginning after December 15, 2024, with retrospective application permitted."
+  ],
+  "curated_text": "Symbol: ROST. Year: 2025. Period: Q1. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: 11 A summary of stock awards activity for the six month period ended August\u00a02, 2025, is presented below: Number of shares (000) Weighted-average grant date fair value Unvested at February 1, 2025 4,157 $ 117.02 Awarded 1,025 136.66 Released ( 1,190 ) 111.40 Forfeited ( 85 ) 119.27 Unvested at August 2, 2025 3,907 $ 123.84 The 51,164 PRSU shares awarded in fiscal 2024 all remain unvested as of August\u00a02, 2025. 11 A summary of stock awards activity for the six month period ended August\u00a02, 2025, is presented below: Number of shares (000) Weighted-average grant date fair value Unvested at February 1, 2025 4,157 $ 117.02 Awarded 1,025 136.66 Released ( 1,190 ) 111.40 Forfeited ( 85 ) 119.27 Unvested at August 2, 2025 3,907 $ 123.84 The 51,164 PRSU shares awarded in fiscal 2024 all remain unvested as of August\u00a02, 2025. 11 A summary of stock awards activity for the six month period ended August\u00a02, 2025, is presented below: Number of shares (000) Weighted-average grant date fair value Unvested at February 1, 2025 4,157 $ 117.02 Awarded 1,025 136.66 Released ( 1,190 ) 111.40 Forfeited ( 85 ) 119.27 Unvested at August 2, 2025 3,907 $ 123.84 The 51,164 PRSU shares awarded in fiscal 2024 all remain unvested as of August\u00a02, 2025. Top negative sentences: \u2022 A public health or public safety crisis, or a natural or man-made disaster in California or another region where we have a concentration of stores, offices, or a distribution center could harm our business. \u2022 A public health or public safety crisis, or a natural or man-made disaster in California or another region where we have a concentration of stores, offices, or a distribution center could harm our business. \u2022 A public health or public safety crisis, or a natural or man-made disaster in California or another region where we have a concentration of stores, offices, or a distribution center could harm our business. Forward-looking snippets: The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements. The new guidance is effective for annual reporting periods beginning after December 15, 2024, with retrospective application permitted. The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements. The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements. The new guidance is effective for annual reporting periods beginning after December 15, 2024, with retrospective application permitted."
+}

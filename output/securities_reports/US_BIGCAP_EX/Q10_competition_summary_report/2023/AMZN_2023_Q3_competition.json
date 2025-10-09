@@ -2,6 +2,7 @@
   "symbol": "AMZN",
   "year": 2023,
   "period": "Q3",
+  "curated_text": "Symbol: AMZN. Year: 2023. Period: Q3. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: EUR, THE SECURITIES EXCHANGE ACT, Commission File No., AMAZON.COM, INC., Delaware 91-1646860, Each Exchange on Which Registered Common Stock, the Securities Exchange Act, Interactive Data File. Context excerpt: CompetitionAuthorityMatterMember 2021-12-01 2021-12-31 iso4217:EUR 0001018724 us-gaap:SeniorNotesMember 2023-03-31 0001018724 us-gaap:RevolvingCreditFacilityMember us-gaap:LineOfCreditMember 2023-03-31 0001018724 amzn:A2014SeniorUnsecuredNotesMember us-gaap:SeniorNotesMember 2023-03-31 0001018724 amzn:A2014SeniorUnsecuredNotesMember us-gaap:SeniorNotesMember srt:MinimumMember 2023-03-31 0001018724 amzn:A2014SeniorUnsecuredNotesMember us-gaap:SeniorNotesMember srt:MaximumMember 2023-03-31 0001018724 amzn:A2014SeniorUnsecuredNotesMember us-gaap:SeniorNotesMember 2022-12-31 0001018724 amzn:A2017SeniorUnsecuredNotesMember us-gaap:SeniorNotesMember 2023-03-31 0001018724 amzn:A2017SeniorUnsecuredNotesMember us-gaap:SeniorNotesMember srt:MinimumMember 2023-03-31 0001018724 amzn:A2017SeniorUnsecuredNotesMember us-gaap:SeniorNotesMember srt:MaximumMember 2023-03-31 0001018724 amzn:A2017SeniorUnsecuredNotesMember us-gaap:SeniorNotesMember 2022-12-31 0001018724 us-gaap:SeniorNotesMember amzn:A202",
   "competition_summary": [
     {
       "competitor": "EUR",

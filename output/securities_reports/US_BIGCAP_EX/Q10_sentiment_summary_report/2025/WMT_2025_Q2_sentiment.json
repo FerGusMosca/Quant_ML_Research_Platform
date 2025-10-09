@@ -1,0 +1,48 @@
+{
+  "symbol": "WMT",
+  "year": 2025,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2956,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.095
+  },
+  "top_positive": [
+    {
+      "sent": "segments and international markets driven by growth in transactions and unit volumes, with strength in eCommerce as well as strong sales in grocery and health and wellness.",
+      "score": 0.9201
+    },
+    {
+      "sent": "segments and international markets driven by growth in transactions and unit volumes, with strength in eCommerce as well as strong sales in grocery and health and wellness.",
+      "score": 0.9201
+    },
+    {
+      "sent": "Based upon that evaluation, our Chief Executive Officer and Chief Financial Officer concluded that our disclosure controls and procedures are effective to provide reasonable assurance that information required to be disclosed by the Company in the reports that it files or submits under the Securities Exchange Act of 1934, as amended, is accumulated and communicated to management, including our Chief Executive Officer and Chief Financial Officer, as appropriate, to allow timely decisions regarding required disclosure and are effective to provide reasonable assurance that such information is recorded, processed, summarized and reported within the time periods specified by the SEC's rules and forms.",
+      "score": 0.9201
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "25 Table of Contents Long-term Debt The following table provides the changes in our long-term debt for the three months ended April\u00a030, 2025: (Amounts in millions) Long-term debt due within one year Long-term debt Total Balances as of February 1, 2025 $ 2,598 $ 33,401 $ 35,999 Proceeds from issuance of long-term debt (1) \u2014 3,983 3,983 Reclassifications of long-term debt 1,486 (1,486) \u2014 Currency and other adjustments 1 622 623 Balances as of April 30, 2025 $ 4,085 $ 36,520 $ 40,605 (1) Proceeds from issuance of long-term debt are net of deferred loan costs and any related discount or premium.",
+      "score": -0.9382
+    },
+    {
+      "sent": "25 Table of Contents Long-term Debt The following table provides the changes in our long-term debt for the three months ended April\u00a030, 2025: (Amounts in millions) Long-term debt due within one year Long-term debt Total Balances as of February 1, 2025 $ 2,598 $ 33,401 $ 35,999 Proceeds from issuance of long-term debt (1) \u2014 3,983 3,983 Reclassifications of long-term debt 1,486 (1,486) \u2014 Currency and other adjustments 1 622 623 Balances as of April 30, 2025 $ 4,085 $ 36,520 $ 40,605 (1) Proceeds from issuance of long-term debt are net of deferred loan costs and any related discount or premium.",
+      "score": -0.9382
+    },
+    {
+      "sent": "Opioid-Related Litigation: In re National Prescription Opiate Litigation (MDL No.",
+      "score": -0.5859
+    }
+  ],
+  "forward_snippets": [
+    "Recent Developments, Macroeconomic Conditions and Potential Impacts We expect continued uncertainty in our business and the global economy due to tariffs and trade restrictions; inflationary trends; fluctuations in global currencies; swings in macroeconomic conditions and their effect on consumer confidence; volatility in employment trends; and supply chain pressures, any of which may impact our results.",
+    "Growth Our objective of prioritizing growth means we will focus on serving customers and members however they want to shop through our omnichannel business model.",
+    "as we believe it is a meaningful metric within the context of the U.S.",
+    "Returns As we execute our financial framework, we believe our return on capital will improve over time.",
+    "Growth Our objective of prioritizing growth means we will focus on serving customers and members however they want to shop through our omnichannel business model."
+  ],
+  "curated_text": "Symbol: WMT. Year: 2025. Period: Q2. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: segments and international markets driven by growth in transactions and unit volumes, with strength in eCommerce as well as strong sales in grocery and health and wellness. segments and international markets driven by growth in transactions and unit volumes, with strength in eCommerce as well as strong sales in grocery and health and wellness. Based upon that evaluation, our Chief Executive Officer and Chief Financial Officer concluded that our disclosure controls and procedures are effective to provide reasonable assurance that information required to be disclosed by the Company in the reports that it files or submits under the Securities Exchange Act of 1934, as amended, is accumulated and communicated to management, including our Chief Executive Officer and Chief Financial Officer, as appropriate, to allow timely decisions regarding required disclosure and are effective to provide reasonable assurance that such information is recorded, processed, summarized and reported within the time periods specified by the SEC's rules and forms. Top negative sentences: 25 Table of Contents Long-term Debt The following table provides the changes in our long-term debt for the three months ended April\u00a030, 2025: (Amounts in millions) Long-term debt due within one year Long-term debt Total Balances as of February 1, 2025 $ 2,598 $ 33,401 $ 35,999 Proceeds from issuance of long-term debt (1) \u2014 3,983 3,983 Reclassifications of long-term debt 1,486 (1,486) \u2014 Currency and other adjustments 1 622 623 Balances as of April 30, 2025 $ 4,085 $ 36,520 $ 40,605 (1) Proceeds from issuance of long-term debt are net of deferred loan costs and any related discount or premium. 25 Table of Contents Long-term Debt The following table provides the changes in our long-term debt for the three months ended April\u00a030, 2025: (Amounts in millions) Long-term debt due within one year Long-term debt Total Balances as of February 1, 2025 $ 2,598 $ 33,401 $ 35,999 Proceeds from issuance of long-term debt (1) \u2014 3,983 3,983 Reclassifications of long-term debt 1,486 (1,486) \u2014 Currency and other adjustments 1 622 623 Balances as of April 30, 2025 $ 4,085 $ 36,520 $ 40,605 (1) Proceeds from issuance of long-term debt are net of deferred loan costs and any related discount or premium. Opioid-Related Litigation: In re National Prescription Opiate Litigation (MDL No. Forward-looking snippets: Recent Developments, Macroeconomic Conditions and Potential Impacts We expect continued uncertainty in our business and the global economy due to tariffs and trade restrictions; inflationary trends; fluctuations in global currencies; swings in macroeconomic conditions and their effect on consumer confidence; volatility in employment trends; and supply chain pressures, any of which may impact our results. Growth Our objective of prioritizing growth means we will focus on serving customers and members however they want to shop through our omnichannel business model. as we believe it is a meaningful metric within the context of the U.S. Returns As we execute our financial framework, we believe our return on capital will improve over time. Growth Our objective of prioritizing growth means we will focus on serving customers and members however they want to shop through our omnichannel business model."
+}

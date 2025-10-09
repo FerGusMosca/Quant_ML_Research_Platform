@@ -1,0 +1,13 @@
+{
+  "symbol": "NKE",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: NKE. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: NIKE. Context excerpt: competition among designers, marketers, distributors and sellers of athletic or leisure footwear, apparel and equipment for consumers and endorsers; NIKE's ability to successfully innovate and compete in various categories; new product development and innovation; demographic changes; changes in consumer preferences and channel mix; popularity of particular designs, categories of products and sports; seasonal and geographic demand for NIKE products; difficulties in anticipating or forecasting, and responding to changes in consumer preferences, consumer demand for NIKE products, changes in channel mix and the various market factors described above; the size and growth of the overall athletic or leisure footwear, apparel and equipment markets; general risks associated with doing business outside of the United States, including, without limitation, exchange rate fluctuations, inflation, import duties, tariffs, quotas, sanctions, political and economic instability, conflicts and terrorism; ",
+  "competition_summary": [
+    {
+      "competitor": "NIKE",
+      "mentions": 3,
+      "context": "competition among designers, marketers, distributors and sellers of athletic or leisure footwear, apparel and equipment for consumers and endorsers; NIKE's ability to successfully innovate and compete in various categories; new product development and innovation; demographic changes; changes in consumer preferences and channel mix; popularity of particular designs, categories of products and sports; seasonal and geographic demand for NIKE products; difficulties in anticipating or forecasting, an"
+    }
+  ]
+}

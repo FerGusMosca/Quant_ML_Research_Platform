@@ -1,0 +1,48 @@
+{
+  "symbol": "NKE",
+  "year": 2025,
+  "Period": "Q3",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.0696,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.076
+  },
+  "top_positive": [
+    {
+      "sent": "THREE MONTHS ENDED NOVEMBER 30, SIX MONTHS ENDED NOVEMBER 30, (In millions, except per share data) 2024 2023 2024 2023 Net income available to common stockholders $ 1,163 $ 1,578 $ 2,214 $ 3,028 Determination of shares: Weighted average common shares outstanding 1,486.8 1,520.8 1,492.3 1,524.6 Assumed conversion of dilutive stock options and awards 3.2 11.3 3.6 13.1 DILUTED WEIGHTED AVERAGE COMMON SHARES OUTSTANDING 1,490.0 1,532.1 1,495.9 1,537.7 Earnings per common share: Basic $ 0.78 $ 1.04 $ 1.48 $ 1.99 Diluted $ 0.78 $ 1.03 $ 1.48 $ 1.97 12 Table of Contents NOTE\u00a07 \u2014 RISK MANAGEMENT AND DERIVATIVES The Company is exposed to global market risks, including the effect of changes in foreign currency exchange rates and interest rates, and uses derivatives to manage financial exposures that occur in the normal course of business.",
+      "score": 0.9717
+    },
+    {
+      "sent": "THREE MONTHS ENDED NOVEMBER 30, SIX MONTHS ENDED NOVEMBER 30, (In millions, except per share data) 2024 2023 2024 2023 Net income available to common stockholders $ 1,163 $ 1,578 $ 2,214 $ 3,028 Determination of shares: Weighted average common shares outstanding 1,486.8 1,520.8 1,492.3 1,524.6 Assumed conversion of dilutive stock options and awards 3.2 11.3 3.6 13.1 DILUTED WEIGHTED AVERAGE COMMON SHARES OUTSTANDING 1,490.0 1,532.1 1,495.9 1,537.7 Earnings per common share: Basic $ 0.78 $ 1.04 $ 1.48 $ 1.99 Diluted $ 0.78 $ 1.03 $ 1.48 $ 1.97 12 Table of Contents NOTE\u00a07 \u2014 RISK MANAGEMENT AND DERIVATIVES The Company is exposed to global market risks, including the effect of changes in foreign currency exchange rates and interest rates, and uses derivatives to manage financial exposures that occur in the normal course of business.",
+      "score": 0.9717
+    },
+    {
+      "sent": "The computations of diluted earnings per common share exclude restricted stock, restricted stock units and options, including shares under ESPPs, to purchase an estimated additional 81.4 million and 46.2 million shares of common stock outstanding for the three months ended November 30, 2024 and 2023, respectively, and 77.9 million and 43.5 million shares of common stock outstanding for the six months ended November 30, 2024 and 2023, respectively, because the awards were assumed to be anti-dilutive.",
+      "score": 0.9477
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "RESTRICTED STOCK AND RESTRICTED STOCK UNITS As of November\u00a030, 2024, the Company had $ 815 million of unrecognized compensation costs from restricted stock and restricted stock units, net of estimated forfeitures, to be recognized in Cost of sales or Operating overhead expense, as applicable, over a weighted average remaining period of 2.7 years.",
+      "score": -0.8971
+    },
+    {
+      "sent": "RESTRICTED STOCK AND RESTRICTED STOCK UNITS As of November\u00a030, 2024, the Company had $ 815 million of unrecognized compensation costs from restricted stock and restricted stock units, net of estimated forfeitures, to be recognized in Cost of sales or Operating overhead expense, as applicable, over a weighted average remaining period of 2.7 years.",
+      "score": -0.8971
+    },
+    {
+      "sent": "29 Table of Contents Reported EBIT decreased 13% reflecting lower revenues and the following: \u2022 Gross margin expansion of 80 basis points primarily due to lower product costs, reflecting product mix and lower product input costs, as well as lower warehousing and logistics costs.",
+      "score": -0.8316
+    }
+  ],
+  "forward_snippets": [
+    "As a result of this guidance, the Company recognized a one-time tax benefit related to fiscal 2023 tax positions in the first three months of fiscal 2024.",
+    "The majority of derivatives outstanding a\nguidance, the Company recognized a one-time tax benefit related to fiscal 2023 tax positions in the first three months of fiscal 2024.",
+    "As we continue to take actions to reposition our business over the next several quarters, we expect a negative impact on our Revenues and gross margin as well as higher Demand creation expense.",
+    "However, we believe these actions will reposition our business to drive long-term shareholder value.",
+    "Revenues $ 12,354 $ 13,388 $ 23,943 $ 26,327 EBIT margin 11.3 % 14.2 % 11.1 % 13.3 % Currency-neutral revenues: Currency-neutral revenues enhance visibility to underlying business trends, excluding the impact of translation arising from foreign currency exchange rate fluctuations."
+  ],
+  "curated_text": "Symbol: NKE. Year: 2025. Period: Q3. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: THREE MONTHS ENDED NOVEMBER 30, SIX MONTHS ENDED NOVEMBER 30, (In millions, except per share data) 2024 2023 2024 2023 Net income available to common stockholders $ 1,163 $ 1,578 $ 2,214 $ 3,028 Determination of shares: Weighted average common shares outstanding 1,486.8 1,520.8 1,492.3 1,524.6 Assumed conversion of dilutive stock options and awards 3.2 11.3 3.6 13.1 DILUTED WEIGHTED AVERAGE COMMON SHARES OUTSTANDING 1,490.0 1,532.1 1,495.9 1,537.7 Earnings per common share: Basic $ 0.78 $ 1.04 $ 1.48 $ 1.99 Diluted $ 0.78 $ 1.03 $ 1.48 $ 1.97 12 Table of Contents NOTE\u00a07 \u2014 RISK MANAGEMENT AND DERIVATIVES The Company is exposed to global market risks, including the effect of changes in foreign currency exchange rates and interest rates, and uses derivatives to manage financial exposures that occur in the normal course of business. THREE MONTHS ENDED NOVEMBER 30, SIX MONTHS ENDED NOVEMBER 30, (In millions, except per share data) 2024 2023 2024 2023 Net income available to common stockholders $ 1,163 $ 1,578 $ 2,214 $ 3,028 Determination of shares: Weighted average common shares outstanding 1,486.8 1,520.8 1,492.3 1,524.6 Assumed conversion of dilutive stock options and awards 3.2 11.3 3.6 13.1 DILUTED WEIGHTED AVERAGE COMMON SHARES OUTSTANDING 1,490.0 1,532.1 1,495.9 1,537.7 Earnings per common share: Basic $ 0.78 $ 1.04 $ 1.48 $ 1.99 Diluted $ 0.78 $ 1.03 $ 1.48 $ 1.97 12 Table of Contents NOTE\u00a07 \u2014 RISK MANAGEMENT AND DERIVATIVES The Company is exposed to global market risks, including the effect of changes in foreign currency exchange rates and interest rates, and uses derivatives to manage financial exposures that occur in the normal course of business. The computations of diluted earnings per common share exclude restricted stock, restricted stock units and options, including shares under ESPPs, to purchase an estimated additional 81.4 million and 46.2 million shares of common stock outstanding for the three months ended November 30, 2024 and 2023, respectively, and 77.9 million and 43.5 million shares of common stock outstanding for the six months ended November 30, 2024 and 2023, respectively, because the awards were assumed to be anti-dilutive. Top negative sentences: RESTRICTED STOCK AND RESTRICTED STOCK UNITS As of November\u00a030, 2024, the Company had $ 815 million of unrecognized compensation costs from restricted stock and restricted stock units, net of estimated forfeitures, to be recognized in Cost of sales or Operating overhead expense, as applicable, over a weighted average remaining period of 2.7 years. RESTRICTED STOCK AND RESTRICTED STOCK UNITS As of November\u00a030, 2024, the Company had $ 815 million of unrecognized compensation costs from restricted stock and restricted stock units, net of estimated forfeitures, to be recognized in Cost of sales or Operating overhead expense, as applicable, over a weighted average remaining period of 2.7 years. 29 Table of Contents Reported EBIT decreased 13% reflecting lower revenues and the following: \u2022 Gross margin expansion of 80 basis points primarily due to lower product costs, reflecting product mix and lower product input costs, as well as lower warehousing and logistics costs. Forward-looking snippets: As a result of this guidance, the Company recognized a one-time tax benefit related to fiscal 2023 tax positions in the first three months of fiscal 2024. The majority of derivatives outstanding a\nguidance, the Company recognized a one-time tax benefit related to fiscal 2023 tax positions in the first three months of fiscal 2024. As we continue to take actions to reposition our business over the next several quarters, we expect a negative impact on our Revenues and gross margin as well as higher Demand creation expense. However, we believe these actions will reposition our business to drive long-term shareholder value. Revenues $ 12,354 $ 13,388 $ 23,943 $ 26,327 EBIT margin 11.3 % 14.2 % 11.1 % 13.3 % Currency-neutral revenues: Currency-neutral revenues enhance visibility to underlying business trends, excluding the impact of translation arising from foreign currency exchange rate fluctuations."
+}

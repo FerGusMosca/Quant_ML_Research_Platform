@@ -1,0 +1,48 @@
+{
+  "symbol": "CL",
+  "year": 2025,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.2732,
+    "outlook_sentiment": 0.2637,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.131
+  },
+  "top_positive": [
+    {
+      "sent": "Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time.",
+      "score": 0.9524
+    },
+    {
+      "sent": "Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time.",
+      "score": 0.9524
+    },
+    {
+      "sent": "Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time.",
+      "score": 0.9524
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "29 COLGATE-PALMOLIVE COMPANY Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Dollars in Millions Except Per Share Amounts) We continue to closely monitor the impact of geopolitical events and tensions, such as the war in Ukraine, the conflict in the Middle East, tensions between China and Taiwan and developments in trade relations, and the challenging market conditions discussed above, on our business and the related uncertainties and risks.",
+      "score": -0.9062
+    },
+    {
+      "sent": "29 COLGATE-PALMOLIVE COMPANY Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Dollars in Millions Except Per Share Amounts) We continue to closely monitor the impact of geopolitical events and tensions, such as the war in Ukraine, the conflict in the Middle East, tensions between China and Taiwan and developments in trade relations, and the challenging market conditions discussed above, on our business and the related uncertainties and risks.",
+      "score": -0.9062
+    },
+    {
+      "sent": "29 COLGATE-PALMOLIVE COMPANY Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Dollars in Millions Except Per Share Amounts) We continue to closely monitor the impact of geopolitical events and tensions, such as the war in Ukraine, the conflict in the Middle East, tensions between China and Taiwan and developments in trade relations, and the challenging market conditions discussed above, on our business and the related uncertainties and risks.",
+      "score": -0.9062
+    }
+  ],
+  "forward_snippets": [
+    "This guidance is effective for the Company for fiscal years beginning after December 15, 2026 and is not expected to have an impact on the Company\u2019s Consolidated Financial Statements.",
+    "2025-03, \u201cBusiness Combinations (Topic 805) and Consolidation (Topic 810): Determining the Accounting Acquirer in the Acquisition of a Variable Interest Entity.\u201d This ASU clarifies the guidance regarding the identification of the accounting acquirer in a business combination in which the legal acquiree is a variable interest entity.",
+    "This guidance is effective for the Company for fiscal years beginning after December 15, 2026 and is not expected to have an impact on the Company\u2019s Consolidated Financial Statements.",
+    "This guidance is effective for the Company for fiscal years beginning after December 15, 2025 and is not expected to have an impact on the Company\u2019s Consolidated Financial Statements.",
+    "This guidance is effective for the Company for fiscal years beginning after December 15, 2026, and interim periods within fiscal years beginning after December 15, 2027."
+  ],
+  "curated_text": "Symbol: CL. Year: 2025. Period: Q1. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time. Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time. Our commitment to these priorities, the strength of our brands, the breadth of our global footprint and a commitment to profitability and driving efficiency in cash generation should position us well to manage through the challenges we face and increase shareholder value over time. Top negative sentences: 29 COLGATE-PALMOLIVE COMPANY Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Dollars in Millions Except Per Share Amounts) We continue to closely monitor the impact of geopolitical events and tensions, such as the war in Ukraine, the conflict in the Middle East, tensions between China and Taiwan and developments in trade relations, and the challenging market conditions discussed above, on our business and the related uncertainties and risks. 29 COLGATE-PALMOLIVE COMPANY Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Dollars in Millions Except Per Share Amounts) We continue to closely monitor the impact of geopolitical events and tensions, such as the war in Ukraine, the conflict in the Middle East, tensions between China and Taiwan and developments in trade relations, and the challenging market conditions discussed above, on our business and the related uncertainties and risks. 29 COLGATE-PALMOLIVE COMPANY Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations (Dollars in Millions Except Per Share Amounts) We continue to closely monitor the impact of geopolitical events and tensions, such as the war in Ukraine, the conflict in the Middle East, tensions between China and Taiwan and developments in trade relations, and the challenging market conditions discussed above, on our business and the related uncertainties and risks. Forward-looking snippets: This guidance is effective for the Company for fiscal years beginning after December 15, 2026 and is not expected to have an impact on the Company\u2019s Consolidated Financial Statements. 2025-03, \u201cBusiness Combinations (Topic 805) and Consolidation (Topic 810): Determining the Accounting Acquirer in the Acquisition of a Variable Interest Entity.\u201d This ASU clarifies the guidance regarding the identification of the accounting acquirer in a business combination in which the legal acquiree is a variable interest entity. This guidance is effective for the Company for fiscal years beginning after December 15, 2026 and is not expected to have an impact on the Company\u2019s Consolidated Financial Statements. This guidance is effective for the Company for fiscal years beginning after December 15, 2025 and is not expected to have an impact on the Company\u2019s Consolidated Financial Statements. This guidance is effective for the Company for fiscal years beginning after December 15, 2026, and interim periods within fiscal years beginning after December 15, 2027."
+}

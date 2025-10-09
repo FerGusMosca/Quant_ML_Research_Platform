@@ -1,0 +1,168 @@
+{
+  "symbol": "FIS",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: FIS. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: FIS, Cybersecurity Threats and Solutions Cyberattacks, NM, the Banking and Capital Markets, Corporate, Gross Profit, Worldpay, Administrative Expenses Selling, NM Total, NM NM, Company, NM Effective, Equity Method Investment Earnings, Capital Market Solutions, FASB ASC Topic, Contents Capital Market Solutions, Capital Markets, Capital Resources Cash Requirements, Revolving Credit Facility, the Issuer Solutions Acquisition, the Board of Directors, Board of Directors, RealNet, FASB, ASU, Euro, the U.S. Dollar, the British Pound Sterling, Australian Dollar, Pound Sterling, 37 Table of Contents, Commission. Context excerpt: competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, we may benefit if the client retains our solutions and 29 Table of Contents expands the use of them following the consolidation to support the newly combined entity. Conversely, we may lose revenue if our solutions are not chosen to support the newly combined entity. It is also possible that larger financial institutions resulting from consolidation may have greater leverage in negotiating terms or could decide to perform in-house some or all of the solutions that we currently provide or could p",
+  "competition_summary": [
+    {
+      "competitor": "FIS",
+      "mentions": 11,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Cybersecurity Threats and Solutions Cyberattacks",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "NM",
+      "mentions": 3,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "the Banking and Capital Markets",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Corporate",
+      "mentions": 4,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Gross Profit",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Worldpay",
+      "mentions": 7,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Administrative Expenses Selling",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "NM Total",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "NM NM",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Company",
+      "mentions": 17,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "NM Effective",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Equity Method Investment Earnings",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Capital Market Solutions",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "FASB ASC Topic",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Contents Capital Market Solutions",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Capital Markets",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Capital Resources Cash Requirements",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Revolving Credit Facility",
+      "mentions": 3,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "the Issuer Solutions Acquisition",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "the Board of Directors",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 5,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "RealNet",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "FASB",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "ASU",
+      "mentions": 3,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Euro",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "the U.S. Dollar",
+      "mentions": 2,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "the British Pound Sterling",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Australian Dollar",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Pound Sterling",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "37 Table of Contents",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    },
+    {
+      "competitor": "Commission",
+      "mentions": 1,
+      "context": "competition among financial technology providers. However, consolidation resulting from specific merger and acquisition transactions may be beneficial to our business. When consolidations of financial institutions occur, merger partners often operate systems obtained from competing service providers. The newly formed entity generally makes a determination to migrate its core and payments systems to a single platform. When a financial institution processing client is involved in a consolidation, "
+    }
+  ]
+}

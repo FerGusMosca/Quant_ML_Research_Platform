@@ -1,0 +1,49 @@
+{
+  "symbol": "NKE",
+  "date": "2025-10-09",
+  "avg_sentiment": 0.56,
+  "sentiment_stdev": 1.15,
+  "distribution": {
+    "2": 11,
+    "0": 47,
+    "-2": 5,
+    "3": 6,
+    "1": 26,
+    "-1": 4,
+    "4": 1
+  },
+  "high_sentiment_news": [
+    {
+      "title": "Nike sees surprise rise in Q1 revenue as turnaround takes root\n\n\n(Reuters Videos)",
+      "score": 4,
+      "link": "https://finance.yahoo.com/video/nike-sees-surprise-rise-q1-103616620.html"
+    },
+    {
+      "title": "Analyst With $100 Price Target on Nike (NKE) Explains Why He Likes The Stock\n\n\n(Insider Monkey)",
+      "score": 3,
+      "link": "https://finviz.com/news/187062/analyst-with-100-price-target-on-nike-nke-explains-why-he-likes-the-stock"
+    },
+    {
+      "title": "Record Closes, Resiliency Define First Week of October\n\n\n(Schaeffer's Research)",
+      "score": 3,
+      "link": "https://finviz.com/news/183473/record-closes-resiliency-define-first-week-of-october"
+    }
+  ],
+  "low_sentiment_news": [
+    {
+      "title": "Is NIKE Stock's Move Below 200-Day SMA a Warning or Opportunity?\n\n\n(Zacks)",
+      "score": -2,
+      "link": "https://finviz.com/news/187301/is-nike-stocks-move-below-200-day-sma-a-warning-or-opportunity"
+    },
+    {
+      "title": "Nike: Is a Turnaround in the Stock Near?\n\n\n(Motley Fool)",
+      "score": -2,
+      "link": "https://finviz.com/news/183974/nike-is-a-turnaround-in-the-stock-near"
+    },
+    {
+      "title": "After Returning to Top-Line Growth, Is It Time to Buy Nike Stock?\n\n\n(Motley Fool)",
+      "score": -2,
+      "link": "https://finviz.com/news/182673/after-returning-to-top-line-growth-is-it-time-to-buy-nike-stock"
+    }
+  ]
+}

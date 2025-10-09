@@ -1,0 +1,63 @@
+{
+  "symbol": "EOG",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: EOG. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: EOG, \u2022 EOG's, Quarterly Reports on, INC, Financial Commodity, Consolidated Financial Statements, Liquidity - Financial Commodity, PROCEDURES EOG RESOURCES, INC, Disclosure Controls and Procedures, the Evaluation Date, the United States Securities and Exchange Commission's. Context excerpt: competition in the oil and gas exploration and production industry for the acquisition of licenses, concessions, leases and properties; \u2022 the availability and cost of, and competition in the oil and gas exploration and production industry for, employees, labor and other personnel, facilities, equipment, materials (such as water, sand, fuel and tubulars) and services; \u2022 the accuracy of reserve estimates, which by their nature involve the exercise of professional judgment and may therefore be imprecise; \u2022 weather and natural disasters, including its impact on crude oil and natural gas demand, and related delays in drilling and in the installation and operation (by EOG or third parties) of production, gathering, processing, refining, liquefaction, compression, storage, transportation, and export facilities; \u2022 the ability of EOG's customers and other contractual counterparties to satisfy their obligations to EOG and, related thereto, to access the credit and capital markets to obtain finan",
+  "competition_summary": [
+    {
+      "competitor": "EOG",
+      "mentions": 30,
+      "context": "competition in the oil and gas exploration and production industry for the acquisition of licenses, concessions, leases and properties; \u2022 the availability and cost of, and competition in the oil and gas exploration and production industry for, employees, labor and other personnel, facilities, equipment, materials (such as water, sand, fuel and tubulars) and services; \u2022 the accuracy of reserve estimates, which by their nature involve the exercise of professional judgment and may therefore be impr"
+    },
+    {
+      "competitor": "\u2022 EOG's",
+      "mentions": 1,
+      "context": "competition in the oil and gas exploration and production industry for the acquisition of licenses, concessions, leases and properties; \u2022 the availability and cost of, and competition in the oil and gas exploration and production industry for, employees, labor and other personnel, facilities, equipment, materials (such as water, sand, fuel and tubulars) and services; \u2022 the accuracy of reserve estimates, which by their nature involve the exercise of professional judgment and may therefore be impr"
+    },
+    {
+      "competitor": "Quarterly Reports on",
+      "mentions": 1,
+      "context": "competition in the oil and gas exploration and production industry for the acquisition of licenses, concessions, leases and properties; \u2022 the availability and cost of, and competition in the oil and gas exploration and production industry for, employees, labor and other personnel, facilities, equipment, materials (such as water, sand, fuel and tubulars) and services; \u2022 the accuracy of reserve estimates, which by their nature involve the exercise of professional judgment and may therefore be impr"
+    },
+    {
+      "competitor": "INC",
+      "mentions": 2,
+      "context": "competition in the oil and gas exploration and production industry for the acquisition of licenses, concessions, leases and properties; \u2022 the availability and cost of, and competition in the oil and gas exploration and production industry for, employees, labor and other personnel, facilities, equipment, materials (such as water, sand, fuel and tubulars) and services; \u2022 the accuracy of reserve estimates, which by their nature involve the exercise of professional judgment and may therefore be impr"
+    },
+    {
+      "competitor": "Financial Commodity",
+      "mentions": 1,
+      "context": "competition in the oil and gas exploration and production industry for the acquisition of licenses, concessions, leases and properties; \u2022 the availability and cost of, and competition in the oil and gas exploration and production industry for, employees, labor and other personnel, facilities, equipment, materials (such as water, sand, fuel and tubulars) and services; \u2022 the accuracy of reserve estimates, which by their nature involve the exercise of professional judgment and may therefore be impr"
+    },
+    {
+      "competitor": "Consolidated Financial Statements",
+      "mentions": 3,
+      "context": "competition in the oil and gas exploration and production industry for the acquisition of licenses, concessions, leases and properties; \u2022 the availability and cost of, and competition in the oil and gas exploration and production industry for, employees, labor and other personnel, facilities, equipment, materials (such as water, sand, fuel and tubulars) and services; \u2022 the accuracy of reserve estimates, which by their nature involve the exercise of professional judgment and may therefore be impr"
+    },
+    {
+      "competitor": "Liquidity - Financial Commodity",
+      "mentions": 1,
+      "context": "competition in the oil and gas exploration and production industry for the acquisition of licenses, concessions, leases and properties; \u2022 the availability and cost of, and competition in the oil and gas exploration and production industry for, employees, labor and other personnel, facilities, equipment, materials (such as water, sand, fuel and tubulars) and services; \u2022 the accuracy of reserve estimates, which by their nature involve the exercise of professional judgment and may therefore be impr"
+    },
+    {
+      "competitor": "PROCEDURES EOG RESOURCES, INC",
+      "mentions": 1,
+      "context": "competition in the oil and gas exploration and production industry for the acquisition of licenses, concessions, leases and properties; \u2022 the availability and cost of, and competition in the oil and gas exploration and production industry for, employees, labor and other personnel, facilities, equipment, materials (such as water, sand, fuel and tubulars) and services; \u2022 the accuracy of reserve estimates, which by their nature involve the exercise of professional judgment and may therefore be impr"
+    },
+    {
+      "competitor": "Disclosure Controls and Procedures",
+      "mentions": 1,
+      "context": "competition in the oil and gas exploration and production industry for the acquisition of licenses, concessions, leases and properties; \u2022 the availability and cost of, and competition in the oil and gas exploration and production industry for, employees, labor and other personnel, facilities, equipment, materials (such as water, sand, fuel and tubulars) and services; \u2022 the accuracy of reserve estimates, which by their nature involve the exercise of professional judgment and may therefore be impr"
+    },
+    {
+      "competitor": "the Evaluation Date",
+      "mentions": 1,
+      "context": "competition in the oil and gas exploration and production industry for the acquisition of licenses, concessions, leases and properties; \u2022 the availability and cost of, and competition in the oil and gas exploration and production industry for, employees, labor and other personnel, facilities, equipment, materials (such as water, sand, fuel and tubulars) and services; \u2022 the accuracy of reserve estimates, which by their nature involve the exercise of professional judgment and may therefore be impr"
+    },
+    {
+      "competitor": "the United States Securities and Exchange Commission's",
+      "mentions": 1,
+      "context": "competition in the oil and gas exploration and production industry for the acquisition of licenses, concessions, leases and properties; \u2022 the availability and cost of, and competition in the oil and gas exploration and production industry for, employees, labor and other personnel, facilities, equipment, materials (such as water, sand, fuel and tubulars) and services; \u2022 the accuracy of reserve estimates, which by their nature involve the exercise of professional judgment and may therefore be impr"
+    }
+  ]
+}

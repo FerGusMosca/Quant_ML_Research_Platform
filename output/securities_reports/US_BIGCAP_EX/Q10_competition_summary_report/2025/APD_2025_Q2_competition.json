@@ -1,0 +1,498 @@
+{
+  "symbol": "APD",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: APD. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: the Brazilian Administrative Council for Economic Defense, Air Products, the Brazilian Ministry of Justice, Air Products Brasil Ltda, the Comprehensive Environmental Response, the Resource Conservation and Recovery Act, Amines, the Florida Department of Environmental Protection, the United States Environmental Protection Agency, FDEP, USEPA, PUI, the Texas Commission on Environmental Quality, RCRA, Business and Asset Actions, treasury, Supplemental Information, Contents Deferred Stock Units, Pension, Total Balance, Diluted, Share Data, U.S. Tax Court, the U.S. Tax Cuts and Jobs Act, LNG, Air Products', Lu\u2019An Clean Energy Company, the Board of Directors, Uzbekistan Asset Purchase, the Government of the Republic of Uzbekistan, UNG, Contents Divestitures Blue Hydrogen Industrial Gases Company, Air Products Qudra, Blue Hydrogen Industrial Gases Company, Saudi Aramco Development Company, Aramco, APQ, \u2022 Americas, \u2022 Corporate, Corporate, Business Segment Americas Asia Europe, India Corporate, Total Three Months Ended, 710.0 Equity, the \"Reconciliation to Consolidated Results, Consolidated Operating Income, Consolidated Equity Affiliates', Management\u2019s Discussion and Analysis of Financial Condition, Financial Measures, Liquidity and Capital Resources 71, Critical Accounting Policies, This Management\u2019s Discussion and Analysis, the Private Securities Litigation Reform Act, SEC, U.S. Dollars, EPS, Business Segment Information, \u2022 Adjusted EBITDA, Items Equity, the U.S. Dollar, the U.S. Gulf Coast, Research and Development Expense Research, Board of Directors, Project Exit, 59.9 Interest, Non-Operating Income (Expense, Variable Interest Entities, Financial Instruments, Tax Impact of Business and Asset Actions, Tax Reform Adjustment Related, the \"Reconciliations of Non-GAAP Financial Measures, Total Americas Sales Change, Euro, JIGPC, Impacts Equity, the \" Reconciliations of Non-GAAP Financial Measures, 753.9, 382.0 398.6, Millions of U.S. Dollars, Air Products Earnings/Loss per Share, Contents CAPITAL EXPENDITURES Capital, NEOM Green Hydrogen Company, NGHC, the U.S., the \"Capital Expenditures, Capital Expenditures, Contents Capital, the NEOM Green Hydrogen Project, Blue Hydrogen Industrial Gases, World Energy, U.S. Dollar, Credit Facilities, the Blue Hydrogen Industrial Gases Company, NEOM Green Hydrogen Project Financing NGHC, The Board of Directors, Management\u2019s Discussion and Analysis, BHIG, Foreign Currency Exchange. Context excerpt: competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and several other Brazilian industrial gas companies for alleged anticompetitive activities. CADE imposed a civil fine of R$ 179.2 million (approximately $ 31 at 31 March 2025) on Air Products Brasil Ltda. This fine was based on a recommendation by a unit of the Brazilian Ministry of Justice, following an investigation beginning in 2003, which alleged violation of competition laws with respect to the sale of industrial and medical gases. The fines are based on a percentage of our total revenue in Brazi",
+  "competition_summary": [
+    {
+      "competitor": "the Brazilian Administrative Council for Economic Defense",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Air Products",
+      "mentions": 25,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the Brazilian Ministry of Justice",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Air Products Brasil Ltda",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the Comprehensive Environmental Response",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the Resource Conservation and Recovery Act",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Amines",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the Florida Department of Environmental Protection",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the United States Environmental Protection Agency",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "FDEP",
+      "mentions": 3,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "USEPA",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "PUI",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the Texas Commission on Environmental Quality",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "RCRA",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Business and Asset Actions",
+      "mentions": 13,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "treasury",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Supplemental Information",
+      "mentions": 8,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Contents Deferred Stock Units",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Pension",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Total Balance",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Diluted",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Share Data",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "U.S. Tax Court",
+      "mentions": 3,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the U.S. Tax Cuts and Jobs Act",
+      "mentions": 3,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "LNG",
+      "mentions": 14,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Air Products'",
+      "mentions": 3,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Lu\u2019An Clean Energy Company",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the Board of Directors",
+      "mentions": 4,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Uzbekistan Asset Purchase",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the Government of the Republic of Uzbekistan",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "UNG",
+      "mentions": 3,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Contents Divestitures Blue Hydrogen Industrial Gases Company",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Air Products Qudra",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Blue Hydrogen Industrial Gases Company",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Saudi Aramco Development Company",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Aramco",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "APQ",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "\u2022 Americas",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "\u2022 Corporate",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Corporate",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Business Segment Americas Asia Europe",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "India Corporate",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Total Three Months Ended",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "710.0 Equity",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the \"Reconciliation to Consolidated Results",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Consolidated Operating Income",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Consolidated Equity Affiliates'",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Management\u2019s Discussion and Analysis of Financial Condition",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Financial Measures",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Liquidity and Capital Resources 71",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Critical Accounting Policies",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "This Management\u2019s Discussion and Analysis",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the Private Securities Litigation Reform Act",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "SEC",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "U.S. Dollars",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "EPS",
+      "mentions": 10,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Business Segment Information",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "\u2022 Adjusted EBITDA",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Items Equity",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the U.S. Dollar",
+      "mentions": 4,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the U.S. Gulf Coast",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Research and Development Expense Research",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Board of Directors",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Project Exit",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "59.9 Interest",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Non-Operating Income (Expense",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Variable Interest Entities",
+      "mentions": 5,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Financial Instruments",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Tax Impact of Business and Asset Actions",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Tax Reform Adjustment Related",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the \"Reconciliations of Non-GAAP Financial Measures",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Total Americas Sales Change",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Euro",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "JIGPC",
+      "mentions": 3,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Impacts Equity",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the \" Reconciliations of Non-GAAP Financial Measures",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "753.9",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "382.0 398.6",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Millions of U.S. Dollars",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Air Products Earnings/Loss per Share",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Contents CAPITAL EXPENDITURES Capital",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "NEOM Green Hydrogen Company",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "NGHC",
+      "mentions": 8,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the U.S.",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the \"Capital Expenditures",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Capital Expenditures",
+      "mentions": 2,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Contents Capital",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the NEOM Green Hydrogen Project",
+      "mentions": 4,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Blue Hydrogen Industrial Gases",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "World Energy",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "U.S. Dollar",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Credit Facilities",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "the Blue Hydrogen Industrial Gases Company",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "NEOM Green Hydrogen Project Financing NGHC",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "The Board of Directors",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Management\u2019s Discussion and Analysis",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "BHIG",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    },
+    {
+      "competitor": "Foreign Currency Exchange",
+      "mentions": 1,
+      "context": "competition, environmental, intellectual property, regulatory, product liability, and insurance matters. We do not currently believe there are any legal proceedings for which it is reasonably possible, individually or in the aggregate, to have a material impact on our financial condition, results of operations, or cash flows. In September 2010, the Brazilian Administrative Council for Economic Defense (\"CADE\") issued a decision against our Brazilian subsidiary, Air Products Brasil Ltda., and sev"
+    }
+  ]
+}

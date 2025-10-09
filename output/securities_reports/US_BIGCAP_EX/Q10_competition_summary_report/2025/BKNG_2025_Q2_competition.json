@@ -1,0 +1,133 @@
+{
+  "symbol": "BKNG",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: BKNG. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: Company, the Comisi\u00f3n Nacional de los Mercados, Competencia, Booking.com, the Spanish, National Court, CNMC, the Consolidated Balance Sheets, Price Surveillance Office, PSO, the Polish Office of Competition and Consumer Protection, Agoda, the French Directorate General for Competition Policy, Consumer Affairs, Fraud Control, DGCCRF, MAP, Booking.com B.V., the Netherlands Pension Fund, the Travel Industry, The Hague Court of Appeal, the Supreme Court, BPF, the Unaudited Consolidated Statement of Operations, the General Data Protection. Context excerpt: Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parity provisions with accommodation providers. Some of these investigations have resulted in fines and the Company could incur additional fines and/or be restricted in certain of its business practices in the future. In 2024, the Comisi\u00f3n Nacional de los Mercados y la Competencia in Spain (the \"CNMC\") imposed a fine and restricted certain of Booking.com's business practices such as those relating to contractual parity provisions and the ranking criteria that Booking.com can use to determine how to r",
+  "competition_summary": [
+    {
+      "competitor": "Company",
+      "mentions": 18,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "the Comisi\u00f3n Nacional de los Mercados",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "Competencia",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "Booking.com",
+      "mentions": 15,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "the Spanish",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "National Court",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "CNMC",
+      "mentions": 2,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "the Consolidated Balance Sheets",
+      "mentions": 4,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "Price Surveillance Office",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "PSO",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "the Polish Office of Competition and Consumer Protection",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "Agoda",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "the French Directorate General for Competition Policy",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "Consumer Affairs",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "Fraud Control",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "DGCCRF",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "MAP",
+      "mentions": 3,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "Booking.com B.V.",
+      "mentions": 5,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "the Netherlands Pension Fund",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "the Travel Industry",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "The Hague Court of Appeal",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "the Supreme Court",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "BPF",
+      "mentions": 2,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "the Unaudited Consolidated Statement of Operations",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    },
+    {
+      "competitor": "the General Data Protection",
+      "mentions": 1,
+      "context": "Competition and Consumer Protection Reviews Online travel platforms have been the subject of investigations or inquiries by national competition authorities (\"NCAs\") or other governmental authorities regarding competition law matters, consumer protection issues, and other areas. The Company is and has been involved in many such investigations and from time to time has made commitments regarding future business practices or activities, such as agreeing to narrow the scope of its contractual parit"
+    }
+  ]
+}

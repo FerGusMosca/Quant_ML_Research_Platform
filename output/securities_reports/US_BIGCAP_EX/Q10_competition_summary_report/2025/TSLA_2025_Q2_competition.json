@@ -1,0 +1,93 @@
+{
+  "symbol": "TSLA",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: TSLA. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: the Securities and Exchange Commission, SEC, Digital, Goodwill 248 244, 4,215 Total, Consolidated Statements of Operations, Research, Subsidiaries Total Equity Shares Amount Balance, Financing Activities Proceeds, Consolidated Financial Statements, Significant Accounting Policies Unaudited Interim Financial Statements, Tesla, Inc., FSD, Contracts with Customers, ASC 460, Guarantees, Automotive Regulatory Credits As. Context excerpt: competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d and similar expressions are intended to identify forward-looking statements, although not all forward-looking statements contain these identifying words. We may not actually achieve the plans, intentions or expectations disclosed in our forward-looking statements and you should not place undue reliance on our forward-looking statements. Future results may differ materially from the plans, intentions and expectations disclosed in the forward-looking statements that we make. These forward-looking st",
+  "competition_summary": [
+    {
+      "competitor": "the Securities and Exchange Commission",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "SEC",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "Digital",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "Goodwill 248 244",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "4,215 Total",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "Consolidated Statements of Operations",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "Research",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "Subsidiaries Total Equity Shares Amount Balance",
+      "mentions": 2,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "Financing Activities Proceeds",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "Consolidated Financial Statements",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "Significant Accounting Policies Unaudited Interim Financial Statements",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "Tesla, Inc.",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "FSD",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "Contracts with Customers",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "ASC 460",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "Guarantees",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    },
+    {
+      "competitor": "Automotive Regulatory Credits As",
+      "mentions": 1,
+      "context": "competition, future operations and production capacity, future financial position, future revenues, projected costs, profitability, expected cost reductions, capital adequacy, expectations regarding demand and acceptance for our technologies, growth opportunities and trends in the markets in which we operate, prospects and plans and objectives of management. The words \u201canticipates,\u201d \u201cbelieves,\u201d \u201ccould,\u201d \u201cestimates,\u201d \u201cexpects,\u201d \u201cintends,\u201d \u201cmay,\u201d \u201cplans,\u201d \u201cprojects,\u201d \u201cwill,\u201d \u201cwould,\u201d \u201cpredicts\u201d an"
+    }
+  ]
+}

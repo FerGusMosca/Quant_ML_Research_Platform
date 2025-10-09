@@ -1,0 +1,318 @@
+{
+  "symbol": "META",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: META. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: FTC, U.S. Department of Justice, Meta Platforms, Inc., District Court, the Federal Trade Commission Act and Section, Instagram, WhatsApp, the European Commission, European Union, Meta, Facebook Marketplace, the European Commission's, The European Commission, DMA, the U.S. Court of Appeals, the Ninth Circuit, the U.S. Supreme Court, the Ninth Circuit's, The Supreme Court, the U.S., Ohio Pub., Ret, Sys, Meta Platforms, Inc ., Youth-Related Actions Beginning, Social Media Adolescent Addiction Product Liability Personal Injury Litigation, the Children's Online Privacy Protection Act, COPPA, Judicial Council Coordination Proceeding No, DSA, DZ Reserve, Facebook, Inc., Farnsworth v. Meta Platforms, Inc., the U.S. District Court, Kadrey, Meta Platforms, Inc, the Consumer Financial Protection Bureau, CFPB or Bureau, CFPB, the Consumer Financial Protection Act, NORA, Record Date Payment Date, Compensation Plan As, RSU, the Internal Revenue Service, IRS, Notice, the Tax Court, the Ninth Circuit Court of Appeals, Notices, Pretrial Memorandum, FoA, RL, Management's Discussion and Analysis of Financial Condition, the Securities and Exchange Commission, Apps Reality Labs Total, EPS, \u2022 Capital, \u2022 Effective, Apps Metrics \u2022 Family, DAP, the General Data Protection. Context excerpt: Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust investigations by the FTC and U.S. Department of Justice. On December\u00a09, 2020, the FTC filed a complaint ( FTC v. Meta Platforms, Inc. ) against us in the U.S. District Court for the District of Columbia alleging that we engaged in anticompetitive conduct and unfair methods of competition in violation of Section\u00a05 of the Federal Trade Commission Act and Section\u00a02 of the Sherman Act, including by acquiring Instagram in 2012 and WhatsApp in 2014 and by maintaining conditions on access to our platform",
+  "competition_summary": [
+    {
+      "competitor": "FTC",
+      "mentions": 9,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "U.S. Department of Justice",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Meta Platforms, Inc.",
+      "mentions": 6,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "District Court",
+      "mentions": 10,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the Federal Trade Commission Act and Section",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Instagram",
+      "mentions": 3,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "WhatsApp",
+      "mentions": 4,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the European Commission",
+      "mentions": 7,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "European Union",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Meta",
+      "mentions": 3,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Facebook Marketplace",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the European Commission's",
+      "mentions": 2,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "The European Commission",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "DMA",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the U.S. Court of Appeals",
+      "mentions": 2,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the Ninth Circuit",
+      "mentions": 3,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the U.S. Supreme Court",
+      "mentions": 2,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the Ninth Circuit's",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "The Supreme Court",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the U.S.",
+      "mentions": 3,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Ohio Pub.",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Ret",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Sys",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Meta Platforms, Inc .",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Youth-Related Actions Beginning",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Social Media Adolescent Addiction Product Liability Personal Injury Litigation",
+      "mentions": 2,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the Children's Online Privacy Protection Act",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "COPPA",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Judicial Council Coordination Proceeding No",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "DSA",
+      "mentions": 2,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "DZ Reserve",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Facebook, Inc.",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Farnsworth v. Meta Platforms, Inc.",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the U.S. District Court",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Kadrey",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Meta Platforms, Inc",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the Consumer Financial Protection Bureau",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "CFPB or Bureau",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "CFPB",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the Consumer Financial Protection Act",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "NORA",
+      "mentions": 2,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Record Date Payment Date",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Compensation Plan As",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "RSU",
+      "mentions": 2,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the Internal Revenue Service",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "IRS",
+      "mentions": 12,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Notice",
+      "mentions": 2,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the Tax Court",
+      "mentions": 6,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the Ninth Circuit Court of Appeals",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Notices",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Pretrial Memorandum",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "FoA",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "RL",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Management's Discussion and Analysis of Financial Condition",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the Securities and Exchange Commission",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Apps Reality Labs Total",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "EPS",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "\u2022 Capital",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "\u2022 Effective",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "Apps Metrics \u2022 Family",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "DAP",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    },
+    {
+      "competitor": "the General Data Protection",
+      "mentions": 1,
+      "context": "Competition We are subject to various litigation and government inquiries and investigations, formal or informal, by competition authorities in the United States, Europe, and other jurisdictions. Such investigations, inquiries, and lawsuits concern, among other things, our business practices in the areas of social networking or social media services, digital advertising, and/or mobile or online applications, as well as our acquisitions. For example, in 2019 we became the subject of antitrust inv"
+    }
+  ]
+}

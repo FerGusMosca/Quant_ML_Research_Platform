@@ -108,15 +108,29 @@ class CompetitionSummaryReport:
             if ent.label_ == "ORG":
                 competitors[ent.text] = competitors.get(ent.text, 0) + 1
 
+
+        curated_text = (
+                f"Symbol: {symbol}. Year: {self.year}. Period: {period}. "
+                f"ReportType: {self.report_type}. Section: Competition and Market Position. "
+                "This section discusses competitors, market dynamics, and regulatory landscape. "
+                + " Competitors mentioned: "
+                + ", ".join(competitors.keys())
+                + ". Context excerpt: "
+                + section[:1000]
+        )
+
+
         summary = {
             "symbol": symbol,
             "year": self.year,
             "period":period,
+            "curated_text": curated_text,
             "competition_summary": [
                 {"competitor": k, "mentions": v, "context": section[:500]}
                 for k, v in competitors.items()
             ]
         }
+
 
         out_path = os.path.join(self.output_dir, f"{symbol}_{self.year}_{period}_competition.json")
         with open(out_path, "w", encoding="utf-8") as f:

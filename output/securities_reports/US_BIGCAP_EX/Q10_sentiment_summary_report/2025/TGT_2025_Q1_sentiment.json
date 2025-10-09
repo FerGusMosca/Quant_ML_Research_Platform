@@ -1,0 +1,48 @@
+{
+  "symbol": "TGT",
+  "year": 2025,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.2191,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.085
+  },
+  "top_positive": [
+    {
+      "sent": "TARGET CORPORATION Q2 2025 Form 10-Q 22 MANAGEMENT'S DISCUSSION AND ANALYSIS Table of Contents ANALYSIS OF FINANCIAL CONDITION Index to Notes Analysis of Financial Condition Liquidity and Capital Resources Capital Allocation We follow a disciplined and balanced approach to capital allocation based on the following priorities, ranked in order of importance: first, we fully invest in opportunities to profitably grow our business, create sustainable long-term value, and maintain our current operations and assets; second, we maintain a competitive quarterly dividend and seek to grow it annually; and finally, we return any excess cash to shareholders by repurchasing shares within the limits of our credit rating goals.",
+      "score": 0.949
+    },
+    {
+      "sent": "TARGET CORPORATION Q2 2025 Form 10-Q 22 MANAGEMENT'S DISCUSSION AND ANALYSIS Table of Contents ANALYSIS OF FINANCIAL CONDITION Index to Notes Analysis of Financial Condition Liquidity and Capital Resources Capital Allocation We follow a disciplined and balanced approach to capital allocation based on the following priorities, ranked in order of importance: first, we fully invest in opportunities to profitably grow our business, create sustainable long-term value, and maintain our current operations and assets; second, we maintain a competitive quarterly dividend and seek to grow it annually; and finally, we return any excess cash to shareholders by repurchasing shares within the limits of our credit rating goals.",
+      "score": 0.949
+    },
+    {
+      "sent": "TARGET CORPORATION Q2 2025 Form 10-Q 22 MANAGEMENT'S DISCUSSION AND ANALYSIS Table of Contents ANALYSIS OF FINANCIAL CONDITION Index to Notes Analysis of Financial Condition Liquidity and Capital Resources Capital Allocation We follow a disciplined and balanced approach to capital allocation based on the following priorities, ranked in order of importance: first, we fully invest in opportunities to profitably grow our business, create sustainable long-term value, and maintain our current operations and assets; second, we maintain a competitive quarterly dividend and seek to grow it annually; and finally, we return any excess cash to shareholders by repurchasing shares within the limits of our credit rating goals.",
+      "score": 0.949
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Quantitative and Qualitative Disclosures About Market Risk There have been no material changes in our primary risk exposures or management of market risks from those disclosed in Part II, Item 7A, Quantitative and Qualitative Disclosures About Market Risk of our Form\u00a010-K for the fiscal year ended February\u00a01, 2025.",
+      "score": -0.8225
+    },
+    {
+      "sent": "Quantitative and Qualitative Disclosures About Market Risk There have been no material changes in our primary risk exposures or management of market risks from those disclosed in Part II, Item 7A, Quantitative and Qualitative Disclosures About Market Risk of our Form\u00a010-K for the fiscal year ended February\u00a01, 2025.",
+      "score": -0.8225
+    },
+    {
+      "sent": "Risk Factors There have been no material changes to the risk factors described in Part I, Item 1A, Risk Factors of our Form 10-K for the fiscal year ended February\u00a01, 2025.",
+      "score": -0.7579
+    }
+  ],
+  "forward_snippets": [
+    "We report after-tax return on invested capital (ROIC) because we believe ROIC provides a meaningful measure of our capital allocation effectiveness over time.",
+    "We expect that comparable sales growth will drive a significant portion of our total sales growth.",
+    "We believe that our ability to successfully differentiate our guests\u2019 shopping experience through a careful combination of merchandise assortment, price, convenience, guest experience, and other factors will over the long-term drive both increasing shopping frequency (number of transactions, or \"traffic\") and the amount spent each visit (average transaction amount).",
+    "We expect that comparable sales growth will drive a significant portion of our total sales growth.",
+    "We believe that our ability to successfully differentiate our guests\u2019 shopping experience through a careful combination of merchandise assortment, price, convenience, guest experience, and other factors will over the long-term drive both increasing shopping frequency (number of transactions, or \"traffic\") and the amount spent each visit (average transaction amount)."
+  ],
+  "curated_text": "Symbol: TGT. Year: 2025. Period: Q1. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: TARGET CORPORATION Q2 2025 Form 10-Q 22 MANAGEMENT'S DISCUSSION AND ANALYSIS Table of Contents ANALYSIS OF FINANCIAL CONDITION Index to Notes Analysis of Financial Condition Liquidity and Capital Resources Capital Allocation We follow a disciplined and balanced approach to capital allocation based on the following priorities, ranked in order of importance: first, we fully invest in opportunities to profitably grow our business, create sustainable long-term value, and maintain our current operations and assets; second, we maintain a competitive quarterly dividend and seek to grow it annually; and finally, we return any excess cash to shareholders by repurchasing shares within the limits of our credit rating goals. TARGET CORPORATION Q2 2025 Form 10-Q 22 MANAGEMENT'S DISCUSSION AND ANALYSIS Table of Contents ANALYSIS OF FINANCIAL CONDITION Index to Notes Analysis of Financial Condition Liquidity and Capital Resources Capital Allocation We follow a disciplined and balanced approach to capital allocation based on the following priorities, ranked in order of importance: first, we fully invest in opportunities to profitably grow our business, create sustainable long-term value, and maintain our current operations and assets; second, we maintain a competitive quarterly dividend and seek to grow it annually; and finally, we return any excess cash to shareholders by repurchasing shares within the limits of our credit rating goals. TARGET CORPORATION Q2 2025 Form 10-Q 22 MANAGEMENT'S DISCUSSION AND ANALYSIS Table of Contents ANALYSIS OF FINANCIAL CONDITION Index to Notes Analysis of Financial Condition Liquidity and Capital Resources Capital Allocation We follow a disciplined and balanced approach to capital allocation based on the following priorities, ranked in order of importance: first, we fully invest in opportunities to profitably grow our business, create sustainable long-term value, and maintain our current operations and assets; second, we maintain a competitive quarterly dividend and seek to grow it annually; and finally, we return any excess cash to shareholders by repurchasing shares within the limits of our credit rating goals. Top negative sentences: Quantitative and Qualitative Disclosures About Market Risk There have been no material changes in our primary risk exposures or management of market risks from those disclosed in Part II, Item 7A, Quantitative and Qualitative Disclosures About Market Risk of our Form\u00a010-K for the fiscal year ended February\u00a01, 2025. Quantitative and Qualitative Disclosures About Market Risk There have been no material changes in our primary risk exposures or management of market risks from those disclosed in Part II, Item 7A, Quantitative and Qualitative Disclosures About Market Risk of our Form\u00a010-K for the fiscal year ended February\u00a01, 2025. Risk Factors There have been no material changes to the risk factors described in Part I, Item 1A, Risk Factors of our Form 10-K for the fiscal year ended February\u00a01, 2025. Forward-looking snippets: We report after-tax return on invested capital (ROIC) because we believe ROIC provides a meaningful measure of our capital allocation effectiveness over time. We expect that comparable sales growth will drive a significant portion of our total sales growth. We believe that our ability to successfully differentiate our guests\u2019 shopping experience through a careful combination of merchandise assortment, price, convenience, guest experience, and other factors will over the long-term drive both increasing shopping frequency (number of transactions, or \"traffic\") and the amount spent each visit (average transaction amount). We expect that comparable sales growth will drive a significant portion of our total sales growth. We believe that our ability to successfully differentiate our guests\u2019 shopping experience through a careful combination of merchandise assortment, price, convenience, guest experience, and other factors will over the long-term drive both increasing shopping frequency (number of transactions, or \"traffic\") and the amount spent each visit (average transaction amount)."
+}

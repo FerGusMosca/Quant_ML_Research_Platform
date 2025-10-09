@@ -1,0 +1,48 @@
+{
+  "symbol": "ROST",
+  "year": 2025,
+  "Period": "Q2",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.2685,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.416
+  },
+  "top_positive": [
+    {
+      "sent": "11 A summary of stock awards activity for the three month period ended May\u00a03, 2025, is presented below: Number of shares (000) Weighted-average grant date fair value Unvested at February 1, 2025 4,157 $ 117.02 Awarded 582 126.72 Released ( 1,110 ) 111.56 Forfeited ( 40 ) 111.81 Unvested at May 3, 2025 3,589 $ 120.34 The 51,164 PRSU shares awarded in fiscal 2024 all remain unvested as of May\u00a03, 2025.",
+      "score": 0.9538
+    },
+    {
+      "sent": "11 A summary of stock awards activity for the three month period ended May\u00a03, 2025, is presented below: Number of shares (000) Weighted-average grant date fair value Unvested at February 1, 2025 4,157 $ 117.02 Awarded 582 126.72 Released ( 1,110 ) 111.56 Forfeited ( 40 ) 111.81 Unvested at May 3, 2025 3,589 $ 120.34 The 51,164 PRSU shares awarded in fiscal 2024 all remain unvested as of May\u00a03, 2025.",
+      "score": 0.9538
+    },
+    {
+      "sent": "11 A summary of stock awards activity for the three month period ended May\u00a03, 2025, is presented below: Number of shares (000) Weighted-average grant date fair value Unvested at February 1, 2025 4,157 $ 117.02 Awarded 582 126.72 Released ( 1,110 ) 111.56 Forfeited ( 40 ) 111.81 Unvested at May 3, 2025 3,589 $ 120.34 The 51,164 PRSU shares awarded in fiscal 2024 all remain unvested as of May\u00a03, 2025.",
+      "score": 0.9538
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Unsecured senior debt (the \u201cSenior Notes\u201d), net of unamortized discounts and debt issuance costs, consisted of the following: ($000) May 3, 2025 February 1, 2025 May 4, 2024 3.375 % Senior Notes due 2024 $ \u2014 $ \u2014 $ 249,827 4.600 % Senior Notes due 2025 \u2014 699,731 698,763 0.875 % Senior Notes due 2026 498,812 498,503 497,576 4.700 % Senior Notes due 2027 240,890 240,778 240,445 4.800 % Senior Notes due 2030 132,998 132,953 132,820 1.875 % Senior Notes due 2031 496,533 496,390 495,962 5.450 % Senior Notes due 2050 146,476 146,456 146,397 Total long-term debt 1 $\nguidance on its disclosures in the consolidated financial statements.",
+      "score": -0.8442
+    },
+    {
+      "sent": "Unsecured senior debt (the \u201cSenior Notes\u201d), net of unamortized discounts and debt issuance costs, consisted of the following: ($000) May 3, 2025 February 1, 2025 May 4, 2024 3.375 % Senior Notes due 2024 $ \u2014 $ \u2014 $ 249,827 4.600 % Senior Notes due 2025 \u2014 699,731 698,763 0.875 % Senior Notes due 2026 498,812 498,503 497,576 4.700 % Senior Notes due 2027 240,890 240,778 240,445 4.800 % Senior Notes due 2030 132,998 132,953 132,820 1.875 % Senior Notes due 2031 496,533 496,390 495,962 5.450 % Senior Notes due 2050 146,476 146,456 146,397 Total long-term debt 1 $ 1,515,709 $ 2,214,811 $ 2,461,790 Less: current portion $ 498,812 $ 699,731 $ 948,590 Total due beyond one year \nn all Senior Notes is payable semi-annually and the Senior Notes are subject to prepayment penalties for early payment of principal.",
+      "score": -0.8442
+    },
+    {
+      "sent": "\u2022 A public health or public safety crisis, or a natural or man-made disaster in California or another region where we have a concentration of stores, offices, or a distribution center could harm our business.",
+      "score": -0.8126
+    }
+  ],
+  "forward_snippets": [
+    "The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements.",
+    "The new guidance is effective for annual reporting periods beginning after December 15, 2024, with retrospective application permitted.",
+    "The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements.",
+    "The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements.",
+    "The new guidance is effective for annual reporting periods beginning after December 15, 2024, with retrospective application permitted."
+  ],
+  "curated_text": "Symbol: ROST. Year: 2025. Period: Q2. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: 11 A summary of stock awards activity for the three month period ended May\u00a03, 2025, is presented below: Number of shares (000) Weighted-average grant date fair value Unvested at February 1, 2025 4,157 $ 117.02 Awarded 582 126.72 Released ( 1,110 ) 111.56 Forfeited ( 40 ) 111.81 Unvested at May 3, 2025 3,589 $ 120.34 The 51,164 PRSU shares awarded in fiscal 2024 all remain unvested as of May\u00a03, 2025. 11 A summary of stock awards activity for the three month period ended May\u00a03, 2025, is presented below: Number of shares (000) Weighted-average grant date fair value Unvested at February 1, 2025 4,157 $ 117.02 Awarded 582 126.72 Released ( 1,110 ) 111.56 Forfeited ( 40 ) 111.81 Unvested at May 3, 2025 3,589 $ 120.34 The 51,164 PRSU shares awarded in fiscal 2024 all remain unvested as of May\u00a03, 2025. 11 A summary of stock awards activity for the three month period ended May\u00a03, 2025, is presented below: Number of shares (000) Weighted-average grant date fair value Unvested at February 1, 2025 4,157 $ 117.02 Awarded 582 126.72 Released ( 1,110 ) 111.56 Forfeited ( 40 ) 111.81 Unvested at May 3, 2025 3,589 $ 120.34 The 51,164 PRSU shares awarded in fiscal 2024 all remain unvested as of May\u00a03, 2025. Top negative sentences: Unsecured senior debt (the \u201cSenior Notes\u201d), net of unamortized discounts and debt issuance costs, consisted of the following: ($000) May 3, 2025 February 1, 2025 May 4, 2024 3.375 % Senior Notes due 2024 $ \u2014 $ \u2014 $ 249,827 4.600 % Senior Notes due 2025 \u2014 699,731 698,763 0.875 % Senior Notes due 2026 498,812 498,503 497,576 4.700 % Senior Notes due 2027 240,890 240,778 240,445 4.800 % Senior Notes due 2030 132,998 132,953 132,820 1.875 % Senior Notes due 2031 496,533 496,390 495,962 5.450 % Senior Notes due 2050 146,476 146,456 146,397 Total long-term debt 1 $\nguidance on its disclosures in the consolidated financial statements. Unsecured senior debt (the \u201cSenior Notes\u201d), net of unamortized discounts and debt issuance costs, consisted of the following: ($000) May 3, 2025 February 1, 2025 May 4, 2024 3.375 % Senior Notes due 2024 $ \u2014 $ \u2014 $ 249,827 4.600 % Senior Notes due 2025 \u2014 699,731 698,763 0.875 % Senior Notes due 2026 498,812 498,503 497,576 4.700 % Senior Notes due 2027 240,890 240,778 240,445 4.800 % Senior Notes due 2030 132,998 132,953 132,820 1.875 % Senior Notes due 2031 496,533 496,390 495,962 5.450 % Senior Notes due 2050 146,476 146,456 146,397 Total long-term debt 1 $ 1,515,709 $ 2,214,811 $ 2,461,790 Less: current portion $ 498,812 $ 699,731 $ 948,590 Total due beyond one year \nn all Senior Notes is payable semi-annually and the Senior Notes are subject to prepayment penalties for early payment of principal. \u2022 A public health or public safety crisis, or a natural or man-made disaster in California or another region where we have a concentration of stores, offices, or a distribution center could harm our business. Forward-looking snippets: The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements. The new guidance is effective for annual reporting periods beginning after December 15, 2024, with retrospective application permitted. The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements. The Company is currently evaluating the impact of this guidance on its disclosures in the consolidated financial statements. The new guidance is effective for annual reporting periods beginning after December 15, 2024, with retrospective application permitted."
+}

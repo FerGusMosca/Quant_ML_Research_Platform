@@ -336,7 +336,7 @@ def process_run_report(cmd):
     year = __get_param__(cmd, "year", True, None)
     d_from = __get_param__(cmd, "from", True, None)
     portfolio = __get_param__(cmd, "portfolio")
-    symbol = __get_param__(cmd, "symbol")
+    symbol = __get_param__(cmd, "symbol",True,None)
 
     process_run_report_logic(report_key, year,portfolio,symbol,d_from)
 

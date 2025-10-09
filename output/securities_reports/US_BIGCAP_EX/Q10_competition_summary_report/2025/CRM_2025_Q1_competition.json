@@ -1,0 +1,13 @@
+{
+  "symbol": "CRM",
+  "year": 2025,
+  "period": "Q1",
+  "curated_text": "Symbol: CRM. Year: 2025. Period: Q1. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: Agentforce. Context excerpt: competition, pricing increases or changes, such as the increased prevalence of consumption-based pricing models and economic downturns. Our future success also depends in part on our ability to sell additional features and services, more subscriptions or enhanced editions of our services to our current customers. This may also require increasingly sophisticated and costly sales efforts that are targeted at senior management. Similarly, the rate at which our customers purchase new or enhanced services 51 Table of Contents depends on a number of factors, including general economic conditions and customer receptiveness to any price changes related to these additional features and services. In addition, the markets and monetization strategies for certain offerings, including Agentforce and Data Cloud, remain relatively new and uncertain and as a result our expansion into such offerings, and related investments, may present additional risks and challenges. For example, we offer certain prod",
+  "competition_summary": [
+    {
+      "competitor": "Agentforce",
+      "mentions": 2,
+      "context": "competition, pricing increases or changes, such as the increased prevalence of consumption-based pricing models and economic downturns. Our future success also depends in part on our ability to sell additional features and services, more subscriptions or enhanced editions of our services to our current customers. This may also require increasingly sophisticated and costly sales efforts that are targeted at senior management. Similarly, the rate at which our customers purchase new or enhanced ser"
+    }
+  ]
+}

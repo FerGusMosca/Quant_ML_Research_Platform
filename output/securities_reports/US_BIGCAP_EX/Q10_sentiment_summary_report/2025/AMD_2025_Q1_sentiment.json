@@ -1,0 +1,48 @@
+{
+  "symbol": "AMD",
+  "year": 2025,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": 0.0,
+    "outlook_sentiment": 0.0577,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.399
+  },
+  "top_positive": [
+    {
+      "sent": "The agreement governing our convertible notes and our Revolving Credit Agreement contains provisions whereby a payment default or acceleration under certain agreements with respect to other material indebtedness would result in cross defaults under our convertible indenture or the Revolving Credit Agreement and allow note holders or the lenders under our Revolving Credit Agreement to declare all amounts outstanding under certain of our indentures or the Revolving Credit Agreement to be immediately due and payable.",
+      "score": 0.9896
+    },
+    {
+      "sent": "The agreement governing our convertible notes and our Revolving Credit Agreement contains provisions whereby a payment default or acceleration under certain agreements with respect to other material indebtedness would result in cross defaults under our convertible indenture or the Revolving Credit Agreement and allow note holders or the lenders under our Revolving Credit Agreement to declare all amounts outstanding under certain of our indentures or the Revolving Credit Agreement to be immediately due and payable.",
+      "score": 0.9896
+    },
+    {
+      "sent": "The tax benefit for the three and six months ended June 28, 2025 reflected a discrete tax benefit of $792 million and $781 million, respectively, primarily due to a tax benefit of $853 million related to the release of reserves for uncertain tax positions pertaining to the reasonable cause relief for dual consolidated losses approved by the IRS in April 2025, partially offset by other items, including $45 million of deferred tax expense associated with the expected gain on the transfer of appreciated assets related to the ZT Systems acquisition.",
+      "score": 0.9628
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "If Microsoft does not continue to design and develop its operating systems so that they work with our x86 instruction sets or does not co\ntners, may also be vulnerable to damage or disruption caused by circumstances beyond our control including catastrophic events, power anomalies or outages, natural disasters, viruses or malware, cyberattacks, insider threat attacks, unauthorized system or data modifications, data breaches and computer system or network failures, exposing us to significant cost, reputational harm and disruption or damage to our business.",
+      "score": -0.9829
+    },
+    {
+      "sent": "We cannot assure you that, despite our testing procedures, errors will not be found in new products or releases after commencement of commercial shipments in the future, which could result in loss of or delay in market acceptance of our products, material recall and replacement costs, loss of revenue, writing down the inventory of defective products, the diversion of the attention of our engineering personnel from product development efforts, defending against litigation related to defective products or related liabilities, including property damage, personal injury, damage to our reputation in the industry and loss of data or intangible property, and could adversely affect our relationships with our customers.",
+      "score": -0.9777
+    },
+    {
+      "sent": "Acquisitions and joint ventures include numerous risks including, but not limited to: our inability to identify suitable opportunities in a timely manner or on terms acceptable to us; failure to complete a transaction in a timely manner, or at all; inability to obtain, or delay in obtaining, regulatory approvals or IP disputes or other litigation; difficulty in obtaining financing on terms acceptable to us or at all; and failure of a transaction to advance our business strategy or other unforeseen factors.",
+      "score": -0.9528
+    }
+  ],
+  "forward_snippets": [
+    "In this section, we will describe the general financial condition and the results of operations of Advanced Micro Devices, Inc.",
+    "To the extent contingencies are fully met, we will pay an additional $300 million in cash and issue up to 740,961 shares of our common stock.",
+    "The Sale Agreement provides that if the sale is not completed by May 18, 2026, subject to two automatic extensions until November 18, 2026, we will be entitled to receive a termination fee of up to $153 million.",
+    "We intend the discussion of our financial condition and results of operations that follows to provide information that will assist in understanding our financial statements, the changes in certain key items in those financial statements from period to period, the primary factors that resulted in those changes, and how certain accounting principles, policies and estimates affect our financial statements.",
+    "In this section, we will describe the general financial condition and the results of operations of Advanced Micro Devices, Inc."
+  ],
+  "curated_text": "Symbol: AMD. Year: 2025. Period: Q1. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: The agreement governing our convertible notes and our Revolving Credit Agreement contains provisions whereby a payment default or acceleration under certain agreements with respect to other material indebtedness would result in cross defaults under our convertible indenture or the Revolving Credit Agreement and allow note holders or the lenders under our Revolving Credit Agreement to declare all amounts outstanding under certain of our indentures or the Revolving Credit Agreement to be immediately due and payable. The agreement governing our convertible notes and our Revolving Credit Agreement contains provisions whereby a payment default or acceleration under certain agreements with respect to other material indebtedness would result in cross defaults under our convertible indenture or the Revolving Credit Agreement and allow note holders or the lenders under our Revolving Credit Agreement to declare all amounts outstanding under certain of our indentures or the Revolving Credit Agreement to be immediately due and payable. The tax benefit for the three and six months ended June 28, 2025 reflected a discrete tax benefit of $792 million and $781 million, respectively, primarily due to a tax benefit of $853 million related to the release of reserves for uncertain tax positions pertaining to the reasonable cause relief for dual consolidated losses approved by the IRS in April 2025, partially offset by other items, including $45 million of deferred tax expense associated with the expected gain on the transfer of appreciated assets related to the ZT Systems acquisition. Top negative sentences: If Microsoft does not continue to design and develop its operating systems so that they work with our x86 instruction sets or does not co\ntners, may also be vulnerable to damage or disruption caused by circumstances beyond our control including catastrophic events, power anomalies or outages, natural disasters, viruses or malware, cyberattacks, insider threat attacks, unauthorized system or data modifications, data breaches and computer system or network failures, exposing us to significant cost, reputational harm and disruption or damage to our business. We cannot assure you that, despite our testing procedures, errors will not be found in new products or releases after commencement of commercial shipments in the future, which could result in loss of or delay in market acceptance of our products, material recall and replacement costs, loss of revenue, writing down the inventory of defective products, the diversion of the attention of our engineering personnel from product development efforts, defending against litigation related to defective products or related liabilities, including property damage, personal injury, damage to our reputation in the industry and loss of data or intangible property, and could adversely affect our relationships with our customers. Acquisitions and joint ventures include numerous risks including, but not limited to: our inability to identify suitable opportunities in a timely manner or on terms acceptable to us; failure to complete a transaction in a timely manner, or at all; inability to obtain, or delay in obtaining, regulatory approvals or IP disputes or other litigation; difficulty in obtaining financing on terms acceptable to us or at all; and failure of a transaction to advance our business strategy or other unforeseen factors. Forward-looking snippets: In this section, we will describe the general financial condition and the results of operations of Advanced Micro Devices, Inc. To the extent contingencies are fully met, we will pay an additional $300 million in cash and issue up to 740,961 shares of our common stock. The Sale Agreement provides that if the sale is not completed by May 18, 2026, subject to two automatic extensions until November 18, 2026, we will be entitled to receive a termination fee of up to $153 million. We intend the discussion of our financial condition and results of operations that follows to provide information that will assist in understanding our financial statements, the changes in certain key items in those financial statements from period to period, the primary factors that resulted in those changes, and how certain accounting principles, policies and estimates affect our financial statements. In this section, we will describe the general financial condition and the results of operations of Advanced Micro Devices, Inc."
+}

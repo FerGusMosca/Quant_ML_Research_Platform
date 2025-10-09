@@ -1,0 +1,143 @@
+{
+  "symbol": "GOOG",
+  "year": 2025,
+  "period": "Q1",
+  "curated_text": "Symbol: GOOG. Year: 2025. Period: Q1. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: EC, Google, Android, the General Court, the General Court's, the European Court of Justice, AdSense, the U.S. Department of Justice, Attorneys General, District Court, Search and Search, the U.S. District Court, DOJ, the Australian Competition and, Consumer Commission, the Japanese Fair Trade Commission, JFTC, Search, DoubleClick, AdMeld, Google Play's, the Court of Appeals, \u2022 European Digital Markets Act, the European Union's, EU, Digital Markets Act, Google Play. Context excerpt: competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision that certain provisions in Google\u2019s Android-related distribution agreements infringed European antitrust laws, imposed a \u20ac 4.3 billion fine, and directed the termination of the conduct at issue. We appealed the EC decision and implemented changes to certain of our Android distribution practices. In September 2022, the General Court affirmed the EC decision but reduced the fine from \u20ac 4.3 billion to \u20ac 4.1 billion. We subsequently appealed the General Court's affirmation of the EC decision with the",
+  "competition_summary": [
+    {
+      "competitor": "EC",
+      "mentions": 13,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "Google",
+      "mentions": 17,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "Android",
+      "mentions": 4,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "the General Court",
+      "mentions": 2,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "the General Court's",
+      "mentions": 2,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "the European Court of Justice",
+      "mentions": 2,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "AdSense",
+      "mentions": 2,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "the U.S. Department of Justice",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "Attorneys General",
+      "mentions": 6,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "District Court",
+      "mentions": 4,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "Search and Search",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "the U.S. District Court",
+      "mentions": 2,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "DOJ",
+      "mentions": 5,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "the Australian Competition and",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "Consumer Commission",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "the Japanese Fair Trade Commission",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "JFTC",
+      "mentions": 4,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "Search",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "DoubleClick",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "AdMeld",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "Google Play's",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "the Court of Appeals",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "\u2022 European Digital Markets Act",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "the European Union's",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "EU",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "Digital Markets Act",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    },
+    {
+      "competitor": "Google Play",
+      "mentions": 1,
+      "context": "competition matters by regulatory authorities and private parties in the U.S., Europe, and other jurisdictions globally, including the following: \u2022 Shopping: In June 2017, the EC announced its decision that certain actions taken by Google relating to its display and ranking of shopping search results and ads infringed European antitrust laws and imposed a \u20ac 2.4 billion fine. In 2024, we made a cash payment of $ 3.0 billion for the fine. 27 \u2022 Android: In July 2018, the EC announced its decision t"
+    }
+  ]
+}

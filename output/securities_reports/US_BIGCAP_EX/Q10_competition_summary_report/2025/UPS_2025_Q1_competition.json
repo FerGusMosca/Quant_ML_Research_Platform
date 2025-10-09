@@ -1,0 +1,73 @@
+{
+  "symbol": "UPS",
+  "year": 2025,
+  "period": "Q1",
+  "curated_text": "Symbol: UPS. Year: 2025. Period: Q1. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: EUR, Contents United States Securities and Exchange Commission, THE SECURITIES EXCHANGE ACT, Commission, United Parcel Service, Inc., IRS Employer Identification No., Georgia 30328 (Address of Principal Executive Offices, Registrant, UPS New York Stock Exchange, New York Stock Exchange, New York Stock Exchange Indicate, the Securities Exchange Act, Interactive Data File. Context excerpt: CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-04-01 2024-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-01-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-01-01 2024-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-06-30 0001090727 us-gaap:CommonClassBMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassBMember us-gaap:CommonStockMember 2024-03-31 000109",
+  "competition_summary": [
+    {
+      "competitor": "EUR",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember "
+    },
+    {
+      "competitor": "Contents United States Securities and Exchange Commission",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember "
+    },
+    {
+      "competitor": "THE SECURITIES EXCHANGE ACT",
+      "mentions": 2,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember "
+    },
+    {
+      "competitor": "Commission",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember "
+    },
+    {
+      "competitor": "United Parcel Service, Inc.",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember "
+    },
+    {
+      "competitor": "IRS Employer Identification No.",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember "
+    },
+    {
+      "competitor": "Georgia 30328 (Address of Principal Executive Offices",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember "
+    },
+    {
+      "competitor": "Registrant",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember "
+    },
+    {
+      "competitor": "UPS New York Stock Exchange",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember "
+    },
+    {
+      "competitor": "New York Stock Exchange",
+      "mentions": 2,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember "
+    },
+    {
+      "competitor": "New York Stock Exchange Indicate",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember "
+    },
+    {
+      "competitor": "the Securities Exchange Act",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember "
+    },
+    {
+      "competitor": "Interactive Data File",
+      "mentions": 1,
+      "context": "CompetitionCommissionMember 2016-08-01 2016-08-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-03-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2024-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2023-12-31 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember 2025-04-01 2025-06-30 0001090727 us-gaap:CommonClassAMember us-gaap:CommonStockMember "
+    }
+  ]
+}

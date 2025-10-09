@@ -1,0 +1,283 @@
+{
+  "symbol": "AMGN",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: AMGN. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: CMS Centers for, Medicare & Medicaid Services, EMA European Medicines Agency, EPS, EU European Union FDA U.S. Food and Drug Administration, FTC Federal Trade Commission, HHS U.S. Department of Health and Human Services, Horizon Horizon Therapeutics plc, IRS Internal Revenue Service, MD&A, Moody\u2019s Moody\u2019s Investors Service, NIH National Institutes of Health OECD Organisation for Economic Co-operation and, Development PBM, PDAB Prescription Drug Affordability Board R&D research and, RANKL, S&P Standard & Poor\u2019s Financial Services, SEC U.S. Securities and Exchange Commission SG&A, SOFR Secured Overnight Financing Rate U.S. Treasury U.S. Department, Treasury, Aimovig Aimovig \u00ae, AMJEVITA, darbepoetin alfa, infliximab-axxq, Nplate Nplate \u00ae, Sensipar/Mimpara Sensipar \u00ae, avacopan, FINANCIAL STATEMENTS AMGEN INC, CONDENSED CONSOLIDATED STATEMENTS OF INCOME, CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME, Trade, AMGEN INC, CONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS\u2019, EQUITY, Total Balance, CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS, Unaudited, Business Amgen Inc., Amgen, Property, the Financial Accounting Standards Board, FASB, Accounting Standards Update, CODM, the Condensed Consolidated Balance Sheets, Company, Consolidated, ROW, ROW Total U.S. ROW Total, Repatha 343 313, EVENITY, Otezla, TEPEZZA, BeiGene, BeiGene, Ltd., EU. Context excerpt: Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A management\u2019s discussion and analysis Moody\u2019s Moody\u2019s Investors Service, Inc. Neumora Neumora Therapeutics, Inc. NIH National Institutes of Health OECD Organisation for Economic Co-operation and Development PBM pharmacy benefit manager PDAB Prescription Drug Affordability Board R&D research and development RANKL receptor activator of nuclear factor kappa-B ligand RAR Revenue Agent Report ROW rest of world S&P Standard & Poor\u2019s Financial Services LLC SEC U.S. Securities and Exchange Commission SG&A selli",
+  "competition_summary": [
+    {
+      "competitor": "CMS Centers for",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Medicare & Medicaid Services",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "EMA European Medicines Agency",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "EPS",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "EU European Union FDA U.S. Food and Drug Administration",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "FTC Federal Trade Commission",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "HHS U.S. Department of Health and Human Services",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Horizon Horizon Therapeutics plc",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "IRS Internal Revenue Service",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "MD&A",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Moody\u2019s Moody\u2019s Investors Service",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "NIH National Institutes of Health OECD Organisation for Economic Co-operation and",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Development PBM",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "PDAB Prescription Drug Affordability Board R&D research and",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "RANKL",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "S&P Standard & Poor\u2019s Financial Services",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "SEC U.S. Securities and Exchange Commission SG&A",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "SOFR Secured Overnight Financing Rate U.S. Treasury U.S. Department",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Treasury",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Aimovig Aimovig \u00ae",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "AMJEVITA",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "darbepoetin alfa",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "infliximab-axxq",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Nplate Nplate \u00ae",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Sensipar/Mimpara Sensipar \u00ae",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "avacopan",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "FINANCIAL STATEMENTS AMGEN INC",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "CONDENSED CONSOLIDATED STATEMENTS OF INCOME",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Trade",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "AMGEN INC",
+      "mentions": 2,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "CONDENSED CONSOLIDATED STATEMENTS OF STOCKHOLDERS\u2019",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "EQUITY",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Total Balance",
+      "mentions": 2,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Unaudited",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Business Amgen Inc.",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Amgen",
+      "mentions": 5,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Property",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "the Financial Accounting Standards Board",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "FASB",
+      "mentions": 2,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Accounting Standards Update",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "CODM",
+      "mentions": 6,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "the Condensed Consolidated Balance Sheets",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Company",
+      "mentions": 3,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Consolidated",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "ROW",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "ROW Total U.S. ROW Total",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Repatha 343 313",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "EVENITY",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "Otezla",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "TEPEZZA",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "BeiGene",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "BeiGene, Ltd.",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    },
+    {
+      "competitor": "EU",
+      "mentions": 1,
+      "context": "Competition and Innovation Act of 2009 CMS Centers for Medicare & Medicaid Services EMA European Medicines Agency EPS earnings per share EU European Union FDA U.S. Food and Drug Administration Fitch Fitch Ratings, Inc. FTC Federal Trade Commission GAAP U.S. generally accepted accounting principles HHS U.S. Department of Health and Human Services Horizon Horizon Therapeutics plc IPR&D in-process research and development IRA Inflation Reduction Act of 2022 IRS Internal Revenue Service MD&A managem"
+    }
+  ]
+}

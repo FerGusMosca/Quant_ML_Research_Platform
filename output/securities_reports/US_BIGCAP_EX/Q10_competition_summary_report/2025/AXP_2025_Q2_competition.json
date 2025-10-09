@@ -1,0 +1,43 @@
+{
+  "symbol": "AXP",
+  "year": 2025,
+  "period": "Q2",
+  "curated_text": "Symbol: AXP. Year: 2025. Period: Q2. ReportType: Q10. Section: Competition and Market Position. This section discusses competitors, market dynamics, and regulatory landscape.  Competitors mentioned: American Express, Gen-Z, Card Members, Card, Center, Shop Small, Amex. Context excerpt: competition in the payments industry, including competitive pressure and competitor settlements and mergers that may materially impact the prices charged to merchants that accept American Express cards; merchant acceptance and surcharging, steering and suppression by merchants; the desirability of our premium card products; competition for new and existing cobrand relationships; competition from new and non-traditional competitors, and with respect to new products, services and technologies, such as the emergence or increase in popularity of alternative payment mechanisms; and the success of marketing, promotion and rewards programs; \u2022 our ability to expand our leadership in the premium consumer space, including with Millennial and Gen-Z consumers, which will be impacted in part by competition, brand perceptions (including perceptions related to merchant coverage) and reputation, and our ability to develop and market new benefits and value propositions that appeal to Card Members and n",
+  "competition_summary": [
+    {
+      "competitor": "American Express",
+      "mentions": 3,
+      "context": "competition in the payments industry, including competitive pressure and competitor settlements and mergers that may materially impact the prices charged to merchants that accept American Express cards; merchant acceptance and surcharging, steering and suppression by merchants; the desirability of our premium card products; competition for new and existing cobrand relationships; competition from new and non-traditional competitors, and with respect to new products, services and technologies, suc"
+    },
+    {
+      "competitor": "Gen-Z",
+      "mentions": 1,
+      "context": "competition in the payments industry, including competitive pressure and competitor settlements and mergers that may materially impact the prices charged to merchants that accept American Express cards; merchant acceptance and surcharging, steering and suppression by merchants; the desirability of our premium card products; competition for new and existing cobrand relationships; competition from new and non-traditional competitors, and with respect to new products, services and technologies, suc"
+    },
+    {
+      "competitor": "Card Members",
+      "mentions": 2,
+      "context": "competition in the payments industry, including competitive pressure and competitor settlements and mergers that may materially impact the prices charged to merchants that accept American Express cards; merchant acceptance and surcharging, steering and suppression by merchants; the desirability of our premium card products; competition for new and existing cobrand relationships; competition from new and non-traditional competitors, and with respect to new products, services and technologies, suc"
+    },
+    {
+      "competitor": "Card",
+      "mentions": 1,
+      "context": "competition in the payments industry, including competitive pressure and competitor settlements and mergers that may materially impact the prices charged to merchants that accept American Express cards; merchant acceptance and surcharging, steering and suppression by merchants; the desirability of our premium card products; competition for new and existing cobrand relationships; competition from new and non-traditional competitors, and with respect to new products, services and technologies, suc"
+    },
+    {
+      "competitor": "Center",
+      "mentions": 1,
+      "context": "competition in the payments industry, including competitive pressure and competitor settlements and mergers that may materially impact the prices charged to merchants that accept American Express cards; merchant acceptance and surcharging, steering and suppression by merchants; the desirability of our premium card products; competition for new and existing cobrand relationships; competition from new and non-traditional competitors, and with respect to new products, services and technologies, suc"
+    },
+    {
+      "competitor": "Shop Small",
+      "mentions": 1,
+      "context": "competition in the payments industry, including competitive pressure and competitor settlements and mergers that may materially impact the prices charged to merchants that accept American Express cards; merchant acceptance and surcharging, steering and suppression by merchants; the desirability of our premium card products; competition for new and existing cobrand relationships; competition from new and non-traditional competitors, and with respect to new products, services and technologies, suc"
+    },
+    {
+      "competitor": "Amex",
+      "mentions": 1,
+      "context": "competition in the payments industry, including competitive pressure and competitor settlements and mergers that may materially impact the prices charged to merchants that accept American Express cards; merchant acceptance and surcharging, steering and suppression by merchants; the desirability of our premium card products; competition for new and existing cobrand relationships; competition from new and non-traditional competitors, and with respect to new products, services and technologies, suc"
+    }
+  ]
+}

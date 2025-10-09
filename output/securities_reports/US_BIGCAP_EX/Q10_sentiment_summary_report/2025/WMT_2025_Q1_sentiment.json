@@ -1,0 +1,48 @@
+{
+  "symbol": "WMT",
+  "year": 2025,
+  "Period": "Q1",
+  "report_type": "Q10",
+  "metrics": {
+    "mdna_sentiment": -0.2732,
+    "outlook_sentiment": 0.3068,
+    "forward_ratio": 1.0,
+    "hedge_ratio": 0.091
+  },
+  "top_positive": [
+    {
+      "sent": "segment increased 3.3% and 3.1% for the three and six months ended July 31, 2025, respectively, driven by growth in unit volumes with strength in transactions, reflecting strong sales in grocery, health and wellness, and general merchandise.",
+      "score": 0.9382
+    },
+    {
+      "sent": "segment increased 3.3% and 3.1% for the three and six months ended July 31, 2025, respectively, driven by growth in unit volumes with strength in transactions, reflecting strong sales in grocery, health and wellness, and general merchandise.",
+      "score": 0.9382
+    },
+    {
+      "sent": "segment increased 3.3% and 3.1% for the three and six months ended July 31, 2025, respectively, driven by growth in unit volumes with strength in transactions, reflecting strong sales in grocery, health and wellness, and general merchandise.",
+      "score": 0.9382
+    }
+  ],
+  "top_negative": [
+    {
+      "sent": "Long-term Debt The following table provides the changes in our long-term debt for the six months ended July\u00a031, 2025: (Amounts in millions) Long-term debt due within one year Long-term debt Total Balances as of February 1, 2025 $ 2,598 $ 33,401 $ 35,999 Proceeds from issuance of long-term debt (1) \u2014 3,983 3,983 Repayments of long-term debt (875) \u2014 (875) Reclassifications of long-term debt 2,286 (2,286) \u2014 Currency and other adjustments 2 542 544 Balances as of July 31, 2025 $ 4,011 $ 35,640 $ 39,651 (1) Proceeds from issuance of long-term debt are net of deferred loan costs and any relat\nnts.",
+      "score": -0.9517
+    },
+    {
+      "sent": "Long-term Debt The following table provides the changes in our long-term debt for the six months ended July\u00a031, 2025: (Amounts in millions) Long-term debt due within one year Long-term debt Total Balances as of February 1, 2025 $ 2,598 $ 33,401 $ 35,999 Proceeds from issuance of long-term debt (1) \u2014 3,983 3,983 Repayments of long-term debt (875) \u2014 (875) Reclassifications of long-term debt 2,286 (2,286) \u2014 Currency and other adjustments 2 542 544 Balances as of July 31, 2025 $ 4,011 $ 35,640 $ 39,651 (1) Proceeds from issuance of long-term debt are net of deferred loan costs and any related discount or premium.",
+      "score": -0.9517
+    },
+    {
+      "sent": "Opioid-Related Litigation: In re National Prescription Opiate Litigation (MDL No.",
+      "score": -0.5859
+    }
+  ],
+  "forward_snippets": [
+    "Recent Developments, Macroeconomic Conditions and Potential Impacts We expect continued uncertainty in our business and the global economy due to tariffs and trade restrictions; inflationary trends; fluctuations in global currencies; swings in macroeconomic conditions and their effect on consumer confidence; volatility in employment trends; and supply chain pressures, any of which may impact our results.",
+    "We expect certain provisions will decrease cash taxes paid in the current fiscal year and may change the timing of cash tax payments in future periods.",
+    "Growth Our objective of prioritizing growth means we will focus on serving customers and members however they want to shop through our omnichannel business model.",
+    "as we believe it is a meaningful metric within the context of the U.S.",
+    "We expect certain provisions will decrease cash taxes paid in the current fiscal year and may change the timing of cash tax payments in future periods."
+  ],
+  "curated_text": "Symbol: WMT. Year: 2025. Period: Q1. ReportType: Q10. Section: Management Discussion and Analysis (MD&A). Key metrics include sentiment, forward outlook, and risk hedging.  Top positive sentences: segment increased 3.3% and 3.1% for the three and six months ended July 31, 2025, respectively, driven by growth in unit volumes with strength in transactions, reflecting strong sales in grocery, health and wellness, and general merchandise. segment increased 3.3% and 3.1% for the three and six months ended July 31, 2025, respectively, driven by growth in unit volumes with strength in transactions, reflecting strong sales in grocery, health and wellness, and general merchandise. segment increased 3.3% and 3.1% for the three and six months ended July 31, 2025, respectively, driven by growth in unit volumes with strength in transactions, reflecting strong sales in grocery, health and wellness, and general merchandise. Top negative sentences: Long-term Debt The following table provides the changes in our long-term debt for the six months ended July\u00a031, 2025: (Amounts in millions) Long-term debt due within one year Long-term debt Total Balances as of February 1, 2025 $ 2,598 $ 33,401 $ 35,999 Proceeds from issuance of long-term debt (1) \u2014 3,983 3,983 Repayments of long-term debt (875) \u2014 (875) Reclassifications of long-term debt 2,286 (2,286) \u2014 Currency and other adjustments 2 542 544 Balances as of July 31, 2025 $ 4,011 $ 35,640 $ 39,651 (1) Proceeds from issuance of long-term debt are net of deferred loan costs and any relat\nnts. Long-term Debt The following table provides the changes in our long-term debt for the six months ended July\u00a031, 2025: (Amounts in millions) Long-term debt due within one year Long-term debt Total Balances as of February 1, 2025 $ 2,598 $ 33,401 $ 35,999 Proceeds from issuance of long-term debt (1) \u2014 3,983 3,983 Repayments of long-term debt (875) \u2014 (875) Reclassifications of long-term debt 2,286 (2,286) \u2014 Currency and other adjustments 2 542 544 Balances as of July 31, 2025 $ 4,011 $ 35,640 $ 39,651 (1) Proceeds from issuance of long-term debt are net of deferred loan costs and any related discount or premium. Opioid-Related Litigation: In re National Prescription Opiate Litigation (MDL No. Forward-looking snippets: Recent Developments, Macroeconomic Conditions and Potential Impacts We expect continued uncertainty in our business and the global economy due to tariffs and trade restrictions; inflationary trends; fluctuations in global currencies; swings in macroeconomic conditions and their effect on consumer confidence; volatility in employment trends; and supply chain pressures, any of which may impact our results. We expect certain provisions will decrease cash taxes paid in the current fiscal year and may change the timing of cash tax payments in future periods. Growth Our objective of prioritizing growth means we will focus on serving customers and members however they want to shop through our omnichannel business model. as we believe it is a meaningful metric within the context of the U.S. We expect certain provisions will decrease cash taxes paid in the current fiscal year and may change the timing of cash tax payments in future periods."
+}

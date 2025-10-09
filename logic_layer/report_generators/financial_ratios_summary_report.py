@@ -88,11 +88,20 @@ class FinancialRatiosSummaryReport:
                 items = self._extract_xbrl_items(fpath)
                 ratios = self._compute_ratios(items)
 
+                curated_text = (
+                    f"Symbol: {symbol}. Year: {self.year}. ReportType: {self.report_type}. "
+                    "This document summarizes key financial ratios derived from XBRL filings, "
+                    "including revenue, net income, assets, debt, and equity. "
+                    f"Metrics include GPA ({ratios.get('gpa')}), asset turnover ({ratios.get('asset_turnover')}), "
+                    f"operating margin ({ratios.get('operating_margin')}), and debt-to-equity ({ratios.get('debt_equity')})."
+                )
+
                 out = {
                     "symbol": symbol,
                     "year": self.year,
                     "report_type": self.report_type,
                     "items": items,
+                    "curated_text": curated_text,
                     "metrics": ratios,
                 }
                 out_path = os.path.join(self.output_dir, f"{symbol}_{self.year}_ratios.json")
