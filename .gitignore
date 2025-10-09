@@ -169,3 +169,4 @@ cython_debug/
 
 /output/Q10/*
 !output/Q10/.gitkeep
+/output/securities_reports/*
