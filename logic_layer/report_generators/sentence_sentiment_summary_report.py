@@ -67,6 +67,7 @@ class SentimentSummaryReport:
         :param universe_key: Optional universe name for sub-folder under the year
         """
         self.report_type = report_type.upper()
+        self.portfolio=portfolio
 
         # Input HTML lives in ./output/{K10|Q10}/<YEAR>
         self.input_dir=f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{report_type}/{year}"
@@ -143,42 +144,66 @@ class SentimentSummaryReport:
                 self.logger.do_log(f"[SENT][{i}] ❌ {file} failed - {str(e)}", MessageType.ERROR)
 
     @staticmethod
-    def consolidate_year(year: int, report_type: str, logger, universe_key: str = None) -> str:
-        """Merge all *_{year}_sentiment.json for a single year + report type into one JSON file."""
-        base = os.path.join(f"./output/{report_type.upper()}/sentiment_summary_report", str(year))
+    def consolidate_year(year: int, report_type: str, portfolio: str, logger, universe_key: str = None) -> str:
+        """
+        Merge all *_sentiment.json files for a given year and report type (K10 or Q10)
+        into a single consolidated JSON file.
+        """
+        import os, re, json
+
+        # Base folder for sentiment reports (K10 or Q10)
+        base_dir = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{report_type}_sentiment_summary_report/{year}"
         if universe_key:
-            base = os.path.join(base, universe_key)
+            base_dir = os.path.join(base_dir, universe_key)
+
+        if not os.path.isdir(base_dir):
+            logger.do_log(f"[SENT] ⚠ Year folder not found: {base_dir}", MessageType.WARNING)
+            return ""
 
         data = []
-        if not os.path.isdir(base):
-            logger.do_log(f"[SENT] ⚠ Year folder not found: {base}", MessageType.WARNING)
-        else:
-            for fn in os.listdir(base):
-                if fn.endswith(f"_{year}_sentiment.json"):
-                    path = os.path.join(base, fn)
-                    try:
-                        with open(path, "r", encoding="utf-8") as fh:
-                            j = json.load(fh)
-                        if j.get("year") == year:
-                            data.append(j)
-                        else:
-                            logger.do_log(f"[SENT] ⚠ Skipped (wrong embedded year): {fn}", MessageType.WARNING)
-                    except Exception as e:
-                        logger.do_log(f"[SENT] ❌ Failed to read {fn} - {e}", MessageType.ERROR)
 
-        out_path = os.path.join(base, f"sentiment_summary_all_{year}.json")
+        # Match filenames for both K10 and Q10 formats
+        pattern = re.compile(rf".*_{year}_(Y{year}|Q[1-4])_sentiment\.json$", re.IGNORECASE)
+
+        for fn in os.listdir(base_dir):
+            if pattern.match(fn):
+                path = os.path.join(base_dir, fn)
+                try:
+                    with open(path, "r", encoding="utf-8") as fh:
+                        j = json.load(fh)
+                    if j.get("year") == year:
+                        data.append(j)
+                except Exception as e:
+                    logger.do_log(f"[SENT] ❌ Failed to read {fn} - {e}", MessageType.ERROR)
+
+        # Output directory for consolidated data
+        rank_dir = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{report_type}_sentiment_summary_report_rank/{year}"
+        os.makedirs(rank_dir, exist_ok=True)
+
+        out_path = os.path.join(rank_dir, f"sentiment_summary_all_{year}.json")
+
         with open(out_path, "w", encoding="utf-8") as out:
             json.dump(data, out, indent=2)
-        logger.do_log(f"[SENT] Consolidated -> {out_path} ({len(data)} filers)", MessageType.INFO)
+
+        logger.do_log(f"[SENT] ✅ Consolidated -> {out_path} ({len(data)} filers)", MessageType.INFO)
         return out_path
 
     @staticmethod
     def rank(consolidated_json: str, out_csv: str, logger) -> None:
         """Produce ranking CSV by optimism composite score from a consolidated JSON."""
         import pandas as pd
+        import os
+
+        if not os.path.exists(consolidated_json):
+            logger.do_log(f"[SENT] ❌ Consolidated JSON not found: {consolidated_json}", MessageType.ERROR)
+            return
 
         with open(consolidated_json, "r", encoding="utf-8") as f:
             data = json.load(f)
+
+        if not data:
+            logger.do_log(f"[SENT] ⚠ No data found in {consolidated_json}", MessageType.WARNING)
+            return
 
         rows = []
         for e in data:
@@ -193,21 +218,28 @@ class SentimentSummaryReport:
                     "forward_ratio": m.get("forward_ratio", 0.0),
                     "hedge_ratio": m.get("hedge_ratio", 0.0),
                     "optimism_score": round(
-                        0.5 * m.get("mdna_sentiment", 0)
-                        + 0.5 * m.get("outlook_sentiment", 0)
-                        + 0.2 * m.get("forward_ratio", 0)
-                        - 0.2 * m.get("hedge_ratio", 0),
+                        0.5 * m.get("mdna_sentiment", 0.0)
+                        + 0.5 * m.get("outlook_sentiment", 0.0)
+                        + 0.2 * m.get("forward_ratio", 0.0)
+                        - 0.2 * m.get("hedge_ratio", 0.0),
                         6,
                     ),
                 }
             )
 
-        df = pd.DataFrame(rows).sort_values(
+        df = pd.DataFrame(rows)
+        if df.empty:
+            logger.do_log(f"[SENT] ⚠ No valid records to rank in {consolidated_json}", MessageType.WARNING)
+            return
+
+        df = df.sort_values(
             ["optimism_score", "sentiment_outlook", "sentiment_mdna"], ascending=False
         )
-        df.to_csv(out_csv, index=False)
-        logger.do_log(f"[SENT] Ranking -> {out_csv} ({len(df)} filers)", MessageType.INFO)
 
+        os.makedirs(os.path.dirname(out_csv), exist_ok=True)
+        df.to_csv(out_csv, index=False)
+
+        logger.do_log(f"[SENT] ✅ Ranking -> {out_csv} ({len(df)} filers)", MessageType.INFO)
 
     # -------- Internals --------
 

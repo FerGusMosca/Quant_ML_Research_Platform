@@ -380,9 +380,9 @@ class AlgosOrchestationLogic:
         gen.run()
 
         # Consolidate & rank (year + report_type aware)
-        #consolidated = SentimentSummaryReport.consolidate_year(year, report_type, self.logger, universe_key=universe)
-        #ranking_csv = os.path.join(os.path.dirname(consolidated), f"sentiment_summary_ranking_{year}.csv")
-        #SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
+        consolidated = SentimentSummaryReport.consolidate_year(year, report_type,portfolio, self.logger, universe_key=universe)
+        ranking_csv = os.path.join(os.path.dirname(consolidated), f"sentiment_summary_ranking_{year}.csv")
+        SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
 
         self.logger.do_log(
             f"[SENT] ✅ Sentiment summary completed ({report_type}, scope={universe or 'ALL'})",
