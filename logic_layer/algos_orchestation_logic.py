@@ -79,6 +79,7 @@ import pandas as pd
 from logic_layer.neural_network_models_trainer import NeuralNetworkModelTrainer
 from logic_layer.model_creators.daytrading_RNN_model_creator import DayTradingRNNModelCreator
 from service_layer.bcra_service_layer import BCRAServiceLayer
+from service_layer.byma_service_layer import BYMAServiceLayer
 
 
 class AlgosOrchestationLogic:
@@ -2121,6 +2122,28 @@ class AlgosOrchestationLogic:
             raise Exception(f"❌ Unknown data vendor '{vendor}'. Supported: TRADINGVIEW, FRED")
 
        #TODO --> Convertir a EconomicValues y persistir
+
+    def process_download_byma_interest_rates(self, d_from, d_to, algo_params):
+        """
+        Executes the BYMA Interest Rates retrieval process.
+        This method belongs to the business logic layer.
+        """
+
+        # Instantiate BYMA service
+        byma_service = BYMAServiceLayer()
+
+        # Retrieve data
+        rates = byma_service.get_interest_rates(d_from, d_to)
+
+        # Handle empty results
+        if not rates:
+            print("⚠️ No rates were returned from BYMA API.")
+            return
+
+        # Display retrieved data
+        print("📊 BYMA Interest Rates Retrieved:")
+        for r in rates:
+            print(f"  {r.name:<35} {r.date} → {r.value}")
 
     def process_download_bcra_interest_rates(self, d_from, d_to, algo_params):
         """

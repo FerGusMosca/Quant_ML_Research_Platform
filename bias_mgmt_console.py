@@ -66,6 +66,7 @@ def show_commands():
     print("#65-DownloadSECSecurities")
     print("#66-RunReport [report*] [year*]")
     print("#67-DownloadBCRAInterestRates [from*] [to*]")
+    print("#68-DownloadBYMAInterestRates [from*] [to*]")
     print("==================================================================")
     #TrainNeuralNetworkAlgo
     print("#n-Exit")
@@ -1568,6 +1569,46 @@ def process_backtest_slope_model_logic(symbol,model_candle,d_from,d_to,portf_siz
         print(traceback.format_exc())
         logger.print("CRITICAL ERROR running process_backtest_slope_model:{}".format(str(e)), MessageType.ERROR)
 
+def process_download_byma_interest_rates_logic(d_from, d_to=None):
+    """
+    Entry point for command #68 - Download BYMA Interest Rates.
+    Loads configuration, instantiates AlgosOrchestationLogic,
+    and delegates to its business logic method.
+    """
+    loader = MLSettingsLoader()
+    logger = Logger()
+
+    try:
+        logger.print("🏦 Starting download of BYMA Interest Rates", MessageType.INFO)
+
+        # Load configuration (no BYMA-specific keys needed)
+        config_settings = loader.load_settings("./configs/commands_mgr.ini")
+
+        # Instantiate orchestrator
+        trd_algos = AlgosOrchestationLogic(
+            config_settings["hist_data_conn_str"],
+            config_settings["ml_reports_conn_str"],
+            None,
+            logger
+        )
+
+        # Parameters (kept for structural consistency)
+        algo_params = {}
+
+        # Delegate to logic layer
+        trd_algos.process_download_byma_interest_rates(
+            d_from=d_from,
+            d_to=d_to,
+            algo_params=algo_params
+        )
+
+        logger.print("✅ BYMA interest rates retrieved successfully", MessageType.INFO)
+
+    except Exception as e:
+        print(traceback.format_exc())
+        logger.print(f"CRITICAL ERROR in process_download_byma_interest_rates_logic: {str(e)}", MessageType.ERROR)
+
+
 def process_download_bcra_interest_rates_logic(d_from, d_to=None):
     """
     Entry point for command #67 - Download BCRA Interest Rates
@@ -1868,6 +1909,19 @@ def process_daily_candles_graph(symbol, date, interval,mov_avg_unit):
     except Exception as e:
         logger.print("CRITICAL ERROR running process_daily_candles_graph:{}".format(str(e)), MessageType.ERROR)
 
+def process_download_byma_interest_rates(cmd):
+    """
+    CLI command handler for 'DownloadBYMAInterestRates'.
+    Parses parameters and delegates execution to logic layer entrypoint.
+    """
+    # Extract parameters from console command
+    d_from = __get_param__(cmd, "from", True, None)
+    d_to = __get_param__(cmd, "to", False, None)
+
+    # Call the logic entrypoint
+    process_download_byma_interest_rates_logic(d_from, d_to)
+
+
 def process_download_bcra_interest_rates(cmd):
     d_from = __get_param__(cmd, "from", True, None)
     d_to = __get_param__(cmd, "to", False, None)
@@ -1967,6 +2021,9 @@ def process_commands(cmd):
         process_run_report(cmd)
     elif cmd_param_list[0] == "DownloadBCRAInterestRates":
         process_download_bcra_interest_rates(cmd)
+
+    elif cmd_param_list[0] == "DownloadBYMAInterestRates":
+        process_download_byma_interest_rates(cmd)
 
     #
 
