@@ -23,6 +23,7 @@ class MLSettingsLoader():
             config_settings["FRED_API_KEY"] = config['SETTINGS']['FRED_API_KEY']
             config_settings["TRADING_VIEW_USER"] = config['SETTINGS']['TRADING_VIEW_USER']
             config_settings["TRADING_VIEW_PWD"] = config['SETTINGS']['TRADING_VIEW_PWD']
+            config_settings["BCRA_API_KEY"] = config['SETTINGS']['BCRA_API_KEY']
 
 
             return  config_settings

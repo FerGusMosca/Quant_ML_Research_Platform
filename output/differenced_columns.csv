@@ -1,9 +1,10 @@
 differenced_columns
-open_XLF
-high_XLF
-low_XLF
-close_XLF
+open_QQQ
+high_QQQ
+low_QQQ
+close_QQQ
 DGS10
+DGS1MO
 DGS2
 DGS30
 DGS3MO
@@ -13,5 +14,5 @@ FEDFUNDS
 M2SL
 SPR_DGS2_DGS10
 SPR_DGS3MO_DGS10
-SPR_VVIX_VIX
 SPY
+T10YIE

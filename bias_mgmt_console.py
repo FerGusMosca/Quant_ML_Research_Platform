@@ -14,6 +14,7 @@ import pandas as pd
 
 from logic_layer.data_set_builder import DataSetBuilder
 from controllers.routing_dashboard_controller import RoutingDashboardController
+from service_layer.bcra_service_layer import BCRAServiceLayer
 
 _DATE_FORMAT = "%m/%d/%Y"
 _TIMESTAMP_FORMAT='%m/%d/%Yt%H:%M:%S'
@@ -64,6 +65,7 @@ def show_commands():
     print("#64-CreateSpreadVariableBulk [diff_indicators*] [output_symbols*] [from*]")
     print("#65-DownloadSECSecurities")
     print("#66-RunReport [report*] [year*]")
+    print("#67-DownloadBCRAInterestRates [from*] [to*]")
     print("==================================================================")
     #TrainNeuralNetworkAlgo
     print("#n-Exit")
@@ -1566,15 +1568,27 @@ def process_backtest_slope_model_logic(symbol,model_candle,d_from,d_to,portf_siz
         print(traceback.format_exc())
         logger.print("CRITICAL ERROR running process_backtest_slope_model:{}".format(str(e)), MessageType.ERROR)
 
-def process_create_lightweight_indicator_logic(csv_indicators, d_from, d_to,output_symbol, benchmark=None, plot_result=True):
+def process_download_bcra_interest_rates_logic(d_from, d_to=None):
+    """
+    Entry point for command #67 - Download BCRA Interest Rates
+    Loads configuration, instantiates AlgosOrchestationLogic,
+    and delegates to its business logic method.
+    """
     loader = MLSettingsLoader()
     logger = Logger()
 
     try:
-        logger.print(f"🧪 Starting lightweight indicator creation with {len(csv_indicators.split(','))} input variables", MessageType.INFO)
+        logger.print("🏦 Starting download of BCRA Interest Rates", MessageType.INFO)
 
+        # Load configuration from .ini file
         config_settings = loader.load_settings("./configs/commands_mgr.ini")
 
+        # Retrieve API key from config
+        api_key = config_settings.get("BCRA_API_KEY", None)
+        if not api_key:
+            raise Exception("❌ Missing BCRA_API_KEY in config file (commands_mgr.ini)")
+
+        # Instantiate orchestrator (main business logic class)
         trd_algos = AlgosOrchestationLogic(
             config_settings["hist_data_conn_str"],
             config_settings["ml_reports_conn_str"],
@@ -1582,16 +1596,25 @@ def process_create_lightweight_indicator_logic(csv_indicators, d_from, d_to,outp
             logger
         )
 
-        trd_algos.process_create_lightweight_indicator(csv_indicators=csv_indicators, d_from=d_from, d_to=d_to,
-                                                       output_symbol=output_symbol,
-                                                       benchmark=benchmark,plot_result=plot_result
-                                                       )
+        # Pass parameters to logic layer
+        algo_params = {"bcra_api_key": api_key}
 
-        logger.print("✅ Lightweight indicator successfully created and persisted", MessageType.INFO)
+        # Delegate execution to logic layer
+        trd_algos.process_download_bcra_interest_rates(
+            d_from=d_from,
+            d_to=d_to,
+            algo_params=algo_params
+        )
+
+        logger.print("✅ BCRA interest rates retrieved successfully", MessageType.INFO)
 
     except Exception as e:
         print(traceback.format_exc())
-        logger.print(f"CRITICAL ERROR running process_create_lightweight_indicator_logic: {str(e)}", MessageType.ERROR)
+        logger.print(
+            f"CRITICAL ERROR in process_download_bcra_interest_rates_logic: {str(e)}",
+            MessageType.ERROR
+        )
+
 
 def process_run_report_logic(report_key, year=None,portfolio=None,symbol=None,d_from=None):
     logger = Logger()
@@ -1845,6 +1868,11 @@ def process_daily_candles_graph(symbol, date, interval,mov_avg_unit):
     except Exception as e:
         logger.print("CRITICAL ERROR running process_daily_candles_graph:{}".format(str(e)), MessageType.ERROR)
 
+def process_download_bcra_interest_rates(cmd):
+    d_from = __get_param__(cmd, "from", True, None)
+    d_to = __get_param__(cmd, "to", False, None)
+    process_download_bcra_interest_rates_logic(d_from, d_to)
+
 
 def process_commands(cmd):
     cmd_param_list = cmd.split(" ")
@@ -1937,6 +1965,8 @@ def process_commands(cmd):
         process_download_sec_securities(cmd)
     elif cmd_param_list[0] == "RunReport":
         process_run_report(cmd)
+    elif cmd_param_list[0] == "DownloadBCRAInterestRates":
+        process_download_bcra_interest_rates(cmd)
 
     #
 

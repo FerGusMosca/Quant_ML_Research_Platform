@@ -78,6 +78,8 @@ import pandas as pd
 
 from logic_layer.neural_network_models_trainer import NeuralNetworkModelTrainer
 from logic_layer.model_creators.daytrading_RNN_model_creator import DayTradingRNNModelCreator
+from service_layer.bcra_service_layer import BCRAServiceLayer
+
 
 class AlgosOrchestationLogic:
     def __init__(self,hist_data_conn_str,ml_reports_conn_str,p_classification_map_key,logger):
@@ -2120,6 +2122,28 @@ class AlgosOrchestationLogic:
 
        #TODO --> Convertir a EconomicValues y persistir
 
+    def process_download_bcra_interest_rates(self, d_from, d_to, algo_params):
+        """
+        Executes the BCRA Interest Rates retrieval process.
+        This method is part of the business logic layer.
+        """
+
+
+        # Instantiate the BCRA Service Layer (no API key required)
+        bcra_service = BCRAServiceLayer(algo_params["bcra_api_key"])
+
+        # Fetch the data from the remote API
+        rates = bcra_service.get_interest_rates(d_from, d_to)
+
+        # Handle empty results
+        if not rates:
+            print("⚠️ No rates were returned from BCRA API.")
+            return
+
+        # Display results (later this can be persisted or visualized)
+        print("📊 BCRA Interest Rates Retrieved:")
+        for r in rates:
+            print(f"  {r.name:<35} {r.date} → {r.value}")
 
     def process_create_lightweight_indicator(self, csv_indicators, d_from, d_to,output_symbol, benchmark=None, plot_result=True):
         print(f"🧩 Building DataFrame with indicators: {csv_indicators}")
