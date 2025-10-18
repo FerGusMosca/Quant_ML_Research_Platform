@@ -2128,11 +2128,10 @@ class AlgosOrchestationLogic:
         This method is part of the business logic layer.
         """
 
-
         # Instantiate the BCRA Service Layer (no API key required)
-        bcra_service = BCRAServiceLayer(algo_params["bcra_api_key"])
+        bcra_service = BCRAServiceLayer()
 
-        # Fetch the data from the remote API
+        # Fetch the data from the public API
         rates = bcra_service.get_interest_rates(d_from, d_to)
 
         # Handle empty results
