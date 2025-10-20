@@ -80,6 +80,7 @@ from logic_layer.neural_network_models_trainer import NeuralNetworkModelTrainer
 from logic_layer.model_creators.daytrading_RNN_model_creator import DayTradingRNNModelCreator
 from service_layer.bcra_service_layer import BCRAServiceLayer
 from service_layer.byma_service_layer import BYMAServiceLayer
+from service_layer.primary_service_layer import PrimaryServiceLayer
 
 
 class AlgosOrchestationLogic:
@@ -2131,9 +2132,12 @@ class AlgosOrchestationLogic:
 
         # Instantiate BYMA service
         byma_service = BYMAServiceLayer()
+        #byma_service=PrimaryServiceLayer()
+
 
         # Retrieve data
         rates = byma_service.get_interest_rates(d_from, d_to)
+        #rates =  byma_service.get_interest_rates_snapshot()
 
         # Handle empty results
         if not rates:

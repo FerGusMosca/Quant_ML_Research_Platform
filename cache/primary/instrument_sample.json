@@ -1,0 +1,48 @@
+{
+  "symbol": null,
+  "segment": {
+    "marketSegmentId": "MERV",
+    "marketId": "ROFX"
+  },
+  "lowLimitPrice": 0.0,
+  "highLimitPrice": 1000000.0,
+  "minPriceIncrement": 5.0,
+  "minTradeVol": 1,
+  "maxTradeVol": 1000000,
+  "tickSize": 1.0,
+  "contractMultiplier": 1.0,
+  "roundLot": 1.0,
+  "priceConvertionFactor": 1.0,
+  "maturityDate": null,
+  "currency": "ARS",
+  "orderTypes": [
+    "STOP_LIMIT_MERVAL",
+    "MARKET",
+    "LIMIT"
+  ],
+  "timesInForce": [
+    "FOK",
+    "DAY"
+  ],
+  "securityType": null,
+  "settlType": null,
+  "instrumentPricePrecision": 2,
+  "instrumentSizePrecision": 0,
+  "securityId": null,
+  "securityIdSource": null,
+  "securityDescription": "MERV - XMEV - XLC - CI",
+  "tickPriceRanges": {
+    "0": {
+      "lowerLimit": 0,
+      "upperLimit": null,
+      "tick": 5.0
+    }
+  },
+  "strike": null,
+  "underlying": "The Communication Services Select Sector SPDR",
+  "cficode": "EMXXXX",
+  "instrumentId": {
+    "marketId": "ROFX",
+    "symbol": "MERV - XMEV - XLC - CI"
+  }
+}
