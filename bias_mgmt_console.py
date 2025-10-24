@@ -360,6 +360,34 @@ def process_create_spread_variable_bulk(cmd):
     process_create_spread_variable_bulk_logic(diff_indicators, output_symbols, d_from)
 
 
+def process_create_lightweight_indicator_logic(csv_indicators, d_from, d_to,output_symbol, benchmark=None, plot_result=True):
+    loader = MLSettingsLoader()
+    logger = Logger()
+
+    try:
+        logger.print(f"🧪 Starting lightweight indicator creation with {len(csv_indicators.split(','))} input variables", MessageType.INFO)
+
+        config_settings = loader.load_settings("./configs/commands_mgr.ini")
+
+        trd_algos = AlgosOrchestationLogic(
+            config_settings["hist_data_conn_str"],
+            config_settings["ml_reports_conn_str"],
+            None,
+            logger
+        )
+
+        trd_algos.process_create_lightweight_indicator(csv_indicators=csv_indicators, d_from=d_from, d_to=d_to,
+                                                       output_symbol=output_symbol,
+                                                       benchmark=benchmark,plot_result=plot_result
+                                                       )
+
+        logger.print("✅ Lightweight indicator successfully created and persisted", MessageType.INFO)
+
+    except Exception as e:
+        print(traceback.format_exc())
+        logger.print(f"CRITICAL ERROR running process_create_lightweight_indicator_logic: {str(e)}", MessageType.ERROR)
+
+
 def process_create_lightweight_indicator(cmd):
     # Required
     csv_indicators = __get_param__(cmd, "csv_indicators")
