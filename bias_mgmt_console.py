@@ -6,6 +6,7 @@ from common.enums.market_regimes import MarketRegimes
 from common.util.financial_calculations.date_handler import DateHandler
 from common.util.logging.logger import Logger
 from common.util.std_in_out.ml_settings_loader import MLSettingsLoader
+from common.util.std_in_out.param_reader import ParamReader
 from controllers.main_dashboard_controller import MainDashboardController
 from framework.common.logger.message_type import MessageType
 from logic_layer.algos_orchestation_logic import AlgosOrchestationLogic
@@ -72,106 +73,19 @@ def show_commands():
     print("#n-Exit")
 
 
-def count_params( param_list, exp_len):
-    return len(param_list) == exp_len
-
-def params_validation(cmd, param_list, exp_len):
-    if (len(param_list) != exp_len):
-        raise Exception("Command {} expects {} parameters".format(cmd, exp_len))
-
-
-def __get_value_after_equals__(command, key,optional=False):
-    # Separamos el comando en partes por espacios
-    parts = command.split(" ")
-
-    # Recorremos las partes buscando las que coincidan con la clave
-    for part in parts:
-        # Verificamos si la parte contiene el key seguido de "="
-        if part.startswith(key + "="):
-            # Extraemos el valor después del "="
-            value = part.split("=")[1].strip()  # Tomamos lo que está después del '='
-
-            # Si el valor está entre comillas, eliminamos las comillas
-            if value.startswith('"') or value.startswith("'"):
-                value = value[1:-1]  # Eliminamos las comillas
-
-            return value
-
-    if not optional:
-    # Si no se encontró la clave, lanzamos una excepción
-        raise KeyError(f"Key {key} not found.")
-    else:
-        return None
-
-def __get_bool_param__(command, key, optional=False,def_value=None):
-    str_val = __get_param__(command,key,optional,def_value)
-
-    if str_val=="True" or str_val=="False":
-        return str_val=="True"
-    else:
-        return def_value
-
-def __get_param__(command, key, optional=False,def_value=None):
-    value = __get_value_after_equals__(command, key,optional)
-
-    if value==None and optional:
-        return  def_value
-
-    # Intentar convertir a fecha en formato MM/dd/yyyy
-    try:
-        return  DateHandler.convert_str_date(value, _DATE_FORMAT)
-    except Exception:
-        pass  # No es una fecha válida, continuamos con las siguientes verificaciones
-
-    # Intentar convertir a fecha en formato MM/dd/yyyy HH:mm:ss
-    try:
-        return  DateHandler.convert_str_date(value, _TIMESTAMP_FORMAT)
-    except Exception:
-        pass  # No es una fecha válida, continuamos con las siguientes verificaciones
-
-    # Intentar convertir a entero
-    try:
-        return int(value)
-    except ValueError:
-        pass  # No es un entero válido, continuamos con las siguientes verificaciones
-
-    # Intentar convertir a float con dos decimales
-    try:
-        return float(value)
-    except ValueError:
-        pass  # No es un float válido, continuamos con el último caso
-
-    # Si no es ninguno de los anteriores, lo devolvemos como string
-    return value
-
-
-def __get_testing_params__(trading_algo,cmd_param_list,base_length=10):
-    n_params = []
-    if (trading_algo == AlgosOrchestationLogic._TRADING_ALGO_RAW_ALGO):
-        params_validation("TestDailyLSTM", cmd_param_list, base_length)
-    elif (trading_algo == AlgosOrchestationLogic._TRADING_ALGO_N_MIN_BUFFER_W_FLIP):
-        params_validation("TestDailyLSTM", cmd_param_list, base_length+1)
-        n_params.append(int(cmd_param_list[base_length]))
-    elif (trading_algo == AlgosOrchestationLogic._TRADING_ALGO_ONLY_SIGNAL_N_MIN_PLUS_MOV_AVG):
-        params_validation("TestDailyLSTM", cmd_param_list, base_length+2)
-        n_params.append(int(cmd_param_list[base_length]))
-        n_params.append(int(cmd_param_list[base_length+1]))
-
-    return  n_params
-
 def process_backtest_slope_model(cmd):
-    symbol = __get_param__(cmd, "symbol")
-    model_candle = __get_param__(cmd, "model_candle")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    portf_size = __get_param__(cmd, "portf_size",optional=True,def_value=100000)
+    symbol = ParamReader.get_param(cmd, "symbol")
+    model_candle = ParamReader.get_param(cmd, "model_candle")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    portf_size = ParamReader.get_param(cmd, "portf_size",optional=True,def_value=100000)
 
-    trading_algo = __get_param__(cmd, "trading_algo")
-    candle_slope = __get_param__(cmd, "candle_slope", True, None)
-    slope_units = __get_param__(cmd, "slope_units", True, None)
+    trading_algo = ParamReader.get_param(cmd, "trading_algo")
+    candle_slope = ParamReader.get_param(cmd, "candle_slope", True, None)
+    slope_units = ParamReader.get_param(cmd, "slope_units", True, None)
 
-    trade_comm = __get_param__(cmd, "trade_comm", optional=True, def_value=0)
-    trade_comm_pct = __get_param__(cmd, "trade_comm_pct", optional=True, def_value=0)
+    trade_comm = ParamReader.get_param(cmd, "trade_comm", optional=True, def_value=0)
+    trade_comm_pct = ParamReader.get_param(cmd, "trade_comm_pct", optional=True, def_value=0)
 
     cmd_param_dict = {}
     if candle_slope is not None:
@@ -226,9 +140,9 @@ def process_display_order_routing_screen(cmd):
 
 def process_download_financial_data_bulk(cmd):
     # Required parameters
-    symbols_str = __get_param__(cmd, "symbol")  # NOT 'symbols', para respetar el formato que vos diste
-    d_from = __get_param__(cmd, "from", True, None)
-    d_to = __get_param__(cmd, "to", True, None)
+    symbols_str = ParamReader.get_param(cmd, "symbol")  # NOT 'symbols', para respetar el formato que vos diste
+    d_from = ParamReader.get_param(cmd, "from", True, None)
+    d_to = ParamReader.get_param(cmd, "to", True, None)
 
     raw_symbols = [s.strip() for s in symbols_str.split(",") if s.strip() != ""]
 
@@ -256,7 +170,7 @@ def process_download_financial_data_bulk(cmd):
 
         elif vendor == InformationVendors.TRADINGVIEW.value:
             for key in ["session", "token", "username", "password", "interval"]:
-                val = __get_param__(cmd, key, True, None)
+                val = ParamReader.get_param(cmd, key, True, None)
                 if val is not None:
                     vendor_params[key] = val
             if exchange is not None:
@@ -276,12 +190,12 @@ def process_download_financial_data_bulk(cmd):
 
 def process_download_financial_data(cmd):
     # Required parameters
-    symbol = __get_param__(cmd, "symbol")
-    d_from = __get_param__(cmd, "from", True, None)
-    d_to = __get_param__(cmd, "to", True, None)
+    symbol = ParamReader.get_param(cmd, "symbol")
+    d_from = ParamReader.get_param(cmd, "from", True, None)
+    d_to = ParamReader.get_param(cmd, "to", True, None)
 
     # Required vendor
-    vendor = __get_param__(cmd, "vendor")
+    vendor = ParamReader.get_param(cmd, "vendor")
 
     # Build vendor_params dict from known optional parameters
     vendor_params = {}
@@ -292,7 +206,7 @@ def process_download_financial_data(cmd):
 
     elif vendor == InformationVendors.TRADINGVIEW.value:
         for key in ["session", "token", "username", "password", "interval", "exchange"]:
-            val = __get_param__(cmd, key, True, None)
+            val = ParamReader.get_param(cmd, key, True, None)
             if key is "exchange" and val is not None:
                 val=val.replace("_"," ")
 
@@ -318,12 +232,12 @@ def process_download_financial_data(cmd):
 #
 def process_create_spread_variable(cmd):
     # Required
-    diff_indicators = __get_param__(cmd, "diff_indicators")
-    output_symbol = __get_param__(cmd, "output_symbol", True, "LIGHTWEIGHT_INDICATOR")
+    diff_indicators = ParamReader.get_param(cmd, "diff_indicators")
+    output_symbol = ParamReader.get_param(cmd, "output_symbol", True, "LIGHTWEIGHT_INDICATOR")
 
     # Optional
-    d_from = __get_param__(cmd, "from", True, None)
-    d_to = __get_param__(cmd, "to", True, None)
+    d_from = ParamReader.get_param(cmd, "from", True, None)
+    d_to = ParamReader.get_param(cmd, "to", True, None)
 
 
     # Run core logic
@@ -335,20 +249,20 @@ def process_download_sec_securities(cmd):
 
 def process_run_report(cmd):
     # Required parameters
-    report_key = __get_param__(cmd, "report")
-    year = __get_param__(cmd, "year", True, None)
-    d_from = __get_param__(cmd, "from", True, None)
-    portfolio = __get_param__(cmd, "portfolio")
-    symbol = __get_param__(cmd, "symbol",True,None)
+    report_key = ParamReader.get_param(cmd, "report")
+    year = ParamReader.get_param(cmd, "year", True, None)
+    d_from = ParamReader.get_param(cmd, "from", True, None)
+    portfolio = ParamReader.get_param(cmd, "portfolio")
+    symbol = ParamReader.get_param(cmd, "symbol",True,None)
 
     process_run_report_logic(report_key, year,portfolio,symbol,d_from)
 
 
 def process_create_spread_variable_bulk(cmd):
     # Required parameters
-    diff_str = __get_param__(cmd, "diff_indicators")
-    output_str = __get_param__(cmd, "output_symbols")
-    d_from = __get_param__(cmd, "from", True, None)
+    diff_str = ParamReader.get_param(cmd, "diff_indicators")
+    output_str = ParamReader.get_param(cmd, "output_symbols")
+    d_from = ParamReader.get_param(cmd, "from", True, None)
 
     diff_indicators = [d.strip() for d in diff_str.split(",") if d.strip() != ""]
     output_symbols = [o.strip() for o in output_str.split(",") if o.strip() != ""]
@@ -390,15 +304,15 @@ def process_create_lightweight_indicator_logic(csv_indicators, d_from, d_to,outp
 
 def process_create_lightweight_indicator(cmd):
     # Required
-    csv_indicators = __get_param__(cmd, "csv_indicators")
+    csv_indicators = ParamReader.get_param(cmd, "csv_indicators")
 
 
     # Optional
-    plot_result = __get_param__(cmd, "plot_result", True, False)
-    benchmark = __get_param__(cmd, "benchmark", True, None)
-    d_from = __get_param__(cmd, "from", True, None)
-    d_to = __get_param__(cmd, "to", True, None)
-    output_symbol = __get_param__(cmd, "output_symbol", True, "LIGHTWEIGHT_INDICATOR")
+    plot_result = ParamReader.get_param(cmd, "plot_result", True, False)
+    benchmark = ParamReader.get_param(cmd, "benchmark", True, None)
+    d_from = ParamReader.get_param(cmd, "from", True, None)
+    d_to = ParamReader.get_param(cmd, "to", True, None)
+    output_symbol = ParamReader.get_param(cmd, "output_symbol", True, "LIGHTWEIGHT_INDICATOR")
 
     # Run core logic
     process_create_lightweight_indicator_logic(csv_indicators=csv_indicators, d_from=d_from, d_to=d_to,
@@ -406,32 +320,32 @@ def process_create_lightweight_indicator(cmd):
 
 
 def process_create_sinthetic_indicator(cmd):
-    comp_apth = __get_param__(cmd, "comp_path")
-    model_candle = __get_param__(cmd, "model_candle")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
+    comp_apth = ParamReader.get_param(cmd, "comp_path")
+    model_candle = ParamReader.get_param(cmd, "model_candle")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
 
     #DIRECT/INV SLOPE
-    slope_units = __get_param__(cmd, "slope_units", True, None)
+    slope_units = ParamReader.get_param(cmd, "slope_units", True, None)
 
     #ARIMA
-    p = __get_param__(cmd, "p", True, None)
-    d = __get_param__(cmd, "d", True, None)
-    q = __get_param__(cmd, "q", True, None)
-    step = __get_param__(cmd, "step", True, None)
-    inv_steps = __get_param__(cmd, "inv_steps", True, None)
-    min_units_to_pred = __get_param__(cmd, "min_units_to_pred", True, None)
+    p = ParamReader.get_param(cmd, "p", True, None)
+    d = ParamReader.get_param(cmd, "d", True, None)
+    q = ParamReader.get_param(cmd, "q", True, None)
+    step = ParamReader.get_param(cmd, "step", True, None)
+    inv_steps = ParamReader.get_param(cmd, "inv_steps", True, None)
+    min_units_to_pred = ParamReader.get_param(cmd, "min_units_to_pred", True, None)
 
     #SARIMA
-    s = __get_param__(cmd, "s", True, None)
+    s = ParamReader.get_param(cmd, "s", True, None)
 
     #POS_THRESHOLDS ind
-    pos_threshold = __get_param__(cmd, "pos_threshold", True, None)
+    pos_threshold = ParamReader.get_param(cmd, "pos_threshold", True, None)
 
     #SUDDEN_STOP
-    st_units = __get_param__(cmd, "st_units", True, None)
-    st_eval_p = __get_param__(cmd, "st_eval_p", True, None)
-    st_blackout_p = __get_param__(cmd, "st_blackout_p", True, None)
+    st_units = ParamReader.get_param(cmd, "st_units", True, None)
+    st_eval_p = ParamReader.get_param(cmd, "st_eval_p", True, None)
+    st_blackout_p = ParamReader.get_param(cmd, "st_blackout_p", True, None)
 
     cmd_param_dict = {}
 
@@ -476,20 +390,20 @@ def process_create_sinthetic_indicator(cmd):
 
     print(f"Create sinthetic indicator finished...")
 def process_backtest_slope_model_on_custom_etf(cmd):
-    etf_path = __get_param__(cmd, "ETF_path")
-    model_candle = __get_param__(cmd, "model_candle")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    portf_size = __get_param__(cmd, "portf_size",optional=True,def_value=100000)
+    etf_path = ParamReader.get_param(cmd, "ETF_path")
+    model_candle = ParamReader.get_param(cmd, "model_candle")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    portf_size = ParamReader.get_param(cmd, "portf_size",optional=True,def_value=100000)
 
-    trading_algo = __get_param__(cmd, "trading_algo")
-    candle_slope = __get_param__(cmd, "candle_slope", True, None)
-    slope_units = __get_param__(cmd, "slope_units", True, None)
+    trading_algo = ParamReader.get_param(cmd, "trading_algo")
+    candle_slope = ParamReader.get_param(cmd, "candle_slope", True, None)
+    slope_units = ParamReader.get_param(cmd, "slope_units", True, None)
 
-    trade_comm = __get_param__(cmd, "trade_comm", optional=True, def_value=0)
-    trade_comm_pct = __get_param__(cmd, "trade_comm_pct", optional=True, def_value=0)
+    trade_comm = ParamReader.get_param(cmd, "trade_comm", optional=True, def_value=0)
+    trade_comm_pct = ParamReader.get_param(cmd, "trade_comm_pct", optional=True, def_value=0)
 
-    days_to_add_to_date = __get_param__(cmd, "days_to_add_to_date", optional=True, def_value=None)
+    days_to_add_to_date = ParamReader.get_param(cmd, "days_to_add_to_date", optional=True, def_value=None)
 
     cmd_param_dict = {}
     if candle_slope is not None:
@@ -514,27 +428,27 @@ def process_backtest_slope_model_on_custom_etf(cmd):
     print(f"Test Backtest Slope Model finished...")
 
 def process_test_XGBoost_cmd(cmd):
-    symbol = __get_param__(cmd, "symbol")
-    series_csv = __get_param__(cmd, "series_csv")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    model_to_use = __get_param__(cmd, "model_to_use")
+    symbol = ParamReader.get_param(cmd, "symbol")
+    series_csv = ParamReader.get_param(cmd, "series_csv")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    model_to_use = ParamReader.get_param(cmd, "model_to_use")
 
     # Optional parameters
-    interval = __get_param__(cmd, "interval", True, def_value=DataSetBuilder._1_DAY_INTERVAL)
-    init_portf_size = float(__get_param__(cmd, "init_portf_size", True, def_value=100000))
-    trade_comm = float(__get_param__(cmd, "trade_comm", True, def_value=0.0))
-    draw_predictions = __get_bool_param__(cmd, "draw_predictions", True, def_value=False)
-    grouping_unit = __get_param__(cmd, "grouping_unit", True)
-    grouping_classif_criteria = __get_param__(cmd, "grouping_classif_criteria", True, def_value=None)
-    group_as_mov_avg = __get_bool_param__(cmd, "group_as_mov_avg", True, def_value=False)
-    grouping_mov_avg_unit = __get_param__(cmd, "grouping_mov_avg_unit", True, def_value=100)
-    lower_percentile_limit = float(__get_param__(cmd, "lower_percentile_limit", True, def_value=0.5))
-    make_stationary = __get_bool_param__(cmd, "make_stationary", True, def_value=False)
-    n_flip = int(__get_param__(cmd, "n_flip", True, def_value=3))
-    bias = __get_param__(cmd, "bias", True, def_value=None)
-    pos_regime_filters_csv = __get_param__(cmd, "pos_regime_filters_csv", True, def_value=None)
-    neg_regime_filters_csv = __get_param__(cmd, "neg_regime_filters_csv", True, def_value=None)
+    interval = ParamReader.get_param(cmd, "interval", True, def_value=DataSetBuilder._1_DAY_INTERVAL)
+    init_portf_size = float(ParamReader.get_param(cmd, "init_portf_size", True, def_value=100000))
+    trade_comm = float(ParamReader.get_param(cmd, "trade_comm", True, def_value=0.0))
+    draw_predictions = ParamReader.get_bool_param(cmd, "draw_predictions", True, def_value=False)
+    grouping_unit = ParamReader.get_param(cmd, "grouping_unit", True)
+    grouping_classif_criteria = ParamReader.get_param(cmd, "grouping_classif_criteria", True, def_value=None)
+    group_as_mov_avg = ParamReader.get_bool_param(cmd, "group_as_mov_avg", True, def_value=False)
+    grouping_mov_avg_unit = ParamReader.get_param(cmd, "grouping_mov_avg_unit", True, def_value=100)
+    lower_percentile_limit = float(ParamReader.get_param(cmd, "lower_percentile_limit", True, def_value=0.5))
+    make_stationary = ParamReader.get_bool_param(cmd, "make_stationary", True, def_value=False)
+    n_flip = int(ParamReader.get_param(cmd, "n_flip", True, def_value=3))
+    bias = ParamReader.get_param(cmd, "bias", True, def_value=None)
+    pos_regime_filters_csv = ParamReader.get_param(cmd, "pos_regime_filters_csv", True, def_value=None)
+    neg_regime_filters_csv = ParamReader.get_param(cmd, "neg_regime_filters_csv", True, def_value=None)
 
     # Compose param dictionary
     n_algo_param_dict = {
@@ -568,27 +482,27 @@ def process_test_XGBoost_cmd(cmd):
     print("Test XGBoost successfully finished...")
 
 def process_test_RF_cmd(cmd):
-    symbol = __get_param__(cmd, "symbol")
-    series_csv = __get_param__(cmd, "series_csv")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    model_to_use = __get_param__(cmd, "model_to_use")
+    symbol = ParamReader.get_param(cmd, "symbol")
+    series_csv = ParamReader.get_param(cmd, "series_csv")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    model_to_use = ParamReader.get_param(cmd, "model_to_use")
 
     # Optional parameters
-    interval = __get_param__(cmd, "interval", True, DataSetBuilder._1_DAY_INTERVAL)
-    init_portf_size = float(__get_param__(cmd, "init_portf_size"))
-    trade_comm = float(__get_param__(cmd, "trade_comm"))
-    draw_predictions = __get_param__(cmd, "draw_predictions", optional=True, def_value=False)
-    grouping_unit = __get_param__(cmd, "grouping_unit", True)
-    grouping_classif_criteria = __get_param__(cmd, "grouping_classif_criteria", True, def_value=None)
-    group_as_mov_avg = __get_bool_param__(cmd, "group_as_mov_avg", True, def_value=False)
-    grouping_mov_avg_unit = __get_param__(cmd, "grouping_mov_avg_unit", True, def_value=100)
-    classif_threshold = __get_param__(cmd, "classif_threshold", True, def_value=0.5)
-    make_stationary = __get_bool_param__(cmd, "make_stationary", True, False)
-    n_flip = int(__get_param__(cmd, "n_flip", True, 3))
-    bias = __get_param__(cmd, "bias", True, None)
-    pos_regime_filters_csv = __get_param__(cmd, "pos_regime_filters_csv", True, None)
-    neg_regime_filters_csv = __get_param__(cmd, "neg_regime_filters_csv", True, None)
+    interval = ParamReader.get_param(cmd, "interval", True, DataSetBuilder._1_DAY_INTERVAL)
+    init_portf_size = float(ParamReader.get_param(cmd, "init_portf_size"))
+    trade_comm = float(ParamReader.get_param(cmd, "trade_comm"))
+    draw_predictions = ParamReader.get_param(cmd, "draw_predictions", optional=True, def_value=False)
+    grouping_unit = ParamReader.get_param(cmd, "grouping_unit", True)
+    grouping_classif_criteria = ParamReader.get_param(cmd, "grouping_classif_criteria", True, def_value=None)
+    group_as_mov_avg = ParamReader.get_bool_param(cmd, "group_as_mov_avg", True, def_value=False)
+    grouping_mov_avg_unit = ParamReader.get_param(cmd, "grouping_mov_avg_unit", True, def_value=100)
+    classif_threshold = ParamReader.get_param(cmd, "classif_threshold", True, def_value=0.5)
+    make_stationary = ParamReader.get_bool_param(cmd, "make_stationary", True, False)
+    n_flip = int(ParamReader.get_param(cmd, "n_flip", True, 3))
+    bias = ParamReader.get_param(cmd, "bias", True, None)
+    pos_regime_filters_csv = ParamReader.get_param(cmd, "pos_regime_filters_csv", True, None)
+    neg_regime_filters_csv = ParamReader.get_param(cmd, "neg_regime_filters_csv", True, None)
 
     # Create parameter dictionary to be passed to test logic
     n_algo_param_dict = {
@@ -625,22 +539,22 @@ def process_test_RF_cmd(cmd):
 
 
 def process_test_LSTM_cmd(cmd):
-    symbol = __get_param__(cmd, "symbol")
-    variables_csv = __get_param__(cmd, "variables_csv")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    timesteps=__get_param__(cmd,"timesteps")
-    model_to_use = __get_param__(cmd, "model_to_use")
-    portf_size=__get_param__(cmd,"portf_size")
-    comm=__get_param__(cmd,"comm")
-    interval=__get_param__(cmd,"interval",True,None)
-    trading_algo=__get_param__(cmd,"trading_algo")
-    grouping_unit=__get_param__(cmd,"grouping_unit",True,None)
-    n_buffer=__get_param__(cmd,"n_buffer",True,None)
-    mov_avg=__get_param__(cmd,"mov_avg",True,None)
-    use_sliding_window = __get_param__(cmd, "use_sliding_window", True,def_value="None")#NONE,CUT_INPUT_DF,GET_FAKE_DATA
-    make_stationary = __get_bool_param__(cmd, "make_stationary", True, False)
-    classif_threshold = __get_param__(cmd, "classif_threshold", True, 0.5)
+    symbol = ParamReader.get_param(cmd, "symbol")
+    variables_csv = ParamReader.get_param(cmd, "variables_csv")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    timesteps=ParamReader.get_param(cmd,"timesteps")
+    model_to_use = ParamReader.get_param(cmd, "model_to_use")
+    portf_size=ParamReader.get_param(cmd,"portf_size")
+    comm=ParamReader.get_param(cmd,"comm")
+    interval=ParamReader.get_param(cmd,"interval",True,None)
+    trading_algo=ParamReader.get_param(cmd,"trading_algo")
+    grouping_unit=ParamReader.get_param(cmd,"grouping_unit",True,None)
+    n_buffer=ParamReader.get_param(cmd,"n_buffer",True,None)
+    mov_avg=ParamReader.get_param(cmd,"mov_avg",True,None)
+    use_sliding_window = ParamReader.get_param(cmd, "use_sliding_window", True,def_value="None")#NONE,CUT_INPUT_DF,GET_FAKE_DATA
+    make_stationary = ParamReader.get_bool_param(cmd, "make_stationary", True, False)
+    classif_threshold = ParamReader.get_param(cmd, "classif_threshold", True, 0.5)
 
     cmd_param_list=[]
     if n_buffer is not None:
@@ -744,32 +658,32 @@ def process_train_RF(symbol, series_csv, d_from, d_to, model_output, classificat
 #
 def process_train_XGBoost_cmd(cmd, cmd_param_list):
     # Required parameters
-    symbol = __get_param__(cmd, "symbol")
-    series_csv = __get_param__(cmd, "series_csv")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    model_output = __get_param__(cmd, "model_output")
-    classif_key = __get_param__(cmd, "classif_key")
+    symbol = ParamReader.get_param(cmd, "symbol")
+    series_csv = ParamReader.get_param(cmd, "series_csv")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    model_output = ParamReader.get_param(cmd, "model_output")
+    classif_key = ParamReader.get_param(cmd, "classif_key")
 
     # XGBoost-specific hyperparameters
-    n_estimators = int(__get_param__(cmd, "n_estimators", True, def_value=100))
-    max_depth = __get_param__(cmd, "max_depth", True, def_value=3)
+    n_estimators = int(ParamReader.get_param(cmd, "n_estimators", True, def_value=100))
+    max_depth = ParamReader.get_param(cmd, "max_depth", True, def_value=3)
     max_depth = None if str(max_depth).lower() == "none" else int(max_depth)
 
-    learning_rate = float(__get_param__(cmd, "learning_rate", True, def_value=0.1))
-    subsample = float(__get_param__(cmd, "subsample", True, def_value=1.0))
-    colsample_bytree = float(__get_param__(cmd, "colsample_bytree", True, def_value=1.0))
+    learning_rate = float(ParamReader.get_param(cmd, "learning_rate", True, def_value=0.1))
+    subsample = float(ParamReader.get_param(cmd, "subsample", True, def_value=1.0))
+    colsample_bytree = float(ParamReader.get_param(cmd, "colsample_bytree", True, def_value=1.0))
 
-    class_weight = __get_param__(cmd, "class_weight", True, def_value=None)
+    class_weight = ParamReader.get_param(cmd, "class_weight", True, def_value=None)
     class_weight = None if class_weight is None or str(class_weight).lower() == "none" else class_weight
 
     # Optional common flags
-    interval = __get_param__(cmd, "interval", True, def_value=DataSetBuilder._1_DAY_INTERVAL)
-    grouping_unit = __get_param__(cmd, "grouping_unit", True)
-    grouping_classif_criteria = __get_param__(cmd, "grouping_classif_criteria", True)
-    group_as_mov_avg = __get_bool_param__(cmd, "group_as_mov_avg", True, def_value=False)
-    grouping_mov_avg_unit = __get_param__(cmd, "grouping_mov_avg_unit", True, def_value=100)
-    make_stationary = __get_bool_param__(cmd, "make_stationary", True, def_value=False)
+    interval = ParamReader.get_param(cmd, "interval", True, def_value=DataSetBuilder._1_DAY_INTERVAL)
+    grouping_unit = ParamReader.get_param(cmd, "grouping_unit", True)
+    grouping_classif_criteria = ParamReader.get_param(cmd, "grouping_classif_criteria", True)
+    group_as_mov_avg = ParamReader.get_bool_param(cmd, "group_as_mov_avg", True, def_value=False)
+    grouping_mov_avg_unit = ParamReader.get_param(cmd, "grouping_mov_avg_unit", True, def_value=100)
+    make_stationary = ParamReader.get_bool_param(cmd, "make_stationary", True, def_value=False)
 
     # Call processing method with parsed params
     process_train_XGBoost(symbol=symbol,
@@ -796,30 +710,30 @@ def process_train_XGBoost_cmd(cmd, cmd_param_list):
 
 def process_train_RF_cmd(cmd, cmd_param_list):
     # Required parameters
-    symbol = __get_param__(cmd, "symbol")
-    series_csv = __get_param__(cmd, "series_csv")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    model_output = __get_param__(cmd, "model_output")
-    classif_key = __get_param__(cmd, "classif_key")
+    symbol = ParamReader.get_param(cmd, "symbol")
+    series_csv = ParamReader.get_param(cmd, "series_csv")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    model_output = ParamReader.get_param(cmd, "model_output")
+    classif_key = ParamReader.get_param(cmd, "classif_key")
 
     # RF-specific hyperparameters
-    n_estimators = __get_param__(cmd, "n_estimators", True, def_value=100)
-    max_depth = __get_param__(cmd, "max_depth", True, def_value=None)
+    n_estimators = ParamReader.get_param(cmd, "n_estimators", True, def_value=100)
+    max_depth = ParamReader.get_param(cmd, "max_depth", True, def_value=None)
     max_depth = None if str(max_depth).lower() == "none" else int(max_depth)
-    class_weight = __get_param__(cmd, "class_weight", True, def_value=None)
+    class_weight = ParamReader.get_param(cmd, "class_weight", True, def_value=None)
     class_weight = None if class_weight is None or class_weight == "None" else class_weight
 
-    min_samples_split = __get_param__(cmd, "min_samples_split", True, def_value=2)
-    criterion = __get_param__(cmd, "criterion", True, def_value="gini")
+    min_samples_split = ParamReader.get_param(cmd, "min_samples_split", True, def_value=2)
+    criterion = ParamReader.get_param(cmd, "criterion", True, def_value="gini")
 
     # Optional common flags
-    interval = __get_param__(cmd, "interval", True, def_value=DataSetBuilder._1_DAY_INTERVAL)
-    grouping_unit = __get_param__(cmd, "grouping_unit", True)
-    grouping_classif_criteria = __get_param__(cmd, "grouping_classif_criteria", True)
-    group_as_mov_avg = __get_bool_param__(cmd, "group_as_mov_avg", True, def_value=False)
-    grouping_mov_avg_unit = __get_param__(cmd, "grouping_mov_avg_unit", True, def_value=100)
-    make_stationary = __get_bool_param__(cmd, "make_stationary", True, def_value=False)
+    interval = ParamReader.get_param(cmd, "interval", True, def_value=DataSetBuilder._1_DAY_INTERVAL)
+    grouping_unit = ParamReader.get_param(cmd, "grouping_unit", True)
+    grouping_classif_criteria = ParamReader.get_param(cmd, "grouping_classif_criteria", True)
+    group_as_mov_avg = ParamReader.get_bool_param(cmd, "group_as_mov_avg", True, def_value=False)
+    grouping_mov_avg_unit = ParamReader.get_param(cmd, "grouping_mov_avg_unit", True, def_value=100)
+    make_stationary = ParamReader.get_bool_param(cmd, "make_stationary", True, def_value=False)
 
     # Call processing method with parsed params
     process_train_RF(symbol=symbol,
@@ -844,28 +758,28 @@ def process_train_RF_cmd(cmd, cmd_param_list):
 
 
 def process_traing_LSTM_cmd(cmd,cmd_param_list):
-    symbol = __get_param__(cmd, "symbol")
-    variables_csv = __get_param__(cmd, "variables_csv")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    model_output = __get_param__(cmd, "model_output")
-    classif_key = __get_param__(cmd, "classif_key")
-    epochs = __get_param__(cmd, "epochs")
-    n_neurons = __get_param__(cmd, "n_neurons")
-    timesteps = __get_param__(cmd, "timesteps")
-    learning_rate = __get_param__(cmd, "learning_rate")
-    dropout_rate = __get_param__(cmd, "dropout_rate")
-    clipping_rate = __get_param__(cmd, "clipping_rate")
-    reg_rate = __get_param__(cmd, "reg_rate")
-    threshold_stop = __get_param__(cmd, "threshold_stop")
-    interval = __get_param__(cmd, "interval",True,None)
-    grouping_unit=__get_param__(cmd,"grouping_unit",True)
-    grouping_classif_criteria=__get_param__(cmd,"grouping_classif_criteria",True)
-    group_as_mov_avg=__get_bool_param__(cmd,"grouping_classif_criteria",True,def_value=False)
-    grouping_mov_avg_unit=__get_param__(cmd,"grouping_mov_avg_unit",True,def_value=100)
-    batch_size = __get_param__(cmd, "batch_size", True, def_value=1)
-    inner_activation = __get_param__(cmd, "inner_activation", True, def_value=None)
-    make_stationary = __get_bool_param__(cmd, "make_stationary", True,False)
+    symbol = ParamReader.get_param(cmd, "symbol")
+    variables_csv = ParamReader.get_param(cmd, "variables_csv")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    model_output = ParamReader.get_param(cmd, "model_output")
+    classif_key = ParamReader.get_param(cmd, "classif_key")
+    epochs = ParamReader.get_param(cmd, "epochs")
+    n_neurons = ParamReader.get_param(cmd, "n_neurons")
+    timesteps = ParamReader.get_param(cmd, "timesteps")
+    learning_rate = ParamReader.get_param(cmd, "learning_rate")
+    dropout_rate = ParamReader.get_param(cmd, "dropout_rate")
+    clipping_rate = ParamReader.get_param(cmd, "clipping_rate")
+    reg_rate = ParamReader.get_param(cmd, "reg_rate")
+    threshold_stop = ParamReader.get_param(cmd, "threshold_stop")
+    interval = ParamReader.get_param(cmd, "interval",True,None)
+    grouping_unit=ParamReader.get_param(cmd,"grouping_unit",True)
+    grouping_classif_criteria=ParamReader.get_param(cmd,"grouping_classif_criteria",True)
+    group_as_mov_avg=ParamReader.get_bool_param(cmd,"grouping_classif_criteria",True,def_value=False)
+    grouping_mov_avg_unit=ParamReader.get_param(cmd,"grouping_mov_avg_unit",True,def_value=100)
+    batch_size = ParamReader.get_param(cmd, "batch_size", True, def_value=1)
+    inner_activation = ParamReader.get_param(cmd, "inner_activation", True, def_value=None)
+    make_stationary = ParamReader.get_bool_param(cmd, "make_stationary", True,False)
 
 
     process_train_LSTM(symbol=symbol, variables_csv=variables_csv, d_from=d_from, d_to=d_to, model_output=model_output,
@@ -900,27 +814,27 @@ def process_train_ml_algos(cmd_param_list, d_from, d_to, classification_key=None
 
 
 def run_train_ml_algo(cmd):
-    series_csv = __get_param__(cmd, "series_csv")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    classif_key = __get_param__(cmd, "classif_key")
+    series_csv = ParamReader.get_param(cmd, "series_csv")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    classif_key = ParamReader.get_param(cmd, "classif_key")
     process_train_ml_algos(series_csv, d_from, d_to, classif_key)
 
 
 
 
 def run_custom_regime_switch_detector(cmd):
-    variables = __get_param__(cmd, "variables").split(",")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    regime_filter = __get_param__(cmd, "regime_switch_filter")
-    regime_candle = __get_param__(cmd, "regime_candle")
-    regime_window = int(__get_param__(cmd, "regime_window", optional=True, def_value=20))
-    slope_threshold = float(__get_param__(cmd, "slope_threshold", optional=True, def_value=0.3))
+    variables = ParamReader.get_param(cmd, "variables").split(",")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    regime_filter = ParamReader.get_param(cmd, "regime_switch_filter")
+    regime_candle = ParamReader.get_param(cmd, "regime_candle")
+    regime_window = int(ParamReader.get_param(cmd, "regime_window", optional=True, def_value=20))
+    slope_threshold = float(ParamReader.get_param(cmd, "slope_threshold", optional=True, def_value=0.3))
 
     abs_value_threshold=None
     if regime_filter==MarketRegimes.ABS_VALUE.value:
-        abs_value_threshold = float(__get_param__(cmd, "abs_value_threshold", optional=True, def_value=None))
+        abs_value_threshold = float(ParamReader.get_param(cmd, "abs_value_threshold", optional=True, def_value=None))
 
     process_custom_regime_switch_detector(
         variables, d_from, d_to, regime_filter, regime_candle, regime_window, slope_threshold,abs_value_threshold
@@ -929,23 +843,23 @@ def run_custom_regime_switch_detector(cmd):
 
 
 def run_sliding_random_forest(cmd):
-    symbol = __get_param__(cmd, "symbol")
-    series_csv = __get_param__(cmd, "series_csv")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    classif_key = __get_param__(cmd, "classif_key")
+    symbol = ParamReader.get_param(cmd, "symbol")
+    series_csv = ParamReader.get_param(cmd, "series_csv")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    classif_key = ParamReader.get_param(cmd, "classif_key")
 
-    trade_comm = __get_param__(cmd, "trade_comm", optional=True, def_value=5)
-    draw_predictions = __get_param__(cmd, "draw_predictions", optional=True, def_value=False)
-    init_portf_size = __get_param__(cmd, "init_portf_size", optional=True, def_value=PortfolioPosition._DEF_PORTF_AMT)
-    sliding_window_years = __get_param__(cmd, "sliding_window_years", optional=True, def_value=2)
-    sliding_window_months = __get_param__(cmd, "sliding_window_months", optional=True, def_value=2)
-    class_weight = __get_param__(cmd, "class_weight", optional=True, def_value="balanced")
-    bias = __get_param__(cmd, "bias", optional=True, def_value="NONE")
-    n_flip = __get_param__(cmd, "n_flip", optional=True, def_value=1)
-    classif_threshold = __get_param__(cmd, "classif_threshold", optional=True, def_value=0.5)
-    pos_regime_filters_csv = __get_param__(cmd, "pos_regime_filters_csv", optional=True, def_value="")
-    neg_regime_filters_csv = __get_param__(cmd, "neg_regime_filters_csv", optional=True, def_value="")
+    trade_comm = ParamReader.get_param(cmd, "trade_comm", optional=True, def_value=5)
+    draw_predictions = ParamReader.get_param(cmd, "draw_predictions", optional=True, def_value=False)
+    init_portf_size = ParamReader.get_param(cmd, "init_portf_size", optional=True, def_value=PortfolioPosition._DEF_PORTF_AMT)
+    sliding_window_years = ParamReader.get_param(cmd, "sliding_window_years", optional=True, def_value=2)
+    sliding_window_months = ParamReader.get_param(cmd, "sliding_window_months", optional=True, def_value=2)
+    class_weight = ParamReader.get_param(cmd, "class_weight", optional=True, def_value="balanced")
+    bias = ParamReader.get_param(cmd, "bias", optional=True, def_value="NONE")
+    n_flip = ParamReader.get_param(cmd, "n_flip", optional=True, def_value=1)
+    classif_threshold = ParamReader.get_param(cmd, "classif_threshold", optional=True, def_value=0.5)
+    pos_regime_filters_csv = ParamReader.get_param(cmd, "pos_regime_filters_csv", optional=True, def_value="")
+    neg_regime_filters_csv = ParamReader.get_param(cmd, "neg_regime_filters_csv", optional=True, def_value="")
 
     n_algo_param_dict = {
         "trade_comm": trade_comm,
@@ -967,18 +881,18 @@ def run_sliding_random_forest(cmd):
 
 
 def run_sliding_biased_trading_algo(cmd):
-    symbol = __get_param__(cmd, "symbol")
-    series_csv = __get_param__(cmd, "series_csv")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    bias = __get_param__(cmd, "bias",optional=True,def_value="NONE")
-    classif_key = __get_param__(cmd, "classif_key")
-    algos = __get_param__(cmd, "algos", optional=True, def_value=None)
+    symbol = ParamReader.get_param(cmd, "symbol")
+    series_csv = ParamReader.get_param(cmd, "series_csv")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    bias = ParamReader.get_param(cmd, "bias",optional=True,def_value="NONE")
+    classif_key = ParamReader.get_param(cmd, "classif_key")
+    algos = ParamReader.get_param(cmd, "algos", optional=True, def_value=None)
 
-    trade_comm = __get_param__(cmd, "trade_comm", optional=True, def_value=5)
-    init_portf_size=__get_param__(cmd, "init_portf_size",optional=True,def_value=PortfolioPosition._DEF_PORTF_AMT)
-    sliding_window_years = __get_param__(cmd, "sliding_window_years", optional=True, def_value=2)
-    sliding_window_months = __get_param__(cmd, "sliding_window_months", optional=True, def_value=2)
+    trade_comm = ParamReader.get_param(cmd, "trade_comm", optional=True, def_value=5)
+    init_portf_size=ParamReader.get_param(cmd, "init_portf_size",optional=True,def_value=PortfolioPosition._DEF_PORTF_AMT)
+    sliding_window_years = ParamReader.get_param(cmd, "sliding_window_years", optional=True, def_value=2)
+    sliding_window_months = ParamReader.get_param(cmd, "sliding_window_months", optional=True, def_value=2)
 
     n_algo_param_dict = {}
     n_algo_param_dict["trade_comm"]=trade_comm
@@ -991,14 +905,14 @@ def run_sliding_biased_trading_algo(cmd):
     process_sliding_biased_trading_algo(symbol,series_csv, d_from, d_to,bias,n_algo_param_dict)
 
 def run_biased_trading_algo(cmd):
-    symbol = __get_param__(cmd, "symbol")
-    series_csv = __get_param__(cmd, "series_csv")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    bias = __get_param__(cmd, "bias")
+    symbol = ParamReader.get_param(cmd, "symbol")
+    series_csv = ParamReader.get_param(cmd, "series_csv")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    bias = ParamReader.get_param(cmd, "bias")
 
-    trade_comm = __get_param__(cmd, "trade_comm", optional=True, def_value=5)
-    init_portf_size=__get_param__(cmd, "init_portf_size",optional=True,def_value=PortfolioPosition._DEF_PORTF_AMT)
+    trade_comm = ParamReader.get_param(cmd, "trade_comm", optional=True, def_value=5)
+    init_portf_size=ParamReader.get_param(cmd, "init_portf_size",optional=True,def_value=PortfolioPosition._DEF_PORTF_AMT)
 
     n_algo_param_dict = {}
     n_algo_param_dict["trade_comm"]=trade_comm
@@ -1163,10 +1077,10 @@ def process_run_predictions_last_model(cmd_param_list, str_from, str_to, classif
 
 
 def process_eval_ARIMA_cmd(cmd):
-    symbol = __get_param__(cmd, "symbol")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    period = __get_param__(cmd, "period",optional=True,def_value=None)
+    symbol = ParamReader.get_param(cmd, "symbol")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    period = ParamReader.get_param(cmd, "period",optional=True,def_value=None)
 
     process_eval_ARIMA(symbol,d_from,d_to,period)
 
@@ -1254,14 +1168,14 @@ def process_eval_ml_biased_algo(symbol, indicator, seriesCSV, str_from, str_to, 
 
 
 def process_predict_ARIMA_cmd(cmd):
-    symbol = __get_param__(cmd, "symbol")
-    d_from = __get_param__(cmd, "from")
-    d_to = __get_param__(cmd, "to")
-    p = __get_param__(cmd, "p")
-    d = __get_param__(cmd, "d")
-    q = __get_param__(cmd, "q")
-    step = __get_param__(cmd, "step")
-    period = __get_param__(cmd, "period", optional=True, def_value=None)
+    symbol = ParamReader.get_param(cmd, "symbol")
+    d_from = ParamReader.get_param(cmd, "from")
+    d_to = ParamReader.get_param(cmd, "to")
+    p = ParamReader.get_param(cmd, "p")
+    d = ParamReader.get_param(cmd, "d")
+    q = ParamReader.get_param(cmd, "q")
+    step = ParamReader.get_param(cmd, "step")
+    period = ParamReader.get_param(cmd, "period", optional=True, def_value=None)
 
 
     process_predict_ARIMA(symbol,p,d,q,d_from,d_to , step,period)
@@ -1943,16 +1857,16 @@ def process_download_byma_interest_rates(cmd):
     Parses parameters and delegates execution to logic layer entrypoint.
     """
     # Extract parameters from console command
-    d_from = __get_param__(cmd, "from", True, None)
-    d_to = __get_param__(cmd, "to", False, None)
+    d_from = ParamReader.get_param(cmd, "from", True, None)
+    d_to = ParamReader.get_param(cmd, "to", False, None)
 
     # Call the logic entrypoint
     process_download_byma_interest_rates_logic(d_from, d_to)
 
 
 def process_download_bcra_interest_rates(cmd):
-    d_from = __get_param__(cmd, "from", True, None)
-    d_to = __get_param__(cmd, "to", False, None)
+    d_from = ParamReader.get_param(cmd, "from", True, None)
+    d_to = ParamReader.get_param(cmd, "to", False, None)
     process_download_bcra_interest_rates_logic(d_from, d_to)
 
 
@@ -1973,20 +1887,20 @@ def process_commands(cmd):
     elif cmd_param_list[0] == "PredictARIMA":
         process_predict_ARIMA_cmd(cmd)
     elif cmd_param_list[0] == "EvalSingleIndicatorAlgo":
-        params_validation("EvalSingleIndicatorAlgo", cmd_param_list, 7)
+        ParamReader.params_validation("EvalSingleIndicatorAlgo", cmd_param_list, 7)
         process_eval_single_indicator_algo(cmd_param_list[1], cmd_param_list[2], cmd_param_list[3], cmd_param_list[4],
                                            cmd_param_list[5], cmd_param_list[6])
     elif cmd_param_list[0] == "EvalMLBiasedAlgo":
-        params_validation("EvalMLBiasedAlgo", cmd_param_list, 8)
+        ParamReader.params_validation("EvalMLBiasedAlgo", cmd_param_list, 8)
         process_eval_ml_biased_algo(cmd_param_list[1], cmd_param_list[2], cmd_param_list[3], cmd_param_list[4],
                                     cmd_param_list[5], cmd_param_list[6], cmd_param_list[7])
     elif cmd_param_list[0] == "TrainNeuralNetworkAlgo":
-        params_validation("TrainNeuralNetworkAlgo", cmd_param_list, 10)
+        ParamReader.params_validation("TrainNeuralNetworkAlgo", cmd_param_list, 10)
         process_train_neural_network_algo(cmd_param_list[1], cmd_param_list[2], cmd_param_list[3], cmd_param_list[4],
                                           int(cmd_param_list[5]), float(cmd_param_list[6]), int(cmd_param_list[7]),
                                           cmd_param_list[8], cmd_param_list[9])
     elif cmd_param_list[0] == "BacktestNeuralNetworkAlgo":
-        params_validation("BacktestNeuralNetworkAlgo", cmd_param_list, 7)
+        ParamReader.params_validation("BacktestNeuralNetworkAlgo", cmd_param_list, 7)
         process_backtest_neural_network_algo(cmd_param_list[1], cmd_param_list[2], cmd_param_list[3], cmd_param_list[4],
                                              cmd_param_list[5], cmd_param_list[6])
 
@@ -2002,12 +1916,12 @@ def process_commands(cmd):
         process_traing_LSTM_cmd(cmd,cmd_param_list)
     elif cmd_param_list[0] == "DailyCandlesGraph":
 
-        params_validation("DailyCandlesGraph", cmd_param_list, 5)
+        ParamReader.params_validation("DailyCandlesGraph", cmd_param_list, 5)
         process_daily_candles_graph(cmd_param_list[1], cmd_param_list[2], cmd_param_list[3],
                                     cmd_param_list[4])
     elif cmd_param_list[0] == "IndicatorCandlesGraph":
 
-        params_validation("IndicatorCandlesGraph", cmd_param_list, 6)
+        ParamReader.params_validation("IndicatorCandlesGraph", cmd_param_list, 6)
         process_indicator_candles_graph(cmd_param_list[1], cmd_param_list[2], cmd_param_list[3],
                                     cmd_param_list[4],cmd_param_list[5])
     elif cmd_param_list[0] == "TestDailyLSTM":
