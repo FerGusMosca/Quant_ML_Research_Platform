@@ -14,3 +14,4 @@ pandas-datareader
 selenium
 webdriver_manager
 ib_insync
+pyodbc
