@@ -1,0 +1,12 @@
+pandas
+numpy
+requests
+beautifulsoup4
+tqdm
+yfinance
+tensorflow
+sqlalchemy
+scikit-learn
+matplotlib
+configparser
+python-dotenv
