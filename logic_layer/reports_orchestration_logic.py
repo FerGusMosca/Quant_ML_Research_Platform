@@ -12,12 +12,8 @@ from common.util.downloaders.ib_income_statement import IBIncomeStatement
 from common.util.downloaders.k10_downloader import K10Downloader
 from common.util.downloaders.q10_downloader import Q10Downloader
 from common.util.downloaders.yahoo_income_statement import YahooIncomeStatement
-from data_access_layer.date_range_classification_manager import DateRangeClassificationManager
-from data_access_layer.economic_series_manager import EconomicSeriesManager
 from data_access_layer.portfolio_securities_manager import PortfolioSecuritiesManager
 from data_access_layer.report_securities_manager import ReportSecuritiesManager
-from data_access_layer.sec_securities_manager import SECSecuritiesManager
-from data_access_layer.timestamp_classification_manager import TimestampClassificationManager
 from framework.common.logger.message_type import MessageType
 from logic_layer.data_set_builder import DataSetBuilder
 from logic_layer.report_generators.competition_summary_report import CompetitionSummaryReport
@@ -30,14 +26,6 @@ class ReportsOrchestationLogic:
         self.logger=logger
 
         self.data_set_builder=DataSetBuilder(hist_data_conn_str,ml_reports_conn_str,p_classification_map_key,logger)
-
-        self.date_range_classif_mgr = DateRangeClassificationManager(ml_reports_conn_str)
-
-        self.timestamp_range_classif_mgr=TimestampClassificationManager(ml_reports_conn_str)
-
-        self.economic_series_mgr = EconomicSeriesManager(hist_data_conn_str)
-
-        self.sec_securities_mgr = SECSecuritiesManager(ml_reports_conn_str,logger)
 
         self.report_securities_mgr = ReportSecuritiesManager(ml_reports_conn_str, logger)
 
