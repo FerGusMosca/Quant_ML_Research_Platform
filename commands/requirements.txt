@@ -16,3 +16,4 @@ webdriver_manager
 ib_insync
 pyodbc
 spacy
+nltk
