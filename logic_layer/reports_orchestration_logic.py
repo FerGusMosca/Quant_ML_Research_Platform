@@ -15,7 +15,6 @@ from common.util.downloaders.yahoo_income_statement import YahooIncomeStatement
 from data_access_layer.portfolio_securities_manager import PortfolioSecuritiesManager
 from data_access_layer.report_securities_manager import ReportSecuritiesManager
 from framework.common.logger.message_type import MessageType
-from logic_layer.data_set_builder import DataSetBuilder
 from logic_layer.report_generators.competition_summary_report import CompetitionSummaryReport
 from logic_layer.report_generators.sentence_sentiment_summary_report import SentimentSummaryReport
 
@@ -24,8 +23,6 @@ class ReportsOrchestationLogic:
     def __init__(self,hist_data_conn_str,ml_reports_conn_str,p_classification_map_key,logger):
 
         self.logger=logger
-
-        self.data_set_builder=DataSetBuilder(hist_data_conn_str,ml_reports_conn_str,p_classification_map_key,logger)
 
         self.report_securities_mgr = ReportSecuritiesManager(ml_reports_conn_str, logger)
 
