@@ -15,9 +15,11 @@ from common.util.logging.logger import Logger
 from common.util.std_in_out.ml_settings_loader import MLSettingsLoader
 from common.util.std_in_out.param_reader import ParamReader
 from framework.common.logger.message_type import MessageType
-from logic_layer.algos_orchestation_logic import AlgosOrchestationLogic
 
 import os, sys
+
+from logic_layer.reports_orchestration_logic import ReportsOrchestationLogic
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # ============================================================
 # #2 - Report Logic Bridge
@@ -37,7 +39,7 @@ def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None,
         loader = MLSettingsLoader()
         config_settings = loader.load_settings("./configs/commands_mgr.ini")
 
-        trd_algos = AlgosOrchestationLogic(
+        trd_algos = ReportsOrchestationLogic(
             config_settings["hist_data_conn_str"],
             config_settings["ml_reports_conn_str"],
             None,

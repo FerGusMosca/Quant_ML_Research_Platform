@@ -15,6 +15,7 @@ import pandas as pd
 
 from logic_layer.data_set_builder import DataSetBuilder
 from controllers.routing_dashboard_controller import RoutingDashboardController
+from logic_layer.reports_orchestration_logic import ReportsOrchestationLogic
 from service_layer.bcra_service_layer import BCRAServiceLayer
 
 _DATE_FORMAT = "%m/%d/%Y"
@@ -1608,7 +1609,7 @@ def process_run_report_logic(report_key, year=None,portfolio=None,symbol=None,d_
         loader = MLSettingsLoader()
         config_settings = loader.load_settings("./configs/commands_mgr.ini")
 
-        trd_algos = AlgosOrchestationLogic(
+        trd_algos = ReportsOrchestationLogic(
             config_settings["hist_data_conn_str"],
             config_settings["ml_reports_conn_str"],
             None,

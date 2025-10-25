@@ -10,3 +10,4 @@ scikit-learn
 matplotlib
 configparser
 python-dotenv
+pandas-datareader
