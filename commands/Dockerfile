@@ -3,16 +3,17 @@ FROM python:3.10-slim
 WORKDIR /app
 
 # ------------------------------------------------------
-# Add ODBC Driver for SQL Server (modern Debian)
+# Add ODBC Driver for SQL Server (Debian 11+ Safe Version)
 # ------------------------------------------------------
 RUN apt-get update && \
-    apt-get install -y curl apt-transport-https gnupg && \
+    apt-get install -y curl apt-transport-https gnupg ca-certificates && \
     mkdir -p /etc/apt/keyrings && \
-    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > /etc/apt/keyrings/microsoft.gpg && \
-    echo "deb [signed-by=/etc/apt/keyrings/microsoft.gpg] https://packages.microsoft.com/debian/11/prod stable main" > /etc/apt/sources.list.d/mssql-release.list && \
+    curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /etc/apt/keyrings/microsoft.gpg && \
+    echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/microsoft.gpg] https://packages.microsoft.com/debian/11/prod stable main" > /etc/apt/sources.list.d/mssql-release.list && \
     apt-get update && \
     ACCEPT_EULA=Y apt-get install -y msodbcsql18 unixodbc-dev && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
+
 
 # ------------------------------------------------------
 # Install dependencies
