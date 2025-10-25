@@ -9,6 +9,7 @@ to the appropriate orchestration logic layer.
 import sys
 import traceback
 
+from common.enums.folders import Folders
 from common.util.financial_calculations.date_handler import DateHandler
 from common.util.logging.logger import Logger
 from common.util.std_in_out.ml_settings_loader import MLSettingsLoader
@@ -76,5 +77,7 @@ def process_run_report(cmd):
 # ============================================================
 
 if __name__ == "__main__":
+
+    Folders.load_from_config("./configs/commands_mgr.ini")
     cmd = " ".join(sys.argv[1:])
     process_run_report(cmd)

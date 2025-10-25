@@ -24,6 +24,8 @@ class MLSettingsLoader():
             config_settings["TRADING_VIEW_USER"] = config['SETTINGS']['TRADING_VIEW_USER']
             config_settings["TRADING_VIEW_PWD"] = config['SETTINGS']['TRADING_VIEW_PWD']
             config_settings["BCRA_API_KEY"] = config['SETTINGS']['BCRA_API_KEY']
+            config_settings["OUTPUT_RF_FOLDER"] = config['FOLDERS']['OUTPUT_RF_FOLDER']
+            config_settings["OUTPUT_SECURITIES_REPORTS_FOLDER"] = config['FOLDERS']['OUTPUT_SECURITIES_REPORTS_FOLDER']
 
 
             return  config_settings

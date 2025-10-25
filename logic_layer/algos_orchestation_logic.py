@@ -438,6 +438,7 @@ class AlgosOrchestationLogic:
 
     def _run_download_k10(self, year,portfolio):
         base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.K10.value}/{year}"
+        self.logger.do_log(f"[REPORT] Downloading K10 to  {base_path}", MessageType.INFO)
         if os.path.exists(base_path):
             shutil.rmtree(base_path)
             self.logger.do_log(f"[REPORT] Removed existing directory {base_path}", MessageType.INFO)
@@ -467,6 +468,7 @@ class AlgosOrchestationLogic:
 
     def _run_download_q10(self, year,portfolio):
         base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.Q10.value}/{year}"
+        self.logger.do_log(f"[REPORT] Downloading Q10 to  {base_path}", MessageType.INFO)
         if os.path.exists(base_path):
             shutil.rmtree(base_path)
             self.logger.do_log(f"[REPORT] Removed existing directory {base_path}", MessageType.INFO)
