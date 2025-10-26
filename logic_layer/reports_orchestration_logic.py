@@ -62,35 +62,59 @@ class ReportsOrchestationLogic:
         )
     '''
 
-
-    def _run_download_k10(self, year,portfolio):
-        base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.K10.value}/{year}"
-        self.logger.do_log(f"[REPORT] Downloading K10 to  {base_path}", MessageType.INFO)
-        if os.path.exists(base_path):
-            shutil.rmtree(base_path)
-            self.logger.do_log(f"[REPORT] Removed existing directory {base_path}", MessageType.INFO)
-
-        os.makedirs(base_path, exist_ok=True)
-
-        # ✅ Get securities from portfolio
-        securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
-
-        self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process", MessageType.INFO)
-
-        for i, sec in enumerate(securities):
-            symbol = sec.ticker
-            cik=sec.cik
+    def _run_download_k10(self, year, portfolio):
+        # ---------------------------------------------------------
+        # 🧠 Detect year range (e.g., 2022-2025)
+        # ---------------------------------------------------------
+        if "-" in str(year):
             try:
-                K10Downloader.download_k10(symbol,cik, year, base_path)
-                self.logger.do_log(
-                    f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded K10 for {symbol}",
-                    MessageType.INFO
-                )
+                start_year, end_year = map(int, str(year).split("-"))
+                years = list(range(start_year, end_year + 1))
+                self.logger.do_log(f"[REPORT] Detected year range {start_year}-{end_year}", MessageType.INFO)
             except Exception as e:
                 self.logger.do_log(
-                    f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {str(e)}",
-                    MessageType.ERROR
-                )
+                    f"[REPORT] Invalid year format '{year}', expected YYYY or YYYY-YYYY. Error: {str(e)}",
+                    MessageType.ERROR)
+                return
+        else:
+            years = [int(year)]
+
+        # ---------------------------------------------------------
+        # 🚀 Process each year sequentially
+        # ---------------------------------------------------------
+        for y in years:
+            base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.K10.value}/{y}"
+            self.logger.do_log(f"[REPORT] Downloading K10 to {base_path}", MessageType.INFO)
+
+            if os.path.exists(base_path):
+                shutil.rmtree(base_path)
+                self.logger.do_log(f"[REPORT] Removed existing directory {base_path}", MessageType.INFO)
+
+            os.makedirs(base_path, exist_ok=True)
+
+            # ✅ Get securities from portfolio
+            securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
+            self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process for year {y}", MessageType.INFO)
+
+            for i, sec in enumerate(securities):
+                symbol = sec.ticker
+                cik = sec.cik
+                try:
+                    result = K10Downloader.download_k10(symbol, cik, y, base_path)
+                    if result == "EXISTS":
+                        self.logger.do_log(
+                            f"[REPORT][{i + 1}/{len(securities)}] ⚠️ Skipped {symbol}: file already exists",
+                            MessageType.INFO)
+                    elif result == "NOT_FOUND":
+                        self.logger.do_log(
+                            f"[REPORT][{i + 1}/{len(securities)}] ❌ No 10-K available yet for {symbol} ({y})",
+                            MessageType.WARNING)
+                    else:
+                        self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded K10 for {symbol}",
+                                           MessageType.INFO)
+                except Exception as e:
+                    self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {str(e)}",
+                                       MessageType.ERROR)
 
     def _run_download_q10(self, year,portfolio):
         base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.Q10.value}/{year}"

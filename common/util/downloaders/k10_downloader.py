@@ -83,27 +83,34 @@ class K10Downloader:
         return {"html": file_path_html, "xbrl": xbrl_files}
     '''
 
+
     @staticmethod
     def download_k10(symbol, cik, year, output_dir):
-        if not cik:
-            raise ValueError(f"[K10Downloader] Missing CIK for {symbol}")
-
-        os.makedirs(output_dir, exist_ok=True)
-
-        # --- Submissions JSON ---
-        cik_padded = str(cik).zfill(10)
-        url = f"https://data.sec.gov/submissions/CIK{cik_padded}.json"
         headers = {
             "User-Agent": "K10Downloader/1.0 (fer.mosca@example.com)",
             "Accept-Encoding": "gzip, deflate",
         }
 
-        response = requests.get(url, headers=headers)
-        response.raise_for_status()
-        data = response.json()
+        file_path_html = os.path.join(output_dir, f"{symbol}_{year}_10-K.html")
+
+        # ⚠️ Skip if already exists
+        if os.path.exists(file_path_html):
+            return "EXISTS"
+
+        # --- Build SEC API request ---
+        url = f"https://data.sec.gov/submissions/CIK{int(cik):010d}.json"
+        try:
+            response = requests.get(url, headers=headers, timeout=10)
+            if response.status_code == 404:
+                return "NOT_FOUND"
+            response.raise_for_status()
+            data = response.json()
+        except requests.exceptions.RequestException:
+            return "NOT_FOUND"
+
         time.sleep(0.5 + random.random())
 
-        # --- Find correct 10-K for given year ---
+        # --- Find correct 10-K ---
         filings = data.get("filings", {}).get("recent", {})
         accession_numbers = filings.get("accessionNumber", [])
         filing_dates = filings.get("filingDate", [])
@@ -118,14 +125,19 @@ class K10Downloader:
                 break
 
         if not target_url:
-            raise FileNotFoundError(f"[K10Downloader] No 10-K found for {symbol} ({cik}) in {year}")
+            return "NOT_FOUND"
 
-        # --- Download HTML filing only ---
-        filing_resp = requests.get(target_url, headers=headers)
+        # --- Download HTML document ---
+        filing_resp = requests.get(target_url, headers=headers, timeout=15)
+        if filing_resp.status_code == 404:
+            return "NOT_FOUND"
+
         filing_resp.raise_for_status()
         time.sleep(0.5 + random.random())
-        file_path_html = os.path.join(output_dir, f"{symbol}_{year}_10-K.html")
+
+        # Save file
         with open(file_path_html, "wb") as f:
             f.write(filing_resp.content)
 
-        return {"html": file_path_html}
+        return "DOWNLOADED"
+
