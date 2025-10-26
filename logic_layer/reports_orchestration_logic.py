@@ -83,12 +83,8 @@ class ReportsOrchestationLogic:
         # 🚀 Process each year sequentially
         # ---------------------------------------------------------
         for y in years:
-            base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.K10.value}/{y}"
+            base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.K10.value}/{year}"
             self.logger.do_log(f"[REPORT] Downloading K10 to {base_path}", MessageType.INFO)
-
-            if os.path.exists(base_path):
-                shutil.rmtree(base_path)
-                self.logger.do_log(f"[REPORT] Removed existing directory {base_path}", MessageType.INFO)
 
             os.makedirs(base_path, exist_ok=True)
 
