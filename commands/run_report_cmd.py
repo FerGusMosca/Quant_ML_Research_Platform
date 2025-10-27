@@ -25,7 +25,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # #2 - Report Logic Bridge
 # ============================================================
 
-def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None, d_from=None,dest_folder=None):
+def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None, d_from=None,dest_folder=None,rank_folder=None):
     """
     Core logic responsible for running reports through AlgosOrchestationLogic.
     """
@@ -46,7 +46,7 @@ def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None,
             logger
         )
 
-        trd_algos.process_run_report(report_key, year, portfolio, symbol, d_from,dest_folder)
+        trd_algos.process_run_report(report_key, year, portfolio, symbol, d_from,dest_folder,rank_folder)
 
         logger.do_log(f"[REPORT] ✅ Report {report_key} completed", MessageType.INFO)
 
@@ -69,10 +69,11 @@ def process_run_report(cmd):
     year = ParamReader.get_param(cmd, "year", True, None)
     d_from = ParamReader.get_param(cmd, "from", True, None)
     portfolio = ParamReader.get_param(cmd, "portfolio")
-    dest_folder = ParamReader.get_param(cmd, "dest_folder")
+    dest_folder = ParamReader.get_param(cmd, "dest_folder",True,None)
+    rank_folder= ParamReader.get_param(cmd, "rank_folder",True,None)
     symbol = ParamReader.get_param(cmd, "symbol", True, None)
 
-    process_run_report_logic(report_key, year, portfolio, symbol, d_from,dest_folder)
+    process_run_report_logic(report_key, year, portfolio, symbol, d_from,dest_folder,rank_folder)
 
 
 # ============================================================

@@ -167,7 +167,8 @@ class ReportsOrchestationLogic:
         return sorted({(d.ticker or "").upper() for d in dtos if d.ticker})
 
     def _run_sentiment_summary_report(self, year, report_type=ReportFolder.K10.value,
-                                      portfolio=None, universe=None, dest_folder=None):
+                                      portfolio=None, universe=None, dest_folder=None,
+                                      rank_folder=None):
         """
         Build sentiment summaries focused on management guidance/opinion.
         Extract MD&A / Outlook-like text, score sentiment, and consolidate.
@@ -197,7 +198,8 @@ class ReportsOrchestationLogic:
                 portfolio=portfolio,
                 filers_whitelist=whitelist,
                 universe_key=universe,
-                dest_folder=dest_folder
+                dest_folder=dest_folder,
+                rank_folder=rank_folder
             )
 
             try:
@@ -208,8 +210,13 @@ class ReportsOrchestationLogic:
 
             try:
                 consolidated = SentimentSummaryReport.consolidate_year(
-                    y, report_type, portfolio, self.logger, universe_key=universe
-                )
+                                y,
+                                report_type,
+                                portfolio,
+                                self.logger,
+                                dest_folder=dest_folder,
+                                rank_folder=rank_folder
+                            )
                 ranking_csv = os.path.join(os.path.dirname(consolidated),
                                            f"sentiment_summary_ranking_{y}.csv")
                 SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
@@ -354,16 +361,16 @@ class ReportsOrchestationLogic:
                     MessageType.ERROR
                 )
 
-    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None,d_from=None,dest_folder=None):
+    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None,d_from=None,dest_folder=None,rank_folder=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year,portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
             self._run_download_q10(year,portfolio)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_K10.value:
 
-            self._run_sentiment_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder)
+            self._run_sentiment_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_Q10.value:
-            self._run_sentiment_summary_report(year, SECReports.Q10.value,portfolio=portfolio)
+            self._run_sentiment_summary_report(year, SECReports.Q10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_Q10.value:
             self._run_competition_summary_report(year, SECReports.Q10.value,portfolio=portfolio)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_K10.value:
