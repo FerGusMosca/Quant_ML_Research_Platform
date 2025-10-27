@@ -166,37 +166,63 @@ class ReportsOrchestationLogic:
         dtos = self.report_securities_mgr.get_report_securities(universe_key)
         return sorted({(d.ticker or "").upper() for d in dtos if d.ticker})
 
-    def _run_sentiment_summary_report(self, year, report_type=ReportFolder.K10.value,portfolio=None, universe=None):
+    def _run_sentiment_summary_report(self, year, report_type=ReportFolder.K10.value,
+                                      portfolio=None, universe=None, dest_folder=None):
         """
         Build sentiment summaries focused on management guidance/opinion.
         Extract MD&A / Outlook-like text, score sentiment, and consolidate.
-        :param year: Filing year
-        :param report_type: "K10" or "Q10"
-        :param universe: optional universe key for subfolder
+        Supports both single year (e.g. 2024) and range (e.g. 2022-2025).
         """
-        # Universe → list of tickers (or None)
-        whitelist = self._get_universe_filers(universe) if universe else None
+        # Parse year or range
+        if "-" in str(year):
+            try:
+                start_year, end_year = map(int, str(year).split("-"))
+                years = list(range(start_year, end_year + 1))
+                self.logger.do_log(f"[SENT] 📆 Detected year range {start_year}-{end_year}", MessageType.INFO)
+            except Exception as e:
+                self.logger.do_log(f"[SENT] ❌ Invalid year format '{year}' Error: {e}", MessageType.ERROR)
+                return
+        else:
+            years = [int(year)]
 
-        # Instantiate processor with report_type
-        gen = SentimentSummaryReport(
-            year=year,
-            report_type=report_type,
-            logger=self.logger,
-            portfolio=portfolio,
-            filers_whitelist=whitelist,
-            universe_key=universe
-        )
-        gen.run()
+        for y in years:
+            start_time = datetime.now()
+            self.logger.do_log(f"[SENT] 🚀 Starting sentiment summary ({report_type}, year={y})", MessageType.INFO)
 
-        # Consolidate & rank (year + report_type aware)
-        consolidated = SentimentSummaryReport.consolidate_year(year, report_type,portfolio, self.logger, universe_key=universe)
-        ranking_csv = os.path.join(os.path.dirname(consolidated), f"sentiment_summary_ranking_{year}.csv")
-        SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
+            whitelist = self._get_universe_filers(universe) if universe else None
+            gen = SentimentSummaryReport(
+                year=y,
+                report_type=report_type,
+                logger=self.logger,
+                portfolio=portfolio,
+                filers_whitelist=whitelist,
+                universe_key=universe,
+                dest_folder=dest_folder
+            )
 
-        self.logger.do_log(
-            f"[SENT] ✅ Sentiment summary completed ({report_type}, scope={universe or 'ALL'})",
-            MessageType.INFO
-        )
+            try:
+                gen.run()
+            except Exception as e:
+                self.logger.do_log(f"[SENT] ❌ Error during run() for year {y}: {e}", MessageType.ERROR)
+                continue
+
+            try:
+                consolidated = SentimentSummaryReport.consolidate_year(
+                    y, report_type, portfolio, self.logger, universe_key=universe
+                )
+                ranking_csv = os.path.join(os.path.dirname(consolidated),
+                                           f"sentiment_summary_ranking_{y}.csv")
+                SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
+            except Exception as e:
+                self.logger.do_log(f"[SENT] ⚠️ Consolidation/Ranking failed for {y}: {e}",
+                                   MessageType.WARNING)
+                continue
+
+            elapsed = (datetime.now() - start_time).total_seconds()
+            self.logger.do_log(
+                f"[SENT] ✅ Sentiment summary completed ({report_type}, year={y}) in {elapsed:.1f}s",
+                MessageType.INFO
+            )
 
     def _run_competition_summary_report(self, year, report_type="K10",portfolio=None):
         report = CompetitionSummaryReport(
@@ -328,13 +354,14 @@ class ReportsOrchestationLogic:
                     MessageType.ERROR
                 )
 
-    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None,d_from=None):
+    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None,d_from=None,dest_folder=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year,portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
             self._run_download_q10(year,portfolio)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_K10.value:
-            self._run_sentiment_summary_report(year, SECReports.K10.value,portfolio=portfolio)
+
+            self._run_sentiment_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_Q10.value:
             self._run_sentiment_summary_report(year, SECReports.Q10.value,portfolio=portfolio)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_Q10.value:

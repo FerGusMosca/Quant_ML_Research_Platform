@@ -58,7 +58,8 @@ class SentimentSummaryReport:
         "controls and procedures",
     ]
 
-    def __init__(self, year: int, logger, report_type: str = ReportFolder.K10.value,portfolio: str=None, filers_whitelist: List[str] = None, universe_key: str = None):
+    def __init__(self, year: int, logger, report_type: str = ReportFolder.K10.value,portfolio: str=None, filers_whitelist: List[str] = None,
+                 universe_key: str = None,dest_folder: str=None):
         """
         :param year: Filing year to process
         :param logger: Logger instance (must support .do_log(msg, MessageType))
@@ -68,12 +69,24 @@ class SentimentSummaryReport:
         """
         self.report_type = report_type.upper()
         self.portfolio=portfolio
+        self.dest_folder=dest_folder
 
         # Input HTML lives in ./output/{K10|Q10}/<YEAR>
-        self.input_dir=f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{report_type}/{year}"
+        self.input_dir = os.path.join(
+            Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+            portfolio,
+            report_type,
+            str(year)
+        )
+        year_dir = os.path.join(
+            Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+            self.dest_folder,
+            f"{self.report_type}_sentiment_summary_report",
+            str(year)
+        )
+
 
         # Output is namespaced by report type + year (and optional universe key)
-        year_dir = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{report_type}_sentiment_summary_report/{year}"
         self.output_dir = os.path.join(year_dir, universe_key) if universe_key else year_dir
         os.makedirs(self.output_dir, exist_ok=True)
 
@@ -90,58 +103,58 @@ class SentimentSummaryReport:
 
     # -------- Public API --------
     def run(self) -> None:
-        """Process fifings and save one *_sentiment.json per symbol under the YEAR folder."""
+        """Process filings and save one *_sentiment.json per symbol under the YEAR folder."""
         files = [f for f in os.listdir(self.input_dir) if f.lower().endswith(".html")]
         if self.whitelist:
             files = [f for f in files if f.split("_")[0].upper() in self.whitelist]
 
-        self.logger.do_log(f"[SENT] Processing {len(files)} {self.report_type} file(s) for year {self.year}", MessageType.INFO)
+        self.logger.do_log(f"[SENT] Found {len(files)} {self.report_type} files to process for {self.year}",
+                           MessageType.INFO)
 
         for i, file in enumerate(sorted(files), start=1):
+            symbol = file.split("_")[0].upper()
             try:
-                symbol = file.split("_")[0].upper()
-                with open(os.path.join(self.input_dir, file), "r", encoding="utf-8") as fh:
+                path = os.path.join(self.input_dir, file)
+                with open(path, "r", encoding="utf-8") as fh:
                     html = fh.read()
 
                 text = self._html_to_text(html)
                 sections = self._extract_relevant_sections(text)
                 result = self._score_sections(sections)
-                period=self._extract_period_from_filename(file)
-
+                period = self._extract_period_from_filename(file)
 
                 curated_text = (
-                        f"Symbol: {symbol}. Year: {self.year}. "
-                        f"Period: {period}. ReportType: {self.report_type}. "
+                        f"Symbol: {symbol}. Year: {self.year}. Period: {period}. ReportType: {self.report_type}. "
                         "Section: Management Discussion and Analysis (MD&A). "
                         "Key metrics include sentiment, forward outlook, and risk hedging. "
                         + " Top positive sentences: "
-                        + " ".join(p["sent"] for p in result["top_positive"])
+                        + " ".join(p['sent'] for p in result['top_positive'])
                         + " Top negative sentences: "
-                        + " ".join(n["sent"] for n in result["top_negative"])
+                        + " ".join(n['sent'] for n in result['top_negative'])
                         + " Forward-looking snippets: "
-                        + " ".join(result["forward_snippets"])
+                        + " ".join(result['forward_snippets'])
                 )
 
                 out = {
                     "symbol": symbol,
                     "year": self.year,
-                    "Period": period,
+                    "period": period,
                     "report_type": self.report_type,
                     "metrics": result["metrics"],
                     "top_positive": result["top_positive"],
                     "top_negative": result["top_negative"],
                     "forward_snippets": result["forward_snippets"],
-                    "curated_text": curated_text  # ← nuevo campo
+                    "curated_text": curated_text
                 }
 
                 out_path = os.path.join(self.output_dir, f"{symbol}_{self.year}_{period}_sentiment.json")
                 with open(out_path, "w", encoding="utf-8") as f:
                     json.dump(out, f, indent=2)
 
-                self.logger.do_log(f"[SENT][{i}] ✅ {symbol} ({self.report_type}) saved", MessageType.INFO)
+                self.logger.do_log(f"[SENT][{i}/{len(files)}] ✅ {symbol}: saved sentiment ({period})", MessageType.INFO)
 
             except Exception as e:
-                self.logger.do_log(f"[SENT][{i}] ❌ {file} failed - {str(e)}", MessageType.ERROR)
+                self.logger.do_log(f"[SENT][{i}/{len(files)}] ❌ {symbol} failed - {e}", MessageType.ERROR)
 
     @staticmethod
     def consolidate_year(year: int, report_type: str, portfolio: str, logger, universe_key: str = None) -> str:
