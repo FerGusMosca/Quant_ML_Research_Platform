@@ -102,6 +102,57 @@ class SentimentSummaryReport:
             nltk.download("vader_lexicon")
             self.sia = SentimentIntensityAnalyzer()
 
+    @staticmethod
+    def rank(consolidated_json: str, out_csv: str, logger) -> None:
+        """
+        Produce ranking CSV by optimism composite score from a consolidated JSON.
+        """
+        import pandas as pd
+        import os, json
+
+        if not consolidated_json or not os.path.exists(consolidated_json):
+            logger.do_log(f"[SENT] ❌ Consolidated JSON not found: {consolidated_json}", MessageType.ERROR)
+            return
+
+        with open(consolidated_json, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        if not data:
+            logger.do_log(f"[SENT] ⚠ No data found in {consolidated_json}", MessageType.WARNING)
+            return
+
+        rows = []
+        for e in data:
+            m = e.get("metrics", {})
+            rows.append({
+                "symbol": e.get("symbol"),
+                "year": e.get("year"),
+                "report_type": e.get("report_type"),
+                "sentiment_mdna": m.get("mdna_sentiment", 0.0),
+                "sentiment_outlook": m.get("outlook_sentiment", 0.0),
+                "forward_ratio": m.get("forward_ratio", 0.0),
+                "hedge_ratio": m.get("hedge_ratio", 0.0),
+                "optimism_score": round(
+                    0.5 * m.get("mdna_sentiment", 0.0)
+                    + 0.5 * m.get("outlook_sentiment", 0.0)
+                    + 0.2 * m.get("forward_ratio", 0.0)
+                    - 0.2 * m.get("hedge_ratio", 0.0), 6)
+            })
+
+        df = pd.DataFrame(rows)
+        if df.empty:
+            logger.do_log(f"[SENT] ⚠ No valid records to rank in {consolidated_json}", MessageType.WARNING)
+            return
+
+        df = df.sort_values(
+            ["optimism_score", "sentiment_outlook", "sentiment_mdna"], ascending=False
+        )
+
+        os.makedirs(os.path.dirname(out_csv), exist_ok=True)
+        df.to_csv(out_csv, index=False)
+
+        logger.do_log(f"[SENT] ✅ Ranking -> {out_csv} ({len(df)} filers)", MessageType.INFO)
+
     # -------- Public API --------
     def run(self) -> None:
         """Process filings and save one *_sentiment.json per symbol under the YEAR folder."""
