@@ -22,7 +22,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt && \
     python -m nltk.downloader vader_lexicon
 
-
+RUN python -m spacy download en_core_web_sm
 # ------------------------------------------------------
 # Copy app source
 # ------------------------------------------------------
