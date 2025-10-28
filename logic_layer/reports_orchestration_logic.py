@@ -231,14 +231,59 @@ class ReportsOrchestationLogic:
                 MessageType.INFO
             )
 
-    def _run_competition_summary_report(self, year, report_type="K10",portfolio=None):
-        report = CompetitionSummaryReport(
-            year=year,
-            logger=self.logger,
-            report_type=report_type,
-            portfolio=portfolio
-        )
-        report.run()
+    def _run_competition_summary_report(self, year, report_type=ReportFolder.K10.value,
+                                        portfolio=None, universe=None,
+                                        dest_folder=None, rank_folder=None):
+        """
+        Build competition summaries across a range of years or a single year.
+        """
+        # Parse range
+        if "-" in str(year):
+            try:
+                start_year, end_year = map(int, str(year).split("-"))
+                years = list(range(start_year, end_year + 1))
+                self.logger.do_log(f"[COMP] 📆 Detected year range {start_year}-{end_year}", MessageType.INFO)
+            except Exception as e:
+                self.logger.do_log(f"[COMP] ❌ Invalid year format '{year}' Error: {e}", MessageType.ERROR)
+                return
+        else:
+            years = [int(year)]
+
+        for y in years:
+            start_time = datetime.now()
+            self.logger.do_log(f"[COMP] 🚀 Starting competition summary ({report_type}, year={y})", MessageType.INFO)
+
+            try:
+                gen = CompetitionSummaryReport(
+                    year=y,
+                    report_type=report_type,
+                    logger=self.logger,
+                    portfolio=portfolio,
+                    dest_folder=dest_folder,
+                    rank_folder=rank_folder
+                )
+                gen.run()
+            except Exception as e:
+                self.logger.do_log(f"[COMP] ❌ Error during run() for year {y}: {e}", MessageType.ERROR)
+                continue
+
+            try:
+                consolidated = CompetitionSummaryReport.consolidate_year(
+                    y, report_type, portfolio, self.logger,
+                    dest_folder=dest_folder, rank_folder=rank_folder
+                )
+                ranking_csv = os.path.join(os.path.dirname(consolidated),
+                                           f"competition_summary_ranking_{y}.csv")
+                CompetitionSummaryReport.rank(consolidated, ranking_csv, self.logger)
+            except Exception as e:
+                self.logger.do_log(f"[COMP] ⚠️ Consolidation/Ranking failed for {y}: {e}", MessageType.WARNING)
+                continue
+
+            elapsed = (datetime.now() - start_time).total_seconds()
+            self.logger.do_log(
+                f"[COMP] ✅ Competition summary completed ({report_type}, year={y}) in {elapsed:.1f}s",
+                MessageType.INFO
+            )
 
     def _run_fin_viz_news_downloader(self,portfolio,symbol=None):
 
@@ -372,9 +417,9 @@ class ReportsOrchestationLogic:
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_Q10.value:
             self._run_sentiment_summary_report(year, SECReports.Q10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_Q10.value:
-            self._run_competition_summary_report(year, SECReports.Q10.value,portfolio=portfolio)
+            self._run_competition_summary_report(year, SECReports.Q10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_K10.value:
-            self._run_competition_summary_report(year, SECReports.K10.value,portfolio=portfolio)
+            self._run_competition_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
         elif report_key.lower() == ReportType.FINVIZ_NEWS_DOWNLOAD.value:
             self._run_fin_viz_news_downloader(portfolio,symbol)
         elif report_key.lower() == ReportType.PROCESS_FINVIZ_NEWS.value:
