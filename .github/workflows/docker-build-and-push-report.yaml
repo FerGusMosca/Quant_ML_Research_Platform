@@ -27,6 +27,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./commands/Dockerfilea
+          file: ./commands/reports/Dockerfile
           push: true
           tags: alienzimzum/zz-run-report:latest
