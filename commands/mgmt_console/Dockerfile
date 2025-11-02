@@ -18,6 +18,7 @@ RUN apt-get update && \
 # Install dependencies
 # ------------------------------------------------------
 COPY ./commands/mgmt_console/requirements.txt ./requirements.txt
+RUN pip install --no-cache-dir git+https://github.com/tvdatafeed/tvdatafeed.git@master || pip install --no-cache-dir tvdatafeed==0.2.0
 RUN apt-get update && apt-get install -y git && \
     pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
