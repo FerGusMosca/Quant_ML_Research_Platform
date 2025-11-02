@@ -451,7 +451,7 @@ def process_test_XGBoost_cmd(cmd):
     pos_regime_filters_csv = ParamReader.get_param(cmd, "pos_regime_filters_csv", True, def_value=None)
     neg_regime_filters_csv = ParamReader.get_param(cmd, "neg_regime_filters_csv", True, def_value=None)
 
-    # Compose param dictionary
+    # Compose param dictionaryy
     n_algo_param_dict = {
         "interval": interval.replace("_", " "),
         "init_portf_size": init_portf_size,
