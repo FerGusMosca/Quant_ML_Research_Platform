@@ -18,9 +18,9 @@ RUN apt-get update && \
 # Install dependencies
 # ------------------------------------------------------
 COPY ./commands/mgmt_console/requirements.txt ./requirements.txt
-RUN pip install --no-cache-dir --upgrade pip && \
+RUN apt-get update && apt-get install -y git && \
+    pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
-RUN apt-get update && apt-get install -y git
 # ------------------------------------------------------
 # Copy app source (solo módulos necesarios)
 # ------------------------------------------------------
