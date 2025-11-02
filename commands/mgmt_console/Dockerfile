@@ -17,7 +17,7 @@ RUN apt-get update && \
 # ------------------------------------------------------
 # Install dependencies
 # ------------------------------------------------------
-COPY ./commands/reports/requirements.txt ./requirements.txt
+COPY ./commands/mgmt_console/requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
 
