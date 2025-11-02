@@ -15,14 +15,17 @@ RUN apt-get update && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # ------------------------------------------------------
-# Install dependencies
+# Copy requirements file
 # ------------------------------------------------------
 COPY ./commands/mgmt_console/requirements.txt ./requirements.txt
 
-# Instalar tvdatafeed (sin romper si el repo está caído)
+# ------------------------------------------------------
+# Install Python dependencies (order critical)
+# ------------------------------------------------------
 RUN pip install --no-cache-dir --upgrade pip && \
-    (pip install --no-cache-dir git+https://github.com/tvdatafeed/tvdatafeed.git@master || true) && \
-    pip install --no-cache-dir -r requirements.txt
+    pip install --no-cache-dir git+https://github.com/tvdatafeed/tvdatafeed.git@master && \
+    pip install --no-cache-dir -r requirements.txt && \
+    pip check
 
 # ------------------------------------------------------
 # Copy app source (solo módulos necesarios)
@@ -43,6 +46,7 @@ COPY ./templates /app/templates
 COPY ./bias_mgmt_console.py /app/bias_mgmt_console.py
 
 # ------------------------------------------------------
-# Default command
+# Health check + default command
 # ------------------------------------------------------
+HEALTHCHECK CMD python -c "import tvdatafeed" || exit 1
 CMD ["python", "/app/bias_mgmt_console.py"]
