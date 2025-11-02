@@ -1,0 +1,44 @@
+# === Core ML / DL ===
+tensorflow==2.17.0
+tensorflow-intel==2.17.0
+tensorflow-io-gcs-filesystem==0.31.0
+keras==3.9.2
+h5py>=3.13,<3.14
+numpy>=1.26,<2
+scipy>=1.14,<1.15
+scikit-learn>=1.5,<1.6
+joblib>=1.4,<1.5
+threadpoolctl>=3.5,<3.6
+
+# === API / Web ===
+fastapi>=0.115,<0.116
+uvicorn>=0.34,<0.35
+starlette>=0.45,<0.46
+requests>=2.32,<2.33
+urllib3>=2.3,<2.4
+websocket-client>=1.8,<1.9
+websockets>=14.2,<14.3
+
+# === Data / Utils ===
+pandas>=2.2,<2.3
+pandas-datareader>=0.10,<0.11
+yfinance>=0.2,<0.3
+statsmodels>=0.14,<0.15
+matplotlib>=3.9,<3.10
+plotly>=5.23,<5.24
+seaborn>=0.13,<0.14
+pillow>=10.4,<10.5
+
+# === Extra ML ===
+imbalanced-learn>=0.13,<0.14
+xgboost>=3.0,<3.1
+
+# === Infra ===
+pyodbc>=5.1,<5.2
+peewee>=3.17,<3.18
+Werkzeug>=3.1,<3.2
+
+# === Optional NLP (activar si usás spaCy / nltk) ===
+spacy>=3.8,<3.9
+nltk>=3.9,<3.10
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl

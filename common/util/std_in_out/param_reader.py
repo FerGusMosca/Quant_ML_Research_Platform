@@ -21,11 +21,13 @@ class ParamReader:
     @staticmethod
     def get_value_after_equals(command: str, key: str, optional: bool = False):
         """
-        Extracts the raw value that follows 'key=' in a command string.
+        Extracts the raw value that follows 'key=' in a command string,
+        removing any surrounding single or double quotes.
 
         Example:
-            command = "RunReport report=download_q10 year=2025"
+            command = "RunReport report='download_q10' year=\"2025\""
             get_value_after_equals(command, "report") -> "download_q10"
+            get_value_after_equals(command, "year") -> "2025"
         """
         try:
             key_pattern = f"{key}="
@@ -38,7 +40,9 @@ class ParamReader:
             after = command.split(key_pattern, 1)[1]
             # Stop at first space or end of string
             value = after.split(" ", 1)[0]
-            return value.strip()
+
+            # ✅ Clean quotes if present
+            return value.strip().strip("'").strip('"')
 
         except Exception:
             if optional:
