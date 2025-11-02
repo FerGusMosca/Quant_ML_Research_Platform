@@ -1,11 +1,28 @@
+# === Python cache files ===
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# === Virtual env ===
 venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# === Git ===
 .git/
 .gitignore
-__init__.py
+
+# === Test artifacts ===
 tests/
+
+# === Data folders (solo runtime) ===
 output/
 input/
+
+# ✅ Include critical Python entrypoints (no ignorar estos)
+!__init__.py
+!commands/reports/run_report_cmd.py
+!bias_mgmt_console.py
