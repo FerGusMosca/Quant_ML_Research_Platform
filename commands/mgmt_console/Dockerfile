@@ -17,19 +17,32 @@ RUN apt-get update && \
 # ------------------------------------------------------
 # Install dependencies
 # ------------------------------------------------------
-COPY ./commands/mgmt_console/requirements.txt ./requirements.txt
+COPY ./requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+    pip install --no-cache-dir -r requirements.txt && \
+    python -m nltk.downloader vader_lexicon && \
+    python -m spacy download en_core_web_sm
 
 # ------------------------------------------------------
-# Copy app source
+# Copy all app source folders
 # ------------------------------------------------------
-COPY ./commands/mgmt_console /app/commands/mgmt_console
 COPY ./common /app/common
 COPY ./configs /app/configs
-COPY ./logic_layer /app/logic_layer
+COPY ./controllers /app/controllers
 COPY ./data_access_layer /app/data_access_layer
 COPY ./framework /app/framework
+COPY ./logic_layer /app/logic_layer
+COPY ./service_layer /app/service_layer
+COPY ./scripts /app/scripts
+COPY ./templates /app/templates
+COPY ./commands /app/commands
+COPY ./business_entities /app/business_entities
+COPY ./static /app/static
+COPY ./output /app/output
+COPY ./POC /app/POC
+
+# Copy root-level scripts
+COPY ./bias_mgmt_console.py /app/bias_mgmt_console.py
 
 # ------------------------------------------------------
 # Default command
