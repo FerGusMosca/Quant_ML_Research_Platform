@@ -12,6 +12,7 @@ RUN apt-get update && \
     echo "deb [arch=amd64,arm64 signed-by=/etc/apt/keyrings/microsoft.gpg] https://packages.microsoft.com/debian/12/prod bookworm main" > /etc/apt/sources.list.d/mssql-release.list && \
     apt-get update && \
     ACCEPT_EULA=Y apt-get install -y msodbcsql18 unixodbc-dev git && \
+    apt-get install -y libgl1 libglib2.0-0 && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # ------------------------------------------------------
@@ -23,7 +24,7 @@ COPY ./commands/mgmt_console/requirements.txt ./requirements.txt
 # Install Python dependencies (order critical)
 # ------------------------------------------------------
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir git+https://github.com/tvdatafeed/tvdatafeed.git@master && \
+    pip install --no-cache-dir tradingview-datafeed && \
     pip install --no-cache-dir -r requirements.txt && \
     pip check
 
@@ -41,6 +42,7 @@ COPY ./scripts /app/scripts
 COPY ./commands /app/commands
 COPY ./business_entities /app/business_entities
 COPY ./templates /app/templates
+COPY ./POC /app/POC
 
 # Archivo principal
 COPY ./bias_mgmt_console.py /app/bias_mgmt_console.py
