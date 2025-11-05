@@ -44,7 +44,7 @@ COPY ./business_entities /app/business_entities
 COPY ./templates /app/templates
 COPY ./POC /app/POC
 COPY ./models /app/models
-COPY ./commands/mgmt_console/output /app/output
+COPY ./models/*.csv /app/output
 
 # Archivo principal
 COPY ./bias_mgmt_console.py /app/bias_mgmt_console.py
