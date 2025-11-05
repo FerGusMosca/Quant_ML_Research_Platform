@@ -551,6 +551,9 @@ class MLModelAnalyzer():
 
         result_df[symbol] = result_df["close"]
 
+        last_date = result_df["date"].max()
+        last_preds = result_df.tail(3)["Prediction"].tolist()
+        self.logger.do_log( f"\n📊 Last Prediction Available = {last_date.date()} --> {last_preds[0]} → {last_preds[1]} → {last_preds[2]}",MessageType.INFO)
         return result_df, test_features_df
 
 
