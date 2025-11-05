@@ -23,7 +23,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Ensure output folder exists
+      - name: Ensure output exists (for Docker build context)
         run: mkdir -p commands/mgmt_console/output && touch commands/mgmt_console/output/.gitkeep
 
       - name: Build and push Docker image
