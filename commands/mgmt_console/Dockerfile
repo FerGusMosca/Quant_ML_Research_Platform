@@ -47,6 +47,7 @@ COPY ./models /app/models
 
 # Archivo principal
 COPY ./bias_mgmt_console.py /app/bias_mgmt_console.py
+COPY ./ui_dashboard.py /app/ui_dashboard.py
 
 # ------------------------------------------------------
 # Health check + default command
