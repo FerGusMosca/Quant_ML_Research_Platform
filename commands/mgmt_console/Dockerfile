@@ -44,6 +44,8 @@ COPY ./business_entities /app/business_entities
 COPY ./templates /app/templates
 COPY ./POC /app/POC
 COPY ./models /app/models
+
+RUN mkdir -p /app/output
 COPY ./output/*.csv /app/output/
 
 # Archivo principal
