@@ -35,3 +35,4 @@ COPY ./configs /app/configs
 
 # Default command (override via docker run)
 CMD ["python", "-m", "commands.reports.run_report_cmd"]
+
