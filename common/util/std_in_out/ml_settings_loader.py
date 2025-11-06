@@ -26,6 +26,7 @@ class MLSettingsLoader():
             config_settings["BCRA_API_KEY"] = config['SETTINGS']['BCRA_API_KEY']
             config_settings["OUTPUT_RF_FOLDER"] = config['FOLDERS']['OUTPUT_RF_FOLDER']
             config_settings["OUTPUT_SECURITIES_REPORTS_FOLDER"] = config['FOLDERS']['OUTPUT_SECURITIES_REPORTS_FOLDER']
+            config_settings["UI_PORT"] = config['UI']['UI_PORT']
 
 
             return  config_settings
