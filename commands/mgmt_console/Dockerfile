@@ -46,7 +46,7 @@ COPY ./POC /app/POC
 COPY ./models /app/models
 
 RUN mkdir -p /app/output
-COPY ./output/*.csv /app/output/
+COPY ./output/*.csv /app/output/ 2>/dev/null || true
 
 # Archivo principal
 COPY ./bias_mgmt_console.py /app/bias_mgmt_console.py
