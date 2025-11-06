@@ -23,8 +23,8 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Ensure output exists (for Docker build context)
-        run: mkdir -p ./output && echo "init" > ./output/.keep
+      - name: Ensure output exists
+        run: mkdir -p ./output
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
