@@ -14,7 +14,7 @@ if __name__ == '__main__':
     config_settings = loader.load_settings("./configs/commands_mgr.ini")
 
     main_dash_contr = MainDashboardController(logger, config_settings)
-    main_dash_contr.display(port=config_settings["UI_PORT"])
+    main_dash_contr.display(port=int(config_settings["UI_PORT"]))
     print(f"Main Dashboard successfully shown...")
     # 🛑 Block the main thread to prevent script from exiting
     try:
