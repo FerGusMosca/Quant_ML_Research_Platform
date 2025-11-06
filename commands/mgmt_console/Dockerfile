@@ -53,7 +53,7 @@ COPY ./ui_dashboard.py /app/ui_dashboard.py
 # ------------------------------------------------------
 # Health check + default command
 # ------------------------------------------------------
-HEALTHCHECK CMD python -c "import tvdatafeed" || exit 1
+#HEALTHCHECK CMD python -c "import tvdatafeed" || exit 1
 CMD ["python", "/app/bias_mgmt_console.py"]
 
 EXPOSE 8000
