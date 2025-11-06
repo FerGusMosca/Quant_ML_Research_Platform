@@ -24,7 +24,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Ensure output exists (for Docker build context)
-        run: mkdir -p output && touch output/.gitkeep
+        run: mkdir -p ./output && echo "init" > ./output/.keep
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
