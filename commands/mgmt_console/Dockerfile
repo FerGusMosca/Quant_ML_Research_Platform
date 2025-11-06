@@ -45,9 +45,6 @@ COPY ./templates /app/templates
 COPY ./POC /app/POC
 COPY ./models /app/models
 
-RUN mkdir -p /app/output
-COPY ./output/*.csv /app/output/ || true
-
 # Archivo principal
 COPY ./bias_mgmt_console.py /app/bias_mgmt_console.py
 

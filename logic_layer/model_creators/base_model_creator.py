@@ -14,6 +14,7 @@ from common.util.logging.light_logger import LightLogger
 import xgboost as xgb; print(xgb.__version__)
 _OUTPUT_DATE_FORMAT = '%m/%d/%Y %H:%M:%S'
 _OUTPUT_PATH = "./output/"
+_MODELS_PATH = "./models/"
 
 class BaseModelCreator:
 
@@ -229,7 +230,7 @@ class BaseModelCreator:
         tuple: (stationary DataFrame, updated state)
         """
         # Load the list of columns that need differencing
-        output_path = os.path.join(_OUTPUT_PATH, 'differenced_columns.csv')
+        output_path = os.path.join(_MODELS_PATH, 'differenced_columns.csv')
         if not os.path.exists(output_path):
             raise FileNotFoundError(
                 f"Expected differenced_columns.csv at {output_path}. Run __make_stationary__ first.")
@@ -302,7 +303,7 @@ class BaseModelCreator:
         # Save the list of differenced columns to a CSV file
         if differenced_columns:
             differenced_df = pd.DataFrame({'differenced_columns': differenced_columns})
-            output_path = os.path.join(_OUTPUT_PATH, 'differenced_columns.csv')
+            output_path = os.path.join(_MODELS_PATH, 'differenced_columns.csv')
             differenced_df.to_csv(output_path, index=False)
             print(f"Differenced columns saved to {output_path}")
 
