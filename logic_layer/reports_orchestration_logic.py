@@ -300,15 +300,25 @@ class ReportsOrchestationLogic:
 
         securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
 
+        from_year, to_year = map(int, str(year).split('-')) if '-' in str(year) else (int(year), int(year))
+        existing = self.sec_cal_mgr.get_calendars_by_range(from_year, to_year)
 
         for i, sec in enumerate(securities):
-            try:
-                entry = SecuritiesCalendarDownloader.download(sec.ticker, sec.cik, year)
-                self.sec_cal_mgr.upsert_calendar_entry(entry)
-                self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}] ✅ {sec.ticker} saved.", MessageType.INFO)
-            except Exception as e:
-                self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}] ❌ {sec.ticker} failed: {str(e)}",
-                                   MessageType.ERROR)
+            for yr in range(from_year, to_year + 1):
+                key = (sec.ticker, yr)
+                if key in existing:
+                    self.logger.do_log(
+                        f"[REPORT][{i + 1}/{len(securities)}][{yr}] ⏭ {sec.ticker} already in DB, skipped.",
+                        MessageType.INFO)
+                    continue
+                try:
+                    entry = SecuritiesCalendarDownloader.download(sec.ticker, sec.cik, yr)
+                    self.sec_cal_mgr.upsert_calendar_entry(entry)
+                    self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}][{yr}] ✅ {sec.ticker} saved.",
+                                       MessageType.INFO)
+                except Exception as e:
+                    self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}][{yr}] ❌ {sec.ticker} failed: {e}",
+                                       MessageType.ERROR)
 
     def _run_fin_viz_news_downloader(self,portfolio,symbol=None):
 
