@@ -8,6 +8,7 @@ from datetime import datetime
 from common.dto.security_report_calendar import SecurityReportCalendar
 from common.enums.folders import Folders
 
+
 class SecuritiesCalendarDownloader:
     """
     Downloads filing calendars from the SEC for each symbol.
@@ -22,9 +23,12 @@ class SecuritiesCalendarDownloader:
     }
 
     @staticmethod
-    def download(symbol, cik, year, pause=1.0):
+    def download(symbol, cik, fiscal_year, pause=1.0):
         """
         Download SEC filing dates for a single company by CIK.
+        Adjusts filing years:
+          - 10-Q => same fiscal year
+          - 10-K => fiscal_year + 1
         """
         url = SecuritiesCalendarDownloader.BASE_URL.format(str(cik).zfill(10))
         response = requests.get(url, headers=SecuritiesCalendarDownloader.HEADERS, timeout=20)
@@ -41,22 +45,42 @@ class SecuritiesCalendarDownloader:
         for form, fdate in zip(forms, filing_dates):
             if not fdate or not form:
                 continue
-            if "10-Q" in form and not q1:
-                q1 = fdate
-            elif "10-Q" in form and q1 and not q2:
-                q2 = fdate
-            elif "10-Q" in form and q2 and not q3:
-                q3 = fdate
+            if "10-Q" in form:
+                if not q1:
+                    q1 = fdate
+                elif not q2:
+                    q2 = fdate
+                elif not q3:
+                    q3 = fdate
             elif "10-K" in form and not k10:
                 k10 = fdate
 
-        # Save JSON snapshot for auditing
-        output_dir = os.path.join(Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value, "SecuritiesCalendar", str(year))
+        # === Adjust year logic ===
+        def fix_year(date_str, target_year):
+            """Keep month/day, replace year logically."""
+            if not date_str:
+                return None
+            try:
+                dt = datetime.strptime(date_str, "%Y-%m-%d")
+                return datetime(target_year, dt.month, dt.day).strftime("%Y-%m-%d")
+            except:
+                return date_str
+
+        q1 = fix_year(q1, fiscal_year)
+        q2 = fix_year(q2, fiscal_year)
+        q3 = fix_year(q3, fiscal_year)
+        k10 = fix_year(k10, fiscal_year + 1)  # always year after fiscal
+
+        # === Save JSON snapshot ===
+        output_dir = os.path.join(Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value, "SecuritiesCalendar", str(fiscal_year))
         os.makedirs(output_dir, exist_ok=True)
-        out_path = os.path.join(output_dir, f"{symbol}_{year}_calendar.json")
+        out_path = os.path.join(output_dir, f"{symbol}_{fiscal_year}_calendar.json")
+
         with open(out_path, "w", encoding="utf-8") as f:
-            json.dump({"symbol": symbol, "cik": cik, "year": year,
-                       "Q1": q1, "Q2": q2, "Q3": q3, "K10": k10}, f, indent=2)
+            json.dump({
+                "symbol": symbol, "cik": cik, "fiscal_year": fiscal_year,
+                "Q1": q1, "Q2": q2, "Q3": q3, "K10": k10
+            }, f, indent=2)
 
         time.sleep(pause + random.random())
-        return SecurityReportCalendar(cik, symbol, year, q1, q2, q3, k10)
+        return SecurityReportCalendar(cik, symbol, fiscal_year, q1, q2, q3, k10)
