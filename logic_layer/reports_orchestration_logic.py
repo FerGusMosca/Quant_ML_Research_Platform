@@ -11,9 +11,11 @@ from common.util.downloaders.finviz_offline_sentiment_analyzer import FinvizOffl
 from common.util.downloaders.ib_income_statement import IBIncomeStatement
 from common.util.downloaders.k10_downloader import K10Downloader
 from common.util.downloaders.q10_downloader import Q10Downloader
+from common.util.downloaders.securities_calendar_downloader import SecuritiesCalendarDownloader
 from common.util.downloaders.yahoo_income_statement import YahooIncomeStatement
 from data_access_layer.portfolio_securities_manager import PortfolioSecuritiesManager
 from data_access_layer.report_securities_manager import ReportSecuritiesManager
+from data_access_layer.securities_calendar_manager import SecuritiesCalendarManager
 from framework.common.logger.message_type import MessageType
 from logic_layer.report_generators.competition_summary_report import CompetitionSummaryReport
 from logic_layer.report_generators.sentence_sentiment_summary_report import SentimentSummaryReport
@@ -27,6 +29,8 @@ class ReportsOrchestationLogic:
         self.report_securities_mgr = ReportSecuritiesManager(ml_reports_conn_str, logger)
 
         self.portfolio_securities_mgr = PortfolioSecuritiesManager(ml_reports_conn_str,logger)
+
+        self.sec_cal_mgr =SecuritiesCalendarManager(ml_reports_conn_str)
 
     '''
     def _run_financial_ratios_report(self, year, report_type="K10", universe=None):
@@ -285,6 +289,27 @@ class ReportsOrchestationLogic:
                 MessageType.INFO
             )
 
+
+
+    def _run_download_securities_calendar(self, year, portfolio):
+        """
+        Download and persist SEC filing calendars for all securities in the given portfolio.
+        """
+        self.logger.do_log(f"[REPORT] Starting SEC calendar download for portfolio={portfolio}, year={year}",
+                           MessageType.INFO)
+
+        securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
+
+
+        for i, sec in enumerate(securities):
+            try:
+                entry = SecuritiesCalendarDownloader.download(sec.ticker, sec.cik, year)
+                self.sec_cal_mgr.upsert_calendar_entry(entry)
+                self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}] ✅ {sec.ticker} saved.", MessageType.INFO)
+            except Exception as e:
+                self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}] ❌ {sec.ticker} failed: {str(e)}",
+                                   MessageType.ERROR)
+
     def _run_fin_viz_news_downloader(self,portfolio,symbol=None):
 
         if portfolio!="SINGLE_STOCKS":
@@ -430,6 +455,8 @@ class ReportsOrchestationLogic:
             self._run_yearly_income_statement(portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_QUARTERLY_INCOME_STATEMENT.value:
             self._run_quarterly_income_statement()
+        elif report_key.lower() == ReportType.DOWNLOAD_SECURITIES_REPORTS_CALENDAR.value:
+            self._run_download_securities_calendar(year,portfolio)
         else:
             self.logger.do_log(f"[REPORT] Report {report_key} not implemented.", MessageType.WARNING)
         '''
