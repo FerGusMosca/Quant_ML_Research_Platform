@@ -1817,39 +1817,91 @@ class AlgosOrchestationLogic:
         vendor = algo_params.get("vendor", "").upper()
         vendor_params = algo_params.get("vendor_params", {})
 
+        print(f"[DOWNLOAD-START] symbol={symbol} vendor={vendor} from={d_from} to={d_to}")
+        print(f"[DOWNLOAD-PARAMS] vendor_params={vendor_params}")
+
+        # ============================================================
+        # TRADINGVIEW
+        # ============================================================
         if vendor == InformationVendors.TRADINGVIEW.value:
+            print(f"[TV] Initializing TradingViewDownloader...")
             downloader = TradingViewDownloader(vendor_params)
+
             df = downloader.download(symbol, from_date=d_from, to_date=d_to)
-            interval_enum=downloader.get_interval_enum_translation()
+            print(f"[TV] DataFrame loaded: {len(df)} rows")
+
+            interval_enum = downloader.get_interval_enum_translation()
 
             for index, row in df.iterrows():
-                date = row.name if "date" not in row else row["date"]  # por si es DataFrame con índice datetime
+                date = row.name if "date" not in row else row["date"]
                 value = row["value"] if "value" in row else row["close"]
-                self.economic_series_mgr.persist_economic_series(symbol, date, interval_enum.value, value)
 
+                ef_symbol = vendor_params.get("output_symbol", symbol)
+
+                print(f"[TV-DOWNLOAD] symbol={symbol} raw_date={date} raw_value={value}")
+                print(f"[TV-PERSIST] saving_as={ef_symbol} interval={interval_enum.value}")
+
+                try:
+                    self.economic_series_mgr.persist_economic_series(
+                        ef_symbol,
+                        date,
+                        interval_enum.value,
+                        value
+                    )
+                except Exception as e:
+                    print(f"[TV-ERROR] Persist failed symbol={ef_symbol} date={date} value={value}")
+                    print(e)
+
+            print(f"[TV-DONE] {symbol} persisted successfully.")
+            return
+
+        # ============================================================
+        # FRED
+        # ============================================================
         elif vendor == InformationVendors.FRED.value:
+            print(f"[FRED] Initializing FredDownloader...")
             downloader = FredDownloader(vendor_params)
+
             df = downloader.download(symbol, from_date=d_from, to_date=d_to)
+            print(f"[FRED] DataFrame loaded: {len(df)} rows")
+
             for index, row in df.iterrows():
                 date = row["date"]
                 value = row["value"]
-                try:
 
-                    print(f"[DEBUG] Persisting FRED row: symbol={symbol}, date={date}, value={value} ({type(value)})")
+                try:
+                    print(f"[FRED-DOWNLOAD] symbol={symbol} raw_date={date} raw_value={value} ({type(value)})")
+
                     if pd.isna(value):
-                        print(f"[WARNING] Skipping NaN value for symbol={symbol} at date={date}")
+                        print(f"[FRED-WARNING] Skipping NaN for symbol={symbol} date={date}")
                         continue
+
                     value = float(value)
-                    self.economic_series_mgr.persist_economic_series(symbol, date, Intervals.DAY.value, value)
+                    ef_symbol = vendor_params.get("output_symbol", symbol)
+
+                    print(f"[FRED-PERSIST] saving_as={ef_symbol} interval=1D value={value}")
+
+                    self.economic_series_mgr.persist_economic_series(
+                        ef_symbol,
+                        date,
+                        Intervals.DAY.value,
+                        value
+                    )
 
                 except Exception as e:
-                    print(f"[ERROR] Failed to persist row for symbol={symbol}, date={date}, value={value}")
+                    print(f"[FRED-ERROR] Failed row symbol={symbol} date={date} value={value}")
                     print(traceback.format_exc())
 
+            print(f"[FRED-DONE] {symbol} persisted successfully.")
+            return
+
+        # ============================================================
+        # UNKNOWN
+        # ============================================================
         else:
             raise Exception(f"❌ Unknown data vendor '{vendor}'. Supported: TRADINGVIEW, FRED")
 
-       #TODO --> Convertir a EconomicValues y persistir
+    #TODO --> Convertir a EconomicValues y persistir
 
     def process_download_byma_interest_rates(self, d_from, d_to, algo_params):
         """

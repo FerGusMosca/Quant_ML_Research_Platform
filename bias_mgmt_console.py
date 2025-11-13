@@ -192,6 +192,7 @@ def process_download_financial_data_bulk(cmd):
 def process_download_financial_data(cmd):
     # Required parameters
     symbol = ParamReader.get_param(cmd, "symbol")
+    output_symbol = ParamReader.get_param(cmd, "output_symbol",True,None)
     d_from = ParamReader.get_param(cmd, "from", True, None)
     d_to = ParamReader.get_param(cmd, "to", True, None)
 
@@ -200,6 +201,8 @@ def process_download_financial_data(cmd):
 
     # Build vendor_params dict from known optional parameters
     vendor_params = {}
+    if output_symbol is not None:
+        vendor_params ["output_symbol"]=output_symbol
 
     if vendor == InformationVendors.FRED.value:
         # No additional inline parameters expected for now
