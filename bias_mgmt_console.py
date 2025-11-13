@@ -70,6 +70,7 @@ def show_commands():
     print("#67-DownloadBCRAInterestRates [from*] [to*]")
     print("#68-DownloadBYMAInterestRates [from*] [to*]")
     print("#69-CreateRatioVariable [numerator] [denominator] [multiplier] [from*] [to*] [output_symbol]")
+    print("#70-CreateAverageVariable [symbol] [output_symbol] [from*] [to*]")
 
     print("==================================================================")
     #TrainNeuralNetworkAlgo
@@ -301,6 +302,19 @@ def process_create_ratio_variable(cmd):
         output_symbol=output_symbol
     )
 
+def process_create_average_variable(cmd):
+    symbols = ParamReader.get_param(cmd, "symbol")               # CSV
+    output_symbol = ParamReader.get_param(cmd, "output_symbol")  # required
+
+    d_from = ParamReader.get_param(cmd, "from", True, None)
+    d_to   = ParamReader.get_param(cmd, "to", True, None)
+
+    process_create_average_variable_logic(
+        symbols=symbols,
+        output_symbol=output_symbol,
+        d_from=d_from,
+        d_to=d_to
+    )
 
 
 def process_create_lightweight_indicator_logic(csv_indicators, d_from, d_to,output_symbol, benchmark=None, plot_result=True):
@@ -1680,6 +1694,35 @@ def process_download_sec_securities_logic():
         print(traceback.format_exc())
         logger.print(f"[SEC] ❌ Critical error downloading SEC securities: {str(e)}", MessageType.ERROR)
 
+def process_create_average_variable_logic(symbols, output_symbol, d_from, d_to):
+    loader = MLSettingsLoader()
+    logger = Logger()
+
+    try:
+        logger.print(f"📊 Starting average variable creation: {symbols}", MessageType.INFO)
+
+        cfg = loader.load_settings("./configs/commands_mgr.ini")
+
+        trd_algos = AlgosOrchestationLogic(
+            cfg["hist_data_conn_str"],
+            cfg["ml_reports_conn_str"],
+            None,
+            logger
+        )
+
+        trd_algos.process_create_average_variable(
+            symbols=symbols,
+            output_symbol=output_symbol,
+            d_from=d_from,
+            d_to=d_to
+        )
+
+        logger.print("✅ Average Variable successfully created", MessageType.INFO)
+
+    except Exception as e:
+        print(traceback.format_exc())
+        logger.print(f"CRITICAL ERROR in process_create_average_variable_logic: {str(e)}", MessageType.ERROR)
+
 
 def process_create_ratio_variable_logic(numerator, denominator, multiplier, d_from, d_to, output_symbol):
     loader = MLSettingsLoader()
@@ -2026,6 +2069,9 @@ def process_commands(cmd):
         process_download_bcra_interest_rates(cmd)
     elif cmd_param_list[0] == "CreateRatioVariable":
         process_create_ratio_variable(cmd)
+    elif cmd_param_list[0] == "CreateAverageVariable":
+        process_create_average_variable(cmd)
+
     elif cmd_param_list[0] == "DownloadBYMAInterestRates":
         process_download_byma_interest_rates(cmd)
 

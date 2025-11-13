@@ -2003,6 +2003,70 @@ class AlgosOrchestationLogic:
         self.logger.print(f"[Orch] Bulk dispatching '{symbol}' to standard download logic", MessageType.INFO)
         self.process_download_financial_data(symbol, d_from, d_to, algo_params)
 
+    def process_create_average_variable(self, symbols, output_symbol, d_from, d_to):
+        print(f"🧩 Building DataFrame for symbols: {symbols}")
+
+        symbols_csv = symbols.replace(" ", "")
+
+        if d_to is None:
+            d_to = datetime.today().date() + timedelta(days=1)
+
+        # Load all series
+        indicators_df = self.data_set_builder.build_interval_series(
+            series_csv=symbols_csv,
+            d_from=d_from,
+            d_to=d_to,
+            interval=DataSetBuilder._1_DAY_INTERVAL,
+            output_col=["symbol", "date", "close"]
+        )
+
+        if indicators_df.empty:
+            raise Exception("❌ No data returned for ANY variable")
+
+        # Pivot wide
+        pivot_df = self.data_set_builder.pivot_and_merge_indicators(indicators_df)
+
+        # --- NEW: Identify close_* columns that actually have data
+        close_cols = [c for c in pivot_df.columns if c.startswith("close_")]
+
+        valid_close_cols = []
+        for c in close_cols:
+            # Column is valid if it has at least one non-null value in the date range
+            if pivot_df[c].notna().any():
+                valid_close_cols.append(c)
+            else:
+                print(f"⚠️ Ignoring column with no data in range: {c}")
+
+        if len(valid_close_cols) == 0:
+            raise Exception("❌ No valid close_* columns have data in the selected period")
+
+        # --- NEW: Drop columns that have no data
+        pivot_df = pivot_df[["date"] + valid_close_cols]
+
+        # --- NEW: Fill missing values ONLY for valid columns
+        pivot_df = pivot_df.sort_values("date")
+        pivot_df[valid_close_cols] = pivot_df[valid_close_cols].ffill().bfill()
+
+        # Drop rows that are still fully NA (rare)
+        pivot_df.dropna(subset=valid_close_cols, how="all", inplace=True)
+
+        # Compute average of valid columns
+        pivot_df[output_symbol] = pivot_df[valid_close_cols].mean(axis=1)
+
+        # Persist
+        for _, row in pivot_df.iterrows():
+            date = row["date"]
+            val = row[output_symbol]
+
+            self.economic_series_mgr.persist_economic_series(
+                output_symbol,
+                date if isinstance(date, datetime) else pd.to_datetime(date),
+                Intervals.DAY.value,
+                val
+            )
+
+        print(f"✅ Persisted {len(pivot_df)} values for {output_symbol}")
+
     def process_create_ratio_variable(self, numerator, denominator, multiplier, d_from, d_to, output_symbol):
         print(f"🧩 Building DataFrame with indicators: {numerator}, {denominator}")
 
