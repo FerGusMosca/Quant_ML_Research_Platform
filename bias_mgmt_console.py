@@ -69,6 +69,8 @@ def show_commands():
     print("#66-RunReport [report*] [year*]")
     print("#67-DownloadBCRAInterestRates [from*] [to*]")
     print("#68-DownloadBYMAInterestRates [from*] [to*]")
+    print("#69-CreateRatioVariable [numerator] [denominator] [multiplier] [from*] [to*] [output_symbol]")
+
     print("==================================================================")
     #TrainNeuralNetworkAlgo
     print("#n-Exit")
@@ -276,6 +278,29 @@ def process_create_spread_variable_bulk(cmd):
 
     # Paso a lógica como en el comando anterior
     process_create_spread_variable_bulk_logic(diff_indicators, output_symbols, d_from)
+
+
+def process_create_ratio_variable(cmd):
+    # Required
+    numerator = ParamReader.get_param(cmd, "numerator")
+    denominator = ParamReader.get_param(cmd, "denominator")
+    multiplier = float(ParamReader.get_param(cmd, "multiplier", True, 1))
+    output_symbol = ParamReader.get_param(cmd, "output_symbol", True, "LIGHTWEIGHT_INDICATOR")
+
+    # Optional
+    d_from = ParamReader.get_param(cmd, "from", True, None)
+    d_to = ParamReader.get_param(cmd, "to", True, None)
+
+    # Run core logic
+    process_create_ratio_variable_logic(
+        numerator=numerator,
+        denominator=denominator,
+        multiplier=multiplier,
+        d_from=d_from,
+        d_to=d_to,
+        output_symbol=output_symbol
+    )
+
 
 
 def process_create_lightweight_indicator_logic(csv_indicators, d_from, d_to,output_symbol, benchmark=None, plot_result=True):
@@ -1656,6 +1681,38 @@ def process_download_sec_securities_logic():
         logger.print(f"[SEC] ❌ Critical error downloading SEC securities: {str(e)}", MessageType.ERROR)
 
 
+def process_create_ratio_variable_logic(numerator, denominator, multiplier, d_from, d_to, output_symbol):
+    loader = MLSettingsLoader()
+    logger = Logger()
+
+    try:
+        logger.print(f"🧮 Starting ratio variable creation: {numerator}/{denominator} * {multiplier}", MessageType.INFO)
+
+        config_settings = loader.load_settings("./configs/commands_mgr.ini")
+
+        trd_algos = AlgosOrchestationLogic(
+            config_settings["hist_data_conn_str"],
+            config_settings["ml_reports_conn_str"],
+            None,
+            logger
+        )
+
+        trd_algos.process_create_ratio_variable(
+            numerator=numerator,
+            denominator=denominator,
+            multiplier=multiplier,
+            d_from=d_from,
+            d_to=d_to,
+            output_symbol=output_symbol
+        )
+
+        logger.print("✅ Ratio Variable successfully created and persisted", MessageType.INFO)
+
+    except Exception as e:
+        print(traceback.format_exc())
+        logger.print(f"CRITICAL ERROR running process_create_ratio_variable_logic: {str(e)}", MessageType.ERROR)
+
+
 def process_create_spread_variable_bulk_logic(diff_indicators, output_symbols, d_from, d_to=None):
     logger = Logger()
 
@@ -1967,7 +2024,8 @@ def process_commands(cmd):
         process_run_report(cmd)
     elif cmd_param_list[0] == "DownloadBCRAInterestRates":
         process_download_bcra_interest_rates(cmd)
-
+    elif cmd_param_list[0] == "CreateRatioVariable":
+        process_create_ratio_variable(cmd)
     elif cmd_param_list[0] == "DownloadBYMAInterestRates":
         process_download_byma_interest_rates(cmd)
 

@@ -2003,6 +2003,55 @@ class AlgosOrchestationLogic:
         self.logger.print(f"[Orch] Bulk dispatching '{symbol}' to standard download logic", MessageType.INFO)
         self.process_download_financial_data(symbol, d_from, d_to, algo_params)
 
+    def process_create_ratio_variable(self, numerator, denominator, multiplier, d_from, d_to, output_symbol):
+        print(f"🧩 Building DataFrame with indicators: {numerator}, {denominator}")
+
+        # Build CSV list
+        variables_csv = f"{numerator},{denominator}"
+
+        if d_to is None:
+            d_to = datetime.today().date() + timedelta(days=1)
+
+        # Load the two series
+        indicators_series_df = self.data_set_builder.build_interval_series(
+            series_csv=variables_csv,
+            d_from=d_from,
+            d_to=d_to,
+            interval=DataSetBuilder._1_DAY_INTERVAL,
+            output_col=["symbol", "date", "close"]
+        )
+
+        if indicators_series_df.empty:
+            raise Exception("❌ No data returned for numerator/denominator")
+
+        # Pivot to wide format
+        pivot_df = self.data_set_builder.pivot_and_merge_indicators(indicators_series_df)
+        pivot_df = DataframeFiller.fill_missing_values(pivot_df)
+        pivot_df.dropna(inplace=True)
+
+        # Columns become: close_X, close_Y
+        num_col = f"close_{numerator}"
+        den_col = f"close_{denominator}"
+
+        if den_col not in pivot_df or num_col not in pivot_df:
+            raise Exception("❌ Missing numerator or denominator close columns")
+
+        pivot_df[output_symbol] = (pivot_df[num_col] / pivot_df[den_col]) * multiplier
+
+        # Persist
+        for _, row in pivot_df.iterrows():
+            date = row["date"]
+            value = row[output_symbol]
+
+            self.economic_series_mgr.persist_economic_series(
+                output_symbol,
+                date if isinstance(date, datetime) else pd.to_datetime(date),
+                Intervals.DAY.value,
+                value
+            )
+
+        print(f"✅ Persisted {len(pivot_df)} ratio values for {output_symbol}")
+
     def process_create_spread_varaible(self, diff_indicators, d_from, d_to,output_symbol):
         print(f"🧩 Building DataFrame with indicators: {diff_indicators}")
 
