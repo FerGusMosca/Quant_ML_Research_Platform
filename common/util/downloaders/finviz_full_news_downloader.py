@@ -23,7 +23,17 @@ class FinVizFullNewsDownloader:
     def download(symbol, portfolio, pause=1.0):
         today = datetime.today().strftime("%Y-%m-%d")
         year = datetime.today().year
-        base_output = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/Finviz/full_news/{symbol}/"
+        timestamp = datetime.now().strftime("%H-%M-%S-%f")
+
+        base_output = os.path.normpath(
+            os.path.join(
+                Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                portfolio,
+                "Finviz",
+                "full_news",
+                f"{symbol}_{timestamp}"
+            )
+        )
         output_dir = os.path.join(base_output, str(year))
         os.makedirs(output_dir, exist_ok=True)
 
@@ -97,11 +107,14 @@ class FinVizFullNewsDownloader:
 
         # === Save JSON ===
         now_ts = datetime.now().strftime("%H-%M-%S")
-        out_path = os.path.join(output_dir, f"{symbol}_{today}_{now_ts}_full_news.json")
+        out_path = os.path.normpath(
+            os.path.join(output_dir, f"{symbol}_{today}_{now_ts}_full_news.json")
+        )
         with open(out_path, "w", encoding="utf-8") as f:
             json.dump({"symbol": symbol, "date": today, "articles": articles}, f, indent=2, ensure_ascii=False)
 
         print(f"[FinVizFullNewsDownloader][INFO] ✅ Saved {len(articles)} items -> {out_path}")
+
         return out_path
 
     # === Helper: normalize link ===
