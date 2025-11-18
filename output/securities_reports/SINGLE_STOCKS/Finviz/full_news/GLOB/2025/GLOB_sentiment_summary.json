@@ -1,31 +1,32 @@
 {
   "symbol": "GLOB",
-  "date": "2025-10-05",
-  "avg_sentiment": 0.6,
-  "sentiment_stdev": 1.04,
+  "date": "2025-11-15",
+  "avg_sentiment": 0.67,
+  "sentiment_stdev": 1.13,
   "distribution": {
-    "0": 49,
-    "2": 14,
-    "-1": 7,
-    "1": 23,
-    "3": 6,
+    "0": 45,
+    "1": 25,
+    "-1": 8,
+    "3": 8,
+    "4": 1,
+    "2": 12,
     "-2": 1
   },
   "high_sentiment_news": [
     {
-      "title": "Globant Q2 Earnings & Revenues Beat Estimates, Stock Down\n\n\n(Zacks)",
-      "score": 3,
-      "link": "https://finviz.com/news/143415/globant-q2-earnings-revenues-beat-estimates-stock-down"
+      "title": "Globant Launches GEAI 2.3 to Integrate Agentic Commerce Protocol\n\n\n(Zacks)",
+      "score": 4,
+      "link": "https://finviz.com/news/187002/globant-launches-geai-23-to-integrate-agentic-commerce-protocol"
     },
     {
-      "title": "Globant Gears Up for Q2 Earnings: What's in the Offing?\n\n\n(Zacks)",
+      "title": "BitFuFu to Report Q3 Earnings: What's in Store for the Stock?\n\n\n(Zacks) +5.26%",
       "score": 3,
-      "link": "https://finviz.com/news/136938/globant-gears-up-for-q2-earnings-whats-in-the-offing"
+      "link": "https://finviz.com/news/225103/bitfufu-to-report-q3-earnings-whats-in-store-for-the-stock"
     },
     {
-      "title": "The Zacks Analyst Blog Highlights Globant, NICE, Affirm Holdings and Bill\n\n\n(Zacks)",
+      "title": "Red Violet, Inc. (RDVT) Tops Q3 Earnings and Revenue Estimates\n\n\n(Zacks)",
       "score": 3,
-      "link": "https://finviz.com/news/135368/the-zacks-analyst-blog-highlights-globant-nice-affirm-holdings-and-bill"
+      "link": "https://finviz.com/news/220074/red-violet-inc-rdvt-tops-q3-earnings-and-revenue-estimates"
     }
   ],
   "low_sentiment_news": [
@@ -35,14 +36,14 @@
       "link": "https://finviz.com/news/56687/marchex-mchx-reports-q1-loss-misses-revenue-estimates"
     },
     {
-      "title": "Globant unveils new $125 million share repurchase program\n\n\n(PR Newswire)",
+      "title": "3 Beaten-Down Stocks With Rebound Potential This Earnings Season\n\n\n(MarketBeat)",
       "score": -1,
-      "link": "https://finviz.com/news/181459/globant-unveils-new-125-million-share-repurchase-program"
+      "link": "https://finviz.com/news/227184/3-beaten-down-stocks-with-rebound-potential-this-earnings-season"
     },
     {
-      "title": "Globant SA (GLOB) Fell as Clients Postponed IT and Digital Transformation Projects\n\n\n(Insider Monkey)",
+      "title": "Gen Zs credit scores just suffered the biggest drop of any generation in yearsstudent loans, rent and doom spending are to blame\n\n\n(Fortune)",
       "score": -1,
-      "link": "https://finviz.com/news/173276/globant-sa-glob-fell-as-clients-postponed-it-and-digital-transformation-projects"
+      "link": "https://finance.yahoo.com/news/gen-z-credit-scores-having-144611464.html"
     }
   ]
 }

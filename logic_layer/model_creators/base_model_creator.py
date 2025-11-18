@@ -216,7 +216,7 @@ class BaseModelCreator:
         except Exception as e:
             raise Exception(f"Failed to load model from {model_path}: {e}")
 
-    def __make_stationary_with_memory__(self, df, state=None):
+    def __make_stationary_with_memory__(self, df, state=None,model_file_name=None):
         """
         Make the time series stationary by differencing, using the list of columns
         previously identified as non-stationary (from differenced_columns.csv).
@@ -230,7 +230,11 @@ class BaseModelCreator:
         tuple: (stationary DataFrame, updated state)
         """
         # Load the list of columns that need differencing
-        output_path = os.path.join(_MODELS_PATH, 'differenced_columns.csv')
+
+        path= 'differenced_columns.csv' if model_file_name is None \
+                                        else f"differenced_columns_{self._get_model_base_name(model_file_name)}.csv"
+
+        output_path = os.path.join(_MODELS_PATH, path)
         if not os.path.exists(output_path):
             raise FileNotFoundError(
                 f"Expected differenced_columns.csv at {output_path}. Run __make_stationary__ first.")
@@ -258,9 +262,17 @@ class BaseModelCreator:
 
         return df, new_state
 
+    def _get_model_base_name(self,model_output: str) -> str:
+        """
+        From full path like:
+        "output/xgb_model_XLK_2010_2024_all_rates_5_test.pkl"
+        returns:
+        "xgb_model_XLK_2010_2024_all_rates_5_test"
+        """
+        return Path(model_output).stem
 
     # Function to make all numeric variables in the dataframe stationary
-    def __make_stationary__(self, df):
+    def __make_stationary__(self, df,model_file_name=None):
         """
         Make the time series stationary by differencing if necessary, based on the ADF test.
         Save the list of columns that were differenced to a CSV file.
@@ -303,7 +315,11 @@ class BaseModelCreator:
         # Save the list of differenced columns to a CSV file
         if differenced_columns:
             differenced_df = pd.DataFrame({'differenced_columns': differenced_columns})
-            output_path = os.path.join(_MODELS_PATH, 'differenced_columns.csv')
+            #_get_model_base_name
+            path='differenced_columns.csv' if model_file_name is None \
+                                          else f"differenced_columns_{self._get_model_base_name(model_file_name)}.csv"
+
+            output_path = os.path.join(_MODELS_PATH, path)
             differenced_df.to_csv(output_path, index=False)
             print(f"Differenced columns saved to {output_path}")
 

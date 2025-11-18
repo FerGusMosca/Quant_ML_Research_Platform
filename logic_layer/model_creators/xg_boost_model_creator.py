@@ -22,7 +22,8 @@ class XGBoostModelCreator(BaseModelCreator):
                                          feature_cols: list,
                                          symbol: str,
                                          make_stationary: bool = True,
-                                         state: dict | None = None) -> tuple[pd.DataFrame, dict | None]:
+                                         state: dict | None = None,
+                                         model_file_name=None) -> tuple[pd.DataFrame, dict | None]:
         """
         Prepare features for inference so they exactly match the training feature set.
 
@@ -47,7 +48,7 @@ class XGBoostModelCreator(BaseModelCreator):
         updated_state = state
         if make_stationary:
             # Use your differencing method; it mutates and returns (df, state)
-            df, updated_state = self.__make_stationary_with_memory__(df, state=state)
+            df, updated_state = self.__make_stationary_with_memory__(df, state=state,model_file_name=model_file_name)
 
         # 2) Harmonize OHLC names (if training expected suffixed or unsuffixed)
         base_ohlc = ["open", "high", "low", "close"]
@@ -124,7 +125,7 @@ class XGBoostModelCreator(BaseModelCreator):
         """
         training_series_df = DataframeFiller.fill_missing_values(training_series_df)
         if make_stationary:
-            training_series_df = self.__make_stationary__(training_series_df)
+            training_series_df = self.__make_stationary__(training_series_df,model_output)
 
         self.__preformat_training_set__(training_series_df)
 
@@ -197,6 +198,7 @@ class XGBoostModelCreator(BaseModelCreator):
             symbol=symbol,
             make_stationary=make_stationary,
             state=None,
+            model_file_name=model_filename
         )
 
         merged_df = pd.merge(

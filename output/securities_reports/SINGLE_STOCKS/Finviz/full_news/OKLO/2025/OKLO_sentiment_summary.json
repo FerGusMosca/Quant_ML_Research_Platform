@@ -1,51 +1,48 @@
 {
   "symbol": "OKLO",
-  "date": "2025-10-21",
-  "avg_sentiment": 0.65,
-  "sentiment_stdev": 1.61,
+  "date": "2025-11-15",
+  "avg_sentiment": 0.25,
+  "sentiment_stdev": 1.03,
   "distribution": {
-    "0": 38,
-    "2": 8,
-    "-1": 11,
-    "3": 5,
-    "-2": 4,
-    "1": 24,
-    "4": 5,
-    "5": 3,
-    "-3": 2
+    "-1": 19,
+    "0": 44,
+    "1": 26,
+    "2": 9,
+    "4": 1,
+    "-4": 1
   },
   "high_sentiment_news": [
     {
-      "title": "Best AI Stocks to Buy in Q4: GE Vernova and Energy Stocks?\n\n\n(Zacks)  +8.79%",
-      "score": 5,
-      "link": "https://finviz.com/news/185139/best-ai-stocks-to-buy-in-q4-ge-vernova-and-energy-stocks"
+      "title": "3 Alternative Energy ETFs That Are Crushing the Market This Year\n\n\n(MarketBeat)",
+      "score": 4,
+      "link": "https://finviz.com/news/224320/3-alternative-energy-etfs-that-are-crushing-the-market-this-year"
     },
     {
-      "title": "3 Best Performing Stocks in 2025 (OKLO, IREN, NBIS)\n\n\n(Zacks)",
-      "score": 5,
-      "link": "https://finviz.com/news/183470/3-best-performing-stocks-in-2025-oklo-iren-nbis"
+      "title": "This ETF Has Crushed the Dow Jones and S&P 500 in 2025. Here's How It Can Keep Winning in 2026.\n\n\n(Motley Fool)",
+      "score": 2,
+      "link": "https://finviz.com/news/230202/this-etf-has-crushed-the-dow-jones-and-sp-500-in-2025-heres-how-it-can-keep-winning-in-2026"
     },
     {
-      "title": "October's Top 5 Stocks Poised for Big Breakouts\n\n\n(MarketBeat)",
-      "score": 5,
-      "link": "https://finviz.com/news/180632/octobers-top-5-stocks-poised-for-big-breakouts"
+      "title": "Better Nuclear Energy Stock: Cameco vs. Oklo\n\n\n(Motley Fool)",
+      "score": 2,
+      "link": "https://finviz.com/news/229731/better-nuclear-energy-stock-cameco-vs-oklo"
     }
   ],
   "low_sentiment_news": [
     {
-      "title": "NRC accelerates Oklo reactor review as Wall Street turns cautious\n\n\n(Investing.com)",
-      "score": -3,
-      "link": "https://finance.yahoo.com/news/nrc-accelerates-oklo-reactor-review-144609198.html"
+      "title": "Bear of the Day: Oklo (OKLO)\n\n\n(Zacks)",
+      "score": -4,
+      "link": "https://finviz.com/news/208670/bear-of-the-day-oklo-oklo"
     },
     {
-      "title": "Why Is Oklo Stock Dipping Right Now?\n\n\n(Motley Fool)",
-      "score": -3,
-      "link": "https://finviz.com/news/177991/why-is-oklo-stock-dipping-right-now"
+      "title": "\"Great Opportunity To Sell,\" Says Jim Cramer About Oklo (OKLO)\n\n\n(Insider Monkey)",
+      "score": -1,
+      "link": "https://finviz.com/news/230814/great-opportunity-to-sell-says-jim-cramer-about-oklo-oklo"
     },
     {
-      "title": "What's the Better Nuclear Energy Stock: NuScale Power or Oklo?\n\n\n(Motley Fool)",
-      "score": -2,
-      "link": "https://finviz.com/news/197350/whats-the-better-nuclear-energy-stock-nuscale-power-or-oklo"
+      "title": "Earnings live: Applied Materials stock falls, Trump brothers' American Bitcoin revenue doubles\n\n\n(Yahoo Finance)",
+      "score": -1,
+      "link": "https://finance.yahoo.com/news/live/earnings-live-applied-materials-stock-falls-trump-brothers-american-bitcoin-revenue-doubles-135356821.html"
     }
   ]
 }
