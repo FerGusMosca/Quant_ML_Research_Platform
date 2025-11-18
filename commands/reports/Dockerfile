@@ -15,6 +15,14 @@ RUN apt-get update && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # ------------------------------------------------------
+# Install Chromium + ChromeDriver (for Selenium fallback)
+# ------------------------------------------------------
+RUN apt-get update && \
+    apt-get install -y chromium chromium-driver && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+
+# ------------------------------------------------------
 # Install dependencies
 # ------------------------------------------------------
 COPY ./commands/reports/requirements.txt ./requirements.txt
