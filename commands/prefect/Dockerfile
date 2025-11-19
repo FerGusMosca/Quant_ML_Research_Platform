@@ -2,11 +2,11 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-# Install Prefect
-COPY requirements.txt .
+COPY commands/prefect/requirements.txt ./requirements.txt
+
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Prefect UI + API runs on 4200
-EXPOSE 4200
+COPY commands/prefect /app
+COPY flows /app/flows
 
 CMD ["prefect", "server", "start"]
