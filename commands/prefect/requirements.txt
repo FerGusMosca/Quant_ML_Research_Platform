@@ -1,1 +1,2 @@
-prefect
+prefect==2.16.6
+python-dotenv
