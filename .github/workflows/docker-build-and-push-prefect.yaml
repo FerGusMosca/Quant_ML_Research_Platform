@@ -27,6 +27,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./prefect/Dockerfile
+          file: ./commands/prefect/Dockerfile
           push: true
           tags: alienzimzum/zz-prefect:latest
