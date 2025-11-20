@@ -212,9 +212,10 @@ def process_download_financial_data(cmd):
         pass
 
     elif vendor == InformationVendors.TRADINGVIEW.value:
+
         for key in ["session", "token", "username", "password", "interval", "exchange"]:
             val = ParamReader.get_param(cmd, key, True, None)
-            if key is "exchange" and val is not None:
+            if key == "exchange" and val is not None:
                 val=val.replace("_"," ")
 
             if val is not None:
@@ -621,7 +622,7 @@ def process_train_XGBoost(symbol, series_csv, d_from, d_to, model_output, classi
                           n_estimators, max_depth, learning_rate, subsample, colsample_bytree,
                           grouping_unit=None, grouping_classif_criteria=None,
                           group_as_mov_avg=False, grouping_mov_avg_unit=100,
-                          interval=None, make_stationary=False, class_weight=None):
+                          interval=None, make_stationary=False, class_weight=None,register_model=None):
     loader = MLSettingsLoader()
     logger = Logger()
 
@@ -651,7 +652,8 @@ def process_train_XGBoost(symbol, series_csv, d_from, d_to, model_output, classi
                                       group_as_mov_avg=bool(group_as_mov_avg),
                                       grouping_mov_avg_unit=int(grouping_mov_avg_unit),
                                       make_stationary=make_stationary,
-                                      class_weight=None if class_weight is None or str(class_weight).lower() == "none" else class_weight)
+                                      class_weight=None if class_weight is None or str(class_weight).lower() == "none" else class_weight,
+                                      register_model=register_model)
 
         logger.print(f"XGBoost model successfully trained for symbol {symbol} and variables {series_csv}", MessageType.INFO)
 
@@ -728,6 +730,9 @@ def process_train_XGBoost_cmd(cmd, cmd_param_list):
     grouping_mov_avg_unit = ParamReader.get_param(cmd, "grouping_mov_avg_unit", True, def_value=100)
     make_stationary = ParamReader.get_bool_param(cmd, "make_stationary", True, def_value=False)
 
+    #MFLow
+    register_model = ParamReader.get_param(cmd, "register_model", True, def_value=None)
+
     # Call processing method with parsed params
     process_train_XGBoost(symbol=symbol,
                           series_csv=series_csv,
@@ -746,7 +751,8 @@ def process_train_XGBoost_cmd(cmd, cmd_param_list):
                           group_as_mov_avg=group_as_mov_avg,
                           grouping_mov_avg_unit=grouping_mov_avg_unit,
                           class_weight=class_weight,
-                          make_stationary=make_stationary)
+                          make_stationary=make_stationary,
+                          register_model=register_model)
 
     print("Train XGBoost successfully finished...")
 

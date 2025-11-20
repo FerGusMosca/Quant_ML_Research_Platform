@@ -11,7 +11,11 @@ from joblib import load
 from sklearn.ensemble import RandomForestClassifier
 from typing import Tuple, Union
 from common.util.logging.light_logger import LightLogger
-import xgboost as xgb; print(xgb.__version__)
+import xgboost as xgb;
+
+from common.util.ml_flow.ml_flow_register import MLflowModelRegistrar
+
+print(xgb.__version__)
 _OUTPUT_DATE_FORMAT = '%m/%d/%Y %H:%M:%S'
 _OUTPUT_PATH = "./output/"
 _MODELS_PATH = "./models/"
@@ -142,18 +146,46 @@ class BaseModelCreator:
         """
         test_series_df.dropna(inplace=True)
 
+    # -----------------------------------------------------
+    # Private helper to register model in MLflow
+    # -----------------------------------------------------
+    def __register_xgb_model_in_mlflow__(self, model_output, scaler, label_encoder, register_model):
+        """
+        Internal MLflow registration helper.
+        """
+        if not register_model:
+            return
+
+
+        register = MLflowModelRegistrar()
+
+        booster_path = f"{Path(model_output).with_suffix('')}_booster.json"
+
+        register.register_model(
+            model_output=model_output,
+            booster_path=booster_path,
+            scaler=scaler,
+            label_encoder=label_encoder,
+            register_model=register_model
+        )
+
     def __save_xgb_model_bundle__(self, model, feature_cols, label_encoder, scaler, model_output):
         """
-        Persist a raw XGBoost Booster and minimal metadata (no calibrator).
+        Persist booster, bundle, and also the original .pkl model_output.
         """
-        base = Path(model_output).with_suffix('')
+        model_output = Path(model_output)
+
+        # 1) Base path WITHOUT extension
+        base = model_output.with_suffix('')
+
         booster_path = f"{base}_booster.json"
         bundle_path = f"{base}_bundle.pkl"
+        original_pkl_path = str(model_output)  # keep full original path
 
-        # Save booster
+        # --- Save booster ---
         model.get_booster().save_model(booster_path)
 
-        # Save metadata
+        # --- Save metadata bundle ---
         bundle = {
             "xgb_params": model.get_xgb_params(),
             "feature_cols": list(feature_cols),
@@ -162,7 +194,11 @@ class BaseModelCreator:
         }
         joblib.dump(bundle, bundle_path)
 
-        return booster_path, bundle_path
+        # --- Save original raw model as pickle ---
+        # (this is the missing file your pipeline expects)
+        joblib.dump(model, original_pkl_path)
+
+        return booster_path, bundle_path, original_pkl_path
 
     def __load_xgb_model_bundle__(self, model_filename):
         """

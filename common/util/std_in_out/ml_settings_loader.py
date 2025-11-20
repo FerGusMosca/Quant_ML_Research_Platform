@@ -27,6 +27,7 @@ class MLSettingsLoader():
             config_settings["OUTPUT_RF_FOLDER"] = config['FOLDERS']['OUTPUT_RF_FOLDER']
             config_settings["OUTPUT_SECURITIES_REPORTS_FOLDER"] = config['FOLDERS']['OUTPUT_SECURITIES_REPORTS_FOLDER']
             config_settings["UI_PORT"] = config['UI']['UI_PORT']
+            config_settings["MLFLOW_TRACKING_URI"] = config['ML_FLOW']['MLFLOW_TRACKING_URI']
 
 
             return  config_settings

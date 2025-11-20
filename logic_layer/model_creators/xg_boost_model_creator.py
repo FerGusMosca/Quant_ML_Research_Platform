@@ -118,6 +118,7 @@ class XGBoostModelCreator(BaseModelCreator):
             colsample_bytree=1.0,
             make_stationary=False,
             class_weight=None,
+            register_model=None
     ):
         """
         Train a raw XGBoost (multi:softprob) model for daily scalping.  Probabilities are NOT calibrated.
@@ -167,6 +168,8 @@ class XGBoostModelCreator(BaseModelCreator):
             scaler,
             model_output
         )
+
+        self.__register_xgb_model_in_mlflow__(model_output, scaler, label_encoder, register_model)
 
         return label_encoder
 

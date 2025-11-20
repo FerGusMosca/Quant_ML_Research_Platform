@@ -1446,7 +1446,7 @@ class AlgosOrchestationLogic:
                               interval=DataSetBuilder._1_MIN_INTERVAL,
                               grouping_unit=None, grouping_classif_criteria=None,
                               group_as_mov_avg=False, grouping_mov_avg_unit=20,
-                              make_stationary=False, class_weight=None):
+                              make_stationary=False, class_weight=None,register_model=None):
         try:
             # Retrieve classification ranges based on interval
             range_clasifs = None
@@ -1518,7 +1518,8 @@ class AlgosOrchestationLogic:
                 subsample=subsample,
                 colsample_bytree=colsample_bytree,
                 make_stationary=make_stationary,
-                class_weight=class_weight
+                class_weight=class_weight,
+                register_model=register_model
             )
 
             return label_encoder
