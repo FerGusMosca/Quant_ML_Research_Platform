@@ -24,6 +24,7 @@ class Logger:
         loader = MLSettingsLoader()
         config_settings = loader.load_settings("./configs/commands_mgr.ini")
         self.loki_url = config_settings.get("LOKI_URL")
+        self.grafana_on=config_settings.get("GRAFANA_ON")
 
         # --- NEW: Loki logger ---
         self.loki = LokiLogger(
@@ -54,7 +55,8 @@ class Logger:
     def print(self, msg, msg_type):
 
         # --- NEW: Push to Loki ---
-        #self.loki.push(msg_type.name, msg)
+        if self.grafana_on:
+            self.loki.push(msg_type.name, msg)
 
         if msg_type == MessageType.CRITICAL:
             self.logger.critical(msg)

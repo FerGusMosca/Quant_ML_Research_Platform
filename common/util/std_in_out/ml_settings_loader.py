@@ -29,6 +29,7 @@ class MLSettingsLoader():
             config_settings["UI_PORT"] = config['UI']['UI_PORT']
             config_settings["MLFLOW_TRACKING_URI"] = config['ML_FLOW']['MLFLOW_TRACKING_URI']
             config_settings["LOKI_URL"] = config['GRAFANA']['LOKI_URL']
+            config_settings["GRAFANA_ON"] = config['GRAFANA']['GRAFANA_ON']=="True"
 
 
             return  config_settings
