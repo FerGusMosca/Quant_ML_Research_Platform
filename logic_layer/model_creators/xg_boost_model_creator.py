@@ -169,7 +169,7 @@ class XGBoostModelCreator(BaseModelCreator):
             model_output
         )
 
-        self.__register_xgb_model_in_mlflow__(model_output, scaler, label_encoder, register_model)
+        self.__register_xgb_model_in_mlflow__(model_output, scaler, label_encoder, register_model,model)
 
         return label_encoder
 

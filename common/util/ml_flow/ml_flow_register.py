@@ -76,16 +76,28 @@ class MLflowModelRegistrar:
     # ---------------------------------------------------------
     # Create or reuse an MLflow experiment
     # ---------------------------------------------------------
-    def start_experiment(self, symbol: str, start: str, end: str):
+    def start_experiment(self, algo: str, symbol: str, start: str, end: str):
         """
-        Creates or selects an MLflow experiment.
+        Create or reuse an MLflow experiment.
+        If the experiment exists in 'deleted' stage, restore it.
+        All comments MUST be in English.
+        """
+        from mlflow.tracking import MlflowClient
 
-        Experiment name example:
-            XGB_XLK_2010_2018
-        """
-        experiment_name = f"XGB_{symbol}_{start}_{end}"
+        experiment_name = f"{algo}_{symbol}_{start}_{end}"
+        client = MlflowClient()
+
+        # Try to locate experiment by name
+        exp = client.get_experiment_by_name(experiment_name)
+
+        # If exists but deleted → restore
+        if exp is not None and exp.lifecycle_stage == "deleted":
+            client.restore_experiment(exp.experiment_id)
+
+        # Now safe to set experiment (creates if missing)
         mlflow.set_experiment(experiment_name)
         return experiment_name
+
 
     # ---------------------------------------------------------
     # Start a run inside the experiment
@@ -107,43 +119,46 @@ class MLflowModelRegistrar:
         label_encoder
     ):
         """
-        Logs all artifacts:
-            - pkl model
-            - booster.json
-            - scaler.pkl
-            - label_encoder.pkl
+        Logs all artifacts in the SAME directory as model_output.
+        All comments MUST be in English.
         """
+        output_dir = Path(model_output).parent
+        base_name = Path(model_output).stem
+
         # Log raw model (.pkl)
         mlflow.log_artifact(model_output)
 
-        # Log booster
+        # Log booster.json
         if os.path.exists(booster_path):
             mlflow.log_artifact(booster_path)
 
-        # Save and log scaler
+        # Save + log scaler into models/
         if scaler is not None:
-            scaler_path = f"{Path(model_output).stem}_scaler.pkl"
+            scaler_path = output_dir / f"{base_name}_scaler.pkl"
             import joblib
             joblib.dump(scaler, scaler_path)
-            mlflow.log_artifact(scaler_path)
+            mlflow.log_artifact(str(scaler_path))
 
-        # Save and log label encoder
+        # Save + log label encoder into models/
         if label_encoder is not None:
-            label_path = f"{Path(model_output).stem}_label_encoder.pkl"
+            label_path = output_dir / f"{base_name}_label_encoder.pkl"
             import joblib
             joblib.dump(label_encoder, label_path)
-            mlflow.log_artifact(label_path)
+            mlflow.log_artifact(str(label_path))
+
 
     # ---------------------------------------------------------
     # Full registration process (called from training)
     # ---------------------------------------------------------
     def register_model(
         self,
+        algo: str,
         model_output: str,
         booster_path: str,
         scaler,
         label_encoder,
-        register_model: bool
+        register_model: bool,
+        model=None
     ):
         """
         Top-level call:
@@ -158,10 +173,17 @@ class MLflowModelRegistrar:
             return
 
         parsed = self.parse_model_filename(model_output)
-        experiment_name = self.start_experiment(parsed["symbol"], parsed["start"], parsed["end"])
+        experiment_name = self.start_experiment(algo,parsed["symbol"], parsed["start"], parsed["end"])
         run_name = parsed["model_version"]
 
         with self.start_run(run_name):
+            # Do NOT auto-register the model
+            mlflow.sklearn.log_model(
+                sk_model=model,
+                artifact_path="model"
+            )
+
+            # Log artifacts
             self.log_artifacts(
                 model_output=model_output,
                 booster_path=booster_path,

@@ -2,7 +2,11 @@ from logging.handlers import TimedRotatingFileHandler
 import configparser
 import logging
 import os
+
+from common.util.logging.loki_logger import LokiLogger
+from common.util.std_in_out.ml_settings_loader import MLSettingsLoader
 from framework.common.logger.message_type import MessageType
+
 
 class Logger:
 
@@ -10,16 +14,24 @@ class Logger:
         self.logger = logging.getLogger("ml_research")
         self.config = configparser.ConfigParser()
         self.config.read("configs/logger.ini")
+
         self.level = int(self.config['DEFAULT']['level'])
         self.log_dir = self.config['DEFAULT']['log_dir']
         self.when_to_rotate = self.config['DEFAULT']['when_to_rotate']
         self.backup_count = int(self.config['DEFAULT']['backup_count'])
         self.log_file_name = self.config['DEFAULT']['log_file_name']
 
-    def use_timed_rotating_file_handler(self):
-        """
+        loader = MLSettingsLoader()
+        config_settings = loader.load_settings("./configs/commands_mgr.ini")
+        self.loki_url = config_settings.get("LOKI_URL")
 
-        """
+        # --- NEW: Loki logger ---
+        self.loki = LokiLogger(
+            loki_url=self.loki_url,
+            app_name="ml_research"
+        )
+
+    def use_timed_rotating_file_handler(self):
         if self.level is None:
             self.level = logging.INFO
 
@@ -36,15 +48,14 @@ class Logger:
         for handler in [console_handler, file_handler]:
             handler.setFormatter(main_formatter)
             self.logger.addHandler(handler)
+
         self.logger.setLevel(self.level)
 
     def print(self, msg, msg_type):
-        """
 
-        Args:
-            msg ():
-            msg_type ():
-        """
+        # --- NEW: Push to Loki ---
+        #self.loki.push(msg_type.name, msg)
+
         if msg_type == MessageType.CRITICAL:
             self.logger.critical(msg)
         if msg_type == MessageType.ERROR:
@@ -58,4 +69,4 @@ class Logger:
 
     def do_log(self, msg, msg_type):
         print(msg)
-        self.print(msg,msg_type)
+        self.print(msg, msg_type)

@@ -149,7 +149,7 @@ class BaseModelCreator:
     # -----------------------------------------------------
     # Private helper to register model in MLflow
     # -----------------------------------------------------
-    def __register_xgb_model_in_mlflow__(self, model_output, scaler, label_encoder, register_model):
+    def __register_xgb_model_in_mlflow__(self, model_output, scaler, label_encoder, register_model,model):
         """
         Internal MLflow registration helper.
         """
@@ -162,11 +162,13 @@ class BaseModelCreator:
         booster_path = f"{Path(model_output).with_suffix('')}_booster.json"
 
         register.register_model(
+            algo="XGB",
             model_output=model_output,
             booster_path=booster_path,
             scaler=scaler,
             label_encoder=label_encoder,
-            register_model=register_model
+            register_model=register_model,
+            model=model
         )
 
     def __save_xgb_model_bundle__(self, model, feature_cols, label_encoder, scaler, model_output):
@@ -387,8 +389,8 @@ class BaseModelCreator:
         print(f"Std of each column after normalization: {stds}")
 
         # Save the scaler
-        joblib.dump(scaler, f"{_OUTPUT_PATH}last_scaler.pkl")
-        print(f"Scaler saved to {_OUTPUT_PATH}last_scaler.pkl")
+        joblib.dump(scaler, f"{_MODELS_PATH}last_scaler.pkl")
+        print(f"Scaler saved to {_MODELS_PATH}last_scaler.pkl")
 
         return X
 
@@ -447,7 +449,7 @@ class BaseModelCreator:
         np.ndarray: Normalized data.
         """
         # Load the scaler
-        scaler = joblib.load(f"{_OUTPUT_PATH}last_scaler.pkl")
+        scaler = joblib.load(f"{_MODELS_PATH}last_scaler.pkl")
         print(f"Shape of X before transformation: {X.shape}")
         print(f"Expected columns by the scaler: {scaler.n_features_in_}")
 

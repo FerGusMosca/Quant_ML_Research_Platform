@@ -28,6 +28,7 @@ class MLSettingsLoader():
             config_settings["OUTPUT_SECURITIES_REPORTS_FOLDER"] = config['FOLDERS']['OUTPUT_SECURITIES_REPORTS_FOLDER']
             config_settings["UI_PORT"] = config['UI']['UI_PORT']
             config_settings["MLFLOW_TRACKING_URI"] = config['ML_FLOW']['MLFLOW_TRACKING_URI']
+            config_settings["LOKI_URL"] = config['GRAFANA']['LOKI_URL']
 
 
             return  config_settings
