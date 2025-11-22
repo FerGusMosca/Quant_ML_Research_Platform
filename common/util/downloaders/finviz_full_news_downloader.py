@@ -16,15 +16,17 @@ from common.enums.folders import Folders
 class FinVizFullNewsDownloader:
     """
     Extended FinViz downloader with automatic Selenium fallback for 403-blocked articles.
+    All logs structured for real-time streaming in the UI.
     """
 
-    # === Main method ===
     @staticmethod
     def download(symbol, portfolio, pause=1.0):
+
         today = datetime.today().strftime("%Y-%m-%d")
         year = datetime.today().year
-        timestamp = datetime.now().strftime("%H-%M-%S-%f")
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
 
+        # Output folder
         base_output = os.path.normpath(
             os.path.join(
                 Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
@@ -37,6 +39,7 @@ class FinVizFullNewsDownloader:
         output_dir = os.path.join(base_output, str(year))
         os.makedirs(output_dir, exist_ok=True)
 
+        # Headers
         headers = {
             "User-Agent": (
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -48,18 +51,28 @@ class FinVizFullNewsDownloader:
         }
 
         url = f"https://finviz.com/quote.ashx?t={symbol}"
-        print(f"[FinVizFullNewsDownloader][DEBUG] Fetching news list for {symbol} -> {url}")
+
+        print(json.dumps({
+            "event": "start",
+            "symbol": symbol,
+            "timestamp": datetime.now().isoformat()
+        }, ensure_ascii=False), flush=True)
+
         resp = requests.get(url, headers=headers, timeout=15)
         if resp.status_code != 200:
-            raise RuntimeError(f"[FinVizFullNewsDownloader] Failed request for {symbol}, status={resp.status_code}")
+            raise RuntimeError(f"[FinViz] Request failed for {symbol} status={resp.status_code}")
 
         soup = BeautifulSoup(resp.text, "html.parser")
         news_table = soup.find("table", class_="fullview-news-outer")
         if news_table is None:
-            raise RuntimeError(f"[FinVizFullNewsDownloader] No news table found for {symbol}")
+            raise RuntimeError(f"[FinViz] No news table for {symbol}")
 
         articles = []
-        for row in news_table.find_all("tr"):
+        rows = news_table.find_all("tr")
+        total = len(rows)
+
+        # MAIN LOOP
+        for row in rows:
             cols = row.find_all("td")
             if len(cols) < 2:
                 continue
@@ -70,7 +83,20 @@ class FinVizFullNewsDownloader:
             if not link:
                 continue
 
-            # normalize timestamp
+            full_link = FinVizFullNewsDownloader._normalize_link(link)
+
+            # Structured progress event
+            print(json.dumps({
+                "event": "progress",
+                "symbol": symbol,
+                "title": title,
+                "link": full_link,
+                "current": len(articles) + 1,
+                "total": total,
+                "timestamp": datetime.now().isoformat()
+            }, ensure_ascii=False), flush=True)
+
+            # Timestamp normalization
             if ":" in raw_ts and len(raw_ts) <= 8:
                 ts_date = today
                 ts_time = raw_ts
@@ -82,19 +108,16 @@ class FinVizFullNewsDownloader:
                 except:
                     ts_date, ts_time = today, raw_ts
 
-            # normalize link
-            full_link = FinVizFullNewsDownloader._normalize_link(link)
+            # Fetch article
             content = FinVizFullNewsDownloader._fetch_article(full_link, headers)
 
-            # save text if available
+            # Save .txt
             if content:
                 safe_name = f"{symbol}_{ts_date}_{ts_time.replace(':', '-')}.txt"
                 txt_path = os.path.join(output_dir, safe_name)
                 if not os.path.exists(txt_path):
                     with open(txt_path, "w", encoding="utf-8") as tf:
                         tf.write(content)
-                else:
-                    print(f"[SKIP] Already exists: {txt_path}")
 
             articles.append({
                 "date": ts_date,
@@ -103,21 +126,31 @@ class FinVizFullNewsDownloader:
                 "link": full_link,
                 "content": content
             })
+
             time.sleep(0.5 + random.random() * 0.8)
 
-        # === Save JSON ===
+        # Save JSON
         now_ts = datetime.now().strftime("%H-%M-%S")
         out_path = os.path.normpath(
             os.path.join(output_dir, f"{symbol}_{today}_{now_ts}_full_news.json")
         )
         with open(out_path, "w", encoding="utf-8") as f:
-            json.dump({"symbol": symbol, "date": today, "articles": articles}, f, indent=2, ensure_ascii=False)
+            json.dump({
+                "symbol": symbol,
+                "date": today,
+                "articles": articles
+            }, f, indent=2, ensure_ascii=False)
 
-        print(f"[FinVizFullNewsDownloader][INFO] ✅ Saved {len(articles)} items -> {out_path}")
+        print(json.dumps({
+            "event": "saved",
+            "symbol": symbol,
+            "items": len(articles),
+            "path": out_path
+        }, ensure_ascii=False), flush=True)
 
         return out_path
 
-    # === Helper: normalize link ===
+    # Helpers
     @staticmethod
     def _normalize_link(link: str) -> str:
         if link.startswith("/"):
@@ -126,31 +159,23 @@ class FinVizFullNewsDownloader:
             return link
         return f"https://finviz.com/{link}"
 
-    # === Helper: fetch article content ===
     @staticmethod
     def _fetch_article(url, headers):
-        """Try direct request first, then fallback to Selenium if blocked."""
         try:
-            art_resp = requests.get(url, headers=headers, timeout=12, allow_redirects=True)
-            if art_resp.status_code == 200 and art_resp.text:
-                return FinVizFullNewsDownloader._extract_article_content(art_resp.text)
-
-            elif art_resp.status_code in (401, 403):
-                print(f"[WARN] Blocked ({art_resp.status_code}) for {url} — using Selenium fallback...")
+            r = requests.get(url, headers=headers, timeout=12, allow_redirects=True)
+            if r.status_code == 200 and r.text:
+                return FinVizFullNewsDownloader._extract_article_content(r.text)
+            elif r.status_code in (401, 403):
+                print(f"[WARN] Blocked {r.status_code} -> Selenium fallback")
                 return FinVizFullNewsDownloader._fetch_via_browser(url)
-
-            else:
-                print(f"[WARN] {url} -> HTTP {art_resp.status_code}")
         except Exception as e:
-            print(f"[WARN] Exception fetching {url} -> {e}")
+            print(f"[WARN] Error fetching {url} -> {e}")
         return None
 
-    # === Helper: extract article content ===
     @staticmethod
     def _extract_article_content(html):
         soup = BeautifulSoup(html, "html.parser")
 
-        # priority: og:description → articleBody → <article> → divs → all <p>
         og = soup.find("meta", property="og:description")
         if og and og.get("content"):
             return og["content"].strip()
@@ -174,55 +199,40 @@ class FinVizFullNewsDownloader:
         long_paras = [p.get_text(strip=True) for p in paras if len(p.get_text(strip=True)) > 80]
         if long_paras:
             return " ".join(long_paras)
+
         return None
 
-    # === Helper: Selenium fallback ===
     @staticmethod
     def _fetch_via_browser(url):
-        """Open blocked pages using Chrome and extract text (visible logs for debugging)."""
         from selenium.common.exceptions import WebDriverException
 
-        print(f"[FALLBACK] Launching Chrome to bypass block -> {url}")
+        print(f"[FALLBACK] Chrome fallback -> {url}")
 
         options = Options()
         options.add_argument("--headless=new")
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         options.add_argument("--disable-blink-features=AutomationControlled")
-        options.add_argument("--window-size=1200,800")
         options.add_argument("--disable-gpu")
-        options.add_argument("--disable-infobars")
+        options.add_argument("--window-size=1200,800")
 
         driver = None
-        html = None
-
         try:
             service = Service(ChromeDriverManager().install())
             driver = webdriver.Chrome(service=service, options=options)
-            print(f"[FALLBACK][INFO] ✅ Chrome launched successfully.")
-
             driver.set_page_load_timeout(15)
             driver.get(url)
-            print(f"[FALLBACK][INFO] Page loaded, current title: {driver.title}")
-
             time.sleep(3)
             html = driver.page_source
-
-        except WebDriverException as we:
-            print(f"[FALLBACK][ERROR] ❌ WebDriver failed to start -> {we}")
-        except Exception as e:
-            print(f"[FALLBACK][ERROR] ❌ Selenium error while fetching {url} -> {e}")
-        finally:
-            try:
-                if driver:
-                    driver.quit()
-                    print("[FALLBACK][INFO] ✅ Browser closed cleanly.")
-            except Exception as e:
-                print(f"[FALLBACK][WARN] Failed to close driver -> {e}")
-
-        if html:
             return FinVizFullNewsDownloader._extract_article_content(html)
-        else:
-            print(f"[FALLBACK][FAIL] ❌ No HTML retrieved for {url}")
+
+        except Exception as e:
+            print(f"[FALLBACK][ERROR] {e}")
             return None
 
+        finally:
+            if driver:
+                try:
+                    driver.quit()
+                except:
+                    pass
