@@ -1,0 +1,6 @@
+pymupdf              # extractor PDF
+sentence-transformers
+numpy
+faiss-cpu
+scikit-learn         # cleaner + utils futuros
+tqdm                  # progreso

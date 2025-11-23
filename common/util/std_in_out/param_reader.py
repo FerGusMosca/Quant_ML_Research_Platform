@@ -21,33 +21,38 @@ class ParamReader:
     @staticmethod
     def get_value_after_equals(command: str, key: str, optional: bool = False):
         """
-        Extracts the raw value that follows 'key=' in a command string,
-        removing any surrounding single or double quotes.
+        Extracts the raw value that follows 'key=' in a command string.
+        Supports values wrapped in single/double quotes, including paths with spaces.
 
-        Example:
-            command = "RunReport report='download_q10' year=\"2025\""
-            get_value_after_equals(command, "report") -> "download_q10"
-            get_value_after_equals(command, "year") -> "2025"
+        Examples:
+            key=2025            → "2025"
+            key='ABC'           → "ABC"
+            key="Nov 6"         → "Nov 6"
+            key="C:\\path with spaces\\folder"
         """
-        try:
-            key_pattern = f"{key}="
-            if key_pattern not in command:
-                if not optional:
-                    raise ValueError(f"Missing required parameter: {key}")
-                return None
-
-            # Extract substring after key=
-            after = command.split(key_pattern, 1)[1]
-            # Stop at first space or end of string
-            value = after.split(" ", 1)[0]
-
-            # ✅ Clean quotes if present
-            return value.strip().strip("'").strip('"')
-
-        except Exception:
+        key_pattern = f"{key}="
+        if key_pattern not in command:
             if optional:
                 return None
-            raise
+            raise ValueError(f"Missing required parameter: {key}")
+
+        # Get text after key=
+        after = command.split(key_pattern, 1)[1].lstrip()
+
+        # ---------------------------------------------------------------
+        # NEW LOGIC:
+        # If the value starts with a quote, extract everything up to the
+        # matching quote (allows spaces inside paths or strings).
+        # Otherwise, keep old behavior: stop at first whitespace.
+        # ---------------------------------------------------------------
+        if after.startswith('"') or after.startswith("'"):
+            quote = after[0]
+            # split on the same quote → element [1] is the content inside
+            value = after.split(quote, 2)[1]
+        else:
+            value = after.split(" ", 1)[0]
+
+        return value.strip()
 
     # ============================================================
     # Convert parameter value to correct type

@@ -174,3 +174,18 @@ cython_debug/
 # Allow .csv files in output folder
 !output/*.csv
 !output/**/*.csv
+
+# Python virtual envs
+venv*/
+venv_rag/
+
+# Bytecode
+*.pyc
+__pycache__/
+
+# RAG artifacts
+output/rag/
+output/rag/*
+
+# Logs
+*.log

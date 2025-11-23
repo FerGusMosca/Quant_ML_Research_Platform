@@ -31,6 +31,8 @@ class MLSettingsLoader():
             config_settings["LOKI_URL"] = config['GRAFANA']['LOKI_URL']
             config_settings["GRAFANA_ON"] = config['GRAFANA']['GRAFANA_ON']=="True"
 
+            config_settings["RAG_OUTPUT_FOLDER"] = config['EMBEDDINGS']['RAG_OUTPUT_FOLDER']
+
 
             return  config_settings
 
