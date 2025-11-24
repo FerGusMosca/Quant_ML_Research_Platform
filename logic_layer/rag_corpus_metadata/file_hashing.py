@@ -18,7 +18,12 @@ class FileHashing:
             file_bytes = f.read()
         file_hash = self._hash_bytes(file_bytes)
 
-        doc = fitz.open(pdf_path)
+        try:
+            doc = fitz.open(pdf_path)
+        except Exception as e:
+            print(f"[HASH] ❌ Skipping corrupted PDF: {pdf_path} -- {e}")
+            return None, None
+
         text = ""
         for page in doc:
             text += page.get_text("text")
