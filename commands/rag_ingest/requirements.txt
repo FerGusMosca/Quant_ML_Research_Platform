@@ -4,3 +4,6 @@ numpy
 faiss-cpu
 scikit-learn         # cleaner + utils futuros
 tqdm                  # progreso
+pandas
+python-dateutil
+requests
