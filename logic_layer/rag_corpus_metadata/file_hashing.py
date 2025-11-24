@@ -14,19 +14,33 @@ class FileHashing:
         return h.hexdigest()
 
     def compute_hashes(self, pdf_path):
-        with open(pdf_path, "rb") as f:
-            file_bytes = f.read()
-        file_hash = self._hash_bytes(file_bytes)
-
         try:
-            doc = fitz.open(pdf_path)
+            try:
+                doc = fitz.open(pdf_path)
+            except Exception as e:
+                self.logger.do_log(f"[HASH] ❌ Corrupted PDF skipped: {pdf_path} -- {e}", 1)
+                return None, None, True
+
+            text = ""
+            try:
+                text = doc[0].get_text("text")
+            except:
+                pass
+
+            try:
+                text_hash = hashlib.md5(text.encode("utf-8", errors="ignore")).hexdigest()
+            except:
+                text_hash = None
+
+            try:
+                with open(pdf_path, "rb") as f:
+                    file_hash = hashlib.md5(f.read()).hexdigest()
+            except:
+                file_hash = None
+
+            return text_hash, file_hash, False
+
         except Exception as e:
-            print(f"[HASH] ❌ Skipping corrupted PDF: {pdf_path} -- {e}")
-            return None, None
+            self.logger.do_log(f"[HASH] ❌ Unexpected hashing error: {pdf_path} -- {e}", 1)
+            return None, None, True
 
-        text = ""
-        for page in doc:
-            text += page.get_text("text")
-        text_hash = self._hash_bytes(text.encode("utf-8"))
-
-        return text_hash, file_hash

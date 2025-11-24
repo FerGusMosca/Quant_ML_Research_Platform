@@ -28,14 +28,45 @@ class CorpusMetadataPipeline:
         metadata_items = []
 
         for pdf in tqdm(pdf_list):
-            text_hash, file_hash = self.hasher.compute_hashes(pdf)
-            meta = self.extractor.extract(pdf)
 
-            meta["sha256_file"] = file_hash
-            meta["sha256_text"] = text_hash
-            meta["status"] = "unknown"
+            try:
+                # -------- HASHING --------
+                try:
+                    text_hash, file_hash, skipped_hash = self.hasher.compute_hashes(pdf)
+                except Exception as e:
+                    self.logger.do_log(f"[PIPE] ❌ Hashing exploded for {pdf}: {e}", 1)
+                    text_hash, file_hash, skipped_hash = None, None, True
 
-            metadata_items.append(meta)
+                # -------- METADATA --------
+                try:
+                    meta = self.extractor.extract(pdf)
+                except Exception as e:
+                    self.logger.do_log(f"[PIPE] ❌ Metadata exploded for {pdf}: {e}", 1)
+                    meta = {"path": pdf, "skipped": True}
 
-        final_items = self.drift.apply_status(metadata_items)
-        self.inventory.save(final_items)
+                # -------- Attach Hashes --------
+                meta["sha256_file"] = file_hash
+                meta["sha256_text"] = text_hash
+
+                # -------- Status placeholder --------
+                meta["status"] = "skipped" if meta.get("skipped") or skipped_hash else "unknown"
+
+                metadata_items.append(meta)
+
+            except Exception as e:
+                # This catch prevents the pipeline from dying FOREVER.
+                self.logger.do_log(f"[PIPE] ❌ Fatal pipeline error for {pdf}: {e}", 1)
+                continue
+
+        # -------- Apply drift detection --------
+        try:
+            final_items = self.drift.apply_status(metadata_items)
+        except Exception as e:
+            self.logger.do_log(f"[PIPE] ❌ Drift detection failed: {e}", 1)
+            final_items = metadata_items
+
+        # -------- Save inventory --------
+        try:
+            self.inventory.save(final_items)
+        except Exception as e:
+            self.logger.do_log(f"[PIPE] ❌ Inventory save failed: {e}", 1)
