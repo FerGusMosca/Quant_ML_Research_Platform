@@ -1,9 +1,11 @@
-pymupdf              # extractor PDF
+pymupdf
 sentence-transformers
 numpy
 faiss-cpu
-scikit-learn         # cleaner + utils futuros
-tqdm                  # progreso
+scikit-learn
+tqdm
 pandas
 python-dateutil
 requests
+regex
+PyYAML
