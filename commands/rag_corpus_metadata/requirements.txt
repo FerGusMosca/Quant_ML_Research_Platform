@@ -9,3 +9,4 @@ numpy
 colorama
 pymupdf
 requests
+nltk
