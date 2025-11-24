@@ -23,27 +23,38 @@ class ParamReader:
     def get_value_after_equals(command: str, key: str, optional: bool = False):
         """
         Extracts EXACT raw value after key=.
-        If quoted, returns the content inside the matching quotes WITHOUT altering it.
-        NEVER trims, strips, edits, or normalizes spaces inside the value.
+        Logs whether the parameter was quoted or unquoted.
+        NEVER modifies spaces inside the value.
         """
         key_pattern = f"{key}="
         if key_pattern not in command:
             if optional:
+                print(f"[ParamReader] (optional) key '{key}' NOT FOUND")
                 return None
             raise ValueError(f"Missing required parameter: {key}")
 
         after = command.split(key_pattern, 1)[1].lstrip()
 
-        # Quoted → return EXACT inside
+        # --- QUOTED VALUE ---
         if after.startswith('"') or after.startswith("'"):
             q = after[0]
             end = after.find(q, 1)
             if end == -1:
                 raise ValueError(f"Unclosed quote for key '{key}'")
-            return after[1:end]
 
-        # Unquoted → return until first space
-        return after.split(" ", 1)[0]
+            val = after[1:end]
+
+            print(f"[ParamReader] key='{key}' → QUOTED value detected: {val}")
+
+            return val
+
+        # --- UNQUOTED VALUE ---
+        val = after.split(" ", 1)[0]
+
+        print(f"[ParamReader] key='{key}' → UNQUOTED value detected: {val}")
+
+        return val
+
 
     # ============================================================
     # Convert parameter value to correct type

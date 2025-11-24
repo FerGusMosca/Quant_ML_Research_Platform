@@ -1,8 +1,5 @@
 pymupdf
-sentence-transformers
 numpy
-faiss-cpu
-scikit-learn
 tqdm
 pandas
 python-dateutil
