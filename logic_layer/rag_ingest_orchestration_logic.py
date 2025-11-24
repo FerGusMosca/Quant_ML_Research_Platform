@@ -6,7 +6,7 @@
 import os
 import traceback
 from framework.common.logger.message_type import MessageType
-from logic_layer.rag_ingest.rag_pipeline import RAGPipeline
+from logic_layer.rag_ingest.util.multi_stage_rag.rag_pipeline import RAGPipeline
 
 
 class RAGIngestOrchestrationLogic:

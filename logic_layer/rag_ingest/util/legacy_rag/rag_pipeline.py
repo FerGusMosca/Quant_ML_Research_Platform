@@ -8,11 +8,11 @@ import json
 import re
 import numpy as np
 
-from logic_layer.rag_ingest.util.pdf_text_extractor import PDFTextExtractor
-from logic_layer.rag_ingest.util.pdf_cleaner import PDFCleaner
-from logic_layer.rag_ingest.util.chunk_generator import ChunkGenerator
-from logic_layer.rag_ingest.util.metadata_builder import MetadataBuilder
-from logic_layer.rag_ingest.util.embeddings_generator import EmbeddingsGenerator
+from logic_layer.rag_ingest.util.legacy_rag.pdf_text_extractor import PDFTextExtractor
+from logic_layer.rag_ingest.util.legacy_rag.pdf_cleaner import PDFCleaner
+from logic_layer.rag_ingest.util.legacy_rag.chunk_generator import ChunkGenerator
+from logic_layer.rag_ingest.util.legacy_rag.metadata_builder import MetadataBuilder
+from logic_layer.rag_ingest.util.legacy_rag.embeddings_generator import EmbeddingsGenerator
 
 
 class RAGPipeline:
