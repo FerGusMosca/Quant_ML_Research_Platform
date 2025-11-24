@@ -18,17 +18,13 @@ class ParamReader:
     # ============================================================
     # Extract raw value after "key="
     # ============================================================
+    # All comments MUST be in English.
     @staticmethod
     def get_value_after_equals(command: str, key: str, optional: bool = False):
         """
-        Extracts the raw value that follows 'key=' in a command string.
-        Supports values wrapped in single/double quotes, including paths with spaces.
-
-        Examples:
-            key=2025            → "2025"
-            key='ABC'           → "ABC"
-            key="Nov 6"         → "Nov 6"
-            key="C:\\path with spaces\\folder"
+        Extracts EXACT raw value after key=.
+        If quoted, returns the content inside the matching quotes WITHOUT altering it.
+        NEVER trims, strips, edits, or normalizes spaces inside the value.
         """
         key_pattern = f"{key}="
         if key_pattern not in command:
@@ -36,23 +32,18 @@ class ParamReader:
                 return None
             raise ValueError(f"Missing required parameter: {key}")
 
-        # Get text after key=
         after = command.split(key_pattern, 1)[1].lstrip()
 
-        # ---------------------------------------------------------------
-        # NEW LOGIC:
-        # If the value starts with a quote, extract everything up to the
-        # matching quote (allows spaces inside paths or strings).
-        # Otherwise, keep old behavior: stop at first whitespace.
-        # ---------------------------------------------------------------
+        # Quoted → return EXACT inside
         if after.startswith('"') or after.startswith("'"):
-            quote = after[0]
-            # split on the same quote → element [1] is the content inside
-            value = after.split(quote, 2)[1]
-        else:
-            value = after.split(" ", 1)[0]
+            q = after[0]
+            end = after.find(q, 1)
+            if end == -1:
+                raise ValueError(f"Unclosed quote for key '{key}'")
+            return after[1:end]
 
-        return value.strip()
+        # Unquoted → return until first space
+        return after.split(" ", 1)[0]
 
     # ============================================================
     # Convert parameter value to correct type
