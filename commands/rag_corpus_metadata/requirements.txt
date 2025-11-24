@@ -1,0 +1,11 @@
+pandas
+tqdm
+regex
+PyYAML
+six
+tzdata
+pytz
+numpy
+colorama
+pymupdf
+requests
