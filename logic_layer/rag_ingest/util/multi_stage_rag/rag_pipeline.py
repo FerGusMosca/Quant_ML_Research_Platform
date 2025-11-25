@@ -19,18 +19,45 @@ class RAGPipeline:
         self.logger = logger
         self.dest_root = dest_root
 
+        # ------- Embedding model -------
         try:
             self.embedder = EmbeddingsGenerator(logger=self.logger)
         except Exception as e:
             self.logger.do_log(f"[RAG] ❌ Failed to load embedding model: {e}", 0)
             raise
 
+        # ------- Output base folder -------
         self.output_base = config["RAG_OUTPUT_FOLDER"]
+
         try:
             os.makedirs(self.output_base, exist_ok=True)
         except Exception as e:
             logger.do_log(f"[RAG] ❌ Could not create output folder: {e}", 0)
             raise
+
+        # ------- Metadata path -------
+        self.corpus_metadata_path = config.get(
+            "CORPUS_METADATA_PATH",
+            os.path.join(self.output_base, "corpus_metadata", "corpus_inventory.json")
+        )
+
+        # ------- Load metadata for skip logic -------
+        self.global_metadata = self._load_corpus_inventory()
+
+        # ------- Logging folder -------
+        self.logs_dir = os.path.join(self.output_base, "logs")
+        os.makedirs(self.logs_dir, exist_ok=True)
+
+
+    def _load_corpus_inventory(self):
+        """Load global corpus metadata to support incremental ingest."""
+        try:
+            with open(self.corpus_metadata_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            return {item["path"]: item for item in data}
+        except Exception as e:
+            self.logger.do_log(f"[RAG] ⚠️ Could not load corpus inventory: {e}", 0)
+            return {}
 
     # ==========================================================
     # Compute output folder relative to dest_root
@@ -94,7 +121,7 @@ class RAGPipeline:
             self.logger.do_log(f"[RAG] ❌ PDF cleaning failed: {e}", 0)
             return None
 
-        # ----- Chunking (Multi-Stage) -----
+        # ----- Chunking -----
         try:
             chunks = ChunkGenerator.chunk(clean_text, logger=self.logger)
         except Exception as e:
@@ -119,7 +146,7 @@ class RAGPipeline:
             self.logger.do_log(f"[RAG] ❌ Embedding generation failed: {e}", 0)
             return None
 
-        # ----- Output paths -----
+        # ----- Output path -----
         try:
             rel_folder = os.path.normpath(self._compute_output_path(pdf_path))
         except Exception:
@@ -156,8 +183,55 @@ class RAGPipeline:
     # PROCESS MULTIPLE PDFs
     # ==========================================================
     def run(self, pdf_list):
+        """Run ingestion with skip-logic, detailed per-file logging, and final summary."""
+        start_ts = self.logger.now_iso() if hasattr(self.logger, "now_iso") else __import__("datetime").datetime.utcnow().isoformat()
+        summary = {"processed": 0, "skipped": 0, "errors": 0}
+
+        details_path = os.path.join(self.logs_dir, "ingest_details.log")
+
         for pdf_path in pdf_list:
+
+            # ------- Initial log line (queued) -------
+            with open(details_path, "a", encoding="utf-8", buffering=1) as lf:
+                lf.write(f"{start_ts} | queued | {pdf_path}\n")
+
+            # ------- Skip unchanged -------
+            meta = self.global_metadata.get(pdf_path)
+            if meta and meta.get("status") == "unchanged":
+                self.logger.do_log(f"[RAG] ⏩ Skipping unchanged: {pdf_path}", 1)
+                summary["skipped"] += 1
+
+                with open(details_path, "a", encoding="utf-8", buffering=1) as lf:
+                    lf.write(f"{start_ts} | skipped | {pdf_path}\n")
+
+                continue
+
+            # ------- Process PDF -------
             self.logger.do_log(f"[RAG] 🔥 Processing PDF: {pdf_path}", 1)
-            self.process_pdf(pdf_path)
+            res = self.process_pdf(pdf_path)
+
+            if res:
+                summary["processed"] += 1
+                with open(details_path, "a", encoding="utf-8", buffering=1) as lf:
+                    lf.write(f"{start_ts} | processed | {pdf_path}\n")
+            else:
+                summary["errors"] += 1
+                with open(details_path, "a", encoding="utf-8", buffering=1) as lf:
+                    lf.write(f"{start_ts} | error | {pdf_path}\n")
+
+        # ------- Final summary file -------
+        end_ts = self.logger.now_iso() if hasattr(self.logger, "now_iso") else __import__("datetime").datetime.utcnow().isoformat()
+        out = {
+            "start": start_ts,
+            "end": end_ts,
+            "total": len(pdf_list),
+            "processed": summary["processed"],
+            "skipped": summary["skipped"],
+            "errors": summary["errors"]
+        }
+
+        fn = f"ingest_run_{end_ts.replace(':', '-')}.json"
+        with open(os.path.join(self.logs_dir, fn), "w", encoding="utf-8") as f:
+            json.dump(out, f, indent=2)
 
         self.logger.do_log("[RAG] ✅ Completed full batch ingestion.", 1)
