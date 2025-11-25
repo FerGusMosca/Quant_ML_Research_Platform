@@ -11,6 +11,7 @@ from logic_layer.rag_ingest.util.multi_stage_rag.pdf_cleaner import PDFCleaner
 from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generator import ChunkGenerator
 from logic_layer.rag_ingest.util.multi_stage_rag.metadata_builder import MetadataBuilder
 from logic_layer.rag_ingest.util.multi_stage_rag.embeddings_generator import EmbeddingsGenerator
+from logic_layer.rag_ingest.util.multi_stage_rag.ingest_metadata_manager import IngestMetadataManager
 
 
 class RAGPipeline:
@@ -47,6 +48,11 @@ class RAGPipeline:
         # ------- Logging folder -------
         self.logs_dir = os.path.join(self.output_base, "logs")
         os.makedirs(self.logs_dir, exist_ok=True)
+
+        os.makedirs(os.path.join(self.output_base, "corpus_metadata"), exist_ok=True)
+
+        self.ingest_metadata_path = os.path.join(self.output_base, "corpus_metadata", "ingest_metadata.json")
+        self.ingest_meta = IngestMetadataManager(self.ingest_metadata_path, logger)
 
 
     def _load_corpus_inventory(self):
@@ -183,51 +189,63 @@ class RAGPipeline:
     # PROCESS MULTIPLE PDFs
     # ==========================================================
     def run(self, pdf_list):
-        """Run ingestion with skip-logic, detailed per-file logging, and final summary."""
-        start_ts = self.logger.now_iso() if hasattr(self.logger, "now_iso") else __import__("datetime").datetime.utcnow().isoformat()
-        summary = {"processed": 0, "skipped": 0, "errors": 0}
+        """Run ingestion with two-layer skip logic + per-file logging + final summary."""
 
+        start_ts = self.logger.now_iso() if hasattr(self.logger, "now_iso") else \
+            __import__("datetime").datetime.utcnow().isoformat()
+
+        summary = {"processed": 0, "skipped": 0, "errors": 0}
         details_path = os.path.join(self.logs_dir, "ingest_details.log")
 
         for pdf_path in pdf_list:
 
-            # ------- Initial log line (queued) -------
+            # -------- Initial QUEUED log --------
             with open(details_path, "a", encoding="utf-8", buffering=1) as lf:
                 lf.write(f"{start_ts} | queued | {pdf_path}\n")
 
-            # ------- Skip unchanged -------
-            meta = self.global_metadata.get(pdf_path)
-            if meta and meta.get("status") == "unchanged":
-                self.logger.do_log(f"[RAG] ⏩ Skipping unchanged: {pdf_path}", 1)
+            # -------- Combined skip logic --------
+            corpus_meta = self.global_metadata.get(pdf_path, {})
+
+            if self.ingest_meta.should_skip(pdf_path, corpus_meta):
+                self.logger.do_log(f"[RAG] ⏩ FULL-SKIP: {pdf_path}", 1)
                 summary["skipped"] += 1
 
                 with open(details_path, "a", encoding="utf-8", buffering=1) as lf:
-                    lf.write(f"{start_ts} | skipped | {pdf_path}\n")
+                    lf.write(f"{start_ts} | full-skip | {pdf_path}\n")
 
                 continue
 
-            # ------- Process PDF -------
+            # -------- Process PDF --------
             self.logger.do_log(f"[RAG] 🔥 Processing PDF: {pdf_path}", 1)
             res = self.process_pdf(pdf_path)
 
             if res:
                 summary["processed"] += 1
+                self.ingest_meta.mark_processed(pdf_path)
+
                 with open(details_path, "a", encoding="utf-8", buffering=1) as lf:
                     lf.write(f"{start_ts} | processed | {pdf_path}\n")
+
             else:
                 summary["errors"] += 1
+
                 with open(details_path, "a", encoding="utf-8", buffering=1) as lf:
                     lf.write(f"{start_ts} | error | {pdf_path}\n")
 
-        # ------- Final summary file -------
-        end_ts = self.logger.now_iso() if hasattr(self.logger, "now_iso") else __import__("datetime").datetime.utcnow().isoformat()
+        # -------- Save ingest metadata --------
+        self.ingest_meta.save()
+
+        # -------- Final summary --------
+        end_ts = self.logger.now_iso() if hasattr(self.logger, "now_iso") else \
+            __import__("datetime").datetime.utcnow().isoformat()
+
         out = {
             "start": start_ts,
             "end": end_ts,
             "total": len(pdf_list),
             "processed": summary["processed"],
             "skipped": summary["skipped"],
-            "errors": summary["errors"]
+            "errors": summary["errors"],
         }
 
         fn = f"ingest_run_{end_ts.replace(':', '-')}.json"
@@ -235,3 +253,4 @@ class RAGPipeline:
             json.dump(out, f, indent=2)
 
         self.logger.do_log("[RAG] ✅ Completed full batch ingestion.", 1)
+
