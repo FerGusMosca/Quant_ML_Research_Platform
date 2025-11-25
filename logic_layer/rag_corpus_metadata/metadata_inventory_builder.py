@@ -19,7 +19,12 @@ class MetadataInventoryBuilder:
             json.dump(items, f, indent=2)
 
         df = pd.DataFrame(items)
-        df.to_csv(csv_path, index=False)
+        df.to_csv(
+            csv_path,
+            index=False,
+            encoding="utf-8",
+            escapechar="\\"
+        )
 
         self.logger.do_log(f"[CORPUS] Saved inventory → {json_path}", 1)
         self.logger.do_log(f"[CORPUS] Saved CSV → {csv_path}", 1)

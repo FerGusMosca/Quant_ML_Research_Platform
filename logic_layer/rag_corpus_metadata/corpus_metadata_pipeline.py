@@ -23,7 +23,7 @@ class CorpusMetadataPipeline:
 
         self.extractor = PDFMetadataExtractor(logger)
         self.hasher = FileHashing(logger)
-        self.drift = DriftDetector(logger)
+        self.drift = DriftDetector(logger, folder)
         self.inventory = MetadataInventoryBuilder(folder, logger)
 
         # NEW

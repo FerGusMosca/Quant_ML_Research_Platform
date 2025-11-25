@@ -8,7 +8,7 @@ class RunLogger:
 
     def write_log(self, msg):
         ts = datetime.datetime.utcnow().isoformat()
-        with open(self.log_path, "a") as f:
+        with open(self.log_path, "a", encoding="utf-8") as f:
             f.write(f"[{ts}] {msg}\n")
 
     def write_summary(self, items):

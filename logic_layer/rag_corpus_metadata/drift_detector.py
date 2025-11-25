@@ -5,13 +5,12 @@ import json
 
 class DriftDetector:
 
-    def __init__(self, logger):
+    def __init__(self, logger, folder):
         self.logger = logger
-        self.inventory_path = "./output/corpus_metadata/corpus_hashes.json"
+        self.inventory_path = os.path.join(folder, "corpus_hashes.json")
         self.prev = {}
-
         if os.path.exists(self.inventory_path):
-            with open(self.inventory_path, "r") as f:
+            with open(self.inventory_path, "r", encoding="utf-8") as f:
                 self.prev = json.load(f)
 
     def apply_status(self, items):
