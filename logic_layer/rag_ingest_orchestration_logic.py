@@ -120,7 +120,7 @@ class RAGIngestOrchestrationLogic:
             self.logger.do_log("[RAG-INGEST] 🔧 Initializing RAG pipeline...", MessageType.INFO)
 
             pipeline = RAGPipeline(dest_root, self.config, self.logger)
-            pipeline.run(pdfs)
+            pipeline.run(pdfs,source_path)
 
             self.logger.do_log(
                 "[RAG-INGEST] ✅ RAG ingestion completed successfully.",

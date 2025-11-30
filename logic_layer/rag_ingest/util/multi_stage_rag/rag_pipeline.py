@@ -19,7 +19,7 @@ class RAGPipeline:
     def __init__(self, dest_root, config, logger):
         self.logger = logger
         self.dest_root = dest_root
-
+        self.current_run_log =None
         # ------- Embedding model -------
         try:
             self.embedder = EmbeddingsGenerator(logger=self.logger)
@@ -46,7 +46,7 @@ class RAGPipeline:
         self.global_metadata = self._load_corpus_inventory()
 
         # ------- Logging folder -------
-        self.logs_dir = os.path.join(self.output_base, "logs")
+        self.logs_dir = os.path.join(self.output_base, "ingest_data_logs")
         os.makedirs(self.logs_dir, exist_ok=True)
 
         os.makedirs(os.path.join(self.output_base, "corpus_metadata"), exist_ok=True)
@@ -185,11 +185,24 @@ class RAGPipeline:
 
         return chunks, metadata, embeddings
 
+    def _make_run_log(self, source_path):
+        """Build early-run log filename using the ingest source."""
+        from datetime import datetime
+        import re
+        clean = re.sub(r"[^A-Za-z0-9_\-]", "_", os.path.basename(source_path))
+        ts = datetime.utcnow().isoformat().replace(":", "-")
+        fn = f"ingest_{clean}_{ts}.json"
+        path = os.path.join(self.logs_dir, fn)
+        with open(path, "w", encoding="utf-8") as f: f.write("{}")
+        return path
+
     # ==========================================================
     # PROCESS MULTIPLE PDFs
     # ==========================================================
-    def run(self, pdf_list):
+    def run(self, pdf_list,source_path):
         """Run ingestion with two-layer skip logic + per-file logging + final summary."""
+
+        self.current_run_log = self._make_run_log(source_path)
 
         start_ts = self.logger.now_iso() if hasattr(self.logger, "now_iso") else \
             __import__("datetime").datetime.utcnow().isoformat()
@@ -249,7 +262,7 @@ class RAGPipeline:
         }
 
         fn = f"ingest_run_{end_ts.replace(':', '-')}.json"
-        with open(os.path.join(self.logs_dir, fn), "w", encoding="utf-8") as f:
+        with open(self.current_run_log, "w", encoding="utf-8") as f:
             json.dump(out, f, indent=2)
 
         self.logger.do_log("[RAG] ✅ Completed full batch ingestion.", 1)
