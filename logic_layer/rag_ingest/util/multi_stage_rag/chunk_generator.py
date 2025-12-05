@@ -47,9 +47,7 @@ class ChunkGenerator:
                 if logger: logger.do_log(f"[MSC] ❌ K-means failed: {e}", 0)
                 return []
 
-            clusters = {}
-            for s, lab in zip(sentences, labels):
-                clusters.setdefault(lab, []).append(s)
+            clusters = {0: sentences}
 
             # ===== Stage 4: Dynamic chunking =====
             final_chunks = []
@@ -68,9 +66,11 @@ class ChunkGenerator:
                         final_chunks.append(" ".join(current))
 
                         # Overlap
-                        overlap = current[-overlap_tokens:] if overlap_tokens < len(current) else current
-                        current = overlap.copy()
-                        tok_count = len(" ".join(current).split())
+                        # ===== FIX: token-level overlap =====
+                        flat = " ".join(current).split()
+                        overlap = flat[-overlap_tokens:]
+                        current = [" ".join(overlap)]
+                        tok_count = len(overlap)
 
                     current.append(s)
                     tok_count += len(t)
