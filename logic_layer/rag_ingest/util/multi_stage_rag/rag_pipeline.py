@@ -130,9 +130,16 @@ class RAGPipeline:
         # ----- Chunking -----
         try:
             chunks = ChunkGenerator.chunk(clean_text, logger=self.logger)
+
+            # ===== DEDUP LAYER (safe, exact duplicates only) =====
+            from logic_layer.rag_ingest.util.multi_stage_rag.deduper import ChunkDeduper
+            chunks = ChunkDeduper.dedup_chunks(chunks,self.logger)
+
         except Exception as e:
             self.logger.do_log(f"[RAG] ❌ Chunking failed: {e}", 0)
             return None
+
+
 
         if len(chunks) == 0:
             self.logger.do_log("[RAG] ❌ No chunks generated.", 0)
