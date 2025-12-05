@@ -47,7 +47,10 @@ class ChunkGenerator:
                 if logger: logger.do_log(f"[MSC] ❌ K-means failed: {e}", 0)
                 return []
 
-            clusters = {0: sentences}
+            clusters = {}
+            for i, sent in enumerate(sentences):
+                lab = int(labels[i])
+                clusters.setdefault(lab, []).append(sent)
 
             # ===== Stage 4: Dynamic chunking =====
             final_chunks = []
