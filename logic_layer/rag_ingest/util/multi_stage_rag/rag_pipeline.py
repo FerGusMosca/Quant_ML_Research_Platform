@@ -69,22 +69,38 @@ class RAGPipeline:
     # Compute output folder relative to dest_root
     # ==========================================================
     def _compute_output_path(self, pdf_path: str) -> str:
+        """
+        Compute the relative output folder path starting from dest_root.
+        All folder names are sanitized: spaces and any weird characters are replaced with '_'.
+        Example: 'Nov 6' to 'Nov_6', 'My (final) Report!' to 'My_final_Report'
+        """
         try:
             normalized = os.path.normpath(pdf_path)
             parts = normalized.split(os.sep)
 
+            # Safety check: dest_root must be present in the path
             if self.dest_root not in parts:
                 raise ValueError(
                     f"[RAG] ERROR: dest_root='{self.dest_root}' not found in path: {pdf_path}"
                 )
 
+            # Everything from dest_root (included) up to the file's folder (file
             idx = parts.index(self.dest_root)
             folder_parts = parts[idx:-1]
 
-            return os.path.join(*folder_parts)
+            # Sanitize every folder name
+            clean_parts = []
+            for part in folder_parts:
+                # Replace anything that is not letter/number/dot/hyphen with _
+                clean = re.sub(r'[^a-zA-Z0-9._-]', '_', part)
+                # Collapse multiple underscores and strip leading/trailing ones
+                clean = re.sub(r'_+', '_', clean.strip('_'))
+                clean_parts.append(clean)
+
+            return os.path.join(*clean_parts)
 
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ compute_output_path failed: {e}", 0)
+            self.logger.do_log(f"[RAG] compute_output_path failed: {e}", 0)
             raise
 
     # ==========================================================
