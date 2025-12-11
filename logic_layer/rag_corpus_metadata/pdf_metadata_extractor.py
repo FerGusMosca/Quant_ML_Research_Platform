@@ -40,6 +40,7 @@ class PDFMetadataExtractor:
 
             text_length = len(first_page)
             title_guess = first_page.split("\n")[0][:180].strip() if first_page else ""
+            full_text = "\n".join([doc[i].get_text("text") for i in range(pages)]) if pages > 0 else ""
 
             return {
                 "path": pdf_path,
@@ -48,6 +49,7 @@ class PDFMetadataExtractor:
                 "pages": pages,
                 "text_length": text_length,
                 "title_guess": title_guess,
+                "full_text": full_text,
                 "skipped": False
             }
 

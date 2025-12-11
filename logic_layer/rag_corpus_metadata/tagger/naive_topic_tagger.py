@@ -1,6 +1,6 @@
 from logic_layer.rag_corpus_metadata.financial_tags import FINANCIAL_TAGS
 
-class TopicTagger:
+class NaiveTopicTagger:
     def __init__(self):
         self.keywords = FINANCIAL_TAGS
 

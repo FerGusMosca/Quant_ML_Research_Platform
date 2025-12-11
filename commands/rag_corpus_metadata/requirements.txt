@@ -10,3 +10,6 @@ colorama
 pymupdf
 requests
 nltk
+torch==2.2.0 --index-url https://download.pytorch.org/whl/cpu
+transformers==4.39.3
+sentencepiece==0.1.99

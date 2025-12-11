@@ -1,12 +1,11 @@
 import os
-import json
 from tqdm import tqdm
 
+from logic_layer.rag_corpus_metadata.tagger.transformers_topic_tagger import TransformersTopicTagger
 from logic_layer.rag_corpus_metadata.drift_detector import DriftDetector
 from logic_layer.rag_corpus_metadata.file_hashing import FileHashing
 from logic_layer.rag_corpus_metadata.metadata_inventory_builder import MetadataInventoryBuilder
 from logic_layer.rag_corpus_metadata.pdf_metadata_extractor import PDFMetadataExtractor
-from logic_layer.rag_corpus_metadata.topic_tagger import TopicTagger
 from logic_layer.rag_corpus_metadata.run_logger import RunLogger
 
 
@@ -21,14 +20,16 @@ class CorpusMetadataPipeline:
         os.makedirs(folder, exist_ok=True)
         self.output_folder = folder
 
+        # NEW
+        #self.tagger = NaiveTopicTagger()
+        self.tagger = TransformersTopicTagger(logger=logger)
+        self.runlog = RunLogger(folder)
+
         self.extractor = PDFMetadataExtractor(logger)
         self.hasher = FileHashing(logger)
         self.drift = DriftDetector(logger, folder)
         self.inventory = MetadataInventoryBuilder(folder, logger)
 
-        # NEW
-        self.tagger = TopicTagger()
-        self.runlog = RunLogger(folder)
 
     # ============================================================
     # PUBLIC ENTRYPOINT
@@ -50,62 +51,63 @@ class CorpusMetadataPipeline:
     # INTERNAL STEPS
     # ============================================================
     def _process_all_pdfs(self, pdf_list):
+        self.logger.do_log(f"[PIPE] ▶ Processing {len(pdf_list)} PDFs", 1)
+
         out = []
         for pdf in tqdm(pdf_list):
+            self.logger.do_log(f"[PDF] ▶ Start: {pdf}", 2)
             out.append(self._process_single_pdf(pdf))
+            self.logger.do_log(f"[PDF] ✔ Done: {pdf}", 2)
 
         self.runlog.write_log(f"Processed PDFs: {len(out)}")
         return out
 
     def _process_single_pdf(self, pdf):
+        self.logger.do_log(f"[HASH] ▶ Hashing: {pdf}", 3)
         try:
-            # --- HASHES ---
-            try:
-                text_hash, file_hash, skipped_hash = self.hasher.compute_hashes(pdf)
-            except Exception as e:
-                self.runlog.write_log(f"[ERROR] Hash fail {pdf}: {e}")
-                text_hash, file_hash, skipped_hash = None, None, True
-
-            # --- METADATA ---
-            try:
-                meta = self.extractor.extract(pdf)
-            except Exception as e:
-                self.runlog.write_log(f"[ERROR] Metadata fail {pdf}: {e}")
-                meta = {"path": pdf, "skipped": True}
-
-            meta["sha256_file"] = file_hash
-            meta["sha256_text"] = text_hash
-
-            if meta.get("skipped") or skipped_hash:
-                meta["status"] = "skipped"
-            else:
-                meta["status"] = "unknown"
-
-            return meta
-
+            text_hash, file_hash, skipped_hash = self.hasher.compute_hashes(pdf)
         except Exception as e:
-            self.runlog.write_log(f"[FATAL] Pipeline error for {pdf}: {e}")
-            return {"path": pdf, "skipped": True, "status": "error"}
+            self.logger.do_log(f"[HASH] ❌ Failed {pdf} → {e}", 3)
+            text_hash, file_hash, skipped_hash = None, None, True
+
+        self.logger.do_log(f"[META] ▶ Extracting metadata: {pdf}", 3)
+        try:
+            meta = self.extractor.extract(pdf)
+        except Exception as e:
+            self.logger.do_log(f"[META] ❌ Failed {pdf} → {e}", 3)
+            meta = {"path": pdf, "skipped": True}
+
+        meta["sha256_file"] = file_hash
+        meta["sha256_text"] = text_hash
+        meta["status"] = "skipped" if meta.get("skipped") or skipped_hash else "unknown"
+
+        self.logger.do_log(f"[PDF] ✔ Completed metadata: {pdf}", 3)
+        return meta
 
     def _apply_drift(self, items):
+        self.logger.do_log("[DRIFT] ▶ Running drift detection", 1)
         try:
             out = self.drift.apply_status(items)
-            self.runlog.write_log("Drift detection OK")
+            self.logger.do_log("[DRIFT] ✔ OK", 1)
             return out
         except Exception as e:
-            self.runlog.write_log(f"[ERROR] Drift detection failed: {e}")
+            self.logger.do_log(f"[DRIFT] ❌ Failed → {e}", 1)
             return items
 
     def _apply_tagging(self, items):
+        self.logger.do_log("[TAG] ▶ Applying topic tagging", 1)
         for m in items:
             title = m.get("title_guess", "")
-            m["tags"] = self.tagger.classify(title)
-
-        self.runlog.write_log("Topic tagging applied")
+            full_text=m.get("full_text","")
+            m["tags"] = self.tagger.classify(full_text)
+            m.pop("full_text", None)#no needed after processing
+        self.logger.do_log("[TAG] ✔ Completed", 1)
 
     def _save_inventory(self, items):
+        self.logger.do_log("[SAVE] ▶ Saving metadata inventory", 1)
         try:
             self.inventory.save(items)
-            self.runlog.write_log("Inventory saved")
+            self.logger.do_log("[SAVE] ✔ Inventory saved", 1)
         except Exception as e:
-            self.runlog.write_log(f"[ERROR] Inventory save failed: {e}")
+            self.logger.do_log(f"[SAVE] ❌ Failed → {e}", 1)
+
