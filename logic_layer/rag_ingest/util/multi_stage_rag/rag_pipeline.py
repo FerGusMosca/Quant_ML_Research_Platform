@@ -6,9 +6,15 @@ import json
 import re
 import numpy as np
 
+from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.ktransformers_chunk_generator import \
+    KTransformersChunkGenerator
+from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.transfomers_semantic_dedupers import \
+    TranfomersSemanticChunkDeduper
+from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.vainilla.vainilla_chunk_generator import \
+    VainillaChunkGenerator
+from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.vainilla.vanilla_deduper import VanillaChunkDeduper
 from logic_layer.rag_ingest.util.multi_stage_rag.pdf_text_extractor import PDFTextExtractor
 from logic_layer.rag_ingest.util.multi_stage_rag.pdf_cleaner import PDFCleaner
-from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generator import ChunkGenerator
 from logic_layer.rag_ingest.util.multi_stage_rag.metadata_builder import MetadataBuilder
 from logic_layer.rag_ingest.util.multi_stage_rag.embeddings_generator import EmbeddingsGenerator
 from logic_layer.rag_ingest.util.multi_stage_rag.ingest_metadata_manager import IngestMetadataManager
@@ -20,6 +26,12 @@ class RAGPipeline:
         self.logger = logger
         self.dest_root = dest_root
         self.current_run_log =None
+        #self.chunk_generator = VainillaChunkGenerator(self.logger)
+        self.chunk_generator = KTransformersChunkGenerator(logger=self.logger)
+
+        #self.chunk_deduper=VanillaChunkDeduper(logger=self.logger)
+        self.chunk_deduper=TranfomersSemanticChunkDeduper(logger=self.logger)
+
         # ------- Embedding model -------
         try:
             self.embedder = EmbeddingsGenerator(logger=self.logger)
@@ -145,11 +157,11 @@ class RAGPipeline:
 
         # ----- Chunking -----
         try:
-            chunks = ChunkGenerator.chunk(clean_text, logger=self.logger)
+            chunks = self.chunk_generator.chunk(clean_text)
 
             # ===== DEDUP LAYER (safe, exact duplicates only) =====
-            from logic_layer.rag_ingest.util.multi_stage_rag.deduper import ChunkDeduper
-            chunks = ChunkDeduper.dedup_chunks(chunks,self.logger)
+
+            chunks = self.chunk_deduper.dedup_chunks(chunks)
 
         except Exception as e:
             self.logger.do_log(f"[RAG] ❌ Chunking failed: {e}", 0)
@@ -178,7 +190,11 @@ class RAGPipeline:
         # ----- Output path -----
         try:
             rel_folder = os.path.normpath(self._compute_output_path(pdf_path))
-        except Exception:
+        except Exception as e:
+            self.logger.do_log(
+                f"[RAG][PATH] Failed to compute output path | pdf_path={pdf_path} | error={repr(e)}",
+                level=0
+            )
             return None
 
         base_raw = os.path.basename(pdf_path).replace(".pdf", "")

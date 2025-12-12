@@ -1,5 +1,5 @@
 """
-ChunkGenerator
+VainillaChunkGenerator
 --------------
 Splits cleaned text into chunks (placeholder version).
 Later will include:

@@ -16,7 +16,7 @@ class TransformersTopicTagger:
 
     # ------------------------------------------------------
     def _encode(self, text: str):
-        """Returns BERT sentence embedding."""
+        """Returns Transfomers sentence embedding."""
         inputs = self.tokenizer(text, return_tensors="pt",
                                 truncation=True).to(self.device)
         with torch.no_grad():

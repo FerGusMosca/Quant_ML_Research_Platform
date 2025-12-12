@@ -3,9 +3,12 @@
 
 import hashlib
 
-class ChunkDeduper:
-    @staticmethod
-    def dedup_chunks(chunks, logger=None):
+class VanillaChunkDeduper:
+
+    def __init__(self,logger):
+        self.logger=logger
+
+    def dedup_chunks(self,chunks):
         """
         Remove exact and near-exact duplicates using hashing.
         Logs every removed duplicate.
@@ -21,14 +24,14 @@ class ChunkDeduper:
             h = hashlib.md5(norm.encode("utf-8")).hexdigest()
 
             if h in seen:
-                if logger:
-                    logger.do_log(f"[DEDUP] 🔁 Removed duplicate chunk #{idx}", 2)
+                if self.logger:
+                    self.logger.do_log(f"[DEDUP] 🔁 Removed duplicate chunk #{idx}", 2)
                 continue
 
             seen.add(h)
             out.append(c)
 
-        if logger:
-            logger.do_log(f"[DEDUP] ✅ Unique chunks kept: {len(out)} / {len(chunks)}", 1)
+        if self.logger:
+            self.logger.do_log(f"[DEDUP] ✅ Unique chunks kept: {len(out)} / {len(chunks)}", 1)
 
         return out

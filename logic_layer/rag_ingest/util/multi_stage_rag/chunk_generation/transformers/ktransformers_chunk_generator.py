@@ -1,0 +1,78 @@
+# multi_stage_rag/ktransformers_chunk_generator.py
+# All comments MUST be in English.
+
+import nltk
+
+from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.kmeans_sentence_clustering import \
+    KMeansSentenceClustering
+from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.transformers_chunk_overlapping import \
+    TransformersChunkOverlapping
+
+
+class KTransformersChunkGenerator:
+    """
+    High-level chunk generator.
+    Orchestrates sentence clustering, token-budget chunking,
+    and semantic-aware chunk merging.
+    """
+
+    def __init__(
+        self,
+        target_tokens=180,
+        k=3,
+        logger=None
+    ):
+        self.target_tokens = target_tokens
+        self.k = k
+        self.logger = logger
+
+        self.clusterer = KMeansSentenceClustering(logger=logger)
+        self.overlapper = TransformersChunkOverlapping(logger=logger)
+
+    def chunk(self, text: str):
+        sentences = nltk.sent_tokenize(text)
+
+        if self.logger:
+            self.logger.do_log(f"[KTG] 📌 Total sentences: {len(sentences)}", 2)
+
+        sentence_groups = self.clusterer.cluster(sentences, self.k)
+
+        chunks = []
+
+        for group_idx, group in enumerate(sentence_groups):
+            if self.logger:
+                self.logger.do_log(
+                    f"[KTG] 📦 Processing sentence group {group_idx} ({len(group)} sentences)",
+                    2
+                )
+
+            current = []
+            tok_count = 0
+
+            for sentence in group:
+                tokens = sentence.split()
+                token_len = len(tokens)
+
+                if tok_count + token_len > self.target_tokens:
+                    new_chunk = " ".join(current)
+
+                    if chunks and self.overlapper.should_merge(chunks[-1], new_chunk):
+                        if self.logger:
+                            self.logger.do_log("[KTG] 🔗 Merging chunks based on semantic similarity", 2)
+                        chunks[-1] += " " + new_chunk
+                    else:
+                        chunks.append(new_chunk)
+
+                    current = []
+                    tok_count = 0
+
+                current.append(sentence)
+                tok_count += token_len
+
+            if current:
+                chunks.append(" ".join(current))
+
+        if self.logger:
+            self.logger.do_log(f"[KTG] ✅ Final chunks generated: {len(chunks)}", 1)
+
+        return chunks
