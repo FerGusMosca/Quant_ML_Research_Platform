@@ -48,6 +48,7 @@ def process_rag_ingest_logic(mode, source,dest_root):
             MessageType.INFO
         )
 
+
         loader = MLSettingsLoader()
         config = loader.load_settings("./configs/commands_mgr.ini")
 
