@@ -97,28 +97,28 @@ class CorpusMetadataPipeline:
     def _apply_tagging(self, items):
         self.logger.do_log("[TAG] ▶ Applying topic tagging", 1)
 
-        skipped = 0
-        processed = 0
+        old = self.inventory.load_existing()
 
         for m in items:
             status = m.get("status")
+            sha = m.get("sha256_text")
 
             if status == "unchanged":
-                skipped += 1
-                self.logger.do_log(
-                    f"[TAG] ⏭ Skipped tagging (unchanged): {m.get('path', 'unknown')}",
-                    3
-                )
-                continue
+                if sha in old and "tags" in old[sha]:
+                    m["tags"] = old[sha]["tags"]
+                    self.logger.do_log(f"[TAG] ⏭ Reused tags → {sha}", 2)
+                else:
+                    m["tags"] = []
+                    self.logger.do_log(f"[TAG] ⚠ No previous tags → {sha}", 2)
 
-            full_text = m.get("full_text", "")
-            m["tags"] = self.tagger.classify(full_text)
-            processed += 1
+            else:  # new / changed
+                full_text = m.get("full_text", "")
+                m["tags"] = self.tagger.classify(full_text)
+                self.logger.do_log(f"[TAG] 🏷 Recomputed tags → {sha}", 2)
 
-        self.logger.do_log(
-            f"[TAG] ✔ Completed | processed={processed} | skipped={skipped}",
-            1
-        )
+            m.pop("full_text", None)
+
+        self.logger.do_log("[TAG] ✔ Completed", 1)
 
     def _save_inventory(self, items):
         self.logger.do_log("[SAVE] ▶ Saving metadata inventory", 1)

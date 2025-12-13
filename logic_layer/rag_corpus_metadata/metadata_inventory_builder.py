@@ -11,6 +11,14 @@ class MetadataInventoryBuilder:
         self.logger = logger
         os.makedirs(folder, exist_ok=True)
 
+    def load_existing(self):
+        path = os.path.join(self.folder, "corpus_inventory.json")
+        if not os.path.exists(path):
+            return {}
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return {m["sha256_text"]: m for m in data if "sha256_text" in m}
+
     def save(self, items):
         json_path = os.path.join(self.folder, "corpus_inventory.json")
         csv_path = os.path.join(self.folder, "corpus_inventory.csv")
