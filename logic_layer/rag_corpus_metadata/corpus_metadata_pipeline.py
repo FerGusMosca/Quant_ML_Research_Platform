@@ -96,12 +96,29 @@ class CorpusMetadataPipeline:
 
     def _apply_tagging(self, items):
         self.logger.do_log("[TAG] ▶ Applying topic tagging", 1)
+
+        skipped = 0
+        processed = 0
+
         for m in items:
-            title = m.get("title_guess", "")
-            full_text=m.get("full_text","")
+            status = m.get("status")
+
+            if status == "unchanged":
+                skipped += 1
+                self.logger.do_log(
+                    f"[TAG] ⏭ Skipped tagging (unchanged): {m.get('path', 'unknown')}",
+                    3
+                )
+                continue
+
+            full_text = m.get("full_text", "")
             m["tags"] = self.tagger.classify(full_text)
-            m.pop("full_text", None)#no needed after processing
-        self.logger.do_log("[TAG] ✔ Completed", 1)
+            processed += 1
+
+        self.logger.do_log(
+            f"[TAG] ✔ Completed | processed={processed} | skipped={skipped}",
+            1
+        )
 
     def _save_inventory(self, items):
         self.logger.do_log("[SAVE] ▶ Saving metadata inventory", 1)
