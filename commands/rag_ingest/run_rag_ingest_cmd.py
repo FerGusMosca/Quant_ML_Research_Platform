@@ -34,7 +34,7 @@ def show_rag_ingest_commands():
 # CORE LOGIC
 # ============================================================================
 
-def process_rag_ingest_logic(mode, source,dest_root):
+def process_rag_ingest_logic(mode, source,dest_root,log_posfix):
     """
     Core logic runner for ingestion.
     Loads config → creates orchestrator → runs selected pipeline.
@@ -53,7 +53,7 @@ def process_rag_ingest_logic(mode, source,dest_root):
         config = loader.load_settings("./configs/commands_mgr.ini")
 
         orch = RAGIngestOrchestrationLogic(config, logger)
-        orch.process_rag_ingest(mode, source,dest_root)
+        orch.process_rag_ingest(mode, source,dest_root,log_posfix)
 
         logger.do_log("[RAG] ✅ Ingestion completed", MessageType.INFO)
 
@@ -76,8 +76,9 @@ def process_rag_ingest(cmd):
     mode = ParamReader.get_param(cmd, "mode")
     source = ParamReader.get_param(cmd, "source", True, None)
     dest_root = ParamReader.get_param(cmd, "dest_root", True, None)
+    log_posfix = ParamReader.get_param(cmd, "log_posfix", True, None)
 
-    process_rag_ingest_logic(mode, source,dest_root)
+    process_rag_ingest_logic(mode, source,dest_root,log_posfix)
 
 
 # ============================================================================

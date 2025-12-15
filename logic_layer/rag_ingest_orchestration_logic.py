@@ -60,7 +60,7 @@ class RAGIngestOrchestrationLogic:
     # ============================================================
     # MAIN DISPATCH METHOD
     # ============================================================
-    def process_rag_ingest(self, ingest_type, source_path=None, dest_root=None):
+    def process_rag_ingest(self, ingest_type, source_path=None, dest_root=None,log_posfix=None):
         """
         :param ingest_type: "full" / "incremental"
         :param source_path: folder where PDFs exist
@@ -92,9 +92,12 @@ class RAGIngestOrchestrationLogic:
                 return False
 
             # ---------------------------
-            # Discover all PDFs
+            # Discover all PDFs/Oth
             # ---------------------------
-            pdfs = self._discover_pdfs(source_path)
+            pdfs = self._discover_ext(source_path)
+            txts = self._discover_ext(source_path,".txt")
+
+            pdfs.extend(txts)
 
             self.logger.do_log(
                 f"[RAG-INGEST] 📄 Found {len(pdfs)} PDF(s) to process.",
@@ -120,7 +123,7 @@ class RAGIngestOrchestrationLogic:
             self.logger.do_log("[RAG-INGEST] 🔧 Initializing RAG pipeline...", MessageType.INFO)
 
             pipeline = RAGPipeline(dest_root, self.config, self.logger)
-            pipeline.run(pdfs,source_path)
+            pipeline.run(pdfs,source_path,log_posfix)
 
             self.logger.do_log(
                 "[RAG-INGEST] ✅ RAG ingestion completed successfully.",
@@ -140,13 +143,13 @@ class RAGIngestOrchestrationLogic:
     # ============================================================
     # INTERNAL: PDF DISCOVERY
     # ============================================================
-    def _discover_pdfs(self, root_folder):
+    def _discover_ext(self, root_folder,format=".pdf"):
         """
         Recursively discover all PDF files inside root_folder.
         """
         pdfs = []
         for root, dirs, files in os.walk(root_folder):
             for f in files:
-                if f.lower().endswith(".pdf"):
+                if f.lower().endswith(format):
                     pdfs.append(os.path.join(root, f))
         return pdfs

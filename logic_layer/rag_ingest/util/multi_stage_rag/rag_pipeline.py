@@ -4,8 +4,11 @@
 import os
 import json
 import re
+from datetime import datetime
+
 import numpy as np
 
+from framework.common.logger.message_type import MessageType
 from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.ktransformers_chunk_generator import \
     KTransformersChunkGenerator
 from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.transfomers_semantic_dedupers import \
@@ -192,8 +195,7 @@ class RAGPipeline:
             rel_folder = os.path.normpath(self._compute_output_path(pdf_path))
         except Exception as e:
             self.logger.do_log(
-                f"[RAG][PATH] Failed to compute output path | pdf_path={pdf_path} | error={repr(e)}",
-                level=0
+                f"[RAG][PATH] Failed to compute output path | pdf_path={pdf_path} | error={repr(e)}",0
             )
             return None
 
@@ -224,30 +226,44 @@ class RAGPipeline:
 
         return chunks, metadata, embeddings
 
-    def _make_run_log(self, source_path):
-        """Build early-run log filename using the ingest source."""
-        from datetime import datetime
-        import re
-        clean = re.sub(r"[^A-Za-z0-9_\-]", "_", os.path.basename(source_path))
-        ts = datetime.utcnow().isoformat().replace(":", "-")
-        fn = f"ingest_{clean}_{ts}.json"
-        path = os.path.join(self.logs_dir, fn)
-        with open(path, "w", encoding="utf-8") as f: f.write("{}")
-        return path
+    def _make_run_log(self, source_path,log_posfix=None):
+
+        if log_posfix is None:
+            """Build early-run log filename using the ingest source."""
+
+            clean = re.sub(r"[^A-Za-z0-9_\-]", "_", os.path.basename(source_path))
+            ts = datetime.utcnow().isoformat().replace(":", "-")
+            fn = f"ingest_{clean}_{ts}.json"
+            path = os.path.join(self.logs_dir, fn)
+            with open(path, "w", encoding="utf-8") as f: f.write("{}")
+            return path
+        else:
+            ts = datetime.utcnow().isoformat().replace(":", "-")
+            fn = f"ingest_{log_posfix}_{ts}.json"
+            path = os.path.join(self.logs_dir, fn)
+            with open(path, "w", encoding="utf-8") as f: f.write("{}")
+            return path
+
 
     # ==========================================================
     # PROCESS MULTIPLE PDFs
     # ==========================================================
-    def run(self, pdf_list,source_path):
+    def run(self, pdf_list,source_path,log_posfix=None):
         """Run ingestion with two-layer skip logic + per-file logging + final summary."""
 
-        self.current_run_log = self._make_run_log(source_path)
+        self.current_run_log = self._make_run_log(source_path,log_posfix)
 
         start_ts = self.logger.now_iso() if hasattr(self.logger, "now_iso") else \
             __import__("datetime").datetime.utcnow().isoformat()
 
         summary = {"processed": 0, "skipped": 0, "errors": 0}
-        details_path = os.path.join(self.logs_dir, "ingest_details.log")
+
+        details_path =None
+        if log_posfix is None:
+            details_path = os.path.join(self.logs_dir, "ingest_details.log")
+        else:
+            ts = datetime.utcnow().isoformat().replace(":", "-")
+            details_path = os.path.join(self.logs_dir, f"ingest_details_{log_posfix}_{ts}.log")
 
         for pdf_path in pdf_list:
 
