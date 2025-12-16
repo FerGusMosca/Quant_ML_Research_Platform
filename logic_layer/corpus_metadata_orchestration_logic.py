@@ -18,7 +18,7 @@ class CorpusMetadataOrchestrationLogic:
                     pdfs.append(os.path.join(root, f))
         return pdfs
 
-    def run(self, source_path, dest_root):
+    def run(self, source_path, dest_root,chunk_name):
         self.logger.do_log(f"[CORPUS] 🚀 Starting metadata: {source_path}",
                            MessageType.INFO)
 
@@ -28,7 +28,7 @@ class CorpusMetadataOrchestrationLogic:
         pdfs = self._discover_pdfs(source_path)
         self.logger.do_log(f"[CORPUS] Found {len(pdfs)} PDFs", MessageType.INFO)
 
-        pipeline = CorpusMetadataPipeline(self.config, self.logger, dest_root)
+        pipeline = CorpusMetadataPipeline(self.config, self.logger, dest_root,chunk_name)
         pipeline.run(pdfs)
 
         self.logger.do_log("[CORPUS] ✅ Completed.", MessageType.INFO)

@@ -35,7 +35,7 @@ def show_corpus_metadata_commands():
 # CORE LOGIC
 # ============================================================================
 
-def process_corpus_metadata_logic(mode, source, dest_root):
+def process_corpus_metadata_logic(mode, source, dest_root,chunk_name):
     """
     Loads configs → initializes orchestration → runs metadata pipeline.
     """
@@ -51,7 +51,7 @@ def process_corpus_metadata_logic(mode, source, dest_root):
         config = loader.load_settings("./configs/commands_mgr.ini")
 
         orch = CorpusMetadataOrchestrationLogic(config, logger)
-        orch.run(source, dest_root)
+        orch.run(source, dest_root,chunk_name)
 
         logger.do_log("[CORPUS] ✅ Metadata generation completed.", MessageType.INFO)
 
@@ -74,8 +74,9 @@ def process_corpus_metadata(cmd):
     mode = ParamReader.get_param(cmd, "mode", True, None)
     source = ParamReader.get_param(cmd, "source", True, None)
     dest_root = ParamReader.get_param(cmd, "dest_root", True, None)
+    chunk_name = ParamReader.get_param(cmd, "chunk_name", True, None)
 
-    process_corpus_metadata_logic(mode, source, dest_root)
+    process_corpus_metadata_logic(mode, source, dest_root,chunk_name)
 
 
 # ============================================================================

@@ -11,12 +11,13 @@ from logic_layer.rag_corpus_metadata.run_logger import RunLogger
 
 class CorpusMetadataPipeline:
 
-    def __init__(self, config, logger, dest_root):
+    def __init__(self, config, logger, dest_root,chunk_name):
         self.config = config
         self.logger = logger
         self.dest_root = dest_root
+        self.chunk_name=chunk_name
 
-        folder = os.path.join(config["RAG_OUTPUT_FOLDER"], "corpus_metadata")
+        folder = os.path.join(config["RAG_OUTPUT_FOLDER"],self.chunk_name, "corpus_metadata")
         os.makedirs(folder, exist_ok=True)
         self.output_folder = folder
 
