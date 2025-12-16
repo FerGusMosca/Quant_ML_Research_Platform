@@ -60,7 +60,7 @@ class RAGIngestOrchestrationLogic:
     # ============================================================
     # MAIN DISPATCH METHOD
     # ============================================================
-    def process_rag_ingest(self, ingest_type, source_path=None, dest_root=None,log_posfix=None):
+    def process_rag_ingest(self, ingest_type, source_path=None,chunk_name=None, dest_root=None,log_posfix=None):
         """
         :param ingest_type: "full" / "incremental"
         :param source_path: folder where PDFs exist
@@ -100,7 +100,7 @@ class RAGIngestOrchestrationLogic:
             pdfs.extend(txts)
 
             self.logger.do_log(
-                f"[RAG-INGEST] 📄 Found {len(pdfs)} PDF(s) to process.",
+                f"[RAG-INGEST] 📄 Found {len(pdfs)} PDF/TXT(s) to process.",
                 MessageType.INFO
             )
 
@@ -112,7 +112,7 @@ class RAGIngestOrchestrationLogic:
 
             if len(pdfs) == 0:
                 self.logger.do_log(
-                    "[RAG-INGEST] ❌ No PDFs found. Nothing to process.",
+                    "[RAG-INGEST] ❌ No PDF/txt(s) found. Nothing to process.",
                     MessageType.ERROR
                 )
                 return False
@@ -122,7 +122,7 @@ class RAGIngestOrchestrationLogic:
             # ---------------------------
             self.logger.do_log("[RAG-INGEST] 🔧 Initializing RAG pipeline...", MessageType.INFO)
 
-            pipeline = RAGPipeline(dest_root, self.config, self.logger)
+            pipeline = RAGPipeline(chunk_name,dest_root, self.config, self.logger)
             pipeline.run(pdfs,source_path,log_posfix)
 
             self.logger.do_log(

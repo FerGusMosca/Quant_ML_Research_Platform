@@ -25,8 +25,9 @@ from logic_layer.rag_ingest.util.multi_stage_rag.ingest_metadata_manager import 
 
 class RAGPipeline:
 
-    def __init__(self, dest_root, config, logger):
+    def __init__(self,chunk_name, dest_root, config, logger):
         self.logger = logger
+        self.chunk_name=chunk_name
         self.dest_root = dest_root
         self.current_run_log =None
         #self.chunk_generator = VainillaChunkGenerator(self.logger)
@@ -43,7 +44,8 @@ class RAGPipeline:
             raise
 
         # ------- Output base folder -------
-        self.output_base = config["RAG_OUTPUT_FOLDER"]
+        #self.output_base = config["RAG_OUTPUT_FOLDER"]
+        self.output_base =os.path.join(config["RAG_OUTPUT_FOLDER"], self.chunk_name)
 
         try:
             os.makedirs(self.output_base, exist_ok=True)
