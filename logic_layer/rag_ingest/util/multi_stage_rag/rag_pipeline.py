@@ -9,6 +9,7 @@ from datetime import datetime
 import numpy as np
 
 from framework.common.logger.message_type import MessageType
+from logic_layer.rag_ingest.util.common.ingestion_logger import RAGIngestionLogger
 from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.ktransformers_chunk_generator import \
     KTransformersChunkGenerator
 from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.transfomers_semantic_dedupers import \
@@ -255,6 +256,8 @@ class RAGPipeline:
 
         self.current_run_log = self._make_run_log(source_path,log_posfix)
 
+        ingestion_logger = RAGIngestionLogger(self.logger,source_path,log_posfix)
+
         start_ts = self.logger.now_iso() if hasattr(self.logger, "now_iso") else \
             __import__("datetime").datetime.utcnow().isoformat()
 
@@ -309,18 +312,12 @@ class RAGPipeline:
         end_ts = self.logger.now_iso() if hasattr(self.logger, "now_iso") else \
             __import__("datetime").datetime.utcnow().isoformat()
 
-        out = {
-            "start": start_ts,
-            "end": end_ts,
-            "total": len(pdf_list),
-            "processed": summary["processed"],
-            "skipped": summary["skipped"],
-            "errors": summary["errors"],
-        }
+        ingestion_logger.finalize_run_and_update_state(log_root_path=self.logs_dir,
+                                                       current_run_log=self.current_run_log, start_ts=start_ts,
+                                                       end_ts=end_ts, pdf_list=pdf_list, source_path=source_path,
+                                                       summary=summary, log_posfix=log_posfix)
 
-        fn = f"ingest_run_{end_ts.replace(':', '-')}.json"
-        with open(self.current_run_log, "w", encoding="utf-8") as f:
-            json.dump(out, f, indent=2)
+
 
         self.logger.do_log("[RAG] ✅ Completed full batch ingestion.", 1)
 
