@@ -7,6 +7,8 @@ import json
 from datetime import datetime
 from typing import Dict, Optional, Any
 
+from logic_layer.rag_ingest.util.common.zh_next_folder_generator import ZHNextFolderGenerator
+
 
 class RAGIngestionLogger:
     """
@@ -137,3 +139,70 @@ class RAGIngestionLogger:
 
         except Exception as e:
             self.logger.do_log(f"[RAG] Failed to update last_ingestion.json: {e}", 0)
+
+    def get_last_successful_folder(self,logs_dir) -> str:
+        """
+        Reads last_ingestion.json from logs_dir and returns the last_successful_folder.
+        Raises clear RuntimeError with English message if anything goes wrong.
+        """
+
+
+        if not os.path.exists(logs_dir):
+            raise RuntimeError(
+                f"[RAG] ERROR: last_ingestion.json not found at {logs_dir}\n"
+                f"       → No record of previously processed folder.\n"
+                f"       → Run a manual ingest first or check the path."
+            )
+
+        try:
+            last_folder=None
+            with open(os.path.join(logs_dir,"last_ingestion.json"), "r", encoding="utf-8") as f:
+                last_folder = json.load(f)["last_successful_folder"].strip()
+
+            if not last_folder:
+                raise RuntimeError(
+                    "[RAG] ERROR: last_ingestion.json exists but 'last_successful_folder' field is missing or null.\n"
+                    "       → No successful ingest has been recorded yet."
+                )
+
+            if not isinstance(last_folder, str) or not last_folder.strip():
+                raise RuntimeError(
+                    "[RAG] ERROR: 'last_successful_folder' is empty or invalid in last_ingestion.json"
+                )
+
+            self.logger.do_log(f"[RAG] Last successful folder read: {last_folder}", 1)
+            return last_folder.strip()
+
+        except json.JSONDecodeError as e:
+            raise RuntimeError(
+                f"[RAG] ERROR: last_ingestion.json is corrupted (invalid JSON): {e}\n"
+                f"       → Delete the file or fix it manually."
+            )
+        except Exception as e:
+            raise RuntimeError(
+                f"[RAG] ERROR: Unexpected error reading last_ingestion.json: {e}"
+            )
+
+    def get_next_folder(self,last_sucessful_folder):
+        folder_gen = ZHNextFolderGenerator()
+        suggestions = folder_gen.generate_next_folders(last_sucessful_folder, n=4)
+
+        found = False
+        folder=None
+        for candidate in suggestions:
+            if os.path.exists(candidate) and os.path.isdir(candidate):
+                pdfs = [os.path.join(r, f) for r, _, fs in os.walk(candidate) for f in fs if
+                        f.lower().endswith('.pdf')]
+                if pdfs:
+                    source_path = candidate
+                    pdf_list = pdfs
+
+                    found = True
+                    folder=candidate
+                    break
+
+        if not found:
+            return None
+        else:
+            return folder
+

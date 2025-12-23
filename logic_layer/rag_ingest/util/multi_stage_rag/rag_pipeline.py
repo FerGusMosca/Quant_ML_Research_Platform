@@ -10,6 +10,7 @@ import numpy as np
 
 from framework.common.logger.message_type import MessageType
 from logic_layer.rag_ingest.util.common.ingestion_logger import RAGIngestionLogger
+from logic_layer.rag_ingest.util.common.zh_next_folder_generator import ZHNextFolderGenerator
 from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.ktransformers_chunk_generator import \
     KTransformersChunkGenerator
 from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.transfomers_semantic_dedupers import \
@@ -247,15 +248,80 @@ class RAGPipeline:
             with open(path, "w", encoding="utf-8") as f: f.write("{}")
             return path
 
+    def _validate_source_paths(self,source_path,dest_root):
+        # ---------------------------
+        # Validate source_path
+        # ---------------------------
+
+        if not source_path:
+            self.logger.do_log("[RAG-INGEST] ❌ Missing source_path.", MessageType.ERROR)
+            return False
+
+        if not os.path.exists(source_path):
+            self.logger.do_log(
+                f"[RAG-INGEST] ❌ Path does not exist: {source_path}",
+                MessageType.ERROR
+            )
+            return False
+
+        if not dest_root:
+            self.logger.do_log("[RAG-INGEST] ❌ Missing dest_root parameter.", MessageType.ERROR)
+            return False
+
+        return True
+
+
+    # ============================================================
+    # INTERNAL: PDF DISCOVERY
+    # ============================================================
+    def _discover_ext(self, root_folder,format=".pdf"):
+        """
+        Recursively discover all PDF files inside root_folder.
+        """
+        pdfs = []
+        for root, dirs, files in os.walk(root_folder):
+            for f in files:
+                if f.lower().endswith(format):
+                    pdfs.append(os.path.join(root, f))
+        return pdfs
+
+    def discover_all_pdfs(self,source_path):
+        # ---------------------------
+        # Discover all PDFs/Oth
+        # ---------------------------
+        pdfs = self._discover_ext(source_path)
+        txts = self._discover_ext(source_path, ".txt")
+
+        pdfs.extend(txts)
+
+        self.logger.do_log(
+            f"[RAG-INGEST] 📄 Found {len(pdfs)} PDF/TXT(s) to process.",
+            MessageType.INFO
+        )
+
+        for i, pdf_file in enumerate(pdfs):
+            self.logger.do_log(
+                f"[RAG-INGEST] [{i + 1}/{len(pdfs)}] {pdf_file}",
+                MessageType.INFO
+            )
+
+        if len(pdfs) == 0:
+            self.logger.do_log(
+                "[RAG-INGEST] ❌ No PDF/txt(s) found. Nothing to process.",
+                MessageType.ERROR
+            )
+            return []
+
+        return pdfs
+
 
     # ==========================================================
     # PROCESS MULTIPLE PDFs
     # ==========================================================
-    def run(self, pdf_list,source_path,log_posfix=None):
+    def run(self,source_path,log_posfix=None,ingest_type=None):
         """Run ingestion with two-layer skip logic + per-file logging + final summary."""
 
         self.current_run_log = self._make_run_log(source_path,log_posfix)
-
         ingestion_logger = RAGIngestionLogger(self.logger,source_path,log_posfix)
 
         start_ts = self.logger.now_iso() if hasattr(self.logger, "now_iso") else \
@@ -269,6 +335,26 @@ class RAGPipeline:
         else:
             ts = datetime.utcnow().isoformat().replace(":", "-")
             details_path = os.path.join(self.logs_dir, f"ingest_details_{log_posfix}_{ts}.log")
+
+
+        if ingest_type=="recurrent" and source_path=="*":
+            last_sucessful_folder= ingestion_logger.get_last_successful_folder(self.logs_dir)
+            next_folder= ingestion_logger.get_next_folder(last_sucessful_folder)
+
+            if not next_folder:
+                self.logger.do_log(f"[RAG] No folders with PDFs → next to {last_sucessful_folder} --> Nothing to process.", 1)
+                return
+            else:
+                self.logger.do_log(f"[RAG] Next Folder Found: {next_folder}", 1)
+                source_path=next_folder
+
+
+        #Validate Source Path
+        if not self._validate_source_paths(source_path,self.dest_root):
+            return
+
+        #Fetch all pdfs
+        pdf_list=self.discover_all_pdfs(source_path)
 
         for pdf_path in pdf_list:
 

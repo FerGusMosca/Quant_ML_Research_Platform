@@ -73,49 +73,6 @@ class RAGIngestOrchestrationLogic:
                 MessageType.INFO
             )
 
-            # ---------------------------
-            # Validate source_path
-            # ---------------------------
-            if not source_path:
-                self.logger.do_log("[RAG-INGEST] ❌ Missing source_path.", MessageType.ERROR)
-                return False
-
-            if not os.path.exists(source_path):
-                self.logger.do_log(
-                    f"[RAG-INGEST] ❌ Path does not exist: {source_path}",
-                    MessageType.ERROR
-                )
-                return False
-
-            if not dest_root:
-                self.logger.do_log("[RAG-INGEST] ❌ Missing dest_root parameter.", MessageType.ERROR)
-                return False
-
-            # ---------------------------
-            # Discover all PDFs/Oth
-            # ---------------------------
-            pdfs = self._discover_ext(source_path)
-            txts = self._discover_ext(source_path,".txt")
-
-            pdfs.extend(txts)
-
-            self.logger.do_log(
-                f"[RAG-INGEST] 📄 Found {len(pdfs)} PDF/TXT(s) to process.",
-                MessageType.INFO
-            )
-
-            for i, pdf_file in enumerate(pdfs):
-                self.logger.do_log(
-                    f"[RAG-INGEST] [{i+1}/{len(pdfs)}] {pdf_file}",
-                    MessageType.INFO
-                )
-
-            if len(pdfs) == 0:
-                self.logger.do_log(
-                    "[RAG-INGEST] ❌ No PDF/txt(s) found. Nothing to process.",
-                    MessageType.ERROR
-                )
-                return False
 
             # ---------------------------
             # Initialize pipeline ONCE
@@ -123,7 +80,7 @@ class RAGIngestOrchestrationLogic:
             self.logger.do_log("[RAG-INGEST] 🔧 Initializing RAG pipeline...", MessageType.INFO)
 
             pipeline = RAGPipeline(chunk_name,dest_root, self.config, self.logger)
-            pipeline.run(pdfs,source_path,log_posfix)
+            pipeline.run(source_path,log_posfix,ingest_type=ingest_type)
 
             self.logger.do_log(
                 "[RAG-INGEST] ✅ RAG ingestion completed successfully.",
@@ -140,16 +97,4 @@ class RAGIngestOrchestrationLogic:
             return False
 
 
-    # ============================================================
-    # INTERNAL: PDF DISCOVERY
-    # ============================================================
-    def _discover_ext(self, root_folder,format=".pdf"):
-        """
-        Recursively discover all PDF files inside root_folder.
-        """
-        pdfs = []
-        for root, dirs, files in os.walk(root_folder):
-            for f in files:
-                if f.lower().endswith(format):
-                    pdfs.append(os.path.join(root, f))
-        return pdfs
+
