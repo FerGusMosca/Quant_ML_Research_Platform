@@ -60,7 +60,8 @@ class RAGIngestOrchestrationLogic:
     # ============================================================
     # MAIN DISPATCH METHOD
     # ============================================================
-    def process_rag_ingest(self, ingest_type, source_path=None,chunk_name=None, dest_root=None,log_posfix=None):
+    def process_rag_ingest(self, ingest_type, source_path=None,chunk_name=None, dest_root=None,log_posfix=None,
+                           embedding_model=None,clustering_model=None):
         """
         :param ingest_type: "full" / "incremental"
         :param source_path: folder where PDFs exist
@@ -79,7 +80,7 @@ class RAGIngestOrchestrationLogic:
             # ---------------------------
             self.logger.do_log("[RAG-INGEST] 🔧 Initializing RAG pipeline...", MessageType.INFO)
 
-            pipeline = RAGPipeline(chunk_name,dest_root, self.config, self.logger)
+            pipeline = RAGPipeline(chunk_name,dest_root, self.config,embedding_model,clustering_model, self.logger)
             pipeline.run(source_path,log_posfix,ingest_type=ingest_type)
 
             self.logger.do_log(

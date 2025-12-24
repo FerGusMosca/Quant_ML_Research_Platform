@@ -27,20 +27,20 @@ from logic_layer.rag_ingest.util.multi_stage_rag.ingest_metadata_manager import 
 
 class RAGPipeline:
 
-    def __init__(self,chunk_name, dest_root, config, logger):
+    def __init__(self,chunk_name, dest_root, config,embedding_model,clustering_model, logger):
         self.logger = logger
         self.chunk_name=chunk_name
         self.dest_root = dest_root
         self.current_run_log =None
         #self.chunk_generator = VainillaChunkGenerator(self.logger)
-        self.chunk_generator = KTransformersChunkGenerator(logger=self.logger)
+        self.chunk_generator = KTransformersChunkGenerator(model_name= clustering_model,logger=self.logger)
 
         #self.chunk_deduper=VanillaChunkDeduper(logger=self.logger)
-        self.chunk_deduper=TranfomersSemanticChunkDeduper(logger=self.logger)
+        self.chunk_deduper=TranfomersSemanticChunkDeduper(model_name=clustering_model,logger=self.logger)
 
         # ------- Embedding model -------
         try:
-            self.embedder = EmbeddingsGenerator(logger=self.logger)
+            self.embedder = EmbeddingsGenerator(embedding_model,logger=self.logger)
         except Exception as e:
             self.logger.do_log(f"[RAG] ❌ Failed to load embedding model: {e}", 0)
             raise

@@ -34,7 +34,7 @@ def show_rag_ingest_commands():
 # CORE LOGIC
 # ============================================================================
 
-def process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix):
+def process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model):
     """
     Core logic runner for ingestion.
     Loads config → creates orchestrator → runs selected pipeline.
@@ -53,7 +53,7 @@ def process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix):
         config = loader.load_settings("./configs/commands_mgr.ini")
 
         orch = RAGIngestOrchestrationLogic(config, logger)
-        orch.process_rag_ingest(mode, source,chunk_name,dest_root,log_posfix)
+        orch.process_rag_ingest(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model)
 
         logger.do_log("[RAG] ✅ Ingestion completed", MessageType.INFO)
 
@@ -78,8 +78,10 @@ def process_rag_ingest(cmd):
     dest_root = ParamReader.get_param(cmd, "dest_root", True, None)
     chunk_name = ParamReader.get_param(cmd, "chunk_name", True, None)
     log_posfix = ParamReader.get_param(cmd, "log_posfix", True, None)
+    embedding_model = ParamReader.get_param(cmd, "embedding_model", True, None)
+    clustering_model = ParamReader.get_param(cmd, "clustering_model", True, None)
 
-    process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix)
+    process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model)
 
 
 # ============================================================================

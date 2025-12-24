@@ -19,6 +19,7 @@ class KTransformersChunkGenerator:
     def __init__(
         self,
         target_tokens=180,
+        model_name="BAAI/bge-small-en-v1.5",
         k=3,
         logger=None
     ):
@@ -26,8 +27,8 @@ class KTransformersChunkGenerator:
         self.k = k
         self.logger = logger
 
-        self.clusterer = KMeansSentenceClustering(logger=logger)
-        self.overlapper = TransformersChunkOverlapping(logger=logger)
+        self.clusterer = KMeansSentenceClustering(model_name=model_name,logger=logger)
+        self.overlapper = TransformersChunkOverlapping(model_name=model_name,logger=logger)
 
     def chunk(self, text: str):
         sentences = nltk.sent_tokenize(text)

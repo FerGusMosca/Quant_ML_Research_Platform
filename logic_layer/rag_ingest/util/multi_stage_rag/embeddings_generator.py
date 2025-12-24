@@ -5,13 +5,13 @@ from sentence_transformers import SentenceTransformer
 
 class EmbeddingsGenerator:
 
-    def __init__(self, logger=None):
+    def __init__(self,embedding_model="BAAI/bge-large-en-v1.5", logger=None):
         self.logger = logger
         try:
-            if self.logger: self.logger.do_log("[MSC] 🔧 Loading BGE-large-en-v1.5...", 1)
-            self.model = SentenceTransformer("BAAI/bge-large-en-v1.5")
+            if self.logger: self.logger.do_log(f"[MSC] 🔧 Loading {embedding_model}...", 1)
+            self.model = SentenceTransformer(embedding_model)
         except Exception as e:
-            if self.logger: self.logger.do_log(f"[MSC] ❌ Failed to load BGE-large: {e}", 0)
+            if self.logger: self.logger.do_log(f"[MSC] ❌ Failed to load {embedding_model}: {e}", 0)
             raise
 
     def embed(self, texts):
