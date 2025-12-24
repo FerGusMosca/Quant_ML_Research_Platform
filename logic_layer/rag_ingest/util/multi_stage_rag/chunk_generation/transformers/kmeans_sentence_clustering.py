@@ -11,9 +11,10 @@ class KMeansSentenceClustering:
     This class decides WHAT sentences belong together (semantic responsibility only).
     """
 
-    def __init__(self, model_name="BAAI/bge-small-en",k_units=5, logger=None):
+    def __init__(self, model_name=None,k_units=5, logger=None):
         self.logger = logger
-        self.model = SentenceTransformer(model_name)
+        self.model_name=model_name if model_name is not None else "BAAI/bge-small-en"
+        self.model = SentenceTransformer(self.model_name)
         self.k_units=k_units
 
     def cluster(self, sentences, k):

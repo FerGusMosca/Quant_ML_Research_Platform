@@ -33,6 +33,7 @@ class RAGIngestionLogger:
         self,
         log_root_path:str,
         current_run_log: str,
+        out_folder:str,
         start_ts: str,
         end_ts: str,
         pdf_list: list,
@@ -74,6 +75,7 @@ class RAGIngestionLogger:
         # 2. Update the ONLY state file: last_ingestion.json
         self._update_last_ingestion(
             source_path=source_path,
+            out_folder=out_folder,
             end_ts=end_ts,
             summary=summary,
             error_message=error_message,
@@ -82,6 +84,7 @@ class RAGIngestionLogger:
     def _update_last_ingestion(
         self,
         source_path: str,
+        out_folder:str,
         end_ts: str,
         summary: Dict[str, int],
         error_message: Optional[str],
@@ -113,6 +116,7 @@ class RAGIngestionLogger:
             # New entry
             entry = {
                 "folder": source_path,
+                "dest_folder":out_folder,
                 "status": status,
                 "timestamp": end_ts,
                 "processed": summary["processed"],
@@ -183,9 +187,9 @@ class RAGIngestionLogger:
                 f"[RAG] ERROR: Unexpected error reading last_ingestion.json: {e}"
             )
 
-    def get_next_folder(self,last_sucessful_folder):
+    def get_next_folder(self,last_sucessful_folder,dest_root):
         folder_gen = ZHNextFolderGenerator()
-        suggestions = folder_gen.generate_next_folders(last_sucessful_folder, n=4)
+        suggestions = folder_gen.generate_next_folders(last_sucessful_folder,dest_root, n=4)
 
         found = False
         folder=None

@@ -15,12 +15,13 @@ class TranfomersSemanticChunkDeduper:
     def __init__(
         self,
         logger,
-        model_name="sentence-transformers/all-MiniLM-L6-v2",
+        model_name=None,
         similarity_threshold=0.95
     ):
         self.logger = logger
         self.similarity_threshold = similarity_threshold
-        self.model = SentenceTransformer(model_name)
+        self.model_name=model_name if model_name is not None else "sentence-transformers/all-MiniLM-L6-v2"
+        self.model = SentenceTransformer(self.model_name)
 
         if self.logger:
             self.logger.do_log(

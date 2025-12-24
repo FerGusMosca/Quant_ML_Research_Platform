@@ -1,8 +1,9 @@
 # logic_layer/rag_ingest/util/zh_next_folder_generator.py
 # All comments in English
-
+import os
 import re
 from datetime import datetime, timedelta
+from pathlib import Path
 from typing import List, Optional
 
 
@@ -37,18 +38,16 @@ class ZHNextFolderGenerator:
         }
         self.abbr_to_num = {abbr.lower(): num for num, abbr in self.month_abbrs.items()}
 
-    def _extract_base_path(self, folder_path: str) -> Optional[str]:
-        """
-        Extracts the base path up to and including '/Archives/' from the full folder path.
-        Returns None if 'Archives' is not found.
-        """
+    def _extract_base_path(self, folder_path: str,dest_root:str) -> Optional[str]:
         try:
-            normalized = folder_path.replace("\\", "/")  # Handle Windows paths if needed
-            parts = normalized.split("/")
-            if "Archives" not in parts:
+            p = Path(folder_path).resolve()
+            parts = p.parts
+
+            if dest_root not in parts:
                 return None
-            archives_idx = parts.index("Archives")
-            return "/".join(parts[:archives_idx + 1]) + "/"
+
+            idx = parts.index(dest_root)
+            return str(Path(*parts[:idx + 1]))
         except Exception:
             return None
 
@@ -91,15 +90,15 @@ class ZHNextFolderGenerator:
     def _build_path_from_date(self, base_path: str, dt: datetime) -> str:
         """
         Builds the full folder path using the extracted base path and a datetime.
+        Cross-platform: Windows + Linux.
         """
-        year = dt.year
-        month_num = dt.month
-        day = dt.day
-        month_name = self.month_names[month_num]
-        month_abbr = self.month_abbrs[month_num]
-        return f"{base_path}{year}/{month_name}/{month_abbr} {day}"
+        year = str(dt.year)
+        month_name = self.month_names[dt.month]
+        day_folder = f"{self.month_abbrs[dt.month]} {dt.day}"
 
-    def generate_next_folders(self, current_folder: str, n: int = 10) -> List[str]:
+        return os.path.join(base_path, year, month_name, day_folder)
+
+    def generate_next_folders(self, current_folder: str,dest_root:str, n: int = 10) -> List[str]:
         """
         Generates the next n chronological folder paths after the given current_folder.
         Base path is dynamically extracted — no hardcoding.
@@ -108,7 +107,7 @@ class ZHNextFolderGenerator:
         :param n: Number of next suggestions
         :return: List of next folder paths
         """
-        base_path = self._extract_base_path(current_folder)
+        base_path = self._extract_base_path(current_folder,dest_root)
         if base_path is None:
             raise ValueError(f"Cannot extract base path (missing 'Archives') from: {current_folder}")
 

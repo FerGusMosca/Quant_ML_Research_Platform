@@ -87,6 +87,13 @@ class RAGPipeline:
     # ==========================================================
     # Compute output folder relative to dest_root
     # ==========================================================
+
+    def _format_folder(self,folder):
+        clean = re.sub(r'[^a-zA-Z0-9._-]', '_', folder)
+        # Collapse multiple underscores and strip leading/trailing ones
+        clean = re.sub(r'_+', '_', clean.strip('_'))
+        return  clean
+
     def _compute_output_path(self, pdf_path: str) -> str:
         """
         Compute the relative output folder path starting from dest_root.
@@ -111,9 +118,9 @@ class RAGPipeline:
             clean_parts = []
             for part in folder_parts:
                 # Replace anything that is not letter/number/dot/hyphen with _
-                clean = re.sub(r'[^a-zA-Z0-9._-]', '_', part)
-                # Collapse multiple underscores and strip leading/trailing ones
-                clean = re.sub(r'_+', '_', clean.strip('_'))
+                clean=self._format_folder(part)
+
+
                 clean_parts.append(clean)
 
             return os.path.join(*clean_parts)
@@ -228,7 +235,7 @@ class RAGPipeline:
             self.logger.do_log(f"[RAG] ❌ Saving artifacts failed: {e}", 0)
             return None
 
-        return chunks, metadata, embeddings
+        return chunks, metadata, embeddings,out_dir
 
     def _make_run_log(self, source_path,log_posfix=None):
 
@@ -285,7 +292,7 @@ class RAGPipeline:
                     pdfs.append(os.path.join(root, f))
         return pdfs
 
-    def discover_all_pdfs(self,source_path):
+    def _discover_all_pdfs(self,source_path):
         # ---------------------------
         # Discover all PDFs/Oth
         # ---------------------------
@@ -314,6 +321,34 @@ class RAGPipeline:
 
         return pdfs
 
+    def _get_dest_root_folder(self,source_path,dest_root,out_folder):
+        # --------------------------------------------------
+        # Extract everything from dest_root onward (inclusive)
+        # Result: \Archives\2025\November\Nov 6
+        # --------------------------------------------------
+        idx = source_path.find(dest_root)
+        dest_footer = source_path[idx:] if idx != -1 else ""
+
+
+        #Sanitize dest_footer
+        normalized = os.path.normpath(dest_footer)
+        parts = normalized.split(os.sep)
+
+        clean_parts=[]
+        for part in parts:
+            part = self._format_folder(part)
+            clean_parts.append(part)
+
+        dest_footer=os.path.join(*clean_parts) #We need to remove Nov 6 --> Nov_6
+
+        # --------------------------------------------------
+        # Remove dest_footer (and anything after) from out_folder
+        # Result: output\rag\ZERO_HEDGE_CHUNKS\Archives\2025\November\Nov_6
+        # --------------------------------------------------
+        idx2 = out_folder.find(dest_footer)
+        out_folder_clean = out_folder[:idx2] if idx2 != -1 else out_folder
+
+        return  os.path.join(out_folder_clean,dest_footer)
 
     # ==========================================================
     # PROCESS MULTIPLE PDFs
@@ -339,7 +374,7 @@ class RAGPipeline:
 
         if ingest_type=="recurrent" and source_path=="*":
             last_sucessful_folder= ingestion_logger.get_last_successful_folder(self.logs_dir)
-            next_folder= ingestion_logger.get_next_folder(last_sucessful_folder)
+            next_folder= ingestion_logger.get_next_folder(last_sucessful_folder,self.dest_root)
 
             if not next_folder:
                 self.logger.do_log(f"[RAG] No folders with PDFs → next to {last_sucessful_folder} --> Nothing to process.", 1)
@@ -354,8 +389,8 @@ class RAGPipeline:
             return
 
         #Fetch all pdfs
-        pdf_list=self.discover_all_pdfs(source_path)
-
+        pdf_list= self._discover_all_pdfs(source_path)
+        out_folder=None
         for pdf_path in pdf_list:
 
             # -------- Initial QUEUED log --------
@@ -385,6 +420,10 @@ class RAGPipeline:
                 with open(details_path, "a", encoding="utf-8", buffering=1) as lf:
                     lf.write(f"{start_ts} | processed | {pdf_path}\n")
 
+                if out_folder is None:
+                    out_folder=res[3]
+                    out_folder=self._get_dest_root_folder(source_path,self.dest_root,out_folder)
+
             else:
                 summary["errors"] += 1
 
@@ -399,7 +438,8 @@ class RAGPipeline:
             __import__("datetime").datetime.utcnow().isoformat()
 
         ingestion_logger.finalize_run_and_update_state(log_root_path=self.logs_dir,
-                                                       current_run_log=self.current_run_log, start_ts=start_ts,
+                                                       current_run_log=self.current_run_log,out_folder=out_folder,
+                                                        start_ts=start_ts,
                                                        end_ts=end_ts, pdf_list=pdf_list, source_path=source_path,
                                                        summary=summary, log_posfix=log_posfix)
 

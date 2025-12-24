@@ -13,13 +13,14 @@ class TransformersChunkOverlapping:
 
     def __init__(
         self,
-        model_name="sentence-transformers/all-MiniLM-L6-v2",
+        model_name=None,
         similarity_threshold=0.85,
         logger=None
     ):
         self.logger = logger
         self.similarity_threshold = similarity_threshold
-        self.model = SentenceTransformer(model_name)
+        self.model_name=model_name if model_name is not None else "sentence-transformers/all-MiniLM-L6-v2"
+        self.model = SentenceTransformer(self.model_name)
 
     def should_merge(self, chunk_a: str, chunk_b: str) -> bool:
         vecs = self.model.encode([chunk_a, chunk_b], normalize_embeddings=True)
