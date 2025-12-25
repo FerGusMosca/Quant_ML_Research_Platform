@@ -2,46 +2,37 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-# ------------------------------------------------------
-# Add ODBC Driver for SQL Server (Debian 12 - FINAL FIX)
-# ------------------------------------------------------
-RUN apt-get update && \
-    apt-get install -y curl gnupg apt-transport-https ca-certificates && \
-    mkdir -p /etc/apt/keyrings && \
-    curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /etc/apt/keyrings/microsoft.gpg && \
-    echo "deb [arch=amd64,arm64 signed-by=/etc/apt/keyrings/microsoft.gpg] https://packages.microsoft.com/debian/12/prod bookworm main" > /etc/apt/sources.list.d/mssql-release.list && \
+# ------------------ Sistema ------------------
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl gnupg apt-transport-https ca-certificates \
+    chromium chromium-driver \
+    unixodbc-dev && \
+    # ODBC Driver 18 for SQL Server
+    curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o /usr/share/keyrings/microsoft-prod.gpg && \
+    echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/microsoft-prod.gpg] https://packages.microsoft.com/debian/12/prod bookworm main" > /etc/apt/sources.list.d/mssql-release.list && \
     apt-get update && \
-    ACCEPT_EULA=Y apt-get install -y msodbcsql18 unixodbc-dev && \
+    ACCEPT_EULA=Y apt-get install -y --no-install-recommends msodbcsql18 && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# ------------------------------------------------------
-# Install Chromium + ChromeDriver (for Selenium fallback)
-# ------------------------------------------------------
-RUN apt-get update && \
-    apt-get install -y chromium chromium-driver && \
-    apt-get clean && rm -rf /var/lib/apt/lists/*
-
-
-# ------------------------------------------------------
-# Install dependencies
-# ------------------------------------------------------
-COPY ./commands/reports/requirements.txt ./requirements.txt
+# ------------------ Python deps ------------------
+COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt && \
-    python -m nltk.downloader vader_lexicon
+    pip install --no-cache-dir -r requirements.txt
 
+# ------------------ NLTK data (precargar todo lo que usa tu código) ------------------
+RUN python -c "import nltk; nltk.download('vader_lexicon', quiet=True); nltk.download('punkt', quiet=True); nltk.download('punkt_tab', quiet=True)"
+
+# ------------------ Spacy model ------------------
 RUN python -m spacy download en_core_web_sm
-# ------------------------------------------------------
-# Copy app source
-# ------------------------------------------------------
-COPY ./commands /app/commands
-COPY ./common /app/common
-COPY ./logic_layer /app/logic_layer
-COPY ./data_access_layer /app/data_access_layer
-COPY ./framework /app/framework
-COPY ./configs /app/configs
-COPY ./static/dictionaries /app/static/dictionaries
 
-# Default command (override via docker run)
+# ------------------ Código y recursos ------------------
+COPY commands /app/commands
+COPY common /app/common
+COPY logic_layer /app/logic_layer
+COPY data_access_layer /app/data_access_layer
+COPY framework /app/framework
+COPY configs /app/configs
+COPY static/dictionaries /app/static/dictionaries
+
+# ------------------ Command ------------------
 CMD ["python", "-m", "commands.reports.run_report_cmd"]
-
