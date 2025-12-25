@@ -3,7 +3,7 @@ import re
 import json
 from pathlib import Path
 from typing import Dict, List
-
+import os, re, json
 from bs4 import BeautifulSoup
 from nltk.sentiment import SentimentIntensityAnalyzer
 import nltk
@@ -74,7 +74,7 @@ class SentimentSummaryReport:
 
         # Input HTML lives in ./output/{K10|Q10}/<YEAR>
         self.input_dir = os.path.join(
-            Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+            Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,#/documents in practice
             portfolio,
             report_type,
             str(year)
@@ -285,11 +285,14 @@ class SentimentSummaryReport:
         into a single consolidated JSON file, saving it under the rank_folder.
         """
 
-        import os, re, json
+
+        # Cross-platform project root detection
+        root_dir = Path(__file__).resolve().parent.parent.parent.parent
 
         # --- Input folder (sentiment JSONs) ---
         base_dir = os.path.join(
-            "/zzLotteryTicket/documents",
+            root_dir,
+            Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
             dest_folder,
             f"{report_type}_sentiment_summary_report",
             str(year)
@@ -297,7 +300,6 @@ class SentimentSummaryReport:
         if universe_key:
             base_dir = os.path.join(base_dir, universe_key)
 
-        base_dir = base_dir.replace("\\", "/")
 
         logger.do_log(f"[SENT] 🧭 Reading from base_dir={base_dir}", MessageType.INFO)
 
@@ -321,12 +323,12 @@ class SentimentSummaryReport:
 
         # --- Output folder (ranked consolidated JSON) ---
         rank_dir = os.path.join(
-            "/zzLotteryTicket/documents",
+            root_dir,
+            Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
             rank_folder,
             f"{report_type}_sentiment_summary_report_rank",
             str(year)
         )
-        rank_dir = rank_dir.replace("\\", "/")
 
         os.makedirs(rank_dir, exist_ok=True)
         logger.do_log(f"[SENT] 🧭 Writing to rank_dir={rank_dir}", MessageType.INFO)

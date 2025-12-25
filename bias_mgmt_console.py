@@ -256,14 +256,21 @@ def process_download_sec_securities(cmd):
     process_download_sec_securities_logic()
 
 def process_run_report(cmd):
-    # Required parameters
+    """
+    Extracts parameters from command string and delegates to process_run_report_logic().
+    Example:
+        RunReport report=download_q10 portfolio=US_BIGCAP_EX year=2025
+    """
     report_key = ParamReader.get_param(cmd, "report")
     year = ParamReader.get_param(cmd, "year", True, None)
     d_from = ParamReader.get_param(cmd, "from", True, None)
     portfolio = ParamReader.get_param(cmd, "portfolio")
-    symbol = ParamReader.get_param(cmd, "symbol",True,None)
+    dest_folder = ParamReader.get_param(cmd, "dest_folder",True,None)
+    rank_folder= ParamReader.get_param(cmd, "rank_folder",True,None)
+    symbol = ParamReader.get_param(cmd, "symbol", True, None)
 
-    process_run_report_logic(report_key, year,portfolio,symbol,d_from)
+    process_run_report_logic(report_key, year, portfolio, symbol, d_from,dest_folder,rank_folder)
+
 
 
 def process_create_spread_variable_bulk(cmd):
@@ -1648,7 +1655,12 @@ def process_download_bcra_interest_rates_logic(d_from, d_to=None):
         )
 
 
-def process_run_report_logic(report_key, year=None,portfolio=None,symbol=None,d_from=None):
+def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None, d_from=None,dest_folder=None,rank_folder=None):
+    """
+    Core logic responsible for running reports through AlgosOrchestationLogic.
+    """
+
+
     logger = Logger()
 
     try:
@@ -1664,7 +1676,7 @@ def process_run_report_logic(report_key, year=None,portfolio=None,symbol=None,d_
             logger
         )
 
-        trd_algos.process_run_report(report_key, year,portfolio,symbol,d_from)
+        trd_algos.process_run_report(report_key, year, portfolio, symbol, d_from,dest_folder,rank_folder)
 
         logger.do_log(f"[REPORT] ✅ Report {report_key} completed", MessageType.INFO)
 

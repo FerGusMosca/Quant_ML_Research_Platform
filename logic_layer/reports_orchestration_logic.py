@@ -18,7 +18,8 @@ from data_access_layer.report_securities_manager import ReportSecuritiesManager
 from data_access_layer.securities_calendar_manager import SecuritiesCalendarManager
 from framework.common.logger.message_type import MessageType
 from logic_layer.report_generators.competition_summary_report import CompetitionSummaryReport
-from logic_layer.report_generators.sentence_sentiment_summary_report import SentimentSummaryReport
+from logic_layer.report_generators.sentiment.sentence_sentiment_summary_report import SentimentSummaryReport
+from logic_layer.report_generators.sentiment.sentence_sentiment_summary_report_v2 import SentimentSummaryReportV2
 
 
 class ReportsOrchestationLogic:
@@ -195,7 +196,8 @@ class ReportsOrchestationLogic:
             self.logger.do_log(f"[SENT] 🚀 Starting sentiment summary ({report_type}, year={y})", MessageType.INFO)
 
             whitelist = self._get_universe_filers(universe) if universe else None
-            gen = SentimentSummaryReport(
+            gen=SentimentSummaryReportV2(
+            #gen = SentimentSummaryReport(
                 year=y,
                 report_type=report_type,
                 logger=self.logger,
@@ -213,6 +215,8 @@ class ReportsOrchestationLogic:
                 continue
 
             try:
+                consolidated=gen.consolidate_year(y,report_type)
+                '''
                 consolidated = SentimentSummaryReport.consolidate_year(
                                 y,
                                 report_type,
@@ -221,9 +225,12 @@ class ReportsOrchestationLogic:
                                 dest_folder=dest_folder,
                                 rank_folder=rank_folder
                             )
+                
+                '''
                 ranking_csv = os.path.join(os.path.dirname(consolidated),
                                            f"sentiment_summary_ranking_{y}.csv")
                 SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
+
             except Exception as e:
                 self.logger.do_log(f"[SENT] ⚠️ Consolidation/Ranking failed for {y}: {e}",
                                    MessageType.WARNING)
