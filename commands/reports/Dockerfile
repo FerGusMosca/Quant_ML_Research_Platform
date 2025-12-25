@@ -40,6 +40,7 @@ COPY ./logic_layer /app/logic_layer
 COPY ./data_access_layer /app/data_access_layer
 COPY ./framework /app/framework
 COPY ./configs /app/configs
+COPY ./static/dictionaries /app/static/dictionaries
 
 # Default command (override via docker run)
 CMD ["python", "-m", "commands.reports.run_report_cmd"]
