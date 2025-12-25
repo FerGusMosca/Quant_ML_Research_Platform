@@ -338,8 +338,7 @@ class ReportsOrchestationLogic:
 
                     # Extract real filing dates from downloaded files
                     k10_filing_date, q10_filing_dates = SecuritiesCalendarExtractor.process_k10_q10_directories(
-                        k10_dir, q10_dir
-                    )
+                        sec.ticker, k10_dir, q10_dir)
 
                     # Build the calendar entry using real extracted dates
                     entry = SecurityReportCalendar(

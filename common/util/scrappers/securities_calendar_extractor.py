@@ -3,82 +3,108 @@ from pathlib import Path
 from datetime import datetime
 from typing import Optional, Dict, Tuple
 from bs4 import BeautifulSoup
-from collections import Counter
 
 
 class SecuritiesCalendarExtractor:
+    """
+    Versión ORIGINAL que estaba andando.
+    Extrae fecha de presentación de firmas (la que funcionaba en tus pruebas iniciales).
+    """
 
     @staticmethod
-    def _parse_date(text: str) -> Optional[datetime]:
+    def _parse_date_from_text(text: str) -> Optional[datetime]:
         patterns = [
-            r'(January|February|March|April|May|June|July|August|September|October|November|December)\s+([0-9]{1,2}),?\s+([0-9]{4})',
-            r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\.?\s+([0-9]{1,2}),?\s+([0-9]{4})',
-            r'([0-9]{4}-\d{2}-\d{2})',
+            r'(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(\d{4})',
+            r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\.?\s+(\d{1,2}),\s+(\d{4})',
+            r'(\d{4}-\d{2}-\d{2})',
         ]
-        months = {'january':1,'february':2,'march':3,'april':4,'may':5,'june':6,'july':7,'august':8,'september':9,'october':10,'november':11,'december':12,
-                  'jan':1,'feb':2,'mar':3,'apr':4,'may':5,'jun':6,'jul':7,'aug':8,'sep':9,'oct':10,'nov':11,'dec':12}
 
-        for pat in patterns:
-            m = re.search(pat, text, re.I)
-            if m:
-                g = m.groups()
+        months_map = {
+            'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6,
+            'july': 7, 'august': 8, 'september': 9, 'october': 10, 'november': 11, 'december': 12,
+            'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6,
+            'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12
+        }
+
+        text_lower = text.lower()
+        for pattern in patterns:
+            match = re.search(pattern, text_lower, re.IGNORECASE)
+            if match:
                 try:
-                    if len(g)==3 and not g[0].isdigit():
-                        mon = months.get(g[0].lower(), months.get(g[0].lower()[:3]))
-                        return datetime(int(g[2]), mon, int(g[1]))
-                    elif len(g)==1:
-                        return datetime.strptime(g[0], '%Y-%m-%d')
-                except: pass
+                    if len(match.groups()) == 3:
+                        month_name, day_str, year_str = match.groups()
+                        month = months_map.get(month_name.lower(), months_map.get(month_name.lower()[:3]))
+                        if month:
+                            return datetime(int(year_str), month, int(day_str))
+                    elif len(match.groups()) == 1:
+                        return datetime.fromisoformat(match.group(1))
+                except (ValueError, AttributeError):
+                    continue
         return None
 
     @staticmethod
     def extract_filing_date_from_file(file_path: Path) -> Optional[datetime]:
-        if not file_path.exists(): return None
+        if not file_path.exists():
+            return None
+
         try:
             with open(file_path, 'r', encoding='utf-8') as f:
-                soup = BeautifulSoup(f.read(), 'html.parser')
+                content = f.read()
 
-            candidates = []
+            soup = BeautifulSoup(content, 'html.parser')
+            text = soup.get_text()
 
-            # 1. Busca fechas cerca de firmas o en celdas de tabla
-            for td in soup.find_all('td'):
-                txt = td.get_text()
-                date = SecuritiesCalendarExtractor._parse_date(txt)
-                if date: candidates.append(date)
+            date_mentions = []
+            lines = text.splitlines()
+            month_keywords = ['january', 'february', 'march', 'april', 'may', 'june',
+                              'july', 'august', 'september', 'october', 'november', 'december',
+                              'jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
 
-            # 2. "Date:" explícito
-            date_line = re.search(r'Date[:\s]+(.+)', soup.get_text(), re.I)
-            if date_line:
-                d = SecuritiesCalendarExtractor._parse_date(date_line.group(1))
-                if d: candidates.append(d)
+            for line in lines:
+                if any(kw in line.lower() for kw in month_keywords):
+                    parsed = SecuritiesCalendarExtractor._parse_date_from_text(line)
+                    if parsed:
+                        date_mentions.append(parsed)
 
-            # 3. Fecha más frecuente = filing date
-            if candidates:
-                return Counter(candidates).most_common(1)[0][0]
+            if date_mentions:
+                most_common = max(set(date_mentions), key=date_mentions.count)
+                return most_common
+
+            date_match = re.search(r'Date:\s*(.+)', text, re.IGNORECASE)
+            if date_match:
+                parsed = SecuritiesCalendarExtractor._parse_date_from_text(date_match.group(1))
+                if parsed:
+                    return parsed
 
             return None
+
         except Exception as e:
-            print(f"Error {file_path}: {e}")
+            print(f"[Extractor] Error processing {file_path}: {e}")
             return None
 
     @staticmethod
-    def process_k10_q10_directories(k10_dir: Path, q10_dir: Path) -> Tuple[Optional[datetime], Dict[int, Optional[datetime]]]:
+    def process_k10_q10_directories(ticker:str,k10_dir: Path, q10_dir: Path) -> Tuple[Optional[datetime], Dict[int, Optional[datetime]]]:
         k10_date = None
         q10_dates = {1: None, 2: None, 3: None}
 
-        if k10_dir.exists():
-            files = list(k10_dir.glob("*.html")) + list(k10_dir.glob("*.htm"))
-            if files:
-                k10_date = SecuritiesCalendarExtractor.extract_filing_date_from_file(files[0])
+        if k10_dir.exists() and k10_dir.is_dir():
+            html_files = list(k10_dir.glob("*.html")) + list(k10_dir.glob(f"{ticker}*.htm"))
+            if html_files:
+                k10_date = SecuritiesCalendarExtractor.extract_filing_date_from_file(html_files[0])
 
-        if q10_dir.exists():
-            for f in q10_dir.glob("*.html"):
-                name = f.name.upper()
-                q = None
-                if '_Q1_' in name or 'Q1' in name: q = 1
-                elif '_Q2_' in name or 'Q2' in name: q = 2
-                elif '_Q3_' in name or 'Q3' in name: q = 3
-                if q:
-                    q10_dates[q] = SecuritiesCalendarExtractor.extract_filing_date_from_file(f)
+        if q10_dir.exists() and q10_dir.is_dir():
+            for q_file in q10_dir.glob(f"{ticker}*.html"):
+                filename_upper = q_file.name.upper()
+                quarter = None
+                if '_Q1_' in filename_upper or 'Q1' in filename_upper.replace(' ', ''):
+                    quarter = 1
+                elif '_Q2_' in filename_upper or 'Q2' in filename_upper.replace(' ', ''):
+                    quarter = 2
+                elif '_Q3_' in filename_upper or 'Q3' in filename_upper.replace(' ', ''):
+                    quarter = 3
+
+                if quarter:
+                    date = SecuritiesCalendarExtractor.extract_filing_date_from_file(q_file)
+                    q10_dates[quarter] = date
 
         return k10_date, q10_dates
