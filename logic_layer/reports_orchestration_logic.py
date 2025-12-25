@@ -1,7 +1,9 @@
 import os
 import shutil
 from datetime import datetime
+from pathlib import Path
 
+from common.dto.security_report_calendar import SecurityReportCalendar
 from common.enums.folders import Folders
 from common.enums.report_folder import ReportFolder
 from common.enums.report_type import ReportType
@@ -13,6 +15,8 @@ from common.util.downloaders.k10_downloader import K10Downloader
 from common.util.downloaders.q10_downloader import Q10Downloader
 from common.util.downloaders.securities_calendar_downloader import SecuritiesCalendarDownloader
 from common.util.downloaders.yahoo_income_statement import YahooIncomeStatement
+from common.util.scrappers.securities_calendar_extractor import SecuritiesCalendarExtractor
+from common.util.std_in_out.root_locator import RootLocator
 from data_access_layer.portfolio_securities_manager import PortfolioSecuritiesManager
 from data_access_layer.report_securities_manager import ReportSecuritiesManager
 from data_access_layer.securities_calendar_manager import SecuritiesCalendarManager
@@ -309,18 +313,47 @@ class ReportsOrchestationLogic:
 
         from_year, to_year = map(int, str(year).split('-')) if '-' in str(year) else (int(year), int(year))
         existing = self.sec_cal_mgr.get_calendars_by_range(from_year, to_year)
+        root_dir = RootLocator.get_root(markers=["bias_mgmt_console.py", "README.md"])
 
         for i, sec in enumerate(securities):
             for yr in range(from_year, to_year + 1):
-                key = (sec.ticker, yr)
-                if key in existing:
-                    self.logger.do_log(
-                        f"[REPORT][{i + 1}/{len(securities)}][{yr}] ⏭ {sec.ticker} already in DB, skipped.",
-                        MessageType.INFO)
-                    continue
+
                 try:
-                    entry = SecuritiesCalendarDownloader.download(sec.ticker, sec.cik, yr)
+                    # Inside your loop for each security and year
+                    k10_dir = (
+                            root_dir
+                            / Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value
+                            / portfolio
+                            / "K10"
+                            / str(yr)
+                    )
+
+                    q10_dir = (
+                            root_dir
+                            / Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value
+                            / portfolio
+                            / "Q10"
+                            / str(yr)
+                    )
+
+                    # Extract real filing dates from downloaded files
+                    k10_filing_date, q10_filing_dates = SecuritiesCalendarExtractor.process_k10_q10_directories(
+                        k10_dir, q10_dir
+                    )
+
+                    # Build the calendar entry using real extracted dates
+                    entry = SecurityReportCalendar(
+                        cik=sec.cik,
+                        symbol=sec.ticker,
+                        fiscal_year=yr,
+                        q1=q10_filing_dates[1],
+                        q2=q10_filing_dates[2],
+                        q3=q10_filing_dates[3],
+                        k10=k10_filing_date
+                    )
+
                     self.sec_cal_mgr.upsert_calendar_entry(entry)
+
                     self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}][{yr}] ✅ {sec.ticker} saved.",
                                        MessageType.INFO)
                 except Exception as e:
