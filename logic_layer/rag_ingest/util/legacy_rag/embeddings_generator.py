@@ -1,5 +1,5 @@
 """
-EmbeddingsGenerator
+TransformersEmbeddingsGenerator
 -------------------
 Computes embeddings using BGE-small-en.
 """

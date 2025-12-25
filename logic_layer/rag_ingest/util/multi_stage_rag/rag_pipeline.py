@@ -21,7 +21,7 @@ from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.vainilla.vanil
 from logic_layer.rag_ingest.util.multi_stage_rag.pdf_text_extractor import PDFTextExtractor
 from logic_layer.rag_ingest.util.multi_stage_rag.pdf_cleaner import PDFCleaner
 from logic_layer.rag_ingest.util.multi_stage_rag.metadata_builder import MetadataBuilder
-from logic_layer.rag_ingest.util.multi_stage_rag.embeddings_generator import EmbeddingsGenerator
+from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.transformers_embeddings_generator import TransformersEmbeddingsGenerator
 from logic_layer.rag_ingest.util.multi_stage_rag.ingest_metadata_manager import IngestMetadataManager
 
 
@@ -40,7 +40,7 @@ class RAGPipeline:
 
         # ------- Embedding model -------
         try:
-            self.embedder = EmbeddingsGenerator(embedding_model,logger=self.logger)
+            self.embedder = TransformersEmbeddingsGenerator(embedding_model,logger=self.logger)
         except Exception as e:
             self.logger.do_log(f"[RAG] ❌ Failed to load embedding model: {e}", 0)
             raise

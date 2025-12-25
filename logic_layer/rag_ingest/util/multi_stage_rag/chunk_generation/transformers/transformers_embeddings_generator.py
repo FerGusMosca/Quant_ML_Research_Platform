@@ -3,7 +3,7 @@
 from sentence_transformers import SentenceTransformer
 
 
-class EmbeddingsGenerator:
+class TransformersEmbeddingsGenerator:
 
     def __init__(self,embedding_model=None, logger=None):
         self.logger = logger
