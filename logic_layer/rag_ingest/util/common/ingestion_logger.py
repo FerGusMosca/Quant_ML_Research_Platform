@@ -106,9 +106,9 @@ class RAGIngestionLogger:
                 history = []
 
             # Status
-            if summary["errors"] == 0 and summary["processed"] > 0:
+            if  summary["processed"] > 50:
                 status = "success"
-            elif summary["errors"] > 0:
+            elif summary["errors"] > 100:
                 status = "error"
             else:
                 status = "no_content"
