@@ -10,6 +10,7 @@ import nltk
 
 from common.enums.folders import Folders
 from common.enums.report_folder import ReportFolder
+from common.util.std_in_out.root_locator import RootLocator
 from framework.common.logger.message_type import MessageType
 
 
@@ -287,7 +288,7 @@ class SentimentSummaryReport:
 
 
         # Cross-platform project root detection
-        root_dir = Path(__file__).resolve().parent.parent.parent.parent
+        root_dir = RootLocator.get_root(markers=["bias_mgmt_console.py", "README.md"])
 
         # --- Input folder (sentiment JSONs) ---
         base_dir = os.path.join(

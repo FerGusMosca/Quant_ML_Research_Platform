@@ -7,6 +7,7 @@ import json
 from datetime import datetime
 from typing import Dict, Optional, Any
 
+from framework.common.logger.message_type import MessageType
 from logic_layer.rag_ingest.util.common.zh_next_folder_generator import ZHNextFolderGenerator
 
 
@@ -194,16 +195,20 @@ class RAGIngestionLogger:
         found = False
         folder=None
         for candidate in suggestions:
+            self.logger.do_log(f"[RAG] Evaluating next folder candidate {candidate}",MessageType.INFO)
             if os.path.exists(candidate) and os.path.isdir(candidate):
                 pdfs = [os.path.join(r, f) for r, _, fs in os.walk(candidate) for f in fs if
                         f.lower().endswith('.pdf')]
                 if pdfs:
-                    source_path = candidate
-                    pdf_list = pdfs
+                    self.logger.do_log(f"[RAG] Found {len(pdfs)} pdfs in folder {candidate} --> selected to be processed", MessageType.INFO)
 
                     found = True
                     folder=candidate
                     break
+                else:
+                    self.logger.do_log(f"[RAG] NO pdfs found in {candidate} --> fetching next", MessageType.INFO)
+            else:
+                self.logger.do_log(f"[RAG] Candidate folder{candidate} does NOT exist. Fetching next candidate folder", MessageType.INFO)
 
         if not found:
             return None
