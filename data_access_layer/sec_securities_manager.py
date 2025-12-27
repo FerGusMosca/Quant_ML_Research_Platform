@@ -23,10 +23,11 @@ class SECSecuritiesManager:
             for sec_dto in sec_dtos:
                 try:
                     cursor.execute("""
-                        EXEC Persist_SECSecurity ?, ?, ?, ?, ?, ?, ?
+                        EXEC Persist_SECSecurity ?,?, ?, ?, ?, ?, ?, ?
                     """, (
                         sec_dto.cik,
                         sec_dto.ticker,
+                        sec_dto.symbol,
                         sec_dto.name,
                         sec_dto.exchange,
                         sec_dto.category,

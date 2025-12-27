@@ -2295,6 +2295,7 @@ class AlgosOrchestationLogic:
                 dto = SecSecurityDTO(
                     cik=item.get("cik_str"),
                     ticker=item.get("ticker"),
+                    symbol=item.get("ticker"),
                     name=item.get("title"),
                     exchange=item.get("exchange"),
                     category=item.get("category"),
