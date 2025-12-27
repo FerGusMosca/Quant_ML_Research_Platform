@@ -374,14 +374,14 @@ class RAGPipeline:
 
         if ingest_type=="recurrent" and source_path=="*":
             last_sucessful_folder= ingestion_logger.get_last_successful_folder(self.logs_dir)
-            self.logger.do_log(f"[RAG] Found last successsful folder: {last_sucessful_folder}")
+            self.logger.do_log(f"[RAG] Found last successsful folder: {last_sucessful_folder}",MessageType.INFO)
             next_folder= ingestion_logger.get_next_folder(last_sucessful_folder,self.dest_root)
 
             if not next_folder:
-                self.logger.do_log(f"[RAG] No folders with PDFs → next to {last_sucessful_folder} --> Nothing to process.", 1)
+                self.logger.do_log(f"[RAG] No folders with PDFs → next to {last_sucessful_folder} --> Nothing to process.",MessageType.INFO)
                 return
             else:
-                self.logger.do_log(f"[RAG] Next Folder Found: {next_folder}", 1)
+                self.logger.do_log(f"[RAG] Next Folder Found: {next_folder}",MessageType.INFO)
                 source_path=next_folder
 
 
