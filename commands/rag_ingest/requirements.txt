@@ -11,3 +11,4 @@ requests
 regex
 PyYAML
 rapidfuzz
+websockets>=12.0

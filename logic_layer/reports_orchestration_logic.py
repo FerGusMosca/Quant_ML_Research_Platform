@@ -509,8 +509,6 @@ class ReportsOrchestationLogic:
         self.mcp_registry = build_mcp_registry(orchestrator=self)
         self.mcp_dispatcher = JsonRpcDispatcher(self.mcp_registry,self.progress_bus)
 
-
-
         try:
             # Log startup
             self.logger.do_log(

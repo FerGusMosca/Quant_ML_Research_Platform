@@ -66,7 +66,7 @@ class RAGIngestOrchestrationLogic:
     # MAIN DISPATCH METHOD
     # ============================================================
 
-    def process_start_mcp(self):
+    def process_start_mcp(self,server,port):
         """
         Starts the MCP WebSocket server.
         Minimal, blocking startup.
@@ -85,8 +85,8 @@ class RAGIngestOrchestrationLogic:
         self.progress_bus = ProgressBus()
         self.mcp_registry = build_mcp_registry(orchestrator=self)
         self.mcp_dispatcher = JsonRpcDispatcher(self.mcp_registry, self.progress_bus)
-        mcp_server=self.config["MCP_SERVER"]
-        mcp_port = int(self.config["MCP_PORT"])
+        mcp_server=server
+        mcp_port = int(port)
 
         try:
             # Log startup

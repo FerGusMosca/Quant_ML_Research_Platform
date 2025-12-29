@@ -36,7 +36,7 @@ def show_rag_ingest_commands():
 # ============================================================================
 
 
-def process_start_mcp_logic():
+def process_start_mcp_logic(server,port):
     """
        Core logic runner for ingestion.
        Loads config → creates orchestrator → runs selected pipeline.
@@ -46,7 +46,7 @@ def process_start_mcp_logic():
 
     try:
         logger.do_log(
-            f"[RAG] Starting MCP Server",
+            f"[RAG] Starting MCP Server on server={server} port {port}",
             MessageType.INFO
         )
 
@@ -54,7 +54,7 @@ def process_start_mcp_logic():
         config = loader.load_settings("./configs/commands_mgr.ini")
 
         orch = RAGIngestOrchestrationLogic(config, logger)
-        orch.process_start_mcp()
+        orch.process_start_mcp(server,port)
 
         logger.do_log("[RAG] ✅ Ingestion completed", MessageType.INFO)
 
@@ -96,7 +96,9 @@ def process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix,embedd
 
 
 def process_start_mcp(cmd):
-    process_start_mcp_logic()
+    server = ParamReader.get_param(cmd, "mcp_server")
+    port = ParamReader.get_param(cmd, "mcp_port")
+    process_start_mcp_logic(server,port)
 
 def process_rag_ingest(cmd):
     """
@@ -154,7 +156,7 @@ if __name__ == "__main__":
     # python run_rag_ingest_cmd.py RunRAGIngest mode=incremental source=ZEROHEDGE
     if len(sys.argv) > 1:
         cmd = " ".join(sys.argv[1:])
-        if  cmd=="StartMCP":
+        if  cmd.startswith("StartMCP"):
             process_start_mcp(cmd)
         else:
             process_rag_ingest(cmd)

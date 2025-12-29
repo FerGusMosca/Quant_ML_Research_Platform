@@ -33,9 +33,6 @@ class MLSettingsLoader():
 
             config_settings["RAG_OUTPUT_FOLDER"] = config['EMBEDDINGS']['RAG_OUTPUT_FOLDER']
 
-            config_settings["MCP_SERVER"] = config['MCP']['MCP_SERVER']
-            config_settings["MCP_PORT"] = int( config['MCP']['MCP_PORT'])
-
 
             return  config_settings
 
