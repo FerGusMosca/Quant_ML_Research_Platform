@@ -44,7 +44,6 @@ class JsonRpcDispatcher:
 
                 tool = self.registry.get(tool_name)
 
-                # 👉 handler devuelve {"job_id": ..., "status": ...}
                 result = tool.handler(arguments)
 
                 job_id = result.get("job_id")

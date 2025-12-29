@@ -27,7 +27,7 @@ from logic_layer.rag_ingest.util.multi_stage_rag.ingest_metadata_manager import 
 
 class RAGPipeline:
 
-    def __init__(self,chunk_name, dest_root, config,embedding_model,clustering_model, logger):
+    def __init__(self,chunk_name, dest_root, config,embedding_model,clustering_model, logger,job_id=None):
         self.logger = logger
         self.chunk_name=chunk_name
         self.dest_root = dest_root
@@ -42,7 +42,7 @@ class RAGPipeline:
         try:
             self.embedder = TransformersEmbeddingsGenerator(embedding_model,logger=self.logger)
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ Failed to load embedding model: {e}", 0)
+            self.logger.do_log(f"[RAG] ❌ Failed to load embedding model: {e}", 0,job_id)
             raise
 
         # ------- Output base folder -------
@@ -52,7 +52,7 @@ class RAGPipeline:
         try:
             os.makedirs(self.output_base, exist_ok=True)
         except Exception as e:
-            logger.do_log(f"[RAG] ❌ Could not create output folder: {e}", 0)
+            logger.do_log(f"[RAG] ❌ Could not create output folder: {e}", 0,job_id)
             raise
 
         # ------- Metadata path -------
@@ -62,7 +62,7 @@ class RAGPipeline:
         )
 
         # ------- Load metadata for skip logic -------
-        self.global_metadata = self._load_corpus_inventory()
+        self.global_metadata = self._load_corpus_inventory(job_id)
 
         # ------- Logging folder -------
         self.logs_dir = os.path.join(self.output_base, "ingest_data_logs")
@@ -74,14 +74,14 @@ class RAGPipeline:
         self.ingest_meta = IngestMetadataManager(self.ingest_metadata_path, logger)
 
 
-    def _load_corpus_inventory(self):
+    def _load_corpus_inventory(self,job_id):
         """Load global corpus metadata to support incremental ingest."""
         try:
             with open(self.corpus_metadata_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
             return {item["path"]: item for item in data}
         except Exception as e:
-            self.logger.do_log(f"[RAG] ⚠️ Could not load corpus inventory: {e}", 0)
+            self.logger.do_log(f"[RAG] ⚠️ Could not load corpus inventory: {e}", 0,job_id)
             return {}
 
     # ==========================================================
@@ -94,7 +94,7 @@ class RAGPipeline:
         clean = re.sub(r'_+', '_', clean.strip('_'))
         return  clean
 
-    def _compute_output_path(self, pdf_path: str) -> str:
+    def _compute_output_path(self, pdf_path: str,job_id=None) -> str:
         """
         Compute the relative output folder path starting from dest_root.
         All folder names are sanitized: spaces and any weird characters are replaced with '_'.
@@ -126,13 +126,13 @@ class RAGPipeline:
             return os.path.join(*clean_parts)
 
         except Exception as e:
-            self.logger.do_log(f"[RAG] compute_output_path failed: {e}", 0)
+            self.logger.do_log(f"[RAG] compute_output_path failed: {e}", 0,job_id)
             raise
 
     # ==========================================================
     # Safe filename sanitizer
     # ==========================================================
-    def _sanitize_filename(self, name: str) -> str:
+    def _sanitize_filename(self, name: str,job_id=None) -> str:
         try:
             original = name
             sanitized = re.sub(r'[<>:"/\\|?*]', '', name)
@@ -146,27 +146,27 @@ class RAGPipeline:
                 sanitized = sanitized[:110] + "_" + str(abs(hash(sanitized)) % 100000)
             return sanitized
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ sanitize_filename failed: {e}", 0)
+            self.logger.do_log(f"[RAG] ❌ sanitize_filename failed: {e}", 0,job_id)
             return "unnamed_document"
 
     # ==========================================================
     # PROCESS ONE PDF
     # ==========================================================
-    def process_pdf(self, pdf_path: str):
-        self.logger.do_log(f"[RAG] Extracting text: {pdf_path}", 1)
+    def process_pdf(self, pdf_path: str,job_id=None):
+        self.logger.do_log(f"[RAG] Extracting text: {pdf_path}",MessageType.INFO)
 
         # ----- Extract -----
         try:
             raw_text = PDFTextExtractor.extract_text(pdf_path, logger=self.logger)
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ PDF extraction failed: {e}", 0)
+            self.logger.do_log(f"[RAG] ❌ PDF extraction failed: {e}", 0,job_id)
             return None
 
         # ----- Clean -----
         try:
             clean_text = PDFCleaner.clean(raw_text, logger=self.logger)
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ PDF cleaning failed: {e}", 0)
+            self.logger.do_log(f"[RAG] ❌ PDF cleaning failed: {e}", 0,job_id)
             return None
 
         # ----- Chunking -----
@@ -178,40 +178,40 @@ class RAGPipeline:
             chunks = self.chunk_deduper.dedup_chunks(chunks)
 
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ Chunking failed: {e}", 0)
+            self.logger.do_log(f"[RAG] ❌ Chunking failed: {e}", 0,job_id)
             return None
 
 
 
         if len(chunks) == 0:
-            self.logger.do_log("[RAG] ❌ No chunks generated.", 0)
+            self.logger.do_log("[RAG] ❌ No chunks generated.", 0,job_id)
             return None
 
         # ----- Metadata -----
         try:
             metadata = [MetadataBuilder.build(pdf_path, idx) for idx in range(len(chunks))]
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ Metadata generation failed: {e}", 0)
+            self.logger.do_log(f"[RAG] ❌ Metadata generation failed: {e}", 0,job_id)
             return None
 
         # ----- Embeddings -----
         try:
             embeddings = self.embedder.embed(chunks)
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ Embedding generation failed: {e}", 0)
+            self.logger.do_log(f"[RAG] ❌ Embedding generation failed: {e}", 0,job_id)
             return None
 
         # ----- Output path -----
         try:
-            rel_folder = os.path.normpath(self._compute_output_path(pdf_path))
+            rel_folder = os.path.normpath(self._compute_output_path(pdf_path,job_id))
         except Exception as e:
             self.logger.do_log(
-                f"[RAG][PATH] Failed to compute output path | pdf_path={pdf_path} | error={repr(e)}",0
+                f"[RAG][PATH] Failed to compute output path | pdf_path={pdf_path} | error={repr(e)}",0,job_id
             )
             return None
 
         base_raw = os.path.basename(pdf_path).replace(".pdf", "")
-        sanitized_name = self._sanitize_filename(base_raw)
+        sanitized_name = self._sanitize_filename(base_raw,job_id)
 
         out_dir = os.path.normpath(
             os.path.join(self.output_base, rel_folder, sanitized_name)
@@ -229,10 +229,10 @@ class RAGPipeline:
 
             np.save(os.path.join(out_dir, "embeddings.npy"), embeddings)
 
-            self.logger.do_log(f"[RAG] ✅ Artifacts saved → {out_dir}", 1)
+            self.logger.do_log(f"[RAG] ✅ Artifacts saved → {out_dir}",MessageType.INFO,job_id)
 
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ Saving artifacts failed: {e}", 0)
+            self.logger.do_log(f"[RAG] ❌ Saving artifacts failed: {e}", 0,job_id)
             return None
 
         return chunks, metadata, embeddings,out_dir
@@ -255,24 +255,24 @@ class RAGPipeline:
             with open(path, "w", encoding="utf-8") as f: f.write("{}")
             return path
 
-    def _validate_source_paths(self,source_path,dest_root):
+    def _validate_source_paths(self,source_path,dest_root,job_id=None):
         # ---------------------------
         # Validate source_path
         # ---------------------------
 
         if not source_path:
-            self.logger.do_log("[RAG-INGEST] ❌ Missing source_path.", MessageType.ERROR)
+            self.logger.do_log("[RAG-INGEST] ❌ Missing source_path.", MessageType.ERROR,job_id)
             return False
 
         if not os.path.exists(source_path):
             self.logger.do_log(
                 f"[RAG-INGEST] ❌ Path does not exist: {source_path}",
-                MessageType.ERROR
+                MessageType.ERROR,job_id
             )
             return False
 
         if not dest_root:
-            self.logger.do_log("[RAG-INGEST] ❌ Missing dest_root parameter.", MessageType.ERROR)
+            self.logger.do_log("[RAG-INGEST] ❌ Missing dest_root parameter.", MessageType.ERROR,job_id)
             return False
 
         return True
@@ -292,7 +292,7 @@ class RAGPipeline:
                     pdfs.append(os.path.join(root, f))
         return pdfs
 
-    def _discover_all_pdfs(self,source_path):
+    def _discover_all_pdfs(self,source_path,job_id=None):
         # ---------------------------
         # Discover all PDFs/Oth
         # ---------------------------
@@ -303,19 +303,19 @@ class RAGPipeline:
 
         self.logger.do_log(
             f"[RAG-INGEST] 📄 Found {len(pdfs)} PDF/TXT(s) to process.",
-            MessageType.INFO
+            MessageType.INFO,job_id
         )
 
         for i, pdf_file in enumerate(pdfs):
             self.logger.do_log(
                 f"[RAG-INGEST] [{i + 1}/{len(pdfs)}] {pdf_file}",
-                MessageType.INFO
+                MessageType.INFO,job_id
             )
 
         if len(pdfs) == 0:
             self.logger.do_log(
                 "[RAG-INGEST] ❌ No PDF/txt(s) found. Nothing to process.",
-                MessageType.ERROR
+                MessageType.ERROR,job_id
             )
             return []
 
@@ -353,7 +353,7 @@ class RAGPipeline:
     # ==========================================================
     # PROCESS MULTIPLE PDFs
     # ==========================================================
-    def run(self,source_path,log_posfix=None,ingest_type=None):
+    def run(self,source_path,log_posfix=None,ingest_type=None,job_id=None):
         """Run ingestion with two-layer skip logic + per-file logging + final summary."""
 
         self.current_run_log = self._make_run_log(source_path,log_posfix)
@@ -374,23 +374,23 @@ class RAGPipeline:
 
         if ingest_type=="recurrent" and source_path=="*":
             last_sucessful_folder= ingestion_logger.get_last_successful_folder(self.logs_dir)
-            self.logger.do_log(f"[RAG] Found last successful folder: {last_sucessful_folder}",MessageType.INFO)
+            self.logger.do_log(f"[RAG] Found last successful folder: {last_sucessful_folder}",MessageType.INFO,job_id)
             next_folder= ingestion_logger.get_next_folder(last_sucessful_folder,self.dest_root)
 
             if not next_folder:
-                self.logger.do_log(f"[RAG] No folders with PDFs → next to {last_sucessful_folder} --> Nothing to process.",MessageType.INFO)
+                self.logger.do_log(f"[RAG] No folders with PDFs → next to {last_sucessful_folder} --> Nothing to process.",MessageType.INFO,job_id)
                 return
             else:
-                self.logger.do_log(f"[RAG] Next Folder Found: {next_folder}",MessageType.INFO)
+                self.logger.do_log(f"[RAG] Next Folder Found: {next_folder}",MessageType.INFO,job_id)
                 source_path=next_folder
 
 
         #Validate Source Path
-        if not self._validate_source_paths(source_path,self.dest_root):
+        if not self._validate_source_paths(source_path,self.dest_root,job_id):
             return
 
         #Fetch all pdfs
-        pdf_list= self._discover_all_pdfs(source_path)
+        pdf_list= self._discover_all_pdfs(source_path,job_id)
         out_folder=None
         for pdf_path in pdf_list:
 
@@ -402,7 +402,7 @@ class RAGPipeline:
             corpus_meta = self.global_metadata.get(pdf_path, {})
 
             if self.ingest_meta.should_skip(pdf_path, corpus_meta):
-                self.logger.do_log(f"[RAG] ⏩ FULL-SKIP: {pdf_path}", 1)
+                self.logger.do_log(f"[RAG] ⏩ FULL-SKIP: {pdf_path}",MessageType.INFO,job_id)
                 summary["skipped"] += 1
 
                 with open(details_path, "a", encoding="utf-8", buffering=1) as lf:
@@ -411,8 +411,8 @@ class RAGPipeline:
                 continue
 
             # -------- Process PDF --------
-            self.logger.do_log(f"[RAG] 🔥 Processing PDF: {pdf_path}", 1)
-            res = self.process_pdf(pdf_path)
+            self.logger.do_log(f"[RAG] 🔥 Processing PDF: {pdf_path}",MessageType.INFO,job_id)
+            res = self.process_pdf(pdf_path,job_id)
 
             if res:
                 summary["processed"] += 1
@@ -446,5 +446,5 @@ class RAGPipeline:
 
 
 
-        self.logger.do_log("[RAG] ✅ Completed full batch ingestion.", 1)
+        self.logger.do_log("[RAG] ✅ Completed full batch ingestion.",MessageType.INFO,job_id)
 

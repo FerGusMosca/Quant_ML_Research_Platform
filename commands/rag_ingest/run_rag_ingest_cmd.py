@@ -26,6 +26,7 @@ def show_rag_ingest_commands():
     print("======================= RAG INGESTION ==========================")
     print("#1  RunRAGIngest mode=incremental source='C:\\zerohedge_docs\\Archives\\2025\\November\\Nov 6' dest_root='Archives'")
     print("#2  RunRAGIngest mode=full source=<PATH>>")
+    print("#3  StartMCP")
     print("#X  Exit")
     print("================================================================")
 
@@ -33,6 +34,33 @@ def show_rag_ingest_commands():
 # ============================================================================
 # CORE LOGIC
 # ============================================================================
+
+
+def process_start_mcp_logic():
+    """
+       Core logic runner for ingestion.
+       Loads config → creates orchestrator → runs selected pipeline.
+       """
+
+    logger = Logger()
+
+    try:
+        logger.do_log(
+            f"[RAG] Starting MCP Server",
+            MessageType.INFO
+        )
+
+        loader = MLSettingsLoader()
+        config = loader.load_settings("./configs/commands_mgr.ini")
+
+        orch = RAGIngestOrchestrationLogic(config, logger)
+        orch.process_start_mcp()
+
+        logger.do_log("[RAG] ✅ Ingestion completed", MessageType.INFO)
+
+    except Exception as e:
+        print(traceback.format_exc())
+        logger.do_log(f"[RAG] ❌ Error: {str(e)}", MessageType.ERROR)
 
 def process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model):
     """
@@ -66,6 +94,10 @@ def process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix,embedd
 # DIRECT COMMAND ENTRY
 # ============================================================================
 
+
+def process_start_mcp(cmd):
+    process_start_mcp_logic()
+
 def process_rag_ingest(cmd):
     """
     External entrypoint.
@@ -97,7 +129,9 @@ def process_rag_ingest_menu(cmd):
 
     if tokens[0] == "RunRAGIngest":
         process_rag_ingest(cmd)
-
+    if tokens[0] == "StartMCP":
+        process_start_mcp(cmd)
+    #
     elif tokens[0].upper() in ("EXIT", "X"):
         print("Exiting RAG ingestion module...")
         return False
@@ -120,7 +154,10 @@ if __name__ == "__main__":
     # python run_rag_ingest_cmd.py RunRAGIngest mode=incremental source=ZEROHEDGE
     if len(sys.argv) > 1:
         cmd = " ".join(sys.argv[1:])
-        process_rag_ingest(cmd)
+        if  cmd=="StartMCP":
+            process_start_mcp(cmd)
+        else:
+            process_rag_ingest(cmd)
         sys.exit(0)
 
     # (B) Interactive menu mode

@@ -2,11 +2,16 @@
 # rag_ingest_orchestration_logic.py
 # Stable orchestration logic for the new RAG ingestion pipeline
 # ================================================================
-
+import asyncio
 import os
 import traceback
+
+from common.dto.mcp.bootstrap_registry import build_mcp_registry
+from common.dto.mcp.dispatcher import JsonRpcDispatcher
+from common.dto.mcp.progress_bus import ProgressBus
 from framework.common.logger.message_type import MessageType
 from logic_layer.rag_ingest.util.multi_stage_rag.rag_pipeline import RAGPipeline
+from service_layer.server.mcp_server import MCPServer
 
 
 class RAGIngestOrchestrationLogic:
@@ -60,8 +65,58 @@ class RAGIngestOrchestrationLogic:
     # ============================================================
     # MAIN DISPATCH METHOD
     # ============================================================
+
+    def process_start_mcp(self):
+        """
+        Starts the MCP WebSocket server.
+        Minimal, blocking startup.
+        """
+
+        # Prevent double start
+        if getattr(self, "_mcp_started", False):
+            self.logger.do_log(
+                "[MCP] Server already running – skipping",
+                MessageType.WARNING
+            )
+            return
+
+        self._mcp_started = True
+
+        self.progress_bus = ProgressBus()
+        self.mcp_registry = build_mcp_registry(orchestrator=self)
+        self.mcp_dispatcher = JsonRpcDispatcher(self.mcp_registry, self.progress_bus)
+        mcp_server=self.config["MCP_SERVER"]
+        mcp_port = int(self.config["MCP_PORT"])
+
+        try:
+            # Log startup
+            self.logger.do_log(
+                f"[MCP] Starting server on {mcp_server}:{mcp_port}",
+                MessageType.INFO
+            )
+
+            # Create MCP server instance (already configured elsewhere)
+            server = MCPServer(
+                host=mcp_server,
+                port=mcp_port,
+                dispatcher=self.mcp_dispatcher,  # existing dispatcher,
+                bus=self.progress_bus,
+                logger=self.logger
+            )
+
+            # Run async MCP server (blocks current thread)
+            asyncio.run(server.start())
+
+        except Exception as e:
+            # Fatal startup error: log and propagate
+            self.logger.do_log(
+                f"[MCP] ❌ Fatal error while starting server: {e}",
+                MessageType.ERROR
+            )
+            raise
+
     def process_rag_ingest(self, ingest_type, source_path=None,chunk_name=None, dest_root=None,log_posfix=None,
-                           embedding_model=None,clustering_model=None):
+                           embedding_model=None,clustering_model=None,job_id=None):
         """
         :param ingest_type: "full" / "incremental"
         :param source_path: folder where PDFs exist
@@ -71,21 +126,21 @@ class RAGIngestOrchestrationLogic:
             self.logger.do_log(
                 f"[RAG-INGEST] 🚀 Trigger received: ingest_type={ingest_type}, "
                 f"source={source_path}, dest_root={dest_root}",
-                MessageType.INFO
+                MessageType.INFO,job_id
             )
 
 
             # ---------------------------
             # Initialize pipeline ONCE
             # ---------------------------
-            self.logger.do_log("[RAG-INGEST] 🔧 Initializing RAG pipeline...", MessageType.INFO)
+            self.logger.do_log("[RAG-INGEST] 🔧 Initializing RAG pipeline...", MessageType.INFO,job_id)
 
             pipeline = RAGPipeline(chunk_name,dest_root, self.config,embedding_model,clustering_model, self.logger)
-            pipeline.run(source_path,log_posfix,ingest_type=ingest_type)
+            pipeline.run(source_path,log_posfix,ingest_type=ingest_type,job_id=job_id)
 
             self.logger.do_log(
                 "[RAG-INGEST] ✅ RAG ingestion completed successfully.",
-                MessageType.INFO
+                MessageType.INFO,job_id
             )
 
             return True
@@ -93,7 +148,7 @@ class RAGIngestOrchestrationLogic:
         except Exception as e:
             self.logger.do_log(
                 f"[RAG-INGEST] ❌ Exception: {str(e)}\n{traceback.format_exc()}",
-                MessageType.ERROR
+                MessageType.ERROR,job_id
             )
             return False
 
