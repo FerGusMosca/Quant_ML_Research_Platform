@@ -1,15 +1,11 @@
 import asyncio
-import time
 from http.client import HTTPException
-from typing import Dict
 
-from fastapi import FastAPI, WebSocket, Request, Body, APIRouter, Query
+from fastapi import Request, Body, APIRouter, Query
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
-from typing import List
 import uvicorn
 import threading
-import json
 
 from pydantic import BaseModel
 from starlette.responses import JSONResponse
@@ -25,7 +21,7 @@ from common.dto.websocket_conn.order_dto import OrderDTO
 from common.enums.brokers import Brokers
 from data_access_layer.account_manager import AccountManager
 from framework.common.logger.message_type import MessageType
-from service_layer.websocket_client import WebSocketClient
+from service_layer.client.websocket_client import WebSocketClient
 
 
 

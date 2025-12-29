@@ -16,7 +16,6 @@ import pandas as pd
 from logic_layer.data_set_builder import DataSetBuilder
 from controllers.routing_dashboard_controller import RoutingDashboardController
 from logic_layer.reports_orchestration_logic import ReportsOrchestationLogic
-from service_layer.bcra_service_layer import BCRAServiceLayer
 
 _DATE_FORMAT = "%m/%d/%Y"
 _TIMESTAMP_FORMAT='%m/%d/%Yt%H:%M:%S'

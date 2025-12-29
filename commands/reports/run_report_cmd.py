@@ -42,6 +42,8 @@ def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None,
         trd_algos = ReportsOrchestationLogic(
             config_settings["hist_data_conn_str"],
             config_settings["ml_reports_conn_str"],
+            config_settings["MCP_SERVER"],
+            config_settings["MCP_PORT"],
             None,
             logger
         )
@@ -68,7 +70,7 @@ def process_run_report(cmd):
     report_key = ParamReader.get_param(cmd, "report")
     year = ParamReader.get_param(cmd, "year", True, None)
     d_from = ParamReader.get_param(cmd, "from", True, None)
-    portfolio = ParamReader.get_param(cmd, "portfolio")
+    portfolio = ParamReader.get_param(cmd, "portfolio",True,None)
     dest_folder = ParamReader.get_param(cmd, "dest_folder",True,None)
     rank_folder= ParamReader.get_param(cmd, "rank_folder",True,None)
     symbol = ParamReader.get_param(cmd, "symbol", True, None)

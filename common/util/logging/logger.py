@@ -21,6 +21,8 @@ class Logger:
         self.backup_count = int(self.config['DEFAULT']['backup_count'])
         self.log_file_name = self.config['DEFAULT']['log_file_name']
 
+        self._observers = []
+
         loader = MLSettingsLoader()
         config_settings = loader.load_settings("./configs/commands_mgr.ini")
         self.loki_url = config_settings.get("LOKI_URL")
@@ -31,6 +33,20 @@ class Logger:
             loki_url=self.loki_url,
             app_name="ml_research"
         )
+
+    def register_observer(self, obs):
+        self._observers.append(obs)
+
+    def unregister_observer(self, obs):
+        self._observers.remove(obs)
+
+    def _notify(self, msg, msg_type,job_id=None):
+        if job_id is None:
+            return
+
+        for obs in self._observers:
+            obs.on_log(msg, msg_type,job_id)
+
 
     def use_timed_rotating_file_handler(self):
         if self.level is None:
@@ -69,6 +85,13 @@ class Logger:
         if msg_type == MessageType.DEBUG:
             self.logger.debug(msg)
 
-    def do_log(self, msg, msg_type):
+    def do_log(self, msg, msg_type,job_id=None):
         print(msg)
+        self._notify(msg, msg_type,job_id)
         self.print(msg, msg_type)
+
+
+    def do_log_light(self, msg,job_id=None):
+        print(msg,flush=True)
+        self._notify(msg,  MessageType.INFO,job_id)
+        self.print(msg,  MessageType.INFO)

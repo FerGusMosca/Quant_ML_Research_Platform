@@ -20,7 +20,7 @@ class FinVizFullNewsDownloader:
     """
 
     @staticmethod
-    def download(symbol, portfolio, pause=1.0):
+    def download(symbol, portfolio, pause=1.0,logger=None,job_id=None):
 
         today = datetime.today().strftime("%Y-%m-%d")
         year = datetime.today().year
@@ -52,11 +52,11 @@ class FinVizFullNewsDownloader:
 
         url = f"https://finviz.com/quote.ashx?t={symbol}"
 
-        print(json.dumps({
+        logger.do_log_light(json.dumps({
             "event": "start",
             "symbol": symbol,
             "timestamp": datetime.now().isoformat()
-        }, ensure_ascii=False), flush=True)
+        }, ensure_ascii=False),job_id)
 
         resp = requests.get(url, headers=headers, timeout=15)
         if resp.status_code != 200:
@@ -86,7 +86,7 @@ class FinVizFullNewsDownloader:
             full_link = FinVizFullNewsDownloader._normalize_link(link)
 
             # Structured progress event
-            print(json.dumps({
+            logger.do_log_light(json.dumps({
                 "event": "progress",
                 "symbol": symbol,
                 "title": title,
@@ -94,7 +94,7 @@ class FinVizFullNewsDownloader:
                 "current": len(articles) + 1,
                 "total": total,
                 "timestamp": datetime.now().isoformat()
-            }, ensure_ascii=False), flush=True)
+            }, ensure_ascii=False),job_id)
 
             # Timestamp normalization
             if ":" in raw_ts and len(raw_ts) <= 8:
@@ -109,7 +109,7 @@ class FinVizFullNewsDownloader:
                     ts_date, ts_time = today, raw_ts
 
             # Fetch article
-            content = FinVizFullNewsDownloader._fetch_article(full_link, headers)
+            content = FinVizFullNewsDownloader._fetch_article(full_link, headers,logger,job_id)
 
             # Save .txt
             if content:
@@ -141,12 +141,12 @@ class FinVizFullNewsDownloader:
                 "articles": articles
             }, f, indent=2, ensure_ascii=False)
 
-        print(json.dumps({
+        logger.do_log_light(json.dumps({
             "event": "saved",
             "symbol": symbol,
             "items": len(articles),
             "path": out_path
-        }, ensure_ascii=False), flush=True)
+        }, ensure_ascii=False),job_id)
 
         return out_path
 
@@ -160,16 +160,16 @@ class FinVizFullNewsDownloader:
         return f"https://finviz.com/{link}"
 
     @staticmethod
-    def _fetch_article(url, headers):
+    def _fetch_article(url, headers,logger,job_id=None):
         try:
             r = requests.get(url, headers=headers, timeout=12, allow_redirects=True)
             if r.status_code == 200 and r.text:
                 return FinVizFullNewsDownloader._extract_article_content(r.text)
             elif r.status_code in (401, 403):
-                print(f"[WARN] Blocked {r.status_code} -> Selenium fallback")
-                return FinVizFullNewsDownloader._fetch_via_browser(url)
+                logger.do_log_light(f"[WARN] Blocked {r.status_code} -> Selenium fallback",job_id)
+                return FinVizFullNewsDownloader._fetch_via_browser(url,logger,job_id)
         except Exception as e:
-            print(f"[WARN] Error fetching {url} -> {e}")
+            logger.do_log_light(f"[WARN] Error fetching {url} -> {e}")
         return None
 
     @staticmethod
@@ -203,10 +203,10 @@ class FinVizFullNewsDownloader:
         return None
 
     @staticmethod
-    def _fetch_via_browser(url):
+    def _fetch_via_browser(url,logger,job_id=None):
         from selenium.common.exceptions import WebDriverException
 
-        print(f"[FALLBACK] Chrome fallback -> {url}")
+        logger.do_log_light(f"[FALLBACK] Chrome fallback -> {url}",job_id)
 
         options = Options()
         options.add_argument("--headless=new")
@@ -227,7 +227,7 @@ class FinVizFullNewsDownloader:
             return FinVizFullNewsDownloader._extract_article_content(html)
 
         except Exception as e:
-            print(f"[FALLBACK][ERROR] {e}")
+            logger.do_log_light(f"[FALLBACK][ERROR] {e}",job_id)
             return None
 
         finally:

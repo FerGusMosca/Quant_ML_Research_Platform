@@ -2,7 +2,12 @@ import os
 import shutil
 from datetime import datetime
 from pathlib import Path
+import asyncio
 
+from common.dto.mcp.bootstrap_registry import build_mcp_registry
+from common.dto.mcp.dispatcher import JsonRpcDispatcher
+from common.dto.mcp.progress_bus import ProgressBus
+from common.dto.mcp.tools import ToolRegistry
 from common.dto.security_report_calendar import SecurityReportCalendar
 from common.enums.folders import Folders
 from common.enums.report_folder import ReportFolder
@@ -24,10 +29,11 @@ from framework.common.logger.message_type import MessageType
 from logic_layer.report_generators.competition_summary_report import CompetitionSummaryReport
 from logic_layer.report_generators.sentiment.sentence_sentiment_summary_report import SentimentSummaryReport
 from logic_layer.report_generators.sentiment.sentence_sentiment_summary_report_v2 import SentimentSummaryReportV2
+from service_layer.server.mcp_server import MCPServer
 
 
 class ReportsOrchestationLogic:
-    def __init__(self,hist_data_conn_str,ml_reports_conn_str,p_classification_map_key,logger):
+    def __init__(self,hist_data_conn_str,ml_reports_conn_str,mcp_server,mcp_port,p_classification_map_key,logger):
 
         self.logger=logger
 
@@ -36,6 +42,9 @@ class ReportsOrchestationLogic:
         self.portfolio_securities_mgr = PortfolioSecuritiesManager(ml_reports_conn_str,logger)
 
         self.sec_cal_mgr =SecuritiesCalendarManager(ml_reports_conn_str)
+
+        self.mcp_server=mcp_server
+        self.mcp_port=mcp_port
 
     '''
     def _run_financial_ratios_report(self, year, report_type="K10", universe=None):
@@ -359,7 +368,7 @@ class ReportsOrchestationLogic:
                     self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}][{yr}] ❌ {sec.ticker} failed: {e}",
                                        MessageType.ERROR)
 
-    def _run_fin_viz_news_downloader(self,portfolio,symbol=None):
+    def _run_fin_viz_news_downloader(self,portfolio,symbol=None,job_id=None):
 
         if portfolio!="SINGLE_STOCKS":
             # ✅ Get securities from portfolio
@@ -370,7 +379,7 @@ class ReportsOrchestationLogic:
             for i, sec in enumerate(securities):
                 symbol = sec.ticker
                 try:
-                    out_file = FinVizFullNewsDownloader.download(symbol,portfolio)
+                    out_file = FinVizFullNewsDownloader.download(symbol,portfolio,logger=self.logger,job_id=job_id)
 
                     self.logger.do_log(
                         f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded news for {symbol} -> {out_file}",
@@ -379,16 +388,16 @@ class ReportsOrchestationLogic:
                 except Exception as e:
                     self.logger.do_log(
                         f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {str(e)}",
-                        MessageType.ERROR
+                        MessageType.ERROR,job_id
                     )
         else:
             try:
-                FinVizFullNewsDownloader.download(symbol, portfolio)
+                FinVizFullNewsDownloader.download(symbol, portfolio,logger= self.logger,job_id=job_id)
                 pass
 
 
             except Exception as e:
-                self.logger.do_log(f"[REPORT] ❌ Failed for {symbol}: {str(e)}",MessageType.ERROR)
+                self.logger.do_log(f"[REPORT] ❌ Failed for {symbol}: {str(e)}",MessageType.ERROR,job_id)
 
 
     def _run_process_finviz_news(self, portfolio, symbol=None, d_from=None):
@@ -480,7 +489,56 @@ class ReportsOrchestationLogic:
                     MessageType.ERROR
                 )
 
-    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None,d_from=None,dest_folder=None,rank_folder=None):
+    def _run_start_mcp(self):
+        """
+        Starts the MCP WebSocket server.
+        Minimal, blocking startup.
+        """
+
+        # Prevent double start
+        if getattr(self, "_mcp_started", False):
+            self.logger.do_log(
+                "[MCP] Server already running – skipping",
+                MessageType.WARNING
+            )
+            return
+
+        self._mcp_started = True
+
+        self.progress_bus = ProgressBus()
+        self.mcp_registry = build_mcp_registry(orchestrator=self)
+        self.mcp_dispatcher = JsonRpcDispatcher(self.mcp_registry,self.progress_bus)
+
+
+
+        try:
+            # Log startup
+            self.logger.do_log(
+                f"[MCP] Starting server on {self.mcp_server}:{self.mcp_port}",
+                MessageType.INFO
+            )
+
+            # Create MCP server instance (already configured elsewhere)
+            server = MCPServer(
+                host=self.mcp_server,
+                port=self.mcp_port,
+                dispatcher=self.mcp_dispatcher,  # existing dispatcher,
+                bus=self.progress_bus,
+                logger=self.logger
+            )
+
+            # Run async MCP server (blocks current thread)
+            asyncio.run(server.start())
+
+        except Exception as e:
+            # Fatal startup error: log and propagate
+            self.logger.do_log(
+                f"[MCP] ❌ Fatal error while starting server: {e}",
+                MessageType.ERROR
+            )
+            raise
+
+    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None,d_from=None,dest_folder=None,rank_folder=None,job_id=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year,portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
@@ -495,7 +553,7 @@ class ReportsOrchestationLogic:
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_K10.value:
             self._run_competition_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
         elif report_key.lower() == ReportType.FINVIZ_NEWS_DOWNLOAD.value:
-            self._run_fin_viz_news_downloader(portfolio,symbol)
+            self._run_fin_viz_news_downloader(portfolio,symbol,job_id)
         elif report_key.lower() == ReportType.PROCESS_FINVIZ_NEWS.value:
             self._run_process_finviz_news(portfolio,symbol,d_from)
         elif report_key.lower() == ReportType.DOWNLOAD_LAST_INCOME_STATEMENT.value:
@@ -506,8 +564,10 @@ class ReportsOrchestationLogic:
             self._run_quarterly_income_statement()
         elif report_key.lower() == ReportType.DOWNLOAD_SECURITIES_REPORTS_CALENDAR.value:
             self._run_download_securities_calendar(year,portfolio)
+        elif report_key.lower() == ReportType.START_MCP.value:
+            self._run_start_mcp()
         else:
-            self.logger.do_log(f"[REPORT] Report {report_key} not implemented.", MessageType.WARNING)
+            self.logger.do_log(f"[REPORT] Report {report_key} not implemented.", MessageType.WARNING,job_id)
         '''
         elif report_key.lower() == ReportType.FINANCIAL_RATIOS_REPORT_K10.value:
             self._run_financial_ratios_report(year, SECReports.K10.value)
