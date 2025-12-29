@@ -1,6 +1,7 @@
 FROM python:3.10-slim
 
 WORKDIR /app
+ENV PYTHONPATH=/app
 
 # ------------------ Sistema ------------------
 RUN apt-get update && apt-get install -y --no-install-recommends \

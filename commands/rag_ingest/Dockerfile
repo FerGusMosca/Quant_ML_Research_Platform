@@ -1,7 +1,7 @@
 FROM python:3.10-slim
 
 WORKDIR /app
-
+ENV PYTHONPATH=/app
 # ---------------------------------------------------
 # 1) System Dependencies (ODBC + utils)
 # ---------------------------------------------------
