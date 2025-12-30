@@ -43,8 +43,8 @@ def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None,
         config_settings = loader.load_settings("./configs/commands_mgr.ini")
 
         trd_algos = ReportsOrchestationLogic(
-            config_settings["hist_data_conn_str"],
-            config_settings["ml_reports_conn_str"],
+            hist_data_conn_str= config_settings["hist_data_conn_str"],
+            ml_reports_conn_str= config_settings["ml_reports_conn_str"],
             mcp_server= mcp_server,
             mcp_port= mcp_port,
             p_classification_map_key= None,

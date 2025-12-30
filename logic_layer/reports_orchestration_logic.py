@@ -33,7 +33,8 @@ from service_layer.server.mcp_server import MCPServer
 
 
 class ReportsOrchestationLogic:
-    def __init__(self,hist_data_conn_str,ml_reports_conn_str,mcp_server,mcp_port,p_classification_map_key,logger):
+    def __init__(self,hist_data_conn_str,ml_reports_conn_str,mcp_server=None,mcp_port=None,p_classification_map_key=None,
+                 logger=None):
 
         self.logger=logger
 
@@ -228,21 +229,27 @@ class ReportsOrchestationLogic:
                 continue
 
             try:
-                consolidated=gen.consolidate_year(y,report_type)
-                '''
-                consolidated = SentimentSummaryReport.consolidate_year(
-                                y,
-                                report_type,
-                                portfolio,
-                                self.logger,
-                                dest_folder=dest_folder,
-                                rank_folder=rank_folder
-                            )
-                
-                '''
-                ranking_csv = os.path.join(os.path.dirname(consolidated),
-                                           f"sentiment_summary_ranking_{y}.csv")
-                SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
+                if report_type==ReportFolder.K10.value:
+                    consolidated = gen.consolidate_year(y, report_type)
+                    ranking_csv = os.path.join(os.path.dirname(consolidated), f"sentiment_summary_ranking_{y}.csv")
+                    SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
+                    pass
+                else:
+                    for quarter in [1,2,3]:
+                        consolidated=gen.consolidate_year(y,report_type,quarter)
+                        '''
+                        consolidated = SentimentSummaryReport.consolidate_year(
+                                        y,
+                                        report_type,
+                                        portfolio,
+                                        self.logger,
+                                        dest_folder=dest_folder,
+                                        rank_folder=rank_folder
+                                    )
+                        
+                        '''
+                        ranking_csv = os.path.join(os.path.dirname(consolidated),f"sentiment_summary_ranking_{y}.csv")
+                        SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
 
             except Exception as e:
                 self.logger.do_log(f"[SENT] ⚠️ Consolidation/Ranking failed for {y}: {e}",

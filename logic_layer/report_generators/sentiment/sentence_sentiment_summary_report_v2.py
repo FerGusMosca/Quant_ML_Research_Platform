@@ -374,7 +374,9 @@ class SentimentSummaryReportV2:
 
     def consolidate_year(self,
             year: int,
-            report_type:str
+            report_type:str,
+            quarter: int=None
+
     ) -> str:
         """
         Merge all *_sentiment.json files for a given year and report type (K10 or Q10)
@@ -387,7 +389,26 @@ class SentimentSummaryReportV2:
             return ""
 
         data = []
-        pattern = re.compile(rf".*_{year}_(Y{year}|Q[1-4])_sentiment\.json$", re.IGNORECASE)
+        if report_type == ReportFolder.K10.value:
+            pattern = re.compile(rf".*_{year}_Y{year}_sentiment\.json$", re.IGNORECASE)
+            rank_dir = os.path.join(
+                self.root_dir,
+                Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                self.rank_folder,
+                f"{report_type}_sentiment_summary_report_rank",
+                str(year)
+            )
+        elif report_type == ReportFolder.Q10.value:
+            pattern = re.compile(rf".*_{year}_Q{quarter}_sentiment\.json$", re.IGNORECASE)
+            rank_dir = os.path.join(
+                self.root_dir,
+                Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                self.rank_folder,
+                f"{report_type}_sentiment_summary_report_Q{quarter}_rank",
+                str(year)
+            )
+        else:
+            raise Exception(f"Invalid report type consolidating: {report_type}")
 
         for fn in os.listdir(self.output_dir):
             if pattern.match(fn):
@@ -401,13 +422,7 @@ class SentimentSummaryReportV2:
                     self.logger.do_log(f"[SENT] ❌ Failed to read {fn} - {e}", MessageType.ERROR)
 
         # --- Output folder (ranked consolidated JSON) ---
-        rank_dir = os.path.join(
-            self.root_dir,
-            Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
-            self.rank_folder,
-            f"{report_type}_sentiment_summary_report_rank",
-            str(year)
-        )
+
 
         os.makedirs(rank_dir, exist_ok=True)
         self.logger.do_log(f"[SENT] 🧭 Writing to rank_dir={rank_dir}", MessageType.INFO)

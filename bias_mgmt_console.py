@@ -1669,10 +1669,10 @@ def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None,
         config_settings = loader.load_settings("./configs/commands_mgr.ini")
 
         trd_algos = ReportsOrchestationLogic(
-            config_settings["hist_data_conn_str"],
-            config_settings["ml_reports_conn_str"],
-            None,
-            logger
+            hist_data_conn_str= config_settings["hist_data_conn_str"],
+            ml_reports_conn_str= config_settings["ml_reports_conn_str"],
+            p_classification_map_key= None,
+            logger=logger
         )
 
         trd_algos.process_run_report(report_key, year, portfolio, symbol, d_from,dest_folder,rank_folder)
