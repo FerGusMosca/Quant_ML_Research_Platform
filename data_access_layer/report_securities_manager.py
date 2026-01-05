@@ -24,11 +24,12 @@ class ReportSecuritiesManager:
                     dto = SecSecurityDTO(
                         cik=row[0],
                         ticker=row[1],
-                        name=row[2],
-                        exchange=row[3],
-                        category=row[4],
-                        sic=row[5],
-                        entityType=row[6]
+                        symbol=row[2],
+                        name=row[3],
+                        exchange=row[4],
+                        category=row[5],
+                        sic=row[6],
+                        entityType=row[7]
                     )
                     securities.append(dto)
 
