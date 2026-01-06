@@ -32,6 +32,7 @@ RUN python3 -m nltk.downloader punkt punkt_tab
 # 4) Copy project
 COPY ./commands /app/commands
 COPY ./common /app/common
+COPY ./static /app/static
 COPY ./logic_layer /app/logic_layer
 COPY ./data_access_layer /app/data_access_layer
 COPY ./framework /app/framework
