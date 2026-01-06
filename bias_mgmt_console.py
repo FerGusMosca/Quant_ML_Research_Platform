@@ -15,7 +15,6 @@ import pandas as pd
 
 from logic_layer.data_set_builder import DataSetBuilder
 from controllers.routing_dashboard_controller import RoutingDashboardController
-from logic_layer.reports_orchestration_logic import ReportsOrchestationLogic
 
 _DATE_FORMAT = "%m/%d/%Y"
 _TIMESTAMP_FORMAT='%m/%d/%Yt%H:%M:%S'
@@ -65,7 +64,7 @@ def show_commands():
     print("#63-CreateSpreadVariable [diff_indicators] [from*] [to*] [output_symbol]")
     print("#64-CreateSpreadVariableBulk [diff_indicators*] [output_symbols*] [from*]")
     print("#65-DownloadSECSecurities")
-    print("#66-RunReport [report*] [year*]")
+    #print("#66-RunReport [report*] [year*]")
     print("#67-DownloadBCRAInterestRates [from*] [to*]")
     print("#68-DownloadBYMAInterestRates [from*] [to*]")
     print("#69-CreateRatioVariable [numerator] [denominator] [multiplier] [from*] [to*] [output_symbol]")
@@ -253,22 +252,6 @@ def process_create_spread_variable(cmd):
 def process_download_sec_securities(cmd):
     # No parameters required, always download all securities
     process_download_sec_securities_logic()
-
-def process_run_report(cmd):
-    """
-    Extracts parameters from command string and delegates to process_run_report_logic().
-    Example:
-        RunReport report=download_q10 portfolio=US_BIGCAP_EX year=2025
-    """
-    report_key = ParamReader.get_param(cmd, "report")
-    year = ParamReader.get_param(cmd, "year", True, None)
-    d_from = ParamReader.get_param(cmd, "from", True, None)
-    portfolio = ParamReader.get_param(cmd, "portfolio")
-    dest_folder = ParamReader.get_param(cmd, "dest_folder",True,None)
-    rank_folder= ParamReader.get_param(cmd, "rank_folder",True,None)
-    symbol = ParamReader.get_param(cmd, "symbol", True, None)
-
-    process_run_report_logic(report_key, year, portfolio, symbol, d_from,dest_folder,rank_folder)
 
 
 
@@ -1654,36 +1637,6 @@ def process_download_bcra_interest_rates_logic(d_from, d_to=None):
         )
 
 
-def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None, d_from=None,dest_folder=None,rank_folder=None):
-    """
-    Core logic responsible for running reports through AlgosOrchestationLogic.
-    """
-
-
-    logger = Logger()
-
-    try:
-        logger.do_log(f"[REPORT] Starting execution for {report_key}, year={year}, portfolio={portfolio}", MessageType.INFO)
-
-        loader = MLSettingsLoader()
-        config_settings = loader.load_settings("./configs/commands_mgr.ini")
-
-        trd_algos = ReportsOrchestationLogic(
-            hist_data_conn_str= config_settings["hist_data_conn_str"],
-            ml_reports_conn_str= config_settings["ml_reports_conn_str"],
-            p_classification_map_key= None,
-            logger=logger
-        )
-
-        trd_algos.process_run_report(report_key, year, portfolio, symbol, d_from,dest_folder,rank_folder)
-
-        logger.do_log(f"[REPORT] ✅ Report {report_key} completed", MessageType.INFO)
-
-    except Exception as e:
-        print(traceback.format_exc())
-        logger.do_log(f"[REPORT] ❌ Error executing report {report_key} - {str(e)}", MessageType.ERROR)
-
-
 def process_download_sec_securities_logic():
     logger = Logger()
 
@@ -2080,15 +2033,12 @@ def process_commands(cmd):
         process_create_spread_variable_bulk(cmd)
     elif cmd_param_list[0] == "DownloadSECSecurities":
         process_download_sec_securities(cmd)
-    elif cmd_param_list[0] == "RunReport":
-        process_run_report(cmd)
     elif cmd_param_list[0] == "DownloadBCRAInterestRates":
         process_download_bcra_interest_rates(cmd)
     elif cmd_param_list[0] == "CreateRatioVariable":
         process_create_ratio_variable(cmd)
     elif cmd_param_list[0] == "CreateAverageVariable":
         process_create_average_variable(cmd)
-
     elif cmd_param_list[0] == "DownloadBYMAInterestRates":
         process_download_byma_interest_rates(cmd)
 

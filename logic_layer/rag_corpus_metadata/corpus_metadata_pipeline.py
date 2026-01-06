@@ -11,7 +11,7 @@ from logic_layer.rag_corpus_metadata.run_logger import RunLogger
 
 class CorpusMetadataPipeline:
 
-    def __init__(self, config, logger, dest_root,chunk_name):
+    def __init__(self, config, logger, dest_root,chunk_name,tag_model=None,tag_file=None):
         self.config = config
         self.logger = logger
         self.dest_root = dest_root
@@ -23,7 +23,7 @@ class CorpusMetadataPipeline:
 
         # NEW
         #self.tagger = NaiveTopicTagger()
-        self.tagger = TransformersTopicTagger(logger=logger)
+        self.tagger = TransformersTopicTagger(logger=logger,model_name=tag_model,tag_file=tag_file)
         self.runlog = RunLogger(folder)
 
         self.extractor = PDFMetadataExtractor(logger)
@@ -35,10 +35,10 @@ class CorpusMetadataPipeline:
     # ============================================================
     # PUBLIC ENTRYPOINT
     # ============================================================
-    def run(self, pdf_list):
+    def run(self, input_file_list):
         self.logger.do_log("[PIPE] ▶ Starting corpus metadata pipeline", 1)
 
-        items = self._process_all_pdfs(pdf_list)
+        items = self._process_all_files(input_file_list)
         items = self._apply_drift(items)
         self._apply_tagging(items)
         self._save_inventory(items)
@@ -51,38 +51,38 @@ class CorpusMetadataPipeline:
     # ============================================================
     # INTERNAL STEPS
     # ============================================================
-    def _process_all_pdfs(self, pdf_list):
-        self.logger.do_log(f"[PIPE] ▶ Processing {len(pdf_list)} PDFs", 1)
+    def _process_all_files(self, file_list):
+        self.logger.do_log(f"[PIPE] ▶ Processing {len(file_list)} PDFs", 1)
 
         out = []
-        for pdf in tqdm(pdf_list):
-            self.logger.do_log(f"[PDF] ▶ Start: {pdf}", 2)
-            out.append(self._process_single_pdf(pdf))
-            self.logger.do_log(f"[PDF] ✔ Done: {pdf}", 2)
+        for file in tqdm(file_list):
+            self.logger.do_log(f"[FILE] ▶ Start: {file}", 2)
+            out.append(self._process_single_file(file))
+            self.logger.do_log(f"[FILE] ✔ Done: {file}", 2)
 
-        self.runlog.write_log(f"Processed PDFs: {len(out)}")
+        self.runlog.write_log(f"Processed FILEs: {len(out)}")
         return out
 
-    def _process_single_pdf(self, pdf):
-        self.logger.do_log(f"[HASH] ▶ Hashing: {pdf}", 3)
+    def _process_single_file(self,file):
+        self.logger.do_log(f"[HASH] ▶ Hashing: {file}", 3)
         try:
-            text_hash, file_hash, skipped_hash = self.hasher.compute_hashes(pdf)
+            text_hash, file_hash, skipped_hash = self.hasher.compute_hashes(file)
         except Exception as e:
-            self.logger.do_log(f"[HASH] ❌ Failed {pdf} → {e}", 3)
+            self.logger.do_log(f"[HASH] ❌ Failed {file} → {e}", 3)
             text_hash, file_hash, skipped_hash = None, None, True
 
-        self.logger.do_log(f"[META] ▶ Extracting metadata: {pdf}", 3)
+        self.logger.do_log(f"[META] ▶ Extracting metadata: {file}", 3)
         try:
-            meta = self.extractor.extract(pdf)
+            meta = self.extractor.extract(file)
         except Exception as e:
-            self.logger.do_log(f"[META] ❌ Failed {pdf} → {e}", 3)
-            meta = {"path": pdf, "skipped": True}
+            self.logger.do_log(f"[META] ❌ Failed {file} → {e}", 3)
+            meta = {"path": file, "skipped": True}
 
         meta["sha256_file"] = file_hash
         meta["sha256_text"] = text_hash
         meta["status"] = "skipped" if meta.get("skipped") or skipped_hash else "unknown"
 
-        self.logger.do_log(f"[PDF] ✔ Completed metadata: {pdf}", 3)
+        self.logger.do_log(f"[FILE] ✔ Completed metadata: {file}", 3)
         return meta
 
     def _apply_drift(self, items):

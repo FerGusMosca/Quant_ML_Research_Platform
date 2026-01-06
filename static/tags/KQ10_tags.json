@@ -1,0 +1,109 @@
+{
+  "business_strategy": [
+    "business model",
+    "corporate strategy",
+    "growth strategy",
+    "organic growth",
+    "inorganic growth",
+    "divestiture",
+    "restructuring",
+    "spin-off",
+    "merger acquisition",
+    "strategic review"
+  ],
+  "management_governance": [
+    "management change",
+    "ceo transition",
+    "executive compensation",
+    "board of directors",
+    "corporate governance",
+    "management commentary",
+    "leadership succession"
+  ],
+  "financial_performance": [
+    "revenue growth",
+    "earnings",
+    "net income",
+    "operating margin",
+    "gross margin",
+    "cash flow",
+    "free cash flow",
+    "profitability",
+    "financial condition"
+  ],
+  "liquidity_capital": [
+    "liquidity",
+    "capital resources",
+    "debt",
+    "credit facility",
+    "leverage",
+    "interest expense",
+    "refinancing",
+    "capital allocation",
+    "share repurchase",
+    "dividend policy"
+  ],
+  "risk_factors": [
+    "risk factors",
+    "macroeconomic risk",
+    "interest rate risk",
+    "currency risk",
+    "inflation risk",
+    "credit risk",
+    "liquidity risk",
+    "geopolitical risk",
+    "supply chain risk"
+  ],
+  "regulation_legal": [
+    "regulatory environment",
+    "compliance",
+    "regulatory risk",
+    "legal proceedings",
+    "litigation",
+    "government regulation",
+    "antitrust",
+    "sanctions",
+    "tariffs"
+  ],
+  "operations": [
+    "operations",
+    "manufacturing",
+    "production capacity",
+    "supply chain",
+    "logistics",
+    "cost structure",
+    "operational efficiency",
+    "cost reduction"
+  ],
+  "technology_capex": [
+    "capital expenditures",
+    "capex",
+    "technology investment",
+    "automation",
+    "digital transformation",
+    "cloud",
+    "artificial intelligence",
+    "research and development",
+    "r&d"
+  ],
+  "esg_human_capital": [
+    "environmental impact",
+    "climate change",
+    "sustainability",
+    "esg",
+    "human capital",
+    "labor relations",
+    "workforce",
+    "employee retention",
+    "diversity inclusion"
+  ],
+  "outlook_guidance": [
+    "forward-looking statements",
+    "guidance",
+    "outlook",
+    "future performance",
+    "market conditions",
+    "expected demand",
+    "uncertainty"
+  ]
+}

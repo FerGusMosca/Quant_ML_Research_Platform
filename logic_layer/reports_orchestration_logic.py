@@ -13,6 +13,7 @@ from common.enums.folders import Folders
 from common.enums.report_folder import ReportFolder
 from common.enums.report_type import ReportType
 from common.enums.sec_reports import SECReports
+from common.util.date_mgmt.date_range_handler import DateRangeHandler
 from common.util.downloaders.finviz_full_news_downloader import FinVizFullNewsDownloader
 from common.util.downloaders.finviz_offline_sentiment_analyzer import FinvizOfflineSentimentAnalyzer
 from common.util.downloaders.ib_income_statement import IBIncomeStatement
@@ -27,6 +28,7 @@ from data_access_layer.report_securities_manager import ReportSecuritiesManager
 from data_access_layer.securities_calendar_manager import SecuritiesCalendarManager
 from framework.common.logger.message_type import MessageType
 from logic_layer.report_generators.competition_summary_report import CompetitionSummaryReport
+from logic_layer.report_generators.query_match_report import QueryMatchReportK10Q10
 from logic_layer.report_generators.sentiment.sentence_sentiment_summary_report import SentimentSummaryReport
 from logic_layer.report_generators.sentiment.sentence_sentiment_summary_report_v2 import SentimentSummaryReportV2
 from service_layer.server.mcp_server import MCPServer
@@ -83,17 +85,8 @@ class ReportsOrchestationLogic:
 
     def _run_download_k10(self, year, portfolio):
         # parse years
-        if "-" in str(year):
-            try:
-                start_year, end_year = map(int, str(year).split("-"))
-                years = list(range(start_year, end_year + 1))
-                self.logger.do_log(f"[REPORT] Detected year range {start_year}-{end_year}", MessageType.INFO)
-            except Exception as e:
-                self.logger.do_log(f"[REPORT] Invalid year format '{year}' Error: {e}", MessageType.ERROR)
-                return
-        else:
-            years = [int(year)]
-            single_year = True
+        years=DateRangeHandler.handle_date_range(year,self.logger)
+        single_year= len(years)==1
 
         for y in years:
             base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.K10.value}/{y}"
@@ -134,16 +127,7 @@ class ReportsOrchestationLogic:
         # ---------------------------------------------------------
         # 🧠 Parse year(s)
         # ---------------------------------------------------------
-        if "-" in str(year):
-            try:
-                start_year, end_year = map(int, str(year).split("-"))
-                years = list(range(start_year, end_year + 1))
-                self.logger.do_log(f"[REPORT] Detected year range {start_year}-{end_year}", MessageType.INFO)
-            except Exception as e:
-                self.logger.do_log(f"[REPORT] Invalid year format '{year}' Error: {e}", MessageType.ERROR)
-                return
-        else:
-            years = [int(year)]
+        years=DateRangeHandler.handle_date_range(year,self.logger)
 
         # ---------------------------------------------------------
         # 🚀 Process each year
@@ -185,6 +169,66 @@ class ReportsOrchestationLogic:
         dtos = self.report_securities_mgr.get_report_securities(universe_key)
         return sorted({(d.ticker or "").upper() for d in dtos if d.ticker})
 
+    def run_query_match_report_KQ_10(self, year, report_type=ReportFolder.K10.value,
+                               portfolio=None, dest_folder=None,query=None):
+
+        years = DateRangeHandler.handle_date_range(year, self.logger)
+        securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
+
+        all_matches = []
+
+        for y in years:
+            self.logger.do_log(
+                f"[QUERY-MATCH] 🚀 Starting query match scan | report={report_type} | year={y}",
+                MessageType.INFO
+            )
+
+            for i, sec in enumerate(securities):
+                self.logger.do_log(
+                    f"[QUERY-MATCH] 🔎 Processing {sec.symbol} ({i + 1}/{len(securities)})",
+                    MessageType.DEBUG
+                )
+
+                qm_rep = QueryMatchReportK10Q10(
+                    logger=self.logger,
+                    portfolio=portfolio,
+                    report_type=report_type,
+                    dest_folder=dest_folder
+                )
+
+                try:
+                    # Core logic:
+                    # 1) Stream documents
+                    # 2) Bi-encoder filter (cheap)
+                    # 3) Cross-encoder filter (expensive, only survivors)
+                    matches = qm_rep.run_analysis(
+                        symbol=sec.symbol,
+                        query=query,
+                        year=y,
+                        report_type=report_type
+                    )
+
+                    if matches:
+                        all_matches.extend(matches)
+
+                except Exception as e:
+                    self.logger.do_log(
+                        f"[QUERY-MATCH][ERROR] {sec.symbol} {y}: {e}",
+                        MessageType.ERROR
+                    )
+
+        # Optional persistence
+        '''
+        if dest_folder:
+            QueryMatchReportWriter.write(
+                matches=all_matches,
+                dest_folder=dest_folder,
+                logger=self.logger
+            )
+        '''
+
+        return all_matches
+
     def _run_sentiment_summary_report(self, year, report_type=ReportFolder.K10.value,
                                       portfolio=None, universe=None, dest_folder=None,
                                       rank_folder=None):
@@ -194,16 +238,7 @@ class ReportsOrchestationLogic:
         Supports both single year (e.g. 2024) and range (e.g. 2022-2025).
         """
         # Parse year or range
-        if "-" in str(year):
-            try:
-                start_year, end_year = map(int, str(year).split("-"))
-                years = list(range(start_year, end_year + 1))
-                self.logger.do_log(f"[SENT] 📆 Detected year range {start_year}-{end_year}", MessageType.INFO)
-            except Exception as e:
-                self.logger.do_log(f"[SENT] ❌ Invalid year format '{year}' Error: {e}", MessageType.ERROR)
-                return
-        else:
-            years = [int(year)]
+        years=DateRangeHandler.handle_date_range(year,self.logger)
 
         for y in years:
             start_time = datetime.now()
@@ -269,16 +304,7 @@ class ReportsOrchestationLogic:
         Build competition summaries across a range of years or a single year.
         """
         # Parse range
-        if "-" in str(year):
-            try:
-                start_year, end_year = map(int, str(year).split("-"))
-                years = list(range(start_year, end_year + 1))
-                self.logger.do_log(f"[COMP] 📆 Detected year range {start_year}-{end_year}", MessageType.INFO)
-            except Exception as e:
-                self.logger.do_log(f"[COMP] ❌ Invalid year format '{year}' Error: {e}", MessageType.ERROR)
-                return
-        else:
-            years = [int(year)]
+        years=DateRangeHandler.handle_date_range(year,self.logger)
 
         for y in years:
             start_time = datetime.now()
@@ -543,7 +569,7 @@ class ReportsOrchestationLogic:
             )
             raise
 
-    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None,d_from=None,dest_folder=None,rank_folder=None,job_id=None):
+    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None,d_from=None,dest_folder=None,rank_folder=None,job_id=None,query=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year,portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
@@ -567,6 +593,9 @@ class ReportsOrchestationLogic:
             self._run_yearly_income_statement(portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_QUARTERLY_INCOME_STATEMENT.value:
             self._run_quarterly_income_statement()
+        elif report_key.lower() == ReportType.QUERY_MATCH_REPORT_K10.value:
+            self.run_query_match_report_KQ_10(year, SECReports.K10.value, portfolio=portfolio, dest_folder=dest_folder,
+                                              query=query)
         elif report_key.lower() == ReportType.DOWNLOAD_SECURITIES_REPORTS_CALENDAR.value:
             self._run_download_securities_calendar(year,portfolio)
         elif report_key.lower() == ReportType.START_MCP.value:

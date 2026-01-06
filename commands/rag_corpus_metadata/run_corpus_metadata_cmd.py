@@ -25,8 +25,7 @@ from logic_layer.corpus_metadata_orchestration_logic import CorpusMetadataOrches
 def show_corpus_metadata_commands():
     print("================================================================")
     print("==================== CORPUS METADATA ENGINE ====================")
-    print("#1  RunCorpusMetadata mode=full  source='C:\\zerohedge_docs\\Archives' dest_root='Archives'")
-    print("#2  RunCorpusMetadata mode=incremental source=<PATH> dest_root=<ROOT>")
+    print("#1  RunCorpusMetadata mode=incremental source=<PATH> dest_root=<ROOT> tag_model=<sentence-transformers/all-MiniLM-L6-v2> tag_file=<KQ10_tags.json>")
     print("#X  Exit")
     print("================================================================")
 
@@ -35,7 +34,7 @@ def show_corpus_metadata_commands():
 # CORE LOGIC
 # ============================================================================
 
-def process_corpus_metadata_logic(mode, source, dest_root,chunk_name):
+def process_corpus_metadata_logic(mode, source, dest_root,chunk_name,tag_model=None,tag_file=None):
     """
     Loads configs → initializes orchestration → runs metadata pipeline.
     """
@@ -51,7 +50,7 @@ def process_corpus_metadata_logic(mode, source, dest_root,chunk_name):
         config = loader.load_settings("./configs/commands_mgr.ini")
 
         orch = CorpusMetadataOrchestrationLogic(config, logger)
-        orch.run(source, dest_root,chunk_name)
+        orch.run(source, dest_root,chunk_name,tag_model=tag_model,tag_file=tag_file)
 
         logger.do_log("[CORPUS] ✅ Metadata generation completed.", MessageType.INFO)
 
@@ -75,8 +74,10 @@ def process_corpus_metadata(cmd):
     source = ParamReader.get_param(cmd, "source", True, None)
     dest_root = ParamReader.get_param(cmd, "dest_root", True, None)
     chunk_name = ParamReader.get_param(cmd, "chunk_name", True, None)
+    tag_model = ParamReader.get_param(cmd, "tag_model", True, None)
+    tag_file = ParamReader.get_param(cmd, "tag_file", True, None)
 
-    process_corpus_metadata_logic(mode, source, dest_root,chunk_name)
+    process_corpus_metadata_logic(mode, source, dest_root,chunk_name,tag_model=tag_model,tag_file=tag_file)
 
 
 # ============================================================================

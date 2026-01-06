@@ -10,25 +10,29 @@ class CorpusMetadataOrchestrationLogic:
         self.config = config
         self.logger = logger
 
-    def _discover_pdfs(self, root_folder):
+    def _discover_files(self, root_folder):
         pdfs = []
         for root, _, files in os.walk(root_folder):
             for f in files:
                 if f.lower().endswith(".pdf"):
                     pdfs.append(os.path.join(root, f))
+                if f.lower().endswith(".txt"):
+                    pdfs.append(os.path.join(root, f))
+                if f.lower().endswith(".html"):
+                    pdfs.append(os.path.join(root, f))
         return pdfs
 
-    def run(self, source_path, dest_root,chunk_name):
+    def run(self, source_path, dest_root,chunk_name,tag_model=None,tag_file=None):
         self.logger.do_log(f"[CORPUS] 🚀 Starting metadata: {source_path}",
                            MessageType.INFO)
 
         if not os.path.exists(source_path):
             raise Exception(f"Source path does not exist: {source_path}")
 
-        pdfs = self._discover_pdfs(source_path)
-        self.logger.do_log(f"[CORPUS] Found {len(pdfs)} PDFs", MessageType.INFO)
+        files = self._discover_files(source_path)
+        self.logger.do_log(f"[CORPUS] Found {len(files)} PDFs/TXTs/HTMLs", MessageType.INFO)
 
-        pipeline = CorpusMetadataPipeline(self.config, self.logger, dest_root,chunk_name)
-        pipeline.run(pdfs)
+        pipeline = CorpusMetadataPipeline(self.config, self.logger, dest_root,chunk_name,tag_model=tag_model,tag_file=tag_file)
+        pipeline.run(files)
 
         self.logger.do_log("[CORPUS] ✅ Completed.", MessageType.INFO)

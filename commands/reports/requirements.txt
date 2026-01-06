@@ -18,3 +18,7 @@ pyodbc
 spacy
 nltk
 websockets>=12.0
+tf-keras
+sentence-transformers
+pymupdf
+rapidfuzz

@@ -1,17 +1,31 @@
 # FILE: bert_topic_tagger.py
+import json
+import os.path
+
 from transformers import AutoTokenizer, AutoModel
 import torch
 import torch.nn.functional as F
+
+from common.util.std_in_out.root_locator import RootLocator
 from logic_layer.rag_corpus_metadata.financial_tags import FINANCIAL_TAGS
 
 class TransformersTopicTagger:
-    def __init__(self, logger, model_name="sentence-transformers/all-MiniLM-L6-v2"):
+    def __init__(self, logger, model_name=None,tag_file=None):
         self.logger = logger
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name if model_name is not None else "sentence-transformers/all-MiniLM-L6-v2")
         self.model = AutoModel.from_pretrained(model_name)
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         self.model.to(self.device)
-        self.keywords = FINANCIAL_TAGS
+        self.tag_file=tag_file
+
+        if self.tag_file is None:
+            self.keywords = FINANCIAL_TAGS
+        else:
+            root_path=RootLocator.get_root()
+            tag_file=os.path.join(root_path,"static","tags",tag_file)
+            with open(tag_file, "r", encoding="utf-8") as f:
+                self.keywords = json.load(f)
+
         self.logger.do_log("[BERT] Topic tagger READY", 1)
 
     # ------------------------------------------------------
