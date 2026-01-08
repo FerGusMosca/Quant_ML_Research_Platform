@@ -13,6 +13,7 @@ class FileHashing:
         h.update(data)
         return h.hexdigest()
 
+
     def compute_hashes(self, pdf_path):
         try:
             try:

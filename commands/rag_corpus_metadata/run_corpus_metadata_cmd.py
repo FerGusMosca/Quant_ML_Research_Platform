@@ -14,6 +14,7 @@ import traceback
 from common.util.std_in_out.param_reader import ParamReader
 from common.util.std_in_out.ml_settings_loader import MLSettingsLoader
 from common.util.logging.logger import Logger
+from common.util.tagging.tagging_config_dto import TaggingConfigDTO
 from framework.common.logger.message_type import MessageType
 from logic_layer.corpus_metadata_orchestration_logic import CorpusMetadataOrchestrationLogic
 
@@ -34,7 +35,7 @@ def show_corpus_metadata_commands():
 # CORE LOGIC
 # ============================================================================
 
-def process_corpus_metadata_logic(mode, source, dest_root,chunk_name,tag_model=None,tag_file=None):
+def process_corpus_metadata_logic(mode, source, dest_root,chunk_name,tag_cfg=None):
     """
     Loads configs → initializes orchestration → runs metadata pipeline.
     """
@@ -50,7 +51,7 @@ def process_corpus_metadata_logic(mode, source, dest_root,chunk_name,tag_model=N
         config = loader.load_settings("./configs/commands_mgr.ini")
 
         orch = CorpusMetadataOrchestrationLogic(config, logger)
-        orch.run(source, dest_root,chunk_name,tag_model=tag_model,tag_file=tag_file)
+        orch.run(source, dest_root,chunk_name,tag_cfg=tag_cfg)
 
         logger.do_log("[CORPUS] ✅ Metadata generation completed.", MessageType.INFO)
 
@@ -76,8 +77,23 @@ def process_corpus_metadata(cmd):
     chunk_name = ParamReader.get_param(cmd, "chunk_name", True, None)
     tag_model = ParamReader.get_param(cmd, "tag_model", True, None)
     tag_file = ParamReader.get_param(cmd, "tag_file", True, None)
+    tags_csv = ParamReader.get_param(cmd, "tags_csv", True, None)
+    sim_threshold = ParamReader.get_param(cmd, "sim_threshold", True, 0.8)
+    doc_type = ParamReader.get_param(cmd, "doc_type", True, None)
 
-    process_corpus_metadata_logic(mode, source, dest_root,chunk_name,tag_model=tag_model,tag_file=tag_file)
+    tag_cfg=None
+    if tag_model is not None:
+
+        tag_cfg = TaggingConfigDTO(
+            tag_model=tag_model,
+            tag_file=tag_file,
+            tags_csv=tags_csv,
+            sim_threshold=sim_threshold,
+            doc_type=doc_type
+        )
+
+
+    process_corpus_metadata_logic(mode, source, dest_root,chunk_name,tag_cfg=tag_cfg)
 
 
 # ============================================================================
