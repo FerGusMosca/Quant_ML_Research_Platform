@@ -7,12 +7,12 @@ class FileLocators ():
 
 
     @staticmethod
-    def enumerate_all_files(file_folder,logger, filters=[]):
+    def enumerate_all_files(file_folder,logger, filters=[],job_id=None):
         pass  # TODO enumerates all files in a folder
         if not os.path.isdir(file_folder):
             logger.do_log(
                 f"[TAGGING] ⚠ Folder not found: {file_folder}",
-                MessageType.WARNING
+                MessageType.WARNING,job_id
             )
             return []
 
@@ -27,7 +27,7 @@ class FileLocators ():
         except Exception as e:
             logger.do_log(
                 f"[TAGGING] ❌ Failed listing files in {file_folder} → {e}",
-                MessageType.ERROR
+                MessageType.ERROR,job_id
             )
             return []
 
@@ -41,13 +41,13 @@ class FileLocators ():
 
         logger.do_log(
             f"[TAGGING] 📄 Files found={len(all_files)} | matched={len(matched_files)} | skipped={len(skipped_files)}",
-            MessageType.INFO
+            MessageType.INFO,job_id
         )
 
         if not matched_files:
             logger.do_log(
                 f"[TAGGING] ⚠ No matching documents for year={y}",
-                MessageType.WARNING
+                MessageType.WARNING,job_id
             )
             return []
         else:

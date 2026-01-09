@@ -6,7 +6,7 @@ import asyncio
 import os
 import traceback
 
-from common.dto.mcp.bootstrap_registry import build_mcp_registry
+from common.dto.mcp.bootstrap_registry import  build_mcp_registry_ingest
 from common.dto.mcp.dispatcher import JsonRpcDispatcher
 from common.dto.mcp.progress_bus import ProgressBus
 from framework.common.logger.message_type import MessageType
@@ -83,7 +83,7 @@ class RAGIngestOrchestrationLogic:
         self._mcp_started = True
 
         self.progress_bus = ProgressBus()
-        self.mcp_registry = build_mcp_registry(orchestrator=self)
+        self.mcp_registry = build_mcp_registry_ingest(orchestrator=self)
         self.mcp_dispatcher = JsonRpcDispatcher(self.mcp_registry, self.progress_bus)
         mcp_server=server
         mcp_port = int(port)

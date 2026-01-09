@@ -4,7 +4,7 @@ from datetime import datetime
 from pathlib import Path
 import asyncio
 
-from common.dto.mcp.bootstrap_registry import build_mcp_registry
+from common.dto.mcp.bootstrap_registry import  build_mcp_registry_reports
 from common.dto.mcp.dispatcher import JsonRpcDispatcher
 from common.dto.mcp.progress_bus import ProgressBus
 from common.dto.mcp.tools import ToolRegistry
@@ -345,7 +345,7 @@ class ReportsOrchestationLogic:
                 MessageType.INFO
             )
 
-    def _run_document_tagging(self, portfolio, year, source, rank_folder, tag_cfg):
+    def _run_document_tagging(self, portfolio, year, source, rank_folder, tag_cfg,job_id):
         """
         Runs document tagging for a portfolio/year range.
         Filters files by portfolio securities (symbol match in filename).
@@ -363,13 +363,14 @@ class ReportsOrchestationLogic:
             start_time = datetime.now()
             self.logger.do_log(
                 f"[TAGGING] 🚀 Starting Document Tagging (source={source}, rank_folder={rank_folder}, year={y})",
-                MessageType.INFO
+                MessageType.INFO,job_id
             )
 
             file_folder = os.path.join(source, str(y))
 
             matched_files= FileLocators.enumerate_all_files(file_folder,self.logger,
-                                                            filters= [s.symbol.lower() for s in securities if getattr(s, "symbol", None)])
+                                                            filters= [s.symbol.lower() for s in securities if getattr(s, "symbol", None)],
+                                                            job_id=job_id)
 
 
             tag_dict= JsonFileReader.load_json_file(os.path.join(RootLocator.get_root(),"static","tags"),tag_cfg.tag_file)
@@ -384,13 +385,13 @@ class ReportsOrchestationLogic:
                 str(y)
             )
 
-            ranking_dict = tagger.rank(securities,matched_files,rank_dir,tag_dict)
-            self.logger.do_log(f"[TAGGING] Successfully persisted {len(ranking_dict)} rows in dir {rank_dir}",MessageType.INFO)
+            ranking_dict = tagger.rank(securities,matched_files,rank_dir,tag_dict,job_id)
+            self.logger.do_log(f"[TAGGING] Successfully persisted {len(ranking_dict)} rows in dir {rank_dir}",MessageType.INFO,job_id)
 
             elapsed = (datetime.now() - start_time).total_seconds()
             self.logger.do_log(
                 f"[TAGGING] 🏁 Completed year={y} in {elapsed:.2f}s",
-                MessageType.INFO
+                MessageType.INFO,job_id
             )
 
     def _run_download_securities_calendar(self, year, portfolio):
@@ -588,7 +589,7 @@ class ReportsOrchestationLogic:
         self._mcp_started = True
 
         self.progress_bus = ProgressBus()
-        self.mcp_registry = build_mcp_registry(orchestrator=self)
+        self.mcp_registry = build_mcp_registry_reports(orchestrator=self)
         self.mcp_dispatcher = JsonRpcDispatcher(self.mcp_registry,self.progress_bus)
 
         try:
@@ -648,7 +649,7 @@ class ReportsOrchestationLogic:
         elif report_key.lower() == ReportType.DOWNLOAD_SECURITIES_REPORTS_CALENDAR.value:
             self._run_download_securities_calendar(year,portfolio)
         elif report_key.lower() == ReportType.DOCUMENT_TAGGING_RANKING.value:
-            self._run_document_tagging(portfolio, year, source, rank_folder, tag_cfg)
+            self._run_document_tagging(portfolio, year, source, rank_folder, tag_cfg,job_id)
         #
         elif report_key.lower() == ReportType.START_MCP.value:
             self._run_start_mcp()

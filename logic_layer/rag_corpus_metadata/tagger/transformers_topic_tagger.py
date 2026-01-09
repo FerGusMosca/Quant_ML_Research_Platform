@@ -72,14 +72,14 @@ class TransformersTopicTagger:
 
         return chunks
 
-    def _persist_rank_csv(self, rows: list, output_dir: str):
+    def _persist_rank_csv(self, rows: list, output_dir: str,job_id:int=None):
         import csv
         from datetime import datetime
         import os
 
         if not rows:
             if self.logger:
-                self.logger.do_log("[RANK][CSV] ⚠ No rows to persist", 2)
+                self.logger.do_log("[RANK][CSV] ⚠ No rows to persist", 2,job_id)
             return
 
         os.makedirs(output_dir, exist_ok=True)
@@ -99,14 +99,14 @@ class TransformersTopicTagger:
             if self.logger:
                 self.logger.do_log(
                     f"[RANK][CSV] ✔ Persisted results | file={out_file} | rows={len(rows)}",
-                    1
+                    1,job_id
                 )
 
         except Exception as e:
             if self.logger:
                 self.logger.do_log(
                     f"[RANK][CSV] ❌ Failed persisting CSV: {e}",
-                    2
+                    2,job_id
                 )
 
 
@@ -168,6 +168,7 @@ class TransformersTopicTagger:
             files: list,
             rank_folder,
             tag_dict: dict,
+            job_id:int,
             top_k: int = 3,
     ):
         """
@@ -181,7 +182,7 @@ class TransformersTopicTagger:
         if self.logger:
             self.logger.do_log(
                 f"[RANK] ▶ START | files={len(files)} | tags={len(tag_dict)} | top_k={top_k}",
-                MessageType.INFO
+                MessageType.INFO,job_id
             )
 
         # Pre-encode tag phrases once
@@ -199,7 +200,7 @@ class TransformersTopicTagger:
             if self.logger:
                 self.logger.do_log(
                     f"[RANK] ▶ ({idx}/{len(files)}) file={file_name}",
-                    MessageType.INFO
+                    MessageType.INFO,job_id
                 )
 
             # Resolve security by symbol in filename
@@ -213,7 +214,7 @@ class TransformersTopicTagger:
                 if self.logger:
                     self.logger.do_log(
                         f"[RANK] ⚠ No security resolved for file={file_name}",
-                        MessageType.INFO
+                        MessageType.INFO,job_id
                     )
                 continue
 
@@ -223,7 +224,7 @@ class TransformersTopicTagger:
                 if self.logger:
                     self.logger.do_log(
                         f"[RANK] ❌ Failed reading {file_name}: {e}",
-                        MessageType.INFO
+                        MessageType.INFO,job_id
                     )
                 continue
 
@@ -232,14 +233,14 @@ class TransformersTopicTagger:
                 if self.logger:
                     self.logger.do_log(
                         f"[RANK] ❌ No chunks generated for {file_name}",
-                        MessageType.INFO
+                        MessageType.INFO,job_id
                     )
                 continue
 
             if self.logger:
                 self.logger.do_log(
                     f"[RANK] file={file_name} | security={security_symbol} | chunks={len(chunks)}",
-                    MessageType.INFO
+                    MessageType.INFO,job_id
                 )
 
 
@@ -259,7 +260,7 @@ class TransformersTopicTagger:
                 if self.logger:
                     self.logger.do_log(
                         f"[RANK] file={file_name} | chunk={chunk_idx}/{len(chunks)} processed",
-                        MessageType.INFO
+                        MessageType.INFO,job_id
                     )
 
         # Build final results: ONE row per security
@@ -270,7 +271,7 @@ class TransformersTopicTagger:
             if self.logger:
                 self.logger.do_log(
                     f"[RANK] security={security} | ranked_tags={ranked_scores[:top_k]}",
-                    MessageType.INFO
+                    MessageType.INFO,job_id
                 )
 
             results.append({
@@ -287,10 +288,10 @@ class TransformersTopicTagger:
         if self.logger:
             self.logger.do_log(
                 f"[RANK] ✔ DONE | securities={len(results)}",
-                MessageType.INFO
+                MessageType.INFO,job_id
             )
 
-        self._persist_rank_csv(results, rank_folder)
+        self._persist_rank_csv(results, rank_folder,job_id)
 
         return results
 

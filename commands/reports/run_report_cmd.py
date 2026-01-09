@@ -131,10 +131,8 @@ from logic_layer.rag_ingest_orchestration_logic import RAGIngestOrchestrationLog
 def show_commands():
     print("================================================================")
     print("======================= RAG INGESTION ==========================")
-    print("#1  RunRAGIngest mode=incremental source='C:\\zerohedge_docs\\Archives\\2025\\November\\Nov 6' dest_root='Archives'")
-    print("#2  RunRAGIngest mode=full source=<PATH>>")
-    print("#3  StartMCP")
-    print("#4  RunReport report=<report>> <portfolio> <dest_folder> <year>")
+    print("#1  StartMCP")
+    print("#2  RunReport report=<report>> <portfolio> <dest_folder> <year>")
     print("#X  Exit")
     print("================================================================")
 
@@ -154,48 +152,30 @@ def process_start_mcp_logic(server,port):
 
     try:
         logger.do_log(
-            f"[RAG] Starting MCP Server on server={server} port {port}",
+            f"[MCP] Starting MCP Server on server={server} port {port}",
             MessageType.INFO
         )
 
         loader = MLSettingsLoader()
         config = loader.load_settings("./configs/commands_mgr.ini")
 
-        orch = RAGIngestOrchestrationLogic(config, logger)
-        orch.process_start_mcp(server,port)
 
-        logger.do_log("[RAG] ✅ Ingestion completed", MessageType.INFO)
-
-    except Exception as e:
-        print(traceback.format_exc())
-        logger.do_log(f"[RAG] ❌ Error: {str(e)}", MessageType.ERROR)
-
-def process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model):
-    """
-    Core logic runner for ingestion.
-    Loads config → creates orchestrator → runs selected pipeline.
-    """
-
-    logger = Logger()
-
-    try:
-        logger.do_log(
-            f"[RAG] Starting ingestion mode={mode}, source={source}",
-            MessageType.INFO
+        orch = ReportsOrchestationLogic(
+            hist_data_conn_str= config["hist_data_conn_str"],
+            ml_reports_conn_str= config["ml_reports_conn_str"],
+            mcp_server= server,
+            mcp_port= port,
+            p_classification_map_key= None,
+            logger= logger
         )
 
+        orch._run_start_mcp()
 
-        loader = MLSettingsLoader()
-        config = loader.load_settings("./configs/commands_mgr.ini")
-
-        orch = RAGIngestOrchestrationLogic(config, logger)
-        orch.process_rag_ingest(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model)
-
-        logger.do_log("[RAG] ✅ Ingestion completed", MessageType.INFO)
+        logger.do_log("✅ MCP Server successfully started", MessageType.INFO)
 
     except Exception as e:
         print(traceback.format_exc())
-        logger.do_log(f"[RAG] ❌ Error: {str(e)}", MessageType.ERROR)
+        logger.do_log(f"[MCP] ❌ Error: {str(e)}", MessageType.ERROR)
 
 
 # ============================================================================
@@ -207,23 +187,6 @@ def process_start_mcp(cmd):
     server = ParamReader.get_param(cmd, "mcp_server")
     port = ParamReader.get_param(cmd, "mcp_port")
     process_start_mcp_logic(server,port)
-
-def process_rag_ingest(cmd):
-    """
-    External entrypoint.
-    Example external call:
-        python run_rag_ingest_cmd.py RunRAGIngest mode=full source=ZEROHEDGE
-    """
-
-    mode = ParamReader.get_param(cmd, "mode")
-    source = ParamReader.get_param(cmd, "source", True, None)
-    dest_root = ParamReader.get_param(cmd, "dest_root", True, None)
-    chunk_name = ParamReader.get_param(cmd, "chunk_name", True, None)
-    log_posfix = ParamReader.get_param(cmd, "log_posfix", True, None)
-    embedding_model = ParamReader.get_param(cmd, "embedding_model", True, None)
-    clustering_model = ParamReader.get_param(cmd, "clustering_model", True, None)
-
-    process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model)
 
 
 # ============================================================================

@@ -4,7 +4,7 @@ from common.dto.mcp.handlers.run_report_handler import run_report_handler
 from common.dto.mcp.tools import ToolRegistry, Tool, ToolSpec
 
 
-def build_mcp_registry(orchestrator) -> ToolRegistry:
+def build_mcp_registry_reports(orchestrator) -> ToolRegistry:
     registry = ToolRegistry()
 
     registry.register(
@@ -22,6 +22,9 @@ def build_mcp_registry(orchestrator) -> ToolRegistry:
                         "d_from": {"type": "string"},
                         "dest_folder": {"type": "string"},
                         "rank_folder": {"type": "string"},
+                        "tag_model": {"type": "string"},
+                        "tag_file": {"type": "string"},
+                        "doc_type": {"type": "string"},
                     },
                     "required": ["report"],
                 },
@@ -30,9 +33,14 @@ def build_mcp_registry(orchestrator) -> ToolRegistry:
         )
     )
 
-    # -------------------------
-    # run_rag_ingest (NEW)
-    # -------------------------
+    return registry
+
+# -------------------------
+# run_rag_ingest (NEW)
+# -------------------------
+def build_mcp_registry_ingest(orchestrator) -> ToolRegistry:
+    registry = ToolRegistry()
+
     registry.register(
         Tool(
             spec=ToolSpec(
