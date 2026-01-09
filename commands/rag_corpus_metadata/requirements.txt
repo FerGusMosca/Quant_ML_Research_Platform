@@ -1,16 +1,24 @@
+# Core
+numpy
 pandas
 tqdm
 regex
 PyYAML
-six
-tzdata
-pytz
-numpy
-colorama
-pymupdf
 requests
+six
+pytz
+tzdata
+colorama
+
+# NLP / PDFs
 nltk
+pymupdf
+beautifulsoup4
+
+# Transformers / ML
 torch==2.2.0 --index-url https://download.pytorch.org/whl/cpu
 transformers==4.39.3
 sentencepiece==0.1.99
-bs4
+
+# Optional (solo si realmente los usás)
+scikit-learn

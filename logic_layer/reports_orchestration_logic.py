@@ -343,6 +343,10 @@ class ReportsOrchestationLogic:
             )
 
 
+    def _run_document_tagging(self):
+        #TODO implement this
+        pass
+
 
     def _run_download_securities_calendar(self, year, portfolio):
         """
@@ -598,6 +602,9 @@ class ReportsOrchestationLogic:
                                               query=query)
         elif report_key.lower() == ReportType.DOWNLOAD_SECURITIES_REPORTS_CALENDAR.value:
             self._run_download_securities_calendar(year,portfolio)
+        elif report_key.lower() == ReportType.DOCUMENT_TAGGING_RANKING.value:
+            self._run_document_tagging(year,portfolio)
+        #
         elif report_key.lower() == ReportType.START_MCP.value:
             self._run_start_mcp()
         else:

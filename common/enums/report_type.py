@@ -17,4 +17,6 @@ class ReportType(Enum):
     FINANCIAL_RATIOS_REPORT_Q10 = "financial_ratios_report_q10"
     DOWNLOAD_SECURITIES_REPORTS_CALENDAR = "download_securities_reports_calendar"
 
+    DOCUMENT_TAGGING_RANKING="document_tagging_ranking"
+
     START_MCP = "start_mcp"

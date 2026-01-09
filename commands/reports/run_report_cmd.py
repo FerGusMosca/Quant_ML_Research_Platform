@@ -210,15 +210,14 @@ def process_rag_ingest(cmd):
 # MENU HANDLER
 # ============================================================================
 
-def process_rag_ingest_menu(cmd):
+def process_menu(cmd):
     """
     Menu dispatcher (mirrors your big console pattern).
     """
 
     tokens = cmd.split(" ")
 
-    if tokens[0] == "RunRAGIngest":
-        process_rag_ingest(cmd)
+
     if tokens[0] == "StartMCP":
         process_start_mcp(cmd)
     if tokens[0] == "RunReport":
@@ -248,8 +247,7 @@ if __name__ == "__main__":
         cmd = " ".join(sys.argv[1:])
         if  cmd.startswith("StartMCP"):
             process_start_mcp(cmd)
-        else:
-            process_rag_ingest(cmd)
+
         sys.exit(0)
 
     # (B) Interactive menu mode
@@ -258,7 +256,7 @@ if __name__ == "__main__":
         show_commands()
         cmd = input("Enter a command: ")
 
-        if not process_rag_ingest_menu(cmd):
+        if not process_menu(cmd):
             break
 
     print("RAG ingestion module closed.")
