@@ -11,14 +11,15 @@ import traceback
 
 import os, sys
 
+from common.util.tagging.tagging_config_dto import TaggingConfigDTO
 from logic_layer.reports_orchestration_logic import ReportsOrchestationLogic
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # ============================================================
 # #2 - Report Logic Bridge
 # ============================================================
 
-def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None, d_from=None,dest_folder=None,rank_folder=None,
-                            mcp_server=None,mcp_port=None,query=None):
+def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None, d_from=None,source=None,dest_folder=None,rank_folder=None,
+                            mcp_server=None,mcp_port=None,query=None,tag_cfg=None):
     """
     Core logic responsible for running reports through AlgosOrchestationLogic.
     """
@@ -47,7 +48,8 @@ def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None,
                           MessageType.INFO)
             trd_algos._run_start_mcp()
         else:
-            trd_algos.process_run_report(report_key, year, portfolio, symbol, d_from,dest_folder,rank_folder,query=query)
+            trd_algos.process_run_report(report_key, year, portfolio, symbol, d_from= d_from , source=source,
+                                         dest_folder= dest_folder,rank_folder= rank_folder,query=query,tag_cfg=tag_cfg)
 
         logger.do_log(f"[REPORT] ✅ Report {report_key} completed", MessageType.INFO)
 
@@ -71,6 +73,7 @@ def process_run_report(cmd):
     year = ParamReader.get_param(cmd, "year", True, None)
     d_from = ParamReader.get_param(cmd, "from", True, None)
     portfolio = ParamReader.get_param(cmd, "portfolio",True,None)
+    source = ParamReader.get_param(cmd, "source", True, None)
     dest_folder = ParamReader.get_param(cmd, "dest_folder",True,None)
     rank_folder= ParamReader.get_param(cmd, "rank_folder",True,None)
     symbol = ParamReader.get_param(cmd, "symbol", True, None)
@@ -78,8 +81,25 @@ def process_run_report(cmd):
     port = ParamReader.get_param(cmd, "mcp_port", True, None)
     query = ParamReader.get_param(cmd, "query", True, None)
 
-    process_run_report_logic(report_key, year, portfolio, symbol, d_from, dest_folder, rank_folder, mcp_server=server,
-                             mcp_port=port,query=query)
+    tag_model = ParamReader.get_param(cmd, "tag_model", True, None)
+    tag_file = ParamReader.get_param(cmd, "tag_file", True, None)
+    tags_csv = ParamReader.get_param(cmd, "tags_csv", True, None)
+    sim_threshold = ParamReader.get_param(cmd, "sim_threshold", True, 0.8)
+    doc_type = ParamReader.get_param(cmd, "doc_type", True, None)
+
+    tag_cfg=None
+    if tag_model is not None:
+
+        tag_cfg = TaggingConfigDTO(
+            tag_model=tag_model,
+            tag_file=tag_file,
+            tags_csv=tags_csv,
+            sim_threshold=sim_threshold,
+            doc_type=doc_type
+        )
+
+    process_run_report_logic(report_key, year, portfolio, symbol, d_from,source=source,dest_folder= dest_folder,
+                             rank_folder= rank_folder, mcp_server=server,mcp_port=port,query=query,tag_cfg=tag_cfg)
 
 
 # ============================================================

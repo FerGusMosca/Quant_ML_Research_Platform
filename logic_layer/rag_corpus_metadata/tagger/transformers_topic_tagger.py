@@ -52,17 +52,7 @@ class TransformersTopicTagger:
         return F.normalize(emb, p=2, dim=1)
 
 
-    # ------------------------------------------------------
-
-    def classify(self, text: str, file_name: str):
-        """
-        Semantic topic tagging using chunk-level BERT similarity.
-        Blocks are treated as the primary structural units.
-        """
-
-        # Convert structured blocks into chunkable texts
-
-        # Generate chunks per block (do NOT chunk the whole document at once)
+    def _get_chunks(self,text,file_name):
         chunks = []
         try:
             if self.tag_cfg.is_K_Q_10_doc():
@@ -78,6 +68,21 @@ class TransformersTopicTagger:
                     2
                 )
 
+        return chunks
+    # ------------------------------------------------------
+
+
+
+    def classify(self, text: str, file_name: str):
+        """
+        Semantic topic tagging using chunk-level BERT similarity.
+        Blocks are treated as the primary structural units.
+        """
+
+        # Convert structured blocks into chunkable texts
+
+        # Generate chunks per block (do NOT chunk the whole document at once)
+        chunks = self._get_chunks(text,file_name)
         if not chunks:
             if self.logger:
                 self.logger.do_log(

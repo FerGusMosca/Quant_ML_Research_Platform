@@ -22,11 +22,13 @@ from common.util.downloaders.q10_downloader import Q10Downloader
 from common.util.downloaders.securities_calendar_downloader import SecuritiesCalendarDownloader
 from common.util.downloaders.yahoo_income_statement import YahooIncomeStatement
 from common.util.scrappers.securities_calendar_extractor import SecuritiesCalendarExtractor
+from common.util.std_in_out.file_locators import FileLocators
 from common.util.std_in_out.root_locator import RootLocator
 from data_access_layer.portfolio_securities_manager import PortfolioSecuritiesManager
 from data_access_layer.report_securities_manager import ReportSecuritiesManager
 from data_access_layer.securities_calendar_manager import SecuritiesCalendarManager
 from framework.common.logger.message_type import MessageType
+from logic_layer.rag_corpus_metadata.tagger.transformers_topic_tagger import TransformersTopicTagger
 from logic_layer.report_generators.competition_summary_report import CompetitionSummaryReport
 from logic_layer.report_generators.query_match_report import QueryMatchReportK10Q10
 from logic_layer.report_generators.sentiment.sentence_sentiment_summary_report import SentimentSummaryReport
@@ -342,11 +344,41 @@ class ReportsOrchestationLogic:
                 MessageType.INFO
             )
 
+    def _run_document_tagging(self, portfolio, year, source, dest_folder, tag_cfg):
+        """
+        Runs document tagging for a portfolio/year range.
+        Filters files by portfolio securities (symbol match in filename).
+        """
 
-    def _run_document_tagging(self):
-        #TODO implement this
-        pass
+        tagger=TransformersTopicTagger(self.logger,tag_cfg)
 
+        # Parse year or year range
+        years = DateRangeHandler.handle_date_range(year, self.logger)
+
+        # Load portfolio securities once
+        securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
+
+        for y in years:
+            start_time = datetime.now()
+            self.logger.do_log(
+                f"[TAGGING] 🚀 Starting Document Tagging (source={source}, dest={dest_folder}, year={y})",
+                MessageType.INFO
+            )
+
+            file_folder = os.path.join(source, y)
+
+            matched_files= FileLocators.enumerate_all_files(file_folder,self.logger,
+                                                            filters= [s.symbol.lower() for s in securities if getattr(s, "symbol", None)])
+
+
+            #TODo process matched_files in document tagger
+
+
+            elapsed = (datetime.now() - start_time).total_seconds()
+            self.logger.do_log(
+                f"[TAGGING] 🏁 Completed year={y} in {elapsed:.2f}s",
+                MessageType.INFO
+            )
 
     def _run_download_securities_calendar(self, year, portfolio):
         """
@@ -573,13 +605,13 @@ class ReportsOrchestationLogic:
             )
             raise
 
-    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None,d_from=None,dest_folder=None,rank_folder=None,job_id=None,query=None):
+    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None,d_from=None,source=None,dest_folder=None,
+                           rank_folder=None,job_id=None,query=None,tag_cfg=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year,portfolio)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
             self._run_download_q10(year,portfolio)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_K10.value:
-
             self._run_sentiment_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_Q10.value:
             self._run_sentiment_summary_report(year, SECReports.Q10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
@@ -603,7 +635,7 @@ class ReportsOrchestationLogic:
         elif report_key.lower() == ReportType.DOWNLOAD_SECURITIES_REPORTS_CALENDAR.value:
             self._run_download_securities_calendar(year,portfolio)
         elif report_key.lower() == ReportType.DOCUMENT_TAGGING_RANKING.value:
-            self._run_document_tagging(year,portfolio)
+            self._run_document_tagging(portfolio,year,source,dest_folder,tag_cfg)
         #
         elif report_key.lower() == ReportType.START_MCP.value:
             self._run_start_mcp()
