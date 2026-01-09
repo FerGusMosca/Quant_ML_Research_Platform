@@ -1,11 +1,12 @@
 # FILE: bert_topic_tagger.py
 import json
 import os.path
-
+import csv
+from datetime import datetime
+import os
 from transformers import AutoTokenizer, AutoModel
 import torch
 import torch.nn.functional as F
-from collections import defaultdict
 from common.util.extractors.K_Q_10.k_q_10_html_structured_block_extractor import KQ10HtmlStructuredBlockExtractor
 from common.util.std_in_out.raw_file_reader import RawFileReader
 from common.util.std_in_out.root_locator import RootLocator
@@ -73,13 +74,11 @@ class TransformersTopicTagger:
         return chunks
 
     def _persist_rank_csv(self, rows: list, output_dir: str,job_id:int=None):
-        import csv
-        from datetime import datetime
-        import os
+
 
         if not rows:
             if self.logger:
-                self.logger.do_log("[RANK][CSV] ⚠ No rows to persist", 2,job_id)
+                self.logger.do_log("[RANK][CSV] ⚠ No rows to persist", MessageType.INFO,job_id)
             return
 
         os.makedirs(output_dir, exist_ok=True)
@@ -99,14 +98,14 @@ class TransformersTopicTagger:
             if self.logger:
                 self.logger.do_log(
                     f"[RANK][CSV] ✔ Persisted results | file={out_file} | rows={len(rows)}",
-                    1,job_id
+                    MessageType.INFO,job_id
                 )
 
         except Exception as e:
             if self.logger:
                 self.logger.do_log(
                     f"[RANK][CSV] ❌ Failed persisting CSV: {e}",
-                    2,job_id
+                    MessageType.ERROR,job_id
                 )
 
 
