@@ -22,3 +22,8 @@ tf-keras
 sentence-transformers
 pymupdf
 rapidfuzz
+transformers
+torch
+tokenizers
+huggingface-hub
+safetensors
