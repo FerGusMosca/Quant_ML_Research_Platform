@@ -10,6 +10,7 @@ import nltk
 
 from common.enums.folders import Folders
 from common.enums.report_folder import ReportFolder
+from common.util.std_in_out.raw_file_reader import RawFileReader
 from common.util.std_in_out.root_locator import RootLocator
 from framework.common.logger.message_type import MessageType
 
@@ -168,9 +169,7 @@ class SentimentSummaryReport:
             symbol = file.split("_")[0].upper()
             try:
                 path = os.path.join(self.input_dir, file)
-                with open(path, "r", encoding="utf-8") as fh:
-                    html = fh.read()
-
+                html=RawFileReader.get_raw_text(path)
                 text = self._html_to_text(html)
                 sections = self._extract_relevant_sections(text)
                 result = self._score_sections(sections)

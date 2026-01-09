@@ -23,6 +23,7 @@ from common.util.downloaders.securities_calendar_downloader import SecuritiesCal
 from common.util.downloaders.yahoo_income_statement import YahooIncomeStatement
 from common.util.scrappers.securities_calendar_extractor import SecuritiesCalendarExtractor
 from common.util.std_in_out.file_locators import FileLocators
+from common.util.std_in_out.json_file_reader import JsonFileReader
 from common.util.std_in_out.root_locator import RootLocator
 from data_access_layer.portfolio_securities_manager import PortfolioSecuritiesManager
 from data_access_layer.report_securities_manager import ReportSecuritiesManager
@@ -344,7 +345,7 @@ class ReportsOrchestationLogic:
                 MessageType.INFO
             )
 
-    def _run_document_tagging(self, portfolio, year, source, dest_folder, tag_cfg):
+    def _run_document_tagging(self, portfolio, year, source, rank_folder, tag_cfg):
         """
         Runs document tagging for a portfolio/year range.
         Filters files by portfolio securities (symbol match in filename).
@@ -361,18 +362,30 @@ class ReportsOrchestationLogic:
         for y in years:
             start_time = datetime.now()
             self.logger.do_log(
-                f"[TAGGING] 🚀 Starting Document Tagging (source={source}, dest={dest_folder}, year={y})",
+                f"[TAGGING] 🚀 Starting Document Tagging (source={source}, rank_folder={rank_folder}, year={y})",
                 MessageType.INFO
             )
 
-            file_folder = os.path.join(source, y)
+            file_folder = os.path.join(source, str(y))
 
             matched_files= FileLocators.enumerate_all_files(file_folder,self.logger,
                                                             filters= [s.symbol.lower() for s in securities if getattr(s, "symbol", None)])
 
 
-            #TODo process matched_files in document tagger
+            tag_dict= JsonFileReader.load_json_file(os.path.join(RootLocator.get_root(),"static","tags"),tag_cfg.tag_file)
 
+            tag = "_".join(tag_dict.keys())
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+            rank_dir = os.path.join(
+                RootLocator.get_root(),
+                Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                rank_folder,
+                f"file_taging_{tag}_rank_{timestamp}",
+                str(y)
+            )
+
+            ranking_dict = tagger.rank(securities,matched_files,rank_dir,tag_dict)
+            self.logger.do_log(f"[TAGGING] Successfully persisted {len(ranking_dict)} rows in dir {rank_dir}",MessageType.INFO)
 
             elapsed = (datetime.now() - start_time).total_seconds()
             self.logger.do_log(
@@ -635,7 +648,7 @@ class ReportsOrchestationLogic:
         elif report_key.lower() == ReportType.DOWNLOAD_SECURITIES_REPORTS_CALENDAR.value:
             self._run_download_securities_calendar(year,portfolio)
         elif report_key.lower() == ReportType.DOCUMENT_TAGGING_RANKING.value:
-            self._run_document_tagging(portfolio,year,source,dest_folder,tag_cfg)
+            self._run_document_tagging(portfolio, year, source, rank_folder, tag_cfg)
         #
         elif report_key.lower() == ReportType.START_MCP.value:
             self._run_start_mcp()

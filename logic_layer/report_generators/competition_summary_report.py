@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 import spacy
 from common.enums.folders import Folders
 from common.enums.report_folder import ReportFolder
+from common.util.std_in_out.raw_file_reader import RawFileReader
 from framework.common.logger.message_type import MessageType
 
 
@@ -55,9 +56,7 @@ class CompetitionSummaryReport:
     # ---------------------------------------------------------
     def _process_file(self, symbol, file_name):
         path = os.path.join(self.input_dir, file_name).replace("\\", "/")
-        with open(path, "r", encoding="utf-8") as f:
-            html = f.read()
-
+        html=RawFileReader.get_raw_text(path)
         soup = BeautifulSoup(html, "html.parser")
         text = soup.get_text(" ", strip=True)
         period = self._extract_period_from_filename(file_name)
