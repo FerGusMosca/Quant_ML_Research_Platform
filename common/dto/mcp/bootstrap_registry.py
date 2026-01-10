@@ -16,7 +16,7 @@ def build_mcp_registry_reports(orchestrator) -> ToolRegistry:
                     "type": "object",
                     "properties": {
                         "report": {"type": "string"},
-                        "year": {"type": "integer"},
+                        "year": {"type": "string"},
                         "portfolio": {"type": "string"},
                         "symbol": {"type": "string"},
                         "d_from": {"type": "string"},
