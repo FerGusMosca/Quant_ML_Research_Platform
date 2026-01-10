@@ -1,5 +1,5 @@
 pandas
-numpy
+numpy<2
 requests
 beautifulsoup4
 tqdm
