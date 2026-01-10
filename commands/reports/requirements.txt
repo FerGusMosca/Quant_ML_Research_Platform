@@ -26,5 +26,7 @@ transformers
 tokenizers
 huggingface-hub
 safetensors
+
+# ---- Torch CPU ONLY ----
 torch==2.2.0+cpu
---index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
