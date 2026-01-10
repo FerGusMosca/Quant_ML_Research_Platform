@@ -35,6 +35,7 @@ COPY service_layer /app/service_layer
 COPY framework /app/framework
 COPY configs /app/configs
 COPY static/dictionaries /app/static/dictionaries
+COPY static/tags /app/static/tags
 
 # ------------------ Command ------------------
 CMD ["python", "-u", "-m", "commands.reports.run_report_cmd"]
