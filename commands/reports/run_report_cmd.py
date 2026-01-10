@@ -223,26 +223,49 @@ def process_menu(cmd):
 
 if __name__ == "__main__":
 
+    print(">>> __main__ ENTERED", flush=True)
+    print(f">>> sys.argv = {sys.argv}", flush=True)
+    print(f">>> len(sys.argv) = {len(sys.argv)}", flush=True)
+
     # (A) External invocation (no menu)
-    # ---------------------------------------------------
-    # Example:
-    # python run_rag_ingest_cmd.py RunRAGIngest mode=incremental source=ZEROHEDGE
     if len(sys.argv) > 1:
+        print(">>> BRANCH A: external invocation", flush=True)
+
         cmd = " ".join(sys.argv[1:])
-        if  cmd.startswith("StartMCP"):
+        print(f">>> cmd BUILT = '{cmd}'", flush=True)
+
+        print(">>> CHECK: cmd.startswith('StartMCP') ?", flush=True)
+        print(f">>> RESULT = {cmd.startswith('StartMCP')}", flush=True)
+
+        if cmd.startswith("start_mcp"):
+            print(">>> ENTERED start_mcp BRANCH", flush=True)
+
+            print(">>> CALLING process_start_mcp(cmd)", flush=True)
             process_start_mcp(cmd)
+
+            print(">>> ENTERING KEEP-ALIVE LOOP", flush=True)
             while True:
+                print(">>> MCP KEEP-ALIVE TICK", flush=True)
                 time.sleep(60)
 
+        print(">>> ABOUT TO sys.exit(0)", flush=True)
         sys.exit(0)
 
     # (B) Interactive menu mode
-    # ---------------------------------------------------
+    print(">>> BRANCH B: interactive menu", flush=True)
+
     while True:
+        print(">>> SHOWING COMMANDS", flush=True)
         show_commands()
+
+        print(">>> WAITING FOR INPUT()", flush=True)
         cmd = input("Enter a command: ")
 
+        print(f">>> USER INPUT = '{cmd}'", flush=True)
+
         if not process_menu(cmd):
+            print(">>> process_menu returned False -> BREAK", flush=True)
             break
 
-    print("RAG ingestion module closed.")
+    print(">>> RAG ingestion module closed.", flush=True)
+
