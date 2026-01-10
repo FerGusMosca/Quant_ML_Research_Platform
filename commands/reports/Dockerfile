@@ -37,4 +37,4 @@ COPY configs /app/configs
 COPY static/dictionaries /app/static/dictionaries
 
 # ------------------ Command ------------------
-CMD ["python","-m","commands.reports.run_report_cmd","StartMCP","mcp_server=0.0.0.0","mcp_port=7001"]
+CMD ["python", "-u", "-m", "commands.reports.run_report_cmd"]

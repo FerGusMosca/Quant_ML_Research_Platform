@@ -231,7 +231,7 @@ if __name__ == "__main__":
         if  cmd.startswith("StartMCP"):
             process_start_mcp(cmd)
 
-        sys.exit(0)
+        #sys.exit(0)
 
     # (B) Interactive menu mode
     # ---------------------------------------------------

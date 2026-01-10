@@ -160,7 +160,7 @@ if __name__ == "__main__":
             process_start_mcp(cmd)
         else:
             process_rag_ingest(cmd)
-        sys.exit(0)
+        #sys.exit(0)
 
     # (B) Interactive menu mode
     # ---------------------------------------------------
