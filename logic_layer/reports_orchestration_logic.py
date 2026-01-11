@@ -367,20 +367,23 @@ class ReportsOrchestationLogic:
 
 
         try:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
             tagger = TransformersTopicTagger(self.logger, tag_cfg)
             years = DateRangeHandler.handle_date_range(year, self.logger)
             securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
+            tag_dict = tagger.initialize_tag_dict(job_id=job_id)
         except Exception as e:
             self._log_exc("[TAGGING] ❌ init failed", e,job_id)
+            #Special Error inicailization
+            tag_run = TagRun.initialize_tag_run(portfolio=portfolio,
+                                                report_type=ReportType.DOCUMENT_TAGGING_RANKING.value,
+                                                source=source, rank_folder=rank_folder, year=year, tag_cfg=tag_cfg,
+                                                tag_dict=None)
+            tag_run.set_error(str(e))
+            self.tag_runs_mgr.persist_tag_run(tag_run)
+
             return
 
-        try:
-
-            tag_dict = tagger.initialize_tag_dict(job_id=job_id)
-
-        except Exception as e:
-            self._log_exc(f"[TAGGING] ❌ tag load failed ", e, job_id)
-            return
 
         try:
 
@@ -402,7 +405,11 @@ class ReportsOrchestationLogic:
                             job_id
                         )
 
-                        file_folder = os.path.join(source, str(y))
+                        file_folder = os.path.join(
+                                                    RootLocator.get_root(),
+                                                    Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                                                    source,
+                                                    str(y))
 
                         matched_files = FileLocators.enumerate_all_files(
                             file_folder,
@@ -418,7 +425,7 @@ class ReportsOrchestationLogic:
 
                     try:
                         tag = "_".join(tag_dict.keys())
-                        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+
                         dest_rank_folder= os.path.join(rank_folder,f"file_taging_{tag}_rank_{timestamp}",str(y))
                         rank_dir = os.path.join(
                             RootLocator.get_root(),
