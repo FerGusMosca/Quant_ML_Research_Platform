@@ -1,6 +1,7 @@
 import traceback
 
 from business_entities.portf_position import PortfolioPosition
+from common.enums.folders import Folders
 from common.enums.information_vendors import InformationVendors
 from common.enums.market_regimes import MarketRegimes
 from common.util.financial_calculations.date_handler import DateHandler
@@ -21,7 +22,7 @@ _TIMESTAMP_FORMAT='%m/%d/%Yt%H:%M:%S'
 
 last_trading_dict = None
 
-
+Folders.load_from_config()
 def show_commands():
     print("======================== Financial Algos ========================")
     print("#1-EvalBiasedTradingAlgo [Symbol] [SeriesCSV] [from] [to] [Bias] [classif_key]")

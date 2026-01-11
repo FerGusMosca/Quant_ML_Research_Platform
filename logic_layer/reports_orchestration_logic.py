@@ -412,6 +412,10 @@ class ReportsOrchestationLogic:
                     f"file_taging_{tag}_rank_{timestamp}",
                     str(y)
                 )
+
+                self.logger.do_log(f"[TAGGING] 🚀Creating Dest Rank Dir  rank_dir={rank_dir}",MessageType.INFO,job_id
+                )
+
             except Exception as e:
                 self._log_exc(f"[TAGGING] ❌ rank dir build failed | year={y}", e,job_id)
                 continue

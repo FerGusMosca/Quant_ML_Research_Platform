@@ -11,13 +11,14 @@ Supports:
 import sys
 import traceback
 
+from common.enums.folders import Folders
 from common.util.std_in_out.param_reader import ParamReader
 from common.util.std_in_out.ml_settings_loader import MLSettingsLoader
 from common.util.logging.logger import Logger
 from common.util.tagging.tagging_config_dto import TaggingConfigDTO
 from framework.common.logger.message_type import MessageType
 from logic_layer.corpus_metadata_orchestration_logic import CorpusMetadataOrchestrationLogic
-
+Folders.load_from_config()
 
 # ============================================================================
 # MENU

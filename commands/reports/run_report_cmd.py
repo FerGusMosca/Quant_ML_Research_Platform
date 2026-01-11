@@ -12,9 +12,13 @@ import traceback
 
 import os, sys
 
+from common.enums.folders import Folders
 from common.util.tagging.tagging_config_dto import TaggingConfigDTO
 from logic_layer.reports_orchestration_logic import ReportsOrchestationLogic
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+Folders.load_from_config()
+
 # ============================================================
 # #2 - Report Logic Bridge
 # ============================================================
