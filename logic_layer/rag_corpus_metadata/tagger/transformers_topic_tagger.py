@@ -2,6 +2,7 @@
 import json
 import os.path
 import csv
+import traceback
 from datetime import datetime
 import os
 from transformers import AutoTokenizer, AutoModel
@@ -102,12 +103,95 @@ class TransformersTopicTagger:
                 )
 
         except Exception as e:
-            if self.logger:
-                self.logger.do_log(
-                    f"[RANK][CSV] ❌ Failed persisting CSV: {e}",
-                    MessageType.ERROR,job_id
-                )
+            self._log_exception("[RANK] ❌ _persist_rank_csv failed", e, job_id)
 
+    def _log_exception(self, prefix: str, exc: Exception, job_id: int):
+        tb = traceback.extract_tb(exc.__traceback__)
+        last = tb[-1]
+        msg = f"{prefix} | {exc.__class__.__name__}: {exc} | line={last.lineno} | file={last.filename}"
+        if self.logger:
+            self.logger.do_log(msg, MessageType.ERROR, job_id)
+
+    def _extract_text(self, file_path: str, job_id: int):
+        try:
+            return RawFileReader.get_raw_text(file_path)
+        except Exception as e:
+            self._log_exception("[RANK] ❌ extract_text failed", e, job_id)
+            return None
+
+    def _extract_chunks(self, text: str, file_name: str, job_id: int):
+        try:
+            chunks = self._get_chunks(text, file_name)
+            if not chunks:
+                if self.logger:
+                    self.logger.do_log(
+                        f"[RANK] ❌ No chunks generated | file={file_name}",
+                        MessageType.INFO, job_id
+                    )
+            return chunks
+        except Exception as e:
+            self._log_exception("[RANK] ❌ extract_chunks failed", e, job_id)
+            return None
+
+    def _score_chunks(
+            self,
+            chunks: list,
+            tag_embeddings: dict,
+            file_name: str,
+            security_symbol: str,
+            job_id: int
+    ):
+        scores = []
+
+        for chunk_idx, chunk in enumerate(chunks, start=1):
+            try:
+                chunk_emb = self._encode(chunk).squeeze(0)
+                max_sim = 0.0
+
+                for emb_list in tag_embeddings.values():
+                    for we in emb_list:
+                        sim = float(torch.dot(chunk_emb, we.squeeze(0)))
+                        if sim > max_sim:
+                            max_sim = sim
+
+                scores.append(max_sim)
+
+                if self.logger:
+                    self.logger.do_log(
+                        f"[RANK] file={file_name} | security={security_symbol} | chunk={chunk_idx}/{len(chunks)} processed",
+                        MessageType.INFO, job_id
+                    )
+
+            except Exception as e:
+                self._log_exception("[RANK] ❌ scoring failed", e, job_id)
+
+        return scores
+
+    def _build_ranking(self, security_tag_scores: dict, top_k: int, job_id: int):
+        results = []
+
+        for security, scores in security_tag_scores.items():
+            try:
+                ranked = sorted(scores, reverse=True)
+
+                if self.logger:
+                    self.logger.do_log(
+                        f"[RANK] security={security} | ranked={ranked[:top_k]}",
+                        MessageType.INFO, job_id
+                    )
+
+                results.append({
+                    "security": security,
+                    "rank_1": ranked[0] if len(ranked) > 0 else 0,
+                    "rank_2": ranked[1] if len(ranked) > 1 else 0,
+                    "rank_3": ranked[2] if len(ranked) > 2 else 0,
+                })
+
+            except Exception as e:
+                self._log_exception("[RANK] ❌ ranking build failed", e, job_id)
+
+        results.sort(key=lambda x: x["rank_1"], reverse=True)
+        return results
 
     # ------------------------------------------------------
 
@@ -167,31 +251,21 @@ class TransformersTopicTagger:
             files: list,
             rank_folder,
             tag_dict: dict,
-            job_id:int,
+            job_id: int,
             top_k: int = 3,
     ):
-        """
-        ONE ROW PER SECURITY.
-        ALWAYS produces rank_1, rank_2, rank_3 (no threshold).
-        Ordered by rank_1 score DESC.
-        """
-        # security -> tag -> max_score
-        security_tag_scores = {}
-
         if self.logger:
             self.logger.do_log(
                 f"[RANK] ▶ START | files={len(files)} | tags={len(tag_dict)} | top_k={top_k}",
-                MessageType.INFO,job_id
+                MessageType.INFO, job_id
             )
 
-        # Pre-encode tag phrases once
-        tag_embeddings = {}
+        security_tag_scores = {sec.symbol: [] for sec in securities}
 
-        for sec in securities:
-            security_tag_scores[sec.symbol] = []
-
-        for tag, phrases in tag_dict.items():
-            tag_embeddings[tag] = [self._encode(p) for p in phrases]
+        tag_embeddings = {
+            tag: [self._encode(p) for p in phrases]
+            for tag, phrases in tag_dict.items()
+        }
 
         for idx, file_path in enumerate(files, start=1):
             file_name = os.path.basename(file_path)
@@ -199,100 +273,46 @@ class TransformersTopicTagger:
             if self.logger:
                 self.logger.do_log(
                     f"[RANK] ▶ ({idx}/{len(files)}) file={file_name}",
-                    MessageType.INFO,job_id
+                    MessageType.INFO, job_id
                 )
 
-            # Resolve security by symbol in filename
-            security_symbol = None
-            for sec in securities:
-                if sec.symbol in file_name:
-                    security_symbol = sec.symbol
-                    break
+            security_symbol = next(
+                (sec.symbol for sec in securities if sec.symbol in file_name),
+                None
+            )
 
-            if security_symbol is None:
-                if self.logger:
-                    self.logger.do_log(
-                        f"[RANK] ⚠ No security resolved for file={file_name}",
-                        MessageType.INFO,job_id
-                    )
+            if not security_symbol:
                 continue
 
-            try:
-                text = RawFileReader.get_raw_text(file_path)
-            except Exception as e:
-                if self.logger:
-                    self.logger.do_log(
-                        f"[RANK] ❌ Failed reading {file_name}: {e}",
-                        MessageType.INFO,job_id
-                    )
+            text = self._extract_text(file_path, job_id)
+            if not text:
                 continue
 
-            chunks = self._get_chunks(text, file_name)
+            chunks = self._extract_chunks(text, file_name, job_id)
             if not chunks:
-                if self.logger:
-                    self.logger.do_log(
-                        f"[RANK] ❌ No chunks generated for {file_name}",
-                        MessageType.INFO,job_id
-                    )
                 continue
 
-            if self.logger:
-                self.logger.do_log(
-                    f"[RANK] file={file_name} | security={security_symbol} | chunks={len(chunks)}",
-                    MessageType.INFO,job_id
-                )
+            scores = self._score_chunks(
+                chunks,
+                tag_embeddings,
+                file_name,
+                security_symbol,
+                job_id
+            )
 
+            security_tag_scores[security_symbol].extend(scores)
 
-
-            for chunk_idx, chunk in enumerate(chunks, start=1):
-                chunk_emb = self._encode(chunk).squeeze(0)
-                max_sim=0.0
-                for tag, emb_list in tag_embeddings.items():
-
-                    for we in emb_list:
-                        sim = float(torch.dot(chunk_emb, we.squeeze(0)))
-                        if sim > max_sim:
-                            max_sim = sim
-
-                security_tag_scores[security_symbol].append(max_sim)
-
-                if self.logger:
-                    self.logger.do_log(
-                        f"[RANK] file={file_name} | chunk={chunk_idx}/{len(chunks)} processed",
-                        MessageType.INFO,job_id
-                    )
-
-        # Build final results: ONE row per security
-        results = []
-        for security, tag_arr in security_tag_scores.items():
-            ranked_scores=sorted(tag_arr,reverse=True)
-
-            if self.logger:
-                self.logger.do_log(
-                    f"[RANK] security={security} | ranked_tags={ranked_scores[:top_k]}",
-                    MessageType.INFO,job_id
-                )
-
-            results.append({
-                "security": security,
-                "rank_1": ranked_scores[0] if len(ranked_scores) > 0 else None,
-                "rank_2": ranked_scores[1] if len(ranked_scores) > 1 else None,
-                "rank_3": ranked_scores[2] if len(ranked_scores) > 2 else None,
-
-            })
-
-        # Order by rank_1 score DESC
-        results.sort(key=lambda x: x["rank_1"], reverse=True)
+        results = self._build_ranking(security_tag_scores, top_k, job_id)
 
         if self.logger:
             self.logger.do_log(
                 f"[RANK] ✔ DONE | securities={len(results)}",
-                MessageType.INFO,job_id
+                MessageType.INFO, job_id
             )
 
-        self._persist_rank_csv(results, rank_folder,job_id)
-
+        self._persist_rank_csv(results, rank_folder, job_id)
         return results
+
 
 
 

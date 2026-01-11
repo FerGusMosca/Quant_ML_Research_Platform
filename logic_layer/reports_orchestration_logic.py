@@ -4,6 +4,8 @@ from datetime import datetime
 from pathlib import Path
 import asyncio
 
+import traceback
+
 from common.dto.mcp.bootstrap_registry import  build_mcp_registry_reports
 from common.dto.mcp.dispatcher import JsonRpcDispatcher
 from common.dto.mcp.progress_bus import ProgressBus
@@ -345,53 +347,99 @@ class ReportsOrchestationLogic:
                 MessageType.INFO
             )
 
-    def _run_document_tagging(self, portfolio, year, source, rank_folder, tag_cfg,job_id):
-        """
-        Runs document tagging for a portfolio/year range.
-        Filters files by portfolio securities (symbol match in filename).
-        """
 
-        tagger=TransformersTopicTagger(self.logger,tag_cfg)
 
-        # Parse year or year range
-        years = DateRangeHandler.handle_date_range(year, self.logger)
+    def _log_exc(self,prefix, e,job_id):
+        tb = traceback.extract_tb(e.__traceback__)[-1]
+        self.logger.do_log(
+            f"{prefix} | {e.__class__.__name__}: {e} | line={tb.lineno} | file={tb.filename}",
+            MessageType.ERROR,
+            job_id
+        )
 
-        # Load portfolio securities once
-        securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
+    def _run_document_tagging(self, portfolio, year, source, rank_folder, tag_cfg, job_id):
+
+
+
+        try:
+            tagger = TransformersTopicTagger(self.logger, tag_cfg)
+            years = DateRangeHandler.handle_date_range(year, self.logger)
+            securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
+        except Exception as e:
+            self._log_exc("[TAGGING] ❌ init failed", e,job_id)
+            return
 
         for y in years:
             start_time = datetime.now()
-            self.logger.do_log(
-                f"[TAGGING] 🚀 Starting Document Tagging (source={source}, rank_folder={rank_folder}, year={y})",
-                MessageType.INFO,job_id
-            )
 
-            file_folder = os.path.join(source, str(y))
+            try:
+                self.logger.do_log(
+                    f"[TAGGING] 🚀 Starting (source={source}, rank_folder={rank_folder}, year={y})",
+                    MessageType.INFO,
+                    job_id
+                )
 
-            matched_files= FileLocators.enumerate_all_files(file_folder,self.logger,
-                                                            filters= [s.symbol.lower() for s in securities if getattr(s, "symbol", None)],
-                                                            job_id=job_id)
+                file_folder = os.path.join(source, str(y))
 
+                matched_files = FileLocators.enumerate_all_files(
+                    file_folder,
+                    self.logger,
+                    filters=[s.symbol.lower() for s in securities if getattr(s, "symbol", None)],
+                    job_id=job_id
+                )
 
-            tag_dict= JsonFileReader.load_json_file(os.path.join(RootLocator.get_root(),"static","tags"),tag_cfg.tag_file)
+            except Exception as e:
+                self._log_exc(f"[TAGGING] ❌ file enumeration failed | year={y}", e,job_id)
+                continue
 
-            tag = "_".join(tag_dict.keys())
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-            rank_dir = os.path.join(
-                RootLocator.get_root(),
-                Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
-                rank_folder,
-                f"file_taging_{tag}_rank_{timestamp}",
-                str(y)
-            )
+            try:
+                tag_dict = JsonFileReader.load_json_file(
+                    os.path.join(RootLocator.get_root(), "static", "tags"),
+                    tag_cfg.tag_file
+                )
+            except Exception as e:
+                self._log_exc(f"[TAGGING] ❌ tag load failed | year={y}", e,job_id)
+                continue
 
-            ranking_dict = tagger.rank(securities,matched_files,rank_dir,tag_dict,job_id)
-            self.logger.do_log(f"[TAGGING] Successfully persisted {len(ranking_dict)} rows in dir {rank_dir}",MessageType.INFO,job_id)
+            try:
+                tag = "_".join(tag_dict.keys())
+                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+
+                rank_dir = os.path.join(
+                    RootLocator.get_root(),
+                    Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                    rank_folder,
+                    f"file_taging_{tag}_rank_{timestamp}",
+                    str(y)
+                )
+            except Exception as e:
+                self._log_exc(f"[TAGGING] ❌ rank dir build failed | year={y}", e,job_id)
+                continue
+
+            try:
+                ranking_dict = tagger.rank(
+                    securities,
+                    matched_files,
+                    rank_dir,
+                    tag_dict,
+                    job_id
+                )
+
+                self.logger.do_log(
+                    f"[TAGGING] ✔ Persisted {len(ranking_dict)} rows | dir={rank_dir}",
+                    MessageType.INFO,
+                    job_id
+                )
+
+            except Exception as e:
+                self._log_exc(f"[TAGGING] ❌ ranking failed | year={y}", e,job_id)
+                continue
 
             elapsed = (datetime.now() - start_time).total_seconds()
             self.logger.do_log(
                 f"[TAGGING] 🏁 Completed year={y} in {elapsed:.2f}s",
-                MessageType.INFO,job_id
+                MessageType.INFO,
+                job_id
             )
 
     def _run_download_securities_calendar(self, year, portfolio):
