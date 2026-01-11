@@ -9,6 +9,7 @@ from transformers import AutoTokenizer, AutoModel
 import torch
 import torch.nn.functional as F
 from common.util.extractors.K_Q_10.k_q_10_html_structured_block_extractor import KQ10HtmlStructuredBlockExtractor
+from common.util.std_in_out.json_file_reader import JsonFileReader
 from common.util.std_in_out.raw_file_reader import RawFileReader
 from common.util.std_in_out.root_locator import RootLocator
 from common.util.tagging.tagging_config_dto import TaggingConfigDTO
@@ -195,6 +196,29 @@ class TransformersTopicTagger:
 
     # ------------------------------------------------------
 
+    def initialize_tag_dict(self,job_id):
+        try:
+
+            tag_dict = {}
+            if self.tag_cfg.tag_file is not None:
+
+                tag_dict = JsonFileReader.load_json_file(
+                    os.path.join(RootLocator.get_root(), "static", "tags"),self.tag_cfg.tag_file)
+                self.logger.do_log(f"[TAGGING] Loading tag file in tag folder static/tags  file={self.tag_cfg.tag_file}",
+                                   MessageType.INFO, job_id)
+            elif self.tag_cfg.tag_json is not None:
+                tag_dict = json.loads(self.tag_cfg.tag_json)
+                self.logger.do_log(f"[TAGGING] Loading tag file from tag_json field!  keys={tag_dict.keys()}",
+                                   MessageType.INFO, job_id)
+            else:
+                raise Exception("Missing tag_file or tag_json in the input file")
+
+            return tag_dict
+        except Exception as e:
+            #self._log_exc(f"[TAGGING] ❌ tag load failed | year={y}", e, job_id)
+            raise e
+
+
     def classify(self, text: str, file_name: str):
         """
         Semantic topic tagging using chunk-level BERT similarity.
@@ -277,7 +301,7 @@ class TransformersTopicTagger:
                 )
 
             security_symbol = next(
-                (sec.symbol for sec in securities if sec.symbol in file_name),
+                (sec.symbol for sec in securities if file_name.startswith(sec.symbol+"_")),
                 None
             )
 

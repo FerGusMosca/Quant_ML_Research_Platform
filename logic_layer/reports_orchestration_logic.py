@@ -1,3 +1,4 @@
+import json
 import os
 import shutil
 from datetime import datetime
@@ -6,6 +7,7 @@ import asyncio
 
 import traceback
 
+from business_entities.tag_run import TagRun
 from common.dto.mcp.bootstrap_registry import  build_mcp_registry_reports
 from common.dto.mcp.dispatcher import JsonRpcDispatcher
 from common.dto.mcp.progress_bus import ProgressBus
@@ -30,6 +32,7 @@ from common.util.std_in_out.root_locator import RootLocator
 from data_access_layer.portfolio_securities_manager import PortfolioSecuritiesManager
 from data_access_layer.report_securities_manager import ReportSecuritiesManager
 from data_access_layer.securities_calendar_manager import SecuritiesCalendarManager
+from data_access_layer.tag_run_manager import TagRunManager
 from framework.common.logger.message_type import MessageType
 from logic_layer.rag_corpus_metadata.tagger.transformers_topic_tagger import TransformersTopicTagger
 from logic_layer.report_generators.competition_summary_report import CompetitionSummaryReport
@@ -50,6 +53,8 @@ class ReportsOrchestationLogic:
         self.portfolio_securities_mgr = PortfolioSecuritiesManager(ml_reports_conn_str,logger)
 
         self.sec_cal_mgr =SecuritiesCalendarManager(ml_reports_conn_str)
+
+        self.tag_runs_mgr = TagRunManager(ml_reports_conn_str,logger)
 
         self.mcp_server=mcp_server
         self.mcp_port=mcp_port
@@ -369,82 +374,106 @@ class ReportsOrchestationLogic:
             self._log_exc("[TAGGING] ❌ init failed", e,job_id)
             return
 
-        for y in years:
-            start_time = datetime.now()
+        try:
 
-            try:
-                self.logger.do_log(
-                    f"[TAGGING] 🚀 Starting (source={source}, rank_folder={rank_folder}, year={y})",
-                    MessageType.INFO,
-                    job_id
-                )
+            tag_dict = tagger.initialize_tag_dict(job_id=job_id)
 
-                file_folder = os.path.join(source, str(y))
+        except Exception as e:
+            self._log_exc(f"[TAGGING] ❌ tag load failed ", e, job_id)
+            return
 
-                matched_files = FileLocators.enumerate_all_files(
-                    file_folder,
-                    self.logger,
-                    filters=[s.symbol.lower() for s in securities if getattr(s, "symbol", None)],
-                    job_id=job_id
-                )
+        try:
 
-            except Exception as e:
-                self._log_exc(f"[TAGGING] ❌ file enumeration failed | year={y}", e,job_id)
-                continue
+            for y in years:
 
-            try:
-                tag_dict = JsonFileReader.load_json_file(
-                    os.path.join(RootLocator.get_root(), "static", "tags"),
-                    tag_cfg.tag_file
-                )
-            except Exception as e:
-                self._log_exc(f"[TAGGING] ❌ tag load failed | year={y}", e,job_id)
-                continue
+                tag_run = TagRun.initialize_tag_run(portfolio=portfolio,
+                                                    report_type=ReportType.DOCUMENT_TAGGING_RANKING.value,
+                                                    source=source, rank_folder=rank_folder, year=str(y), tag_cfg=tag_cfg,
+                                                    tag_dict=tag_dict)
 
-            try:
-                tag = "_".join(tag_dict.keys())
-                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+                self.tag_runs_mgr.persist_tag_run(tag_run)
 
-                rank_dir = os.path.join(
-                    RootLocator.get_root(),
-                    Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
-                    rank_folder,
-                    f"file_taging_{tag}_rank_{timestamp}",
-                    str(y)
-                )
+                try:
+                    start_time = datetime.now()
+                    try:
+                        self.logger.do_log(
+                            f"[TAGGING] 🚀 Starting (source={source}, rank_folder={rank_folder}, year={y})",
+                            MessageType.INFO,
+                            job_id
+                        )
 
-                self.logger.do_log(f"[TAGGING] 🚀Creating Dest Rank Dir  rank_dir={rank_dir}",MessageType.INFO,job_id
-                )
+                        file_folder = os.path.join(source, str(y))
 
-            except Exception as e:
-                self._log_exc(f"[TAGGING] ❌ rank dir build failed | year={y}", e,job_id)
-                continue
+                        matched_files = FileLocators.enumerate_all_files(
+                            file_folder,
+                            self.logger,
+                            filters=[s.symbol.lower() for s in securities if getattr(s, "symbol", None)],
+                            job_id=job_id
+                        )
 
-            try:
-                ranking_dict = tagger.rank(
-                    securities,
-                    matched_files,
-                    rank_dir,
-                    tag_dict,
-                    job_id
-                )
+                    except Exception as e:
+                        self._log_exc(f"[TAGGING] ❌ file enumeration failed | year={y}", e,job_id)
+                        continue
 
-                self.logger.do_log(
-                    f"[TAGGING] ✔ Persisted {len(ranking_dict)} rows | dir={rank_dir}",
-                    MessageType.INFO,
-                    job_id
-                )
 
-            except Exception as e:
-                self._log_exc(f"[TAGGING] ❌ ranking failed | year={y}", e,job_id)
-                continue
+                    try:
+                        tag = "_".join(tag_dict.keys())
+                        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+                        dest_rank_folder= os.path.join(rank_folder,f"file_taging_{tag}_rank_{timestamp}",str(y))
+                        rank_dir = os.path.join(
+                            RootLocator.get_root(),
+                            Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                            dest_rank_folder
+                        )
 
-            elapsed = (datetime.now() - start_time).total_seconds()
-            self.logger.do_log(
-                f"[TAGGING] 🏁 Completed year={y} in {elapsed:.2f}s",
-                MessageType.INFO,
-                job_id
-            )
+                        tag_run.rank_folder=dest_rank_folder
+                        self.tag_runs_mgr.persist_tag_run(tag_run)
+
+                        self.logger.do_log(f"[TAGGING] Creating Dest Rank Dir  rank_dir={rank_dir}",MessageType.INFO,job_id)
+
+                    except Exception as e:
+                        self._log_exc(f"[TAGGING] ❌ rank dir build failed | year={y}", e,job_id)
+                        raise e
+
+                    try:
+                        ranking_dict = tagger.rank(
+                            securities,
+                            matched_files,
+                            rank_dir,
+                            tag_dict,
+                            job_id
+                        )
+
+                        self.logger.do_log(
+                            f"[TAGGING] ✔ Persisted {len(ranking_dict)} rows | dir={rank_dir}",
+                            MessageType.INFO,
+                            job_id
+                        )
+
+                    except Exception as e:
+                        self._log_exc(f"[TAGGING] ❌ ranking failed | year={y}", e,job_id)
+                        raise e
+
+                    elapsed = (datetime.now() - start_time).total_seconds()
+                    tag_run.set_finished()
+                    self.tag_runs_mgr.persist_tag_run(tag_run)
+                    self.logger.do_log(
+                        f"[TAGGING] 🏁 Completed year={y} in {elapsed:.2f}s",
+                        MessageType.INFO,
+                        job_id
+                    )
+                except Exception as e:
+                    self.logger.do_log(
+                        f"[TAGGING] ❌ ERROR processing year={y} :{str(e)}",MessageType.INFO,job_id
+                    )
+                    tag_run.set_error(str(e))
+                    self.tag_runs_mgr.persist_tag_run(tag_run)
+
+        except Exception as e:
+            self._log_exc(f"[TAGGING] ❌ CRITICAL error running document tagging={str(e)}", e, job_id)
+            tag_run.set_error(str(e))
+            self.tag_runs_mgr.persist_tag_run(tag_run)
+
 
     def _run_download_securities_calendar(self, year, portfolio):
         """

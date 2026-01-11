@@ -1,17 +1,25 @@
+import json
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional, Any
 
 
 @dataclass(frozen=False)
 class TagRun:
+
+    _STARTED="started"
+    _FINISHED ="finished"
+    _ERROR = "error"
+
     """
     Entity/DTO representing a single tag processing run
     """
     id: Optional[int] = None                    # None when it's a new record
     portfolio: str = ""
+    report:str=""
     source: str = ""
     rank_folder: Optional[str] = None
+    year: str=""
     timestamp: Optional[datetime] = None
     tag_file: Optional[str] = None
     tag_json: Optional[dict | list | str | Any] = None  # flexible - can be dict, list, json string, etc.
@@ -27,3 +35,30 @@ class TagRun:
             self.timestamp = datetime.now()
         if self.last_update_time is None:
             self.last_update_time = datetime.now()
+
+
+    @staticmethod
+    def initialize_tag_run(portfolio,report_type,source,rank_folder,year,tag_cfg,tag_dict):
+        now = datetime.now(timezone.utc)
+
+        tag_json = json.dumps(tag_dict)
+
+        return TagRun(id=0,portfolio=portfolio,report=report_type,source=source,
+               rank_folder=rank_folder,year=year,timestamp=now,tag_json=tag_json,
+               tag_model=tag_cfg.tag_model,doc_type=tag_cfg.doc_type,tag_file=tag_cfg.tag_file,
+               status=TagRun._STARTED)
+
+
+    def set_finished(self):
+        now = datetime.now(timezone.utc)
+        self.last_update_time=now
+        self.status=TagRun._FINISHED
+
+
+    def set_error(self,error):
+        now = datetime.now(timezone.utc)
+        self.last_update_time = now
+        self.last_error=error
+        self.status = TagRun._ERROR
+
+

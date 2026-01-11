@@ -23,6 +23,7 @@ def build_mcp_registry_reports(orchestrator) -> ToolRegistry:
                         "dest_folder": {"type": "string"},
                         "rank_folder": {"type": "string"},
                         "tag_model": {"type": "string"},
+                        "tag_json": {"type": "string"},
                         "tag_file": {"type": "string"},
                         "doc_type": {"type": "string"},
                     },

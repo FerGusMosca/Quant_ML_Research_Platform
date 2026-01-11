@@ -91,6 +91,7 @@ def process_run_report(cmd):
     tags_csv = ParamReader.get_param(cmd, "tags_csv", True, None)
     sim_threshold = ParamReader.get_param(cmd, "sim_threshold", True, 0.8)
     doc_type = ParamReader.get_param(cmd, "doc_type", True, None)
+    tag_json = ParamReader.get_param(cmd, "tag_json", True, None)
 
     tag_cfg=None
     if tag_model is not None:
@@ -100,7 +101,8 @@ def process_run_report(cmd):
             tag_file=tag_file,
             tags_csv=tags_csv,
             sim_threshold=sim_threshold,
-            doc_type=doc_type
+            doc_type=doc_type,
+            tag_json=tag_json
         )
 
     process_run_report_logic(report_key, year, portfolio, symbol, d_from,source=source,dest_folder= dest_folder,

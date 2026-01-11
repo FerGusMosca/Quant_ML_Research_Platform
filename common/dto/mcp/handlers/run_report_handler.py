@@ -24,6 +24,7 @@ def run_report_handler(args: dict, orchestrator):
                 tag_cfg = TaggingConfigDTO(
                     tag_model=args.get("tag_model"),
                     tag_file=args.get("tag_file"),
+                    tag_json=args.get("tag_json"),
                     tags_csv=None,
                     sim_threshold=None,
                     doc_type=args.get("doc_type")
