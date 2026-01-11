@@ -32,6 +32,7 @@ COPY common /app/common
 COPY logic_layer /app/logic_layer
 COPY data_access_layer /app/data_access_layer
 COPY service_layer /app/service_layer
+COPY business_entities /app/business_entities
 COPY framework /app/framework
 COPY configs /app/configs
 COPY static/dictionaries /app/static/dictionaries
