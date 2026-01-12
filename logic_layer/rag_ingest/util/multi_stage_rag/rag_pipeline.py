@@ -447,4 +447,5 @@ class RAGPipeline:
 
 
         self.logger.do_log("[RAG] ✅ Completed full batch ingestion.",MessageType.INFO,job_id)
+        return out_folder
 

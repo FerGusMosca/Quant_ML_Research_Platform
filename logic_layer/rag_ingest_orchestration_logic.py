@@ -136,11 +136,16 @@ class RAGIngestOrchestrationLogic:
             self.logger.do_log("[RAG-INGEST] 🔧 Initializing RAG pipeline...", MessageType.INFO,job_id)
 
             pipeline = RAGPipeline(chunk_name,dest_root, self.config,embedding_model,clustering_model, self.logger)
-            pipeline.run(source_path,log_posfix,ingest_type=ingest_type,job_id=job_id)
+            out_folder = pipeline.run(source_path,log_posfix,ingest_type=ingest_type,job_id=job_id)
 
             self.logger.do_log(
                 "[RAG-INGEST] ✅ RAG ingestion completed successfully.",
                 MessageType.INFO,job_id
+            )
+            self.logger.do_log(
+                f"INGESTION COMPLETED - out_folder={out_folder}",
+                MessageType.INFO,
+                job_id
             )
 
             return True
