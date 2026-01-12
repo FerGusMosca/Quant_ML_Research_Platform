@@ -151,14 +151,12 @@ def process_rag_ingest_menu(cmd):
 # ============================================================================
 
 if __name__ == "__main__":
-
     # (A) External invocation (no menu)
     # ---------------------------------------------------
-    # Example:
-    # python run_rag_ingest_cmd.py RunRAGIngest mode=incremental source=ZEROHEDGE
+    # Example: python run_rag_ingest_cmd.py RunRAGIngest mode=incremental source=ZEROHEDGE
     if len(sys.argv) > 1:
         cmd = " ".join(sys.argv[1:])
-        if  cmd.startswith("StartMCP"):
+        if cmd.startswith("StartMCP"):
             process_start_mcp(cmd)
         else:
             process_rag_ingest(cmd)
@@ -171,8 +169,6 @@ if __name__ == "__main__":
     while True:
         show_rag_ingest_commands()
         cmd = input("Enter a RAG command: ")
-
         if not process_rag_ingest_menu(cmd):
             break
-
     print("RAG ingestion module closed.")

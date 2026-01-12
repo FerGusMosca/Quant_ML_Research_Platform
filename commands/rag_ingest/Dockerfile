@@ -37,6 +37,11 @@ RUN pip install --no-cache-dir --upgrade pip && \
 RUN python3 -m nltk.downloader punkt punkt_tab
 
 # ---------------------------------------------------
+# n) Spacy model (muy usado en RAG para procesamiento de texto)
+# ---------------------------------------------------
+RUN python -m spacy download en_core_web_sm
+
+# ---------------------------------------------------
 # 4) Copy PROJECT FILES
 # ---------------------------------------------------
 COPY ./commands /app/commands
