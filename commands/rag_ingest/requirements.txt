@@ -1,7 +1,7 @@
+# Core dependencies
 nltk
 pymupdf
 sentence-transformers
-numpy
 faiss-cpu
 scikit-learn
 tqdm
@@ -13,13 +13,18 @@ PyYAML
 rapidfuzz
 websockets>=12.0
 
-# ---- Torch CPU ONLY (necesario para sentence-transformers) ----
+# Force NumPy <2 to avoid compatibility crash with sentence-transformers/Torch
+numpy<2
+
+# Torch CPU ONLY (necesario y compatible con sentence-transformers)
 torch==2.2.0+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
 
-# ---- Dependencias comunes que suelen faltar en RAG ----
-spacy
+# Transformers ecosystem (requerido por sentence-transformers)
 transformers
 tokenizers
 huggingface-hub
 safetensors
+
+# Spacy (para procesamiento de texto si lo usás)
+spacy
