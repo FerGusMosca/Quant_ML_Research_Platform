@@ -42,7 +42,7 @@ class RAGPipeline:
         try:
             self.embedder = TransformersEmbeddingsGenerator(embedding_model,logger=self.logger)
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ Failed to load embedding model: {e}", 0,job_id)
+            self.logger.do_log(f"[RAG] ❌ Failed to load embedding model: {e}", MessageType.ERROR,job_id)
             raise
 
         # ------- Output base folder -------
@@ -52,7 +52,7 @@ class RAGPipeline:
         try:
             os.makedirs(self.output_base, exist_ok=True)
         except Exception as e:
-            logger.do_log(f"[RAG] ❌ Could not create output folder: {e}", 0,job_id)
+            logger.do_log(f"[RAG] ❌ Could not create output folder: {e}", MessageType.ERROR,job_id)
             raise
 
         # ------- Metadata path -------
@@ -81,7 +81,7 @@ class RAGPipeline:
                 data = json.load(f)
             return {item["path"]: item for item in data}
         except Exception as e:
-            self.logger.do_log(f"[RAG] ⚠️ Could not load corpus inventory: {e}", 0,job_id)
+            self.logger.do_log(f"[RAG] ⚠️ Could not load corpus inventory: {e}", MessageType.ERROR,job_id)
             return {}
 
     # ==========================================================
@@ -126,7 +126,7 @@ class RAGPipeline:
             return os.path.join(*clean_parts)
 
         except Exception as e:
-            self.logger.do_log(f"[RAG] compute_output_path failed: {e}", 0,job_id)
+            self.logger.do_log(f"[RAG] compute_output_path failed: {e}", MessageType.ERROR,job_id)
             raise
 
     # ==========================================================
@@ -146,7 +146,7 @@ class RAGPipeline:
                 sanitized = sanitized[:110] + "_" + str(abs(hash(sanitized)) % 100000)
             return sanitized
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ sanitize_filename failed: {e}", 0,job_id)
+            self.logger.do_log(f"[RAG] ❌ sanitize_filename failed: {e}", MessageType.ERROR,job_id)
             return "unnamed_document"
 
     # ==========================================================
@@ -159,14 +159,14 @@ class RAGPipeline:
         try:
             raw_text = PDFTextExtractor.extract_text(pdf_path, logger=self.logger)
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ PDF extraction failed: {e}", 0,job_id)
+            self.logger.do_log(f"[RAG] ❌ PDF extraction failed: {e}", MessageType.ERROR,job_id)
             return None
 
         # ----- Clean -----
         try:
             clean_text = PDFCleaner.clean(raw_text, logger=self.logger)
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ PDF cleaning failed: {e}", 0,job_id)
+            self.logger.do_log(f"[RAG] ❌ PDF cleaning failed: {e}", MessageType.ERROR,job_id)
             return None
 
         # ----- Chunking -----
@@ -178,27 +178,27 @@ class RAGPipeline:
             chunks = self.chunk_deduper.dedup_chunks(chunks)
 
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ Chunking failed: {e}", 0,job_id)
+            self.logger.do_log(f"[RAG] ❌ Chunking failed: {e}", MessageType.ERROR,job_id)
             return None
 
 
 
         if len(chunks) == 0:
-            self.logger.do_log("[RAG] ❌ No chunks generated.", 0,job_id)
+            self.logger.do_log("[RAG] ❌ No chunks generated.", MessageType.ERROR,job_id)
             return None
 
         # ----- Metadata -----
         try:
             metadata = [MetadataBuilder.build(pdf_path, idx) for idx in range(len(chunks))]
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ Metadata generation failed: {e}", 0,job_id)
+            self.logger.do_log(f"[RAG] ❌ Metadata generation failed: {e}", MessageType.ERROR,job_id)
             return None
 
         # ----- Embeddings -----
         try:
             embeddings = self.embedder.embed(chunks)
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ Embedding generation failed: {e}", 0,job_id)
+            self.logger.do_log(f"[RAG] ❌ Embedding generation failed: {e}", MessageType.ERROR,job_id)
             return None
 
         # ----- Output path -----
@@ -206,7 +206,7 @@ class RAGPipeline:
             rel_folder = os.path.normpath(self._compute_output_path(pdf_path,job_id))
         except Exception as e:
             self.logger.do_log(
-                f"[RAG][PATH] Failed to compute output path | pdf_path={pdf_path} | error={repr(e)}",0,job_id
+                f"[RAG][PATH] Failed to compute output path | pdf_path={pdf_path} | error={repr(e)}",MessageType.ERROR,job_id
             )
             return None
 
@@ -232,7 +232,7 @@ class RAGPipeline:
             self.logger.do_log(f"[RAG] ✅ Artifacts saved → {out_dir}",MessageType.INFO,job_id)
 
         except Exception as e:
-            self.logger.do_log(f"[RAG] ❌ Saving artifacts failed: {e}", 0,job_id)
+            self.logger.do_log(f"[RAG] ❌ Saving artifacts failed: {e}", MessageType.ERROR,job_id)
             return None
 
         return chunks, metadata, embeddings,out_dir
