@@ -12,6 +12,7 @@ from common.dto.mcp.bootstrap_registry import  build_mcp_registry_reports
 from common.dto.mcp.dispatcher import JsonRpcDispatcher
 from common.dto.mcp.progress_bus import ProgressBus
 from common.dto.mcp.tools import ToolRegistry
+from common.dto.sec_w_file import SecurityWithFile
 from common.dto.security_report_calendar import SecurityReportCalendar
 from common.enums.folders import Folders
 from common.enums.report_folder import ReportFolder
@@ -362,10 +363,11 @@ class ReportsOrchestationLogic:
             job_id
         )
 
-    def _run_document_tagging(self, portfolio, year, source, rank_folder, tag_cfg, job_id):
+    def _run_document_tagging(self, portfolio, year,quarter, source, rank_folder, tag_cfg, job_id):
 
 
 
+        #1- Extract All Input Data
         try:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
             tagger = TransformersTopicTagger(self.logger, tag_cfg)
@@ -385,6 +387,7 @@ class ReportsOrchestationLogic:
             return
 
 
+
         try:
 
             for y in years:
@@ -398,7 +401,7 @@ class ReportsOrchestationLogic:
 
                 try:
                     start_time = datetime.now()
-                    try:
+                    try:#2- Find files based on report types
                         self.logger.do_log(
                             f"[TAGGING] 🚀 Starting (source={source}, rank_folder={rank_folder}, year={y})",
                             MessageType.INFO,
@@ -411,22 +414,29 @@ class ReportsOrchestationLogic:
                                                     source,
                                                     str(y))
 
-                        matched_files = FileLocators.enumerate_all_files(
+                        prev_matched_files = FileLocators.enumerate_all_files(
                             file_folder,
                             self.logger,
                             filters=[s.symbol.lower() for s in securities if getattr(s, "symbol", None)],
                             job_id=job_id
                         )
 
+                        matched_files = []
+                        for file in prev_matched_files:
+                            for sec in securities:
+                                if(tag_cfg.evaluate_file_for_report(sec.symbol,source,file,str(y),quarter)):
+                                    matched_files.append(SecurityWithFile(sec,file))
+
+
                     except Exception as e:
                         self._log_exc(f"[TAGGING] ❌ file enumeration failed | year={y}", e,job_id)
                         continue
 
 
-                    try:
+                    try: #3- Run Rank
                         tag = "_".join(tag_dict.keys())
 
-                        dest_rank_folder= os.path.join(str(ReportType.DOCUMENT_TAGGING_RANKING.value),
+                        dest_rank_folder= os.path.join(str(ReportType.DOCUMENT_TAGGING_RANKING.value).upper(),
                                                        rank_folder,
                                                        f"file_taging_{tag}_rank_{timestamp}",
                                                        str(y))
@@ -710,7 +720,7 @@ class ReportsOrchestationLogic:
             )
             raise
 
-    def process_run_report(self, report_key, year=None,portfolio=None,symbol=None,d_from=None,source=None,dest_folder=None,
+    def process_run_report(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,source=None,dest_folder=None,
                            rank_folder=None,job_id=None,query=None,tag_cfg=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year,portfolio)
@@ -740,7 +750,7 @@ class ReportsOrchestationLogic:
         elif report_key.lower() == ReportType.DOWNLOAD_SECURITIES_REPORTS_CALENDAR.value:
             self._run_download_securities_calendar(year,portfolio)
         elif report_key.lower() == ReportType.DOCUMENT_TAGGING_RANKING.value:
-            self._run_document_tagging(portfolio, year, source, rank_folder, tag_cfg,job_id)
+            self._run_document_tagging(portfolio, year,quarter, source, rank_folder, tag_cfg,job_id)
         #
         elif report_key.lower() == ReportType.START_MCP.value:
             self._run_start_mcp()

@@ -23,7 +23,7 @@ Folders.load_from_config()
 # #2 - Report Logic Bridge
 # ============================================================
 
-def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None, d_from=None,source=None,dest_folder=None,rank_folder=None,
+def process_run_report_logic(report_key, year=None,quarter=None, portfolio=None, symbol=None, d_from=None,source=None,dest_folder=None,rank_folder=None,
                             mcp_server=None,mcp_port=None,query=None,tag_cfg=None):
     """
     Core logic responsible for running reports through AlgosOrchestationLogic.
@@ -53,7 +53,7 @@ def process_run_report_logic(report_key, year=None, portfolio=None, symbol=None,
                           MessageType.INFO)
             trd_algos._run_start_mcp()
         else:
-            trd_algos.process_run_report(report_key, year, portfolio, symbol, d_from= d_from , source=source,
+            trd_algos.process_run_report(report_key, year, quarter=quarter, portfolio= portfolio,symbol= symbol, d_from= d_from , source=source,
                                          dest_folder= dest_folder,rank_folder= rank_folder,query=query,tag_cfg=tag_cfg)
 
         logger.do_log(f"[REPORT] ✅ Report {report_key} completed", MessageType.INFO)
@@ -76,6 +76,7 @@ def process_run_report(cmd):
     """
     report_key = ParamReader.get_param(cmd, "report")
     year = ParamReader.get_param(cmd, "year", True, None)
+    quarter = ParamReader.get_param(cmd, "quarter", True, None)
     d_from = ParamReader.get_param(cmd, "from", True, None)
     portfolio = ParamReader.get_param(cmd, "portfolio",True,None)
     source = ParamReader.get_param(cmd, "source", True, None)
@@ -105,7 +106,7 @@ def process_run_report(cmd):
             tag_json=tag_json
         )
 
-    process_run_report_logic(report_key, year, portfolio, symbol, d_from,source=source,dest_folder= dest_folder,
+    process_run_report_logic(report_key, year= year,quarter=quarter, portfolio=portfolio,symbol= symbol,d_from= d_from,source=source,dest_folder= dest_folder,
                              rank_folder= rank_folder, mcp_server=server,mcp_port=port,query=query,tag_cfg=tag_cfg)
 
 

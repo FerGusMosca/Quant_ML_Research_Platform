@@ -34,6 +34,7 @@ def run_report_handler(args: dict, orchestrator):
             orchestrator.process_run_report(
                 report_key=args["report"],
                 year=args.get("year"),
+                quarter=args.get("quarter"),
                 portfolio=args.get("portfolio"),
                 symbol=args.get("symbol"),
                 d_from=args.get("d_from"),

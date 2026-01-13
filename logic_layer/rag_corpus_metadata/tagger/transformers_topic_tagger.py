@@ -272,7 +272,7 @@ class TransformersTopicTagger:
     def rank(
             self,
             securities: list,
-            files: list,
+            sec_w_files: list,
             rank_folder,
             tag_dict: dict,
             job_id: int,
@@ -280,7 +280,7 @@ class TransformersTopicTagger:
     ):
         if self.logger:
             self.logger.do_log(
-                f"[RANK] ▶ START | files={len(files)} | tags={len(tag_dict)} | top_k={top_k}",
+                f"[RANK] ▶ START | files={len(sec_w_files)} | tags={len(tag_dict)} | top_k={top_k}",
                 MessageType.INFO, job_id
             )
 
@@ -291,19 +291,22 @@ class TransformersTopicTagger:
             for tag, phrases in tag_dict.items()
         }
 
-        for idx, file_path in enumerate(files, start=1):
+        for idx, sec_w_file in enumerate(sec_w_files, start=1):
+            file_path=sec_w_file.file
             file_name = os.path.basename(file_path)
+            security_symbol=sec_w_file.security.symbol
 
             if self.logger:
                 self.logger.do_log(
-                    f"[RANK] ▶ ({idx}/{len(files)}) file={file_name}",
+                    f"[RANK] ▶ ({idx}/{len(sec_w_files)}) file={file_name}",
                     MessageType.INFO, job_id
                 )
-
+            '''
             security_symbol = next(
                 (sec.symbol for sec in securities if file_name.startswith(sec.symbol+"_")),
                 None
             )
+            '''
 
             if not security_symbol:
                 continue

@@ -1,5 +1,6 @@
+import os
 from typing import Optional
-
+from common.enums.sec_reports import SECReports
 
 
 class TaggingConfigDTO:
@@ -23,3 +24,22 @@ class TaggingConfigDTO:
 
     def is_K_Q_10_doc(self) -> bool:
         return self.doc_type == TaggingConfigDTO.DOC_TYPE_K_Q_10
+
+    def evaluate_file_for_report(self, symbol, source, file_name, year, quarter):
+        if not self.is_K_Q_10_doc():
+            return True
+
+        file_only = os.path.basename(file_name)
+
+        if SECReports.K10.value in source:
+            # e.g. HD_2025_10-K.html
+            return file_only.startswith(f"{symbol}_{year}_10-K")
+
+        if SECReports.Q10.value in source:
+            # e.g. GPI_2025_Q1_10-Q.html
+            return file_only.startswith(f"{symbol}_{year}_{quarter}_10-Q")
+
+        # Not implemented / all files pass
+        return True
+
+
