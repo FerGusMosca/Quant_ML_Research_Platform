@@ -426,7 +426,10 @@ class ReportsOrchestationLogic:
                     try:
                         tag = "_".join(tag_dict.keys())
 
-                        dest_rank_folder= os.path.join(rank_folder,f"file_taging_{tag}_rank_{timestamp}",str(y))
+                        dest_rank_folder= os.path.join(str(ReportType.DOCUMENT_TAGGING_RANKING.value),
+                                                       rank_folder,
+                                                       f"file_taging_{tag}_rank_{timestamp}",
+                                                       str(y))
                         rank_dir = os.path.join(
                             RootLocator.get_root(),
                             Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
