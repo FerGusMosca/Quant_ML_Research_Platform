@@ -94,47 +94,47 @@ class ReportsOrchestationLogic:
         )
     '''
 
-    def _run_download_k10(self, year, portfolio):
+    def _run_download_k10(self, year, portfolio,job_id):
         # parse years
         years=DateRangeHandler.handle_date_range(year,self.logger)
         single_year= len(years)==1
 
         for y in years:
             base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.K10.value}/{y}"
-            self.logger.do_log(f"[REPORT] Downloading K10 to {base_path}", MessageType.INFO)
+            self.logger.do_log(f"[REPORT] Downloading K10 to {base_path}", MessageType.INFO,job_id)
 
             # only remove existing dir when user asked a single year (explicit overwrite behavior)
             if 'single_year' in locals() and single_year:
                 if os.path.exists(base_path):
                     shutil.rmtree(base_path)
-                    self.logger.do_log(f"[REPORT] Removed existing directory {base_path}", MessageType.INFO)
+                    self.logger.do_log(f"[REPORT] Removed existing directory {base_path}", MessageType.INFO,job_id)
 
             os.makedirs(base_path, exist_ok=True)
 
             securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
-            self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process for year {y}", MessageType.INFO)
+            self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process for year {y}", MessageType.INFO,job_id)
 
             for i, sec in enumerate(securities):
                 symbol = sec.ticker
                 cik = sec.cik
                 try:
-                    result = K10Downloader.download_k10(symbol, cik, y, base_path)
+                    result = K10Downloader.download_k10(symbol, cik, y, base_path,job_id)
                     if result == "EXISTS":
                         self.logger.do_log(
                             f"[REPORT][{i + 1}/{len(securities)}] ⚠️ Skipped {symbol}: file already exists ({y})",
-                            MessageType.INFO)
+                            MessageType.INFO,job_id)
                     elif result == "NOT_FOUND":
                         self.logger.do_log(
                             f"[REPORT][{i + 1}/{len(securities)}] ❌ No 10-K available yet for {symbol} ({y})",
-                            MessageType.WARNING)
+                            MessageType.WARNING,job_id)
                     else:
                         self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded K10 for {symbol} ({y})",
                                            MessageType.INFO)
                 except Exception as e:
                     self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {e}",
-                                       MessageType.ERROR)
+                                       MessageType.ERROR,job_id)
 
-    def _run_download_q10(self, year, portfolio):
+    def _run_download_q10(self, year, portfolio,job_id=None):
         # ---------------------------------------------------------
         # 🧠 Parse year(s)
         # ---------------------------------------------------------
@@ -145,13 +145,13 @@ class ReportsOrchestationLogic:
         # ---------------------------------------------------------
         for y in years:
             base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.Q10.value}/{y}"
-            self.logger.do_log(f"[REPORT] Downloading Q10 to {base_path}", MessageType.INFO)
+            self.logger.do_log(f"[REPORT] Downloading Q10 to {base_path}", MessageType.INFO,job_id)
 
             # ✅ Ensure directory exists (no deletion at all)
             os.makedirs(base_path, exist_ok=True)
 
             securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
-            self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process for year {y}", MessageType.INFO)
+            self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process for year {y}", MessageType.INFO,job_id)
 
             for i, sec in enumerate(securities):
                 symbol = sec.ticker
@@ -161,18 +161,18 @@ class ReportsOrchestationLogic:
                     if result == "EXISTS":
                         self.logger.do_log(
                             f"[REPORT][{i + 1}/{len(securities)}] ⚠️ Skipped {symbol}: files already exist ({y})",
-                            MessageType.INFO)
+                            MessageType.INFO,job_id)
                     elif result == "NOT_FOUND":
                         self.logger.do_log(
                             f"[REPORT][{i + 1}/{len(securities)}] ❌ No 10-Q available yet for {symbol} ({y})",
-                            MessageType.WARNING)
+                            MessageType.WARNING,job_id)
                     else:
                         self.logger.do_log(
                             f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded {len(result)} Q10(s) for {symbol} ({y})",
-                            MessageType.INFO)
+                            MessageType.INFO,job_id)
                 except Exception as e:
                     self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}] 💥 Failed for {symbol}: {e}",
-                                       MessageType.ERROR)
+                                       MessageType.ERROR,job_id)
 
     def _get_universe_filers(self, universe_key: str):
         if not universe_key:
@@ -723,9 +723,9 @@ class ReportsOrchestationLogic:
     def process_run_report(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,source=None,dest_folder=None,
                            rank_folder=None,job_id=None,query=None,tag_cfg=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
-            self._run_download_k10(year,portfolio)
+            self._run_download_k10(year,portfolio,job_id)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
-            self._run_download_q10(year,portfolio)
+            self._run_download_q10(year,portfolio,job_id)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_K10.value:
             self._run_sentiment_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_Q10.value:

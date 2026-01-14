@@ -85,7 +85,7 @@ class K10Downloader:
 
 
     @staticmethod
-    def download_k10(symbol, cik, year, output_dir):
+    def download_k10(symbol, cik, year, output_dir,job_id=None):
         headers = {
             "User-Agent": "K10Downloader/1.0 (fer.mosca@example.com)",
             "Accept-Encoding": "gzip, deflate",
