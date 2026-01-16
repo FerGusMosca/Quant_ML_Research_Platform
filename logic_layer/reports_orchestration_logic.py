@@ -754,31 +754,64 @@ class ReportsOrchestationLogic:
         except Exception as e:
             self._log_exc(f"[COMP_GRAPH] ❌ CRITICAL error running competition graph={str(e)}", e, job_id)
 
+    def _run_download_securities_calendar(self, year, portfolio, job_id):
+        """
+        Download and persist SEC filing calendars (K10 / Q10 dates)
+        for all securities in a portfolio and year range.
 
-    def _run_download_securities_calendar(self, year, portfolio):
+        Emits a FINAL structured completion event so clients can safely transition.
         """
-        Download and persist SEC filing calendars for all securities in the given portfolio.
-        """
-        self.logger.do_log(f"[REPORT] Starting SEC calendar download for portfolio={portfolio}, year={year}",
-                           MessageType.INFO)
+
+        # ---------------------------------------------------------
+        # 🧠 Resolve year range
+        # ---------------------------------------------------------
+        years = DateRangeHandler.handle_date_range(year, self.logger)
 
         securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
 
-        from_year, to_year = map(int, str(year).split('-')) if '-' in str(year) else (int(year), int(year))
-        existing = self.sec_cal_mgr.get_calendars_by_range(from_year, to_year)
         root_dir = RootLocator.get_root(markers=["bias_mgmt_console.py", "README.md"])
 
-        for i, sec in enumerate(securities):
-            for yr in range(from_year, to_year + 1):
+        # ---------------------------------------------------------
+        # 📊 Global summary
+        # ---------------------------------------------------------
+        summary = {
+            "years": {},
+            "total_securities": len(securities),
+            "processed": 0,
+            "saved": 0,
+            "errors": 0,
+        }
+
+        self.logger.do_log(
+            f"[REPORT] Starting SEC calendar download for portfolio={portfolio}, years={years}",
+            MessageType.INFO,
+            job_id
+        )
+
+        # ---------------------------------------------------------
+        # 🚀 Process each year
+        # ---------------------------------------------------------
+        for y in years:
+            summary["years"][y] = {
+                "processed": 0,
+                "saved": 0,
+                "errors": 0,
+            }
+
+            for i, sec in enumerate(securities):
+                summary["processed"] += 1
+                summary["years"][y]["processed"] += 1
 
                 try:
-                    # Inside your loop for each security and year
+                    # -------------------------------------------------
+                    # Locate downloaded reports
+                    # -------------------------------------------------
                     k10_dir = (
                             root_dir
                             / Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value
                             / portfolio
                             / "K10"
-                            / str(yr)
+                            / str(y)
                     )
 
                     q10_dir = (
@@ -786,31 +819,67 @@ class ReportsOrchestationLogic:
                             / Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value
                             / portfolio
                             / "Q10"
-                            / str(yr)
+                            / str(y)
                     )
 
-                    # Extract real filing dates from downloaded files
-                    k10_filing_date, q10_filing_dates = SecuritiesCalendarExtractor.process_k10_q10_directories(
-                        sec.ticker, k10_dir, q10_dir)
+                    # -------------------------------------------------
+                    # Extract filing dates from real files
+                    # -------------------------------------------------
+                    k10_filing_date, q10_filing_dates = (
+                        SecuritiesCalendarExtractor.process_k10_q10_directories(
+                            sec.ticker,
+                            k10_dir,
+                            q10_dir
+                        )
+                    )
 
-                    # Build the calendar entry using real extracted dates
+                    # -------------------------------------------------
+                    # Build calendar entry
+                    # -------------------------------------------------
                     entry = SecurityReportCalendar(
                         cik=sec.cik,
                         symbol=sec.ticker,
-                        fiscal_year=yr,
-                        q1=q10_filing_dates[1],
-                        q2=q10_filing_dates[2],
-                        q3=q10_filing_dates[3],
-                        k10=k10_filing_date
+                        fiscal_year=y,
+                        q1=q10_filing_dates.get(1),
+                        q2=q10_filing_dates.get(2),
+                        q3=q10_filing_dates.get(3),
+                        k10=k10_filing_date,
                     )
 
                     self.sec_cal_mgr.upsert_calendar_entry(entry)
 
-                    self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}][{yr}] ✅ {sec.ticker} saved.",
-                                       MessageType.INFO)
+                    summary["saved"] += 1
+                    summary["years"][y]["saved"] += 1
+
+                    self.logger.do_log(
+                        f"[REPORT][{i + 1}/{len(securities)}][{y}] ✅ Calendar saved for {sec.ticker}",
+                        MessageType.INFO,
+                        job_id
+                    )
+
                 except Exception as e:
-                    self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}][{yr}] ❌ {sec.ticker} failed: {e}",
-                                       MessageType.ERROR)
+                    summary["errors"] += 1
+                    summary["years"][y]["errors"] += 1
+
+                    self.logger.do_log(
+                        f"[REPORT][{i + 1}/{len(securities)}][{y}] ❌ {sec.ticker} failed: {e}",
+                        MessageType.ERROR,
+                        job_id
+                    )
+
+        # ---------------------------------------------------------
+        # 🧾 FINAL COMPLETION EVENT (CRITICAL)
+        # ---------------------------------------------------------
+        self.logger.do_log(
+            json.dumps({
+                "event": "completed",
+                "report": "download_securities_calendar",
+                "portfolio": portfolio,
+                "summary": summary,
+            }),
+            MessageType.INFO,
+            job_id
+        )
 
     def _run_fin_viz_news_downloader(self,portfolio,symbol=None,job_id=None):
 
@@ -1008,7 +1077,7 @@ class ReportsOrchestationLogic:
             self.run_query_match_report_KQ_10(year, SECReports.K10.value, portfolio=portfolio, dest_folder=dest_folder,
                                               query=query)
         elif report_key.lower() == ReportType.DOWNLOAD_SECURITIES_REPORTS_CALENDAR.value:
-            self._run_download_securities_calendar(year,portfolio)
+            self._run_download_securities_calendar(year,portfolio,job_id)
         elif report_key.lower() == ReportType.DOCUMENT_TAGGING_RANKING.value:
             self._run_document_tagging(portfolio, year,quarter, source, rank_folder, tag_cfg,job_id)
         elif report_key.lower() == ReportType.COMPETITION_GRAPH.value:
