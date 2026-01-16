@@ -1,6 +1,7 @@
 import os
 from typing import Optional
 from common.enums.sec_reports import SECReports
+from common.util.std_in_out.K_Q_10_file_locator import KQ10FileLocator
 
 
 class TaggingConfigDTO:
@@ -33,11 +34,13 @@ class TaggingConfigDTO:
 
         if SECReports.K10.value in source:
             # e.g. HD_2025_10-K.html
-            return file_only.startswith(f"{symbol}_{year}_10-K")
+            #return file_only.startswith(f"{symbol}_{year}_10-K")
+            return  KQ10FileLocator.find_file(source,file_only,symbol,year,quarter)
 
         if SECReports.Q10.value in source:
             # e.g. GPI_2025_Q1_10-Q.html
-            return file_only.startswith(f"{symbol}_{year}_{quarter}_10-Q")
+            #return file_only.startswith(f"{symbol}_{year}_{quarter}_10-Q")
+            return KQ10FileLocator.find_file(source, file_only, symbol, year, quarter)
 
         # Not implemented / all files pass
         return True

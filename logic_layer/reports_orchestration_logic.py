@@ -27,6 +27,7 @@ from common.util.downloaders.q10_downloader import Q10Downloader
 from common.util.downloaders.securities_calendar_downloader import SecuritiesCalendarDownloader
 from common.util.downloaders.yahoo_income_statement import YahooIncomeStatement
 from common.util.scrappers.securities_calendar_extractor import SecuritiesCalendarExtractor
+from common.util.std_in_out.K_Q_10_file_locator import KQ10FileLocator
 from common.util.std_in_out.file_locators import FileLocators
 from common.util.std_in_out.json_file_reader import JsonFileReader
 from common.util.std_in_out.root_locator import RootLocator
@@ -36,6 +37,7 @@ from data_access_layer.securities_calendar_manager import SecuritiesCalendarMana
 from data_access_layer.tag_run_manager import TagRunManager
 from framework.common.logger.message_type import MessageType
 from logic_layer.rag_corpus_metadata.tagger.transformers_topic_tagger import TransformersTopicTagger
+from logic_layer.report_generators.competition_graph import CompetitionGraph
 from logic_layer.report_generators.competition_summary_report import CompetitionSummaryReport
 from logic_layer.report_generators.query_match_report import QueryMatchReportK10Q10
 from logic_layer.report_generators.sentiment.sentence_sentiment_summary_report import SentimentSummaryReport
@@ -94,85 +96,236 @@ class ReportsOrchestationLogic:
         )
     '''
 
-    def _run_download_k10(self, year, portfolio,job_id):
-        # parse years
-        years=DateRangeHandler.handle_date_range(year,self.logger)
-        single_year= len(years)==1
+    def _run_download_k10(self, year, portfolio, job_id):
+        """
+        Download 10-K filings for a given portfolio and year range.
+        Emits a FINAL structured completion event so clients can safely transition.
+        """
+
+        # Resolve year range
+        years = DateRangeHandler.handle_date_range(year, self.logger)
+        single_year = len(years) == 1
+
+        # Global summary for the whole job
+        summary = {
+            "years": {},
+            "total_securities": 0,
+            "downloaded": 0,
+            "skipped_exists": 0,
+            "not_found": 0,
+            "errors": 0,
+        }
 
         for y in years:
             base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.K10.value}/{y}"
-            self.logger.do_log(f"[REPORT] Downloading K10 to {base_path}", MessageType.INFO,job_id)
 
-            # only remove existing dir when user asked a single year (explicit overwrite behavior)
-            if 'single_year' in locals() and single_year:
-                if os.path.exists(base_path):
-                    shutil.rmtree(base_path)
-                    self.logger.do_log(f"[REPORT] Removed existing directory {base_path}", MessageType.INFO,job_id)
+            self.logger.do_log(
+                f"[REPORT] Downloading K10 to {base_path}",
+                MessageType.INFO,
+                job_id
+            )
+
+            # Explicit overwrite only when a single year is requested
+            if single_year and os.path.exists(base_path):
+                shutil.rmtree(base_path)
+                self.logger.do_log(
+                    f"[REPORT] Removed existing directory {base_path}",
+                    MessageType.INFO,
+                    job_id
+                )
 
             os.makedirs(base_path, exist_ok=True)
 
             securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
-            self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process for year {y}", MessageType.INFO,job_id)
+            self.logger.do_log(
+                f"[REPORT] Found {len(securities)} securities to process for year {y}",
+                MessageType.INFO,
+                job_id
+            )
+
+            # Per-year summary
+            summary["years"][y] = {
+                "downloaded": 0,
+                "skipped_exists": 0,
+                "not_found": 0,
+                "errors": 0,
+            }
 
             for i, sec in enumerate(securities):
                 symbol = sec.ticker
                 cik = sec.cik
+                summary["total_securities"] += 1
+
                 try:
-                    result = K10Downloader.download_k10(symbol, cik, y, base_path,job_id)
+                    result = K10Downloader.download_k10(symbol, cik, y, base_path, job_id)
+
                     if result == "EXISTS":
+                        summary["skipped_exists"] += 1
+                        summary["years"][y]["skipped_exists"] += 1
                         self.logger.do_log(
                             f"[REPORT][{i + 1}/{len(securities)}] ⚠️ Skipped {symbol}: file already exists ({y})",
-                            MessageType.INFO,job_id)
+                            MessageType.INFO,
+                            job_id
+                        )
+
                     elif result == "NOT_FOUND":
+                        summary["not_found"] += 1
+                        summary["years"][y]["not_found"] += 1
                         self.logger.do_log(
                             f"[REPORT][{i + 1}/{len(securities)}] ❌ No 10-K available yet for {symbol} ({y})",
-                            MessageType.WARNING,job_id)
-                    else:
-                        self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded K10 for {symbol} ({y})",
-                                           MessageType.INFO)
-                except Exception as e:
-                    self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {e}",
-                                       MessageType.ERROR,job_id)
+                            MessageType.WARNING,
+                            job_id
+                        )
 
-    def _run_download_q10(self, year, portfolio,job_id=None):
+                    else:
+                        summary["downloaded"] += 1
+                        summary["years"][y]["downloaded"] += 1
+                        self.logger.do_log(
+                            f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded K10 for {symbol} ({y})",
+                            MessageType.INFO,
+                            job_id
+                        )
+
+                except Exception as e:
+                    summary["errors"] += 1
+                    summary["years"][y]["errors"] += 1
+                    self.logger.do_log(
+                        f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {e}",
+                        MessageType.ERROR,
+                        job_id
+                    )
+
+        # ---- FINAL EXPLICIT COMPLETION EVENT (CRITICAL) ----
+        self.logger.do_log(
+            json.dumps({
+                "event": "completed",
+                "report": "download_k10",
+                "portfolio": portfolio,
+                "summary": summary,
+            }),
+            MessageType.INFO,
+            job_id
+        )
+
+    def _run_download_q10(self, year, portfolio, job_id=None):
+        """
+        Download 10-Q filings for a given portfolio and year range.
+        Emits a FINAL structured completion event so clients can safely transition.
+        """
+
         # ---------------------------------------------------------
-        # 🧠 Parse year(s)
+        # 🧠 Resolve year range
         # ---------------------------------------------------------
-        years=DateRangeHandler.handle_date_range(year,self.logger)
+        years = DateRangeHandler.handle_date_range(year, self.logger)
+
+        # ---------------------------------------------------------
+        # 📊 Global summary
+        # ---------------------------------------------------------
+        summary = {
+            "years": {},
+            "total_securities": 0,
+            "downloaded": 0,
+            "skipped_exists": 0,
+            "not_found": 0,
+            "errors": 0,
+        }
 
         # ---------------------------------------------------------
         # 🚀 Process each year
         # ---------------------------------------------------------
         for y in years:
-            base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.Q10.value}/{y}"
-            self.logger.do_log(f"[REPORT] Downloading Q10 to {base_path}", MessageType.INFO,job_id)
+            base_path = (
+                f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/"
+                f"{portfolio}/{ReportFolder.Q10.value}/{y}"
+            )
 
-            # ✅ Ensure directory exists (no deletion at all)
+            self.logger.do_log(
+                f"[REPORT] Downloading Q10 to {base_path}",
+                MessageType.INFO,
+                job_id
+            )
+
             os.makedirs(base_path, exist_ok=True)
 
             securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
-            self.logger.do_log(f"[REPORT] Found {len(securities)} securities to process for year {y}", MessageType.INFO,job_id)
+            self.logger.do_log(
+                f"[REPORT] Found {len(securities)} securities to process for year {y}",
+                MessageType.INFO,
+                job_id
+            )
+
+            # Per-year summary
+            summary["years"][y] = {
+                "downloaded": 0,
+                "skipped_exists": 0,
+                "not_found": 0,
+                "errors": 0,
+            }
 
             for i, sec in enumerate(securities):
                 symbol = sec.ticker
                 cik = sec.cik
+                summary["total_securities"] += 1
+
                 try:
                     result = Q10Downloader.download_q10s(symbol, cik, y, base_path)
+
                     if result == "EXISTS":
+                        summary["skipped_exists"] += 1
+                        summary["years"][y]["skipped_exists"] += 1
+
                         self.logger.do_log(
                             f"[REPORT][{i + 1}/{len(securities)}] ⚠️ Skipped {symbol}: files already exist ({y})",
-                            MessageType.INFO,job_id)
+                            MessageType.INFO,
+                            job_id
+                        )
+
                     elif result == "NOT_FOUND":
+                        summary["not_found"] += 1
+                        summary["years"][y]["not_found"] += 1
+
                         self.logger.do_log(
                             f"[REPORT][{i + 1}/{len(securities)}] ❌ No 10-Q available yet for {symbol} ({y})",
-                            MessageType.WARNING,job_id)
-                    else:
+                            MessageType.WARNING,
+                            job_id
+                        )
+
+                    elif result == "FOUND":
+                        summary["downloaded"] += 1
+                        summary["years"][y]["downloaded"] += 1
+
                         self.logger.do_log(
-                            f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded {len(result)} Q10(s) for {symbol} ({y})",
-                            MessageType.INFO,job_id)
+                            f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded Q10(s) for {symbol} ({y})",
+                            MessageType.INFO,
+                            job_id
+                        )
+
+                    else:
+                        raise Exception(f"Unknown result '{result}' returned by Q10Downloader")
+
                 except Exception as e:
-                    self.logger.do_log(f"[REPORT][{i + 1}/{len(securities)}] 💥 Failed for {symbol}: {e}",
-                                       MessageType.ERROR,job_id)
+                    summary["errors"] += 1
+                    summary["years"][y]["errors"] += 1
+
+                    self.logger.do_log(
+                        f"[REPORT][{i + 1}/{len(securities)}] 💥 Failed for {symbol}: {e}",
+                        MessageType.ERROR,
+                        job_id
+                    )
+
+        # ---------------------------------------------------------
+        # 🧾 FINAL EXPLICIT COMPLETION EVENT (CRITICAL)
+        # ---------------------------------------------------------
+        self.logger.do_log(
+            json.dumps({
+                "event": "completed",
+                "report": "download_q10",
+                "portfolio": portfolio,
+                "summary": summary,
+            }),
+            MessageType.INFO,
+            job_id
+        )
 
     def _get_universe_filers(self, universe_key: str):
         if not universe_key:
@@ -363,13 +516,99 @@ class ReportsOrchestationLogic:
             job_id
         )
 
+    def _file_finder(self,securities,y,quarter, root_folder,source,rank_folder,tag_cfg,job_id):
+        try:  # 2- Find files based on report types
+            self.logger.do_log(
+                f"[TAGGING] 🚀 Starting (source={source}, rank_folder={rank_folder}, year={y})",
+                MessageType.INFO,
+                job_id
+            )
+
+            file_folder = os.path.join(
+                RootLocator.get_root(),
+                #Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                root_folder,
+                source,
+                str(y))
+
+            prev_matched_files = FileLocators.enumerate_all_files(
+                file_folder,
+                self.logger,
+                filters=[s.symbol.lower() for s in securities if getattr(s, "symbol", None)],
+                job_id=job_id
+            )
+
+            matched_files = []
+            for file in prev_matched_files:
+                for sec in securities:
+                    if tag_cfg is not None:
+                        if ( tag_cfg.evaluate_file_for_report(sec.symbol, source, file, str(y), quarter)):
+                            matched_files.append(SecurityWithFile(sec, file))
+                    elif SECReports.K10.value in source or SECReports.Q10.value in source: #se assume is K10
+                        if(  KQ10FileLocator.find_file(source,os.path.basename(file),sec.symbol,str(y),quarter)):
+                            matched_files.append(SecurityWithFile(sec, file))
+                    else:
+                        raise Exception(f"Missing tag_cfg or valid source matching file {file} with security {sec.symbol}")
+
+            return  matched_files
+        except Exception as e:
+            self._log_exc(f"[TAGGING] ❌ file enumeration failed | year={y}", e, job_id)
+            return []
+
+    def _create_rank_folder(self,y,tag_dict,root_folder,rank_folder,tag_run,job_id):
+        try:  # 3- Crate Rank Folder
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+            tag = "_".join(tag_dict.keys())
+
+            dest_rank_folder = os.path.join(str(ReportType.DOCUMENT_TAGGING_RANKING.value).upper(),
+                                            rank_folder,
+                                            f"file_taging_{tag}_rank_{timestamp}",
+                                            str(y))
+            rank_dir = os.path.join(
+                RootLocator.get_root(),
+                #Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                root_folder,
+                dest_rank_folder
+            )
+
+            tag_run.rank_folder = dest_rank_folder
+            self.tag_runs_mgr.persist_tag_run(tag_run)
+
+            self.logger.do_log(f"[TAGGING] Creating Dest Rank Dir  rank_dir={rank_dir}", MessageType.INFO, job_id)
+
+            return rank_dir
+
+        except Exception as e:
+            self._log_exc(f"[TAGGING] ❌ rank dir build failed | year={y}", e, job_id)
+            raise e
+
+    def _create_competition_folder(self, y, root_folder, dest_graph_folder, job_id):
+        try:  # 3- Crate Rank Folder
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+
+
+            dest_comp_folder = os.path.join(str(ReportType.COMPETITION_GRAPH.value).upper(),
+                                            dest_graph_folder,
+                                            f"file_competition_graph_{timestamp}",
+                                            str(y))
+            comp_dir = os.path.join(
+                RootLocator.get_root(),
+                root_folder,
+                dest_comp_folder
+            )
+
+            self.logger.do_log(f"[COMP_GRAPH] Creating Dest Comp. Graph Dir  comp_dir={comp_dir}", MessageType.INFO, job_id)
+
+            return comp_dir
+
+        except Exception as e:
+            self._log_exc(f"[COMP_GRAPH] ❌ Comp. Graph dir build failed | year={y}", e, job_id)
+            raise e
+
     def _run_document_tagging(self, portfolio, year,quarter, source, rank_folder, tag_cfg, job_id):
-
-
 
         #1- Extract All Input Data
         try:
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
             tagger = TransformersTopicTagger(self.logger, tag_cfg)
             years = DateRangeHandler.handle_date_range(year, self.logger)
             securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
@@ -386,8 +625,6 @@ class ReportsOrchestationLogic:
 
             return
 
-
-
         try:
 
             for y in years:
@@ -401,61 +638,19 @@ class ReportsOrchestationLogic:
 
                 try:
                     start_time = datetime.now()
-                    try:#2- Find files based on report types
-                        self.logger.do_log(
-                            f"[TAGGING] 🚀 Starting (source={source}, rank_folder={rank_folder}, year={y})",
-                            MessageType.INFO,
-                            job_id
-                        )
 
-                        file_folder = os.path.join(
-                                                    RootLocator.get_root(),
-                                                    Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
-                                                    source,
-                                                    str(y))
+                    # 2- Find files based on report types
+                    matched_files=self._file_finder(securities,y,quarter,Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                                                    source,rank_folder,tag_cfg,job_id)
 
-                        prev_matched_files = FileLocators.enumerate_all_files(
-                            file_folder,
-                            self.logger,
-                            filters=[s.symbol.lower() for s in securities if getattr(s, "symbol", None)],
-                            job_id=job_id
-                        )
-
-                        matched_files = []
-                        for file in prev_matched_files:
-                            for sec in securities:
-                                if(tag_cfg.evaluate_file_for_report(sec.symbol,source,file,str(y),quarter)):
-                                    matched_files.append(SecurityWithFile(sec,file))
-
-
-                    except Exception as e:
-                        self._log_exc(f"[TAGGING] ❌ file enumeration failed | year={y}", e,job_id)
+                    if len(matched_files)==0:
                         continue
 
+                    # 3- Crate Rank Folder
+                    rank_dir= self._create_rank_folder(y,tag_dict,Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                                                       rank_folder,tag_run,job_id)
 
-                    try: #3- Run Rank
-                        tag = "_".join(tag_dict.keys())
-
-                        dest_rank_folder= os.path.join(str(ReportType.DOCUMENT_TAGGING_RANKING.value).upper(),
-                                                       rank_folder,
-                                                       f"file_taging_{tag}_rank_{timestamp}",
-                                                       str(y))
-                        rank_dir = os.path.join(
-                            RootLocator.get_root(),
-                            Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
-                            dest_rank_folder
-                        )
-
-                        tag_run.rank_folder=dest_rank_folder
-                        self.tag_runs_mgr.persist_tag_run(tag_run)
-
-                        self.logger.do_log(f"[TAGGING] Creating Dest Rank Dir  rank_dir={rank_dir}",MessageType.INFO,job_id)
-
-                    except Exception as e:
-                        self._log_exc(f"[TAGGING] ❌ rank dir build failed | year={y}", e,job_id)
-                        raise e
-
-                    try:
+                    try: #4- Run Rank
                         ranking_dict = tagger.rank(
                             securities,
                             matched_files,
@@ -491,8 +686,73 @@ class ReportsOrchestationLogic:
 
         except Exception as e:
             self._log_exc(f"[TAGGING] ❌ CRITICAL error running document tagging={str(e)}", e, job_id)
-            tag_run.set_error(str(e))
-            self.tag_runs_mgr.persist_tag_run(tag_run)
+            #tag_run.set_error(str(e))
+            #self.tag_runs_mgr.persist_tag_run(tag_run)
+
+    def _run_competition_graph(self, portfolio, year,quarter, source, graph_folder, job_id):
+
+        #1- Extract All Input Data
+        try:
+            years = DateRangeHandler.handle_date_range(year, self.logger)
+            securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
+            comp_grag_ctor = CompetitionGraph(self.logger)
+        except Exception as e:
+            self._log_exc("[COMP_GRAPH] ❌ init failed", e,job_id)
+            #Special Error inicailization
+            return
+
+        try:
+
+            for y in years:
+
+                try:
+                    start_time = datetime.now()
+
+                    # 2- Find files based on report types
+                    matched_files=self._file_finder(securities,y,quarter,Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                                                    source,graph_folder,None,job_id)
+
+                    if len(matched_files)==0:
+                        continue
+
+                    # 3- Crate Rank Folder
+                    graph_dir= self._create_competition_folder(y,Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                                                              graph_folder,job_id)
+
+                    try: #4- Run Graph
+                        #Initialize an run compeition graph --> graph_dir
+                        graph_row=[]
+                        for matched_file in matched_files:
+                            comp_grag_ctor.extract_competition(matched_file,job_id)
+
+
+                        graph_row.append(comp_grag_ctor.edges)
+                        #TODO mejorar el logging | persistir la graph_rows
+                        self.logger.do_log(
+                            f"[COMP_GRAPH] ✔ Successfully created ",
+                            MessageType.INFO,
+                            job_id
+                        )
+
+                    except Exception as e:
+                        self._log_exc(f"[COMP_GRAPH] ❌ ranking failed | year={y}", e,job_id)
+                        raise e
+
+                    elapsed = (datetime.now() - start_time).total_seconds()
+
+                    self.logger.do_log(
+                        f"[COMP_GRAPH] 🏁 Completed year={y} in {elapsed:.2f}s",
+                        MessageType.INFO,
+                        job_id
+                    )
+                except Exception as e:
+                    self.logger.do_log(
+                        f"[COMP_GRAPH] ❌ ERROR processing year={y} :{str(e)}",MessageType.INFO,job_id
+                    )
+
+
+        except Exception as e:
+            self._log_exc(f"[COMP_GRAPH] ❌ CRITICAL error running competition graph={str(e)}", e, job_id)
 
 
     def _run_download_securities_calendar(self, year, portfolio):
@@ -751,6 +1011,8 @@ class ReportsOrchestationLogic:
             self._run_download_securities_calendar(year,portfolio)
         elif report_key.lower() == ReportType.DOCUMENT_TAGGING_RANKING.value:
             self._run_document_tagging(portfolio, year,quarter, source, rank_folder, tag_cfg,job_id)
+        elif report_key.lower() == ReportType.COMPETITION_GRAPH.value:
+            self._run_competition_graph(portfolio, year,quarter, source, rank_folder,job_id)
         #
         elif report_key.lower() == ReportType.START_MCP.value:
             self._run_start_mcp()

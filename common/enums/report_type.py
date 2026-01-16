@@ -18,5 +18,6 @@ class ReportType(Enum):
     DOWNLOAD_SECURITIES_REPORTS_CALENDAR = "download_securities_reports_calendar"
 
     DOCUMENT_TAGGING_RANKING="document_tagging_ranking"
+    COMPETITION_GRAPH = "competition_graph"
 
     START_MCP = "start_mcp"
