@@ -46,7 +46,7 @@ class FileLocators ():
 
         if not matched_files:
             logger.do_log(
-                f"[TAGGING] ⚠ No matching documents for year={y}",
+                f"[TAGGING] ⚠ No matching documents for folder {file_folder}",
                 MessageType.WARNING,job_id
             )
             return []
