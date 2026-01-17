@@ -644,10 +644,10 @@ class ReportsOrchestationLogic:
                                                     source,rank_folder,tag_cfg,job_id)
 
                     if len(matched_files)==0:
-                        continue
-                    else:
                         tag_run.set_skipped(f"No files found for portfolio {portfolio} and year(s) {years}")
                         self.tag_runs_mgr.persist_tag_run(tag_run)
+                        continue
+                    else:
                         found_files=True
                     # 3- Crate Rank Folder
                     rank_dir= self._create_rank_folder(y,tag_dict,Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
