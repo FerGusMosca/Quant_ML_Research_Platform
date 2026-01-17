@@ -10,6 +10,7 @@ class TagRun:
     _STARTED="started"
     _FINISHED ="finished"
     _ERROR = "error"
+    _SKIPPED = "skipped"
 
     """
     Entity/DTO representing a single tag processing run
@@ -60,6 +61,12 @@ class TagRun:
         self.last_update_time = now
         self.last_error=error
         self.status = TagRun._ERROR
+
+    def set_skipped(self,msg):
+        now = datetime.now(timezone.utc)
+        self.last_update_time = now
+        self.last_error=msg
+        self.status = TagRun._SKIPPED
 
 
 

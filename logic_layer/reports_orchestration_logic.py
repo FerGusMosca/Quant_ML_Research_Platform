@@ -626,7 +626,7 @@ class ReportsOrchestationLogic:
             return
 
         try:
-
+            found_files=False
             for y in years:
 
                 tag_run = TagRun.initialize_tag_run(portfolio=portfolio,
@@ -645,7 +645,10 @@ class ReportsOrchestationLogic:
 
                     if len(matched_files)==0:
                         continue
-
+                    else:
+                        tag_run.set_skipped(f"No files found for portfolio {portfolio} and year(s) {years}")
+                        self.tag_runs_mgr.persist_tag_run(tag_run)
+                        found_files=True
                     # 3- Crate Rank Folder
                     rank_dir= self._create_rank_folder(y,tag_dict,Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
                                                        rank_folder,tag_run,job_id)
@@ -683,6 +686,13 @@ class ReportsOrchestationLogic:
                     )
                     tag_run.set_error(str(e))
                     self.tag_runs_mgr.persist_tag_run(tag_run)
+
+            if not found_files:
+                self.logger.do_log(
+                    f"[TAGGING] ⚠️ Not a single file found for portfolio {portfolio} on years year={years}",
+                    MessageType.INFO,
+                    job_id
+                )
 
         except Exception as e:
             self._log_exc(f"[TAGGING] ❌ CRITICAL error running document tagging={str(e)}", e, job_id)

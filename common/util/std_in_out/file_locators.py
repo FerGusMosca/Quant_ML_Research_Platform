@@ -8,7 +8,7 @@ class FileLocators ():
 
     @staticmethod
     def enumerate_all_files(file_folder,logger, filters=[],job_id=None):
-        pass  # TODO enumerates all files in a folder
+
         if not os.path.isdir(file_folder):
             logger.do_log(
                 f"[TAGGING] ⚠ Folder not found: {file_folder}",
