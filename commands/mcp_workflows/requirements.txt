@@ -1,0 +1,9 @@
+langgraph
+langchain-core
+pydantic
+httpx
+orjson
+xxhash
+python-dotenv
+websockets
+colorama==0.4.6

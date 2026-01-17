@@ -178,6 +178,7 @@ cython_debug/
 # Python virtual envs
 venv*/
 venv_rag/
+venv_mcp_flows/
 
 # Bytecode
 *.pyc
