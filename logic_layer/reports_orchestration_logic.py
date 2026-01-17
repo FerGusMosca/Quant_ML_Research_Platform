@@ -788,6 +788,9 @@ class ReportsOrchestationLogic:
             job_id
         )
 
+
+        calendars= self.sec_cal_mgr.get_calendars_by_range(years[0],years[-1])
+
         # ---------------------------------------------------------
         # 🚀 Process each year
         # ---------------------------------------------------------
@@ -803,6 +806,15 @@ class ReportsOrchestationLogic:
                 summary["years"][y]["processed"] += 1
 
                 try:
+
+                    if (sec.symbol,y) in calendars:
+                        self.logger.do_log(
+                            f"[SKIP] ◻️ Skipping download for  {sec.ticker} on year {y} because it already exists",
+                            MessageType.INFO,
+                            job_id
+                        )
+                        continue
+
                     # -------------------------------------------------
                     # Locate downloaded reports
                     # -------------------------------------------------
