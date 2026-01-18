@@ -519,7 +519,7 @@ class ReportsOrchestationLogic:
     def _file_finder(self,securities,y,quarter, root_folder,source,rank_folder,tag_cfg,job_id):
         try:  # 2- Find files based on report types
             self.logger.do_log(
-                f"[TAGGING] 🚀 Starting (source={source}, rank_folder={rank_folder}, year={y})",
+                f"[TAGGING] 🚀 Starting (source={source}, rank_folder={rank_folder}, year={y}) quarter?={quarter}",
                 MessageType.INFO,
                 job_id
             )
@@ -618,7 +618,9 @@ class ReportsOrchestationLogic:
             #Special Error inicailization
             tag_run = TagRun.initialize_tag_run(portfolio=portfolio,
                                                 report_type=ReportType.DOCUMENT_TAGGING_RANKING.value,
-                                                source=source, rank_folder=rank_folder, year=year, tag_cfg=tag_cfg,
+                                                source=source, rank_folder=rank_folder, year=year,
+                                                quarter=quarter,sec_processed=0,
+                                                tag_cfg=tag_cfg,
                                                 tag_dict=None)
             tag_run.set_error(str(e))
             self.tag_runs_mgr.persist_tag_run(tag_run)
@@ -631,7 +633,8 @@ class ReportsOrchestationLogic:
 
                 tag_run = TagRun.initialize_tag_run(portfolio=portfolio,
                                                     report_type=ReportType.DOCUMENT_TAGGING_RANKING.value,
-                                                    source=source, rank_folder=rank_folder, year=str(y), tag_cfg=tag_cfg,
+                                                    source=source, rank_folder=rank_folder, year=str(y),
+                                                    quarter=quarter,sec_processed=len(securities) , tag_cfg=tag_cfg,
                                                     tag_dict=tag_dict)
 
                 self.tag_runs_mgr.persist_tag_run(tag_run)

@@ -21,6 +21,8 @@ class TagRun:
     source: str = ""
     rank_folder: Optional[str] = None
     year: str=""
+    quarter: str = "",
+    sec_processed:int=None,
     timestamp: Optional[datetime] = None
     tag_file: Optional[str] = None
     tag_json: Optional[dict | list | str | Any] = None  # flexible - can be dict, list, json string, etc.
@@ -39,13 +41,14 @@ class TagRun:
 
 
     @staticmethod
-    def initialize_tag_run(portfolio,report_type,source,rank_folder,year,tag_cfg,tag_dict):
+    def initialize_tag_run(portfolio,report_type,source,rank_folder,year,quarter,sec_processed,tag_cfg,tag_dict):
         now = datetime.now(timezone.utc)
 
         tag_json = json.dumps(tag_dict)
 
         return TagRun(id=0,portfolio=portfolio,report=report_type,source=source,
-               rank_folder=rank_folder,year=year,timestamp=now,tag_json=tag_json,
+               rank_folder=rank_folder,year=year,quarter=quarter,sec_processed=sec_processed,
+               timestamp=now,tag_json=tag_json,
                tag_model=tag_cfg.tag_model,doc_type=tag_cfg.doc_type,tag_file=tag_cfg.tag_file,
                status=TagRun._STARTED)
 

@@ -39,7 +39,7 @@ class TagRunManager:
 
             cursor.execute(
                 """
-                EXEC persist_tag_run ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?
+                EXEC persist_tag_run ?, ?, ?, ?, ?, ?,?,?, ?, ?, ?, ?, ?,?
                 """,
                 (
                     run.id or 0,  # @id
@@ -48,6 +48,8 @@ class TagRunManager:
                     run.source,  # @source
                     run.rank_folder,  # @rank_folder
                     run.year,  # @year
+                    run.quarter,  # @year
+                    run.sec_processed,  # @year
                     run.tag_model,  # @tag_model
                     run.doc_type,  # @doc_type
                     run.tag_json,  # @tag_json (STRING JSON)

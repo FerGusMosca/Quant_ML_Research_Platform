@@ -75,18 +75,17 @@ class TransformersTopicTagger:
 
         return chunks
 
-    def _persist_rank_csv(self, rows: list, output_dir: str,job_id:int=None):
-
+    def _persist_rank_csv(self, rows: list, output_dir: str, job_id: int = None):
 
         if not rows:
-            if self.logger:
-                self.logger.do_log("[RANK][CSV] ⚠ No rows to persist", MessageType.INFO,job_id)
+            self.logger.do_log("[RANK][CSV] ⚠ No rows to persist", MessageType.INFO, job_id)
             return
 
+        output_dir = os.path.abspath(os.path.expanduser(str(output_dir).strip()))
         os.makedirs(output_dir, exist_ok=True)
 
         ts = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-        out_file = os.path.join(output_dir, f"rank_results_{ts}.csv")
+        out_file = os.path.join(output_dir, f"rank.csv")
 
         fieldnames = ["security", "file", "rank_1", "rank_2", "rank_3"]
 
@@ -94,14 +93,13 @@ class TransformersTopicTagger:
             with open(out_file, "w", newline="", encoding="utf-8") as f:
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
-                for r in rows:
-                    writer.writerow(r)
+                writer.writerows(rows)
 
-            if self.logger:
-                self.logger.do_log(
-                    f"[RANK][CSV] ✔ Persisted results | file={out_file} | rows={len(rows)}",
-                    MessageType.INFO,job_id
-                )
+            self.logger.do_log(
+                f"[RANK][CSV] ✔ Persisted results | file={out_file} | rows={len(rows)}",
+                MessageType.INFO,
+                job_id
+            )
 
         except Exception as e:
             self._log_exception("[RANK] ❌ _persist_rank_csv failed", e, job_id)
