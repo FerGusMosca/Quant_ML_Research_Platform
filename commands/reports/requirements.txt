@@ -26,6 +26,7 @@ transformers
 tokenizers
 huggingface-hub
 safetensors
+sec-parser
 
 # ---- Torch CPU ONLY ----
 torch==2.2.0+cpu
