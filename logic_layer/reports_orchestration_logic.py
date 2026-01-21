@@ -2,7 +2,6 @@ import json
 import os
 import shutil
 from datetime import datetime
-from pathlib import Path
 import asyncio
 
 import traceback
@@ -11,7 +10,6 @@ from business_entities.tag_run import TagRun
 from common.dto.mcp.bootstrap_registry import  build_mcp_registry_reports
 from common.dto.mcp.dispatcher import JsonRpcDispatcher
 from common.dto.mcp.progress_bus import ProgressBus
-from common.dto.mcp.tools import ToolRegistry
 from common.dto.sec_w_file import SecurityWithFile
 from common.dto.security_report_calendar import SecurityReportCalendar
 from common.enums.folders import Folders
@@ -24,12 +22,10 @@ from common.util.downloaders.finviz_offline_sentiment_analyzer import FinvizOffl
 from common.util.downloaders.ib_income_statement import IBIncomeStatement
 from common.util.downloaders.k10_downloader import K10Downloader
 from common.util.downloaders.q10_downloader import Q10Downloader
-from common.util.downloaders.securities_calendar_downloader import SecuritiesCalendarDownloader
 from common.util.downloaders.yahoo_income_statement import YahooIncomeStatement
 from common.util.scrappers.securities_calendar_extractor import SecuritiesCalendarExtractor
 from common.util.std_in_out.K_Q_10_file_locator import KQ10FileLocator
 from common.util.std_in_out.file_locators import FileLocators
-from common.util.std_in_out.json_file_reader import JsonFileReader
 from common.util.std_in_out.root_locator import RootLocator
 from data_access_layer.portfolio_securities_manager import PortfolioSecuritiesManager
 from data_access_layer.report_securities_manager import ReportSecuritiesManager
@@ -37,11 +33,11 @@ from data_access_layer.securities_calendar_manager import SecuritiesCalendarMana
 from data_access_layer.tag_run_manager import TagRunManager
 from framework.common.logger.message_type import MessageType
 from logic_layer.rag_corpus_metadata.tagger.transformers_topic_tagger import TransformersTopicTagger
-from logic_layer.report_generators.competition_graph import CompetitionGraph
-from logic_layer.report_generators.competition_summary_report import CompetitionSummaryReport
+from logic_layer.report_generators.K_Q_10s.K_Q_10_competition_graph import KQ10CompetitionGraph
+from logic_layer.report_generators.K_Q_10s.competition_summary_report import CompetitionSummaryReport
 from logic_layer.report_generators.query_match_report import QueryMatchReportK10Q10
-from logic_layer.report_generators.sentiment.sentence_sentiment_summary_report import SentimentSummaryReport
-from logic_layer.report_generators.sentiment.sentence_sentiment_summary_report_v2 import SentimentSummaryReportV2
+from logic_layer.report_generators.K_Q_10s.sentiment.sentence_sentiment_summary_report import SentimentSummaryReport
+from logic_layer.report_generators.K_Q_10s.sentiment.sentence_sentiment_summary_report_v2 import SentimentSummaryReportV2
 from service_layer.server.mcp_server import MCPServer
 
 
@@ -702,13 +698,30 @@ class ReportsOrchestationLogic:
             #tag_run.set_error(str(e))
             #self.tag_runs_mgr.persist_tag_run(tag_run)
 
+    def _persist_graph(self, graph_dir, output_file, edges):
+        os.makedirs(graph_dir, exist_ok=True)
+
+        with open(output_file, "w", encoding="utf-8") as f:
+            for edge in edges:
+                line = {
+                    "src": edge["src"],
+                    "dst": edge["dst"],
+                    "type": edge["relation"],
+                    "weight": edge["score"],
+                    "metadata": {
+                        "file": edge["file"],
+                        "block_id": edge["block_id"]
+                    }
+                }
+                f.write(json.dumps(line, ensure_ascii=False) + "\n")
+
     def _run_competition_graph(self, portfolio, year,quarter, source, graph_folder, job_id):
 
         #1- Extract All Input Data
         try:
             years = DateRangeHandler.handle_date_range(year, self.logger)
             securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
-            comp_grag_ctor = CompetitionGraph(self.logger)
+            comp_grag_ctor = KQ10CompetitionGraph(self.logger)
         except Exception as e:
             self._log_exc("[COMP_GRAPH] ❌ init failed", e,job_id)
             #Special Error inicailization
@@ -732,15 +745,14 @@ class ReportsOrchestationLogic:
                     graph_dir= self._create_competition_folder(y,Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
                                                               graph_folder,job_id)
 
+                    graph_file=os.path.join(graph_dir,"graph.jsonl")
+
                     try: #4- Run Graph
                         #Initialize an run compeition graph --> graph_dir
-                        graph_row=[]
                         for matched_file in matched_files:
                             comp_grag_ctor.extract_competition(matched_file,job_id)
 
-
-                        graph_row.append(comp_grag_ctor.edges)
-                        #TODO mejorar el logging | persistir la graph_rows
+                        self._persist_graph(graph_dir,graph_file,comp_grag_ctor.edges)
                         self.logger.do_log(
                             f"[COMP_GRAPH] ✔ Successfully created ",
                             MessageType.INFO,
