@@ -105,7 +105,7 @@ class SentimentSummaryReport:
             self.sia = SentimentIntensityAnalyzer()
 
     @staticmethod
-    def rank(consolidated_json: str, out_csv: str, logger) -> None:
+    def rank(consolidated_json: str, out_csv: str, logger,job_id=None) -> None:
         """
         Produce ranking CSV by optimism composite score from a consolidated JSON.
         """
@@ -113,14 +113,14 @@ class SentimentSummaryReport:
         import os, json
 
         if not consolidated_json or not os.path.exists(consolidated_json):
-            logger.do_log(f"[SENT] ❌ Consolidated JSON not found: {consolidated_json}", MessageType.ERROR)
+            logger.do_log(f"[SENT] ❌ Consolidated JSON not found: {consolidated_json}", MessageType.ERROR,job_id)
             return
 
         with open(consolidated_json, "r", encoding="utf-8") as f:
             data = json.load(f)
 
         if not data:
-            logger.do_log(f"[SENT] ⚠ No data found in {consolidated_json}", MessageType.WARNING)
+            logger.do_log(f"[SENT] ⚠ No data found in {consolidated_json}", MessageType.WARNING,job_id)
             return
 
         rows = []
@@ -143,7 +143,7 @@ class SentimentSummaryReport:
 
         df = pd.DataFrame(rows)
         if df.empty:
-            logger.do_log(f"[SENT] ⚠ No valid records to rank in {consolidated_json}", MessageType.WARNING)
+            logger.do_log(f"[SENT] ⚠ No valid records to rank in {consolidated_json}", MessageType.WARNING,job_id)
             return
 
         df = df.sort_values(
@@ -153,7 +153,7 @@ class SentimentSummaryReport:
         os.makedirs(os.path.dirname(out_csv), exist_ok=True)
         df.to_csv(out_csv, index=False)
 
-        logger.do_log(f"[SENT] ✅ Ranking -> {out_csv} ({len(df)} filers)", MessageType.INFO)
+        logger.do_log(f"[SENT] ✅ Ranking -> {out_csv} ({len(df)} filers)", MessageType.INFO,job_id)
 
     # -------- Public API --------
     def run(self) -> None:

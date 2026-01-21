@@ -9,6 +9,9 @@ from bs4 import BeautifulSoup
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 from nltk.tokenize import sent_tokenize
+
+from common.util.std_in_out.root_locator import RootLocator
+
 nltk.download('punkt', quiet=True)
 
 from common.enums.folders import Folders
@@ -70,7 +73,7 @@ class SentimentSummaryReportV2:
         self.whitelist = set(t.upper() for t in filers_whitelist) if filers_whitelist else None
 
         # Cross-platform project root detection
-        self.root_dir = Path(__file__).resolve().parent.parent.parent.parent
+        self.root_dir = RootLocator.get_root()
 
         # Input / output directories
         self.input_dir = (
@@ -375,17 +378,18 @@ class SentimentSummaryReportV2:
     def consolidate_year(self,
             year: int,
             report_type:str,
-            quarter: int=None
+            quarter: int=None,
+            job_id=None
 
     ) -> str:
         """
         Merge all *_sentiment.json files for a given year and report type (K10 or Q10)
         into a single consolidated JSON file, saving it under the rank_folder.
         """
-        self.logger.do_log(f"[SENT] 🧭 Reading from base_dir={self.output_dir}", MessageType.INFO)
+        self.logger.do_log(f"[SENT] 🧭 Reading from base_dir={self.output_dir}", MessageType.INFO,job_id)
 
         if not os.path.isdir(self.output_dir):
-            self.logger.do_log(f"[SENT] ⚠ Year folder not found: {self.output_dir}", MessageType.WARNING)
+            self.logger.do_log(f"[SENT] ⚠ Year folder not found: {self.output_dir}", MessageType.WARNING,job_id)
             return ""
 
         data = []
@@ -419,20 +423,20 @@ class SentimentSummaryReportV2:
                     if j.get("year") == year:
                         data.append(j)
                 except Exception as e:
-                    self.logger.do_log(f"[SENT] ❌ Failed to read {fn} - {e}", MessageType.ERROR)
+                    self.logger.do_log(f"[SENT] ❌ Failed to read {fn} - {e}", MessageType.ERROR,job_id)
 
         # --- Output folder (ranked consolidated JSON) ---
 
 
         os.makedirs(rank_dir, exist_ok=True)
-        self.logger.do_log(f"[SENT] 🧭 Writing to rank_dir={rank_dir}", MessageType.INFO)
+        self.logger.do_log(f"[SENT] 🧭 Writing to rank_dir={rank_dir}", MessageType.INFO,job_id)
 
         out_path = os.path.join(rank_dir, f"sentiment_summary_all_{year}.json")
 
         with open(out_path, "w", encoding="utf-8") as out:
             json.dump(data, out, indent=2)
 
-        self.logger.do_log(f"[SENT] ✅ Consolidated -> {out_path} ({len(data)} filers)", MessageType.INFO)
+        self.logger.do_log(f"[SENT] ✅ Consolidated -> {out_path} ({len(data)} filers)", MessageType.INFO,job_id)
         return out_path
 
 

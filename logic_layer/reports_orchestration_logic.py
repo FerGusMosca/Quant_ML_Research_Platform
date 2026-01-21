@@ -389,73 +389,139 @@ class ReportsOrchestationLogic:
 
         return all_matches
 
-    def _run_sentiment_summary_report(self, year, report_type=ReportFolder.K10.value,
-                                      portfolio=None, universe=None, dest_folder=None,
-                                      rank_folder=None):
+    def _run_sentiment_summary_report(
+            self,
+            year,
+            report_type=ReportFolder.K10.value,
+            portfolio=None,
+            universe=None,
+            dest_folder=None,
+            rank_folder=None,
+            job_id=None,
+    ):
         """
         Build sentiment summaries focused on management guidance/opinion.
-        Extract MD&A / Outlook-like text, score sentiment, and consolidate.
-        Supports both single year (e.g. 2024) and range (e.g. 2022-2025).
+        Emits a FINAL structured completion event for MCP clients.
         """
-        # Parse year or range
-        years=DateRangeHandler.handle_date_range(year,self.logger)
 
+        # ---------------------------------------------------------
+        # 🧠 Resolve year range
+        # ---------------------------------------------------------
+        years = DateRangeHandler.handle_date_range(year, self.logger)
+
+        # ---------------------------------------------------------
+        # 📊 Global summary
+        # ---------------------------------------------------------
+        summary = {
+            "report": "sentiment_summary",
+            "report_type": report_type,
+            "portfolio": portfolio,
+            "universe": universe,
+            "years": {},
+            "processed_years": 0,
+            "successful_years": 0,
+            "failed_years": 0,
+        }
+
+        self.logger.do_log(
+            f"[SENT] 🚀 Starting sentiment summary report years={years}, type={report_type}",
+            MessageType.INFO,
+            job_id
+        )
+
+        whitelist = self._get_universe_filers(universe) if universe else None
+
+        # ---------------------------------------------------------
+        # 🚀 Process each year
+        # ---------------------------------------------------------
         for y in years:
             start_time = datetime.now()
-            self.logger.do_log(f"[SENT] 🚀 Starting sentiment summary ({report_type}, year={y})", MessageType.INFO)
+            summary["processed_years"] += 1
 
-            whitelist = self._get_universe_filers(universe) if universe else None
-            gen=SentimentSummaryReportV2(
-            #gen = SentimentSummaryReport(
-                year=y,
-                report_type=report_type,
-                logger=self.logger,
-                portfolio=portfolio,
-                filers_whitelist=whitelist,
-                universe_key=universe,
-                dest_folder=dest_folder,
-                rank_folder=rank_folder
+            summary["years"][y] = {
+                "status": "started",
+                "consolidated": False,
+                "ranking": False,
+                "error": None,
+                "elapsed_sec": None,
+            }
+
+            self.logger.do_log(
+                f"[SENT] ▶️ Processing year {y}",
+                MessageType.INFO,
+                job_id
             )
 
             try:
-                gen.run()
-            except Exception as e:
-                self.logger.do_log(f"[SENT] ❌ Error during run() for year {y}: {e}", MessageType.ERROR)
-                continue
+                gen = SentimentSummaryReportV2(
+                    year=y,
+                    report_type=report_type,
+                    logger=self.logger,
+                    portfolio=portfolio,
+                    filers_whitelist=whitelist,
+                    universe_key=universe,
+                    dest_folder=dest_folder,
+                    rank_folder=rank_folder,
+                )
 
-            try:
-                if report_type==ReportFolder.K10.value:
-                    consolidated = gen.consolidate_year(y, report_type)
-                    ranking_csv = os.path.join(os.path.dirname(consolidated), f"sentiment_summary_ranking_{y}.csv")
+                gen.run()
+
+                # -------------------------------------------------
+                # Consolidation + ranking
+                # -------------------------------------------------
+                if report_type == ReportFolder.K10.value:
+                    consolidated = gen.consolidate_year(y, report_type, job_id)
+                    ranking_csv = os.path.join(
+                        os.path.dirname(consolidated),
+                        f"sentiment_summary_ranking_{y}.csv"
+                    )
                     SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
-                    pass
                 else:
-                    for quarter in [1,2,3]:
-                        consolidated=gen.consolidate_year(y,report_type,quarter)
-                        '''
-                        consolidated = SentimentSummaryReport.consolidate_year(
-                                        y,
-                                        report_type,
-                                        portfolio,
-                                        self.logger,
-                                        dest_folder=dest_folder,
-                                        rank_folder=rank_folder
-                                    )
-                        
-                        '''
-                        ranking_csv = os.path.join(os.path.dirname(consolidated),f"sentiment_summary_ranking_{y}.csv")
+                    for quarter in [1, 2, 3]:
+                        consolidated = gen.consolidate_year(y, report_type, quarter)
+                        ranking_csv = os.path.join(
+                            os.path.dirname(consolidated),
+                            f"sentiment_summary_ranking_{y}.csv"
+                        )
                         SentimentSummaryReport.rank(consolidated, ranking_csv, self.logger)
 
-            except Exception as e:
-                self.logger.do_log(f"[SENT] ⚠️ Consolidation/Ranking failed for {y}: {e}",
-                                   MessageType.WARNING)
-                continue
+                summary["years"][y]["status"] = "completed"
+                summary["years"][y]["consolidated"] = True
+                summary["years"][y]["ranking"] = True
+                summary["successful_years"] += 1
 
-            elapsed = (datetime.now() - start_time).total_seconds()
-            self.logger.do_log(
-                f"[SENT] ✅ Sentiment summary completed ({report_type}, year={y}) in {elapsed:.1f}s",
-                MessageType.INFO
-            )
+                elapsed = (datetime.now() - start_time).total_seconds()
+                summary["years"][y]["elapsed_sec"] = round(elapsed, 2)
+
+                self.logger.do_log(
+                    f"[SENT] ✅ Year {y} completed in {elapsed:.1f}s",
+                    MessageType.INFO,
+                    job_id
+                )
+
+            except Exception as e:
+                summary["years"][y]["status"] = "failed"
+                summary["years"][y]["error"] = str(e)
+                summary["failed_years"] += 1
+
+                self.logger.do_log(
+                    f"[SENT] ❌ Year {y} failed: {e}",
+                    MessageType.ERROR,
+                    job_id
+                )
+
+        # ---------------------------------------------------------
+        # 🧾 FINAL COMPLETION EVENT (CRITICAL)
+        # ---------------------------------------------------------
+        self.logger.do_log(
+            json.dumps({
+                "event": "completed",
+                "report": "sentiment_summary",
+                "summary": summary,
+            }),
+            MessageType.INFO,
+            job_id
+        )
 
     def _run_competition_summary_report(self, year, report_type=ReportFolder.K10.value,
                                         portfolio=None, universe=None,
@@ -1093,9 +1159,9 @@ class ReportsOrchestationLogic:
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
             self._run_download_q10(year,portfolio,job_id)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_K10.value:
-            self._run_sentiment_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
+            self._run_sentiment_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder,job_id=job_id)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_Q10.value:
-            self._run_sentiment_summary_report(year, SECReports.Q10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
+            self._run_sentiment_summary_report(year, SECReports.Q10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder,job_id=job_id)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_Q10.value:
             self._run_competition_summary_report(year, SECReports.Q10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_K10.value:
