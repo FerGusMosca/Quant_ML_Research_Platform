@@ -29,6 +29,7 @@ COPY ./commands /app/commands
 COPY ./common /app/common
 COPY ./service_layer /app/service_layer
 COPY ./configs /app/configs
+RUN touch /app/.project_root
 
 # ---------------------------------------------------
 # 4) Default entrypoint (neutro)

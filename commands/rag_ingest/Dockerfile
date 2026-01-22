@@ -51,6 +51,7 @@ COPY ./data_access_layer /app/data_access_layer
 COPY service_layer /app/service_layer
 COPY ./framework /app/framework
 COPY ./configs /app/configs
+RUN touch /app/.project_root
 
 # ---------------------------------------------------
 # 5) Default CMD

@@ -22,6 +22,8 @@ class FinVizFullNewsDownloader:
     @staticmethod
     def download(symbol, portfolio, pause=1.0,logger=None,job_id=None):
 
+
+
         today = datetime.today().strftime("%Y-%m-%d")
         year = datetime.today().year
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")

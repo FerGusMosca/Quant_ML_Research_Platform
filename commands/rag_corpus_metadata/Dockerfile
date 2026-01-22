@@ -37,6 +37,7 @@ COPY ./logic_layer /app/logic_layer
 COPY ./data_access_layer /app/data_access_layer
 COPY ./framework /app/framework
 COPY ./configs /app/configs
+RUN touch /app/.project_root
 
 # 5) CMD
 CMD ["python","-u","-m","commands.rag_corpus_metadata.run_corpus_metadata_cmd"]

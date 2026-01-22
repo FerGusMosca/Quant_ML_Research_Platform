@@ -20,8 +20,9 @@ from common.util.date_mgmt.date_range_handler import DateRangeHandler
 from common.util.downloaders.finviz_full_news_downloader import FinVizFullNewsDownloader
 from common.util.downloaders.finviz_offline_sentiment_analyzer import FinvizOfflineSentimentAnalyzer
 from common.util.downloaders.ib_income_statement import IBIncomeStatement
-from common.util.downloaders.k10_downloader import K10Downloader
-from common.util.downloaders.q10_downloader import Q10Downloader
+from common.util.downloaders.K_Q_10.k10_downloader import K10Downloader
+from common.util.downloaders.K_Q_10.q10_downloader import Q10Downloader
+from common.util.downloaders.thirteen_F.thirteen_F_graph_downloader import ThirteenFGraphDownloader
 from common.util.downloaders.yahoo_income_statement import YahooIncomeStatement
 from common.util.scrappers.securities_calendar_extractor import SecuritiesCalendarExtractor
 from common.util.std_in_out.K_Q_10_file_locator import KQ10FileLocator
@@ -38,6 +39,7 @@ from logic_layer.report_generators.K_Q_10s.competition_summary_report import Com
 from logic_layer.report_generators.query_match_report import QueryMatchReportK10Q10
 from logic_layer.report_generators.K_Q_10s.sentiment.sentence_sentiment_summary_report import SentimentSummaryReport
 from logic_layer.report_generators.K_Q_10s.sentiment.sentence_sentiment_summary_report_v2 import SentimentSummaryReportV2
+from logic_layer.report_generators.thirtieen_F.thirteen_f_graph_processor import ThirteenFGraphProcessor
 from service_layer.server.mcp_server import MCPServer
 
 
@@ -1105,6 +1107,50 @@ class ReportsOrchestationLogic:
                     MessageType.ERROR
                 )
 
+    def _download_13f_graph(self, year, quarter, rank_folder, job_id):
+        """
+        Download, process and persist 13F filings as a graph (JSONL).
+        """
+        try:
+            self.logger.do_log(
+                f"[13F] ▶ Starting 13F graph download | year={year} q={quarter}",
+                MessageType.INFO,
+                job_id
+            )
+
+
+            downloader = ThirteenFGraphDownloader(
+                logger=self.logger,
+                out_folder=rank_folder,
+                job_id=job_id
+            )
+
+            processor = ThirteenFGraphProcessor(
+                logger=self.logger,
+                job_id=job_id
+            )
+
+            raw_dir = downloader.download(year, quarter)
+            edges = processor.process(raw_dir, year, quarter)
+
+            graph_dir = os.path.join(
+                rank_folder,
+                "13f",
+                f"{year}_Q{quarter}"
+            )
+            output_file = os.path.join(graph_dir, "13f_graph.jsonl")
+
+            self._persist_graph(graph_dir, output_file, edges)
+
+            self.logger.do_log(
+                f"[13F] ✔ Graph persisted | edges={len(edges)} | file={output_file}",
+                MessageType.INFO,
+                job_id
+            )
+
+        except Exception as e:
+            self._log_exc("[13F] ❌ Failed to build 13F graph", e, job_id)
+
     def _run_start_mcp(self):
         """
         Starts the MCP WebSocket server.
@@ -1185,6 +1231,8 @@ class ReportsOrchestationLogic:
             self._run_document_tagging(portfolio, year,quarter, source, rank_folder, tag_cfg,job_id)
         elif report_key.lower() == ReportType.COMPETITION_GRAPH.value:
             self._run_competition_graph(portfolio, year,quarter, source, rank_folder,job_id)
+        elif report_key.lower() == ReportType.DOWNLOAD_13F_GRAPH.value:
+            self._download_13f_graph( year,quarter, rank_folder,job_id)
         #
         elif report_key.lower() == ReportType.START_MCP.value:
             self._run_start_mcp()

@@ -19,5 +19,6 @@ class ReportType(Enum):
 
     DOCUMENT_TAGGING_RANKING="document_tagging_ranking"
     COMPETITION_GRAPH = "competition_graph"
+    DOWNLOAD_13F_GRAPH = "download_13f_graph"
 
     START_MCP = "start_mcp"
