@@ -69,22 +69,59 @@ class ThirteenFGraphDownloader:
     # STEP 2 — Download primary XML (information table)
     # ------------------------------------------------------------------
     def _download_filing(self, filing, out_dir):
-        filing_base = filing["path"].replace(".txt", "")
+        """
+        Download primary 13F information table (XML) from SEC EDGAR.
+        Expects filing["path"] coming from form.idx line:
+        'YYYY-MM-DD  edgar/data/CIK/ACCESSION.txt'
+        """
+
+        # --------------------------------------------------
+        # Normalize path (strip date + spaces)
+        # --------------------------------------------------
+        raw_path = filing["path"].strip()
+        raw_path = raw_path.split("  ", 1)[-1]  # remove date column
+
+        assert raw_path.startswith("edgar/data/"), raw_path
+
+        dir_path = os.path.dirname(raw_path)
+        acc = os.path.basename(raw_path).replace(".txt", "").replace("-", "")
+
+        filing_base = f"{dir_path}/{acc}"
         filing_dir_url = f"{self.SEC_ARCHIVES}/{filing_base}/"
 
+        assert " " not in filing_dir_url, filing_dir_url
+
+        print(
+            f"[13F] ▶ Processing | CIK={filing.get('cik')} | {filing_base}",
+            flush=True
+        )
+
+        # --------------------------------------------------
+        # Load index.json
+        # --------------------------------------------------
         index_url = filing_dir_url + "index.json"
+        print(f"[13F]   ↳ index.json | {index_url}", flush=True)
+
         r = requests.get(index_url, headers=self.headers, timeout=30)
         r.raise_for_status()
 
-        files = r.json()["directory"]["item"]
+        items = r.json()["directory"]["item"]
+        print(f"[13F]   ↳ files={len(items)}", flush=True)
 
+        # --------------------------------------------------
+        # Locate information table XML
+        # --------------------------------------------------
         xml_files = [
-            f["name"] for f in files
-            if f["name"].endswith(".xml")
-            and ("information" in f["name"].lower() or "infotable" in f["name"].lower())
+            f["name"] for f in items
+            if f["name"].lower().endswith(".xml")
+               and ("information" in f["name"].lower() or "infotable" in f["name"].lower())
         ]
 
         if not xml_files:
+            print(
+                f"[13F]   ⚠️ no infotable xml | files={[f['name'] for f in items]}",
+                flush=True
+            )
             return
 
         xml_name = xml_files[0]
@@ -92,17 +129,25 @@ class ThirteenFGraphDownloader:
 
         out_file = os.path.join(
             out_dir,
-            f"{filing['cik']}_{os.path.basename(filing_base)}.xml"
+            f"{filing.get('cik')}_{acc}.xml"
         )
 
         if os.path.exists(out_file):
+            print(f"[13F]   ⏭️ exists | {out_file}", flush=True)
             return
+
+        # --------------------------------------------------
+        # Download XML
+        # --------------------------------------------------
+        print(f"[13F]   ⬇️ downloading | {xml_url}", flush=True)
 
         xml_resp = requests.get(xml_url, headers=self.headers, timeout=30)
         xml_resp.raise_for_status()
 
         with open(out_file, "wb") as f:
             f.write(xml_resp.content)
+
+        print(f"[13F]   ✅ saved | {out_file}", flush=True)
 
         time.sleep(0.12)  # SEC rate limit
 
