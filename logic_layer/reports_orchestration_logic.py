@@ -1107,17 +1107,150 @@ class ReportsOrchestationLogic:
                     MessageType.ERROR
                 )
 
-    def _download_13f_graph(self, year, quarter, rank_folder, job_id):
+    def _download_13f_reports(self, year, quarter, rank_folder, job_id):
         """
-        Download, process and persist 13F filings as a graph (JSONL).
+        Download, process and persist 13F filings as a graph.
+        Emits a FINAL structured completion event for MCP clients.
         """
+
+        from datetime import datetime
+        import json
+
+        # ---------------------------------------------------------
+        # 📊 Global summary
+        # ---------------------------------------------------------
+        summary = {
+            "report": "13f_graph",
+            "year": year,
+            "quarter": quarter,
+            "status": "started",
+            "downloaded": False,
+            "processed": False,
+            "error": None,
+            "elapsed_sec": None,
+            "filings": {
+                "count": 0
+            }
+        }
+
+        start_time = datetime.now()
+
+        self.logger.do_log(
+            f"[13F] 🚀 Starting 13F graph download | year={year} q={quarter}",
+            MessageType.INFO,
+            job_id
+        )
+
         try:
+            # -----------------------------------------------------
+            # ⬇️ Download filings
+            # -----------------------------------------------------
+            downloader = ThirteenFGraphDownloader(
+                logger=self.logger,
+                out_folder=rank_folder,
+                job_id=job_id
+            )
+
+            raw_dir, filings = downloader.download(year, quarter)
+
+            summary["downloaded"] = True
+            summary["filings"]["count"] = len(filings)
+
             self.logger.do_log(
-                f"[13F] ▶ Starting 13F graph download | year={year} q={quarter}",
+                f"[13F] ✔ Reports successfully downloaded | filings={len(filings)}",
                 MessageType.INFO,
                 job_id
             )
 
+            # -----------------------------------------------------
+            # 🧠 Process filings into graph
+            # -----------------------------------------------------
+            processor = ThirteenFGraphProcessor(
+                logger=self.logger,
+                job_id=job_id
+            )
+
+            edges = processor.process(raw_dir, year, quarter)
+
+            summary["processed"] = True
+            summary["edges"] = len(edges)
+            summary["status"] = "completed"
+
+            elapsed = (datetime.now() - start_time).total_seconds()
+            summary["elapsed_sec"] = round(elapsed, 2)
+
+            self.logger.do_log(
+                f"[13F] ✅ Graph generation completed | edges={len(edges)} | {elapsed:.1f}s",
+                MessageType.INFO,
+                job_id
+            )
+
+        except Exception as e:
+            summary["status"] = "failed"
+            summary["error"] = str(e)
+
+            self.logger.do_log(
+                f"[13F] ❌ 13F graph generation failed | {e}",
+                MessageType.ERROR,
+                job_id
+            )
+
+        # ---------------------------------------------------------
+        # 🧾 FINAL COMPLETION EVENT (CRITICAL)
+        # ---------------------------------------------------------
+        self.logger.do_log(
+            json.dumps({
+                "event": "completed",
+                "report": "13f_graph",
+                "summary": summary
+            }),
+            MessageType.INFO,
+            job_id
+        )
+
+    def _create_13f_graph(self, year, quarter, source, rank_folder, job_id):
+        """
+        Build and persist 13F graph from previously downloaded reports.
+        Emits a FINAL structured completion event for MCP clients.
+        """
+
+        from datetime import datetime
+        import json
+
+        # ---------------------------------------------------------
+        # 📊 Global summary
+        # ---------------------------------------------------------
+        summary = {
+            "report": "13f_graph_creation",
+            "source": source,
+            "year": year,
+            "quarter": quarter,
+            "status": "started",
+            "processed": False,
+            "persisted": False,
+            "error": None,
+            "elapsed_sec": None,
+            "edges": 0,
+            "input_dir": None,
+            "output_file": None,
+        }
+
+        start_time = datetime.now()
+
+        self.logger.do_log(
+            f"[13F] 🚀 Starting 13F graph creation | source={source} year={year} q={quarter}",
+            MessageType.INFO,
+            job_id
+        )
+
+        try:
+            # -----------------------------------------------------
+            # 🧠 Process XML filings into edges
+            # -----------------------------------------------------
+            processor = ThirteenFGraphProcessor(
+                logger=self.logger,
+                job_id=job_id
+            )
 
             downloader = ThirteenFGraphDownloader(
                 logger=self.logger,
@@ -1125,31 +1258,62 @@ class ReportsOrchestationLogic:
                 job_id=job_id
             )
 
-            processor = ThirteenFGraphProcessor(
-                logger=self.logger,
-                job_id=job_id
+            input_dir = downloader.get_reports_dir(year, quarter, source)
+            summary["input_dir"] = input_dir
+
+            edges = processor.process(input_dir, year, quarter)
+
+            summary["processed"] = True
+            summary["edges"] = len(edges)
+
+            self.logger.do_log(
+                f"[13F] ▶ Graph processed | edges={len(edges)}",
+                MessageType.INFO,
+                job_id
             )
 
-            raw_dir = downloader.download(year, quarter)
-            edges = processor.process(raw_dir, year, quarter)
-
-            graph_dir = os.path.join(
-                rank_folder,
-                "13f",
-                f"{year}_Q{quarter}"
-            )
-            output_file = os.path.join(graph_dir, "13f_graph.jsonl")
+            # -----------------------------------------------------
+            # 💾 Persist graph
+            # -----------------------------------------------------
+            graph_dir, output_file = downloader.get_graph_file(rank_folder, year, quarter)
+            summary["output_file"] = output_file
 
             self._persist_graph(graph_dir, output_file, edges)
 
+            summary["persisted"] = True
+            summary["status"] = "completed"
+
+            elapsed = (datetime.now() - start_time).total_seconds()
+            summary["elapsed_sec"] = round(elapsed, 2)
+
             self.logger.do_log(
-                f"[13F] ✔ Graph persisted | edges={len(edges)} | file={output_file}",
+                f"[13F] ✅ Graph persisted | edges={len(edges)} | file={output_file} | {elapsed:.1f}s",
                 MessageType.INFO,
                 job_id
             )
 
         except Exception as e:
-            self._log_exc("[13F] ❌ Failed to build 13F graph", e, job_id)
+            summary["status"] = "failed"
+            summary["error"] = str(e)
+
+            self.logger.do_log(
+                f"[13F] ❌ Failed to build 13F graph | {e}",
+                MessageType.ERROR,
+                job_id
+            )
+
+        # ---------------------------------------------------------
+        # 🧾 FINAL COMPLETION EVENT (CRITICAL)
+        # ---------------------------------------------------------
+        self.logger.do_log(
+            json.dumps({
+                "event": "completed",
+                "report": "13f_graph_creation",
+                "summary": summary
+            }),
+            MessageType.INFO,
+            job_id
+        )
 
     def _run_start_mcp(self):
         """
@@ -1231,8 +1395,10 @@ class ReportsOrchestationLogic:
             self._run_document_tagging(portfolio, year,quarter, source, rank_folder, tag_cfg,job_id)
         elif report_key.lower() == ReportType.COMPETITION_GRAPH.value:
             self._run_competition_graph(portfolio, year,quarter, source, rank_folder,job_id)
-        elif report_key.lower() == ReportType.DOWNLOAD_13F_GRAPH.value:
-            self._download_13f_graph( year,quarter, rank_folder,job_id)
+        elif report_key.lower() == ReportType.DOWNLOAD_13F_REPORTS.value:
+            self._download_13f_reports(year, quarter, rank_folder, job_id)
+        elif report_key.lower() == ReportType.CREATE_13F_GRAPH.value:
+            self._create_13f_graph(year, quarter,source, rank_folder, job_id)
         #
         elif report_key.lower() == ReportType.START_MCP.value:
             self._run_start_mcp()

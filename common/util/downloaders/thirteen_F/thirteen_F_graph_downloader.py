@@ -151,18 +151,36 @@ class ThirteenFGraphDownloader:
 
         time.sleep(0.12)  # SEC rate limit
 
-    # ------------------------------------------------------------------
-    # PUBLIC API
-    # ------------------------------------------------------------------
-    def download(self, year, quarter):
+
+    def get_reports_dir(self,year,quarter,report_folder):
         out_dir = os.path.join(
             RootLocator.get_root(),
             Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
-            self.out_folder,
+            report_folder,
             "13f",
             f"{year}_Q{quarter}"
         )
         os.makedirs(out_dir, exist_ok=True)
+
+        return out_dir
+
+    def get_graph_file(self,rank_folder,year,quarter):
+        graph_dir = os.path.join(
+            RootLocator.get_root(),
+            Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+            rank_folder,
+            "13f",
+            f"{year}_Q{quarter}"
+        )
+        output_file = os.path.join(graph_dir, "13f_graph.jsonl")
+
+        return graph_dir, output_file
+
+    # ------------------------------------------------------------------
+    # PUBLIC API
+    # ------------------------------------------------------------------
+    def download(self, year, quarter):
+        out_dir = self.get_reports_dir(year,quarter,self.out_folder)
 
         filings = self._load_all_13f_filings(year, quarter)
 
@@ -182,4 +200,4 @@ class ThirteenFGraphDownloader:
             self.job_id
         )
 
-        return out_dir
+        return out_dir, filings

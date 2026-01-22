@@ -6,23 +6,22 @@ from langgraph.graph import StateGraph, END
 
 from common.util.std_in_out.mcp_settings_loader import MCPSettingsLoader
 from common.util.std_in_out.root_locator import RootLocator
-from service_layer.client.mcp.mcp_report_client import ReportMCPClient
-
+from service_layer.client.mcp.mcp_ingest_client import RAGIngestMCPClient
 
 # ---------- NODE ----------
 
 def run_rag_ingest(state: dict) -> dict:
     print("[FLOW] run_rag_ingest START", flush=True)
 
-    client = ReportMCPClient(
+    client = RAGIngestMCPClient(
+        mode=state["mode"],
+        source=state["source"],
+        dest_root=state["dest_root"],
+        chunk_name=state["chunk_name"],
+        embedding_model=None,
+        clustering_model=None,
+        log_posfix=None,
         uri=state["MCP_INGEST_URI"],
-        report="run_rag_ingest",
-        arguments={
-            "mode": state["mode"],
-            "source": state["source"],
-            "dest_root": state["dest_root"],
-            "chunk_name": state["chunk_name"],
-        },
     )
 
     async def run():
@@ -30,15 +29,22 @@ def run_rag_ingest(state: dict) -> dict:
             print(msg, end="", flush=True)
 
     try:
-        asyncio.run(run())
+        try:
+            loop = asyncio.get_running_loop()
+            loop.run_until_complete(run())
+        except RuntimeError:
+            asyncio.run(run())
     except Exception as e:
         return {**state, "status": "fail", "error": str(e)}
 
     if not client.success:
         return {**state, "status": "fail", "error": client.last_error}
 
-    return {**state, "status": "ok"}
-
+    return {
+        **state,
+        "status": "ok",
+        "out_folder": client.last_output_folder,
+    }
 
 # ---------- MAIN ----------
 
@@ -75,7 +81,6 @@ def main():
 
     print("\n[FLOW] FINAL STATE")
     print(final_state)
-
 
 if __name__ == "__main__":
     main()
