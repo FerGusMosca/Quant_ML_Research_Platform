@@ -51,7 +51,7 @@ class ZHNextFolderGenerator:
         except Exception:
             return None
 
-    def _parse_date_from_path(self, folder_path: str) -> Optional[datetime]:
+    def _parse_date_from_path(self, folder_path: str,dest_root:str) -> Optional[datetime]:
         """
         Parses year, month, and day from the full folder path.
         Returns datetime object or None if parsing fails.
@@ -59,9 +59,9 @@ class ZHNextFolderGenerator:
         try:
             normalized = folder_path.replace("\\", "/")
             parts = normalized.split("/")
-            if "Archives" not in parts:
+            if dest_root not in parts:
                 return None
-            archives_idx = parts.index("Archives")
+            archives_idx = parts.index(dest_root)
 
             # Year is right after Archives
             year_str = parts[archives_idx + 1]
@@ -109,9 +109,9 @@ class ZHNextFolderGenerator:
         """
         base_path = self._extract_base_path(current_folder,dest_root)
         if base_path is None:
-            raise ValueError(f"Cannot extract base path (missing 'Archives') from: {current_folder}")
+            raise ValueError(f"Cannot extract base path (missing '{dest_root}') from: {current_folder}")
 
-        base_date = self._parse_date_from_path(current_folder)
+        base_date = self._parse_date_from_path(current_folder,dest_root)
         if base_date is None:
             raise ValueError(f"Cannot parse date from folder path: {current_folder}")
 

@@ -156,7 +156,7 @@ if __name__ == "__main__":
     # Example: python run_rag_ingest_cmd.py RunRAGIngest mode=incremental source=ZEROHEDGE
     if len(sys.argv) > 1:
         cmd = " ".join(sys.argv[1:])
-        if cmd.startswith("StartMCP"):
+        if cmd.startswith("start_mcp"):
             process_start_mcp(cmd)
         else:
             process_rag_ingest(cmd)

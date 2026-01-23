@@ -242,7 +242,7 @@ if __name__ == "__main__":
         print(f">>> cmd BUILT = '{cmd}'", flush=True)
 
         print(">>> CHECK: cmd.startswith('start_mcp') ?", flush=True)
-        print(f">>> RESULT = {cmd.startswith('StartMCP')}", flush=True)
+        print(f">>> RESULT = {cmd.startswith('start_mcp')}", flush=True)
 
         if cmd.startswith("start_mcp"):
             print(">>> ENTERED start_mcp BRANCH", flush=True)
