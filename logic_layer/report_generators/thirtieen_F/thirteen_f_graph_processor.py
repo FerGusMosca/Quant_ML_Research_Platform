@@ -19,9 +19,42 @@ class ThirteenFGraphProcessor:
     # Metadata extractors
     # --------------------------------------------------
     def _extract_manager(self, xml_file):
-        fname = os.path.basename(xml_file)
-        cik = fname.split("_")[1][:10]
-        return f"CIK_{cik}"
+        """
+        Try to extract manager from sidecar .meta JSON first.
+        Fallback to XML <filingManager>. If both fail, return UNKNOWN_MANAGER.
+        """
+        meta_file = xml_file.replace(".xml", ".meta.json")
+
+        # 1) Try sidecar metadata (preferred)
+        if os.path.exists(meta_file):
+            try:
+                import json
+                with open(meta_file, "r", encoding="utf-8") as f:
+                    meta = json.load(f)
+                name = meta.get("company")
+                cik = meta.get("cik")
+                if name and cik:
+                    return f"{name.strip()}|CIK_{cik.strip()}"
+                elif name:
+                    return f"{name.strip()}"
+                else:
+                    raise  Exception("Missing Name | CIK")
+            except Exception:
+                pass  # Ignore and fallback to XML
+
+        # 2) Fallback to XML filingManager
+        try:
+            tree = ET.parse(xml_file)
+            root = tree.getroot()
+            name = root.findtext(".//{*}filingManager/{*}name")
+            cik = root.findtext(".//{*}filingManager/{*}cik")
+            if name and cik:
+                return f"{name.strip()}|CIK_{cik.strip()}"
+        except Exception:
+            pass
+
+        # 3) Final fallback
+        return "UNKNOWN_MANAGER"
 
     def _extract_positions(self, xml_file):
         positions = []
@@ -80,7 +113,7 @@ class ThirteenFGraphProcessor:
         for pos in positions:
             edges.append({
                 "src": f"manager::{manager_id}",
-                "dst": f"asset::{pos['ticker']}",
+                "dst": f"asset::{pos['security_name']}",
                 "relation": "HOLDS",
                 "score": pos["weight"],
                 "file": os.path.basename(xml_file),

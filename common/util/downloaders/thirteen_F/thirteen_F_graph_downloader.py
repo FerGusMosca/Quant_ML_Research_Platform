@@ -1,3 +1,4 @@
+import json
 import os
 import time
 import requests
@@ -22,6 +23,12 @@ class ThirteenFGraphDownloader:
         self.headers = {
             "User-Agent": "zzLotteryTicket research contact@yourmail.com"
         }
+
+    def fetch_fund_metadata(self, cik):
+        url = f"https://data.sec.gov/submissions/CIK{cik.zfill(10)}.json"
+        r = requests.get(url, headers=self.headers, timeout=30);
+        r.raise_for_status()
+        return r.json()
 
     # ------------------------------------------------------------------
     # STEP 1 — Load ALL 13F filings from form.idx (no CIK guessing)
@@ -148,6 +155,14 @@ class ThirteenFGraphDownloader:
             f.write(xml_resp.content)
 
         print(f"[13F]   ✅ saved | {out_file}", flush=True)
+
+
+        # --------------------------------------------------
+        # Persist Metadata
+        # --------------------------------------------------
+        meta = {"company": filing["company"], "cik": filing["cik"]}
+        with open(out_file.replace(".xml", ".meta.json"), "w") as m:
+            json.dump(meta, m)
 
         time.sleep(0.12)  # SEC rate limit
 
