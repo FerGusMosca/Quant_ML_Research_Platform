@@ -28,6 +28,7 @@ from common.util.scrappers.securities_calendar_extractor import SecuritiesCalend
 from common.util.std_in_out.K_Q_10_file_locator import KQ10FileLocator
 from common.util.std_in_out.file_locators import FileLocators
 from common.util.std_in_out.root_locator import RootLocator
+from data_access_layer.neo4j.graph_holding_mgr import HoldingsGraphManager
 from data_access_layer.portfolio_securities_manager import PortfolioSecuritiesManager
 from data_access_layer.report_securities_manager import ReportSecuritiesManager
 from data_access_layer.securities_calendar_manager import SecuritiesCalendarManager
@@ -45,7 +46,7 @@ from service_layer.server.mcp_server import MCPServer
 
 class ReportsOrchestationLogic:
     def __init__(self,hist_data_conn_str,ml_reports_conn_str,mcp_server=None,mcp_port=None,p_classification_map_key=None,
-                 logger=None):
+                 logger=None,neo4j_config=None):
 
         self.logger=logger
 
@@ -59,6 +60,9 @@ class ReportsOrchestationLogic:
 
         self.mcp_server=mcp_server
         self.mcp_port=mcp_port
+
+        if neo4j_config is not None:
+            self.neo_holding_graph_mgr=HoldingsGraphManager(neo4j_config.uri, neo4j_config.user, neo4j_config.pwd)
 
     '''
     def _run_financial_ratios_report(self, year, report_type="K10", universe=None):
@@ -766,7 +770,7 @@ class ReportsOrchestationLogic:
             #tag_run.set_error(str(e))
             #self.tag_runs_mgr.persist_tag_run(tag_run)
 
-    def _persist_graph(self, graph_dir, output_file, edges):
+    def _persist_file_graph(self, graph_dir, output_file, edges):
         os.makedirs(graph_dir, exist_ok=True)
 
         with open(output_file, "w", encoding="utf-8") as f:
@@ -782,6 +786,41 @@ class ReportsOrchestationLogic:
                     }
                 }
                 f.write(json.dumps(line, ensure_ascii=False) + "\n")
+
+    def _persist_store_graph(self, output_file: str,job_id:str):
+        batch = []
+        total = 0
+
+        with open(output_file, "r", encoding="utf-8") as f:
+            for line in f:
+                obj = json.loads(line)
+
+                batch.append({
+                    "manager": obj["src"].replace("manager::", ""),
+                    "cusip": obj["dst"].replace("asset::", ""),
+                    "asset_name": obj["dst"].replace("asset::", ""),
+                    "weight": obj.get("weight", 0),
+                    "file": obj.get("metadata", {}).get("file"),
+                })
+
+                if len(batch) >= self.neo_holding_graph_mgr.batch_size:
+                    self.neo_holding_graph_mgr.persist(batch)
+                    total += len(batch)
+                    self.logger.do_log(
+                        f"[COMP_GRAPH] Inserted {total} rows",
+                        MessageType.INFO,
+                        job_id)
+                    batch.clear()
+
+            if batch:
+                self.neo_holding_graph_mgr.persist(batch)
+                total += len(batch)
+
+        self.logger.do_log(
+            f"[COMP_GRAPH] Done. Total rows: {total}",
+            MessageType.INFO,
+            job_id
+        )
 
     def _run_competition_graph(self, portfolio, year,quarter, source, graph_folder, job_id):
 
@@ -820,7 +859,8 @@ class ReportsOrchestationLogic:
                         for matched_file in matched_files:
                             comp_grag_ctor.extract_competition(matched_file,job_id)
 
-                        self._persist_graph(graph_dir,graph_file,comp_grag_ctor.edges)
+                        self._persist_file_graph(graph_dir, graph_file, comp_grag_ctor.edges)
+
                         self.logger.do_log(
                             f"[COMP_GRAPH] ✔ Successfully created ",
                             MessageType.INFO,
@@ -1278,8 +1318,8 @@ class ReportsOrchestationLogic:
             graph_dir, output_file = downloader.get_graph_file(rank_folder, year, quarter)
             summary["output_file"] = output_file
 
-            self._persist_graph(graph_dir, output_file, edges)
-
+            self._persist_file_graph(graph_dir, output_file, edges)
+            self._persist_store_graph(output_file, job_id)
             summary["persisted"] = True
             summary["status"] = "completed"
 

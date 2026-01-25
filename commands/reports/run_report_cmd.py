@@ -12,6 +12,7 @@ import traceback
 
 import os, sys
 
+from common.dto.neo4j.neo4j_config import Neo4jConfig
 from common.enums.folders import Folders
 from common.util.tagging.tagging_config_dto import TaggingConfigDTO
 from logic_layer.reports_orchestration_logic import ReportsOrchestationLogic
@@ -39,13 +40,18 @@ def process_run_report_logic(report_key, year=None,quarter=None, portfolio=None,
         loader = MLSettingsLoader()
         config_settings = loader.load_settings("./configs/commands_mgr.ini")
 
+        neo4j_config=None
+        if(config_settings["NEO4J_URI"]):
+            neo4j_config=Neo4jConfig(config_settings["NEO4J_URI"],config_settings["NEO4J_USER"],config_settings["NEO4J_PASS"])
+
         trd_algos = ReportsOrchestationLogic(
             hist_data_conn_str= config_settings["hist_data_conn_str"],
             ml_reports_conn_str= config_settings["ml_reports_conn_str"],
             mcp_server= mcp_server,
             mcp_port= mcp_port,
             p_classification_map_key= None,
-            logger= logger
+            logger= logger,
+            neo4j_config=neo4j_config
         )
 
         if mcp_port is not None and mcp_port is not None:
@@ -167,6 +173,10 @@ def process_start_mcp_logic(server,port):
         loader = MLSettingsLoader()
         config = loader.load_settings("./configs/commands_mgr.ini")
 
+        neo4j_config=None
+        if(config["NEO4J_URI"]):
+            neo4j_config=Neo4jConfig(config["NEO4J_URI"],config["NEO4J_USER"],config["NEO4J_PASS"])
+
 
         orch = ReportsOrchestationLogic(
             hist_data_conn_str= config["hist_data_conn_str"],
@@ -174,7 +184,8 @@ def process_start_mcp_logic(server,port):
             mcp_server= server,
             mcp_port= port,
             p_classification_map_key= None,
-            logger= logger
+            logger= logger,
+            neo4j_config=neo4j_config
         )
 
         orch._run_start_mcp()
