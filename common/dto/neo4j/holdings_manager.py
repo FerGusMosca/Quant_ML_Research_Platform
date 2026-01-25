@@ -40,6 +40,6 @@ class HoldingsGraphManager:
         )
 
     # ---------- Public API ----------
-    def persist(self, rows: List[Dict]):
+    def persist(self, rows: List[Dict],year:str,quarter:str):
         with self.driver.session() as session:
             session.execute_write(self._persist_batch, rows)

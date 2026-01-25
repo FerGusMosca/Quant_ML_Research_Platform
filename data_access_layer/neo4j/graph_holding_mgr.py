@@ -1,6 +1,5 @@
 # ===== holdings_graph_manager.py =====
 
-import json
 from neo4j import GraphDatabase
 from typing import List, Dict
 
@@ -25,21 +24,31 @@ class HoldingsGraphManager:
 
     # ---------- Cypher write ----------
     @staticmethod
-    def _persist_batch(tx, rows: List[Dict]):
+    def _persist_batch(tx, rows: List[Dict], year: int, quarter: str):
         tx.run(
             """
             UNWIND $rows AS row
             MERGE (m:Manager {name: row.manager})
             MERGE (a:Asset {cusip: row.cusip})
               ON CREATE SET a.name = row.asset_name
-            MERGE (m)-[h:HOLDS]->(a)
+            MERGE (m)-[h:HOLDS {
+                year: $year,
+                quarter: $quarter
+            }]->(a)
             SET h.weight = row.weight,
                 h.file = row.file
             """,
             rows=rows,
+            year=year,
+            quarter=quarter,
         )
 
     # ---------- Public API ----------
-    def persist(self, rows: List[Dict]):
+    def persist(self, rows: List[Dict], year: int, quarter: str):
         with self.driver.session() as session:
-            session.execute_write(self._persist_batch, rows)
+            session.execute_write(
+                self._persist_batch,
+                rows,
+                year,
+                quarter,
+            )

@@ -787,7 +787,7 @@ class ReportsOrchestationLogic:
                 }
                 f.write(json.dumps(line, ensure_ascii=False) + "\n")
 
-    def _persist_store_graph(self, output_file: str,job_id:str):
+    def _persist_store_graph(self, output_file: str,year:int,quarter:str,job_id:str):
         batch = []
         total = 0
 
@@ -804,7 +804,7 @@ class ReportsOrchestationLogic:
                 })
 
                 if len(batch) >= self.neo_holding_graph_mgr.batch_size:
-                    self.neo_holding_graph_mgr.persist(batch)
+                    self.neo_holding_graph_mgr.persist(batch,year,quarter)
                     total += len(batch)
                     self.logger.do_log(
                         f"[COMP_GRAPH] Inserted {total} rows",
@@ -813,7 +813,7 @@ class ReportsOrchestationLogic:
                     batch.clear()
 
             if batch:
-                self.neo_holding_graph_mgr.persist(batch)
+                self.neo_holding_graph_mgr.persist(batch,year,quarter)
                 total += len(batch)
 
         self.logger.do_log(
@@ -1319,7 +1319,7 @@ class ReportsOrchestationLogic:
             summary["output_file"] = output_file
 
             self._persist_file_graph(graph_dir, output_file, edges)
-            self._persist_store_graph(output_file, job_id)
+            self._persist_store_graph(output_file,year,quarter, job_id)
             summary["persisted"] = True
             summary["status"] = "completed"
 
