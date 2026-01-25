@@ -27,7 +27,7 @@ tokenizers
 huggingface-hub
 safetensors
 sec-parser
-
+neo4j
 # ---- Torch CPU ONLY ----
 torch==2.2.0+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
