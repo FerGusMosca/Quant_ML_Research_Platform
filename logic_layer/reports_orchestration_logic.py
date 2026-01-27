@@ -17,6 +17,7 @@ from common.enums.report_folder import ReportFolder
 from common.enums.report_type import ReportType
 from common.enums.sec_reports import SECReports
 from common.util.date_mgmt.date_range_handler import DateRangeHandler
+from common.util.downloaders.K_Q_10.k8_downloader import K8Downloader
 from common.util.downloaders.finviz_full_news_downloader import FinVizFullNewsDownloader
 from common.util.downloaders.finviz_offline_sentiment_analyzer import FinvizOfflineSentimentAnalyzer
 from common.util.downloaders.ib_income_statement import IBIncomeStatement
@@ -202,6 +203,103 @@ class ReportsOrchestationLogic:
             json.dumps({
                 "event": "completed",
                 "report": "download_k10",
+                "portfolio": portfolio,
+                "summary": summary,
+            }),
+            MessageType.INFO,
+            job_id
+        )
+
+
+    def _run_download_k8(self, year, portfolio, job_id):
+        """
+        Download 8-K filings for a given portfolio and year range.
+
+        Iterates over all securities in the portfolio, resolves the full date range
+        for each year, and downloads available 8-K filings (market-moving events).
+        Tracks per-year and global statistics (downloaded, not found, errors)
+        and emits a FINAL structured completion event for safe downstream processing.
+        """
+
+        years = DateRangeHandler.handle_date_range(year, self.logger)
+
+        summary = {
+            "years": {},
+            "total_securities": 0,
+            "downloaded": 0,
+            "not_found": 0,
+            "errors": 0,
+        }
+
+        for y in years:
+            base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{portfolio}/{ReportFolder.K8.value}/{y}"
+
+            self.logger.do_log(
+                f"[REPORT] Downloading K8 to {base_path}",
+                MessageType.INFO,
+                job_id
+            )
+
+            os.makedirs(base_path, exist_ok=True)
+
+            securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
+
+            self.logger.do_log(
+                f"[REPORT] Found {len(securities)} securities to process for year {y}",
+                MessageType.INFO,
+                job_id
+            )
+
+            summary["years"][y] = {
+                "downloaded": 0,
+                "not_found": 0,
+                "errors": 0,
+            }
+
+            for i, sec in enumerate(securities):
+                symbol = sec.ticker
+                cik = sec.cik
+                summary["total_securities"] += 1
+
+                try:
+
+
+                    k8_downloader = K8Downloader(self.logger)
+                    files = k8_downloader.download_k8_range(
+                        symbol, cik, y, base_path, job_id
+                    )
+
+                    if not files:
+                        summary["not_found"] += 1
+                        summary["years"][y]["not_found"] += 1
+                        self.logger.do_log(
+                            f"[REPORT][{i + 1}/{len(securities)}] ⚠️ No 8-K found for {symbol} ({y})",
+                            MessageType.WARNING,
+                            job_id
+                        )
+                    else:
+                        summary["downloaded"] += len(files)
+                        summary["years"][y]["downloaded"] += len(files)
+                        self.logger.do_log(
+                            f"[REPORT][{i + 1}/{len(securities)}] ✅ Downloaded {len(files)} K8 files for {symbol} ({y})",
+                            MessageType.INFO,
+                            job_id
+                        )
+
+                except Exception as e:
+                    summary["errors"] += 1
+                    summary["years"][y]["errors"] += 1
+                    self.logger.do_log(
+                        f"[REPORT][{i + 1}/{len(securities)}] ❌ Failed for {symbol}: {e}",
+                        MessageType.ERROR,
+                        job_id
+                    )
+
+        # ---- FINAL EXPLICIT COMPLETION EVENT (CRITICAL) ----
+        self.logger.do_log(
+            json.dumps({
+                "event": "completed",
+                "report": "download_k8",
                 "portfolio": portfolio,
                 "summary": summary,
             }),
@@ -1408,6 +1506,8 @@ class ReportsOrchestationLogic:
             self._run_download_k10(year,portfolio,job_id)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
             self._run_download_q10(year,portfolio,job_id)
+        elif report_key.lower() == ReportType.DOWNLOAD_K8.value:
+            self._run_download_k8(year,portfolio,job_id)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_K10.value:
             self._run_sentiment_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder,job_id=job_id)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_Q10.value:

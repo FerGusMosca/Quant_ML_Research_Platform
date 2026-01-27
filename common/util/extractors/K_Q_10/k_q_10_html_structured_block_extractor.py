@@ -62,9 +62,11 @@ class KQ10HtmlStructuredBlockExtractor:
 
             upper = text.upper()
 
+            matched_section = next((s for s in sections_upper if s in upper), None)
             # Detect section header
-            if upper in sections_upper:
-                current_section = sections_upper[upper]
+            if matched_section:
+                #current_section = sections_upper[upper]
+                current_section=matched_section
                 blocks[current_section] = []
                 continue
 
