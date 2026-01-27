@@ -164,7 +164,7 @@ class ThirteenFGraphDownloader:
         with open(out_file.replace(".xml", ".meta.json"), "w") as m:
             json.dump(meta, m)
 
-        time.sleep(0.12)  # SEC rate limit
+        time.sleep(0.5)  # SEC rate limit
 
 
     def get_reports_dir(self,year,quarter,report_folder):
