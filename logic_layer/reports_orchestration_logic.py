@@ -160,7 +160,7 @@ class ReportsOrchestationLogic:
                 summary["total_securities"] += 1
 
                 try:
-                    result = K10Downloader.download_k10(symbol, cik, y, base_path, job_id)
+                    result = K10Downloader.download_k10(symbol, cik, y, base_path,self.logger, job_id)
 
                     if result == "EXISTS":
                         summary["skipped_exists"] += 1
@@ -368,7 +368,7 @@ class ReportsOrchestationLogic:
                 summary["total_securities"] += 1
 
                 try:
-                    result = Q10Downloader.download_q10s(symbol, cik, y, base_path)
+                    result = Q10Downloader.download_q10s(symbol, cik, y, base_path,self.logger,job_id)
 
                     if result == "EXISTS":
                         summary["skipped_exists"] += 1

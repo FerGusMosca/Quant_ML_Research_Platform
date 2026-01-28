@@ -4,6 +4,8 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
+from framework.common.logger.message_type import MessageType
+
 
 class K10Downloader:
     """
@@ -83,9 +85,8 @@ class K10Downloader:
         return {"html": file_path_html, "xbrl": xbrl_files}
     '''
 
-
     @staticmethod
-    def download_k10(symbol, cik, year, output_dir,job_id=None):
+    def download_k10(symbol, cik, year, output_dir, logger, job_id=None):
         headers = {
             "User-Agent": "K10Downloader/1.0 (fer.mosca@example.com)",
             "Accept-Encoding": "gzip, deflate",
@@ -93,24 +94,48 @@ class K10Downloader:
 
         file_path_html = os.path.join(output_dir, f"{symbol}_{year}_10-K.html")
 
-        # ⚠️ Skip if already exists
+        # Skip if already exists
         if os.path.exists(file_path_html):
+            logger.do_log(
+                f"[K10] SKIP exists | {symbol} {year}",
+                MessageType.INFO,
+                job_id
+            )
             return "EXISTS"
 
-        # --- Build SEC API request ---
         url = f"https://data.sec.gov/submissions/CIK{int(cik):010d}.json"
         try:
             response = requests.get(url, headers=headers, timeout=10)
+
             if response.status_code == 404:
+                logger.do_log(
+                    f"[K10] CIK not found (404) | {symbol} CIK={cik}",
+                    MessageType.WARNING,
+                    job_id
+                )
                 return "NOT_FOUND"
+
             response.raise_for_status()
             data = response.json()
-        except requests.exceptions.RequestException:
+
+        except requests.exceptions.Timeout as e:
+            logger.do_log(
+                f"[K10] Timeout fetching submissions | {symbol} CIK={cik} | {e}",
+                MessageType.ERROR,
+                job_id
+            )
+            return "NOT_FOUND"
+
+        except requests.exceptions.RequestException as e:
+            logger.do_log(
+                f"[K10] Request error fetching submissions | {symbol} CIK={cik} | {e}",
+                MessageType.ERROR,
+                job_id
+            )
             return "NOT_FOUND"
 
         time.sleep(0.5 + random.random())
 
-        # --- Find correct 10-K ---
         filings = data.get("filings", {}).get("recent", {})
         accession_numbers = filings.get("accessionNumber", [])
         filing_dates = filings.get("filingDate", [])
@@ -125,19 +150,61 @@ class K10Downloader:
                 break
 
         if not target_url:
+            logger.do_log(
+                f"[K10] No 10-K for year | {symbol} {year}",
+                MessageType.WARNING,
+                job_id
+            )
             return "NOT_FOUND"
 
-        # --- Download HTML document ---
-        filing_resp = requests.get(target_url, headers=headers, timeout=15)
-        if filing_resp.status_code == 404:
+        try:
+            filing_resp = requests.get(target_url, headers=headers, timeout=15)
+
+            if filing_resp.status_code == 404:
+                logger.do_log(
+                    f"[K10] Filing URL 404 | {symbol} {year} | {target_url}",
+                    MessageType.WARNING,
+                    job_id
+                )
+                return "NOT_FOUND"
+
+            filing_resp.raise_for_status()
+
+        except requests.exceptions.Timeout as e:
+            logger.do_log(
+                f"[K10] Timeout downloading filing | {symbol} {year} | {e}",
+                MessageType.ERROR,
+                job_id
+            )
             return "NOT_FOUND"
 
-        filing_resp.raise_for_status()
+        except requests.exceptions.RequestException as e:
+            logger.do_log(
+                f"[K10] Error downloading filing | {symbol} {year} | {e}",
+                MessageType.ERROR,
+                job_id
+            )
+            return "NOT_FOUND"
+
         time.sleep(0.5 + random.random())
 
-        # Save file
-        with open(file_path_html, "wb") as f:
-            f.write(filing_resp.content)
+        try:
+            with open(file_path_html, "wb") as f:
+                f.write(filing_resp.content)
+        except Exception as e:
+            logger.do_log(
+                f"[K10] File write error | {symbol} {year} | {e}",
+                MessageType.ERROR,
+                job_id
+            )
+            return "ERROR"
+
+        logger.do_log(
+            f"[K10] Downloaded successfully | {symbol} {year}",
+            MessageType.INFO,
+            job_id
+        )
 
         return "DOWNLOADED"
+
 
