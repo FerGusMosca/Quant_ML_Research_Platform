@@ -62,8 +62,8 @@ import pandas as pd
 
 from logic_layer.neural_network_models_trainer import NeuralNetworkModelTrainer
 from logic_layer.model_creators.daytrading_RNN_model_creator import DayTradingRNNModelCreator
-from service_layer.client.bcra_service_layer import BCRAServiceLayer
-from service_layer.client.byma_service_layer import BYMAServiceLayer
+from service_layer.client.bcra.bcra_service_layer import BCRAServiceLayer
+from service_layer.client.byma.byma_service_layer import BYMAServiceLayer
 
 
 class AlgosOrchestationLogic:

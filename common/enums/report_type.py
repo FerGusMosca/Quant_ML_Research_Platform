@@ -23,4 +23,6 @@ class ReportType(Enum):
     DOWNLOAD_13F_REPORTS = "download_13f_reports"
     CREATE_13F_GRAPH = "create_13f_graphs"
 
+    FINANCIAL_RATIOS_REPORT_SA="financial_ratios_report_sa"
+
     START_MCP = "start_mcp"

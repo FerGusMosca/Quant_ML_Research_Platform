@@ -35,6 +35,7 @@ from data_access_layer.report_securities_manager import ReportSecuritiesManager
 from data_access_layer.securities_calendar_manager import SecuritiesCalendarManager
 from data_access_layer.tag_run_manager import TagRunManager
 from framework.common.logger.message_type import MessageType
+from logic_layer.indicator_algos.financial_ratios_calcualtor import FinancialRatiosCalculator
 from logic_layer.rag_corpus_metadata.tagger.transformers_topic_tagger import TransformersTopicTagger
 from logic_layer.report_generators.K_Q_10s.K_Q_10_competition_graph import KQ10CompetitionGraph
 from logic_layer.report_generators.K_Q_10s.competition_summary_report import CompetitionSummaryReport
@@ -42,6 +43,7 @@ from logic_layer.report_generators.query_match_report import QueryMatchReportK10
 from logic_layer.report_generators.K_Q_10s.sentiment.sentence_sentiment_summary_report import SentimentSummaryReport
 from logic_layer.report_generators.K_Q_10s.sentiment.sentence_sentiment_summary_report_v2 import SentimentSummaryReportV2
 from logic_layer.report_generators.thirtieen_F.thirteen_f_graph_processor import ThirteenFGraphProcessor
+from service_layer.client.seeking_alpha.sa_financial_client import SAFinancialsClient
 from service_layer.server.mcp_server import MCPServer
 
 
@@ -1124,6 +1126,66 @@ class ReportsOrchestationLogic:
             job_id
         )
 
+    def financial_ratios_report_SA(self, symbol=None, job_id=None):
+        """
+        Generate a simple financial ratios report using Seeking Alpha data.
+        This method is fully guarded to prevent uncontrolled exceptions.
+        """
+
+        if not symbol:
+            self.logger.do_log(
+                "[REPORT][SA] Missing symbol parameter",
+                MessageType.WARNING,
+                job_id
+            )
+            return
+
+        self.logger.do_log(
+            f"[REPORT][SA] Starting financial ratios report | symbol={symbol}",
+            MessageType.INFO,
+            job_id
+        )
+
+        try:
+            data = SAFinancialsClient.fetch_fundamentals(
+                symbol=symbol,
+                logger=self.logger,
+                job_id=job_id
+            )
+
+            if not data:
+                self.logger.do_log(
+                    f"[REPORT][SA] No fundamentals data returned | symbol={symbol}",
+                    MessageType.WARNING,
+                    job_id
+                )
+                return
+
+            ratios = FinancialRatiosCalculator.compute(
+                data=data,
+                logger=self.logger,
+                job_id=job_id
+            )
+
+            self.logger.do_log(
+                json.dumps({
+                    "event": "completed",
+                    "report": "financial_ratios_sa",
+                    "symbol": symbol,
+                    "ratios": ratios
+                }),
+                MessageType.INFO,
+                job_id
+            )
+
+        except Exception as e:
+            # Absolute safety net: no exception escapes the report runner
+            self.logger.do_log(
+                f"[REPORT][SA] Unhandled error | symbol={symbol} | error={e}",
+                MessageType.ERROR,
+                job_id
+            )
+
     def _run_fin_viz_news_downloader(self,portfolio,symbol=None,job_id=None):
 
         if portfolio!="SINGLE_STOCKS":
@@ -1518,6 +1580,9 @@ class ReportsOrchestationLogic:
             self._run_competition_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
         elif report_key.lower() == ReportType.FINVIZ_NEWS_DOWNLOAD.value:
             self._run_fin_viz_news_downloader(portfolio,symbol,job_id)
+        elif report_key.lower() == ReportType.FINANCIAL_RATIOS_REPORT_SA.value:
+            self.financial_ratios_report_SA(symbol,job_id)
+        #
         elif report_key.lower() == ReportType.PROCESS_FINVIZ_NEWS.value:
             self._run_process_finviz_news(portfolio,symbol,d_from)
         elif report_key.lower() == ReportType.DOWNLOAD_LAST_INCOME_STATEMENT.value:

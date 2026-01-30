@@ -17,7 +17,7 @@ class TransformersEmbeddingsGenerator:
 
     def embed(self, texts):
         try:
-            if self.logger: self.logger.do_log(f"[MSC] 🔍 Embedding {len(texts)} chunks...", 2)
+            if self.logger: self.logger.do_log(f"[MSC] 🔍 Embedding {len(texts)} chunks with model {self.embedding_model}...", 2)
             vecs = self.model.encode(texts, normalize_embeddings=True)
             if self.logger: self.logger.do_log("[MSC] ✅ Embeddings generated.", 1)
             return vecs
