@@ -24,3 +24,7 @@ sentencepiece==0.1.99
 scikit-learn
 numpy<2.0
 sentence-transformers==2.6.1
+
+
+#Qdrant
+qdrant-client
