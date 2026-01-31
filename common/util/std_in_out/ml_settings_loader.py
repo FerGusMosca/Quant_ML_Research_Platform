@@ -21,6 +21,9 @@ class MLSettingsLoader():
             config_settings["NEO4J_USER"] = config['GRAPH_DB']['NEO4J_USER']
             config_settings["NEO4J_PASS"] = config['GRAPH_DB']['NEO4J_PASS']
 
+            config_settings["QDRANT_SERVER"] = config['QDRANT']['QDRANT_SERVER']
+            config_settings["QDRANT_PORT"] = config['QDRANT']['QDRANT_PORT']
+
 
             config_settings["classification_map_key"] = config['SETTINGS']['CLASSIFICATION_MAP_KEY']
             config_settings["IB_PROD_WS"] = config['SETTINGS']['IB_PROD_WS']
