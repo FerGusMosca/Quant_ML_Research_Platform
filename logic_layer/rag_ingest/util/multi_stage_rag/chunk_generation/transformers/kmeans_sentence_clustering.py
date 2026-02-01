@@ -4,6 +4,8 @@
 from sklearn.cluster import KMeans
 from sentence_transformers import SentenceTransformer
 
+from framework.common.logger.message_type import MessageType
+
 
 class KMeansSentenceClustering:
     """
@@ -17,18 +19,18 @@ class KMeansSentenceClustering:
         self.model = SentenceTransformer(self.model_name)
         self.k_units=k_units
 
-    def cluster(self, sentences, k):
+    def cluster(self, sentences, k,job_id=None):
         if not sentences:
             return []
 
         if self.logger:
-            self.logger.do_log(f"[KMSC] 🔍 Encoding {len(sentences)} sentences", 2)
+            self.logger.do_log(f"[KMSC] 🔍 Encoding {len(sentences)} sentences", MessageType.INFO,job_id)
 
         embeddings = self.model.encode(sentences, normalize_embeddings=True)
 
         real_k = min(k, len(sentences))
         if self.logger:
-            self.logger.do_log(f"[KMSC] 🎯 Running K-Means with k={real_k}", 2)
+            self.logger.do_log(f"[KMSC] 🎯 Running K-Means with k={real_k}", MessageType.INFO,job_id)
 
         labels = KMeans(n_clusters=real_k, n_init=self.k_units).fit_predict(embeddings)
 

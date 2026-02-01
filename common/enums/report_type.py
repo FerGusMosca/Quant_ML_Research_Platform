@@ -22,6 +22,7 @@ class ReportType(Enum):
     DOWNLOAD_SECURITIES_REPORTS_CALENDAR = "download_securities_reports_calendar"
 
     DOCUMENT_TAGGING_RANKING="document_tagging_ranking"
+    DOCUMENT_TAGGING_SINGLE_SECURITY = "document_tagging_single_security"
     COMPETITION_GRAPH = "competition_graph"
     DOWNLOAD_13F_REPORTS = "download_13f_reports"
     CREATE_13F_GRAPH = "create_13f_graphs"

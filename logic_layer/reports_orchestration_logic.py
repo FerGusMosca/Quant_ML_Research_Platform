@@ -36,6 +36,8 @@ from data_access_layer.securities_calendar_manager import SecuritiesCalendarMana
 from data_access_layer.tag_run_manager import TagRunManager
 from framework.common.logger.message_type import MessageType
 from logic_layer.indicator_algos.financial_ratios_calcualtor import FinancialRatiosCalculator
+from logic_layer.rag_corpus_metadata.tagger.transformers_single_security_topic_tagger import \
+    TransformersSingleSecurityTopicTagger
 from logic_layer.rag_corpus_metadata.tagger.transformers_topic_tagger import TransformersTopicTagger
 from logic_layer.report_generators.K_Q_10s.K_Q_10_competition_graph import KQ10CompetitionGraph
 from logic_layer.report_generators.K_Q_10s.competition_summary_report import CompetitionSummaryReport
@@ -630,6 +632,165 @@ class ReportsOrchestationLogic:
             MessageType.INFO,
             job_id
         )
+
+    #
+    def _run_document_single_security(
+            self,
+            symbol: str,
+            source: str,
+            year: int,
+            quarter: int = None,
+            tag_cfg=None,
+            job_id: str = None,
+    ) -> dict:
+        """
+        Run topic analysis for a single security.
+        Returns JSON result suitable for MCP/API responses.
+        """
+
+        start_time = datetime.now()
+        symbol = symbol.upper().strip()
+
+        # ---------------------------------------------------------
+        # 📊 Initialize result structure
+        # ---------------------------------------------------------
+        result = {
+            "report": "topic_single_security",
+            "symbol": symbol,
+            "year": year,
+            "quarter": quarter,
+            "source": source,
+            "input_file": None,
+            "tag_source": None,
+            "status": "started",
+            "analysis": None,
+            "error_type": None,
+            "message": None,
+            "elapsed_sec": None,
+        }
+
+        self.logger.do_log(
+            f"[TOPIC-SINGLE] 🚀 Starting analysis: {symbol} {year}" +
+            (f" Q{quarter}" if quarter else ""),
+            MessageType.INFO,
+            job_id
+        )
+
+        try:
+            # ---------------------------------------------------------
+            # 🔍 Resolve input file
+            # ---------------------------------------------------------
+            report_suffix = "10-K" if quarter is None else f"{quarter}_10-Q"
+
+            file_path = os.path.join(
+                RootLocator.get_root(),
+                Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                source,
+                str(year),
+                f"{symbol}_{year}_{report_suffix}.html",
+            )
+
+            if not os.path.isfile(file_path):
+                raise FileNotFoundError(f"Input filing not found: {file_path}")
+
+            result["input_file"] = os.path.basename(file_path)
+
+            # ---------------------------------------------------------
+            # 🎯 Run analysis
+            # ---------------------------------------------------------
+            tagger = TransformersSingleSecurityTopicTagger(
+                logger=self.logger,
+                tag_cfg=tag_cfg,
+            )
+
+            tag_dict = tagger.initialize_tag_dict(job_id=job_id)
+            tagger.tag_dict = tag_dict
+
+            result["tag_source"] = (
+                tag_cfg.tag_file
+                if tag_cfg and getattr(tag_cfg, "tag_file", None)
+                else "inline/json"
+            )
+
+            analysis_result = tagger.analyze(
+                security_symbol=symbol,
+                file_path=file_path,
+                job_id=job_id,
+            )
+
+            # ---------------------------------------------------------
+            # 📦 Process result
+            # ---------------------------------------------------------
+            if not analysis_result or not analysis_result.get("topics"):
+                result["status"] = "completed"
+                result["analysis"] = {
+                    "security": symbol,
+                    "file": result["input_file"],
+                    "topics": {},
+                    "summary": "No topics showed sufficient semantic alignment with the provided tag phrases",
+                }
+                result["message"] = "Analysis completed (no matching topics)"
+
+            else:
+                result["status"] = "completed"
+                result["analysis"] = analysis_result
+                result["message"] = "Analysis completed successfully"
+
+            self.logger.do_log(
+                f"[TOPIC-SINGLE] ✅ {symbol} completed | topics="
+                f"{len(result['analysis'].get('topics', {}))}",
+                MessageType.INFO,
+                job_id
+            )
+
+        except FileNotFoundError as e:
+            result["status"] = "failed"
+            result["error_type"] = "file_not_found"
+            result["message"] = str(e)
+
+            self.logger.do_log(
+                f"[TOPIC-SINGLE] ❌ Filing not found for {symbol}: {str(e)}",
+                MessageType.ERROR,
+                job_id
+            )
+
+        except Exception as e:
+            result["status"] = "failed"
+            result["error_type"] = "internal_error"
+            result["message"] = f"Internal error: {str(e)}"
+
+            self._log_exc(
+                "[TAGGING SINGLE SECURITY] ❌ execution failed",
+                e,
+                job_id,
+            )
+
+        # ---------------------------------------------------------
+        # ⏱️ Calculate elapsed time
+        # ---------------------------------------------------------
+        elapsed = (datetime.now() - start_time).total_seconds()
+        result["elapsed_sec"] = round(elapsed, 2)
+
+        self.logger.do_log(
+            f"[TOPIC-SINGLE] 🏁 {symbol} finished in {elapsed:.1f}s | Status: {result['status']}",
+            MessageType.INFO,
+            job_id
+        )
+
+        # ---------------------------------------------------------
+        # 🧾 FINAL COMPLETION EVENT (for MCP)
+        # ---------------------------------------------------------
+        self.logger.do_log(
+            json.dumps({
+                "event": "completed",
+                "report": "topic_single_security",
+                "result": result,
+            }),
+            MessageType.INFO,
+            job_id
+        )
+
+        return result
 
     def _run_sentiment_single_security_report(
             self,
@@ -1787,6 +1948,8 @@ class ReportsOrchestationLogic:
             self._run_download_securities_calendar(year,portfolio,job_id)
         elif report_key.lower() == ReportType.DOCUMENT_TAGGING_RANKING.value:
             self._run_document_tagging(portfolio, year,quarter, source, rank_folder, tag_cfg,job_id)
+        elif report_key.lower() == ReportType.DOCUMENT_TAGGING_SINGLE_SECURITY.value:
+            self._run_document_single_security(symbol=symbol,source=source,year=year,quarter=quarter,tag_cfg=tag_cfg,job_id=job_id)
         elif report_key.lower() == ReportType.COMPETITION_GRAPH.value:
             self._run_competition_graph(portfolio, year,quarter, source, rank_folder,job_id)
         elif report_key.lower() == ReportType.DOWNLOAD_13F_REPORTS.value:

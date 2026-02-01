@@ -3,6 +3,7 @@
 
 import nltk
 
+from framework.common.logger.message_type import MessageType
 from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.kmeans_sentence_clustering import \
     KMeansSentenceClustering
 from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.transformers_chunk_overlapping import \
@@ -31,13 +32,13 @@ class KTransformersChunkGenerator:
         self.clusterer = KMeansSentenceClustering(model_name=self.model_name,logger=logger)
         self.overlapper = TransformersChunkOverlapping(model_name=self.model_name,logger=logger)
 
-    def chunk(self, text: str):
+    def chunk(self, text: str,job_id:str=None):
         sentences = nltk.sent_tokenize(text)
 
         if self.logger:
             self.logger.do_log(f"[KTG] 📌 Total sentences: {len(sentences)}", 2)
 
-        sentence_groups = self.clusterer.cluster(sentences, self.k)
+        sentence_groups = self.clusterer.cluster(sentences, self.k,job_id)
 
         chunks = []
 
@@ -45,7 +46,7 @@ class KTransformersChunkGenerator:
             if self.logger:
                 self.logger.do_log(
                     f"[KTG] 📦 Processing sentence group {group_idx} ({len(group)} sentences)",
-                    2
+                    MessageType.INFO,job_id
                 )
 
             current = []
@@ -58,9 +59,9 @@ class KTransformersChunkGenerator:
                 if tok_count + token_len > self.target_tokens:
                     new_chunk = " ".join(current)
 
-                    if chunks and self.overlapper.should_merge(chunks[-1], new_chunk):
+                    if chunks and self.overlapper.should_merge(chunks[-1], new_chunk,job_id):
                         if self.logger:
-                            self.logger.do_log("[KTG] 🔗 Merging chunks based on semantic similarity", 2)
+                            self.logger.do_log("[KTG] 🔗 Merging chunks based on semantic similarity", MessageType.INFO,job_id)
                         chunks[-1] += " " + new_chunk
                     else:
                         chunks.append(new_chunk)
@@ -75,6 +76,6 @@ class KTransformersChunkGenerator:
                 chunks.append(" ".join(current))
 
         if self.logger:
-            self.logger.do_log(f"[KTG] ✅ Final chunks generated: {len(chunks)}", 1)
+            self.logger.do_log(f"[KTG] ✅ Final chunks generated: {len(chunks)}", MessageType.INFO,job_id)
 
         return chunks

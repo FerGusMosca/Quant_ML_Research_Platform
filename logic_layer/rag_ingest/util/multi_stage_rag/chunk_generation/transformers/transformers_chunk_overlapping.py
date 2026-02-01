@@ -4,6 +4,8 @@
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
+from framework.common.logger.message_type import MessageType
+
 
 class TransformersChunkOverlapping:
     """
@@ -22,14 +24,14 @@ class TransformersChunkOverlapping:
         self.model_name=model_name if model_name is not None else "sentence-transformers/all-MiniLM-L6-v2"
         self.model = SentenceTransformer(self.model_name)
 
-    def should_merge(self, chunk_a: str, chunk_b: str) -> bool:
+    def should_merge(self, chunk_a: str, chunk_b: str,job_id:str=None) -> bool:
         vecs = self.model.encode([chunk_a, chunk_b], normalize_embeddings=True)
         similarity = float(np.dot(vecs[0], vecs[1]))
 
         if self.logger:
             self.logger.do_log(
                 f"[TCO] 🔗 Chunk similarity={similarity:.4f} (threshold={self.similarity_threshold})",
-                3
+                MessageType.INFO,job_id
             )
 
         return similarity >= self.similarity_threshold
