@@ -865,8 +865,7 @@ class ReportsOrchestationLogic:
             if report_type == ReportFolder.Q10.value and not quarter:
                 raise ValueError("Quarter (1-4) is required for 10Q reports")
 
-            quarter=int(quarter)
-            if quarter and (quarter < 1 or quarter > 4):
+            if quarter and (int(quarter) < 1 or int(quarter) > 4):
                 raise ValueError(f"Invalid quarter: {quarter}. Must be 1-4")
 
             # ---------------------------------------------------------
