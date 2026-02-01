@@ -39,6 +39,8 @@ from logic_layer.indicator_algos.financial_ratios_calcualtor import FinancialRat
 from logic_layer.rag_corpus_metadata.tagger.transformers_topic_tagger import TransformersTopicTagger
 from logic_layer.report_generators.K_Q_10s.K_Q_10_competition_graph import KQ10CompetitionGraph
 from logic_layer.report_generators.K_Q_10s.competition_summary_report import CompetitionSummaryReport
+from logic_layer.report_generators.K_Q_10s.sentiment.single_stock_sentiment_summary_report_v2 import \
+    SentimentSingleSecurity
 from logic_layer.report_generators.query_match_report import QueryMatchReportK10Q10
 from logic_layer.report_generators.K_Q_10s.sentiment.sentence_sentiment_summary_report import SentimentSummaryReport
 from logic_layer.report_generators.K_Q_10s.sentiment.sentence_sentiment_summary_report_v2 import SentimentSummaryReportV2
@@ -628,6 +630,189 @@ class ReportsOrchestationLogic:
             MessageType.INFO,
             job_id
         )
+
+    def _run_sentiment_single_security_report(
+            self,
+            symbol: str,
+            year: int,
+            report_type: str = ReportFolder.K10.value,
+            portfolio: str = None,
+            quarter: int = None,
+            job_id: str = None,
+    ) -> dict:
+        """
+        Run sentiment analysis for a single security.
+        Returns JSON result suitable for MCP/API responses.
+
+        Args:
+            symbol: Stock ticker (e.g., 'AAPL')
+            year: Filing year
+            report_type: '10K' or '10Q'
+            portfolio: Portfolio name (e.g., 'US_BIGCAP')
+            quarter: Required if report_type is '10Q' (1-4)
+            job_id: Optional job identifier for logging
+
+        Returns:
+            dict: {
+                "status": "success" | "error",
+                "symbol": str,
+                "year": int,
+                "report_type": str,
+                "analysis": {...} | None,
+                "error_type": str | None,
+                "message": str | None
+            }
+        """
+
+        start_time = datetime.now()
+        symbol = symbol.upper().strip()
+
+        # ---------------------------------------------------------
+        # 📊 Initialize result structure
+        # ---------------------------------------------------------
+        result = {
+            "report": "sentiment_single_security",
+            "symbol": symbol,
+            "year": year,
+            "report_type": report_type,
+            "quarter": quarter,
+            "portfolio": portfolio,
+            "status": "started",
+            "analysis": None,
+            "error_type": None,
+            "message": None,
+            "elapsed_sec": None,
+        }
+
+        self.logger.do_log(
+            f"[SENT-SINGLE] 🚀 Starting analysis: {symbol} {report_type} {year}" +
+            (f" Q{quarter}" if quarter else ""),
+            MessageType.INFO,
+            job_id
+        )
+
+        try:
+            # ---------------------------------------------------------
+            # 🔍 Validate parameters
+            # ---------------------------------------------------------
+            if not portfolio:
+                raise ValueError("Portfolio parameter is required")
+
+            if report_type not in [ReportFolder.K10.value, ReportFolder.Q10.value]:
+                raise ValueError(f"Invalid report_type: {report_type}. Must be '10K' or '10Q'")
+
+            if report_type == ReportFolder.Q10.value and not quarter:
+                raise ValueError("Quarter (1-4) is required for 10Q reports")
+
+            quarter=int(quarter)
+            if quarter and (quarter < 1 or quarter > 4):
+                raise ValueError(f"Invalid quarter: {quarter}. Must be 1-4")
+
+            # ---------------------------------------------------------
+            # 🎯 Run analysis
+            # ---------------------------------------------------------
+            analyzer = SentimentSingleSecurity(self.logger)
+
+            analysis_result = analyzer.analyze(
+                symbol=symbol,
+                report_type=report_type,
+                year=year,
+                portfolio=portfolio,
+                quarter=quarter,
+                job_id=job_id
+            )
+
+            # ---------------------------------------------------------
+            # 📦 Process result
+            # ---------------------------------------------------------
+            if analysis_result.get("status") == "success":
+                result["status"] = "completed"
+                result["analysis"] = analysis_result.get("analysis", {})
+                result["message"] = "Analysis completed successfully"
+
+                metrics = analysis_result.get("analysis", {}).get("metrics", {})
+                sentiment = metrics.get("mdna_sentiment", 0)
+
+                self.logger.do_log(
+                    f"[SENT-SINGLE] ✅ {symbol} completed | Sentiment={sentiment:.3f}",
+                    MessageType.INFO,
+                    job_id
+                )
+
+            else:
+                # Analysis returned error
+                result["status"] = "failed"
+                result["error_type"] = analysis_result.get("error_type", "unknown_error")
+                result["message"] = analysis_result.get("message", "Analysis failed")
+
+                self.logger.do_log(
+                    f"[SENT-SINGLE] ❌ {symbol} failed: {result['message']}",
+                    MessageType.ERROR,
+                    job_id
+                )
+
+        except ValueError as e:
+            # Validation errors
+            result["status"] = "failed"
+            result["error_type"] = "validation_error"
+            result["message"] = str(e)
+
+            self.logger.do_log(
+                f"[SENT-SINGLE] ❌ Validation error for {symbol}: {str(e)}",
+                MessageType.ERROR,
+                job_id
+            )
+
+        except FileNotFoundError as e:
+            # Filing not found
+            result["status"] = "failed"
+            result["error_type"] = "file_not_found"
+            result["message"] = str(e)
+
+            self.logger.do_log(
+                f"[SENT-SINGLE] ❌ Filing not found for {symbol}: {str(e)}",
+                MessageType.ERROR,
+                job_id
+            )
+
+        except Exception as e:
+            # Unexpected errors
+            result["status"] = "failed"
+            result["error_type"] = "internal_error"
+            result["message"] = f"Internal error: {str(e)}"
+
+            self.logger.do_log(
+                f"[SENT-SINGLE] 💥 Unexpected error for {symbol}: {str(e)}",
+                MessageType.ERROR,
+                job_id
+            )
+
+        # ---------------------------------------------------------
+        # ⏱️ Calculate elapsed time
+        # ---------------------------------------------------------
+        elapsed = (datetime.now() - start_time).total_seconds()
+        result["elapsed_sec"] = round(elapsed, 2)
+
+        self.logger.do_log(
+            f"[SENT-SINGLE] 🏁 {symbol} finished in {elapsed:.1f}s | Status: {result['status']}",
+            MessageType.INFO,
+            job_id
+        )
+
+        # ---------------------------------------------------------
+        # 🧾 FINAL COMPLETION EVENT (for MCP)
+        # ---------------------------------------------------------
+        self.logger.do_log(
+            json.dumps({
+                "event": "completed",
+                "report": "sentiment_single_security",
+                "result": result,
+            }),
+            MessageType.INFO,
+            job_id
+        )
+
+        return result
 
     def _run_competition_summary_report(self, year, report_type=ReportFolder.K10.value,
                                         portfolio=None, universe=None,
@@ -1572,6 +1757,10 @@ class ReportsOrchestationLogic:
             self._run_download_k8(year,portfolio,job_id)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_K10.value:
             self._run_sentiment_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder,job_id=job_id)
+        elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_SINGLE_STOCK_K10.value:
+            self._run_sentiment_single_security_report(symbol=symbol,year=year, quarter=quarter,report_type=ReportFolder.K10.value,portfolio=portfolio, job_id=job_id)
+        elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_SINGLE_STOCK_Q10.value:
+            self._run_sentiment_single_security_report(symbol=symbol,year=year, quarter=quarter,report_type=ReportFolder.Q10.value,portfolio=portfolio, job_id=job_id)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_Q10.value:
             self._run_sentiment_summary_report(year, SECReports.Q10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder,job_id=job_id)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_Q10.value:
