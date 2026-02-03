@@ -4,10 +4,12 @@
 import os
 import json
 import re
+import uuid
 from datetime import datetime
 
 import numpy as np
 
+from data_access_layer.qdrant.qdrant_manager import QdrantManager
 from framework.common.logger.message_type import MessageType
 from logic_layer.rag_ingest.util.common.ingestion_logger import RAGIngestionLogger
 from logic_layer.rag_ingest.util.common.zh_next_folder_generator import ZHNextFolderGenerator
@@ -32,6 +34,12 @@ class RAGPipeline:
         self.chunk_name=chunk_name
         self.dest_root = dest_root
         self.current_run_log =None
+        self.config=config
+
+        self.qdrant = QdrantManager(host=self.config["QDRANT_SERVER"],
+                                    port=int(self.config["QDRANT_PORT"]),
+                                    collection="zh_chunks")
+
         #self.chunk_generator = VainillaChunkGenerator(self.logger)
         self.chunk_generator = KTransformersChunkGenerator(model_name= clustering_model,logger=self.logger)
 
@@ -149,6 +157,28 @@ class RAGPipeline:
             self.logger.do_log(f"[RAG] ❌ sanitize_filename failed: {e}", MessageType.ERROR,job_id)
             return "unnamed_document"
 
+    def _register_chunks_qdrant(self, chunks, metadata, pdf_path):
+        """Register per-chunk metadata into Qdrant (no vectors)."""
+
+        ingest_ts = metadata[0].get("ingest_timestamp")
+
+        for idx, chunk in enumerate(chunks):
+            chunk_id = uuid.uuid5(
+                uuid.NAMESPACE_URL,
+                f"{metadata[idx]['source_pdf']}__{metadata[idx]['chunk_id']}"
+            )
+
+            payload = {
+                "source_pdf": metadata[idx]["source_pdf"],
+                "chunk_id": metadata[idx]["chunk_id"],
+                "chunk_index": idx,
+                "text_len": len(chunk),
+                "ingest_timestamp": ingest_ts,
+                "ingest_run_id": self.current_run_log
+            }
+
+            self.qdrant.upsert_metadata(chunk_id, payload)
+
     # ==========================================================
     # PROCESS ONE PDF
     # ==========================================================
@@ -197,6 +227,8 @@ class RAGPipeline:
         # ----- Embeddings -----
         try:
             embeddings = self.embedder.embed(chunks)
+
+            self._register_chunks_qdrant(chunks,metadata,pdf_path)
         except Exception as e:
             self.logger.do_log(f"[RAG] ❌ Embedding generation failed: {e}", MessageType.ERROR,job_id)
             return None

@@ -28,3 +28,7 @@ safetensors
 
 # Spacy (para procesamiento de texto si lo usás)
 spacy
+
+
+#Qdrant
+qdrant-client
