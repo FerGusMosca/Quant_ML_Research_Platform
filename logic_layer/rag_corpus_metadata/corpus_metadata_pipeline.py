@@ -24,7 +24,7 @@ class CorpusMetadataPipeline:
 
         self.qdrant = QdrantManager(host=self.config["QDRANT_SERVER"],
                                     port=int(self.config["QDRANT_PORT"]),
-                                    collection="zh_chunks")
+                                    collection="zh_metadata")
 
         folder = os.path.join(config["RAG_OUTPUT_FOLDER"],self.chunk_name, "corpus_metadata")
         os.makedirs(folder, exist_ok=True)
