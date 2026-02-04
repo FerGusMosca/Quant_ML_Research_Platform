@@ -14,7 +14,8 @@ class TaggingConfigDTO:
         tags_csv: str,
         sim_threshold: float = 0.8,
         doc_type: Optional[str] = None,
-        tag_json:str=None
+        tag_json:str=None,
+        tag_dedup:bool=True
     ):
         self.tag_model = tag_model
         self.tag_file = tag_file
@@ -22,6 +23,7 @@ class TaggingConfigDTO:
         self.sim_threshold = sim_threshold
         self.doc_type = doc_type
         self.tag_json=tag_json
+        self.tag_dedup=tag_dedup
 
     def is_K_Q_10_doc(self) -> bool:
         return self.doc_type == TaggingConfigDTO.DOC_TYPE_K_Q_10

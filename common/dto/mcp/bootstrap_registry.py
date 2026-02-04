@@ -26,6 +26,7 @@ def build_mcp_registry_reports(orchestrator) -> ToolRegistry:
                         "tag_model": {"type": "string"},
                         "tag_json": {"type": "string"},
                         "tag_file": {"type": "string"},
+                        "tag_dedup": {"type": "boolean"},
                         "doc_type": {"type": "string"},
                     },
                     "required": ["report"],

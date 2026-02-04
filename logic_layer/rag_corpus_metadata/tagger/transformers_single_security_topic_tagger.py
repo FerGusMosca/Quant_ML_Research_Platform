@@ -15,11 +15,11 @@ class TransformersSingleSecurityTopicTagger(TransformersTopicBase):
         self.logger.do_log("[BERT] Single Security Topic Tagger READY", MessageType.INFO)
 
     def analyze(
-        self,
-        security_symbol: str,
-        file_path: str,
-        job_id: int = None,
-        top_k_chunks: int = 5,
+            self,
+            security_symbol: str,
+            file_path: str,
+            job_id: int = None,
+            top_k_chunks: int = 5,
     ):
         """
         Performs topic-based semantic ranking for a single security.
@@ -33,27 +33,67 @@ class TransformersSingleSecurityTopicTagger(TransformersTopicBase):
 
         file_name = os.path.basename(file_path)
 
+        if self.logger:
+            self.logger.do_log(
+                f"[SINGLE][ANALYZE][START] security={security_symbol} | file={file_name}",
+                MessageType.INFO,
+                job_id
+            )
+
         # --------------------------------------------------
         # Extract full text
         # --------------------------------------------------
         text = self._extract_text(file_path, job_id)
         if not text:
+            if self.logger:
+                self.logger.do_log(
+                    f"[SINGLE][ANALYZE][EMPTY_TEXT] security={security_symbol}",
+                    MessageType.WARNING,
+                    job_id
+                )
             return None
+
+        if self.logger:
+            self.logger.do_log(
+                f"[SINGLE][ANALYZE][TEXT] chars={len(text)}",
+                MessageType.INFO,
+                job_id
+            )
 
         # --------------------------------------------------
         # Generate semantically coherent chunks
         # --------------------------------------------------
-        chunks = self.chunk_generator.chunk(text,job_id)
+        chunks = self.chunk_generator.chunk(text,self.tag_cfg.tag_dedup, job_id)
         if not chunks:
+            if self.logger:
+                self.logger.do_log(
+                    f"[SINGLE][ANALYZE][NO_CHUNKS] security={security_symbol}",
+                    MessageType.WARNING,
+                    job_id
+                )
             return None
+
+        if self.logger:
+            self.logger.do_log(
+                f"[SINGLE][ANALYZE][CHUNKS] count={len(chunks)}",
+                MessageType.INFO,
+                job_id
+            )
 
         # --------------------------------------------------
         # Encode chunks
         # --------------------------------------------------
-        chunk_embeddings = [
-            self._encode(chunk).squeeze(0)
-            for chunk in chunks
-        ]
+        chunk_embeddings = []
+        for idx, chunk in enumerate(chunks):
+            emb = self._encode(chunk).squeeze(0)
+            chunk_embeddings.append(emb)
+
+        if self.logger:
+            self.logger.do_log(
+                f"[SINGLE][ANALYZE][CHUNK_EMBEDDINGS] count={len(chunk_embeddings)}",
+                MessageType.INFO,
+                job_id
+            )
 
         report = {
             "security": security_symbol,
@@ -64,16 +104,21 @@ class TransformersSingleSecurityTopicTagger(TransformersTopicBase):
         # --------------------------------------------------
         # Encode topic phrases (semantic anchors)
         # --------------------------------------------------
-        topic_embeddings = {
-            topic: [
-                {
+        topic_embeddings = {}
+        for topic, phrases in self.tag_dict.items():
+            topic_embeddings[topic] = []
+            for phrase in phrases:
+                topic_embeddings[topic].append({
                     "phrase": phrase,
                     "embedding": self._encode(phrase).squeeze(0)
-                }
-                for phrase in phrases
-            ]
-            for topic, phrases in self.tag_dict.items()
-        }
+                })
+
+            if self.logger:
+                self.logger.do_log(
+                    f"[SINGLE][TOPIC][PHRASES] topic={topic} | phrases={len(phrases)}",
+                    MessageType.INFO,
+                    job_id
+                )
 
         # --------------------------------------------------
         # PURE semantic ranking per topic
@@ -84,7 +129,6 @@ class TransformersSingleSecurityTopicTagger(TransformersTopicBase):
             for chunk_idx, chunk_emb in enumerate(chunk_embeddings):
                 for pe in phrase_embs:
                     score = float(torch.dot(chunk_emb, pe["embedding"]))
-
                     matches.append({
                         "chunk_idx": chunk_idx,
                         "score": score,
@@ -93,11 +137,15 @@ class TransformersSingleSecurityTopicTagger(TransformersTopicBase):
                     })
 
             if not matches:
+                if self.logger:
+                    self.logger.do_log(
+                        f"[SINGLE][TOPIC][NO_MATCHES] topic={topic}",
+                        MessageType.WARNING,
+                        job_id
+                    )
                 continue
 
-            # Global semantic ranking
             matches.sort(key=lambda x: x["score"], reverse=True)
-
             top_matches = matches[:top_k_chunks]
 
             report["topics"][topic] = {
@@ -111,11 +159,20 @@ class TransformersSingleSecurityTopicTagger(TransformersTopicBase):
 
             if self.logger:
                 self.logger.do_log(
-                    f"[SINGLE][TOPIC] security={security_symbol} | topic={topic} | "
-                    f"top_score={top_matches[0]['score']:.4f}",
+                    f"[SINGLE][TOPIC][DONE] security={security_symbol} | topic={topic} | "
+                    f"top_score={top_matches[0]['score']:.4f} | "
+                    f"matches={len(top_matches)}",
                     MessageType.INFO,
                     job_id
                 )
 
+        if self.logger:
+            self.logger.do_log(
+                f"[SINGLE][ANALYZE][END] security={security_symbol} | topics={len(report['topics'])}",
+                MessageType.INFO,
+                job_id
+            )
+
         return report
+
 

@@ -32,7 +32,7 @@ class KTransformersChunkGenerator:
         self.clusterer = KMeansSentenceClustering(model_name=self.model_name,logger=logger)
         self.overlapper = TransformersChunkOverlapping(model_name=self.model_name,logger=logger)
 
-    def chunk(self, text: str,job_id:str=None):
+    def chunk(self, text: str, tag_dedup=True,job_id:str=None):
         sentences = nltk.sent_tokenize(text)
 
         if self.logger:
@@ -59,7 +59,7 @@ class KTransformersChunkGenerator:
                 if tok_count + token_len > self.target_tokens:
                     new_chunk = " ".join(current)
 
-                    if chunks and self.overlapper.should_merge(chunks[-1], new_chunk,job_id):
+                    if chunks and tag_dedup and self.overlapper.should_merge(chunks[-1], new_chunk,job_id):
                         if self.logger:
                             self.logger.do_log("[KTG] 🔗 Merging chunks based on semantic similarity", MessageType.INFO,job_id)
                         chunks[-1] += " " + new_chunk

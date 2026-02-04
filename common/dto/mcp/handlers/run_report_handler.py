@@ -27,7 +27,8 @@ def run_report_handler(args: dict, orchestrator):
                     tag_json=args.get("tag_json"),
                     tags_csv=None,
                     sim_threshold=None,
-                    doc_type=args.get("doc_type")
+                    doc_type=args.get("doc_type"),
+                    tag_dedup=bool(args.get("tag_dedup"))
                 )
 
 

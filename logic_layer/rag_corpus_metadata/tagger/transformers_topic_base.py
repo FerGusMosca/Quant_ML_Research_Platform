@@ -52,7 +52,7 @@ class TransformersTopicBase:
         emb = out.last_hidden_state[:, 0, :]
         return F.normalize(emb, p=2, dim=1)
 
-    def _get_chunks(self, text, file_name):
+    def _get_chunks(self, text, file_name,job_id=None):
         chunks = []
         try:
             if self.tag_cfg.is_K_Q_10_doc():
@@ -60,7 +60,7 @@ class TransformersTopicBase:
                 blocks = extr.extract_blocks(text)
                 chunks = list(blocks.values())
             else:
-                chunks.extend(self.chunk_generator.chunk(text))
+                chunks.extend(self.chunk_generator.chunk(text,tag_dedup=self.tag_cfg.tag_dedup,job_id=job_id))
         except Exception as e:
             if self.logger:
                 self.logger.do_log(
@@ -78,7 +78,7 @@ class TransformersTopicBase:
 
     def _extract_chunks(self, text: str, file_name: str, job_id: int):
         try:
-            chunks = self._get_chunks(text, file_name)
+            chunks = self._get_chunks(text, file_name,job_id)
             if not chunks and self.logger:
                 self.logger.do_log(
                     f"[RANK] ❌ No chunks generated | file={file_name}",
