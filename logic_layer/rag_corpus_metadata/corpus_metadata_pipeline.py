@@ -185,12 +185,22 @@ class CorpusMetadataPipeline:
             self.inventory.save(items)
 
             for m in items:
-                chunk_id = m["sha256_text"]  # ID estable
+                sha256_text = m.get("sha256_text")
+
+                # Skip si no hay sha256_text
+                if not sha256_text:
+                    self.logger.do_log(f"[SAVE] ⚠ Skipped (no sha256_text): {m.get('path')}", MessageType.WARNING)
+                    continue
+
+
+                chunk_id = int(sha256_text[:16], 16)
+
                 payload = {
                     "source": "ZH",
                     "status": m.get("status"),
                     "path": m.get("path"),
                     "sha256_file": m.get("sha256_file"),
+                    "sha256_text": sha256_text,
                     "filename": m.get("filename"),
                 }
                 self.qdrant.upsert_metadata(chunk_id, payload)
