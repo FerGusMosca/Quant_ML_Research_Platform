@@ -680,7 +680,7 @@ class ReportsOrchestationLogic:
             # ---------------------------------------------------------
             # 🔍 Resolve input file
             # ---------------------------------------------------------
-            report_suffix = "10-K" if quarter is None else f"{quarter}_10-Q"
+            report_suffix = "10-K" if quarter is None else f"Q{quarter}_10-Q"
 
             file_path = os.path.join(
                 RootLocator.get_root(),
