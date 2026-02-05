@@ -30,3 +30,4 @@ jobs:
           file: ./commands/reports/Dockerfile
           push: true
           tags: alienzimzum/zz-run-report:latest
+          no-cache: true

@@ -19,20 +19,21 @@ spacy
 nltk
 websockets>=12.0
 tf-keras
-sentence-transformers
 pymupdf
 rapidfuzz
-transformers
 tokenizers
 huggingface-hub
 safetensors
 sec-parser
 neo4j
 # ---- Torch CPU ONLY ----
-torch==2.2.0+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
 
 
 #Qdrant
 qdrant-client
+
+transformers==4.37.2
+sentence-transformers==2.6.1
 accelerate==0.27.2
+torch==2.2.0+cpu
