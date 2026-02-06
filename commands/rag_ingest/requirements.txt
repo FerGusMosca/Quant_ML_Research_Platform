@@ -1,7 +1,6 @@
 # Core dependencies
 nltk
 pymupdf
-sentence-transformers
 faiss-cpu
 scikit-learn
 tqdm
@@ -13,22 +12,23 @@ PyYAML
 rapidfuzz
 websockets>=12.0
 
-# Force NumPy <2 to avoid compatibility crash with sentence-transformers/Torch
+# NumPy (evitar crash)
 numpy<2
 
-# Torch CPU ONLY (necesario y compatible con sentence-transformers)
+# Torch CPU ONLY
 torch==2.2.0+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
 
-# Transformers ecosystem (requerido por sentence-transformers)
-transformers
+# Transformers ecosystem
+transformers==4.37.2
+sentence-transformers==2.6.1
+accelerate==0.27.2
 tokenizers
 huggingface-hub
 safetensors
 
-# Spacy (para procesamiento de texto si lo usás)
+# Spacy
 spacy
 
-
-#Qdrant
+# Qdrant
 qdrant-client
