@@ -29,4 +29,6 @@ class ReportType(Enum):
 
     FINANCIAL_RATIOS_REPORT_SA="financial_ratios_report_sa"
 
+    GENERIC_TEXT_ANALYSIS = "generic_text_analysis"
+
     START_MCP = "start_mcp"

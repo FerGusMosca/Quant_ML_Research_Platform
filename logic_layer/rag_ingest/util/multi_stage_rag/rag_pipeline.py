@@ -157,27 +157,39 @@ class RAGPipeline:
             self.logger.do_log(f"[RAG] ❌ sanitize_filename failed: {e}", MessageType.ERROR,job_id)
             return "unnamed_document"
 
-    def _register_chunks_qdrant(self, chunks, metadata, pdf_path):
-        """Register per-chunk metadata into Qdrant (no vectors)."""
-
+    def _register_chunks_qdrant(self, chunks, metadata, pdf_path, embeddings=None):
+        """
+        Register per-chunk metadata and TEXT into Qdrant.
+        If embeddings are provided, it performs a full vector upsert.
+        """
         ingest_ts = metadata[0].get("ingest_timestamp")
 
         for idx, chunk in enumerate(chunks):
-            chunk_id = uuid.uuid5(
+            # Generar ID consistente
+            chunk_id = str(uuid.uuid5(
                 uuid.NAMESPACE_URL,
                 f"{metadata[idx]['source_pdf']}__{metadata[idx]['chunk_id']}"
-            )
+            ))
 
             payload = {
                 "source_pdf": metadata[idx]["source_pdf"],
                 "chunk_id": metadata[idx]["chunk_id"],
                 "chunk_index": idx,
+                "chunk_text": chunk,
                 "text_len": len(chunk),
                 "ingest_timestamp": ingest_ts,
                 "ingest_run_id": self.current_run_log
             }
 
-            self.qdrant.upsert_metadata(chunk_id, payload)
+            if embeddings is not None:
+
+                vector_data = embeddings[idx].tolist() if isinstance(embeddings[idx], np.ndarray) else embeddings[idx]
+                self.qdrant.upsert_vector(chunk_id, vector_data, payload)
+            else:
+                self.qdrant.upsert_metadata(chunk_id, payload)
+
+        self.logger.do_log(f"[RAG] ⚡ Chunks + Text registered in Qdrant for: {os.path.basename(pdf_path)}",
+                           MessageType.INFO)
 
     # ==========================================================
     # PROCESS ONE PDF
