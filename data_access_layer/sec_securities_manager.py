@@ -1,3 +1,5 @@
+from typing import Optional
+
 import pyodbc
 
 from framework.common.logger.message_type import MessageType
@@ -41,3 +43,25 @@ class SECSecuritiesManager:
         self.connection.commit()
         self.logger.do_log(f"persist_sec_securities: successfully persisted {len(sec_dtos)} securities.",
                            MessageType.INFO)
+
+    def get_security_from_portfolio(self, portfolio_id: int, symbol: str) -> Optional[dict]:
+        """
+        Retrieves security details (including CIK) for a specific symbol within a portfolio.
+        """
+        try:
+            with self.connection.cursor() as cursor:
+                cursor.execute("EXEC [dbo].[get_portfolio_securities] ?, ?", (portfolio_id, symbol))
+                row = cursor.fetchone()
+
+                if row:
+                    # Convert row to dict for easier access
+                    return {
+                        "ticker": row.ticker,
+                        "symbol": row.symbol,
+                        "name": row.name,
+                        "cik": row.cik
+                    }
+        except Exception as e:
+            self.logger.do_log(f"get_security_from_portfolio: error fetching {symbol} - {str(e)}", MessageType.ERROR)
+
+        return None

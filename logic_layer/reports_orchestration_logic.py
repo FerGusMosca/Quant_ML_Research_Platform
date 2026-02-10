@@ -17,7 +17,9 @@ from common.enums.report_folder import ReportFolder
 from common.enums.report_type import ReportType
 from common.enums.sec_reports import SECReports
 from common.util.date_mgmt.date_range_handler import DateRangeHandler
+from common.util.downloaders.K_Q_10.form_4_downloader import Form4Downloader
 from common.util.downloaders.K_Q_10.k8_downloader import K8Downloader
+from common.util.downloaders.K_Q_10.k8_processor import K8Processor
 from common.util.downloaders.finviz_full_news_downloader import FinVizFullNewsDownloader
 from common.util.downloaders.finviz_offline_sentiment_analyzer import FinvizOfflineSentimentAnalyzer
 from common.util.downloaders.ib_income_statement import IBIncomeStatement
@@ -25,6 +27,7 @@ from common.util.downloaders.K_Q_10.k10_downloader import K10Downloader
 from common.util.downloaders.K_Q_10.q10_downloader import Q10Downloader
 from common.util.downloaders.thirteen_F.thirteen_F_graph_downloader import ThirteenFGraphDownloader
 from common.util.downloaders.yahoo_income_statement import YahooIncomeStatement
+from common.util.extractors.K_Q_10.form_4_processor import Form4Processor
 from common.util.scrappers.securities_calendar_extractor import SecuritiesCalendarExtractor
 from common.util.std_in_out.K_Q_10_file_locator import KQ10FileLocator
 from common.util.std_in_out.file_locators import FileLocators
@@ -32,6 +35,7 @@ from common.util.std_in_out.root_locator import RootLocator
 from data_access_layer.neo4j.graph_holding_mgr import HoldingsGraphManager
 from data_access_layer.portfolio_securities_manager import PortfolioSecuritiesManager
 from data_access_layer.report_securities_manager import ReportSecuritiesManager
+from data_access_layer.sec_securities_manager import SECSecuritiesManager
 from data_access_layer.securities_calendar_manager import SecuritiesCalendarManager
 from data_access_layer.tag_run_manager import TagRunManager
 from framework.common.logger.message_type import MessageType
@@ -60,6 +64,8 @@ class ReportsOrchestationLogic:
         self.report_securities_mgr = ReportSecuritiesManager(ml_reports_conn_str, logger)
 
         self.portfolio_securities_mgr = PortfolioSecuritiesManager(ml_reports_conn_str,logger)
+
+        self.sec_securities_mgr=SECSecuritiesManager(ml_reports_conn_str,logger)
 
         self.sec_cal_mgr =SecuritiesCalendarManager(ml_reports_conn_str)
 
@@ -216,6 +222,134 @@ class ReportsOrchestationLogic:
             job_id
         )
 
+    def _download_form4_reports(self, symbol, rank_folder, job_id):
+        """
+        Orchestrates the retrieval and signal extraction of Insider Trades.
+        """
+        from datetime import datetime
+        import json
+
+        summary = {
+            "report": "insider_signals",
+            "symbol": symbol.upper(),
+            "status": "started",
+            "bullish_signals_found": 0,
+            "elapsed_sec": None
+        }
+        start_time = datetime.now()
+
+        try:
+            # 1. Download
+            downloader = Form4Downloader(self.logger, rank_folder, job_id)
+            raw_dir, xml_files = downloader.download_insider_trades(symbol, limit=20)
+
+            # 2. Process
+            processor = Form4Processor(self.logger, job_id)
+            all_signals = []
+
+            for xml in xml_files:
+                signals = processor.process_file(xml)
+                all_signals.extend(signals)
+
+            # 3. Analyze Results
+            bullish_count = sum(1 for s in all_signals if s['is_bullish_signal'])
+            summary["bullish_signals_found"] = bullish_count
+            summary["status"] = "completed"
+            summary["total_trades_analyzed"] = len(all_signals)
+
+        except Exception as e:
+            summary["status"] = "failed"
+            summary["error"] = str(e)
+
+        elapsed = (datetime.now() - start_time).total_seconds()
+        summary["elapsed_sec"] = round(elapsed, 2)
+
+        # Log structured final event for the UI/Database
+        self.logger.do_log(
+            json.dumps({"event": "form4_complete", "summary": summary}),
+            MessageType.INFO,
+            job_id
+        )
+
+    def _run_download_k8_single_security(self, year: int, symbol: str, job_id: int):
+        """
+        Orchestrates discovery, download, and parsing.
+        Guarantees content return even if files already exist on disk.
+        """
+        try:
+            # 1. Resolve Metadata
+            security = self.sec_securities_mgr.get_security_from_portfolio(None, symbol)
+            if not security or not security.get("cik"):
+                self.logger.do_log(f"[K8-ORCH] ❌ ABORT: No CIK found for {symbol}. Check SEC_Securities table.",
+                                   MessageType.ERROR, job_id)
+                return {"status": "error", "error": "CIK_NOT_FOUND"}
+
+            cik = security["cik"]
+
+            # 2. Path Setup
+            # Using your specific Folder/Report structure
+            base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{Folders.SINGLE_STOCKS.value}/{ReportFolder.K8.value}/{year}"
+            output_dir = os.path.join(base_path, symbol)
+            os.makedirs(output_dir, exist_ok=True)
+
+            # 3. Download Process
+            downloader = K8Downloader(logger=self.logger)
+            # We call the downloader to get NEW files
+            new_files = downloader.download_k8_range(symbol, cik, year, output_dir, job_id)
+
+            # 4. GET ALL FILES (The Fix)
+            # If new_files is empty because they already existed, we list the directory to process them anyway.
+            all_files = [os.path.join(output_dir, f) for f in os.listdir(output_dir) if f.endswith(".html")]
+
+            if not all_files:
+                self.logger.do_log(f"[K8-ORCH] ⚠️ NOTHING FOUND: No 8-K filings on disk or SEC for {symbol} in {year}.",
+                                   MessageType.WARNING, job_id)
+                return {"event": "completed", "status": "no_data_available", "symbol": symbol, "reports": []}
+
+            self.logger.do_log(f"[K8-ORCH] 📂 Processing {len(all_files)} total files for {symbol}...", MessageType.INFO,
+                               job_id)
+
+            # 5. Extraction of REAL CONTENT
+            processor = K8Processor()
+            mcp_results = []
+
+            for file_path in all_files:
+                try:
+                    processed = processor.process_file(file_path)
+
+                    # Validation: If clean_text is empty, we log it specifically
+                    if not processed['clean_text'].strip():
+                        self.logger.do_log(
+                            f"[K8-ORCH] ⚠️ EMPTY CONTENT: File {os.path.basename(file_path)} has no readable text.",
+                            MessageType.WARNING, job_id)
+                        continue
+
+                    mcp_results.append({
+                        "type": "document",
+                        "title": f"Form 8-K: {symbol} ({processed['metadata']['date']})",
+                        "metadata": {
+                            "items": processed['metadata']['items'],
+                            "company": security.get("name", "Unknown"),
+                            "filename": os.path.basename(file_path)
+                        },
+                        "content": processed['clean_text']  # <--- THE RAW BODY CONTENT
+                    })
+                except Exception as e:
+                    self.logger.do_log(f"[K8-ORCH] ❌ PARSING ERROR: {file_path} | {e}", MessageType.ERROR, job_id)
+
+            self.logger.do_log(f"[K8-ORCH] ✅ SUCCESS: Returning {len(mcp_results)} reports with content.",
+                               MessageType.INFO, job_id)
+
+            return {
+                "event": "k8_single_security_ready",
+                "symbol": symbol,
+                "count": len(mcp_results),
+                "reports": mcp_results  # This will finally populate your UI
+            }
+
+        except Exception as catastrophic_e:
+            self.logger.do_log(f"[K8-ORCH] 💀 CRITICAL FAULT: {catastrophic_e}", MessageType.ERROR, job_id)
+            return {"status": "error", "error": "SYSTEM_FAULT", "details": str(catastrophic_e)}
 
     def _run_download_k8(self, year, portfolio, job_id):
         """
@@ -1533,7 +1667,7 @@ class ReportsOrchestationLogic:
 
     def _run_fin_viz_news_downloader(self,portfolio,symbol=None,job_id=None):
 
-        if portfolio!="SINGLE_STOCKS":
+        if portfolio!=Folders.SINGLE_STOCKS.value:
             # ✅ Get securities from portfolio
             securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
 
@@ -1915,6 +2049,8 @@ class ReportsOrchestationLogic:
             self._run_download_q10(year,portfolio,job_id)
         elif report_key.lower() == ReportType.DOWNLOAD_K8.value:
             self._run_download_k8(year,portfolio,job_id)
+        elif report_key.lower() == ReportType.DOWNLOAD_K8_SINGLE_SECURITY.value:
+            self._run_download_k8_single_security(year,symbol,job_id)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_K10.value:
             self._run_sentiment_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder,job_id=job_id)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_SINGLE_STOCK_K10.value:

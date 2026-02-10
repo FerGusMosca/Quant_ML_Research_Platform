@@ -3,6 +3,7 @@ from enum import Enum
 class ReportType(Enum):
     DOWNLOAD_K10 = "download_k10"
     DOWNLOAD_K8 = "download_k8"
+    DOWNLOAD_K8_SINGLE_SECURITY = "download_k8_single_security"
     DOWNLOAD_Q10 = "download_q10"
     DOWNLOAD_YEARLY_INCOME_STATEMENT = "download_yearly_income_statement"
     DOWNLOAD_QUARTERLY_INCOME_STATEMENT = "download_quarterly_income_statement"

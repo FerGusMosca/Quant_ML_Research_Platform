@@ -5,6 +5,8 @@ class Folders(Enum):
     OUTPUT_RF_FOLDER = "./output/sliding_rf_models"
     OUTPUT_SECURITIES_REPORTS_FOLDER = "./output/securities_reports"
 
+    SINGLE_STOCKS="SINGLE_STOCKS"
+
     @staticmethod
     def load_from_config(config_path="./configs/commands_mgr.ini"):
         config = configparser.ConfigParser()
