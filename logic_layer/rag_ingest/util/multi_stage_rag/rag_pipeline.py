@@ -162,7 +162,8 @@ class RAGPipeline:
         Register per-chunk metadata and TEXT into Qdrant.
         If embeddings are provided, it performs a full vector upsert.
         """
-        ingest_ts = metadata[0].get("ingest_timestamp")
+        ingest_ts_iso = metadata[0].get("ingest_timestamp")
+        ingest_ts_epoch = int(datetime.fromisoformat(ingest_ts_iso).timestamp() * 1000)
 
         for idx, chunk in enumerate(chunks):
             # Generar ID consistente
@@ -177,7 +178,8 @@ class RAGPipeline:
                 "chunk_index": idx,
                 "chunk_text": chunk,
                 "text_len": len(chunk),
-                "ingest_timestamp": ingest_ts,
+                "ingest_timestamp": ingest_ts_iso,
+                "ingest_ts_epoch": ingest_ts_epoch,
                 "ingest_run_id": self.current_run_log
             }
 
