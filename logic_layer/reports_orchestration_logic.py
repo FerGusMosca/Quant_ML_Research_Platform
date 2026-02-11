@@ -17,6 +17,8 @@ from common.enums.report_folder import ReportFolder
 from common.enums.report_type import ReportType
 from common.enums.sec_reports import SECReports
 from common.util.date_mgmt.date_range_handler import DateRangeHandler
+from common.util.downloaders.K_Q_10.f4_downloader import F4Downloader
+from common.util.downloaders.K_Q_10.f4_processor import F4Processor
 from common.util.downloaders.K_Q_10.form_4_downloader import Form4Downloader
 from common.util.downloaders.K_Q_10.k8_downloader import K8Downloader
 from common.util.downloaders.K_Q_10.k8_processor import K8Processor
@@ -373,6 +375,94 @@ class ReportsOrchestationLogic:
         )
 
         return result
+
+    def _run_download_f4_single_security(self, year: int, symbol: str, job_id: int) -> dict:
+        """
+        Orchestrates Form 4 (Insider Trading) discovery, download, and parsing.
+        """
+        start_time = datetime.now()
+        symbol = symbol.upper().strip()
+
+        result = {
+            "report": "f4_single_security",
+            "symbol": symbol,
+            "year": year,
+            "status": "started",
+            "reports": [],
+            "count": 0,
+            "error_type": None,
+            "message": None,
+            "elapsed_sec": None
+        }
+
+        try:
+            # 🔍 Resolve CIK
+            security = self.sec_securities_mgr.get_security_from_portfolio(None, symbol)
+            if not security or not security.get("cik"):
+                result["status"] = "error"
+                result["error_type"] = "CIK_NOT_FOUND"
+                raise ValueError(f"No CIK found for {symbol}")
+
+            cik = security["cik"]
+
+            base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{Folders.SINGLE_STOCKS.value}/{ReportFolder.F4.value}/{year}"
+            output_dir = os.path.join(base_path, symbol)
+            os.makedirs(output_dir, exist_ok=True)
+
+            # 📥 Download Process
+            downloader = F4Downloader(logger=self.logger)
+            downloader.download_f4_range(symbol, cik, year, output_dir, job_id)
+
+            all_files = [os.path.join(output_dir, f) for f in os.listdir(output_dir) if f.endswith(".html")]
+
+            if not all_files:
+                result["status"] = "completed"
+                result["message"] = "no_insider_trading_data_available"
+            else:
+                # 📝 Extraction
+                processor = F4Processor()
+                mcp_results = []
+
+                for file_path in all_files:
+                    try:
+                        processed = processor.process_file(file_path)
+                        if processed['clean_text'].strip():
+                            mcp_results.append({
+                                "type": "document",
+                                "title": f"Form 4: {symbol} - {processed['metadata']['insider_name']}",
+                                "metadata": {
+                                    "insider_name": processed['metadata']['insider_name'],
+                                    "is_director": processed['metadata']['is_director'],
+                                    "is_officer": processed['metadata']['is_officer'],
+                                    "company": security.get("name", "Unknown"),
+                                    "filename": os.path.basename(file_path)
+                                },
+                                "content": processed['clean_text']
+                            })
+                    except Exception as e:
+                        self.logger.do_log(f"[F4-ORCH] ❌ PARSING ERROR: {file_path} | {e}", MessageType.ERROR, job_id)
+
+                result["status"] = "completed"
+                result["reports"] = mcp_results
+                result["count"] = len(mcp_results)
+                result["message"] = "Insider trading analysis completed"
+
+        except Exception as e:
+            result["status"] = "error"
+            result["error_type"] = result.get("error_type") or "internal_error"
+            result["message"] = str(e)
+            self.logger.do_log(f"[F4-ORCH] 💀 CRITICAL FAULT: {e}", MessageType.ERROR, job_id)
+
+        result["elapsed_sec"] = round((datetime.now() - start_time).total_seconds(), 2)
+
+        self.logger.do_log(
+            json.dumps({"event": "completed", "status": result["status"], "result": result}),
+            MessageType.INFO,
+            job_id
+        )
+
+        return result
+
     def _run_download_k8(self, year, portfolio, job_id):
         """
         Download 8-K filings for a given portfolio and year range.
@@ -2073,6 +2163,9 @@ class ReportsOrchestationLogic:
             self._run_download_k8(year,portfolio,job_id)
         elif report_key.lower() == ReportType.DOWNLOAD_K8_SINGLE_SECURITY.value:
             self._run_download_k8_single_security(year,symbol,job_id)
+        elif report_key.lower() == ReportType.DOWNLOAD_F4_SINGLE_SECURITY.value:
+            self._run_download_f4_single_security(year,symbol,job_id)
+        #
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_K10.value:
             self._run_sentiment_summary_report(year, SECReports.K10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder,job_id=job_id)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_SINGLE_STOCK_K10.value:
