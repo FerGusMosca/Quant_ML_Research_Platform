@@ -271,86 +271,108 @@ class ReportsOrchestationLogic:
             job_id
         )
 
-    def _run_download_k8_single_security(self, year: int, symbol: str, job_id: int):
+    def _run_download_k8_single_security(self, year: int, symbol: str, job_id: int) -> dict:
         """
-        Orchestrates discovery, download, and parsing.
-        Guarantees content return even if files already exist on disk.
+        Orchestrates 8-K discovery, download, and parsing.
+        Returns a structured JSON response consistent with other analysis methods.
         """
+        start_time = datetime.now()
+        symbol = symbol.upper().strip()
+
+        # ---------------------------------------------------------
+        # 📊 Initialize result structure
+        # ---------------------------------------------------------
+        result = {
+            "report": "k8_single_security",
+            "symbol": symbol,
+            "year": year,
+            "status": "started",
+            "reports": [],
+            "count": 0,
+            "error_type": None,
+            "message": None,
+            "elapsed_sec": None
+        }
+
         try:
-            # 1. Resolve Metadata
+            # ---------------------------------------------------------
+            # 🔍 Resolve CIK and Path Setup
+            # ---------------------------------------------------------
             security = self.sec_securities_mgr.get_security_from_portfolio(None, symbol)
             if not security or not security.get("cik"):
-                self.logger.do_log(f"[K8-ORCH] ❌ ABORT: No CIK found for {symbol}. Check SEC_Securities table.",
-                                   MessageType.ERROR, job_id)
-                return {"status": "error", "error": "CIK_NOT_FOUND"}
+                result["status"] = "error"
+                result["error_type"] = "CIK_NOT_FOUND"
+                raise ValueError(f"No CIK found for {symbol}")
 
             cik = security["cik"]
-
-            # 2. Path Setup
-            # Using your specific Folder/Report structure
             base_path = f"{Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value}/{Folders.SINGLE_STOCKS.value}/{ReportFolder.K8.value}/{year}"
             output_dir = os.path.join(base_path, symbol)
             os.makedirs(output_dir, exist_ok=True)
 
-            # 3. Download Process
+            # ---------------------------------------------------------
+            # 📥 Download Process
+            # ---------------------------------------------------------
             downloader = K8Downloader(logger=self.logger)
-            # We call the downloader to get NEW files
-            new_files = downloader.download_k8_range(symbol, cik, year, output_dir, job_id)
+            downloader.download_k8_range(symbol, cik, year, output_dir, job_id)
 
-            # 4. GET ALL FILES (The Fix)
-            # If new_files is empty because they already existed, we list the directory to process them anyway.
             all_files = [os.path.join(output_dir, f) for f in os.listdir(output_dir) if f.endswith(".html")]
 
             if not all_files:
-                self.logger.do_log(f"[K8-ORCH] ⚠️ NOTHING FOUND: No 8-K filings on disk or SEC for {symbol} in {year}.",
-                                   MessageType.WARNING, job_id)
-                return {"event": "completed", "status": "no_data_available", "symbol": symbol, "reports": []}
+                result["status"] = "completed"
+                result["message"] = "no_data_available"
+            else:
+                # ---------------------------------------------------------
+                # 📝 Extraction of Content
+                # ---------------------------------------------------------
+                processor = K8Processor()
+                mcp_results = []
 
-            self.logger.do_log(f"[K8-ORCH] 📂 Processing {len(all_files)} total files for {symbol}...", MessageType.INFO,
-                               job_id)
+                for file_path in all_files:
+                    try:
+                        processed = processor.process_file(file_path)
+                        if processed['clean_text'].strip():
+                            mcp_results.append({
+                                "type": "document",
+                                "title": f"Form 8-K: {symbol} ({processed['metadata']['date']})",
+                                "metadata": {
+                                    "items": processed['metadata']['items'],
+                                    "company": security.get("name", "Unknown"),
+                                    "filename": os.path.basename(file_path)
+                                },
+                                "content": processed['clean_text']
+                            })
+                    except Exception as e:
+                        self.logger.do_log(f"[K8-ORCH] ❌ PARSING ERROR: {file_path} | {e}", MessageType.ERROR, job_id)
 
-            # 5. Extraction of REAL CONTENT
-            processor = K8Processor()
-            mcp_results = []
+                result["status"] = "completed"
+                result["reports"] = mcp_results
+                result["count"] = len(mcp_results)
+                result["message"] = "Analysis completed successfully"
 
-            for file_path in all_files:
-                try:
-                    processed = processor.process_file(file_path)
+        except Exception as e:
+            result["status"] = "error"
+            result["error_type"] = result.get("error_type") or "internal_error"
+            result["message"] = str(e)
+            self.logger.do_log(f"[K8-ORCH] 💀 CRITICAL FAULT: {e}", MessageType.ERROR, job_id)
 
-                    # Validation: If clean_text is empty, we log it specifically
-                    if not processed['clean_text'].strip():
-                        self.logger.do_log(
-                            f"[K8-ORCH] ⚠️ EMPTY CONTENT: File {os.path.basename(file_path)} has no readable text.",
-                            MessageType.WARNING, job_id)
-                        continue
+        # ---------------------------------------------------------
+        # ⏱️ Finalize and emit Completion Event
+        # ---------------------------------------------------------
+        elapsed = (datetime.now() - start_time).total_seconds()
+        result["elapsed_sec"] = round(elapsed, 2)
 
-                    mcp_results.append({
-                        "type": "document",
-                        "title": f"Form 8-K: {symbol} ({processed['metadata']['date']})",
-                        "metadata": {
-                            "items": processed['metadata']['items'],
-                            "company": security.get("name", "Unknown"),
-                            "filename": os.path.basename(file_path)
-                        },
-                        "content": processed['clean_text']  # <--- THE RAW BODY CONTENT
-                    })
-                except Exception as e:
-                    self.logger.do_log(f"[K8-ORCH] ❌ PARSING ERROR: {file_path} | {e}", MessageType.ERROR, job_id)
+        # This JSON dump ensures the client in your image catches the "completed" event
+        self.logger.do_log(
+            json.dumps({
+                "event": "completed",
+                "status": result["status"],
+                "result": result
+            }),
+            MessageType.INFO,
+            job_id
+        )
 
-            self.logger.do_log(f"[K8-ORCH] ✅ SUCCESS: Returning {len(mcp_results)} reports with content.",
-                               MessageType.INFO, job_id)
-
-            return {
-                "event": "k8_single_security_ready",
-                "symbol": symbol,
-                "count": len(mcp_results),
-                "reports": mcp_results  # This will finally populate your UI
-            }
-
-        except Exception as catastrophic_e:
-            self.logger.do_log(f"[K8-ORCH] 💀 CRITICAL FAULT: {catastrophic_e}", MessageType.ERROR, job_id)
-            return {"status": "error", "error": "SYSTEM_FAULT", "details": str(catastrophic_e)}
-
+        return result
     def _run_download_k8(self, year, portfolio, job_id):
         """
         Download 8-K filings for a given portfolio and year range.
