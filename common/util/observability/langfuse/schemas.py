@@ -8,7 +8,7 @@ Usage from MCP clients:
     from langfuse.schemas import ObservabilityMessage, ServiceId, LogLevel
 
     message = ObservabilityMessage(
-        service_id=ServiceId.MCP_SEC_FILINGS,
+        service_id=ServiceId.MCP_SEC_REPORTS,
         node_name="download_10k",
         input_data={"symbol": "AAPL", "year": 2024},
         output_data={"status": "completed", "files": 3}
@@ -32,7 +32,7 @@ class ServiceId(str, Enum):
     IMPORTANT: Use these consistently across all services
     to enable filtering and grouping in Langfuse dashboard.
     """
-    MCP_SEC_FILINGS = "mcp-sec-filings"  # SEC filings service (10K, 10Q, F4, etc.)
+    MCP_SEC_REPORTS = "mcp-sec-reports"  # SEC filings service (10K, 10Q, F4, etc.)
     MCP_MARKET_DATA = "mcp-market-data"  # Market data service (prices, quotes)
     MCP_PORTFOLIO = "mcp-portfolio"  # Portfolio management service
     MCP_NEWS = "mcp-news"  # News aggregation service
@@ -106,7 +106,7 @@ class ObservabilityMessage:
 
     Example:
         msg = ObservabilityMessage(
-            service_id=ServiceId.MCP_SEC_FILINGS,
+            service_id=ServiceId.MCP_SEC_REPORTS,
             node_name="download_10k",
             input_data={"symbol": "AAPL"},
             output_data={"status": "ok", "files": 3}
@@ -268,7 +268,7 @@ def build_message(
 
     Example:
         msg = build_message(
-            service_id=ServiceId.MCP_SEC_FILINGS,
+            service_id=ServiceId.MCP_SEC_REPORTS,
             operation=OperationType.DOWNLOAD,
             target="10k_AAPL_2024",
             input_data={"symbol": "AAPL", "year": 2024},

@@ -30,6 +30,8 @@ from common.util.downloaders.K_Q_10.q10_downloader import Q10Downloader
 from common.util.downloaders.thirteen_F.thirteen_F_graph_downloader import ThirteenFGraphDownloader
 from common.util.downloaders.yahoo_income_statement import YahooIncomeStatement
 from common.util.extractors.K_Q_10.form_4_processor import Form4Processor
+from common.util.observability.langfuse.observability_context import ObsContext
+from common.util.observability.langfuse.schemas import ServiceId
 from common.util.scrappers.securities_calendar_extractor import SecuritiesCalendarExtractor
 from common.util.std_in_out.K_Q_10_file_locator import KQ10FileLocator
 from common.util.std_in_out.file_locators import FileLocators
@@ -122,6 +124,13 @@ class ReportsOrchestationLogic:
         # Resolve year range
         years = DateRangeHandler.handle_date_range(year, self.logger)
         single_year = len(years) == 1
+
+        ObsContext.set(
+            job_id=str(job_id),
+            service_id=ServiceId.MCP_SEC_REPORTS,  # Or get from config/orchestrator
+            operation_name="download_k10",
+            metadata={"portfolio": portfolio, "year": year}
+        )
 
         # Global summary for the whole job
         summary = {
@@ -281,6 +290,14 @@ class ReportsOrchestationLogic:
         start_time = datetime.now()
         symbol = symbol.upper().strip()
 
+
+        ObsContext.set(
+            job_id=str(job_id),
+            service_id=ServiceId.MCP_SEC_REPORTS,  # Or get from config/orchestrator
+            operation_name="download_k8_single_security",
+            metadata={"symbol":symbol, "year":year}
+        )
+
         # ---------------------------------------------------------
         # 📊 Initialize result structure
         # ---------------------------------------------------------
@@ -382,6 +399,13 @@ class ReportsOrchestationLogic:
         """
         start_time = datetime.now()
         symbol = symbol.upper().strip()
+
+        ObsContext.set(
+            job_id=str(job_id),
+            service_id=ServiceId.MCP_SEC_REPORTS,  # Or get from config/orchestrator
+            operation_name="download_f4_single_security",
+            metadata={"symbol": symbol, "year": year}
+        )
 
         result = {
             "report": "f4_single_security",

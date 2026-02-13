@@ -28,6 +28,8 @@ class MLSettingsLoader():
             config_settings["LANGFUSE_PUBLIC_KEY"] = config['LANGFUSE']['LANGFUSE_PUBLIC_KEY']
             config_settings["LANGFUSE_BASE_URL"] = config['LANGFUSE']['LANGFUSE_BASE_URL']
 
+            config_settings["OBSERVABILITY_PROXY_URL"] = config['MCP_OBSERVABILITY']['OBSERVABILITY_PROXY_URL']
+
 
             config_settings["classification_map_key"] = config['SETTINGS']['CLASSIFICATION_MAP_KEY']
             config_settings["IB_PROD_WS"] = config['SETTINGS']['IB_PROD_WS']

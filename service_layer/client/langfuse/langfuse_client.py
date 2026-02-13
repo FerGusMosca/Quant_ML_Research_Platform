@@ -92,10 +92,13 @@ class LangfuseClient:
             # Remove None values
             span_metadata = {k: v for k, v in span_metadata.items() if v is not None}
 
-            with self._client.start_as_current_observation(
-                    as_type="span",
-                    name=name
-            ) as span:
+            if trace_id:
+                trace = self._client.trace(id=trace_id, name=trace_name)
+            else:
+                trace = self._client.trace(name=trace_name)
+
+
+            with trace.start_as_current_observation(as_type="span", name=name) as span:
                 span.update(
                     input=input_data,
                     output=output_data,
