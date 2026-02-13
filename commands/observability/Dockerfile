@@ -23,4 +23,5 @@ COPY static/tags /app/static/tags
 EXPOSE 8000
 
 # Start the proxy server
-CMD ["uvicorn", "commands.observability.observability_proxy:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["python", "-u", "-m", "commands.observability.observability_proxy", "port=7003", "host=0.0.0.0"]
+
