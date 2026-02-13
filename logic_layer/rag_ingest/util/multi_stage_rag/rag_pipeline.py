@@ -157,7 +157,7 @@ class RAGPipeline:
             self.logger.do_log(f"[RAG] ❌ sanitize_filename failed: {e}", MessageType.ERROR,job_id)
             return "unnamed_document"
 
-    def _register_chunks_qdrant(self, chunks, metadata, pdf_path, embeddings=None):
+    def _register_chunks_qdrant(self, chunks, metadata, pdf_path,source_path=None, embeddings=None):
         """
         Register per-chunk metadata and TEXT into Qdrant.
         If embeddings are provided, it performs a full vector upsert.
@@ -177,6 +177,8 @@ class RAGPipeline:
                 "chunk_id": metadata[idx]["chunk_id"],
                 "chunk_index": idx,
                 "chunk_text": chunk,
+                "pdf_path": pdf_path,
+                "source_path": source_path,
                 "text_len": len(chunk),
                 "ingest_timestamp": ingest_ts_iso,
                 "ingest_ts_epoch": ingest_ts_epoch,
@@ -196,7 +198,7 @@ class RAGPipeline:
     # ==========================================================
     # PROCESS ONE PDF
     # ==========================================================
-    def process_pdf(self, pdf_path: str,job_id=None):
+    def process_pdf(self, pdf_path: str,source_path:str=None,job_id=None):
         self.logger.do_log(f"[RAG] Extracting text: {pdf_path}",MessageType.INFO)
 
         # ----- Extract -----
@@ -242,7 +244,7 @@ class RAGPipeline:
         try:
             embeddings = self.embedder.embed(chunks)
 
-            self._register_chunks_qdrant(chunks,metadata,pdf_path)
+            self._register_chunks_qdrant(chunks,metadata,pdf_path,source_path=source_path,embeddings=embeddings)
         except Exception as e:
             self.logger.do_log(f"[RAG] ❌ Embedding generation failed: {e}", MessageType.ERROR,job_id)
             return None
@@ -458,7 +460,7 @@ class RAGPipeline:
 
             # -------- Process PDF --------
             self.logger.do_log(f"[RAG] 🔥 Processing PDF: {pdf_path}",MessageType.INFO,job_id)
-            res = self.process_pdf(pdf_path,job_id)
+            res = self.process_pdf(pdf_path,source_path=source_path,job_id=job_id)
 
             if res:
                 summary["processed"] += 1
