@@ -499,6 +499,13 @@ class ReportsOrchestationLogic:
 
         years = DateRangeHandler.handle_date_range(year, self.logger)
 
+        ObsContext.set(
+            job_id=str(job_id),
+            service_id=ServiceId.MCP_SEC_REPORTS,  # Or get from config/orchestrator
+            operation_name="download_k8",
+            metadata={"portfolio": portfolio, "year": year}
+        )
+
         summary = {
             "years": {},
             "total_securities": 0,
@@ -593,6 +600,13 @@ class ReportsOrchestationLogic:
         # 🧠 Resolve year range
         # ---------------------------------------------------------
         years = DateRangeHandler.handle_date_range(year, self.logger)
+
+        ObsContext.set(
+            job_id=str(job_id),
+            service_id=ServiceId.MCP_SEC_REPORTS,  # Or get from config/orchestrator
+            operation_name="download_q10",
+            metadata={"portfolio": portfolio, "year": year}
+        )
 
         # ---------------------------------------------------------
         # 📊 Global summary
@@ -789,9 +803,17 @@ class ReportsOrchestationLogic:
         # ---------------------------------------------------------
         years = DateRangeHandler.handle_date_range(year, self.logger)
 
+        ObsContext.set(
+            job_id=str(job_id),
+            service_id=ServiceId.MCP_SEC_REPORTS,  # Or get from config/orchestrator
+            operation_name="sentiment_summary_report",
+            metadata={"portfolio": portfolio, "year": year, "report_type": report_type, "dest_folder": dest_folder,
+                      "rank_folder": rank_folder}
+        )
+
         # ---------------------------------------------------------
         # 📊 Global summary
-        # ---------------------------------------------------------
+        # ---------------------------------------------------------s
         summary = {
             "report": "sentiment_summary",
             "report_type": report_type,
@@ -920,6 +942,13 @@ class ReportsOrchestationLogic:
 
         start_time = datetime.now()
         symbol = symbol.upper().strip()
+
+        ObsContext.set(
+            job_id=str(job_id),
+            service_id=ServiceId.MCP_SEC_REPORTS,  # Or get from config/orchestrator
+            operation_name="document_single_security",
+            metadata={"symbol": symbol, "year": year, "quarter": quarter, "source": source}
+        )
 
         # ---------------------------------------------------------
         # 📊 Initialize result structure
@@ -1097,6 +1126,14 @@ class ReportsOrchestationLogic:
 
         start_time = datetime.now()
         symbol = symbol.upper().strip()
+
+        ObsContext.set(
+            job_id=str(job_id),
+            service_id=ServiceId.MCP_SEC_REPORTS,  # Or get from config/orchestrator
+            operation_name="sentiment_single_security_report",
+            metadata={"symbol": symbol, "year": year, "report_type": report_type, "portfolio": portfolio,
+                      "quarter": quarter}
+        )
 
         # ---------------------------------------------------------
         # 📊 Initialize result structure
@@ -1392,6 +1429,15 @@ class ReportsOrchestationLogic:
 
         #1- Extract All Input Data
         try:
+
+            ObsContext.set(
+                job_id=str(job_id),
+                service_id=ServiceId.MCP_SEC_REPORTS,  # Or get from config/orchestrator
+                operation_name="document_tagging",
+                metadata={"portfolio": portfolio, "year": year, "quarter": quarter, "source": source,
+                          "rank_folder": rank_folder}
+            )
+
             tagger = TransformersTopicTagger(self.logger, tag_cfg)
             years = DateRangeHandler.handle_date_range(year, self.logger)
             securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
@@ -1541,6 +1587,14 @@ class ReportsOrchestationLogic:
 
         #1- Extract All Input Data
         try:
+
+            ObsContext.set(
+                job_id=str(job_id),
+                service_id=ServiceId.MCP_SEC_REPORTS,  # Or get from config/orchestrator
+                operation_name="competition_graph",
+                metadata={"portfolio": portfolio, "year": year, "quarter": quarter, "source": source, "graph_folder": graph_folder}
+            )
+
             years = DateRangeHandler.handle_date_range(year, self.logger)
             securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
             comp_grag_ctor = KQ10CompetitionGraph(self.logger)
@@ -1618,6 +1672,13 @@ class ReportsOrchestationLogic:
         securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
 
         root_dir = RootLocator.get_root(markers=["bias_mgmt_console.py", "README.md"])
+
+        ObsContext.set(
+            job_id=str(job_id),
+            service_id=ServiceId.MCP_SEC_REPORTS,  # Or get from config/orchestrator
+            operation_name="download_securities_calendar",
+            metadata={"portfolio": portfolio, "year": year}
+        )
 
         # ---------------------------------------------------------
         # 📊 Global summary
@@ -1928,8 +1989,12 @@ class ReportsOrchestationLogic:
         Emits a FINAL structured completion event for MCP clients.
         """
 
-        from datetime import datetime
-        import json
+        ObsContext.set(
+            job_id=str(job_id),
+            service_id=ServiceId.MCP_SEC_REPORTS,  # Or get from config/orchestrator
+            operation_name="download_13f_reports",
+            metadata={"symbol": "symbol", "year": year, "quarter": quarter, "rank_folder": rank_folder}
+        )
 
         # ---------------------------------------------------------
         # 📊 Global summary
@@ -2029,8 +2094,12 @@ class ReportsOrchestationLogic:
         Emits a FINAL structured completion event for MCP clients.
         """
 
-        from datetime import datetime
-        import json
+        ObsContext.set(
+            job_id=str(job_id),
+            service_id=ServiceId.MCP_SEC_REPORTS,  # Or get from config/orchestrator
+            operation_name="create_13f_graph",
+            metadata={"source": source, "year": year, "quarter": quarter, "rank_folder": rank_folder}
+        )
 
         # ---------------------------------------------------------
         # 📊 Global summary
