@@ -1,25 +1,38 @@
+"""
+Observability Proxy Server
+==========================
+FastAPI service that receives observability events from MCP services
+and routes them to Langfuse via the OrchestrationLogic layer.
+"""
+
 import os
 import sys
+
 import uvicorn
 from fastapi import FastAPI, Body
 
-from common.util.std_in_out.ml_settings_loader import MLSettingsLoader
-# Import your custom logic and tools
-from logic_layer.observability_orchestation_logic import ObservabilityOrchestationLogic
-# Note: Ensure pandas is installed in venv_observability if ParamReader is used
-from common.util.std_in_out.param_reader import ParamReader
-
-# Standard path setup
+# Standard path setup (BEFORE other imports)
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(ROOT_DIR)
 
+from common.util.std_in_out.ml_settings_loader import MLSettingsLoader
+from common.util.std_in_out.param_reader import ParamReader
+from logic_layer.observability_orchestation_logic import ObservabilityOrchestationLogic
 
 
-app = FastAPI()
+app = FastAPI(
+    title="Observability Proxy",
+    description="Routes observability events from MCP services to Langfuse",
+    version="1.0.0"
+)
 
-# Global instance of the Orchestation Logic
-# It will handle Langfuse initialization internally
-orchestrator = None
+# ============================================================
+# INITIALIZE ORCHESTRATOR AT MODULE LEVEL
+# This ensures it exists when uvicorn imports the module
+# ============================================================
+loader = MLSettingsLoader()
+config_settings = loader.load_settings("./configs/commands_mgr.ini")
+orchestrator = ObservabilityOrchestationLogic(config=config_settings)
 
 
 @app.post("/log")
@@ -36,35 +49,33 @@ async def log_event(data: dict = Body(...)):
             trace_id=data.get("trace_id"),
             trace_name=data.get("trace_name", "mcp-process"),
             level=data.get("level", "DEFAULT"),
-            parent_id=data.get("parent_id")
+            parent_id=data.get("parent_id"),
+            service_id=data.get("service_id")
         )
         return {"status": "ok"}
     except Exception as e:
         return {"status": "error", "message": str(e)}
 
 
+@app.get("/health")
+async def health_check():
+    """Health check endpoint."""
+    return {"status": "healthy", "orchestrator": orchestrator is not None}
+
+
 # ============================================================
-# BOOTSTRAP ENTRY POINT
+# BOOTSTRAP ENTRY POINT (only for local development)
 # ============================================================
 if __name__ == "__main__":
-    # Standardize args for ParamReader pattern
     cmd_args = " ".join(sys.argv)
 
-    # Port 7003 as discussed
     listen_port = int(ParamReader.get_param(cmd_args, "port", True, 7003))
     listen_host = ParamReader.get_param(cmd_args, "host", True, "0.0.0.0")
 
-    loader = MLSettingsLoader()
-    config_settings = loader.load_settings("./configs/commands_mgr.ini")
-
-
-
-    orchestrator = ObservabilityOrchestationLogic(config=config_settings)
-
-    print("================================================================")
-    print("=================== OBSERVABILITY PROXY ========================")
+    print("=" * 64)
+    print("================= OBSERVABILITY PROXY =========================")
     print(f">>> Status: RUNNING")
     print(f">>> Listen Address: {listen_host}:{listen_port}")
-    print("================================================================")
+    print("=" * 64)
 
     uvicorn.run(app, host=listen_host, port=listen_port)
