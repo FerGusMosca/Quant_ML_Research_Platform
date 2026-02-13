@@ -24,6 +24,10 @@ class MLSettingsLoader():
             config_settings["QDRANT_SERVER"] = config['QDRANT']['QDRANT_SERVER']
             config_settings["QDRANT_PORT"] = config['QDRANT']['QDRANT_PORT']
 
+            config_settings["LANGFUSE_SECRET_KEY"] = config['LANGFUSE']['LANGFUSE_SECRET_KEY']
+            config_settings["LANGFUSE_PUBLIC_KEY"] = config['LANGFUSE']['LANGFUSE_PUBLIC_KEY']
+            config_settings["LANGFUSE_BASE_URL"] = config['LANGFUSE']['LANGFUSE_BASE_URL']
+
 
             config_settings["classification_map_key"] = config['SETTINGS']['CLASSIFICATION_MAP_KEY']
             config_settings["IB_PROD_WS"] = config['SETTINGS']['IB_PROD_WS']
