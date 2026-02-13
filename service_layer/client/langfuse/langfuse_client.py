@@ -56,19 +56,9 @@ class LangfuseClient:
         """
         Create a span in Langfuse.
 
-        Args:
-            name: Name of the operation/step
-            input_data: Input data for the span
-            output_data: Output data from the span
-            trace_name: Name of the parent trace
-            level: Log level (DEFAULT, DEBUG, WARNING, ERROR)
-            service_id: Identifier of the calling service (e.g., "mcp-sec-filings")
-            trace_id: Optional trace ID for grouping related spans
-            parent_span_id: Optional parent span ID for nesting
-            metadata: Additional metadata to attach
-
-        Returns:
-            Dict with success status, span_id, trace_id, and error if any
+        Note: SDK v3 does not support manual trace_id assignment.
+        trace_id is stored in metadata for reference only.
+        Traces are grouped automatically by the SDK context.
         """
         result = {
             "success": False,
@@ -78,11 +68,11 @@ class LangfuseClient:
         }
 
         try:
-            # Build metadata with service identification
+            # Build metadata (trace_id goes here for reference, not for grouping)
             span_metadata = {
                 "service_id": service_id,
                 "timestamp": datetime.utcnow().isoformat(),
-                "custom_trace_id": trace_id,
+                "custom_trace_id": trace_id,  # Stored for reference only
                 "parent_span_id": parent_span_id
             }
 
@@ -92,20 +82,21 @@ class LangfuseClient:
             # Remove None values
             span_metadata = {k: v for k, v in span_metadata.items() if v is not None}
 
-            if trace_id:
-                trace = self._client.trace(id=trace_id, name=trace_name)
-            else:
-                trace = self._client.trace(name=trace_name)
-
-
-            with trace.start_as_current_observation(as_type="span", name=name) as span:
+            # SDK v3: trace_id is NOT supported in start_as_current_observation
+            # Traces are managed automatically by the SDK context
+            with self._client.start_as_current_observation(
+                    as_type="span",
+                    name=name
+            ) as span:
                 span.update(
                     input=input_data,
                     output=output_data,
                     level=level,
                     metadata=span_metadata if span_metadata else None
                 )
-                span.update_trace(name=trace_name)
+
+                if trace_name:
+                    span.update_trace(name=trace_name)
 
                 result["span_id"] = self._client.get_current_observation_id()
                 result["trace_id"] = self._client.get_current_trace_id()
@@ -120,7 +111,6 @@ class LangfuseClient:
             self._log_error(f"Failed to create span '{name}': {e}")
 
         return result
-
     def create_generation(
             self,
             name: str,
