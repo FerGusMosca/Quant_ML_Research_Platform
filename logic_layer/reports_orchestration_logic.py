@@ -2133,7 +2133,10 @@ class ReportsOrchestationLogic:
             # -----------------------------------------------------
             processor = ThirteenFGraphProcessor(
                 logger=self.logger,
-                job_id=job_id
+                job_id=job_id,
+                holdings_manager=self.neo_holding_graph_mgr,
+                year=year,
+                quarter=quarter
             )
 
             downloader = ThirteenFGraphDownloader(
@@ -2145,13 +2148,12 @@ class ReportsOrchestationLogic:
             input_dir = downloader.get_reports_dir(year, quarter, source)
             summary["input_dir"] = input_dir
 
-            edges = processor.process(input_dir, year, quarter)
-
+            total_edges = processor.process(input_dir)
+            summary["edges"] = total_edges
             summary["processed"] = True
-            summary["edges"] = len(edges)
 
             self.logger.do_log(
-                f"[13F] ▶ Graph processed | edges={len(edges)}",
+                f"[13F] ▶ Graph processed | edges={total_edges}",
                 MessageType.INFO,
                 job_id
             )
@@ -2159,22 +2161,23 @@ class ReportsOrchestationLogic:
             # -----------------------------------------------------
             # 💾 Persist graph
             # -----------------------------------------------------
-            graph_dir, output_file = downloader.get_graph_file(rank_folder, year, quarter)
-            summary["output_file"] = output_file
-
-            self._persist_file_graph(graph_dir, output_file, edges)
-            self._persist_store_graph(output_file,year,quarter, job_id)
-            summary["persisted"] = True
-            summary["status"] = "completed"
-
+            '''
+            #graph_dir, output_file = downloader.get_graph_file(rank_folder, year, quarter)
+            #summary["output_file"] = output_file
+            #self._persist_file_graph(graph_dir, output_file, edges)
+            #self._persist_store_graph(output_file,year,quarter, job_id)
+            #summary["persisted"] = True
+            #summary["status"] = "completed"
+            
             elapsed = (datetime.now() - start_time).total_seconds()
             summary["elapsed_sec"] = round(elapsed, 2)
 
             self.logger.do_log(
-                f"[13F] ✅ Graph persisted | edges={len(edges)} | file={output_file} | {elapsed:.1f}s",
+                f"[13F] ✅ Graph persisted | edges={len(total_edges)} | {elapsed:.1f}s",
                 MessageType.INFO,
                 job_id
             )
+            '''
 
         except Exception as e:
             summary["status"] = "failed"
