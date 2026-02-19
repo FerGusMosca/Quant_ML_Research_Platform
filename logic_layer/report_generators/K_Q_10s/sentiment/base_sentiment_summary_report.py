@@ -121,6 +121,8 @@ class SentimentAnalysisBase:
             "html.parser",
         ).get_text(" ", strip=True)
 
+    def _html_to_html(self, file_path: Path) -> str:
+        return file_path.read_text(encoding="utf-8")
     # ------------------------------------------------------------------ #
     # Core processing methods
     # ------------------------------------------------------------------ #
@@ -236,6 +238,38 @@ class SentimentAnalysisBase:
     # ------------------------------------------------------------------ #
     # MD&A scoring (calibrated hybrid)
     # ------------------------------------------------------------------ #
+
+    def _is_table_row(self, text: str, threshold: float = 0.20) -> bool:
+        """
+        Identifies table rows using digit density and financial keywords.
+        """
+        # 1. Check digit density
+        digit_density = sum(c.isdigit() for c in text) / len(text) if text else 0
+        if digit_density > threshold:
+            return True
+
+        # 2. Check for balance sheet / statement keywords (Table Noise)
+        table_keywords = ['$', 'million', 'thousand', 'unaudited', 'months ended']
+        found_keywords = sum(1 for kw in table_keywords if kw in text.lower())
+
+        # If it has a currency sign and typical table headers, it's a table
+        return '$' in text and found_keywords >= 2
+
+    def _is_garbage_line(self, text: str) -> bool:
+        """
+        Final validation to kill index fragments and section headers.
+        """
+        # 1. Kill standalone page numbers or index-like lines
+        if re.search(r'^\s*(\d+|Table of Contents)\s*$', text):
+            return True
+
+        # 2. Kill future section references (The "Stop" signal)
+        stop_words = ['Item 3', 'Item 4', 'PART II']
+        if any(word in text for word in stop_words):
+            return True
+
+        return False
+
     def _score_mdna(self, text: str) -> Dict:
         """Score the MD&A section with calibrated LM + VADER hybrid."""
         sentences = sent_tokenize(text)
@@ -245,7 +279,8 @@ class SentimentAnalysisBase:
         seen = set()
 
         for s in sentences:
-            if len(s) < 40 or self.LEGAL_BLACKLIST.search(s) or s in seen:
+            # Validation chain: filter out table rows, short snippets, and legal boilerplate
+            if self._is_table_row(s) or  self._is_garbage_line(s)  or len(s) < 40 or len(s)>600 or self.LEGAL_BLACKLIST.search(s) or s in seen:
                 continue
             seen.add(s)
 

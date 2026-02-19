@@ -3,6 +3,8 @@ from pathlib import Path
 from typing import Dict, Optional
 
 from common.enums.report_folder import ReportFolder
+from common.enums.sec_reports import SECReports
+from common.util.extractors.K_Q_10.k_q_10_mdna_extractor import KQ10MDNAExtractor
 from framework.common.logger.message_type import MessageType
 from logic_layer.report_generators.K_Q_10s.sentiment.base_sentiment_summary_report import SentimentAnalysisBase
 
@@ -99,14 +101,6 @@ class SentimentSingleSecurity(SentimentAnalysisBase):
                 job_id
             )
 
-            text = self._html_to_text(filing_path)
-
-            self.logger.do_log(
-                f"[SENT-SINGLE][{symbol}] 📄 Text loaded: {len(text):,} chars",
-                MessageType.DEBUG,
-                job_id
-            )
-
             # Extract MD&A section
             self.logger.do_log(
                 f"[SENT-SINGLE][{symbol}] 🔍 Extracting MD&A section...",
@@ -114,7 +108,17 @@ class SentimentSingleSecurity(SentimentAnalysisBase):
                 job_id
             )
 
-            mdna = self._extract_mdna(text, symbol)
+            mdna_extractor = KQ10MDNAExtractor(self.logger)
+
+            if (report_type == SECReports.K10.value):
+                text = self._html_to_text(filing_path)
+                mdna = mdna_extractor._extract_10k(text, symbol)
+            elif report_type== SECReports.Q10.value:
+                text = self._html_to_html(filing_path)
+                mdna = mdna_extractor._extract_10q(text, symbol)
+            else:
+                raise Exception(f"Invalid report type extracting MDNA section:{report_type}")
+            #mdna = self._extract_mdna(text, symbol)
 
             if not mdna or len(mdna.strip()) < 500:
                 error_msg = f"MD&A extraction failed - only {len(mdna)} chars extracted"

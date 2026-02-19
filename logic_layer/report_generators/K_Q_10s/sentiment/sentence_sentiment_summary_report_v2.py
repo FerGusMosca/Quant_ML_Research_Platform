@@ -4,6 +4,8 @@ import json
 from pathlib import Path
 from typing import List
 
+from common.enums.sec_reports import SECReports
+from common.util.extractors.K_Q_10.k_q_10_mdna_extractor import KQ10MDNAExtractor
 from common.util.std_in_out.root_locator import RootLocator
 from common.enums.folders import Folders
 from common.enums.report_folder import ReportFolder
@@ -91,7 +93,16 @@ class SentimentSummaryReportV2(SentimentAnalysisBase):
                 text = self._html_to_text(file_path)
                 self.logger.do_log(f"[SENT-V2][{symbol}] 📄 Text loaded: {len(text):,} chars", MessageType.DEBUG)
 
-                mdna = self._extract_mdna(text, symbol)
+                mdna_extractor=KQ10MDNAExtractor(self.logger)
+
+                if(self.report_type==SECReports.K10.value):
+                    mdna=mdna_extractor._extract_10k(text, symbol)
+                elif self.report_type==SECReports.Q10.value:
+                    mdna=mdna_extractor._extract_10q(text, symbol)
+                else:
+                    raise Exception(f"Invalid report type extracting MDNA section:{self.report_type}")
+
+                #mdna = self._extract_mdna(text, symbol)
                 if not mdna or len(mdna.strip()) < 500:
                     self.logger.do_log(f"[SENT-V2][{symbol}] ❌ MD&A FAILED – {len(mdna)} chars extracted",
                                        MessageType.WARNING)
@@ -134,7 +145,7 @@ class SentimentSummaryReportV2(SentimentAnalysisBase):
                 failed_count += 1
                 failed_symbols.append(symbol)
 
-        # ← Aquí invocamos el método privado para el summary
+
         self._log_summary(success_count, failed_count, skipped_count, total_files, failed_symbols)
 
     def consolidate_year(self,
