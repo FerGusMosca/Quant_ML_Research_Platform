@@ -7,7 +7,9 @@ import traceback
 import torch
 import torch.nn.functional as F
 from transformers import AutoTokenizer, AutoModel
-
+from bs4 import BeautifulSoup
+import warnings
+from bs4 import XMLParsedAsHTMLWarning
 from common.util.extractors.K_Q_10.k_q_10_html_structured_block_extractor import KQ10HtmlStructuredBlockExtractor
 from common.util.std_in_out.json_file_reader import JsonFileReader
 from common.util.std_in_out.raw_file_reader import RawFileReader
@@ -72,6 +74,18 @@ class TransformersTopicBase:
     def _extract_text(self, file_path: str, job_id: int):
         try:
             return RawFileReader.get_raw_text(file_path)
+        except Exception as e:
+            self._log_exception("[RANK] ❌ extract_text failed", e, job_id)
+            return None
+
+    def _extract_clean_text(self, file_path: str, job_id: int):
+        try:
+
+            warnings.filterwarnings("ignore", category=XMLParsedAsHTMLWarning)
+
+            raw = RawFileReader.get_raw_text(file_path)
+            soup = BeautifulSoup(raw, "lxml")
+            return soup.get_text(" ", strip=True)
         except Exception as e:
             self._log_exception("[RANK] ❌ extract_text failed", e, job_id)
             return None

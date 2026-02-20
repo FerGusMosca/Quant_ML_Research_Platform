@@ -14,6 +14,14 @@ class TransformersSingleSecurityTopicTagger(TransformersTopicBase):
 
         self.logger.do_log("[BERT] Single Security Topic Tagger READY", MessageType.INFO)
 
+    def _dump_chunks(self, chunks: list, output_path: str):
+        """Temporary debug method — dump chunks to file for inspection."""
+        with open(output_path, "w", encoding="utf-8") as f:
+            for idx, chunk in enumerate(chunks):
+                f.write(f"=== CHUNK {idx + 1} ===\n")
+                f.write(chunk)
+                f.write("\n\n")
+
     def analyze(
             self,
             security_symbol: str,
@@ -43,7 +51,7 @@ class TransformersSingleSecurityTopicTagger(TransformersTopicBase):
         # --------------------------------------------------
         # Extract full text
         # --------------------------------------------------
-        text = self._extract_text(file_path, job_id)
+        text = self._extract_clean_text(file_path, job_id)
         if not text:
             if self.logger:
                 self.logger.do_log(
@@ -64,6 +72,7 @@ class TransformersSingleSecurityTopicTagger(TransformersTopicBase):
         # Generate semantically coherent chunks
         # --------------------------------------------------
         chunks = self.chunk_generator.chunk(text,self.tag_cfg.tag_dedup, job_id)
+        #self._dump_chunks(chunks, f"C:\\temp_models\\chunks_{security_symbol}.txt")
         if not chunks:
             if self.logger:
                 self.logger.do_log(
