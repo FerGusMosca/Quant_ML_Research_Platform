@@ -64,7 +64,8 @@ def process_start_mcp_logic(server,port):
         print(traceback.format_exc())
         logger.do_log(f"[RAG] ❌ Error: {str(e)}", MessageType.ERROR)
 
-def process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model):
+def process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model,persist_qdrant,
+                             qdrant_collection):
     """
     Core logic runner for ingestion.
     Loads config → creates orchestrator → runs selected pipeline.
@@ -83,7 +84,8 @@ def process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix,embedd
         config = loader.load_settings("./configs/commands_mgr.ini")
 
         orch = RAGIngestOrchestrationLogic(config, logger)
-        orch.process_rag_ingest(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model)
+        orch.process_rag_ingest(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model,
+                                persist_qdrant,qdrant_collection)
 
         logger.do_log("[RAG] ✅ Ingestion completed", MessageType.INFO)
 
@@ -117,7 +119,11 @@ def process_rag_ingest(cmd):
     embedding_model = ParamReader.get_param(cmd, "embedding_model", True, None)
     clustering_model = ParamReader.get_param(cmd, "clustering_model", True, None)
 
-    process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model)
+    persist_qdrant = ParamReader.get_param(cmd, "persist_qdrant", True, False)
+    qdrant_collection = ParamReader.get_param(cmd, "qdrant_collection", True, "def-col")
+
+    process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model,
+                             persist_qdrant,qdrant_collection)
 
 
 # ============================================================================

@@ -29,16 +29,24 @@ from logic_layer.rag_ingest.util.multi_stage_rag.ingest_metadata_manager import 
 
 class RAGPipeline:
 
-    def __init__(self,chunk_name, dest_root, config,embedding_model,clustering_model, logger,job_id=None):
+    def __init__(self,chunk_name, dest_root, config,embedding_model,clustering_model, logger,persist_qdrant,
+                             qdrant_collection,job_id=None):
         self.logger = logger
         self.chunk_name=chunk_name
         self.dest_root = dest_root
         self.current_run_log =None
         self.config=config
+        self.persist_qdrant=persist_qdrant
 
-        self.qdrant = QdrantManager(host=self.config["QDRANT_SERVER"],
-                                    port=int(self.config["QDRANT_PORT"]),
-                                    collection="zh_chunks")
+        if persist_qdrant:
+            self.logger.do_log(f'Initiating QDrant in server={self.config["QDRANT_SERVER"]} port={self.config["QDRANT_PORT"]} - collection={qdrant_collection} ',
+                               MessageType.INFO)
+
+            self.qdrant = QdrantManager(host=self.config["QDRANT_SERVER"],
+                                        port=int(self.config["QDRANT_PORT"]),
+                                        collection=qdrant_collection if qdrant_collection is not None else "zh_chunks")
+        else:
+            self.logger.do_log(f'Skipping QDrant initialization for config',MessageType.INFO)
 
         #self.chunk_generator = VainillaChunkGenerator(self.logger)
         self.chunk_generator = KTransformersChunkGenerator(model_name= clustering_model,logger=self.logger)
@@ -243,11 +251,17 @@ class RAGPipeline:
         # ----- Embeddings -----
         try:
             embeddings = self.embedder.embed(chunks)
-
-            self._register_chunks_qdrant(chunks,metadata,pdf_path,source_path=source_path,embeddings=embeddings)
         except Exception as e:
             self.logger.do_log(f"[RAG] ❌ Embedding generation failed: {e}", MessageType.ERROR,job_id)
             return None
+
+        if self.persist_qdrant:
+            try:
+                self._register_chunks_qdrant(chunks, metadata, pdf_path, source_path=source_path, embeddings=embeddings)
+            except Exception as e:
+                msg=f"[RAG] ❌ QDrant Persistance Failed failed: {e}"
+                self.logger.do_log(msg, MessageType.ERROR,job_id)
+                raise msg
 
         # ----- Output path -----
         try:

@@ -24,6 +24,8 @@ def run_rag_ingest_handler(args: dict, orchestrator):
                 log_posfix=args.get("log_posfix"),
                 embedding_model=args.get("embedding_model"),
                 clustering_model=args.get("clustering_model"),
+                persist_qdrant=args.get("persist_qdrant"),
+                qdrant_collection=args.get("qdrant_collection"),
                 job_id=job_id,
             )
         finally:

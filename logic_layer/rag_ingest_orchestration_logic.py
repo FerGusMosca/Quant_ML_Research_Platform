@@ -116,7 +116,8 @@ class RAGIngestOrchestrationLogic:
             raise
 
     def process_rag_ingest(self, ingest_type, source_path=None,chunk_name=None, dest_root=None,log_posfix=None,
-                           embedding_model=None,clustering_model=None,job_id=None):
+                           embedding_model=None,clustering_model=None,persist_qdrant=False,
+                             qdrant_collection=None,job_id=None):
         """
         :param ingest_type: "full" / "incremental"
         :param source_path: folder where PDFs exist
@@ -135,7 +136,8 @@ class RAGIngestOrchestrationLogic:
             # ---------------------------
             self.logger.do_log("[RAG-INGEST] 🔧 Initializing RAG pipeline...", MessageType.INFO,job_id)
 
-            pipeline = RAGPipeline(chunk_name,dest_root, self.config,embedding_model,clustering_model, self.logger)
+            pipeline = RAGPipeline(chunk_name,dest_root, self.config,embedding_model,clustering_model, self.logger,
+                                   persist_qdrant,qdrant_collection,job_id)
             out_folder = pipeline.run(source_path,log_posfix,ingest_type=ingest_type,job_id=job_id)
 
             self.logger.do_log(

@@ -59,6 +59,8 @@ def build_mcp_registry_ingest(orchestrator) -> ToolRegistry:
                         "log_posfix": {"type": "string"},
                         "embedding_model": {"type": "string"},
                         "clustering_model": {"type": "string"},
+                        "persist_qdrant": {"type": "boolean"},
+                        "qdrant_collection": {"type": "string"},
                     },
                     "required": ["mode", "source", "dest_root", "chunk_name"],
                 },
