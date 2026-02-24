@@ -3,6 +3,8 @@
 # Stable orchestration logic for the new RAG ingestion pipeline
 # ================================================================
 import asyncio
+import ctypes
+import gc
 import os
 import traceback
 
@@ -115,6 +117,37 @@ class RAGIngestOrchestrationLogic:
             )
             raise
 
+        # ============================================================
+        # MEMORY RELEASE — call after each ingest run
+        # ============================================================
+
+    def _force_memory_release(self, job_id=None):
+        """
+        Forces memory cleanup after each ingest run.
+        - gc.collect(): breaks Python reference cycles
+        - torch.cuda.empty_cache(): releases PyTorch GPU cache (no-op on CPU)
+        - malloc_trim(0): tells glibc to return free pages to the OS (Linux only)
+        """
+        try:
+            gc.collect()
+            gc.collect()  # second pass catches cycles missed by first
+
+            try:
+                import torch
+                torch.cuda.empty_cache()
+            except Exception:
+                pass  # no GPU or torch not available — safe to ignore
+
+            try:
+                ctypes.CDLL("libc.so.6").malloc_trim(0)
+            except Exception:
+                pass  # non-Linux environment — safe to ignore
+
+            self.logger.do_log("[RAG] 🧹 Memory release complete.", MessageType.INFO, job_id)
+
+        except Exception as e:
+            self.logger.do_log(f"[RAG] ⚠️ Memory release failed: {e}", MessageType.WARNING, job_id)
+
     def process_rag_ingest(self, ingest_type, source_path=None,chunk_name=None, dest_root=None,log_posfix=None,
                            embedding_model=None,clustering_model=None,persist_qdrant=False,
                              qdrant_collection=None,job_id=None):
@@ -158,6 +191,8 @@ class RAGIngestOrchestrationLogic:
                 MessageType.ERROR,job_id
             )
             return False
+        finally:
+            self._force_memory_release(job_id)
 
 
 

@@ -5,6 +5,7 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 
 from framework.common.logger.message_type import MessageType
+from logic_layer.rag_ingest.util.multi_stage_rag.perf_optimization.model_registry import ModelRegistry
 
 
 class TransformersChunkOverlapping:
@@ -22,7 +23,7 @@ class TransformersChunkOverlapping:
         self.logger = logger
         self.similarity_threshold = similarity_threshold
         self.model_name=model_name if model_name is not None else "sentence-transformers/all-MiniLM-L6-v2"
-        self.model = SentenceTransformer(self.model_name)
+        self.model = ModelRegistry.get(self.model_name)
 
     def should_merge(self, chunk_a: str, chunk_b: str,job_id:str=None) -> bool:
         vecs = self.model.encode([chunk_a, chunk_b], normalize_embeddings=True)

@@ -10,6 +10,7 @@ from framework.common.logger.message_type import MessageType
 
 from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.ktransformers_chunk_generator import \
     KTransformersChunkGenerator
+from logic_layer.rag_ingest.util.multi_stage_rag.perf_optimization.model_registry import ModelRegistry
 
 
 class QueryMatchReportK10Q10():
@@ -24,7 +25,7 @@ class QueryMatchReportK10Q10():
 
         self.query =None
         from sentence_transformers import SentenceTransformer
-        self.bi_encoder = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")  #TODO from settings
+        self.bi_encoder = ModelRegistry.get("sentence-transformers/all-MiniLM-L6-v2")   #TODO from settings
         self.bi_threshold =0.3  # float – threshold for bi-encoder acceptance
 
     def run_analysis(self, symbol,query, year,report_type):

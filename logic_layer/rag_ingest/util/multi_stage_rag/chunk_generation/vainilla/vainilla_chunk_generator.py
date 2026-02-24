@@ -6,6 +6,8 @@ import numpy as np
 from sklearn.cluster import KMeans
 from sentence_transformers import SentenceTransformer
 
+from logic_layer.rag_ingest.util.multi_stage_rag.perf_optimization.model_registry import ModelRegistry
+
 
 class VainillaChunkGenerator:
 
@@ -30,7 +32,7 @@ class VainillaChunkGenerator:
 
             # ===== Stage 2: Sentence embeddings =====
             try:
-                model = SentenceTransformer("BAAI/bge-small-en")
+                model = ModelRegistry.get("BAAI/bge-small-en")
                 embeddings = model.encode(sentences, normalize_embeddings=True)
                 if self.logger: self.logger.do_log(f"[MSC] 📌 Embeddings computed: {embeddings.shape}", 2)
             except Exception as e:

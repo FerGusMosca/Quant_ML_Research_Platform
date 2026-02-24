@@ -5,6 +5,8 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
+from logic_layer.rag_ingest.util.multi_stage_rag.perf_optimization.model_registry import ModelRegistry
+
 
 class TranfomersSemanticChunkDeduper:
     """
@@ -21,7 +23,7 @@ class TranfomersSemanticChunkDeduper:
         self.logger = logger
         self.similarity_threshold = similarity_threshold
         self.model_name=model_name if model_name is not None else "sentence-transformers/all-MiniLM-L6-v2"
-        self.model = SentenceTransformer(self.model_name)
+        self.model = ModelRegistry.get(self.model_name)
 
         if self.logger:
             self.logger.do_log(
