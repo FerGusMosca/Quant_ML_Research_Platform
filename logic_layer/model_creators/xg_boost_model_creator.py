@@ -73,6 +73,10 @@ class XGBoostModelCreator(BaseModelCreator):
         out = pd.concat([df[["date"]], df[feature_cols]], axis=1)
 
         # 5) Coerce to numeric (only features), then sanitize
+        dup = pd.Index(feature_cols)[pd.Index(feature_cols).duplicated()].unique().tolist()
+        if dup:
+            raise ValueError(f"Duplicate feature columns detected: {dup}")
+
         out[feature_cols] = out[feature_cols].apply(pd.to_numeric, errors="coerce")
         out[feature_cols] = out[feature_cols].replace([np.inf, -np.inf], np.nan)
 

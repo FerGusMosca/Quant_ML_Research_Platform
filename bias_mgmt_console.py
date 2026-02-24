@@ -721,7 +721,7 @@ def process_train_XGBoost_cmd(cmd, cmd_param_list):
     make_stationary = ParamReader.get_bool_param(cmd, "make_stationary", True, def_value=False)
 
     #MFLow
-    register_model = ParamReader.get_param(cmd, "register_model", True, def_value=None)
+    register_model = ParamReader.get_bool_param(cmd, "register_model", True, def_value=False)
 
     # Call processing method with parsed params
     process_train_XGBoost(symbol=symbol,

@@ -1,6 +1,7 @@
 import os
 
 import matplotlib
+import matplotlib.dates as mdates
 import plotly.graph_objs as go
 from common.enums.side import Side
 import matplotlib.pyplot as plt
@@ -114,36 +115,45 @@ class GraphBuilder:
 
     @staticmethod
     def plot_prices_with_trades(symbol_prices_df, summary_dict_arr, strategy_name):
-        # Ensure 'date' column is in datetime format
         symbol_prices_df['date'] = pd.to_datetime(symbol_prices_df['date'])
 
-        # Create base price plot in blue
-        plt.figure(figsize=(16, 6))
-        plt.plot(symbol_prices_df['date'], symbol_prices_df['close'], label='Price', color='blue')
+        fig, ax = plt.subplots(figsize=(16, 6))
+        ax.plot(symbol_prices_df['date'], symbol_prices_df['close'],
+                label='Price', color='blue')
 
-        # Loop through all trade summaries
         for summary in summary_dict_arr:
             for pos in summary[strategy_name].portf_pos_summary:
                 start = pos.date_open
                 end = pos.date_close
                 color = 'green' if pos.side == Side.LONG.value else 'red'
 
-                # Highlight the segment corresponding to each trade
                 mask = (symbol_prices_df['date'] >= start) & (symbol_prices_df['date'] <= end)
-                plt.plot(
+                ax.plot(
                     symbol_prices_df.loc[mask, 'date'],
                     symbol_prices_df.loc[mask, 'close'],
                     linewidth=3,
                     color=color
                 )
 
-        plt.title("Prices with Trade Periods")
-        plt.xlabel("Date")
-        plt.ylabel("Price")
-        plt.grid(True)
+        # Click to show date + price
+        cursor = mplcursors.cursor(ax, hover=False)
+
+        @cursor.connect("add")
+        def on_add(sel):
+            x_val = sel.target[0]
+            y_val = sel.target[1]
+            date_str = matplotlib.dates.num2date(x_val).strftime('%Y-%m-%d')
+            sel.annotation.set_text(f"{date_str}\n${y_val:.2f}")
+            sel.annotation.get_bbox_patch().set(fc="white", alpha=0.9)
+
+        ax.set_title("Prices with Trade Periods")
+        ax.set_xlabel("Date")
+        ax.set_ylabel("Price")
+        ax.grid(True)
+        ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
+        fig.autofmt_xdate(rotation=30)
         plt.tight_layout()
         plt.show(block=True)
-
     @staticmethod
     def plot_long_probability_distributions(prob,threshold):
         # Log distribution of predicted probabilities
