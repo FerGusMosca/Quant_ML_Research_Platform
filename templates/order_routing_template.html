@@ -1,807 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bias Fund - Order Routing Screen</title>
-    <script src="https://unpkg.com/htmx.org@1.9.4"></script>
-    <script>
-        function updateFields() {
-            let side = document.getElementById("side").value;
-            let cashQty = document.getElementById("cash_qty");
-            let nomQty = document.getElementById("nom_qty");
-
-            if (side === "Buy") {
-                cashQty.disabled = false;
-                nomQty.disabled = false;
-            } else if (side === "Sell") {
-                cashQty.value = "";
-                cashQty.disabled = true;
-                nomQty.disabled = false;
-            }
-        }
-
-        function updateBrokerRelatedFields() {
-            let broker = document.getElementById("broker").value;
-            let currency = document.getElementById("currency");
-            let exchange = document.getElementById("exchange");
-            let account = document.getElementById("account");
-
-            if (broker.startsWith("IB")) {
-                currency.value = "USD";
-                exchange.value = "SMART";
-                account.innerHTML = '<option value="-">-Default-</option>';
-            } else if (broker === "BYMA_PROD") {
-                currency.value = "ARS";
-                exchange.value = "BUE";
-                account.innerHTML = '<option value="10262">20262 - Fernando M.</option><option value="11303">11303 - Francisco H.</option>';
-            }
-
-            updateAccountOptions();
-        }
-
-        function formatCurrency(input) {
-            let value = input.value.replace(/[^\d.]/g, '');
-            if (!isNaN(value) && value !== "") {
-                input.value = "$" + Number(value).toLocaleString("en-US");
-            }
-        }
-
-        function confirmOrder(event) {
-            event.preventDefault();
-
-            let side = document.getElementById("side").value;
-            let cashQty = document.getElementById("cash_qty").value.replace(/[^0-9.]/g, '');
-            let nomQty = document.getElementById("nom_qty").value;
-            let broker = document.getElementById("broker").selectedOptions[0].text;
-
-            if (cashQty && nomQty) {
-                alert("You must specify whether you want to route a cash or nominal quantity.");
-                return;
-            }
-
-            let qtyType = cashQty ? "Cash Qty" : "Nom. Qty";
-            let amount = cashQty || nomQty;
-
-            if (!amount) {
-                alert("Error: Please enter a valid quantity.");
-                return;
-            }
-
-            let message = `You are about to send a ${side} order type of ${qtyType} amount to ${broker} broker. Are you sure?`;
-
-            if (confirm(message)) {
-                document.getElementById("orderForm").submit();
-            }
-        }
-    </script>
-    <style>
-
-        .retry-button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            color: #58A6FF;
-            padding: 5px;
-            margin-left: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .retry-button.spin {
-            animation: spin 1s linear infinite;
-            color: #FFD700; /* Optional: change color during spin */
-        }
-
-        @keyframes spin {
-            0%   { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        .retry-btn {
-            margin-left: 8px;
-            background: none;
-            border: none;
-            font-size: 16px;
-            color: #58A6FF;
-            cursor: pointer;
-            padding: 2px 4px;
-            border-radius: 4px;
-            transition: background 0.3s;
-        }
-
-        .retry-btn:hover {
-            background-color: rgba(88, 166, 255, 0.1);
-        }
-
-        .retry-btn:disabled {
-            color: #999;
-            cursor: wait;
-        }
-
-
-
-        .cancel-button {
-            background: none;
-            border: none;
-            color: red;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .cancel-button:hover {
-            color: darkred;
-        }
-
-
-        .tables-container {
-            display: flex;
-            flex-direction: column; /* Apila los elementos en una sola columna */
-            gap: 20px;
-            margin-top: 20px;
-            width: 100%;
-        }
-
-        .table-wrapper {
-            background: #161B22;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .scrollable-table {
-            max-height: 300px;  /* Altura máxima antes de activar el scroll */
-            overflow-y: auto;   /* Activa el scroll vertical si hay muchos datos */
-        }
-
-        .execution-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .execution-table th, .execution-table td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #444;
-        }
-
-        .execution-table th {
-            background: #21262D;
-            color: #58A6FF;
-            font-weight: bold;
-        }
-
-
-        .status-panel {
-            background: #161B22;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px;
-        }
-
-       .status-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between; /* Para que el botón se vaya a la derecha */
-            margin-bottom: 10px;
-            gap: 10px;
-        }
-
-        .status-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: gray;
-            display: inline-block; /* importante */
-            flex-shrink: 0;
-        }
-
-        .status-label {
-            flex-grow: 1;
-        }
-
-        .retry-btn {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 18px;
-            padding: 0;
-            margin-left: auto;
-        }
-
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0D1117;
-            color: #e0e0e0;
-            margin: 20px;
-            display: flex;
-            gap: 20px;
-        }
-
-        .container {
-            display: flex;
-            width: 100%;
-        }
-
-        .left-panel {
-            flex: 1;
-            background: #161B22;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .right-panel {
-            flex: 2;
-            background: #0D1117;
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        h2 {
-            text-align: center;
-            color: #58A6FF;
-        }
-
-        label {
-            font-size: 14px;
-            font-weight: bold;
-            display: block;
-            margin: 8px 0 4px;
-        }
-
-        input, select, button {
-            width: calc(100% - 16px);
-            padding: 10px;
-            margin-bottom: 12px;
-            background: #21262D;
-            border: 1px solid #444;
-            color: #ffffff;
-            border-radius: 4px;
-            font-size: 14px;
-            display: block;
-        }
-
-        button {
-            background: #4CAF50;
-            color: white;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        button:hover {
-            background: #45a049;
-        }
-
-        .execution-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        .execution-table th, .execution-table td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #444;
-        }
-
-        .execution-table th {
-            background: #21262D;
-            color: #58A6FF;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seeking Bias — Order Routing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/order_routing.css">
 </head>
 <body>
 
-    <!-- Connection Status Indicators -->
-<div class="status-panel">
-    <h2>Connection Status</h2>
-
-    <div class="status-item">
-        <span class="status-dot" id="status-IB_PROD"></span>
-        <span class="status-label">IB_PROD</span>
-        <button id="retry-IB_PROD" onclick="retryConnection('IB_PROD')" title="Retry Connection" class="retry-button">🔄</button>
+<!-- TOP NAV -->
+<nav class="top-nav">
+  <a href="/" class="nav-brand">
+    <div class="nav-brand-b">B</div>
+    <div>
+      <div class="nav-brand-name">BIAS</div>
+      <div class="nav-brand-sub">Order Routing</div>
     </div>
-    <div class="status-item">
-        <span class="status-dot" id="status-BYMA_PROD"></span>
-        <span class="status-label">BYMA_PROD</span>
-        <button id="retry-BYMA_PROD" onclick="retryConnection('BYMA_PROD')" title="Retry Connection" class="retry-button">🔄</button>
+  </a>
+  <div class="nav-right">
+    <div class="nav-clock" id="liveClock">--:--:--</div>
+    <a href="/" class="nav-back">← Dashboard</a>
+  </div>
+</nav>
+
+<div class="app-body">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sb-label">Operations</div>
+    <a href="/accounts"          class="nav-item"><span class="nav-icon">🏦</span> Manage Accounts</a>
+    <a href="/routing_dashboard" class="nav-item active"><span class="nav-icon">⚡</span> Routing Dashboard</a>
+
+    <div class="sb-label">Analytics</div>
+    <a href="/display_custom_etf"          class="nav-item"><span class="nav-icon">📦</span> Custom ETF</a>
+    <a href="/simulate_indicator_strategy" class="nav-item"><span class="nav-icon">📐</span> Simulate Strategy</a>
+    <a href="/display_series"              class="nav-item"><span class="nav-icon">📈</span> Display Series</a>
+
+    <div class="sb-label">Data</div>
+    <a href="/load_series"         class="nav-item"><span class="nav-icon">⬆️</span> Load Series</a>
+    <a href="/global_m2_indicator" class="nav-item"><span class="nav-icon">🌐</span> Global M2</a>
+
+    <!-- Connection status -->
+    <div class="conn-section">
+      <div class="conn-title">Connections</div>
+      <div class="conn-item">
+        <div class="conn-dot" id="status-IB_PROD"></div>
+        <span class="conn-label">IB PROD</span>
+        <button class="conn-retry" id="retry-IB_PROD" onclick="retryConnection('IB_PROD')" title="Retry">↻</button>
+      </div>
+      <div class="conn-item">
+        <div class="conn-dot" id="status-BYMA_PROD"></div>
+        <span class="conn-label">BYMA PROD</span>
+        <button class="conn-retry" id="retry-BYMA_PROD" onclick="retryConnection('BYMA_PROD')" title="Retry">↻</button>
+      </div>
+      <div class="conn-item">
+        <div class="conn-dot" id="status-IB_DEV"></div>
+        <span class="conn-label">IB DEV</span>
+        <button class="conn-retry" id="retry-IB_DEV" onclick="retryConnection('IB_DEV')" title="Retry">↻</button>
+      </div>
     </div>
-    <div class="status-item">
-        <span class="status-dot" id="status-IB_DEV"></span>
-        <span class="status-label">IB_DEV</span>
-        <button id="retry-IB_DEV" onclick="retryConnection('IB_DEV')" title="Retry Connection" class="retry-button">🔄</button>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- TABS -->
+    <div class="tabs-bar">
+      <button class="tab active" onclick="switchTab('single', this)">
+        Single Order <span class="tab-badge">LIVE</span>
+      </button>
+      <button class="tab" onclick="switchTab('bulk', this)">
+        Bulk Routing <span class="tab-badge">SOON</span>
+      </button>
     </div>
 
+    <!-- SINGLE ORDER TAB -->
+    <div class="tab-panel active" id="tab-single">
+      <div class="order-layout">
 
-</div>
+        <!-- LEFT: Order Form -->
+        <div class="form-col">
+          <div class="form-eyebrow">Seeking Bias · Execution</div>
+          <div class="form-title">New Order</div>
 
-    <div class="container">
-        <!-- Left Panel - Order Routing Form -->
-        <div class="left-panel">
-            <h2>Bias Fund - Order Routing Screen</h2>
+          <div id="formFlash" style="display:none"></div>
 
-            {% if errors %}
-                <div class="error">
-                    <ul>
-                        {% for error in errors %}
-                            <li>{{ error }}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            {% endif %}
+          <!-- Side selector -->
+          <div class="side-toggle">
+            <button class="side-btn" id="btn-buy"  onclick="setSide('Buy')">▲ Buy</button>
+            <button class="side-btn" id="btn-sell" onclick="setSide('Sell')">▼ Sell</button>
+          </div>
 
-            {% if success %}
-                <div class="success">{{ success }}</div>
-            {% endif %}
+          <!-- Symbol -->
+          <div class="field">
+            <label class="field-label" for="symbol">Symbol</label>
+            <input class="field-input" type="text" id="symbol" name="symbol"
+              placeholder="e.g. AAPL · XLV · AL30" maxlength="12"
+              autocomplete="off" style="text-transform:uppercase">
+          </div>
 
-            <form id="orderForm" onsubmit="confirmOrder(event)">
+          <!-- Quantity -->
+          <div class="field" id="qty-section">
+            <label class="field-label">Quantity</label>
+            <div class="qty-mode-tabs" id="qty-mode-tabs">
+              <button class="qty-tab active" id="qtab-cash" onclick="setQtyMode('cash')">$ Cash</button>
+              <button class="qty-tab"        id="qtab-nom"  onclick="setQtyMode('nom')">Nominal</button>
+            </div>
+            <input class="field-input" type="text"   id="cash_qty" name="cash_qty"
+              placeholder="e.g. $400,000" oninput="formatCurrency(this)" style="display:block">
+            <input class="field-input" type="number" id="nom_qty"  name="nom_qty"
+              placeholder="e.g. 1000" min="1" step="1" style="display:none">
+          </div>
 
-                <label for="symbol">Symbol:</label>
-                <input type="text" id="symbol" name="symbol" maxlength="10" required>
+          <!-- Broker -->
+          <div class="field">
+            <label class="field-label" for="broker">Broker</label>
+            <select class="field-select" id="broker" name="broker" onchange="onBrokerChange()">
+              <option value="IB_PROD">Interactive Brokers — PROD</option>
+              <option value="IB_DEV">Interactive Brokers — DEV</option>
+              <option value="BYMA_PROD">BYMA — PROD</option>
+            </select>
+          </div>
 
-                <label for="side">Side:</label>
-                <select id="side" name="side" required onchange="updateFields()">
-                    <option value="">Select</option>
-                    <option value="Buy">Buy</option>
-                    <option value="Sell">Sell</option>
-                </select>
+          <!-- Currency + Exchange -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <div class="field">
+              <label class="field-label" for="currency">Currency</label>
+              <input class="field-input readonly-field" type="text" id="currency" name="currency" value="USD" readonly>
+            </div>
+            <div class="field">
+              <label class="field-label" for="exchange">Exchange</label>
+              <input class="field-input readonly-field" type="text" id="exchange" name="exchange" value="SMART" readonly>
+            </div>
+          </div>
 
-                <label for="cash_qty">Cash Qty:</label>
-                <input type="text" id="cash_qty" name="cash_qty" oninput="formatCurrency(this)" disabled>
+          <!-- Account (searchable) -->
+          <div class="field">
+            <label class="field-label">Account</label>
+            <div class="account-row">
+              <div class="searchable-wrap" id="accountWrap">
+                <input class="searchable-input" type="text" id="accountSearch"
+                  placeholder="Search by ID or name…" autocomplete="off"
+                  oninput="filterAccounts()" onfocus="openDropdown()" onblur="closeDropdownDelayed()">
+                <div class="searchable-dropdown" id="accountDropdown"></div>
+                <select id="account" name="account"></select>
+              </div>
+              <button class="portfolio-btn" onclick="loadPortfolio()" title="View Portfolio">📋</button>
+            </div>
+          </div>
 
-                <label for="nom_qty">Nom. Qty:</label>
-                <input type="number" id="nom_qty" name="nom_qty" min="1" step="1" disabled>
-
-                <label for="broker">Broker:</label>
-                <select id="broker" name="broker" required onchange="updateBrokerRelatedFields()">
-                    <option value="IB_PROD">Interactive Broker - PROD</option>
-                    <option value="IB_DEV">Interactive Broker - DEV</option>
-                    <option value="BYMA_PROD">BYMA - PROD</option>
-                </select>
-
-                <label for="currency">Currency:</label>
-                <input type="text" id="currency" name="currency" value="USD" readonly>
-
-                <label for="exchange">Exchange:</label>
-                <input type="text" id="exchange" name="exchange" value="SMART" readonly>
-
-               <label for="account">Account:</label>
-                <div style="display: flex; gap: 10px;">
-                    <select id="account" name="account" style="flex: 2;"></select>
-                    <button type="button" onclick="loadPortfolio()"
-                        style="flex: 1; background-color: #6BAF75; color: white; font-weight: bold; border: none; border-radius: 4px; cursor: pointer;">
-                        🔍
-                    </button>
-                </div>
-
-                <button type="submit">Submit Order</button>
-            </form>
+          <!-- Submit -->
+          <button class="submit-btn" id="submitBtn" onclick="confirmOrderModal()">
+            Submit Buy Order
+          </button>
         </div>
 
-        <!-- Right Panel - Execution Reports Table -->
-        <div class="right-panel">
-            <div class="tables-container">
-                <!-- Execution Reports Table -->
-                <div class="table-wrapper">
-                    <h2>Execution Reports</h2>
-                    <div class="scrollable-table">
-                         <table class="execution-table">
-            <thead>
-                <tr>
+        <!-- RIGHT: Tables -->
+        <div class="tables-col">
+
+          <!-- Execution Reports -->
+          <div class="table-section" style="flex: 1.2">
+            <div class="table-hdr">
+              <span class="table-hdr-title">Execution Reports</span>
+              <span class="table-hdr-meta" id="exec-count">— orders</span>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
                     <th>ClOrdID</th>
                     <th>Symbol</th>
                     <th>Side</th>
-                    <th>Filled. Qty.</th>
-                    <th>Exec. Status</th>
+                    <th>Filled Qty</th>
+                    <th>Status</th>
                     <th>Timestamp</th>
-                    <th>Action</th> <!-- Nueva columna para el botón de cancelación -->
-                </tr>
-            </thead>
-            <tbody id="execution-reports-table">
-                <!-- Las filas se llenarán dinámicamente con JavaScript -->
-            </tbody>
-        </table>
-                    </div>
-                </div>
-
-                <!-- Market Data Table -->
-                <div class="table-wrapper">
-                    <h2>Market Data</h2>
-                    <div class="scrollable-table">
-                        <table class="execution-table">
-                            <thead>
-                                <tr>
-                                    <th>Symbol</th>
-                                    <th>Exchange</th>
-                                    <th>Open</th>
-                                    <th>High</th>
-                                    <th>Low</th>
-                                    <th>Close</th>
-                                    <th>Trade</th>
-                                    <th>Timestamp</th>
-                                </tr>
-                            </thead>
-                            <tbody id="market-data-table"></tbody>
-                        </table>
-                    </div>
-                </div>
-
-
-
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="execution-reports-table"></tbody>
+              </table>
             </div>
-            <div id="portfolio-section" style="margin-top: 30px; display: none;">
-                        <h2 id="portfolio-title">Portfolio</h2>
+          </div>
 
-                        <!-- Securities Table -->
-                        <div class="table-wrapper">
-                            <h3>Securities</h3>
-                            <div class="scrollable-table">
-                                <table class="execution-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Symbol</th>
-                                            <th>Type</th>
-                                            <th>Currency</th>
-                                            <th>Qty</th>
-                                            <th>Avg. Px</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="securities-positions-table"></tbody>
-                                </table>
-                            </div>
-                        </div>
-
-                        <!-- Currencies Table -->
-                        <div class="table-wrapper">
-                            <h3>Currencies</h3>
-                            <div class="scrollable-table">
-                                <table class="execution-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Holdings</th>
-                                            <th>Currency</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="currency-positions-table"></tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
+          <!-- Market Data -->
+          <div class="table-section" style="flex: 1">
+            <div class="table-hdr">
+              <span class="table-hdr-title">Market Data</span>
+              <span class="table-hdr-meta" id="mktdata-count">— symbols</span>
             </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Symbol</th>
+                    <th>Exchange</th>
+                    <th>Open</th>
+                    <th>High</th>
+                    <th>Low</th>
+                    <th>Close</th>
+                    <th>Last Trade</th>
+                    <th>Timestamp</th>
+                  </tr>
+                </thead>
+                <tbody id="market-data-table"></tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-    <script>
-    function retryConnection(broker) {
-        const icon = document.getElementById(`retry-${broker}`);
-        if (icon) icon.classList.add("spin");
 
-        fetch("/routing_dashboard/retry_connection", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ broker: broker }),
-            signal: AbortSignal.timeout(5000) // Optional timeout
-        })
-        .then(res => res.json())
-        .then(data => {
-            if (icon) icon.classList.remove("spin");
-
-            if (data.status === "success") {
-                updateConnectionStatus();
-            } else {
-                alert("Retry failed: " + (data.message || "Unknown error"));
-            }
-        })
-        .catch(err => {
-            if (icon) icon.classList.remove("spin");
-            alert("Retry error: " + err.message);
-        });
-    }
-
-    function loadPortfolio() {
-        const accountSelect = document.getElementById("account");
-        const accountId = accountSelect.value;
-        const spinner = document.getElementById("loading-spinner");
-
-        if (!accountId || accountId === "-") {
-            alert("Please select a valid account.");
-            return;
-        }
-
-        spinner.style.display = "block";  // 👈 Mostrar el loading
-
-        fetch(`/routing_dashboard/get_portfolio?account_id=${accountId}`)
-            .then(response => response.json())
-            .then(data => {
-                spinner.style.display = "none";  // 👈 Ocultar el loading al recibir respuesta
-
-                if (data.error) {
-                    alert(data.error);
-                    return;
-                }
-
-                document.getElementById("portfolio-title").innerText = `${accountSelect.selectedOptions[0].text} Portfolio`;
-                document.getElementById("portfolio-section").style.display = "block";
-
-                const securitiesBody = document.getElementById("securities-positions-table");
-                securitiesBody.innerHTML = "";
-                data.securities.forEach(row => {
-                    securitiesBody.innerHTML += `
-                        <tr>
-                            <td>${row.symbol}</td>
-                            <td>${row.type}</td>
-                            <td>${row.currency}</td>
-                            <td>${row.qty}</td>
-                            <td>${row.avg_px}</td>
-                           <td>
-                                <button title="Unwind position"
-                                        onclick="unwindPosition('${row.symbol}', '${row.qty}', '${row.currency}')"
-                                        style="background: none; border: none; cursor: pointer;">
-                                    🔄
-                                </button>
-                            </td>
-                        </tr>
-                    `;
-                });
-
-                const currenciesBody = document.getElementById("currency-positions-table");
-                currenciesBody.innerHTML = "";
-                data.currencies.forEach(row => {
-                    currenciesBody.innerHTML += `
-                        <tr>
-                            <td>${row.amount}</td>
-                            <td>${row.currency}</td>
-                        </tr>
-                    `;
-                });
-            })
-            .catch(error => {
-                spinner.style.display = "none";
-                alert("Error loading portfolio");
-                console.error(error);
-            });
-    }
-
-
-
-    function updateAccountOptions() {
-        const broker = document.getElementById("broker").value;
-        const accountSelect = document.getElementById("account");
-
-        fetch(`/routing_dashboard/get_accounts?broker=${broker}`)
-            .then(response => response.json())
-            .then(accounts => {
-                accountSelect.innerHTML = "";
-                accounts.forEach(account => {
-                    let option = document.createElement("option");
-                    option.value = account.account_id;
-                    option.text = `${account.account_id} - ${account.client_name}`;
-                    accountSelect.appendChild(option);
-                });
-            })
-            .catch(error => {
-                console.error("Error fetching accounts:", error);
-            });
-    }
-
-
-
-   function updateExecutionReports() {
-        fetch("/routing_dashboard/get_execution_reports")
-        .then(response => response.json())
-        .then(data => {
-            let tableBody = document.getElementById("execution-reports-table");  //
-
-            tableBody.innerHTML = ""; // Limpiar datos anteriores
-
-            data.forEach(row => {
-                let tr = document.createElement("tr");
-                tr.innerHTML = `
-                    <td>${row.short_cl_ord_id}</td>
-                    <td>${row.symbol}</td>
-                    <td>${row.side}</td>
-                    <td>${row.cum_qty}</td>
-                    <td>${row.ord_status}</td>
-                    <td>${row.transact_time}</td>
-                    <td>
-                        <button onclick="confirmCancelOrder('${row.cl_ord_id}', '${row.symbol}')"
-                                class="cancel-button">❌</button>
-                    </td>
-                `;
-                tableBody.appendChild(tr);
-            });
-        })
-        .catch(error => {
-            console.error("Error fetching execution reports:", error);
-        });
-    }
-
-    // Fetch Execution Reports cada 5 segundos
-    setInterval(updateExecutionReports, 5000);
-    updateExecutionReports();
-
-    function confirmCancelOrder(clOrdId, symbol) {
-        let message = `Are you sure that you want to cancel order ${clOrdId} of symbol ${symbol}?`;
-
-        if (confirm(message)) {
-            cancelOrder(clOrdId);
-        }
-    }
-
-    function cancelOrder(clOrdId) {
-        fetch("/routing_dashboard/cancel_order", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ cl_ord_id: clOrdId })
-        })
-        .then(response => response.json())
-        .then(data => {
-            alert(data.message);
-            updateExecutionReports(); // ✅ Se ejecuta solo después de que el backend responde
-        })
-        .catch(error => {
-            alert("Error canceling order.");
-            console.error(error);
-        });
-    }
-
-
-
-
-    function updateMarketData() {
-        fetch("/routing_dashboard/get_market_data")
-        .then(response => response.json())
-        .then(data => {
-            let tableBody = document.getElementById("market-data-table");
-            tableBody.innerHTML = ""; // Clear existing data
-            
-            data.forEach(row => {
-                let tr = document.createElement("tr");
-                tr.innerHTML = `
-                    <td>${row.symbol}</td>
-                    <td>${row.exchange}</td>
-                    <td>${row.opening_price}</td>
-                    <td>${row.high_price}</td>
-                    <td>${row.low_price}</td>
-                    <td>${row.closing_price}</td>
-                    <td>${row.last_trade_price}</td>
-                    <td>${row.timestamp}</td>
-                `;
-                tableBody.appendChild(tr);
-            });
-        })
-        .catch(error => {
-            console.error("Error fetching market data:", error);
-        });
-    }
-
-    // Fetch Market Data every 5 seconds
-    setInterval(updateMarketData, 5000);
-
-    // Fetch immediately when page loads
-    updateMarketData();
-
-    function updateConnectionStatus() {
-            fetch("/routing_dashboard/get_connection_status")
-            .then(response => response.json())
-            .then(status => {
-                updateStatusIndicator("IB_PROD", status["IB_PROD"]);
-                updateStatusIndicator("BYMA_PROD", status["BYMA_PROD"]);
-                updateStatusIndicator("IB_DEV", status["IB_DEV"]);
-            })
-            .catch(error => {
-                console.error("Error fetching connection status:", error);
-            });
-        }
-
-        function updateStatusIndicator(id, isConnected) {
-            const dot = document.getElementById(`status-${id}`);
-            if (isConnected) {
-                dot.style.backgroundColor = "#00FF6A"; // Bright green for connected
-            } else {
-                dot.style.backgroundColor = "#FF3B3B"; // Bright red for disconnected
-            }
-        }
-
-
-        // Fetch status every 5 seconds
-        setInterval(updateConnectionStatus, 5000);
-
-        // Fetch immediately when page loads
-        updateConnectionStatus();
-
-        function confirmOrder(event) {
-            event.preventDefault();
-
-            let side = document.getElementById("side").value;
-            let symbol = document.getElementById("symbol").value;
-            let cashQty = document.getElementById("cash_qty").value.replace(/[^0-9.]/g, '') || null;
-            let nomQty = document.getElementById("nom_qty").value || null;
-
-            if (!side || !symbol) {
-                alert("Error: Side and Symbol are required.");
-                return;
-            }
-
-            if (cashQty && nomQty) {
-                alert("You must specify whether you want to route a cash or nominal quantity.");
-                return;
-            }
-
-            let qty = cashQty ? cashQty : nomQty;
-            let qtyType = cashQty ? "Cash Qty" : "Nom. Qty";
-
-            if (!qty) {
-                alert("Error: Please enter a valid quantity.");
-                return;
-            }
-
-            // ✅ Mensaje de confirmación personalizado
-            let message = `Are you sure that you want to send a ${side} order for security ${symbol} of ${qty} units?`;
-
-            if (confirm(message)) {
-                sendOrder(symbol, side, cashQty, nomQty);
-            }
-
-        }
-
-        function sendOrder(symbol, side, cashQty, nomQty) {
-            fetch("/routing_dashboard/submit_order", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    symbol: symbol,
-                    side: side,
-                    cash_qty: cashQty ? parseFloat(cashQty) : null,
-                    nom_qty: nomQty ? parseInt(nomQty) : null,
-                    broker: document.getElementById("broker").value,
-                    currency: document.getElementById("currency").value,
-                    exchange: document.getElementById("exchange").value,
-                    account: document.getElementById("account").value
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert(data.message);
-                updateExecutionReports();  // ✅ Refresca la tabla
-            })
-            .catch(error => {
-                alert("Error submitting order.");
-                console.error(error);
-            });
-        }
-
-
-        // Automatically load account options for the default broker on page load
-        document.addEventListener("DOMContentLoaded", () => {
-            updateAccountOptions();
-        });
-
-        function unwindPosition(symbol, qty, currency) {
-            document.getElementById("symbol").value = symbol;
-            document.getElementById("nom_qty").value = parseInt(qty);
-            document.getElementById("currency").value = currency;
-            document.getElementById("side").value = "Sell";
-            updateFields();
-        }
-
-    </script>
-    
-    
-    <div id="loading-spinner" style="display: none; position: fixed; top: 20px; right: 20px; background-color: #222; color: white; padding: 10px 20px; border-radius: 8px; box-shadow: 0 0 10px black;">
-    ⏳ Loading portfolio...
+    <!-- BULK TAB (reserved) -->
+    <div class="tab-panel" id="tab-bulk">
+      <div class="bulk-coming-soon">
+        <div class="bulk-icon">📊</div>
+        <div class="bulk-title">Bulk Routing — Coming Soon</div>
+        <div class="bulk-sub">
+          Upload a list of securities via Excel or manual entry, set allocations,
+          and route all orders with a single click.
+          This module is reserved for future implementation.
+        </div>
+      </div>
     </div>
+
+  </main>
+</div>
+
+<!-- ── CONFIRM ORDER MODAL ── -->
+<div class="modal-overlay" id="confirmModal">
+  <div class="modal">
+    <div class="modal-hdr">
+      <span class="modal-hdr-title">Confirm Order</span>
+      <button class="modal-x" onclick="closeModal('confirmModal')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="confirm-grid">
+        <div class="confirm-field">
+          <span class="confirm-lbl">Security</span>
+          <span class="confirm-val" id="conf-symbol">—</span>
+        </div>
+        <div class="confirm-field">
+          <span class="confirm-lbl">Side</span>
+          <span class="confirm-val" id="conf-side">—</span>
+        </div>
+        <div class="confirm-field">
+          <span class="confirm-lbl">Amount / Qty</span>
+          <span class="confirm-val" id="conf-qty">—</span>
+        </div>
+        <div class="confirm-field">
+          <span class="confirm-lbl">Broker</span>
+          <span class="confirm-val exchange-val" id="conf-broker">—</span>
+        </div>
+        <div class="confirm-field">
+          <span class="confirm-lbl">Exchange</span>
+          <span class="confirm-val exchange-val" id="conf-exchange">—</span>
+        </div>
+        <div class="confirm-field">
+          <span class="confirm-lbl">Account</span>
+          <span class="confirm-val" id="conf-account" style="font-size:12px;color:var(--text)">—</span>
+        </div>
+        <hr class="confirm-divider">
+        <div class="confirm-warning">
+          ⚠ Orders sent cannot be automatically cancelled. Please verify all fields before confirming.
+        </div>
+      </div>
+    </div>
+    <div class="modal-ftr">
+      <button class="btn btn-ghost" onclick="closeModal('confirmModal')">Cancel</button>
+      <button class="btn btn-confirm-buy" id="confirmSendBtn" onclick="sendOrder()">Confirm &amp; Send</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── PORTFOLIO MODAL ── -->
+<div class="modal-overlay" id="portfolioModal">
+  <div class="modal">
+    <div class="modal-hdr">
+      <span class="modal-hdr-title">Portfolio</span>
+      <button class="modal-x" onclick="closeModal('portfolioModal')">×</button>
+    </div>
+    <div class="modal-body" id="portfolioModalBody">
+      <!-- filled dynamically by JS -->
+    </div>
+    <div class="modal-ftr">
+      <button class="btn btn-ghost" onclick="closeModal('portfolioModal')">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── CANCEL ORDER MODAL ── -->
+<div class="modal-overlay" id="cancelModal">
+  <div class="modal">
+    <div class="modal-hdr">
+      <span class="modal-hdr-title">Cancel Order</span>
+      <button class="modal-x" onclick="closeModal('cancelModal')">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="cancel-confirm-body">
+        <div class="cancel-icon">✕</div>
+        <div class="cancel-confirm-title">Are you sure?</div>
+        <div class="cancel-confirm-sub">
+          You're about to cancel order
+          <span class="cancel-order-id" id="cancelOrderId">—</span>
+          for security
+          <span class="cancel-symbol-badge" id="cancelSymbol">—</span>
+        </div>
+        <div class="cancel-confirm-warn">This action will send a cancellation request to the broker. The order may already be fully executed.</div>
+      </div>
+    </div>
+    <div class="modal-ftr">
+      <button class="btn btn-ghost" onclick="closeModal('cancelModal')">Keep Order</button>
+      <button class="btn btn-cancel-confirm" id="cancelConfirmBtn" onclick="executeCancelOrder()">Cancel Order ✕</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── LOADING SPINNER ── -->
+<div class="spinner-overlay" id="loadingSpinner">
+  <div class="spinner-box">
+    <div class="spinner-ring"></div>
+    <span id="spinnerMsg">Loading…</span>
+  </div>
+</div>
+
+<script src="../static/js/order_routing.js"></script>
 </body>
 </html>
