@@ -1,122 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Bias - Main Dashboard</title>
-    <style>
-
-        .error-message {
-            color: red;
-            font-size: 14px;
-            margin-top: 10px;
-            text-align: center;
-        }
-
-        body {
-            background-color: #0D1117;
-            font-family: Arial, sans-serif;
-            color: white;
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            display: flex;
-            background-color: #161B22;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
-            width: 80%; /* Ajustamos el tamaño para adaptarlo mejor */
-            max-width: 1200px;
-            height: 70vh; /* Puedes ajustar esto también según el tamaño deseado */
-        }
-
-        .image-side {
-            background-image: url("/static/image.png"); /* Asegúrate de que la ruta sea correcta */
-            background-size: cover; /* Hace que la imagen cubra todo el fondo */
-            background-position: center; /* Centra la imagen */
-            width: 50%; /* Ajustamos al 50% del contenedor */
-            height: 100%;
-            display: block;
-        }
-
-        .login-box {
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 350px;
-        }
-
-        h2 {
-            margin-bottom: 20px;
-            text-align: center;
-            color: #58A6FF;
-        }
-
-        input[type="text"], input[type="password"] {
-            padding: 12px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 6px;
-            width: 100%;
-            background-color: #e0e0e0;
-            color: #000;
-        }
-
-        button {
-            background-color: #58A6FF;
-            color: white;
-            font-weight: bold;
-            padding: 12px;
-            border: none;
-            border-radius: 6px;
-            margin-top: 15px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #1f6feb;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                width: 100%;
-                height: 100vh;
-            }
-            .image-side {
-                height: 200px;
-                width: 100%;
-            }
-            .login-box {
-                width: 100%;
-                padding: 20px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seeking Bias — Access Terminal</title>
+  <link rel="stylesheet" href="../static/css/login.css">
 </head>
 <body>
-    <div class="container">
-        <div class="image-side"></div>
-        <div class="login-box">
-            <h2>Login</h2>
-            <form method="POST" action="/login">
-                <input type="text" name="username" placeholder="Username" required />
-                <input type="password" name="password" placeholder="Password" required />
-                <button type="submit">Login</button>
-            </form>
-            {% if error_message %}
-                <div class="error-message">
-                    <p>{{ error_message }}</p>
-                </div>
-            {% endif %}
 
+<!-- Animated background canvas -->
+<canvas id="bgCanvas"></canvas>
 
-        </div>
+<!-- Scanlines overlay -->
+<div class="scanlines"></div>
+
+<!-- Vignette -->
+<div class="vignette"></div>
+
+<!-- Page -->
+<div class="page">
+  <div class="login-panel" style="position:relative">
+
+    <!-- Corner decorations -->
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+
+    <!-- Brand -->
+    <div class="panel-brand">
+      <div class="brand-mark">B</div>
+      <div class="brand-text">
+        <span class="brand-name">SEEKING BIAS</span>
+        <span class="brand-sub">Quantitative Fund Management</span>
+      </div>
     </div>
+
+    <!-- Title -->
+    <div class="access-label">Secure Access</div>
+    <div class="panel-title">Sign In</div>
+
+    <!-- Form -->
+    <form method="POST" action="/login">
+      <div class="field">
+        <label class="field-label" for="username">Operator ID</label>
+        <input class="field-input" type="text" id="username" name="username"
+          placeholder="username" autocomplete="username" required>
+      </div>
+      <div class="field">
+        <label class="field-label" for="password">Access Key</label>
+        <input class="field-input" type="password" id="password" name="password"
+          placeholder="••••••••••••" autocomplete="current-password" required>
+      </div>
+      <div class="field">
+        <button class="login-btn" type="submit">Authenticate →</button>
+      </div>
+    </form>
+
+    {% if error_message %}
+    <div class="error-block">
+      <span class="error-icon">⚠</span>
+      <span class="error-text">{{ error_message }}</span>
+    </div>
+    {% endif %}
+
+    <!-- Footer -->
+    <div class="panel-footer">
+      <div class="footer-status">
+        <div class="status-dot"></div>
+        <span class="footer-status-text">Systems Operational</span>
+      </div>
+      <span class="footer-time" id="loginClock">--.--.----  --:--:--</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- Watermark -->
+<div class="watermark">Seeking Bias Fund Management Platform · Restricted Access</div>
+
+<script src="../static/js/login.js"></script>
 </body>
 </html>

@@ -1,0 +1,266 @@
+/* login.css — Seeking Bias · Access Terminal */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --bg:       #040810;
+  --surface:  #080C14;
+  --border:   #0F1923;
+  --border2:  #162030;
+  --blue:     #1F6FEB;
+  --blue-dim: #0A1A35;
+  --blue-glow:#58A6FF;
+  --green:    #3FB950;
+  --orange:   #D29922;
+  --red:      #F85149;
+  --text:     #C9D1D9;
+  --dim:      #6E7681;
+  --faint:    #2A3140;
+  --mono:     'IBM Plex Mono', monospace;
+  --sans:     'IBM Plex Sans', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  width: 100%; height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  font-family: var(--mono);
+  color: var(--text);
+}
+
+/* ── FULL BACKGROUND CANVAS ── */
+#bgCanvas {
+  position: fixed; inset: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+}
+
+/* ── SCANLINE OVERLAY ── */
+.scanlines {
+  position: fixed; inset: 0; z-index: 1;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.06) 2px,
+    rgba(0,0,0,0.06) 4px
+  );
+  pointer-events: none;
+}
+
+/* ── VIGNETTE ── */
+.vignette {
+  position: fixed; inset: 0; z-index: 2;
+  background: radial-gradient(ellipse at center,
+    transparent 30%,
+    rgba(4,8,16,0.7) 70%,
+    rgba(4,8,16,0.95) 100%
+  );
+  pointer-events: none;
+}
+
+/* ── PAGE WRAPPER ── */
+.page {
+  position: relative; z-index: 10;
+  width: 100%; height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* ── LOGIN PANEL ── */
+.login-panel {
+  width: 380px;
+  background: rgba(8, 12, 20, 0.82);
+  border: 1px solid var(--border2);
+  border-radius: 16px;
+  backdrop-filter: blur(24px) saturate(180%);
+  box-shadow:
+    0 0 0 1px rgba(31,111,235,0.06),
+    0 32px 80px rgba(0,0,0,0.8),
+    0 0 60px rgba(31,111,235,0.05),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+  padding: 40px 36px 36px;
+  animation: panelIn 0.7s cubic-bezier(0.34, 1.1, 0.64, 1) both;
+}
+
+@keyframes panelIn {
+  from { opacity: 0; transform: translateY(24px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0)    scale(1); }
+}
+
+/* ── PANEL HEADER ── */
+.panel-brand {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 28px;
+  animation: fadeUp 0.5s 0.15s ease both;
+}
+.brand-mark {
+  width: 36px; height: 36px;
+  background: linear-gradient(135deg, #0A1D3E, var(--blue));
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 16px; font-weight: 700; color: white;
+  box-shadow: 0 4px 16px rgba(31,111,235,0.35);
+  flex-shrink: 0;
+}
+.brand-text { display: flex; flex-direction: column; gap: 1px; }
+.brand-name {
+  font-family: var(--mono); font-size: 14px; font-weight: 600;
+  color: #E6EDF3; letter-spacing: 0.14em;
+}
+.brand-sub {
+  font-family: var(--mono); font-size: 9px; color: var(--dim);
+  letter-spacing: 0.18em; text-transform: uppercase;
+}
+
+/* ── ACCESS LABEL ── */
+.access-label {
+  font-family: var(--mono); font-size: 9px;
+  color: var(--blue-glow); text-transform: uppercase; letter-spacing: 0.2em;
+  margin-bottom: 6px;
+  animation: fadeUp 0.5s 0.2s ease both;
+}
+.panel-title {
+  font-family: var(--mono); font-size: 22px; font-weight: 600;
+  color: #E6EDF3; margin-bottom: 28px; letter-spacing: -0.01em;
+  animation: fadeUp 0.5s 0.25s ease both;
+}
+
+/* ── FORM FIELDS ── */
+.field {
+  margin-bottom: 14px;
+  animation: fadeUp 0.5s ease both;
+}
+.field:nth-child(1) { animation-delay: 0.3s; }
+.field:nth-child(2) { animation-delay: 0.35s; }
+.field:nth-child(3) { animation-delay: 0.4s; }
+
+.field-label {
+  display: block;
+  font-family: var(--mono); font-size: 9px;
+  color: var(--dim); text-transform: uppercase; letter-spacing: 0.14em;
+  margin-bottom: 6px;
+}
+
+.field-input {
+  width: 100%; padding: 11px 14px;
+  background: rgba(15, 25, 35, 0.9);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  color: #E6EDF3;
+  font-family: var(--mono); font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  -webkit-text-fill-color: #E6EDF3;
+}
+.field-input::placeholder { color: var(--faint); }
+.field-input:focus {
+  border-color: var(--blue);
+  background: rgba(31, 111, 235, 0.04);
+  box-shadow: 0 0 0 3px rgba(31,111,235,0.12), 0 0 16px rgba(31,111,235,0.08);
+}
+/* kill browser autofill yellowing */
+.field-input:-webkit-autofill,
+.field-input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #0A1320 inset !important;
+  -webkit-text-fill-color: #E6EDF3 !important;
+  caret-color: #E6EDF3;
+}
+
+/* ── SUBMIT BUTTON ── */
+.login-btn {
+  width: 100%; padding: 12px;
+  background: linear-gradient(135deg, #1553B4, var(--blue));
+  border: none; border-radius: 8px;
+  color: white; font-family: var(--mono);
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  cursor: pointer; margin-top: 6px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px rgba(31,111,235,0.35);
+  position: relative; overflow: hidden;
+  animation: fadeUp 0.5s 0.45s ease both;
+}
+.login-btn::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease;
+}
+.login-btn:hover::after { transform: translateX(100%); }
+.login-btn:hover {
+  box-shadow: 0 6px 28px rgba(31,111,235,0.55);
+  transform: translateY(-1px);
+}
+.login-btn:active { transform: translateY(0); }
+
+/* ── ERROR MESSAGE ── */
+.error-block {
+  margin-top: 14px;
+  background: rgba(248,81,73,0.08);
+  border: 1px solid rgba(248,81,73,0.2);
+  border-radius: 7px;
+  padding: 9px 13px;
+  display: flex; align-items: center; gap: 8px;
+  animation: fadeUp 0.3s ease both;
+}
+.error-icon { font-size: 12px; flex-shrink: 0; }
+.error-text { font-family: var(--mono); font-size: 11px; color: var(--red); }
+
+/* ── FOOTER META ── */
+.panel-footer {
+  margin-top: 24px; padding-top: 16px;
+  border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center;
+  animation: fadeUp 0.5s 0.5s ease both;
+}
+.footer-status {
+  display: flex; align-items: center; gap: 5px;
+}
+.status-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 6px rgba(63,185,80,0.7);
+  animation: pulse 2s ease infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+.footer-status-text {
+  font-family: var(--mono); font-size: 9px;
+  color: var(--dim); letter-spacing: 0.1em; text-transform: uppercase;
+}
+.footer-time {
+  font-family: var(--mono); font-size: 9px; color: var(--faint);
+  letter-spacing: 0.06em;
+}
+
+/* ── CORNER DECORATIONS ── */
+.corner {
+  position: absolute;
+  width: 12px; height: 12px;
+  border-color: rgba(31,111,235,0.3);
+  border-style: solid;
+}
+.corner-tl { top: -1px; left: -1px;  border-width: 2px 0 0 2px; border-radius: 4px 0 0 0; }
+.corner-tr { top: -1px; right: -1px; border-width: 2px 2px 0 0; border-radius: 0 4px 0 0; }
+.corner-bl { bottom: -1px; left: -1px;  border-width: 0 0 2px 2px; border-radius: 0 0 0 4px; }
+.corner-br { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; border-radius: 0 0 4px 0; }
+
+/* ── WATERMARK ── */
+.watermark {
+  position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+  font-family: var(--mono); font-size: 9px;
+  color: rgba(110,118,129,0.3); letter-spacing: 0.14em;
+  text-transform: uppercase; z-index: 10;
+  white-space: nowrap;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
