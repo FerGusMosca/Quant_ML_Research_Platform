@@ -1,205 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Dashboard</title>
-    <style>
-
-  #chat-iframe-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 9999;
-      padding: 10px 14px;
-      background-color: #21262D;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-  }
-
-  #chat-iframe {
-      position: fixed;
-      bottom: 70px;
-      right: 20px;
-      width: 320px;
-      height: 400px;
-      border: none;
-      border-radius: 8px;
-      z-index: 9998;
-      display: none;
-      box-shadow: 0 0 12px rgba(0,0,0,0.5);
-  }
-
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #0D1117;
-        color: #e0e0e0;
-        margin: 0;
-        display: flex;
-        height: 100vh;
-    }
-
-    .sidebar {
-        width: 250px;
-        background: #161B22;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-    }
-
-    .sidebar h2 {
-        text-align: center;
-        color: #58A6FF;
-    }
-
-    .menu {
-        list-style: none;
-        padding: 0;
-        margin-top: 20px;
-    }
-
-    .menu li {
-        padding: 10px;
-        margin-bottom: 10px;
-        background: #21262D;
-        border-radius: 5px;
-        text-align: center;
-        cursor: pointer;
-        transition: background 0.3s;
-    }
-
-    .menu li:hover {
-        background: #30363D;
-    }
-
-    .menu a {
-        text-decoration: none;
-        color: #e0e0e0;
-        font-size: 16px;
-        display: block;
-    }
-
-    .content {
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-    }
-
-    /* Floating chat button */
-    .chat-toggle {
-        position: fixed;
-        top: 20px;
-        right: 30px;
-        background-color: #21262D;
-        color: #e0e0e0;
-        padding: 10px 16px;
-        font-size: 14px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        z-index: 999;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-        transition: background 0.3s;
-    }
-
-    .chat-toggle:hover {
-        background-color: #30363D;
-    }
-
-    /* Chat popup */
-    .chat-popup {
-        display: none;
-        position: fixed;
-        bottom: 90px;
-        right: 30px;
-        width: 350px;
-        height: 480px;
-        border: none;
-        border-radius: 12px;
-        box-shadow: 0 0 25px rgba(0,0,0,0.8);
-        z-index: 999;
-    }
-
-
-    .chat-popup input[type="text"] {
-    width: calc(100% - 90px);
-    padding: 12px 14px;
-    border-radius: 8px;
-    border: 1px solid #30363D;
-    background-color: #0D1117;
-    color: #e0e0e0;
-    font-size: 14px;
-    margin-right: 8px;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
-    transition: border 0.3s ease;
-}
-
-    .chat-popup input[type="text"]:focus {
-        outline: none;
-        border: 1px solid #58A6FF;
-    }
-
-    .chat-popup button {
-        background-color: #58A6FF;
-        border: none;
-        color: white;
-        padding: 12px 16px;
-        border-radius: 8px;
-        font-size: 14px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-    }
-
-    .chat-popup button:hover {
-        background-color: #1F6FEB;
-    }
-
-    #bot-response {
-        margin-top: 15px;
-        font-size: 15px;
-        color: #c9d1d9;
-        line-height: 1.4;
-        padding: 10px 0 0 0;
-        border-top: 1px solid #30363D;
-    }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seeking Bias — Management Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/main_dashboard.css">
 
 </head>
 <body>
 
+<!-- TOP NAV -->
+<nav class="top-nav">
+  <a href="/" class="nav-brand">
+    <div class="nav-brand-b">B</div>
+    <div>
+      <div class="nav-brand-name">BIAS</div>
+      <div class="nav-brand-sub">Management Dashboard</div>
+    </div>
+  </a>
+  <div class="nav-right">
+    <div class="nav-clock" id="liveClock">--:--:--</div>
+    <a href="/logout" class="nav-logout">↩ Logout</a>
+  </div>
+</nav>
+
+<div class="app-body">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sb-label">Operations</div>
+    <a href="/accounts"          class="nav-item"><span class="nav-icon">🏦</span> Manage Accounts</a>
+    <a href="/routing_dashboard" class="nav-item"><span class="nav-icon">⚡</span> Routing Dashboard</a>
+
+    <div class="sb-label">Analytics</div>
+    <a href="/display_custom_etf"          class="nav-item"><span class="nav-icon">📦</span> Custom ETF</a>
+    <a href="/simulate_indicator_strategy" class="nav-item"><span class="nav-icon">📐</span> Simulate Strategy</a>
+    <a href="/display_series"              class="nav-item"><span class="nav-icon">📈</span> Display Series</a>
+
+    <div class="sb-label">Data</div>
+    <a href="/load_series"         class="nav-item"><span class="nav-icon">⬆️</span> Load Series</a>
+    <a href="/global_m2_indicator" class="nav-item"><span class="nav-icon">🌐</span> Global M2</a>
 
 
+  </aside>
 
-    <!-- Sidebar Menu -->
-    <div class="sidebar">
-        <h2>Commands</h2>
-        <ul class="menu">
-            <li><a href="/accounts">Manage Accounts</a></li>
-            <li><a href="/routing_dashboard">Routing Dashboard</a></li>
-            <li><a href="/display_custom_etf">Display Custom ETF</a></li>
-            <li><a href="/simulate_indicator_strategy">Simulate Indicator Strategy</a></li>
-            <li><a href="/load_series">Load Series</a></li>
-            <li><a href="/display_series">Display Series</a></li>
-            <li><a href="/global_m2_indicator">Global M2</a></li>
-            <li><a href="/logout">Logout</a></li>
+  <!-- MAIN -->
+  <main class="main">
 
+    <div class="page-eyebrow">Seeking Bias · Fund Management</div>
+    <h1 class="page-title">Management Dashboard</h1>
+    <p class="page-sub">Macro intelligence · Leading indicators · Institutional flows</p>
 
-        </ul>
+    <!-- METRICS ROW -->
+    <div class="metrics-row">
+      <div class="metric-card blue">
+        <div class="m-label">OECD CLI · G7</div>
+        <div class="m-value" id="m-g7">—</div>
+        <div class="m-delta flat" id="d-g7">Loading…</div>
+      </div>
+      <div class="metric-card green">
+        <div class="m-label">US CLI</div>
+        <div class="m-value" id="m-us">—</div>
+        <div class="m-delta flat" id="d-us">Loading…</div>
+      </div>
+      <div class="metric-card orange">
+        <div class="m-label">Germany CLI</div>
+        <div class="m-value" id="m-eu">—</div>
+        <div class="m-delta flat" id="d-eu">Loading…</div>
+      </div>
+      <div class="metric-card red">
+        <div class="m-label">China CLI</div>
+        <div class="m-value" id="m-cn">—</div>
+        <div class="m-delta flat" id="d-cn">Loading…</div>
+      </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="content">
-        <p>Welcome to the Main Dashboard! Select an option from the menu.</p>
-
-
+    <!-- QUICK LINKS -->
+    <div class="section-hdr">
+      <span class="section-title">Quick Access</span>
+    </div>
+    <div class="quick-grid">
+      <a href="/routing_dashboard"           class="quick-link"><span class="ql-icon">⚡</span><div><div class="ql-label">Routing Dashboard</div><div class="ql-sub">Live order routing</div></div><span class="ql-arrow">→</span></a>
+      <a href="/simulate_indicator_strategy" class="quick-link"><span class="ql-icon">📐</span><div><div class="ql-label">Simulate Strategy</div><div class="ql-sub">Backtest indicator signals</div></div><span class="ql-arrow">→</span></a>
+      <a href="/global_m2_indicator"         class="quick-link"><span class="ql-icon">🌐</span><div><div class="ql-label">Global M2</div><div class="ql-sub">Money supply indicator</div></div><span class="ql-arrow">→</span></a>
+      <a href="/display_custom_etf"          class="quick-link"><span class="ql-icon">📦</span><div><div class="ql-label">Custom ETF</div><div class="ql-sub">Portfolio construction</div></div><span class="ql-arrow">→</span></a>
     </div>
 
+    <hr class="divider">
+
+    <!-- LEI SECTION -->
+    <div class="section-hdr">
+      <span class="section-title">Leading Economic Indicators</span>
+      <span class="section-meta">OECD CLI · 6–9 month lead · Source: FRED</span>
+    </div>
+
+    <!-- Cards built dynamically by JS -->
+    <div class="lei-grid" id="leiGrid"></div>
+
+  </main>
+</div>
+
+<!-- ADD LEI MODAL — updated fields -->
+<div class="modal-overlay" id="addModal">
+  <div class="modal">
+    <div class="modal-hdr">
+      <span class="modal-hdr-title">Add Leading Indicator</span>
+      <button class="modal-x" onclick="closeModal()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-field">
+        <label class="modal-lbl">Title</label>
+        <input type="text" class="modal-input" id="mTitle" placeholder="e.g. Brazil CLI">
+      </div>
+      <div class="modal-field">
+        <label class="modal-lbl">Source Label</label>
+        <input type="text" class="modal-input" id="mSource" placeholder="e.g. OECD · Monthly · FRED">
+      </div>
+      <div class="modal-field">
+        <label class="modal-lbl">FRED Series ID <span style="color:#3D444D;font-weight:400">(required)</span></label>
+        <input type="text" class="modal-input" id="mFredId" placeholder="e.g. BRALIZTOAASTSAM">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#3D444D;margin-top:3px;">
+          Find at fred.stlouisfed.org → search "[country] OECD CLI"
+        </span>
+      </div>
+      <div class="modal-field">
+        <label class="modal-lbl">OECD Explorer URL <span style="color:#3D444D;font-weight:400">(optional)</span></label>
+        <input type="text" class="modal-input" id="mOecdUrl" placeholder="https://data-explorer.oecd.org/…">
+      </div>
+      <div class="modal-field">
+        <label class="modal-lbl">Signal</label>
+        <select class="modal-select" id="mStatus">
+          <option value="expanding">Expanding</option>
+          <option value="slowing" selected>Monitor</option>
+          <option value="contracting">Contracting</option>
+        </select>
+      </div>
+    </div>
+    <div class="modal-ftr">
+      <button class="btn btn-ghost" onclick="closeModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="addCard()">Add Indicator</button>
+    </div>
+  </div>
+</div>
+
+<script src="../static/js/main_dashboard.js"></script>
 </body>
 </html>
