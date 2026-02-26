@@ -1,164 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Global M2 Indicator</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body {
-            background-color: #0D1117;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
-            padding: 30px;
-        }
-
-        h1 {
-            color: #58A6FF;
-        }
-
-        form {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-
-        .form-column {
-            flex: 1;
-            min-width: 300px;
-            margin-right: 20px;
-        }
-
-        label {
-            display: block;
-            margin-top: 10px;
-            margin-bottom: 5px;
-        }
-
-        input, select, button {
-            padding: 10px;
-            background-color: #21262D;
-            color: white;
-            border: 1px solid #444;
-            margin-bottom: 10px;
-        }
-
-        select[multiple] {
-            width: 100%;
-            height: 160px;
-        }
-
-        button {
-            background-color: #2ea44f;
-            cursor: pointer;
-        }
-
-        canvas {
-            margin-top: 30px;
-            background-color: #161B22;
-            border: 1px solid #444;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seeking Bias — Global M2 Indicator</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/global_m2_indicator.css">
 </head>
 <body>
 
-<h1>Global M2 Indicator</h1>
+<!-- TOP NAV -->
+<nav class="top-nav">
+  <a href="/" class="nav-brand">
+    <div class="nav-brand-b">B</div>
+    <div>
+      <div class="nav-brand-name">BIAS</div>
+      <div class="nav-brand-sub">Global M2 Indicator</div>
+    </div>
+  </a>
+  <div class="nav-right">
+    <div class="nav-clock" id="navClock">--:--:--</div>
+    <a href="/" class="nav-back">← Dashboard</a>
+  </div>
+</nav>
 
-<form id="m2Form">
-    <!-- Columna izquierda -->
-    <div class="form-column">
-        <label>Start Date:</label>
-        <input type="date" name="start_date" value="2010-01-01">
-        <label>End Date:</label>
-        <input type="date" name="end_date" value="2024-12-31">
-        <label>Offset (days):</label>
-        <input type="number" name="offset_days" value="0">
-        <button type="submit" id="calcBtn">Calculate</button>
+<div class="app-body">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sb-label">Operations</div>
+    <a href="/accounts"          class="nav-item"><span class="nav-icon">🏦</span> Manage Accounts</a>
+    <a href="/routing_dashboard" class="nav-item"><span class="nav-icon">⚡</span> Routing Dashboard</a>
+
+    <div class="sb-label">Analytics</div>
+    <a href="/display_custom_etf"          class="nav-item"><span class="nav-icon">📦</span> Custom ETF</a>
+    <a href="/simulate_indicator_strategy" class="nav-item"><span class="nav-icon">📐</span> Simulate Strategy</a>
+    <a href="/display_series"              class="nav-item"><span class="nav-icon">📈</span> Display Series</a>
+
+    <div class="sb-label">Data</div>
+    <a href="/load_series"         class="nav-item"><span class="nav-icon">⬆️</span> Load Series</a>
+    <a href="/global_m2_indicator" class="nav-item active"><span class="nav-icon">🌐</span> Global M2</a>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- PAGE HEADER -->
+    <div>
+      <div class="page-eyebrow">Data · Macro</div>
+      <div class="page-title">Global M2 Indicator</div>
     </div>
 
-    <!-- Columna derecha -->
-    <div class="form-column">
-        <label for="currencySelect">Currencies (Ctrl+Click to select/deselect):</label>
-        <select name="currencies" id="currencySelect" multiple>
-            {% for cur in available_currencies %}
-                <option value="{{ cur }}" selected>{{ cur }}</option>
-            {% endfor %}
-        </select>
+    <!-- CONTROL PANEL -->
+    <div class="control-panel">
+      <div class="control-panel-hdr">
+        <span class="control-panel-title">Query Parameters</span>
+      </div>
+      <div class="control-body">
+        <form id="m2Form" style="display:contents">
+
+          <!-- Left: dates + offset + button -->
+          <div class="params-col">
+            <div class="param-row">
+              <div class="param-field">
+                <label class="param-label" for="start_date">Start Date</label>
+                <input class="param-input" type="date" id="start_date" name="start_date" value="2010-01-01">
+              </div>
+              <div class="param-field">
+                <label class="param-label" for="end_date">End Date</label>
+                <input class="param-input" type="date" id="end_date" name="end_date">
+              </div>
+            </div>
+            <div class="param-field" style="max-width:160px">
+              <label class="param-label" for="offset_days">Offset (days)</label>
+              <input class="param-input" type="number" id="offset_days" name="offset_days" value="0" min="-365" max="365">
+            </div>
+            <div>
+              <button class="calc-btn" type="submit" id="calcBtn">
+                <div class="btn-spinner"></div>
+                <span>Calculate</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: currency chips -->
+          <div class="currency-col">
+            <div class="currency-col-header">
+              <span class="currency-col-label">Currencies</span>
+              <div class="currency-quick-btns">
+                <button type="button" class="qbtn" onclick="selectAll()">All</button>
+                <button type="button" class="qbtn" onclick="selectNone()">None</button>
+              </div>
+            </div>
+
+            <div class="currency-grid">
+              {# Map currencies to display info #}
+              {% set currency_meta = {
+                "USD": {"flag": "🇺🇸", "label": "USD"},
+                "CNY": {"flag": "🇨🇳", "label": "CNY"},
+                "JPY": {"flag": "🇯🇵", "label": "JPY"},
+                "INR": {"flag": "🇮🇳", "label": "INR"},
+                "EUR": {"flag": "🇪🇺", "label": "EUR"},
+                "GBP": {"flag": "🇬🇧", "label": "GBP"},
+                "BRL": {"flag": "🇧🇷", "label": "BRL"},
+                "MXN": {"flag": "🇲🇽", "label": "MXN"}
+              } %}
+              {% for cur in available_currencies %}
+              {% set meta = currency_meta.get(cur, {"flag": "🏳", "label": cur}) %}
+              <div class="currency-chip selected" data-currency="{{ cur }}">
+                <span class="chip-flag">{{ meta.flag }}</span>
+                <span class="chip-code">{{ meta.label }}</span>
+                <span class="chip-check">✓</span>
+              </div>
+              {% endfor %}
+            </div>
+
+            <!-- Hidden select for form submission -->
+            <select id="currencySelectHidden" name="currencies" multiple style="display:none">
+              {% for cur in available_currencies %}
+              <option value="{{ cur }}" selected>{{ cur }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+        </form>
+      </div>
     </div>
-</form>
 
-<canvas id="m2Chart" width="1200" height="500"></canvas>
-<div id="log" style="white-space: pre-wrap; margin-top: 20px; font-family: monospace; color: #aaa;"></div>
+    <!-- CHART CARD -->
+    <div class="chart-card">
+      <div class="chart-card-hdr">
+        <span class="chart-card-title">Global M2 Money Supply (USD)</span>
+        <span class="chart-card-meta" id="chartMeta">Run a calculation to see the chart</span>
+      </div>
+      <div class="chart-body">
+        <div id="chartEmpty" class="chart-empty">
+          <div class="chart-empty-icon">🌐</div>
+          <div>Select currencies and date range, then click Calculate</div>
+        </div>
+        <canvas id="m2Chart" style="display:none"></canvas>
+      </div>
+    </div>
 
-<script>
-    const form = document.getElementById("m2Form");
-    const btn = document.getElementById("calcBtn");
-    const ctx = document.getElementById('m2Chart').getContext('2d');
-    const logEl = document.getElementById("log");
-    let chart = null;
+    <!-- LOG PANEL -->
+    <div class="log-panel" id="logPanel">
+      <div class="log-panel-hdr">
+        <span class="log-panel-title">Fetch Log</span>
+        <button class="log-toggle" id="logToggle" onclick="toggleLogs()">▼ show</button>
+      </div>
+      <div class="log-body" id="logBody"></div>
+    </div>
 
-    form.onsubmit = async function (e) {
-        e.preventDefault();
+  </main>
+</div>
 
-        const formData = new FormData(form);
-        const selected = Array.from(document.getElementById("currencySelect").selectedOptions).map(o => o.value);
-        selected.forEach(v => formData.append("currencies", v));
-
-        btn.disabled = true;
-        const oldText = btn.innerText;
-        btn.innerText = 'Calculating...';
-        logEl.innerText = "";
-
-        try {
-            const response = await fetch("/global_m2_indicator/calculate", {
-                method: "POST",
-                body: formData
-            });
-
-            const result = await response.json();
-
-            if (result.message) {
-                alert(result.message);
-                if (chart) chart.destroy();
-            } else {
-                if (chart) chart.destroy();
-
-                chart = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                        labels: result.dates,
-                        datasets: [{
-                            label: 'Global M2 (USD)',
-                            data: result.values,
-                            borderWidth: 2,
-                            fill: true
-                        }]
-                    },
-                    options: {
-                        scales: {
-                            x: { ticks: { color: '#ccc' } },
-                            y: { ticks: { color: '#ccc' } }
-                        },
-                        plugins: {
-                            legend: { labels: { color: '#ccc' } }
-                        }
-                    }
-                });
-
-                if (result.logs) {
-                    logEl.innerText = result.logs.join("\n");
-                }
-            }
-
-        } catch (err) {
-            alert("Error calculating indicator.");
-        } finally {
-            btn.disabled = false;
-            btn.innerText = oldText;
-        }
-    };
-</script>
-
+<script src="../static/js/global_m2_indicator.js"></script>
 </body>
 </html>
