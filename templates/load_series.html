@@ -1,272 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Load Series</title>
-    <style>
-
-        .upload-container {
-            background: #161B22;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            width: 60%;
-            margin: auto;
-            text-align: center;
-        }
-
-        .form-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-
-        .form-row label {
-            font-weight: bold;
-            color: #e0e0e0;
-        }
-
-        input[type="file"],
-        input[type="text"],
-        input[type="number"] {
-            flex: 1;
-            padding: 8px;
-            border-radius: 5px;
-            border: 1px solid #444;
-            background: #222;
-            color: white;
-        }
-
-        button {
-            background: #4CAF50;
-            color: white;
-            font-weight: bold;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        button:hover {
-            background: #45a049;
-        }
-
-        .loader {
-            border: 3px solid #f3f3f3;
-            border-top: 3px solid #3498db;
-            border-radius: 50%;
-            width: 12px;
-            height: 12px;
-            animation: spin 1s linear infinite;
-            display: inline-block;
-            margin-left: 8px;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0D1117;
-            color: #e0e0e0;
-            text-align: center;
-            margin-top: 50px;
-        }
-        h2 {
-            color: #58A6FF;
-        }
-        .upload-container {
-            background: #161B22;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            width: 50%;
-            margin: auto;
-        }
-        input[type="file"],
-        input[type="text"] {
-            margin-top: 10px;
-        }
-        button {
-            background: #4CAF50;
-            color: white;
-            font-weight: bold;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        button:hover {
-            background: #45a049;
-        }
-        #upload-status {
-            margin-top: 15px;
-            font-weight: bold;
-        }
-        .chart-container {
-            margin-top: 40px;
-            width: 80%;
-            height: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            border: 1px solid #444;
-            background: #161B22;
-            padding: 15px;
-            border-radius: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seeking Bias — Load Series</title>
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/load_series.css">
 </head>
 <body>
 
-   <h2>Series File</h2>
-    <div class="upload-container">
-        <form id="uploadForm">
-            <div class="form-row">
-                <label for="series_file">Select a CSV file:</label>
-                <input type="file" id="series_file" name="series_file" required>
-            </div>
+<!-- TOP NAV -->
+<nav class="top-nav">
+  <a href="/" class="nav-brand">
+    <div class="nav-brand-b">B</div>
+    <div>
+      <div class="nav-brand-name">BIAS</div>
+      <div class="nav-brand-sub">Load Series</div>
+    </div>
+  </a>
+  <div class="nav-right">
+    <div class="nav-clock" id="navClock">--:--:--</div>
+    <a href="/" class="nav-back">← Dashboard</a>
+  </div>
+</nav>
 
-            <div class="form-row">
-                <label for="series_key">Series Key:</label>
-                <input type="text" id="series_key" name="series_key" maxlength="50" required>
+<div class="app-body">
 
-                <label for="add_days">Add Days:</label>
-                <input type="number" id="add_days" name="add_days" min="1" max="31" required value="1">
-            </div>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sb-label">Operations</div>
+    <a href="/accounts"          class="nav-item"><span class="nav-icon">🏦</span> Manage Accounts</a>
+    <a href="/routing_dashboard" class="nav-item"><span class="nav-icon">⚡</span> Routing Dashboard</a>
 
-            <button type="button" id="uploadButton" onclick="uploadSeries()">Upload</button>
-        </form>
-        <p id="uploadResult"></p>
+    <div class="sb-label">Analytics</div>
+    <a href="/display_custom_etf"          class="nav-item"><span class="nav-icon">📦</span> Custom ETF</a>
+    <a href="/simulate_indicator_strategy" class="nav-item"><span class="nav-icon">📐</span> Simulate Strategy</a>
+    <a href="/display_series"              class="nav-item"><span class="nav-icon">📈</span> Display Series</a>
+
+    <div class="sb-label">Data</div>
+    <a href="/load_series"         class="nav-item active"><span class="nav-icon">⬆️</span> Load Series</a>
+    <a href="/global_m2_indicator" class="nav-item"><span class="nav-icon">🌐</span> Global M2</a>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- PAGE HEADER -->
+    <div>
+      <div class="page-eyebrow">Data · Ingestion</div>
+      <div class="page-title">Load Series</div>
     </div>
 
+    <!-- UPLOAD CARD -->
+    <div class="upload-card">
+      <div class="card-hdr">
+        <div class="card-icon">⬆️</div>
+        <span class="card-title">Upload CSV File</span>
+      </div>
+      <div class="card-body">
 
+        <!-- File drop zone -->
+        <div class="file-drop" id="fileDropZone">
+          <input type="file" id="series_file" name="series_file" accept=".csv">
+          <div class="file-drop-icon">📂</div>
+          <div class="file-drop-text">
+            Drop your CSV here, or <span>browse</span>
+          </div>
+          <div class="file-selected-name" id="fileSelectedName"></div>
+        </div>
 
-    <h2>Custom Series</h2>
-    <div id="chartContainer" style="width: 80%; height: 500px; margin: auto;"></div>
+        <!-- Series Key + Add Days -->
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label class="form-label" for="series_key">
+              Series Key
+            </label>
+            <input class="form-input" type="text" id="series_key" name="series_key"
+              maxlength="50" placeholder="e.g. ARG_CC" autocomplete="off"
+              style="text-transform:uppercase">
+          </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetchChartData();
-        });
+          <div class="form-field">
+            <label class="form-label" for="add_days">
+              Add Days
+              <span class="form-label-hint">Day offset applied to each date (1–31)</span>
+            </label>
+            <div class="stepper-wrap">
+              <button type="button" class="stepper-btn" onclick="stepDays(-1)">−</button>
+              <input class="form-input" type="number" id="add_days" name="add_days"
+                min="1" max="31" value="1">
+              <button type="button" class="stepper-btn" onclick="stepDays(1)">+</button>
+            </div>
+          </div>
+        </div>
 
-        function uploadSeries() {
-            let fileInput = document.getElementById("series_file");
-            let file = fileInput.files[0];
+        <!-- Actions -->
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px">
+          <div class="upload-result" id="uploadResult"></div>
+          <button class="upload-btn" id="uploadButton" onclick="uploadSeries()">
+            <div class="btn-spinner"></div>
+            <span>Upload &amp; Persist</span>
+          </button>
+        </div>
 
-            let seriesKeyInput = document.getElementById("series_key");
-            let seriesKey = seriesKeyInput.value.trim();
+      </div>
+    </div>
 
-            let addDaysInput = document.getElementById("add_days");
-            let addDays = parseInt(addDaysInput.value, 10);
+    <!-- CHART CARD -->
+    <div class="chart-card">
+      <div class="chart-card-hdr">
+        <span class="chart-card-title">Loaded Series — Preview</span>
+        <span class="chart-card-meta" id="chartMeta">Upload a file to preview the series</span>
+      </div>
+      <div class="chart-body">
+        <div id="chartEmpty" class="chart-empty">
+          <div class="chart-empty-icon">📈</div>
+          <div>Upload a CSV to preview the time series here</div>
+        </div>
+        <div id="chartContainer" style="display:none;"></div>
+      </div>
+    </div>
 
-            if (!file) {
-                alert("Please select a file before uploading.");
-                return;
-            }
+  </main>
+</div>
 
-            if (seriesKey.length === 0) {
-                alert("Please enter a series key.");
-                return;
-            }
-
-            if (isNaN(addDays) || addDays < 1 || addDays > 31) {
-                alert("Please enter a valid day (between 1 and 31).");
-                return;
-            }
-
-            let formData = new FormData();
-            formData.append("file", file);
-            formData.append("series_key", seriesKey);
-            formData.append("add_days", addDays); // ✅ Send add_days value
-
-            let uploadButton = document.getElementById("uploadButton");
-            let uploadResult = document.getElementById("uploadResult");
-
-            uploadButton.disabled = true;
-            uploadButton.innerHTML = 'Uploading... <span class="loader"></span>';
-            uploadResult.innerText = "";
-
-            fetch("/load_series/upload_series", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(data => {
-                uploadResult.innerText = data.message;
-                fetchChartData();
-            })
-            .catch(error => {
-                console.error("Error uploading file:", error);
-                uploadResult.innerText = "Upload failed.";
-            })
-            .finally(() => {
-                uploadButton.disabled = false;
-                uploadButton.innerHTML = "Upload";
-            });
-        }
-
-
-        function drawChart(dates, values) {
-            var trace = {
-                x: dates,
-                y: values,
-                mode: "lines",
-                line: { color: "blue" }
-            };
-
-            var layout = {
-                title: "Time Series",
-                xaxis: { title: "Date" },
-                yaxis: { title: "Value", autorange: true },
-                dragmode: "zoom",
-                margin: { t: 50, b: 50 }
-            };
-
-            Plotly.newPlot("chartContainer", [trace], layout);
-
-            document.getElementById("chartContainer").on("plotly_relayout", function (eventData) {
-                if (eventData["xaxis.range"]) {
-                    let [start, end] = eventData["xaxis.range"];
-                    let filteredValues = values.filter((_, i) => dates[i] >= start && dates[i] <= end);
-                    if (filteredValues.length > 0) {
-                        let minY = Math.min(...filteredValues);
-                        let maxY = Math.max(...filteredValues);
-                        Plotly.relayout("chartContainer", { "yaxis.range": [minY, maxY] });
-                    }
-                }
-            });
-        }
-
-        function fetchChartData() {
-            fetch("/load_series/get_chart_data", { method: "GET" })
-            .then(response => response.json())
-            .then(data => {
-                if (!document.getElementById("chartContainer")) {
-                    console.error("Chart container is missing!");
-                    return;
-                }
-                if (!data.dates.length || !data.values.length) {
-                    console.warn("No data received for the chart.");
-                    return;
-                }
-                drawChart(data.dates, data.values);
-            })
-            .catch(error => {
-                console.error("Error fetching chart data:", error);
-            });
-        }
-    </script>
-
+<script src="../static/js/load_series.js"></script>
 </body>
 </html>
