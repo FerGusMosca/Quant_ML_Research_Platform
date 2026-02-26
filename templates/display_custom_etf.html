@@ -1,399 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display Custom ETF</title>
-   <style>
-      /* Loader */
-      .loader {
-        border: 3px solid #f3f3f3;
-        border-top: 3px solid #3498db;
-        border-radius: 50%;
-        width: 12px;
-        height: 12px;
-        animation: spin 1s linear infinite;
-        display: inline-block;
-        margin-left: 8px;
-      }
-      @keyframes spin { 0%{transform:rotate(0)} 100%{transform:rotate(360deg)} }
-
-      :root {
-        --bg:#0D1117;
-        --panel:#161B22;
-        --muted:#8b949e;
-        --text:#e6edf3;
-        --accent:#58A6FF;
-        --border:#2d333b;
-        --success:#2ea043;
-      }
-
-      * { box-sizing:border-box; }
-
-      body {
-        font-family: Inter, Arial, sans-serif;
-        background-color: var(--bg);
-        color: var(--text);
-        margin: 28px 0;               /* less vertical margin */
-      }
-
-      h2 {
-        color: var(--accent);
-        margin: 6px 0 14px;           /* tighter heading spacing */
-      }
-
-      .upload-container {
-        background: var(--panel);
-        padding: 14px 16px;           /* less padding */
-        border-radius: 14px;
-        box-shadow: 0 6px 24px rgba(0,0,0,.35);
-        width: min(900px, 92%);
-        margin: 0 auto;
-        border: 1px solid var(--border);
-      }
-
-      /* Two-column grid */
-      .form-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px 14px;              /* tighter gaps */
-        align-items: center;
-      }
-
-      .field { display:flex; align-items:center; gap:10px; }
-      .col-span-2 { grid-column: 1 / -1; }
-
-      label {
-        font-size: .95rem;
-        color: var(--muted);
-        min-width: 132px;
-        text-align: right;
-      }
-      label.switch { min-width:auto; text-align:left; }
-
-      /* Inputs */
-      input[type="text"],
-      input[type="number"],
-      input[type="date"],
-      input[type="file"] {
-        width: 100%;
-        background:#0f141a;
-        color: var(--text);
-        border:1px solid var(--border);
-        border-radius:10px;
-        padding:7px 9px;             /* smaller padding */
-        outline:none;
-      }
-      input[disabled] { opacity:.6; }
-
-      .helper {
-        font-size:.85rem;
-        color:#ff7b72;
-        margin-left: 142px;
-      }
-
-      /* Divider section */
-      .section {
-        border-top:1px solid var(--border);
-        padding-top:10px;
-        margin-top:6px;
-      }
-      .section-title {
-        color: var(--muted);
-        font-size:.9rem;
-        letter-spacing:.02em;
-      }
-
-      /* Button */
-      button {
-        background: var(--success);
-        color: #fff;
-        font-weight: 700;
-        border: none;
-        padding: 9px 16px;           /* smaller */
-        border-radius: 10px;
-        cursor: pointer;
-      }
-      button:hover { filter: brightness(1.05); }
-
-      /* Chart panel */
-      .chart-container {
-        margin-top: 16px;            /* closer to form */
-        width: min(1100px, 92%);
-        height: 520px;
-        margin-inline: auto;
-        border: 1px solid var(--border);
-        background: var(--panel);
-        padding: 15px;
-        border-radius: 12px;
-      }
-
-      /* Responsive collapse */
-      @media (max-width: 720px){
-        .form-grid { grid-template-columns: 1fr; }
-        label { min-width: 110px; text-align:left; }
-        .helper { margin-left: 0; }
-      }
-    </style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seeking Bias — Custom ETF</title>
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/display_custom_etf.css">
 </head>
 <body>
 
-    <h2>Upload Custom ETF File</h2>
-    <div class="upload-container">
-      <form id="uploadForm" class="form-grid">
+<!-- TOP NAV -->
+<nav class="top-nav">
+  <a href="/" class="nav-brand">
+    <div class="nav-brand-b">B</div>
+    <div>
+      <div class="nav-brand-name">BIAS</div>
+      <div class="nav-brand-sub">Custom ETF</div>
+    </div>
+  </a>
+  <div class="nav-right">
+    <div class="nav-clock" id="navClock">--:--:--</div>
+    <a href="/" class="nav-back">← Dashboard</a>
+  </div>
+</nav>
 
-        <!-- File (full row) -->
-        <div class="field col-span-2">
-          <label for="custom_etf_file">Select a CSV file</label>
-          <input type="file" id="custom_etf_file" name="custom_etf_file" required>
-        </div>
+<div class="app-body">
 
-        <!-- Dates -->
-        <div class="field">
-          <label for="start_date">Start Date</label>
-          <input type="date" id="start_date" name="start_date">
-        </div>
-        <div class="field">
-          <label for="end_date">End Date</label>
-          <input type="date" id="end_date" name="end_date">
-        </div>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sb-label">Operations</div>
+    <a href="/accounts"          class="nav-item"><span class="nav-icon">🏦</span> Manage Accounts</a>
+    <a href="/routing_dashboard" class="nav-item"><span class="nav-icon">⚡</span> Routing Dashboard</a>
 
-        <!-- Moving average toggle + period -->
-        <div class="field">
-          <label class="switch" for="enable_mavg">
-            <input type="checkbox" id="enable_mavg" onchange="toggleMovingAvgInput()">
-            Enable Moving Average
-          </label>
-        </div>
-        <div class="field">
-          <label for="mavg_period">Mov. Avg. Period</label>
-          <input type="number" id="mavg_period" placeholder="e.g. 200" min="1" disabled>
-        </div>
-        <div class="col-span-2 helper" id="mavg_error" style="display:none;">* Required and must be positive</div>
+    <div class="sb-label">Analytics</div>
+    <a href="/display_custom_etf"          class="nav-item active"><span class="nav-icon">📦</span> Custom ETF</a>
+    <a href="/simulate_indicator_strategy" class="nav-item"><span class="nav-icon">📐</span> Simulate Strategy</a>
+    <a href="/display_series"              class="nav-item"><span class="nav-icon">📈</span> Display Series</a>
 
-        <!-- Divider -->
-        <div class="col-span-2 section">
-          <div class="section-title">Save as symbol (optional)</div>
-        </div>
+    <div class="sb-label">Data</div>
+    <a href="/load_series"         class="nav-item"><span class="nav-icon">⬆️</span> Load Series</a>
+    <a href="/global_m2_indicator" class="nav-item"><span class="nav-icon">🌐</span> Global M2</a>
+  </aside>
 
-        <!-- Save as symbol switch -->
-        <div class="field">
-          <label class="switch" for="save_as_symbol">
-            <input type="checkbox" id="save_as_symbol" onchange="toggleSaveAsSymbol()">
-            Save as symbol
-          </label>
-        </div>
-        <div></div>
+  <!-- MAIN -->
+  <main class="main">
 
-        <!-- Symbol + Base (auto-hidden) -->
-         <div class="field" id="symbol_row" style="display:none;">
-          <label for="symbol_input">Symbol *</label>
-          <input type="text" id="symbol_input" placeholder="e.g. MY_ETF">
-        </div>
-        <div class="field" id="base_row" style="display:none;">
-          <label for="base_input">Base *</label>
-          <input type="number" id="base_input" step="0.01" min="0.01" value="1">
-        </div>
-        <div class="col-span-2 helper" id="save_symbol_error" style="display:none;">
-          * Symbol required and base must be &gt; 0
-        </div>
-
-        <!-- Submit -->
-        <div class="col-span-2" style="display:flex; gap:12px; justify-content:flex-end; margin-top:6px">
-          <button type="button" id="uploadButton" onclick="uploadETF()">Upload</button>
-        </div>
-      </form>
-
-      <p id="uploadResult" style="margin:10px 0 0; font-weight:600;"></p>
+    <!-- PAGE HEADER -->
+    <div>
+      <div class="page-eyebrow">Analytics · Portfolio</div>
+      <div class="page-title">Custom ETF Builder</div>
     </div>
 
-    <h2>Custom ETF Chart</h2>
-    <div id="chartContainer" class="chart-container"></div>
+    <!-- UPLOAD CARD -->
+    <div class="upload-card">
+      <div class="card-hdr">
+        <div class="card-icon">📦</div>
+        <span class="card-title">Upload CSV Weights File</span>
+      </div>
 
+      <div class="card-body">
 
-    <script>
+        <!-- File drop zone -->
+        <div class="file-drop" id="fileDropZone">
+          <input type="file" id="custom_etf_file" name="custom_etf_file" accept=".csv">
+          <div class="file-drop-icon">📂</div>
+          <div class="file-drop-text">
+            Drop your CSV here, or <span>browse</span><br>
+            <span style="color:var(--faint);font-size:10px">Columns: weight, symbol</span>
+          </div>
+          <div class="file-selected-name" id="fileSelectedName"></div>
+        </div>
 
-        function toggleSaveAsSymbol() {
-          const on = document.getElementById("save_as_symbol").checked;
-          const symRow  = document.getElementById("symbol_row");
-          const baseRow = document.getElementById("base_row");
-          const err     = document.getElementById("save_symbol_error");
-          if (symRow && baseRow) {
-            symRow.style.display  = on ? "flex" : "none";
-            baseRow.style.display = on ? "flex" : "none";
-          }
-          if (err) err.style.display = "none";
-        }
+        <!-- Date range -->
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label class="form-label" for="start_date">Start Date</label>
+            <input class="form-input" type="date" id="start_date" name="start_date">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="end_date">End Date</label>
+            <input class="form-input" type="date" id="end_date" name="end_date">
+          </div>
+        </div>
 
-        // Ensure initial state is correct on page load
-        document.addEventListener("DOMContentLoaded", () => {
-          toggleSaveAsSymbol();
-        });
+        <!-- Moving average -->
+        <div>
+          <div class="toggle-row" style="margin-bottom:8px">
+            <label class="toggle-pill">
+              <input type="checkbox" id="enable_mavg" onchange="toggleMovingAvg()">
+              <span class="toggle-track"></span>
+            </label>
+            <label class="toggle-label" for="enable_mavg">Enable Moving Average</label>
+          </div>
+          <div class="form-grid-2 conditional-row" id="mavgRow">
+            <div class="form-field">
+              <label class="form-label" for="mavg_period">Period</label>
+              <input class="form-input" type="number" id="mavg_period"
+                placeholder="e.g. 200" min="1" disabled>
+              <span class="field-error" id="mavg_error"></span>
+            </div>
+          </div>
+        </div>
 
+        <!-- Save as symbol -->
+        <hr class="section-divider">
+        <div class="section-sub">Save as Symbol (optional)</div>
 
-        function toggleMovingAvgInput() {
-            let checkbox = document.getElementById("enable_mavg");
-            let input = document.getElementById("mavg_period");
-            let error = document.getElementById("mavg_error");
-            input.disabled = !checkbox.checked;
-            input.value = "";
-            error.style.display = "none";
-        }
+        <div class="toggle-row">
+          <label class="toggle-pill">
+            <input type="checkbox" id="save_as_symbol" onchange="toggleSaveAsSymbol()">
+            <span class="toggle-track"></span>
+          </label>
+          <label class="toggle-label" for="save_as_symbol">Persist this ETF as a reusable symbol</label>
+        </div>
 
+        <div class="form-grid-2 conditional-row" id="symbolRow">
+          <div class="form-field">
+            <label class="form-label" for="symbol_input">Symbol</label>
+            <input class="form-input" type="text" id="symbol_input"
+              placeholder="e.g. MY_ETF" style="text-transform:uppercase" autocomplete="off">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="base_input">Base Value</label>
+            <input class="form-input" type="number" id="base_input"
+              step="0.01" min="0.01" value="1" placeholder="e.g. 100">
+          </div>
+          <span class="field-error" id="save_symbol_error" style="grid-column:1/-1"></span>
+        </div>
 
-         // ✅ Set default date range (last 10 years)
-            document.addEventListener("DOMContentLoaded", function () {
-                let today = new Date();
-                let tenYearsAgo = new Date();
-                tenYearsAgo.setFullYear(today.getFullYear() - 10);
+        <!-- Actions -->
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px">
+          <div class="upload-result" id="uploadResult"></div>
+          <button class="upload-btn" id="uploadButton" onclick="uploadETF()">
+            <div class="btn-spinner"></div>
+            <span>Upload &amp; Build</span>
+          </button>
+        </div>
 
-                document.getElementById("start_date").value = tenYearsAgo.toISOString().split("T")[0];
-                document.getElementById("end_date").value = today.toISOString().split("T")[0];
-            });
+      </div><!-- /card-body -->
+    </div><!-- /upload-card -->
 
-        function uploadETF() {
-            let fileInput = document.getElementById("custom_etf_file");
-            let file = fileInput.files[0];
-            let startDate = document.getElementById("start_date").value;
-            let endDate = document.getElementById("end_date").value;
-            let uploadButton = document.getElementById("uploadButton");
-            let uploadResult = document.getElementById("uploadResult");
+    <!-- CHART CARD -->
+    <div class="chart-card">
+      <div class="chart-card-hdr">
+        <span class="chart-card-title">Custom ETF — Time Series</span>
+        <span class="chart-card-meta" id="chartMeta">Upload a file to see the chart</span>
+      </div>
+      <div class="chart-body">
+        <div id="chartEmpty" class="chart-empty">
+          <div class="chart-empty-icon">📦</div>
+          <div>Upload a CSV with weights and symbols to render the ETF chart</div>
+        </div>
+        <div id="chartContainer" style="display:none;"></div>
+      </div>
+    </div>
 
-            if (!file) {
-                alert("Please select a file before uploading.");
-                return;
-            }
+  </main>
+</div>
 
-            let formData = new FormData();
-            formData.append("file", file);
-            formData.append("start_date", startDate);
-            formData.append("end_date", endDate);
-
-            if (document.getElementById("enable_mavg").checked) {
-                let mavgVal = document.getElementById("mavg_period").value;
-                if (!mavgVal || parseInt(mavgVal) <= 0) {
-                    document.getElementById("mavg_error").style.display = "inline";
-                    return;
-                }
-                formData.append("moving_avg", parseInt(mavgVal));
-            } else {
-                formData.append("moving_avg", "");
-            }
-
-            // ✅ Disable button and show loading text
-            uploadButton.disabled = true;
-            uploadButton.innerHTML = 'Uploading... <span class="loader"></span>';
-            uploadResult.innerText = ""; // Clear previous message
-
-            // Save as symbol handling
-              const saveAs = document.getElementById("save_as_symbol").checked;
-              formData.append("save_as_symbol", saveAs ? "true" : "false");
-
-              if (saveAs) {
-                const symbol = (document.getElementById("symbol_input").value || "").trim();
-                const base = parseFloat(document.getElementById("base_input").value);
-                if (!symbol || !isFinite(base) || base <= 0) {
-                  document.getElementById("save_symbol_error").style.display = "inline";
-                  return;
-                }
-                formData.append("symbol", symbol);
-                formData.append("base", base.toString());
-              } else {
-                formData.append("symbol", "");
-                formData.append("base", "1");
-              }
-
-            fetch("/display_custom_etf/upload_custom_etf", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(data => {
-                uploadResult.innerText = data.message;
-                fetchChartData();  // ✅ Refresh chart after upload
-            })
-            .catch(error => {
-                console.error("Error uploading file:", error);
-                uploadResult.innerText = "Upload failed.";
-            })
-            .finally(() => {
-                // ✅ Re-enable button after upload completes
-                uploadButton.disabled = false;
-                uploadButton.innerHTML = "Upload";
-            });
-        }
-
-
-        function drawChart(dates, values, movingAvg = []) {
-            let traces = [{
-                x: dates,
-                y: values,
-                mode: "lines",
-                line: { color: "blue" },
-                name: "ETF Value"
-            }];
-
-            if (movingAvg.length > 0) {
-                traces.push({
-                    x: dates,
-                    y: movingAvg,
-                    mode: "lines",
-                    line: { color: "red", width: 2 },
-                    name: "Moving Average"
-                });
-            }
-
-            let layout = {
-                title: "Custom ETF Time Series",
-                xaxis: { title: "Date" },
-                yaxis: { title: "Value", autorange: true },
-                dragmode: "zoom",
-                margin: { t: 50, b: 50 }
-            };
-
-            Plotly.newPlot("chartContainer", traces, layout);
-        }
-
-
-
-
-         function fetchChartData() {
-            fetch("/display_custom_etf/get_chart_data", { method: "GET" })
-            .then(response => response.json())
-            .then(data => {
-                console.log("Chart Data Received:", data);
-
-                if (!document.getElementById("chartContainer")) {
-                    console.error("Chart container is missing!");
-                    return;
-                }
-
-                if (!data.dates.length || !data.values.length) {
-                    console.warn("No data received for the chart.");
-                    return;
-                }
-
-                drawChart(data.dates, data.values, data.moving_avg);
-            })
-            .catch(error => {
-                console.error("Error fetching chart data:", error);
-            });
-        }
-
-
-        // Fetch data on page load
-        document.addEventListener("DOMContentLoaded", function () {
-            fetchChartData();  // ✅ Fetch chart data only when DOM is ready
-        });
-
-    </script>
-
+<script src="../static/js/display_custom_etf.js"></script>
 </body>
 </html>
