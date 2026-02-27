@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seeking Bias — Data Downloader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/data_downloader.css">
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="top-nav">
+  <a href="/" class="nav-brand">
+    <div class="nav-brand-b">B</div>
+    <div>
+      <div class="nav-brand-name">BIAS</div>
+      <div class="nav-brand-sub">Data Downloader</div>
+    </div>
+  </a>
+  <div class="nav-right">
+    <div class="nav-clock" id="navClock">--:--:--</div>
+    <a href="/" class="nav-back">← Dashboard</a>
+  </div>
+</nav>
+
+<div class="app-body">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sb-label">Operations</div>
+    <a href="/accounts"          class="nav-item"><span class="nav-icon">🏦</span> Manage Accounts</a>
+    <a href="/routing_dashboard" class="nav-item"><span class="nav-icon">⚡</span> Routing Dashboard</a>
+
+    <div class="sb-label">Analytics</div>
+    <a href="/display_custom_etf"          class="nav-item"><span class="nav-icon">📦</span> Custom ETF</a>
+    <a href="/simulate_indicator_strategy" class="nav-item"><span class="nav-icon">📐</span> Simulate Strategy</a>
+    <a href="/display_series"              class="nav-item"><span class="nav-icon">📈</span> Display Series</a>
+
+    <div class="sb-label">Data</div>
+    <a href="/load_series"         class="nav-item"><span class="nav-icon">⬆️</span> Load Series</a>
+    <a href="/global_m2_indicator" class="nav-item"><span class="nav-icon">🌐</span> Global M2</a>
+    <a href="/data_downloader"     class="nav-item active"><span class="nav-icon">📡</span> Data Downloader</a>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <div>
+      <div class="page-eyebrow">Data · Ingestion</div>
+      <div class="page-title">Data Downloader</div>
+    </div>
+
+    <!-- TABS -->
+    <div class="tab-bar">
+      <button class="tab-btn active" data-tab="execute" onclick="switchTab('execute')">↓ Execute</button>
+      <button class="tab-btn"        data-tab="status"  onclick="switchTab('status')">◎ Status</button>
+    </div>
+
+    <!-- ═══ TAB: EXECUTE ═══ -->
+    <div class="tab-pane active" id="tab-execute">
+      <div id="groupsContainer"></div>
+    </div>
+
+    <!-- ═══ TAB: STATUS ═══ -->
+    <div class="tab-pane" id="tab-status">
+
+      <div class="status-filters">
+        <input  class="filter-input"  type="text"   id="statusSearch"
+          placeholder="Search symbol or group…" oninput="filterStatus()">
+        <select class="filter-select" id="statusVendor" onchange="filterStatus()">
+          <option value="">All vendors</option>
+          <option>FRED</option>
+          <option>TRADINGVIEW</option>
+        </select>
+        <select class="filter-select" id="statusFilter" onchange="filterStatus()">
+          <option value="">All statuses</option>
+          <option value="OK">OK</option>
+          <option value="ERROR">ERROR</option>
+          <option value="NEVER">Never run</option>
+        </select>
+        <button class="refresh-btn" onclick="loadStatusTab()">⟳ Refresh</button>
+      </div>
+
+      <div class="status-table-wrap">
+        <table class="status-table">
+          <thead>
+            <tr>
+              <th>Group</th><th>Symbol</th><th>Vendor</th>
+              <th>From</th><th>Last Run</th><th>Status</th><th></th>
+            </tr>
+          </thead>
+          <tbody id="statusTbody">
+            <tr><td colspan="7" class="status-empty">Switch to this tab to load.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </main>
+</div>
+
+<script src="../static/js/data_downloader.js"></script>
+</body>
+</html>

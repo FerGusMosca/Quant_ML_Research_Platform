@@ -12,6 +12,7 @@ from controllers.account_controller import AccountController
 from controllers.auth_middleware import AuthMiddleware
 from controllers.display_custom_etf_controller import DisplayCustomETFController
 from controllers.display_series_controller import DisplaySeriesController
+from controllers.download_jobs_controller import DataDownloaderController
 from controllers.global_m2_indicator_controller import GlobalM2IndicatorController
 from controllers.load_series_controller import LoadSeriesController
 from controllers.routing_dashboard_controller import RoutingDashboardController
@@ -71,6 +72,9 @@ class MainDashboardController:
 
         global_m2_controller = GlobalM2IndicatorController(config_settings, logger)
         self.app.include_router(global_m2_controller.router, prefix="/global_m2_indicator")
+
+        self.data_downloader_controller = DataDownloaderController(config_settings, logger)
+        self.app.include_router(self.data_downloader_controller.router, prefix="/data_downloader")
 
         # ── FRED proxy router ──
         self.app.include_router(self._build_fred_router(), prefix="/api")
