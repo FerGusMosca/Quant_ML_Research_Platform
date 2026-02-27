@@ -6,7 +6,7 @@ let currentQtyMode  = 'cash';
 let allAccounts     = [];
 let selectedAccountId   = '';
 let selectedAccountName = '';
-
+let _execReportCache = {};
 // ── Live clock ──
 (function tick() {
   const n = new Date(), pad = v => String(v).padStart(2, '0');
@@ -284,12 +284,19 @@ function updateExecutionReports() {
       const count = document.getElementById('exec-count');
       count.textContent = `${data.length} order${data.length !== 1 ? 's' : ''}`;
       tbody.innerHTML = '';
+
+      _execReportCache = {};                              // reset cache each poll
+
       data.forEach(row => {
+        _execReportCache[row.cl_ord_id] = row;           // ← store full row
+
         const status     = (row.ord_status || '').toLowerCase();
         const badgeClass = status.includes('fill')   ? 'filled'    :
                            status.includes('reject') ? 'rejected'  :
                            status.includes('cancel') ? 'cancelled' : 'pending';
         const tr = document.createElement('tr');
+        tr.className = 'clickable-row';
+        tr.onclick   = () => showExecReportDetail(row.cl_ord_id);   // ← click handler
         tr.innerHTML = `
           <td class="dim-cell">${row.short_cl_ord_id}</td>
           <td class="mono-cell" style="font-weight:600;color:#E6EDF3">${row.symbol}</td>
@@ -298,7 +305,9 @@ function updateExecutionReports() {
           <td><span class="status-badge ${badgeClass}">${row.ord_status}</span></td>
           <td class="dim-cell">${row.transact_time}</td>
           <td>
-            <button class="cancel-btn" onclick="confirmCancel('${row.cl_ord_id}','${row.symbol}')" title="Cancel order">✕</button>
+            <button class="cancel-btn"
+              onclick="event.stopPropagation(); confirmCancel('${row.cl_ord_id}','${row.symbol}')"
+              title="Cancel order">✕</button>
           </td>`;
         tbody.appendChild(tr);
       });
@@ -439,3 +448,105 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(updateMarketData,         5000);
   setInterval(updateConnectionStatus,   5000);
 });
+
+function showExecReportDetail(clOrdId) {
+  const r = _execReportCache[clOrdId];
+  if (!r) return;
+
+  const status     = (r.ord_status || '').toLowerCase();
+  const badgeClass = status.includes('fill')   ? 'filled'    :
+                     status.includes('reject') ? 'rejected'  :
+                     status.includes('cancel') ? 'cancelled' : 'pending';
+
+  const fmt2l = v => { const n = parseFloat(v); return isNaN(n) ? '—' : n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+
+  // Text / rejection reason row — only shown when populated
+  const textRow = r.text
+    ? `<div class="er-detail-row er-detail-full">
+         <span class="er-detail-lbl">Reason / Text</span>
+         <span class="er-detail-val er-detail-reason">${r.text}</span>
+       </div>`
+    : '';
+
+  document.getElementById('erDetailBody').innerHTML = `
+    <div class="er-detail-grid">
+
+      <div class="er-detail-row er-detail-full">
+        <span class="er-detail-lbl">ClOrdID</span>
+        <span class="er-detail-val er-detail-mono" style="font-size:11px;color:var(--dim)">${r.cl_ord_id}</span>
+      </div>
+
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Symbol</span>
+        <span class="er-detail-val er-detail-mono" style="font-weight:700;color:#E6EDF3;font-size:18px">${r.symbol}</span>
+      </div>
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Side</span>
+        <span class="er-detail-val ${r.side === 'Buy' ? 'side-cell-buy' : 'side-cell-sell'}" style="font-size:15px">${r.side}</span>
+      </div>
+
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Status</span>
+        <span class="er-detail-val"><span class="status-badge ${badgeClass}">${r.ord_status}</span></span>
+      </div>
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Exec Type</span>
+        <span class="er-detail-val er-detail-mono">${r.exec_type}</span>
+      </div>
+
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Order Qty</span>
+        <span class="er-detail-val er-detail-mono">${fmt2l(r.order_qty)}</span>
+      </div>
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Cum Qty</span>
+        <span class="er-detail-val er-detail-mono">${fmt2l(r.cum_qty)}</span>
+      </div>
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Leaves Qty</span>
+        <span class="er-detail-val er-detail-mono">${fmt2l(r.leaves_qty)}</span>
+      </div>
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Last Px</span>
+        <span class="er-detail-val er-detail-mono">${fmt2l(r.last_px)}</span>
+      </div>
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Avg Px</span>
+        <span class="er-detail-val er-detail-mono">${fmt2l(r.avg_px)}</span>
+      </div>
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Price</span>
+        <span class="er-detail-val er-detail-mono">${fmt2l(r.price)}</span>
+      </div>
+
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Order ID</span>
+        <span class="er-detail-val er-detail-mono" style="font-size:11px">${r.order_id}</span>
+      </div>
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Orig ClOrdID</span>
+        <span class="er-detail-val er-detail-mono" style="font-size:11px">${r.orig_cl_ord_id}</span>
+      </div>
+
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Ord Type</span>
+        <span class="er-detail-val er-detail-mono">${r.ord_type}</span>
+      </div>
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Currency</span>
+        <span class="er-detail-val er-detail-mono">${r.currency}</span>
+      </div>
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Broker</span>
+        <span class="er-detail-val er-detail-mono">${r.broker}</span>
+      </div>
+      <div class="er-detail-row">
+        <span class="er-detail-lbl">Time</span>
+        <span class="er-detail-val er-detail-mono">${r.transact_time}</span>
+      </div>
+
+      ${textRow}
+    </div>`;
+
+  openModal('erDetailModal');
+}

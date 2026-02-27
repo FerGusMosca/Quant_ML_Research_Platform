@@ -319,6 +319,23 @@
   </div>
 </div>
 
+<!-- ── EXECUTION REPORT DETAIL MODAL ── -->
+<div class="modal-overlay" id="erDetailModal">
+  <div class="modal" style="max-width:560px">
+    <div class="modal-hdr">
+      <span class="modal-hdr-title">Execution Report Detail</span>
+      <button class="modal-x" onclick="closeModal('erDetailModal')">×</button>
+    </div>
+    <div class="modal-body" id="erDetailBody">
+      <!-- filled dynamically by showExecReportDetail() -->
+    </div>
+    <div class="modal-ftr">
+      <button class="btn btn-ghost" onclick="closeModal('erDetailModal')">Close</button>
+    </div>
+  </div>
+</div>
+
+
 <!-- ── LOADING SPINNER ── -->
 <div class="spinner-overlay" id="loadingSpinner">
   <div class="spinner-box">
