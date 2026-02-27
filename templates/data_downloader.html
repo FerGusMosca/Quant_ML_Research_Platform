@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<!-- TOP NAV -->
+<!-- NAV -->
 <nav class="top-nav">
   <a href="/" class="nav-brand">
     <div class="nav-brand-b">B</div>
@@ -28,24 +28,20 @@
 
 <div class="app-body">
 
-  <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="sb-label">Operations</div>
     <a href="/accounts"          class="nav-item"><span class="nav-icon">🏦</span> Manage Accounts</a>
     <a href="/routing_dashboard" class="nav-item"><span class="nav-icon">⚡</span> Routing Dashboard</a>
-
     <div class="sb-label">Analytics</div>
     <a href="/display_custom_etf"          class="nav-item"><span class="nav-icon">📦</span> Custom ETF</a>
     <a href="/simulate_indicator_strategy" class="nav-item"><span class="nav-icon">📐</span> Simulate Strategy</a>
     <a href="/display_series"              class="nav-item"><span class="nav-icon">📈</span> Display Series</a>
-
     <div class="sb-label">Data</div>
     <a href="/load_series"         class="nav-item"><span class="nav-icon">⬆️</span> Load Series</a>
     <a href="/global_m2_indicator" class="nav-item"><span class="nav-icon">🌐</span> Global M2</a>
     <a href="/data_downloader"     class="nav-item active"><span class="nav-icon">📡</span> Data Downloader</a>
   </aside>
 
-  <!-- MAIN -->
   <main class="main">
 
     <div>
@@ -53,27 +49,49 @@
       <div class="page-title">Data Downloader</div>
     </div>
 
-    <!-- TABS -->
     <div class="tab-bar">
       <button class="tab-btn active" data-tab="execute" onclick="switchTab('execute')">↓ Execute</button>
       <button class="tab-btn"        data-tab="status"  onclick="switchTab('status')">◎ Status</button>
+      <button class="tab-btn"        data-tab="health"  onclick="switchTab('health')">♥ Data Health</button>
     </div>
 
     <!-- ═══ TAB: EXECUTE ═══ -->
     <div class="tab-pane active" id="tab-execute">
+
+      <!-- Global date bar -->
+      <div class="global-date-bar">
+        <span class="global-date-label">Global Date Range</span>
+        <div class="global-date-fields">
+          <div class="global-date-field">
+            <label class="gd-label">From</label>
+            <input class="gd-input" type="date" id="globalDFrom">
+          </div>
+          <div class="global-date-field">
+            <label class="gd-label">
+              To
+              <input type="checkbox" id="globalDToEnable" onchange="toggleGlobalDTo()" style="margin-left:5px;accent-color:var(--blue)">
+              <span style="font-size:9px;color:var(--faint);font-weight:400">override</span>
+            </label>
+            <input class="gd-input" type="date" id="globalDTo" disabled>
+          </div>
+        </div>
+        <button class="btn-apply-dates" onclick="applyGlobalDates()">↓ Apply to All Groups</button>
+      </div>
+
       <div id="groupsContainer"></div>
     </div>
 
     <!-- ═══ TAB: STATUS ═══ -->
     <div class="tab-pane" id="tab-status">
-
       <div class="status-filters">
-        <input  class="filter-input"  type="text"   id="statusSearch"
+        <input class="filter-input" type="text" id="statusSearch"
           placeholder="Search symbol or group…" oninput="filterStatus()">
         <select class="filter-select" id="statusVendor" onchange="filterStatus()">
           <option value="">All vendors</option>
           <option>FRED</option>
           <option>TRADINGVIEW</option>
+          <option>SPREAD</option>
+          <option>MANUAL_VARIABLE</option>
         </select>
         <select class="filter-select" id="statusFilter" onchange="filterStatus()">
           <option value="">All statuses</option>
@@ -82,25 +100,151 @@
           <option value="NEVER">Never run</option>
         </select>
         <button class="refresh-btn" onclick="loadStatusTab()">⟳ Refresh</button>
+        <button class="refresh-btn btn-warn" onclick="resetAllStuck()">⚠ Reset All Stuck</button>
       </div>
-
       <div class="status-table-wrap">
         <table class="status-table">
-          <thead>
-            <tr>
-              <th>Group</th><th>Symbol</th><th>Vendor</th>
-              <th>From</th><th>Last Run</th><th>Status</th><th></th>
-            </tr>
-          </thead>
+          <thead><tr>
+            <th>Group</th><th>Symbol</th><th>Vendor</th>
+            <th>From</th><th>Last Run</th><th>Last Close</th><th>Status</th><th></th>
+          </tr></thead>
           <tbody id="statusTbody">
+            <tr><td colspan="8" class="status-empty">Switch to this tab to load.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ═══ TAB: DATA HEALTH ═══ -->
+    <div class="tab-pane" id="tab-health">
+      <div class="status-filters">
+        <input class="filter-input" type="text" id="healthSearch"
+          placeholder="Search symbol or group…" oninput="filterHealth()">
+        <select class="filter-select" id="healthVendor" onchange="filterHealth()">
+          <option value="">All vendors</option>
+          <option>FRED</option>
+          <option>TRADINGVIEW</option>
+          <option>SPREAD</option>
+          <option>MANUAL_VARIABLE</option>
+        </select>
+        <select class="filter-select" id="healthAge" onchange="filterHealth()">
+          <option value="">All ages</option>
+          <option value="ok">Fresh (≤3 days)</option>
+          <option value="warn">Stale (4–14 days)</option>
+          <option value="crit">Old (15+ days)</option>
+          <option value="null">No data</option>
+        </select>
+        <button class="refresh-btn" onclick="loadHealthTab()">⟳ Refresh</button>
+      </div>
+      <div class="status-table-wrap">
+        <table class="status-table">
+          <thead><tr>
+            <th>Group</th><th>Symbol</th><th>Vendor</th>
+            <th>Last Date</th><th>Last Close</th><th>Age</th><th></th>
+          </tr></thead>
+          <tbody id="healthTbody">
             <tr><td colspan="7" class="status-empty">Switch to this tab to load.</td></tr>
           </tbody>
         </table>
       </div>
-
     </div>
 
   </main>
+</div>
+
+<!-- ═══ MODAL: Add / Edit Job ═══ -->
+<div class="modal-backdrop" id="modalBackdrop" onclick="closeModal()"></div>
+
+<div class="modal" id="jobModal">
+  <div class="modal-hdr">
+    <span class="modal-title" id="modalTitle">Add Job</span>
+    <button class="modal-close" onclick="closeModal()">✕</button>
+  </div>
+  <div class="modal-body">
+    <input type="hidden" id="mJobId">
+    <input type="hidden" id="mGroupId">
+    <input type="hidden" id="mVendor">
+
+    <div class="form-row">
+      <label class="form-label">Symbol</label>
+      <input class="form-input" id="mSymbol" placeholder="e.g. MOVE or FEDFUNDS">
+    </div>
+    <div class="form-row" id="mExchangeRow">
+      <label class="form-label">Exchange <span class="form-hint">(TV only)</span></label>
+      <input class="form-input" id="mExchange" placeholder="e.g. TVC, CBOE, AMEX">
+    </div>
+    <div class="form-row" id="mOutputRow">
+      <label class="form-label">Output Symbol <span class="form-hint">(Spread only)</span></label>
+      <input class="form-input" id="mOutputSymbol" placeholder="e.g. SPR_MOVE_VIX">
+    </div>
+
+    <div class="form-row" id="mVendorSelectRow">
+      <label class="form-label">Vendor</label>
+      <div class="vendor-btn-group">
+        <button type="button" class="vendor-btn" data-v="FRED"            onclick="setAddVendor('FRED')">FRED</button>
+        <button type="button" class="vendor-btn" data-v="TRADINGVIEW"     onclick="setAddVendor('TRADINGVIEW')">TRADINGVIEW</button>
+        <button type="button" class="vendor-btn" data-v="MANUAL_VARIABLE" onclick="setAddVendor('MANUAL_VARIABLE')">MANUAL</button>
+      </div>
+    </div>
+    <div class="form-row" id="mVendorBadgeRow" style="display:none">
+      <label class="form-label">Vendor <span class="form-hint">(locked)</span></label>
+      <div class="form-vendor-badge" id="mVendorBadge">—</div>
+    </div>
+
+    <div class="form-row form-row-2col">
+      <div>
+        <label class="form-label">From Date</label>
+        <input class="form-input" type="date" id="mDFrom">
+      </div>
+      <div>
+        <label class="form-label">
+          To Date
+          <input type="checkbox" id="mDToEnable" onchange="toggleDTo()" style="margin-left:6px">
+          <span class="form-hint">override</span>
+        </label>
+        <input class="form-input" type="date" id="mDTo" disabled>
+      </div>
+    </div>
+
+    <div class="form-error" id="mError"></div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn-modal-cancel" onclick="closeModal()">Cancel</button>
+    <button class="btn-modal-save" id="mSaveBtn" onclick="saveJob()">Save</button>
+  </div>
+</div>
+
+<!-- ═══ MODAL: Manual Variable ═══ -->
+<div class="modal" id="manualModal" style="width:400px">
+  <div class="modal-hdr">
+    <span class="modal-title" id="manualModalTitle">Manual Variable</span>
+    <button class="modal-close" onclick="closeManualModal()">✕</button>
+  </div>
+  <div class="modal-body">
+    <input type="hidden" id="mmSymbol">
+    <table class="mini-table">
+      <thead><tr><th>Date</th><th>Value</th></tr></thead>
+      <tbody id="mmTbody"></tbody>
+    </table>
+    <div class="form-row" style="margin-top:14px">
+      <label class="form-label">Add new entry</label>
+    </div>
+    <div class="form-row form-row-2col">
+      <div>
+        <label class="form-label">Date</label>
+        <input class="form-input" type="date" id="mmDate">
+      </div>
+      <div>
+        <label class="form-label">Value</label>
+        <input class="form-input" type="number" step="any" id="mmValue" placeholder="0.000">
+      </div>
+    </div>
+    <div class="form-error" id="mmError"></div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn-modal-cancel" onclick="closeManualModal()">Cancel</button>
+    <button class="btn-modal-save" onclick="saveManualCandle()">Save Entry</button>
+  </div>
 </div>
 
 <script src="../static/js/data_downloader.js"></script>

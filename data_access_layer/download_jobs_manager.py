@@ -1,5 +1,6 @@
 import pyodbc
 from dataclasses import dataclass
+from datetime import date, datetime
 from typing import Optional, List
 
 from framework.common.logger.message_type import MessageType
@@ -21,9 +22,9 @@ class DownloadJobGroupDTO:
 class DownloadJobDTO:
     job_id:           int
     group_id:         int
-    job_type:         str    # forwarded from group — injected by the manager
+    job_type:         str
     symbol:           str
-    exchange:         Optional[str]   # TV exchange (None for FRED)
+    exchange:         Optional[str]
     output_symbol:    Optional[str]
     vendor:           str
     d_from:           str
@@ -34,6 +35,21 @@ class DownloadJobDTO:
     last_run_at:      Optional[str] = None
     last_finished_at: Optional[str] = None
     last_error:       Optional[str] = None
+
+
+@dataclass
+class LastCandleDTO:
+    symbol:     str
+    last_date:  Optional[str]
+    last_close: Optional[float]
+    days_ago:   Optional[int]   # computed in Python
+
+
+@dataclass
+class ManualCandleDTO:
+    symbol: str
+    date:   str
+    value:  float
 
 
 # ── Manager ───────────────────────────────────────────────────────────────────
@@ -71,7 +87,6 @@ class DownloadJobsManager:
 
     def persist_download_job_group(self, group_id: Optional[int], group_name: str,
                                    job_type: str, display_order: int) -> int:
-        """group_id=None → INSERT, else → UPDATE. Returns persisted group_id."""
         with self.connection.cursor() as cursor:
             try:
                 cursor.execute("EXEC persist_download_job_group ?, ?, ?, ?",
@@ -86,11 +101,6 @@ class DownloadJobsManager:
     # ── Jobs ──────────────────────────────────────────────────────────────────
 
     def get_download_jobs(self, group_id: int, job_type: str = 'DOWNLOAD') -> List[DownloadJobDTO]:
-        """
-        Returns jobs for one group.
-        job_type is supplied by the caller (from the group) because the SP
-        doesn't join to the group table — keeps the query lean.
-        """
         result = []
         with self.connection.cursor() as cursor:
             try:
@@ -118,7 +128,6 @@ class DownloadJobsManager:
         return result
 
     def get_all_download_jobs(self) -> List[dict]:
-        """Flat list for the status tab — returns plain dicts ready for JSON."""
         result = []
         with self.connection.cursor() as cursor:
             try:
@@ -135,7 +144,6 @@ class DownloadJobsManager:
                              output_symbol: Optional[str],
                              vendor: str, d_from: str, d_to: Optional[str],
                              interval_code: str) -> int:
-        """job_id=None → INSERT, else → UPDATE. Returns persisted job_id."""
         with self.connection.cursor() as cursor:
             try:
                 cursor.execute("EXEC persist_download_job ?, ?, ?, ?, ?, ?, ?, ?, ?",
@@ -160,7 +168,6 @@ class DownloadJobsManager:
     # ── Log ───────────────────────────────────────────────────────────────────
 
     def start_download_job_log(self, job_id: int, group_id: int) -> int:
-        """Open a RUNNING log row. Returns log_id."""
         with self.connection.cursor() as cursor:
             try:
                 cursor.execute("EXEC persist_download_job_log ?, ?, ?, ?, ?, ?",
@@ -174,7 +181,6 @@ class DownloadJobsManager:
 
     def finish_download_job_log(self, log_id: int, status: str,
                                 stdout_log: str, error_msg: Optional[str]):
-        """Close an existing log row with final status."""
         with self.connection.cursor() as cursor:
             try:
                 cursor.execute("EXEC persist_download_job_log ?, ?, ?, ?, ?, ?",
@@ -185,19 +191,88 @@ class DownloadJobsManager:
                 raise
 
     def reset_stuck_jobs(self, job_id: Optional[int] = None) -> int:
-        """
-        Marks RUNNING rows as ERROR.
-        job_id=None resets ALL stuck jobs, job_id=N resets only that job.
-        Returns number of rows affected.
-        """
         with self.connection.cursor() as cursor:
             try:
                 cursor.execute("EXEC reset_download_job_log ?", (job_id,))
                 row = cursor.fetchone()
                 self.connection.commit()
                 rows_reset = int(row[0]) if row else 0
-                self.logger.do_log(f"reset_stuck_jobs: {rows_reset} rows reset (job_id={job_id})", MessageType.INFO)
+                self.logger.do_log(f"reset_stuck_jobs: {rows_reset} rows reset", MessageType.INFO)
                 return rows_reset
             except Exception as e:
                 self.logger.do_log(f"reset_stuck_jobs: ❌ {e}", MessageType.ERROR)
+                raise
+
+
+# ── CandleManager ─────────────────────────────────────────────────────────────
+# Uses hist_data_conn_str → SecuritiesHistoricalData_Light
+
+class CandleManager:
+    """
+    Reads/writes candles from SecuritiesHistoricalData_Light.
+    Uses existing PersistCandle and GetCandles SPs plus new helpers.
+    """
+
+    def __init__(self, connection_string: str, logger):
+        self.connection = pyodbc.connect(connection_string)
+        self.logger = logger
+
+    def get_last_candle_per_symbol(self) -> List[LastCandleDTO]:
+        """
+        Returns the most recent date+close for every symbol in the candles table.
+        Computes days_ago in Python (today - last_date).
+        """
+        result = []
+        today = date.today()
+        with self.connection.cursor() as cursor:
+            try:
+                cursor.execute("EXEC GetLastCandlePerSymbol")
+                for row in cursor.fetchall():
+                    symbol    = str(row[0])
+                    last_date = row[1]
+                    last_close= float(row[2]) if row[2] is not None else None
+                    if last_date:
+                        d = last_date.date() if hasattr(last_date, 'date') else datetime.strptime(str(last_date)[:10], "%Y-%m-%d").date()
+                        days_ago = (today - d).days
+                    else:
+                        days_ago = None
+                    result.append(LastCandleDTO(
+                        symbol     = symbol,
+                        last_date  = str(last_date)[:10] if last_date else None,
+                        last_close = last_close,
+                        days_ago   = days_ago,
+                    ))
+            except Exception as e:
+                self.logger.do_log(f"GetLastCandlePerSymbol: ❌ {e}", MessageType.ERROR)
+        return result
+
+    def get_recent_candles(self, symbol: str, top: int = 5) -> List[ManualCandleDTO]:
+        """Returns last `top` candles for a symbol — used by MANUAL_VARIABLE popup."""
+        result = []
+        with self.connection.cursor() as cursor:
+            try:
+                cursor.execute("EXEC GetRecentCandles ?, ?", (symbol, top))
+                for row in cursor.fetchall():
+                    result.append(ManualCandleDTO(
+                        symbol = str(row[0]),
+                        date   = str(row[1])[:10],
+                        value  = float(row[2]) if row[2] is not None else 0.0,
+                    ))
+            except Exception as e:
+                self.logger.do_log(f"GetRecentCandles: ❌ {e}", MessageType.ERROR)
+        return result
+
+    def persist_manual_candle(self, symbol: str, candle_date: str, value: float):
+        """
+        Upserts a manual value calling PersistCandle directly.
+        Stores the same value in open/high/low/close/trade. No volume.
+        """
+        with self.connection.cursor() as cursor:
+            try:
+                params = (symbol, candle_date, '1d', value, value, value, value, None, None, None)
+                cursor.execute("{CALL PersistCandle (?,?,?,?,?,?,?,?,?,?)}", params)
+                self.connection.commit()
+                self.logger.do_log(f"persist_manual_candle: {symbol} @ {candle_date} = {value}", MessageType.INFO)
+            except Exception as e:
+                self.logger.do_log(f"persist_manual_candle: ❌ {e}", MessageType.ERROR)
                 raise
