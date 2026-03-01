@@ -11,7 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/{% block css_file %}{% endblock %}">
+  <link rel="stylesheet" href="/static/css/main_dashboard.css">
+  <link rel="stylesheet" href="/static/css/{% block css_file %}{% endblock %}">
 
   {% block extra_css %}{% endblock %}
 </head>
@@ -36,8 +37,8 @@
 
   {# ── SIDEBAR ─────────────────────────────────────────────────────────
      Set  {% set active_page = 'key' %}  in each child template.
-     Keys: accounts | routing | custom_etf | simulate | series |
-           load_series | global_m2 | data_downloader
+     Keys: accounts | routing | custom_etf | simulate | model_runner |
+           series | load_series | global_m2 | data_downloader
   ── #}
   <aside class="sidebar">
 
@@ -55,6 +56,9 @@
     </a>
     <a href="/simulate_indicator_strategy" class="nav-item {% if active_page == 'simulate' %}active{% endif %}">
       <span class="nav-icon">📐</span> Simulate Strategy
+    </a>
+    <a href="/simulate_model"              class="nav-item {% if active_page == 'simulate_model' %}active{% endif %}">
+      <span class="nav-icon">🤖</span> Model Runner
     </a>
     <a href="/display_series"              class="nav-item {% if active_page == 'series' %}active{% endif %}">
       <span class="nav-icon">📈</span> Display Series
@@ -87,7 +91,7 @@
 {% block modals %}{% endblock %}
 
 {# ── PAGE JS ──────────────────────────────────────────────────────── #}
-<script src="../static/js/{% block js_file %}{% endblock %}"></script>
+<script src="/static/js/{% block js_file %}{% endblock %}"></script>
 {% block extra_js %}{% endblock %}
 
 </body>

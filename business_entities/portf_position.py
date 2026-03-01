@@ -104,6 +104,31 @@ class PortfolioPosition():
             raise Exception(f"Cannot calculate theoretical nominal profit: "
                             f"missing portf_amt, price_open or units for symbol {self.symbol}")
 
+    def calculate_max_drawdown(self) -> float:
+        """
+        Calculates max drawdown from daily_MTMs series.
+        Returns a negative float between -1 and 0 (e.g. -0.1523 = -15.23%)
+        """
+        if not self.daily_MTMs or len(self.daily_MTMs) < 2:
+            return 0.0
+
+        mtms = [float(x) for x in self.daily_MTMs if x is not None]
+        if not mtms:
+            return 0.0
+
+        peak = mtms[0]
+        max_dd = 0.0
+
+        for val in mtms:
+            if val > peak:
+                peak = val
+            if peak > 0:
+                dd = (val - peak) / peak
+                if dd < max_dd:
+                    max_dd = dd
+
+        return round(max_dd, 6)
+
     @staticmethod
     def fill_missing_dates(portfolio_list: list) -> list:
         """

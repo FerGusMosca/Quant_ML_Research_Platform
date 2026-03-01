@@ -19,6 +19,7 @@ from controllers.routing_dashboard_controller import RoutingDashboardController
 from controllers.simulate_indicator_strategy_controller import SimulateIndicatorStrategy
 from POC.stripe_ACH_POC_controller import StripeAchDemoController
 from POC.stripe_USDC_POC_controller import StripeUSDCDemoController
+from controllers.simulate_model_controller import SimulateModelController
 from data_access_layer.account_manager import AccountManager
 from data_access_layer.user_manager import UserManager
 from framework.common.logger.message_type import MessageType
@@ -75,6 +76,9 @@ class MainDashboardController:
 
         self.data_downloader_controller = DataDownloaderController(config_settings, logger)
         self.app.include_router(self.data_downloader_controller.router, prefix="/data_downloader")
+
+        self.model_runner_controller = SimulateModelController(config_settings, logger)
+        self.app.include_router(self.model_runner_controller.router, prefix="/simulate_model")
 
         # ── FRED proxy router ──
         self.app.include_router(self._build_fred_router(), prefix="/api")

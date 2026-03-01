@@ -30,6 +30,10 @@ class PortfSummary:
         self.portf_init_MTM=0
         self.portf_final_MTM=0
 
+        self.profit_pct=None
+        self.cagr_pct=None
+        self.drawdown_pct=None
+
         self.period=p_period
         self.year=p_year
 
@@ -59,3 +63,15 @@ class PortfSummary:
                                           self.max_cum_drawdowns[-1] if len(self.max_cum_drawdowns)>0 else 0)
         self.portf_pos_summary.append(position_summary)
         return  position_summary
+
+    def calculate_profit_stats(self,eval_d_from,eval_d_to):
+        total_profit = self.portf_final_MTM - self.portf_init_MTM
+        self.profit_pct = (total_profit / self.portf_init_MTM) * 100
+        self.drawdown_pct = self.max_drawdown * 100
+        self.calculate_cagr(eval_d_from,eval_d_to)
+
+    def calculate_cagr(self,eval_d_from,eval_d_to):
+        days_diff = (eval_d_to - eval_d_from).days
+        years = days_diff / 365.0
+        cagr = (self.portf_final_MTM / self.portf_init_MTM) ** (1 / years) - 1
+        self.cagr_pct = cagr * 100.0

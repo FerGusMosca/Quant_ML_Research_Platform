@@ -1,0 +1,279 @@
+{% extends "base.html" %}
+{% set active_page = 'simulate_model' %}
+
+{% block page_title %}Model Runner{% endblock %}
+{% block nav_subtitle %}Model Runner{% endblock %}
+{% block css_file %}simulate_model.css{% endblock %}
+
+{% block head_scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
+{% endblock %}
+
+{% block js_file %}simulate_model.js{% endblock %}
+
+{% block main %}
+<div>
+  <div class="page-eyebrow">ML · Backtesting</div>
+  <div class="page-title">Model Runner</div>
+</div>
+
+<div class="runner-layout">
+
+  <!-- ── LEFT PANEL: model list ────────────────────────────── -->
+  <div class="model-panel">
+    <div class="model-panel-hdr">
+      <span class="model-panel-title">Models</span>
+      <button class="btn-add-model" onclick="openAddModal()">＋ Add</button>
+    </div>
+    <div id="modelList" class="model-list">
+      <div class="model-list-empty">Loading…</div>
+    </div>
+  </div>
+
+  <!-- ── RIGHT PANEL: run + results ───────────────────────── -->
+  <div class="run-panel">
+
+    <!-- No model selected -->
+    <div class="empty-state" id="emptyState">
+      <div class="empty-icon">⚙</div>
+      <div class="empty-title">Select a model to run</div>
+      <div class="empty-sub">Choose a model from the list on the left</div>
+    </div>
+
+    <!-- Active model view -->
+    <div id="activePanel" style="display:none">
+
+      <!-- Model header -->
+      <div class="model-header-bar">
+        <div>
+          <div class="model-header-name" id="hdrModelName">—</div>
+          <div class="model-header-meta" id="hdrModelMeta">—</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button class="btn-icon edit"   onclick="openEditModal()"   title="Edit model">✎</button>
+          <button class="btn-icon delete" onclick="deleteModel()"     title="Delete model">✕</button>
+        </div>
+      </div>
+
+      <!-- Run bar -->
+      <div class="run-bar">
+        <div class="run-bar-dates">
+          <div class="run-date-field">
+            <label class="run-date-label">From</label>
+            <input class="run-date-input" type="date" id="runDFrom">
+          </div>
+          <div class="run-date-field">
+            <label class="run-date-label">To</label>
+            <input class="run-date-input" type="date" id="runDTo">
+          </div>
+          <div class="run-date-field">
+            <label class="run-date-label">n-flip</label>
+            <input class="run-date-input" type="number" id="runNFlip" min="1" max="20" style="width:70px">
+          </div>
+          <div class="run-date-field">
+            <label class="run-date-label">Bias</label>
+            <select class="run-date-input" id="runBias" style="width:90px">
+              <option>LONG</option>
+              <option>SHORT</option>
+              <option>NONE</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn-run-model" id="btnRun" onclick="runModel()">
+          <span class="btn-spin" id="runSpinner"></span>
+          ▶ Run
+        </button>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tab-bar">
+        <button class="tab-btn active" data-tab="chart"    onclick="switchTab('chart')">📈 Chart</button>
+        <button class="tab-btn"        data-tab="summary"  onclick="switchTab('summary')">◎ Summary</button>
+        <button class="tab-btn"        data-tab="positions" onclick="switchTab('positions')">≡ Positions</button>
+        <button class="tab-btn"        data-tab="signal"   onclick="switchTab('signal')">📡 Last Signal</button>
+      </div>
+
+      <!-- TAB: CHART -->
+      <div class="tab-pane active" id="tab-chart">
+        <div class="chart-placeholder" id="chartPlaceholder">
+          Run a model to see the price chart with positions
+        </div>
+        <div id="priceChart" style="display:none;width:100%;height:460px"></div>
+      </div>
+
+      <!-- TAB: SUMMARY -->
+      <div class="tab-pane" id="tab-summary">
+        <div class="summary-placeholder" id="summaryPlaceholder">
+          Run a model to see portfolio summary
+        </div>
+        <div id="summaryContent" style="display:none">
+          <div class="kpi-grid">
+            <div class="kpi-card">
+              <div class="kpi-label">Initial Portfolio</div>
+              <div class="kpi-value" id="kpiInit">—</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Final Portfolio</div>
+              <div class="kpi-value" id="kpiFinal">—</div>
+            </div>
+            <div class="kpi-card kpi-profit">
+              <div class="kpi-label">Total Profit</div>
+              <div class="kpi-value" id="kpiProfit">—</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">CAGR</div>
+              <div class="kpi-value" id="kpiCagr">—</div>
+            </div>
+            <div class="kpi-card kpi-danger">
+              <div class="kpi-label">Max Drawdown</div>
+              <div class="kpi-value" id="kpiDrawdown">—</div>
+            </div>
+            <div class="kpi-card">
+              <div class="kpi-label">Positions</div>
+              <div class="kpi-value" id="kpiPositions">—</div>
+            </div>
+          </div>
+
+          <!-- Portfolio equity curve -->
+          <div id="equityChart" style="width:100%;height:220px;margin-top:8px"></div>
+        </div>
+      </div>
+
+      <!-- TAB: POSITIONS -->
+      <div class="tab-pane" id="tab-positions">
+        <div class="summary-placeholder" id="positionsPlaceholder">
+          Run a model to see individual positions
+        </div>
+        <div id="positionsContent" style="display:none">
+          <div class="pos-table-wrap">
+            <table class="pos-table">
+              <thead><tr>
+                <th>#</th><th>Side</th><th>Open Date</th><th>Close Date</th>
+                <th>Open $</th><th>Close $</th><th>Profit $</th><th>Profit %</th><th>Drawdown</th>
+              </tr></thead>
+              <tbody id="positionsTbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB: LAST SIGNAL -->
+      <div class="tab-pane" id="tab-signal">
+        <div class="signal-box" id="signalBox">
+          <div class="signal-no-data" id="signalNoData">Run a model to see the last prediction signal</div>
+          <div id="signalContent" style="display:none">
+            <div class="signal-date-row">
+              <span class="signal-label">Last Prediction Available</span>
+              <span class="signal-date" id="signalDate">—</span>
+            </div>
+            <div class="signal-arrow-row" id="signalArrows"></div>
+            <div class="signal-copy-row">
+              <button class="btn-copy-signal" onclick="copySignal()" id="btnCopySignal">⎘ Copy Signal</button>
+              <span class="signal-copied" id="signalCopied" style="display:none">✓ Copied!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /activePanel -->
+  </div><!-- /run-panel -->
+
+</div><!-- /runner-layout -->
+{% endblock %}
+
+{% block modals %}
+<!-- ── ADD / EDIT MODEL MODAL ─────────────────────────────── -->
+<div class="modal-backdrop" id="modalBackdrop" onclick="closeModal()"></div>
+<div class="modal" id="modelModal" style="width:560px;max-height:90vh;overflow-y:auto">
+  <div class="modal-hdr">
+    <span class="modal-title" id="modalTitle">Add Model</span>
+    <button class="modal-close" onclick="closeModal()">✕</button>
+  </div>
+  <div class="modal-body" style="gap:12px">
+    <input type="hidden" id="mModelId">
+
+    <div class="form-row-2col">
+      <div class="form-row">
+        <label class="form-label">Model Name</label>
+        <input class="form-input" id="mModelName" placeholder="xgb_model_XLK_2010_2024_M4">
+      </div>
+      <div class="form-row">
+        <label class="form-label">Algo Type</label>
+        <select class="form-input" id="mAlgoType">
+          <option value="XGBOOST">XGBOOST</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label class="form-label">Model Path <span class="form-hint">(.pkl file)</span></label>
+      <input class="form-input" id="mModelPath" placeholder="models/xgb_model_XLK_2010_2024_M4.pkl">
+    </div>
+
+    <div class="form-row-2col">
+      <div class="form-row">
+        <label class="form-label">Symbol</label>
+        <input class="form-input" id="mSymbol" placeholder="QQQ">
+      </div>
+      <div class="form-row">
+        <label class="form-label">Bias</label>
+        <select class="form-input" id="mBias">
+          <option>LONG</option><option>SHORT</option><option>NONE</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row-2col">
+      <div class="form-row">
+        <label class="form-label">Default From</label>
+        <input class="form-input" type="date" id="mDFrom">
+      </div>
+      <div class="form-row">
+        <label class="form-label">Default To</label>
+        <input class="form-input" type="date" id="mDTo">
+      </div>
+    </div>
+
+    <div class="form-row-2col">
+      <div class="form-row">
+        <label class="form-label">Lower Percentile Limit</label>
+        <input class="form-input" type="number" step="0.01" id="mLowerPct" placeholder="0.3">
+      </div>
+      <div class="form-row">
+        <label class="form-label">n-Flip</label>
+        <input class="form-input" type="number" id="mNFlip" placeholder="3" min="1">
+      </div>
+    </div>
+
+    <div class="form-row-2col">
+      <div class="form-row">
+        <label class="form-label">Init Portfolio $</label>
+        <input class="form-input" type="number" id="mInitPortf" placeholder="100000">
+      </div>
+      <div class="form-row">
+        <label class="form-label">Trade Commission</label>
+        <input class="form-input" type="number" step="0.0001" id="mTradeComm" placeholder="0.0">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label class="form-label" style="display:flex;align-items:center;gap:8px">
+        <input type="checkbox" id="mMakeStationary" checked style="accent-color:var(--blue)">
+        Make Stationary
+      </label>
+    </div>
+
+    <div class="form-row">
+      <label class="form-label">Series CSV <span class="form-hint">(comma-separated symbols)</span></label>
+      <textarea class="form-input form-textarea" id="mSeriesCsv"
+        placeholder="SPY,VIXCLS,US02Y,US10Y,US30Y,US01MY,US03MY,US06MY,EFFR,FEDFUNDS,T10YIE,M2SL"></textarea>
+    </div>
+
+    <div class="form-error" id="mError"></div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn-modal-cancel" onclick="closeModal()">Cancel</button>
+    <button class="btn-modal-save"   id="mSaveBtn" onclick="saveModel()">Save</button>
+  </div>
+</div>
+{% endblock %}

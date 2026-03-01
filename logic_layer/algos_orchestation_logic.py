@@ -307,23 +307,15 @@ class AlgosOrchestationLogic:
         summary.total_net_profit_str = f"{round(summary.total_net_profit, 2)} $"
 
         self.last_known_portf_value = summary.portf_final_MTM
-        total_profit = summary.portf_final_MTM - summary.portf_init_MTM
-        profit_pct = (total_profit / summary.portf_init_MTM) * 100
-        drawdown_pct = summary.max_drawdown * 100
-
-        # --- CAGR ---
-        days_diff = (eval_d_to - eval_d_from).days
-        years = days_diff / 365.0
-        cagr = (summary.portf_final_MTM / summary.portf_init_MTM) ** (1 / years) - 1
-        cagr_pct = cagr * 100.0
+        summary.calculate_profit_stats(eval_d_from,eval_d_to)
 
         LightLogger.do_log(
             f"[SUMMARY] Portfolio Positions Breakdown: "
             f"Init={summary.portf_init_MTM:.2f} | "
             f"Final={summary.portf_final_MTM:.2f} | "
-            f"Profit={profit_pct:.2f}% | "
-            f"CAGR={cagr_pct:.2f}% | "
-            f"Max. Drawdown={drawdown_pct:.2f}% | "
+            f"Profit={summary.profit_pct:.2f}% | "
+            f"CAGR={summary.cagr_pct:.2f}% | "
+            f"Max. Drawdown={summary.drawdown_pct:.2f}% | "
         )
 
         for idx, pos in enumerate(portf_positions):
@@ -476,7 +468,7 @@ class AlgosOrchestationLogic:
 
         ml_analyzer = MLModelAnalyzer(self.logger)
 
-        preds_df, test_features_df = ml_analyzer.evaluate_trading_performance_last_model_XGBoost(
+        preds_df, test_features_df, last_signal  = ml_analyzer.evaluate_trading_performance_last_model_XGBoost(
             symbol_df=symbol_prices_df, symbol=symbol, features_df=features_df, model_filename=model_to_use,
             bias=n_algo_param_dict.get("bias", "LONG"), last_trading_dict=None, n_algo_param_dict=n_algo_param_dict,
             draw_statistics=draw_predictions)
@@ -497,6 +489,9 @@ class AlgosOrchestationLogic:
         summary = self.__wrap_positions_in_summary__("DAILY_XGB", portf_pos_dict["DAILY_XGB"],
                                                      n_algo_param_dict, d_from, d_to)
         summary.period = f"{d_from.strftime('%b')}-{d_to.strftime('%b')}"
+
+        summary.last_signal_date = last_signal["date"]
+        summary.last_signal_signals = last_signal["signals"]  # ["LONG", "LONG", "LONG"]
 
         summary_dict_arr.append({"XGBOOST": summary})
 
