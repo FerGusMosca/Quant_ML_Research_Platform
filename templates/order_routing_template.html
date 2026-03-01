@@ -1,236 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seeking Bias — Order Routing</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/order_routing.css">
-</head>
-<body>
+{% extends "base.html" %}
+{% set active_page = 'routing' %}
 
-<!-- TOP NAV -->
-<nav class="top-nav">
-  <a href="/" class="nav-brand">
-    <div class="nav-brand-b">B</div>
-    <div>
-      <div class="nav-brand-name">BIAS</div>
-      <div class="nav-brand-sub">Order Routing</div>
-    </div>
-  </a>
-  <div class="nav-right">
-    <div class="nav-clock" id="liveClock">--:--:--</div>
-    <a href="/" class="nav-back">← Dashboard</a>
+{% block page_title %}Order Routing{% endblock %}
+{% block nav_subtitle %}Order Routing{% endblock %}
+{% block css_file %}order_routing.css{% endblock %}
+{% block js_file %}order_routing.js{% endblock %}
+{% block clock_id %}liveClock{% endblock %}
+
+{% block sidebar_extra %}
+<div class="conn-section">
+  <div class="conn-title">Connections</div>
+  <div class="conn-item">
+    <div class="conn-dot" id="status-IB_PROD"></div>
+    <span class="conn-label">IB PROD</span>
+    <button class="conn-retry" id="retry-IB_PROD" onclick="retryConnection('IB_PROD')" title="Retry">↻</button>
   </div>
-</nav>
+  <div class="conn-item">
+    <div class="conn-dot" id="status-BYMA_PROD"></div>
+    <span class="conn-label">BYMA PROD</span>
+    <button class="conn-retry" id="retry-BYMA_PROD" onclick="retryConnection('BYMA_PROD')" title="Retry">↻</button>
+  </div>
+  <div class="conn-item">
+    <div class="conn-dot" id="status-IB_DEV"></div>
+    <span class="conn-label">IB DEV</span>
+    <button class="conn-retry" id="retry-IB_DEV" onclick="retryConnection('IB_DEV')" title="Retry">↻</button>
+  </div>
+</div>
+{% endblock %}
 
-<div class="app-body">
-
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <div class="sb-label">Operations</div>
-    <a href="/accounts"          class="nav-item"><span class="nav-icon">🏦</span> Manage Accounts</a>
-    <a href="/routing_dashboard" class="nav-item active"><span class="nav-icon">⚡</span> Routing Dashboard</a>
-
-    <div class="sb-label">Analytics</div>
-    <a href="/display_custom_etf"          class="nav-item"><span class="nav-icon">📦</span> Custom ETF</a>
-    <a href="/simulate_indicator_strategy" class="nav-item"><span class="nav-icon">📐</span> Simulate Strategy</a>
-    <a href="/display_series"              class="nav-item"><span class="nav-icon">📈</span> Display Series</a>
-
-    <div class="sb-label">Data</div>
-    <a href="/load_series"         class="nav-item"><span class="nav-icon">⬆️</span> Load Series</a>
-    <a href="/global_m2_indicator" class="nav-item"><span class="nav-icon">🌐</span> Global M2</a>
-
-    <!-- Connection status -->
-    <div class="conn-section">
-      <div class="conn-title">Connections</div>
-      <div class="conn-item">
-        <div class="conn-dot" id="status-IB_PROD"></div>
-        <span class="conn-label">IB PROD</span>
-        <button class="conn-retry" id="retry-IB_PROD" onclick="retryConnection('IB_PROD')" title="Retry">↻</button>
-      </div>
-      <div class="conn-item">
-        <div class="conn-dot" id="status-BYMA_PROD"></div>
-        <span class="conn-label">BYMA PROD</span>
-        <button class="conn-retry" id="retry-BYMA_PROD" onclick="retryConnection('BYMA_PROD')" title="Retry">↻</button>
-      </div>
-      <div class="conn-item">
-        <div class="conn-dot" id="status-IB_DEV"></div>
-        <span class="conn-label">IB DEV</span>
-        <button class="conn-retry" id="retry-IB_DEV" onclick="retryConnection('IB_DEV')" title="Retry">↻</button>
-      </div>
-    </div>
-  </aside>
-
-  <!-- MAIN -->
-  <main class="main">
-
-    <!-- TABS -->
-    <div class="tabs-bar">
-      <button class="tab active" onclick="switchTab('single', this)">
-        Single Order <span class="tab-badge">LIVE</span>
-      </button>
-      <button class="tab" onclick="switchTab('bulk', this)">
-        Bulk Routing <span class="tab-badge">SOON</span>
-      </button>
-    </div>
-
-    <!-- SINGLE ORDER TAB -->
-    <div class="tab-panel active" id="tab-single">
-      <div class="order-layout">
-
-        <!-- LEFT: Order Form -->
-        <div class="form-col">
-          <div class="form-eyebrow">Seeking Bias · Execution</div>
-          <div class="form-title">New Order</div>
-
-          <div id="formFlash" style="display:none"></div>
-
-          <!-- Side selector -->
-          <div class="side-toggle">
-            <button class="side-btn" id="btn-buy"  onclick="setSide('Buy')">▲ Buy</button>
-            <button class="side-btn" id="btn-sell" onclick="setSide('Sell')">▼ Sell</button>
-          </div>
-
-          <!-- Symbol -->
-          <div class="field">
-            <label class="field-label" for="symbol">Symbol</label>
-            <input class="field-input" type="text" id="symbol" name="symbol"
-              placeholder="e.g. AAPL · XLV · AL30" maxlength="12"
-              autocomplete="off" style="text-transform:uppercase">
-          </div>
-
-          <!-- Quantity -->
-          <div class="field" id="qty-section">
-            <label class="field-label">Quantity</label>
-            <div class="qty-mode-tabs" id="qty-mode-tabs">
-              <button class="qty-tab active" id="qtab-cash" onclick="setQtyMode('cash')">$ Cash</button>
-              <button class="qty-tab"        id="qtab-nom"  onclick="setQtyMode('nom')">Nominal</button>
-            </div>
-            <input class="field-input" type="text"   id="cash_qty" name="cash_qty"
-              placeholder="e.g. $400,000" oninput="formatCurrency(this)" style="display:block">
-            <input class="field-input" type="number" id="nom_qty"  name="nom_qty"
-              placeholder="e.g. 1000" min="1" step="1" style="display:none">
-          </div>
-
-          <!-- Broker -->
-          <div class="field">
-            <label class="field-label" for="broker">Broker</label>
-            <select class="field-select" id="broker" name="broker" onchange="onBrokerChange()">
-              <option value="IB_PROD">Interactive Brokers — PROD</option>
-              <option value="IB_DEV">Interactive Brokers — DEV</option>
-              <option value="BYMA_PROD">BYMA — PROD</option>
-            </select>
-          </div>
-
-          <!-- Currency + Exchange -->
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
-            <div class="field">
-              <label class="field-label" for="currency">Currency</label>
-              <input class="field-input readonly-field" type="text" id="currency" name="currency" value="USD" readonly>
-            </div>
-            <div class="field">
-              <label class="field-label" for="exchange">Exchange</label>
-              <input class="field-input readonly-field" type="text" id="exchange" name="exchange" value="SMART" readonly>
-            </div>
-          </div>
-
-          <!-- Account (searchable) -->
-          <div class="field">
-            <label class="field-label">Account</label>
-            <div class="account-row">
-              <div class="searchable-wrap" id="accountWrap">
-                <input class="searchable-input" type="text" id="accountSearch"
-                  placeholder="Search by ID or name…" autocomplete="off"
-                  oninput="filterAccounts()" onfocus="openDropdown()" onblur="closeDropdownDelayed()">
-                <div class="searchable-dropdown" id="accountDropdown"></div>
-                <select id="account" name="account"></select>
-              </div>
-              <button class="portfolio-btn" onclick="loadPortfolio()" title="View Portfolio">📋</button>
-            </div>
-          </div>
-
-          <!-- Submit -->
-          <button class="submit-btn" id="submitBtn" onclick="confirmOrderModal()">
-            Submit Buy Order
-          </button>
-        </div>
-
-        <!-- RIGHT: Tables -->
-        <div class="tables-col">
-
-          <!-- Execution Reports -->
-          <div class="table-section" style="flex: 1.2">
-            <div class="table-hdr">
-              <span class="table-hdr-title">Execution Reports</span>
-              <span class="table-hdr-meta" id="exec-count">— orders</span>
-            </div>
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>ClOrdID</th>
-                    <th>Symbol</th>
-                    <th>Side</th>
-                    <th>Filled Qty</th>
-                    <th>Status</th>
-                    <th>Timestamp</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody id="execution-reports-table"></tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- Market Data -->
-          <div class="table-section" style="flex: 1">
-            <div class="table-hdr">
-              <span class="table-hdr-title">Market Data</span>
-              <span class="table-hdr-meta" id="mktdata-count">— symbols</span>
-            </div>
-            <div class="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Symbol</th>
-                    <th>Exchange</th>
-                    <th>Open</th>
-                    <th>High</th>
-                    <th>Low</th>
-                    <th>Close</th>
-                    <th>Last Trade</th>
-                    <th>Timestamp</th>
-                  </tr>
-                </thead>
-                <tbody id="market-data-table"></tbody>
-              </table>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <!-- BULK TAB (reserved) -->
-    <div class="tab-panel" id="tab-bulk">
-      <div class="bulk-coming-soon">
-        <div class="bulk-icon">📊</div>
-        <div class="bulk-title">Bulk Routing — Coming Soon</div>
-        <div class="bulk-sub">
-          Upload a list of securities via Excel or manual entry, set allocations,
-          and route all orders with a single click.
-          This module is reserved for future implementation.
-        </div>
-      </div>
-    </div>
-
-  </main>
+{% block main %}
+<div class="tabs-bar">
+  <button class="tab active" onclick="switchTab('single', this)">
+    Single Order <span class="tab-badge">LIVE</span>
+  </button>
+  <button class="tab" onclick="switchTab('bulk', this)">
+    Bulk Routing <span class="tab-badge">SOON</span>
+  </button>
 </div>
 
-<!-- ── CONFIRM ORDER MODAL ── -->
+<div class="tab-panel active" id="tab-single">
+  <div class="order-layout">
+
+    <div class="form-col">
+      <div class="form-eyebrow">Seeking Bias · Execution</div>
+      <div class="form-title">New Order</div>
+      <div id="formFlash" style="display:none"></div>
+
+      <div class="side-toggle">
+        <button class="side-btn" id="btn-buy"  onclick="setSide('Buy')">▲ Buy</button>
+        <button class="side-btn" id="btn-sell" onclick="setSide('Sell')">▼ Sell</button>
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="symbol">Symbol</label>
+        <input class="field-input" type="text" id="symbol" name="symbol"
+          placeholder="e.g. AAPL · XLV · AL30" maxlength="12"
+          autocomplete="off" style="text-transform:uppercase">
+      </div>
+
+      <div class="field" id="qty-section">
+        <label class="field-label">Quantity</label>
+        <div class="qty-mode-tabs" id="qty-mode-tabs">
+          <button class="qty-tab active" id="qtab-cash" onclick="setQtyMode('cash')">$ Cash</button>
+          <button class="qty-tab"        id="qtab-nom"  onclick="setQtyMode('nom')">Nominal</button>
+        </div>
+        <input class="field-input" type="text"   id="cash_qty" name="cash_qty"
+          placeholder="e.g. $400,000" oninput="formatCurrency(this)" style="display:block">
+        <input class="field-input" type="number" id="nom_qty"  name="nom_qty"
+          placeholder="e.g. 1000" min="1" step="1" style="display:none">
+      </div>
+
+      <div class="field">
+        <label class="field-label" for="broker">Broker</label>
+        <select class="field-select" id="broker" name="broker" onchange="onBrokerChange()">
+          <option value="IB_PROD">Interactive Brokers — PROD</option>
+          <option value="IB_DEV">Interactive Brokers — DEV</option>
+          <option value="BYMA_PROD">BYMA — PROD</option>
+        </select>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div class="field">
+          <label class="field-label" for="currency">Currency</label>
+          <input class="field-input readonly-field" type="text" id="currency" name="currency" value="USD" readonly>
+        </div>
+        <div class="field">
+          <label class="field-label" for="exchange">Exchange</label>
+          <input class="field-input readonly-field" type="text" id="exchange" name="exchange" value="SMART" readonly>
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="field-label">Account</label>
+        <div class="account-row">
+          <div class="searchable-wrap" id="accountWrap">
+            <input class="searchable-input" type="text" id="accountSearch"
+              placeholder="Search by ID or name…" autocomplete="off"
+              oninput="filterAccounts()" onfocus="openDropdown()" onblur="closeDropdownDelayed()">
+            <div class="searchable-dropdown" id="accountDropdown"></div>
+            <select id="account" name="account"></select>
+          </div>
+          <button class="portfolio-btn" onclick="loadPortfolio()" title="View Portfolio">📋</button>
+        </div>
+      </div>
+
+      <button class="submit-btn" id="submitBtn" onclick="confirmOrderModal()">Submit Buy Order</button>
+    </div>
+
+    <div class="tables-col">
+      <div class="table-section" style="flex: 1.2">
+        <div class="table-hdr">
+          <span class="table-hdr-title">Execution Reports</span>
+          <span class="table-hdr-meta" id="exec-count">— orders</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>ClOrdID</th><th>Symbol</th><th>Side</th>
+                <th>Filled Qty</th><th>Status</th><th>Timestamp</th><th></th>
+              </tr>
+            </thead>
+            <tbody id="execution-reports-table"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="table-section" style="flex: 1">
+        <div class="table-hdr">
+          <span class="table-hdr-title">Market Data</span>
+          <span class="table-hdr-meta" id="mktdata-count">— symbols</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Symbol</th><th>Exchange</th><th>Open</th><th>High</th>
+                <th>Low</th><th>Close</th><th>Last Trade</th><th>Timestamp</th>
+              </tr>
+            </thead>
+            <tbody id="market-data-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="tab-panel" id="tab-bulk">
+  <div class="bulk-coming-soon">
+    <div class="bulk-icon">📊</div>
+    <div class="bulk-title">Bulk Routing — Coming Soon</div>
+    <div class="bulk-sub">
+      Upload a list of securities via Excel or manual entry, set allocations,
+      and route all orders with a single click.
+      This module is reserved for future implementation.
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block modals %}
 <div class="modal-overlay" id="confirmModal">
   <div class="modal">
     <div class="modal-hdr">
@@ -239,34 +170,14 @@
     </div>
     <div class="modal-body">
       <div class="confirm-grid">
-        <div class="confirm-field">
-          <span class="confirm-lbl">Security</span>
-          <span class="confirm-val" id="conf-symbol">—</span>
-        </div>
-        <div class="confirm-field">
-          <span class="confirm-lbl">Side</span>
-          <span class="confirm-val" id="conf-side">—</span>
-        </div>
-        <div class="confirm-field">
-          <span class="confirm-lbl">Amount / Qty</span>
-          <span class="confirm-val" id="conf-qty">—</span>
-        </div>
-        <div class="confirm-field">
-          <span class="confirm-lbl">Broker</span>
-          <span class="confirm-val exchange-val" id="conf-broker">—</span>
-        </div>
-        <div class="confirm-field">
-          <span class="confirm-lbl">Exchange</span>
-          <span class="confirm-val exchange-val" id="conf-exchange">—</span>
-        </div>
-        <div class="confirm-field">
-          <span class="confirm-lbl">Account</span>
-          <span class="confirm-val" id="conf-account" style="font-size:12px;color:var(--text)">—</span>
-        </div>
+        <div class="confirm-field"><span class="confirm-lbl">Security</span><span class="confirm-val" id="conf-symbol">—</span></div>
+        <div class="confirm-field"><span class="confirm-lbl">Side</span><span class="confirm-val" id="conf-side">—</span></div>
+        <div class="confirm-field"><span class="confirm-lbl">Amount / Qty</span><span class="confirm-val" id="conf-qty">—</span></div>
+        <div class="confirm-field"><span class="confirm-lbl">Broker</span><span class="confirm-val exchange-val" id="conf-broker">—</span></div>
+        <div class="confirm-field"><span class="confirm-lbl">Exchange</span><span class="confirm-val exchange-val" id="conf-exchange">—</span></div>
+        <div class="confirm-field"><span class="confirm-lbl">Account</span><span class="confirm-val" id="conf-account" style="font-size:12px;color:var(--text)">—</span></div>
         <hr class="confirm-divider">
-        <div class="confirm-warning">
-          ⚠ Orders sent cannot be automatically cancelled. Please verify all fields before confirming.
-        </div>
+        <div class="confirm-warning">⚠ Orders sent cannot be automatically cancelled. Please verify all fields before confirming.</div>
       </div>
     </div>
     <div class="modal-ftr">
@@ -276,23 +187,19 @@
   </div>
 </div>
 
-<!-- ── PORTFOLIO MODAL ── -->
 <div class="modal-overlay" id="portfolioModal">
   <div class="modal">
     <div class="modal-hdr">
       <span class="modal-hdr-title">Portfolio</span>
       <button class="modal-x" onclick="closeModal('portfolioModal')">×</button>
     </div>
-    <div class="modal-body" id="portfolioModalBody">
-      <!-- filled dynamically by JS -->
-    </div>
+    <div class="modal-body" id="portfolioModalBody"></div>
     <div class="modal-ftr">
       <button class="btn btn-ghost" onclick="closeModal('portfolioModal')">Close</button>
     </div>
   </div>
 </div>
 
-<!-- ── CANCEL ORDER MODAL ── -->
 <div class="modal-overlay" id="cancelModal">
   <div class="modal">
     <div class="modal-hdr">
@@ -319,31 +226,23 @@
   </div>
 </div>
 
-<!-- ── EXECUTION REPORT DETAIL MODAL ──    -->
 <div class="modal-overlay" id="erDetailModal">
   <div class="modal" style="max-width:560px">
     <div class="modal-hdr">
       <span class="modal-hdr-title">Execution Report Detail</span>
       <button class="modal-x" onclick="closeModal('erDetailModal')">×</button>
     </div>
-    <div class="modal-body" id="erDetailBody">
-      <!-- filled dynamically by showExecReportDetail() -->
-    </div>
+    <div class="modal-body" id="erDetailBody"></div>
     <div class="modal-ftr">
       <button class="btn btn-ghost" onclick="closeModal('erDetailModal')">Close</button>
     </div>
   </div>
 </div>
 
-
-<!-- ── LOADING SPINNER ── -->
 <div class="spinner-overlay" id="loadingSpinner">
   <div class="spinner-box">
     <div class="spinner-ring"></div>
     <span id="spinnerMsg">Loading…</span>
   </div>
 </div>
-
-<script src="../static/js/order_routing.js"></script>
-</body>
-</html>
+{% endblock %}

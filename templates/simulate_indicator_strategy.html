@@ -1,199 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seeking Bias — Simulate Strategy</title>
-  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/simulate_indicator_strategy.css">
-</head>
-<body>
+{% extends "base.html" %}
+{% set active_page = 'simulate' %}
 
-<!-- TOP NAV -->
-<nav class="top-nav">
-  <a href="/" class="nav-brand">
-    <div class="nav-brand-b">B</div>
-    <div>
-      <div class="nav-brand-name">BIAS</div>
-      <div class="nav-brand-sub">Simulate Strategy</div>
-    </div>
-  </a>
-  <div class="nav-right">
-    <div class="nav-clock" id="navClock">--:--:--</div>
-    <a href="/" class="nav-back">← Dashboard</a>
-  </div>
-</nav>
+{% block page_title %}Simulate Strategy{% endblock %}
+{% block nav_subtitle %}Simulate Strategy{% endblock %}
+{% block css_file %}simulate_indicator_strategy.css{% endblock %}
+{% block js_file %}simulate_indicator_strategy.js{% endblock %}
 
-<div class="app-body">
+{% block head_scripts %}
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+{% endblock %}
 
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <div class="sb-label">Operations</div>
-    <a href="/accounts"          class="nav-item"><span class="nav-icon">🏦</span> Manage Accounts</a>
-    <a href="/routing_dashboard" class="nav-item"><span class="nav-icon">⚡</span> Routing Dashboard</a>
-
-    <div class="sb-label">Analytics</div>
-    <a href="/display_custom_etf"          class="nav-item"><span class="nav-icon">📦</span> Custom ETF</a>
-    <a href="/simulate_indicator_strategy" class="nav-item active"><span class="nav-icon">📐</span> Simulate Strategy</a>
-    <a href="/display_series"              class="nav-item"><span class="nav-icon">📈</span> Display Series</a>
-
-    <div class="sb-label">Data</div>
-    <a href="/load_series"         class="nav-item"><span class="nav-icon">⬆️</span> Load Series</a>
-    <a href="/global_m2_indicator" class="nav-item"><span class="nav-icon">🌐</span> Global M2</a>
-  </aside>
-
-  <!-- MAIN -->
-  <main class="main">
-
-    <!-- PAGE HEADER -->
-    <div>
-      <div class="page-eyebrow">Analytics · Backtesting</div>
-      <div class="page-title">Simulate Indicator Strategy</div>
-    </div>
-
-    <!-- SIMULATION CARD -->
-    <div class="sim-card">
-      <div class="card-hdr">
-        <div class="card-icon">📐</div>
-        <span class="card-title">Backtest Parameters</span>
-      </div>
-      <div class="card-body">
-
-        <!-- File drop -->
-        <div class="file-drop" id="fileDropZone">
-          <input type="file" id="custom_etf_file" name="custom_etf_file" accept=".csv">
-          <div class="file-drop-icon">📂</div>
-          <div class="file-drop-text">Drop ETF weights CSV here, or <span>browse</span></div>
-          <div class="file-selected-name" id="fileSelectedName"></div>
-        </div>
-
-        <!-- Strategy params -->
-        <div class="section-label">Strategy</div>
-        <div class="form-grid-2">
-          <div class="form-field">
-            <label class="form-label" for="indicator_name">Indicator Name</label>
-            <input class="form-input" type="text" id="indicator_name" name="indicator_name"
-              placeholder="e.g. ARG_CC" autocomplete="off">
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="trading_algo">
-              Trading Algo
-              <span class="form-label-hint">Algorithm identifier</span>
-            </label>
-            <input class="form-input code-field" type="text" id="trading_algo" name="trading_algo"
-              value="RAW_DIRECT_SLOPE" autocomplete="off">
-          </div>
-        </div>
-
-        <!-- Date range -->
-        <div class="section-label">Date Range</div>
-        <div class="form-grid-2">
-          <div class="form-field">
-            <label class="form-label" for="start_date">Start Date</label>
-            <input class="form-input" type="date" id="start_date" name="start_date">
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="end_date">End Date</label>
-            <input class="form-input" type="date" id="end_date" name="end_date">
-          </div>
-        </div>
-
-        <!-- Risk & sizing -->
-        <div class="section-label">Risk &amp; Sizing</div>
-        <div class="form-grid-3">
-          <div class="form-field">
-            <label class="form-label" for="portf_size">
-              Portfolio Size
-              <span class="form-label-hint">Initial capital (USD)</span>
-            </label>
-            <input class="form-input" type="number" id="portf_size" name="portf_size"
-              value="100000" step="any" min="1">
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="slope_units">
-              Slope Units
-              <span class="form-label-hint">Lookback periods for regression</span>
-            </label>
-            <input class="form-input" type="number" id="slope_units" name="slope_units"
-              value="5" min="1">
-          </div>
-          <div class="form-field">
-            <label class="form-label" for="commissions">
-              Commissions
-              <span class="form-label-hint">Per-trade cost (USD)</span>
-            </label>
-            <input class="form-input" type="number" id="commissions" name="commissions"
-              value="5" step="any" min="0">
-          </div>
-        </div>
-
-        <!-- Advanced -->
-        <div class="section-label">Advanced</div>
-        <div class="form-grid-2" style="max-width:400px">
-          <div class="form-field">
-            <label class="form-label" for="min_units_to_pred">
-              Min Units to Pred
-              <span class="form-label-hint">Days offset added to date</span>
-            </label>
-            <input class="form-input" type="number" id="min_units_to_pred" name="min_units_to_pred"
-              value="0" min="0">
-          </div>
-        </div>
-
-        <!-- Actions row -->
-        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-top:4px">
-          <div class="sim-result" id="simulateResult"></div>
-          <button class="sim-btn" id="simulateButton" onclick="simulateIndicator()">
-            <div class="btn-spinner"></div>
-            <span>Simulate &amp; Upload</span>
-          </button>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- CHART CARD -->
-    <div class="chart-card">
-      <div class="chart-card-hdr">
-        <span class="chart-card-title">Portfolio MTM — Time Series</span>
-        <div class="chart-stats">
-          <div class="stat-chip">
-            <span class="stat-lbl">Final MTM</span>
-            <span class="stat-val" id="statFinal">—</span>
-          </div>
-          <div class="stat-chip">
-            <span class="stat-lbl">Return</span>
-            <span class="stat-val" id="statReturn">—</span>
-          </div>
-          <div class="stat-chip">
-            <span class="stat-lbl">Peak</span>
-            <span class="stat-val" id="statMax">—</span>
-          </div>
-          <div class="stat-chip">
-            <span class="stat-lbl">Trough</span>
-            <span class="stat-val" id="statMin">—</span>
-          </div>
-          <div class="stat-chip">
-            <span class="stat-lbl">Points</span>
-            <span class="stat-val" id="statPts">—</span>
-          </div>
-        </div>
-      </div>
-      <div class="chart-body">
-        <div id="chartEmpty" class="chart-empty">
-          <div class="chart-empty-icon">📐</div>
-          <div>Run a simulation to see portfolio performance</div>
-        </div>
-        <div id="chartContainer" style="display:none;"></div>
-      </div>
-    </div>
-
-  </main>
+{% block main %}
+<div>
+  <div class="page-eyebrow">Analytics · Backtesting</div>
+  <div class="page-title">Simulate Indicator Strategy</div>
 </div>
 
-<script src="../static/js/simulate_indicator_strategy.js"></script>
-</body>
-</html>
+<div class="sim-card">
+  <div class="card-hdr">
+    <div class="card-icon">📐</div>
+    <span class="card-title">Backtest Parameters</span>
+  </div>
+  <div class="card-body">
+
+    <div class="file-drop" id="fileDropZone">
+      <input type="file" id="custom_etf_file" name="custom_etf_file" accept=".csv">
+      <div class="file-drop-icon">📂</div>
+      <div class="file-drop-text">Drop ETF weights CSV here, or <span>browse</span></div>
+      <div class="file-selected-name" id="fileSelectedName"></div>
+    </div>
+
+    <div class="section-label">Strategy</div>
+    <div class="form-grid-2">
+      <div class="form-field">
+        <label class="form-label" for="indicator_name">Indicator Name</label>
+        <input class="form-input" type="text" id="indicator_name" name="indicator_name"
+          placeholder="e.g. ARG_CC" autocomplete="off">
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="trading_algo">
+          Trading Algo
+          <span class="form-label-hint">Algorithm identifier</span>
+        </label>
+        <input class="form-input code-field" type="text" id="trading_algo" name="trading_algo"
+          value="RAW_DIRECT_SLOPE" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="section-label">Date Range</div>
+    <div class="form-grid-2">
+      <div class="form-field">
+        <label class="form-label" for="start_date">Start Date</label>
+        <input class="form-input" type="date" id="start_date" name="start_date">
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="end_date">End Date</label>
+        <input class="form-input" type="date" id="end_date" name="end_date">
+      </div>
+    </div>
+
+    <div class="section-label">Risk &amp; Sizing</div>
+    <div class="form-grid-3">
+      <div class="form-field">
+        <label class="form-label" for="portf_size">
+          Portfolio Size <span class="form-label-hint">Initial capital (USD)</span>
+        </label>
+        <input class="form-input" type="number" id="portf_size" name="portf_size"
+          value="100000" step="any" min="1">
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="slope_units">
+          Slope Units <span class="form-label-hint">Lookback periods for regression</span>
+        </label>
+        <input class="form-input" type="number" id="slope_units" name="slope_units" value="5" min="1">
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="commissions">
+          Commissions <span class="form-label-hint">Per-trade cost (USD)</span>
+        </label>
+        <input class="form-input" type="number" id="commissions" name="commissions" value="5" step="any" min="0">
+      </div>
+    </div>
+
+    <div class="section-label">Advanced</div>
+    <div class="form-grid-2" style="max-width:400px">
+      <div class="form-field">
+        <label class="form-label" for="min_units_to_pred">
+          Min Units to Pred <span class="form-label-hint">Days offset added to date</span>
+        </label>
+        <input class="form-input" type="number" id="min_units_to_pred" name="min_units_to_pred" value="0" min="0">
+      </div>
+    </div>
+
+    <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-top:4px">
+      <div class="sim-result" id="simulateResult"></div>
+      <button class="sim-btn" id="simulateButton" onclick="simulateIndicator()">
+        <div class="btn-spinner"></div>
+        <span>Simulate &amp; Upload</span>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<div class="chart-card">
+  <div class="chart-card-hdr">
+    <span class="chart-card-title">Portfolio MTM — Time Series</span>
+    <div class="chart-stats">
+      <div class="stat-chip"><span class="stat-lbl">Final MTM</span><span class="stat-val" id="statFinal">—</span></div>
+      <div class="stat-chip"><span class="stat-lbl">Return</span><span class="stat-val" id="statReturn">—</span></div>
+      <div class="stat-chip"><span class="stat-lbl">Peak</span><span class="stat-val" id="statMax">—</span></div>
+      <div class="stat-chip"><span class="stat-lbl">Trough</span><span class="stat-val" id="statMin">—</span></div>
+      <div class="stat-chip"><span class="stat-lbl">Points</span><span class="stat-val" id="statPts">—</span></div>
+    </div>
+  </div>
+  <div class="chart-body">
+    <div id="chartEmpty" class="chart-empty">
+      <div class="chart-empty-icon">📐</div>
+      <div>Run a simulation to see portfolio performance</div>
+    </div>
+    <div id="chartContainer" style="display:none;"></div>
+  </div>
+</div>
+{% endblock %}

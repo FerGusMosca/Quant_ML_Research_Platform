@@ -1,227 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seeking Bias — Series Analysis</title>
-  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/display_series.css">
-</head>
-<body>
+{% extends "base.html" %}
+{% set active_page = 'series' %}
 
-<!-- TOP NAV -->
-<nav class="top-nav">
-  <a href="/" class="nav-brand">
-    <div class="nav-brand-b">B</div>
-    <div>
-      <div class="nav-brand-name">BIAS</div>
-      <div class="nav-brand-sub">Series Analysis</div>
-    </div>
-  </a>
-  <div class="nav-right">
-    <div class="nav-clock" id="navClock">--:--:--</div>
-    <a href="/" class="nav-back">← Dashboard</a>
+{% block page_title %}Series Analysis{% endblock %}
+{% block nav_subtitle %}Series Analysis{% endblock %}
+{% block css_file %}display_series.css{% endblock %}
+{% block js_file %}display_series.js{% endblock %}
+
+{% block head_scripts %}
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+{% endblock %}
+
+{% block main %}
+<div class="filter-bar">
+  <div class="filter-eyebrow">Series Query</div>
+  <div class="filter-group">
+    <label class="filter-label" for="series_key">Key</label>
+    <input class="filter-input" type="text" id="series_key" name="series_key"
+      placeholder="e.g. ARG_CC" maxlength="50" autocomplete="off"
+      style="text-transform:uppercase">
   </div>
-</nav>
-
-<div class="app-body">
-
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <div class="sb-label">Operations</div>
-    <a href="/accounts"          class="nav-item"><span class="nav-icon">🏦</span> Manage Accounts</a>
-    <a href="/routing_dashboard" class="nav-item"><span class="nav-icon">⚡</span> Routing Dashboard</a>
-
-    <div class="sb-label">Analytics</div>
-    <a href="/display_custom_etf"          class="nav-item"><span class="nav-icon">📦</span> Custom ETF</a>
-    <a href="/simulate_indicator_strategy" class="nav-item"><span class="nav-icon">📐</span> Simulate Strategy</a>
-    <a href="/display_series"              class="nav-item active"><span class="nav-icon">📈</span> Display Series</a>
-
-    <div class="sb-label">Data</div>
-    <a href="/load_series"         class="nav-item"><span class="nav-icon">⬆️</span> Load Series</a>
-    <a href="/global_m2_indicator" class="nav-item"><span class="nav-icon">🌐</span> Global M2</a>
-  </aside>
-
-  <!-- MAIN -->
-  <main class="main">
-
-    <!-- FILTER BAR -->
-    <div class="filter-bar">
-      <div class="filter-eyebrow">Series Query</div>
-
-      <div class="filter-group">
-        <label class="filter-label" for="series_key">Key</label>
-        <input class="filter-input" type="text" id="series_key" name="series_key"
-          placeholder="e.g. ARG_CC" maxlength="50" autocomplete="off"
-          style="text-transform:uppercase">
-      </div>
-
-      <div class="filter-group">
-        <label class="filter-label" for="start_date">From</label>
-        <input class="filter-input" type="date" id="start_date" name="start_date">
-      </div>
-
-      <div class="filter-group">
-        <label class="filter-label" for="end_date">To</label>
-        <input class="filter-input" type="date" id="end_date" name="end_date">
-      </div>
-
-      <div class="filter-group">
-        <label class="filter-label" for="time_interval">Interval</label>
-        <select class="filter-select" id="time_interval" name="time_interval">
-          <option value="1 day">Daily</option>
-          <option value="1 min">1 Min</option>
-        </select>
-      </div>
-
-      <button class="display-btn" id="displayButton" onclick="displaySeries()">
-        ▶ Display
-      </button>
-    </div>
-
-    <!-- CONTENT -->
-    <div class="content-area">
-
-      <!-- CHART COLUMN -->
-      <div class="chart-section">
-        <div class="chart-hdr">
-          <div class="chart-hdr-left">
-            <span class="chart-series-name" id="chartSeriesName">— Select a series —</span>
-            <span class="chart-series-meta" id="chartSeriesMeta">Enter key and click Display</span>
-          </div>
-          <div class="chart-stats">
-            <div class="stat-chip">
-              <span class="stat-lbl">Last</span>
-              <span class="stat-val" id="statLast">—</span>
-            </div>
-            <div class="stat-chip">
-              <span class="stat-lbl">Chg</span>
-              <span class="stat-val" id="statChange">—</span>
-            </div>
-            <div class="stat-chip">
-              <span class="stat-lbl">Min</span>
-              <span class="stat-val" id="statMin">—</span>
-            </div>
-            <div class="stat-chip">
-              <span class="stat-lbl">Max</span>
-              <span class="stat-val" id="statMax">—</span>
-            </div>
-            <div class="stat-chip">
-              <span class="stat-lbl">Points</span>
-              <span class="stat-val" id="statCount">—</span>
-            </div>
-          </div>
-        </div>
-        <div id="chartContainer" style="width:100%;flex:1;min-height:400px;"></div>
-      </div>
-
-      <!-- RIGHT PANEL -->
-      <div class="right-panel">
-
-        <!-- Last 5 data points -->
-        <div class="panel-section">
-          <div class="section-title">Recent Data Points</div>
-          <div id="lastFiveList">
-            <div style="font-family:var(--mono);font-size:11px;color:var(--faint);padding:8px 0;">
-              Load a series to see data
-            </div>
-          </div>
-        </div>
-
-        <!-- Add data point -->
-        <div class="panel-section">
-          <div class="section-title">Add Data Point</div>
-          <div class="add-row">
-            <input class="add-input" type="date" id="newDate">
-            <input class="add-input" type="number" id="newValue" step="0.0001" placeholder="Value">
-            <button class="add-btn" id="addBtn" onclick="addNewPoint()">Add</button>
-          </div>
-        </div>
-
-        <!-- Regression Slope -->
-        <div class="panel-section">
-          <div class="section-title">Regression Slope</div>
-
-          <div class="slope-field">
-            <label class="slope-label" for="slope_units">Lookback Periods</label>
-            <input class="slope-input" type="number" id="slope_units" min="1" placeholder="e.g. 5">
-          </div>
-          <div class="slope-field">
-            <label class="slope-label" for="new_value">Hypothetical Next Value <span style="color:var(--faint)">(optional)</span></label>
-            <input class="slope-input" type="number" id="new_value" step="0.01" placeholder="e.g. 46.80">
-          </div>
-
-          <button class="calc-btn" id="calcSlopeBtn" onclick="calculateSlope()">
-            <div class="btn-spinner"></div>
-            <span>Calculate Slope</span>
-          </button>
-
-          <div class="slope-result-card" id="slopeResultCard">
-            <div class="slope-result-lbl">Regression Slope (last N periods)</div>
-            <div class="slope-result-value" id="slopeResultValue">—</div>
-            <div class="slope-bar-wrap">
-              <div class="slope-bar-track">
-                <div class="slope-bar-fill" id="slopeBarFill" style="width:0%"></div>
-              </div>
-              <div class="slope-bar-note" id="slopeBarNote"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- ARIMA -->
-        <div class="panel-section">
-          <div class="section-title">(S)ARIMA Forecast</div>
-
-          <div class="arima-grid">
-            <div class="arima-field">
-              <label class="arima-label" for="arima_p">p</label>
-              <input class="arima-input" type="number" id="arima_p" min="0" value="1">
-            </div>
-            <div class="arima-field">
-              <label class="arima-label" for="arima_d">d</label>
-              <input class="arima-input" type="number" id="arima_d" min="0" value="1">
-            </div>
-            <div class="arima-field">
-              <label class="arima-label" for="arima_q">q</label>
-              <input class="arima-input" type="number" id="arima_q" min="0" value="1">
-            </div>
-          </div>
-
-          <div class="sarima-row">
-            <label class="sarima-toggle">
-              <input type="checkbox" id="use_sarima" onchange="toggleSarima()">
-              <span class="toggle-track"></span>
-            </label>
-            <label class="sarima-label" for="use_sarima">Use SARIMA</label>
-
-            <div class="arima-field" style="flex:1;margin-left:12px">
-              <input class="arima-input" type="number" id="arima_s" min="1" placeholder="s" disabled>
-            </div>
-          </div>
-
-          <div class="slope-field">
-            <label class="slope-label" for="forecast_periods">Forecast Periods</label>
-            <input class="slope-input" type="number" id="forecast_periods" min="1" value="5">
-          </div>
-
-          <button class="calc-btn" id="calcArimaBtn" onclick="calculateArima()">
-            <div class="btn-spinner"></div>
-            <span>Calculate (S)ARIMA</span>
-          </button>
-
-          <div class="predictions-list" id="arimaPredictionsList"></div>
-          <div class="arima-verdict" id="arimaVerdict"></div>
-        </div>
-
-      </div><!-- /right-panel -->
-    </div><!-- /content-area -->
-  </main>
+  <div class="filter-group">
+    <label class="filter-label" for="start_date">From</label>
+    <input class="filter-input" type="date" id="start_date" name="start_date">
+  </div>
+  <div class="filter-group">
+    <label class="filter-label" for="end_date">To</label>
+    <input class="filter-input" type="date" id="end_date" name="end_date">
+  </div>
+  <div class="filter-group">
+    <label class="filter-label" for="time_interval">Interval</label>
+    <select class="filter-select" id="time_interval" name="time_interval">
+      <option value="1 day">Daily</option>
+      <option value="1 min">1 Min</option>
+    </select>
+  </div>
+  <button class="display-btn" id="displayButton" onclick="displaySeries()">▶ Display</button>
 </div>
 
-<!-- POINT EDIT TOOLTIP -->
+<div class="content-area">
+  <div class="chart-section">
+    <div class="chart-hdr">
+      <div class="chart-hdr-left">
+        <span class="chart-series-name" id="chartSeriesName">— Select a series —</span>
+        <span class="chart-series-meta" id="chartSeriesMeta">Enter key and click Display</span>
+      </div>
+      <div class="chart-stats">
+        <div class="stat-chip"><span class="stat-lbl">Last</span><span class="stat-val" id="statLast">—</span></div>
+        <div class="stat-chip"><span class="stat-lbl">Chg</span><span class="stat-val" id="statChange">—</span></div>
+        <div class="stat-chip"><span class="stat-lbl">Min</span><span class="stat-val" id="statMin">—</span></div>
+        <div class="stat-chip"><span class="stat-lbl">Max</span><span class="stat-val" id="statMax">—</span></div>
+        <div class="stat-chip"><span class="stat-lbl">Points</span><span class="stat-val" id="statCount">—</span></div>
+      </div>
+    </div>
+    <div id="chartContainer" style="width:100%;flex:1;min-height:400px;"></div>
+  </div>
+
+  <div class="right-panel">
+
+    <div class="panel-section">
+      <div class="section-title">Recent Data Points</div>
+      <div id="lastFiveList">
+        <div style="font-family:var(--mono);font-size:11px;color:var(--faint);padding:8px 0;">
+          Load a series to see data
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <div class="section-title">Add Data Point</div>
+      <div class="add-row">
+        <input class="add-input" type="date" id="newDate">
+        <input class="add-input" type="number" id="newValue" step="0.0001" placeholder="Value">
+        <button class="add-btn" id="addBtn" onclick="addNewPoint()">Add</button>
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <div class="section-title">Regression Slope</div>
+      <div class="slope-field">
+        <label class="slope-label" for="slope_units">Lookback Periods</label>
+        <input class="slope-input" type="number" id="slope_units" min="1" placeholder="e.g. 5">
+      </div>
+      <div class="slope-field">
+        <label class="slope-label" for="new_value">Hypothetical Next Value <span style="color:var(--faint)">(optional)</span></label>
+        <input class="slope-input" type="number" id="new_value" step="0.01" placeholder="e.g. 46.80">
+      </div>
+      <button class="calc-btn" id="calcSlopeBtn" onclick="calculateSlope()">
+        <div class="btn-spinner"></div>
+        <span>Calculate Slope</span>
+      </button>
+      <div class="slope-result-card" id="slopeResultCard">
+        <div class="slope-result-lbl">Regression Slope (last N periods)</div>
+        <div class="slope-result-value" id="slopeResultValue">—</div>
+        <div class="slope-bar-wrap">
+          <div class="slope-bar-track">
+            <div class="slope-bar-fill" id="slopeBarFill" style="width:0%"></div>
+          </div>
+          <div class="slope-bar-note" id="slopeBarNote"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <div class="section-title">(S)ARIMA Forecast</div>
+      <div class="arima-grid">
+        <div class="arima-field"><label class="arima-label" for="arima_p">p</label><input class="arima-input" type="number" id="arima_p" min="0" value="1"></div>
+        <div class="arima-field"><label class="arima-label" for="arima_d">d</label><input class="arima-input" type="number" id="arima_d" min="0" value="1"></div>
+        <div class="arima-field"><label class="arima-label" for="arima_q">q</label><input class="arima-input" type="number" id="arima_q" min="0" value="1"></div>
+      </div>
+      <div class="sarima-row">
+        <label class="sarima-toggle">
+          <input type="checkbox" id="use_sarima" onchange="toggleSarima()">
+          <span class="toggle-track"></span>
+        </label>
+        <label class="sarima-label" for="use_sarima">Use SARIMA</label>
+        <div class="arima-field" style="flex:1;margin-left:12px">
+          <input class="arima-input" type="number" id="arima_s" min="1" placeholder="s" disabled>
+        </div>
+      </div>
+      <div class="slope-field">
+        <label class="slope-label" for="forecast_periods">Forecast Periods</label>
+        <input class="slope-input" type="number" id="forecast_periods" min="1" value="5">
+      </div>
+      <button class="calc-btn" id="calcArimaBtn" onclick="calculateArima()">
+        <div class="btn-spinner"></div>
+        <span>Calculate (S)ARIMA</span>
+      </button>
+      <div class="predictions-list" id="arimaPredictionsList"></div>
+      <div class="arima-verdict" id="arimaVerdict"></div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
+
+{% block modals %}
 <div class="point-tooltip" id="pointTooltip">
   <div class="tooltip-title">Edit Data Point</div>
   <div class="tooltip-date" id="ttDate">—</div>
@@ -231,7 +144,4 @@
     <button class="tooltip-close" onclick="closeTooltip()">Cancel</button>
   </div>
 </div>
-
-<script src="../static/js/display_series.js"></script>
-</body>
-</html>
+{% endblock %}

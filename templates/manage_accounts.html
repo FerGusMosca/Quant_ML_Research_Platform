@@ -1,155 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seeking Bias — Manage Accounts</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/manage_accounts.css">
-</head>
-<body>
+{% extends "base.html" %}
+{% set active_page = 'accounts' %}
 
-<!-- TOP NAV -->
-<nav class="top-nav">
-  <a href="/" class="nav-brand">
-    <div class="nav-brand-b">B</div>
-    <div>
-      <div class="nav-brand-name">BIAS</div>
-      <div class="nav-brand-sub">Account Management</div>
-    </div>
-  </a>
-  <div class="nav-right">
-    <div class="nav-clock" id="navClock">--:--:--</div>
-    <a href="/" class="nav-back">← Dashboard</a>
+{% block page_title %}Manage Accounts{% endblock %}
+{% block nav_subtitle %}Account Management{% endblock %}
+{% block css_file %}manage_accounts.css{% endblock %}
+{% block js_file %}manage_accounts.js{% endblock %}
+
+{% block main %}
+<div class="page-hdr">
+  <div>
+    <div class="page-eyebrow">Operations · Brokers</div>
+    <div class="page-title">Manage Accounts</div>
   </div>
-</nav>
-
-<div class="app-body">
-
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <div class="sb-label">Operations</div>
-    <a href="/accounts"          class="nav-item active"><span class="nav-icon">🏦</span> Manage Accounts</a>
-    <a href="/routing_dashboard" class="nav-item"><span class="nav-icon">⚡</span> Routing Dashboard</a>
-
-    <div class="sb-label">Analytics</div>
-    <a href="/display_custom_etf"          class="nav-item"><span class="nav-icon">📦</span> Custom ETF</a>
-    <a href="/simulate_indicator_strategy" class="nav-item"><span class="nav-icon">📐</span> Simulate Strategy</a>
-    <a href="/display_series"              class="nav-item"><span class="nav-icon">📈</span> Display Series</a>
-
-    <div class="sb-label">Data</div>
-    <a href="/load_series"         class="nav-item"><span class="nav-icon">⬆️</span> Load Series</a>
-    <a href="/global_m2_indicator" class="nav-item"><span class="nav-icon">🌐</span> Global M2</a>
-  </aside>
-
-  <!-- MAIN -->
-  <main class="main">
-
-    <!-- PAGE HEADER -->
-    <div class="page-hdr">
-      <div>
-        <div class="page-eyebrow">Operations · Brokers</div>
-        <div class="page-title">Manage Accounts</div>
-      </div>
-      <span class="account-count-badge" id="accountCountBadge">
-        {{ accounts | length }} account{{ 's' if accounts | length != 1 else '' }}
-      </span>
-    </div>
-
-    <!-- ACCOUNTS TABLE -->
-    <div class="table-card">
-      <div class="table-card-hdr">
-        <span class="table-card-title">Registered Accounts</span>
-        <input class="table-search" type="text" id="tableSearch" placeholder="Search accounts…" autocomplete="off">
-      </div>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th style="width:180px">Account Number</th>
-              <th>Account Name</th>
-              <th style="width:160px">Broker</th>
-              <th style="width:160px">Actions</th>
-            </tr>
-          </thead>
-          <tbody id="accountsTbody">
-            {% if accounts %}
-              {% for acc in accounts %}
-              <tr data-row="1" data-account="{{ acc.account_number }}">
-                <td class="cell-id">{{ acc.account_number }}</td>
-                <td class="cell-name-td" data-value="{{ acc.account_name }}">
-                  <span class="cell-name">{{ acc.account_name }}</span>
-                </td>
-                <td class="cell-broker-td" data-value="{{ acc.broker }}">
-                  <span class="broker-badge broker-{{ acc.broker }}">{{ acc.broker }}</span>
-                </td>
-                <td class="cell-actions">
-                  <div class="actions-cell">
-                    <button class="btn-edit"
-                      onclick="startEdit('{{ acc.account_number }}')">Edit</button>
-                    <button class="btn-delete"
-                      onclick="confirmDelete('{{ acc.account_number }}', '{{ acc.account_name }}')">Delete</button>
-                  </div>
-                </td>
-              </tr>
-              {% endfor %}
-            {% else %}
-              <tr id="emptyState">
-                <td colspan="4">
-                  <div class="empty-state">No accounts registered yet. Add the first one below.</div>
-                </td>
-              </tr>
-            {% endif %}
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- ADD ACCOUNT FORM -->
-    <div class="form-card">
-      <div class="form-card-hdr">
-        <div class="form-card-icon">＋</div>
-        <span class="form-card-title">Add or Update Account</span>
-      </div>
-      <form id="addAccountForm">
-        <div class="form-body">
-          <div class="form-grid">
-            <div class="form-field">
-              <label class="form-label" for="account_number">Account Number</label>
-              <input class="form-input" type="text" id="account_number" name="account_number"
-                placeholder="e.g. U2089626 · 11303" required autocomplete="off"
-                style="text-transform:uppercase">
-            </div>
-            <div class="form-field">
-              <label class="form-label" for="account_name">Account Name</label>
-              <input class="form-input" type="text" id="account_name" name="account_name"
-                placeholder="e.g. Fernando M." required autocomplete="off">
-            </div>
-          </div>
-          <div class="form-field" style="max-width:200px">
-            <label class="form-label" for="broker">Broker</label>
-            <select class="form-select" id="broker" name="broker" required>
-              <option value="IB_PROD">IB_PROD</option>
-              <option value="IB_DEV">IB_DEV</option>
-              <option value="BYMA_PROD">BYMA_PROD</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-footer">
-          <button class="save-btn" type="submit" id="saveAccountBtn">
-            <div class="btn-spinner"></div>
-            <span>Save Account</span>
-          </button>
-        </div>
-      </form>
-    </div>
-
-  </main>
+  <span class="account-count-badge" id="accountCountBadge">
+    {{ accounts | length }} account{{ 's' if accounts | length != 1 else '' }}
+  </span>
 </div>
 
-<!-- DELETE CONFIRMATION MODAL -->
+<div class="table-card">
+  <div class="table-card-hdr">
+    <span class="table-card-title">Registered Accounts</span>
+    <input class="table-search" type="text" id="tableSearch" placeholder="Search accounts…" autocomplete="off">
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:180px">Account Number</th>
+          <th>Account Name</th>
+          <th style="width:160px">Broker</th>
+          <th style="width:160px">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="accountsTbody">
+        {% if accounts %}
+          {% for acc in accounts %}
+          <tr data-row="1" data-account="{{ acc.account_number }}">
+            <td class="cell-id">{{ acc.account_number }}</td>
+            <td class="cell-name-td" data-value="{{ acc.account_name }}">
+              <span class="cell-name">{{ acc.account_name }}</span>
+            </td>
+            <td class="cell-broker-td" data-value="{{ acc.broker }}">
+              <span class="broker-badge broker-{{ acc.broker }}">{{ acc.broker }}</span>
+            </td>
+            <td class="cell-actions">
+              <div class="actions-cell">
+                <button class="btn-edit"   onclick="startEdit('{{ acc.account_number }}')">Edit</button>
+                <button class="btn-delete" onclick="confirmDelete('{{ acc.account_number }}', '{{ acc.account_name }}')">Delete</button>
+              </div>
+            </td>
+          </tr>
+          {% endfor %}
+        {% else %}
+          <tr id="emptyState">
+            <td colspan="4">
+              <div class="empty-state">No accounts registered yet. Add the first one below.</div>
+            </td>
+          </tr>
+        {% endif %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="form-card">
+  <div class="form-card-hdr">
+    <div class="form-card-icon">＋</div>
+    <span class="form-card-title">Add or Update Account</span>
+  </div>
+  <form id="addAccountForm">
+    <div class="form-body">
+      <div class="form-grid">
+        <div class="form-field">
+          <label class="form-label" for="account_number">Account Number</label>
+          <input class="form-input" type="text" id="account_number" name="account_number"
+            placeholder="e.g. U2089626 · 11303" required autocomplete="off"
+            style="text-transform:uppercase">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="account_name">Account Name</label>
+          <input class="form-input" type="text" id="account_name" name="account_name"
+            placeholder="e.g. Fernando M." required autocomplete="off">
+        </div>
+      </div>
+      <div class="form-field" style="max-width:200px">
+        <label class="form-label" for="broker">Broker</label>
+        <select class="form-select" id="broker" name="broker" required>
+          <option value="IB_PROD">IB_PROD</option>
+          <option value="IB_DEV">IB_DEV</option>
+          <option value="BYMA_PROD">BYMA_PROD</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-footer">
+      <button class="save-btn" type="submit" id="saveAccountBtn">
+        <div class="btn-spinner"></div>
+        <span>Save Account</span>
+      </button>
+    </div>
+  </form>
+</div>
+{% endblock %}
+
+{% block modals %}
 <div class="modal-overlay" id="deleteModal">
   <div class="modal">
     <div class="modal-hdr">
@@ -175,7 +128,4 @@
     </div>
   </div>
 </div>
-
-<script src="../static/js/manage_accounts.js"></script>
-</body>
-</html>
+{% endblock %}

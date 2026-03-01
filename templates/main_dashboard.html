@@ -1,109 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seeking Bias — Management Dashboard</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../static/css/main_dashboard.css">
+{% extends "base.html" %}
+{% set active_page = 'dashboard' %}
 
-</head>
-<body>
+{% block page_title %}Management Dashboard{% endblock %}
+{% block nav_subtitle %}Management Dashboard{% endblock %}
+{% block css_file %}main_dashboard.css{% endblock %}
+{% block js_file %}main_dashboard.js{% endblock %}
+{% block clock_id %}liveClock{% endblock %}
 
-<!-- TOP NAV -->
-<nav class="top-nav">
-  <a href="/" class="nav-brand">
-    <div class="nav-brand-b">B</div>
-    <div>
-      <div class="nav-brand-name">BIAS</div>
-      <div class="nav-brand-sub">Management Dashboard</div>
-    </div>
-  </a>
-  <div class="nav-right">
-    <div class="nav-clock" id="liveClock">--:--:--</div>
-    <a href="/logout" class="nav-logout">↩ Logout</a>
+{% block nav_action %}
+<a href="/logout" class="nav-logout">↩ Logout</a>
+{% endblock %}
+
+{% block main %}
+<div class="page-eyebrow">Seeking Bias · Fund Management</div>
+<h1 class="page-title">Management Dashboard</h1>
+<p class="page-sub">Macro intelligence · Leading indicators · Institutional flows</p>
+
+<div class="metrics-row">
+  <div class="metric-card blue">
+    <div class="m-label">OECD CLI · G7</div>
+    <div class="m-value" id="m-g7">—</div>
+    <div class="m-delta flat" id="d-g7">Loading…</div>
   </div>
-</nav>
-
-<div class="app-body">
-
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-    <div class="sb-label">Operations</div>
-    <a href="/accounts"          class="nav-item"><span class="nav-icon">🏦</span> Manage Accounts</a>
-    <a href="/routing_dashboard" class="nav-item"><span class="nav-icon">⚡</span> Routing Dashboard</a>
-
-    <div class="sb-label">Analytics</div>
-    <a href="/display_custom_etf"          class="nav-item"><span class="nav-icon">📦</span> Custom ETF</a>
-    <a href="/simulate_indicator_strategy" class="nav-item"><span class="nav-icon">📐</span> Simulate Strategy</a>
-    <a href="/display_series"              class="nav-item"><span class="nav-icon">📈</span> Display Series</a>
-
-    <div class="sb-label">Data</div>
-    <a href="/load_series"         class="nav-item"><span class="nav-icon">⬆️</span> Load Series</a>
-    <a href="/global_m2_indicator" class="nav-item"><span class="nav-icon">🌐</span> Global M2</a>
-    <a href="/data_downloader" class="nav-item"><span class="nav-icon">⬇️</span>ML Data Downloader</a>
-
-  </aside>
-
-  <!-- MAIN -->
-  <main class="main">
-
-    <div class="page-eyebrow">Seeking Bias · Fund Management</div>
-    <h1 class="page-title">Management Dashboard</h1>
-    <p class="page-sub">Macro intelligence · Leading indicators · Institutional flows</p>
-
-    <!-- METRICS ROW -->
-    <div class="metrics-row">
-      <div class="metric-card blue">
-        <div class="m-label">OECD CLI · G7</div>
-        <div class="m-value" id="m-g7">—</div>
-        <div class="m-delta flat" id="d-g7">Loading…</div>
-      </div>
-      <div class="metric-card green">
-        <div class="m-label">US CLI</div>
-        <div class="m-value" id="m-us">—</div>
-        <div class="m-delta flat" id="d-us">Loading…</div>
-      </div>
-      <div class="metric-card orange">
-        <div class="m-label">Germany CLI</div>
-        <div class="m-value" id="m-eu">—</div>
-        <div class="m-delta flat" id="d-eu">Loading…</div>
-      </div>
-      <div class="metric-card red">
-        <div class="m-label">China CLI</div>
-        <div class="m-value" id="m-cn">—</div>
-        <div class="m-delta flat" id="d-cn">Loading…</div>
-      </div>
-    </div>
-
-    <!-- QUICK LINKS -->
-    <div class="section-hdr">
-      <span class="section-title">Quick Access</span>
-    </div>
-    <div class="quick-grid">
-      <a href="/routing_dashboard"           class="quick-link"><span class="ql-icon">⚡</span><div><div class="ql-label">Routing Dashboard</div><div class="ql-sub">Live order routing</div></div><span class="ql-arrow">→</span></a>
-      <a href="/simulate_indicator_strategy" class="quick-link"><span class="ql-icon">📐</span><div><div class="ql-label">Simulate Strategy</div><div class="ql-sub">Backtest indicator signals</div></div><span class="ql-arrow">→</span></a>
-      <a href="/global_m2_indicator"         class="quick-link"><span class="ql-icon">🌐</span><div><div class="ql-label">Global M2</div><div class="ql-sub">Money supply indicator</div></div><span class="ql-arrow">→</span></a>
-      <a href="/display_custom_etf"          class="quick-link"><span class="ql-icon">📦</span><div><div class="ql-label">Custom ETF</div><div class="ql-sub">Portfolio construction</div></div><span class="ql-arrow">→</span></a>
-    </div>
-
-    <hr class="divider">
-
-    <!-- LEI SECTION -->
-    <div class="section-hdr">
-      <span class="section-title">Leading Economic Indicators</span>
-      <span class="section-meta">OECD CLI · 6–9 month lead · Source: FRED</span>
-    </div>
-
-    <!-- Cards built dynamically by JS -->
-    <div class="lei-grid" id="leiGrid"></div>
-
-  </main>
+  <div class="metric-card green">
+    <div class="m-label">US CLI</div>
+    <div class="m-value" id="m-us">—</div>
+    <div class="m-delta flat" id="d-us">Loading…</div>
+  </div>
+  <div class="metric-card orange">
+    <div class="m-label">Germany CLI</div>
+    <div class="m-value" id="m-eu">—</div>
+    <div class="m-delta flat" id="d-eu">Loading…</div>
+  </div>
+  <div class="metric-card red">
+    <div class="m-label">China CLI</div>
+    <div class="m-value" id="m-cn">—</div>
+    <div class="m-delta flat" id="d-cn">Loading…</div>
+  </div>
 </div>
 
-<!-- ADD LEI MODAL — updated fields -->
+<div class="section-hdr">
+  <span class="section-title">Quick Access</span>
+</div>
+<div class="quick-grid">
+  <a href="/routing_dashboard"           class="quick-link"><span class="ql-icon">⚡</span><div><div class="ql-label">Routing Dashboard</div><div class="ql-sub">Live order routing</div></div><span class="ql-arrow">→</span></a>
+  <a href="/simulate_indicator_strategy" class="quick-link"><span class="ql-icon">📐</span><div><div class="ql-label">Simulate Strategy</div><div class="ql-sub">Backtest indicator signals</div></div><span class="ql-arrow">→</span></a>
+  <a href="/global_m2_indicator"         class="quick-link"><span class="ql-icon">🌐</span><div><div class="ql-label">Global M2</div><div class="ql-sub">Money supply indicator</div></div><span class="ql-arrow">→</span></a>
+  <a href="/display_custom_etf"          class="quick-link"><span class="ql-icon">📦</span><div><div class="ql-label">Custom ETF</div><div class="ql-sub">Portfolio construction</div></div><span class="ql-arrow">→</span></a>
+</div>
+
+<hr class="divider">
+
+<div class="section-hdr">
+  <span class="section-title">Leading Economic Indicators</span>
+  <span class="section-meta">OECD CLI · 6–9 month lead · Source: FRED</span>
+</div>
+<div class="lei-grid" id="leiGrid"></div>
+{% endblock %}
+
+{% block modals %}
 <div class="modal-overlay" id="addModal">
   <div class="modal">
     <div class="modal-hdr">
@@ -145,7 +100,4 @@
     </div>
   </div>
 </div>
-
-<script src="../static/js/main_dashboard.js"></script>
-</body>
-</html>
+{% endblock %}

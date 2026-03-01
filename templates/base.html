@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seeking Bias — {% block page_title %}{% endblock %}</title>
+
+  {# Per-page external scripts (Plotly, Chart.js, etc) — declared before CSS #}
+  {% block head_scripts %}{% endblock %}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/{% block css_file %}{% endblock %}">
+
+  {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+{# ── TOP NAV ────────────────────────────────────────────────────────── #}
+<nav class="top-nav">
+  <a href="/" class="nav-brand">
+    <div class="nav-brand-b">B</div>
+    <div>
+      <div class="nav-brand-name">BIAS</div>
+      <div class="nav-brand-sub">{% block nav_subtitle %}{% endblock %}</div>
+    </div>
+  </a>
+  <div class="nav-right">
+    <div class="nav-clock" id="{% block clock_id %}navClock{% endblock %}">--:--:--</div>
+    {% block nav_action %}<a href="/" class="nav-back">← Dashboard</a>{% endblock %}
+  </div>
+</nav>
+
+<div class="app-body">
+
+  {# ── SIDEBAR ─────────────────────────────────────────────────────────
+     Set  {% set active_page = 'key' %}  in each child template.
+     Keys: accounts | routing | custom_etf | simulate | series |
+           load_series | global_m2 | data_downloader
+  ── #}
+  <aside class="sidebar">
+
+    <div class="sb-label">Operations</div>
+    <a href="/accounts"          class="nav-item {% if active_page == 'accounts' %}active{% endif %}">
+      <span class="nav-icon">🏦</span> Manage Accounts
+    </a>
+    <a href="/routing_dashboard" class="nav-item {% if active_page == 'routing' %}active{% endif %}">
+      <span class="nav-icon">⚡</span> Routing Dashboard
+    </a>
+
+    <div class="sb-label">Analytics</div>
+    <a href="/display_custom_etf"          class="nav-item {% if active_page == 'custom_etf' %}active{% endif %}">
+      <span class="nav-icon">📦</span> Custom ETF
+    </a>
+    <a href="/simulate_indicator_strategy" class="nav-item {% if active_page == 'simulate' %}active{% endif %}">
+      <span class="nav-icon">📐</span> Simulate Strategy
+    </a>
+    <a href="/display_series"              class="nav-item {% if active_page == 'series' %}active{% endif %}">
+      <span class="nav-icon">📈</span> Display Series
+    </a>
+
+    <div class="sb-label">Data</div>
+    <a href="/load_series"         class="nav-item {% if active_page == 'load_series' %}active{% endif %}">
+      <span class="nav-icon">⬆️</span> Load Series
+    </a>
+    <a href="/global_m2_indicator" class="nav-item {% if active_page == 'global_m2' %}active{% endif %}">
+      <span class="nav-icon">🌐</span> Global M2
+    </a>
+    <a href="/data_downloader"     class="nav-item {% if active_page == 'data_downloader' %}active{% endif %}">
+      <span class="nav-icon">📡</span> Data Downloader
+    </a>
+
+    {# Hook for pages that need extra sidebar content (e.g. order routing connections) #}
+    {% block sidebar_extra %}{% endblock %}
+
+  </aside>
+
+  {# ── MAIN CONTENT ─────────────────────────────────────────────────── #}
+  <main class="main">
+    {% block main %}{% endblock %}
+  </main>
+
+</div>
+
+{# ── MODALS (outside app-body, per page) ─────────────────────────── #}
+{% block modals %}{% endblock %}
+
+{# ── PAGE JS ──────────────────────────────────────────────────────── #}
+<script src="../static/js/{% block js_file %}{% endblock %}"></script>
+{% block extra_js %}{% endblock %}
+
+</body>
+</html>
