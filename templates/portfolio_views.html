@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% set active_page = 'portfolio_views' %}
+
+{% block page_title %}Portfolio Views{% endblock %}
+{% block nav_subtitle %}Portfolio Views{% endblock %}
+{% block css_file %}portfolio_views.css{% endblock %}
+{% block js_file %}portfolio_views.js{% endblock %}
+
+{% block main %}
+<div class="page-hdr">
+  <div>
+    <div class="page-eyebrow">Operations · Accounts</div>
+    <div class="page-title">Portfolio Views</div>
+  </div>
+  <span class="account-count-badge" id="accountCountBadge">
+    {{ accounts | length }} account{{ 's' if accounts | length != 1 else '' }}
+  </span>
+</div>
+
+{# ── ACCOUNT SELECTOR ─────────────────────────────────────────────────── #}
+<div class="selector-card">
+  <div class="selector-card-hdr">
+    <span class="table-card-title">Select Account</span>
+    <input class="table-search" type="text" id="accountSearch"
+           placeholder="Search accounts…" autocomplete="off">
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:180px">Account Number</th>
+          <th>Account Name</th>
+          <th style="width:140px">Broker</th>
+          <th style="width:120px">Action</th>
+        </tr>
+      </thead>
+      <tbody id="accountsTbody">
+        {% if accounts %}
+          {% for acc in accounts %}
+          <tr data-account-id="{{ acc.id }}"
+              data-broker="{{ acc.broker }}"
+              data-account-number="{{ acc.account_number }}"
+              data-account-name="{{ acc.account_name }}">
+            <td class="cell-id">{{ acc.account_number }}</td>
+            <td class="cell-name">{{ acc.account_name }}</td>
+            <td>
+              <span class="broker-badge broker-{{ acc.broker }}">{{ acc.broker }}</span>
+            </td>
+            <td>
+              <button class="btn-view"
+                      onclick="loadPortfolio({{ acc.id }}, '{{ acc.account_number }}', '{{ acc.account_name }}', '{{ acc.broker }}')">
+                View Portfolio
+              </button>
+            </td>
+          </tr>
+          {% endfor %}
+        {% else %}
+          <tr>
+            <td colspan="4">
+              <div class="empty-state">No accounts registered yet.</div>
+            </td>
+          </tr>
+        {% endif %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{# ── PORTFOLIO PANEL ──────────────────────────────────────────────────── #}
+<div class="portfolio-panel" id="portfolioPanel" style="display:none">
+
+  <div class="portfolio-hdr">
+    <div class="portfolio-hdr-left">
+      <div class="portfolio-eyebrow" id="portfolioBrokerBadge">—</div>
+      <div class="portfolio-title" id="portfolioTitle">—</div>
+      <div class="portfolio-sub" id="portfolioSubtitle">—</div>
+    </div>
+    <div class="portfolio-hdr-right">
+      <div class="portfolio-stat-box" id="statTotalValue">
+        <div class="stat-label">Total Amount</div>
+        <div class="stat-value" id="statTotalValueVal">—</div>
+      </div>
+      <div class="portfolio-stat-box" id="statPositions">
+        <div class="stat-label">Positions</div>
+        <div class="stat-value" id="statPositionsVal">—</div>
+      </div>
+      <button class="btn-refresh" id="refreshBtn" onclick="refreshPortfolio()">↻ Refresh</button>
+    </div>
+  </div>
+
+  {# Loading state #}
+  <div id="portfolioLoading" class="portfolio-loading" style="display:none">
+    <div class="loading-spinner"></div>
+    <span>Fetching holdings…</span>
+  </div>
+
+  {# Error state #}
+  <div id="portfolioError" class="portfolio-error" style="display:none">
+    <div class="error-icon">⚠</div>
+    <div class="error-msg" id="portfolioErrorMsg">—</div>
+  </div>
+
+  {# Not implemented state #}
+  <div id="portfolioNotImpl" class="portfolio-not-impl" style="display:none">
+    <div class="not-impl-icon">🚧</div>
+    <div class="not-impl-title">Not implemented</div>
+    <div class="not-impl-sub" id="portfolioNotImplBroker">Broker integration not available yet.</div>
+  </div>
+
+  {# Holdings grid #}
+  <div class="table-card" id="holdingsCard" style="display:none">
+    <div class="table-card-hdr">
+      <span class="table-card-title">Holdings</span>
+      <input class="table-search" type="text" id="holdingsSearch"
+             placeholder="Search symbol…" autocomplete="off">
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:100px">Symbol</th>
+            <th>Name</th>
+            <th style="width:120px; text-align:right">Qty</th>
+            <th style="width:160px; text-align:right">Purchase Price</th>
+            <th style="width:180px; text-align:right">Purchase Amount</th>
+          </tr>
+        </thead>
+        <tbody id="holdingsTbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

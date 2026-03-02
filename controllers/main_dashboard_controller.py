@@ -15,6 +15,7 @@ from controllers.display_series_controller import DisplaySeriesController
 from controllers.download_jobs_controller import DataDownloaderController
 from controllers.global_m2_indicator_controller import GlobalM2IndicatorController
 from controllers.load_series_controller import LoadSeriesController
+from controllers.portfolio_views_controller import PortfolioViewController
 from controllers.routing_dashboard_controller import RoutingDashboardController
 from controllers.simulate_indicator_strategy_controller import SimulateIndicatorStrategy
 from POC.stripe_ACH_POC_controller import StripeAchDemoController
@@ -22,6 +23,7 @@ from POC.stripe_USDC_POC_controller import StripeUSDCDemoController
 from controllers.simulate_model_controller import SimulateModelController
 from data_access_layer.account_data_manager import AccountDataManager
 from data_access_layer.account_manager import AccountManager
+from data_access_layer.ib_portfolio_manager import IBPortfolioManager
 from data_access_layer.user_manager import UserManager
 from framework.common.logger.message_type import MessageType
 from fastapi.responses import HTMLResponse
@@ -46,6 +48,11 @@ class MainDashboardController:
         fund_mgmt_dashboard_cs = config_settings["fund_mgmt_dashboard_cs"]
         secret_key = "my_super_secret"
 
+        #managers
+        account_mgr  = AccountManager(fund_mgmt_dashboard_cs)
+        account_data_mgr =AccountDataManager(fund_mgmt_dashboard_cs)
+        ib_portfolio_manager = IBPortfolioManager(fund_mgmt_dashboard_cs)
+
         self.user_manager = UserManager(fund_mgmt_dashboard_cs, secret_key)
 
         self.routing_dashboard = RoutingDashboardController(logger, ib_prod_ws, primary_prod_ws, ib_dev_ws, fund_mgmt_dashboard_cs)
@@ -63,7 +70,7 @@ class MainDashboardController:
         self.display_series_controller = DisplaySeriesController(config_settings, logger)
         self.app.include_router(self.display_series_controller.router, prefix="/display_series")
 
-        self.account_controller = AccountController(AccountManager(fund_mgmt_dashboard_cs),AccountDataManager(fund_mgmt_dashboard_cs))
+        self.account_controller = AccountController(account_mgr,account_data_mgr)
         self.app.include_router(self.account_controller.router)
 
         self.stripe_ACH_POC_controller = StripeAchDemoController(config_settings, logger)
@@ -80,6 +87,10 @@ class MainDashboardController:
 
         self.model_runner_controller = SimulateModelController(config_settings, logger)
         self.app.include_router(self.model_runner_controller.router, prefix="/simulate_model")
+
+        portfolio_view_controller = PortfolioViewController(account_manager=account_mgr,  account_data_manager=account_data_mgr,
+                                                            ib_portfolio_manager=ib_portfolio_manager)
+        self.app.include_router(portfolio_view_controller.router)
 
         # ── FRED proxy router ──
         self.app.include_router(self._build_fred_router(), prefix="/api")
