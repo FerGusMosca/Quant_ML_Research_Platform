@@ -433,6 +433,23 @@ function renderArrows(container, signals) {
   }).join('');
 }
 
+function safeCopy(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    return navigator.clipboard.writeText(text);
+  } else {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    return Promise.resolve();
+  }
+}
+
 function copySignal() {
   if (!lastResult) return;
   const s      = lastResult.summary;
@@ -443,7 +460,7 @@ function copySignal() {
   const pills  = [...arrows.querySelectorAll('.signal-pill')].map(el => el.textContent.trim());
   const text   = pills.join(' → ');
 
-  navigator.clipboard.writeText(text).then(() => {
+  safeCopy(text).then(() => {
     const copied = document.getElementById('signalCopied');
     copied.style.display = 'inline';
     setTimeout(() => { copied.style.display = 'none'; }, 2000);
