@@ -1,0 +1,65 @@
+{
+  "models": {
+
+    "models/xgb_model_XLK_2010_2024_M4.pkl": {
+      "renaming_fields": [
+        { "new": "VIX", "rename_to": "VIXCLS" }
+      ]
+    },
+
+    "models/xgb_model_XLK_2010_2018_M5.pkl": {
+      "renaming_fields": [
+        { "new": "VIX", "rename_to": "VIXCLS" }
+      ]
+    },
+
+    "models/xgb_model_XLK_2010_2024_M5.pkl": {
+      "renaming_fields": [
+        { "new": "VIX", "rename_to": "VIXCLS" }
+      ]
+    },
+
+    "models/xgb_model_XLK_2010_2024_M7.pkl": {
+      "renaming_fields": [
+        { "new": "VIX", "rename_to": "VIXCLS" }
+      ]
+    },
+
+    "models/xgb_model_XLY_2010_2024_M4.pkl": {
+      "renaming_fields": [
+        { "new": "VIX", "rename_to": "VIXCLS" }
+      ]
+    },
+
+    "models/xgb_model_XLY_2010_2024_M5.pkl": {
+      "renaming_fields": [
+        { "new": "VIX", "rename_to": "VIXCLS" }
+      ]
+    },
+
+    "models/xgb_model_XLF_2009_2024_M4.pkl": {
+      "renaming_fields": [
+        { "new": "VIX", "rename_to": "VIXCLS" }
+      ]
+    },
+
+    "models/xgb_model_XLF_2009_2024_M5.pkl": {
+      "renaming_fields": [
+        { "new": "VIX", "rename_to": "VIXCLS" }
+      ]
+    },
+
+    "models/xgb_model_XLI_2010_2024_M4.pkl": {
+      "renaming_fields": [
+        { "new": "VIX", "rename_to": "VIXCLS" }
+      ]
+    },
+
+    "models/xgb_model_XLI_2010_2024_M5.pkl": {
+      "renaming_fields": [
+        { "new": "VIX", "rename_to": "VIXCLS" }
+      ]
+    }
+
+  }
+}

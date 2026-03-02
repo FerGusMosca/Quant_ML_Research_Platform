@@ -1,3 +1,5 @@
+import json
+import os
 from datetime import datetime
 from joblib import load
 from sklearn.model_selection import train_test_split
@@ -17,6 +19,7 @@ from common.enums.machine_learning_algos import MachineLearningAlgos
 from common.util.financial_calculations.date_handler import DateHandler
 from common.util.pandas_dataframes.dataframe_filler import DataframeFiller
 from common.util.std_in_out.file_writer import FileWriter
+from common.util.std_in_out.root_locator import RootLocator
 from framework.common.logger.message_type import MessageType
 # K Nearest Neighbors classification algorithm
 from sklearn.neighbors import KNeighborsClassifier
@@ -131,6 +134,55 @@ class MLModelAnalyzer():
         # After the concat --> THe X will have all its numeric column values properly fit
         X=X[all_colls]
         return X
+
+    def __apply_feature_renaming_if_needed(self, df: pd.DataFrame, model_to_use: str) -> pd.DataFrame:
+        """
+        Apply feature renaming based on feature_renaming.json for a given model.
+        """
+
+        try:
+            root = RootLocator.get_root()
+            json_path = os.path.join(
+                root,
+                "static",
+                "models",
+                "feature_renaming.json"
+            )
+
+            if not os.path.exists(json_path):
+                return df
+
+            with open(json_path, "r") as f:
+                config = json.load(f)
+
+            model_cfg = config.get("models", {}).get(model_to_use)
+
+            if not model_cfg:
+                return df
+
+            renaming_fields = model_cfg.get("renaming_fields", [])
+
+            rename_map = {
+                item["new"]: item["rename_to"]
+                for item in renaming_fields
+                if item["new"] in df.columns
+            }
+
+            if rename_map:
+                self.logger.do_log(
+                    f"Applying feature renaming for model {model_to_use}: {rename_map}",
+                    MessageType.INFO
+                )
+                df = df.rename(columns=rename_map)
+
+            return df
+
+        except Exception as e:
+            self.logger.do_log(
+                f"Feature renaming failed for model {model_to_use}: {str(e)}",
+                MessageType.ERROR
+            )
+            return df
 
     def __clean_NaN__(self,X_train,X_test,y_train,y_test):
         X_train = X_train.fillna(method='ffill')  # we remove NaN from Y --> prev value
@@ -528,6 +580,8 @@ class MLModelAnalyzer():
             Tuple[pd.DataFrame, pd.DataFrame]: (result_df, test_features_df)
         """
         xgb_creator = XGBoostModelCreator()
+
+        features_df=self.__apply_feature_renaming_if_needed(features_df,model_filename)
 
         lower_percentile_limit = float(n_algo_param_dict.get("lower_percentile_limit", 0.6))
         make_stationary = n_algo_param_dict.get("make_stationary", True)
