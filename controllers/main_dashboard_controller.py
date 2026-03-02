@@ -20,6 +20,7 @@ from controllers.simulate_indicator_strategy_controller import SimulateIndicator
 from POC.stripe_ACH_POC_controller import StripeAchDemoController
 from POC.stripe_USDC_POC_controller import StripeUSDCDemoController
 from controllers.simulate_model_controller import SimulateModelController
+from data_access_layer.account_data_manager import AccountDataManager
 from data_access_layer.account_manager import AccountManager
 from data_access_layer.user_manager import UserManager
 from framework.common.logger.message_type import MessageType
@@ -62,7 +63,7 @@ class MainDashboardController:
         self.display_series_controller = DisplaySeriesController(config_settings, logger)
         self.app.include_router(self.display_series_controller.router, prefix="/display_series")
 
-        self.account_controller = AccountController(AccountManager(fund_mgmt_dashboard_cs))
+        self.account_controller = AccountController(AccountManager(fund_mgmt_dashboard_cs),AccountDataManager(fund_mgmt_dashboard_cs))
         self.app.include_router(self.account_controller.router)
 
         self.stripe_ACH_POC_controller = StripeAchDemoController(config_settings, logger)

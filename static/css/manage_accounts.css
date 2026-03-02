@@ -160,6 +160,84 @@ tbody tr { transition: background 0.1s; }
 tbody tr:hover td { background: rgba(255,255,255,0.02); }
 tbody tr.editing td { background: rgba(31,111,235,0.04); }
 
+/* ══ CHEVRON + ACCOUNT ROW ══ */
+.account-row { cursor: pointer; }
+.account-row:hover td { background: rgba(31,111,235,0.03); }
+.account-row.expanded td { background: rgba(31,111,235,0.04); }
+
+.cell-chevron { padding: 0 4px 0 12px !important; width: 28px; }
+.chevron {
+  display: inline-block;
+  font-size: 14px; color: var(--faint);
+  transition: transform 0.2s, color 0.15s;
+  line-height: 1; user-select: none;
+}
+.chevron.open { transform: rotate(90deg); color: var(--blue-hi); }
+
+/* Data count badge in table cell */
+.data-count-badge {
+  font-family: var(--mono); font-size: 9px;
+  color: var(--dim);
+  background: var(--bg); border: 1px solid var(--border2);
+  padding: 2px 8px; border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* ══ DATA PANEL (accordion) ══ */
+.data-panel-row > td { padding: 0 !important; border-bottom: 1px solid var(--border); }
+.data-panel-td { background: var(--bg) !important; }
+
+.data-panel {
+  padding: 12px 20px 14px 44px;
+  border-top: 1px solid var(--border2);
+}
+
+.data-panel-loading {
+  font-family: var(--mono); font-size: 11px; color: var(--faint);
+  padding: 8px 0;
+}
+
+/* KV inner table */
+.data-kv-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+.data-kv-table thead th {
+  font-family: var(--mono); font-size: 9px; color: var(--faint);
+  text-transform: uppercase; letter-spacing: 0.1em;
+  background: transparent;
+  border-bottom: 1px solid var(--border2);
+  padding: 5px 10px;
+}
+.data-kv-table tbody td {
+  padding: 7px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+.data-kv-table tbody tr:last-child td { border-bottom: none; }
+.data-kv-table tbody tr:hover td { background: rgba(255,255,255,0.015); }
+
+.kv-key {
+  font-family: var(--mono); font-size: 11px;
+  font-weight: 600; color: var(--blue-hi);
+}
+.kv-val {
+  font-family: var(--mono); font-size: 11px; color: var(--text);
+}
+.kv-actions .actions-cell { gap: 4px; }
+
+/* Quick-add row */
+.kv-add-row {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 10px 0;
+  border-top: 1px dashed var(--border2);
+  margin-top: 6px;
+}
+.kv-add-row .kv-add-key { width: 180px; flex-shrink: 0; }
+.kv-add-row .kv-add-val { flex: 1; }
+.kv-add-btn { flex-shrink: 0; }
+
 /* Cell types */
 .cell-id {
   font-family: var(--mono); font-size: 11px; font-weight: 600;
@@ -175,7 +253,7 @@ tbody tr.editing td { background: rgba(31,111,235,0.04); }
 .broker-IB_DEV    { background: rgba(210,153,34,0.12); color: var(--orange);   border: 1px solid rgba(210,153,34,0.2); }
 .broker-BYMA_PROD { background: rgba(63,185,80,0.12);  color: var(--green);    border: 1px solid rgba(63,185,80,0.2); }
 
-/* Inline edit row */
+/* Inline edit */
 .inline-input {
   padding: 5px 9px;
   background: var(--elevated); border: 1px solid var(--border2);
@@ -287,7 +365,7 @@ tbody tr.editing td { background: rgba(31,111,235,0.04); }
 .save-btn.loading .btn-spinner { display: block; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* ══ DELETE MODAL ══ */
+/* ══ DELETE MODALS ══ */
 .modal-overlay {
   position: fixed; inset: 0; background: rgba(4,6,10,0.88);
   display: flex; align-items: center; justify-content: center;

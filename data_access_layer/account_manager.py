@@ -2,9 +2,10 @@
 import pyodbc
 from business_entities.account import Account
 
-_ACCOUNT_NUMBER_IDX = 0
-_ACCOUNT_NAME_IDX = 1
-_BROKER_IDX = 2
+_ACCOUNT_ID_IDX = 0
+_ACCOUNT_NUMBER_IDX = 1
+_ACCOUNT_NAME_IDX = 2
+_BROKER_IDX = 3
 
 class AccountManager:
 
@@ -17,6 +18,7 @@ class AccountManager:
             cursor.execute("{CALL GetAccounts}")
             for row in cursor:
                 account = Account(
+                    id=int(row[_ACCOUNT_ID_IDX]),
                     account_number=str(row[_ACCOUNT_NUMBER_IDX]),
                     account_name=str(row[_ACCOUNT_NAME_IDX]),
                     broker=str(row[_BROKER_IDX])
@@ -30,7 +32,6 @@ class AccountManager:
             params = (account.account_number, account.account_name, account.broker)
             cursor.execute("{CALL PersistAccount (?, ?, ?)}", params)
             self.connection.commit()
-
 
     def delete_account(self, account_number: str):
         """Calls the stored procedure to delete an account."""

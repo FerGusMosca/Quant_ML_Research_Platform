@@ -26,16 +26,22 @@
     <table>
       <thead>
         <tr>
+          <th style="width:28px"></th>
           <th style="width:180px">Account Number</th>
           <th>Account Name</th>
           <th style="width:160px">Broker</th>
+          <th style="width:90px">Data</th>
           <th style="width:160px">Actions</th>
         </tr>
       </thead>
       <tbody id="accountsTbody">
         {% if accounts %}
           {% for acc in accounts %}
-          <tr data-row="1" data-account="{{ acc.account_number }}">
+          <tr data-row="1" data-account="{{ acc.account_number }}" data-account-id="{{ acc.id }}"
+              class="account-row" onclick="toggleDataPanel(this)" title="Click to expand data">
+            <td class="cell-chevron">
+              <span class="chevron">›</span>
+            </td>
             <td class="cell-id">{{ acc.account_number }}</td>
             <td class="cell-name-td" data-value="{{ acc.account_name }}">
               <span class="cell-name">{{ acc.account_name }}</span>
@@ -43,17 +49,28 @@
             <td class="cell-broker-td" data-value="{{ acc.broker }}">
               <span class="broker-badge broker-{{ acc.broker }}">{{ acc.broker }}</span>
             </td>
-            <td class="cell-actions">
+            <td class="cell-data-count" id="datacount-{{ acc.id }}">
+              <span class="data-count-badge">—</span>
+            </td>
+            <td class="cell-actions" onclick="event.stopPropagation()">
               <div class="actions-cell">
                 <button class="btn-edit"   onclick="startEdit('{{ acc.account_number }}')">Edit</button>
                 <button class="btn-delete" onclick="confirmDelete('{{ acc.account_number }}', '{{ acc.account_name }}')">Delete</button>
               </div>
             </td>
           </tr>
+          <!-- Accordion data panel -->
+          <tr class="data-panel-row" id="panel-{{ acc.id }}" style="display:none">
+            <td colspan="6" class="data-panel-td">
+              <div class="data-panel" id="data-panel-inner-{{ acc.id }}">
+                <div class="data-panel-loading">Loading…</div>
+              </div>
+            </td>
+          </tr>
           {% endfor %}
         {% else %}
           <tr id="emptyState">
-            <td colspan="4">
+            <td colspan="6">
               <div class="empty-state">No accounts registered yet. Add the first one below.</div>
             </td>
           </tr>
@@ -103,6 +120,30 @@
 {% endblock %}
 
 {% block modals %}
+<!-- Delete modal for key-value entries -->
+<div class="modal-overlay" id="deleteDataModal">
+  <div class="modal">
+    <div class="modal-hdr">
+      <span class="modal-hdr-title">Delete Entry</span>
+      <button class="modal-x" onclick="closeDataDeleteModal()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-del-icon">🗑</div>
+      <div class="modal-del-title">Are you sure?</div>
+      <div class="modal-del-sub">
+        You're about to delete key<br>
+        <span class="modal-del-badge" id="delDataKey">—</span>
+      </div>
+      <div style="font-size:11px;color:var(--orange);background:rgba(210,153,34,0.07);border:1px solid rgba(210,153,34,0.15);border-radius:7px;padding:8px 12px;margin-top:4px">
+        ⚠ This action cannot be undone.
+      </div>
+    </div>
+    <div class="modal-ftr">
+      <button class="btn btn-ghost" onclick="closeDataDeleteModal()">Cancel</button>
+      <button class="btn btn-delete-confirm" onclick="executeDataDelete()">Delete ✕</button>
+    </div>
+  </div>
+</div>
 <div class="modal-overlay" id="deleteModal">
   <div class="modal">
     <div class="modal-hdr">
