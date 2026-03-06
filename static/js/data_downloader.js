@@ -29,7 +29,6 @@ function switchTab(name) {
 
 // ── Boot ──────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
-  // Set global date defaults
   document.getElementById('globalDFrom').value = calcDefaultFrom();
   document.getElementById('globalDTo').value   = todayStr();
   loadGroups();
@@ -50,7 +49,6 @@ function applyGlobalDates() {
   const dToEl = document.getElementById('globalDTo');
   const dTo   = dToEl.disabled ? null : dToEl.value || null;
 
-  // Push to all rendered group date inputs
   document.querySelectorAll('.group-card').forEach(card => {
     const gid = card.dataset.groupId;
     if (!gid) return;
@@ -82,24 +80,27 @@ async function loadGroups() {
   try {
     const groups = await apiFetch('/data_downloader/groups');
     container.innerHTML = '';
-    groups.forEach(g => container.appendChild(buildGroupCard(g)));
+    groups.forEach((g, idx) => container.appendChild(buildGroupCard(g, idx, groups.length)));
   } catch (e) {
     container.innerHTML = `<div style="color:var(--red);padding:16px;font-family:var(--mono);font-size:11px">❌ ${e.message}</div>`;
   }
 }
 
-function buildGroupCard(group) {
+function buildGroupCard(group, idx, total) {
   const card = document.createElement('div');
-  card.className   = 'group-card';
+  card.className       = 'group-card';
   card.dataset.groupId = group.group_id;
   card.dataset.jobType = group.job_type;
 
   const badgeClass = group.job_type === 'SPREAD' ? 'badge-spread' : 'badge-download';
   const badgeLabel = group.job_type === 'SPREAD' ? '⇄ Spread' : '↓ Download';
 
-  // Inherit from global date bar
   const dFrom = document.getElementById('globalDFrom')?.value || calcDefaultFrom();
   const today = todayStr();
+
+  // #3: disable up/down at boundaries
+  const upDisabled   = idx === 0         ? 'disabled' : '';
+  const downDisabled = idx === total - 1 ? 'disabled' : '';
 
   card.innerHTML = `
     <div class="group-hdr" onclick="toggleGroup(${group.group_id})">
@@ -107,6 +108,7 @@ function buildGroupCard(group) {
       <span class="group-name">${group.group_name}</span>
       <span class="group-badge ${badgeClass}">${badgeLabel}</span>
       <span class="group-count" id="groupCount-${group.group_id}">${group.job_count} jobs</span>
+
       <span class="group-dates" onclick="event.stopPropagation()">
         <span class="group-date-label">From</span>
         <input class="date-mini" type="date" id="gDFrom-${group.group_id}" value="${dFrom}">
@@ -115,6 +117,15 @@ function buildGroupCard(group) {
           onchange="toggleGroupDTo(${group.group_id})">
         <input class="date-mini" type="date" id="gDTo-${group.group_id}" value="${today}" disabled>
       </span>
+
+      <!-- #3: reorder buttons -->
+      <span class="group-mgmt" onclick="event.stopPropagation()">
+        <button class="btn-group-order" title="Move up"   onclick="reorderGroup(${group.group_id},'up')"   ${upDisabled}>▲</button>
+        <button class="btn-group-order" title="Move down" onclick="reorderGroup(${group.group_id},'down')" ${downDisabled}>▼</button>
+        <button class="btn-group-edit"   title="Edit group"   onclick="openEditGroupModal(${group.group_id})">✏</button>
+        <button class="btn-group-delete" title="Delete group" onclick="deleteGroup(${group.group_id}, '${group.group_name}')">🗑</button>
+      </span>
+
       <button class="btn-add-job"
         onclick="event.stopPropagation(); openAddJobModal(${group.group_id}, '${group.job_type}')">
         + Add Job
@@ -194,6 +205,16 @@ function buildJobRow(job) {
     ? `<span class="td-output">${job.output_symbol}</span>`
     : `<span style="color:var(--faint)">—</span>`;
 
+  const isManual = job.vendor === 'MANUAL_VARIABLE';
+
+  // For MANUAL: show "Edit Data" button instead of Run
+  const actionCell = isManual
+    ? `<button class="btn-manual" onclick="openManualModal('${job.symbol}')">✎ Edit Data</button>`
+    : `<button class="btn-run" id="btnRun-${job.job_id}"
+         onclick="runJob(${job.job_id}, ${job.group_id})">
+         <div class="btn-spin"></div><span>Run</span>
+       </button>`;
+
   tr.innerHTML = `
     <td class="td-symbol">${job.symbol}</td>
     <td class="td-date">${job.exchange || '—'}</td>
@@ -203,10 +224,7 @@ function buildJobRow(job) {
     <td id="jobStatus-${job.job_id}">${mkStatusCell(job.last_status)}</td>
     <td>
       <div style="display:flex;gap:4px;align-items:center">
-        <button class="btn-run" id="btnRun-${job.job_id}"
-          onclick="runJob(${job.job_id}, ${job.group_id})">
-          <div class="btn-spin"></div><span>Run</span>
-        </button>
+        ${actionCell}
         <button class="btn-icon edit" title="Edit"
           onclick="openEditJobModal(${job.job_id}, ${job.group_id})">✏</button>
         <button class="btn-icon delete" title="Delete"
@@ -318,7 +336,7 @@ function mkStatusCell(status) {
 }
 
 // ════════════════════════════════════════════════════════
-// CRUD  (#1)
+// CRUD JOBS
 // ════════════════════════════════════════════════════════
 
 let _modalGroupId   = null;
@@ -359,7 +377,7 @@ function openAddJobModal(groupId, jobType) {
     document.getElementById('mOutputRow').style.display       = 'none';
     document.querySelectorAll('.vendor-btn').forEach(b => b.classList.remove('active'));
   }
-  openModal();
+  openModal('jobModal');
 }
 
 async function openEditJobModal(jobId, groupId) {
@@ -389,7 +407,6 @@ async function openEditJobModal(jobId, groupId) {
   document.getElementById('mDTo').disabled             = !job.d_to;
   document.getElementById('mError').textContent        = '';
 
-  // Vendor locked on edit
   document.getElementById('mVendorSelectRow').style.display = 'none';
   document.getElementById('mVendorBadgeRow').style.display  = '';
   setVendorBadge(job.vendor);
@@ -398,12 +415,12 @@ async function openEditJobModal(jobId, groupId) {
   document.getElementById('mExchangeRow').style.display = isSpr ? 'none' : '';
   document.getElementById('mOutputRow').style.display   = isSpr ? '' : 'none';
 
-  openModal();
+  openModal('jobModal');
 }
 
 function setAddVendor(v) {
   document.getElementById('mVendor').value = v;
-  document.querySelectorAll('.vendor-btn').forEach(b => b.classList.toggle('active', b.dataset.v === v));
+  document.querySelectorAll('.vendor-btn[data-v]').forEach(b => b.classList.toggle('active', b.dataset.v === v));
   document.getElementById('mExchangeRow').style.display = (v === 'FRED' || v === 'MANUAL_VARIABLE') ? 'none' : '';
 }
 
@@ -484,18 +501,140 @@ async function deleteJob(jobId, groupId, symbol) {
   } catch(e) { showFlash('error', e.message); }
 }
 
-function openModal() {
-  document.getElementById('modalBackdrop').classList.add('open');
-  document.getElementById('jobModal').classList.add('open');
+// ════════════════════════════════════════════════════════
+// CRUD GROUPS  (#2)
+// ════════════════════════════════════════════════════════
+
+let _editingGroupId = null;
+
+function openAddGroupModal() {
+  _editingGroupId = null;
+  document.getElementById('groupModalTitle').textContent = 'New Group';
+  document.getElementById('gmGroupId').value             = '';
+  document.getElementById('gmName').value                = '';
+  document.getElementById('gmOrder').value               = '999';
+  document.getElementById('gmError').textContent         = '';
+  setGroupJobType('DOWNLOAD');
+  openModal('groupModal');
 }
+
+async function openEditGroupModal(groupId) {
+  const groups = await apiFetch('/data_downloader/groups');
+  const grp    = groups.find(g => g.group_id === groupId);
+  if (!grp) { showFlash('error', 'Group not found'); return; }
+
+  _editingGroupId = groupId;
+  document.getElementById('groupModalTitle').textContent = `Edit Group — ${grp.group_name}`;
+  document.getElementById('gmGroupId').value             = groupId;
+  document.getElementById('gmName').value                = grp.group_name;
+  document.getElementById('gmOrder').value               = grp.display_order;
+  document.getElementById('gmError').textContent         = '';
+  setGroupJobType(grp.job_type);
+  openModal('groupModal');
+}
+
+function setGroupJobType(jt) {
+  document.getElementById('gmJobType').value = jt;
+  document.querySelectorAll('.vendor-btn[data-jt]').forEach(b =>
+    b.classList.toggle('active', b.dataset.jt === jt)
+  );
+}
+
+async function saveGroup() {
+  const btn  = document.getElementById('gmSaveBtn');
+  const err  = document.getElementById('gmError');
+  err.textContent = '';
+
+  const name    = document.getElementById('gmName').value.trim();
+  const jobType = document.getElementById('gmJobType').value;
+  const order   = parseInt(document.getElementById('gmOrder').value) || 999;
+  const groupId = document.getElementById('gmGroupId').value;
+
+  if (!name) { err.textContent = 'Group name is required'; return; }
+
+  btn.disabled = true;
+  try {
+    const isEdit   = !!groupId;
+    const endpoint = isEdit ? '/data_downloader/edit_group' : '/data_downloader/add_group';
+    const payload  = isEdit
+      ? { group_id: parseInt(groupId), group_name: name, job_type: jobType }
+      : { group_name: name, job_type: jobType, display_order: order };
+
+    const data = await apiFetch(endpoint, { method: 'POST', body: JSON.stringify(payload) });
+    if (!data.ok) { err.textContent = data.error || 'Save failed'; return; }
+
+    showFlash('success', isEdit ? 'Group updated' : 'Group created');
+    closeGroupModal();
+    _loadedGroups.clear();
+    await loadGroups();
+  } catch (e) {
+    err.textContent = e.message;
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+async function deleteGroup(groupId, groupName) {
+  if (!confirm(`Delete group "${groupName}"?\n\nOnly empty groups can be deleted.`)) return;
+  try {
+    const data = await apiFetch('/data_downloader/delete_group', {
+      method: 'POST', body: JSON.stringify({ group_id: groupId })
+    });
+    if (!data.ok) { showFlash('error', data.error || 'Delete failed'); return; }
+    showFlash('success', `Group "${groupName}" deleted`);
+    _loadedGroups.clear();
+    await loadGroups();
+  } catch(e) { showFlash('error', e.message); }
+}
+
+// ── #3: Reorder groups ────────────────────────────────────────────────────
+async function reorderGroup(groupId, direction) {
+  try {
+    const data = await apiFetch('/data_downloader/reorder_group', {
+      method: 'POST', body: JSON.stringify({ group_id: groupId, direction })
+    });
+    if (!data.ok) { showFlash('error', data.error || 'Reorder failed'); return; }
+    if (data.noop) return; // already at boundary
+    _loadedGroups.clear();
+    await loadGroups();
+  } catch(e) { showFlash('error', e.message); }
+}
+
+// ════════════════════════════════════════════════════════
+// MODAL HELPERS
+// ════════════════════════════════════════════════════════
+
+function openModal(id) {
+  document.getElementById('modalBackdrop').classList.add('open');
+  document.getElementById(id).classList.add('open');
+}
+
 function closeModal() {
   document.getElementById('modalBackdrop').classList.remove('open');
   document.getElementById('jobModal').classList.remove('open');
   _modalEditJobId = null;
 }
 
+function closeGroupModal() {
+  document.getElementById('modalBackdrop').classList.remove('open');
+  document.getElementById('groupModal').classList.remove('open');
+  _editingGroupId = null;
+}
+
+function closeManualModal() {
+  document.getElementById('modalBackdrop').classList.remove('open');
+  document.getElementById('manualModal').classList.remove('open');
+}
+
+function closeAllModals() {
+  // Called when clicking the backdrop — close whichever modal is open
+  closeModal();
+  closeGroupModal();
+  closeManualModal();
+}
+
 // ════════════════════════════════════════════════════════
-// TAB 2 — STATUS  (with last_close)
+// TAB 2 — STATUS
 // ════════════════════════════════════════════════════════
 
 let _allJobs   = [];
@@ -527,6 +666,12 @@ function renderStatusTable(jobs) {
     const vCl      = vendorClass(j.vendor);
     const candle   = _candleMap[j.output_symbol || j.symbol];
     const closeVal = candle?.last_close != null ? Number(candle.last_close).toFixed(4) : '—';
+    const isManual = j.vendor === 'MANUAL_VARIABLE';
+    const actionBtn = isManual
+      ? `<button class="btn-manual" onclick="openManualModal('${j.symbol}')">✎ Edit Data</button>`
+      : `<button class="btn-run" onclick="rerunJob(${j.job_id}, this)">
+           <div class="btn-spin"></div><span>Re-run</span>
+         </button>`;
     tr.innerHTML = `
       <td style="color:var(--blue-hi)">${j.group_name}</td>
       <td style="color:#E6EDF3;font-weight:500">${j.symbol}</td>
@@ -535,9 +680,7 @@ function renderStatusTable(jobs) {
       <td>${j.last_run_at ? j.last_run_at.slice(0,16) : '—'}</td>
       <td style="color:#E6EDF3">${closeVal}</td>
       <td>${mkStatusCell(j.last_status)}</td>
-      <td><button class="btn-run" onclick="rerunJob(${j.job_id}, this)">
-        <div class="btn-spin"></div><span>Re-run</span>
-      </button></td>`;
+      <td>${actionBtn}</td>`;
     tbody.appendChild(tr);
   });
 }
@@ -621,7 +764,7 @@ function renderHealthTable(data) {
     const symbol   = row.output_symbol || row.symbol;
     const closeVal = row.last_close != null ? Number(row.last_close).toFixed(4) : '—';
     const manualBtn = row.vendor === 'MANUAL_VARIABLE'
-      ? `<button class="btn-manual" onclick="openManualModal('${symbol}')">✎ Add Value</button>` : '';
+      ? `<button class="btn-manual" onclick="openManualModal('${symbol}')">✎ Edit Data</button>` : '';
     tr.innerHTML = `
       <td style="color:var(--blue-hi)">${row.group_name}</td>
       <td style="color:#E6EDF3;font-weight:500">${symbol}</td>
@@ -658,32 +801,51 @@ function filterHealth() {
   }));
 }
 
-async function openManualModal(symbol) {
-  document.getElementById('mmSymbol').value              = symbol;
-  document.getElementById('manualModalTitle').textContent = `Manual — ${symbol}`;
-  document.getElementById('mmDate').value                = todayStr();
-  document.getElementById('mmValue').value               = '';
-  document.getElementById('mmError').textContent         = '';
+// ════════════════════════════════════════════════════════
+// MANUAL VARIABLES MODAL  (#1)
+// ════════════════════════════════════════════════════════
 
-  const tbody = document.getElementById('mmTbody');
-  tbody.innerHTML = '<tr><td colspan="2" style="color:var(--dim);font-family:var(--mono);font-size:10px;padding:8px">Loading…</td></tr>';
-  document.getElementById('modalBackdrop').classList.add('open');
-  document.getElementById('manualModal').classList.add('open');
+async function openManualModal(symbol) {
+  document.getElementById('mmSymbol').value               = symbol;
+  document.getElementById('manualModalTitle').textContent = `Manual — ${symbol}`;
+  document.getElementById('mmDate').value                 = todayStr();
+  document.getElementById('mmValue').value                = '';
+  document.getElementById('mmError').textContent          = '';
+
+  // Set filter defaults: last 3 months
+  const threeMonthsAgo = new Date();
+  threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 3);
+  document.getElementById('mmTop').value        = '20';
+
+  openModal('manualModal');
+  await refreshManualCandles();
+}
+
+async function refreshManualCandles() {
+  const symbol = document.getElementById('mmSymbol').value;
+  const top    = document.getElementById('mmTop').value;
+  const tbody  = document.getElementById('mmTbody');
+
+  tbody.innerHTML = '<tr><td colspan="3" style="color:var(--dim);font-family:var(--mono);font-size:10px;padding:10px">Loading…</td></tr>';
 
   try {
-    const candles = await apiFetch(`/data_downloader/manual_candles?symbol=${encodeURIComponent(symbol)}`);
+    const candles = await apiFetch(`/data_downloader/manual_candles?symbol=${encodeURIComponent(symbol)}&top=${top}`);
     tbody.innerHTML = '';
     if (!candles.length) {
-      tbody.innerHTML = '<tr><td colspan="2" style="color:var(--faint);font-family:var(--mono);font-size:10px;padding:8px">No entries yet.</td></tr>';
-    } else {
-      candles.forEach(c => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `<td>${c.date}</td><td style="color:var(--green)">${Number(c.value).toFixed(4)}</td>`;
-        tbody.appendChild(tr);
-      });
+      tbody.innerHTML = '<tr><td colspan="3" style="color:var(--faint);font-family:var(--mono);font-size:10px;padding:10px">No entries found.</td></tr>';
+      return;
     }
+    candles.forEach(c => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${c.date}</td>
+        <td style="color:var(--green)">${Number(c.value).toFixed(4)}</td>
+        <td><button class="td-del-candle" title="Delete"
+          onclick="deleteManualCandle('${symbol}', '${c.date}', this)">🗑</button></td>`;
+      tbody.appendChild(tr);
+    });
   } catch (e) {
-    tbody.innerHTML = `<tr><td colspan="2" style="color:var(--red);font-family:var(--mono);font-size:10px">❌ ${e.message}</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan="3" style="color:var(--red);font-family:var(--mono);font-size:10px;padding:8px">❌ ${e.message}</td></tr>`;
   }
 }
 
@@ -699,14 +861,26 @@ async function saveManualCandle() {
     });
     if (!data.ok) { err.textContent = data.error || 'Save failed'; return; }
     showFlash('success', `${symbol} @ ${d} saved`);
-    closeManualModal();
-    await loadHealthTab();
+    document.getElementById('mmValue').value = '';
+    document.getElementById('mmDate').value  = todayStr();
+    err.textContent = '';
+    await refreshManualCandles();
+    // Also refresh health tab data in background
+    if (document.getElementById('tab-health').classList.contains('active')) loadHealthTab();
   } catch(e) { err.textContent = e.message; }
 }
 
-function closeManualModal() {
-  document.getElementById('modalBackdrop').classList.remove('open');
-  document.getElementById('manualModal').classList.remove('open');
+async function deleteManualCandle(symbol, date, btn) {
+  if (!confirm(`Delete ${symbol} @ ${date}?`)) return;
+  btn.disabled = true;
+  try {
+    const data = await apiFetch('/data_downloader/delete_manual_candle', {
+      method: 'POST', body: JSON.stringify({ symbol, date })
+    });
+    if (!data.ok) { showFlash('error', data.error || 'Delete failed'); return; }
+    showFlash('success', `Deleted ${symbol} @ ${date}`);
+    await refreshManualCandles();
+  } catch(e) { showFlash('error', e.message); btn.disabled = false; }
 }
 
 // ════════════════════════════════════════════════════════

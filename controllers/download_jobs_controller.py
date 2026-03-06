@@ -40,20 +40,29 @@ class DataDownloaderController(BaseController):
         self.router.get("/jobs",          response_class=JSONResponse)(self.api_get_all_jobs)
         self.router.get("/jobs_by_group", response_class=JSONResponse)(self.api_get_jobs_by_group)
 
-        # CRUD jobs  (#1)
+        # CRUD jobs
         self.router.post("/add_job",    response_class=JSONResponse)(self.api_add_job)
         self.router.post("/edit_job",   response_class=JSONResponse)(self.api_edit_job)
         self.router.post("/delete_job", response_class=JSONResponse)(self.api_delete_job)
+
+        # CRUD groups  (#2)
+        self.router.post("/add_group",    response_class=JSONResponse)(self.api_add_group)
+        self.router.post("/edit_group",   response_class=JSONResponse)(self.api_edit_group)
+        self.router.post("/delete_group", response_class=JSONResponse)(self.api_delete_group)
+        self.router.post("/reorder_group",response_class=JSONResponse)(self.api_reorder_group)  # (#3)
 
         # Execute
         self.router.post("/run_job",   response_class=JSONResponse)(self.api_run_job)
         self.router.post("/run_group", response_class=JSONResponse)(self.api_run_group)
         self.router.post("/reset_job", response_class=JSONResponse)(self.api_reset_job)
 
-        # Data health  (#3 + #4)
+        # Data health
         self.router.get("/last_values",          response_class=JSONResponse)(self.api_last_values)
-        self.router.get("/manual_candles",        response_class=JSONResponse)(self.api_get_manual_candles)
-        self.router.post("/save_manual_candle",   response_class=JSONResponse)(self.api_save_manual_candle)
+
+        # Manual variables  (#1)
+        self.router.get("/manual_candles",       response_class=JSONResponse)(self.api_get_manual_candles)
+        self.router.post("/save_manual_candle",  response_class=JSONResponse)(self.api_save_manual_candle)
+        self.router.post("/delete_manual_candle",response_class=JSONResponse)(self.api_delete_manual_candle)
 
     # ── Pages ─────────────────────────────────────────────────────────────────
 
@@ -86,16 +95,14 @@ class DataDownloaderController(BaseController):
 
     @staticmethod
     def _s(val, fallback=None) -> Optional[str]:
-        """Safely clean a JSON string field.
-        Handles None/null from JSON, empty strings, and whitespace.
-        Falls back to `fallback` when val is None (used in edit to keep existing value)."""
+        """Safely clean a JSON string field."""
         v = val if val is not None else fallback
         if v is None:
             return None
         cleaned = str(v).strip().upper()
         return cleaned if cleaned else None
 
-    # ── CRUD jobs  (#1) ───────────────────────────────────────────────────────
+    # ── CRUD jobs ─────────────────────────────────────────────────────────────
 
     async def api_add_job(self, request: Request):
         """Add a new job to a group."""
@@ -126,7 +133,7 @@ class DataDownloaderController(BaseController):
         except KeyError as e:
             return JSONResponse({"ok": False, "error": f"Missing field: {e}"}, status_code=400)
         except Exception as e:
-            self.logger.do_log(f"api_add_job: {traceback.format_exc()}", MessageType.ERROR)
+            self.logger.do_log(f"api_add_job: {traceback.format_exc()}", "ERROR")
             return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
 
     async def api_edit_job(self, request: Request):
@@ -140,7 +147,6 @@ class DataDownloaderController(BaseController):
         except (KeyError, TypeError, ValueError) as e:
             return JSONResponse({"ok": False, "error": f"Invalid job_id: {e}"}, status_code=400)
 
-        # Load current job to preserve immutable fields
         groups   = self.jobs_mgr.get_download_job_groups()
         all_jobs = []
         for g in groups:
@@ -156,14 +162,14 @@ class DataDownloaderController(BaseController):
                 symbol        = self._s(body.get("symbol"),        job.symbol),
                 exchange      = self._s(body.get("exchange"),      job.exchange),
                 output_symbol = self._s(body.get("output_symbol"), job.output_symbol),
-                vendor        = job.vendor,   # IMMUTABLE — never overwrite
+                vendor        = job.vendor,   # IMMUTABLE
                 d_from        = body.get("d_from") or job.d_from,
                 d_to          = body.get("d_to") or None,
                 interval_code = job.interval_code,
             )
             return JSONResponse({"ok": True})
         except Exception as e:
-            self.logger.do_log(f"api_edit_job: {traceback.format_exc()}", MessageType.ERROR)
+            self.logger.do_log(f"api_edit_job: {traceback.format_exc()}", "ERROR")
             return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
 
     async def api_delete_job(self, request: Request):
@@ -173,6 +179,123 @@ class DataDownloaderController(BaseController):
             self.jobs_mgr.delete_download_job(job_id)
             return JSONResponse({"ok": True})
         except Exception as e:
+            return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
+
+    # ── CRUD groups  (#2) ─────────────────────────────────────────────────────
+
+    async def api_add_group(self, request: Request):
+        """Create a new job group."""
+        try:
+            body = await request.json()
+        except Exception as e:
+            return JSONResponse({"ok": False, "error": f"Bad JSON body: {e}"}, status_code=400)
+        try:
+            name = str(body.get("group_name", "")).strip()
+            if not name:
+                return JSONResponse({"ok": False, "error": "group_name is required"}, status_code=400)
+            job_type      = str(body.get("job_type", "DOWNLOAD")).strip().upper()
+            display_order = int(body.get("display_order", 999))
+            group_id = self.jobs_mgr.persist_download_job_group(
+                group_id      = None,
+                group_name    = name,
+                job_type      = job_type,
+                display_order = display_order,
+            )
+            return JSONResponse({"ok": True, "group_id": group_id})
+        except Exception as e:
+            self.logger.do_log(f"api_add_group: {traceback.format_exc()}", "ERROR")
+            return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
+
+    async def api_edit_group(self, request: Request):
+        """Edit an existing group's name and job_type."""
+        try:
+            body = await request.json()
+        except Exception as e:
+            return JSONResponse({"ok": False, "error": f"Bad JSON body: {e}"}, status_code=400)
+        try:
+            group_id = int(body["group_id"])
+            name     = str(body.get("group_name", "")).strip()
+            if not name:
+                return JSONResponse({"ok": False, "error": "group_name is required"}, status_code=400)
+            # Preserve current display_order
+            groups = self.jobs_mgr.get_download_job_groups()
+            grp    = next((g for g in groups if g.group_id == group_id), None)
+            if not grp:
+                return JSONResponse({"ok": False, "error": f"Group {group_id} not found"}, status_code=404)
+            job_type = str(body.get("job_type", grp.job_type)).strip().upper()
+            self.jobs_mgr.persist_download_job_group(
+                group_id      = group_id,
+                group_name    = name,
+                job_type      = job_type,
+                display_order = grp.display_order,
+            )
+            return JSONResponse({"ok": True})
+        except Exception as e:
+            self.logger.do_log(f"api_edit_group: {traceback.format_exc()}", "ERROR")
+            return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
+
+    async def api_delete_group(self, request: Request):
+        """Delete a group (only if empty)."""
+        try:
+            body     = await request.json()
+            group_id = int(body["group_id"])
+        except Exception as e:
+            return JSONResponse({"ok": False, "error": f"Bad request: {e}"}, status_code=400)
+        try:
+            # Safety check — refuse if group still has jobs
+            groups   = self.jobs_mgr.get_download_job_groups()
+            grp      = next((g for g in groups if g.group_id == group_id), None)
+            if grp and grp.job_count > 0:
+                return JSONResponse(
+                    {"ok": False, "error": f"Group has {grp.job_count} job(s). Delete them first."},
+                    status_code=400,
+                )
+            self.jobs_mgr.delete_download_job_group(group_id)
+            return JSONResponse({"ok": True})
+        except Exception as e:
+            self.logger.do_log(f"api_delete_group: {traceback.format_exc()}", "ERROR")
+            return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
+
+    async def api_reorder_group(self, request: Request):
+        """
+        Move a group up or down by swapping display_order with its neighbour.
+        Body: { group_id: int, direction: 'up' | 'down' }
+        """
+        try:
+            body = await request.json()
+        except Exception as e:
+            return JSONResponse({"ok": False, "error": f"Bad JSON body: {e}"}, status_code=400)
+        try:
+            group_id  = int(body["group_id"])
+            direction = str(body.get("direction", "")).lower()
+            if direction not in ("up", "down"):
+                return JSONResponse({"ok": False, "error": "direction must be 'up' or 'down'"}, status_code=400)
+
+            groups = sorted(
+                self.jobs_mgr.get_download_job_groups(),
+                key=lambda g: g.display_order
+            )
+            idx = next((i for i, g in enumerate(groups) if g.group_id == group_id), None)
+            if idx is None:
+                return JSONResponse({"ok": False, "error": "Group not found"}, status_code=404)
+
+            swap_idx = idx - 1 if direction == "up" else idx + 1
+            if swap_idx < 0 or swap_idx >= len(groups):
+                return JSONResponse({"ok": True, "noop": True})  # already at boundary
+
+            a, b = groups[idx], groups[swap_idx]
+            # Swap their display_orders
+            self.jobs_mgr.persist_download_job_group(
+                group_id=a.group_id, group_name=a.group_name,
+                job_type=a.job_type, display_order=b.display_order,
+            )
+            self.jobs_mgr.persist_download_job_group(
+                group_id=b.group_id, group_name=b.group_name,
+                job_type=b.job_type, display_order=a.display_order,
+            )
+            return JSONResponse({"ok": True})
+        except Exception as e:
+            self.logger.do_log(f"api_reorder_group: {traceback.format_exc()}", "ERROR")
             return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
 
     # ── Execute ───────────────────────────────────────────────────────────────
@@ -222,51 +345,57 @@ class DataDownloaderController(BaseController):
         rows   = self.jobs_mgr.reset_stuck_jobs(job_id)
         return JSONResponse({"ok": True, "rows_reset": rows})
 
-    # ── Data Health  (#3) ─────────────────────────────────────────────────────
+    # ── Data Health ───────────────────────────────────────────────────────────
 
     async def api_last_values(self, request: Request):
-        """
-        Returns last candle per symbol, joined with job metadata.
-        Jobs that have no candle entry get last_date=None, days_ago=None.
-        """
-        # All active jobs
+        """Returns last candle per symbol, joined with job metadata."""
         groups   = self.jobs_mgr.get_download_job_groups()
         all_jobs = []
         for g in groups:
             for j in self.jobs_mgr.get_download_jobs(g.group_id, g.job_type):
                 all_jobs.append((g, j))
 
-        # Last candle index keyed by symbol
-        candles  = self.candle_mgr.get_last_candle_per_symbol()
+        candles    = self.candle_mgr.get_last_candle_per_symbol()
         candle_map = {c.symbol: c for c in candles}
 
         result = []
         for g, j in all_jobs:
-            # Determine which symbol to look up in candles
             lookup = j.output_symbol if j.output_symbol else j.symbol
             c = candle_map.get(lookup)
             result.append({
-                "job_id":       j.job_id,
-                "group_name":   g.group_name,
-                "symbol":       j.symbol,
-                "exchange":     j.exchange,
-                "output_symbol":j.output_symbol,
-                "vendor":       j.vendor,
-                "last_date":    c.last_date  if c else None,
-                "last_close":   c.last_close if c else None,
-                "days_ago":     c.days_ago   if c else None,
+                "job_id":        j.job_id,
+                "group_name":    g.group_name,
+                "symbol":        j.symbol,
+                "exchange":      j.exchange,
+                "output_symbol": j.output_symbol,
+                "vendor":        j.vendor,
+                "last_date":     c.last_date  if c else None,
+                "last_close":    c.last_close if c else None,
+                "days_ago":      c.days_ago   if c else None,
             })
 
         return JSONResponse(result)
 
-    # ── Manual variables  (#4) ────────────────────────────────────────────────
+    # ── Manual variables  (#1) ────────────────────────────────────────────────
 
-    async def api_get_manual_candles(self, request: Request, symbol: str):
-        candles = self.candle_mgr.get_recent_candles(symbol, top=5)
-        return JSONResponse([{"symbol": c.symbol, "date": c.date, "value": c.value} for c in candles])
+    async def api_get_manual_candles(
+            self,
+            request: Request,
+            symbol: str,
+            top: int = 20,
+    ):
+        try:
+            candles = self.candle_mgr.get_recent_candles(symbol, top=top)
+            return JSONResponse([
+                {"symbol": c.symbol, "date": c.date, "value": c.value}
+                for c in candles
+            ])
+        except Exception as e:
+            self.logger.do_log(f"api_get_manual_candles: {traceback.format_exc()}", "ERROR")
+            return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
 
     async def api_save_manual_candle(self, request: Request):
-        body  = await request.json()
+        body   = await request.json()
         symbol = body["symbol"].strip().upper()
         d      = body["date"]
         value  = float(body["value"])
@@ -274,6 +403,18 @@ class DataDownloaderController(BaseController):
             self.candle_mgr.persist_manual_candle(symbol, d, value)
             return JSONResponse({"ok": True})
         except Exception as e:
+            return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
+
+    async def api_delete_manual_candle(self, request: Request):
+        """Delete a specific manual candle by symbol + date."""
+        try:
+            body   = await request.json()
+            symbol = body["symbol"].strip().upper()
+            d      = body["date"]
+            self.candle_mgr.delete_manual_candle(symbol, d)
+            return JSONResponse({"ok": True})
+        except Exception as e:
+            self.logger.do_log(f"api_delete_manual_candle: {traceback.format_exc()}", "ERROR")
             return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
 
     # ── Execution engine ──────────────────────────────────────────────────────
@@ -307,7 +448,6 @@ class DataDownloaderController(BaseController):
 
         vendor = job.vendor.upper()
 
-        # ── SPREAD  (#2) ──────────────────────────────────────────────────────
         if vendor == SPREAD_VENDOR or job.job_type == "SPREAD":
             print(f"[SPREAD] {job.symbol} → {job.output_symbol}  from={d_from}")
             aol.process_create_spread_varaible(
@@ -318,11 +458,9 @@ class DataDownloaderController(BaseController):
             )
             print(f"[SPREAD-DONE] {job.output_symbol}")
 
-        # ── MANUAL_VARIABLE — skip execution (user manages manually) ──────────
         elif vendor == MANUAL_VENDOR:
             print(f"[MANUAL] {job.symbol} — manual variable, skipping automated download")
 
-        # ── FRED ──────────────────────────────────────────────────────────────
         elif vendor == InformationVendors.FRED.value:
             vendor_params = {"api_key": self.config.get("FRED_API_KEY", "")}
             print(f"[DOWNLOAD] symbol={job.symbol}  vendor=FRED  from={d_from}  to={d_to}")
@@ -334,7 +472,6 @@ class DataDownloaderController(BaseController):
             )
             print(f"[DOWNLOAD-DONE] {job.symbol}")
 
-        # ── TRADINGVIEW ───────────────────────────────────────────────────────
         elif vendor == InformationVendors.TRADINGVIEW.value:
             vendor_params = {
                 "tradingview_user": self.config.get("TRADING_VIEW_USER", ""),

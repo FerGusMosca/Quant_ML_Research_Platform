@@ -37,6 +37,8 @@
       </div>
     </div>
     <button class="btn-apply-dates" onclick="applyGlobalDates()">↓ Apply to All Groups</button>
+    <!-- #2: Add Group button -->
+    <button class="btn-add-group" onclick="openAddGroupModal()">+ New Group</button>
   </div>
   <div id="groupsContainer"></div>
 </div>
@@ -107,7 +109,9 @@
 {% endblock %}
 
 {% block modals %}
-<div class="modal-backdrop" id="modalBackdrop" onclick="closeModal()"></div>
+<div class="modal-backdrop" id="modalBackdrop" onclick="closeAllModals()"></div>
+
+<!-- ── Job modal (add / edit) ──────────────────────────────────────── -->
 <div class="modal" id="jobModal">
   <div class="modal-hdr">
     <span class="modal-title" id="modalTitle">Add Job</span>
@@ -163,34 +167,87 @@
   </div>
 </div>
 
-<div class="modal" id="manualModal" style="width:400px">
+<!-- ── Group modal (add / edit)  #2 ───────────────────────────────── -->
+<div class="modal" id="groupModal">
+  <div class="modal-hdr">
+    <span class="modal-title" id="groupModalTitle">New Group</span>
+    <button class="modal-close" onclick="closeGroupModal()">✕</button>
+  </div>
+  <div class="modal-body">
+    <input type="hidden" id="gmGroupId">
+    <div class="form-row">
+      <label class="form-label">Group Name</label>
+      <input class="form-input" id="gmName" placeholder="e.g. US Macro Indicators">
+    </div>
+    <div class="form-row">
+      <label class="form-label">Job Type</label>
+      <div class="vendor-btn-group">
+        <button type="button" class="vendor-btn active" data-jt="DOWNLOAD" onclick="setGroupJobType('DOWNLOAD')">↓ Download</button>
+        <button type="button" class="vendor-btn"        data-jt="SPREAD"   onclick="setGroupJobType('SPREAD')">⇄ Spread</button>
+      </div>
+      <input type="hidden" id="gmJobType" value="DOWNLOAD">
+    </div>
+    <div class="form-row">
+      <label class="form-label">Display Order <span class="form-hint">(lower = higher)</span></label>
+      <input class="form-input" type="number" id="gmOrder" min="1" max="999" value="999" style="width:100px">
+    </div>
+    <div class="form-error" id="gmError"></div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn-modal-cancel" onclick="closeGroupModal()">Cancel</button>
+    <button class="btn-modal-save" id="gmSaveBtn" onclick="saveGroup()">Save</button>
+  </div>
+</div>
+
+<!-- ── Manual variable modal  #1 ──────────────────────────────────── -->
+<div class="modal" id="manualModal" style="width:520px">
   <div class="modal-hdr">
     <span class="modal-title" id="manualModalTitle">Manual Variable</span>
     <button class="modal-close" onclick="closeManualModal()">✕</button>
   </div>
   <div class="modal-body">
     <input type="hidden" id="mmSymbol">
-    <table class="mini-table">
-      <thead><tr><th>Date</th><th>Value</th></tr></thead>
-      <tbody id="mmTbody"></tbody>
-    </table>
-    <div class="form-row" style="margin-top:14px">
-      <label class="form-label">Add new entry</label>
+
+    <!-- Filter bar -->
+  <div class="mm-filter-bar">
+    <div class="mm-filter-field">
+      <label class="form-label">Rows</label>
+      <select class="form-input" id="mmTop" style="width:80px" onchange="refreshManualCandles()">
+        <option value="20" selected>20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="500">500</option>
+      </select>
     </div>
-    <div class="form-row form-row-2col">
-      <div>
-        <label class="form-label">Date</label>
-        <input class="form-input" type="date" id="mmDate">
-      </div>
-      <div>
-        <label class="form-label">Value</label>
-        <input class="form-input" type="number" step="any" id="mmValue" placeholder="0.000">
+    <button class="refresh-btn" style="margin-top:16px" onclick="refreshManualCandles()">⟳</button>
+  </div>
+
+    <!-- Data table -->
+    <div class="mm-table-wrap">
+      <table class="mini-table">
+        <thead><tr><th>Date</th><th>Value</th><th></th></tr></thead>
+        <tbody id="mmTbody"></tbody>
+      </table>
+    </div>
+
+    <!-- Add new entry -->
+    <div style="border-top:1px solid var(--border);padding-top:12px;margin-top:4px">
+      <div class="form-label" style="margin-bottom:8px;color:var(--blue-hi)">▸ Add new entry</div>
+      <div class="form-row form-row-2col">
+        <div>
+          <label class="form-label">Date</label>
+          <input class="form-input" type="date" id="mmDate">
+        </div>
+        <div>
+          <label class="form-label">Value</label>
+          <input class="form-input" type="number" step="any" id="mmValue" placeholder="0.000">
+        </div>
       </div>
     </div>
     <div class="form-error" id="mmError"></div>
   </div>
   <div class="modal-footer">
-    <button class="btn-modal-cancel" onclick="closeManualModal()">Cancel</button>
+    <button class="btn-modal-cancel" onclick="closeManualModal()">Close</button>
     <button class="btn-modal-save" onclick="saveManualCandle()">Save Entry</button>
   </div>
 </div>
