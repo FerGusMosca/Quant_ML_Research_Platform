@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% set active_page = 'trading_strategies' %}
+
+{% block page_title %}Trading Strategies{% endblock %}
+{% block nav_subtitle %}Trading Strategies{% endblock %}
+{% block css_file %}trading_strategies.css{% endblock %}
+{% block js_file %}trading_strategies.js{% endblock %}
+
+{% block main %}
+<div>
+  <div class="page-eyebrow">Data · Day Trading</div>
+  <div class="page-title">Trading Strategies</div>
+</div>
+
+<div class="ts-layout" id="layoutRoot">
+
+  <!-- ══ PANEL 1 — STRATEGY LIST ══════════════════════════════════════ -->
+  <div class="ts-panel" id="panelStrategies">
+    <div class="panel-hdr">
+      <span class="panel-title">Strategies</span>
+      <button class="btn-add" onclick="openStrategyModal(null)">+ New</button>
+    </div>
+    <div class="strategy-list" id="strategyList">
+      <div class="ts-loading">Loading…</div>
+    </div>
+  </div>
+
+  <!-- ══ PANEL 2 — DB SELECTOR + SECURITIES ══════════════════════════ -->
+  <div class="ts-panel hidden" id="panelSecurities">
+    <div class="panel-hdr">
+      <button class="btn-back" onclick="backToStrategies()">←</button>
+      <span class="panel-title" id="secPanelTitle">Securities</span>
+    </div>
+
+    <!-- Database selector -->
+    <div class="db-selector-bar" id="dbSelectorBar">
+      <span class="db-sel-label">Database</span>
+      <div class="db-tabs" id="dbTabs"></div>
+      <button class="btn-db-add" onclick="openDbModal(null)" title="Add database">+</button>
+    </div>
+
+    <!-- Today signals -->
+    <div class="today-signals-wrap hidden" id="todaySignalsWrap">
+      <div class="today-signals-hdr">
+        <span class="signal-hdr-label">🔔 Today's Signals</span>
+        <span class="signal-hdr-date" id="signalDate"></span>
+      </div>
+      <div class="signal-list" id="signalList"></div>
+    </div>
+
+    <div class="security-list" id="securityList">
+      <div class="ts-loading">Select a strategy.</div>
+    </div>
+  </div>
+
+  <!-- ══ PANEL 3 — TRADES ════════════════════════════════════════════ -->
+  <div class="ts-panel hidden" id="panelTrades">
+    <div class="panel-hdr">
+      <button class="btn-back" onclick="backToSecurities()">←</button>
+      <span class="panel-title" id="tradePanelTitle">Trades</span>
+      <span class="trade-count-badge" id="tradeCountBadge"></span>
+    </div>
+    <div class="trade-filter-bar">
+      <div class="date-range-group">
+        <span class="date-range-label">From</span>
+        <input class="date-input" type="date" id="tradeFrom" onchange="reloadTrades()">
+        <span class="date-range-label">To</span>
+        <input class="date-input" type="date" id="tradeTo" onchange="reloadTrades()">
+        <button class="btn-clear-dates" onclick="clearTradeDates()" title="Clear">✕</button>
+      </div>
+      <button class="btn-perf" onclick="openPerfModal()">📊 Performance</button>
+    </div>
+    <div class="table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>#</th><th>Open</th><th>Close</th><th>Dir</th>
+            <th>Qty</th><th>Open $</th><th>Close $</th>
+            <th>Profit</th><th>Fee</th><th style="width:40px"></th>
+          </tr>
+        </thead>
+        <tbody id="tradesTbody">
+          <tr><td colspan="10" class="empty-cell">Select a security.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+
+
+{% block modals %}
+
+<!-- ── Strategy Modal ─────────────────────────────────────────────── -->
+<div class="modal-backdrop" id="stratModalBackdrop" onclick="closeStrategyModal()"></div>
+<div class="modal" id="stratModal">
+  <div class="modal-hdr">
+    <span class="modal-title" id="stratModalTitle">New Strategy</span>
+    <button class="modal-close" onclick="closeStrategyModal()">✕</button>
+  </div>
+  <div class="modal-body">
+    <input type="hidden" id="smId">
+    <div class="form-field">
+      <label class="form-lbl">Strategy Name</label>
+      <input class="form-input" type="text" id="smName" placeholder="e.g. BOB_TRENDLINES_v2">
+    </div>
+    <div class="form-field">
+      <label class="form-lbl">Exchange</label>
+      <select class="form-input form-select" id="smExchange">
+        <option value="NYSE">NYSE (USA)</option>
+        <option value="NASDAQ">NASDAQ (USA)</option>
+        <option value="BYMA">BYMA (Argentina)</option>
+        <option value="AMEX">AMEX (USA)</option>
+      </select>
+    </div>
+    <div class="form-field">
+      <label class="form-lbl">Description <span class="form-opt">(optional)</span></label>
+      <input class="form-input" type="text" id="smDesc" placeholder="Short description…">
+    </div>
+    <div class="form-field form-field-inline">
+      <label class="form-lbl">Active</label>
+      <label class="toggle"><input type="checkbox" id="smActive" checked><span class="toggle-slider"></span></label>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn-modal-cancel"             onclick="closeStrategyModal()">Cancel</button>
+    <button class="btn-modal-danger hidden" id="btnDeleteStrategy" onclick="deleteStrategy()">🗑 Delete</button>
+    <button class="btn-modal-save"               onclick="saveStrategy()">Save</button>
+  </div>
+</div>
+
+<!-- ── Database Modal ────────────────────────────────────────────── -->
+<div class="modal-backdrop" id="dbModalBackdrop" onclick="closeDbModal()"></div>
+<div class="modal" id="dbModal">
+  <div class="modal-hdr">
+    <span class="modal-title" id="dbModalTitle">Add Database</span>
+    <button class="modal-close" onclick="closeDbModal()">✕</button>
+  </div>
+  <div class="modal-body">
+    <input type="hidden" id="dbmId">
+    <div class="form-field">
+      <label class="form-lbl">Database Name</label>
+      <input class="form-input" type="text" id="dbmName" placeholder="e.g. daily_bob_turtles_ib_dev">
+    </div>
+    <div class="form-field">
+      <label class="form-lbl">Label <span class="form-opt">(optional)</span></label>
+      <input class="form-input" type="text" id="dbmLabel" placeholder="e.g. DEV, UAT, PROD">
+    </div>
+    <div class="form-field form-field-inline">
+      <label class="form-lbl">Set as Default</label>
+      <label class="toggle"><input type="checkbox" id="dbmDefault"><span class="toggle-slider"></span></label>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn-modal-cancel"             onclick="closeDbModal()">Cancel</button>
+    <button class="btn-modal-danger hidden" id="btnDeleteDb" onclick="deleteStrategyDb()">🗑 Remove</button>
+    <button class="btn-modal-save"               onclick="saveStrategyDb()">Save</button>
+  </div>
+</div>
+
+<!-- ── Chart Modal (Lightweight Charts) ──────────────────────────── -->
+<div class="modal-backdrop tv-backdrop" id="chartBackdrop" onclick="closeChartModal()"></div>
+<div class="modal tv-modal" id="chartModal">
+  <div class="modal-hdr">
+    <span class="modal-title" id="chartModalTitle">Chart</span>
+    <button class="modal-close" onclick="closeChartModal()">✕</button>
+  </div>
+  <div class="tv-body"><div id="chartContainer"></div></div>
+  <div class="tv-stats" id="chartStats"></div>
+</div>
+
+<!-- ── Performance Modal ─────────────────────────────────────────── -->
+<div class="modal-backdrop" id="perfBackdrop" onclick="closePerfModal()"></div>
+<div class="modal perf-modal" id="perfModal">
+  <div class="modal-hdr">
+    <span class="modal-title" id="perfModalTitle">Monthly Performance</span>
+    <button class="modal-close" onclick="closePerfModal()">✕</button>
+  </div>
+  <div class="modal-body" id="perfBody">
+    <div class="ts-loading">Loading…</div>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://unpkg.com/lightweight-charts@3.8.0/dist/lightweight-charts.standalone.production.js"></script>
+{% endblock %}

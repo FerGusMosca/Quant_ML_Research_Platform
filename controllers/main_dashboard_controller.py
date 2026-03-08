@@ -22,6 +22,7 @@ from controllers.simulate_indicator_strategy_controller import SimulateIndicator
 from POC.stripe_ACH_POC_controller import StripeAchDemoController
 from POC.stripe_USDC_POC_controller import StripeUSDCDemoController
 from controllers.simulate_model_controller import SimulateModelController
+from controllers.trading_strategies_controller import TradingStrategiesController
 from data_access_layer.account_data_manager import AccountDataManager
 from data_access_layer.account_manager import AccountManager
 from data_access_layer.ib_portfolio_manager import IBPortfolioManager
@@ -95,6 +96,10 @@ class MainDashboardController:
         portfolio_view_controller = PortfolioViewController(account_manager=account_mgr,  account_data_manager=account_data_mgr,
                                                             ib_portfolio_manager=ib_portfolio_manager)
         self.app.include_router(portfolio_view_controller.router)
+
+        self.trading_strategies_ctrl = TradingStrategiesController(config_settings, logger)
+        self.app.include_router(self.trading_strategies_ctrl.router, prefix="/trading_strategies")
+
 
         # ── FRED proxy router ──
         self.app.include_router(self._build_fred_router(), prefix="/api")
