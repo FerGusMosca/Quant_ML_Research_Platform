@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% set active_page = 'chunk_management' %}
+
+{% block page_title %}Chunk Management{% endblock %}
+{% block nav_subtitle %}Chunk Management{% endblock %}
+{% block css_file %}chunk_management.css{% endblock %}
+{% block js_file %}chunk_management.js{% endblock %}
+
+{% block main %}
+<div>
+  <div class="page-eyebrow">Data · Vector Store</div>
+  <div class="page-title">Chunk Management</div>
+</div>
+
+<!-- ── Collection selector + stats bar ── -->
+<div class="collection-bar">
+  <div class="coll-left">
+    <span class="coll-label">Collection</span>
+    <div class="coll-switch">
+      <button class="coll-btn active" data-col="zh_chunks"   onclick="switchCollection('zh_chunks')">zh_chunks</button>
+      <button class="coll-btn"        data-col="zh_metadata" onclick="switchCollection('zh_metadata')">zh_metadata</button>
+    </div>
+  </div>
+  <div class="coll-stats" id="collStats">
+    <div class="stat-pill"><span class="stat-val" id="statPoints">—</span><span class="stat-label">points</span></div>
+    <div class="stat-pill"><span class="stat-val" id="statVectors">—</span><span class="stat-label">vectors indexed</span></div>
+    <div class="stat-pill"><span class="stat-val" id="statStatus">—</span><span class="stat-label">status</span></div>
+  </div>
+  <button class="refresh-btn" onclick="refreshAll()">⟳ Refresh</button>
+</div>
+
+<!-- ── Tab bar ── -->
+<div class="tab-bar">
+  <button class="tab-btn active" data-tab="browse"  onclick="switchTab('browse')">⊞ Browse Chunks</button>
+  <button class="tab-btn"        data-tab="sources" onclick="switchTab('sources')">📄 Sources</button>
+  <button class="tab-btn"        data-tab="runs"    onclick="switchTab('runs')">🔄 Ingest Runs</button>
+</div>
+
+<!-- ═══════════════════════════════════════════ TAB: BROWSE -->
+<div class="tab-pane active" id="tab-browse">
+
+  <div class="filter-bar">
+    <input class="filter-input" type="text" id="sourceFilter"
+      placeholder="Filter by source PDF name…" oninput="onSourceFilter()">
+
+    <div class="date-range-group">
+      <span class="date-range-label">From</span>
+      <input class="date-input" type="date" id="dateFrom" onchange="onDateFilter()">
+      <span class="date-range-label">To</span>
+      <input class="date-input" type="date" id="dateTo"   onchange="onDateFilter()">
+      <button class="btn-clear-dates" onclick="clearDates()" title="Clear date filter">✕</button>
+    </div>
+
+    <select class="filter-select" id="limitSelect" onchange="reloadChunks()">
+      <option value="20" selected>20 rows</option>
+      <option value="50">50 rows</option>
+      <option value="100">100 rows</option>
+    </select>
+    <button class="btn-load" onclick="reloadChunks()">⟳ Load</button>
+  </div>
+
+  <div class="table-wrap">
+    <table class="data-table" id="chunksTable">
+      <thead>
+        <tr>
+          <th style="width:36px">#</th>
+          <th>Source PDF</th>
+          <th style="width:70px">Chunk</th>
+          <th style="width:80px">Len</th>
+          <th>Ingest Time</th>
+          <th>Text Preview</th>
+          <th style="width:80px"></th>
+        </tr>
+      </thead>
+      <tbody id="chunksTbody">
+        <tr><td colspan="7" class="empty-cell">Select a collection and click Load.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pagination-bar" id="paginationBar">
+    <button class="page-btn" id="btnPrev" onclick="prevPage()" disabled>← Prev</button>
+    <span   class="page-info" id="pageInfo">Page 1</span>
+    <button class="page-btn" id="btnNext" onclick="nextPage()" disabled>Next →</button>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════ TAB: SOURCES -->
+<div class="tab-pane" id="tab-sources">
+  <div class="filter-bar">
+    <input class="filter-input" type="text" id="srcSearch"
+      placeholder="Search source PDF…" oninput="filterSources()">
+    <span class="summary-note" id="sourcesNote"></span>
+    <button class="refresh-btn" onclick="loadSourceSummary()">⟳ Refresh</button>
+  </div>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Source PDF</th>
+          <th style="width:100px">Chunks</th>
+          <th>Last Ingest</th>
+          <th style="width:100px"></th>
+        </tr>
+      </thead>
+      <tbody id="sourcesTbody">
+        <tr><td colspan="5" class="empty-cell">Switch to this tab to load.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ TAB: INGEST RUNS -->
+<div class="tab-pane" id="tab-runs">
+  <div class="filter-bar">
+    <span class="summary-note" id="runsNote"></span>
+    <button class="refresh-btn" onclick="loadIngestRuns()">⟳ Refresh</button>
+  </div>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Run ID</th>
+          <th style="width:100px">Chunks</th>
+          <th>Last Timestamp</th>
+        </tr>
+      </thead>
+      <tbody id="runsTbody">
+        <tr><td colspan="4" class="empty-cell">Switch to this tab to load.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block modals %}
+<div class="modal-backdrop" id="modalBackdrop" onclick="closeDetailModal()"></div>
+
+<div class="modal" id="detailModal">
+  <div class="modal-hdr">
+    <span class="modal-title" id="detailTitle">Chunk Detail</span>
+    <button class="modal-close" onclick="closeDetailModal()">✕</button>
+  </div>
+  <div class="modal-body" id="detailBody">
+    <div class="detail-loading">Loading…</div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn-modal-cancel" onclick="closeDetailModal()">Close</button>
+    <button class="btn-modal-delete" onclick="deleteFromDetail()">🗑 Delete Point</button>
+  </div>
+</div>
+{% endblock %}
