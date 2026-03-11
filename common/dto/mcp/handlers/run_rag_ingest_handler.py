@@ -1,6 +1,7 @@
 import uuid
 import asyncio
 from common.dto.mcp.mcp_log_observer import MCPLogObserver
+from common.util.observability.langfuse.observability_context import ObsContext
 
 
 def run_rag_ingest_handler(args: dict, orchestrator):
@@ -16,6 +17,7 @@ def run_rag_ingest_handler(args: dict, orchestrator):
 
     def _run():
         try:
+            ObsContext.set(job_id, service_id="rag-ingest", operation_name="run_rag_ingest")
             orchestrator.process_rag_ingest(
                 ingest_type=args["mode"],
                 source_path=args.get("source"),

@@ -16,6 +16,7 @@ from common.util.std_in_out.param_reader import ParamReader
 from common.util.std_in_out.ml_settings_loader import MLSettingsLoader
 from common.util.logging.logger import Logger
 from framework.common.logger.message_type import MessageType
+from logic_layer.corpus_metadata_orchestration_logic import CorpusMetadataOrchestrationLogic
 from logic_layer.rag_ingest_orchestration_logic import RAGIngestOrchestrationLogic
 
 Folders.load_from_config()
@@ -57,6 +58,10 @@ def process_start_mcp_logic(server,port):
 
         orch = RAGIngestOrchestrationLogic(config, logger)
         orch.process_start_mcp(server,port)
+
+
+        #orch2 = CorpusMetadataOrchestrationLogic(config, logger)
+        #orch2.process_start_mcp(server,port)
 
         logger.do_log("[RAG] ✅ Ingestion completed", MessageType.INFO)
 
@@ -125,7 +130,22 @@ def process_rag_ingest(cmd):
     process_rag_ingest_logic(mode, source,chunk_name,dest_root,log_posfix,embedding_model,clustering_model,
                              persist_qdrant,qdrant_collection)
 
+def process_corpus_metadata_from_cmd(cmd):
+    source    = ParamReader.get_param(cmd, "source",     True, None)
+    dest_root = ParamReader.get_param(cmd, "dest_root",  True, None)
+    chunk_name = ParamReader.get_param(cmd, "chunk_name", True, None)
+    mode      = ParamReader.get_param(cmd, "mode",       True, "incremental")
 
+    logger = Logger()
+    try:
+        loader = MLSettingsLoader()
+        config = loader.load_settings("./configs/commands_mgr.ini")
+        orch = CorpusMetadataOrchestrationLogic(config, logger)
+        orch.run(source, dest_root, chunk_name)
+        logger.do_log("[CORPUS] ✅ Metadata completed", MessageType.INFO)
+    except Exception as e:
+        print(traceback.format_exc())
+        logger.do_log(f"[CORPUS] ❌ Error: {str(e)}", MessageType.ERROR)
 # ============================================================================
 # MENU HANDLER
 # ============================================================================
@@ -141,6 +161,8 @@ def process_rag_ingest_menu(cmd):
         process_rag_ingest(cmd)
     if tokens[0] == "StartMCP":
         process_start_mcp(cmd)
+    elif tokens[0] == "RunCorpusMetadata":
+        process_corpus_metadata_from_cmd(cmd)
     #
     elif tokens[0].upper() in ("EXIT", "X"):
         print("Exiting RAG ingestion module...")

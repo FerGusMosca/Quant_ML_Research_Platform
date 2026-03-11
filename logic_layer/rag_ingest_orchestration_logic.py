@@ -8,10 +8,11 @@ import gc
 import os
 import traceback
 
-from common.dto.mcp.bootstrap_registry import  build_mcp_registry_ingest
+from common.dto.mcp.bootstrap_registry import build_mcp_registry_ingest, build_mcp_registry_corpus_metadata
 from common.dto.mcp.dispatcher import JsonRpcDispatcher
 from common.dto.mcp.progress_bus import ProgressBus
 from framework.common.logger.message_type import MessageType
+from logic_layer.rag_corpus_metadata.corpus_metadata_pipeline import CorpusMetadataPipeline
 from logic_layer.rag_ingest.util.multi_stage_rag.rag_pipeline import RAGPipeline
 from service_layer.server.mcp_server import MCPServer
 
@@ -85,8 +86,12 @@ class RAGIngestOrchestrationLogic:
         self._mcp_started = True
 
         self.progress_bus = ProgressBus()
-        self.mcp_registry = build_mcp_registry_ingest(orchestrator=self)
-        self.mcp_dispatcher = JsonRpcDispatcher(self.mcp_registry, self.progress_bus)
+
+        registry = build_mcp_registry_ingest(orchestrator=self)
+        registry.merge(build_mcp_registry_corpus_metadata(orchestrator=self))
+
+        self.mcp_dispatcher = JsonRpcDispatcher(registry, self.progress_bus)
+
         mcp_server=server
         mcp_port = int(port)
 
@@ -195,4 +200,15 @@ class RAGIngestOrchestrationLogic:
             self._force_memory_release(job_id)
 
 
+    def run_corpus_metadata(self, source_path, dest_root, chunk_name, tag_cfg=None, job_id=None):
+        self.logger.do_log(f"[CORPUS] 🚀 Starting metadata: {source_path}", MessageType.INFO, job_id)
 
+        if not os.path.exists(source_path):
+            raise Exception(f"Source path does not exist: {source_path}")
+
+        pipeline = CorpusMetadataPipeline(self.config, self.logger, dest_root, chunk_name, tag_cfg=tag_cfg)
+        files = pipeline.discover_files(source_path)
+        self.logger.do_log(f"[CORPUS] Found {len(files)} PDFs/TXTs/HTMLs", MessageType.INFO, job_id)
+        pipeline.run(files,job_id)
+
+        self.logger.do_log("[CORPUS] ✅ Completed.", MessageType.INFO, job_id)

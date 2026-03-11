@@ -11,7 +11,7 @@ class ToolSpec:
 
 class Tool:
     def __init__(self, spec: ToolSpec, handler: Callable[[JSON], Any]):
-        self.spec = spec
+        self.spec    = spec
         self.handler = handler
 
 class ToolRegistry:
@@ -23,10 +23,17 @@ class ToolRegistry:
             raise ValueError(f"Tool already registered: {tool.spec.name}")
         self._tools[tool.spec.name] = tool
 
+    def merge(self, other: "ToolRegistry") -> None:
+        """Merge all tools from another registry into this one."""
+        for name, tool in other._tools.items():
+            if name in self._tools:
+                raise ValueError(f"Tool already registered: {name}")
+            self._tools[name] = tool
+
     def list_specs(self) -> JSON:
         return {
             "tools": [{
-                "name": t.spec.name,
+                "name":        t.spec.name,
                 "description": t.spec.description,
                 "inputSchema": t.spec.input_schema
             } for t in self._tools.values()]
