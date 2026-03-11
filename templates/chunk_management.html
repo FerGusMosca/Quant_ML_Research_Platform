@@ -65,10 +65,10 @@
         <tr>
           <th style="width:36px">#</th>
           <th>Source PDF</th>
-          <th style="width:70px">Chunk</th>
-          <th style="width:80px">Len</th>
-          <th>Ingest Time</th>
-          <th>Text Preview</th>
+          <th style="width:70px"  data-col="chunk">Chunk</th>
+          <th style="width:80px"  data-col="len">Len</th>
+          <th                     data-col="ingest_time">Ingest Time</th>
+          <th                     data-col="text_preview">Text Preview</th>
           <th style="width:80px"></th>
         </tr>
       </thead>
@@ -91,8 +91,15 @@
   <div class="filter-bar">
     <input class="filter-input" type="text" id="srcSearch"
       placeholder="Search source PDF…" oninput="filterSources()">
+    <!-- Single-day picker — required for zh_chunks to avoid full collection scan -->
+    <div class="date-range-group" id="srcDateGroup">
+      <span class="date-range-label">Day</span>
+      <input class="date-input" type="date" id="srcDateFrom"
+        onchange="document.getElementById('srcDateTo').value = this.value">
+      <input type="hidden" id="srcDateTo">
+    </div>
     <span class="summary-note" id="sourcesNote"></span>
-    <button class="refresh-btn" onclick="loadSourceSummary()">⟳ Refresh</button>
+    <button class="btn-load" onclick="loadSourceSummary()">⟳ Load</button>
   </div>
   <div class="table-wrap">
     <table class="data-table">
@@ -100,23 +107,33 @@
         <tr>
           <th>#</th>
           <th>Source PDF</th>
-          <th style="width:100px">Chunks</th>
+          <th style="width:100px">Chunks / Status</th>
           <th>Last Ingest</th>
           <th style="width:100px"></th>
         </tr>
       </thead>
       <tbody id="sourcesTbody">
-        <tr><td colspan="5" class="empty-cell">Switch to this tab to load.</td></tr>
+        <tr><td colspan="5" class="empty-cell" style="color:var(--faint)">Select a day and click Load.</td></tr>
       </tbody>
     </table>
+  </div>
+  <!-- Pagination bar — shown only for zh_metadata -->
+  <div class="pagination-bar" id="sourcesPaginationBar" style="display:none">
+    <button class="page-btn" id="btnSourcesPrev" onclick="prevSourcesPage()" disabled>← Prev</button>
+    <span   class="page-info" id="sourcesPageInfo">Page 1</span>
+    <button class="page-btn" id="btnSourcesNext" onclick="nextSourcesPage()" disabled>Next →</button>
   </div>
 </div>
 
 <!-- ═══════════════════════════════════════════ TAB: INGEST RUNS -->
 <div class="tab-pane" id="tab-runs">
   <div class="filter-bar">
+    <div class="date-range-group">
+      <span class="date-range-label">Day</span>
+      <input class="date-input" type="date" id="runsDateFrom">
+    </div>
     <span class="summary-note" id="runsNote"></span>
-    <button class="refresh-btn" onclick="loadIngestRuns()">⟳ Refresh</button>
+    <button class="btn-load" onclick="loadIngestRuns()">⟳ Load</button>
   </div>
   <div class="table-wrap">
     <table class="data-table">
@@ -129,7 +146,7 @@
         </tr>
       </thead>
       <tbody id="runsTbody">
-        <tr><td colspan="4" class="empty-cell">Switch to this tab to load.</td></tr>
+        <tr><td colspan="4" class="empty-cell" style="color:var(--faint)">Select a day and click Load.</td></tr>
       </tbody>
     </table>
   </div>

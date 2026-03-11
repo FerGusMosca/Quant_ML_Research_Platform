@@ -5,7 +5,7 @@ import requests
 
 from business_entities.qdrant.chunk_management_entities import (
     CollectionInfo, ScrollResult, SearchResult,
-    ChunkPoint,
+    ChunkPoint
 )
 from business_entities.qdrant.metadata_point import MetadataPoint
 
@@ -188,13 +188,29 @@ class QdrantService:
 
     # ── Full collection scroll (for aggregations) ─────────────────────────────
 
-    def scroll_all(self, collection: str, batch_size: int = 250) -> list[dict]:
+    def scroll_all(self, collection: str, batch_size: int = 250,
+                   date_from: str = None, date_to: str = None) -> list[dict]:
         """
         Scrolls the entire collection using UUID-based offset (no order_by).
-        Used for source/run summary aggregations.
+        Used for source/run summary aggregations. Supports optional date filter
+        to limit scan size on large collections.
         """
+        import datetime
         all_payloads = []
         offset       = None
+
+        # Build optional date filter
+        filter_body = None
+        if date_from or date_to:
+            range_clause: dict = {}
+            if date_from:
+                dt = datetime.datetime.strptime(date_from, "%Y-%m-%d")
+                range_clause["gte"] = int(dt.timestamp() * 1000)
+            if date_to:
+                dt = datetime.datetime.strptime(date_to, "%Y-%m-%d")
+                dt = dt.replace(hour=23, minute=59, second=59)
+                range_clause["lte"] = int(dt.timestamp() * 1000)
+            filter_body = {"must": [{"key": "ingest_ts_epoch", "range": range_clause}]}
 
         while True:
             body: dict = {
@@ -204,6 +220,8 @@ class QdrantService:
             }
             if offset:
                 body["offset"] = offset
+            if filter_body:
+                body["filter"] = filter_body
 
             data   = self._post(f"/collections/{collection}/points/scroll", body)
             result = data.get("result", {})
@@ -245,10 +263,10 @@ class QdrantService:
 
     # ── Stats — full-collection aggregations ──────────────────────────────────
 
-    def get_ingest_run_summary(self, collection: str) -> list[dict]:
-        """Counts points per ingest_run_id across the entire collection."""
+    def get_ingest_run_summary(self, collection: str, date_from: str = None, date_to: str = None) -> list[dict]:
+        """Counts points per ingest_run_id. Requires date filter on large collections."""
         try:
-            all_payloads = self.scroll_all(collection)
+            all_payloads = self.scroll_all(collection, date_from=date_from, date_to=date_to)
             run_map: dict[str, dict] = {}
             for pl in all_payloads:
                 run_id = pl.get("ingest_run_id", "unknown")
@@ -261,10 +279,10 @@ class QdrantService:
             self.logger.do_log(f"QdrantService.get_ingest_run_summary: {traceback.format_exc()}", "ERROR")
             raise
 
-    def get_source_summary(self, collection: str) -> list[dict]:
-        """Counts points per source identifier across the entire collection."""
+    def get_source_summary(self, collection: str, date_from: str = None, date_to: str = None) -> list[dict]:
+        """Counts points per source identifier. Supports optional date range to limit scan size."""
         try:
-            all_payloads = self.scroll_all(collection)
+            all_payloads = self.scroll_all(collection, date_from=date_from, date_to=date_to)
             source_map: dict[str, dict] = {}
             for pl in all_payloads:
                 # zh_chunks uses source_pdf, zh_metadata uses filename

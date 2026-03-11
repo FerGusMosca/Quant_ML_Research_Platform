@@ -141,17 +141,19 @@ class ChunkManagementController(BaseController):
 
     # ── Stats ─────────────────────────────────────────────────────────────────
 
-    async def api_ingest_runs(self, request: Request, collection: str = "zh_chunks"):
+    async def api_ingest_runs(self, request: Request, collection: str = "zh_chunks",
+                              date_from: str = None, date_to: str = None):
         try:
-            runs = self.qdrant.get_ingest_run_summary(collection)
+            runs = self.qdrant.get_ingest_run_summary(collection, date_from=date_from, date_to=date_to)
             return JSONResponse(runs)
         except Exception as e:
             self.logger.do_log(f"api_ingest_runs: {traceback.format_exc()}", "ERROR")
             return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
 
-    async def api_source_summary(self, request: Request, collection: str = "zh_chunks"):
+    async def api_source_summary(self, request: Request, collection: str = "zh_chunks",
+                                  date_from: str = None, date_to: str = None):
         try:
-            sources = self.qdrant.get_source_summary(collection)
+            sources = self.qdrant.get_source_summary(collection, date_from=date_from, date_to=date_to)
             return JSONResponse(sources)
         except Exception as e:
             self.logger.do_log(f"api_source_summary: {traceback.format_exc()}", "ERROR")
