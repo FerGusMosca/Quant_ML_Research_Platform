@@ -1,21 +1,22 @@
 import traceback
-from typing import Optional
+from typing import Optional, Union
 
 import requests
 
-from business_entities.chunk_management_entities import (
-    CollectionInfo, ChunkPoint, ScrollResult
+from business_entities.qdrant.chunk_management_entities import (
+    CollectionInfo, ScrollResult, SearchResult,
+    ChunkPoint,
 )
+from business_entities.qdrant.metadata_point import MetadataPoint
 
 KNOWN_COLLECTIONS = ["zh_chunks", "zh_metadata"]
 
 # Qdrant REST API pagination notes:
-# - When using order_by, next_page_offset is ALWAYS null — Qdrant doesn't support
-#   cursor pagination with order_by. We paginate manually using "start_from"
-#   (the order_value of the last point ± 1).
-# - Without order_by, pagination uses "offset" (UUID of last point from prev page).
-# - For aggregations we use scroll_all() which uses UUID-based offset (no order_by)
-#   so it correctly traverses the entire collection.
+# - order_by + start_from: used for zh_chunks (epoch-ms cursor). next_page_offset
+#   is always null when order_by is active — Qdrant does not support both at once.
+# - UUID offset: used for all other collections. next_page_offset is a UUID
+#   returned by Qdrant and passed directly as "offset" on the next request.
+# - scroll_all() always uses UUID-based offset to traverse entire collections.
 
 
 class QdrantService:
@@ -50,6 +51,14 @@ class QdrantService:
         resp.raise_for_status()
         return resp.json()
 
+    # ── Point factory — returns the correct entity for the collection ─────────
+
+    @staticmethod
+    def _make_point(collection: str, raw: dict) -> Union[ChunkPoint, MetadataPoint]:
+        if collection == "zh_metadata":
+            return MetadataPoint.from_qdrant_point(raw)
+        return ChunkPoint.from_qdrant_point(raw)
+
     # ── Collections ───────────────────────────────────────────────────────────
 
     def list_collections(self) -> list[CollectionInfo]:
@@ -73,7 +82,7 @@ class QdrantService:
                         indexed_vectors_count=0, status="not_found",
                     ))
             return result
-        except Exception as e:
+        except Exception:
             self.logger.do_log(f"QdrantService.list_collections: {traceback.format_exc()}", "ERROR")
             raise
 
@@ -93,23 +102,22 @@ class QdrantService:
         self,
         collection: str,
         limit: int = 20,
-        from_order_value: Optional[int] = None,  # epoch ms of last point for next-page
+        from_order_value: Optional[int] = None,
         order_direction: str = "desc",
         source_filter: Optional[str] = None,
-        date_from: Optional[str] = None,          # "YYYY-MM-DD"
-        date_to: Optional[str] = None,            # "YYYY-MM-DD"
+        date_from: Optional[str] = None,   # "YYYY-MM-DD"
+        date_to: Optional[str] = None,     # "YYYY-MM-DD"
     ) -> ScrollResult:
         """
-        Paginated browse using order_by ingest_ts_epoch.
+        Paginated browse of a collection.
 
-        Next-page cursor = str(ingest_ts_epoch) of the last point returned.
-        Pass it back as from_order_value to get the next page.
-        Qdrant's start_from is INCLUSIVE so we subtract/add 1 to avoid repeating.
+        zh_chunks  — order_by ingest_ts_epoch (epoch-ms cursor, +/-1 for exclusivity).
+        zh_metadata — UUID-based offset; from_order_value is passed directly as offset.
         """
         import datetime
 
         body: dict = {
-            "limit":        limit + 1,   # fetch one extra to detect hasMore
+            "limit":        limit + 1,   # fetch one extra to detect whether more pages exist
             "with_payload": True,
             "with_vector":  False,
         }
@@ -124,8 +132,12 @@ class QdrantService:
             if from_order_value is not None:
                 order_clause["start_from"] = from_order_value
             body["order_by"] = order_clause
+        else:
+            # Pass the UUID cursor received from the previous page response
+            if from_order_value is not None:
+                body["offset"] = from_order_value
 
-        # Build filter
+        # Build filter clauses
         must_clauses = []
 
         if source_filter:
@@ -156,16 +168,16 @@ class QdrantService:
         if has_more:
             raw_points = raw_points[:limit]
 
-        points = [ChunkPoint.from_qdrant_point(p) for p in raw_points]
+        points = [self._make_point(collection, p) for p in raw_points]
 
-        # Build next-page cursor
+        # Determine next-page cursor depending on pagination strategy
         next_cursor = None
-        if has_more and use_order_by and points:
+        if use_order_by and has_more and points:
             last_ts = points[-1].ingest_ts_epoch
             if last_ts is not None:
-                # subtract/add 1 so start_from is exclusive
+                # +/- 1 makes start_from exclusive so the last point is not repeated
                 next_cursor = str(last_ts - 1) if order_direction == "desc" else str(last_ts + 1)
-        elif has_more and not use_order_by:
+        elif not use_order_by and has_more:
             next_cursor = result.get("next_page_offset")
 
         return ScrollResult(
@@ -178,8 +190,8 @@ class QdrantService:
 
     def scroll_all(self, collection: str, batch_size: int = 250) -> list[dict]:
         """
-        Scrolls the ENTIRE collection using UUID-based offset (no order_by).
-        next_page_offset works correctly here. Used for summaries.
+        Scrolls the entire collection using UUID-based offset (no order_by).
+        Used for source/run summary aggregations.
         """
         all_payloads = []
         offset       = None
@@ -208,13 +220,13 @@ class QdrantService:
 
     # ── Point detail ──────────────────────────────────────────────────────────
 
-    def get_point(self, collection: str, point_id: str) -> Optional[ChunkPoint]:
+    def get_point(self, collection: str, point_id: str) -> Optional[Union[ChunkPoint, MetadataPoint]]:
         try:
             data = self._get(f"/collections/{collection}/points/{point_id}")
             raw  = data.get("result")
             if not raw:
                 return None
-            return ChunkPoint.from_qdrant_point(raw)
+            return self._make_point(collection, raw)
         except Exception:
             return None
 
@@ -227,14 +239,14 @@ class QdrantService:
                 {"points": [point_id]}
             )
             return True
-        except Exception as e:
+        except Exception:
             self.logger.do_log(f"QdrantService.delete_point: {traceback.format_exc()}", "ERROR")
             return False
 
     # ── Stats — full-collection aggregations ──────────────────────────────────
 
     def get_ingest_run_summary(self, collection: str) -> list[dict]:
-        """Counts chunks per ingest_run_id across the entire collection."""
+        """Counts points per ingest_run_id across the entire collection."""
         try:
             all_payloads = self.scroll_all(collection)
             run_map: dict[str, dict] = {}
@@ -245,22 +257,23 @@ class QdrantService:
                     run_map[run_id] = {"run_id": run_id, "count": 0, "last_ts": ts}
                 run_map[run_id]["count"] += 1
             return sorted(run_map.values(), key=lambda x: x["last_ts"], reverse=True)
-        except Exception as e:
+        except Exception:
             self.logger.do_log(f"QdrantService.get_ingest_run_summary: {traceback.format_exc()}", "ERROR")
             raise
 
     def get_source_summary(self, collection: str) -> list[dict]:
-        """Counts chunks per source_pdf across the entire collection."""
+        """Counts points per source identifier across the entire collection."""
         try:
             all_payloads = self.scroll_all(collection)
             source_map: dict[str, dict] = {}
             for pl in all_payloads:
-                src = pl.get("source_pdf", "unknown")
+                # zh_chunks uses source_pdf, zh_metadata uses filename
+                src = pl.get("source_pdf") or pl.get("filename", "unknown")
                 ts  = pl.get("ingest_timestamp", "")
                 if src not in source_map:
                     source_map[src] = {"source_pdf": src, "count": 0, "last_ts": ts}
                 source_map[src]["count"] += 1
             return sorted(source_map.values(), key=lambda x: x["count"], reverse=True)
-        except Exception as e:
+        except Exception:
             self.logger.do_log(f"QdrantService.get_source_summary: {traceback.format_exc()}", "ERROR")
             raise

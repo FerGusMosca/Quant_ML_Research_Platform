@@ -1,6 +1,5 @@
 import traceback
 from pathlib import Path
-from typing import Optional
 
 from fastapi import APIRouter, Request
 from fastapi.responses import HTMLResponse, JSONResponse
@@ -13,7 +12,8 @@ from service_layer.client.qdrant.qdrant_service import QdrantService
 class ChunkManagementController(BaseController):
     """
     Controller for the Chunk Management section under Data menu.
-    Exposes UI page + JSON API for browsing/inspecting/deleting Qdrant chunks.
+    Exposes UI page + JSON API for browsing, inspecting, and deleting Qdrant points.
+    Works across all known collections (zh_chunks, zh_metadata).
     """
 
     def __init__(self, config_settings: dict, logger):
@@ -28,7 +28,7 @@ class ChunkManagementController(BaseController):
         )
 
         # ── Page ──────────────────────────────────────────────────────────────
-        self.router.get("/",  response_class=HTMLResponse)(self.display_page)
+        self.router.get("/", response_class=HTMLResponse)(self.display_page)
 
         # ── Collection info ───────────────────────────────────────────────────
         self.router.get("/collections",     response_class=JSONResponse)(self.api_get_collections)
@@ -87,12 +87,12 @@ class ChunkManagementController(BaseController):
     async def api_scroll_chunks(
         self,
         request: Request,
-        collection: str        = "zh_chunks",
-        limit: int             = 20,
-        from_order_value: int  = None,   # epoch ms cursor for next page
-        source_filter: str     = None,
-        date_from: str         = None,   # YYYY-MM-DD
-        date_to: str           = None,   # YYYY-MM-DD
+        collection: str       = "zh_chunks",
+        limit: int            = 20,
+        from_order_value: int = None,
+        source_filter: str    = None,
+        date_from: str        = None,   # YYYY-MM-DD
+        date_to: str          = None,   # YYYY-MM-DD
     ):
         try:
             result = self.qdrant.scroll_chunks(
@@ -104,9 +104,9 @@ class ChunkManagementController(BaseController):
                 date_to=date_to or None,
             )
             return JSONResponse({
-                "points":            [self._chunk_to_dict(p) for p in result.points],
-                "next_page_offset":  result.next_page_offset,
-                "total_returned":    result.total_returned,
+                "points":           [p.to_dict() for p in result.points],
+                "next_page_offset": result.next_page_offset,
+                "total_returned":   result.total_returned,
             })
         except Exception as e:
             self.logger.do_log(f"api_scroll_chunks: {traceback.format_exc()}", "ERROR")
@@ -119,7 +119,7 @@ class ChunkManagementController(BaseController):
             point = self.qdrant.get_point(collection, point_id)
             if not point:
                 return JSONResponse({"ok": False, "error": "Point not found"}, status_code=404)
-            return JSONResponse({"ok": True, "point": self._chunk_to_dict(point)})
+            return JSONResponse({"ok": True, "point": point.to_dict()})
         except Exception as e:
             self.logger.do_log(f"api_get_chunk_detail: {traceback.format_exc()}", "ERROR")
             return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
@@ -156,22 +156,3 @@ class ChunkManagementController(BaseController):
         except Exception as e:
             self.logger.do_log(f"api_source_summary: {traceback.format_exc()}", "ERROR")
             return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
-
-    # ── Helpers ───────────────────────────────────────────────────────────────
-
-    @staticmethod
-    def _chunk_to_dict(p) -> dict:
-        return {
-            "id":               p.id,
-            "source_pdf":       p.source_pdf,
-            "chunk_id":         p.chunk_id,
-            "chunk_index":      p.chunk_index,
-            "chunk_text":       p.chunk_text,
-            "pdf_path":         p.pdf_path,
-            "source_path":      p.source_path,
-            "text_len":         p.text_len,
-            "ingest_timestamp": p.ingest_timestamp,
-            "ingest_ts_epoch":  p.ingest_ts_epoch,
-            "ingest_run_id":    p.ingest_run_id,
-            "extra_payload":    p.extra_payload,
-        }

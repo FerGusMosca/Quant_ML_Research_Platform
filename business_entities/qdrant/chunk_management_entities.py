@@ -23,7 +23,6 @@ class ChunkPoint:
     ingest_timestamp: Optional[str] = None
     ingest_ts_epoch: Optional[int] = None
     ingest_run_id: Optional[str] = None
-    # for zh_metadata or other collections — store extra fields
     extra_payload: dict = field(default_factory=dict)
 
     @classmethod
@@ -50,15 +49,31 @@ class ChunkPoint:
             extra_payload=extra,
         )
 
+    def to_dict(self) -> dict:
+        return {
+            "id":               self.id,
+            "source_pdf":       self.source_pdf,
+            "chunk_id":         self.chunk_id,
+            "chunk_index":      self.chunk_index,
+            "chunk_text":       self.chunk_text,
+            "pdf_path":         self.pdf_path,
+            "source_path":      self.source_path,
+            "text_len":         self.text_len,
+            "ingest_timestamp": self.ingest_timestamp,
+            "ingest_ts_epoch":  self.ingest_ts_epoch,
+            "ingest_run_id":    self.ingest_run_id,
+            "extra_payload":    self.extra_payload,
+        }
+
 
 @dataclass
 class ScrollResult:
-    points: list[ChunkPoint]
+    points: list
     next_page_offset: Optional[str]
     total_returned: int
 
 
 @dataclass
 class SearchResult:
-    points: list[ChunkPoint]
+    points: list
     scores: list[float]
