@@ -88,8 +88,8 @@ class RAGIngestOrchestrationLogic:
         self.progress_bus = ProgressBus()
 
         registry = build_mcp_registry_ingest(orchestrator=self)
-        registry.merge(build_mcp_registry_corpus_metadata(orchestrator=self))
-
+        registry = build_mcp_registry_corpus_metadata(registry,orchestrator=self)
+        #registry.merge(build_mcp_registry_corpus_metadata(orchestrator=self))
         self.mcp_dispatcher = JsonRpcDispatcher(registry, self.progress_bus)
 
         mcp_server=server
@@ -199,16 +199,24 @@ class RAGIngestOrchestrationLogic:
         finally:
             self._force_memory_release(job_id)
 
-
     def run_corpus_metadata(self, source_path, dest_root, chunk_name, tag_cfg=None, job_id=None):
-        self.logger.do_log(f"[CORPUS] 🚀 Starting metadata: {source_path}", MessageType.INFO, job_id)
+        try:
+            self.logger.do_log(f"[CORPUS] 🚀 Starting metadata: {source_path}", MessageType.INFO, job_id)
 
-        if not os.path.exists(source_path):
-            raise Exception(f"Source path does not exist: {source_path}")
+            if not os.path.exists(source_path):
+                raise Exception(f"Source path does not exist: {source_path}")
 
-        pipeline = CorpusMetadataPipeline(self.config, self.logger, dest_root, chunk_name, tag_cfg=tag_cfg)
-        files = pipeline.discover_files(source_path)
-        self.logger.do_log(f"[CORPUS] Found {len(files)} PDFs/TXTs/HTMLs", MessageType.INFO, job_id)
-        pipeline.run(files,job_id)
+            pipeline = CorpusMetadataPipeline(self.config, self.logger, dest_root, chunk_name, tag_cfg=tag_cfg)
+            files = pipeline.discover_files(source_path)
+            self.logger.do_log(f"[CORPUS] Found {len(files)} PDFs/TXTs/HTMLs", MessageType.INFO, job_id)
+            pipeline.run(files, job_id)
 
-        self.logger.do_log("[CORPUS] ✅ Completed.", MessageType.INFO, job_id)
+            self.logger.do_log("[CORPUS] ✅ Completed.", MessageType.INFO, job_id)
+            return True
+
+        except Exception as e:
+            self.logger.do_log(
+                f"[CORPUS] ❌ Exception: {str(e)}\n{traceback.format_exc()}",
+                MessageType.ERROR, job_id
+            )
+            return False

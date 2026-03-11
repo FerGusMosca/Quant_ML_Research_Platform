@@ -73,8 +73,8 @@ def build_mcp_registry_ingest(orchestrator) -> ToolRegistry:
     return registry
 
 
-def build_mcp_registry_corpus_metadata(orchestrator) -> ToolRegistry:
-    registry = ToolRegistry()
+def build_mcp_registry_corpus_metadata(registry,orchestrator) -> ToolRegistry:
+    #registry = ToolRegistry()
 
     registry.register(
         Tool(
