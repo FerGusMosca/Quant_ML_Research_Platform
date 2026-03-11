@@ -32,3 +32,7 @@ spacy
 
 # Qdrant
 qdrant-client
+
+#parse
+bs4
+sentencepiece==0.1.99
