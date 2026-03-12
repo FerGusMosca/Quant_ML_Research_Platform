@@ -88,7 +88,7 @@ class RAGIngestOrchestrationLogic:
         self.progress_bus = ProgressBus()
 
         registry = build_mcp_registry_ingest(orchestrator=self)
-        registry = build_mcp_registry_corpus_metadata(registry,orchestrator=self)
+        #registry = build_mcp_registry_corpus_metadata(registry,orchestrator=self)
         #registry.merge(build_mcp_registry_corpus_metadata(orchestrator=self))
         self.mcp_dispatcher = JsonRpcDispatcher(registry, self.progress_bus)
 
