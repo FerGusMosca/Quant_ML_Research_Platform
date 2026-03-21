@@ -26,6 +26,7 @@ from controllers.trading_strategies_controller import TradingStrategiesControlle
 from data_access_layer.account_data_manager import AccountDataManager
 from data_access_layer.account_manager import AccountManager
 from data_access_layer.ib_portfolio_manager import IBPortfolioManager
+from data_access_layer.instruction_manager import InstructionManager
 from data_access_layer.user_manager import UserManager
 from framework.common.logger.message_type import MessageType
 from fastapi.responses import HTMLResponse
@@ -54,6 +55,7 @@ class MainDashboardController:
         account_mgr  = AccountManager(fund_mgmt_dashboard_cs)
         account_data_mgr =AccountDataManager(fund_mgmt_dashboard_cs)
         ib_portfolio_manager = IBPortfolioManager(fund_mgmt_dashboard_cs)
+        instr_mgr = InstructionManager(fund_mgmt_dashboard_cs)
 
         self.user_manager = UserManager(fund_mgmt_dashboard_cs, secret_key)
 
@@ -94,7 +96,7 @@ class MainDashboardController:
         self.app.include_router(self.chunk_mgmt_ctrl.router,prefix="/chunk_management")
 
         portfolio_view_controller = PortfolioViewController(account_manager=account_mgr,  account_data_manager=account_data_mgr,
-                                                            ib_portfolio_manager=ib_portfolio_manager)
+                                                            ib_portfolio_manager=ib_portfolio_manager,instruction_manager=instr_mgr)
         self.app.include_router(portfolio_view_controller.router)
 
         self.trading_strategies_ctrl = TradingStrategiesController(config_settings, logger)

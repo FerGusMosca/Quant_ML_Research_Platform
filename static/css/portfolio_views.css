@@ -317,3 +317,15 @@ tbody tr:hover td { background: rgba(255,255,255,0.02); }
   from { opacity: 0; transform: translateX(16px); }
   to   { opacity: 1; transform: translateX(0); }
 }
+
+.btn-sync {
+  padding: 8px 16px; border-radius: 7px;
+  background: rgba(63,185,80,0.08);
+  border: 1px solid rgba(63,185,80,0.25);
+  color: var(--green);
+  font-family: var(--mono); font-size: 10px;
+  font-weight: 600; cursor: pointer; transition: all 0.15s;
+  text-transform: uppercase; letter-spacing: 0.06em;
+}
+.btn-sync:hover    { background: rgba(63,185,80,0.18); border-color: var(--green); }
+.btn-sync:disabled { opacity: 0.4; cursor: wait; }

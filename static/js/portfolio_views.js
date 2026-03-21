@@ -1,4 +1,5 @@
 // portfolio_views.js — Seeking Bias · Portfolio Views
+const SYNC_SUPPORTED_BROKERS = new Set(['IB_PROD', 'IB_DEV']);
 
 // ── Live clock ──
 (function tick() {
@@ -63,6 +64,11 @@ function loadPortfolio(accountId, accountNumber, accountName, broker) {
   panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   _fetchHoldings(accountId);
+
+  const syncBtn = document.getElementById('syncBtn');
+  if (syncBtn) {
+    syncBtn.style.display = SYNC_SUPPORTED_BROKERS.has(broker) ? 'inline-flex' : 'none';
+  }
 }
 
 function refreshPortfolio() {
@@ -179,4 +185,28 @@ function showFlash(type, msg) {
   el.textContent = msg;
   document.body.appendChild(el);
   setTimeout(() => el.remove(), 4000);
+}
+
+function syncPortfolio() {
+  if (!_currentAccountId) return;
+
+  const syncBtn    = document.getElementById('syncBtn');
+  const refreshBtn = document.getElementById('refreshBtn');
+  if (syncBtn)    syncBtn.disabled    = true;
+  if (refreshBtn) refreshBtn.disabled = true;
+
+  fetch('/portfolio_views/' + _currentAccountId + '/sync', { method: 'POST' })
+    .then(r => r.json())
+    .then(data => {
+      if (data.ok) {
+        showFlash('success', '✓ Sync instruction queued (id=' + data.instruction_id + ')');
+      } else {
+        showFlash('error', '✗ ' + (data.error || 'Sync failed'));
+      }
+    })
+    .catch(err => showFlash('error', '✗ Network error: ' + err.message))
+    .finally(() => {
+      if (syncBtn)    syncBtn.disabled    = false;
+      if (refreshBtn) refreshBtn.disabled = false;
+    });
 }
