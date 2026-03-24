@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+{% set active_page = 'argy_bonds' %}
+
+{% block page_title %}Argy Bonds{% endblock %}
+{% block nav_subtitle %}Argy Bonds{% endblock %}
+{% block css_file %}argy_bonds.css{% endblock %}
+{% block js_file %}argy_bonds.js{% endblock %}
+
+{% block main %}
+<div class="ab-page-header">
+  <div>
+    <div class="page-eyebrow">Analytics · Fixed Income</div>
+    <div class="page-title">Argy Bonds</div>
+  </div>
+  <div class="ab-header-meta">
+    <div class="ab-live-dot"></div>
+    <span class="ab-last-update" id="lastUpdate">Actualizando…</span>
+    <button class="ab-refresh-btn" onclick="refreshAll()" title="Refrescar">↻</button>
+  </div>
+</div>
+
+<!-- ── Tabs ─────────────────────────────────────────────────────── -->
+<div class="ab-tabs">
+  <button class="ab-tab active" data-tab="sovereign" onclick="switchTab('sovereign', this)">
+    🏛 Sovereign
+  </button>
+  <button class="ab-tab" data-tab="curve" onclick="switchTab('curve', this)" disabled title="Próximamente">
+    📐 Curva (soon)
+  </button>
+</div>
+
+<!-- ══ TAB: SOVEREIGN ════════════════════════════════════════════ -->
+<div class="ab-tab-content" id="tab-sovereign">
+
+  <!-- Bond table -->
+  <div class="ab-card" id="bondTableCard">
+    <div class="ab-card-hdr">
+      <span class="ab-card-title">Bonos Soberanos USD</span>
+      <span class="ab-card-sub">Precios en tiempo real · BYMA</span>
+    </div>
+    <div class="ab-table-wrap">
+      <table class="ab-table" id="bondTable">
+        <thead>
+          <tr>
+            <th>Ticker</th>
+            <th>Ley</th>
+            <th>Precio USD</th>
+            <th>Bid</th>
+            <th>Ask</th>
+            <th>TIR</th>
+            <th>Duration</th>
+            <th>Vencimiento</th>
+            <th>% Chg</th>
+            <th>Vol</th>
+            <th style="width:80px"></th>
+          </tr>
+        </thead>
+        <tbody id="bondTbody">
+          <tr><td colspan="11" class="ab-empty-cell">Cargando bonos…</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ab-table-footer">
+      TIR (YTM) calculada con flujos descontados · Duration en años (Macaulay)
+    </div>
+  </div>
+
+</div>
+<!-- ══ END TAB SOVEREIGN ════════════════════════════════════════ -->
+
+{% endblock %}
+
+
+{% block modals %}
+
+<!-- ── Chart Modal ──────────────────────────────────────────────── -->
+<div class="ab-backdrop" id="chartBackdrop" onclick="closeChartModal()"></div>
+<div class="ab-modal" id="chartModal">
+  <div class="ab-modal-hdr">
+    <div>
+      <span class="ab-modal-title" id="chartModalTitle">Chart</span>
+      <span class="ab-modal-sub" id="chartModalSub"></span>
+    </div>
+    <div class="ab-modal-controls">
+      <label class="ab-toggle-wrap" title="Suma cupones pagados al precio para neutralizar los saltos">
+        <input type="checkbox" id="adjToggle" onchange="onAdjToggle()">
+        <span class="ab-toggle-slider"></span>
+        <span class="ab-toggle-label">Precio Ajustado (+ cupones)</span>
+      </label>
+      <button class="ab-modal-close" onclick="closeChartModal()">✕</button>
+    </div>
+  </div>
+
+  <div class="ab-modal-body">
+    <!-- Stats bar -->
+    <div class="ab-stats-bar" id="chartStats"></div>
+
+    <!-- Chart -->
+    <div class="ab-chart-wrap" id="chartContainer">
+      <div class="ab-chart-loading">⏳ Descargando datos desde TradingView…</div>
+    </div>
+
+    <!-- Coupon schedule -->
+    <div class="ab-coupon-section" id="couponSection">
+      <div class="ab-coupon-hdr">
+        <span class="ab-coupon-title">📅 Cupones Pagados</span>
+        <span class="ab-coupon-sub" id="couponSub"></span>
+      </div>
+      <div class="ab-coupon-list" id="couponList"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ── Calculator Modal ─────────────────────────────────────────── -->
+<div class="ab-backdrop" id="calcBackdrop" onclick="closeCalcModal()"></div>
+<div class="ab-modal ab-calc-modal" id="calcModal">
+  <div class="ab-modal-hdr">
+    <div>
+      <span class="ab-modal-title" id="calcModalTitle">Calculadora</span>
+      <span class="ab-modal-sub" id="calcModalSub"></span>
+    </div>
+    <button class="ab-modal-close" onclick="closeCalcModal()">✕</button>
+  </div>
+
+  <div class="ab-calc-body">
+
+    <!-- Inputs row -->
+    <div class="ab-calc-inputs">
+      <div class="ab-calc-field">
+        <label class="ab-calc-lbl">Precio USD</label>
+        <input class="ab-calc-input" type="number" id="calcPrice" step="0.01" oninput="recalc()">
+      </div>
+      <div class="ab-calc-field">
+        <label class="ab-calc-lbl">Monto a invertir (USD)</label>
+        <input class="ab-calc-input" type="number" id="calcMonto" value="10000" step="100" oninput="recalc()">
+      </div>
+      <div class="ab-calc-result-box">
+        <div class="ab-calc-tir-wrap">
+          <span class="ab-calc-tir-val" id="calcTir">—</span>
+          <span class="ab-calc-tir-lbl">TIR (YTM)</span>
+        </div>
+        <div class="ab-calc-dur-wrap">
+          <span class="ab-calc-dur-val" id="calcDur">—</span>
+          <span class="ab-calc-dur-lbl">Duration</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Costs row -->
+    <div class="ab-calc-costs">
+      <span class="ab-calc-costs-lbl">Costos:</span>
+      <div class="ab-calc-cost-field">
+        <label class="ab-calc-lbl">Arancel %</label>
+        <input class="ab-calc-input ab-calc-input-sm" type="number" id="calcArancel" value="0.45" step="0.01" oninput="recalc()">
+      </div>
+      <div class="ab-calc-cost-field">
+        <label class="ab-calc-lbl">Impuestos %</label>
+        <input class="ab-calc-input ab-calc-input-sm" type="number" id="calcImpuestos" value="0.01" step="0.01" oninput="recalc()">
+      </div>
+    </div>
+
+    <!-- Cash flows table -->
+    <div class="ab-calc-table-wrap">
+      <div class="ab-calc-table-hdr">Flujos de fondos</div>
+      <table class="ab-calc-table">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th class="ab-calc-th-r">Por 100 VN</th>
+            <th class="ab-calc-th-r">Tu inversión</th>
+          </tr>
+        </thead>
+        <tbody id="calcTbody">
+          <tr><td colspan="3" class="ab-calc-empty">Seleccioná un bono</td></tr>
+        </tbody>
+        <tfoot id="calcTfoot"></tfoot>
+      </table>
+    </div>
+
+    <!-- Bottom note -->
+    <div class="ab-calc-note" id="calcNote"></div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+{% block extra_js %}
+<script src="https://unpkg.com/lightweight-charts@3.8.0/dist/lightweight-charts.standalone.production.js"></script>
+{% endblock %}

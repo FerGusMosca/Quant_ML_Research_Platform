@@ -9,6 +9,7 @@ from fastapi.responses import JSONResponse
 from itsdangerous import TimestampSigner
 from starlette.responses import RedirectResponse
 from controllers.account_controller import AccountController
+from controllers.argy_bonds_controller import ArgyBondsController
 from controllers.auth_middleware import AuthMiddleware
 from controllers.chunk_management_controller import ChunkManagementController
 from controllers.display_custom_etf_controller import DisplayCustomETFController
@@ -101,6 +102,9 @@ class MainDashboardController:
 
         self.trading_strategies_ctrl = TradingStrategiesController(config_settings, logger)
         self.app.include_router(self.trading_strategies_ctrl.router, prefix="/trading_strategies")
+
+        self.argy_bonds_ctrl = ArgyBondsController(config_settings, logger)
+        self.app.include_router(self.argy_bonds_ctrl.router, prefix="/argy_bonds")
 
 
         # ── FRED proxy router ──
