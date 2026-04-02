@@ -1,0 +1,240 @@
+/* =============================================================
+   argy_bonds_lecap.css  — v2
+   Append these rules to argy_bonds.css  (or @import this file)
+   ============================================================= */
+
+/* ── Toolbar ─────────────────────────────────────────────────── */
+.lc-toolbar {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 14px; flex-wrap: wrap; gap: 10px;
+}
+.lc-toolbar-left  { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.lc-toolbar-right { display: flex; align-items: center; gap: 10px; }
+
+/* ── Filter pill group ───────────────────────────────────────── */
+.lc-filter-group {
+  display: flex;
+  background: var(--elevated);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 2px;
+  gap: 2px;
+}
+.lc-filter-btn {
+  background: none;
+  border: none;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 5px 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.15s;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.lc-filter-btn:hover:not(.active) {
+  background: rgba(88,166,255,0.07);
+  color: #8bc8ff;
+}
+.lc-filter-btn.active {
+  background: rgba(31,111,235,0.22);
+  color: #58A6FF;
+  box-shadow: 0 1px 4px rgba(31,111,235,0.18);
+}
+
+/* ── Expired toggle ──────────────────────────────────────────── */
+.lc-expired-toggle {
+  display: flex; align-items: center; gap: 7px;
+  font-family: var(--mono); font-size: 10px; color: var(--dim);
+  cursor: pointer; user-select: none;
+  background: var(--elevated);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  padding: 5px 12px;
+  transition: border-color 0.15s, color 0.15s;
+}
+.lc-expired-toggle:hover { border-color: var(--blue); color: #8bc8ff; }
+.lc-expired-toggle input { accent-color: var(--blue); width: 13px; height: 13px; cursor: pointer; }
+
+/* ── CSV import button ───────────────────────────────────────── */
+.lc-csv-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: var(--elevated);
+  border: 1px solid var(--border2);
+  color: var(--dim);
+  font-family: var(--mono); font-size: 10px; font-weight: 700;
+  padding: 6px 15px; border-radius: 8px; cursor: pointer;
+  transition: all 0.15s; letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.lc-csv-btn:hover {
+  border-color: #58A6FF;
+  color: #58A6FF;
+  background: rgba(31,111,235,0.10);
+  box-shadow: 0 0 0 2px rgba(31,111,235,0.12);
+}
+
+/* ── Add Security button ─────────────────────────────────────── */
+.lc-add-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: linear-gradient(135deg, #1f6fea 0%, #1458c0 100%);
+  border: 1px solid rgba(88,166,255,0.3);
+  color: #fff;
+  font-family: var(--mono); font-size: 10px; font-weight: 700;
+  padding: 7px 18px; border-radius: 8px; cursor: pointer;
+  transition: all 0.15s; letter-spacing: 0.07em;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(31,111,235,0.25);
+}
+.lc-add-btn:hover {
+  background: linear-gradient(135deg, #2f7dfa 0%, #1f6fea 100%);
+  box-shadow: 0 4px 14px rgba(31,111,235,0.4);
+  transform: translateY(-1px);
+}
+.lc-add-btn:active { transform: translateY(0); box-shadow: none; }
+
+/* ── Expired row ─────────────────────────────────────────────── */
+.lc-row-expired td { opacity: 0.42; }
+.lc-expired-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: rgba(248,81,73,0.10);
+  border: 1px solid rgba(248,81,73,0.35);
+  color: var(--red);
+  font-family: var(--mono); font-size: 8px; font-weight: 700;
+  padding: 2px 6px; border-radius: 4px; letter-spacing: 0.06em;
+  vertical-align: middle; margin-left: 5px;
+}
+.lc-expired-badge::before { content: '⚠'; font-size: 9px; margin-right: 2px; }
+
+/* Days-to-maturity colors */
+.lc-days-warn { color: var(--orange) !important; font-weight: 700; }
+.lc-days-ok   { color: var(--dim); }
+
+/* ── Type badges ─────────────────────────────────────────────── */
+.lc-badge-type {
+  display: inline-block; font-size: 8px; font-weight: 700;
+  padding: 2px 7px; border-radius: 4px; letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.lc-badge-type.lecap {
+  background: rgba(31,111,235,0.14);
+  color: #58A6FF;
+  border: 1px solid rgba(31,111,235,0.28);
+}
+.lc-badge-type.boncap {
+  background: rgba(210,153,34,0.13);
+  color: var(--orange);
+  border: 1px solid rgba(210,153,34,0.28);
+}
+
+/* ── Yield columns ───────────────────────────────────────────── */
+.lc-tna      { color: #E6EDF3; font-weight: 600; }
+.lc-tem      { color: var(--green); font-weight: 700; }
+.lc-tir      { color: #58A6FF; font-weight: 700; }
+.lc-no-price { color: var(--faint); font-style: italic; }
+
+/* ── Delete button ───────────────────────────────────────────── */
+.lc-del-btn {
+  background: none;
+  border: 1px solid var(--border2);
+  color: var(--faint);
+  font-size: 12px; cursor: pointer;
+  padding: 4px 8px; border-radius: 6px;
+  transition: all 0.14s;
+}
+.lc-del-btn:hover {
+  border-color: var(--red);
+  color: var(--red);
+  background: rgba(248,81,73,0.08);
+  box-shadow: 0 0 0 2px rgba(248,81,73,0.10);
+}
+
+/* ── Add / Edit Security Modal Form grid ─────────────────────── */
+.lc-form-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+}
+@media (max-width: 520px) { .lc-form-grid { grid-template-columns: 1fr; } }
+
+/* Modal action buttons */
+.lc-save-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: linear-gradient(135deg, #1f6fea 0%, #1458c0 100%);
+  border: 1px solid rgba(88,166,255,0.3);
+  color: #fff;
+  font-family: var(--mono); font-size: 11px; font-weight: 700;
+  padding: 9px 24px; border-radius: 8px; cursor: pointer;
+  transition: all 0.15s;
+  box-shadow: 0 2px 8px rgba(31,111,235,0.25);
+}
+.lc-save-btn:hover {
+  box-shadow: 0 4px 14px rgba(31,111,235,0.4);
+  transform: translateY(-1px);
+}
+.lc-save-btn:active  { transform: translateY(0); box-shadow: none; }
+.lc-save-btn:disabled {
+  opacity: 0.4; cursor: not-allowed;
+  transform: none; box-shadow: none;
+}
+
+.lc-cancel-btn {
+  background: none;
+  border: 1px solid var(--border2);
+  color: var(--dim);
+  font-family: var(--mono); font-size: 11px; font-weight: 600;
+  padding: 9px 20px; border-radius: 8px; cursor: pointer;
+  transition: all 0.15s;
+}
+.lc-cancel-btn:hover { border-color: var(--text); color: var(--text); }
+
+/* ── CSV Import Modal ────────────────────────────────────────── */
+.lc-csv-hint {
+  background: var(--elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-family: var(--mono); font-size: 10px; color: var(--dim);
+  line-height: 1.7;
+}
+.lc-csv-hint code {
+  color: var(--orange);
+  background: rgba(210,153,34,0.09);
+  padding: 1px 5px; border-radius: 3px; font-size: 10px;
+}
+.lc-csv-row-ok  { color: var(--green); font-weight: 700; font-size: 10px; }
+.lc-csv-row-err { color: var(--red);   font-weight: 700; font-size: 10px; }
+
+/* ── Dashboard return button fix ─────────────────────────────────
+   The nav-return / back-link button in base.html loses styles when
+   the page overrides button { } globally. This re-applies the correct
+   appearance regardless of cascade order.
+   Target the element directly by its existing class from base.html.
+   ────────────────────────────────────────────────────────────────── */
+.nav-return-btn,
+a.nav-return-btn,
+#navReturnBtn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  background: none !important;
+  border: 1px solid var(--border2) !important;
+  color: #58A6FF !important;
+  font-family: var(--mono) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  padding: 4px 12px !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  transition: all 0.14s !important;
+  letter-spacing: 0.04em !important;
+}
+.nav-return-btn:hover,
+a.nav-return-btn:hover,
+#navReturnBtn:hover {
+  background: rgba(88,166,255,0.09) !important;
+  border-color: #58A6FF !important;
+  box-shadow: 0 0 0 2px rgba(88,166,255,0.12) !important;
+}

@@ -24,6 +24,9 @@
   <button class="ab-tab active" data-tab="sovereign" onclick="switchTab('sovereign', this)">
     🏛 Sovereign
   </button>
+  <button class="ab-tab" data-tab="lecap" onclick="switchTab('lecap', this)">
+    📋 LECAPs &amp; BONCAPs
+  </button>
   <button class="ab-tab" data-tab="curve" onclick="switchTab('curve', this)" disabled title="Próximamente">
     📐 Curva (soon)
   </button>
@@ -31,8 +34,6 @@
 
 <!-- ══ TAB: SOVEREIGN ════════════════════════════════════════════ -->
 <div class="ab-tab-content" id="tab-sovereign">
-
-  <!-- Bond table -->
   <div class="ab-card" id="bondTableCard">
     <div class="ab-card-hdr">
       <span class="ab-card-title">Bonos Soberanos USD</span>
@@ -64,9 +65,76 @@
       TIR (YTM) calculada con flujos descontados · Duration en años (Macaulay)
     </div>
   </div>
-
 </div>
 <!-- ══ END TAB SOVEREIGN ════════════════════════════════════════ -->
+
+
+<!-- ══ TAB: LECAPs & BONCAPs ═════════════════════════════════════ -->
+<div class="ab-tab-content" id="tab-lecap" style="display:none">
+
+  <!-- ── Toolbar ───────────────────────────────────────────────── -->
+  <div class="lc-toolbar">
+    <div class="lc-toolbar-left">
+      <!-- Type filter -->
+      <div class="lc-filter-group">
+        <button class="lc-filter-btn active" data-filter="ALL"    onclick="setLecapFilter('ALL', this)">All</button>
+        <button class="lc-filter-btn"        data-filter="LECAP"  onclick="setLecapFilter('LECAP', this)">LECAPs</button>
+        <button class="lc-filter-btn"        data-filter="BONCAP" onclick="setLecapFilter('BONCAP', this)">BONCAPs</button>
+      </div>
+      <!-- Expired toggle -->
+      <label class="lc-expired-toggle">
+        <input type="checkbox" id="showExpiredChk" onchange="renderLecapTable()" checked>
+        <span>Show expired</span>
+      </label>
+    </div>
+
+    <div class="lc-toolbar-right">
+      <!-- CSV bulk import -->
+      <label class="lc-csv-btn" title="Importar CSV">
+        📥 CSV Import
+        <input type="file" id="csvFileInput" accept=".csv" style="display:none" onchange="onCsvFileSelected(event)">
+      </label>
+      <!-- Add single security -->
+      <button class="lc-add-btn" onclick="openAddSecurityModal()">+ Add Security</button>
+    </div>
+  </div>
+
+  <!-- ── Main table card ───────────────────────────────────────── -->
+  <div class="ab-card">
+    <div class="ab-card-hdr">
+      <span class="ab-card-title">LECAPs &amp; BONCAPs</span>
+      <span class="ab-card-sub" id="lcCardSub">Rendimiento implícito · ARS</span>
+    </div>
+    <div class="ab-table-wrap">
+      <table class="ab-table" id="lecapTable">
+        <thead>
+          <tr>
+            <th>Ticker</th>
+            <th>Type</th>
+            <th>Precio</th>
+            <th>Bid</th>
+            <th>Ask</th>
+            <th>Pago Final</th>
+            <th>Días</th>
+            <th>Vencimiento</th>
+            <th>TNA</th>
+            <th>TEM</th>
+            <th>TIR</th>
+            <th style="width:60px"></th>
+          </tr>
+        </thead>
+        <tbody id="lecapTbody">
+          <tr><td colspan="12" class="ab-empty-cell">Cargando…</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ab-table-footer" id="lcTableFooter">
+      TNA/TEM/TIR calculados con precio de mercado y pago final · Liquidación T+1
+    </div>
+  </div>
+
+</div>
+<!-- ══ END TAB LECAPs & BONCAPs ════════════════════════════════ -->
 
 {% endblock %}
 
@@ -90,17 +158,11 @@
       <button class="ab-modal-close" onclick="closeChartModal()">✕</button>
     </div>
   </div>
-
   <div class="ab-modal-body">
-    <!-- Stats bar -->
     <div class="ab-stats-bar" id="chartStats"></div>
-
-    <!-- Chart -->
     <div class="ab-chart-wrap" id="chartContainer">
       <div class="ab-chart-loading">⏳ Descargando datos desde TradingView…</div>
     </div>
-
-    <!-- Coupon schedule -->
     <div class="ab-coupon-section" id="couponSection">
       <div class="ab-coupon-hdr">
         <span class="ab-coupon-title">📅 Cupones Pagados</span>
@@ -111,8 +173,7 @@
   </div>
 </div>
 
-
-<!-- ── Calculator Modal ─────────────────────────────────────────── -->
+<!-- ── Calculator Modal (Sovereign) ────────────────────────────── -->
 <div class="ab-backdrop" id="calcBackdrop" onclick="closeCalcModal()"></div>
 <div class="ab-modal ab-calc-modal" id="calcModal">
   <div class="ab-modal-hdr">
@@ -122,10 +183,7 @@
     </div>
     <button class="ab-modal-close" onclick="closeCalcModal()">✕</button>
   </div>
-
   <div class="ab-calc-body">
-
-    <!-- Inputs row -->
     <div class="ab-calc-inputs">
       <div class="ab-calc-field">
         <label class="ab-calc-lbl">Precio USD</label>
@@ -146,8 +204,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Costs row -->
     <div class="ab-calc-costs">
       <span class="ab-calc-costs-lbl">Costos:</span>
       <div class="ab-calc-cost-field">
@@ -159,8 +215,6 @@
         <input class="ab-calc-input ab-calc-input-sm" type="number" id="calcImpuestos" value="0.01" step="0.01" oninput="recalc()">
       </div>
     </div>
-
-    <!-- Cash flows table -->
     <div class="ab-calc-table-wrap">
       <div class="ab-calc-table-hdr">Flujos de fondos</div>
       <table class="ab-calc-table">
@@ -177,9 +231,100 @@
         <tfoot id="calcTfoot"></tfoot>
       </table>
     </div>
-
-    <!-- Bottom note -->
     <div class="ab-calc-note" id="calcNote"></div>
+  </div>
+</div>
+
+
+<!-- ══ ADD / EDIT SECURITY MODAL ════════════════════════════════ -->
+<div class="ab-backdrop" id="secBackdrop" onclick="closeAddSecurityModal()"></div>
+<div class="ab-modal ab-calc-modal" id="secModal">
+  <div class="ab-modal-hdr">
+    <div>
+      <span class="ab-modal-title" id="secModalTitle">Add Security</span>
+      <span class="ab-modal-sub" id="secModalSub"></span>
+    </div>
+    <button class="ab-modal-close" onclick="closeAddSecurityModal()">✕</button>
+  </div>
+  <div class="ab-calc-body" style="gap:16px">
+    <div class="lc-form-grid">
+      <div class="ab-calc-field">
+        <label class="ab-calc-lbl">Symbol *</label>
+        <input class="ab-calc-input" type="text" id="secSymbol" placeholder="e.g. S15Y6" style="text-transform:uppercase">
+      </div>
+      <div class="ab-calc-field">
+        <label class="ab-calc-lbl">Type *</label>
+        <select class="ab-calc-input" id="secType">
+          <option value="LECAP">LECAP</option>
+          <option value="BONCAP">BONCAP</option>
+        </select>
+      </div>
+      <div class="ab-calc-field" style="grid-column:1/-1">
+        <label class="ab-calc-lbl">Description</label>
+        <input class="ab-calc-input" type="text" id="secDescription" placeholder="e.g. LECAP 15-May-2026" style="width:100%">
+      </div>
+      <div class="ab-calc-field">
+        <label class="ab-calc-lbl">Maturity Date *</label>
+        <input class="ab-calc-input" type="date" id="secMaturity">
+      </div>
+      <div class="ab-calc-field">
+        <label class="ab-calc-lbl">Final Payment (per 100 VN) *</label>
+        <input class="ab-calc-input" type="number" id="secFinalPayment" step="0.001" placeholder="e.g. 110.125">
+      </div>
+      <div class="ab-calc-field">
+        <label class="ab-calc-lbl">Currency</label>
+        <select class="ab-calc-input" id="secCurrency">
+          <option value="ARS">ARS</option>
+          <option value="USD">USD</option>
+        </select>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:4px">
+      <button class="lc-cancel-btn" onclick="closeAddSecurityModal()">Cancel</button>
+      <button class="lc-save-btn"   onclick="saveSecurityForm()">Save Security</button>
+    </div>
+    <div class="ab-calc-note" id="secFormError" style="color:var(--red)"></div>
+  </div>
+</div>
+
+
+<!-- ══ CSV IMPORT PREVIEW MODAL ══════════════════════════════════ -->
+<div class="ab-backdrop" id="csvBackdrop" onclick="closeCsvModal()"></div>
+<div class="ab-modal" id="csvModal" style="max-width:780px">
+  <div class="ab-modal-hdr">
+    <div>
+      <span class="ab-modal-title">CSV Import Preview</span>
+      <span class="ab-modal-sub" id="csvModalSub"></span>
+    </div>
+    <button class="ab-modal-close" onclick="closeCsvModal()">✕</button>
+  </div>
+  <div class="ab-calc-body" style="padding:16px 20px;gap:12px">
+    <!-- CSV format hint -->
+    <div class="lc-csv-hint">
+      Expected columns: <code>symbol, security_type, description, maturity_date (YYYY-MM-DD), final_payment, currency</code>
+    </div>
+    <!-- Preview table -->
+    <div class="ab-calc-table-wrap">
+      <div class="ab-calc-table-hdr" id="csvPreviewHdr">Preview — 0 rows</div>
+      <div style="max-height:300px;overflow-y:auto">
+        <table class="ab-calc-table" id="csvPreviewTable">
+          <thead>
+            <tr>
+              <th>#</th><th>Symbol</th><th>Type</th><th>Description</th>
+              <th>Maturity</th><th>Final Pmt</th><th>Currency</th><th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="csvPreviewTbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;justify-content:flex-end">
+      <button class="lc-cancel-btn" onclick="closeCsvModal()">Cancel</button>
+      <button class="lc-save-btn"   id="csvImportBtn" onclick="confirmCsvImport()" disabled>
+        Import All
+      </button>
+    </div>
+    <div class="ab-calc-note" id="csvError" style="color:var(--red)"></div>
   </div>
 </div>
 
@@ -188,4 +333,5 @@
 
 {% block extra_js %}
 <script src="https://unpkg.com/lightweight-charts@3.8.0/dist/lightweight-charts.standalone.production.js"></script>
+<script src="/static/js/argy_bonds_lecap.js"></script>
 {% endblock %}

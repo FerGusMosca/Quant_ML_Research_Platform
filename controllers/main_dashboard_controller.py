@@ -32,7 +32,7 @@ from data_access_layer.user_manager import UserManager
 from framework.common.logger.message_type import MessageType
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
-
+from controllers.lecap_controller import LecapController
 
 class MainDashboardController:
     def __init__(self, logger, config_settings):
@@ -105,6 +105,11 @@ class MainDashboardController:
 
         self.argy_bonds_ctrl = ArgyBondsController(config_settings, logger)
         self.app.include_router(self.argy_bonds_ctrl.router, prefix="/argy_bonds")
+
+
+
+        self.lecap_ctrl = LecapController(config_settings, logger)
+        self.app.include_router(self.lecap_ctrl.router, prefix="/lecap")
 
 
         # ── FRED proxy router ──
