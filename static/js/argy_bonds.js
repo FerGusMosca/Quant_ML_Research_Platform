@@ -10,13 +10,11 @@
   setTimeout(tick, 1000);
 })();
 
-// ── Bond metadata — loaded from /static/config/bonds_config.json ─────────────
-// Flows are exact values from official prospectuses (same source as rendimientosar.com).
-// BOND_META is populated at boot via loadBondConfig(). Do NOT hardcode flows here.
+// ── Bond metadata — loaded from /static/config/bonds_config.json ──────────
+// Flows are exact values from official prospectuses.
+// BOND_META is populated at boot via loadBondConfig().
 
-let BOND_META = {};  // populated by loadBondConfig()
-
-let PAID_COUPONS_META = {};  // historical paid coupons for chart adjustment
+let BOND_META = {};   // populated by loadBondConfig()
 
 async function loadBondConfig() {
   try {
@@ -24,7 +22,7 @@ async function loadBondConfig() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const cfg = await res.json();
 
-    // Future cash flows (for TIR/Duration/calculator)
+    // Future cash flows (for TIR / Duration / calculator)
     const sob = cfg.soberanos || {};
     for (const [symbol, bond] of Object.entries(sob)) {
       BOND_META[symbol] = {
@@ -36,15 +34,6 @@ async function loadBondConfig() {
         })),
       };
     }
-
-    // Historical paid coupons (for chart adjustment)
-    const paid = cfg.paid_coupons || {};
-    for (const [symbol, flows] of Object.entries(paid)) {
-      PAID_COUPONS_META[symbol] = flows.map(f => ({
-        date:             f.fecha,
-        amount_per_100vn: f.monto,
-      }));
-    }
   } catch(e) {
     console.error('[ArgyBonds] Failed to load bonds_config.json:', e);
   }
@@ -54,7 +43,7 @@ async function loadBondConfig() {
 let _bonds         = [];   // live prices from API
 let _enriched      = [];   // merged with meta
 let _currentSymbol = null;
-let _currentBars   = [];   // raw OHLCV
+let _currentBars   = [];   // raw bars (last fetch — kept for re-render on toggle)
 let _lwChart       = null;
 let _adjEnabled    = false;
 
@@ -80,7 +69,7 @@ function switchTab(tab, btn) {
 async function loadBonds() {
   try {
     const data = await apiFetch('/argy_bonds/live');
-    _bonds = data.bonds || [];
+    _bonds    = data.bonds || [];
     _enriched = _bonds.map(b => enrichBond(b));
     renderBondTable(_enriched);
     document.getElementById('lastUpdate').textContent =
@@ -92,7 +81,7 @@ async function loadBonds() {
 }
 
 function enrichBond(b) {
-  const meta = BOND_META[b.symbol] || {};
+  const meta  = BOND_META[b.symbol] || {};
   const price = b.price_usd;
   const { tir, duration } = calcTirDuration(b.symbol, price, meta.coupons || []);
   return { ...b, ...meta, tir, duration };
@@ -103,25 +92,23 @@ async function refreshAll() {
   await loadBonds();
 }
 
-// ── YTM / Duration calc (Newton-Raphson) ──────────────────────────────────
+// ── YTM / Duration calc (Newton-Raphson) ─────────────────────────────────
 function calcTirDuration(symbol, price, coupons) {
   if (!price || !coupons || !coupons.length) return { tir: null, duration: null };
-  const today = new Date();
-  // Filter future coupons
+  const today  = new Date();
   const future = coupons
     .filter(c => new Date(c.date) > today)
     .map(c => ({
-      t: (new Date(c.date) - today) / (365.25 * 24 * 3600 * 1000), // years
+      t:  (new Date(c.date) - today) / (365.25 * 24 * 3600 * 1000),
       cf: c.amount_per_100vn,
     }));
   if (!future.length) return { tir: null, duration: null };
 
-  // Newton-Raphson YTM
   let ytm = 0.09;
   for (let i = 0; i < 100; i++) {
     let pv = 0, dpv = 0;
     for (const { t, cf } of future) {
-      const d = Math.pow(1 + ytm, t);
+      const d  = Math.pow(1 + ytm, t);
       pv  += cf / d;
       dpv -= t * cf / (d * (1 + ytm));
     }
@@ -130,12 +117,11 @@ function calcTirDuration(symbol, price, coupons) {
     ytm -= f / dpv;
   }
 
-  // Macaulay Duration
   let weightedT = 0, sumPv = 0;
   for (const { t, cf } of future) {
     const pv = cf / Math.pow(1 + ytm, t);
     weightedT += t * pv;
-    sumPv += pv;
+    sumPv     += pv;
   }
   const duration = sumPv > 0 ? weightedT / sumPv : null;
 
@@ -157,13 +143,13 @@ function renderBondTable(bonds) {
     return;
   }
   bonds.forEach(b => {
-    const tr = document.createElement('tr');
-    const chgCls = b.pct_change > 0 ? 'ab-chg-pos' : b.pct_change < 0 ? 'ab-chg-neg' : 'ab-chg-neu';
-    const chgSign = b.pct_change > 0 ? '+' : '';
-    const lawCls  = (b.law || '').toLowerCase() === 'ny' ? 'ny' : 'local';
+    const tr       = document.createElement('tr');
+    const chgCls   = b.pct_change > 0 ? 'ab-chg-pos' : b.pct_change < 0 ? 'ab-chg-neg' : 'ab-chg-neu';
+    const chgSign  = b.pct_change > 0 ? '+' : '';
+    const lawCls   = (b.law || '').toLowerCase() === 'ny' ? 'ny' : 'local';
     const lawLabel = lawCls === 'ny' ? 'NY' : 'Local';
-    const tirStr  = b.tir      != null ? (b.tir * 100).toFixed(2) + '%' : '—';
-    const durStr  = b.duration != null ? b.duration.toFixed(1)          : '—';
+    const tirStr   = b.tir      != null ? (b.tir * 100).toFixed(2) + '%' : '—';
+    const durStr   = b.duration != null ? b.duration.toFixed(1)          : '—';
     tr.innerHTML = `
       <td>
         <span class="ab-ticker">${escHtml(b.symbol)}</span>
@@ -179,8 +165,12 @@ function renderBondTable(bonds) {
       <td class="${chgCls}">${chgSign}${fmt2(b.pct_change)}%</td>
       <td class="ab-vol">${fmtVol(b.volume)}</td>
       <td>
-        <button class="ab-chart-btn" onclick="event.stopPropagation();openChartModal('${escHtml(b.symbol)}')" title="Ver gráfico">📈</button>
-        <button class="ab-calc-btn"  onclick="event.stopPropagation();openCalcModal('${escHtml(b.symbol)}')"  title="Calculadora">🧮</button>
+        <button class="ab-chart-btn"
+          onclick="event.stopPropagation();openChartModal('${escHtml(b.symbol)}')"
+          title="Ver gráfico">📈</button>
+        <button class="ab-calc-btn"
+          onclick="event.stopPropagation();openCalcModal('${escHtml(b.symbol)}')"
+          title="Calculadora">🧮</button>
       </td>`;
     tr.onclick = () => openChartModal(b.symbol);
     tbody.appendChild(tr);
@@ -195,35 +185,30 @@ async function openChartModal(symbol) {
   _currentSymbol = symbol;
   _adjEnabled    = document.getElementById('adjToggle').checked;
   const bond = _enriched.find(b => b.symbol === symbol) || {};
-  const meta = BOND_META[symbol] || {};
 
   document.getElementById('chartModalTitle').textContent = symbol + 'D';
   document.getElementById('chartModalSub').textContent   =
     `${bond.law || ''}  ·  Vto: ${bond.maturity || '?'}`;
 
-  // Stats
   document.getElementById('chartStats').innerHTML = buildStatsHtml(bond);
+  renderCouponList(symbol, (BOND_META[symbol] || {}).coupons || []);
 
-  // Coupons
-  renderCouponList(symbol, meta.coupons || []);
-
-  // Chart loading state
   document.getElementById('chartContainer').innerHTML =
     '<div class="ab-chart-loading">⏳ Descargando barras diarias desde TradingView…</div>';
 
   openModal('chartModal', 'chartBackdrop');
-
-  await fetchAndRenderChart(symbol);
+  await fetchAndRenderChart(symbol, _adjEnabled);
 }
 
-async function fetchAndRenderChart(symbol) {
+async function fetchAndRenderChart(symbol, adjusted) {
   try {
-    const data = await apiFetch(
-      `/argy_bonds/ohlcv?symbol=${encodeURIComponent(symbol + 'D')}&exchange=BYMA`
-    );
+    const url  = `/argy_bonds/ohlcv?symbol=${encodeURIComponent(symbol + 'D')}`
+               + `&exchange=BYMA&adjusted=${adjusted}`;
+    const data = await apiFetch(url);
     if (!data.ok) throw new Error(data.error || 'Sin datos');
+    // Keep raw bars for re-fetching on toggle (we always re-fetch — backend is fast)
     _currentBars = data.bars || [];
-    renderChart(_currentBars, symbol, _adjEnabled);
+    renderChart(_currentBars);
   } catch(e) {
     document.getElementById('chartContainer').innerHTML =
       `<div class="ab-chart-error">❌ ${e.message}</div>`;
@@ -238,23 +223,19 @@ function closeChartModal() {
   document.getElementById('chartContainer').innerHTML = '';
 }
 
-// Called when user toggles adjusted price
+// Re-fetch when user toggles adjusted price — backend applies the math
 async function onAdjToggle() {
   _adjEnabled = document.getElementById('adjToggle').checked;
-  if (_currentBars.length && _currentSymbol) {
-    renderChart(_currentBars, _currentSymbol, _adjEnabled);
-  }
+  if (!_currentSymbol) return;
+  document.getElementById('chartContainer').innerHTML =
+    '<div class="ab-chart-loading">⏳ Aplicando ajuste…</div>';
+  await fetchAndRenderChart(_currentSymbol, _adjEnabled);
 }
 
-// ── Core chart renderer ───────────────────────────────────────────────────
-function renderChart(rawBars, symbol, adjusted) {
+// ── Core chart renderer (receives already-adjusted bars from backend) ─────
+function renderChart(bars) {
   const container = document.getElementById('chartContainer');
   container.innerHTML = '';
-
-  // Build adjusted bars if needed
-  const meta    = BOND_META[symbol] || {};
-  const coupons = meta.coupons || [];
-  const bars    = adjusted ? applyAdjustment(rawBars, coupons, symbol) : rawBars;
 
   _lwChart = LightweightCharts.createChart(container, {
     width:  container.clientWidth,
@@ -267,7 +248,7 @@ function renderChart(rawBars, symbol, adjusted) {
       vertLines: { color: '#1c2330' },
       horzLines: { color: '#1c2330' },
     },
-    crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
+    crosshair:       { mode: LightweightCharts.CrosshairMode.Normal },
     rightPriceScale: { borderColor: '#2d333b' },
     timeScale: {
       borderColor:    '#2d333b',
@@ -276,7 +257,6 @@ function renderChart(rawBars, symbol, adjusted) {
     },
   });
 
-  // Candlestick series
   const candleSeries = _lwChart.addCandlestickSeries({
     upColor:         '#3fb950',
     downColor:       '#f85149',
@@ -287,91 +267,37 @@ function renderChart(rawBars, symbol, adjusted) {
   });
   candleSeries.setData(bars);
 
-  // Coupon markers on the chart
-  const paidCoupons = getPaidCoupons(coupons, bars);
-  if (paidCoupons.length) {
-    const markers = paidCoupons.map(c => ({
-      time:     dateToTimestamp(c.date),
-      position: 'aboveBar',
-      color:    '#e3b341',
-      shape:    'circle',
-      text:     '¢' + c.amount_per_100vn.toFixed(3),
-      size:     1,
-    })).filter(m => m.time);
-    if (markers.length) {
-      markers.sort((a, b) => a.time - b.time);
-      candleSeries.setMarkers(markers);
-    }
+  // Coupon markers — overlay on chart using date from BOND_META
+  const meta   = BOND_META[_currentSymbol] || {};
+  const paid   = getPaidCouponsInRange(meta.coupons || [], bars);
+  if (paid.length) {
+    const markers = paid
+      .map(c => ({
+        time:     dateToTimestamp(c.date),
+        position: 'aboveBar',
+        color:    '#e3b341',
+        shape:    'circle',
+        text:     '¢' + c.amount_per_100vn.toFixed(3),
+        size:     1,
+      }))
+      .filter(m => m.time)
+      .sort((a, b) => a.time - b.time);
+    if (markers.length) candleSeries.setMarkers(markers);
   }
 
-  // Responsive resize
   new ResizeObserver(() => {
     if (_lwChart) _lwChart.resize(container.clientWidth, container.clientHeight);
   }).observe(container);
 }
 
-// ── Adjusted price: sum PAID coupons per 100VN to each bar ───────────────
-// Uses PAID_COUPONS_META which includes historical flows before the config's future flows.
-function applyAdjustment(bars, coupons, symbol) {
-  // Merge: historical paid coupons + future coupons that are now past
-  const todayStr = localDateStr(new Date());
-
-  // Get historical paid coupons for this symbol
-  const historicalPaid = (PAID_COUPONS_META[symbol] || []);
-
-  // Also include any config coupons that are already past
-  const futurePaid = coupons.filter(c => c.date < todayStr);
-
-  // Merge and deduplicate by date, sort ascending
-  const allPaid = [...historicalPaid, ...futurePaid];
-  const seen = new Set();
-  const paidCoupons = allPaid
-    .filter(c => { if (seen.has(c.date)) return false; seen.add(c.date); return true; })
-    .sort((a, b) => a.date.localeCompare(b.date));
-
-  if (!paidCoupons.length) return bars; // nothing to adjust
-
-  let cumSum = 0;
-  let ci = 0;
-
-  // Ensure bars are sorted ascending (oldest first) — required for cumulative sum to work
-  const sortedBars = [...bars].sort((a, b) => a.time - b.time);
-
-  if (sortedBars.length > 0) {
-    const firstDate = timestampToDate(sortedBars[0].time);
-    const lastDate  = timestampToDate(sortedBars[sortedBars.length-1].time);
-    console.log(`[ArgyBonds] ${symbol}: ${paidCoupons.length} paid coupons, bars ${firstDate}→${lastDate}, first coupon: ${paidCoupons[0]?.date}`);
-  }
-
-  const adjustedBars = sortedBars.map(bar => {
-    // barDate: the trading date of this candle as YYYY-MM-DD
-    const barDate = timestampToDate(bar.time);
-
-    // Accumulate every paid coupon whose ex-date is STRICTLY before this bar date
-    // (ex-dividend effect: price drops on the ex-date, so we add the coupon from that date onward)
-    while (ci < paidCoupons.length && paidCoupons[ci].date <= barDate) {
-      cumSum += paidCoupons[ci].amount_per_100vn;
-      ci++;
-    }
-
-    return {
-      time:  bar.time,
-      open:  +(bar.open  + cumSum).toFixed(4),
-      high:  +(bar.high  + cumSum).toFixed(4),
-      low:   +(bar.low   + cumSum).toFixed(4),
-      close: +(bar.close + cumSum).toFixed(4),
-    };
-  });
-
-  return adjustedBars;
-}
-
-// ── Paid coupons: those with a date within the bar range ─────────────────
-function getPaidCoupons(coupons, bars) {
-  if (!bars.length) return [];
-  const minTs = bars[0].time;
-  const maxTs = bars[bars.length - 1].time;
+// ── Paid coupons within visible bar range ────────────────────────────────
+function getPaidCouponsInRange(coupons, bars) {
+  if (!bars.length || !coupons.length) return [];
+  const today  = new Date().toISOString().slice(0, 10);
+  const minTs  = bars[0].time;
+  const maxTs  = bars[bars.length - 1].time;
   return coupons.filter(c => {
+    if (c.date > today) return false;     // only paid coupons
     const ts = dateToTimestamp(c.date);
     return ts >= minTs && ts <= maxTs;
   });
@@ -379,23 +305,11 @@ function getPaidCoupons(coupons, bars) {
 
 // ── Date helpers ──────────────────────────────────────────────────────────
 function dateToTimestamp(dateStr) {
-  // Use noon UTC so timezone rounding never shifts the date
   if (!dateStr) return null;
   return Math.floor(new Date(dateStr + 'T12:00:00Z').getTime() / 1000);
 }
 
-function timestampToDate(ts) {
-  // tvdatafeed daily bars come as unix timestamps at midnight UTC.
-  // Always read as UTC so dates match coupon strings (YYYY-MM-DD).
-  const d = new Date(ts * 1000);
-  const y   = d.getUTCFullYear();
-  const m   = String(d.getUTCMonth() + 1).padStart(2, '0');
-  const day = String(d.getUTCDate()).padStart(2, '0');
-  return `${y}-${m}-${day}`;
-}
-
 function localDateStr(date) {
-  // Today as YYYY-MM-DD in the browser's local timezone
   const y   = date.getFullYear();
   const m   = String(date.getMonth() + 1).padStart(2, '0');
   const day = String(date.getDate()).padStart(2, '0');
@@ -420,7 +334,7 @@ function buildStatsHtml(bond) {
   `;
 }
 
-// ── Coupon list ───────────────────────────────────────────────────────────
+// ── Coupon chips below chart ──────────────────────────────────────────────
 function renderCouponList(symbol, coupons) {
   const today = new Date().toISOString().slice(0, 10);
   const paid  = coupons.filter(c => c.date <= today);
@@ -437,8 +351,7 @@ function renderCouponList(symbol, coupons) {
     chip.className = 'ab-coupon-chip';
     chip.innerHTML = `
       <span class="ab-cc-date">${c.date}</span>
-      <span class="ab-cc-amt">+${fmt3(c.amount_per_100vn)}</span>
-    `;
+      <span class="ab-cc-amt">+${fmt3(c.amount_per_100vn)}</span>`;
     list.appendChild(chip);
   });
 }
@@ -456,10 +369,12 @@ function closeModal(id, bid) {
   document.getElementById(id).classList.remove('open');
 }
 function escHtml(s) {
-  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  return String(s || '')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
-function fmt2(v)  { return v != null ? Number(v).toFixed(2)  : '—'; }
-function fmt3(v)  { return v != null ? Number(v).toFixed(3)  : '—'; }
+function fmt2(v)  { return v != null ? Number(v).toFixed(2) : '—'; }
+function fmt3(v)  { return v != null ? Number(v).toFixed(3) : '—'; }
 function fmtVol(v) {
   if (!v) return '—';
   if (v >= 1_000_000) return (v / 1_000_000).toFixed(1) + 'M';
@@ -474,7 +389,7 @@ async function apiFetch(url, opts = {}) {
 function showFlash(type, msg) {
   document.querySelector('.ab-flash')?.remove();
   const el = Object.assign(document.createElement('div'), {
-    className: `ab-flash ${type}`, textContent: msg
+    className: `ab-flash ${type}`, textContent: msg,
   });
   document.body.appendChild(el);
   setTimeout(() => el.remove(), 4000);
@@ -488,14 +403,12 @@ let _calcSymbol = null;
 
 function openCalcModal(symbol) {
   _calcSymbol = symbol;
-  const bond = _enriched.find(b => b.symbol === symbol) || {};
-  const meta = BOND_META[symbol] || {};
+  const bond  = _enriched.find(b => b.symbol === symbol) || {};
 
   document.getElementById('calcModalTitle').textContent = symbol + ' — Calculadora';
-  document.getElementById('calcModalSub').textContent =
+  document.getElementById('calcModalSub').textContent   =
     `${bond.law || ''}  ·  Vencimiento: ${bond.maturity || '?'}`;
 
-  // Pre-fill price from live data
   const price = bond.price_usd || '';
   document.getElementById('calcPrice').value = price ? Number(price).toFixed(2) : '';
 
@@ -514,11 +427,10 @@ function recalc() {
   const meta     = BOND_META[_calcSymbol] || {};
   const coupons  = meta.coupons || [];
   const price    = parseFloat(document.getElementById('calcPrice').value);
-  const monto    = parseFloat(document.getElementById('calcMonto').value) || 0;
-  const arancel  = parseFloat(document.getElementById('calcArancel').value)   || 0;
-  const impuesto = parseFloat(document.getElementById('calcImpuestos').value) || 0;
+  const monto    = parseFloat(document.getElementById('calcMonto').value)    || 0;
+  const arancel  = parseFloat(document.getElementById('calcArancel').value)  || 0;
+  const impuesto = parseFloat(document.getElementById('calcImpuestos').value)|| 0;
 
-  // ── TIR / Duration ────────────────────────────────────────────────
   const { tir, duration } = calcTirDuration(_calcSymbol, price || 0, coupons);
   document.getElementById('calcTir').textContent =
     tir != null ? (tir * 100).toFixed(2) + '%' : '—';
@@ -533,35 +445,24 @@ function recalc() {
     return;
   }
 
-  // ── Position sizing ───────────────────────────────────────────────
-  // price is in USD per 100 VN face value → price per 1 VN = price / 100
-  const costoTotal  = monto * (1 + (arancel + impuesto) / 100);
   const pricePerVN  = price / 100;
-  const vnCompradas = Math.floor(monto / pricePerVN);  // integer VN
-  const montoReal   = vnCompradas * pricePerVN;        // actual USD spent
+  const vnCompradas = Math.floor(monto / pricePerVN);
+  const montoReal   = vnCompradas * pricePerVN;
 
-  // ── Future cash flows ─────────────────────────────────────────────
-  const today = new Date();
-  const todayStr = localDateStr(today);
+  const todayStr      = localDateStr(new Date());
   const futureCoupons = coupons
     .filter(c => c.date > todayStr)
     .sort((a, b) => a.date.localeCompare(b.date));
 
   const tbody = document.getElementById('calcTbody');
   tbody.innerHTML = '';
-
-  let totalPer100 = 0;
-  let totalInversion = 0;
+  let totalPer100 = 0, totalInversion = 0;
 
   futureCoupons.forEach(c => {
-    // Per 100 VN: this is the raw coupon amount
-    const per100 = c.amount_per_100vn;
-    // For the investor: (vnCompradas / 100) * per100
+    const per100       = c.amount_per_100vn;
     const investorFlow = (vnCompradas / 100) * per100;
-
     totalPer100    += per100;
     totalInversion += investorFlow;
-
     const tr = document.createElement('tr');
     tr.innerHTML = `
       <td class="ab-calc-td-m">${fmtDate(c.date)}</td>
@@ -570,10 +471,9 @@ function recalc() {
     tbody.appendChild(tr);
   });
 
-  // ── Tfoot: totals + ganancia ──────────────────────────────────────
-  const ganancia   = totalInversion - montoReal;
-  const gainCls    = ganancia >= 0 ? 'pos' : 'neg';
-  const gainSign   = ganancia >= 0 ? '+' : '';
+  const ganancia = totalInversion - montoReal;
+  const gainCls  = ganancia >= 0 ? 'pos' : 'neg';
+  const gainSign = ganancia >= 0 ? '+' : '';
 
   document.getElementById('calcTfoot').innerHTML = `
     <tr>
@@ -587,14 +487,11 @@ function recalc() {
       <td class="ab-calc-gain-val ${gainCls}">${gainSign}$${fmt2(ganancia)}</td>
     </tr>`;
 
-  // ── Note ──────────────────────────────────────────────────────────
   document.getElementById('calcNote').textContent =
-    `Comprás ${vnCompradas.toLocaleString('es-AR')} VN a US$${(pricePerVN).toFixed(4)}/VN`;
+    `Comprás ${vnCompradas.toLocaleString('es-AR')} VN a US$${pricePerVN.toFixed(4)}/VN`;
 }
 
-// ── Date formatter for cash flow table ───────────────────────────────────
 function fmtDate(dateStr) {
-  // YYYY-MM-DD → M/D/YYYY (same style as the screenshot)
   if (!dateStr) return '—';
   const [y, m, d] = dateStr.split('-');
   return `${parseInt(m)}/${parseInt(d)}/${y}`;
