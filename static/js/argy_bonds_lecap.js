@@ -105,11 +105,16 @@ function renderLecapTable() {
       <td>${tnaStr}</td>
       <td>${temStr}</td>
       <td>${tirStr}</td>
-      <td>
+      <td style="display:flex;gap:4px">
+        <button class="lc-calc-btn"
+          onclick="event.stopPropagation();openLecapCalcModal('${escHtml(r.symbol)}')"
+          title="Calculadora">🧮</button>
         <button class="lc-del-btn"
           onclick="event.stopPropagation();confirmDeleteSecurity('${escHtml(r.symbol)}')"
           title="Delete security">🗑</button>
       </td>`;
+    tr.style.cursor = 'pointer';
+    tr.onclick = () => { if (!r.is_expired) openLecapCalcModal(r.symbol); };
     tbody.appendChild(tr);
   });
 }
@@ -348,4 +353,147 @@ function splitCsvLine(line) {
 function pct2(v) {
   // Render a 0-1 ratio as percentage with 2 decimals, e.g. 0.2876 → "28.76%"
   return v != null ? (v * 100).toFixed(2) + '%' : '—';
+}
+
+
+// ════════════════════════════════════════════════════
+// LECAP / BONCAP CALCULATOR MODAL
+// ════════════════════════════════════════════════════
+
+let _lcCalcSymbol     = null;
+let _lcCalcLastResult = null;
+
+async function openLecapCalcModal(symbol) {
+  _lcCalcSymbol = symbol;
+  const row = _lcData.find(r => r.symbol === symbol);
+  if (!row) return;
+
+  // Populate header
+  document.getElementById('lcCalcTitle').textContent  = symbol + ' — Calculadora';
+  document.getElementById('lcCalcSub').textContent    =
+    `${row.security_type}  ·  Vence: ${row.maturity_date}  ·  Pago final: ${row.final_payment ? fmt3(row.final_payment) : '?'}`;
+
+  // Pre-fill price from live data
+  document.getElementById('lcCalcPrice').value    = row.price ? fmt2(row.price)    : '';
+  document.getElementById('lcCalcMonto').value    = '1000000';
+  document.getElementById('lcCalcArancel').value  = '0.10';
+  document.getElementById('lcCalcImpuestos').value= '0.01';
+  document.getElementById('lcCalcTargetTir').value= '';
+  document.getElementById('lcCalcTargetResult').textContent = 'Ingresá una TIR para ver el precio implícito';
+
+  openModal('lcCalcModal', 'lcCalcBackdrop');
+  await recalcLecapModal();
+}
+
+function closeLecapCalcModal() {
+  closeModal('lcCalcModal', 'lcCalcBackdrop');
+  _lcCalcSymbol = null;
+}
+
+async function recalcLecapModal() {
+  if (!_lcCalcSymbol) return;
+
+  const price     = parseFloat(document.getElementById('lcCalcPrice').value);
+  const monto     = parseFloat(document.getElementById('lcCalcMonto').value)     || 0;
+  const arancel   = parseFloat(document.getElementById('lcCalcArancel').value)   || 0;
+  const impuestos = parseFloat(document.getElementById('lcCalcImpuestos').value) || 0;
+
+  // Clear results if no price
+  if (!price || price <= 0) {
+    ['lcCalcTna','lcCalcTem','lcCalcTir','lcCalcDias'].forEach(id => {
+      document.getElementById(id).textContent = '—';
+    });
+    document.getElementById('lcCalcFlows').innerHTML =
+      '<tr><td colspan="3" class="ab-calc-empty">Ingresá un precio</td></tr>';
+    return;
+  }
+
+  try {
+    const res = await apiFetch('/lecap/calc', {
+      method: 'POST',
+      body: JSON.stringify({
+        symbol:    _lcCalcSymbol,
+        price,
+        monto,
+        arancel,
+        impuestos,
+      }),
+    });
+
+    // Yields
+    document.getElementById('lcCalcTna').textContent  = res.tna  != null ? pct2(res.tna)  : '—';
+    document.getElementById('lcCalcTem').textContent  = res.tem  != null ? pct2(res.tem)  : '—';
+    document.getElementById('lcCalcTir').textContent  = res.tir  != null ? pct2(res.tir)  : '—';
+    document.getElementById('lcCalcDias').textContent = res.days != null ? res.days + 'd'  : '—';
+
+    // Cash-flow summary
+    const tbody   = document.getElementById('lcCalcFlows');
+    const ganSign = res.ganancia >= 0 ? '+' : '';
+    const gainCls = res.ganancia >= 0 ? 'pos' : 'neg';
+    const tdStyle = 'padding:9px 14px;font-family:var(--mono);font-size:12px;border-bottom:1px solid rgba(22,27,34,.7)';
+    tbody.innerHTML = `
+      <tr>
+        <td style="${tdStyle};color:var(--dim)">${res.maturity_date}</td>
+        <td style="${tdStyle};text-align:right">$${fmt3(res.final_payment)}</td>
+        <td style="${tdStyle};text-align:right;color:#E6EDF3;font-weight:600">$${fmt2(res.cobro)}</td>
+      </tr>`;
+
+    const cellBase  = 'padding:9px 14px;font-family:var(--mono);font-size:12px;border-top:1px solid rgba(22,27,34,.7)';
+    const gainColor = res.ganancia >= 0 ? 'var(--green)' : 'var(--red)';
+    document.getElementById('lcCalcTfoot').innerHTML = `
+      <tr style="border-top:1px solid var(--border)">
+        <td style="${cellBase};color:var(--dim)">Comprás</td>
+        <td></td>
+        <td style="${cellBase};text-align:right;color:#E6EDF3;font-weight:600">${res.vn_bought.toLocaleString('es-AR')} VN</td>
+      </tr>
+      <tr>
+        <td style="${cellBase};color:var(--dim)">Invertís</td>
+        <td></td>
+        <td style="${cellBase};text-align:right;color:#E6EDF3;font-weight:600">$${fmt2(res.monto)}</td>
+      </tr>
+      <tr>
+        <td style="${cellBase};color:var(--dim)">Al vencimiento cobrás</td>
+        <td></td>
+        <td style="${cellBase};text-align:right;color:#E6EDF3;font-weight:600">$${fmt2(res.cobro)}</td>
+      </tr>
+      <tr style="border-top:2px solid var(--border)">
+        <td style="${cellBase};color:${gainColor};font-size:13px;font-weight:700">Ganancia</td>
+        <td></td>
+        <td style="${cellBase};text-align:right;color:${gainColor};font-size:15px;font-weight:700">${ganSign}$${fmt2(res.ganancia)}</td>
+      </tr>`;
+
+    _lcCalcLastResult = res;
+    document.getElementById('lcCalcNote').textContent =
+      `Precio efectivo (con costos): $${fmt2(res.effective_price)} por 100 VN`;
+
+    // Recalc target TIR too
+    recalcTargetTirLecap(res);
+
+  } catch(e) {
+    showFlash('error', `❌ ${e.message}`);
+  }
+}
+
+// TIR objetivo → precio implícito (client-side, no round-trip)
+function recalcTargetTirLecap(lastResult) {
+  const row = _lcData.find(r => r.symbol === _lcCalcSymbol);
+  if (!row || !lastResult) return;
+
+  const targetTirPct = parseFloat(document.getElementById('lcCalcTargetTir').value);
+  const resultEl     = document.getElementById('lcCalcTargetResult');
+
+  if (!targetTirPct && targetTirPct !== 0) {
+    resultEl.textContent = 'Ingresá una TIR para ver el precio implícito';
+    return;
+  }
+
+  // implied_price = final_payment / (1 + tir)^(days/365)
+  const implied = row.final_payment / Math.pow(1 + targetTirPct / 100, lastResult.days / 365);
+  const current = parseFloat(document.getElementById('lcCalcPrice').value) || row.price;
+  const upside  = ((implied - current) / current) * 100;
+  const color   = upside >= 0 ? 'var(--green)' : 'var(--red)';
+  const sign    = upside >= 0 ? '+' : '';
+  resultEl.innerHTML =
+    `Precio implícito: <strong>$${fmt2(implied)}</strong> &nbsp;|&nbsp; ` +
+    `Upside: <strong style="color:${color}">${sign}${upside.toFixed(1)}%</strong> vs actual`;
 }

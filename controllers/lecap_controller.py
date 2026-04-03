@@ -29,6 +29,7 @@ from pydantic import BaseModel, field_validator
 
 from business_entities.security import Security
 from common.util.downloaders.data912_downloader import Data912Downloader
+from common.util.financial_calculations.zero_coupon_calculator import ZeroCouponCalculator
 from data_access_layer.security_manager import SecurityManager
 
 # ---------------------------------------------------------------------------
@@ -37,7 +38,8 @@ from data_access_layer.security_manager import SecurityManager
 
 _PRICE_CACHE: dict = {"ts": 0, "data": []}
 CACHE_TTL_SECONDS  = 30
-_dl = Data912Downloader()
+_dl   = Data912Downloader()
+_calc = ZeroCouponCalculator()
 
 
 # ---------------------------------------------------------------------------
@@ -75,6 +77,14 @@ class BulkUpsertIn(BaseModel):
     securities: list[SecurityIn]
 
 
+class CalcIn(BaseModel):
+    symbol:   str
+    price:    float
+    monto:    float = 1_000_000
+    arancel:  float = 0.10      # % fee
+    impuestos: float = 0.01     # % tax
+
+
 # ---------------------------------------------------------------------------
 # Controller
 # ---------------------------------------------------------------------------
@@ -93,6 +103,7 @@ class LecapController:
         self.router.post("/securities",            response_class=JSONResponse)(self.persist_security)
         self.router.delete("/securities/{symbol}", response_class=JSONResponse)(self.delete_security)
         self.router.post("/securities/bulk",       response_class=JSONResponse)(self.bulk_upsert)
+        self.router.post("/calc",                  response_class=JSONResponse)(self.calc)
 
     # ======================================================================
     # LIVE PRICES  (data912 + DB metadata)
@@ -230,6 +241,71 @@ class LecapController:
             raise HTTPException(status_code=500, detail=str(exc))
 
     # ======================================================================
+    # CALCULATOR — zero-coupon yield + cash flow summary
+    # ======================================================================
+
+    async def calc(self, request: Request, body: CalcIn):
+        """
+        Compute TNA / TEM / TIR and cash-flow summary for a LECAP or BONCAP.
+
+        POST /lecap/calc
+        Body: { symbol, price, monto, arancel, impuestos }
+
+        Returns yields + position sizing + gain summary ready for the modal.
+        """
+        try:
+            sec = self.sec_mgr.get_securities(include_expired=False)
+            target = next((s for s in sec if s.symbol == body.symbol.upper()), None)
+            if not target:
+                raise HTTPException(status_code=404, detail=f"Symbol {body.symbol} not found")
+
+            today      = date.today()
+            from datetime import timedelta
+            settlement = today + timedelta(days=1)
+            maturity   = date.fromisoformat(target.maturity_date)
+
+            # Effective price after costs
+            costs_pct      = (body.arancel + body.impuestos) / 100
+            effective_price = body.price * (1 + costs_pct)
+
+            # Yields on effective price
+            result = _calc.compute(
+                price         = effective_price,
+                final_payment = target.final_payment,
+                settlement    = settlement,
+                maturity      = maturity,
+            )
+
+            # Position sizing (price is per 100 VN)
+            vn_bought  = body.monto / effective_price * 100   # VN units
+            cobro      = vn_bought / 100 * target.final_payment
+            ganancia   = cobro - body.monto
+
+            # Implied price for TIR objetivo (returned so JS can use it without recalculating)
+            return JSONResponse({
+                "ok":           True,
+                "symbol":       target.symbol,
+                "maturity_date":target.maturity_date,
+                "final_payment":target.final_payment,
+                "days":         result.days,
+                "months":       round(result.months, 4),
+                "tna":          round(result.tna, 6)  if result.tna  is not None else None,
+                "tem":          round(result.tem, 6)  if result.tem  is not None else None,
+                "tir":          round(result.tir, 6)  if result.tir  is not None else None,
+                "vn_bought":    round(vn_bought, 0),
+                "cobro":        round(cobro, 2),
+                "ganancia":     round(ganancia, 2),
+                "monto":        body.monto,
+                "price":        body.price,
+                "effective_price": round(effective_price, 4),
+            })
+        except HTTPException:
+            raise
+        except Exception as exc:
+            self._log(f"calc error: {exc}", "ERROR")
+            raise HTTPException(status_code=500, detail=str(exc))
+
+    # ======================================================================
     # Internal helpers
     # ======================================================================
 
@@ -248,37 +324,16 @@ def _calc_yields(
     maturity_date: str,
     today_str:     str,
 ) -> tuple[Optional[float], Optional[float], Optional[float]]:
-    """
-    TNA / TEM / TIR for a zero-coupon / capitalising instrument (LECAP / BONCAP).
-
-    Formula:
-        days = calendar days from T+1 settlement to maturity
-        tir  = (final_payment / price) ^ (365 / days) - 1
-        tem  = (1 + tir) ^ (1/12) - 1
-        tna  = tem * 12
-
-    Returns (tna, tem, tir) as [0-1] floats, or (None, None, None) on error.
-    """
+    """Delegate to ZeroCouponCalculator — returns (tna, tem, tir) as [0-1] floats."""
     try:
-        if not price or price <= 0 or not final_payment or final_payment <= 0:
-            return None, None, None
-
-        today  = date.fromisoformat(today_str)
-        mature = date.fromisoformat(maturity_date)
-        days   = (mature - today).days - 1      # T+1 settlement
-        if days <= 0:
-            return None, None, None
-
-        ratio = final_payment / price
-        tir   = ratio ** (365 / days) - 1
-        tem   = (1 + tir) ** (1 / 12) - 1
-        tna   = tem * 12
-
-        return (
-            round(tna, 6) if math.isfinite(tna) else None,
-            round(tem, 6) if math.isfinite(tem) else None,
-            round(tir, 6) if math.isfinite(tir) else None,
-        )
+        today      = date.fromisoformat(today_str)
+        mature     = date.fromisoformat(maturity_date)
+        settlement = today  # T+1 already accounted for by caller passing tomorrow's date
+        # Actual settlement = T+1 (subtract 1 day so maturity - settlement = correct days)
+        from datetime import timedelta
+        settlement = today + timedelta(days=1)
+        result = _calc.compute(price, final_payment, settlement, mature)
+        return result.tna, result.tem, result.tir
     except Exception:
         return None, None, None
 

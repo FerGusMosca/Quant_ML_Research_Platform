@@ -238,3 +238,106 @@ a.nav-return-btn:hover,
   border-color: #58A6FF !important;
   box-shadow: 0 0 0 2px rgba(88,166,255,0.12) !important;
 }
+
+/* ── LECAP Calculator Modal ─────────────────────────────────────── */
+
+/* Override ab-calc-modal max-width for the LECAP calc */
+#lcCalcModal { max-width: 700px; }
+
+/* ab-calc-body override — more breathing room */
+#lcCalcModal .ab-calc-body {
+  padding: 22px 26px;
+  gap: 18px;
+}
+
+/* Inputs row — stack inputs top, result box below on small screens */
+#lcCalcModal .ab-calc-inputs {
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+/* Wider input fields */
+#lcCalcModal .ab-calc-input { width: 170px; font-size: 15px; padding: 10px 14px; }
+#lcCalcModal .ab-calc-input-sm { width: 90px; }
+
+/* Yield result box — full row, 4 metrics evenly spread */
+.lc-calc-result-box {
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+  width: 100%;
+  background: var(--elevated);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.lc-calc-metric {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex: 1;
+  padding: 14px 10px;
+  border-right: 1px solid var(--border);
+}
+.lc-calc-metric:last-child { border-right: none; }
+
+.lc-calc-val {
+  font-family: var(--mono); font-size: 20px; font-weight: 700; color: #E6EDF3;
+  letter-spacing: -0.02em;
+}
+.lc-calc-val.lc-tem { color: var(--green); font-size: 22px; }
+.lc-calc-val.lc-tir { color: #58A6FF; font-size: 22px; }
+.lc-calc-lbl {
+  font-family: var(--mono); font-size: 9px; color: var(--faint);
+  text-transform: uppercase; letter-spacing: 0.12em;
+}
+
+/* Costs row — more padding */
+#lcCalcModal .ab-calc-costs {
+  padding: 12px 16px;
+  border-radius: 8px;
+  gap: 16px;
+}
+
+/* TIR objetivo row */
+.lc-target-tir-row {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  padding: 12px 16px;
+  background: rgba(31,111,235,0.06);
+  border: 1px solid rgba(31,111,235,0.22);
+  border-radius: 10px;
+}
+.lc-target-lbl {
+  font-family: var(--mono); font-size: 10px; font-weight: 700;
+  color: #58A6FF; letter-spacing: 0.06em; white-space: nowrap;
+}
+.lc-target-result {
+  font-family: var(--mono); font-size: 11px; color: var(--dim);
+  flex: 1;
+}
+
+/* Cash flow table — a bit more padding */
+#lcCalcModal .ab-calc-table td,
+#lcCalcModal .ab-calc-table th { padding: 9px 14px; }
+
+/* Tfoot rows — bolder gain row */
+#lcCalcModal .ab-calc-gain-val {
+  font-size: 16px;
+}
+
+/* Note at bottom */
+#lcCalcModal .ab-calc-note {
+  padding: 4px 2px 6px;
+}
+
+/* Calc button in LECAP table */
+.lc-calc-btn {
+  background: none; border: 1px solid var(--border2); color: var(--dim);
+  font-size: 12px; cursor: pointer; padding: 4px 8px; border-radius: 6px;
+  transition: all 0.12s;
+}
+.lc-calc-btn:hover {
+  border-color: #58A6FF; color: #58A6FF;
+  background: rgba(88,166,255,0.08);
+}

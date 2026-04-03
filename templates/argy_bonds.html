@@ -136,6 +136,110 @@
 </div>
 <!-- ══ END TAB LECAPs & BONCAPs ════════════════════════════════ -->
 
+
+<!-- ══ LECAP / BONCAP CALCULATOR MODAL ══════════════════════════ -->
+<div class="ab-backdrop" id="lcCalcBackdrop" onclick="closeLecapCalcModal()"></div>
+<div class="ab-modal" id="lcCalcModal" style="max-width:680px">
+
+  <!-- Header -->
+  <div class="ab-modal-hdr">
+    <div>
+      <span class="ab-modal-title" id="lcCalcTitle">Calculadora</span>
+      <span class="ab-modal-sub"   id="lcCalcSub"></span>
+    </div>
+    <button class="ab-modal-close" onclick="closeLecapCalcModal()">✕</button>
+  </div>
+
+  <!-- Body -->
+  <div style="display:flex;flex-direction:column;gap:16px;padding:22px 24px;overflow-y:auto;max-height:calc(92vh - 60px)">
+
+    <!-- ── Row 1: Inputs + Yield pills ── -->
+    <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end">
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em">Precio</label>
+        <input type="number" id="lcCalcPrice" step="0.01" oninput="recalcLecapModal()"
+          style="width:140px;padding:10px 14px;background:var(--elevated);border:1px solid var(--border2);border-radius:8px;color:#E6EDF3;font-size:15px;font-weight:600;font-family:var(--mono);outline:none">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em">Monto a invertir ($)</label>
+        <input type="number" id="lcCalcMonto" value="1000000" step="10000" oninput="recalcLecapModal()"
+          style="width:160px;padding:10px 14px;background:var(--elevated);border:1px solid var(--border2);border-radius:8px;color:#E6EDF3;font-size:15px;font-weight:600;font-family:var(--mono);outline:none">
+      </div>
+
+      <!-- Yield pills — right side -->
+      <div style="display:flex;gap:10px;margin-left:auto;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--elevated);border:1px solid var(--border2);border-radius:10px;padding:10px 18px;min-width:72px">
+          <span id="lcCalcTna" style="font-family:var(--mono);font-size:16px;font-weight:700;color:#E6EDF3">—</span>
+          <span style="font-family:var(--mono);font-size:8px;color:var(--faint);text-transform:uppercase;letter-spacing:.12em">TNA</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--elevated);border:1px solid var(--border2);border-radius:10px;padding:10px 18px;min-width:72px">
+          <span id="lcCalcTem" style="font-family:var(--mono);font-size:18px;font-weight:700;color:var(--green)">—</span>
+          <span style="font-family:var(--mono);font-size:8px;color:var(--faint);text-transform:uppercase;letter-spacing:.12em">TEM</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--elevated);border:1px solid rgba(31,111,235,.25);border-radius:10px;padding:10px 18px;min-width:72px">
+          <span id="lcCalcTir" style="font-family:var(--mono);font-size:22px;font-weight:700;color:#58A6FF;letter-spacing:-.02em">—</span>
+          <span style="font-family:var(--mono);font-size:8px;color:var(--faint);text-transform:uppercase;letter-spacing:.12em">TIR</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--elevated);border:1px solid var(--border2);border-radius:10px;padding:10px 18px;min-width:64px">
+          <span id="lcCalcDias" style="font-family:var(--mono);font-size:16px;font-weight:700;color:#E6EDF3">—</span>
+          <span style="font-family:var(--mono);font-size:8px;color:var(--faint);text-transform:uppercase;letter-spacing:.12em">Días</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Row 2: Costos ── -->
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:12px 16px;background:var(--elevated);border:1px solid var(--border);border-radius:8px">
+      <span style="font-family:var(--mono);font-size:10px;font-weight:600;color:var(--dim);letter-spacing:.06em">Costos:</span>
+      <div style="display:flex;align-items:center;gap:8px">
+        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap">Arancel %</label>
+        <input type="number" id="lcCalcArancel" value="0.10" step="0.01" oninput="recalcLecapModal()"
+          style="width:80px;padding:6px 10px;background:var(--surface);border:1px solid var(--border2);border-radius:6px;color:#E6EDF3;font-size:12px;font-weight:600;font-family:var(--mono);outline:none">
+      </div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap">Impuestos %</label>
+        <input type="number" id="lcCalcImpuestos" value="0.01" step="0.01" oninput="recalcLecapModal()"
+          style="width:80px;padding:6px 10px;background:var(--surface);border:1px solid var(--border2);border-radius:6px;color:#E6EDF3;font-size:12px;font-weight:600;font-family:var(--mono);outline:none">
+      </div>
+    </div>
+
+    <!-- ── Row 3: TIR Objetivo ── -->
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:12px 16px;background:rgba(31,111,235,.06);border:1px solid rgba(31,111,235,.22);border-radius:8px">
+      <span style="font-family:var(--mono);font-size:10px;font-weight:700;color:#58A6FF;letter-spacing:.06em;white-space:nowrap">TIR Objetivo:</span>
+      <div style="display:flex;align-items:center;gap:8px">
+        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em">TIR %</label>
+        <input type="number" id="lcCalcTargetTir" step="0.1" placeholder="ej: 28.5"
+               oninput="recalcTargetTirLecap(_lcCalcLastResult)"
+          style="width:90px;padding:6px 10px;background:var(--surface);border:1px solid var(--border2);border-radius:6px;color:#E6EDF3;font-size:12px;font-weight:600;font-family:var(--mono);outline:none">
+      </div>
+      <span id="lcCalcTargetResult" style="font-family:var(--mono);font-size:11px;color:var(--dim);flex:1">
+        Ingresá una TIR para ver el precio implícito
+      </span>
+    </div>
+
+    <!-- ── Row 4: Flujos ── -->
+    <div style="border:1px solid var(--border);border-radius:8px;overflow:hidden">
+      <div style="padding:9px 14px;background:var(--elevated);border-bottom:1px solid var(--border);font-family:var(--mono);font-size:10px;font-weight:600;color:#E6EDF3;text-transform:uppercase;letter-spacing:.1em">
+        Flujos de fondos
+      </div>
+      <table style="width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px">
+        <thead>
+          <tr style="background:var(--elevated)">
+            <th style="padding:8px 14px;text-align:left;font-size:9px;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--border)">Fecha</th>
+            <th style="padding:8px 14px;text-align:right;font-size:9px;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--border)">Por 100 VN</th>
+            <th style="padding:8px 14px;text-align:right;font-size:9px;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--border)">Tu inversión</th>
+          </tr>
+        </thead>
+        <tbody id="lcCalcFlows">
+          <tr><td colspan="3" style="text-align:center;padding:20px;color:var(--faint);font-size:11px">Seleccioná un instrumento</td></tr>
+        </tbody>
+        <tfoot id="lcCalcTfoot"></tfoot>
+      </table>
+    </div>
+
+    <div id="lcCalcNote" style="font-family:var(--mono);font-size:9px;color:var(--faint);padding:2px 0 4px"></div>
+  </div>
+</div>
+
 {% endblock %}
 
 
