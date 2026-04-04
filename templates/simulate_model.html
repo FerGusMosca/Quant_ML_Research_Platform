@@ -19,43 +19,67 @@
 
 <div class="runner-layout">
 
-  <!-- ── LEFT PANEL: model list ────────────────────────────── -->
+  <!-- ══════════════════════════════════════════════════════
+       LEFT PANEL — two tabs: XGBoost | PCA
+       ══════════════════════════════════════════════════════ -->
   <div class="model-panel">
-    <div class="model-panel-hdr">
-      <span class="model-panel-title">Models</span>
-      <button class="btn-add-model" onclick="openAddModal()">＋ Add</button>
+
+    <!-- Tab switcher -->
+    <div class="left-tab-bar">
+      <button class="left-tab active" id="ltabXgb" onclick="switchLeftTab('xgb')">XGBoost</button>
+      <button class="left-tab"        id="ltabPca" onclick="switchLeftTab('pca')">PCA</button>
     </div>
-    <div id="modelList" class="model-list">
-      <div class="model-list-empty">Loading…</div>
+
+    <!-- XGBoost list -->
+    <div id="leftXgbPane" class="left-pane">
+      <div class="left-pane-toolbar">
+        <button class="btn-add-model" onclick="openAddModal()">＋ Add</button>
+      </div>
+      <div id="modelList" class="model-list">
+        <div class="model-list-empty">Loading…</div>
+      </div>
     </div>
+
+    <!-- PCA list -->
+    <div id="leftPcaPane" class="left-pane" style="display:none">
+      <div class="left-pane-toolbar">
+        <button class="btn-add-model" onclick="openAddPcaModal()">＋ Add</button>
+      </div>
+      <div id="pcaModelList" class="model-list">
+        <div class="model-list-empty">Loading…</div>
+      </div>
+    </div>
+
   </div>
 
-  <!-- ── RIGHT PANEL: run + results ───────────────────────── -->
+  <!-- ══════════════════════════════════════════════════════
+       RIGHT PANEL
+       ══════════════════════════════════════════════════════ -->
   <div class="run-panel">
 
-    <!-- No model selected -->
+    <!-- Nothing selected -->
     <div class="empty-state" id="emptyState">
       <div class="empty-icon">⚙</div>
       <div class="empty-title">Select a model to run</div>
-      <div class="empty-sub">Choose a model from the list on the left</div>
+      <div class="empty-sub">Choose an XGBoost model or a PCA indicator from the left</div>
     </div>
 
-    <!-- Active model view -->
+    <!-- ════════════════════════════════════════════════════
+         XGBOOST PANEL
+         ════════════════════════════════════════════════════ -->
     <div id="activePanel" style="display:none">
 
-      <!-- Model header -->
       <div class="model-header-bar">
         <div>
           <div class="model-header-name" id="hdrModelName">—</div>
           <div class="model-header-meta" id="hdrModelMeta">—</div>
         </div>
         <div style="display:flex;gap:8px;align-items:center">
-          <button class="btn-icon edit"   onclick="openEditModal()"   title="Edit model">✎</button>
-          <button class="btn-icon delete" onclick="deleteModel()"     title="Delete model">✕</button>
+          <button class="btn-icon edit"   onclick="openEditModal()" title="Edit model">✎</button>
+          <button class="btn-icon delete" onclick="deleteModel()"   title="Delete model">✕</button>
         </div>
       </div>
 
-      <!-- Run bar -->
       <div class="run-bar">
         <div class="run-bar-dates">
           <div class="run-date-field">
@@ -73,9 +97,7 @@
           <div class="run-date-field">
             <label class="run-date-label">Bias</label>
             <select class="run-date-input" id="runBias" style="width:90px">
-              <option>LONG</option>
-              <option>SHORT</option>
-              <option>NONE</option>
+              <option>LONG</option><option>SHORT</option><option>NONE</option>
             </select>
           </div>
         </div>
@@ -85,65 +107,35 @@
         </button>
       </div>
 
-      <!-- Tabs -->
       <div class="tab-bar">
-        <button class="tab-btn active" data-tab="chart"    onclick="switchTab('chart')">📈 Chart</button>
-        <button class="tab-btn"        data-tab="summary"  onclick="switchTab('summary')">◎ Summary</button>
+        <button class="tab-btn active" data-tab="chart"     onclick="switchTab('chart')">📈 Chart</button>
+        <button class="tab-btn"        data-tab="summary"   onclick="switchTab('summary')">◎ Summary</button>
         <button class="tab-btn"        data-tab="positions" onclick="switchTab('positions')">≡ Positions</button>
-        <button class="tab-btn"        data-tab="signal"   onclick="switchTab('signal')">📡 Last Signal</button>
+        <button class="tab-btn"        data-tab="signal"    onclick="switchTab('signal')">📡 Last Signal</button>
       </div>
 
-      <!-- TAB: CHART -->
       <div class="tab-pane active" id="tab-chart">
-        <div class="chart-placeholder" id="chartPlaceholder">
-          Run a model to see the price chart with positions
-        </div>
+        <div class="chart-placeholder" id="chartPlaceholder">Run a model to see the price chart with positions</div>
         <div id="priceChart" style="display:none;width:100%;height:460px"></div>
       </div>
 
-      <!-- TAB: SUMMARY -->
       <div class="tab-pane" id="tab-summary">
-        <div class="summary-placeholder" id="summaryPlaceholder">
-          Run a model to see portfolio summary
-        </div>
+        <div class="summary-placeholder" id="summaryPlaceholder">Run a model to see portfolio summary</div>
         <div id="summaryContent" style="display:none">
           <div class="kpi-grid">
-            <div class="kpi-card">
-              <div class="kpi-label">Initial Portfolio</div>
-              <div class="kpi-value" id="kpiInit">—</div>
-            </div>
-            <div class="kpi-card">
-              <div class="kpi-label">Final Portfolio</div>
-              <div class="kpi-value" id="kpiFinal">—</div>
-            </div>
-            <div class="kpi-card kpi-profit">
-              <div class="kpi-label">Total Profit</div>
-              <div class="kpi-value" id="kpiProfit">—</div>
-            </div>
-            <div class="kpi-card">
-              <div class="kpi-label">CAGR</div>
-              <div class="kpi-value" id="kpiCagr">—</div>
-            </div>
-            <div class="kpi-card kpi-danger">
-              <div class="kpi-label">Max Drawdown</div>
-              <div class="kpi-value" id="kpiDrawdown">—</div>
-            </div>
-            <div class="kpi-card">
-              <div class="kpi-label">Positions</div>
-              <div class="kpi-value" id="kpiPositions">—</div>
-            </div>
+            <div class="kpi-card"><div class="kpi-label">Initial Portfolio</div><div class="kpi-value" id="kpiInit">—</div></div>
+            <div class="kpi-card"><div class="kpi-label">Final Portfolio</div><div class="kpi-value" id="kpiFinal">—</div></div>
+            <div class="kpi-card kpi-profit"><div class="kpi-label">Total Profit</div><div class="kpi-value" id="kpiProfit">—</div></div>
+            <div class="kpi-card"><div class="kpi-label">CAGR</div><div class="kpi-value" id="kpiCagr">—</div></div>
+            <div class="kpi-card kpi-danger"><div class="kpi-label">Max Drawdown</div><div class="kpi-value" id="kpiDrawdown">—</div></div>
+            <div class="kpi-card"><div class="kpi-label">Positions</div><div class="kpi-value" id="kpiPositions">—</div></div>
           </div>
-
-          <!-- Portfolio equity curve -->
           <div id="equityChart" style="width:100%;height:220px;margin-top:8px"></div>
         </div>
       </div>
 
-      <!-- TAB: POSITIONS -->
       <div class="tab-pane" id="tab-positions">
-        <div class="summary-placeholder" id="positionsPlaceholder">
-          Run a model to see individual positions
-        </div>
+        <div class="summary-placeholder" id="positionsPlaceholder">Run a model to see individual positions</div>
         <div id="positionsContent" style="display:none">
           <div class="pos-table-wrap">
             <table class="pos-table">
@@ -157,9 +149,8 @@
         </div>
       </div>
 
-      <!-- TAB: LAST SIGNAL -->
       <div class="tab-pane" id="tab-signal">
-        <div class="signal-box" id="signalBox">
+        <div class="signal-box">
           <div class="signal-no-data" id="signalNoData">Run a model to see the last prediction signal</div>
           <div id="signalContent" style="display:none">
             <div class="signal-date-row">
@@ -168,7 +159,7 @@
             </div>
             <div class="signal-arrow-row" id="signalArrows"></div>
             <div class="signal-copy-row">
-              <button class="btn-copy-signal" onclick="copySignal()" id="btnCopySignal">⎘ Copy Signal</button>
+              <button class="btn-copy-signal" onclick="copySignal()">⎘ Copy Signal</button>
               <span class="signal-copied" id="signalCopied" style="display:none">✓ Copied!</span>
             </div>
           </div>
@@ -176,14 +167,82 @@
       </div>
 
     </div><!-- /activePanel -->
-  </div><!-- /run-panel -->
 
+    <!-- ════════════════════════════════════════════════════
+         PCA PANEL
+         ════════════════════════════════════════════════════ -->
+    <div id="pcaActivePanel" style="display:none">
+
+      <div class="model-header-bar">
+        <div>
+          <div class="model-header-name" id="pcaHdrName">—</div>
+          <div class="model-header-meta" id="pcaHdrMeta">—</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <span class="pca-header-badge">PCA</span>
+          <button class="btn-icon edit"   onclick="openEditPcaModalActive()" title="Edit">✎</button>
+          <button class="btn-icon delete" onclick="deletePcaModel()"         title="Delete">✕</button>
+        </div>
+      </div>
+
+      <div class="run-bar">
+        <div class="run-bar-dates">
+          <div class="run-date-field">
+            <label class="run-date-label">From</label>
+            <input class="run-date-input" type="date" id="pcaDFrom">
+          </div>
+          <div class="run-date-field">
+            <label class="run-date-label">To</label>
+            <input class="run-date-input" type="date" id="pcaDTo">
+          </div>
+          <div class="run-date-field">
+            <label class="run-date-label">Benchmark</label>
+            <input class="run-date-input" type="text" id="pcaBenchmark" placeholder="NFCI" style="width:90px">
+          </div>
+        </div>
+        <button class="btn-run-model" id="btnRunPca" onclick="runPcaModel()">
+          <span class="btn-spin" id="pcaSpinner"></span>
+          ▶ Run PCA
+        </button>
+      </div>
+
+      <!-- PCA result status bar -->
+      <div id="pcaResultArea" style="display:none;padding:16px 20px 0">
+        <div class="pca-status-bar">
+          <span class="pca-status-label">Output Symbol</span>
+          <span class="pca-status-value" id="pcaOutputSymbol">—</span>
+          <span class="pca-status-sep"></span>
+          <span class="pca-status-label">Rows Persisted</span>
+          <span class="pca-status-value" id="pcaRowCount">—</span>
+          <span class="pca-status-sep"></span>
+          <span class="pca-status-label">Period</span>
+          <span class="pca-status-value" id="pcaPeriod">—</span>
+          <span class="pca-status-sep"></span>
+          <span class="pca-status-label">Status</span>
+          <span class="pca-status-value pca-ok" id="pcaStatus">—</span>
+        </div>
+      </div>
+
+      <!-- PCA Plotly chart -->
+      <div id="pcaChartWrap" style="display:none;padding:16px 20px 0">
+        <div id="pcaChart" style="width:100%;height:380px"></div>
+      </div>
+
+      <!-- Placeholder before first run -->
+      <div class="chart-placeholder" id="pcaPlaceholder">
+        Click ▶ Run PCA to compute and persist the indicator
+      </div>
+
+    </div><!-- /pcaActivePanel -->
+
+  </div><!-- /run-panel -->
 </div><!-- /runner-layout -->
 {% endblock %}
 
 {% block modals %}
-<!-- ── ADD / EDIT MODEL MODAL ─────────────────────────────── -->
-<div class="modal-backdrop" id="modalBackdrop" onclick="closeModal()"></div>
+<div class="modal-backdrop" id="modalBackdrop" onclick="handleBackdropClick(event)"></div>
+
+<!-- ── XGBOOST MODAL ──────────────────────────────────────── -->
 <div class="modal" id="modelModal" style="width:560px;max-height:90vh;overflow-y:auto">
   <div class="modal-hdr">
     <span class="modal-title" id="modalTitle">Add Model</span>
@@ -191,7 +250,6 @@
   </div>
   <div class="modal-body" style="gap:12px">
     <input type="hidden" id="mModelId">
-
     <div class="form-row-2col">
       <div class="form-row">
         <label class="form-label">Model Name</label>
@@ -199,17 +257,13 @@
       </div>
       <div class="form-row">
         <label class="form-label">Algo Type</label>
-        <select class="form-input" id="mAlgoType">
-          <option value="XGBOOST">XGBOOST</option>
-        </select>
+        <select class="form-input" id="mAlgoType"><option value="XGBOOST">XGBOOST</option></select>
       </div>
     </div>
-
     <div class="form-row">
       <label class="form-label">Model Path <span class="form-hint">(.pkl file)</span></label>
       <input class="form-input" id="mModelPath" placeholder="models/xgb_model_XLK_2010_2024_M4.pkl">
     </div>
-
     <div class="form-row-2col">
       <div class="form-row">
         <label class="form-label">Symbol</label>
@@ -217,12 +271,9 @@
       </div>
       <div class="form-row">
         <label class="form-label">Bias</label>
-        <select class="form-input" id="mBias">
-          <option>LONG</option><option>SHORT</option><option>NONE</option>
-        </select>
+        <select class="form-input" id="mBias"><option>LONG</option><option>SHORT</option><option>NONE</option></select>
       </div>
     </div>
-
     <div class="form-row-2col">
       <div class="form-row">
         <label class="form-label">Default From</label>
@@ -233,7 +284,6 @@
         <input class="form-input" type="date" id="mDTo">
       </div>
     </div>
-
     <div class="form-row-2col">
       <div class="form-row">
         <label class="form-label">Lower Percentile Limit</label>
@@ -244,7 +294,6 @@
         <input class="form-input" type="number" id="mNFlip" placeholder="3" min="1">
       </div>
     </div>
-
     <div class="form-row-2col">
       <div class="form-row">
         <label class="form-label">Init Portfolio $</label>
@@ -255,25 +304,67 @@
         <input class="form-input" type="number" step="0.0001" id="mTradeComm" placeholder="0.0">
       </div>
     </div>
-
     <div class="form-row">
       <label class="form-label" style="display:flex;align-items:center;gap:8px">
         <input type="checkbox" id="mMakeStationary" checked style="accent-color:var(--blue)">
         Make Stationary
       </label>
     </div>
-
     <div class="form-row">
       <label class="form-label">Series CSV <span class="form-hint">(comma-separated symbols)</span></label>
       <textarea class="form-input form-textarea" id="mSeriesCsv"
         placeholder="SPY,VIXCLS,US02Y,US10Y,US30Y,US01MY,US03MY,US06MY,EFFR,FEDFUNDS,T10YIE,M2SL"></textarea>
     </div>
-
     <div class="form-error" id="mError"></div>
   </div>
   <div class="modal-footer">
     <button class="btn-modal-cancel" onclick="closeModal()">Cancel</button>
-    <button class="btn-modal-save"   id="mSaveBtn" onclick="saveModel()">Save</button>
+    <button class="btn-modal-save" id="mSaveBtn" onclick="saveModel()">Save</button>
+  </div>
+</div>
+
+<!-- ── PCA MODAL ──────────────────────────────────────────── -->
+<div class="modal" id="pcaModal" style="width:540px;max-height:90vh;overflow-y:auto">
+  <div class="modal-hdr">
+    <span class="modal-title" id="pcaModalTitle">Add PCA Indicator</span>
+    <button class="modal-close" onclick="closePcaModal()">✕</button>
+  </div>
+  <div class="modal-body" style="gap:12px">
+    <input type="hidden" id="pcaModelId">
+    <div class="form-row">
+      <label class="form-label">Model Name</label>
+      <input class="form-input" id="pcaModelName" placeholder="pca_NFCI_stress_indicator">
+    </div>
+    <div class="form-row-2col">
+      <div class="form-row">
+        <label class="form-label">Output Symbol <span class="form-hint">(saved to EconomicSeries)</span></label>
+        <input class="form-input" id="pcaOutputSym" placeholder="LIGHT_NFCI">
+      </div>
+      <div class="form-row">
+        <label class="form-label">Benchmark <span class="form-hint">(optional overlay)</span></label>
+        <input class="form-input" id="pcaMBenchmark" placeholder="NFCI">
+      </div>
+    </div>
+    <div class="form-row-2col">
+      <div class="form-row">
+        <label class="form-label">Default From</label>
+        <input class="form-input" type="date" id="pcaMDFrom">
+      </div>
+      <div class="form-row">
+        <label class="form-label">Default To</label>
+        <input class="form-input" type="date" id="pcaMDTo">
+      </div>
+    </div>
+    <div class="form-row">
+      <label class="form-label">Input Indicators CSV <span class="form-hint">(comma-separated)</span></label>
+      <textarea class="form-input form-textarea" id="pcaSeriesCsv" style="min-height:90px"
+        placeholder="FEDFUNDS,US02MY,US10Y,BAA10Y,VIX,MOVE,DXY,T10Y2Y,EFFR,BAMLH0A0HYM2,AAA10Y,VVIX,SPR_EFFR_US01Y,SPR_EFFR_US03MY,SPR_US02MY_US10Y,SPR_US03MY_US10Y,SPR_US01MY_US10Y,SPR_US02MY_US10Y"></textarea>
+    </div>
+    <div class="form-error" id="pcaError"></div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn-modal-cancel" onclick="closePcaModal()">Cancel</button>
+    <button class="btn-modal-save" id="pcaSaveBtn" onclick="savePcaModel()">Save</button>
   </div>
 </div>
 {% endblock %}

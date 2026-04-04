@@ -1,7 +1,8 @@
 """
-controllers/model_runner_controller.py
+controllers/simulate_model_controller.py
 Controller for the Model Runner page — manages running_model_configs,
-executes XGBoost backtests, and returns prices + results for the frontend.
+executes XGBoost backtests, PCA lightweight indicators, and returns
+prices + results for the frontend.
 """
 from __future__ import annotations
 
@@ -27,13 +28,20 @@ class SimulateModelController(BaseController):
     """
     Routes:
         GET  /                          → HTML page
-        GET  /models                    → list all model configs
+
+        GET  /models                    → list XGBoost model configs
         GET  /model/{model_id}          → single model config
-        POST /add_model                 → create model config + series
-        POST /edit_model                → update model config + series
+        POST /add_model                 → create XGBoost model config
+        POST /edit_model                → update XGBoost model config
         POST /delete_model              → delete model config
-        POST /run_model                 → execute backtest, return results
+        POST /run_model                 → execute XGBoost backtest
         GET  /prices                    → OHLC daily prices for chart
+
+        GET  /pca_models                → list PCA model configs
+        POST /add_pca_model             → create PCA model config
+        POST /edit_pca_model            → update PCA model config
+        POST /delete_pca_model          → delete PCA model config
+        POST /run_pca                   → execute PCA indicator computation + return chart data
     """
 
     def __init__(self, config_settings, logger):
@@ -53,34 +61,49 @@ class SimulateModelController(BaseController):
             directory=str(Path(__file__).parent.parent / "templates")
         )
 
-        # Page
+        # ── Page ──────────────────────────────────────────────
         self.router.get("/", response_class=HTMLResponse)(self.display_page)
 
-        # Model CRUD
-        self.router.get("/models",          response_class=JSONResponse)(self.api_get_models)
+        # ── XGBoost Model CRUD ────────────────────────────────
+        self.router.get("/models",           response_class=JSONResponse)(self.api_get_models)
         self.router.get("/model/{model_id}", response_class=JSONResponse)(self.api_get_model)
-        self.router.post("/add_model",      response_class=JSONResponse)(self.api_add_model)
-        self.router.post("/edit_model",     response_class=JSONResponse)(self.api_edit_model)
-        self.router.post("/delete_model",   response_class=JSONResponse)(self.api_delete_model)
+        self.router.post("/add_model",       response_class=JSONResponse)(self.api_add_model)
+        self.router.post("/edit_model",      response_class=JSONResponse)(self.api_edit_model)
+        self.router.post("/delete_model",    response_class=JSONResponse)(self.api_delete_model)
 
-        # Execution
-        self.router.post("/run_model",      response_class=JSONResponse)(self.api_run_model)
+        # ── XGBoost Execution ─────────────────────────────────
+        self.router.post("/run_model",       response_class=JSONResponse)(self.api_run_model)
 
-        # Prices for chart
-        self.router.get("/prices",          response_class=JSONResponse)(self.api_get_prices)
+        # ── Prices for chart ──────────────────────────────────
+        self.router.get("/prices",           response_class=JSONResponse)(self.api_get_prices)
 
-    # ── Page ──────────────────────────────────────────────────────────────────
+        # ── PCA Model CRUD ────────────────────────────────────
+        self.router.get("/pca_models",        response_class=JSONResponse)(self.api_get_pca_models)
+        self.router.post("/add_pca_model",    response_class=JSONResponse)(self.api_add_pca_model)
+        self.router.post("/edit_pca_model",   response_class=JSONResponse)(self.api_edit_pca_model)
+        self.router.post("/delete_pca_model", response_class=JSONResponse)(self.api_delete_pca_model)
+
+        # ── PCA Execution ─────────────────────────────────────
+        self.router.post("/run_pca",          response_class=JSONResponse)(self.api_run_pca)
+
+    # ══════════════════════════════════════════════════════════════
+    # PAGE
+    # ══════════════════════════════════════════════════════════════
 
     async def display_page(self, request: Request):
         return self.templates.TemplateResponse(
             "simulate_model.html", {"request": request}
         )
 
-    # ── Model CRUD ────────────────────────────────────────────────────────────
+    # ══════════════════════════════════════════════════════════════
+    # XGBOOST MODEL CRUD
+    # ══════════════════════════════════════════════════════════════
 
     async def api_get_models(self, request: Request):
-        models = self.models_mgr.get_running_model_configs(is_active=True)
-        return JSONResponse([self._model_to_dict(m) for m in models])
+        """Returns all active model configs that are NOT PCA."""
+        all_models = self.models_mgr.get_running_model_configs(is_active=True)
+        xgb_models = [m for m in all_models if m.algo_type.upper() != "PCA"]
+        return JSONResponse([self._model_to_dict(m) for m in xgb_models])
 
     async def api_get_model(self, request: Request, model_id: int):
         m = self.models_mgr.get_running_model_by_id(model_id)
@@ -106,7 +129,7 @@ class SimulateModelController(BaseController):
                 lower_percentile_limit = float(body.get("lower_percentile_limit", 0.3)),
                 n_flip                 = int(body.get("n_flip", 3)),
                 make_stationary        = bool(body.get("make_stationary", True)),
-                draw_predictions       = False,   # always False — frontend handles chart
+                draw_predictions       = False,
                 init_portf_size        = float(body.get("init_portf_size", 100000.0)),
                 trade_comm             = float(body.get("trade_comm", 0.0)),
                 series_csv             = body.get("series_csv", ""),
@@ -160,7 +183,7 @@ class SimulateModelController(BaseController):
 
     async def api_delete_model(self, request: Request):
         try:
-            body = await request.json()
+            body     = await request.json()
             model_id = int(body["model_id"])
         except Exception as e:
             return JSONResponse({"ok": False, "error": str(e)}, status_code=400)
@@ -170,41 +193,11 @@ class SimulateModelController(BaseController):
         except Exception as e:
             return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
 
-    # ── Execution ─────────────────────────────────────────────────────────────
-    @staticmethod
-    def _safe_json_response(data, status_code: int = 200):
-        """JSONResponse que convierte NaN/Inf/float-subclasses a null."""
-        import math
-        import json
-
-        class _SafeEncoder(json.JSONEncoder):
-            def iterencode(self, o, _one_shot=False):
-                # patch floats on the fly
-                return super().iterencode(self._sanitize(o), _one_shot)
-
-            def _sanitize(self, obj):
-                if isinstance(obj, float):
-                    if math.isnan(obj) or math.isinf(obj):
-                        return None
-                    return obj
-                if isinstance(obj, dict):
-                    return {k: self._sanitize(v) for k, v in obj.items()}
-                if isinstance(obj, (list, tuple)):
-                    return [self._sanitize(v) for v in obj]
-                return obj
-
-        from starlette.responses import Response
-        body = json.dumps(data, cls=_SafeEncoder)
-        return Response(content=body, status_code=status_code,
-                        media_type="application/json")
+    # ══════════════════════════════════════════════════════════════
+    # XGBOOST EXECUTION
+    # ══════════════════════════════════════════════════════════════
 
     async def api_run_model(self, request: Request):
-        """
-        Runs process_test_scalping_XGBoost and returns a serialised result.
-        Body fields (all optional — override model defaults):
-            model_id, d_from, d_to, bias, lower_percentile_limit, n_flip,
-            make_stationary, init_portf_size, trade_comm
-        """
         try:
             body = await request.json()
         except Exception as e:
@@ -218,7 +211,6 @@ class SimulateModelController(BaseController):
         if not m:
             return JSONResponse({"ok": False, "error": f"Model {model_id} not found"}, status_code=404)
 
-        # Merge model defaults with any request overrides
         d_from_str = body.get("d_from", m.d_from)
         d_to_str   = body.get("d_to",   m.d_to)
 
@@ -227,7 +219,7 @@ class SimulateModelController(BaseController):
             "lower_percentile_limit": float(body.get("lower_percentile_limit", m.lower_percentile_limit)),
             "n_flip":                 int(body.get("n_flip",             m.n_flip)),
             "make_stationary":        bool(body.get("make_stationary",   m.make_stationary)),
-            "draw_predictions":       False,   # always off — frontend draws the chart
+            "draw_predictions":       False,
             "init_portf_size":        float(body.get("init_portf_size",  m.init_portf_size)),
             "trade_comm":             float(body.get("trade_comm",       m.trade_comm)),
             "classif_key":            body.get("classif_key", "signal"),
@@ -248,42 +240,39 @@ class SimulateModelController(BaseController):
             )
 
             results: dict = aol.process_test_scalping_XGBoost(
-                symbol       = m.symbol,
-                series_csv   = m.series_csv,
-                model_to_use = m.model_path,
-                d_from       = d_from,
-                d_to         = d_to,
+                symbol            = m.symbol,
+                series_csv        = m.series_csv,
+                model_to_use      = m.model_path,
+                d_from            = d_from,
+                d_to              = d_to,
                 n_algo_param_dict = n_algo_param_dict,
             )
 
-            # results is {"DAILY_XGB": PortfSummary}
             summary = results.get("DAILY_XGB")
             if not summary:
                 return JSONResponse({"ok": False, "error": "No DAILY_XGB result returned"}, status_code=500)
 
             return self._safe_json_response({
-                "ok": True,
-                "symbol": m.symbol,
-                "d_from": d_from_str,
-                "d_to": d_to_str,
+                "ok":      True,
+                "symbol":  m.symbol,
+                "d_from":  d_from_str,
+                "d_to":    d_to_str,
                 "summary": self._summary_to_dict(summary),
             })
 
         except Exception as e:
             self._log_error("api_run_model", e)
-            return JSONResponse({"ok": False, "error": str(e), "trace": traceback.format_exc()}, status_code=500)
+            return JSONResponse(
+                {"ok": False, "error": str(e), "trace": traceback.format_exc()},
+                status_code=500,
+            )
 
-    # ── Prices ────────────────────────────────────────────────────────────────
+    # ══════════════════════════════════════════════════════════════
+    # PRICES
+    # ══════════════════════════════════════════════════════════════
 
-    async def api_get_prices(
-            self,
-            request: Request,
-            symbol: str,
-            d_from: str,
-            d_to: str,
-    ):
+    async def api_get_prices(self, request: Request, symbol: str, d_from: str, d_to: str):
         import math
-        import json
 
         def _safe(v):
             if v is None:
@@ -297,37 +286,275 @@ class SimulateModelController(BaseController):
         try:
             from datetime import datetime as _dt
             dfrom = _dt.strptime(d_from, "%Y-%m-%d")
-            dto = _dt.strptime(d_to, "%Y-%m-%d")
+            dto   = _dt.strptime(d_to,   "%Y-%m-%d")
         except ValueError as e:
             return JSONResponse({"ok": False, "error": str(e)}, status_code=400)
 
         try:
             candles = self.econ_mgr.get_economic_values(symbol, _DAY_INTERVAL, dfrom, dto)
-            result = []
+            result  = []
             for c in candles:
                 date_val = c.date
-                if hasattr(date_val, "strftime"):
-                    date_str = date_val.strftime("%Y-%m-%d")
-                else:
-                    date_str = str(date_val)[:10]
-
+                date_str = date_val.strftime("%Y-%m-%d") if hasattr(date_val, "strftime") else str(date_val)[:10]
                 result.append({
-                    "date": date_str,
-                    "open": _safe(c.open),
-                    "high": _safe(c.high),
-                    "low": _safe(c.low),
+                    "date":  date_str,
+                    "open":  _safe(c.open),
+                    "high":  _safe(c.high),
+                    "low":   _safe(c.low),
                     "close": _safe(c.close),
                 })
-
-            # Serializar manualmente para evitar NaN/Inf residuales
-            safe_payload = json.dumps({"ok": True, "prices": result})
             return self._safe_json_response({"ok": True, "prices": result})
-
         except Exception as e:
             self._log_error("api_get_prices", e)
             return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
 
-    # ── Serialisation helpers ─────────────────────────────────────────────────
+    # ══════════════════════════════════════════════════════════════
+    # PCA MODEL CRUD
+    # ══════════════════════════════════════════════════════════════
+
+    async def api_get_pca_models(self, request: Request):
+        all_models = self.models_mgr.get_running_model_configs(is_active=True)
+        pca_models = [m for m in all_models if m.algo_type.upper() == "PCA"]
+        return JSONResponse([self._model_to_dict(m) for m in pca_models])
+
+    async def api_add_pca_model(self, request: Request):
+        try:
+            body = await request.json()
+        except Exception as e:
+            return JSONResponse({"ok": False, "error": f"Bad JSON: {e}"}, status_code=400)
+
+        try:
+            model_id = self.models_mgr.persist_running_model_config(
+                model_name             = body["model_name"].strip(),
+                algo_type              = "PCA",
+                model_path             = "",
+                symbol                 = body["symbol"].strip().upper(),   # = output_symbol
+                bias                   = body.get("bias", "NONE").strip().upper(),  # = benchmark
+                d_from                 = body["d_from"],
+                d_to                   = body["d_to"],
+                lower_percentile_limit = 0.0,
+                n_flip                 = 1,
+                make_stationary        = False,
+                draw_predictions       = False,
+                init_portf_size        = 0.0,
+                trade_comm             = 0.0,
+                series_csv             = body.get("series_csv", ""),
+                display_order          = int(body.get("display_order", 0)),
+                is_active              = True,
+            )
+            return JSONResponse({"ok": True, "model_id": model_id})
+        except KeyError as e:
+            return JSONResponse({"ok": False, "error": f"Missing field: {e}"}, status_code=400)
+        except Exception as e:
+            self._log_error("api_add_pca_model", e)
+            return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
+
+    async def api_edit_pca_model(self, request: Request):
+        try:
+            body = await request.json()
+        except Exception as e:
+            return JSONResponse({"ok": False, "error": f"Bad JSON: {e}"}, status_code=400)
+
+        model_id = body.get("model_id")
+        if not model_id:
+            return JSONResponse({"ok": False, "error": "model_id required"}, status_code=400)
+
+        existing = self.models_mgr.get_running_model_by_id(int(model_id))
+        if not existing:
+            return JSONResponse({"ok": False, "error": f"PCA model {model_id} not found"}, status_code=404)
+
+        try:
+            self.models_mgr.persist_running_model_config(
+                model_name             = body.get("model_name", existing.model_name).strip(),
+                algo_type              = "PCA",
+                model_path             = "",
+                symbol                 = body.get("symbol", existing.symbol).strip().upper(),
+                bias                   = body.get("bias", existing.bias).strip().upper(),
+                d_from                 = body.get("d_from", existing.d_from),
+                d_to                   = body.get("d_to", existing.d_to),
+                lower_percentile_limit = 0.0,
+                n_flip                 = 1,
+                make_stationary        = False,
+                draw_predictions       = False,
+                init_portf_size        = 0.0,
+                trade_comm             = 0.0,
+                series_csv             = body.get("series_csv", existing.series_csv),
+                display_order          = int(body.get("display_order", existing.display_order)),
+                is_active              = bool(body.get("is_active", existing.is_active)),
+            )
+            return JSONResponse({"ok": True})
+        except Exception as e:
+            self._log_error("api_edit_pca_model", e)
+            return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
+
+    async def api_delete_pca_model(self, request: Request):
+        try:
+            body     = await request.json()
+            model_id = int(body["model_id"])
+        except Exception as e:
+            return JSONResponse({"ok": False, "error": str(e)}, status_code=400)
+        try:
+            self.models_mgr.delete_running_model_config(model_id)
+            return JSONResponse({"ok": True})
+        except Exception as e:
+            return JSONResponse({"ok": False, "error": str(e)}, status_code=500)
+
+    # ══════════════════════════════════════════════════════════════
+    # PCA EXECUTION
+    # ══════════════════════════════════════════════════════════════
+
+    async def api_run_pca(self, request: Request):
+        """
+        Calls process_create_lightweight_indicator (plot_result=False) which now returns:
+            pivot_df, benchmark_df, benchmark, output_symbol
+
+        Serialises pivot_df[output_symbol] + benchmark_df for the Plotly chart,
+        and also returns rows_persisted by re-querying EconomicSeries.
+
+        Body:
+            model_id   (int)  – required
+            d_from     (str)  – optional override (YYYY-MM-DD)
+            d_to       (str)  – optional override (YYYY-MM-DD)
+            benchmark  (str)  – optional override benchmark symbol
+        """
+        try:
+            body = await request.json()
+        except Exception as e:
+            return JSONResponse({"ok": False, "error": f"Bad JSON: {e}"}, status_code=400)
+
+        model_id = body.get("model_id")
+        if not model_id:
+            return JSONResponse({"ok": False, "error": "model_id required"}, status_code=400)
+
+        m = self.models_mgr.get_running_model_by_id(int(model_id))
+        if not m:
+            return JSONResponse({"ok": False, "error": f"PCA model {model_id} not found"}, status_code=404)
+        if m.algo_type.upper() != "PCA":
+            return JSONResponse({"ok": False, "error": "Model is not of type PCA"}, status_code=400)
+
+        d_from_str = body.get("d_from", m.d_from)
+        d_to_str   = body.get("d_to",   m.d_to)
+
+        benchmark_raw = body.get("benchmark") or m.bias
+        benchmark = None if (not benchmark_raw or benchmark_raw.upper() == "NONE") else benchmark_raw.upper()
+
+        try:
+            d_from = datetime.strptime(d_from_str, "%Y-%m-%d")
+            d_to   = datetime.strptime(d_to_str,   "%Y-%m-%d")
+        except ValueError as e:
+            return JSONResponse({"ok": False, "error": f"Invalid date format: {e}"}, status_code=400)
+
+        try:
+            aol = AlgosOrchestationLogic(
+                self.config["hist_data_conn_str"],
+                self.config["ml_reports_conn_str"],
+                None,
+                self.logger,
+            )
+
+            # process_create_lightweight_indicator now returns:
+            #   pivot_df, benchmark_df, benchmark, output_symbol
+            result = aol.process_create_lightweight_indicator(
+                csv_indicators = m.series_csv,
+                d_from         = d_from,
+                d_to           = d_to,
+                output_symbol  = m.symbol,
+                benchmark      = benchmark,
+                plot_result    = False,   # no matplotlib in web server
+            )
+
+            # Unpack — handle both old (None) and new (tuple) return shapes
+            pivot_df       = None
+            benchmark_df   = None
+            if isinstance(result, tuple):
+                # new signature: pivot_df, benchmark_df, benchmark, output_symbol
+                pivot_df, benchmark_df = result[0], result[1]
+            # else: old signature returned None — charts won't show, that's ok
+
+            # ── Serialise PCA series ──────────────────────────────
+            pca_series = []
+            if pivot_df is not None and m.symbol in pivot_df.columns:
+                import math as _math
+                for _, row in pivot_df.iterrows():
+                    date_val = row["date"]
+                    date_str = date_val.strftime("%Y-%m-%d") if hasattr(date_val, "strftime") else str(date_val)[:10]
+                    val = row[m.symbol]
+                    try:
+                        fval = float(val)
+                        if _math.isnan(fval) or _math.isinf(fval):
+                            fval = None
+                    except Exception:
+                        fval = None
+                    pca_series.append({"date": date_str, "value": fval})
+
+            # ── Serialise benchmark series ────────────────────────
+            benchmark_series = []
+            if benchmark_df is not None and not benchmark_df.empty:
+                import math as _math
+                # benchmark_df has columns: symbol, date, close  (long format)
+                close_col = "close" if "close" in benchmark_df.columns else benchmark_df.columns[-1]
+                for _, row in benchmark_df.iterrows():
+                    date_val = row["date"]
+                    date_str = date_val.strftime("%Y-%m-%d") if hasattr(date_val, "strftime") else str(date_val)[:10]
+                    val = row[close_col]
+                    try:
+                        fval = float(val)
+                        if _math.isnan(fval) or _math.isinf(fval):
+                            fval = None
+                    except Exception:
+                        fval = None
+                    benchmark_series.append({"date": date_str, "value": fval})
+
+            # ── Count persisted rows ──────────────────────────────
+            try:
+                candles       = self.econ_mgr.get_economic_values(m.symbol, _DAY_INTERVAL, d_from, d_to)
+                rows_persisted = len(candles)
+            except Exception:
+                rows_persisted = len(pca_series) if pca_series else None
+
+            return self._safe_json_response({
+                "ok":               True,
+                "output_symbol":    m.symbol,
+                "benchmark_symbol": benchmark,
+                "d_from":           d_from_str,
+                "d_to":             d_to_str,
+                "rows_persisted":   rows_persisted,
+                "pca_series":       pca_series,       # [{date, value}]
+                "benchmark_series": benchmark_series,  # [{date, value}] or []
+            })
+
+        except Exception as e:
+            self._log_error("api_run_pca", e)
+            return JSONResponse(
+                {"ok": False, "error": str(e), "trace": traceback.format_exc()},
+                status_code=500,
+            )
+
+    # ══════════════════════════════════════════════════════════════
+    # SHARED HELPERS
+    # ══════════════════════════════════════════════════════════════
+
+    @staticmethod
+    def _safe_json_response(data, status_code: int = 200):
+        import math
+        import json
+
+        class _SafeEncoder(json.JSONEncoder):
+            def iterencode(self, o, _one_shot=False):
+                return super().iterencode(self._sanitize(o), _one_shot)
+
+            def _sanitize(self, obj):
+                if isinstance(obj, float):
+                    return None if (math.isnan(obj) or math.isinf(obj)) else obj
+                if isinstance(obj, dict):
+                    return {k: self._sanitize(v) for k, v in obj.items()}
+                if isinstance(obj, (list, tuple)):
+                    return [self._sanitize(v) for v in obj]
+                return obj
+
+        from starlette.responses import Response
+        body = json.dumps(data, cls=_SafeEncoder)
+        return Response(content=body, status_code=status_code, media_type="application/json")
 
     @staticmethod
     def _model_to_dict(m) -> dict:
@@ -353,72 +580,66 @@ class SimulateModelController(BaseController):
 
     @staticmethod
     def _summary_to_dict(s) -> dict:
-        """
-        Serialise a PortfSummary object into a JSON-safe dict.
-        Handles Timestamp / date fields safely.
-        """
         def _fmt(v):
-            if v is None:
-                return None
-            if hasattr(v, "strftime"):
-                return v.strftime("%Y-%m-%d")
+            if v is None: return None
+            if hasattr(v, "strftime"): return v.strftime("%Y-%m-%d")
             return str(v)[:10]
 
         def _float(v, default=0.0):
-            try:
-                return round(float(v), 4)
-            except Exception:
-                return default
+            try:    return round(float(v), 4)
+            except: return default
 
         positions = []
         for p in (s.portf_pos_summary or []):
             positions.append({
-                "symbol":      getattr(p, "symbol",      None),
-                "side":        getattr(p, "side",         None),
-                "price_open":  _float(getattr(p, "price_open",  None)),
-                "price_close": _float(getattr(p, "price_close", None)),
-                "date_open":   _fmt(getattr(p,  "date_open",    None)),
-                "date_close":  _fmt(getattr(p,  "date_close",   None)),
-                "units":       _float(getattr(p, "units",       None)),
-                "nom_profit":  _float(getattr(p, "total_net_profit", None)
-                                      if hasattr(p, "total_net_profit")
-                                      else getattr(p, "calculate_th_nom_profit", lambda: None)()),
-                "pct_profit":  _float(getattr(p, "calculate_pct_profit", lambda: None)()),
-                "max_drawdown": _float(getattr(p, "calculate_max_drawdown", lambda: None)()
-                                        or getattr(p, "max_drawdown", None)
-                                        or 0.0
-                                    ),
-                # MTM series for chart — list of floats
-                "daily_mtms":  [_float(x) for x in (getattr(p, "daily_MTMs", None) or [])],
+                "symbol":       getattr(p, "symbol",      None),
+                "side":         getattr(p, "side",        None),
+                "price_open":   _float(getattr(p, "price_open",  None)),
+                "price_close":  _float(getattr(p, "price_close", None)),
+                "date_open":    _fmt(getattr(p,  "date_open",    None)),
+                "date_close":   _fmt(getattr(p,  "date_close",   None)),
+                "units":        _float(getattr(p, "units",       None)),
+                "nom_profit":   _float(
+                    getattr(p, "total_net_profit", None)
+                    if hasattr(p, "total_net_profit")
+                    else getattr(p, "calculate_th_nom_profit", lambda: None)()
+                ),
+                "pct_profit":   _float(getattr(p, "calculate_pct_profit",  lambda: None)()),
+                "max_drawdown": _float(
+                    getattr(p, "calculate_max_drawdown", lambda: None)()
+                    or getattr(p, "max_drawdown", None) or 0.0
+                ),
+                "daily_mtms": [_float(x) for x in (getattr(p, "daily_MTMs", None) or [])],
             })
 
-        # Last prediction signal — from n_algo_params if present
-        last_signal_raw = None
+        last_signal_raw  = None
         last_signal_date = None
         try:
             sigs = getattr(s, "last_signal_signals", None)
             if sigs:
-                last_signal_raw = " → ".join(str(x) for x in sigs)
+                last_signal_raw  = " → ".join(str(x) for x in sigs)
                 last_signal_date = getattr(s, "last_signal_date", None)
         except Exception:
             pass
 
         return {
-            "symbol":          s.symbol,
-            "algo":            getattr(s, "trading_algo", "DAILY_XGB"),
-            "period":          getattr(s, "period", None),
-            "portf_init":      _float(s.portf_init_MTM),
-            "portf_final":     _float(s.portf_final_MTM),
-            "total_profit":    _float(s.total_net_profit),
-            "profit_pct":      _float((s.portf_final_MTM - s.portf_init_MTM) / s.portf_init_MTM * 100)
-                               if s.portf_init_MTM else 0.0,
-            "max_drawdown":    _float(getattr(s, "drawdown_pct", None)
-                          or getattr(s, "max_drawdown", None) or 0),
-            "cagr":            _float(getattr(s, "cagr_pct", 0)),
-            "positions":       positions,
-            "last_signal":      last_signal_raw,   # "LONG → LONG → LONG"
-            "last_signal_date": last_signal_date,  # "2026-02-23"
-            "daily_profits":   [_float(x) for x in (s.daily_profits or [])],
+            "symbol":           s.symbol,
+            "algo":             getattr(s, "trading_algo", "DAILY_XGB"),
+            "period":           getattr(s, "period", None),
+            "portf_init":       _float(s.portf_init_MTM),
+            "portf_final":      _float(s.portf_final_MTM),
+            "total_profit":     _float(s.total_net_profit),
+            "profit_pct":       _float(
+                (s.portf_final_MTM - s.portf_init_MTM) / s.portf_init_MTM * 100
+            ) if s.portf_init_MTM else 0.0,
+            "max_drawdown":     _float(
+                getattr(s, "drawdown_pct", None) or getattr(s, "max_drawdown", None) or 0
+            ),
+            "cagr":             _float(getattr(s, "cagr_pct", 0)),
+            "positions":        positions,
+            "last_signal":      last_signal_raw,
+            "last_signal_date": last_signal_date,
+            "daily_profits":    [_float(x) for x in (s.daily_profits or [])],
         }
 
     def _log_error(self, where: str, exc: Exception):

@@ -1994,6 +1994,8 @@ class AlgosOrchestationLogic:
         if plot_result:
             GraphBuilder.plot_2_series_overlapped(pivot_df,benchmark_df,benchmark,output_symbol)
 
+        return pivot_df,benchmark_df,benchmark,output_symbol
+
     def process_download_financial_data_bulk(self, symbol: str, d_from: str, d_to: str, algo_params: dict):
         self.logger.print(f"[Orch] Bulk dispatching '{symbol}' to standard download logic", MessageType.INFO)
         self.process_download_financial_data(symbol, d_from, d_to, algo_params)
