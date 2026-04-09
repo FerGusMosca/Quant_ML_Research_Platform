@@ -3,6 +3,10 @@ security_manager.py
 ===================
 Data-access layer for dbo.securities, dbo.bond_detail, dbo.bond_coupons.
 Uses stored procedures exclusively.
+
+CHANGES v2:
+  - BondDetail gains `issuer` field (col index 9 from GetBondDetail SP)
+  - persist_bond_detail() accepts optional `issuer` param
 """
 
 import json
@@ -39,6 +43,7 @@ _BD_CURRENCY     = 5
 _BD_IS_ACTIVE    = 6
 _BD_LAW          = 7
 _BD_PAR_SYMBOL   = 8
+_BD_ISSUER       = 9   # NEW
 
 # Column indices — GetBondCoupons SP
 _BC_ID              = 0
@@ -80,6 +85,7 @@ def _row_to_bond_detail(row) -> BondDetail:
         is_active     = int(row[_BD_IS_ACTIVE]),
         law           = str(row[_BD_LAW]),
         par_symbol    = str(row[_BD_PAR_SYMBOL]) if row[_BD_PAR_SYMBOL] else None,
+        issuer        = str(row[_BD_ISSUER])     if row[_BD_ISSUER]     else None,  # NEW
     )
 
 
@@ -177,11 +183,12 @@ class SecurityManager:
         symbol:     str,
         law:        str,
         par_symbol: Optional[str] = None,
+        issuer:     Optional[str] = None,   # NEW
     ) -> None:
         with self.connection.cursor() as cursor:
             cursor.execute(
-                "{CALL PersistBondDetail (?, ?, ?)}",
-                (symbol, law, par_symbol),
+                "{CALL PersistBondDetail (?, ?, ?, ?)}",
+                (symbol, law, par_symbol, issuer),
             )
             self.connection.commit()
 

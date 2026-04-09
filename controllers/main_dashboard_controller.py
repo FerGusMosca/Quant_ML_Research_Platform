@@ -17,6 +17,7 @@ from controllers.display_series_controller import DisplaySeriesController
 from controllers.download_jobs_controller import DataDownloaderController
 from controllers.global_m2_indicator_controller import GlobalM2IndicatorController
 from controllers.load_series_controller import LoadSeriesController
+from controllers.ons_controller import ONsController
 from controllers.portfolio_views_controller import PortfolioViewController
 from controllers.routing_dashboard_controller import RoutingDashboardController
 from controllers.simulate_indicator_strategy_controller import SimulateIndicatorStrategy
@@ -106,11 +107,11 @@ class MainDashboardController:
         self.argy_bonds_ctrl = ArgyBondsController(config_settings, logger)
         self.app.include_router(self.argy_bonds_ctrl.router, prefix="/argy_bonds")
 
-
-
         self.lecap_ctrl = LecapController(config_settings, logger)
         self.app.include_router(self.lecap_ctrl.router, prefix="/lecap")
 
+        self.ons_ctrl = ONsController(config_settings, logger)
+        self.app.include_router(self.ons_ctrl.router, prefix="/ons")
 
         # ── FRED proxy router ──
         self.app.include_router(self._build_fred_router(), prefix="/api")

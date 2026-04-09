@@ -27,6 +27,9 @@
   <button class="ab-tab" data-tab="lecap" onclick="switchTab('lecap', this)">
     📋 LECAPs &amp; BONCAPs
   </button>
+  <button class="ab-tab" data-tab="ons" onclick="switchTab('ons', this)">
+    🏢 ONs
+  </button>
   <button class="ab-tab" data-tab="curve" onclick="switchTab('curve', this)" disabled title="Próximamente">
     📐 Curva (soon)
   </button>
@@ -135,6 +138,76 @@
 
 </div>
 <!-- ══ END TAB LECAPs & BONCAPs ════════════════════════════════ -->
+
+
+<!-- ══ TAB: ONs ══════════════════════════════════════════════════ -->
+<div class="ab-tab-content" id="tab-ons" style="display:none">
+
+  <!-- ── Toolbar ───────────────────────────────────────────────── -->
+  <div class="on-toolbar">
+    <div class="on-toolbar-left">
+      <!-- Sector filter -->
+      <div class="on-filter-group">
+        <button class="on-filter-btn active" onclick="setOnSectorFilter('ALL',this)">All</button>
+        <button class="on-filter-btn" onclick="setOnSectorFilter('Energy',this)">⚡ Energy</button>
+        <button class="on-filter-btn" onclick="setOnSectorFilter('Banking',this)">🏦 Banking</button>
+        <button class="on-filter-btn" onclick="setOnSectorFilter('Agro',this)">🌾 Agro</button>
+        <button class="on-filter-btn" onclick="setOnSectorFilter('Infrastructure',this)">🏗 Infra</button>
+        <button class="on-filter-btn" onclick="setOnSectorFilter('Other',this)">Other</button>
+      </div>
+      <!-- Duration bucket filter -->
+      <div class="on-dur-group">
+        <button class="on-dur-btn active" onclick="setOnDurFilter('ALL',this)">All dur.</button>
+        <button class="on-dur-btn" onclick="setOnDurFilter('SHORT',this)">&lt;1y</button>
+        <button class="on-dur-btn" onclick="setOnDurFilter('MID',this)">1–3y</button>
+        <button class="on-dur-btn" onclick="setOnDurFilter('LONG',this)">&gt;3y</button>
+      </div>
+    </div>
+    <div class="on-toolbar-right">
+      <!-- Search -->
+      <div class="on-search-wrap">
+        <span class="on-search-icon">🔍</span>
+        <input class="on-search-input" type="text" placeholder="Buscar ticker / emisor…"
+               oninput="onOnSearch(this.value)">
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Main table card ───────────────────────────────────────── -->
+  <div class="ab-card">
+    <div class="ab-card-hdr">
+      <span class="ab-card-title">Obligaciones Negociables</span>
+      <span class="ab-card-sub" id="onCardSub">Bonos corporativos USD · BYMA</span>
+    </div>
+    <div class="ab-table-wrap">
+      <table class="ab-table" id="onTable">
+        <thead>
+          <tr>
+            <th>Ticker</th>
+            <th>Emisor</th>
+            <th>Precio USD</th>
+            <th>Bid</th>
+            <th>Ask</th>
+            <th>Duration</th>
+            <th>Vencimiento</th>
+            <th>TIR</th>
+            <th>% Chg</th>
+            <th style="width:80px"></th>
+          </tr>
+        </thead>
+        <tbody id="onTbody">
+          <tr><td colspan="10" class="ab-empty-cell">Cargando ONs…</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ab-table-footer">
+      TIR (YTM) y Duration (Macaulay) calculadas con flujos en dbo.bond_coupons ·
+      Sin flujos cargados → columnas muestran —
+    </div>
+  </div>
+
+</div>
+<!-- ══ END TAB ONs ════════════════════════════════════════════ -->
 
 
 <!-- ══ LECAP / BONCAP CALCULATOR MODAL ══════════════════════════ -->
@@ -403,11 +476,9 @@
     <button class="ab-modal-close" onclick="closeCsvModal()">✕</button>
   </div>
   <div class="ab-calc-body" style="padding:16px 20px;gap:12px">
-    <!-- CSV format hint -->
     <div class="lc-csv-hint">
       Expected columns: <code>symbol, security_type, description, maturity_date (YYYY-MM-DD), final_payment, currency</code>
     </div>
-    <!-- Preview table -->
     <div class="ab-calc-table-wrap">
       <div class="ab-calc-table-hdr" id="csvPreviewHdr">Preview — 0 rows</div>
       <div style="max-height:300px;overflow-y:auto">
@@ -432,10 +503,92 @@
   </div>
 </div>
 
+
+<!-- ══ ON CALCULATOR MODAL ════════════════════════════════════════ -->
+<div class="ab-backdrop" id="onCalcBackdrop" onclick="closeOnCalcModal()"></div>
+<div class="ab-modal ab-calc-modal" id="onCalcModal" style="max-width:700px">
+  <div class="ab-modal-hdr">
+    <div>
+      <span class="ab-modal-title" id="onCalcTitle">Calculadora ON</span>
+      <span class="ab-modal-sub"   id="onCalcSub"></span>
+    </div>
+    <button class="ab-modal-close" onclick="closeOnCalcModal()">✕</button>
+  </div>
+  <div class="ab-calc-body">
+
+    <!-- Inputs + metric pills -->
+    <div class="ab-calc-inputs">
+      <div class="ab-calc-field">
+        <label class="ab-calc-lbl">Precio USD</label>
+        <input class="ab-calc-input" type="number" id="onCalcPrice" step="0.01" oninput="recalcOnModal()">
+      </div>
+      <div class="ab-calc-field">
+        <label class="ab-calc-lbl">Monto a invertir (USD)</label>
+        <input class="ab-calc-input" type="number" id="onCalcMonto" value="10000" step="100" oninput="recalcOnModal()">
+      </div>
+      <!-- Metric pills -->
+      <div class="on-calc-metrics" style="margin-left:auto">
+        <div class="on-calc-metric">
+          <span id="onCalcTir" class="on-calc-val tir">—</span>
+          <span class="on-calc-lbl">TIR</span>
+        </div>
+        <div class="on-calc-metric">
+          <span id="onCalcDur" class="on-calc-val dur">—</span>
+          <span class="on-calc-lbl">Duration</span>
+        </div>
+        <div class="on-calc-metric">
+          <span id="onCalcVn" class="on-calc-val" style="font-size:13px">—</span>
+          <span class="on-calc-lbl">VN</span>
+        </div>
+        <div class="on-calc-metric">
+          <span id="onCalcGain" class="on-calc-val" style="font-size:15px">—</span>
+          <span class="on-calc-lbl">Ganancia</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Costs -->
+    <div class="ab-calc-costs">
+      <span class="ab-calc-costs-lbl">Costos:</span>
+      <div class="ab-calc-cost-field">
+        <label class="ab-calc-lbl">Arancel %</label>
+        <input class="ab-calc-input ab-calc-input-sm" type="number" id="onCalcArancel"
+               value="0.45" step="0.01" oninput="recalcOnModal()">
+      </div>
+      <div class="ab-calc-cost-field">
+        <label class="ab-calc-lbl">Impuestos %</label>
+        <input class="ab-calc-input ab-calc-input-sm" type="number" id="onCalcImpuestos"
+               value="0.01" step="0.01" oninput="recalcOnModal()">
+      </div>
+    </div>
+
+    <!-- Cash-flow table -->
+    <div class="ab-calc-table-wrap">
+      <div class="ab-calc-table-hdr">Flujos de fondos</div>
+      <table class="ab-calc-table">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th class="ab-calc-th-r">Por 100 VN</th>
+            <th class="ab-calc-th-r">Tu inversión</th>
+          </tr>
+        </thead>
+        <tbody id="onCalcFlows">
+          <tr><td colspan="3" class="ab-calc-empty">Seleccioná un bono</td></tr>
+        </tbody>
+        <tfoot id="onCalcTfoot"></tfoot>
+      </table>
+    </div>
+    <div class="ab-calc-note" id="onCalcNote"></div>
+  </div>
+</div>
+
 {% endblock %}
 
 
 {% block extra_js %}
+<link rel="stylesheet" href="/static/css/argy_bonds_ons.css">
 <script src="https://unpkg.com/lightweight-charts@3.8.0/dist/lightweight-charts.standalone.production.js"></script>
 <script src="/static/js/argy_bonds_lecap.js"></script>
+<script src="/static/js/argy_bonds_ons.js"></script>
 {% endblock %}

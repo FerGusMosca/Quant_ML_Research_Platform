@@ -1,0 +1,162 @@
+/* =============================================================
+   argy_bonds_ons.css
+   Styles for the ONs (Obligaciones Negociables) tab.
+   Append to argy_bonds.css or @import this file.
+   ============================================================= */
+
+/* ── Toolbar ─────────────────────────────────────────────────── */
+.on-toolbar {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 14px; flex-wrap: wrap; gap: 10px;
+}
+.on-toolbar-left  { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.on-toolbar-right { display: flex; align-items: center; gap: 8px; }
+
+/* ── Sector filter pill group ────────────────────────────────── */
+.on-filter-group {
+  display: flex;
+  background: var(--elevated);
+  border: 1px solid var(--border2);
+  border-radius: 8px; overflow: hidden; padding: 2px; gap: 2px;
+}
+.on-filter-btn {
+  background: none; border: none; color: var(--dim);
+  font-family: var(--mono); font-size: 10px; font-weight: 700;
+  padding: 5px 13px; cursor: pointer; border-radius: 6px;
+  transition: all 0.15s; letter-spacing: 0.07em; text-transform: uppercase;
+}
+.on-filter-btn:hover:not(.active) {
+  background: rgba(88,166,255,0.07); color: #8bc8ff;
+}
+.on-filter-btn.active {
+  background: rgba(31,111,235,0.22); color: #58A6FF;
+  box-shadow: 0 1px 4px rgba(31,111,235,0.18);
+}
+
+/* ── Duration bucket filter ──────────────────────────────────── */
+.on-dur-group {
+  display: flex;
+  background: var(--elevated);
+  border: 1px solid var(--border2);
+  border-radius: 8px; overflow: hidden; padding: 2px; gap: 2px;
+}
+.on-dur-btn {
+  background: none; border: none; color: var(--dim);
+  font-family: var(--mono); font-size: 10px; font-weight: 700;
+  padding: 5px 11px; cursor: pointer; border-radius: 6px;
+  transition: all 0.15s; letter-spacing: 0.05em; text-transform: uppercase;
+}
+.on-dur-btn:hover:not(.active) {
+  background: rgba(210,153,34,0.07); color: #e3b341;
+}
+.on-dur-btn.active {
+  background: rgba(210,153,34,0.18); color: var(--orange);
+  box-shadow: 0 1px 4px rgba(210,153,34,0.18);
+}
+
+/* ── Search box ──────────────────────────────────────────────── */
+.on-search-wrap {
+  position: relative; display: flex; align-items: center;
+}
+.on-search-input {
+  padding: 6px 10px 6px 28px;
+  background: var(--elevated); border: 1px solid var(--border2);
+  border-radius: 8px; color: #E6EDF3; font-family: var(--mono);
+  font-size: 10px; outline: none; width: 170px; transition: border-color 0.15s;
+}
+.on-search-input:focus { border-color: var(--blue); box-shadow: 0 0 0 3px rgba(31,111,235,0.1); }
+.on-search-icon {
+  position: absolute; left: 9px; font-size: 11px; color: var(--faint); pointer-events: none;
+}
+
+/* ── Issuer cell ─────────────────────────────────────────────── */
+.on-issuer { color: var(--dim); font-size: 11px; }
+
+/* ── Sector badges ───────────────────────────────────────────── */
+.on-sector-badge {
+  display: inline-block; font-size: 8px; font-weight: 700;
+  padding: 2px 6px; border-radius: 4px; letter-spacing: 0.06em;
+  text-transform: uppercase; margin-left: 5px; vertical-align: middle;
+}
+.on-sector-energy {
+  background: rgba(210,153,34,0.13); color: var(--orange);
+  border: 1px solid rgba(210,153,34,0.28);
+}
+.on-sector-banking {
+  background: rgba(31,111,235,0.14); color: #58A6FF;
+  border: 1px solid rgba(31,111,235,0.28);
+}
+.on-sector-real-estate {
+  background: rgba(63,185,80,0.12); color: var(--green);
+  border: 1px solid rgba(63,185,80,0.2);
+}
+.on-sector-agro {
+  background: rgba(63,185,80,0.10); color: #6ee77e;
+  border: 1px solid rgba(63,185,80,0.18);
+}
+.on-sector-industry {
+  background: rgba(139,148,158,0.14); color: #8b949e;
+  border: 1px solid rgba(139,148,158,0.25);
+}
+.on-sector-infrastructure {
+  background: rgba(88,166,255,0.10); color: #7ab8ff;
+  border: 1px solid rgba(88,166,255,0.22);
+}
+.on-sector-consumer {
+  background: rgba(188,140,255,0.12); color: #c89cff;
+  border: 1px solid rgba(188,140,255,0.22);
+}
+.on-sector-construction {
+  background: rgba(248,81,73,0.10); color: #f88080;
+  border: 1px solid rgba(248,81,73,0.22);
+}
+.on-sector-other {
+  background: rgba(139,148,158,0.10); color: var(--faint);
+  border: 1px solid rgba(139,148,158,0.2);
+}
+
+/* ── TIR coloring ────────────────────────────────────────────── */
+.on-tir-high { color: var(--green); font-weight: 700; }
+.on-tir-mid  { color: #58A6FF;      font-weight: 600; }
+.on-tir-low  { color: var(--dim);   font-weight: 500; }
+.on-tir-neg  { color: var(--red);   font-weight: 700; }
+.on-tir-na   { color: var(--faint); font-style: italic; }
+
+/* ── Duration coloring ───────────────────────────────────────── */
+.on-dur-short { color: var(--dim); }
+.on-dur-mid   { color: #E6EDF3; }
+.on-dur-long  { color: var(--orange); }
+
+/* ── No-price ────────────────────────────────────────────────── */
+.on-no-price { color: var(--faint); font-style: italic; }
+
+/* ════════════════════════════════════════════════════
+   ON CALCULATOR MODAL
+════════════════════════════════════════════════════ */
+
+#onCalcModal { max-width: 700px; }
+#onCalcModal .ab-calc-body { padding: 22px 26px; gap: 18px; }
+
+/* Metric pills row */
+.on-calc-metrics {
+  display: flex; gap: 0; align-items: stretch;
+  background: var(--elevated); border: 1px solid var(--border2);
+  border-radius: 10px; overflow: hidden;
+}
+.on-calc-metric {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; gap: 5px; flex: 1;
+  padding: 14px 10px; border-right: 1px solid var(--border);
+}
+.on-calc-metric:last-child { border-right: none; }
+
+.on-calc-val {
+  font-family: var(--mono); font-size: 18px; font-weight: 700;
+  color: #E6EDF3; letter-spacing: -0.02em;
+}
+.on-calc-val.tir { color: var(--green); font-size: 22px; }
+.on-calc-val.dur { color: #58A6FF; }
+.on-calc-lbl {
+  font-family: var(--mono); font-size: 9px; color: var(--faint);
+  text-transform: uppercase; letter-spacing: 0.12em;
+}

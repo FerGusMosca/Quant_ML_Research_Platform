@@ -70,6 +70,7 @@ class Data912Downloader:
     ENDPOINT_ARG_NOTES    = "/live/arg_notes"    # LECAPs / short notes
     ENDPOINT_ARG_OPTIONS  = "/live/arg_options"  # listed options (future)
     ENDPOINT_ARG_EQUITIES = "/live/arg_equities" # local equities (future)
+    ENDPOINT_ARG_CORP = "/live/arg_corp"
 
     def __init__(self, timeout_seconds: float = _DEFAULT_TIMEOUT_SECONDS):
         self._timeout = timeout_seconds
