@@ -134,8 +134,26 @@
    ON CALCULATOR MODAL
 ════════════════════════════════════════════════════ */
 
-#onCalcModal { max-width: 700px; }
-#onCalcModal .ab-calc-body { padding: 22px 26px; gap: 18px; }
+#onCalcModal {
+  max-width: 700px;
+  max-height: 90vh;
+}
+
+#onCalcModal .ab-calc-body {
+  padding: 22px 26px;
+  gap: 18px;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
+}
+
+/* La tabla de flujos scrollea internamente */
+.ab-calc-table-wrap {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 340px;
+}
 
 /* Metric pills row */
 .on-calc-metrics {
