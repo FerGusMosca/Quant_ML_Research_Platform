@@ -10,6 +10,7 @@ let _onSector     = 'ALL';
 let _onDurBucket  = 'ALL';
 let _onSearch     = '';
 let _onCalcSymbol = null;
+let _onSortMode   = 'default';  // 'default' | 'flujo' | 'oportunidad' | 'valor'
 
 // ── Boot ─────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
@@ -54,12 +55,77 @@ function updateOnCardSub() {
 // RENDER
 // ════════════════════════════════════════════════════
 
+// ════════════════════════════════════════════════════
+// SORT MODES
+// ════════════════════════════════════════════════════
+
+function setOnSortMode(mode, btn) {
+  _onSortMode = mode;
+  document.querySelectorAll('.on-sort-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderOnTable();
+}
+
+// Calcula campos extra desde coupons[]
+function _enrichOnRow(b) {
+  const coupons = b.coupons || [];
+  const future  = coupons.filter(c => c.amount > 0);
+
+  // Próximo cupón — fecha del primer flujo futuro
+  const nextCoupon = future.length ? future[0].date : null;
+
+  // Valor Técnico — suma de todos los flujos futuros (por 100 VN)
+  const valorTecnico = future.reduce((s, c) => s + (c.amount || 0), 0);
+
+  // Distancia de la Par — (precio / valorTecnico) - 1
+  const distPar = (valorTecnico > 0 && b.price_usd > 0)
+    ? (b.price_usd / valorTecnico) - 1
+    : null;
+
+  // Días hasta próximo cupón
+  const diasNextCoupon = nextCoupon
+    ? Math.round((new Date(nextCoupon) - new Date()) / 86400000)
+    : null;
+
+  return { ...b, nextCoupon, valorTecnico, distPar, diasNextCoupon };
+}
+
+function _sortRows(rows) {
+  const enriched = rows.map(_enrichOnRow);
+  if (_onSortMode === 'flujo') {
+    // Cronológico por próximo cupón
+    return enriched.sort((a, b) => {
+      if (!a.nextCoupon) return 1;
+      if (!b.nextCoupon) return -1;
+      return a.nextCoupon.localeCompare(b.nextCoupon);
+    });
+  }
+  if (_onSortMode === 'oportunidad') {
+    // Ratio: días más cortos + distPar más negativa
+    return enriched
+      .filter(b => b.distPar != null && b.diasNextCoupon != null)
+      .sort((a, b) => {
+        // Normalizar ambos entre 0-1 y combinar
+        const scoreA = (a.diasNextCoupon || 0) - (a.distPar * 1000);
+        const scoreB = (b.diasNextCoupon || 0) - (b.distPar * 1000);
+        return scoreA - scoreB;
+      });
+  }
+  if (_onSortMode === 'valor') {
+    // Distancia de la par más negativa primero
+    return enriched
+      .filter(b => b.distPar != null)
+      .sort((a, b) => a.distPar - b.distPar);
+  }
+  return enriched; // default: orden del backend (duration asc)
+}
+
 function renderOnTable() {
   const tbody = document.getElementById('onTbody');
   if (!tbody) return;
   tbody.innerHTML = '';
 
-  let rows = _onData;
+  let rows = _sortRows(_onData);
 
   // Sector filter
   if (_onSector !== 'ALL')
@@ -136,6 +202,11 @@ function renderOnTable() {
       <td class="ab-date">${escHtml(b.maturity || '—')}</td>
       <td class="${tirCls}">${tirStr}</td>
       <td class="${chgCls}">${chgSign}${fmt2(b.pct_change)}%</td>
+      <td class="on-next-coupon">${b.nextCoupon ? b.nextCoupon.slice(5) + '<br><span style=\"font-size:9px;color:var(--dim)\">' + (b.diasNextCoupon != null ? b.diasNextCoupon + 'd' : '') + '</span>' : '—'}</td>
+      <td class="on-vt">${b.valorTecnico > 0 ? 'US$' + fmt2(b.valorTecnico) : '—'}</td>
+      <td class="on-dist-par ${b.distPar != null ? (b.distPar < -0.05 ? 'on-dist-neg-deep' : b.distPar < 0 ? 'on-dist-neg' : 'on-dist-pos') : ''}">
+        ${b.distPar != null ? (b.distPar >= 0 ? '+' : '') + (b.distPar * 100).toFixed(1) + '%' : '—'}
+      </td>
       <td style="display:flex;gap:4px">
         <button class="ab-chart-btn"
           onclick="event.stopPropagation();openOnChartModal('${escHtml(b.symbol)}')"

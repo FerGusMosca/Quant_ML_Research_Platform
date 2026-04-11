@@ -178,3 +178,39 @@
   font-family: var(--mono); font-size: 9px; color: var(--faint);
   text-transform: uppercase; letter-spacing: 0.12em;
 }
+/* ── Sort mode buttons ───────────────────────────────────────── */
+.on-sort-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.on-sort-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--faint);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+.on-sort-btn {
+  background: var(--elevated);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 10px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: all 0.12s;
+  white-space: nowrap;
+}
+.on-sort-btn:hover  { border-color: var(--border2); color: #E6EDF3; }
+.on-sort-btn.active { background: rgba(88,166,255,.12); border-color: #58A6FF; color: #58A6FF; font-weight: 600; }
+
+/* ── New columns: next coupon / technical value / par distance ── */
+.on-next-coupon { font-family: var(--mono); font-size: 11px; color: #E6EDF3; white-space: nowrap; }
+.on-vt          { font-family: var(--mono); font-size: 11px; color: var(--dim); }
+.on-dist-par      { font-family: var(--mono); font-size: 12px; font-weight: 600; }
+.on-dist-neg-deep { color: #f85149; }
+.on-dist-neg      { color: #d29922; }
+.on-dist-pos      { color: #3fb950; }

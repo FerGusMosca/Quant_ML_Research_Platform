@@ -126,6 +126,13 @@
         <button class="on-dur-btn" onclick="setOnDurFilter('MID',this)">1–3y</button>
         <button class="on-dur-btn" onclick="setOnDurFilter('LONG',this)">&gt;3y</button>
       </div>
+      <div class="on-sort-group">
+        <span class="on-sort-label">Order:</span>
+        <button class="on-sort-btn active" onclick="setOnSortMode('default',this)" title="By duration asc">📊 Default</button>
+        <button class="on-sort-btn" onclick="setOnSortMode('flujo',this)" title="By next coupon date">💸 Flujo</button>
+        <button class="on-sort-btn" onclick="setOnSortMode('oportunidad',this)" title="Near cashflow + discount">🎯 Oportunidad</button>
+        <button class="on-sort-btn" onclick="setOnSortMode('valor',this)" title="Most distressed first">🔥 Valor Profundo</button>
+      </div>
     </div>
     <div class="on-toolbar-right">
       <div class="on-search-wrap">
@@ -145,11 +152,14 @@
           <tr>
             <th>Ticker</th><th>Emisor</th><th>Precio USD</th><th>Bid</th><th>Ask</th>
             <th>Duration</th><th>Vencimiento</th><th>TIR</th><th>% Chg</th>
+            <th title="Next coupon or amortization date">Próx. Cupón</th>
+            <th title="Sum of all future flows per 100 VN">V. Técnico</th>
+            <th title="Price / Technical Value - 1">Dist. Par</th>
             <th style="width:80px"></th>
           </tr>
         </thead>
         <tbody id="onTbody">
-          <tr><td colspan="10" class="ab-empty-cell">Cargando ONs…</td></tr>
+          <tr><td colspan="13" class="ab-empty-cell">Cargando ONs…</td></tr>
         </tbody>
       </table>
     </div>
@@ -165,10 +175,10 @@
   <div class="curve-grid">
 
     <!-- Panel 1: Soberanos USD -->
-    <div class="curve-panel" style="cursor:pointer">
+    <div class="curve-panel">
       <div class="curve-panel-hdr">
         <span class="curve-panel-title">🏛 Soberanos USD</span>
-        <span class="curve-panel-sub">TIR vs Duration · Local / NY</span><span style="font-family:var(--mono);font-size:9px;color:var(--faint);margin-left:auto">🔍 expandir</span>
+        <span class="curve-panel-sub">TIR vs Duration · Local / NY</span>
       </div>
       <div class="curve-panel-body">
         <canvas id="curveSovCanvas"></canvas>
@@ -185,10 +195,10 @@
     </div>
 
     <!-- Panel 2: LECAPs ARS -->
-    <div class="curve-panel" style="cursor:pointer">
+    <div class="curve-panel">
       <div class="curve-panel-hdr">
         <span class="curve-panel-title">📋 LECAPs &amp; BONCAPs ARS</span>
-        <span class="curve-panel-sub">TIR anual vs Plazo · Zero coupon</span><span style="font-family:var(--mono);font-size:9px;color:var(--faint);margin-left:auto">🔍 expandir</span>
+        <span class="curve-panel-sub">TIR anual vs Plazo · Zero coupon</span>
       </div>
       <div class="curve-panel-body">
         <canvas id="curveLcCanvas"></canvas>
@@ -205,10 +215,10 @@
     </div>
 
     <!-- Panel 3: ONs USD -->
-    <div class="curve-panel" style="cursor:pointer">
+    <div class="curve-panel">
       <div class="curve-panel-hdr">
         <span class="curve-panel-title">🏢 ONs Corporativas USD</span>
-        <span class="curve-panel-sub">TIR vs Duration · Por sector</span><span style="font-family:var(--mono);font-size:9px;color:var(--faint);margin-left:auto">🔍 expandir</span>
+        <span class="curve-panel-sub">TIR vs Duration · Por sector</span>
       </div>
       <div class="curve-panel-body">
         <canvas id="curveOnCanvas"></canvas>
@@ -252,7 +262,7 @@
     </div>
     <div style="flex:1;position:relative;background:#0d1117;overflow:hidden">
       <canvas id="curveModalCanvas" style="width:100%!important;height:100%!important"></canvas>
-      <span style="position:absolute;bottom:10px;right:14px;font-family:var(--mono);font-size:9px;color:var(--faint);pointer-events:none">Línea punteada = curva teórica · regresión logarítmica OLS</span>
+      <span style="position:absolute;bottom:10px;right:14px;font-family:var(--mono);font-size:9px;color:var(--faint);pointer-events:none">Dashed line = theoretical curve · log OLS regression</span>
     </div>
   </div>
 </div>
