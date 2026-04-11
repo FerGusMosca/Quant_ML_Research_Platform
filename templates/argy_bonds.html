@@ -19,6 +19,9 @@
   </div>
 </div>
 
+<!-- ── Error banner -->
+<div id="curvePageError" style="display:none;position:fixed;top:20px;left:50%;transform:translateX(-50%);background:rgba(248,81,73,0.15);border:1px solid rgba(248,81,73,0.5);color:#f88;font-family:monospace;font-size:12px;padding:10px 20px;border-radius:8px;z-index:9999"></div>
+
 <!-- ── Tabs ─────────────────────────────────────────────────────── -->
 <div class="ab-tabs">
   <button class="ab-tab active" data-tab="sovereign" onclick="switchTab('sovereign', this)">
@@ -30,8 +33,8 @@
   <button class="ab-tab" data-tab="ons" onclick="switchTab('ons', this)">
     🏢 ONs
   </button>
-  <button class="ab-tab" data-tab="curve" onclick="switchTab('curve', this)" disabled title="Próximamente">
-    📐 Curva (soon)
+  <button class="ab-tab" data-tab="curve" onclick="switchTab('curve', this); onCurveTabClick()">
+    📐 Curva
   </button>
 </div>
 
@@ -46,16 +49,8 @@
       <table class="ab-table" id="bondTable">
         <thead>
           <tr>
-            <th>Ticker</th>
-            <th>Ley</th>
-            <th>Precio USD</th>
-            <th>Bid</th>
-            <th>Ask</th>
-            <th>TIR</th>
-            <th>Duration</th>
-            <th>Vencimiento</th>
-            <th>% Chg</th>
-            <th>Vol</th>
+            <th>Ticker</th><th>Ley</th><th>Precio USD</th><th>Bid</th><th>Ask</th>
+            <th>TIR</th><th>Duration</th><th>Vencimiento</th><th>% Chg</th><th>Vol</th>
             <th style="width:80px"></th>
           </tr>
         </thead>
@@ -64,45 +59,32 @@
         </tbody>
       </table>
     </div>
-    <div class="ab-table-footer">
-      TIR (YTM) calculada con flujos descontados · Duration en años (Macaulay)
-    </div>
+    <div class="ab-table-footer">TIR (YTM) calculada con flujos descontados · Duration en años (Macaulay)</div>
   </div>
 </div>
-<!-- ══ END TAB SOVEREIGN ════════════════════════════════════════ -->
-
 
 <!-- ══ TAB: LECAPs & BONCAPs ═════════════════════════════════════ -->
 <div class="ab-tab-content" id="tab-lecap" style="display:none">
-
-  <!-- ── Toolbar ───────────────────────────────────────────────── -->
   <div class="lc-toolbar">
     <div class="lc-toolbar-left">
-      <!-- Type filter -->
       <div class="lc-filter-group">
         <button class="lc-filter-btn active" data-filter="ALL"    onclick="setLecapFilter('ALL', this)">All</button>
         <button class="lc-filter-btn"        data-filter="LECAP"  onclick="setLecapFilter('LECAP', this)">LECAPs</button>
         <button class="lc-filter-btn"        data-filter="BONCAP" onclick="setLecapFilter('BONCAP', this)">BONCAPs</button>
       </div>
-      <!-- Expired toggle -->
       <label class="lc-expired-toggle">
         <input type="checkbox" id="showExpiredChk" onchange="renderLecapTable()" checked>
         <span>Show expired</span>
       </label>
     </div>
-
     <div class="lc-toolbar-right">
-      <!-- CSV bulk import -->
       <label class="lc-csv-btn" title="Importar CSV">
         📥 CSV Import
         <input type="file" id="csvFileInput" accept=".csv" style="display:none" onchange="onCsvFileSelected(event)">
       </label>
-      <!-- Add single security -->
       <button class="lc-add-btn" onclick="openAddSecurityModal()">+ Add Security</button>
     </div>
   </div>
-
-  <!-- ── Main table card ───────────────────────────────────────── -->
   <div class="ab-card">
     <div class="ab-card-hdr">
       <span class="ab-card-title">LECAPs &amp; BONCAPs</span>
@@ -112,17 +94,8 @@
       <table class="ab-table" id="lecapTable">
         <thead>
           <tr>
-            <th>Ticker</th>
-            <th>Type</th>
-            <th>Precio</th>
-            <th>Bid</th>
-            <th>Ask</th>
-            <th>Pago Final</th>
-            <th>Días</th>
-            <th>Vencimiento</th>
-            <th>TNA</th>
-            <th>TEM</th>
-            <th>TIR</th>
+            <th>Ticker</th><th>Type</th><th>Precio</th><th>Bid</th><th>Ask</th>
+            <th>Pago Final</th><th>Días</th><th>Vencimiento</th><th>TNA</th><th>TEM</th><th>TIR</th>
             <th style="width:60px"></th>
           </tr>
         </thead>
@@ -131,22 +104,14 @@
         </tbody>
       </table>
     </div>
-    <div class="ab-table-footer" id="lcTableFooter">
-      TNA/TEM/TIR calculados con precio de mercado y pago final · Liquidación T+1
-    </div>
+    <div class="ab-table-footer" id="lcTableFooter">TNA/TEM/TIR calculados con precio de mercado y pago final · Liquidación T+1</div>
   </div>
-
 </div>
-<!-- ══ END TAB LECAPs & BONCAPs ════════════════════════════════ -->
-
 
 <!-- ══ TAB: ONs ══════════════════════════════════════════════════ -->
 <div class="ab-tab-content" id="tab-ons" style="display:none">
-
-  <!-- ── Toolbar ───────────────────────────────────────────────── -->
   <div class="on-toolbar">
     <div class="on-toolbar-left">
-      <!-- Sector filter -->
       <div class="on-filter-group">
         <button class="on-filter-btn active" onclick="setOnSectorFilter('ALL',this)">All</button>
         <button class="on-filter-btn" onclick="setOnSectorFilter('Energy',this)">⚡ Energy</button>
@@ -155,7 +120,6 @@
         <button class="on-filter-btn" onclick="setOnSectorFilter('Infrastructure',this)">🏗 Infra</button>
         <button class="on-filter-btn" onclick="setOnSectorFilter('Other',this)">Other</button>
       </div>
-      <!-- Duration bucket filter -->
       <div class="on-dur-group">
         <button class="on-dur-btn active" onclick="setOnDurFilter('ALL',this)">All dur.</button>
         <button class="on-dur-btn" onclick="setOnDurFilter('SHORT',this)">&lt;1y</button>
@@ -164,16 +128,12 @@
       </div>
     </div>
     <div class="on-toolbar-right">
-      <!-- Search -->
       <div class="on-search-wrap">
         <span class="on-search-icon">🔍</span>
-        <input class="on-search-input" type="text" placeholder="Buscar ticker / emisor…"
-               oninput="onOnSearch(this.value)">
+        <input class="on-search-input" type="text" placeholder="Buscar ticker / emisor…" oninput="onOnSearch(this.value)">
       </div>
     </div>
   </div>
-
-  <!-- ── Main table card ───────────────────────────────────────── -->
   <div class="ab-card">
     <div class="ab-card-hdr">
       <span class="ab-card-title">Obligaciones Negociables</span>
@@ -183,15 +143,8 @@
       <table class="ab-table" id="onTable">
         <thead>
           <tr>
-            <th>Ticker</th>
-            <th>Emisor</th>
-            <th>Precio USD</th>
-            <th>Bid</th>
-            <th>Ask</th>
-            <th>Duration</th>
-            <th>Vencimiento</th>
-            <th>TIR</th>
-            <th>% Chg</th>
+            <th>Ticker</th><th>Emisor</th><th>Precio USD</th><th>Bid</th><th>Ask</th>
+            <th>Duration</th><th>Vencimiento</th><th>TIR</th><th>% Chg</th>
             <th style="width:80px"></th>
           </tr>
         </thead>
@@ -200,125 +153,111 @@
         </tbody>
       </table>
     </div>
-    <div class="ab-table-footer">
-      TIR (YTM) y Duration (Macaulay) calculadas con flujos en dbo.bond_coupons ·
-      Sin flujos cargados → columnas muestran —
-    </div>
-  </div>
-
-</div>
-<!-- ══ END TAB ONs ════════════════════════════════════════════ -->
-
-
-<!-- ══ LECAP / BONCAP CALCULATOR MODAL ══════════════════════════ -->
-<div class="ab-backdrop" id="lcCalcBackdrop" onclick="closeLecapCalcModal()"></div>
-<div class="ab-modal" id="lcCalcModal" style="max-width:680px">
-
-  <!-- Header -->
-  <div class="ab-modal-hdr">
-    <div>
-      <span class="ab-modal-title" id="lcCalcTitle">Calculadora</span>
-      <span class="ab-modal-sub"   id="lcCalcSub"></span>
-    </div>
-    <button class="ab-modal-close" onclick="closeLecapCalcModal()">✕</button>
-  </div>
-
-  <!-- Body -->
-  <div style="display:flex;flex-direction:column;gap:16px;padding:22px 24px;overflow-y:auto;max-height:calc(92vh - 60px)">
-
-    <!-- ── Row 1: Inputs + Yield pills ── -->
-    <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end">
-      <div style="display:flex;flex-direction:column;gap:5px">
-        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em">Precio</label>
-        <input type="number" id="lcCalcPrice" step="0.01" oninput="recalcLecapModal()"
-          style="width:140px;padding:10px 14px;background:var(--elevated);border:1px solid var(--border2);border-radius:8px;color:#E6EDF3;font-size:15px;font-weight:600;font-family:var(--mono);outline:none">
-      </div>
-      <div style="display:flex;flex-direction:column;gap:5px">
-        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em">Monto a invertir ($)</label>
-        <input type="number" id="lcCalcMonto" value="1000000" step="10000" oninput="recalcLecapModal()"
-          style="width:160px;padding:10px 14px;background:var(--elevated);border:1px solid var(--border2);border-radius:8px;color:#E6EDF3;font-size:15px;font-weight:600;font-family:var(--mono);outline:none">
-      </div>
-
-      <!-- Yield pills — right side -->
-      <div style="display:flex;gap:10px;margin-left:auto;flex-wrap:wrap">
-        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--elevated);border:1px solid var(--border2);border-radius:10px;padding:10px 18px;min-width:72px">
-          <span id="lcCalcTna" style="font-family:var(--mono);font-size:16px;font-weight:700;color:#E6EDF3">—</span>
-          <span style="font-family:var(--mono);font-size:8px;color:var(--faint);text-transform:uppercase;letter-spacing:.12em">TNA</span>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--elevated);border:1px solid var(--border2);border-radius:10px;padding:10px 18px;min-width:72px">
-          <span id="lcCalcTem" style="font-family:var(--mono);font-size:18px;font-weight:700;color:var(--green)">—</span>
-          <span style="font-family:var(--mono);font-size:8px;color:var(--faint);text-transform:uppercase;letter-spacing:.12em">TEM</span>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--elevated);border:1px solid rgba(31,111,235,.25);border-radius:10px;padding:10px 18px;min-width:72px">
-          <span id="lcCalcTir" style="font-family:var(--mono);font-size:22px;font-weight:700;color:#58A6FF;letter-spacing:-.02em">—</span>
-          <span style="font-family:var(--mono);font-size:8px;color:var(--faint);text-transform:uppercase;letter-spacing:.12em">TIR</span>
-        </div>
-        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--elevated);border:1px solid var(--border2);border-radius:10px;padding:10px 18px;min-width:64px">
-          <span id="lcCalcDias" style="font-family:var(--mono);font-size:16px;font-weight:700;color:#E6EDF3">—</span>
-          <span style="font-family:var(--mono);font-size:8px;color:var(--faint);text-transform:uppercase;letter-spacing:.12em">Días</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── Row 2: Costos ── -->
-    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:12px 16px;background:var(--elevated);border:1px solid var(--border);border-radius:8px">
-      <span style="font-family:var(--mono);font-size:10px;font-weight:600;color:var(--dim);letter-spacing:.06em">Costos:</span>
-      <div style="display:flex;align-items:center;gap:8px">
-        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap">Arancel %</label>
-        <input type="number" id="lcCalcArancel" value="0.10" step="0.01" oninput="recalcLecapModal()"
-          style="width:80px;padding:6px 10px;background:var(--surface);border:1px solid var(--border2);border-radius:6px;color:#E6EDF3;font-size:12px;font-weight:600;font-family:var(--mono);outline:none">
-      </div>
-      <div style="display:flex;align-items:center;gap:8px">
-        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap">Impuestos %</label>
-        <input type="number" id="lcCalcImpuestos" value="0.01" step="0.01" oninput="recalcLecapModal()"
-          style="width:80px;padding:6px 10px;background:var(--surface);border:1px solid var(--border2);border-radius:6px;color:#E6EDF3;font-size:12px;font-weight:600;font-family:var(--mono);outline:none">
-      </div>
-    </div>
-
-    <!-- ── Row 3: TIR Objetivo ── -->
-    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:12px 16px;background:rgba(31,111,235,.06);border:1px solid rgba(31,111,235,.22);border-radius:8px">
-      <span style="font-family:var(--mono);font-size:10px;font-weight:700;color:#58A6FF;letter-spacing:.06em;white-space:nowrap">TIR Objetivo:</span>
-      <div style="display:flex;align-items:center;gap:8px">
-        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em">TIR %</label>
-        <input type="number" id="lcCalcTargetTir" step="0.1" placeholder="ej: 28.5"
-               oninput="recalcTargetTirLecap(_lcCalcLastResult)"
-          style="width:90px;padding:6px 10px;background:var(--surface);border:1px solid var(--border2);border-radius:6px;color:#E6EDF3;font-size:12px;font-weight:600;font-family:var(--mono);outline:none">
-      </div>
-      <span id="lcCalcTargetResult" style="font-family:var(--mono);font-size:11px;color:var(--dim);flex:1">
-        Ingresá una TIR para ver el precio implícito
-      </span>
-    </div>
-
-    <!-- ── Row 4: Flujos ── -->
-    <div style="border:1px solid var(--border);border-radius:8px;overflow:hidden">
-      <div style="padding:9px 14px;background:var(--elevated);border-bottom:1px solid var(--border);font-family:var(--mono);font-size:10px;font-weight:600;color:#E6EDF3;text-transform:uppercase;letter-spacing:.1em">
-        Flujos de fondos
-      </div>
-      <table style="width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px">
-        <thead>
-          <tr style="background:var(--elevated)">
-            <th style="padding:8px 14px;text-align:left;font-size:9px;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--border)">Fecha</th>
-            <th style="padding:8px 14px;text-align:right;font-size:9px;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--border)">Por 100 VN</th>
-            <th style="padding:8px 14px;text-align:right;font-size:9px;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--border)">Tu inversión</th>
-          </tr>
-        </thead>
-        <tbody id="lcCalcFlows">
-          <tr><td colspan="3" style="text-align:center;padding:20px;color:var(--faint);font-size:11px">Seleccioná un instrumento</td></tr>
-        </tbody>
-        <tfoot id="lcCalcTfoot"></tfoot>
-      </table>
-    </div>
-
-    <div id="lcCalcNote" style="font-family:var(--mono);font-size:9px;color:var(--faint);padding:2px 0 4px"></div>
+    <div class="ab-table-footer">TIR (YTM) y Duration (Macaulay) calculadas con flujos en dbo.bond_coupons</div>
   </div>
 </div>
+
+<!-- ══ TAB: CURVA ════════════════════════════════════════════════ -->
+<div class="ab-tab-content" id="tab-curve" style="display:none">
+  <div style="display:flex;justify-content:flex-end;margin-bottom:12px">
+    <button class="ab-refresh-btn" onclick="loadAndRenderCurve()" title="Actualizar curvas">↻</button>
+  </div>
+  <div class="curve-grid">
+
+    <!-- Panel 1: Soberanos USD -->
+    <div class="curve-panel" style="cursor:pointer">
+      <div class="curve-panel-hdr">
+        <span class="curve-panel-title">🏛 Soberanos USD</span>
+        <span class="curve-panel-sub">TIR vs Duration · Local / NY</span><span style="font-family:var(--mono);font-size:9px;color:var(--faint);margin-left:auto">🔍 expandir</span>
+      </div>
+      <div class="curve-panel-body">
+        <canvas id="curveSovCanvas"></canvas>
+        <div class="curve-empty" id="curveSovEmpty"><span>Sin datos con TIR calculada</span></div>
+        <div class="curve-loading" id="curveSovLoading">⏳ Cargando…</div>
+      </div>
+      <div class="curve-stats">
+        <div class="curve-stat"><span class="curve-stat-val" id="curveStatSovMin">—</span><span class="curve-stat-lbl">Mín</span></div>
+        <div class="curve-stat"><span class="curve-stat-val" id="curveStatSovAvg">—</span><span class="curve-stat-lbl">Prom</span></div>
+        <div class="curve-stat"><span class="curve-stat-val" id="curveStatSovMax">—</span><span class="curve-stat-lbl">Máx</span></div>
+        <div class="curve-stat"><span class="curve-stat-val" id="curveStatSovCount">—</span><span class="curve-stat-lbl">Bonos</span></div>
+      </div>
+      <div class="curve-panel-footer">TIR con flujos de bonds_config.json · Duration Macaulay</div>
+    </div>
+
+    <!-- Panel 2: LECAPs ARS -->
+    <div class="curve-panel" style="cursor:pointer">
+      <div class="curve-panel-hdr">
+        <span class="curve-panel-title">📋 LECAPs &amp; BONCAPs ARS</span>
+        <span class="curve-panel-sub">TIR anual vs Plazo · Zero coupon</span><span style="font-family:var(--mono);font-size:9px;color:var(--faint);margin-left:auto">🔍 expandir</span>
+      </div>
+      <div class="curve-panel-body">
+        <canvas id="curveLcCanvas"></canvas>
+        <div class="curve-empty" id="curveLcEmpty"><span>Sin datos con TIR calculada</span></div>
+        <div class="curve-loading" id="curveLcLoading">⏳ Cargando…</div>
+      </div>
+      <div class="curve-stats">
+        <div class="curve-stat"><span class="curve-stat-val" id="curveStatLcMin">—</span><span class="curve-stat-lbl">Mín</span></div>
+        <div class="curve-stat"><span class="curve-stat-val" id="curveStatLcAvg">—</span><span class="curve-stat-lbl">Prom</span></div>
+        <div class="curve-stat"><span class="curve-stat-val" id="curveStatLcMax">—</span><span class="curve-stat-lbl">Máx</span></div>
+        <div class="curve-stat"><span class="curve-stat-val" id="curveStatLcCount">—</span><span class="curve-stat-lbl">Letras</span></div>
+      </div>
+      <div class="curve-panel-footer">TIR = rendimiento implícito precio → pago final · Plazo en años</div>
+    </div>
+
+    <!-- Panel 3: ONs USD -->
+    <div class="curve-panel" style="cursor:pointer">
+      <div class="curve-panel-hdr">
+        <span class="curve-panel-title">🏢 ONs Corporativas USD</span>
+        <span class="curve-panel-sub">TIR vs Duration · Por sector</span><span style="font-family:var(--mono);font-size:9px;color:var(--faint);margin-left:auto">🔍 expandir</span>
+      </div>
+      <div class="curve-panel-body">
+        <canvas id="curveOnCanvas"></canvas>
+        <div class="curve-empty" id="curveOnEmpty"><span>Sin datos con TIR calculada</span></div>
+        <div class="curve-loading" id="curveOnLoading">⏳ Cargando…</div>
+      </div>
+      <div class="curve-stats">
+        <div class="curve-stat"><span class="curve-stat-val" id="curveStatOnMin">—</span><span class="curve-stat-lbl">Mín</span></div>
+        <div class="curve-stat"><span class="curve-stat-val" id="curveStatOnAvg">—</span><span class="curve-stat-lbl">Prom</span></div>
+        <div class="curve-stat"><span class="curve-stat-val" id="curveStatOnMax">—</span><span class="curve-stat-lbl">Máx</span></div>
+        <div class="curve-stat"><span class="curve-stat-val" id="curveStatOnCount">—</span><span class="curve-stat-lbl">Bonos</span></div>
+      </div>
+      <div class="curve-panel-footer">TIR con flujos de dbo.bond_coupons · Duration Macaulay</div>
+    </div>
+
+  </div>
+</div>
+<!-- ══ END TAB CURVA ═════════════════════════════════════════════ -->
 
 {% endblock %}
 
 
 {% block modals %}
 
-<!-- ── Chart Modal ──────────────────────────────────────────────── -->
+<!-- ══ CURVE EXPANDED MODAL ══════════════════════════════════════ -->
+<div id="curveModalBackdrop" onclick="if(event.target===this)window.closeCurveModal()"
+  style="display:none;position:fixed;inset:0;background:rgba(4,6,10,0.88);backdrop-filter:blur(6px);z-index:600;align-items:center;justify-content:center;opacity:0;transition:opacity 0.2s">
+  <div id="curveModal" style="background:var(--surface);border:1px solid var(--border2);border-radius:12px;width:92vw;max-width:1200px;height:85vh;display:flex;flex-direction:column;box-shadow:0 32px 80px rgba(0,0,0,0.7);overflow:hidden">
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:13px 18px;background:var(--elevated);border-bottom:1px solid var(--border);flex-shrink:0">
+      <div style="display:flex;align-items:center;gap:14px">
+        <span id="curveModalTitle" style="font-family:var(--mono);font-size:13px;font-weight:700;color:#E6EDF3"></span>
+        <span id="curveModalSub"   style="font-family:var(--mono);font-size:10px;color:var(--faint)"></span>
+        <div id="curveOnSectorWrap" style="display:none;align-items:center;gap:8px">
+          <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em">Sector:</label>
+          <select id="curveOnSectorSelect" onchange="window.onCurveOnSectorChange(this.value)"
+            style="background:var(--elevated);border:1px solid var(--border2);border-radius:6px;color:#E6EDF3;font-family:var(--mono);font-size:10px;padding:4px 8px;outline:none">
+          </select>
+        </div>
+      </div>
+      <button onclick="window.closeCurveModal()" style="background:none;border:none;color:var(--dim);font-size:16px;cursor:pointer;padding:4px 10px;border-radius:4px">✕</button>
+    </div>
+    <div style="flex:1;position:relative;background:#0d1117;overflow:hidden">
+      <canvas id="curveModalCanvas" style="width:100%!important;height:100%!important"></canvas>
+      <span style="position:absolute;bottom:10px;right:14px;font-family:var(--mono);font-size:9px;color:var(--faint);pointer-events:none">Línea punteada = curva teórica · regresión logarítmica OLS</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── Chart Modal ───────────────────────────────────────────────── -->
 <div class="ab-backdrop" id="chartBackdrop" onclick="closeChartModal()"></div>
 <div class="ab-modal" id="chartModal">
   <div class="ab-modal-hdr">
@@ -412,6 +351,91 @@
   </div>
 </div>
 
+<!-- ══ LECAP CALCULATOR MODAL ════════════════════════════════════ -->
+<div class="ab-backdrop" id="lcCalcBackdrop" onclick="closeLecapCalcModal()"></div>
+<div class="ab-modal" id="lcCalcModal" style="max-width:680px">
+  <div class="ab-modal-hdr">
+    <div>
+      <span class="ab-modal-title" id="lcCalcTitle">Calculadora</span>
+      <span class="ab-modal-sub"   id="lcCalcSub"></span>
+    </div>
+    <button class="ab-modal-close" onclick="closeLecapCalcModal()">✕</button>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:16px;padding:22px 24px;overflow-y:auto;max-height:calc(92vh - 60px)">
+    <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:flex-end">
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em">Precio</label>
+        <input type="number" id="lcCalcPrice" step="0.01" oninput="recalcLecapModal()"
+          style="width:140px;padding:10px 14px;background:var(--elevated);border:1px solid var(--border2);border-radius:8px;color:#E6EDF3;font-size:15px;font-weight:600;font-family:var(--mono);outline:none">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:5px">
+        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em">Monto a invertir ($)</label>
+        <input type="number" id="lcCalcMonto" value="1000000" step="10000" oninput="recalcLecapModal()"
+          style="width:160px;padding:10px 14px;background:var(--elevated);border:1px solid var(--border2);border-radius:8px;color:#E6EDF3;font-size:15px;font-weight:600;font-family:var(--mono);outline:none">
+      </div>
+      <div style="display:flex;gap:10px;margin-left:auto;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--elevated);border:1px solid var(--border2);border-radius:10px;padding:10px 18px;min-width:72px">
+          <span id="lcCalcTna" style="font-family:var(--mono);font-size:16px;font-weight:700;color:#E6EDF3">—</span>
+          <span style="font-family:var(--mono);font-size:8px;color:var(--faint);text-transform:uppercase;letter-spacing:.12em">TNA</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--elevated);border:1px solid var(--border2);border-radius:10px;padding:10px 18px;min-width:72px">
+          <span id="lcCalcTem" style="font-family:var(--mono);font-size:18px;font-weight:700;color:var(--green)">—</span>
+          <span style="font-family:var(--mono);font-size:8px;color:var(--faint);text-transform:uppercase;letter-spacing:.12em">TEM</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--elevated);border:1px solid rgba(31,111,235,.25);border-radius:10px;padding:10px 18px;min-width:72px">
+          <span id="lcCalcTir" style="font-family:var(--mono);font-size:22px;font-weight:700;color:#58A6FF;letter-spacing:-.02em">—</span>
+          <span style="font-family:var(--mono);font-size:8px;color:var(--faint);text-transform:uppercase;letter-spacing:.12em">TIR</span>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;background:var(--elevated);border:1px solid var(--border2);border-radius:10px;padding:10px 18px;min-width:64px">
+          <span id="lcCalcDias" style="font-family:var(--mono);font-size:16px;font-weight:700;color:#E6EDF3">—</span>
+          <span style="font-family:var(--mono);font-size:8px;color:var(--faint);text-transform:uppercase;letter-spacing:.12em">Días</span>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:12px 16px;background:var(--elevated);border:1px solid var(--border);border-radius:8px">
+      <span style="font-family:var(--mono);font-size:10px;font-weight:600;color:var(--dim);letter-spacing:.06em">Costos:</span>
+      <div style="display:flex;align-items:center;gap:8px">
+        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap">Arancel %</label>
+        <input type="number" id="lcCalcArancel" value="0.10" step="0.01" oninput="recalcLecapModal()"
+          style="width:80px;padding:6px 10px;background:var(--surface);border:1px solid var(--border2);border-radius:6px;color:#E6EDF3;font-size:12px;font-weight:600;font-family:var(--mono);outline:none">
+      </div>
+      <div style="display:flex;align-items:center;gap:8px">
+        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;white-space:nowrap">Impuestos %</label>
+        <input type="number" id="lcCalcImpuestos" value="0.01" step="0.01" oninput="recalcLecapModal()"
+          style="width:80px;padding:6px 10px;background:var(--surface);border:1px solid var(--border2);border-radius:6px;color:#E6EDF3;font-size:12px;font-weight:600;font-family:var(--mono);outline:none">
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:12px 16px;background:rgba(31,111,235,.06);border:1px solid rgba(31,111,235,.22);border-radius:8px">
+      <span style="font-family:var(--mono);font-size:10px;font-weight:700;color:#58A6FF;letter-spacing:.06em;white-space:nowrap">TIR Objetivo:</span>
+      <div style="display:flex;align-items:center;gap:8px">
+        <label style="font-family:var(--mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em">TIR %</label>
+        <input type="number" id="lcCalcTargetTir" step="0.1" placeholder="ej: 28.5"
+               oninput="recalcTargetTirLecap(_lcCalcLastResult)"
+          style="width:90px;padding:6px 10px;background:var(--surface);border:1px solid var(--border2);border-radius:6px;color:#E6EDF3;font-size:12px;font-weight:600;font-family:var(--mono);outline:none">
+      </div>
+      <span id="lcCalcTargetResult" style="font-family:var(--mono);font-size:11px;color:var(--dim);flex:1">
+        Ingresá una TIR para ver el precio implícito
+      </span>
+    </div>
+    <div style="border:1px solid var(--border);border-radius:8px;overflow:hidden">
+      <div style="padding:9px 14px;background:var(--elevated);border-bottom:1px solid var(--border);font-family:var(--mono);font-size:10px;font-weight:600;color:#E6EDF3;text-transform:uppercase;letter-spacing:.1em">Flujos de fondos</div>
+      <table style="width:100%;border-collapse:collapse;font-family:var(--mono);font-size:12px">
+        <thead>
+          <tr style="background:var(--elevated)">
+            <th style="padding:8px 14px;text-align:left;font-size:9px;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--border)">Fecha</th>
+            <th style="padding:8px 14px;text-align:right;font-size:9px;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--border)">Por 100 VN</th>
+            <th style="padding:8px 14px;text-align:right;font-size:9px;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;border-bottom:1px solid var(--border)">Tu inversión</th>
+          </tr>
+        </thead>
+        <tbody id="lcCalcFlows">
+          <tr><td colspan="3" style="text-align:center;padding:20px;color:var(--faint);font-size:11px">Seleccioná un instrumento</td></tr>
+        </tbody>
+        <tfoot id="lcCalcTfoot"></tfoot>
+      </table>
+    </div>
+    <div id="lcCalcNote" style="font-family:var(--mono);font-size:9px;color:var(--faint);padding:2px 0 4px"></div>
+  </div>
+</div>
 
 <!-- ══ ADD / EDIT SECURITY MODAL ════════════════════════════════ -->
 <div class="ab-backdrop" id="secBackdrop" onclick="closeAddSecurityModal()"></div>
@@ -464,7 +488,6 @@
   </div>
 </div>
 
-
 <!-- ══ CSV IMPORT PREVIEW MODAL ══════════════════════════════════ -->
 <div class="ab-backdrop" id="csvBackdrop" onclick="closeCsvModal()"></div>
 <div class="ab-modal" id="csvModal" style="max-width:780px">
@@ -495,14 +518,11 @@
     </div>
     <div style="display:flex;gap:10px;justify-content:flex-end">
       <button class="lc-cancel-btn" onclick="closeCsvModal()">Cancel</button>
-      <button class="lc-save-btn"   id="csvImportBtn" onclick="confirmCsvImport()" disabled>
-        Import All
-      </button>
+      <button class="lc-save-btn" id="csvImportBtn" onclick="confirmCsvImport()" disabled>Import All</button>
     </div>
     <div class="ab-calc-note" id="csvError" style="color:var(--red)"></div>
   </div>
 </div>
-
 
 <!-- ══ ON CALCULATOR MODAL ════════════════════════════════════════ -->
 <div class="ab-backdrop" id="onCalcBackdrop" onclick="closeOnCalcModal()"></div>
@@ -515,8 +535,6 @@
     <button class="ab-modal-close" onclick="closeOnCalcModal()">✕</button>
   </div>
   <div class="ab-calc-body">
-
-    <!-- Inputs + metric pills -->
     <div class="ab-calc-inputs">
       <div class="ab-calc-field">
         <label class="ab-calc-lbl">Precio USD</label>
@@ -526,7 +544,6 @@
         <label class="ab-calc-lbl">Monto a invertir (USD)</label>
         <input class="ab-calc-input" type="number" id="onCalcMonto" value="10000" step="100" oninput="recalcOnModal()">
       </div>
-      <!-- Metric pills -->
       <div class="on-calc-metrics" style="margin-left:auto">
         <div class="on-calc-metric">
           <span id="onCalcTir" class="on-calc-val tir">—</span>
@@ -546,23 +563,17 @@
         </div>
       </div>
     </div>
-
-    <!-- Costs -->
     <div class="ab-calc-costs">
       <span class="ab-calc-costs-lbl">Costos:</span>
       <div class="ab-calc-cost-field">
         <label class="ab-calc-lbl">Arancel %</label>
-        <input class="ab-calc-input ab-calc-input-sm" type="number" id="onCalcArancel"
-               value="0.45" step="0.01" oninput="recalcOnModal()">
+        <input class="ab-calc-input ab-calc-input-sm" type="number" id="onCalcArancel" value="0.45" step="0.01" oninput="recalcOnModal()">
       </div>
       <div class="ab-calc-cost-field">
         <label class="ab-calc-lbl">Impuestos %</label>
-        <input class="ab-calc-input ab-calc-input-sm" type="number" id="onCalcImpuestos"
-               value="0.01" step="0.01" oninput="recalcOnModal()">
+        <input class="ab-calc-input ab-calc-input-sm" type="number" id="onCalcImpuestos" value="0.01" step="0.01" oninput="recalcOnModal()">
       </div>
     </div>
-
-    <!-- Cash-flow table -->
     <div class="ab-calc-table-wrap">
       <div class="ab-calc-table-hdr">Flujos de fondos</div>
       <table class="ab-calc-table">
@@ -588,7 +599,10 @@
 
 {% block extra_js %}
 <link rel="stylesheet" href="/static/css/argy_bonds_ons.css">
+<link rel="stylesheet" href="/static/css/argy_bonds_curve.css">
 <script src="https://unpkg.com/lightweight-charts@3.8.0/dist/lightweight-charts.standalone.production.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="/static/js/argy_bonds_lecap.js"></script>
 <script src="/static/js/argy_bonds_ons.js"></script>
+<script src="/static/js/argy_bonds_curve.js"></script>
 {% endblock %}
