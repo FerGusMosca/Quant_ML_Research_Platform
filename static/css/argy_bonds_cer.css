@@ -1,0 +1,128 @@
+/* argy_bonds_cer.css
+ * Styles for the Bonos CER tab. Mirrors the visual language of
+ * argy_bonds.css / argy_bonds_ons.css — CSS vars from base.
+ */
+
+/* ── Toolbar ─────────────────────────────────────────────────────── */
+
+.cer-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  background: var(--elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.cer-toolbar-left  { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.cer-toolbar-right { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+
+.cer-filter-group {
+  display: inline-flex;
+  gap: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.cer-filter-btn {
+  background: transparent;
+  border: none;
+  color: var(--dim);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.cer-filter-btn:hover { color: #E6EDF3; }
+.cer-filter-btn.active {
+  background: rgba(88,166,255,.15);
+  color: #58A6FF;
+}
+
+/* ── Type badges ──────────────────────────────────────────────────── */
+
+.cer-type-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  font-family: var(--mono);
+  font-size: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+.cer-badge-zero {
+  background: rgba(88,166,255,.12);
+  color: #58A6FF;
+  border: 1px solid rgba(88,166,255,.3);
+}
+.cer-badge-coupon {
+  background: rgba(210,153,34,.12);
+  color: #E3B341;
+  border: 1px solid rgba(210,153,34,.3);
+}
+
+/* ── TIR Real — colour semantics are the inverse of nominal TIR.
+   Negative TIR Real = you are paying to lock in inflation coverage,
+   which is usually a signal of strong real-rate compression; we show
+   it in red (informative, not a "bad" signal per se). Positive real
+   yield in green. ──────────────────────────────────────────── */
+
+.cer-tir-pos {
+  color: var(--green);
+  font-family: var(--mono);
+  font-weight: 600;
+  text-align: right;
+}
+.cer-tir-neg {
+  color: var(--red);
+  font-family: var(--mono);
+  font-weight: 600;
+  text-align: right;
+}
+.cer-tir-na {
+  color: var(--faint);
+  font-family: var(--mono);
+  text-align: right;
+}
+
+/* ── Sort indicators ─────────────────────────────────────────────── */
+
+.ab-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+.ab-table th.sortable:hover { color: #E6EDF3; }
+.ab-table th.sort-active { color: #58A6FF; }
+
+.cer-sort-arrow {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 10px;
+  color: var(--faint);
+}
+.ab-table th.sort-active .cer-sort-arrow { color: #58A6FF; }
+
+/* ── CER strip — small meta under the card subtitle ──────────────── */
+
+.cer-meta-strip {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--dim);
+  letter-spacing: .02em;
+  padding: 4px 0 8px;
+}
+.cer-meta-strip b { color: #E6EDF3; font-weight: 600; }

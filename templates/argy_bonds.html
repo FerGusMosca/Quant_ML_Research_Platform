@@ -33,6 +33,9 @@
   <button class="ab-tab" data-tab="ons" onclick="switchTab('ons', this)">
     🏢 ONs
   </button>
+  <button class="ab-tab" data-tab="cer" onclick="switchTab('cer', this)">
+    💠 CER
+  </button>
   <button class="ab-tab" data-tab="curve" onclick="switchTab('curve', this); onCurveTabClick()">
     📐 Curva
   </button>
@@ -164,6 +167,45 @@
       </table>
     </div>
     <div class="ab-table-footer">TIR (YTM) y Duration (Macaulay) calculadas con flujos en dbo.bond_coupons</div>
+  </div>
+</div>
+
+<!-- ══ TAB: CER ══════════════════════════════════════════════════ -->
+<div class="ab-tab-content" id="tab-cer" style="display:none">
+  <div class="cer-toolbar">
+    <div class="cer-toolbar-left">
+      <div class="cer-filter-group">
+        <button class="cer-filter-btn active" data-filter="ALL"   onclick="setCerTypeFilter('ALL', this)">All</button>
+        <button class="cer-filter-btn"        data-filter="ZERO"  onclick="setCerTypeFilter('ZERO', this)">Zero Cupón</button>
+        <button class="cer-filter-btn"        data-filter="CUPON" onclick="setCerTypeFilter('CUPON', this)">Con Cupones</button>
+      </div>
+    </div>
+  </div>
+  <div class="ab-card">
+    <div class="ab-card-hdr">
+      <span class="ab-card-title">Bonos CER</span>
+      <span class="ab-card-sub" id="cerCardSub">Rendimiento real · ARS</span>
+    </div>
+    <div class="ab-table-wrap">
+      <table class="ab-table" id="cerTable">
+        <thead>
+          <tr>
+            <th class="sortable" data-sort-key="ticker"   onclick="setCerSort('ticker')">Ticker<span class="cer-sort-arrow">↕</span></th>
+            <th class="sortable" data-sort-key="price"    onclick="setCerSort('price')">Precio AR$<span class="cer-sort-arrow">↕</span></th>
+            <th class="sortable sort-active" data-sort-key="duration" onclick="setCerSort('duration')">Duration<span class="cer-sort-arrow">↑</span></th>
+            <th class="sortable" data-sort-key="maturity" onclick="setCerSort('maturity')">Vencimiento<span class="cer-sort-arrow">↕</span></th>
+            <th class="sortable" data-sort-key="tir"      onclick="setCerSort('tir')">TIR Real<span class="cer-sort-arrow">↕</span></th>
+            <th>% Chg</th>
+          </tr>
+        </thead>
+        <tbody id="cerTbody">
+          <tr><td colspan="6" class="ab-empty-cell">Cargando bonos CER…</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ab-table-footer">
+      TIR Real calculada con flujos ajustados por CER (T-10 días hábiles) · Duration en años (Macaulay)
+    </div>
   </div>
 </div>
 
@@ -610,9 +652,11 @@
 {% block extra_js %}
 <link rel="stylesheet" href="/static/css/argy_bonds_ons.css">
 <link rel="stylesheet" href="/static/css/argy_bonds_curve.css">
+<link rel="stylesheet" href="/static/css/argy_bonds_cer.css">
 <script src="https://unpkg.com/lightweight-charts@3.8.0/dist/lightweight-charts.standalone.production.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <script src="/static/js/argy_bonds_lecap.js"></script>
 <script src="/static/js/argy_bonds_ons.js"></script>
 <script src="/static/js/argy_bonds_curve.js"></script>
+<script src="/static/js/argy_bonds_cer.js"></script>
 {% endblock %}

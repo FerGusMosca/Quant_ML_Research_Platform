@@ -234,62 +234,72 @@ class GraphBuilder:
     def plot_2_series_overlapped(pivot_df, benchmark_df, benchmark_symbol, output_symbol):
         import matplotlib.dates as mdates
 
-        # Ensure datetime index
+        ZSCORE_WINDOW = 60
+        ZSCORE_THRESHOLD = 2.5
+
+        pivot_df = pivot_df.copy()
         pivot_df.index = pd.to_datetime(pivot_df["date"])
 
-        # Create base figure
+        #  z-score rolling
+        rolling_mean = pivot_df[output_symbol].rolling(ZSCORE_WINDOW).mean()
+        rolling_std = pivot_df[output_symbol].rolling(ZSCORE_WINDOW).std()
+        pivot_df['zscore'] = (pivot_df[output_symbol] - rolling_mean) / rolling_std
+        pivot_df['stress'] = pivot_df['zscore'].abs() > ZSCORE_THRESHOLD
+
         fig, ax1 = plt.subplots(figsize=(12, 6))
 
-        # Plot Lightweight Indicator (left axis)
-        ax1.plot(
-            pivot_df.index,
-            pivot_df[output_symbol],
-            label=output_symbol,
-            color="blue"
-        )
+        # Sombrear zonas de stress
+        in_stress = False
+        stress_start = None
+        for date, row in pivot_df.iterrows():
+            if row['stress'] and not in_stress:
+                stress_start = date
+                in_stress = True
+            elif not row['stress'] and in_stress:
+                ax1.axvspan(stress_start, date, color='red', alpha=0.15, label='_nolegend_')
+                in_stress = False
+        if in_stress:
+            ax1.axvspan(stress_start, pivot_df.index[-1], color='red', alpha=0.15, label='_nolegend_')
+
+        # Patch para leyenda
+        from matplotlib.patches import Patch
+        stress_patch = Patch(color='red', alpha=0.3, label=f'Stress (z>{ZSCORE_THRESHOLD}, {ZSCORE_WINDOW}d)')
+
+        # Plot LIGHT_NFCI
+        ax1.plot(pivot_df.index, pivot_df[output_symbol], label=output_symbol, color="blue")
         ax1.set_ylabel("Lightweight Indicator", color="blue")
         ax1.tick_params(axis='y', labelcolor='blue')
 
-        # Plot Benchmark (right axis)
+        # Plot Benchmark
         if benchmark_df is not None:
             benchmark_df["date"] = pd.to_datetime(benchmark_df["date"])
             benchmark_pivot = benchmark_df.pivot(index="date", columns="symbol", values="close")
-
-            # Align to common date range
             common_start = pivot_df.index.min()
             common_end = pivot_df.index.max()
             benchmark_pivot = benchmark_pivot[
                 (benchmark_pivot.index >= common_start) & (benchmark_pivot.index <= common_end)
                 ]
-
             ax2 = ax1.twinx()
-            ax2.plot(
-                benchmark_pivot.index,
-                benchmark_pivot[benchmark_symbol],
-                label=benchmark_symbol,
-                color="orange",
-                linestyle="--"
-            )
+            ax2.plot(benchmark_pivot.index, benchmark_pivot[benchmark_symbol],
+                     label=benchmark_symbol, color="orange", linestyle="--")
             ax2.set_ylabel(benchmark_symbol, color="orange")
             ax2.tick_params(axis='y', labelcolor='orange')
 
-        # Combined legend
+        # Leyenda combinada
         lines_1, labels_1 = ax1.get_legend_handles_labels()
         if benchmark_df is not None:
             lines_2, labels_2 = ax2.get_legend_handles_labels()
-            ax1.legend(lines_1 + lines_2, labels_1 + labels_2, loc="upper left")
+            ax1.legend([stress_patch] + lines_1 + lines_2,
+                       [stress_patch.get_label()] + labels_1 + labels_2, loc="upper left")
         else:
-            ax1.legend(loc="upper left")
+            ax1.legend([stress_patch] + lines_1,
+                       [stress_patch.get_label()] + labels_1, loc="upper left")
 
-        # Improve X-axis date formatting
         ax1.xaxis.set_major_formatter(mdates.DateFormatter('%d %b %Y'))
         fig.autofmt_xdate()
-
-        # Final tweaks
-        ax1.set_title("Lightweight Indicator vs Benchmark (dual axis)")
+        ax1.set_title(f"Lightweight Indicator vs Benchmark (dual axis)")
         ax1.grid(True)
 
-        # Enable interactive hover (optional)
         try:
             mplcursors.cursor(ax1.lines + (ax2.lines if benchmark_df is not None else []), hover=True)
         except Exception:
