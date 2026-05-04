@@ -1985,7 +1985,7 @@ class ReportsOrchestationLogic:
 
     def _download_13f_reports(self, year, quarter, rank_folder, job_id):
         """
-        Download, process and persist 13F filings as a graph.
+        Download 13F filings from SEC EDGAR to disk.
         Emits a FINAL structured completion event for MCP clients.
         """
 
@@ -2035,32 +2035,13 @@ class ReportsOrchestationLogic:
 
             summary["downloaded"] = True
             summary["filings"]["count"] = len(filings)
-
-            self.logger.do_log(
-                f"[13F] ✔ Reports successfully downloaded | filings={len(filings)}",
-                MessageType.INFO,
-                job_id
-            )
-
-            # -----------------------------------------------------
-            # 🧠 Process filings into graph
-            # -----------------------------------------------------
-            processor = ThirteenFGraphProcessor(
-                logger=self.logger,
-                job_id=job_id
-            )
-
-            edges = processor.process(raw_dir, year, quarter)
-
-            summary["processed"] = True
-            summary["edges"] = len(edges)
             summary["status"] = "completed"
 
             elapsed = (datetime.now() - start_time).total_seconds()
             summary["elapsed_sec"] = round(elapsed, 2)
 
             self.logger.do_log(
-                f"[13F] ✅ Graph generation completed | edges={len(edges)} | {elapsed:.1f}s",
+                f"[13F] ✅ Download completed | filings={len(filings)} | {elapsed:.1f}s",
                 MessageType.INFO,
                 job_id
             )
