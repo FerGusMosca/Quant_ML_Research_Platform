@@ -22,6 +22,9 @@ from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.k
 
 
 class TransformersTopicBase:
+
+    MIN_BLOCK_CHARS = 200   # skip 'None.' style empty items
+
     def __init__(self, logger, tag_cfg=None):
         self.logger = logger
         self.tag_cfg = tag_cfg
@@ -40,6 +43,8 @@ class TransformersTopicBase:
             logger=self.logger
         )
 
+        self.pooling = self._resolve_pooling()
+
         self.threshold = (
             TaggingConfigDTO.SIM_THRESHOLD_DEF
             if tag_cfg.sim_threshold is None
@@ -47,22 +52,101 @@ class TransformersTopicBase:
         )
 
     # ------------------------------------------------------
+    # ------------------------------------------------------
+    # Pooling strategy per model family.
+    # Using the wrong one silently flattens cosine similarities.
+    POOLING_BY_MODEL = {
+        "BAAI/bge-small-en-v1.5": "cls",          # BGE models are trained on the CLS token
+        "BAAI/bge-base-en-v1.5": "cls",
+        "BAAI/bge-large-en-v1.5": "cls",
+        "sentence-transformers/all-MiniLM-L6-v2": "mean",
+        "sentence-transformers/all-mpnet-base-v2": "mean",
+        "distilbert-base-uncased": "mean",
+    }
+    DEFAULT_POOLING = "mean"
+
+    def _resolve_pooling(self):
+        """Returns 'cls' or 'mean' for the configured model, warning on unknown ones."""
+        model_name = self.tag_cfg.tag_model if self.tag_cfg.tag_model is not None \
+            else "sentence-transformers/all-MiniLM-L6-v2"
+
+        pooling = self.POOLING_BY_MODEL.get(model_name)
+
+        if pooling is None:
+            # loose match on the vendor prefix before giving up (e.g. other BAAI/bge variants)
+            for known, strategy in self.POOLING_BY_MODEL.items():
+                if model_name.lower().startswith(known.split("/")[0].lower()):
+                    pooling = strategy
+                    break
+
+        if pooling is None:
+            pooling = self.DEFAULT_POOLING
+            if self.logger:
+                self.logger.do_log(
+                    f"[ENCODE] Unknown model '{model_name}' - falling back to "
+                    f"'{self.DEFAULT_POOLING}' pooling. Check its model card and add it to "
+                    f"POOLING_BY_MODEL if it expects CLS.",
+                    MessageType.INFO
+                )
+        elif self.logger:
+            self.logger.do_log(
+                f"[ENCODE] model={model_name} | pooling={pooling}",
+                MessageType.INFO
+            )
+
+        return pooling
+
     def _encode(self, text: str):
         inputs = self.tokenizer(text, return_tensors="pt", truncation=True).to(self.device)
         with torch.no_grad():
             out = self.model(**inputs)
-        emb = out.last_hidden_state[:, 0, :]
+
+        if self.pooling == "cls":
+            emb = out.last_hidden_state[:, 0, :]
+        else:
+            # mean pooling over real tokens only (padding excluded via the attention mask)
+            mask = inputs["attention_mask"].unsqueeze(-1).float()
+            emb = (out.last_hidden_state * mask).sum(dim=1) / mask.sum(dim=1).clamp(min=1e-9)
+
         return F.normalize(emb, p=2, dim=1)
 
-    def _get_chunks(self, text, file_name,job_id=None):
+    def _get_chunks(self, text, file_name, job_id=None):
         chunks = []
         try:
             if self.tag_cfg.is_K_Q_10_doc():
+                # 1) structural split: one block per 10-K/10-Q Item
                 extr = KQ10HtmlStructuredBlockExtractor()
                 blocks = extr.extract_blocks(text)
-                chunks = list(blocks.values())
+
+                # 2) semantic split: each block is broken down into ~180-word chunks
+                for item, block in blocks.items():
+                    if not block or len(block) < self.MIN_BLOCK_CHARS:
+                        continue
+                    try:
+                        sub = self.chunk_generator.chunk(
+                            block, tag_dedup=self.tag_cfg.tag_dedup, job_id=job_id
+                        )
+                        chunks.extend(sub)
+                        if self.logger:
+                            self.logger.do_log(
+                                f"[TAGGING] block={item} | chars={len(block)} | chunks={len(sub)}",
+                                MessageType.INFO, job_id
+                            )
+                    except Exception as be:
+                        if self.logger:
+                            self.logger.do_log(
+                                f"[TAGGING] block={item} chunking failed: {be}",
+                                MessageType.INFO, job_id
+                            )
             else:
-                chunks.extend(self.chunk_generator.chunk(text,tag_dedup=self.tag_cfg.tag_dedup,job_id=job_id))
+                chunks.extend(self.chunk_generator.chunk(text, tag_dedup=self.tag_cfg.tag_dedup, job_id=job_id))
+
+            if self.logger:
+                self.logger.do_log(
+                    f"[TAGGING] 📄 {file_name} | blocks -> {len(chunks)} chunks",
+                    MessageType.INFO, job_id
+                )
+
         except Exception as e:
             if self.logger:
                 self.logger.do_log(

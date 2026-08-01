@@ -22,6 +22,9 @@ from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.k
 
 
 class TransformersTopicTagger(TransformersTopicBase):
+
+    LOG_SIM_FLOOR = 0.60   # only log individual chunks above this similarity
+
     def __init__(self, logger, tag_cfg=None):
         super().__init__(logger, tag_cfg)
 
@@ -75,29 +78,53 @@ class TransformersTopicTagger(TransformersTopicBase):
             security_symbol: str,
             job_id: int
     ):
+        """Scores every chunk against every tag phrase, keeping the best match per chunk."""
         scores = []
+        best = {"sim": 0.0, "tag": None, "phrase": None, "chunk": None, "idx": None}
 
         for chunk_idx, chunk in enumerate(chunks, start=1):
             try:
                 chunk_emb = self._encode(chunk).squeeze(0)
-                max_sim = 0.0
+                max_sim, hit_tag, hit_phrase = 0.0, None, None
 
-                for emb_list in tag_embeddings.values():
-                    for we in emb_list:
+                for tag, emb_list in tag_embeddings.items():
+                    for phrase_idx, we in enumerate(emb_list):
                         sim = float(torch.dot(chunk_emb, we.squeeze(0)))
                         if sim > max_sim:
-                            max_sim = sim
+                            max_sim, hit_tag, hit_phrase = sim, tag, phrase_idx
 
                 scores.append(max_sim)
 
-                if self.logger:
+                if max_sim > best["sim"]:
+                    best = {"sim": max_sim, "tag": hit_tag, "phrase": hit_phrase,
+                            "chunk": chunk, "idx": chunk_idx}
+
+                # per-chunk detail only for meaningful hits
+                if self.logger and max_sim >= self.LOG_SIM_FLOOR:
                     self.logger.do_log(
-                        f"[RANK] file={file_name} | security={security_symbol} | chunk={chunk_idx}/{len(chunks)} processed",
+                        f"[RANK] {security_symbol} | chunk {chunk_idx}/{len(chunks)} | "
+                        f"sim={max_sim:.4f} | tag={hit_tag}#{hit_phrase} | {chunk[:120]!r}",
                         MessageType.INFO, job_id
                     )
 
             except Exception as e:
                 self._log_exception("[RANK] ❌ scoring failed", e, job_id)
+
+        if self.logger and scores:
+            avg = sum(scores) / len(scores)
+            top = sorted(scores, reverse=True)[:3]
+            self.logger.do_log(
+                f"[RANK] ✔ {security_symbol} | file={file_name} | chunks={len(chunks)} | "
+                f"avg={avg:.4f} | top3={[round(t, 4) for t in top]}",
+                MessageType.INFO, job_id
+            )
+            if best["chunk"]:
+                self.logger.do_log(
+                    f"[RANK] 🏆 BEST {security_symbol} | sim={best['sim']:.4f} | "
+                    f"tag={best['tag']}#{best['phrase']} | chunk {best['idx']}/{len(chunks)}\n"
+                    f"        {best['chunk'][:400]}",
+                    MessageType.INFO, job_id
+                )
 
         return scores
 
@@ -249,8 +276,3 @@ class TransformersTopicTagger(TransformersTopicBase):
 
         self._persist_rank_csv(results, rank_folder, job_id)
         return results
-
-
-
-
-
