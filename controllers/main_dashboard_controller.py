@@ -12,6 +12,7 @@ from controllers.account_controller import AccountController
 from controllers.argy_bonds_controller import ArgyBondsController
 from controllers.auth_middleware import AuthMiddleware
 from controllers.chunk_management_controller import ChunkManagementController
+from controllers.sec_securities_controller import SECSecuritiesController
 from controllers.display_custom_etf_controller import DisplayCustomETFController
 from controllers.display_series_controller import DisplaySeriesController
 from controllers.download_jobs_controller import DataDownloaderController
@@ -97,6 +98,9 @@ class MainDashboardController:
 
         self.chunk_mgmt_ctrl = ChunkManagementController(config_settings, logger)
         self.app.include_router(self.chunk_mgmt_ctrl.router,prefix="/chunk_management")
+
+        self.sec_securities_ctrl = SECSecuritiesController(config_settings, logger)
+        self.app.include_router(self.sec_securities_ctrl.router, prefix="/sec_securities")
 
         portfolio_view_controller = PortfolioViewController(account_manager=account_mgr,  account_data_manager=account_data_mgr,
                                                             ib_portfolio_manager=ib_portfolio_manager,instruction_manager=instr_mgr)

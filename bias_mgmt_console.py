@@ -11,6 +11,7 @@ from common.util.std_in_out.param_reader import ParamReader
 from controllers.main_dashboard_controller import MainDashboardController
 from framework.common.logger.message_type import MessageType
 from logic_layer.algos_orchestation_logic import AlgosOrchestationLogic
+from logic_layer.sec_metadata_orchestation_logic import SECMetadataOrchestationLogic
 from IPython.display import display
 import pandas as pd
 
@@ -65,6 +66,9 @@ def show_commands():
     print("#63-CreateSpreadVariable [diff_indicators] [from*] [to*] [output_symbol]")
     print("#64-CreateSpreadVariableBulk [diff_indicators*] [output_symbols*] [from*]")
     print("#65-DownloadSECSecurities")
+    print("#71-DownloadSECSecuritiesMetadata [top*] [retry_errors*]")
+    print("#72-DownloadSECSecurityMetadata [symbol]")
+    print("#73-TagSecuritiesFromCSV [tag] [csv_path] [tag_group*]")
     #print("#66-RunReport [report*] [year*]")
     print("#67-DownloadBCRAInterestRates [from*] [to*]")
     print("#68-DownloadBYMAInterestRates [from*] [to*]")
@@ -253,6 +257,24 @@ def process_create_spread_variable(cmd):
 def process_download_sec_securities(cmd):
     # No parameters required, always download all securities
     process_download_sec_securities_logic()
+
+
+def process_download_sec_securities_metadata(cmd):
+    top = ParamReader.get_param(cmd, "top", True, None)
+    retry_errors = ParamReader.get_param(cmd, "retry_errors", True, False)
+    process_download_sec_securities_metadata_logic(top, retry_errors)
+
+
+def process_download_sec_security_metadata(cmd):
+    symbol = ParamReader.get_param(cmd, "symbol")
+    process_download_sec_security_metadata_logic(symbol)
+
+
+def process_tag_securities_from_csv(cmd):
+    tag = ParamReader.get_param(cmd, "tag")
+    csv_path = ParamReader.get_param(cmd, "csv_path")
+    tag_group = ParamReader.get_param(cmd, "tag_group", True, "CUSTOM")
+    process_tag_securities_from_csv_logic(tag, csv_path, tag_group)
 
 
 
@@ -1665,6 +1687,73 @@ def process_download_sec_securities_logic():
         print(traceback.format_exc())
         logger.print(f"[SEC] ❌ Critical error downloading SEC securities: {str(e)}", MessageType.ERROR)
 
+
+def __build_sec_metadata_orchestation__(logger):
+    loader = MLSettingsLoader()
+    config_settings = loader.load_settings("./configs/commands_mgr.ini")
+    return SECMetadataOrchestationLogic(
+        config_settings["ml_reports_conn_str"],
+        logger,
+        config_settings["SEC_USER_AGENT"]
+    )
+
+
+def process_download_sec_securities_metadata_logic(top=None, retry_errors=False):
+    logger = Logger()
+
+    try:
+        logger.print("[SEC-META] Starting SEC securities metadata download", MessageType.INFO)
+
+        orchestation = __build_sec_metadata_orchestation__(logger)
+        result = orchestation.process_download_all_metadata(
+            top=int(top) if top else None,
+            include_errors=str(retry_errors).lower() in ("true", "1", "yes")
+        )
+
+        logger.print(f"[SEC-META] ✅ ok={result['ok']} fail={result['failed']} "
+                     f"of {result['total']}", MessageType.INFO)
+
+    except Exception as e:
+        print(traceback.format_exc())
+        logger.print(f"[SEC-META] ❌ Critical error: {str(e)}", MessageType.ERROR)
+
+
+def process_download_sec_security_metadata_logic(symbol):
+    logger = Logger()
+
+    try:
+        orchestation = __build_sec_metadata_orchestation__(logger)
+        result = orchestation.process_download_single_metadata(symbol=symbol)
+
+        if result.get("ok"):
+            logger.print(f"[SEC-META] ✅ {symbol} updated", MessageType.INFO)
+        else:
+            logger.print(f"[SEC-META] ❌ {symbol} could not be updated", MessageType.ERROR)
+
+    except Exception as e:
+        print(traceback.format_exc())
+        logger.print(f"[SEC-META] ❌ Critical error on {symbol}: {str(e)}", MessageType.ERROR)
+
+
+def process_tag_securities_from_csv_logic(tag, csv_path, tag_group="CUSTOM"):
+    logger = Logger()
+
+    try:
+        orchestation = __build_sec_metadata_orchestation__(logger)
+        result = orchestation.process_tag_securities_from_csv(tag, csv_path, tag_group=tag_group)
+
+        logger.print(f"[SEC-TAG] ✅ {result['tag_code']}: {result['tagged']} tagged out of "
+                     f"{result['read']} read, {len(result['not_found'])} unmatched",
+                     MessageType.INFO)
+
+        if result["not_found"]:
+            logger.print(f"[SEC-TAG] unmatched: {', '.join(result['not_found'][:40])}",
+                         MessageType.WARNING)
+
+    except Exception as e:
+        print(traceback.format_exc())
+        logger.print(f"[SEC-TAG] ❌ Critical error: {str(e)}", MessageType.ERROR)
+
 def process_create_average_variable_logic(symbols, output_symbol, d_from, d_to):
     loader = MLSettingsLoader()
     logger = Logger()
@@ -2034,6 +2123,12 @@ def process_commands(cmd):
         process_create_spread_variable_bulk(cmd)
     elif cmd_param_list[0] == "DownloadSECSecurities":
         process_download_sec_securities(cmd)
+    elif cmd_param_list[0] == "DownloadSECSecuritiesMetadata":
+        process_download_sec_securities_metadata(cmd)
+    elif cmd_param_list[0] == "DownloadSECSecurityMetadata":
+        process_download_sec_security_metadata(cmd)
+    elif cmd_param_list[0] == "TagSecuritiesFromCSV":
+        process_tag_securities_from_csv(cmd)
     elif cmd_param_list[0] == "DownloadBCRAInterestRates":
         process_download_bcra_interest_rates(cmd)
     elif cmd_param_list[0] == "CreateRatioVariable":

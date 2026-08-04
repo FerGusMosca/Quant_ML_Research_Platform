@@ -16,19 +16,31 @@ class MLflowModelRegistrar:
       - Creating MLflow experiments
       - Starting MLflow runs
       - Registering all artifacts (pkl, booster.json, scaler, label_encoder)
+
+    If MLFLOW_TRACKING_URI is missing/None, or the tracking server is
+    unreachable, MLflow is silently disabled instead of raising.
     """
 
     def __init__(self):
         # Load MLflow URI from commands_mgr.ini
-        loader = MLSettingsLoader()
-        config_settings = loader.load_settings("./configs/commands_mgr.ini")
+        self.mlflow_enabled = False
+        mlflow_uri = None
 
-        mlflow_uri = config_settings.get("MLFLOW_TRACKING_URI")
-        if not mlflow_uri:
-            raise RuntimeError("MLFLOW_TRACKING_URI missing in commands_mgr.ini")
+        try:
+            loader = MLSettingsLoader()
+            config_settings = loader.load_settings("./configs/commands_mgr.ini")
+            mlflow_uri = config_settings.get("MLFLOW_TRACKING_URI")
+        except Exception as e:
+            print(f"[MLflow] Could not read settings ({e}). MLflow disabled.")
+            return
+
+        if not mlflow_uri or str(mlflow_uri).strip().lower() in ("none", "null", ""):
+            print("[MLflow] MLFLOW_TRACKING_URI not set. MLflow disabled.")
+            return
 
         # Apply tracking URI
         mlflow.set_tracking_uri(mlflow_uri)
+        self.mlflow_enabled = True
 
     # ---------------------------------------------------------
     # Parse a model filename like:
@@ -37,39 +49,18 @@ class MLflowModelRegistrar:
     def parse_model_filename(self, model_output: str) -> dict:
         """
         Example: xgb_model_XLK_2010_2018_M7.pkl
-
-        Returns:
-            {
-              "symbol": "XLK",
-              "start": "2010",
-              "end": "2018",
-              "model_version": "M7",
-              "base_name": "xgb_model_XLK_2010_2018_M7"
-            }
         """
-        base = Path(model_output).stem  # xgb_model_XLK_2010_2018_M7
+        base = Path(model_output).stem
         parts = base.split("_")
 
         if len(parts) < 6:
             raise ValueError(f"Invalid model filename: {model_output}")
 
-        # Pattern:
-        # 0: xgb
-        # 1: model
-        # 2: SYMBOL
-        # 3: START
-        # 4: END
-        # 5: M7
-        symbol = parts[2]
-        start = parts[3]
-        end = parts[4]
-        model_version = parts[5]
-
         return {
-            "symbol": symbol,
-            "start": start,
-            "end": end,
-            "model_version": model_version,
+            "symbol": parts[2],
+            "start": parts[3],
+            "end": parts[4],
+            "model_version": parts[5],
             "base_name": base
         }
 
@@ -80,24 +71,22 @@ class MLflowModelRegistrar:
         """
         Create or reuse an MLflow experiment.
         If the experiment exists in 'deleted' stage, restore it.
-        All comments MUST be in English.
         """
+        if not self.mlflow_enabled:
+            return None
+
         from mlflow.tracking import MlflowClient
 
         experiment_name = f"{algo}_{symbol}_{start}_{end}"
         client = MlflowClient()
 
-        # Try to locate experiment by name
         exp = client.get_experiment_by_name(experiment_name)
 
-        # If exists but deleted → restore
         if exp is not None and exp.lifecycle_stage == "deleted":
             client.restore_experiment(exp.experiment_id)
 
-        # Now safe to set experiment (creates if missing)
         mlflow.set_experiment(experiment_name)
         return experiment_name
-
 
     # ---------------------------------------------------------
     # Start a run inside the experiment
@@ -120,8 +109,10 @@ class MLflowModelRegistrar:
     ):
         """
         Logs all artifacts in the SAME directory as model_output.
-        All comments MUST be in English.
         """
+        if not self.mlflow_enabled:
+            return
+
         output_dir = Path(model_output).parent
         base_name = Path(model_output).stem
 
@@ -134,18 +125,17 @@ class MLflowModelRegistrar:
 
         # Save + log scaler into models/
         if scaler is not None:
-            scaler_path = output_dir / f"{base_name}_scaler.pkl"
             import joblib
+            scaler_path = output_dir / f"{base_name}_scaler.pkl"
             joblib.dump(scaler, scaler_path)
             mlflow.log_artifact(str(scaler_path))
 
         # Save + log label encoder into models/
         if label_encoder is not None:
-            label_path = output_dir / f"{base_name}_label_encoder.pkl"
             import joblib
+            label_path = output_dir / f"{base_name}_label_encoder.pkl"
             joblib.dump(label_encoder, label_path)
             mlflow.log_artifact(str(label_path))
-
 
     # ---------------------------------------------------------
     # Full registration process (called from training)
@@ -161,32 +151,40 @@ class MLflowModelRegistrar:
         model=None
     ):
         """
-        Top-level call:
-            - Parse filename
-            - Create experiment
-            - Start run
-            - Log all artifacts
-
-        If register_model=False → do nothing.
+        Top-level call. Never breaks training: any MLflow failure
+        (no URI, server down, timeout) is logged and swallowed.
         """
-        if not register_model:
+        if not register_model or not self.mlflow_enabled:
             return
 
-        parsed = self.parse_model_filename(model_output)
-        experiment_name = self.start_experiment(algo,parsed["symbol"], parsed["start"], parsed["end"])
-        run_name = parsed["model_version"]
-
-        with self.start_run(run_name):
-            # Do NOT auto-register the model
-            mlflow.sklearn.log_model(
-                sk_model=model,
-                artifact_path="model"
+        try:
+            parsed = self.parse_model_filename(model_output)
+            self.start_experiment(
+                algo,
+                parsed["symbol"],
+                parsed["start"],
+                parsed["end"]
             )
+            run_name = parsed["model_version"]
 
-            # Log artifacts
-            self.log_artifacts(
-                model_output=model_output,
-                booster_path=booster_path,
-                scaler=scaler,
-                label_encoder=label_encoder
-            )
+            with self.start_run(run_name):
+                mlflow.sklearn.log_model(
+                    sk_model=model,
+                    artifact_path="model"
+                )
+
+                self.log_artifacts(
+                    model_output=model_output,
+                    booster_path=booster_path,
+                    scaler=scaler,
+                    label_encoder=label_encoder
+                )
+
+        except Exception as e:
+            # MLflow must never break the training pipeline
+            print(f"[MLflow] Registration skipped due to error: {e}")
+            try:
+                if mlflow.active_run() is not None:
+                    mlflow.end_run()
+            except Exception:
+                pass

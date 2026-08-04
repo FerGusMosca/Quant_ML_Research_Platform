@@ -64,6 +64,7 @@ class TransformersTopicBase:
         "distilbert-base-uncased": "mean",
     }
     DEFAULT_POOLING = "mean"
+    ENCODE_BATCH_SIZE = 32     # texts per forward pass; raise it if you have spare RAM/VRAM
 
     def _resolve_pooling(self):
         """Returns 'cls' or 'mean' for the configured model, warning on unknown ones."""
@@ -109,6 +110,40 @@ class TransformersTopicBase:
             emb = (out.last_hidden_state * mask).sum(dim=1) / mask.sum(dim=1).clamp(min=1e-9)
 
         return F.normalize(emb, p=2, dim=1)
+
+    def _encode_batch(self, texts: list, batch_size: int = None):
+        """
+        Encodes a list of texts in batches, returning a normalized (n_texts, dim) tensor.
+        One forward pass per batch instead of one per text - this is where the speedup is.
+        """
+        if not texts:
+            return torch.empty(0)
+
+        batch_size = batch_size or self.ENCODE_BATCH_SIZE
+        out_chunks = []
+
+        for start in range(0, len(texts), batch_size):
+            batch = texts[start:start + batch_size]
+            inputs = self.tokenizer(
+                batch,
+                return_tensors="pt",
+                truncation=True,
+                padding=True,          # required to stack texts of different lengths
+                max_length=512,
+            ).to(self.device)
+
+            with torch.no_grad():
+                out = self.model(**inputs)
+
+            if self.pooling == "cls":
+                emb = out.last_hidden_state[:, 0, :]
+            else:
+                mask = inputs["attention_mask"].unsqueeze(-1).float()
+                emb = (out.last_hidden_state * mask).sum(dim=1) / mask.sum(dim=1).clamp(min=1e-9)
+
+            out_chunks.append(F.normalize(emb, p=2, dim=1))
+
+        return torch.cat(out_chunks, dim=0)
 
     def _get_chunks(self, text, file_name, job_id=None):
         chunks = []

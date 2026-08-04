@@ -23,7 +23,9 @@ from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.k
 
 class TransformersTopicTagger(TransformersTopicBase):
 
-    LOG_SIM_FLOOR = 0.60   # only log individual chunks above this similarity
+    LOG_SIM_FLOOR = 0.60      # only log individual chunks above this similarity
+    DENSITY_FLOOR = 0.65      # a chunk counts as a "hit" above this cosine similarity
+    DENSITY_WEIGHT = 0.5      # weight of density vs peak score in the composite ranking
 
     def __init__(self, logger, tag_cfg=None):
         super().__init__(logger, tag_cfg)
@@ -39,7 +41,13 @@ class TransformersTopicTagger(TransformersTopicBase):
             with open(tag_file, "r", encoding="utf-8") as f:
                 self.keywords = json.load(f)
 
-        self.logger.do_log("[BERT] Topic tagger READY", 1)
+        # density floor can be overridden per run via the tagging config
+        cfg_floor = getattr(tag_cfg, "density_floor", None)
+        self.density_floor = cfg_floor if cfg_floor is not None else self.DENSITY_FLOOR
+
+        self.logger.do_log(
+            f"[BERT] Topic tagger READY | density_floor={self.density_floor}", 1
+        )
 
     def _persist_rank_csv(self, rows: list, output_dir: str, job_id: int = None):
 
@@ -53,7 +61,8 @@ class TransformersTopicTagger(TransformersTopicBase):
         ts = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
         out_file = os.path.join(output_dir, f"rank.csv")
 
-        fieldnames = ["security", "file", "rank_1", "rank_2", "rank_3"]
+        fieldnames = ["security", "file", "rank_1", "rank_2", "rank_3",
+                      "density", "hits", "chunk_count", "coverage", "composite"]
 
         try:
             with open(out_file, "w", newline="", encoding="utf-8") as f:
@@ -73,85 +82,110 @@ class TransformersTopicTagger(TransformersTopicBase):
     def _score_chunks(
             self,
             chunks: list,
-            tag_embeddings: dict,
+            tag_matrix,
+            tag_index: list,
             file_name: str,
             security_symbol: str,
             job_id: int
     ):
-        """Scores every chunk against every tag phrase, keeping the best match per chunk."""
+        """
+        Encodes all chunks in batches and scores them against the tag matrix in a single
+        matmul, giving a (n_chunks, n_phrases) similarity matrix.
+        Returns (scores, hit_phrases): best similarity per chunk, plus every tag phrase
+        that fired above the density floor (used for coverage).
+        """
         scores = []
-        best = {"sim": 0.0, "tag": None, "phrase": None, "chunk": None, "idx": None}
+        hit_phrases = set()
 
-        for chunk_idx, chunk in enumerate(chunks, start=1):
-            try:
-                chunk_emb = self._encode(chunk).squeeze(0)
-                max_sim, hit_tag, hit_phrase = 0.0, None, None
+        try:
+            start_time = datetime.now()
 
-                for tag, emb_list in tag_embeddings.items():
-                    for phrase_idx, we in enumerate(emb_list):
-                        sim = float(torch.dot(chunk_emb, we.squeeze(0)))
-                        if sim > max_sim:
-                            max_sim, hit_tag, hit_phrase = sim, tag, phrase_idx
+            # (n_chunks, dim) - batched, this is the expensive part
+            chunk_matrix = self._encode_batch(chunks)
 
-                scores.append(max_sim)
+            # (n_chunks, n_phrases) - every chunk against every phrase at once
+            sims = torch.matmul(chunk_matrix, tag_matrix.T)
 
-                if max_sim > best["sim"]:
-                    best = {"sim": max_sim, "tag": hit_tag, "phrase": hit_phrase,
-                            "chunk": chunk, "idx": chunk_idx}
+            best_per_chunk, best_pos = torch.max(sims, dim=1)
+            scores = [float(v) for v in best_per_chunk]
 
-                # per-chunk detail only for meaningful hits
-                if self.logger and max_sim >= self.LOG_SIM_FLOOR:
+            for pos in torch.nonzero(sims >= self.density_floor)[:, 1].unique().tolist():
+                hit_phrases.add(tag_index[pos])
+
+            elapsed = (datetime.now() - start_time).total_seconds()
+
+            if self.logger:
+                for chunk_idx in torch.nonzero(best_per_chunk >= self.LOG_SIM_FLOOR).flatten().tolist():
                     self.logger.do_log(
-                        f"[RANK] {security_symbol} | chunk {chunk_idx}/{len(chunks)} | "
-                        f"sim={max_sim:.4f} | tag={hit_tag}#{hit_phrase} | {chunk[:120]!r}",
+                        f"[RANK] {security_symbol} | chunk {chunk_idx + 1}/{len(chunks)} | "
+                        f"sim={scores[chunk_idx]:.4f} | tag={tag_index[int(best_pos[chunk_idx])]} | "
+                        f"{chunks[chunk_idx][:120]!r}",
                         MessageType.INFO, job_id
                     )
 
-            except Exception as e:
-                self._log_exception("[RANK] ❌ scoring failed", e, job_id)
-
-        if self.logger and scores:
-            avg = sum(scores) / len(scores)
-            top = sorted(scores, reverse=True)[:3]
-            self.logger.do_log(
-                f"[RANK] ✔ {security_symbol} | file={file_name} | chunks={len(chunks)} | "
-                f"avg={avg:.4f} | top3={[round(t, 4) for t in top]}",
-                MessageType.INFO, job_id
-            )
-            if best["chunk"]:
+                hits = sum(1 for v in scores if v >= self.density_floor)
                 self.logger.do_log(
-                    f"[RANK] 🏆 BEST {security_symbol} | sim={best['sim']:.4f} | "
-                    f"tag={best['tag']}#{best['phrase']} | chunk {best['idx']}/{len(chunks)}\n"
-                    f"        {best['chunk'][:400]}",
+                    f"[RANK] ✔ {security_symbol} | file={file_name} | chunks={len(chunks)} | "
+                    f"hits={hits} | density={hits / len(scores):.4f} | coverage={len(hit_phrases)} | "
+                    f"top3={[round(t, 4) for t in sorted(scores, reverse=True)[:3]]} | "
+                    f"{elapsed:.1f}s ({len(chunks) / max(elapsed, 0.001):.1f} chunks/s)",
                     MessageType.INFO, job_id
                 )
 
-        return scores
+                top_idx = int(torch.argmax(best_per_chunk))
+                self.logger.do_log(
+                    f"[RANK] 🏆 BEST {security_symbol} | sim={scores[top_idx]:.4f} | "
+                    f"tag={tag_index[int(best_pos[top_idx])]} | chunk {top_idx + 1}/{len(chunks)}\n"
+                    f"        {chunks[top_idx][:400]}",
+                    MessageType.INFO, job_id
+                )
 
-    def _build_ranking(self, security_tag_scores: dict, top_k: int, job_id: int):
+        except Exception as e:
+            self._log_exception("[RANK] ❌ scoring failed", e, job_id)
+
+        return scores, hit_phrases
+
+    def _build_ranking(self, security_tag_scores: dict, security_hits: dict,
+                       top_k: int, job_id: int):
+        """
+        Builds one row per security combining two independent signals:
+          - peak    (rank_1/2/3): the strongest single statement in the filing
+          - density: share of chunks above the floor, i.e. how pervasive the topic is
+          - coverage: how many DIFFERENT tag phrases fired (a topic discussed from
+                      several angles beats the same sentence repeated)
+        """
         results = []
 
         for security, scores in security_tag_scores.items():
             try:
                 ranked = sorted(scores, reverse=True)
+                total = len(ranked)
+                hits = sum(1 for s in ranked if s >= self.density_floor)
+                density = hits / total if total else 0.0
+                coverage = len(security_hits.get(security, set()))
+                peak = ranked[0] if total else 0.0
 
-                if self.logger:
-                    self.logger.do_log(
-                        f"[RANK] security={security} | ranked={ranked[:top_k]}",
-                        MessageType.INFO, job_id
-                    )
+                # density is bounded but tiny in absolute terms, so it is amplified
+                # before mixing: a 10% hit rate is already a very topical document
+                composite = ((1 - self.DENSITY_WEIGHT) * peak +
+                             self.DENSITY_WEIGHT * min(density * 10, 1.0))
 
                 results.append({
                     "security": security,
-                    "rank_1": ranked[0] if len(ranked) > 0 else 0,
-                    "rank_2": ranked[1] if len(ranked) > 1 else 0,
-                    "rank_3": ranked[2] if len(ranked) > 2 else 0,
+                    "rank_1": peak,
+                    "rank_2": ranked[1] if total > 1 else 0,
+                    "rank_3": ranked[2] if total > 2 else 0,
+                    "density": round(density, 6),
+                    "hits": hits,
+                    "chunk_count": total,
+                    "coverage": coverage,
+                    "composite": round(composite, 6),
                 })
 
             except Exception as e:
                 self._log_exception("[RANK] ❌ ranking build failed", e, job_id)
 
-        results.sort(key=lambda x: x["rank_1"], reverse=True)
+        results.sort(key=lambda x: x["composite"], reverse=True)
         return results
 
     # ------------------------------------------------------
@@ -222,11 +256,23 @@ class TransformersTopicTagger(TransformersTopicBase):
             )
 
         security_tag_scores = {sec.symbol: [] for sec in securities}
+        security_hits = {sec.symbol: set() for sec in securities}
 
-        tag_embeddings = {
-            tag: [self._encode(p) for p in phrases]
-            for tag, phrases in tag_dict.items()
-        }
+        # flatten every tag phrase into a single (n_phrases, dim) matrix so each chunk
+        # is scored with one matmul instead of a nested python loop
+        tag_index = []
+        tag_phrases = []
+        for tag, phrases in tag_dict.items():
+            for phrase_idx, phrase in enumerate(phrases):
+                tag_index.append(f"{tag}#{phrase_idx}")
+                tag_phrases.append(phrase)
+        tag_matrix = self._encode_batch(tag_phrases)
+
+        if self.logger:
+            self.logger.do_log(
+                f"[RANK] tag matrix ready | phrases={len(tag_index)} | dim={tag_matrix.shape[1]}",
+                MessageType.INFO, job_id
+            )
 
         for idx, sec_w_file in enumerate(sec_w_files, start=1):
             file_path=sec_w_file.file
@@ -238,12 +284,6 @@ class TransformersTopicTagger(TransformersTopicBase):
                     f"[RANK] ▶ ({idx}/{len(sec_w_files)}) file={file_name}",
                     MessageType.INFO, job_id
                 )
-            '''
-            security_symbol = next(
-                (sec.symbol for sec in securities if file_name.startswith(sec.symbol+"_")),
-                None
-            )
-            '''
 
             if not security_symbol:
                 continue
@@ -256,17 +296,19 @@ class TransformersTopicTagger(TransformersTopicBase):
             if not chunks:
                 continue
 
-            scores = self._score_chunks(
+            scores, hit_phrases = self._score_chunks(
                 chunks,
-                tag_embeddings,
+                tag_matrix,
+                tag_index,
                 file_name,
                 security_symbol,
                 job_id
             )
 
             security_tag_scores[security_symbol].extend(scores)
+            security_hits[security_symbol].update(hit_phrases)
 
-        results = self._build_ranking(security_tag_scores, top_k, job_id)
+        results = self._build_ranking(security_tag_scores, security_hits, top_k, job_id)
 
         if self.logger:
             self.logger.do_log(
@@ -276,3 +318,8 @@ class TransformersTopicTagger(TransformersTopicBase):
 
         self._persist_rank_csv(results, rank_folder, job_id)
         return results
+
+
+
+
+

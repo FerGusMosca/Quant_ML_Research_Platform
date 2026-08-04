@@ -1,0 +1,204 @@
+{% extends "base.html" %}
+{% set active_page = 'sec_securities' %}
+
+{% block page_title %}SEC Securities{% endblock %}
+{% block nav_subtitle %}SEC Securities{% endblock %}
+{% block css_file %}sec_securities.css{% endblock %}
+{% block js_file %}sec_securities.js{% endblock %}
+
+{% block main %}
+<div>
+  <div class="page-eyebrow">Data · SEC Classification</div>
+  <div class="page-title">SEC Securities</div>
+  <div class="page-sub">SIC · Sector · Industry · Tags — the universe the Tag Indexer later filters on</div>
+</div>
+
+{% if not user_agent_configured %}
+<div class="sec-warning">
+  <code>SEC_USER_AGENT</code> is missing from <code>configs/commands_mgr.ini</code>.
+  The SEC rejects requests without an identifying User-Agent.
+</div>
+{% endif %}
+
+<!-- ══════════════════════════════════════════ COVERAGE -->
+<section class="cov">
+  <header class="cov-head">
+    <div>
+      <div class="cov-eyebrow">Universe coverage</div>
+      <div class="cov-headline">
+        <span class="cov-big" id="covOk">—</span>
+        <span class="cov-slash">/</span>
+        <span class="cov-total" id="covTotal">—</span>
+        <span class="cov-unit">securities classified</span>
+      </div>
+    </div>
+    <button class="ghost-btn" onclick="refreshStatus()" title="Refresh">⟳</button>
+  </header>
+
+  <!-- El espectro: todo el universo en una barra, un segmento por sector -->
+  <div class="spectrum" id="spectrum" role="img" aria-label="Breakdown by sector"></div>
+  <div class="spectrum-legend" id="spectrumLegend"></div>
+
+  <div class="cov-foot">
+    <span class="dot dot-ok"></span><span class="cov-stat" id="covOkTxt">—</span>
+    <span class="dot dot-pending"></span><span class="cov-stat" id="covPendingTxt">—</span>
+    <span class="dot dot-err"></span><span class="cov-stat" id="covFailedTxt">—</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ RUNNER -->
+<section class="runner">
+  <div class="runner-main">
+    <button class="btn primary" id="btnRun" onclick="runAll()">
+      <span class="btn-ico">▶</span> Fill metadata
+    </button>
+    <button class="btn" id="btnRetry" onclick="resetErrors()">↺ Retry failed</button>
+    <button class="btn danger" id="btnCancel" onclick="cancelRun()" hidden>■ Stop</button>
+
+    <span class="vr"></span>
+
+    <div class="inline-field">
+      <input class="inp" type="text" id="singleSymbol" placeholder="AAPL" autocomplete="off" size="8">
+      <button class="btn" id="btnSingle" onclick="runSingle()">Update symbol</button>
+    </div>
+  </div>
+
+  <div class="runner-progress" id="runProgress" hidden>
+    <div class="track"><span id="trackFill"></span></div>
+    <div class="run-meta">
+      <span class="run-current" id="runCurrent"></span>
+      <span class="run-nums" id="runNums"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ EXPLORER -->
+<section class="explorer">
+
+  <aside class="rail">
+    <div class="rail-block">
+      <div class="rail-label">Sector</div>
+      <div class="rail-list" id="railSectors"></div>
+    </div>
+
+    <div class="rail-block">
+      <div class="rail-label">Tags</div>
+      <div class="rail-list" id="railTags"></div>
+      <button class="rail-add" onclick="openTagModal()">＋ Tag from CSV</button>
+    </div>
+  </aside>
+
+  <div class="results">
+    <div class="results-bar">
+      <input class="inp grow" type="text" id="filterText" placeholder="Search symbol, name or SIC description…">
+      <button class="btn" onclick="applyFilter()">Filter</button>
+      <button class="btn ghost" onclick="clearFilter()">Clear</button>
+      <span class="spacer"></span>
+      <button class="btn ghost" id="btnExport" onclick="exportCsv()" disabled>⤓ CSV</button>
+    </div>
+
+    <div class="active-filters" id="activeFilters" hidden></div>
+
+    <div class="table-wrap">
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th class="c-sym">Symbol</th>
+            <th class="c-nm">Name</th>
+            <th class="c-sic">SIC</th>
+            <th class="c-rub">SIC description</th>
+            <th class="c-sec">Sector</th>
+            <th class="c-ind">Industry</th>
+            <th class="c-exc">Exch</th>
+            <th class="c-tags">Tags</th>
+            <th class="c-act"></th>
+          </tr>
+        </thead>
+        <tbody id="tblBody"></tbody>
+      </table>
+    </div>
+
+    <div class="empty" id="emptyState">
+      Pick a sector or a tag on the left, or search for a symbol.
+    </div>
+
+    <div class="results-count" id="resultsCount" hidden></div>
+  </div>
+</section>
+
+<div class="toast" id="toast" hidden></div>
+{% endblock %}
+
+
+{% block modals %}
+<!-- ── Taggear desde CSV ── -->
+<div class="modal" id="tagModal" hidden>
+  <div class="modal-backdrop" onclick="closeTagModal()"></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="tagModalTitle">
+    <header class="modal-head">
+      <div class="cov-eyebrow">Bulk tag</div>
+      <div class="modal-title" id="tagModalTitle">Upload a CSV and apply a tag</div>
+      <button class="modal-x" onclick="closeTagModal()" aria-label="Close">×</button>
+    </header>
+
+    <div class="modal-body">
+      <label class="field">
+        <span class="field-label">Tag</span>
+        <input class="inp" type="text" id="tagCode" placeholder="us_small_cap" autocomplete="off">
+      </label>
+
+      <label class="field">
+        <span class="field-label">Group</span>
+        <select class="inp" id="tagGroup">
+          <option value="SIZE">SIZE</option>
+          <option value="STYLE">STYLE</option>
+          <option value="THEME">THEME</option>
+          <option value="CUSTOM" selected>CUSTOM</option>
+        </select>
+      </label>
+
+      <label class="field wide">
+        <span class="field-label">CSV file</span>
+        <input class="inp file" type="file" id="tagFile" accept=".csv,text/csv">
+      </label>
+
+      <p class="hint">
+        A <code>symbol</code> or <code>ticker</code> column. With no header, the
+        first column is used.
+      </p>
+
+      <div class="modal-result" id="tagResult" hidden></div>
+    </div>
+
+    <footer class="modal-foot">
+      <button class="btn ghost" onclick="closeTagModal()">Cancel</button>
+      <button class="btn primary" id="btnApplyTag" onclick="applyTagFromCsv()">Apply tag</button>
+    </footer>
+  </div>
+</div>
+
+<!-- ── Taggear una security ── -->
+<div class="modal" id="rowTagModal" hidden>
+  <div class="modal-backdrop" onclick="closeRowTagModal()"></div>
+  <div class="modal-panel narrow" role="dialog" aria-modal="true" aria-labelledby="rowTagTitle">
+    <header class="modal-head">
+      <div class="cov-eyebrow">Single tag</div>
+      <div class="modal-title" id="rowTagTitle">Tag</div>
+      <button class="modal-x" onclick="closeRowTagModal()" aria-label="Close">×</button>
+    </header>
+
+    <div class="modal-body">
+      <label class="field wide">
+        <span class="field-label">Tag</span>
+        <input class="inp" type="text" id="rowTagCode" placeholder="us_small_cap" list="tagOptions" autocomplete="off">
+        <datalist id="tagOptions"></datalist>
+      </label>
+    </div>
+
+    <footer class="modal-foot">
+      <button class="btn ghost" onclick="closeRowTagModal()">Cancel</button>
+      <button class="btn primary" onclick="applyRowTag()">Apply</button>
+    </footer>
+  </div>
+</div>
+{% endblock %}
