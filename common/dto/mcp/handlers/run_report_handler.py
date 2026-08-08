@@ -28,7 +28,8 @@ def run_report_handler(args: dict, orchestrator):
                     tags_csv=None,
                     sim_threshold=None,
                     doc_type=args.get("doc_type"),
-                    tag_dedup=bool(args.get("tag_dedup"))
+                    tag_dedup=bool(args.get("tag_dedup")),
+                    chunk_source=args.get("chunk_source")
                 )
 
 

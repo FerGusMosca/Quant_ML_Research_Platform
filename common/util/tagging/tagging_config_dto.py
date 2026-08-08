@@ -7,6 +7,12 @@ from common.util.std_in_out.K_Q_10_file_locator import KQ10FileLocator
 class TaggingConfigDTO:
     DOC_TYPE_K_Q_10 = "K_Q_10"
     SIM_THRESHOLD_DEF = 0.8
+
+    # Where the tagger reads chunks from. Vectors by default: re-encoding a
+    # filing that was already vectorized is wasted work.
+    CHUNK_SOURCE_VECTORS = "VECTORS"
+    CHUNK_SOURCE_FILES = "FILES"
+    CHUNK_SOURCE_DEF = CHUNK_SOURCE_VECTORS
     def __init__(
         self,
         tag_model: str,
@@ -15,7 +21,8 @@ class TaggingConfigDTO:
         sim_threshold: float = 0.8,
         doc_type: Optional[str] = None,
         tag_json:str=None,
-        tag_dedup:bool=True
+        tag_dedup:bool=True,
+        chunk_source:str=None
     ):
         self.tag_model = tag_model
         self.tag_file = tag_file
@@ -24,6 +31,10 @@ class TaggingConfigDTO:
         self.doc_type = doc_type
         self.tag_json=tag_json
         self.tag_dedup=tag_dedup
+        self.chunk_source=(chunk_source or TaggingConfigDTO.CHUNK_SOURCE_DEF).upper()
+
+    def is_vector_chunk_source(self) -> bool:
+        return self.chunk_source == TaggingConfigDTO.CHUNK_SOURCE_VECTORS
 
     def is_K_Q_10_doc(self) -> bool:
         return self.doc_type == TaggingConfigDTO.DOC_TYPE_K_Q_10

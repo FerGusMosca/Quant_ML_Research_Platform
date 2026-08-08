@@ -15,6 +15,7 @@ from common.util.std_in_out.root_locator import RootLocator
 from common.util.tagging.tagging_config_dto import TaggingConfigDTO
 from framework.common.logger.message_type import MessageType
 from logic_layer.rag_corpus_metadata.financial_tags import FINANCIAL_TAGS
+from logic_layer.rag_corpus_metadata.tagger.chunk_sources.chunk_source_factory import ChunkSourceFactory
 from logic_layer.rag_corpus_metadata.tagger.transformers_topic_base import TransformersTopicBase
 from logic_layer.rag_ingest.util.legacy_rag.pdf_cleaner import PDFCleaner
 from logic_layer.rag_ingest.util.multi_stage_rag.chunk_generation.transformers.ktransformers_chunk_generator import \
@@ -27,8 +28,11 @@ class TransformersTopicTagger(TransformersTopicBase):
     DENSITY_FLOOR = 0.65      # a chunk counts as a "hit" above this cosine similarity
     DENSITY_WEIGHT = 0.5      # weight of density vs peak score in the composite ranking
 
-    def __init__(self, logger, tag_cfg=None):
+    def __init__(self, logger, tag_cfg=None, vectors_db_config=None):
         super().__init__(logger, tag_cfg)
+
+        # Only used when the run reads its chunks from pgvector
+        self.vectors_db_config = vectors_db_config
 
         if tag_cfg.tag_file is None:
             if tag_cfg.tags_csv is not None:
@@ -46,7 +50,8 @@ class TransformersTopicTagger(TransformersTopicBase):
         self.density_floor = cfg_floor if cfg_floor is not None else self.DENSITY_FLOOR
 
         self.logger.do_log(
-            f"[BERT] Topic tagger READY | density_floor={self.density_floor}", 1
+            f"[BERT] Topic tagger READY | density_floor={self.density_floor} | "
+            f"chunk_source={tag_cfg.chunk_source}", 1
         )
 
     def _persist_rank_csv(self, rows: list, output_dir: str, job_id: int = None):
@@ -86,7 +91,9 @@ class TransformersTopicTagger(TransformersTopicBase):
             tag_index: list,
             file_name: str,
             security_symbol: str,
-            job_id: int
+            job_id: int,
+            chunk_matrix=None,
+            mode: str = None
     ):
         """
         Encodes all chunks in batches and scores them against the tag matrix in a single
@@ -100,8 +107,11 @@ class TransformersTopicTagger(TransformersTopicBase):
         try:
             start_time = datetime.now()
 
-            # (n_chunks, dim) - batched, this is the expensive part
-            chunk_matrix = self._encode_batch(chunks)
+            # (n_chunks, dim). In VECTORS mode the chunk source already carried
+            # the embeddings, so this is free; in FILES mode it is the expensive
+            # part of the whole run.
+            if chunk_matrix is None:
+                chunk_matrix = self._encode_batch(chunks)
 
             # (n_chunks, n_phrases) - every chunk against every phrase at once
             sims = torch.matmul(chunk_matrix, tag_matrix.T)
@@ -117,7 +127,7 @@ class TransformersTopicTagger(TransformersTopicBase):
             if self.logger:
                 for chunk_idx in torch.nonzero(best_per_chunk >= self.LOG_SIM_FLOOR).flatten().tolist():
                     self.logger.do_log(
-                        f"[RANK] {security_symbol} | chunk {chunk_idx + 1}/{len(chunks)} | "
+                        f"[RANK][{mode}] {security_symbol} | chunk {chunk_idx + 1}/{len(chunks)} | "
                         f"sim={scores[chunk_idx]:.4f} | tag={tag_index[int(best_pos[chunk_idx])]} | "
                         f"{chunks[chunk_idx][:120]!r}",
                         MessageType.INFO, job_id
@@ -125,7 +135,7 @@ class TransformersTopicTagger(TransformersTopicBase):
 
                 hits = sum(1 for v in scores if v >= self.density_floor)
                 self.logger.do_log(
-                    f"[RANK] ✔ {security_symbol} | file={file_name} | chunks={len(chunks)} | "
+                    f"[RANK][{mode}] ✔ {security_symbol} | file={file_name} | chunks={len(chunks)} | "
                     f"hits={hits} | density={hits / len(scores):.4f} | coverage={len(hit_phrases)} | "
                     f"top3={[round(t, 4) for t in sorted(scores, reverse=True)[:3]]} | "
                     f"{elapsed:.1f}s ({len(chunks) / max(elapsed, 0.001):.1f} chunks/s)",
@@ -134,7 +144,7 @@ class TransformersTopicTagger(TransformersTopicBase):
 
                 top_idx = int(torch.argmax(best_per_chunk))
                 self.logger.do_log(
-                    f"[RANK] 🏆 BEST {security_symbol} | sim={scores[top_idx]:.4f} | "
+                    f"[RANK][{mode}] 🏆 BEST {security_symbol} | sim={scores[top_idx]:.4f} | "
                     f"tag={tag_index[int(best_pos[top_idx])]} | chunk {top_idx + 1}/{len(chunks)}\n"
                     f"        {chunks[top_idx][:400]}",
                     MessageType.INFO, job_id
@@ -248,10 +258,21 @@ class TransformersTopicTagger(TransformersTopicBase):
             tag_dict: dict,
             job_id: int,
             top_k: int = 3,
+            fiscal_year=None,
+            quarter=None,
     ):
+        # Where the chunks come from is decided once, up front, and printed loud:
+        # a run scored against stale vectors looks exactly like a run scored
+        # against the files unless the mode is visible.
+        chunk_source = ChunkSourceFactory.build(
+            self.tag_cfg.chunk_source, self, self.logger, self.vectors_db_config
+        )
+        mode = chunk_source.MODE
+
         if self.logger:
             self.logger.do_log(
-                f"[RANK] ▶ START | files={len(sec_w_files)} | tags={len(tag_dict)} | top_k={top_k}",
+                f"[RANK][{mode}] ▶ START | files={len(sec_w_files)} | tags={len(tag_dict)} | "
+                f"top_k={top_k} | model={self.tag_cfg.tag_model} | source={chunk_source.DESCRIPTION}",
                 MessageType.INFO, job_id
             )
 
@@ -274,45 +295,59 @@ class TransformersTopicTagger(TransformersTopicBase):
                 MessageType.INFO, job_id
             )
 
-        for idx, sec_w_file in enumerate(sec_w_files, start=1):
-            file_path=sec_w_file.file
-            file_name = os.path.basename(file_path)
-            security_symbol=sec_w_file.security.symbol
+        files_scored = 0
+        files_without_chunks = 0
 
-            if self.logger:
-                self.logger.do_log(
-                    f"[RANK] ▶ ({idx}/{len(sec_w_files)}) file={file_name}",
-                    MessageType.INFO, job_id
+        try:
+            for idx, sec_w_file in enumerate(sec_w_files, start=1):
+                file_path = sec_w_file.file
+                file_name = os.path.basename(file_path)
+                security_symbol = sec_w_file.security.symbol
+
+                if self.logger:
+                    self.logger.do_log(
+                        f"[RANK][{mode}] ▶ ({idx}/{len(sec_w_files)}) file={file_name}",
+                        MessageType.INFO, job_id
+                    )
+
+                if not security_symbol:
+                    continue
+
+                # chunk_matrix comes back filled in VECTORS mode and None in
+                # FILES mode, which is what decides whether we encode
+                chunks, chunk_matrix = chunk_source.get_chunks(
+                    sec_w_file, file_name, fiscal_year, quarter, job_id
                 )
 
-            if not security_symbol:
-                continue
+                if not chunks:
+                    files_without_chunks += 1
+                    continue
 
-            text = self._extract_text(file_path, job_id)
-            if not text:
-                continue
+                scores, hit_phrases = self._score_chunks(
+                    chunks,
+                    tag_matrix,
+                    tag_index,
+                    file_name,
+                    security_symbol,
+                    job_id,
+                    chunk_matrix=chunk_matrix,
+                    mode=mode
+                )
 
-            chunks = self._extract_chunks(text, file_name, job_id)
-            if not chunks:
-                continue
+                files_scored += 1
+                security_tag_scores[security_symbol].extend(scores)
+                security_hits[security_symbol].update(hit_phrases)
 
-            scores, hit_phrases = self._score_chunks(
-                chunks,
-                tag_matrix,
-                tag_index,
-                file_name,
-                security_symbol,
-                job_id
-            )
-
-            security_tag_scores[security_symbol].extend(scores)
-            security_hits[security_symbol].update(hit_phrases)
+        finally:
+            chunk_source.close()
 
         results = self._build_ranking(security_tag_scores, security_hits, top_k, job_id)
 
         if self.logger:
             self.logger.do_log(
-                f"[RANK] ✔ DONE | securities={len(results)}",
+                f"[RANK][{mode}] ✔ DONE | securities={len(results)} | "
+                f"files_scored={files_scored}/{len(sec_w_files)} | "
+                f"files_without_chunks={files_without_chunks}",
                 MessageType.INFO, job_id
             )
 

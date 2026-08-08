@@ -8,6 +8,8 @@
 # read from configs/commands_mgr.ini; assembling them into a psycopg2 DSN is this
 # layer's job, because this is the only layer that knows the driver.
 
+import json
+
 import psycopg2
 from psycopg2.extras import execute_values
 
@@ -277,6 +279,33 @@ class FilingVectorsManager:
                  LIMIT %s
             """, [vector_literal] + params + [vector_literal, top_k])
             return self.__rows_to_dicts__(cursor)
+
+    def get_document_chunks(self, symbol, report_type, fiscal_year, quarter,
+                            file_name, embedding_model):
+        """
+        Returns the stored chunks of one filing, in chunk order, each with its
+        embedding already parsed into a list of floats.
+        This is what lets tagging run without re-encoding anything.
+        """
+        with self.connection.cursor() as cursor:
+            cursor.execute("""
+                SELECT c.section_label, c.chunk_index, c.chunk_text,
+                       c.word_count, c.embedding::text AS embedding
+                  FROM filing_documents d
+                  JOIN filing_chunks c ON c.document_id = d.document_id
+                                      AND c.embedding_model = %s
+                 WHERE d.symbol = %s AND d.report_type = %s
+                   AND d.fiscal_year = %s AND d.quarter = %s AND d.file_name = %s
+                 ORDER BY c.chunk_index
+            """, (embedding_model, symbol, report_type, int(fiscal_year),
+                  quarter or "", file_name))
+            rows = self.__rows_to_dicts__(cursor)
+
+        for row in rows:
+            # pgvector hands the value back as '[0.1,0.2,...]', which is valid JSON
+            row["embedding"] = json.loads(row["embedding"])
+
+        return rows
 
     def get_coverage(self, embedding_model=None):
         """Row per model / report type / year with document and chunk counts."""

@@ -114,7 +114,8 @@ def process_run_report(cmd):
             sim_threshold=sim_threshold,
             doc_type=doc_type,
             tag_json=tag_json,
-            tag_dedup=str(ParamReader.get_param(cmd, "tag_dedup", True, "True")).lower() == "true"
+            tag_dedup=str(ParamReader.get_param(cmd, "tag_dedup", True, "True")).lower() == "true",
+            chunk_source=ParamReader.get_param(cmd, "chunk_source", True, None)
         )
 
     process_run_report_logic(report_key, year= year,quarter=quarter, portfolio=portfolio,symbol= symbol,d_from= d_from,source=source,dest_folder= dest_folder,

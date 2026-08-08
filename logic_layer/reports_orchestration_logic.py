@@ -1446,10 +1446,16 @@ class ReportsOrchestationLogic:
                           "rank_folder": rank_folder}
             )
 
-            tagger = TransformersTopicTagger(self.logger, tag_cfg)
+            tagger = TransformersTopicTagger(self.logger, tag_cfg, self.vectors_db_config)
             years = DateRangeHandler.handle_date_range(year, self.logger)
             securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
             tag_dict = tagger.initialize_tag_dict(job_id=job_id)
+
+            self.logger.do_log(
+                f"[TAGGING] ▶ chunk_source={tag_cfg.chunk_source} | model={tag_cfg.tag_model} | "
+                f"portfolio={portfolio} | source={source}",
+                MessageType.INFO, job_id
+            )
         except Exception as e:
             self._log_exc("[TAGGING] ❌ init failed", e,job_id)
             #Special Error inicailization
@@ -1499,11 +1505,14 @@ class ReportsOrchestationLogic:
                             matched_files,
                             rank_dir,
                             tag_dict,
-                            job_id
+                            job_id,
+                            fiscal_year=y,
+                            quarter=quarter
                         )
 
                         self.logger.do_log(
-                            f"[TAGGING] ✔ Persisted {len(ranking_dict)} rows | dir={rank_dir}",
+                            f"[TAGGING] ✔ Persisted {len(ranking_dict)} rows | "
+                            f"chunk_source={tag_cfg.chunk_source} | dir={rank_dir}",
                             MessageType.INFO,
                             job_id
                         )
