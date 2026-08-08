@@ -49,6 +49,12 @@ class MLSettingsLoader():
 
             config_settings["RAG_OUTPUT_FOLDER"] = config['EMBEDDINGS']['RAG_OUTPUT_FOLDER']
 
+            config_settings["VECTORS_PG_HOST"] = config['VECTOR_DB']['VECTORS_PG_HOST']
+            config_settings["VECTORS_PG_PORT"] = config['VECTOR_DB']['VECTORS_PG_PORT']
+            config_settings["VECTORS_PG_DB"] = config['VECTOR_DB']['VECTORS_PG_DB']
+            config_settings["VECTORS_PG_USER"] = config['VECTOR_DB']['VECTORS_PG_USER']
+            config_settings["VECTORS_PG_PWD"] = config['VECTOR_DB']['VECTORS_PG_PWD']
+            config_settings["VECTORS_PG_SCHEMA"] = config['VECTOR_DB']['VECTORS_PG_SCHEMA']
 
             return  config_settings
 

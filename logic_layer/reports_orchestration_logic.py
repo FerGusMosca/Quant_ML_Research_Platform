@@ -40,6 +40,7 @@ from data_access_layer.neo4j.graph_holding_mgr import HoldingsGraphManager
 from data_access_layer.portfolio_securities_manager import PortfolioSecuritiesManager
 from data_access_layer.report_securities_manager import ReportSecuritiesManager
 from data_access_layer.sec_securities_manager import SECSecuritiesManager
+from data_access_layer.sec_securities_metadata_manager import SECSecuritiesMetadataManager
 from data_access_layer.securities_calendar_manager import SecuritiesCalendarManager
 from data_access_layer.tag_run_manager import TagRunManager
 from framework.common.logger.message_type import MessageType
@@ -47,6 +48,7 @@ from logic_layer.indicator_algos.financial_ratios_calcualtor import FinancialRat
 from logic_layer.rag_corpus_metadata.tagger.transformers_single_security_topic_tagger import \
     TransformersSingleSecurityTopicTagger
 from logic_layer.rag_corpus_metadata.tagger.transformers_topic_tagger import TransformersTopicTagger
+from logic_layer.rag_corpus_metadata.vectorization.document_vectorization_processor import DocumentVectorizationProcessor
 from logic_layer.report_generators.K_Q_10s.K_Q_10_competition_graph import KQ10CompetitionGraph
 from logic_layer.report_generators.K_Q_10s.competition_summary_report import CompetitionSummaryReport
 from logic_layer.report_generators.K_Q_10s.sentiment.single_stock_sentiment_summary_report_v2 import \
@@ -61,15 +63,21 @@ from service_layer.server.mcp_server import MCPServer
 
 class ReportsOrchestationLogic:
     def __init__(self,hist_data_conn_str,ml_reports_conn_str,mcp_server=None,mcp_port=None,p_classification_map_key=None,
-                 logger=None,neo4j_config=None):
+                 logger=None,neo4j_config=None,vectors_db_config=None):
 
         self.logger=logger
+
+        # [VECTOR_DB] values read from configs/commands_mgr.ini. Passed through as
+        # plain settings: the data access layer is the one that builds the DSN.
+        self.vectors_db_config=vectors_db_config
 
         self.report_securities_mgr = ReportSecuritiesManager(ml_reports_conn_str, logger)
 
         self.portfolio_securities_mgr = PortfolioSecuritiesManager(ml_reports_conn_str,logger)
 
         self.sec_securities_mgr=SECSecuritiesManager(ml_reports_conn_str,logger)
+
+        self.sec_securities_metadata_mgr=SECSecuritiesMetadataManager(ml_reports_conn_str,logger)
 
         self.sec_cal_mgr =SecuritiesCalendarManager(ml_reports_conn_str)
 
@@ -1531,6 +1539,181 @@ class ReportsOrchestationLogic:
             #tag_run.set_error(str(e))
             #self.tag_runs_mgr.persist_tag_run(tag_run)
 
+
+    # ==========================================================
+    # Document vectorization -> PostgreSQL / pgvector
+    # ==========================================================
+
+    def _resolve_sector_symbols(self, sector_code, job_id):
+        """
+        Returns the set of symbols belonging to a sector, or None when no sector
+        filter was requested. This is what lets a 3.6k document universe be
+        processed in slices instead of one endless run.
+        """
+        if not sector_code:
+            return None
+
+        rows = self.sec_securities_metadata_mgr.search(sector_code=sector_code, top=5000)
+        symbols = {str(r.get("symbol") or r.get("ticker") or "").upper()
+                   for r in rows if (r.get("symbol") or r.get("ticker"))}
+
+        self.logger.do_log(
+            f"[VECTORIZE] Sector filter {sector_code} -> {len(symbols)} securities",
+            MessageType.INFO, job_id
+        )
+        return symbols
+
+    def _run_vectorize_documents(self, portfolio, year, quarter, source, sector,
+                                 tag_cfg, overwrite, job_id):
+        """
+        Same shape as _run_document_tagging: this method only resolves inputs and
+        walks the year range. Extraction, chunking, encoding and persistence all
+        live in DocumentVectorizationProcessor.
+        """
+
+        summary = {
+            "report": "vectorize_documents",
+            "portfolio": portfolio,
+            "sector": sector,
+            "source": source,
+            "doc_type": tag_cfg.doc_type if tag_cfg else None,
+            "embedding_model": tag_cfg.tag_model if tag_cfg else None,
+            "years": {},
+            "files_found": 0,
+            "files_processed": 0,
+            "files_skipped": 0,
+            "files_failed": 0,
+            "chunks_persisted": 0,
+            "status": "started",
+            "error": None,
+        }
+
+        processor = None
+
+        # 1- Extract All Input Data
+        try:
+            ObsContext.set(
+                job_id=str(job_id),
+                service_id=ServiceId.MCP_SEC_REPORTS,
+                operation_name="vectorize_documents",
+                metadata={"portfolio": portfolio, "year": year, "quarter": quarter,
+                          "source": source, "sector": sector}
+            )
+
+            if tag_cfg is None or tag_cfg.tag_model is None:
+                raise Exception("tag_model is required to vectorize documents")
+
+            processor = DocumentVectorizationProcessor(self.logger, tag_cfg, self.vectors_db_config)
+            self.logger.do_log(f"[VECTORIZE] 🔌 Connected | {processor.ping()}",
+                               MessageType.INFO, job_id)
+
+            years = DateRangeHandler.handle_date_range(year, self.logger)
+            securities = self.portfolio_securities_mgr.get_portfolio_securities(portfolio)
+
+            sector_symbols = self._resolve_sector_symbols(sector, job_id)
+            if sector_symbols is not None:
+                securities = [s for s in securities
+                              if str(getattr(s, "symbol", "") or "").upper() in sector_symbols]
+
+            if not securities:
+                raise Exception(f"No securities to process for portfolio={portfolio} sector={sector}")
+
+            self.logger.do_log(
+                f"[VECTORIZE] ▶ START | portfolio={portfolio} | securities={len(securities)} | "
+                f"years={years} | doc_type={tag_cfg.doc_type} | model={tag_cfg.tag_model}",
+                MessageType.INFO, job_id
+            )
+
+        except Exception as e:
+            self._log_exc("[VECTORIZE] ❌ init failed", e, job_id)
+            summary["status"] = "failed"
+            summary["error"] = str(e)
+            if processor:
+                processor.close()
+            self.logger.do_log(json.dumps({"event": "completed", "status": "error",
+                                           "summary": summary}), MessageType.INFO, job_id)
+            return summary
+
+        # 2- Walk the year range
+        try:
+            found_files = False
+
+            for y in years:
+                start_time = datetime.now()
+
+                # 2.a- Find files based on report types
+                matched_files = self._file_finder(
+                    securities, y, quarter, Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value,
+                    source, None, tag_cfg, job_id
+                )
+
+                if len(matched_files) == 0:
+                    self.logger.do_log(
+                        f"[VECTORIZE] ⚠️ No files found | year={y} | source={source}",
+                        MessageType.INFO, job_id
+                    )
+                    summary["years"][y] = {"files_found": 0, "processed": 0,
+                                           "skipped": 0, "failed": 0, "chunks": 0}
+                    continue
+
+                found_files = True
+
+                # 2.b- Vectorize and persist the whole batch
+                try:
+                    stats = processor.vectorize(
+                        sec_w_files=matched_files,
+                        portfolio=portfolio,
+                        sector=sector,
+                        source=source,
+                        fiscal_year=y,
+                        quarter=quarter,
+                        overwrite=overwrite,
+                        job_id=job_id,
+                    )
+                except Exception as e:
+                    self._log_exc(f"[VECTORIZE] ❌ vectorization failed | year={y}", e, job_id)
+                    raise e
+
+                summary["years"][y] = stats
+                summary["files_found"] += stats["files_found"]
+                summary["files_processed"] += stats["processed"]
+                summary["files_skipped"] += stats["skipped"]
+                summary["files_failed"] += stats["failed"]
+                summary["chunks_persisted"] += stats["chunks"]
+
+                elapsed = (datetime.now() - start_time).total_seconds()
+                self.logger.do_log(
+                    f"[VECTORIZE] 🏁 year={y} | processed={stats['processed']} | "
+                    f"skipped={stats['skipped']} | failed={stats['failed']} | "
+                    f"chunks={stats['chunks']} | {elapsed:.1f}s",
+                    MessageType.INFO, job_id
+                )
+
+            if not found_files:
+                self.logger.do_log(
+                    f"[VECTORIZE] ⚠️ Not a single file found for portfolio {portfolio} on years {years}",
+                    MessageType.INFO, job_id
+                )
+
+            summary["status"] = "completed"
+
+        except Exception as e:
+            summary["status"] = "failed"
+            summary["error"] = str(e)
+            self._log_exc("[VECTORIZE] ❌ CRITICAL error running vectorization", e, job_id)
+
+        finally:
+            if processor:
+                processor.close()
+
+        self.logger.do_log(
+            json.dumps({"event": "completed", "report": "vectorize_documents",
+                        "summary": summary}),
+            MessageType.INFO, job_id
+        )
+
+        return summary
+
     def _persist_file_graph(self, graph_dir, output_file, edges):
         os.makedirs(graph_dir, exist_ok=True)
 
@@ -2231,7 +2414,7 @@ class ReportsOrchestationLogic:
             raise
 
     def process_run_report(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,source=None,dest_folder=None,
-                           rank_folder=None,job_id=None,query=None,tag_cfg=None):
+                           rank_folder=None,job_id=None,query=None,tag_cfg=None,sector=None,overwrite=False):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year,portfolio,job_id)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
@@ -2277,6 +2460,10 @@ class ReportsOrchestationLogic:
             self._run_document_tagging(portfolio, year,quarter, source, rank_folder, tag_cfg,job_id)
         elif report_key.lower() == ReportType.DOCUMENT_TAGGING_SINGLE_SECURITY.value:
             self._run_document_single_security(symbol=symbol,source=source,year=year,quarter=quarter,tag_cfg=tag_cfg,job_id=job_id)
+        elif report_key.lower() == ReportType.VECTORIZE_DOCUMENTS.value:
+            return self._run_vectorize_documents(portfolio=portfolio, year=year, quarter=quarter,
+                                                 source=source, sector=sector, tag_cfg=tag_cfg,
+                                                 overwrite=overwrite, job_id=job_id)
         elif report_key.lower() == ReportType.COMPETITION_GRAPH.value:
             self._run_competition_graph(portfolio, year,quarter, source, rank_folder,job_id)
         elif report_key.lower() == ReportType.DOWNLOAD_13F_REPORTS.value:

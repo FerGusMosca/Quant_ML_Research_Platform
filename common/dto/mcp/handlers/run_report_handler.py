@@ -43,6 +43,8 @@ def run_report_handler(args: dict, orchestrator):
                 dest_folder=args.get("dest_folder"),
                 rank_folder=args.get("rank_folder"),
                 tag_cfg=tag_cfg,
+                sector=args.get("sector"),
+                overwrite=bool(args.get("overwrite")),
                 job_id=job_id,
             )
         except Exception as e:

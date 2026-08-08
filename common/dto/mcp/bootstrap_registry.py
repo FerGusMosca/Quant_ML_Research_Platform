@@ -29,6 +29,8 @@ def build_mcp_registry_reports(orchestrator) -> ToolRegistry:
                         "tag_file": {"type": "string"},
                         "tag_dedup": {"type": "boolean"},
                         "doc_type": {"type": "string"},
+                        "sector": {"type": "string"},
+                        "overwrite": {"type": "boolean"},
                     },
                     "required": ["report"],
                 },

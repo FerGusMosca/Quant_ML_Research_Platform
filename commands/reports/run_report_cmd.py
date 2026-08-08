@@ -25,7 +25,7 @@ Folders.load_from_config()
 # ============================================================
 
 def process_run_report_logic(report_key, year=None,quarter=None, portfolio=None, symbol=None, d_from=None,source=None,dest_folder=None,rank_folder=None,
-                            mcp_server=None,mcp_port=None,query=None,tag_cfg=None):
+                            mcp_server=None,mcp_port=None,query=None,tag_cfg=None,sector=None,overwrite=False):
     """
     Core logic responsible for running reports through AlgosOrchestationLogic.
     """
@@ -51,7 +51,8 @@ def process_run_report_logic(report_key, year=None,quarter=None, portfolio=None,
             mcp_port= mcp_port,
             p_classification_map_key= None,
             logger= logger,
-            neo4j_config=neo4j_config
+            neo4j_config=neo4j_config,
+            vectors_db_config=config_settings
         )
 
         if mcp_port is not None and mcp_port is not None:
@@ -60,7 +61,8 @@ def process_run_report_logic(report_key, year=None,quarter=None, portfolio=None,
             trd_algos._run_start_mcp()
         else:
             trd_algos.process_run_report(report_key, year, quarter=quarter, portfolio= portfolio,symbol= symbol, d_from= d_from , source=source,
-                                         dest_folder= dest_folder,rank_folder= rank_folder,query=query,tag_cfg=tag_cfg)
+                                         dest_folder= dest_folder,rank_folder= rank_folder,query=query,tag_cfg=tag_cfg,
+                                         sector=sector,overwrite=overwrite)
 
         logger.do_log(f"[REPORT] ✅ Report {report_key} completed", MessageType.INFO)
 
@@ -99,6 +101,8 @@ def process_run_report(cmd):
     sim_threshold = ParamReader.get_param(cmd, "sim_threshold", True, 0.8)
     doc_type = ParamReader.get_param(cmd, "doc_type", True, None)
     tag_json = ParamReader.get_param(cmd, "tag_json", True, None)
+    sector = ParamReader.get_param(cmd, "sector", True, None)
+    overwrite = str(ParamReader.get_param(cmd, "overwrite", True, "False")).lower() == "true"
 
     tag_cfg=None
     if tag_model is not None:
@@ -109,11 +113,13 @@ def process_run_report(cmd):
             tags_csv=tags_csv,
             sim_threshold=sim_threshold,
             doc_type=doc_type,
-            tag_json=tag_json
+            tag_json=tag_json,
+            tag_dedup=str(ParamReader.get_param(cmd, "tag_dedup", True, "True")).lower() == "true"
         )
 
     process_run_report_logic(report_key, year= year,quarter=quarter, portfolio=portfolio,symbol= symbol,d_from= d_from,source=source,dest_folder= dest_folder,
-                             rank_folder= rank_folder, mcp_server=server,mcp_port=port,query=query,tag_cfg=tag_cfg)
+                             rank_folder= rank_folder, mcp_server=server,mcp_port=port,query=query,tag_cfg=tag_cfg,
+                             sector=sector,overwrite=overwrite)
 
 
 # ============================================================
@@ -185,7 +191,8 @@ def process_start_mcp_logic(server,port):
             mcp_port= port,
             p_classification_map_key= None,
             logger= logger,
-            neo4j_config=neo4j_config
+            neo4j_config=neo4j_config,
+            vectors_db_config=config
         )
 
         orch._run_start_mcp()
@@ -286,4 +293,3 @@ if __name__ == "__main__":
             break
 
     print(">>> RAG ingestion module closed.", flush=True)
-
