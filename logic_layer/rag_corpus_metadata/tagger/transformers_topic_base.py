@@ -151,7 +151,10 @@ class TransformersTopicBase:
             if self.tag_cfg.is_K_Q_10_doc():
                 # 1) structural split: one block per 10-K/10-Q Item
                 extr = KQ10HtmlStructuredBlockExtractor()
-                blocks = extr.extract_blocks(text)
+                # 10-K and 10-Q number their narrative items differently, so the
+                # report type is resolved from the file name before extracting.
+                report_type = extr.resolve_report_type(file_name)
+                blocks = extr.extract_blocks(text, report_type)
 
                 # 2) semantic split: each block is broken down into ~180-word chunks
                 for item, block in blocks.items():

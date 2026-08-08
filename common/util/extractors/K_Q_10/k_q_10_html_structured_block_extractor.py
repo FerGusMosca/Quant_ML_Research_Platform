@@ -5,12 +5,57 @@ from typing import Dict
 
 class KQ10HtmlStructuredBlockExtractor:
 
-    ITEM_REGEX = re.compile(
-        r"(item\s+1a\.?|item\s+1\.?|item\s+7a\.?|item\s+7\.?)",
-        re.I
-    )
+    # Any item header at all. Needed to CLOSE the current block: without it,
+    # "ITEM 1A" keeps swallowing 1B, 2, 3, 4, 5 and 6 until the next target appears.
+    ANY_ITEM_REGEX = re.compile(r"^item\s+(\d{1,2})\s*([a-z])?\b", re.I)
 
-    def extract_blocks(self, html_text: str) -> Dict[str, str]:
+    # Part markers. A 10-Q repeats item numbers across Part I and Part II, so the part
+    # is what tells MD&A (Part I Item 2) from Unregistered Sales (Part II Item 2).
+    PART_REGEX = re.compile(r"^part\s+(i{1,3}|iv)\b", re.I)
+
+    # Narrative sections worth vectorizing, per report type.
+    # Key = (part, item_number, item_letter). part=None means "ignore the part".
+    TARGET_ITEMS = {
+        "K10": {
+            (None, "1", None): "ITEM 1 - BUSINESS",
+            (None, "1", "A"): "ITEM 1A - RISK FACTORS",
+            (None, "7", None): "ITEM 7 - MD&A",
+            (None, "7", "A"): "ITEM 7A - MARKET RISK",
+        },
+        "Q10": {
+            ("I", "2", None): "ITEM 2 - MD&A",
+            ("I", "3", None): "ITEM 3 - MARKET RISK",
+            ("II", "1", "A"): "ITEM 1A - RISK FACTORS",
+        },
+    }
+
+    DEFAULT_REPORT_TYPE = "K10"
+
+    @staticmethod
+    def resolve_report_type(file_name: str) -> str:
+        """Reads the report type out of the filing file name (e.g. GPI_2025_Q1_10-Q.html)."""
+        name = (file_name or "").upper()
+        if "10-Q" in name or "10Q" in name:
+            return "Q10"
+        return "K10"
+
+    def _parse_item_header(self, text: str):
+        """Returns (number, letter) when the line is an item header, otherwise None."""
+        m = self.ANY_ITEM_REGEX.match(text)
+        if not m:
+            return None
+        letter = m.group(2)
+        return m.group(1), (letter.upper() if letter else None)
+
+    def extract_blocks(self, html_text: str, report_type: str = None) -> Dict[str, str]:
+        """
+        Splits a 10-K / 10-Q into its narrative sections.
+        Only the items listed in TARGET_ITEMS for the given report type are kept, and
+        any other item header closes the block currently being captured.
+        """
+        report_type = (report_type or self.DEFAULT_REPORT_TYPE).upper()
+        targets = self.TARGET_ITEMS.get(report_type, self.TARGET_ITEMS[self.DEFAULT_REPORT_TYPE])
+
         soup = BeautifulSoup(html_text, "lxml")
 
         for tag in soup.find_all(["ix:header", "ix:nonNumeric", "ix:nonFraction"]):
@@ -21,24 +66,42 @@ class KQ10HtmlStructuredBlockExtractor:
             return {}
 
         blocks = {}
-        current_item = None
-        buffer = []
+        state = {"label": None, "buffer": []}
+        current_part = None
+
+        def flush():
+            # The table of contents produces a tiny block carrying the same label as the
+            # real section, so the longest capture per label is the one that survives.
+            if state["label"] and state["buffer"]:
+                text = " ".join(state["buffer"]).strip()
+                if len(text) > len(blocks.get(state["label"], "")):
+                    blocks[state["label"]] = text
 
         for el in body.stripped_strings:
             # Normalize unicode spaces before matching
             el_normalized = re.sub(r'[\xa0\u200b\s]+', ' ', el).strip()
+            if not el_normalized:
+                continue
 
-            if self.ITEM_REGEX.match(el_normalized):
-                if current_item and buffer:
-                    blocks[current_item] = " ".join(buffer).strip()
-                current_item = el_normalized.upper()
-                buffer = []
-            else:
-                if current_item:
-                    buffer.append(el_normalized)
+            part_match = self.PART_REGEX.match(el_normalized)
+            if part_match:
+                current_part = part_match.group(1).upper()
+                continue
 
-        if current_item and buffer:
-            blocks[current_item] = " ".join(buffer).strip()
+            parsed = self._parse_item_header(el_normalized)
+            if parsed:
+                number, letter = parsed
+                label = targets.get((current_part, number, letter)) or targets.get((None, number, letter))
+
+                flush()
+                state["buffer"] = []
+                state["label"] = label  # None when the item is not a target -> capture stops
+                continue
+
+            if state["label"]:
+                state["buffer"].append(el_normalized)
+
+        flush()
 
         return blocks
 
