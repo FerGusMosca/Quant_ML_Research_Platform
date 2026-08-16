@@ -26,6 +26,7 @@
   width: 100%;
 }
 .inp:focus { border-color: var(--blue); }
+.inp:disabled { opacity: .45; cursor: not-allowed; }
 
 .btn {
   background: var(--surface);
@@ -42,6 +43,8 @@
 .btn:disabled { opacity: .4; cursor: not-allowed; }
 .btn.primary { background: var(--blue-dim); border-color: var(--blue); color: var(--blue-hi); }
 .btn.ghost { background: transparent; color: var(--dim); }
+.btn.danger { border-color: rgba(248,81,73,.45); color: var(--red); background: transparent; }
+.btn.danger:hover:not(:disabled) { border-color: var(--red); color: var(--red); background: rgba(248,81,73,.08); }
 
 .ghost-btn {
   background: transparent;
@@ -60,7 +63,7 @@
 .vz-totals {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 28px;
   margin-top: 18px;
   padding: 18px 22px;
   background: var(--elevated);
@@ -70,11 +73,14 @@
 
 .vz-metric-val {
   font-family: var(--mono);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 600;
   color: var(--text);
   line-height: 1;
 }
+.vz-metric-val.ok   { color: var(--green); }
+.vz-metric-val.warn { color: var(--orange); }
+
 .vz-metric-lbl {
   font-family: var(--mono);
   font-size: 10px;
@@ -98,6 +104,23 @@
   text-transform: uppercase;
   letter-spacing: .12em;
   color: var(--dim);
+}
+
+/* Nota de conteo (#1.b) */
+.vz-count-note {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--dim);
+  font-size: 11px;
+  line-height: 1.6;
+}
+.vz-count-note.is-warn {
+  border-color: rgba(210,153,34,.45);
+  background: rgba(210,153,34,.07);
+  color: var(--text);
 }
 
 /* ═══════════════════════════════════════════════ EXPLORER */
@@ -152,6 +175,7 @@
 }
 .rail-item:hover { background: var(--surface); color: var(--blue-hi); }
 .rail-item.is-empty { color: var(--faint); }
+.rail-item.is-active { background: var(--blue-dim); color: var(--blue-hi); }
 .rail-item-count { color: var(--green); font-size: 9px; }
 
 .rail-add {
@@ -234,6 +258,70 @@
   color: var(--dim);
 }
 
+.vz-hint {
+  padding: 10px 18px 2px;
+  font-size: 11px;
+  color: var(--faint);
+}
+
+/* ═══════════════════════════════════════════════ FILTERS (#1.d) */
+.vz-filters {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  padding: 14px 18px 12px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,.012);
+}
+
+.flt { display: flex; flex-direction: column; gap: 5px; min-width: 150px; }
+.flt > span {
+  font-family: var(--mono);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--dim);
+}
+
+.flt-check {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  color: var(--dim);
+  cursor: pointer;
+  padding-bottom: 7px;
+}
+.flt-check input { accent-color: var(--blue); cursor: pointer; }
+.flt-check:hover { color: var(--text); }
+
+.vz-rowcount {
+  padding: 9px 18px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .06em;
+  color: var(--dim);
+}
+.vz-rowcount.is-warn { color: var(--orange); }
+
+/* ═══════════════════════════════════════════════ BULK BAR (#1.a) */
+.vz-bulk {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--border);
+}
+.vz-bulk .flt-check { padding-bottom: 0; }
+.vz-bulk-count {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
 /* ═══════════════════════════════════════════════ TABLE */
 .table-wrap { overflow-x: auto; max-height: 62vh; overflow-y: auto; }
 
@@ -268,12 +356,43 @@
 }
 .tbl tbody tr:hover td { background: rgba(31,111,235,.05); }
 .tbl tbody tr.clickable { cursor: pointer; }
+.tbl tbody tr.is-pending td { background: rgba(210,153,34,.05); }
 
 .tbl .mono   { font-family: var(--mono); }
 .tbl .dim    { color: var(--dim); }
 .tbl .strong { color: var(--text); font-weight: 600; }
 .tbl .num    { text-align: right; }
+.tbl .warn   { color: var(--orange); }
 .tbl .file   { max-width: 340px; overflow: hidden; text-overflow: ellipsis; }
+.tbl .clickable-cell { cursor: pointer; }
+.tbl .clickable-cell:hover { color: var(--blue-hi); }
+
+.run-check { accent-color: var(--blue); cursor: pointer; }
+
+/* Fila expandible por sector (#1.c) */
+.detail-row td { background: var(--surface); }
+.detail-row:hover td { background: var(--surface); }
+
+.detail-cell {
+  padding: 12px 18px 16px !important;
+  white-space: normal !important;
+}
+
+.detail-head {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-bottom: 8px;
+}
+
+.tbl.inner { font-size: 11px; }
+.tbl.inner tbody td {
+  border-bottom: 1px solid var(--border);
+  padding: 5px 10px;
+}
+.tbl.inner tbody tr:hover td { background: rgba(31,111,235,.04); }
 
 .badge {
   font-family: var(--mono);
@@ -283,8 +402,10 @@
   border-radius: 4px;
   border: 1px solid;
 }
-.badge-auto   { color: var(--dim);    border-color: var(--border2); }
-.badge-manual { color: var(--violet); border-color: rgba(125,91,214,.5); }
+.badge-auto    { color: var(--dim);    border-color: var(--border2); }
+.badge-manual  { color: var(--violet); border-color: rgba(125,91,214,.5); }
+.badge-ok      { color: var(--green);  border-color: rgba(63,185,80,.45); }
+.badge-pending { color: var(--orange); border-color: rgba(210,153,34,.5); }
 
 .status { font-family: var(--mono); font-size: 10px; letter-spacing: .06em; }
 .status-finished { color: var(--green); }
@@ -304,6 +425,7 @@
 }
 .icon-btn:hover { border-color: var(--blue); color: var(--blue-hi); }
 .icon-btn.danger:hover { border-color: var(--red); color: var(--red); }
+.icon-btn.caret { border-color: transparent; padding: 3px 5px; }
 
 /* ═══════════════════════════════════════════════ MODAL */
 .modal-backdrop {
@@ -330,6 +452,7 @@
   border: 1px solid var(--border2);
   border-radius: 12px;
 }
+.modal.narrow { width: 460px; }
 
 .modal-head {
   display: flex;
@@ -348,6 +471,14 @@
 .modal-title { font-size: 16px; margin-top: 4px; }
 
 .modal-body { padding: 18px 22px; }
+
+.modal-text { font-size: 13px; color: var(--text); line-height: 1.6; }
+.modal-note {
+  margin-top: 10px;
+  font-size: 11px;
+  color: var(--dim);
+  line-height: 1.6;
+}
 
 .form-grid {
   display: grid;
@@ -395,4 +526,5 @@
   .vz-totals { flex-wrap: wrap; gap: 22px; }
   .vz-totals-right { margin-left: 0; width: 100%; }
   .form-grid { grid-template-columns: 1fr; }
+  .vz-filters .flt { min-width: 130px; }
 }

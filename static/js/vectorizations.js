@@ -1,16 +1,31 @@
 // vectorizations.js — Vectorizations screen (Bias UI Dashboard)
 //
 // Scope model: the screen always shows one of three scopes — everything, one
-// sector, or one security. Every tab reads from the same scope, so switching
-// tabs never loses where you were.
+// sector, or one security. The scope is now just the sector and the symbol of
+// the filter bar, so the rail, the filters and the tables can never disagree.
+//
+// Punto #1.a: cualquier corrida se puede borrar, de a una o varias.
+// Punto #1.b: los totales salen del vector store, no de lo que reportaron las
+//             corridas, y la pantalla avisa cuando la lista viene cortada.
+// Punto #1.c: la solapa By Sector muestra fechas y archivos.
+// Punto #1.d: la solapa de filings filtra por Type, Year y Sector.
 
 const API = '/vectorizations';
 
-let REFERENCE = { sectors: [], portfolios: [], embedding_models: [] };
-let SCOPE     = { kind: 'all', value: null };
+const PAGE_SIZE = 1000;
+
+let REFERENCE = { sectors: [], portfolios: [], embedding_models: [], report_types: [], years: [] };
+let FILTERS   = { sector: '', report_type: '', fiscal_year: '', quarter: '', symbol: '', pending: false };
+// La solapa By Sector tiene sus propios filtros de archivo, anio y quarter,
+// porque ahi se mira el conjunto y no una lista de archivos.
+let SEC_FILTERS = { report_type: '', fiscal_year: '', quarter: '' };
 let MODEL     = '';
 let LAST_ROWS = [];
+let LAST_TOTAL = 0;
+let COVERAGE  = {};
+let SELECTED_RUNS = new Set();
 let EDITING_RUN_ID = null;
+let PENDING_DELETE = [];
 
 // ── Clock (same behaviour as the rest of the dashboard) ──
 (function tick() {
@@ -46,6 +61,21 @@ function setSelectValue(id, value) {
   select.value = wanted;
 }
 
+function fillSelect(id, values, allLabel) {
+  const select = $(id);
+  const current = select.value;
+  select.innerHTML = `<option value="">${allLabel}</option>`;
+
+  (values || []).forEach(value => {
+    const option = document.createElement('option');
+    option.value = String(value);
+    option.textContent = String(value);
+    select.appendChild(option);
+  });
+
+  select.value = current;
+}
+
 function shortDate(value) {
   if (!value) return '—';
   return String(value).replace('T', ' ').slice(0, 16);
@@ -73,11 +103,29 @@ function queryString(params) {
   const parts = [];
   Object.keys(params).forEach(key => {
     const value = params[key];
-    if (value !== null && value !== undefined && value !== '') {
+    if (value !== null && value !== undefined && value !== '' && value !== false) {
       parts.push(`${encodeURIComponent(key)}=${encodeURIComponent(value)}`);
     }
   });
   return parts.length ? `?${parts.join('&')}` : '';
+}
+
+function scopeKind() {
+  if (FILTERS.symbol) return 'symbol';
+  if (FILTERS.sector) return 'sector';
+  return 'all';
+}
+
+function filterParams(extra) {
+  return Object.assign({
+    symbol:          FILTERS.symbol,
+    sector_code:     FILTERS.sector,
+    report_type:     FILTERS.report_type,
+    fiscal_year:     FILTERS.fiscal_year,
+    quarter:         FILTERS.quarter,
+    embedding_model: FILTERS.pending ? '' : MODEL,
+    include_pending: FILTERS.pending ? 'true' : ''
+  }, extra || {});
 }
 
 // ── Bootstrap ──
@@ -91,6 +139,7 @@ async function reloadAll() {
     paintModels(data.embedding_models, data.model_options);
     paintSectorRail(data.sectors);
     paintPortfolios(data.portfolios);
+    paintFilterOptions(data);
     await loadSymbols();
     await refreshScope();
   } catch (e) {
@@ -109,9 +158,27 @@ function paintFatal(message) {
 function paintTotals(totals) {
   totals = totals || {};
   $('mtSecurities').textContent = num(totals.securities);
+  $('mtFiles').textContent      = num(totals.documents_registered);
   $('mtDocuments').textContent  = num(totals.documents);
+  $('mtPending').textContent    = num(totals.documents_pending);
   $('mtChunks').textContent     = num(totals.chunks);
   $('mtSize').textContent       = totals.pretty_size || '—';
+
+  // The whole point of #1.b: the difference between the files the store knows
+  // about and the files that actually have vectors, said out loud.
+  const pending = Number(totals.documents_pending || 0);
+  const note = $('countNote');
+
+  if (pending > 0) {
+    note.classList.add('is-warn');
+    note.textContent = `${num(totals.documents_registered)} files on record, `
+      + `${num(totals.documents)} with vectors, ${num(pending)} still without any. `
+      + `These counts come from the vector store itself, not from what the runs reported. `
+      + `Tick "Show files without vectors" to list the ones missing.`;
+  } else {
+    note.classList.remove('is-warn');
+    note.textContent = 'Counted straight from the vector store, not from what the runs reported.';
+  }
 }
 
 function paintModels(models, options) {
@@ -125,6 +192,7 @@ function paintModels(models, options) {
     option.textContent = row.embedding_model;
     filter.appendChild(option);
   });
+  filter.value = MODEL;
 
   // Modal combo: the full catalogue, since a past run may have used a model
   // whose chunks are not in this database.
@@ -138,13 +206,44 @@ function paintModels(models, options) {
   });
 }
 
+function paintFilterOptions(data) {
+  // #1.d — Type, Year and Sector, all fed from what the store really holds.
+  fillSelect('fltSector', (data.sectors || []).map(row => row.sector_code), 'All sectors');
+  fillSelect('fltType',   (data.report_types || []).map(row => row.report_type), 'All types');
+  fillSelect('fltYear',   (data.years || []).map(row => row.fiscal_year), 'All years');
+  fillSelect('fltQuarter', (data.quarters || []).map(row => row.quarter), 'All quarters');
+
+  fillSelect('secType',    (data.report_types || []).map(row => row.report_type), 'All types');
+  fillSelect('secYear',    (data.years || []).map(row => row.fiscal_year), 'All years');
+  fillSelect('secQuarter', (data.quarters || []).map(row => row.quarter), 'All quarters');
+
+  // NONE es el quarter en blanco de los archivos anuales. Mostrarlo asi evita
+  // una fila muda en el combo.
+  [$('fltQuarter'), $('secQuarter')].forEach(select => {
+    Array.from(select.options).forEach(option => {
+      if (option.value === 'NONE') option.textContent = 'Sin quarter (K10)';
+    });
+  });
+
+  $('fltSector').value  = FILTERS.sector;
+  $('fltType').value    = FILTERS.report_type;
+  $('fltYear').value    = FILTERS.fiscal_year;
+  $('fltQuarter').value = FILTERS.quarter;
+  $('fltSymbol').value  = FILTERS.symbol;
+
+  $('secType').value    = SEC_FILTERS.report_type;
+  $('secYear').value    = SEC_FILTERS.fiscal_year;
+  $('secQuarter').value = SEC_FILTERS.quarter;
+}
+
 function paintSectorRail(sectors) {
   const rail = $('railSectors');
   rail.innerHTML = '';
 
   (sectors || []).forEach(sector => {
     const item = document.createElement('button');
-    item.className = 'rail-item' + (sector.vectorized ? '' : ' is-empty');
+    item.className = 'rail-item' + (sector.vectorized ? '' : ' is-empty')
+                   + (FILTERS.sector === sector.sector_code ? ' is-active' : '');
     item.onclick = () => selectSector(sector.sector_code);
 
     const name = document.createElement('span');
@@ -203,23 +302,74 @@ async function loadSymbols() {
   }
 }
 
-// ── Scope ──
+// ── Scope & filters ──
 function selectSector(code) {
-  SCOPE = { kind: 'sector', value: code };
+  FILTERS.sector = FILTERS.sector === code ? '' : code;
+  $('fltSector').value = FILTERS.sector;
+  paintSectorRail(REFERENCE.sectors);
   refreshScope();
 }
 
 function selectSymbol() {
   const symbol = ($('symbolInput').value || '').trim().toUpperCase();
   if (!symbol) return;
-  SCOPE = { kind: 'symbol', value: symbol };
+  FILTERS.symbol = symbol;
+  $('fltSymbol').value = symbol;
+  refreshScope();
+}
+
+function onSymbolFilterChange() {
+  FILTERS.symbol = ($('fltSymbol').value || '').trim().toUpperCase();
+  $('symbolInput').value = FILTERS.symbol;
+  refreshScope();
+}
+
+function onFiltersChange() {
+  FILTERS.sector      = $('fltSector').value;
+  FILTERS.report_type = $('fltType').value;
+  FILTERS.fiscal_year = $('fltYear').value;
+  FILTERS.quarter     = $('fltQuarter').value;
+  FILTERS.pending     = $('fltPending').checked;
+
+  // Pending files have no model of their own, so a model filter on top of them
+  // would always come back empty. The combo is disabled instead of lying.
+  $('modelFilter').disabled = FILTERS.pending;
+
+  paintSectorRail(REFERENCE.sectors);
+  refreshScope();
+}
+
+function onSectorFiltersChange() {
+  SEC_FILTERS.report_type = $('secType').value;
+  SEC_FILTERS.fiscal_year = $('secYear').value;
+  SEC_FILTERS.quarter     = $('secQuarter').value;
+  refreshSectors();
+}
+
+function resetSectorFilters() {
+  SEC_FILTERS = { report_type: '', fiscal_year: '', quarter: '' };
+  $('secType').value = '';
+  $('secYear').value = '';
+  $('secQuarter').value = '';
+  refreshSectors();
+}
+
+function resetFilters() {
+  FILTERS = { sector: '', report_type: '', fiscal_year: '', quarter: '', symbol: '', pending: false };
+  $('fltSector').value = '';
+  $('fltType').value = '';
+  $('fltYear').value = '';
+  $('fltQuarter').value = '';
+  $('fltSymbol').value = '';
+  $('fltPending').checked = false;
+  $('symbolInput').value = '';
+  $('modelFilter').disabled = false;
+  paintSectorRail(REFERENCE.sectors);
   refreshScope();
 }
 
 function clearScope() {
-  SCOPE = { kind: 'all', value: null };
-  $('symbolInput').value = '';
-  refreshScope();
+  resetFilters();
 }
 
 function onModelChange() {
@@ -232,48 +382,76 @@ function paintScopeBar() {
   const value = $('scopeVal');
   $('scopeBar').classList.remove('is-error');
 
-  if (SCOPE.kind === 'sector') {
-    kind.textContent = 'Sector';
-    value.textContent = SCOPE.value;
-  } else if (SCOPE.kind === 'symbol') {
+  const extra = [];
+  if (FILTERS.report_type) extra.push(FILTERS.report_type);
+  if (FILTERS.fiscal_year) extra.push(FILTERS.fiscal_year);
+  if (FILTERS.quarter) extra.push(FILTERS.quarter === 'NONE' ? 'sin quarter' : FILTERS.quarter);
+  const suffix = extra.length ? ` · ${extra.join(' · ')}` : '';
+
+  if (scopeKind() === 'symbol') {
     kind.textContent = 'Security';
-    value.textContent = SCOPE.value;
+    value.textContent = FILTERS.symbol + (FILTERS.sector ? ` · ${FILTERS.sector}` : '') + suffix;
+  } else if (scopeKind() === 'sector') {
+    kind.textContent = 'Sector';
+    value.textContent = FILTERS.sector + suffix;
   } else {
     kind.textContent = 'Everything';
-    value.textContent = 'all sectors, all securities';
+    value.textContent = 'all sectors, all securities' + suffix;
   }
 
-  $('btnClearScope').hidden = SCOPE.kind === 'all';
+  $('btnClearScope').hidden = scopeKind() === 'all'
+    && !FILTERS.report_type && !FILTERS.fiscal_year && !FILTERS.quarter && !FILTERS.pending;
 }
 
 async function refreshScope() {
   paintScopeBar();
   try {
-    if (SCOPE.kind === 'symbol') {
-      const data = await getJson(`${API}/symbol${queryString({
-        symbol: SCOPE.value, embedding_model: MODEL })}`);
-      paintFilings(data.documents);
-      paintRuns(data.runs);
-    } else if (SCOPE.kind === 'sector') {
-      const data = await getJson(`${API}/sector${queryString({
-        sector_code: SCOPE.value, embedding_model: MODEL })}`);
-      paintFilings(data.documents);
-      paintRuns(data.runs);
-    } else {
-      const filings = await getJson(`${API}/storage${queryString({
-        embedding_model: MODEL, top: 1000 })}`);
-      paintFilings(filings.items);
-      const runs = await getJson(`${API}/runs${queryString({ top: 300 })}`);
-      paintRuns(runs.items);
-    }
+    const filings = await getJson(`${API}/storage${queryString(filterParams({ top: PAGE_SIZE }))}`);
+    paintFilings(filings.items, filings.total);
 
-    const overview = await getJson(`${API}/overview${queryString({ embedding_model: MODEL })}`);
+    const runs = await getJson(`${API}/runs${queryString({
+      symbol: FILTERS.symbol, sector_code: FILTERS.sector, top: 300 })}`);
+    paintRuns(runs.items);
+
+    const overview = await getJson(`${API}/overview${queryString({
+      embedding_model: FILTERS.pending ? '' : MODEL,
+      sector_code:     FILTERS.sector,
+      symbol:          FILTERS.symbol,
+      report_type:     FILTERS.report_type,
+      fiscal_year:     FILTERS.fiscal_year,
+      quarter:         FILTERS.quarter })}`);
+
     paintTotals(overview.totals);
-    paintSectors(overview.by_sector);
+    await refreshSectors();
   } catch (e) {
     console.error(e);
     paintFatal(e.message);
   }
+}
+
+async function refreshSectors() {
+  // La solapa By Sector se pide aparte: sus filtros de archivo, anio y quarter
+  // son propios y no tienen por que arrastrar los de la lista de archivos.
+  try {
+    const data = await getJson(`${API}/overview${queryString({
+      embedding_model: MODEL,
+      report_type:     SEC_FILTERS.report_type,
+      fiscal_year:     SEC_FILTERS.fiscal_year,
+      quarter:         SEC_FILTERS.quarter })}`);
+
+    COVERAGE = {};
+    (data.coverage || []).forEach(row => { COVERAGE[coverageKey(row)] = row; });
+    paintSectors(data.by_sector, data.coverage);
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+function coverageKey(row) {
+  // Una fila de By Sector es sector + archivo + anio + quarter. La cobertura
+  // se busca con la misma llave para que Files y Pending sean de esa fila y no
+  // del sector entero.
+  return [row.sector_code, row.report_type, row.fiscal_year, row.quarter || ''].join('|');
 }
 
 // ── Tabs ──
@@ -287,21 +465,35 @@ function showTab(tab) {
 }
 
 // ── Painters ──
-function paintFilings(rows) {
+function paintFilings(rows, total) {
   rows = rows || [];
   LAST_ROWS = rows;
+  LAST_TOTAL = total === undefined || total === null ? rows.length : total;
+
   const body = $('tblFilings');
   body.innerHTML = '';
 
   rows.forEach(row => {
     const tr = document.createElement('tr');
+    const pending = Number(row.chunks || 0) === 0;
+    if (pending) tr.className = 'is-pending';
+
     appendCell(tr, row.symbol, 'mono strong');
     appendCell(tr, row.file_name, 'file');
     appendCell(tr, row.report_type, 'mono');
     appendCell(tr, row.fiscal_year, 'mono');
     appendCell(tr, row.quarter || '—', 'mono');
     appendCell(tr, row.sector_code || 'UNCLASSIFIED', 'mono dim');
-    appendCell(tr, shortModel(row.embedding_model), 'mono dim');
+    appendCell(tr, row.embedding_model ? shortModel(row.embedding_model)
+                                       : (row.models ? `${row.models} model(s)` : '—'), 'mono dim');
+
+    const state = document.createElement('td');
+    const badge = document.createElement('span');
+    badge.className = 'badge ' + (pending ? 'badge-pending' : 'badge-ok');
+    badge.textContent = pending ? 'PENDING' : 'VECTORIZED';
+    state.appendChild(badge);
+    tr.appendChild(state);
+
     appendCell(tr, num(row.chunks), 'num mono');
     appendCell(tr, row.pretty_size, 'num mono strong');
     appendCell(tr, shortDate(row.last_chunk_at), 'mono dim');
@@ -310,38 +502,208 @@ function paintFilings(rows) {
 
   $('emptyFilings').hidden = rows.length > 0;
   $('btnExport').disabled = rows.length === 0;
+  paintRowCount(rows.length, LAST_TOTAL);
 }
 
-function paintSectors(rows) {
+function paintRowCount(shown, total) {
+  // #1.b — the screen used to cut the list at its own limit and say nothing,
+  // which reads exactly like "it is not counting the files right".
+  const box = $('rowCount');
+
+  if (!total) {
+    box.textContent = '';
+    box.classList.remove('is-warn');
+    return;
+  }
+
+  if (shown < total) {
+    box.classList.add('is-warn');
+    box.textContent = `Showing ${num(shown)} of ${num(total)} rows — narrow the filters `
+                    + `by sector, type or year to see the rest.`;
+  } else {
+    box.classList.remove('is-warn');
+    box.textContent = `${num(total)} row${total === 1 ? '' : 's'}`;
+  }
+}
+
+function paintSectors(rows, coverage) {
   rows = rows || [];
+  coverage = coverage || [];
+
   const body = $('tblSectors');
   body.innerHTML = '';
 
-  rows.forEach(row => {
-    const tr = document.createElement('tr');
-    tr.className = 'clickable';
-    tr.onclick = () => { selectSector(row.sector_code); showTab('filings'); };
+  // Los grupos que tienen archivos pero ningun vector no aparecen en by_sector.
+  // Sin ellos la solapa mostraria una foto limpia de un trabajo incompleto.
+  const painted = new Set(rows.map(row => coverageKey(row)));
+  const orphans = coverage
+    .filter(row => !painted.has(coverageKey(row)) && Number(row.documents_registered || 0) > 0)
+    .map(row => ({
+      sector_code: row.sector_code,
+      report_type: row.report_type,
+      fiscal_year: row.fiscal_year,
+      quarter: row.quarter,
+      embedding_model: null,
+      securities: row.securities,
+      documents: 0,
+      chunks: 0,
+      bytes: 0,
+      pretty_size: '0 bytes',
+      first_vectorized_at: null,
+      last_vectorized_at: null,
+      last_file_name: null,
+      last_symbol: null
+    }));
 
-    appendCell(tr, row.sector_code, 'mono strong');
-    appendCell(tr, shortModel(row.embedding_model), 'mono dim');
+  const all = rows.concat(orphans);
+
+  all.forEach((row, index) => {
+    const cov = COVERAGE[coverageKey(row)] || {};
+    const tr = document.createElement('tr');
+
+    const expand = document.createElement('td');
+    const caret = document.createElement('button');
+    caret.className = 'icon-btn caret';
+    caret.textContent = '▸';
+    caret.title = 'Show the last files of this group';
+    caret.onclick = event => { event.stopPropagation(); toggleSectorDetail(index, row, caret); };
+    expand.appendChild(caret);
+    tr.appendChild(expand);
+
+    const open = () => {
+      FILTERS.sector      = row.sector_code;
+      FILTERS.report_type = row.report_type || '';
+      FILTERS.fiscal_year = row.fiscal_year || '';
+      FILTERS.quarter     = row.quarter ? row.quarter : 'NONE';
+      FILTERS.symbol      = '';
+      $('fltSector').value  = FILTERS.sector;
+      $('fltType').value    = FILTERS.report_type;
+      $('fltYear').value    = FILTERS.fiscal_year;
+      $('fltQuarter').value = FILTERS.quarter;
+      $('fltSymbol').value  = '';
+      paintSectorRail(REFERENCE.sectors);
+      showTab('filings');
+      refreshScope();
+    };
+
+    appendCell(tr, row.sector_code, 'mono strong clickable-cell').onclick = open;
+    appendCell(tr, row.report_type || '—', 'mono');
+    appendCell(tr, row.fiscal_year || '—', 'mono');
+    appendCell(tr, row.quarter || '—', 'mono dim');
+    appendCell(tr, row.embedding_model ? shortModel(row.embedding_model) : '—', 'mono dim');
     appendCell(tr, num(row.securities), 'num mono');
+    appendCell(tr, num(cov.documents_registered), 'num mono');
     appendCell(tr, num(row.documents), 'num mono');
+
+    const pendingCell = appendCell(tr, num(cov.documents_pending), 'num mono');
+    if (Number(cov.documents_pending || 0) > 0) pendingCell.classList.add('warn');
+
     appendCell(tr, num(row.chunks), 'num mono');
     appendCell(tr, row.pretty_size, 'num mono strong');
-    appendCell(tr, shortDate(row.last_vectorized_at), 'mono dim');
+    appendCell(tr, shortDate(row.first_vectorized_at), 'mono dim');
+    appendCell(tr, shortDate(row.last_vectorized_at), 'mono');
+    appendCell(tr, row.last_file_name
+      ? `${row.last_symbol} · ${row.last_file_name}` : '—', 'file dim');
+
     body.appendChild(tr);
+
+    // Placeholder row for the expanded detail, so the caret has somewhere to
+    // put the files without repainting the table.
+    const detail = document.createElement('tr');
+    detail.className = 'detail-row';
+    detail.id = `sectorDetail_${index}`;
+    detail.hidden = true;
+    const cell = document.createElement('td');
+    cell.colSpan = 15;
+    cell.className = 'detail-cell';
+    detail.appendChild(cell);
+    body.appendChild(detail);
   });
 
-  $('emptySectors').hidden = rows.length > 0;
+  $('emptySectors').hidden = all.length > 0;
+}
+
+async function toggleSectorDetail(index, row, caret) {
+  const detail = $(`sectorDetail_${index}`);
+  const cell = detail.firstChild;
+
+  if (!detail.hidden) {
+    detail.hidden = true;
+    caret.textContent = '▸';
+    return;
+  }
+
+  detail.hidden = false;
+  caret.textContent = '▾';
+  cell.textContent = 'Loading…';
+
+  try {
+    const data = await getJson(`${API}/storage${queryString({
+      sector_code:     row.sector_code,
+      embedding_model: row.embedding_model || '',
+      report_type:     row.report_type || '',
+      fiscal_year:     row.fiscal_year || '',
+      quarter:         row.quarter ? row.quarter : 'NONE',
+      include_pending: row.embedding_model ? '' : 'true',
+      top: 25 })}`);
+
+    cell.innerHTML = '';
+
+    if (!data.items.length) {
+      cell.textContent = 'No files for this sector.';
+      return;
+    }
+
+    const head = document.createElement('div');
+    head.className = 'detail-head';
+    head.textContent = `Last ${data.items.length} of ${num(data.total)} files `
+                     + `— ${row.sector_code} · ${row.report_type || ''} `
+                     + `${row.fiscal_year || ''} ${row.quarter || ''}`.trimEnd();
+    cell.appendChild(head);
+
+    const table = document.createElement('table');
+    table.className = 'tbl inner';
+    const tbody = document.createElement('tbody');
+
+    data.items.forEach(item => {
+      const tr = document.createElement('tr');
+      appendCell(tr, item.symbol, 'mono strong');
+      appendCell(tr, item.file_name, 'file');
+      appendCell(tr, item.report_type, 'mono');
+      appendCell(tr, item.fiscal_year, 'mono');
+      appendCell(tr, item.quarter || '—', 'mono dim');
+      appendCell(tr, num(item.chunks), 'num mono');
+      appendCell(tr, item.pretty_size, 'num mono');
+      appendCell(tr, shortDate(item.last_chunk_at), 'mono dim');
+      tbody.appendChild(tr);
+    });
+
+    table.appendChild(tbody);
+    cell.appendChild(table);
+  } catch (e) {
+    cell.textContent = e.message;
+  }
 }
 
 function paintRuns(rows) {
   rows = rows || [];
   const body = $('tblRuns');
   body.innerHTML = '';
+  SELECTED_RUNS.clear();
+  $('runsSelectAll').checked = false;
 
   rows.forEach(row => {
     const tr = document.createElement('tr');
+
+    const pick = document.createElement('td');
+    const check = document.createElement('input');
+    check.type = 'checkbox';
+    check.className = 'run-check';
+    check.dataset.runId = row.run_id;
+    check.onchange = () => toggleRunSelection(row.run_id, check.checked);
+    pick.appendChild(check);
+    tr.appendChild(pick);
+
     appendCell(tr, row.run_id, 'mono');
 
     const source = document.createElement('td');
@@ -364,12 +726,21 @@ function paintRuns(rows) {
     status.appendChild(dot);
     tr.appendChild(status);
 
+    // Found / processed / skipped / failed, all four. Showing only "processed"
+    // was half the reason the file counts looked wrong: a resumed run skips
+    // everything it had already done, and those files are not missing.
+    appendCell(tr, num(row.files_found), 'num mono');
     appendCell(tr, num(row.files_processed), 'num mono');
+    appendCell(tr, num(row.files_skipped), 'num mono dim');
+    const failed = appendCell(tr, num(row.files_failed), 'num mono');
+    if (Number(row.files_failed || 0) > 0) failed.classList.add('warn');
+
     appendCell(tr, num(row.chunks_persisted), 'num mono');
     appendCell(tr, shortDate(row.started_at), 'mono dim');
 
     const actions = document.createElement('td');
     actions.className = 'row-actions';
+
     if (row.run_source === 'MANUAL') {
       const edit = document.createElement('button');
       edit.className = 'icon-btn';
@@ -377,20 +748,22 @@ function paintRuns(rows) {
       edit.textContent = '✎';
       edit.onclick = () => openRunModal(row);
       actions.appendChild(edit);
-
-      const remove = document.createElement('button');
-      remove.className = 'icon-btn danger';
-      remove.title = 'Delete';
-      remove.textContent = '🗑';
-      remove.onclick = () => deleteRun(row.run_id);
-      actions.appendChild(remove);
     }
-    tr.appendChild(actions);
 
+    // #1.a — any run can go, manual or written by the job.
+    const remove = document.createElement('button');
+    remove.className = 'icon-btn danger';
+    remove.title = 'Delete this run';
+    remove.textContent = '🗑';
+    remove.onclick = () => openDeleteModal([row.run_id]);
+    actions.appendChild(remove);
+
+    tr.appendChild(actions);
     body.appendChild(tr);
   });
 
   $('emptyRuns').hidden = rows.length > 0;
+  paintBulkBar();
 }
 
 function appendCell(tr, value, className) {
@@ -398,6 +771,7 @@ function appendCell(tr, value, className) {
   if (className) td.className = className;
   td.textContent = value === null || value === undefined ? '—' : String(value);
   tr.appendChild(td);
+  return td;
 }
 
 function shortModel(model) {
@@ -406,21 +780,90 @@ function shortModel(model) {
   return parts[parts.length - 1];
 }
 
+// ── Run selection (#1.a) ──
+function toggleRunSelection(runId, checked) {
+  if (checked) SELECTED_RUNS.add(runId);
+  else SELECTED_RUNS.delete(runId);
+  paintBulkBar();
+}
+
+function toggleAllRuns() {
+  const checked = $('runsSelectAll').checked;
+  SELECTED_RUNS.clear();
+
+  document.querySelectorAll('.run-check').forEach(check => {
+    check.checked = checked;
+    if (checked) SELECTED_RUNS.add(Number(check.dataset.runId));
+  });
+
+  paintBulkBar();
+}
+
+function paintBulkBar() {
+  const count = SELECTED_RUNS.size;
+  $('bulkCount').textContent = `${count} selected`;
+  $('btnBulkDelete').disabled = count === 0;
+}
+
+function deleteSelectedRuns() {
+  if (!SELECTED_RUNS.size) return;
+  openDeleteModal(Array.from(SELECTED_RUNS));
+}
+
+function openDeleteModal(runIds) {
+  PENDING_DELETE = runIds || [];
+  $('deleteModalError').hidden = true;
+  $('deleteModalTitle').textContent = PENDING_DELETE.length === 1
+    ? `Delete run #${PENDING_DELETE[0]}`
+    : `Delete ${PENDING_DELETE.length} runs`;
+
+  $('deleteModalText').textContent = PENDING_DELETE.length === 1
+    ? `Run #${PENDING_DELETE[0]} will be removed from the history.`
+    : `Runs ${PENDING_DELETE.join(', ')} will be removed from the history.`;
+
+  $('deleteModal').hidden = false;
+}
+
+function closeDeleteModal() {
+  $('deleteModal').hidden = true;
+  PENDING_DELETE = [];
+}
+
+async function confirmDelete() {
+  if (!PENDING_DELETE.length) return;
+
+  const button = $('btnConfirmDelete');
+  button.disabled = true;
+
+  try {
+    await postJson(`${API}/runs/delete`, { run_ids: PENDING_DELETE });
+    closeDeleteModal();
+    await refreshScope();
+    showTab('runs');
+  } catch (e) {
+    const box = $('deleteModalError');
+    box.textContent = e.message;
+    box.hidden = false;
+  } finally {
+    button.disabled = false;
+  }
+}
+
 // ── Manual run modal ──
 function openRunModal(row) {
   EDITING_RUN_ID = row ? row.run_id : null;
   $('runModalTitle').textContent = row ? `Edit run #${row.run_id}` : 'Log a past run';
   $('runModalError').hidden = true;
 
-  setSelectValue('fSector', row ? (row.sector_code || '')
-                                 : (SCOPE.kind === 'sector' ? SCOPE.value : ''));
+  setSelectValue('fSector', row ? (row.sector_code || '') : FILTERS.sector);
   setSelectValue('fPortfolio', row ? (row.portfolio || '') : '');
-  setSelectValue('fReportType', row ? (row.report_type || 'K10') : 'K10');
+  setSelectValue('fReportType', row ? (row.report_type || 'K10') : (FILTERS.report_type || 'K10'));
   setSelectValue('fQuarter', row ? (row.quarter || '') : '');
   setSelectValue('fModel', row ? (row.embedding_model || '') : (MODEL || defaultModel()));
   setSelectValue('fStatus', row ? (row.status || 'FINISHED') : 'FINISHED');
 
-  $('fYear').value      = row ? (row.fiscal_year || '') : new Date().getFullYear();
+  $('fYear').value      = row ? (row.fiscal_year || '')
+                              : (FILTERS.fiscal_year || new Date().getFullYear());
   $('fProcessed').value = row ? (row.files_processed || 0) : '';
   $('fStarted').value   = row ? toLocalInput(row.started_at) : '';
   $('fFinished').value  = row ? toLocalInput(row.finished_at) : '';
@@ -493,9 +936,11 @@ async function saveRun() {
     // The run is saved against the sector of the form, which is not always the
     // sector the screen was filtered by. Without this the row would be saved
     // and then filtered out, which reads exactly like nothing happened.
-    SCOPE = payload.sector_code
-      ? { kind: 'sector', value: payload.sector_code }
-      : { kind: 'all', value: null };
+    FILTERS.sector = payload.sector_code || '';
+    FILTERS.symbol = '';
+    $('fltSector').value = FILTERS.sector;
+    $('fltSymbol').value = '';
+    paintSectorRail(REFERENCE.sectors);
 
     showTab('runs');
     await refreshScope();
@@ -508,23 +953,13 @@ async function saveRun() {
   }
 }
 
-async function deleteRun(runId) {
-  if (!confirm(`Delete run #${runId}? Only manually logged runs can be removed.`)) return;
-  try {
-    await postJson(`${API}/runs/delete`, { run_id: runId });
-    await refreshScope();
-  } catch (e) {
-    alert(e.message);
-  }
-}
-
 // ── Export ──
 function exportCsv() {
   if (!LAST_ROWS.length) return;
 
   const columns = ['symbol', 'file_name', 'report_type', 'fiscal_year', 'quarter',
-                   'sector_code', 'embedding_model', 'chunks', 'bytes', 'pretty_size',
-                   'last_chunk_at'];
+                   'sector_code', 'embedding_model', 'vector_status', 'chunks', 'bytes',
+                   'pretty_size', 'last_chunk_at'];
 
   const lines = [columns.join(',')];
   LAST_ROWS.forEach(row => {
@@ -537,7 +972,7 @@ function exportCsv() {
   const blob = new Blob([lines.join('\n')], { type: 'text/csv;charset=utf-8;' });
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
-  link.download = `vectorizations_${SCOPE.value || 'all'}.csv`;
+  link.download = `vectorizations_${FILTERS.symbol || FILTERS.sector || 'all'}.csv`;
   link.click();
   URL.revokeObjectURL(link.href);
 }

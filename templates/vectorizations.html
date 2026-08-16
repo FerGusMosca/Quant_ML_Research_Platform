@@ -20,8 +20,16 @@
     <div class="vz-metric-lbl">securities</div>
   </div>
   <div class="vz-metric">
-    <div class="vz-metric-val" id="mtDocuments">—</div>
-    <div class="vz-metric-lbl">filings</div>
+    <div class="vz-metric-val" id="mtFiles">—</div>
+    <div class="vz-metric-lbl">files on record</div>
+  </div>
+  <div class="vz-metric">
+    <div class="vz-metric-val ok" id="mtDocuments">—</div>
+    <div class="vz-metric-lbl">vectorized</div>
+  </div>
+  <div class="vz-metric">
+    <div class="vz-metric-val warn" id="mtPending">—</div>
+    <div class="vz-metric-lbl">pending</div>
   </div>
   <div class="vz-metric">
     <div class="vz-metric-val" id="mtChunks">—</div>
@@ -40,6 +48,10 @@
     <button class="btn ghost" onclick="reloadAll()" title="Reload">⟳</button>
   </div>
 </section>
+
+<div class="vz-count-note" id="countNote">
+  Counted straight from the vector store, not from what the runs reported.
+</div>
 
 <!-- ══════════════════════════════════════════ EXPLORER -->
 <section class="vz-explorer">
@@ -83,6 +95,51 @@
 
     <!-- ── FILINGS ── -->
     <div class="vz-pane" id="paneFilings">
+
+      <!-- #1.d — filtros por Type, Year y Sector -->
+      <div class="vz-filters">
+        <label class="flt">
+          <span>Sector</span>
+          <select class="inp" id="fltSector" onchange="onFiltersChange()">
+            <option value="">All sectors</option>
+          </select>
+        </label>
+        <label class="flt">
+          <span>Type</span>
+          <select class="inp" id="fltType" onchange="onFiltersChange()">
+            <option value="">All types</option>
+          </select>
+        </label>
+        <label class="flt">
+          <span>Year</span>
+          <select class="inp" id="fltYear" onchange="onFiltersChange()">
+            <option value="">All years</option>
+          </select>
+        </label>
+        <label class="flt">
+          <span>Quarter</span>
+          <select class="inp" id="fltQuarter" onchange="onFiltersChange()">
+            <option value="">All quarters</option>
+          </select>
+        </label>
+        <label class="flt">
+          <span>Symbol</span>
+          <input class="inp" id="fltSymbol" list="symbolList" placeholder="All securities"
+                 autocomplete="off" onchange="onSymbolFilterChange()"
+                 onkeydown="if(event.key==='Enter') onSymbolFilterChange()">
+        </label>
+
+        <label class="flt-check">
+          <input type="checkbox" id="fltPending" onchange="onFiltersChange()">
+          <span>Show files without vectors</span>
+        </label>
+
+        <span class="spacer"></span>
+        <button class="btn ghost" onclick="resetFilters()">Reset</button>
+      </div>
+
+      <div class="vz-rowcount" id="rowCount"></div>
+
       <div class="table-wrap">
         <table class="tbl">
           <thead>
@@ -94,6 +151,7 @@
               <th>Q</th>
               <th>Sector</th>
               <th>Model</th>
+              <th>State</th>
               <th class="num">Chunks</th>
               <th class="num">Weight</th>
               <th>Last chunk</th>
@@ -107,17 +165,50 @@
 
     <!-- ── SECTORS ── -->
     <div class="vz-pane" id="paneSectors" hidden>
+
+      <div class="vz-filters">
+        <label class="flt">
+          <span>Archivo</span>
+          <select class="inp" id="secType" onchange="onSectorFiltersChange()">
+            <option value="">All types</option>
+          </select>
+        </label>
+        <label class="flt">
+          <span>Year</span>
+          <select class="inp" id="secYear" onchange="onSectorFiltersChange()">
+            <option value="">All years</option>
+          </select>
+        </label>
+        <label class="flt">
+          <span>Quarter</span>
+          <select class="inp" id="secQuarter" onchange="onSectorFiltersChange()">
+            <option value="">All quarters</option>
+          </select>
+        </label>
+        <span class="spacer"></span>
+        <button class="btn ghost" onclick="resetSectorFilters()">Reset</button>
+      </div>
+
+      <div class="vz-hint">Click a sector to open its files. The arrow expands the last filings without leaving the tab.</div>
       <div class="table-wrap">
         <table class="tbl">
           <thead>
             <tr>
+              <th></th>
               <th>Sector</th>
+              <th>Archivo</th>
+              <th>Year</th>
+              <th>Quarter</th>
               <th>Model</th>
               <th class="num">Securities</th>
-              <th class="num">Filings</th>
+              <th class="num">Files</th>
+              <th class="num">Vectorized</th>
+              <th class="num">Pending</th>
               <th class="num">Chunks</th>
               <th class="num">Weight</th>
+              <th>First vectorized</th>
               <th>Last vectorized</th>
+              <th>Last file</th>
             </tr>
           </thead>
           <tbody id="tblSectors"></tbody>
@@ -128,10 +219,24 @@
 
     <!-- ── RUNS ── -->
     <div class="vz-pane" id="paneRuns" hidden>
+
+      <div class="vz-bulk" id="bulkBar">
+        <label class="flt-check">
+          <input type="checkbox" id="runsSelectAll" onchange="toggleAllRuns()">
+          <span>Select all</span>
+        </label>
+        <span class="vz-bulk-count" id="bulkCount">0 selected</span>
+        <span class="spacer"></span>
+        <button class="btn danger" id="btnBulkDelete" onclick="deleteSelectedRuns()" disabled>
+          🗑 Delete selected
+        </button>
+      </div>
+
       <div class="table-wrap">
         <table class="tbl">
           <thead>
             <tr>
+              <th></th>
               <th>Run</th>
               <th>Source</th>
               <th>Sector</th>
@@ -140,7 +245,10 @@
               <th>Year</th>
               <th>Model</th>
               <th>Status</th>
-              <th class="num">Files</th>
+              <th class="num">Found</th>
+              <th class="num">Processed</th>
+              <th class="num">Skipped</th>
+              <th class="num">Failed</th>
               <th class="num">Chunks</th>
               <th>Started</th>
               <th></th>
@@ -229,6 +337,33 @@
     <div class="modal-foot">
       <button class="btn ghost" onclick="closeRunModal()">Cancel</button>
       <button class="btn primary" id="btnSaveRun" onclick="saveRun()">Save run</button>
+    </div>
+  </div>
+</div>
+
+<!-- Confirmacion de borrado de corridas (#1.a) -->
+<div class="modal-backdrop" id="deleteModal" hidden>
+  <div class="modal narrow">
+    <div class="modal-head">
+      <div>
+        <div class="modal-eyebrow">Run history</div>
+        <div class="modal-title" id="deleteModalTitle">Delete runs</div>
+      </div>
+      <button class="ghost-btn" onclick="closeDeleteModal()">✕</button>
+    </div>
+
+    <div class="modal-body">
+      <div id="deleteModalText" class="modal-text"></div>
+      <div class="modal-note">
+        Only the log entry is removed. The vectors, the files and the chunks stay
+        exactly where they are.
+      </div>
+      <div class="modal-error" id="deleteModalError" hidden></div>
+    </div>
+
+    <div class="modal-foot">
+      <button class="btn ghost" onclick="closeDeleteModal()">Cancel</button>
+      <button class="btn danger" id="btnConfirmDelete" onclick="confirmDelete()">Delete</button>
     </div>
   </div>
 </div>

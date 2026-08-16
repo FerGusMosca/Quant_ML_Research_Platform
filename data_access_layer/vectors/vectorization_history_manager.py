@@ -104,6 +104,43 @@ class VectorizationHistoryManager:
              ORDER BY 1
         """)
 
+    def get_report_types(self):
+        """
+        Report types actually present. Feeds the Type filter of #1.d instead of
+        a hardcoded K10 / Q10, so a new family shows up on its own.
+        """
+        return self._query("""
+            SELECT report_type, COUNT(*) AS documents
+              FROM filing_documents
+             WHERE report_type IS NOT NULL AND report_type <> ''
+             GROUP BY report_type
+             ORDER BY 1
+        """)
+
+    def get_years(self):
+        """Fiscal years present. Feeds the Year filter of #1.d."""
+        return self._query("""
+            SELECT fiscal_year, COUNT(*) AS documents
+              FROM filing_documents
+             WHERE fiscal_year IS NOT NULL
+             GROUP BY fiscal_year
+             ORDER BY 1 DESC
+        """)
+
+    def get_quarters(self):
+        """
+        Quarters presentes. El valor vacio es el de los K10, que son anuales
+        y no tienen quarter: viaja como NONE para que el combo pueda pedirlo
+        sin confundirse con "todos".
+        """
+        return self._query("""
+            SELECT CASE WHEN COALESCE(quarter, '') = '' THEN 'NONE' ELSE quarter END AS quarter,
+                   COUNT(*) AS documents
+              FROM filing_documents
+             GROUP BY 1
+             ORDER BY 1
+        """)
+
     def get_known_portfolios(self):
         """
         Portfolio codes already seen in this database. Used to feed the combo
@@ -130,24 +167,85 @@ class VectorizationHistoryManager:
 
     # ── Global picture ────────────────────────────────────────────────────────
 
-    def get_totals(self):
+    def get_totals(self, embedding_model=None, sector_code=None, symbol=None,
+                   report_type=None, fiscal_year=None, quarter=None):
+        """
+        The headline numbers, and the answer to #1.b.
+
+        Three counts, on purpose, because they are not the same thing and the
+        old screen showed only one of them:
+          - documents_registered: every file the store knows about;
+          - documents:            the files that actually have vectors;
+          - documents_pending:    registered minus vectorized.
+
+        Nothing here comes from the counters the runs write. The runs count
+        what one execution did; this counts what is really stored.
+        """
         rows = self._query("""
-            SELECT COUNT(DISTINCT d.document_id) AS documents,
-                   COUNT(DISTINCT d.symbol)      AS securities,
-                   COUNT(c.chunk_id)             AS chunks,
-                   COALESCE(SUM(pg_column_size(c.embedding)), 0)::bigint AS bytes,
-                   pg_size_pretty(COALESCE(SUM(pg_column_size(c.embedding)), 0)::bigint) AS pretty_size
-              FROM filing_documents d
-              LEFT JOIN filing_chunks c ON c.document_id = d.document_id
-        """)
+            SELECT COUNT(*)                                  AS documents_registered,
+                   COUNT(*) FILTER (WHERE chunks > 0)        AS documents,
+                   COUNT(*) FILTER (WHERE chunks = 0)        AS documents_pending,
+                   COUNT(DISTINCT symbol)                    AS securities_registered,
+                   COUNT(DISTINCT symbol) FILTER (WHERE chunks > 0) AS securities,
+                   COALESCE(SUM(chunks), 0)::bigint          AS chunks,
+                   COALESCE(SUM(bytes), 0)::bigint           AS bytes,
+                   pg_size_pretty(COALESCE(SUM(bytes), 0)::bigint) AS pretty_size
+              FROM (
+                    SELECT d.document_id,
+                           d.symbol,
+                           COUNT(c.chunk_id) AS chunks,
+                           COALESCE(SUM(pg_column_size(c.embedding)), 0)::bigint AS bytes
+                      FROM filing_documents d
+                      LEFT JOIN filing_chunks c
+                             ON c.document_id = d.document_id
+                            AND (%s IS NULL OR c.embedding_model = %s)
+                     WHERE (%s IS NULL OR COALESCE(d.sector_code, 'UNCLASSIFIED') = %s)
+                       AND (%s IS NULL OR d.symbol = %s)
+                       AND (%s IS NULL OR d.report_type = %s)
+                       AND (%s IS NULL OR d.fiscal_year = %s)
+                       AND (%s IS NULL OR d.quarter = %s)
+                     GROUP BY d.document_id, d.symbol
+                   ) t
+        """, (embedding_model, embedding_model,
+              sector_code, sector_code,
+              symbol, symbol,
+              report_type, report_type,
+              fiscal_year, fiscal_year,
+              quarter, quarter))
         return rows[0] if rows else {}
 
-    def get_sector_summary(self, embedding_model=None):
+    def get_coverage(self, sector_code=None, report_type=None, fiscal_year=None,
+                     quarter=None):
+        """
+        Registered vs vectorized vs pending. Abierto por tipo de archivo, anio
+        y quarter, que es lo que la solapa By Sector muestra en sus columnas.
+        """
         return self._query("""
-            SELECT * FROM v_vectorization_by_sector
+            SELECT * FROM v_vectorization_coverage_detail
+             WHERE (%s IS NULL OR sector_code = %s)
+               AND (%s IS NULL OR report_type = %s)
+               AND (%s IS NULL OR fiscal_year = %s)
+               AND (%s IS NULL OR quarter = %s)
+             ORDER BY documents_registered DESC
+        """, (sector_code, sector_code,
+              report_type, report_type,
+              fiscal_year, fiscal_year,
+              quarter, quarter))
+
+    def get_sector_summary(self, embedding_model=None, report_type=None,
+                           fiscal_year=None, quarter=None):
+        """Una fila por sector, tipo de archivo, anio, quarter y modelo."""
+        return self._query("""
+            SELECT * FROM v_vectorization_by_sector_detail
              WHERE (%s IS NULL OR embedding_model = %s)
-             ORDER BY bytes DESC
-        """, (embedding_model, embedding_model))
+               AND (%s IS NULL OR report_type = %s)
+               AND (%s IS NULL OR fiscal_year = %s)
+               AND (%s IS NULL OR quarter = %s)
+             ORDER BY sector_code, fiscal_year DESC, report_type, quarter
+        """, (embedding_model, embedding_model,
+              report_type, report_type,
+              fiscal_year, fiscal_year,
+              quarter, quarter))
 
     # ── Per security / per sector detail ──────────────────────────────────────
 
@@ -159,27 +257,105 @@ class VectorizationHistoryManager:
              ORDER BY embedding_model
         """, (symbol, embedding_model, embedding_model))
 
-    def get_storage(self, symbol=None, sector_code=None, embedding_model=None,
-                    report_type=None, fiscal_year=None, top: int = 500):
-        """
-        The #1.b query, filterable. Ordered by weight, heaviest first, which is
-        the same order the original query used.
-        """
-        return self._query("""
-            SELECT * FROM v_vectorization_storage
+    # ── Filings listing ───────────────────────────────────────────────────────
+    #
+    # Two sources, one signature:
+    #   include_pending = False -> v_vectorization_storage,   one row per
+    #                              document AND model, only what has vectors.
+    #   include_pending = True  -> v_vectorization_documents, one row per
+    #                              document, vectorized or not. This is what
+    #                              makes the missing files visible (#1.b).
+
+    __STORAGE_FILTER__ = """
              WHERE (%s IS NULL OR symbol = %s)
                AND (%s IS NULL OR COALESCE(sector_code, 'UNCLASSIFIED') = %s)
                AND (%s IS NULL OR embedding_model = %s)
                AND (%s IS NULL OR report_type = %s)
                AND (%s IS NULL OR fiscal_year = %s)
+               AND (%s IS NULL OR quarter = %s)
+    """
+
+    __DOCUMENTS_FILTER__ = """
+             WHERE (%s IS NULL OR symbol = %s)
+               AND (%s IS NULL OR sector_code = %s)
+               AND (%s IS NULL OR report_type = %s)
+               AND (%s IS NULL OR fiscal_year = %s)
+               AND (%s IS NULL OR quarter = %s)
+    """
+
+    @staticmethod
+    def __storage_params__(symbol, sector_code, embedding_model, report_type,
+                           fiscal_year, quarter):
+        return (symbol, symbol,
+                sector_code, sector_code,
+                embedding_model, embedding_model,
+                report_type, report_type,
+                fiscal_year, fiscal_year,
+                quarter, quarter)
+
+    @staticmethod
+    def __documents_params__(symbol, sector_code, report_type, fiscal_year, quarter):
+        return (symbol, symbol,
+                sector_code, sector_code,
+                report_type, report_type,
+                fiscal_year, fiscal_year,
+                quarter, quarter)
+
+    def get_storage(self, symbol=None, sector_code=None, embedding_model=None,
+                    report_type=None, fiscal_year=None, quarter=None,
+                    include_pending=False, top: int = 500):
+        """
+        The #1.b query, filterable by symbol, sector, model, type and year.
+        Ordered by weight, heaviest first, which is the order the original
+        query used.
+        """
+        if include_pending:
+            return self._query(f"""
+                SELECT document_id, symbol, file_name, report_type, fiscal_year,
+                       quarter, sector_code, portfolio,
+                       NULL::text AS embedding_model,
+                       models, chunks, bytes, pretty_size,
+                       first_chunk_at, last_chunk_at, vector_status
+                  FROM v_vectorization_documents
+                  {self.__DOCUMENTS_FILTER__}
+                 ORDER BY bytes DESC, symbol, fiscal_year DESC
+                 LIMIT %s
+            """, self.__documents_params__(symbol, sector_code, report_type,
+                                          fiscal_year, quarter) + (top,))
+
+        return self._query(f"""
+            SELECT *, 1 AS models, 'VECTORIZED' AS vector_status
+              FROM v_vectorization_storage
+              {self.__STORAGE_FILTER__}
              ORDER BY bytes DESC
              LIMIT %s
-        """, (symbol, symbol,
-              sector_code, sector_code,
-              embedding_model, embedding_model,
-              report_type, report_type,
-              fiscal_year, fiscal_year,
-              top))
+        """, self.__storage_params__(symbol, sector_code, embedding_model,
+                                     report_type, fiscal_year, quarter) + (top,))
+
+    def count_storage(self, symbol=None, sector_code=None, embedding_model=None,
+                      report_type=None, fiscal_year=None, quarter=None,
+                      include_pending=False) -> int:
+        """
+        How many rows the same filters really match, ignoring the LIMIT. The
+        screen needs it to say "showing 1000 of 3.641" instead of quietly
+        cutting the list, which is half of what #1.b is about.
+        """
+        if include_pending:
+            rows = self._query(f"""
+                SELECT COUNT(*) AS total
+                  FROM v_vectorization_documents
+                  {self.__DOCUMENTS_FILTER__}
+            """, self.__documents_params__(symbol, sector_code, report_type,
+                                          fiscal_year, quarter))
+        else:
+            rows = self._query(f"""
+                SELECT COUNT(*) AS total
+                  FROM v_vectorization_storage
+                  {self.__STORAGE_FILTER__}
+            """, self.__storage_params__(symbol, sector_code, embedding_model,
+                                         report_type, fiscal_year, quarter))
+
+        return int(rows[0]["total"]) if rows else 0
 
     # ── Runs ──────────────────────────────────────────────────────────────────
 
@@ -265,13 +441,29 @@ class VectorizationHistoryManager:
                   f"sector={sector_code} | year={fiscal_year}")
         return new_id
 
-    def delete_manual_run(self, run_id: int) -> int:
-        """Only manual rows can be deleted: the job's own history is not editable."""
+    def delete_runs(self, run_ids) -> int:
+        """
+        Removes runs, whatever their source (#1.a). The old rule of only
+        deleting MANUAL rows left every test run of the job stuck on the
+        screen forever, which is exactly what has to go.
+
+        Deleting a run never touches filing_documents or filing_chunks: the
+        vectors stay where they are, only the log entry disappears.
+        """
+        ids = [int(run_id) for run_id in (run_ids or []) if str(run_id).strip()]
+        if not ids:
+            return 0
+
         with self.connection.cursor() as cursor:
             cursor.execute("""
                 DELETE FROM vectorization_runs
-                 WHERE run_id = %s AND run_source = 'MANUAL'
-            """, (int(run_id),))
+                 WHERE run_id = ANY(%s)
+            """, (ids,))
             deleted = cursor.rowcount
         self.connection.commit()
+        self._log(f"[VECTORIZE][HISTORY] Runs DELETED | ids={ids} | deleted={deleted}")
         return deleted
+
+    def delete_manual_run(self, run_id: int) -> int:
+        """Kept so nothing that already called it breaks."""
+        return self.delete_runs([run_id])

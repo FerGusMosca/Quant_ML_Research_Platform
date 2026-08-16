@@ -33,6 +33,10 @@ class VectorizationHistoryLogic:
         "distilbert-base-uncased",
     ]
 
+    # Hard ceiling for a listing. The screen used to cut at its own limit and
+    # say nothing, which is how "the file count looks wrong" starts.
+    MAX_TOP = 5000
+
     def __init__(self, config_settings: dict, logger):
         self.config = config_settings
         self.logger = logger
@@ -53,6 +57,30 @@ class VectorizationHistoryLogic:
             self.logger.do_log(f"[VECTORIZE][HISTORY] SEC sector catalogue unavailable: {e}",
                                MessageType.WARNING)
             return []
+
+    def __clamp_top__(self, top):
+        try:
+            top = int(top)
+        except Exception:
+            top = 500
+        return max(1, min(top, self.MAX_TOP))
+
+    @staticmethod
+    def __clean_year__(value):
+        if value is None or str(value).strip() == "":
+            return None
+        return int(value)
+
+    @staticmethod
+    def __clean_quarter__(value):
+        """
+        Vacio = sin filtro. NONE = los archivos anuales, que en la base tienen
+        el quarter en blanco. Sin esto no habria forma de pedir solo los K10.
+        """
+        value = (value or "").strip().upper()
+        if not value:
+            return None
+        return "" if value == "NONE" else value
 
     # ── Screen bootstrap ──────────────────────────────────────────────────────
 
@@ -89,6 +117,9 @@ class VectorizationHistoryLogic:
             "portfolios": self.get_portfolio_options(),
             "embedding_models": self.history_mgr.get_embedding_models(),
             "model_options": self.get_model_options(),
+            "report_types": self.history_mgr.get_report_types(),
+            "years": self.history_mgr.get_years(),
+            "quarters": self.history_mgr.get_quarters(),
         }
 
     def get_portfolio_options(self):
@@ -142,50 +173,115 @@ class VectorizationHistoryLogic:
 
     # ── Queries ───────────────────────────────────────────────────────────────
 
-    def get_overview(self, embedding_model=None) -> dict:
+    def get_overview(self, embedding_model=None, sector_code=None, symbol=None,
+                     report_type=None, fiscal_year=None, quarter=None) -> dict:
+        """
+        The header of the screen. Totals honour the same filters as the listing,
+        so the number on top and the rows below always tell the same story.
+        """
         return {
-            "totals": self.history_mgr.get_totals(),
-            "by_sector": self.history_mgr.get_sector_summary(embedding_model),
+            "totals": self.history_mgr.get_totals(
+                embedding_model=(embedding_model or None),
+                sector_code=(sector_code or None),
+                symbol=(symbol or None),
+                report_type=(report_type or None),
+                fiscal_year=self.__clean_year__(fiscal_year),
+                quarter=self.__clean_quarter__(quarter)),
+            "by_sector": self.history_mgr.get_sector_summary(
+                embedding_model=(embedding_model or None),
+                report_type=(report_type or None),
+                fiscal_year=self.__clean_year__(fiscal_year),
+                quarter=self.__clean_quarter__(quarter)),
+            "coverage": self.history_mgr.get_coverage(
+                sector_code=(sector_code or None),
+                report_type=(report_type or None),
+                fiscal_year=self.__clean_year__(fiscal_year),
+                quarter=self.__clean_quarter__(quarter)),
         }
 
     def search_symbols(self, text=None, top: int = 500):
-        return self.history_mgr.get_symbols(text=text, top=top)
+        return self.history_mgr.get_symbols(text=text, top=self.__clamp_top__(top))
 
-    def get_symbol_detail(self, symbol: str, embedding_model=None) -> dict:
+    def get_symbol_detail(self, symbol: str, embedding_model=None, report_type=None,
+                          fiscal_year=None, quarter=None, include_pending=False,
+                          top: int = 1000) -> dict:
         symbol = (symbol or "").strip().upper()
         if not symbol:
             raise Exception("symbol is empty")
 
         return {
             "symbol": symbol,
-            "summary": self.history_mgr.get_symbol_summary(symbol, embedding_model),
-            "documents": self.history_mgr.get_storage(symbol=symbol,
-                                                      embedding_model=embedding_model),
+            "summary": self.history_mgr.get_symbol_summary(symbol, embedding_model or None),
+            "documents": self.get_storage(symbol=symbol,
+                                          embedding_model=embedding_model,
+                                          report_type=report_type,
+                                          fiscal_year=fiscal_year,
+                                          quarter=quarter,
+                                          include_pending=include_pending,
+                                          top=top),
+            "total": self.count_storage(symbol=symbol,
+                                        embedding_model=embedding_model,
+                                        report_type=report_type,
+                                        fiscal_year=fiscal_year,
+                                        quarter=quarter,
+                                        include_pending=include_pending),
             "runs": self.history_mgr.get_runs(symbol=symbol),
         }
 
-    def get_sector_detail(self, sector_code: str, embedding_model=None) -> dict:
+    def get_sector_detail(self, sector_code: str, embedding_model=None, report_type=None,
+                          fiscal_year=None, quarter=None, include_pending=False,
+                          top: int = 1000) -> dict:
         sector_code = (sector_code or "").strip().upper()
         if not sector_code:
             raise Exception("sector_code is empty")
 
         return {
             "sector_code": sector_code,
-            "documents": self.history_mgr.get_storage(sector_code=sector_code,
-                                                      embedding_model=embedding_model,
-                                                      top=1000),
+            "documents": self.get_storage(sector_code=sector_code,
+                                          embedding_model=embedding_model,
+                                          report_type=report_type,
+                                          fiscal_year=fiscal_year,
+                                          quarter=quarter,
+                                          include_pending=include_pending,
+                                          top=top),
+            "total": self.count_storage(sector_code=sector_code,
+                                        embedding_model=embedding_model,
+                                        report_type=report_type,
+                                        fiscal_year=fiscal_year,
+                                        quarter=quarter,
+                                        include_pending=include_pending),
+            "coverage": self.history_mgr.get_coverage(
+                sector_code=sector_code,
+                report_type=(report_type or None),
+                fiscal_year=self.__clean_year__(fiscal_year),
+                quarter=self.__clean_quarter__(quarter)),
             "runs": self.history_mgr.get_runs(sector_code=sector_code),
         }
 
     def get_storage(self, symbol=None, sector_code=None, embedding_model=None,
-                    report_type=None, fiscal_year=None, top: int = 500):
+                    report_type=None, fiscal_year=None, quarter=None,
+                    include_pending=False, top: int = 500):
         return self.history_mgr.get_storage(
             symbol=(symbol or None),
             sector_code=(sector_code or None),
             embedding_model=(embedding_model or None),
             report_type=(report_type or None),
-            fiscal_year=(int(fiscal_year) if fiscal_year else None),
-            top=top)
+            fiscal_year=self.__clean_year__(fiscal_year),
+            quarter=self.__clean_quarter__(quarter),
+            include_pending=bool(include_pending),
+            top=self.__clamp_top__(top))
+
+    def count_storage(self, symbol=None, sector_code=None, embedding_model=None,
+                      report_type=None, fiscal_year=None, quarter=None,
+                      include_pending=False) -> int:
+        return self.history_mgr.count_storage(
+            symbol=(symbol or None),
+            sector_code=(sector_code or None),
+            embedding_model=(embedding_model or None),
+            report_type=(report_type or None),
+            fiscal_year=self.__clean_year__(fiscal_year),
+            quarter=self.__clean_quarter__(quarter),
+            include_pending=bool(include_pending))
 
     def get_runs(self, symbol=None, sector_code=None, portfolio=None,
                  run_source=None, top: int = 300):
@@ -193,7 +289,7 @@ class VectorizationHistoryLogic:
                                          sector_code=(sector_code or None),
                                          portfolio=(portfolio or None),
                                          run_source=(run_source or None),
-                                         top=top)
+                                         top=self.__clamp_top__(top))
 
     # ── Manual register ───────────────────────────────────────────────────────
 
@@ -239,5 +335,30 @@ class VectorizationHistoryLogic:
             notes=(payload.get("notes") or "").strip() or None,
             run_id=payload.get("run_id") or None)
 
+    def delete_runs(self, run_ids) -> int:
+        """
+        Point #1.a: any run can be removed, manual or written by the job. Test
+        runs and half finished executions are noise on the screen and there is
+        no reason to keep them.
+        """
+        if run_ids is None:
+            raise Exception("run_ids is required")
+
+        if not isinstance(run_ids, (list, tuple, set)):
+            run_ids = [run_ids]
+
+        cleaned = []
+        for run_id in run_ids:
+            try:
+                cleaned.append(int(run_id))
+            except Exception:
+                raise Exception(f"'{run_id}' is not a valid run_id")
+
+        if not cleaned:
+            raise Exception("No run_id was received")
+
+        return self.history_mgr.delete_runs(cleaned)
+
     def delete_manual_run(self, run_id: int) -> int:
-        return self.history_mgr.delete_manual_run(run_id)
+        """Kept so nothing that already called it breaks."""
+        return self.delete_runs([run_id])
