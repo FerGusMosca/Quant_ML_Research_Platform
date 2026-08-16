@@ -40,6 +40,9 @@ class MLSettingsLoader():
             config_settings["TRADING_VIEW_PWD"] = config['SETTINGS']['TRADING_VIEW_PWD']
             config_settings["BCRA_API_KEY"] = config['SETTINGS']['BCRA_API_KEY']
             config_settings["SEC_USER_AGENT"] = config['SETTINGS']['SEC_USER_AGENT']
+            # Websocket of run_report_mcp_server. Optional so an older ini still boots;
+            # the Reports Runner screen says so on screen when it is missing.
+            config_settings["MCP_REPORTS_URI"] = config['SETTINGS'].get('MCP_REPORTS_URI', '')
             config_settings["OUTPUT_RF_FOLDER"] = config['FOLDERS']['OUTPUT_RF_FOLDER']
             config_settings["OUTPUT_SECURITIES_REPORTS_FOLDER"] = config['FOLDERS']['OUTPUT_SECURITIES_REPORTS_FOLDER']
             config_settings["UI_PORT"] = config['UI']['UI_PORT']
@@ -48,6 +51,9 @@ class MLSettingsLoader():
             config_settings["GRAFANA_ON"] = config['GRAFANA']['GRAFANA_ON']=="True"
 
             config_settings["RAG_OUTPUT_FOLDER"] = config['EMBEDDINGS']['RAG_OUTPUT_FOLDER']
+            # Catalogo de modelos de embedding para los combos de la UI.
+            # Vive en el ini para no quedar hardcodeado en la pantalla.
+            config_settings["EMBEDDING_MODELS"] = config['EMBEDDINGS'].get('EMBEDDING_MODELS', '')
 
             config_settings["VECTORS_PG_HOST"] = config['VECTOR_DB']['VECTORS_PG_HOST']
             config_settings["VECTORS_PG_PORT"] = config['VECTOR_DB']['VECTORS_PG_PORT']

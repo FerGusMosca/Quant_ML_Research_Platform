@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% set active_page = 'reports_runner' %}
+
+{% block page_title %}Reports Runner{% endblock %}
+{% block nav_subtitle %}Reports Runner{% endblock %}
+{% block css_file %}reports_runner.css{% endblock %}
+{% block js_file %}reports_runner.js{% endblock %}
+
+{% block main %}
+<div>
+  <div class="page-eyebrow">Data · MCP reports</div>
+  <div class="page-title">Reports Runner</div>
+  <div class="page-sub">Launch the download reports without leaving the dashboard</div>
+</div>
+
+{% if not mcp_configured %}
+<div class="rr-warning">
+  <code>MCP_REPORTS_URI</code> is missing from the <code>[SETTINGS]</code> section of
+  <code>configs/commands_mgr.ini</code>. Add it and restart the dashboard — without it
+  there is no server to call.
+</div>
+{% endif %}
+
+<!-- ══════════════════════════════════════════ TABS -->
+<div class="rr-tabs">
+  <button class="rr-tab active" data-tab="run"      onclick="showTab('run')">Run a report</button>
+  <button class="rr-tab"        data-tab="calendar" onclick="showTab('calendar')">Securities calendar</button>
+</div>
+
+<!-- ══════════════════════════════════════════ RUN -->
+<section class="rr-pane" id="paneRun">
+
+  <div class="rr-cards" id="reportCards"></div>
+
+  <div class="rr-form">
+    <label class="rr-field">
+      <span>Portfolio</span>
+      <select class="inp" id="fPortfolio"><option value="">Pick a portfolio</option></select>
+    </label>
+
+    <label class="rr-field narrow">
+      <span>From year</span>
+      <input class="inp" id="fYearFrom" type="number" value="2026">
+    </label>
+
+    <label class="rr-field narrow">
+      <span>To year</span>
+      <input class="inp" id="fYearTo" type="number" value="2026">
+    </label>
+
+    <button class="btn primary" id="btnRun" onclick="runReport()">
+      <span class="btn-ico">▶</span> Run
+    </button>
+    <button class="btn danger" id="btnStop" onclick="stopReport()" hidden>■ Stop listening</button>
+  </div>
+
+  <div class="rr-console-head">
+    <span class="rr-console-title">Output</span>
+    <span class="rr-status" id="runStatus">idle</span>
+    <span class="spacer"></span>
+    <button class="btn ghost" onclick="clearConsole()">Clear</button>
+  </div>
+
+  <pre class="rr-console" id="console">Pick a report, set the portfolio and the year range, then press Run.</pre>
+</section>
+
+<!-- ══════════════════════════════════════════ CALENDAR -->
+<section class="rr-pane" id="paneCalendar" hidden>
+
+  <div class="rr-form">
+    <label class="rr-field narrow">
+      <span>From year</span>
+      <input class="inp" id="cYearFrom" type="number" value="2025">
+    </label>
+
+    <label class="rr-field narrow">
+      <span>To year</span>
+      <input class="inp" id="cYearTo" type="number" value="2026">
+    </label>
+
+    <label class="rr-field narrow">
+      <span>Symbol</span>
+      <input class="inp" id="cSymbol" placeholder="all" autocomplete="off">
+    </label>
+
+    <button class="btn primary" onclick="loadCalendar()">Load calendar</button>
+    <button class="btn ghost" id="btnCalCsv" onclick="exportCalendar()" disabled>⤓ CSV</button>
+  </div>
+
+  <div class="rr-note">
+    Dates are the day the filing actually landed. A quarter here is a calendar window,
+    not each company's fiscal quarter — that is why the same Q1 can arrive in October
+    for one security and in July for another.
+  </div>
+
+  <div class="table-wrap">
+    <table class="tbl">
+      <thead><tr id="calHead"></tr></thead>
+      <tbody id="calBody"></tbody>
+    </table>
+  </div>
+
+  <div class="rr-empty" id="calEmpty" hidden>No calendar rows for that range.</div>
+</section>
+{% endblock %}

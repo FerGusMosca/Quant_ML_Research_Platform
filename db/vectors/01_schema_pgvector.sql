@@ -39,7 +39,7 @@ CREATE TABLE filing_documents (
     content_hash     VARCHAR(64)   NULL,              -- sha256 of the raw file (CHAR would space-pad and break equality)
     section_count    INT           NOT NULL DEFAULT 0,
     created_at       TIMESTAMPTZ   NOT NULL DEFAULT now(),
-    updated_at       TIMESTAMPTZ   NOT NULL DEFAULT now(),e
+    updated_at       TIMESTAMPTZ   NOT NULL DEFAULT now(),
     CONSTRAINT uq_filing_document UNIQUE (symbol, report_type, fiscal_year, quarter, file_name)
 );
 

@@ -1,0 +1,235 @@
+{% extends "base.html" %}
+{% set active_page = 'vectorizations' %}
+
+{% block page_title %}Vectorizations{% endblock %}
+{% block nav_subtitle %}Vectorizations{% endblock %}
+{% block css_file %}vectorizations.css{% endblock %}
+{% block js_file %}vectorizations.js{% endblock %}
+
+{% block main %}
+<div>
+  <div class="page-eyebrow">Data · Vector store</div>
+  <div class="page-title">Vectorizations</div>
+  <div class="page-sub">What is vectorized, per security and per sector — and what it weighs</div>
+</div>
+
+<!-- ══════════════════════════════════════════ TOTALS -->
+<section class="vz-totals">
+  <div class="vz-metric">
+    <div class="vz-metric-val" id="mtSecurities">—</div>
+    <div class="vz-metric-lbl">securities</div>
+  </div>
+  <div class="vz-metric">
+    <div class="vz-metric-val" id="mtDocuments">—</div>
+    <div class="vz-metric-lbl">filings</div>
+  </div>
+  <div class="vz-metric">
+    <div class="vz-metric-val" id="mtChunks">—</div>
+    <div class="vz-metric-lbl">chunks</div>
+  </div>
+  <div class="vz-metric">
+    <div class="vz-metric-val" id="mtSize">—</div>
+    <div class="vz-metric-lbl">on disk</div>
+  </div>
+
+  <div class="vz-totals-right">
+    <label class="vz-inline-lbl" for="modelFilter">Model</label>
+    <select class="inp" id="modelFilter" onchange="onModelChange()">
+      <option value="">All models</option>
+    </select>
+    <button class="btn ghost" onclick="reloadAll()" title="Reload">⟳</button>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════ EXPLORER -->
+<section class="vz-explorer">
+
+  <aside class="rail">
+    <div class="rail-block">
+      <div class="rail-label">Sector</div>
+      <div class="rail-list" id="railSectors"></div>
+    </div>
+
+    <div class="rail-block">
+      <div class="rail-label">Security</div>
+      <input class="inp" id="symbolInput" list="symbolList" placeholder="AAPL"
+             autocomplete="off" onkeydown="if(event.key==='Enter') selectSymbol()">
+      <datalist id="symbolList"></datalist>
+      <button class="rail-add" onclick="selectSymbol()">Open history</button>
+    </div>
+
+    <div class="rail-block">
+      <div class="rail-label">Register</div>
+      <button class="rail-add" onclick="openRunModal()">＋ Log a past run</button>
+      <div class="rail-hint">For the corridas that ran before anything was logged.</div>
+    </div>
+  </aside>
+
+  <div class="vz-main">
+
+    <div class="vz-scope" id="scopeBar">
+      <span class="vz-scope-kind" id="scopeKind">Everything</span>
+      <span class="vz-scope-val" id="scopeVal">all sectors, all securities</span>
+      <button class="btn ghost" id="btnClearScope" onclick="clearScope()" hidden>✕ Clear</button>
+      <span class="spacer"></span>
+      <button class="btn ghost" id="btnExport" onclick="exportCsv()" disabled>⤓ CSV</button>
+    </div>
+
+    <div class="vz-tabs">
+      <button class="vz-tab active" data-tab="filings" onclick="showTab('filings')">Filings &amp; weight</button>
+      <button class="vz-tab"        data-tab="sectors" onclick="showTab('sectors')">By sector</button>
+      <button class="vz-tab"        data-tab="runs"    onclick="showTab('runs')">Run history</button>
+    </div>
+
+    <!-- ── FILINGS ── -->
+    <div class="vz-pane" id="paneFilings">
+      <div class="table-wrap">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>Symbol</th>
+              <th>File</th>
+              <th>Type</th>
+              <th>Year</th>
+              <th>Q</th>
+              <th>Sector</th>
+              <th>Model</th>
+              <th class="num">Chunks</th>
+              <th class="num">Weight</th>
+              <th>Last chunk</th>
+            </tr>
+          </thead>
+          <tbody id="tblFilings"></tbody>
+        </table>
+      </div>
+      <div class="vz-empty" id="emptyFilings" hidden>Nothing vectorized for this scope yet.</div>
+    </div>
+
+    <!-- ── SECTORS ── -->
+    <div class="vz-pane" id="paneSectors" hidden>
+      <div class="table-wrap">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>Sector</th>
+              <th>Model</th>
+              <th class="num">Securities</th>
+              <th class="num">Filings</th>
+              <th class="num">Chunks</th>
+              <th class="num">Weight</th>
+              <th>Last vectorized</th>
+            </tr>
+          </thead>
+          <tbody id="tblSectors"></tbody>
+        </table>
+      </div>
+      <div class="vz-empty" id="emptySectors" hidden>No sector has been vectorized yet.</div>
+    </div>
+
+    <!-- ── RUNS ── -->
+    <div class="vz-pane" id="paneRuns" hidden>
+      <div class="table-wrap">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>Run</th>
+              <th>Source</th>
+              <th>Sector</th>
+              <th>Portfolio</th>
+              <th>Type</th>
+              <th>Year</th>
+              <th>Model</th>
+              <th>Status</th>
+              <th class="num">Files</th>
+              <th class="num">Chunks</th>
+              <th>Started</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="tblRuns"></tbody>
+        </table>
+      </div>
+      <div class="vz-empty" id="emptyRuns" hidden>No runs recorded for this scope.</div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
+
+{% block modals %}
+<div class="modal-backdrop" id="runModal" hidden>
+  <div class="modal">
+    <div class="modal-head">
+      <div>
+        <div class="modal-eyebrow">Vector store</div>
+        <div class="modal-title" id="runModalTitle">Log a past run</div>
+      </div>
+      <button class="ghost-btn" onclick="closeRunModal()">✕</button>
+    </div>
+
+    <div class="modal-body">
+      <div class="form-grid">
+        <label>Sector
+          <select class="inp" id="fSector"><option value="">—</option></select>
+        </label>
+        <label>Portfolio
+          <select class="inp" id="fPortfolio"><option value="">—</option></select>
+        </label>
+        <label>Report type
+          <select class="inp" id="fReportType" onchange="syncQuarter()">
+            <option value="K10">K10</option>
+            <option value="Q10">Q10</option>
+          </select>
+        </label>
+        <label>Fiscal year
+          <input class="inp" id="fYear" type="number" placeholder="2026">
+        </label>
+        <label>Quarter
+          <select class="inp" id="fQuarter">
+            <option value="">— (K10)</option>
+            <option value="Q1">Q1</option>
+            <option value="Q2">Q2</option>
+            <option value="Q3">Q3</option>
+            <option value="Q4">Q4</option>
+          </select>
+        </label>
+        <label>Embedding model
+          <select class="inp" id="fModel"><option value="">—</option></select>
+        </label>
+        <label>Status
+          <select class="inp" id="fStatus">
+            <option value="FINISHED">FINISHED</option>
+            <option value="STARTED">STARTED</option>
+            <option value="ERROR">ERROR</option>
+          </select>
+        </label>
+        <label>Files processed
+          <input class="inp" id="fProcessed" type="number" placeholder="0">
+        </label>
+        <label>Started
+          <input class="inp" id="fStarted" type="datetime-local">
+        </label>
+        <label>Finished
+          <input class="inp" id="fFinished" type="datetime-local">
+        </label>
+      </div>
+
+      <label class="full">Symbols (comma separated, optional)
+        <input class="inp" id="fSymbols" placeholder="AAPL, MSFT, NVDA">
+      </label>
+
+      <label class="full">Notes
+        <textarea class="inp" id="fNotes" rows="2"
+                  placeholder="What this run covered and anything worth remembering"></textarea>
+      </label>
+
+      <div class="modal-error" id="runModalError" hidden></div>
+    </div>
+
+    <div class="modal-foot">
+      <button class="btn ghost" onclick="closeRunModal()">Cancel</button>
+      <button class="btn primary" id="btnSaveRun" onclick="saveRun()">Save run</button>
+    </div>
+  </div>
+</div>
+{% endblock %}

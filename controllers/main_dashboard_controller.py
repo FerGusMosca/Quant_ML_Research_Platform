@@ -13,6 +13,8 @@ from controllers.argy_bonds_controller import ArgyBondsController
 from controllers.auth_middleware import AuthMiddleware
 from controllers.chunk_management_controller import ChunkManagementController
 from controllers.sec_securities_controller import SECSecuritiesController
+from controllers.vectorizations_controller import VectorizationsController
+from controllers.reports_runner_controller import ReportsRunnerController
 from controllers.display_custom_etf_controller import DisplayCustomETFController
 from controllers.display_series_controller import DisplaySeriesController
 from controllers.download_jobs_controller import DataDownloaderController
@@ -101,6 +103,12 @@ class MainDashboardController:
 
         self.sec_securities_ctrl = SECSecuritiesController(config_settings, logger)
         self.app.include_router(self.sec_securities_ctrl.router, prefix="/sec_securities")
+
+        self.vectorizations_ctrl = VectorizationsController(config_settings, logger)
+        self.app.include_router(self.vectorizations_ctrl.router, prefix="/vectorizations")
+
+        self.reports_runner_ctrl = ReportsRunnerController(config_settings, logger)
+        self.app.include_router(self.reports_runner_ctrl.router, prefix="/reports_runner")
 
         portfolio_view_controller = PortfolioViewController(account_manager=account_mgr,  account_data_manager=account_data_mgr,
                                                             ib_portfolio_manager=ib_portfolio_manager,instruction_manager=instr_mgr)
