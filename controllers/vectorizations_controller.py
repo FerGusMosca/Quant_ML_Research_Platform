@@ -26,6 +26,7 @@ class VectorizationsController(BaseController):
         GET    /sector               detail of one sector
         GET    /storage              the weight query, filterable
         GET    /runs                 run history
+        GET    /events                round robin log of a run (#II.1)
         POST   /runs                 registers or updates a manual run
         POST   /runs/delete          removes runs (any source, one or many)
     """
@@ -52,6 +53,7 @@ class VectorizationsController(BaseController):
         self.router.get("/sector",    response_class=JSONResponse)(self.api_sector_detail)
         self.router.get("/storage",   response_class=JSONResponse)(self.api_storage)
         self.router.get("/runs",      response_class=JSONResponse)(self.api_runs)
+        self.router.get("/events",    response_class=JSONResponse)(self.api_events)
 
         # ── Manual register ───────────────────────────────────────────────────
         self.router.post("/runs",        response_class=JSONResponse)(self.api_persist_run)
@@ -211,6 +213,23 @@ class VectorizationsController(BaseController):
                                  "items": self.__serialize__(rows)})
         except Exception as e:
             return self.__fail__("api_runs", e)
+
+    async def api_events(self, run_id: int = None, sector_code: str = None,
+                         symbol: str = None, event_type: str = None, top: int = 200):
+        """
+        The round robin log (#II.1): which file the vectorization is on and how
+        many are left. Answers with available=False instead of an error when the
+        events table is not there yet.
+        """
+        try:
+            data = self.logic.get_run_events(run_id=run_id, sector_code=sector_code,
+                                             symbol=symbol, event_type=event_type,
+                                             top=top)
+            items = self.__serialize__(data.get("items") or [])
+            return JSONResponse({"ok": True, "available": data.get("available", False),
+                                 "count": len(items), "items": items})
+        except Exception as e:
+            return self.__fail__("api_events", e)
 
     # ── Manual register ───────────────────────────────────────────────────────
 

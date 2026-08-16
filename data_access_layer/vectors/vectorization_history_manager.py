@@ -365,6 +365,45 @@ class VectorizationHistoryManager:
         Run history. When a symbol is given, a run counts as related to it if
         the run declares it in symbols_csv or if it shares the sector.
         """
+        # The progress columns come from the round robin log. LEFT JOIN on
+        # purpose: a run older than the log window keeps every column it always
+        # had and simply shows no progress.
+        return self._query("""
+            SELECT r.*,
+                   p.files_done      AS live_files_done,
+                   p.files_skipped   AS live_files_skipped,
+                   p.files_failed    AS live_files_failed,
+                   p.last_position   AS live_position,
+                   p.total_files     AS live_total,
+                   p.last_symbol     AS live_symbol,
+                   p.last_file_name  AS live_file_name,
+                   p.last_event_type AS live_event_type,
+                   p.last_event_at   AS live_event_at
+              FROM vectorization_runs r
+              LEFT JOIN v_vectorization_run_progress p ON p.run_id = r.run_id
+             WHERE (%s IS NULL OR COALESCE(r.sector_code, 'UNCLASSIFIED') = %s)
+               AND (%s IS NULL OR r.portfolio = %s)
+               AND (%s IS NULL OR r.run_source = %s)
+               AND (%s IS NULL
+                    OR r.symbols_csv ILIKE '%%' || %s || '%%'
+                    OR r.sector_code IN (SELECT DISTINCT sector_code
+                                           FROM filing_documents
+                                          WHERE symbol = %s))
+             ORDER BY r.started_at DESC
+             LIMIT %s
+        """, (sector_code, sector_code,
+              portfolio, portfolio,
+              run_source, run_source,
+              symbol, symbol, symbol,
+              top))
+
+    def get_runs_basic(self, symbol=None, sector_code=None, portfolio=None,
+                       run_source=None, top: int = 300):
+        """
+        Same history without the progress columns. This is the fallback for a
+        database where db/vectors/04_vectorization_events.sql was not applied
+        yet: the run history is useful on its own.
+        """
         return self._query("""
             SELECT r.*
               FROM vectorization_runs r
@@ -383,6 +422,44 @@ class VectorizationHistoryManager:
               run_source, run_source,
               symbol, symbol, symbol,
               top))
+
+    # ── Round robin log of the runs (#II.1) ──────────────────────────────────
+
+    def get_run_events(self, run_id=None, sector_code=None, symbol=None,
+                       event_type=None, top: int = 200):
+        """
+        The window of what the vectorization is doing: which file it is on and
+        how many are left. Newest first, which is how the screen reads it.
+
+        Empty when db/vectors/04_vectorization_events.sql was never applied —
+        the screen says so instead of failing, because this is visibility, not
+        data anyone depends on.
+        """
+        return self._query("""
+            SELECT event_id, run_id, job_id, log_date, event_type, sector_code,
+                   portfolio, symbol, file_name, report_type, fiscal_year, quarter,
+                   position, total, chunks, elapsed_sec, message, created_at
+              FROM vectorization_run_events
+             WHERE (%s IS NULL OR run_id = %s)
+               AND (%s IS NULL OR sector_code = %s)
+               AND (%s IS NULL OR symbol = %s)
+               AND (%s IS NULL OR event_type = %s)
+             ORDER BY event_id DESC
+             LIMIT %s
+        """, (run_id, run_id,
+              sector_code, sector_code,
+              symbol, symbol,
+              event_type, event_type,
+              top))
+
+    def events_table_exists(self) -> bool:
+        rows = self._query("""
+            SELECT COUNT(*) AS total
+              FROM information_schema.tables
+             WHERE table_schema = %s
+               AND table_name = 'vectorization_run_events'
+        """, (self.schema,))
+        return bool(rows and rows[0]["total"])
 
     def persist_manual_run(self, portfolio, sector_code, report_type, fiscal_year,
                            quarter, embedding_model, status, files_found,

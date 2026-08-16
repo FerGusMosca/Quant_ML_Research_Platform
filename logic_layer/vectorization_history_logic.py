@@ -285,11 +285,52 @@ class VectorizationHistoryLogic:
 
     def get_runs(self, symbol=None, sector_code=None, portfolio=None,
                  run_source=None, top: int = 300):
-        return self.history_mgr.get_runs(symbol=(symbol or None),
-                                         sector_code=(sector_code or None),
-                                         portfolio=(portfolio or None),
-                                         run_source=(run_source or None),
-                                         top=self.__clamp_top__(top))
+        """
+        Run history. The progress columns need the events view; when that script
+        was not applied yet the join fails, and the history is still worth
+        showing without it.
+        """
+        try:
+            return self.history_mgr.get_runs(symbol=(symbol or None),
+                                             sector_code=(sector_code or None),
+                                             portfolio=(portfolio or None),
+                                             run_source=(run_source or None),
+                                             top=self.__clamp_top__(top))
+        except Exception as e:
+            self.logger.do_log(f"[VECTORIZE] historial sin progreso en vivo: {e}",
+                               MessageType.WARNING)
+            self.history_mgr.close()
+            return self.history_mgr.get_runs_basic(symbol=(symbol or None),
+                                                   sector_code=(sector_code or None),
+                                                   portfolio=(portfolio or None),
+                                                   run_source=(run_source or None),
+                                                   top=self.__clamp_top__(top))
+
+    # ── Round robin log (#II.1) ───────────────────────────────────────────────
+
+    def get_run_events(self, run_id=None, sector_code=None, symbol=None,
+                       event_type=None, top: int = 200) -> dict:
+        """
+        What the vectorization is doing right now. Returns available=False when
+        the events table was never created, so the screen can say "corré el
+        script 04" instead of showing an empty panel that looks like a bug.
+        """
+        try:
+            if not self.history_mgr.events_table_exists():
+                return {"available": False, "items": []}
+
+            return {"available": True,
+                    "items": self.history_mgr.get_run_events(
+                        run_id=(run_id or None),
+                        sector_code=(sector_code or None),
+                        symbol=(symbol or None),
+                        event_type=(event_type or None),
+                        top=self.__clamp_top__(top))}
+        except Exception as e:
+            print(traceback.format_exc())
+            self.logger.do_log(f"[VECTORIZE][EVENTS] no se pudo leer el log: {e}",
+                               MessageType.WARNING)
+            return {"available": False, "items": []}
 
     # ── Manual register ───────────────────────────────────────────────────────
 

@@ -16,6 +16,7 @@ from datetime import datetime
 from common.util.extractors.section_extractors.section_extractor_registry import SectionExtractorRegistry
 from common.util.std_in_out.raw_file_reader import RawFileReader
 from data_access_layer.vectors.filing_vectors_manager import FilingVectorsManager
+from data_access_layer.vectors.vectorization_events_manager import VectorizationEventsManager
 from framework.common.logger.message_type import MessageType
 from logic_layer.rag_corpus_metadata.tagger.transformers_topic_base import TransformersTopicBase
 
@@ -27,6 +28,11 @@ class DocumentVectorizationProcessor(TransformersTopicBase):
 
         self.section_extractor = SectionExtractorRegistry.get(tag_cfg.doc_type)
         self.vectors_mgr = FilingVectorsManager(vectors_db_config, logger)
+
+        # Round robin log of what the run is doing (#II.1). Best effort: the
+        # python log already says it, this only makes it visible on the screen.
+        self.events_mgr = VectorizationEventsManager(vectors_db_config, logger)
+
         self.embedding_model = tag_cfg.tag_model
 
     # ------------------------------------------------------
@@ -39,6 +45,7 @@ class DocumentVectorizationProcessor(TransformersTopicBase):
         return hashlib.sha256(raw_text.encode("utf-8", errors="ignore")).hexdigest()
 
     def close(self):
+        self.events_mgr.close()
         self.vectors_mgr.close()
 
     def ping(self) -> str:
@@ -162,16 +169,37 @@ class DocumentVectorizationProcessor(TransformersTopicBase):
             embedding_model=self.embedding_model, files_found=len(sec_w_files),
         )
 
+        # From here on every step also leaves a row in the round robin log, so
+        # the screen can answer "which file is it on and how many are left"
+        # without anyone reading the python log.
+        self.events_mgr.set_context(
+            run_id=run_id, job_id=job_id, sector_code=sector, portfolio=portfolio,
+            report_type=run_sub_type, fiscal_year=fiscal_year, quarter=quarter or "",
+            total=len(sec_w_files),
+        )
+        self.events_mgr.log_event(
+            "RUN_START",
+            message=f"portfolio={portfolio} | sector={sector or 'ALL'} | "
+                    f"year={fiscal_year} | model={self.embedding_model}",
+            flush=True,
+        )
+
         for idx, sec_w_file in enumerate(sec_w_files, start=1):
             file_path = sec_w_file.file
             file_name = os.path.basename(file_path)
             symbol = sec_w_file.security.symbol
+            file_started_at = datetime.now()
 
             if self.logger:
                 self.logger.do_log(
                     f"[VECTORIZE] ▶ ({idx}/{len(sec_w_files)}) {symbol} | file={file_name}",
                     MessageType.INFO, job_id
                 )
+
+            # Flushed on the spot: this is the event that says what is being
+            # worked on right now, and a document can take a while.
+            self.events_mgr.log_event("FILE_START", symbol=symbol, file_name=file_name,
+                                      position=idx, flush=True)
 
             try:
                 # 1) cheap pass: identify the file without loading the model.
@@ -185,6 +213,8 @@ class DocumentVectorizationProcessor(TransformersTopicBase):
                             f"[VECTORIZE] ❌ Empty or unreadable file | file={file_name}",
                             MessageType.WARNING, job_id
                         )
+                    self.events_mgr.log_event("FILE_FAIL", symbol=symbol, file_name=file_name,
+                                              position=idx, message="archivo vacio o ilegible")
                     continue
 
                 if not overwrite and self.vectors_mgr.is_already_vectorized(
@@ -197,6 +227,9 @@ class DocumentVectorizationProcessor(TransformersTopicBase):
                             f"{symbol} | file={file_name}",
                             MessageType.INFO, job_id
                         )
+                    self.events_mgr.log_event("FILE_SKIP", symbol=symbol, file_name=file_name,
+                                              position=idx, report_type=sub_type,
+                                              message="ya estaba vectorizado")
                     continue
 
                 # 2) expensive pass: only files that actually need it get encoded
@@ -212,6 +245,9 @@ class DocumentVectorizationProcessor(TransformersTopicBase):
                             f"[VECTORIZE] ❌ No chunks generated | file={file_name}",
                             MessageType.WARNING, job_id
                         )
+                    self.events_mgr.log_event("FILE_FAIL", symbol=symbol, file_name=file_name,
+                                              position=idx, report_type=sub_type,
+                                              message="no se genero ningun chunk")
                     continue
 
                 document_id = self.vectors_mgr.upsert_document(
@@ -242,6 +278,12 @@ class DocumentVectorizationProcessor(TransformersTopicBase):
                 stats["processed"] += 1
                 stats["chunks"] += persisted
 
+                self.events_mgr.log_event(
+                    "FILE_DONE", symbol=symbol, file_name=file_name, position=idx,
+                    chunks=persisted, report_type=sub_type,
+                    elapsed_sec=(datetime.now() - file_started_at).total_seconds(),
+                )
+
             except Exception as e:
                 stats["failed"] += 1
                 if self.logger:
@@ -250,6 +292,9 @@ class DocumentVectorizationProcessor(TransformersTopicBase):
                         f"{e.__class__.__name__}: {e}",
                         MessageType.ERROR, job_id
                     )
+                self.events_mgr.log_event("FILE_FAIL", symbol=symbol, file_name=file_name,
+                                          position=idx,
+                                          message=f"{e.__class__.__name__}: {e}")
 
         self.vectors_mgr.finish_run(
             run_id=run_id,
@@ -259,6 +304,15 @@ class DocumentVectorizationProcessor(TransformersTopicBase):
             chunks_persisted=stats["chunks"],
             status="FINISHED" if stats["failed"] == 0 else "FINISHED_WITH_ERRORS",
         )
+
+        self.events_mgr.log_event(
+            "RUN_END",
+            message=f"procesados={stats['processed']} | salteados={stats['skipped']} | "
+                    f"fallados={stats['failed']} | chunks={stats['chunks']}",
+            chunks=stats["chunks"],
+            flush=True,
+        )
+        self.events_mgr.prune()
 
         return stats
 

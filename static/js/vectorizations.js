@@ -26,6 +26,8 @@ let COVERAGE  = {};
 let SELECTED_RUNS = new Set();
 let EDITING_RUN_ID = null;
 let PENDING_DELETE = [];
+let LIVE_TIMER = null;
+let EVENTS_AVAILABLE = true;
 
 // ── Clock (same behaviour as the rest of the dashboard) ──
 (function tick() {
@@ -412,6 +414,7 @@ async function refreshScope() {
     const runs = await getJson(`${API}/runs${queryString({
       symbol: FILTERS.symbol, sector_code: FILTERS.sector, top: 300 })}`);
     paintRuns(runs.items);
+    await loadLive();
 
     const overview = await getJson(`${API}/overview${queryString({
       embedding_model: FILTERS.pending ? '' : MODEL,
@@ -692,7 +695,7 @@ function paintRuns(rows) {
   SELECTED_RUNS.clear();
   $('runsSelectAll').checked = false;
 
-  rows.forEach(row => {
+  rows.forEach((row, index) => {
     const tr = document.createElement('tr');
 
     const pick = document.createElement('td');
@@ -736,10 +739,34 @@ function paintRuns(rows) {
     if (Number(row.files_failed || 0) > 0) failed.classList.add('warn');
 
     appendCell(tr, num(row.chunks_persisted), 'num mono');
+
+    // #II.1 — por donde va, sacado del log round robin
+    const progress = document.createElement('td');
+    progress.className = 'mono dim';
+    if (row.live_total) {
+      const done = Number(row.live_position || 0);
+      const total = Number(row.live_total || 0);
+      progress.textContent = `${num(done)}/${num(total)}`
+        + (row.live_symbol ? ` · ${row.live_symbol}` : '');
+      progress.classList.add('clickable-cell');
+      progress.title = row.live_file_name || '';
+    } else {
+      progress.textContent = '—';
+    }
+    tr.appendChild(progress);
+
     appendCell(tr, shortDate(row.started_at), 'mono dim');
 
     const actions = document.createElement('td');
     actions.className = 'row-actions';
+
+    // Abre el detalle de esa corrida: los archivos que fue tocando.
+    const detailBtn = document.createElement('button');
+    detailBtn.className = 'icon-btn';
+    detailBtn.title = 'Ver el detalle de esta corrida';
+    detailBtn.textContent = '▤';
+    detailBtn.onclick = () => toggleRunEvents(index, row, detailBtn);
+    actions.appendChild(detailBtn);
 
     if (row.run_source === 'MANUAL') {
       const edit = document.createElement('button');
@@ -760,10 +787,100 @@ function paintRuns(rows) {
 
     tr.appendChild(actions);
     body.appendChild(tr);
+
+    const detail = document.createElement('tr');
+    detail.className = 'detail-row';
+    detail.id = `runDetail_${index}`;
+    detail.hidden = true;
+    const cell = document.createElement('td');
+    cell.colSpan = 17;
+    cell.className = 'detail-cell';
+    detail.appendChild(cell);
+    body.appendChild(detail);
   });
 
   $('emptyRuns').hidden = rows.length > 0;
   paintBulkBar();
+}
+
+// ── Log round robin de la corrida (#II.1) ──
+async function toggleRunEvents(index, row, button) {
+  const detail = $(`runDetail_${index}`);
+  const cell = detail.firstChild;
+
+  if (!detail.hidden) {
+    detail.hidden = true;
+    button.classList.remove('is-on');
+    return;
+  }
+
+  detail.hidden = false;
+  button.classList.add('is-on');
+  cell.textContent = 'Loading…';
+
+  try {
+    const data = await getJson(`${API}/events${queryString({ run_id: row.run_id, top: 200 })}`);
+
+    if (!data.available) {
+      cell.textContent = 'El registro de corridas todavia no existe: corré db/vectors/04_vectorization_events.sql';
+      return;
+    }
+
+    if (!data.items.length) {
+      cell.textContent = 'Esta corrida ya salio de la ventana del registro (se guardan los ultimos N del dia).';
+      return;
+    }
+
+    cell.innerHTML = '';
+    const head = document.createElement('div');
+    head.className = 'detail-head';
+    head.textContent = `${data.items.length} pasos — run #${row.run_id}`;
+    cell.appendChild(head);
+    cell.appendChild(buildEventsTable(data.items));
+  } catch (e) {
+    cell.textContent = e.message;
+  }
+}
+
+function buildEventsTable(items) {
+  const table = document.createElement('table');
+  table.className = 'tbl inner';
+  const tbody = document.createElement('tbody');
+
+  items.forEach(item => {
+    const tr = document.createElement('tr');
+
+    const kind = document.createElement('td');
+    const badge = document.createElement('span');
+    badge.className = 'badge ' + eventBadge(item.event_type);
+    badge.textContent = eventLabel(item.event_type);
+    kind.appendChild(badge);
+    tr.appendChild(kind);
+
+    appendCell(tr, item.total ? `${item.position || '—'}/${item.total}` : '—', 'mono dim');
+    appendCell(tr, item.symbol || '—', 'mono strong');
+    appendCell(tr, item.file_name || item.message || '—', 'file');
+    appendCell(tr, item.sector_code || '—', 'mono dim');
+    appendCell(tr, item.chunks !== null && item.chunks !== undefined ? num(item.chunks) : '—', 'num mono');
+    appendCell(tr, item.elapsed_sec ? `${item.elapsed_sec}s` : '—', 'num mono dim');
+    appendCell(tr, shortDate(item.created_at), 'mono dim');
+    tbody.appendChild(tr);
+  });
+
+  table.appendChild(tbody);
+  return table;
+}
+
+function eventLabel(type) {
+  return ({ RUN_START: 'INICIO', RUN_END: 'FIN', FILE_START: 'EMPEZO',
+            FILE_DONE: 'LISTO', FILE_SKIP: 'SALTEADO', FILE_FAIL: 'FALLO' })[type] || type;
+}
+
+function eventBadge(type) {
+  if (type === 'FILE_DONE' || type === 'RUN_END') return 'badge-ok';
+  if (type === 'FILE_FAIL') return 'badge-fail';
+  if (type === 'FILE_SKIP') return 'badge-pending';
+  return 'badge-auto';
 }
 
 function appendCell(tr, value, className) {
@@ -975,4 +1092,78 @@ function exportCsv() {
   link.download = `vectorizations_${FILTERS.symbol || FILTERS.sector || 'all'}.csv`;
   link.click();
   URL.revokeObjectURL(link.href);
+}
+
+
+// ── Panel live del log round robin (#II.1) ──
+//
+// Muestra los ultimos pasos de la vectorizacion para el sector elegido, para
+// no tener que leer el log de Python para saber por que archivo va.
+async function loadLive() {
+  const list = $('liveList');
+  if (!list) return;
+
+  try {
+    const data = await getJson(`${API}/events${queryString({
+      sector_code: FILTERS.sector, symbol: FILTERS.symbol, top: 40 })}`);
+
+    EVENTS_AVAILABLE = data.available;
+
+    if (!data.available) {
+      $('liveNow').textContent = 'sin registro';
+      list.innerHTML = '<div class="vz-live-empty">Corré db/vectors/04_vectorization_events.sql '
+                     + 'para empezar a registrar lo que hace cada corrida.</div>';
+      paintLiveBar(null);
+      $('liveDot').className = 'vz-live-dot';
+      return;
+    }
+
+    if (!data.items.length) {
+      $('liveNow').textContent = 'sin actividad hoy';
+      list.innerHTML = '<div class="vz-live-empty">Todavia no corrio nada hoy para este alcance.</div>';
+      paintLiveBar(null);
+      $('liveDot').className = 'vz-live-dot';
+      return;
+    }
+
+    const last = data.items[0];
+    const running = last.event_type !== 'RUN_END';
+
+    $('liveDot').className = 'vz-live-dot' + (running ? ' is-on' : '');
+    $('liveNow').textContent = running
+      ? `${last.position || '—'}/${last.total || '—'} · ${last.symbol || ''} `
+        + `${last.file_name || last.message || ''}`.trim()
+      : `terminada — ${last.message || ''}`;
+
+    paintLiveBar(last);
+
+    list.innerHTML = '';
+    list.appendChild(buildEventsTable(data.items));
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+function paintLiveBar(last) {
+  const fill = $('liveBarFill');
+  if (!fill) return;
+
+  if (!last || !last.total) {
+    fill.style.width = '0%';
+    return;
+  }
+
+  const pct = Math.min(100, Math.round((Number(last.position || 0) / Number(last.total)) * 100));
+  fill.style.width = `${pct}%`;
+}
+
+function toggleLiveAuto() {
+  // Refresco corto porque un documento tarda segundos: mas seguido no aporta
+  // nada y son consultas al mismo Postgres que esta escribiendo.
+  if ($('liveAuto').checked) {
+    LIVE_TIMER = setInterval(loadLive, 5000);
+  } else if (LIVE_TIMER) {
+    clearInterval(LIVE_TIMER);
+    LIVE_TIMER = null;
+  }
 }

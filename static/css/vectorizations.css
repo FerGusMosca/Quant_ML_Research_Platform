@@ -528,3 +528,84 @@
   .form-grid { grid-template-columns: 1fr; }
   .vz-filters .flt { min-width: 130px; }
 }
+
+/* ═══════════════════════════════════════════════ LIVE LOG (#II.1) */
+.vz-live {
+  margin: 12px 18px 4px;
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.vz-live-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.vz-live-head .flt-check { padding-bottom: 0; }
+
+.vz-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--faint);
+  flex: none;
+}
+.vz-live-dot.is-on {
+  background: var(--green);
+  box-shadow: 0 0 0 0 rgba(63,185,80,.6);
+  animation: vzPulse 1.6s infinite;
+}
+@keyframes vzPulse {
+  70%  { box-shadow: 0 0 0 7px rgba(63,185,80,0); }
+  100% { box-shadow: 0 0 0 0 rgba(63,185,80,0); }
+}
+
+.vz-live-title {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+.vz-live-now {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 52%;
+}
+
+.vz-live-bar {
+  height: 3px;
+  background: var(--border);
+}
+.vz-live-bar span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--blue);
+  transition: width .4s;
+}
+
+.vz-live-list {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.vz-live-empty {
+  padding: 16px 14px;
+  font-size: 11px;
+  color: var(--dim);
+  line-height: 1.6;
+}
+
+.badge-fail { color: var(--red); border-color: rgba(248,81,73,.5); }
+
+.icon-btn.is-on { border-color: var(--blue); color: var(--blue-hi); }

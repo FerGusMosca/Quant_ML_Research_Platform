@@ -123,15 +123,18 @@ class ReportsOrchestationLogic:
         )
     '''
 
-    def _run_download_k10(self, year, portfolio, job_id):
+    def _run_download_k10(self, year, portfolio, job_id, overwrite=False):
         """
         Download 10-K filings for a given portfolio and year range.
         Emits a FINAL structured completion event so clients can safely transition.
+
+        overwrite=False es lo normal: lo que ya esta descargado no se vuelve a
+        descargar. Con overwrite=True se borra la carpeta del anio y se baja todo
+        de nuevo, que es lo unico que antes pasaba siempre sin pedirlo.
         """
 
         # Resolve year range
         years = DateRangeHandler.handle_date_range(year, self.logger)
-        single_year = len(years) == 1
 
         ObsContext.set(
             job_id=str(job_id),
@@ -159,11 +162,14 @@ class ReportsOrchestationLogic:
                 job_id
             )
 
-            # Explicit overwrite only when a single year is requested
-            if single_year and os.path.exists(base_path):
+            # #II.3 - Antes, pedir un solo anio borraba la carpeta entera y por eso
+            # se volvia a descargar todo lo que ya estaba. Ahora solo se borra si
+            # se pide overwrite explicito; el downloader ya saltea archivo por
+            # archivo lo que existe.
+            if overwrite and os.path.exists(base_path):
                 shutil.rmtree(base_path)
                 self.logger.do_log(
-                    f"[REPORT] Removed existing directory {base_path}",
+                    f"[REPORT] Removed existing directory {base_path} (overwrite=True)",
                     MessageType.INFO,
                     job_id
                 )
@@ -1848,10 +1854,66 @@ class ReportsOrchestationLogic:
         except Exception as e:
             self._log_exc(f"[COMP_GRAPH] ❌ CRITICAL error running competition graph={str(e)}", e, job_id)
 
+    def _load_existing_calendars(self, from_year, to_year, job_id):
+        """
+        Las fechas de calendario que ya estan cargadas, por (symbol, anio).
+
+        Sirve para una sola cosa: no pisar una fecha buena con un vacio cuando
+        esta corrida no encontro el archivo. La decision de volver a extraer
+        siempre no depende de esto (#II.2).
+
+        Si la lectura falla, se sigue igual con un diccionario vacio: el peor
+        caso es guardar lo que se extrajo ahora, que es justo lo que se pidio.
+        """
+        keys = {
+            "q1": ["q1_filing_date", "q1", "q1filingdate"],
+            "q2": ["q2_filing_date", "q2", "q2filingdate"],
+            "q3": ["q3_filing_date", "q3", "q3filingdate"],
+            "k10": ["k10_filing_date", "k10", "k10filingdate"],
+        }
+
+        existing = {}
+
+        try:
+            rows = self.sec_cal_mgr.get_calendar_rows(from_year, to_year)
+        except Exception as e:
+            self.logger.do_log(
+                f"[REPORT] No se pudieron leer los calendarios ya cargados: {e}",
+                MessageType.WARNING,
+                job_id
+            )
+            return existing
+
+        for row in rows:
+            lowered = {str(k).lower(): v for k, v in row.items()}
+            symbol = str(lowered.get("symbol") or "").strip().upper()
+            year = lowered.get("fiscal_year")
+
+            if not symbol or year is None:
+                continue
+
+            existing[(symbol, int(year))] = {
+                name: next((lowered.get(alias) for alias in aliases if lowered.get(alias)), None)
+                for name, aliases in keys.items()
+            }
+
+        self.logger.do_log(
+            f"[REPORT] Calendarios ya cargados: {len(existing)} filas entre {from_year} y {to_year}",
+            MessageType.INFO,
+            job_id
+        )
+        return existing
+
     def _run_download_securities_calendar(self, year, portfolio, job_id):
         """
         Download and persist SEC filing calendars (K10 / Q10 dates)
         for all securities in a portfolio and year range.
+
+        #II.2 - Siempre se vuelve a extraer y se pisa lo que estaba. Correrlo en
+        marzo y volver a correrlo en agosto tiene que traer los Q10 que aparecieron
+        en el medio, que es justo lo que antes no pasaba porque salteaba todo lo ya
+        cargado. Lo unico que se respeta es una fecha vieja cuando la nueva viene
+        vacia: no se borra nada bueno.
 
         Emits a FINAL structured completion event so clients can safely transition.
         """
@@ -1880,6 +1942,7 @@ class ReportsOrchestationLogic:
             "total_securities": len(securities),
             "processed": 0,
             "saved": 0,
+            "new_dates": 0,
             "errors": 0,
         }
 
@@ -1890,7 +1953,11 @@ class ReportsOrchestationLogic:
         )
 
 
-        calendars= self.sec_cal_mgr.get_calendars_by_range(years[0],years[-1])
+        # #II.2 - Antes se leia esto solo para saltear lo que ya estaba cargado, y por
+        # eso un calendario bajado en marzo se quedaba sin los datos que aparecen
+        # despues. Ahora se lee para lo contrario: se vuelve a extraer siempre, y lo
+        # que ya estaba solo sirve para no pisar una fecha buena con un vacio.
+        existing_calendars = self._load_existing_calendars(years[0], years[-1], job_id)
 
         # ---------------------------------------------------------
         # 🚀 Process each year
@@ -1899,6 +1966,7 @@ class ReportsOrchestationLogic:
             summary["years"][y] = {
                 "processed": 0,
                 "saved": 0,
+                "new_dates": 0,
                 "errors": 0,
             }
 
@@ -1907,14 +1975,6 @@ class ReportsOrchestationLogic:
                 summary["years"][y]["processed"] += 1
 
                 try:
-
-                    if (sec.symbol,y) in calendars:
-                        self.logger.do_log(
-                            f"[SKIP] ◻️ Skipping download for  {sec.ticker} on year {y} because it already exists",
-                            MessageType.INFO,
-                            job_id
-                        )
-                        continue
 
                     # -------------------------------------------------
                     # Locate downloaded reports
@@ -1949,14 +2009,27 @@ class ReportsOrchestationLogic:
                     # -------------------------------------------------
                     # Build calendar entry
                     # -------------------------------------------------
+                    # Lo que ya estaba cargado para este symbol y anio.
+                    previous = existing_calendars.get((str(sec.ticker).upper(), y), {})
+
+                    # Se pisa con lo nuevo, pero una fecha que ya existia no se
+                    # borra porque esta vez el archivo no aparecio: pisar con vacio
+                    # seria perder datos buenos.
+                    dates = {
+                        "q1": q10_filing_dates.get(1) or previous.get("q1"),
+                        "q2": q10_filing_dates.get(2) or previous.get("q2"),
+                        "q3": q10_filing_dates.get(3) or previous.get("q3"),
+                        "k10": k10_filing_date or previous.get("k10"),
+                    }
+
                     entry = SecurityReportCalendar(
                         cik=sec.cik,
                         symbol=sec.ticker,
                         fiscal_year=y,
-                        q1=q10_filing_dates.get(1),
-                        q2=q10_filing_dates.get(2),
-                        q3=q10_filing_dates.get(3),
-                        k10=k10_filing_date,
+                        q1=dates["q1"],
+                        q2=dates["q2"],
+                        q3=dates["q3"],
+                        k10=dates["k10"],
                     )
 
                     self.sec_cal_mgr.upsert_calendar_entry(entry)
@@ -1964,8 +2037,18 @@ class ReportsOrchestationLogic:
                     summary["saved"] += 1
                     summary["years"][y]["saved"] += 1
 
+                    added = [key for key, value in dates.items()
+                             if value and not previous.get(key)]
+
+                    if added:
+                        summary["new_dates"] += len(added)
+                        summary["years"][y]["new_dates"] += len(added)
+
+                    detail = f"fechas nuevas: {', '.join(added)}" if added else "sin cambios"
+
                     self.logger.do_log(
-                        f"[REPORT][{i + 1}/{len(securities)}][{y}] ✅ Calendar saved for {sec.ticker}",
+                        f"[REPORT][{i + 1}/{len(securities)}][{y}] ✅ Calendar saved for "
+                        f"{sec.ticker} | {detail}",
                         MessageType.INFO,
                         job_id
                     )
@@ -2425,7 +2508,7 @@ class ReportsOrchestationLogic:
     def process_run_report(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,source=None,dest_folder=None,
                            rank_folder=None,job_id=None,query=None,tag_cfg=None,sector=None,overwrite=False):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
-            self._run_download_k10(year,portfolio,job_id)
+            self._run_download_k10(year,portfolio,job_id,overwrite=overwrite)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
             self._run_download_q10(year,portfolio,job_id)
         elif report_key.lower() == ReportType.DOWNLOAD_K8.value:

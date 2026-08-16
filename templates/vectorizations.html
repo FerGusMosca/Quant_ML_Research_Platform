@@ -232,6 +232,23 @@
         </button>
       </div>
 
+      <!-- #II.1 — que esta haciendo la corrida ahora mismo -->
+      <div class="vz-live" id="liveBox">
+        <div class="vz-live-head">
+          <span class="vz-live-dot" id="liveDot"></span>
+          <span class="vz-live-title">Live</span>
+          <span class="vz-live-now" id="liveNow">—</span>
+          <span class="spacer"></span>
+          <label class="flt-check">
+            <input type="checkbox" id="liveAuto" onchange="toggleLiveAuto()">
+            <span>Auto refresh</span>
+          </label>
+          <button class="btn ghost" onclick="loadLive()">⟳</button>
+        </div>
+        <div class="vz-live-bar"><span id="liveBarFill"></span></div>
+        <div class="vz-live-list" id="liveList"></div>
+      </div>
+
       <div class="table-wrap">
         <table class="tbl">
           <thead>
@@ -250,6 +267,7 @@
               <th class="num">Skipped</th>
               <th class="num">Failed</th>
               <th class="num">Chunks</th>
+              <th>Progress</th>
               <th>Started</th>
               <th></th>
             </tr>
