@@ -8,6 +8,8 @@ const API = '/reports_runner';
 
 let REPORTS = [];
 let SELECTED = null;
+let DEST_SUFFIX = '';
+let RANK_SUFFIX = '';
 let STREAM = null;
 let CAL_ROWS = [];
 let CAL_COLS = [];
@@ -44,8 +46,14 @@ async function loadReference() {
     if (!data.ok) throw new Error(data.error || 'Could not read the report list');
 
     REPORTS = data.reports || [];
+    DEST_SUFFIX = data.dest_folder_suffix || '';
+    RANK_SUFFIX = data.rank_folder_suffix || '';
     paintCards();
     paintPortfolios(data.portfolios || []);
+
+    // Changing the portfolio has to re-derive the folder names, otherwise the
+    // boxes keep showing the previous portfolio and the run writes to the wrong place.
+    $('fPortfolio').addEventListener('change', fillFolderDefaults);
 
     if (REPORTS.length) selectReport(REPORTS[0].report);
   } catch (e) {
@@ -114,6 +122,38 @@ function selectReport(report) {
   document.querySelectorAll('.rr-card').forEach(card => {
     card.classList.toggle('active', card.dataset.report === report);
   });
+  paintFolderFields();
+}
+
+function currentReport() {
+  return REPORTS.find(r => r.report === SELECTED) || null;
+}
+
+function needsFolders() {
+  const report = currentReport();
+  return !!(report && report.needs_folders);
+}
+
+function paintFolderFields() {
+  const show = needsFolders();
+  $('wrapDestFolder').hidden = !show;
+  $('wrapRankFolder').hidden = !show;
+  $('sentimentNote').hidden = !show;
+  if (show) fillFolderDefaults();
+}
+
+function fillFolderDefaults() {
+  if (!needsFolders()) return;
+
+  const portfolio = ($('fPortfolio').value || '').trim();
+  if (!portfolio) {
+    $('fDestFolder').value = '';
+    $('fRankFolder').value = '';
+    return;
+  }
+
+  $('fDestFolder').value = `${portfolio}${DEST_SUFFIX}`;
+  $('fRankFolder').value = `${portfolio}${RANK_SUFFIX}`;
 }
 
 // ── Tabs ──
@@ -162,12 +202,19 @@ function runReport() {
     return;
   }
 
-  const params = queryString({
+  const request = {
     report: SELECTED,
     portfolio: portfolio,
     year_from: $('fYearFrom').value,
     year_to: $('fYearTo').value || $('fYearFrom').value
-  });
+  };
+
+  if (needsFolders()) {
+    request.dest_folder = ($('fDestFolder').value || '').trim();
+    request.rank_folder = ($('fRankFolder').value || '').trim();
+  }
+
+  const params = queryString(request);
 
   clearConsole();
   setStatus('running', 'run');

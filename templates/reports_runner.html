@@ -48,6 +48,16 @@
       <input class="inp" id="fYearTo" type="number" value="2026">
     </label>
 
+    <label class="rr-field" id="wrapDestFolder" hidden>
+      <span>Dest folder</span>
+      <input class="inp" id="fDestFolder" placeholder="auto from portfolio" autocomplete="off">
+    </label>
+
+    <label class="rr-field" id="wrapRankFolder" hidden>
+      <span>Rank folder</span>
+      <input class="inp" id="fRankFolder" placeholder="auto from portfolio" autocomplete="off">
+    </label>
+
     <button class="btn primary" id="btnRun" onclick="runReport()">
       <span class="btn-ico">▶</span> Run
     </button>
@@ -59,6 +69,13 @@
     <span class="rr-status" id="runStatus">idle</span>
     <span class="spacer"></span>
     <button class="btn ghost" onclick="clearConsole()">Clear</button>
+  </div>
+
+  <div class="rr-note" id="sentimentNote" hidden>
+    The sentiment reports write one JSON per filing into the dest folder and the
+    consolidated ranking into the rank folder. Leaving both empty derives them from
+    the portfolio. The 10-Q version walks the quarters of the year by itself, so
+    there is no quarter to pick here.
   </div>
 
   <pre class="rr-console" id="console">Pick a report, set the portfolio and the year range, then press Run.</pre>

@@ -34,7 +34,23 @@ class ReportsRunnerLogic:
             "description": "Fills in the filing dates of every security, so a quarter "
                            "can be read as a calendar window instead of a fiscal one.",
         },
+        "sentiment_summary_report_k10": {
+            "label": "Sentiment Ranking 10-K",
+            "description": "Scores the management discussion of every annual filing and "
+                           "leaves the consolidated ranking on disk.",
+            "needs_folders": True,
+        },
+        "sentiment_summary_report_q10": {
+            "label": "Sentiment Ranking 10-Q",
+            "description": "Same scoring over the quarterly filings. The report walks the "
+                           "quarters of the year on its own, so there is no quarter to pick.",
+            "needs_folders": True,
+        },
     }
+
+    # Folder names the sentiment reports default to when the user leaves them empty.
+    DEST_FOLDER_SUFFIX = "_PORTFOLIO_ONLY_Q10_K10_SENTIMENT_FULL"
+    RANK_FOLDER_SUFFIX = "_PORTFOLIO_ONLY_Q10_K10_SENTIMENT_RANK"
 
     def __init__(self, config_settings: dict, logger):
         self.config = config_settings
@@ -51,7 +67,18 @@ class ReportsRunnerLogic:
 
     # ── Validation ────────────────────────────────────────────────────────────
 
-    def build_arguments(self, report: str, portfolio: str, year_from, year_to) -> dict:
+    def needs_folders(self, report: str) -> bool:
+        return bool(self.REPORTS.get(report, {}).get("needs_folders"))
+
+    def default_folders(self, portfolio: str) -> dict:
+        portfolio = (portfolio or "").strip()
+        if not portfolio:
+            return {"dest_folder": "", "rank_folder": ""}
+        return {"dest_folder": f"{portfolio}{self.DEST_FOLDER_SUFFIX}",
+                "rank_folder": f"{portfolio}{self.RANK_FOLDER_SUFFIX}"}
+
+    def build_arguments(self, report: str, portfolio: str, year_from, year_to,
+                        dest_folder: str = None, rank_folder: str = None) -> dict:
         if report not in self.REPORTS:
             raise Exception(f"Unknown report '{report}'")
 
@@ -73,17 +100,29 @@ class ReportsRunnerLogic:
             year_from, year_to = year_to, year_from
 
         # This is the exact shape the PowerShell script was sending
-        return {"portfolio": portfolio, "year": f"{year_from}-{year_to}"}
+        arguments = {"portfolio": portfolio, "year": f"{year_from}-{year_to}"}
+
+        # The sentiment reports write two folders: one with a JSON per filing and
+        # one with the consolidated ranking. Both are required by the server, so
+        # an empty box falls back to the portfolio-derived name instead of failing.
+        if self.needs_folders(report):
+            defaults = self.default_folders(portfolio)
+            arguments["dest_folder"] = (dest_folder or "").strip() or defaults["dest_folder"]
+            arguments["rank_folder"] = (rank_folder or "").strip() or defaults["rank_folder"]
+
+        return arguments
 
     # ── Execution ─────────────────────────────────────────────────────────────
 
-    async def stream_report(self, report: str, portfolio: str, year_from, year_to):
+    async def stream_report(self, report: str, portfolio: str, year_from, year_to,
+                            dest_folder: str = None, rank_folder: str = None):
         """
         Async generator of Server-Sent Events. One event per websocket message,
         plus a terminal 'done' event carrying the outcome.
         """
         try:
-            arguments = self.build_arguments(report, portfolio, year_from, year_to)
+            arguments = self.build_arguments(report, portfolio, year_from, year_to,
+                                             dest_folder, rank_folder)
         except Exception as e:
             yield self.__sse__({"event": "error", "error": str(e)})
             yield self.__sse__({"event": "done", "ok": False, "error": str(e)})

@@ -89,18 +89,25 @@ class ReportsRunnerController(BaseController):
                                  "configured": self.logic.is_configured(),
                                  "uri": self.logic.mcp_uri,
                                  "reports": self.logic.get_reports(),
+                                 "dest_folder_suffix": self.logic.DEST_FOLDER_SUFFIX,
+                                 "rank_folder_suffix": self.logic.RANK_FOLDER_SUFFIX,
                                  "portfolios": self.__portfolio_options__()})
         except Exception as e:
             return self.__fail__("api_reference", e)
 
     async def api_run(self, report: str, portfolio: str,
-                      year_from: int, year_to: int = None):
+                      year_from: int, year_to: int = None,
+                      dest_folder: str = None, rank_folder: str = None):
         """
         Streams the MCP run as Server-Sent Events. The connection stays open
         until the server sends its 'completed' event, which is exactly the
         contract ReportMCPClient enforces.
+
+        dest_folder and rank_folder only travel for the sentiment reports; the
+        download reports ignore them.
         """
-        generator = self.logic.stream_report(report, portfolio, year_from, year_to)
+        generator = self.logic.stream_report(report, portfolio, year_from, year_to,
+                                             dest_folder, rank_folder)
         return StreamingResponse(generator, media_type="text/event-stream", headers={
             "Cache-Control": "no-cache",
             "Connection": "keep-alive",
