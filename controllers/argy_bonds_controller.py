@@ -30,6 +30,7 @@ from fastapi.templating import Jinja2Templates
 from common.util.downloaders.data912_downloader import Data912Downloader
 from common.util.financial_calculations.bond_price_adjuster import BondPriceAdjuster
 from common.util.financial_calculations.bond_price_adjuster import _timestamp_to_date
+from datetime import datetime
 from data_access_layer.security_manager import SecurityManager
 
 # ---------------------------------------------------------------------------
@@ -62,6 +63,12 @@ class ArgyBondsController:
         self.router.get("/ohlcv",        response_class=JSONResponse)(self.ohlcv)
         self.router.get("/config/bonds", response_class=JSONResponse)(self.bonds_config)
 
+        # Coupon schedule maintenance: the price adjustment reads is_paid from
+        # the table, so a payment that nobody flags leaves a step in the chart.
+        self.router.get("/coupons",           response_class=JSONResponse)(self.list_coupons)
+        self.router.post("/coupons/set_paid", response_class=JSONResponse)(self.set_coupon_paid)
+        self.router.post("/coupons/mark_due", response_class=JSONResponse)(self.mark_due_coupons)
+
     # ======================================================================
     # PAGE
     # ======================================================================
@@ -87,6 +94,125 @@ class ArgyBondsController:
             )
         with open(config_path) as f:
             return JSONResponse(json.load(f))
+
+    # ======================================================================
+    # COUPONS — schedule maintenance
+    #
+    # The chart used to read its coupon chips from bonds_config.json while the
+    # price adjustment read is_paid from dbo.bond_coupons. Two sources meant the
+    # screen could show a coupon as paid while the chart still had its step in
+    # it. Everything here reads and writes the table, which is the one the
+    # adjustment actually uses.
+    # ======================================================================
+
+    async def list_coupons(self, request: Request, symbol: str):
+        """Full coupon schedule for a bond, paid and future alike."""
+        base_symbol = symbol.rstrip("D").upper().strip()
+
+        try:
+            coupons = self.sec_mgr.get_bond_coupons(
+                base_symbol, paid_filter=SecurityManager.COUPONS_ALL
+            )
+        except Exception as exc:
+            self._log(f"list_coupons DB error for {base_symbol}: {exc}", "WARNING")
+            return JSONResponse(
+                status_code=500,
+                content={"ok": False, "error": f"{type(exc).__name__}: {exc}"},
+            )
+
+        today = datetime.now().strftime("%Y-%m-%d")
+
+        rows = []
+        for c in sorted(coupons, key=lambda x: x.payment_date):
+            payment_date = str(c.payment_date)[:10]
+            rows.append({
+                "payment_date": payment_date,
+                "amount":       c.amount,
+                "is_paid":      bool(c.is_paid),
+                # A coupon whose date has passed but is still flagged unpaid is
+                # exactly what leaves an unexplained step in the chart.
+                "overdue":      payment_date <= today and not c.is_paid,
+            })
+
+        return JSONResponse({
+            "ok":       True,
+            "symbol":   base_symbol,
+            "today":    today,
+            "coupons":  rows,
+            "pending":  sum(1 for r in rows if r["overdue"]),
+        })
+
+    async def set_coupon_paid(self, request: Request):
+        """Flips one coupon between paid and unpaid."""
+        try:
+            body = await request.json()
+        except Exception:
+            return JSONResponse(status_code=400,
+                                content={"ok": False, "error": "Body must be JSON."})
+
+        symbol       = str(body.get("symbol") or "").rstrip("D").upper().strip()
+        payment_date = str(body.get("payment_date") or "").strip()
+        is_paid      = bool(body.get("is_paid"))
+
+        if not symbol or not payment_date:
+            return JSONResponse(
+                status_code=400,
+                content={"ok": False, "error": "symbol and payment_date are required."})
+
+        # The amount is never taken from the caller: it stays whatever the
+        # schedule already holds, so a click in the UI cannot rewrite a cash flow.
+        try:
+            coupons = self.sec_mgr.get_bond_coupons(
+                symbol, paid_filter=SecurityManager.COUPONS_ALL
+            )
+            match = next((c for c in coupons
+                          if str(c.payment_date)[:10] == payment_date), None)
+
+            if match is None:
+                return JSONResponse(
+                    status_code=404,
+                    content={"ok": False,
+                             "error": f"{symbol} has no coupon dated {payment_date}."})
+
+            self.sec_mgr.persist_bond_coupon(
+                symbol=symbol,
+                payment_date=payment_date,
+                amount=match.amount,
+                is_paid=is_paid,
+            )
+
+        except Exception as exc:
+            self._log(f"set_coupon_paid failed for {symbol} {payment_date}: {exc}",
+                      "WARNING")
+            return JSONResponse(
+                status_code=500,
+                content={"ok": False, "error": f"{type(exc).__name__}: {exc}"})
+
+        self._log(f"coupon {symbol} {payment_date} marked "
+                  f"{'paid' if is_paid else 'unpaid'}", "INFO")
+
+        return JSONResponse({"ok": True, "symbol": symbol,
+                             "payment_date": payment_date,
+                             "amount": match.amount, "is_paid": is_paid})
+
+    async def mark_due_coupons(self, request: Request):
+        """Marks every coupon already past its date as paid, for one bond."""
+        try:
+            body = await request.json()
+        except Exception:
+            body = {}
+
+        symbol = str(body.get("symbol") or "").rstrip("D").upper().strip() or None
+
+        try:
+            marked = self.sec_mgr.mark_coupons_paid(symbol)
+        except Exception as exc:
+            self._log(f"mark_due_coupons failed for {symbol}: {exc}", "WARNING")
+            return JSONResponse(
+                status_code=500,
+                content={"ok": False, "error": f"{type(exc).__name__}: {exc}"})
+
+        return JSONResponse({"ok": True, "symbol": symbol, "marked": marked})
 
     # ======================================================================
     # LIVE PRICES — data912.com (via Data912Downloader)
@@ -207,11 +333,21 @@ class ArgyBondsController:
                 # drops that are actually visible in the chart.
                 first_bar_date = _timestamp_to_date(min(b["time"] for b in raw_bars))
                 last_bar_date  = _timestamp_to_date(max(b["time"] for b in raw_bars))
-                # Use only the next future coupon from bonds_config as the
-                # adjustment amount — this approximates the last paid coupon
-                # and avoids any accumulated historical offset.
-                future_coupons = self._load_future_coupons(base_symbol)
-                in_range = [future_coupons[0]] if future_coupons else []
+                # Every PAID coupon whose date falls inside the visible range,
+                # each with its own amount.
+                #
+                # This used to pass a single entry built from the last paid date
+                # and the NEXT coupon's amount. Two things went wrong with that:
+                # a range covering several payments only ever neutralised one of
+                # them, and the amount subtracted was not the amount paid.
+                #
+                # Passing older coupons is harmless: the trailing adjustment adds
+                # up the coupons that fall AFTER each bar, so anything before the
+                # first bar contributes zero to every bar.
+                in_range = [
+                    c for c in all_coupons
+                    if first_bar_date <= str(c["date"])[:10] <= last_bar_date
+                ]
                 if in_range:
                     bars = _adjuster.apply_trailing_adjustment(raw_bars, in_range)
                     self._log(

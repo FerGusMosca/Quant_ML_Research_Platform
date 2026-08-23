@@ -333,10 +333,23 @@
     </div>
     <div class="ab-coupon-section" id="couponSection">
       <div class="ab-coupon-hdr">
-        <span class="ab-coupon-title">📅 Cupones Pagados</span>
+        <span class="ab-coupon-title">📅 Cupones</span>
         <span class="ab-coupon-sub" id="couponSub"></span>
+        <span class="ab-coupon-spacer"></span>
+        <button class="ab-coupon-btn" id="markDueBtn" onclick="markDueCoupons()"
+                title="Marca como pagados todos los cupones cuya fecha ya paso">
+          Marcar vencidos como pagados
+        </button>
       </div>
+
+      <div class="ab-coupon-warn" id="couponWarn" hidden></div>
+
       <div class="ab-coupon-list" id="couponList"></div>
+
+      <div class="ab-coupon-foot">
+        El ajuste del grafico usa esta tabla: un cupon que ya se pago pero sigue
+        sin marcar deja el escalon en el precio.
+      </div>
     </div>
   </div>
 </div>

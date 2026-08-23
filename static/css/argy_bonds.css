@@ -389,3 +389,57 @@
   transition: all 0.12s; margin-left: 3px;
 }
 .ab-calc-btn:hover { background: var(--elevated); color: var(--orange); border-color: var(--orange); }
+/* ── Coupon schedule panel ───────────────────────────────────────── */
+
+.ab-coupon-spacer { flex: 1; }
+
+.ab-coupon-btn {
+  background: transparent; border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 6px; padding: 4px 10px;
+  font-family: var(--mono); font-size: 9px; color: var(--dim);
+  cursor: pointer; transition: all 0.18s; white-space: nowrap;
+}
+.ab-coupon-btn:hover:not(:disabled) {
+  color: var(--orange); border-color: rgba(210,153,34,0.4);
+  background: rgba(210,153,34,0.06);
+}
+.ab-coupon-btn:disabled { opacity: 0.5; cursor: default; }
+
+.ab-coupon-warn {
+  margin-bottom: 8px; padding: 8px 11px; border-radius: 6px;
+  background: rgba(248,81,73,0.08); border: 1px solid rgba(248,81,73,0.25);
+  font-family: var(--mono); font-size: 9.5px; line-height: 1.6;
+  color: #F85149;
+}
+
+/* Chips are buttons now: one click flips a coupon */
+.ab-coupon-chip {
+  cursor: pointer; transition: all 0.16s;
+}
+.ab-coupon-chip:hover { border-color: rgba(210,153,34,0.55); }
+
+.ab-coupon-chip .ab-cc-mark {
+  width: 9px; color: #3FB950; font-weight: 700;
+}
+
+/* Not yet flagged: muted, so the paid ones stand out */
+.ab-coupon-chip:not(.is-paid) {
+  background: rgba(255,255,255,0.02);
+  border-color: rgba(255,255,255,0.09);
+  color: var(--faint);
+}
+.ab-coupon-chip:not(.is-paid) .ab-cc-amt { font-weight: 500; }
+
+/* Date already passed but still unpaid: this is what breaks the chart */
+.ab-coupon-chip.is-overdue {
+  background: rgba(248,81,73,0.08);
+  border-color: rgba(248,81,73,0.35);
+  color: #F85149;
+}
+.ab-coupon-chip.is-overdue .ab-cc-date { color: #F85149; }
+
+.ab-coupon-foot {
+  margin-top: 8px;
+  font-family: var(--mono); font-size: 8.5px;
+  color: var(--faint); line-height: 1.6;
+}

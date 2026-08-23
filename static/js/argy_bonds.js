@@ -191,7 +191,7 @@ async function openChartModal(symbol) {
     `${bond.law || ''}  ·  Vto: ${bond.maturity || '?'}`;
 
   document.getElementById('chartStats').innerHTML = buildStatsHtml(bond);
-  renderCouponList(symbol, (BOND_META[symbol] || {}).coupons || []);
+  loadCouponList(symbol);
 
   document.getElementById('chartContainer').innerHTML =
     '<div class="ab-chart-loading">⏳ Descargando barras diarias desde TradingView…</div>';
@@ -334,30 +334,153 @@ function buildStatsHtml(bond) {
   `;
 }
 
-// ── Coupon chips below chart ──────────────────────────────────────────────
-function renderCouponList(symbol, coupons) {
-  const today = new Date().toISOString().slice(0, 10);
-  const paid  = coupons.filter(c => c.date <= today);
-  const sub   = document.getElementById('couponSub');
-  const list  = document.getElementById('couponList');
+// ── Coupon schedule below the chart ─────────────────────────────────────────
+//
+// Read from dbo.bond_coupons, NOT from bonds_config.json. The price adjustment
+// reads is_paid from that table, so showing anything else here would let the
+// screen claim a coupon was paid while the chart still carries its step.
+
+let _coupons = [];
+
+async function loadCouponList(symbol) {
+  const sub  = document.getElementById('couponSub');
+  const list = document.getElementById('couponList');
+  const warn = document.getElementById('couponWarn');
+
+  sub.textContent = 'Cargando…';
+  list.innerHTML  = '';
+  warn.hidden     = true;
+
+  try {
+    const res  = await fetch(`/argy_bonds/coupons?symbol=${encodeURIComponent(symbol)}`);
+    const data = await res.json();
+
+    if (!data.ok) {
+      sub.textContent = '';
+      warn.hidden = false;
+      warn.textContent = data.error || 'No se pudo leer el cronograma de cupones.';
+      return;
+    }
+
+    _coupons = data.coupons || [];
+    renderCouponList(symbol, data);
+
+  } catch (e) {
+    sub.textContent = '';
+    warn.hidden = false;
+    warn.textContent = `No se pudo consultar el servidor: ${e.message}`;
+  }
+}
+
+function renderCouponList(symbol, data) {
+  const sub  = document.getElementById('couponSub');
+  const list = document.getElementById('couponList');
+  const warn = document.getElementById('couponWarn');
+
+  const coupons = data.coupons || [];
+  const paid    = coupons.filter(c => c.is_paid);
+  const overdue = coupons.filter(c => c.overdue);
 
   sub.textContent = paid.length
-    ? `${paid.length} pagados · total ${fmt2(paid.reduce((s, c) => s + c.amount_per_100vn, 0))} por 100 VN`
-    : 'Sin cupones pagados en el historial';
+    ? `${paid.length} pagados · total ${fmt2(paid.reduce((s, c) => s + c.amount, 0))} por 100 VN`
+    : 'Sin cupones marcados como pagados';
+
+  // The whole point of the panel: say out loud which payment is missing
+  if (overdue.length) {
+    warn.hidden = false;
+    warn.textContent =
+      `${overdue.length} cupón${overdue.length > 1 ? 'es' : ''} con fecha vencida sin marcar `
+      + `(${overdue.map(c => c.payment_date).join(', ')}). `
+      + 'Mientras siga así, el gráfico ajustado mantiene el escalón.';
+  } else {
+    warn.hidden = true;
+  }
 
   list.innerHTML = '';
-  paid.forEach(c => {
-    const chip = document.createElement('div');
-    chip.className = 'ab-coupon-chip';
+
+  coupons.forEach(c => {
+    const chip = document.createElement('button');
+    chip.type = 'button';
+    chip.className = 'ab-coupon-chip'
+      + (c.is_paid ? ' is-paid' : '')
+      + (c.overdue ? ' is-overdue' : '');
+    chip.title = c.is_paid ? 'Click para desmarcar' : 'Click para marcar como pagado';
+    chip.onclick = () => toggleCoupon(symbol, c.payment_date, !c.is_paid);
+
     chip.innerHTML = `
-      <span class="ab-cc-date">${c.date}</span>
-      <span class="ab-cc-amt">+${fmt3(c.amount_per_100vn)}</span>`;
+      <span class="ab-cc-mark">${c.is_paid ? '✓' : ''}</span>
+      <span class="ab-cc-date">${c.payment_date}</span>
+      <span class="ab-cc-amt">${fmt3(c.amount)}</span>`;
+
     list.appendChild(chip);
   });
 }
 
-// ════════════════════════════════════════════════════
-// UTILS
+async function toggleCoupon(symbol, paymentDate, isPaid) {
+  const warn = document.getElementById('couponWarn');
+
+  try {
+    const res = await fetch('/argy_bonds/coupons/set_paid', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ symbol, payment_date: paymentDate, is_paid: isPaid }),
+    });
+    const data = await res.json();
+
+    if (!data.ok) {
+      warn.hidden = false;
+      warn.textContent = data.error || 'No se pudo actualizar el cupón.';
+      return;
+    }
+
+    await loadCouponList(symbol);
+
+    // The adjusted series changes the moment a coupon is flagged, so the chart
+    // is redrawn instead of leaving a stale picture next to the new state.
+    if (document.getElementById('adjToggle')?.checked) onAdjToggle();
+
+  } catch (e) {
+    warn.hidden = false;
+    warn.textContent = `No se pudo consultar el servidor: ${e.message}`;
+  }
+}
+
+async function markDueCoupons() {
+  const btn  = document.getElementById('markDueBtn');
+  const warn = document.getElementById('couponWarn');
+
+  if (!_currentSymbol) return;
+
+  btn.disabled = true;
+  btn.textContent = 'Marcando…';
+
+  try {
+    const res = await fetch('/argy_bonds/coupons/mark_due', {
+      method:  'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body:    JSON.stringify({ symbol: _currentSymbol }),
+    });
+    const data = await res.json();
+
+    if (!data.ok) {
+      warn.hidden = false;
+      warn.textContent = data.error || 'No se pudieron marcar los cupones vencidos.';
+      return;
+    }
+
+    await loadCouponList(_currentSymbol);
+    if (document.getElementById('adjToggle')?.checked) onAdjToggle();
+
+  } catch (e) {
+    warn.hidden = false;
+    warn.textContent = `No se pudo consultar el servidor: ${e.message}`;
+
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Marcar vencidos como pagados';
+  }
+}
+
 // ════════════════════════════════════════════════════
 
 function openModal(id, bid) {
