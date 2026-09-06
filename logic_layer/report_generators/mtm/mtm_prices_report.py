@@ -1,4 +1,5 @@
 import os
+import time
 import traceback
 from datetime import datetime
 
@@ -34,6 +35,19 @@ class MTMPricesReport:
     CONTROL_TAB = "CONTROL"
     PORTFOLIO_TAB = "Official Portfolio"
 
+    # Mercado donde figuran los papeles argentinos en TradingView.
+    LOCAL_EXCHANGE = "BYMA"
+
+    # Pausa entre pedidos a TradingView y reintentos. Sin esto el feed corta la
+    # conexion cuando se le piden muchos simbolos seguidos.
+    LOCAL_PAUSE_SECONDS = 0.7
+    LOCAL_RETRIES = 2
+    LOCAL_RETRY_PAUSE_SECONDS = 3
+
+    # Cada cuantas filas se vuelca lo que se lleva bajado. De a lotes y no fila
+    # por fila, porque cada escritura es un pedido a Drive.
+    WRITE_BATCH_ROWS = 10
+
     # La solapa de control tiene el encabezado en la fila 1 y las descripciones
     # de cada columna en la fila 2, asi que el estado se escribe en la fila 3.
     CONTROL_STATUS_CELL = "A3"
@@ -42,19 +56,15 @@ class MTMPricesReport:
     STATUS_DONE = "LISTO"
     STATUS_ERROR = "ERROR"
 
-    # Columna llave, la misma en todas las solapas.
-    SYMBOL_COL = "Ticker_ID"
+    # Columna llave tal como figura hoy en el archivo. Se dejan las dos formas
+    # porque la especificacion la nombra de una manera y el archivo de otra.
+    SYMBOL_HEADERS = ["TICKER_BYMA", "Ticker_ID"]
 
-    ASSET_SCHEMA = [
-        "Ticker_ID",
-        "ISIN",
-        "Descripcion_Activo",
-        "Vencimiento_Final",
-        "Precio_Cierre",
-        "Paridad",
-        "Volumen_Operado",
-        "Tiene_Calendario_Cargado",
-    ]
+    # Columnas donde van los datos que completamos nosotros. Cada solapa las
+    # nombra a su manera, asi que se busca por cualquiera de estas formas y se
+    # escribe SIEMPRE sobre la que ya existe: nunca se crea una columna nueva.
+    PRICE_HEADERS = ["PRECIO", "Ultimo precio", "Ultimo Precio", "Precio_Cierre"]
+    VOLUME_HEADERS = ["VOLUMEN", "Volumen", "Volumen operado", "Volumen_Operado"]
 
     PORTFOLIO_SCHEMA = [
         "Ticker_ID",
@@ -65,24 +75,28 @@ class MTMPricesReport:
         "Volumen_Operado",
     ]
 
-    PRICE_COL = "Precio_Cierre"
-    VOLUME_COL = "Volumen_Operado"
 
     def __init__(self, gdrive_url, input_file, output_file, credentials_file=None, portfolio=None,
-                 monitor_conn_str=None, work_folder=None, logger=None, job_id=None):
+                 monitor_conn_str=None, tv_params=None, work_folder=None, logger=None, job_id=None):
 
         self.gdrive_url = gdrive_url
         self.input_file = input_file
         self.output_file = output_file if output_file is not None else input_file
         self.credentials_file = credentials_file if credentials_file is not None else self._default_credentials_path()
-        self.portfolio = portfolio
+        # Siempre es el portfolio publicado del monitor, asi que no hace falta
+        # mandarlo en cada llamada.
+        self.portfolio = portfolio if portfolio is not None else self.PORTFOLIO_TAB
         self.monitor_conn_str = monitor_conn_str
         self.work_folder = work_folder or os.path.join(".", "output", "mtm")
         self.logger = logger
         self.job_id = job_id
 
+        self.tv_params = tv_params or {}
+
         self.drive = GoogleDriveHandler(self.credentials_file, logger)
         self.quotes = YahooQuoteDownloader()
+
+        self._local_downloader = None
 
     # ==================================================================
     # Logging
@@ -184,26 +198,44 @@ class MTMPricesReport:
         cargada. Si la solapa esta vacia se deja solo el encabezado.
         """
         if df.empty:
-            self._log(
-                f"[MTM] Tab '{tab_name}' is empty. Header written, nothing to price.",
-                MessageType.WARNING,
-            )
-            self.drive.create_tab_if_missing(output_id, tab_name)
-            self.drive.write_tab(output_id, tab_name, pd.DataFrame(columns=self.ASSET_SCHEMA))
+            self._log(f"[MTM][{tab_name}] solapa vacia. Salteada.", MessageType.WARNING)
             return None
 
-        symbol_col = self._find_column(df, [self.SYMBOL_COL])
+        symbol_col = self._find_column(df, self.SYMBOL_HEADERS)
 
         if symbol_col is None:
+            # Las solapas de cauciones no tienen ticker: no hay nada que buscar
+            # por simbolo y se dejan como estan.
+            self._log(f"[MTM][{tab_name}] no tiene columna de ticker. Salteada.", MessageType.WARNING)
+            return None
+
+        result = df.copy()
+
+        price_col = self._find_column(result, self.PRICE_HEADERS)
+        volume_col = self._find_column(result, self.VOLUME_HEADERS)
+
+        if price_col is None or volume_col is None:
+            faltan = []
+            if price_col is None:
+                faltan.append("precio")
+            if volume_col is None:
+                faltan.append("volumen")
+
             self._log(
-                f"[MTM] Tab '{tab_name}' has no {self.SYMBOL_COL} column. Skipped.",
+                f"[MTM][{tab_name}] no tiene columna de {' ni de '.join(faltan)}. "
+                f"Columnas encontradas: {list(result.columns)}. Solapa salteada.",
                 MessageType.WARNING,
             )
             return None
 
-        result = self._apply_schema(df, self.ASSET_SCHEMA)
+        self._log(
+            f"[MTM][{tab_name}] ticker en '{symbol_col}', "
+            f"precio en '{price_col}', volumen en '{volume_col}'"
+        )
 
         tab_summary = {"symbols": 0, "priced": 0, "errors": 0}
+
+        pending = 0
 
         for index, row in result.iterrows():
 
@@ -215,23 +247,39 @@ class MTMPricesReport:
             tab_summary["symbols"] += 1
 
             try:
-                quote = self.quotes.get_quote(symbol)
+                price, volume, fuente = self._get_price_and_volume(symbol, tab_name)
 
-                result.at[index, self.PRICE_COL] = quote["price"]
-                result.at[index, self.VOLUME_COL] = quote["volume"] if quote["volume"] is not None else ""
+                result.at[index, price_col] = price
+                result.at[index, volume_col] = volume if volume is not None else ""
 
                 tab_summary["priced"] += 1
 
+                self._log(f"[MTM][{tab_name}] {symbol}: {price} (fuente {fuente})")
+
             except Exception as e:
                 tab_summary["errors"] += 1
-                self._log(f"[MTM] {tab_name} / {symbol}: {str(e)}", MessageType.WARNING)
+                self._log(f"[MTM][{tab_name}] {symbol}: {str(e)}", MessageType.WARNING)
 
+            pending += 1
+
+            if pending >= self.WRITE_BATCH_ROWS:
+                self._log(
+                    f"[MTM][{tab_name}] >>> ESCRIBIENDO EN DRIVE: {pending} filas nuevas, "
+                    f"{tab_summary['symbols']} procesadas hasta {symbol}"
+                )
+                self.drive.create_tab_if_missing(output_id, tab_name)
+                self.drive.write_tab(output_id, tab_name, result)
+                self._log(f"[MTM][{tab_name}] <<< ESCRITO OK. Ya podes mirar la planilla.")
+                pending = 0
+
+        self._log(f"[MTM][{tab_name}] >>> ESCRITURA FINAL: {pending} filas pendientes")
         self.drive.create_tab_if_missing(output_id, tab_name)
         self.drive.write_tab(output_id, tab_name, result)
+        self._log(f"[MTM][{tab_name}] <<< ESCRITURA FINAL OK")
 
         self._log(
-            f"[MTM] Tab '{tab_name}': {tab_summary['priced']} priced, "
-            f"{tab_summary['errors']} errors over {tab_summary['symbols']} instruments"
+            f"[MTM][{tab_name}] {tab_summary['priced']} con precio, "
+            f"{tab_summary['errors']} con error, sobre {tab_summary['symbols']} instrumentos"
         )
 
         return tab_summary
@@ -282,7 +330,7 @@ class MTMPricesReport:
 
             except Exception as e:
                 tab_summary["errors"] += 1
-                self._log(f"[MTM] {self.PORTFOLIO_TAB} / {symbol}: {str(e)}", MessageType.WARNING)
+                self._log(f"[MTM][{self.PORTFOLIO_TAB}] {symbol}: {str(e)}", MessageType.WARNING)
 
                 rows.append([symbol, "", "", "", "", ""])
 
@@ -292,8 +340,8 @@ class MTMPricesReport:
         self.drive.write_tab(output_id, self.PORTFOLIO_TAB, result)
 
         self._log(
-            f"[MTM] Tab '{self.PORTFOLIO_TAB}': {tab_summary['priced']} priced, "
-            f"{tab_summary['errors']} errors over {tab_summary['symbols']} instruments"
+            f"[MTM][{self.PORTFOLIO_TAB}] {tab_summary['priced']} con precio, "
+            f"{tab_summary['errors']} con error, sobre {tab_summary['symbols']} instrumentos"
         )
 
         return tab_summary
@@ -325,22 +373,75 @@ class MTMPricesReport:
     def _is_portfolio_tab(self, tab_name):
         return tab_name.strip().upper() == self.PORTFOLIO_TAB.upper()
 
-    @staticmethod
-    def _apply_schema(df, schema):
+    def _get_price_and_volume(self, symbol, tab_name=""):
         """
-        Agrega las columnas del esquema que falten, sin tocar el orden ni el
-        nombre de las que ya estan y sin borrar las que el cliente sumo por su
-        cuenta a la derecha.
+        Primero se pregunta a TradingView contra BYMA, que es donde estan los
+        papeles locales y sus tres cotizaciones. Si ahi no aparece, se cae a
+        Yahoo, que resuelve con el ticker solo y cubre lo extranjero.
         """
-        result = df.copy()
+        self._log(f"[MTM][{tab_name}] {symbol}: buscando en TradingView ({self.LOCAL_EXCHANGE})")
 
-        existing = {str(c).strip().upper() for c in result.columns}
+        try:
+            price, volume = self._get_local_price_and_volume(symbol)
+            return price, volume, self.LOCAL_EXCHANGE
+        except Exception:
+            pass
 
-        for col in schema:
-            if col.upper() not in existing:
-                result[col] = ""
+        self._log(f"[MTM][{tab_name}] {symbol}: no esta en {self.LOCAL_EXCHANGE}, buscando en Yahoo")
 
-        return result
+        quote = self.quotes.get_quote(symbol)
+
+        return quote["price"], quote["volume"], "Yahoo"
+
+    def _get_local_price_and_volume(self, symbol):
+
+        downloader = self._get_local_downloader()
+
+        df = None
+        last_error = None
+
+        for attempt in range(self.LOCAL_RETRIES + 1):
+
+            if attempt > 0:
+                time.sleep(self.LOCAL_RETRY_PAUSE_SECONDS)
+
+            try:
+                df = downloader.download(symbol)
+            except Exception as e:
+                last_error = e
+                df = None
+
+            if df is not None and len(df) > 0:
+                break
+
+        time.sleep(self.LOCAL_PAUSE_SECONDS)
+
+        if df is None or len(df) == 0:
+            raise Exception(str(last_error) if last_error is not None else "No rows returned")
+
+        last = df.iloc[-1]
+
+        price = float(last["close"])
+        volume = float(last["volume"]) if "volume" in df.columns else None
+
+        return price, volume
+
+    def _get_local_downloader(self):
+        """
+        El import va adentro del metodo a proposito: la libreria de TradingView
+        no esta instalada en todos los entornos y si se importa arriba del
+        archivo se cae todo el proceso de reportes apenas arranca.
+        """
+        if self._local_downloader is None:
+            from common.util.downloaders.tradingview_downloader import TradingViewDownloader
+
+            params = dict(self.tv_params)
+            params["exchange"] = self.LOCAL_EXCHANGE
+            params.setdefault("interval", "1d")
+
+            self._local_downloader = TradingViewDownloader(params)
+
+        return self._local_downloader
 
     @staticmethod
     def _default_credentials_path():

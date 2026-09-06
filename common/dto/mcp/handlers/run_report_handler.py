@@ -51,6 +51,7 @@ def run_report_handler(args: dict, orchestrator):
                 input_file=args.get("input_file"),
                 output_file=args.get("output_file"),
                 credentials_file=args.get("credentials_file"),
+                tv_params=args.get("tv_params"),
             )
         except Exception as e:
             print(f"Error initializing process_run_report: {str(e)} ")

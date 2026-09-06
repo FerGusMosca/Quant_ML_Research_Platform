@@ -2511,7 +2511,7 @@ class ReportsOrchestationLogic:
             raise
 
     def _run_update_mtm_prices(self, gdrive_url, input_file, output_file, credentials_file=None,
-                               portfolio=None, job_id=None):
+                               portfolio=None, tv_params=None, job_id=None):
         """
         Lee la planilla de simbolos compartida en Drive, baja el ultimo precio y
         volumen de cada uno y escribe el resultado en la planilla de salida,
@@ -2547,6 +2547,7 @@ class ReportsOrchestationLogic:
             credentials_file=credentials_file,
             portfolio=portfolio,
             monitor_conn_str=self.ml_reports_conn_str,
+            tv_params=tv_params,
             logger=self.logger,
             job_id=job_id,
         )
@@ -2563,7 +2564,8 @@ class ReportsOrchestationLogic:
 
     def process_run_report(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,source=None,dest_folder=None,
                            rank_folder=None,job_id=None,query=None,tag_cfg=None,sector=None,overwrite=False,
-                           gdrive_url=None,input_file=None,output_file=None,credentials_file=None):
+                           gdrive_url=None,input_file=None,output_file=None,credentials_file=None,
+                           tv_params=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year,portfolio,job_id,overwrite=overwrite)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
@@ -2623,7 +2625,7 @@ class ReportsOrchestationLogic:
         elif report_key.lower() == ReportType.UPDATE_MTM_PRICES.value:
             return self._run_update_mtm_prices(gdrive_url=gdrive_url, input_file=input_file, output_file=output_file,
                                                credentials_file=credentials_file, portfolio=portfolio,
-                                               job_id=job_id)
+                                               tv_params=tv_params, job_id=job_id)
         elif report_key.lower() == ReportType.START_MCP.value:
             self._run_start_mcp()
         else:
