@@ -1,3 +1,6 @@
+# === TRADINGVIEW ===
+tradingview-datafeed==2.1.1
+
 pandas
 numpy<2
 requests
@@ -41,3 +44,10 @@ torch==2.2.0+cpu
 
 #Postgre
 psycopg2-binary
+
+
+#Google Drive y Google Sheets
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-auth-oauthlib

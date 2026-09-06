@@ -54,6 +54,7 @@ from logic_layer.report_generators.K_Q_10s.competition_summary_report import Com
 from logic_layer.report_generators.K_Q_10s.sentiment.single_stock_sentiment_summary_report_v2 import \
     SentimentSingleSecurity
 from logic_layer.report_generators.query_match_report import QueryMatchReportK10Q10
+from logic_layer.report_generators.mtm.mtm_prices_report import MTMPricesReport
 from logic_layer.report_generators.K_Q_10s.sentiment.sentence_sentiment_summary_report import SentimentSummaryReport
 from logic_layer.report_generators.K_Q_10s.sentiment.sentence_sentiment_summary_report_v2 import SentimentSummaryReportV2
 from logic_layer.report_generators.thirtieen_F.thirteen_f_graph_processor import ThirteenFGraphProcessor
@@ -70,6 +71,10 @@ class ReportsOrchestationLogic:
         # [VECTOR_DB] values read from configs/commands_mgr.ini. Passed through as
         # plain settings: the data access layer is the one that builds the DSN.
         self.vectors_db_config=vectors_db_config
+
+        # La misma base que usa la pantalla del monitor, asi que el reporte del
+        # portfolio no necesita que le manden ninguna conexion por parametro.
+        self.ml_reports_conn_str = ml_reports_conn_str
 
         self.report_securities_mgr = ReportSecuritiesManager(ml_reports_conn_str, logger)
 
@@ -2505,8 +2510,60 @@ class ReportsOrchestationLogic:
             )
             raise
 
+    def _run_update_mtm_prices(self, gdrive_url, input_file, output_file, credentials_file=None,
+                               portfolio=None, job_id=None):
+        """
+        Lee la planilla de simbolos compartida en Drive, baja el ultimo precio y
+        volumen de cada uno y escribe el resultado en la planilla de salida,
+        dejando el estado en la solapa de control.
+
+        La url de la carpeta y los nombres de los dos archivos vienen siempre
+        por parametro: nada de eso queda escrito en el codigo.
+        """
+
+        if gdrive_url is None:
+            raise Exception("[MTM] gdrive_url is mandatory")
+
+        if input_file is None:
+            raise Exception("[MTM] input_file is mandatory")
+
+        ObsContext.set(
+            job_id=str(job_id),
+            service_id=ServiceId.MCP_SEC_REPORTS,
+            operation_name="update_mtm_prices",
+            metadata={"input_file": input_file, "output_file": output_file},
+        )
+
+        self.logger.do_log(
+            f"[MTM] Updating prices from '{input_file}'",
+            MessageType.INFO,
+            job_id,
+        )
+
+        report = MTMPricesReport(
+            gdrive_url=gdrive_url,
+            input_file=input_file,
+            output_file=output_file,
+            credentials_file=credentials_file,
+            portfolio=portfolio,
+            monitor_conn_str=self.ml_reports_conn_str,
+            logger=self.logger,
+            job_id=job_id,
+        )
+
+        summary = report.run()
+
+        self.logger.do_log(
+            f"[MTM] Finished. {summary['priced']} prices written, {summary['errors']} errors.",
+            MessageType.INFO,
+            job_id,
+        )
+
+        return summary
+
     def process_run_report(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,source=None,dest_folder=None,
-                           rank_folder=None,job_id=None,query=None,tag_cfg=None,sector=None,overwrite=False):
+                           rank_folder=None,job_id=None,query=None,tag_cfg=None,sector=None,overwrite=False,
+                           gdrive_url=None,input_file=None,output_file=None,credentials_file=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year,portfolio,job_id,overwrite=overwrite)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
@@ -2563,6 +2620,10 @@ class ReportsOrchestationLogic:
         elif report_key.lower() == ReportType.CREATE_13F_GRAPH.value:
             self._create_13f_graph(year, quarter,source, rank_folder, job_id)
         #
+        elif report_key.lower() == ReportType.UPDATE_MTM_PRICES.value:
+            return self._run_update_mtm_prices(gdrive_url=gdrive_url, input_file=input_file, output_file=output_file,
+                                               credentials_file=credentials_file, portfolio=portfolio,
+                                               job_id=job_id)
         elif report_key.lower() == ReportType.START_MCP.value:
             self._run_start_mcp()
         else:

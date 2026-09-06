@@ -34,4 +34,6 @@ class ReportType(Enum):
 
     GENERIC_TEXT_ANALYSIS = "generic_text_analysis"
 
+    UPDATE_MTM_PRICES = "update_mtm_prices"
+
     START_MCP = "start_mcp"

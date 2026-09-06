@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# Clave de la cuenta de servicio de Google
+static/config/*.json
+
 # Distribution / packaging
 .Python
 build/
