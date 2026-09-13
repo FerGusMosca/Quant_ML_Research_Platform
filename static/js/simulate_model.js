@@ -89,8 +89,7 @@ function selectModel(modelId) {
   document.getElementById('hdrModelMeta').textContent =
     `${m.symbol} · ${m.algo_type} · ${m.d_from} → ${m.d_to}`;
 
-  document.getElementById('runDFrom').value = m.d_from;
-  document.getElementById('runDTo').value   = m.d_to;
+  applyYearsWindow();
   document.getElementById('runNFlip').value = m.n_flip;
   document.getElementById('runBias').value  = m.bias;
 
@@ -118,6 +117,20 @@ function switchTab(name) {
   document.querySelectorAll('.tab-pane').forEach(p => {
     p.classList.toggle('active', p.id === `tab-${name}`);
   });
+}
+
+/* ── Ventana movil de N anios hacia atras ─────────────────── */
+function applyYearsWindow() {
+  const yearsEl = document.getElementById('runYears');
+  if (!yearsEl) return;
+  let years = parseInt(yearsEl.value);
+  if (!years || years < 1) { years = 5; yearsEl.value = 5; }
+  const pad  = n => String(n).padStart(2, '0');
+  const fmt  = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  const to   = new Date();
+  const from = new Date(to.getFullYear() - years, to.getMonth(), to.getDate());
+  document.getElementById('runDTo').value   = fmt(to);
+  document.getElementById('runDFrom').value = fmt(from);
 }
 
 /* ── Run XGBoost ─────────────────────────────────────────────── */
