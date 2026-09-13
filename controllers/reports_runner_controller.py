@@ -96,13 +96,15 @@ class ReportsRunnerController(BaseController):
                                  "reports": self.logic.get_reports(),
                                  "dest_folder_suffix": self.logic.DEST_FOLDER_SUFFIX,
                                  "rank_folder_suffix": self.logic.RANK_FOLDER_SUFFIX,
+                                 "rank_folder_suffix_by_dates": self.logic.RANK_FOLDER_SUFFIX_BY_DATES,
                                  "portfolios": self.__portfolio_options__()})
         except Exception as e:
             return self.__fail__("api_reference", e)
 
     async def api_run(self, report: str, portfolio: str,
-                      year_from: int, year_to: int = None,
-                      dest_folder: str = None, rank_folder: str = None):
+                      year_from: int = None, year_to: int = None,
+                      dest_folder: str = None, rank_folder: str = None,
+                      date_from: str = None, date_to: str = None):
         """
         Streams the MCP run as Server-Sent Events. The connection stays open
         until the server sends its 'completed' event, which is exactly the
@@ -110,9 +112,13 @@ class ReportsRunnerController(BaseController):
 
         dest_folder and rank_folder only travel for the sentiment reports; the
         download reports ignore them.
+
+        date_from and date_to only travel for the reports asked by a date range;
+        every other report keeps using year_from and year_to exactly as before.
         """
         generator = self.logic.stream_report(report, portfolio, year_from, year_to,
-                                             dest_folder, rank_folder)
+                                             dest_folder, rank_folder,
+                                             date_from, date_to)
         return StreamingResponse(generator, media_type="text/event-stream", headers={
             "Cache-Control": "no-cache",
             "Connection": "keep-alive",

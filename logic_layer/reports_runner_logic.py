@@ -11,6 +11,7 @@
 
 import json
 import traceback
+from datetime import datetime
 
 from data_access_layer.report_runs_manager import ReportRunsManager
 from framework.common.logger.message_type import MessageType
@@ -47,11 +48,23 @@ class ReportsRunnerLogic:
                            "quarters of the year on its own, so there is no quarter to pick.",
             "needs_folders": True,
         },
+        "sentiment_summary_report_by_dates": {
+            "label": "Sentiment Ranking by dates",
+            "description": "Scores whatever landed between two dates, annual and quarterly "
+                           "filings alike, and leaves a single ranking where every row says "
+                           "which report fed it.",
+            "needs_folders": True,
+            "needs_dates": True,
+        },
     }
 
     # Folder names the sentiment reports default to when the user leaves them empty.
     DEST_FOLDER_SUFFIX = "_PORTFOLIO_ONLY_Q10_K10_SENTIMENT_FULL"
     RANK_FOLDER_SUFFIX = "_PORTFOLIO_ONLY_Q10_K10_SENTIMENT_RANK"
+
+    # The date-driven run gets its own ranking folder, sitting next to the ones
+    # already there instead of adding a level inside them.
+    RANK_FOLDER_SUFFIX_BY_DATES = "_PORTFOLIO_ONLY_Q10_K10_SENTIMENT_RANK_BY_DATES"
 
     def __init__(self, config_settings: dict, logger):
         self.config = config_settings
@@ -97,15 +110,37 @@ class ReportsRunnerLogic:
     def needs_folders(self, report: str) -> bool:
         return bool(self.REPORTS.get(report, {}).get("needs_folders"))
 
-    def default_folders(self, portfolio: str) -> dict:
+    def needs_dates(self, report: str) -> bool:
+        """True for the reports asked by a date range instead of a year range."""
+        return bool(self.REPORTS.get(report, {}).get("needs_dates"))
+
+    @staticmethod
+    def __as_iso_date__(value, label: str) -> str:
+        """Accept YYYY-MM-DD (what the date box sends) and nothing else."""
+        text = (str(value or "")).strip()[:10]
+        if not text:
+            raise Exception(f"{label} is required for this report")
+        try:
+            datetime.strptime(text, "%Y-%m-%d")
+        except ValueError:
+            raise Exception(f"{label} must be a date, e.g. 2026-03-31")
+        return text
+
+    def default_folders(self, portfolio: str, report: str = None) -> dict:
         portfolio = (portfolio or "").strip()
         if not portfolio:
             return {"dest_folder": "", "rank_folder": ""}
-        return {"dest_folder": f"{portfolio}{self.DEST_FOLDER_SUFFIX}",
-                "rank_folder": f"{portfolio}{self.RANK_FOLDER_SUFFIX}"}
 
-    def build_arguments(self, report: str, portfolio: str, year_from, year_to,
-                        dest_folder: str = None, rank_folder: str = None) -> dict:
+        rank_suffix = (self.RANK_FOLDER_SUFFIX_BY_DATES
+                       if report and self.needs_dates(report)
+                       else self.RANK_FOLDER_SUFFIX)
+
+        return {"dest_folder": f"{portfolio}{self.DEST_FOLDER_SUFFIX}",
+                "rank_folder": f"{portfolio}{rank_suffix}"}
+
+    def build_arguments(self, report: str, portfolio: str, year_from=None, year_to=None,
+                        dest_folder: str = None, rank_folder: str = None,
+                        date_from: str = None, date_to: str = None) -> dict:
         if report not in self.REPORTS:
             raise Exception(f"Unknown report '{report}'")
 
@@ -117,23 +152,35 @@ class ReportsRunnerLogic:
         if not portfolio:
             raise Exception("portfolio is required")
 
-        try:
-            year_from = int(year_from)
-            year_to = int(year_to or year_from)
-        except Exception:
-            raise Exception("year_from and year_to must be years, e.g. 2026")
+        if self.needs_dates(report):
+            # This report is asked by the day the filings landed, so the year
+            # boxes do not travel at all.
+            date_from = self.__as_iso_date__(date_from, "date_from")
+            date_to = self.__as_iso_date__(date_to, "date_to")
 
-        if year_to < year_from:
-            year_from, year_to = year_to, year_from
+            if date_to < date_from:
+                date_from, date_to = date_to, date_from
 
-        # This is the exact shape the PowerShell script was sending
-        arguments = {"portfolio": portfolio, "year": f"{year_from}-{year_to}"}
+            arguments = {"portfolio": portfolio, "d_from": date_from, "d_to": date_to}
+
+        else:
+            try:
+                year_from = int(year_from)
+                year_to = int(year_to or year_from)
+            except Exception:
+                raise Exception("year_from and year_to must be years, e.g. 2026")
+
+            if year_to < year_from:
+                year_from, year_to = year_to, year_from
+
+            # This is the exact shape the PowerShell script was sending
+            arguments = {"portfolio": portfolio, "year": f"{year_from}-{year_to}"}
 
         # The sentiment reports write two folders: one with a JSON per filing and
         # one with the consolidated ranking. Both are required by the server, so
         # an empty box falls back to the portfolio-derived name instead of failing.
         if self.needs_folders(report):
-            defaults = self.default_folders(portfolio)
+            defaults = self.default_folders(portfolio, report)
             arguments["dest_folder"] = (dest_folder or "").strip() or defaults["dest_folder"]
             arguments["rank_folder"] = (rank_folder or "").strip() or defaults["rank_folder"]
 
@@ -141,15 +188,17 @@ class ReportsRunnerLogic:
 
     # ── Execution ─────────────────────────────────────────────────────────────
 
-    async def stream_report(self, report: str, portfolio: str, year_from, year_to,
-                            dest_folder: str = None, rank_folder: str = None):
+    async def stream_report(self, report: str, portfolio: str, year_from=None, year_to=None,
+                            dest_folder: str = None, rank_folder: str = None,
+                            date_from: str = None, date_to: str = None):
         """
         Async generator of Server-Sent Events. One event per websocket message,
         plus a terminal 'done' event carrying the outcome.
         """
         try:
             arguments = self.build_arguments(report, portfolio, year_from, year_to,
-                                             dest_folder, rank_folder)
+                                             dest_folder, rank_folder,
+                                             date_from, date_to)
         except Exception as e:
             yield self.__sse__({"event": "error", "error": str(e)})
             yield self.__sse__({"event": "done", "ok": False, "error": str(e)})

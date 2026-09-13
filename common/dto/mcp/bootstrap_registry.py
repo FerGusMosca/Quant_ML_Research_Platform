@@ -22,6 +22,7 @@ def build_mcp_registry_reports(orchestrator) -> ToolRegistry:
                         "portfolio": {"type": "string"},
                         "symbol": {"type": "string"},
                         "d_from": {"type": "string"},
+                        "d_to": {"type": "string"},
                         "dest_folder": {"type": "string"},
                         "rank_folder": {"type": "string"},
                         "tag_model": {"type": "string"},

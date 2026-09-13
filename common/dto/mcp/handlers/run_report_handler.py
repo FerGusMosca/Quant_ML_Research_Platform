@@ -40,6 +40,7 @@ def run_report_handler(args: dict, orchestrator):
                 portfolio=args.get("portfolio"),
                 symbol=args.get("symbol"),
                 d_from=args.get("d_from"),
+                d_to=args.get("d_to"),
                 source=args.get("source"),
                 dest_folder=args.get("dest_folder"),
                 rank_folder=args.get("rank_folder"),

@@ -15,6 +15,7 @@ class ReportType(Enum):
     COMPETITION_SUMMARY_REPORT_K10 = "competition_summary_report_k10"
     SENTIMENT_SUMMARY_REPORT_K10 = "sentiment_summary_report_k10"
     SENTIMENT_SUMMARY_REPORT_Q10 = "sentiment_summary_report_q10"
+    SENTIMENT_SUMMARY_REPORT_BY_DATES = "sentiment_summary_report_by_dates"
     SENTIMENT_SUMMARY_REPORT_SINGLE_STOCK_K10 = "sentiment_summary_single_security_report_k10"
     SENTIMENT_SUMMARY_REPORT_SINGLE_STOCK_Q10 = "sentiment_summary_single_security_report_q10"
     QUERY_MATCH_REPORT_K10 = "query_match_report_k10"

@@ -60,6 +60,8 @@ from logic_layer.report_generators.query_match_report import QueryMatchReportK10
 from logic_layer.report_generators.mtm.mtm_prices_report import MTMPricesReport
 from logic_layer.report_generators.K_Q_10s.sentiment.sentence_sentiment_summary_report import SentimentSummaryReport
 from logic_layer.report_generators.K_Q_10s.sentiment.sentence_sentiment_summary_report_v2 import SentimentSummaryReportV2
+from logic_layer.report_generators.K_Q_10s.sentiment.sentiment_summary_report_by_dates import \
+    SentimentSummaryReportByDates
 from logic_layer.report_generators.thirtieen_F.thirteen_f_graph_processor import ThirteenFGraphProcessor
 from service_layer.client.seeking_alpha.sa_financial_client import SAFinancialsClient
 from service_layer.server.mcp_server import MCPServer
@@ -955,6 +957,105 @@ class ReportsOrchestationLogic:
             MessageType.INFO,
             job_id
         )
+
+    def _run_sentiment_summary_report_by_dates(
+            self,
+            d_from,
+            d_to,
+            portfolio=None,
+            universe=None,
+            dest_folder=None,
+            rank_folder=None,
+            job_id=None,
+    ):
+        """
+        Sentiment ranking driven by filing dates instead of report type.
+
+        Everything that landed between the two dates goes into the same run:
+        annual and quarterly filings live together in one ranking, and each row
+        carries which report fed it.
+        """
+
+        ObsContext.set(
+            job_id=str(job_id),
+            service_id=ServiceId.MCP_SEC_REPORTS,
+            operation_name="sentiment_summary_report_by_dates",
+            metadata={"portfolio": portfolio, "d_from": d_from, "d_to": d_to,
+                      "dest_folder": dest_folder, "rank_folder": rank_folder},
+        )
+
+        summary = {
+            "report": "sentiment_summary_by_dates",
+            "portfolio": portfolio,
+            "universe": universe,
+            "d_from": str(d_from),
+            "d_to": str(d_to),
+            "planned": 0,
+            "processed": 0,
+            "failed": 0,
+            "missing": 0,
+            "consolidated": False,
+            "ranking": False,
+            "error": None,
+            "elapsed_sec": None,
+        }
+
+        start_time = datetime.now()
+
+        self.logger.do_log(
+            f"[SENT-DATES] 🚀 Starting sentiment summary by dates {d_from} .. {d_to}",
+            MessageType.INFO,
+            job_id,
+        )
+
+        try:
+            whitelist = self._get_universe_filers(universe) if universe else None
+
+            gen = SentimentSummaryReportByDates(
+                date_from=d_from,
+                date_to=d_to,
+                logger=self.logger,
+                calendar_mgr=self.sec_cal_mgr,
+                portfolio=portfolio,
+                filers_whitelist=whitelist,
+                universe_key=universe,
+                dest_folder=dest_folder,
+                rank_folder=rank_folder,
+            )
+
+            counters = gen.run(job_id)
+            summary.update(counters)
+
+            consolidated = gen.consolidate_range(job_id)
+            summary["consolidated"] = bool(consolidated)
+
+            if consolidated:
+                paths = gen.rank_range(consolidated, job_id)
+                summary["ranking"] = bool(paths.get("csv"))
+                summary["ranking_csv"] = paths.get("csv")
+                summary["ranking_json"] = paths.get("json")
+
+        except Exception as e:
+            summary["error"] = str(e)
+            self.logger.do_log(
+                f"[SENT-DATES] ❌ Run failed: {e}",
+                MessageType.ERROR,
+                job_id,
+            )
+
+        summary["elapsed_sec"] = round((datetime.now() - start_time).total_seconds(), 2)
+
+        self.logger.do_log(
+            json.dumps({
+                "event": "completed",
+                "report": "sentiment_summary_by_dates",
+                "summary": summary,
+            }),
+            MessageType.INFO,
+            job_id,
+        )
+
+        return summary
 
     #
     def _run_document_single_security(
@@ -2626,7 +2727,7 @@ class ReportsOrchestationLogic:
         except Exception:
             pass
 
-    def process_run_report(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,source=None,dest_folder=None,
+    def process_run_report(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,d_to=None,source=None,dest_folder=None,
                            rank_folder=None,job_id=None,query=None,tag_cfg=None,sector=None,overwrite=False,
                            gdrive_url=None,input_file=None,output_file=None,credentials_file=None,
                            tv_params=None):
@@ -2644,13 +2745,14 @@ class ReportsOrchestationLogic:
         if str(report_key).lower() == ReportType.START_MCP.value:
             return self._process_run_report_internal(
                 report_key, year=year, quarter=quarter, portfolio=portfolio, symbol=symbol,
-                d_from=d_from, source=source, dest_folder=dest_folder, rank_folder=rank_folder,
+                d_from=d_from, d_to=d_to, source=source, dest_folder=dest_folder, rank_folder=rank_folder,
                 job_id=job_id, query=query, tag_cfg=tag_cfg, sector=sector, overwrite=overwrite,
                 gdrive_url=gdrive_url, input_file=input_file, output_file=output_file,
                 credentials_file=credentials_file, tv_params=tv_params)
 
         extra_params = {
             "d_from": d_from,
+            "d_to": d_to,
             "dest_folder": dest_folder,
             "rank_folder": rank_folder,
             "query": query,
@@ -2669,7 +2771,7 @@ class ReportsOrchestationLogic:
         try:
             result = self._process_run_report_internal(
                 report_key, year=year, quarter=quarter, portfolio=portfolio, symbol=symbol,
-                d_from=d_from, source=source, dest_folder=dest_folder, rank_folder=rank_folder,
+                d_from=d_from, d_to=d_to, source=source, dest_folder=dest_folder, rank_folder=rank_folder,
                 job_id=job_id, query=query, tag_cfg=tag_cfg, sector=sector, overwrite=overwrite,
                 gdrive_url=gdrive_url, input_file=input_file, output_file=output_file,
                 credentials_file=credentials_file, tv_params=tv_params)
@@ -2681,7 +2783,7 @@ class ReportsOrchestationLogic:
             self._close_report_run(run, job_id, error=f"{type(e).__name__}: {e}")
             raise
 
-    def _process_run_report_internal(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,source=None,dest_folder=None,
+    def _process_run_report_internal(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,d_to=None,source=None,dest_folder=None,
                            rank_folder=None,job_id=None,query=None,tag_cfg=None,sector=None,overwrite=False,
                            gdrive_url=None,input_file=None,output_file=None,credentials_file=None,
                            tv_params=None):
@@ -2704,6 +2806,10 @@ class ReportsOrchestationLogic:
             self._run_sentiment_single_security_report(symbol=symbol,year=year, quarter=quarter,report_type=ReportFolder.Q10.value,portfolio=portfolio, job_id=job_id)
         elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_Q10.value:
             self._run_sentiment_summary_report(year, SECReports.Q10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder,job_id=job_id)
+        elif report_key.lower() == ReportType.SENTIMENT_SUMMARY_REPORT_BY_DATES.value:
+            return self._run_sentiment_summary_report_by_dates(d_from=d_from, d_to=d_to, portfolio=portfolio,
+                                                              dest_folder=dest_folder, rank_folder=rank_folder,
+                                                              universe=None, job_id=job_id)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_Q10.value:
             self._run_competition_summary_report(year, SECReports.Q10.value,portfolio=portfolio,dest_folder=dest_folder,rank_folder=rank_folder)
         elif report_key.lower() == ReportType.COMPETITION_SUMMARY_REPORT_K10.value:

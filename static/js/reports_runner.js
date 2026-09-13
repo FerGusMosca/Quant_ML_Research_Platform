@@ -10,6 +10,7 @@ let REPORTS = [];
 let SELECTED = null;
 let DEST_SUFFIX = '';
 let RANK_SUFFIX = '';
+let RANK_SUFFIX_BY_DATES = '';
 let STREAM = null;
 let CAL_ROWS = [];
 let RUNS_TIMER = null;
@@ -49,6 +50,7 @@ async function loadReference() {
     REPORTS = data.reports || [];
     DEST_SUFFIX = data.dest_folder_suffix || '';
     RANK_SUFFIX = data.rank_folder_suffix || '';
+    RANK_SUFFIX_BY_DATES = data.rank_folder_suffix_by_dates || '';
     paintCards();
     paintPortfolios(data.portfolios || []);
 
@@ -124,6 +126,7 @@ function selectReport(report) {
     card.classList.toggle('active', card.dataset.report === report);
   });
   paintFolderFields();
+  paintDateFields();
 }
 
 function currentReport() {
@@ -135,12 +138,52 @@ function needsFolders() {
   return !!(report && report.needs_folders);
 }
 
+function needsDates() {
+  const report = currentReport();
+  return !!(report && report.needs_dates);
+}
+
 function paintFolderFields() {
   const show = needsFolders();
   $('wrapDestFolder').hidden = !show;
   $('wrapRankFolder').hidden = !show;
-  $('sentimentNote').hidden = !show;
+  $('sentimentNote').hidden = !(show && !needsDates());
   if (show) fillFolderDefaults();
+}
+
+// Un reporte pedido por fechas no usa los años: se esconden para que no quede
+// duda de que dato manda.
+function paintDateFields() {
+  const byDates = needsDates();
+
+  $('wrapDateFrom').hidden = !byDates;
+  $('wrapDateTo').hidden = !byDates;
+  $('datesNote').hidden = !byDates;
+
+  $('wrapYearFrom').hidden = byDates;
+  $('wrapYearTo').hidden = byDates;
+
+  if (byDates) fillDateDefaults();
+}
+
+function fillDateDefaults() {
+  const from = $('fDateFrom');
+  const to = $('fDateTo');
+  if (from.value && to.value) return;
+
+  // Arranca en el mes corriente, que es el caso de uso normal.
+  const today = new Date();
+  const first = new Date(today.getFullYear(), today.getMonth(), 1);
+  const last = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+
+  if (!from.value) from.value = isoDate(first);
+  if (!to.value) to.value = isoDate(last);
+}
+
+function isoDate(d) {
+  const month = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${d.getFullYear()}-${month}-${day}`;
 }
 
 function fillFolderDefaults() {
@@ -153,8 +196,12 @@ function fillFolderDefaults() {
     return;
   }
 
+  // La corrida por fechas escribe en su propia carpeta de ranking, hermana de
+  // las que ya existen, no adentro de ellas.
+  const rankSuffix = needsDates() ? RANK_SUFFIX_BY_DATES : RANK_SUFFIX;
+
   $('fDestFolder').value = `${portfolio}${DEST_SUFFIX}`;
-  $('fRankFolder').value = `${portfolio}${RANK_SUFFIX}`;
+  $('fRankFolder').value = `${portfolio}${rankSuffix}`;
 }
 
 // ── Tabs ──
@@ -341,12 +388,31 @@ function runReport() {
     return;
   }
 
-  const request = {
-    report: SELECTED,
-    portfolio: portfolio,
-    year_from: $('fYearFrom').value,
-    year_to: $('fYearTo').value || $('fYearFrom').value
-  };
+  const request = { report: SELECTED, portfolio: portfolio };
+
+  if (needsDates()) {
+    const dateFrom = ($('fDateFrom').value || '').trim();
+    const dateTo = ($('fDateTo').value || '').trim();
+
+    if (!dateFrom || !dateTo) {
+      writeLine('✕ Both dates are required for this report.', 'err');
+      $('fDateFrom').focus();
+      return;
+    }
+
+    if (dateTo < dateFrom) {
+      writeLine('✕ The To date cannot be earlier than the From date.', 'err');
+      $('fDateTo').focus();
+      return;
+    }
+
+    request.date_from = dateFrom;
+    request.date_to = dateTo;
+
+  } else {
+    request.year_from = $('fYearFrom').value;
+    request.year_to = $('fYearTo').value || $('fYearFrom').value;
+  }
 
   if (needsFolders()) {
     request.dest_folder = ($('fDestFolder').value || '').trim();

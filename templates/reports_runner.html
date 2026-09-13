@@ -39,14 +39,24 @@
       <select class="inp" id="fPortfolio"><option value="">Pick a portfolio</option></select>
     </label>
 
-    <label class="rr-field narrow">
+    <label class="rr-field narrow" id="wrapYearFrom">
       <span>From year</span>
       <input class="inp" id="fYearFrom" type="number" value="2026">
     </label>
 
-    <label class="rr-field narrow">
+    <label class="rr-field narrow" id="wrapYearTo">
       <span>To year</span>
       <input class="inp" id="fYearTo" type="number" value="2026">
+    </label>
+
+    <label class="rr-field narrow" id="wrapDateFrom" hidden>
+      <span>From date</span>
+      <input class="inp" id="fDateFrom" type="date">
+    </label>
+
+    <label class="rr-field narrow" id="wrapDateTo" hidden>
+      <span>To date</span>
+      <input class="inp" id="fDateTo" type="date">
     </label>
 
     <label class="rr-field" id="wrapDestFolder" hidden>
@@ -70,6 +80,13 @@
     <span class="rr-status" id="runStatus">idle</span>
     <span class="spacer"></span>
     <button class="btn ghost" onclick="clearConsole()">Clear</button>
+  </div>
+
+  <div class="rr-note" id="datesNote" hidden>
+    This run does not look at the report type: it looks at the day each filing was
+    presented. Whatever landed between the two dates goes in, so the same ranking
+    can hold annual and quarterly filings side by side, and every row says which
+    one was used. A filing that is not downloaded yet is listed and skipped.
   </div>
 
   <div class="rr-note" id="sentimentNote" hidden>
