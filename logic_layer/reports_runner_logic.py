@@ -12,6 +12,7 @@
 import json
 import traceback
 
+from data_access_layer.report_runs_manager import ReportRunsManager
 from framework.common.logger.message_type import MessageType
 from service_layer.client.mcp.mcp_report_client import ReportMCPClient
 
@@ -56,6 +57,32 @@ class ReportsRunnerLogic:
         self.config = config_settings
         self.logger = logger
         self.mcp_uri = (config_settings.get("MCP_REPORTS_URI") or "").strip()
+
+        # La pantalla mira la base, no el chorro del MCP: lo que vale es lo que
+        # quedo anotado, porque sobrevive a cualquier reinicio.
+        self.ml_reports_conn_str = config_settings.get("ml_reports_conn_str")
+        self._runs_mgr = None
+
+    # ── Runs (lo que quedo anotado en la base) ────────────────────────────────
+
+    def __runs_mgr__(self):
+        if self._runs_mgr is None:
+            self._runs_mgr = ReportRunsManager(self.ml_reports_conn_str, self.logger)
+        return self._runs_mgr
+
+    def get_runs(self, top: int = 50, status: str = None, report: str = None):
+        return self.__runs_mgr__().get_report_runs(top=int(top or 50),
+                                                   status=(status or None),
+                                                   report_key=(report or None))
+
+    def abort_runs(self, run_id: int = None, older_than_hours: int = None) -> int:
+        """Lo que quedo colgado en 'started' pasa a 'aborted'."""
+        return self.__runs_mgr__().reset_stuck_report_runs(
+            run_id=int(run_id) if run_id else None,
+            older_than_hours=int(older_than_hours) if older_than_hours else None)
+
+    def delete_run(self, run_id: int):
+        self.__runs_mgr__().delete_report_run(int(run_id))
 
     # ── Reference data ────────────────────────────────────────────────────────
 

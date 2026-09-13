@@ -7,6 +7,8 @@ import asyncio
 import traceback
 
 from business_entities.tag_run import TagRun
+from business_entities.report_run import ReportRun
+from common.dto.mcp.report_run_db_observer import ReportRunDBObserver
 from common.dto.mcp.bootstrap_registry import  build_mcp_registry_reports
 from common.dto.mcp.dispatcher import JsonRpcDispatcher
 from common.dto.mcp.progress_bus import ProgressBus
@@ -42,6 +44,7 @@ from data_access_layer.report_securities_manager import ReportSecuritiesManager
 from data_access_layer.sec_securities_manager import SECSecuritiesManager
 from data_access_layer.sec_securities_metadata_manager import SECSecuritiesMetadataManager
 from data_access_layer.securities_calendar_manager import SecuritiesCalendarManager
+from data_access_layer.report_runs_manager import ReportRunsManager
 from data_access_layer.tag_run_manager import TagRunManager
 from framework.common.logger.message_type import MessageType
 from logic_layer.indicator_algos.financial_ratios_calcualtor import FinancialRatiosCalculator
@@ -87,6 +90,15 @@ class ReportsOrchestationLogic:
         self.sec_cal_mgr =SecuritiesCalendarManager(ml_reports_conn_str)
 
         self.tag_runs_mgr = TagRunManager(ml_reports_conn_str,logger)
+
+        # Registro de corridas: arranque y final de cada reporte disparado por MCP
+        self.report_runs_mgr = ReportRunsManager(ml_reports_conn_str, logger)
+
+        # El observador escucha los mismos avisos que ya viajan al MCP y anota
+        # en la base solo los importantes: no hace falta tocar ningun reporte.
+        self.report_run_observer = ReportRunDBObserver(self.report_runs_mgr, logger)
+        if logger is not None:
+            logger.register_observer(self.report_run_observer)
 
         self.mcp_server=mcp_server
         self.mcp_port=mcp_port
@@ -2562,7 +2574,114 @@ class ReportsOrchestationLogic:
 
         return summary
 
+    # -- Registro de corridas --------------------------------------------------
+
+    def _start_report_run(self, report_key, job_id, portfolio, symbol, year, quarter,
+                          source, extra_params):
+        """
+        Anota el arranque y deja al observador siguiendo ese job_id. Si la base
+        no contesta, la corrida sigue igual: el registro nunca la puede voltear.
+        """
+        try:
+            run = ReportRun.initialize_report_run(
+                report_key=report_key,
+                job_id=job_id,
+                portfolio=portfolio,
+                symbol=symbol,
+                year=year,
+                quarter=quarter,
+                source=source,
+                extra_params=extra_params,
+            )
+            self.report_runs_mgr.persist_report_run(run)
+
+            if self.report_run_observer is not None:
+                self.report_run_observer.track(job_id, run.id)
+
+            return run
+        except Exception:
+            return None
+
+    def _close_report_run(self, run, job_id, error=None):
+        """
+        Cierra la corrida solo si el observador no la cerro ya con el aviso de
+        cierre que el propio reporte manda. Asi no se pisan entre si.
+        """
+        if run is None:
+            return
+        try:
+            observer = self.report_run_observer
+
+            if error is None and observer is not None and observer.is_closed(job_id):
+                observer.forget(job_id)
+                return
+
+            self.report_runs_mgr.close_report_run(
+                run.id,
+                status=ReportRun._ERROR if error is not None else ReportRun._FINISHED,
+                last_error=str(error)[:3900] if error is not None else None)
+
+            if observer is not None:
+                observer.forget(job_id)
+        except Exception:
+            pass
+
     def process_run_report(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,source=None,dest_folder=None,
+                           rank_folder=None,job_id=None,query=None,tag_cfg=None,sector=None,overwrite=False,
+                           gdrive_url=None,input_file=None,output_file=None,credentials_file=None,
+                           tv_params=None):
+        """
+        Punto de entrada unico de todos los reportes.
+
+        Envuelve la ejecucion real para que quede anotado en la base cuando
+        arranco y cuando termino cada corrida. El final lo detecta el observador
+        escuchando el aviso de cierre que cada reporte ya manda hoy, asi que
+        ningun reporte suma avisos nuevos.
+        """
+
+        # El servidor MCP no es un reporte: se arranca y se queda vivo para
+        # siempre, asi que no tiene sentido anotarlo como corrida.
+        if str(report_key).lower() == ReportType.START_MCP.value:
+            return self._process_run_report_internal(
+                report_key, year=year, quarter=quarter, portfolio=portfolio, symbol=symbol,
+                d_from=d_from, source=source, dest_folder=dest_folder, rank_folder=rank_folder,
+                job_id=job_id, query=query, tag_cfg=tag_cfg, sector=sector, overwrite=overwrite,
+                gdrive_url=gdrive_url, input_file=input_file, output_file=output_file,
+                credentials_file=credentials_file, tv_params=tv_params)
+
+        extra_params = {
+            "d_from": d_from,
+            "dest_folder": dest_folder,
+            "rank_folder": rank_folder,
+            "query": query,
+            "sector": sector,
+            "overwrite": bool(overwrite),
+            "gdrive_url": gdrive_url,
+            "input_file": input_file,
+            "output_file": output_file,
+            "credentials_file": credentials_file,
+            "tv_params": tv_params,
+        }
+
+        run = self._start_report_run(report_key, job_id, portfolio, symbol, year, quarter,
+                                     source, extra_params)
+
+        try:
+            result = self._process_run_report_internal(
+                report_key, year=year, quarter=quarter, portfolio=portfolio, symbol=symbol,
+                d_from=d_from, source=source, dest_folder=dest_folder, rank_folder=rank_folder,
+                job_id=job_id, query=query, tag_cfg=tag_cfg, sector=sector, overwrite=overwrite,
+                gdrive_url=gdrive_url, input_file=input_file, output_file=output_file,
+                credentials_file=credentials_file, tv_params=tv_params)
+
+            self._close_report_run(run, job_id)
+            return result
+
+        except Exception as e:
+            self._close_report_run(run, job_id, error=f"{type(e).__name__}: {e}")
+            raise
+
+    def _process_run_report_internal(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,source=None,dest_folder=None,
                            rank_folder=None,job_id=None,query=None,tag_cfg=None,sector=None,overwrite=False,
                            gdrive_url=None,input_file=None,output_file=None,credentials_file=None,
                            tv_params=None):

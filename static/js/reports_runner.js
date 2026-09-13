@@ -12,6 +12,7 @@ let DEST_SUFFIX = '';
 let RANK_SUFFIX = '';
 let STREAM = null;
 let CAL_ROWS = [];
+let RUNS_TIMER = null;
 let CAL_COLS = [];
 
 // ── Clock ──
@@ -162,7 +163,145 @@ function showTab(tab) {
     btn.classList.toggle('active', btn.dataset.tab === tab);
   });
   $('paneRun').hidden = tab !== 'run';
+  $('paneRuns').hidden = tab !== 'runs';
   $('paneCalendar').hidden = tab !== 'calendar';
+
+  if (tab === 'runs') loadRuns();
+}
+
+// ── Runs (lo que quedo anotado en la base) ──
+async function loadRuns() {
+  const params = queryString({
+    top: $('rTop').value || 50,
+    status: $('rStatus').value || ''
+  });
+
+  try {
+    const resp = await fetch(`${API}/runs${params}`);
+    const data = await resp.json();
+    if (!data.ok) throw new Error(data.error || 'Could not read the runs');
+    paintRuns(data.items || []);
+  } catch (e) {
+    paintRuns([]);
+  }
+}
+
+function paintRuns(rows) {
+  const body = $('runsBody');
+  body.innerHTML = '';
+
+  rows.forEach(row => {
+    const tr = document.createElement('tr');
+
+    const cells = [
+      row.id,
+      row.report_key,
+      row.portfolio,
+      row.year,
+      null,                       // el estado va como pastilla
+      shortStamp(row.start_time),
+      shortStamp(row.end_time),
+      elapsed(row.elapsed_seconds),
+      row.last_error
+    ];
+
+    cells.forEach((value, index) => {
+      const td = document.createElement('td');
+      td.className = 'mono';
+
+      if (index === 4) {
+        const pill = document.createElement('span');
+        pill.className = `rr-pill rr-pill-${row.status}`;
+        pill.textContent = row.status;
+        td.appendChild(pill);
+      } else if (index === 8 && value) {
+        td.className = 'mono rr-err-cell';
+        td.title = value;
+        td.textContent = value.length > 60 ? `${value.slice(0, 60)}…` : value;
+      } else {
+        td.textContent = value === null || value === undefined || value === '' ? '—' : String(value);
+      }
+
+      tr.appendChild(td);
+    });
+
+    const actions = document.createElement('td');
+
+    if (row.status === 'started') {
+      const abort = document.createElement('button');
+      abort.className = 'btn danger';
+      abort.textContent = 'Abort';
+      abort.onclick = () => abortRun(row.id);
+      actions.appendChild(abort);
+    }
+
+    const del = document.createElement('button');
+    del.className = 'btn ghost';
+    del.textContent = 'Delete';
+    del.onclick = () => deleteRun(row.id);
+    actions.appendChild(del);
+
+    tr.appendChild(actions);
+    body.appendChild(tr);
+  });
+
+  $('runsEmpty').hidden = rows.length > 0;
+}
+
+async function abortRun(id) {
+  if (!confirm(`Run ${id} will be marked as aborted. Continue?`)) return;
+  await postRuns('/runs/abort', { run_id: id });
+}
+
+async function abortAllStuck() {
+  if (!confirm('Every run still sitting in "started" will be marked as aborted. Continue?')) return;
+  await postRuns('/runs/abort', {});
+}
+
+async function deleteRun(id) {
+  if (!confirm(`Run ${id} will be deleted for good. Continue?`)) return;
+  await postRuns('/runs/delete', { run_id: id });
+}
+
+async function postRuns(path, params) {
+  try {
+    const resp = await fetch(`${API}${path}${queryString(params)}`, { method: 'POST' });
+    const data = await resp.json();
+    if (!data.ok) throw new Error(data.error || 'The database refused the change');
+    loadRuns();
+  } catch (e) {
+    alert(e.message);
+  }
+}
+
+function toggleAutoRuns() {
+  const btn = $('btnAuto');
+
+  if (RUNS_TIMER) {
+    clearInterval(RUNS_TIMER);
+    RUNS_TIMER = null;
+    btn.textContent = '⟳ Auto off';
+    return;
+  }
+
+  RUNS_TIMER = setInterval(loadRuns, 5000);
+  btn.textContent = '⟳ Auto on';
+  loadRuns();
+}
+
+function shortStamp(value) {
+  if (!value) return '—';
+  return String(value).replace('T', ' ').slice(0, 19);
+}
+
+function elapsed(seconds) {
+  if (seconds === null || seconds === undefined || seconds === '') return '—';
+  const total = parseInt(seconds, 10);
+  if (isNaN(total)) return '—';
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const s = total % 60;
+  return h ? `${h}h ${m}m` : (m ? `${m}m ${s}s` : `${s}s`);
 }
 
 // ── Console ──
@@ -222,6 +361,11 @@ function runReport() {
   $('btnStop').hidden = false;
 
   STREAM = new EventSource(`${API}/run${params}`);
+
+  // Lo que vale es lo anotado en la base, asi que la pantalla se para ahi y se
+  // refresca sola mientras la corrida avanza.
+  showTab('runs');
+  if (!RUNS_TIMER) toggleAutoRuns();
 
   STREAM.onmessage = event => {
     let payload;

@@ -51,6 +51,11 @@ class ReportsRunnerController(BaseController):
         self.router.get("/run")(self.api_run)
         self.router.get("/calendar",  response_class=JSONResponse)(self.api_calendar)
 
+        # Corridas anotadas en la base: esto es lo que sobrevive a un reinicio.
+        self.router.get("/runs", response_class=JSONResponse)(self.api_runs)
+        self.router.post("/runs/abort", response_class=JSONResponse)(self.api_abort_run)
+        self.router.post("/runs/delete", response_class=JSONResponse)(self.api_delete_run)
+
     # ── Helpers ───────────────────────────────────────────────────────────────
 
     def __calendar_mgr__(self):
@@ -113,6 +118,29 @@ class ReportsRunnerController(BaseController):
             "Connection": "keep-alive",
             "X-Accel-Buffering": "no",
         })
+
+    async def api_runs(self, top: int = 50, status: str = None, report: str = None):
+        """Las ultimas corridas tal como quedaron anotadas en la base."""
+        try:
+            rows = self.logic.get_runs(top=top, status=status, report=report)
+            return JSONResponse({"ok": True, "count": len(rows), "items": rows})
+        except Exception as e:
+            return self.__fail__("api_runs", e)
+
+    async def api_abort_run(self, run_id: int = None, older_than_hours: int = None):
+        """Da de baja lo que quedo trunco despues de un reinicio."""
+        try:
+            reset = self.logic.abort_runs(run_id=run_id, older_than_hours=older_than_hours)
+            return JSONResponse({"ok": True, "reset": reset})
+        except Exception as e:
+            return self.__fail__("api_abort_run", e)
+
+    async def api_delete_run(self, run_id: int):
+        try:
+            self.logic.delete_run(run_id)
+            return JSONResponse({"ok": True})
+        except Exception as e:
+            return self.__fail__("api_delete_run", e)
 
     async def api_calendar(self, year_from: int, year_to: int = None,
                            symbol: str = None):

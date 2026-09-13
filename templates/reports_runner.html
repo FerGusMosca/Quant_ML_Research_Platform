@@ -24,6 +24,7 @@
 <!-- ══════════════════════════════════════════ TABS -->
 <div class="rr-tabs">
   <button class="rr-tab active" data-tab="run"      onclick="showTab('run')">Run a report</button>
+  <button class="rr-tab"        data-tab="runs"     onclick="showTab('runs')">Runs</button>
   <button class="rr-tab"        data-tab="calendar" onclick="showTab('calendar')">Securities calendar</button>
 </div>
 
@@ -79,6 +80,54 @@
   </div>
 
   <pre class="rr-console" id="console">Pick a report, set the portfolio and the year range, then press Run.</pre>
+</section>
+
+<!-- ══════════════════════════════════════════ RUNS -->
+<section class="rr-pane" id="paneRuns" hidden>
+
+  <div class="rr-form">
+    <label class="rr-field narrow">
+      <span>Status</span>
+      <select class="inp" id="rStatus">
+        <option value="">all</option>
+        <option value="started">started</option>
+        <option value="finished">finished</option>
+        <option value="error">error</option>
+        <option value="aborted">aborted</option>
+      </select>
+    </label>
+
+    <label class="rr-field narrow">
+      <span>Rows</span>
+      <input class="inp" id="rTop" type="number" value="50">
+    </label>
+
+    <button class="btn primary" onclick="loadRuns()">Refresh</button>
+    <button class="btn ghost" id="btnAuto" onclick="toggleAutoRuns()">⟳ Auto off</button>
+    <span class="spacer"></span>
+    <button class="btn danger" onclick="abortAllStuck()">Abort everything stuck</button>
+  </div>
+
+  <div class="rr-note">
+    This is what the database holds, not what the MCP is saying right now. A run
+    left in <code>started</code> after a restart never finished: abort it and it
+    stops looking alive.
+  </div>
+
+  <div class="table-wrap">
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th>ID</th><th>Report</th><th>Portfolio</th><th>Year</th>
+          <th>Status</th><th>Started</th><th>Ended</th><th>Elapsed</th>
+          <th>Last error</th><th></th>
+        </tr>
+      </thead>
+      <tbody id="runsBody"></tbody>
+    </table>
+  </div>
+
+  <div class="rr-empty" id="runsEmpty" hidden>No runs recorded yet.</div>
 </section>
 
 <!-- ══════════════════════════════════════════ CALENDAR -->

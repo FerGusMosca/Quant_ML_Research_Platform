@@ -1,4 +1,5 @@
 import asyncio
+import logging
 import websockets
 from websockets import ConnectionClosed
 from websockets.exceptions import ConnectionClosedError, ConnectionClosedOK
@@ -20,9 +21,24 @@ class MCPServer:
         self.bus = bus
         self.logger = logger
 
+    @staticmethod
+    def _silence_handshake_noise():
+        """
+        Cualquiera que se asome al puerto sin hablar el idioma del MCP (un
+        chequeo de vida, un navegador, un escaneo) hace que la libreria escupa
+        un choclo de varias pantallas en el log. Eso no rompe nada ni apaga el
+        servidor, pero tapa lo que si importa, asi que se baja a DEBUG.
+        """
+        for name in ("websockets", "websockets.server", "websockets.client",
+                     "websockets.protocol"):
+            logging.getLogger(name).setLevel(logging.CRITICAL)
+
     async def start(self) -> None:
         """Start the WebSocket server and run indefinitely."""
-        async with websockets.serve(self._handle_client, self.host, self.port):
+        self._silence_handshake_noise()
+
+        async with websockets.serve(self._handle_client, self.host, self.port,
+                                    ping_interval=20, ping_timeout=20):
             self.logger.do_log(
                 f"[MCP] 🚀 MCP WS listening on ws://{self.host}:{self.port}",
                 MessageType.INFO

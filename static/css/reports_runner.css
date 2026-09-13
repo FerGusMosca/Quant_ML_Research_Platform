@@ -260,3 +260,22 @@
   .rr-form { flex-direction: column; align-items: stretch; }
   .rr-field, .rr-field.narrow { flex: 1 1 auto; min-width: 0; }
 }
+
+/* ── Runs: lo que quedo anotado en la base ───────────────────────────────── */
+.rr-pill {
+  display: inline-block;
+  padding: 1px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: .04em;
+}
+.rr-pill-started  { color: var(--orange); border-color: rgba(210,153,34,.45); }
+.rr-pill-finished { color: var(--green);  border-color: rgba(63,185,80,.45); }
+.rr-pill-error    { color: var(--red);    border-color: rgba(248,81,73,.45); }
+.rr-pill-aborted  { color: var(--dim); }
+
+.rr-err-cell { color: var(--red); max-width: 320px; }
+
+#paneRuns .tbl td { vertical-align: middle; }
+#paneRuns .tbl td .btn { padding: 2px 8px; font-size: 11px; margin-right: 4px; }
