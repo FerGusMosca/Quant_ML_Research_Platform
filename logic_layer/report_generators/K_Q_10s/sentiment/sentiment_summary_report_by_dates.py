@@ -88,14 +88,13 @@ class SentimentSummaryReportByDates(SentimentAnalysisBase):
         self.output_dir = range_dir / universe_key if universe_key else range_dir
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
-        # The consolidated file and the ranking live FLAT in the rank folder:
-        # one run leaves three files whose name carries the range, so ten runs
-        # sit side by side and sort themselves by date instead of hiding inside
-        # ten nested folders nobody remembers six months later.
+        # Each run gets its own folder inside the rank folder, named after the
+        # range, and the three files of that run live inside it.
         self.rank_dir = (
                 self.root_dir
                 / Folders.OUTPUT_SECURITIES_REPORTS_FOLDER.value
                 / rank_folder
+                / self.range_key
         )
 
         self.logger.do_log(
