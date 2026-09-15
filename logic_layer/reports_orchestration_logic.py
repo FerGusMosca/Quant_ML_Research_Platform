@@ -1045,10 +1045,18 @@ class ReportsOrchestationLogic:
 
         summary["elapsed_sec"] = round((datetime.now() - start_time).total_seconds(), 2)
 
+        # La corrida solo queda como terminada si el ranking se genero de verdad.
+        # Si no, queda como error: asi la pantalla y el bot nunca buscan una
+        # carpeta de fechas que no existe.
+        if not summary["error"] and not summary["ranking"]:
+            summary["error"] = "ranking not generated for this date range"
+
         self.logger.do_log(
             json.dumps({
                 "event": "completed",
                 "report": "sentiment_summary_by_dates",
+                "status": "error" if summary["error"] else "ok",
+                "error": summary["error"],
                 "summary": summary,
             }),
             MessageType.INFO,
