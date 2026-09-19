@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import re
-from typing import Dict
+from typing import Dict, List, Optional
 
 
 class KQ10HtmlStructuredBlockExtractor:
@@ -31,6 +31,13 @@ class KQ10HtmlStructuredBlockExtractor:
 
     DEFAULT_REPORT_TYPE = "K10"
 
+    # Label of the MD&A section per report type. Lets a caller ask for MD&A only
+    # (e.g. the sentiment reports) without knowing how each report numbers it.
+    MDNA_LABELS = {
+        "K10": "ITEM 7 - MD&A",
+        "Q10": "ITEM 2 - MD&A",
+    }
+
     @staticmethod
     def resolve_report_type(file_name: str) -> str:
         """Reads the report type out of the filing file name (e.g. GPI_2025_Q1_10-Q.html)."""
@@ -47,14 +54,22 @@ class KQ10HtmlStructuredBlockExtractor:
         letter = m.group(2)
         return m.group(1), (letter.upper() if letter else None)
 
-    def extract_blocks(self, html_text: str, report_type: str = None) -> Dict[str, str]:
+    def extract_blocks(self, html_text: str, report_type: str = None,
+                       sections: Optional[List[str]] = None) -> Dict[str, str]:
         """
         Splits a 10-K / 10-Q into its narrative sections.
         Only the items listed in TARGET_ITEMS for the given report type are kept, and
         any other item header closes the block currently being captured.
+
+        sections: optional list of labels (values of TARGET_ITEMS) to keep.
+                  None keeps every target item, exactly as before.
         """
         report_type = (report_type or self.DEFAULT_REPORT_TYPE).upper()
         targets = self.TARGET_ITEMS.get(report_type, self.TARGET_ITEMS[self.DEFAULT_REPORT_TYPE])
+
+        if sections is not None:
+            wanted = set(sections)
+            targets = {key: label for key, label in targets.items() if label in wanted}
 
         soup = BeautifulSoup(html_text, "lxml")
 
@@ -104,6 +119,13 @@ class KQ10HtmlStructuredBlockExtractor:
         flush()
 
         return blocks
+
+    def extract_mdna(self, html_text: str, report_type: str = None) -> str:
+        """Returns only the MD&A section of a 10-K / 10-Q, or an empty string."""
+        report_type = (report_type or self.DEFAULT_REPORT_TYPE).upper()
+        label = self.MDNA_LABELS.get(report_type, self.MDNA_LABELS[self.DEFAULT_REPORT_TYPE])
+        blocks = self.extract_blocks(html_text, report_type, sections=[label])
+        return blocks.get(label, "")
 
     def extract_blocks_adv(self, html_text: str, sections: list[str]) -> dict[str, str]:
         from sec_parser import Edgar10QParser

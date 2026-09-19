@@ -21,7 +21,7 @@ import pandas as pd
 
 from common.enums.folders import Folders
 from common.enums.report_folder import ReportFolder
-from common.util.extractors.K_Q_10.k_q_10_mdna_extractor import KQ10MDNAExtractor
+from common.util.extractors.K_Q_10.k_q_10_html_structured_block_extractor import KQ10HtmlStructuredBlockExtractor
 from framework.common.logger.message_type import MessageType
 from logic_layer.report_generators.K_Q_10s.sentiment.base_sentiment_summary_report import SentimentAnalysisBase
 from logic_layer.report_generators.K_Q_10s.sentiment.sentence_sentiment_summary_report import SentimentSummaryReport
@@ -220,7 +220,8 @@ class SentimentSummaryReportByDates(SentimentAnalysisBase):
         worklist = self.build_worklist(job_id)
         total = len(worklist)
 
-        mdna_extractor = KQ10MDNAExtractor(self.logger)
+        # Same structural extractor the Document Tagger uses, asked for MD&A only
+        mdna_extractor = KQ10HtmlStructuredBlockExtractor()
 
         success = 0
         failed = 0
@@ -261,12 +262,8 @@ class SentimentSummaryReportByDates(SentimentAnalysisBase):
                 continue
 
             try:
-                text = self._html_to_text(Path(file_path))
-
-                if report_type == ReportFolder.K10.value:
-                    mdna = mdna_extractor._extract_10k(text, symbol)
-                else:
-                    mdna = mdna_extractor._extract_10q(text, symbol)
+                html = Path(file_path).read_text(encoding="utf-8")
+                mdna = mdna_extractor.extract_mdna(html, report_type)
 
                 if not mdna or len(mdna.strip()) < 500:
                     self.logger.do_log(
