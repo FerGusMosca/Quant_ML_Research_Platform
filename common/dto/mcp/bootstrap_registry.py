@@ -33,6 +33,7 @@ def build_mcp_registry_reports(orchestrator) -> ToolRegistry:
                         "sector": {"type": "string"},
                         "overwrite": {"type": "boolean"},
                         "chunk_source": {"type": "string"},
+                        "tab": {"type": "string"},
                     },
                     "required": ["report"],
                 },

@@ -2632,7 +2632,7 @@ class ReportsOrchestationLogic:
             raise
 
     def _run_update_mtm_prices(self, gdrive_url, input_file, output_file, credentials_file=None,
-                               portfolio=None, tv_params=None, job_id=None):
+                               portfolio=None, tv_params=None, tab=None, job_id=None):
         """
         Lee la planilla de simbolos compartida en Drive, baja el ultimo precio y
         volumen de cada uno y escribe el resultado en la planilla de salida,
@@ -2652,7 +2652,7 @@ class ReportsOrchestationLogic:
             job_id=str(job_id),
             service_id=ServiceId.MCP_SEC_REPORTS,
             operation_name="update_mtm_prices",
-            metadata={"input_file": input_file, "output_file": output_file},
+            metadata={"input_file": input_file, "output_file": output_file, "tab": tab},
         )
 
         self.logger.do_log(
@@ -2669,6 +2669,7 @@ class ReportsOrchestationLogic:
             portfolio=portfolio,
             monitor_conn_str=self.ml_reports_conn_str,
             tv_params=tv_params,
+            tab=tab,
             logger=self.logger,
             job_id=job_id,
         )
@@ -2738,7 +2739,7 @@ class ReportsOrchestationLogic:
     def process_run_report(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,d_to=None,source=None,dest_folder=None,
                            rank_folder=None,job_id=None,query=None,tag_cfg=None,sector=None,overwrite=False,
                            gdrive_url=None,input_file=None,output_file=None,credentials_file=None,
-                           tv_params=None):
+                           tv_params=None,tab=None):
         """
         Punto de entrada unico de todos los reportes.
 
@@ -2756,7 +2757,7 @@ class ReportsOrchestationLogic:
                 d_from=d_from, d_to=d_to, source=source, dest_folder=dest_folder, rank_folder=rank_folder,
                 job_id=job_id, query=query, tag_cfg=tag_cfg, sector=sector, overwrite=overwrite,
                 gdrive_url=gdrive_url, input_file=input_file, output_file=output_file,
-                credentials_file=credentials_file, tv_params=tv_params)
+                credentials_file=credentials_file, tv_params=tv_params, tab=tab)
 
         extra_params = {
             "d_from": d_from,
@@ -2771,6 +2772,7 @@ class ReportsOrchestationLogic:
             "output_file": output_file,
             "credentials_file": credentials_file,
             "tv_params": tv_params,
+            "tab": tab,
         }
 
         run = self._start_report_run(report_key, job_id, portfolio, symbol, year, quarter,
@@ -2782,7 +2784,7 @@ class ReportsOrchestationLogic:
                 d_from=d_from, d_to=d_to, source=source, dest_folder=dest_folder, rank_folder=rank_folder,
                 job_id=job_id, query=query, tag_cfg=tag_cfg, sector=sector, overwrite=overwrite,
                 gdrive_url=gdrive_url, input_file=input_file, output_file=output_file,
-                credentials_file=credentials_file, tv_params=tv_params)
+                credentials_file=credentials_file, tv_params=tv_params, tab=tab)
 
             self._close_report_run(run, job_id)
             return result
@@ -2794,7 +2796,7 @@ class ReportsOrchestationLogic:
     def _process_run_report_internal(self, report_key, year=None,quarter=None,portfolio=None,symbol=None,d_from=None,d_to=None,source=None,dest_folder=None,
                            rank_folder=None,job_id=None,query=None,tag_cfg=None,sector=None,overwrite=False,
                            gdrive_url=None,input_file=None,output_file=None,credentials_file=None,
-                           tv_params=None):
+                           tv_params=None,tab=None):
         if report_key.lower() == ReportType.DOWNLOAD_K10.value:
             self._run_download_k10(year,portfolio,job_id,overwrite=overwrite)
         elif report_key.lower() == ReportType.DOWNLOAD_Q10.value:
@@ -2858,7 +2860,7 @@ class ReportsOrchestationLogic:
         elif report_key.lower() == ReportType.UPDATE_MTM_PRICES.value:
             return self._run_update_mtm_prices(gdrive_url=gdrive_url, input_file=input_file, output_file=output_file,
                                                credentials_file=credentials_file, portfolio=portfolio,
-                                               tv_params=tv_params, job_id=job_id)
+                                               tv_params=tv_params, tab=tab, job_id=job_id)
         elif report_key.lower() == ReportType.START_MCP.value:
             self._run_start_mcp()
         else:
