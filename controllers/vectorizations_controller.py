@@ -29,6 +29,7 @@ class VectorizationsController(BaseController):
         GET    /events                round robin log of a run (#II.1)
         POST   /runs                 registers or updates a manual run
         POST   /runs/delete          removes runs (any source, one or many)
+        POST   /runs/control         pause / resume / abort / mark as stopped
     """
 
     def __init__(self, config_settings: dict, logger):
@@ -58,6 +59,7 @@ class VectorizationsController(BaseController):
         # ── Manual register ───────────────────────────────────────────────────
         self.router.post("/runs",        response_class=JSONResponse)(self.api_persist_run)
         self.router.post("/runs/delete", response_class=JSONResponse)(self.api_delete_runs)
+        self.router.post("/runs/control", response_class=JSONResponse)(self.api_control_run)
 
     # ── Helpers ───────────────────────────────────────────────────────────────
 
@@ -264,3 +266,20 @@ class VectorizationsController(BaseController):
             return JSONResponse({"ok": True, "deleted": deleted})
         except Exception as e:
             return self.__fail__("api_delete_runs", e, status=422)
+
+    async def api_control_run(self, request: Request):
+        """
+        Body: {run_id, action}. action is pause, resume, abort or stop.
+        Pause and abort are obeyed by the job between one file and the next;
+        stop only fixes the history of a run that nobody is running anymore.
+        """
+        try:
+            payload = await request.json()
+        except Exception:
+            payload = {}
+
+        try:
+            result = self.logic.control_run(payload.get("run_id"), payload.get("action"))
+            return JSONResponse({"ok": True, **result})
+        except Exception as e:
+            return self.__fail__("api_control_run", e, status=422)

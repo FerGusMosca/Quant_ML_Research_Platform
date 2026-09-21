@@ -411,6 +411,11 @@
 .status-finished { color: var(--green); }
 .status-started  { color: var(--orange); }
 .status-error    { color: var(--red); }
+.status-pause_requested,
+.status-paused          { color: var(--orange); opacity: .75; }
+.status-abort_requested,
+.status-aborted,
+.status-stopped         { color: var(--red); }
 
 .row-actions { display: flex; gap: 4px; }
 

@@ -1830,6 +1830,13 @@ class ReportsOrchestationLogic:
                     MessageType.INFO, job_id
                 )
 
+                # Aborted from the screen: the remaining years are not started.
+                if stats.get("aborted"):
+                    summary["aborted"] = True
+                    self.logger.do_log(f"[VECTORIZE] ⏹ Aborted from the screen at year={y}; "
+                                       f"remaining years skipped", MessageType.WARNING, job_id)
+                    break
+
             if not found_files:
                 self.logger.do_log(
                     f"[VECTORIZE] ⚠️ Not a single file found for portfolio {portfolio} on years {years}",

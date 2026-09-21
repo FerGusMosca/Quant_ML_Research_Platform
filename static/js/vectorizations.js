@@ -777,6 +777,9 @@ function paintRuns(rows) {
       actions.appendChild(edit);
     }
 
+    // Control de la corrida: pausar, seguir, abortar o marcarla detenida.
+    appendRunControls(actions, row);
+
     // #1.a — any run can go, manual or written by the job.
     const remove = document.createElement('button');
     remove.className = 'icon-btn danger';
@@ -801,6 +804,59 @@ function paintRuns(rows) {
 
   $('emptyRuns').hidden = rows.length > 0;
   paintBulkBar();
+}
+
+// ── Control de la corrida desde la pantalla ──
+// La corrida mira su estado entre un archivo y el siguiente, asi que pausar y
+// abortar se cumplen cuando termina el archivo que esta haciendo.
+// "Marcar detenida" es para la corrida que quedo colgada por un deploy: nadie
+// la esta corriendo, solo se corrige el historial.
+const RUN_CONTROLS = {
+  STARTED:         ['pause', 'abort', 'stop'],
+  PAUSE_REQUESTED: ['resume', 'abort', 'stop'],
+  PAUSED:          ['resume', 'abort', 'stop'],
+  ABORT_REQUESTED: ['stop'],
+};
+
+const RUN_CONTROL_UI = {
+  pause:  { icon: '⏸', title: 'Pausar: frena al terminar el archivo en curso' },
+  resume: { icon: '▶', title: 'Seguir desde donde quedo' },
+  abort:  { icon: '⏹', title: 'Abortar: corta al terminar el archivo en curso',
+            confirm: 'La corrida #{id} se corta al terminar el archivo en curso. ¿Seguimos?' },
+  stop:   { icon: '⚑', title: 'Marcar como detenida (quedo colgada, por ejemplo por un deploy)',
+            confirm: 'La corrida #{id} se marca como detenida. Usarlo solo si ya no esta '
+                   + 'corriendo (por ejemplo, despues de un deploy). ¿Seguimos?' },
+};
+
+function appendRunControls(actions, row) {
+  if (row.run_source === 'MANUAL') return;
+
+  const allowed = RUN_CONTROLS[(row.status || '').toUpperCase()] || [];
+  allowed.forEach(action => {
+    const ui = RUN_CONTROL_UI[action];
+    const button = document.createElement('button');
+    button.className = 'icon-btn' + (action === 'abort' || action === 'stop' ? ' danger' : '');
+    button.title = ui.title;
+    button.textContent = ui.icon;
+    button.onclick = () => controlRun(row.run_id, action, button);
+    actions.appendChild(button);
+  });
+}
+
+async function controlRun(runId, action, button) {
+  const ui = RUN_CONTROL_UI[action];
+  if (ui.confirm && !window.confirm(ui.confirm.replace('{id}', runId))) return;
+
+  button.disabled = true;
+  try {
+    await postJson(`${API}/runs/control`, { run_id: runId, action });
+    await refreshScope();
+    showTab('runs');
+    loadLive();
+  } catch (e) {
+    window.alert(e.message);
+    button.disabled = false;
+  }
 }
 
 // ── Log round robin de la corrida (#II.1) ──
@@ -873,13 +929,14 @@ function buildEventsTable(items) {
 
 function eventLabel(type) {
   return ({ RUN_START: 'INICIO', RUN_END: 'FIN', FILE_START: 'EMPEZO',
-            FILE_DONE: 'LISTO', FILE_SKIP: 'SALTEADO', FILE_FAIL: 'FALLO' })[type] || type;
+            FILE_DONE: 'LISTO', FILE_SKIP: 'SALTEADO', FILE_FAIL: 'FALLO',
+            RUN_PAUSE: 'PAUSA', RUN_RESUME: 'SIGUE', RUN_ABORT: 'ABORTADA' })[type] || type;
 }
 
 function eventBadge(type) {
   if (type === 'FILE_DONE' || type === 'RUN_END') return 'badge-ok';
-  if (type === 'FILE_FAIL') return 'badge-fail';
-  if (type === 'FILE_SKIP') return 'badge-pending';
+  if (type === 'FILE_FAIL' || type === 'RUN_ABORT') return 'badge-fail';
+  if (type === 'FILE_SKIP' || type === 'RUN_PAUSE') return 'badge-pending';
   return 'badge-auto';
 }
 
@@ -1130,10 +1187,13 @@ async function loadLive() {
     const running = last.event_type !== 'RUN_END';
 
     $('liveDot').className = 'vz-live-dot' + (running ? ' is-on' : '');
-    $('liveNow').textContent = running
-      ? `${last.position || '—'}/${last.total || '—'} · ${last.symbol || ''} `
-        + `${last.file_name || last.message || ''}`.trim()
-      : `terminada — ${last.message || ''}`;
+    const paused = last.event_type === 'RUN_PAUSE';
+    $('liveNow').textContent = !running
+      ? `terminada — ${last.message || ''}`
+      : paused
+        ? `en pausa — ${last.message || ''}`
+        : `${last.position || '—'}/${last.total || '—'} · ${last.symbol || ''} `
+          + `${last.file_name || last.message || ''}`.trim();
 
     paintLiveBar(last);
 

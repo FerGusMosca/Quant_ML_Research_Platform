@@ -376,6 +376,37 @@ class VectorizationHistoryLogic:
             notes=(payload.get("notes") or "").strip() or None,
             run_id=payload.get("run_id") or None)
 
+    # ── Control of a run from the screen ──────────────────────────────────────
+
+    # action -> (new status, statuses it can come from, closes the run)
+    # The job only checks between files, so pause and abort take effect when
+    # the file in progress ends. "stop" is for a run nobody is running anymore
+    # (a deploy killed it): it only fixes the history.
+    RUN_ACTIONS = {
+        "pause":  ("PAUSE_REQUESTED", ("STARTED",), False),
+        "resume": ("STARTED", ("PAUSE_REQUESTED", "PAUSED"), False),
+        "abort":  ("ABORT_REQUESTED", ("STARTED", "PAUSE_REQUESTED", "PAUSED"), False),
+        "stop":   ("STOPPED", ("STARTED", "PAUSE_REQUESTED", "PAUSED", "ABORT_REQUESTED"), True),
+    }
+
+    def control_run(self, run_id, action) -> dict:
+        try:
+            run_id = int(run_id)
+        except Exception:
+            raise Exception(f"'{run_id}' is not a valid run_id")
+
+        action = (action or "").strip().lower()
+        if action not in self.RUN_ACTIONS:
+            raise Exception(f"action must be one of {tuple(self.RUN_ACTIONS)}")
+
+        new_status, allowed_from, close_run = self.RUN_ACTIONS[action]
+        result = self.history_mgr.control_run(run_id, new_status, allowed_from, close_run)
+
+        if not result["changed"]:
+            raise Exception(f"Run {run_id} is {result['status'] or 'missing'}: "
+                            f"'{action}' only applies from {allowed_from}")
+        return result
+
     def delete_runs(self, run_ids) -> int:
         """
         Point #1.a: any run can be removed, manual or written by the job. Test

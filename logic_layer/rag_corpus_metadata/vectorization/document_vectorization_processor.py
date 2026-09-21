@@ -11,6 +11,7 @@
 
 import hashlib
 import os
+import time
 from datetime import datetime
 
 from common.util.extractors.section_extractors.section_extractor_registry import SectionExtractorRegistry
@@ -50,6 +51,58 @@ class DocumentVectorizationProcessor(TransformersTopicBase):
 
     def ping(self) -> str:
         return self.vectors_mgr.ping()
+
+    # ------------------------------------------------------
+    # Control from the screen (pause / resume / abort)
+    # ------------------------------------------------------
+
+    # How often a paused run looks again at what the screen asked. A document
+    # takes seconds, so waiting a few more to wake up costs nothing.
+    PAUSE_POLL_SECONDS = 10
+
+    # Statuses that mean "stop at the next file". STOPPED is the one the screen
+    # uses for a run left hanging by a deploy; if the process turns out to be
+    # alive after all, it obeys it the same way.
+    STOP_STATUSES = ("ABORT_REQUESTED", "STOPPED")
+
+    def __check_control__(self, run_id, idx, total, job_id) -> bool:
+        """
+        Called between one file and the next. Answers True when the run has to
+        stop there. While the screen keeps it paused, it waits right here.
+        """
+        status = self.vectors_mgr.get_run_status(run_id)
+
+        if status in self.STOP_STATUSES:
+            return True
+
+        if status not in ("PAUSE_REQUESTED", "PAUSED"):
+            return False
+
+        self.vectors_mgr.set_run_status(run_id, "PAUSED", only_if=("PAUSE_REQUESTED",))
+        self.events_mgr.log_event("RUN_PAUSE", position=idx,
+                                  message=f"en pausa antes del archivo {idx}/{total}",
+                                  flush=True)
+        if self.logger:
+            self.logger.do_log(f"[VECTORIZE] ⏸ Paused | run_id={run_id} | before {idx}/{total}",
+                               MessageType.INFO, job_id)
+
+        while True:
+            time.sleep(self.PAUSE_POLL_SECONDS)
+            status = self.vectors_mgr.get_run_status(run_id)
+
+            if status in self.STOP_STATUSES:
+                return True
+
+            # Anything that is not a pause anymore (the screen resumed it, or the
+            # row was deleted) lets the run go on.
+            if status not in ("PAUSE_REQUESTED", "PAUSED"):
+                self.events_mgr.log_event("RUN_RESUME", position=idx,
+                                          message=f"sigue desde el archivo {idx}/{total}",
+                                          flush=True)
+                if self.logger:
+                    self.logger.do_log(f"[VECTORIZE] ▶ Resumed | run_id={run_id} | "
+                                       f"from {idx}/{total}", MessageType.INFO, job_id)
+                return False
 
     # ------------------------------------------------------
     # Single document
@@ -184,7 +237,23 @@ class DocumentVectorizationProcessor(TransformersTopicBase):
             flush=True,
         )
 
+        aborted = False
+
         for idx, sec_w_file in enumerate(sec_w_files, start=1):
+            # Pause / abort asked from the screen. Checked only between files:
+            # a document is never left half written.
+            if self.__check_control__(run_id, idx, len(sec_w_files), job_id):
+                aborted = True
+                self.events_mgr.log_event("RUN_ABORT", position=idx,
+                                          message=f"cortada antes del archivo "
+                                                  f"{idx}/{len(sec_w_files)}",
+                                          flush=True)
+                if self.logger:
+                    self.logger.do_log(f"[VECTORIZE] ⏹ Aborted from the screen | "
+                                       f"run_id={run_id} | before {idx}/{len(sec_w_files)}",
+                                       MessageType.WARNING, job_id)
+                break
+
             file_path = sec_w_file.file
             file_name = os.path.basename(file_path)
             symbol = sec_w_file.security.symbol
@@ -302,18 +371,21 @@ class DocumentVectorizationProcessor(TransformersTopicBase):
             files_skipped=stats["skipped"],
             files_failed=stats["failed"],
             chunks_persisted=stats["chunks"],
-            status="FINISHED" if stats["failed"] == 0 else "FINISHED_WITH_ERRORS",
+            status=("ABORTED" if aborted
+                    else "FINISHED" if stats["failed"] == 0 else "FINISHED_WITH_ERRORS"),
         )
 
         self.events_mgr.log_event(
             "RUN_END",
-            message=f"procesados={stats['processed']} | salteados={stats['skipped']} | "
+            message=("abortada | " if aborted else "")
+                    + f"procesados={stats['processed']} | salteados={stats['skipped']} | "
                     f"fallados={stats['failed']} | chunks={stats['chunks']}",
             chunks=stats["chunks"],
             flush=True,
         )
         self.events_mgr.prune()
 
+        stats["aborted"] = aborted
         return stats
 
     def encode_query(self, query_text: str):

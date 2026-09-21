@@ -237,6 +237,53 @@ class FilingVectorsManager:
                   status, error_message, run_id))
         self.connection.commit()
 
+    def get_run_status(self, run_id):
+        """
+        What the screen asked for this run (pause, resume, abort). Read between
+        one file and the next, so it has to be cheap and never fail the run:
+        on any error it answers None and the run just keeps going.
+        """
+        try:
+            with self.connection.cursor() as cursor:
+                cursor.execute("SELECT status FROM vectorization_runs WHERE run_id = %s",
+                               (run_id,))
+                row = cursor.fetchone()
+            self.connection.commit()
+            return (row[0] or "").strip().upper() if row else None
+        except Exception as e:
+            try:
+                self.connection.rollback()
+            except Exception:
+                pass
+            self._log(f"[VECTORIZE][CONTROL] could not read run status | run_id={run_id} | {e}")
+            return None
+
+    def set_run_status(self, run_id, new_status, only_if=None):
+        """
+        Moves the run to new_status. With only_if, only when the current status
+        is one of those, so the job never steps over what the screen just asked.
+        """
+        try:
+            with self.connection.cursor() as cursor:
+                if only_if:
+                    cursor.execute("""
+                        UPDATE vectorization_runs SET status = %s
+                         WHERE run_id = %s AND status = ANY(%s)
+                    """, (new_status, run_id, list(only_if)))
+                else:
+                    cursor.execute("UPDATE vectorization_runs SET status = %s WHERE run_id = %s",
+                                   (new_status, run_id))
+                changed = cursor.rowcount
+            self.connection.commit()
+            return changed
+        except Exception as e:
+            try:
+                self.connection.rollback()
+            except Exception:
+                pass
+            self._log(f"[VECTORIZE][CONTROL] could not set run status | run_id={run_id} | {e}")
+            return 0
+
     # ── Read side (semantic search) ───────────────────────────────────────────
 
     def search_similar(self, query_embedding, embedding_model, top_k=10,

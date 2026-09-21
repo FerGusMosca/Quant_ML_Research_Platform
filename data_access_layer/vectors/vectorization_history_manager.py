@@ -518,6 +518,51 @@ class VectorizationHistoryManager:
                   f"sector={sector_code} | year={fiscal_year}")
         return new_id
 
+    def control_run(self, run_id: int, new_status: str, allowed_from, close_run=False) -> dict:
+        """
+        Changes the status of a run from the screen (pause, resume, abort, mark
+        as stopped). Only moves it when the current status is one of
+        allowed_from, in one statement, so two clicks never step on each other.
+
+        close_run also stamps finished_at and leaves a RUN_END in the round robin
+        log: that is the case of a run left hanging by a deploy, where nobody
+        else is going to write its end.
+        """
+        with self.connection.cursor() as cursor:
+            cursor.execute("""
+                UPDATE vectorization_runs
+                   SET status      = %s,
+                       finished_at = CASE WHEN %s THEN now() ELSE finished_at END
+                 WHERE run_id = %s
+                   AND status = ANY(%s)
+             RETURNING run_id, status
+            """, (new_status, bool(close_run), int(run_id), list(allowed_from)))
+            row = cursor.fetchone()
+        self.connection.commit()
+
+        if not row:
+            current = self._query("SELECT status FROM vectorization_runs WHERE run_id = %s",
+                                  (int(run_id),))
+            return {"changed": False,
+                    "status": current[0]["status"] if current else None}
+
+        self._log(f"[VECTORIZE][CONTROL] run_id={run_id} -> {new_status}")
+
+        if close_run and self.events_table_exists():
+            try:
+                with self.connection.cursor() as cursor:
+                    cursor.execute("""
+                        INSERT INTO vectorization_run_events (run_id, event_type, message)
+                        VALUES (%s, 'RUN_END', 'marcada como detenida desde la pantalla')
+                    """, (int(run_id),))
+                self.connection.commit()
+            except Exception as e:
+                self.connection.rollback()
+                self._log(f"[VECTORIZE][CONTROL] could not log RUN_END | run_id={run_id} | {e}",
+                          MessageType.WARNING)
+
+        return {"changed": True, "status": new_status}
+
     def delete_runs(self, run_ids) -> int:
         """
         Removes runs, whatever their source (#1.a). The old rule of only
